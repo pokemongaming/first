@@ -1,81 +1,99 @@
 <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4ff;
-      color: #222;
-    }
-    header {
-      padding: 20px;
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4ff;
+    color: #222;
+    min-height: 100%;
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
-    }
-    h1 {
-      margin: 0 0 10px;
-    }
-    .filters {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin: px;
-      flex-wrap: wrap;
-    }
-    .filters button {
-      padding: 8px 14px;
-      border: none;
-      background: #1e88e5;
-      color: white;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .filters button:hover {
-      background: #1565c0;
-    }
-    .search-box {
-      text-align: center;
-      padding: 10px;
-    }
-.image-container {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-}
+  }
 
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+  h1 {
+    margin: 0 0 10px;
+  }
 
-.overlay-text {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
- /* background: rgba(59, 76, 202, 0.85);  Pokémon blue */
-  color: white;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
-  font-size: 16px;
-}
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
 
-    .search-box input {
-      padding:10px;
-      width:90%;
-      max-width:400px;
-      border-radius:5px;
-      border:1px solid #ccc;
-    }
+  .filters button {
+    padding: 8px 14px;
+    border: none;
+    background: #1e88e5;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .filters button:hover {
+    background: #1565c0;
+  }
+
+  .search-box {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .search-box input {
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .image-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(30, 136, 229, 0.7); /* subtle overlay */
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     padding: 20px;
+    flex: 1;
   }
 
   .card {
@@ -104,27 +122,36 @@
     font-weight: bold;
     font-size: 18px;
   }
-    .card-content {
-      padding: 15px;
-    }
-    .card-content h3 {
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-    .card-content p {
-      font-size: 14px;
-      color: #555;
-    }
-    .footer {
-    position: static;
-    bottom: 0;
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* ✅ Updated footer style */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: auto;
     width: 100%;
   }
 
-    @media (max-width: 600px) {
-      .filters {
-        flex-direction: column;
-        align-items: center;
-      }
+  @media (max-width: 600px) {
+    .filters {
+      flex-direction: column;
+      align-items: center;
     }
-  </style>
+  }
+</style>
