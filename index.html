@@ -30,26 +30,7 @@
 </head>
 <body>
 
-<script>
-    const appendVersion = (file) => `${file}?v=${new Date().getTime()}`;
-    
-    // Update CSS link(s)
-    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
-      link.href = appendVersion(link.getAttribute('href'));
-    });
 
-    // Update JS script(s)
-    document.querySelectorAll('script[src]').forEach(script => {
-      // Skip this cache-busting script itself
-      if (!script.src.includes('appendVersion')) {
-        let newScript = document.createElement('script');
-        newScript.src = appendVersion(script.getAttribute('src'));
-        newScript.defer = true;
-        document.body.appendChild(newScript);
-        script.remove();
-      }
-    });
-  </script>
 
   <header>
 <img  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK7usukWGk54lAcVkDW5FHcMFs6fia0kupPjLN7_ZNvIJRj1uwYCAm8pdHHJb3T_phB5Cxl6n_IJSDewf6JjbJ2BquEuu1JEPJqMdM3zZ1GFEDApcR9s_hIzQsAF8NfrTlO5PmkWAmqJA4nsXQgZdHbqM5K9At8s75QKggM72sx_8pQGXW4G-DHI2fTxQ/s200/logo.webp" alt="Pokémon Gaming Logo" loading="lazy" style="display: block; margin: 0 auto;" width="100"/>
@@ -60,7 +41,7 @@
 <br>
 <br>
 
-  
+  <script src="cachebuster.js"></script>
  
 
   <div class="filters">
