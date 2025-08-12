@@ -59,9 +59,11 @@ h1 {
 }
 
 .image-container {
-  position:relative;
-  border-radius:12px;
-  overflow:hidden
+ position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 340px;    /* match image width */
+  height: 191px;   /* match image height */
 }
 
 .image-container img {
@@ -172,7 +174,8 @@ width: 340px; /* scales down responsively */
     align-items:center
   }
   img.responsive-img {
-    max-width: 100%
+   width: 100%;   /* full width on small screens */
+    height: auto; 
   }
 }
 
