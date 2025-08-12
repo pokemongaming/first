@@ -1,64 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--<style>  
-  
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f0f4ff;
-  color: #222;
-  min-height: 100%;
-}
 
-header {
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #fff;
+<style>
+/* Combined styles */
+body,html{margin:0;padding:0;font-family:'Segoe UI',sans-serif;background:#f0f4ff;color:#222;min-height:100%}
+header{padding:20px;text-align:center;background-color:rgba(0,0,0,.85);color:#fff}
+h1{margin:0 0 10px}
+.filters{display:flex;justify-content:center;gap:10px;margin:0;flex-wrap:wrap}
+.filters button{padding:8px 14px;border:none;background:#1565C0;color:#fff;border-radius:20px;cursor:pointer;font-size:14px}
+.filters button:hover{background:#1565c0}
+.search-box{text-align:center;padding:10px}
+.search-box input{padding:10px;width:90%;max-width:400px;border-radius:5px;border:1px solid #ccc}
+.image-container{position:relative;border-radius:12px;overflow:hidden}
+.image-container img{display:block;width:100%;height:auto}
+.overlay-text{position:absolute;bottom:0;width:100%;color:#fff;padding:10px;font-weight:700;text-align:center;font-size:16px;background:transparent!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;padding:20px;flex:1}
+.card{background:#f5f5f5;border-radius:16px;padding:16px;box-shadow:0 4px 8px rgba(0,0,0,.1);transition:transform .2s;text-align:center}
+.card:hover{transform:translateY(-5px)}
+.card img{max-width:100%;height:auto;border-radius:12px;margin-bottom:12px;aspect-ratio:2/1}
+.card a{text-decoration:none;color:#333;font-weight:700;font-size:18px}
+.card-content{padding:15px}
+.card-content h2{margin:0 0 10px;font-size:18px}
+.card-content p{font-size:14px;color:#555}
+.footer{background-color:#0b0f19;color:#fff;text-align:center;padding:20px;font-size:15px;margin-top:auto;width:100%;box-sizing:border-box}
+.footer a{color:#ffeb3b;text-decoration:none;font-weight:500;margin:0 6px}
+.footer a:hover{text-decoration:underline}
+img.responsive-img{width:100%;height:auto;max-width:800px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+@media (max-width:600px){
+  .filters{flex-direction:column;align-items:center}
+  img.responsive-img{max-width:100%}
 }
-
-h1 {
-  margin: 0 0 10px;
+@media (min-width:1200px){
+  img.responsive-img{max-width:1000px}
 }
+</style>
 
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-.filters button {
-  padding: 8px 14px;
-  border: none;
-  background: #1565C0;
-  color: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.filters button:hover {
-  background: #1565c0;
-}
-
-.search-box {
-  text-align: center;
-  padding: 10px;
-}
-
-.search-box input {
-  padding: 10px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-</style>-->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google-site-verification" content="BTG1RBCVB7"/>
@@ -66,8 +43,6 @@ h1 {
   <meta name="description" content="Explore Pokémon GO raid guides including Legendary, Mega, and Mythical bosses. Find best counters, weaknesses, CP ranges, and shiny info." />
 <meta content='pokemon, raid guide, mega raids, legendary raids, gigantamax, pokemongaming.in' name='keywords'/>
   <link rel="canonical" href="https://www.pokemongaming.in/" />
-
-<!--<link rel="icon" type="image/webp" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK7usukWGk54lAcVkDW5FHcMFs6fia0kupPjLN7_ZNvIJRj1uwYCAm8pdHHJb3T_phB5Cxl6n_IJSDewf6JjbJ2BquEuu1JEPJqMdM3zZ1GFEDApcR9s_hIzQsAF8NfrTlO5PmkWAmqJA4nsXQgZdHbqM5K9At8s75QKggM72sx_8pQGXW4G-DHI2fTxQ/s200/logo.webp"/>-->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTG1RBCVB7"></script>
 <script>
@@ -78,21 +53,14 @@ h1 {
   gtag('config', 'G-BTG1RBCVB7');
 </script>
 
-  <link rel="stylesheet" href="index.css">
+  <!--<link rel="stylesheet" href="index.css">-->
 
   
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5470141690688832"
      crossorigin="anonymous"></script>
-
-<!--<link rel="stylesheet" href="index.css" media="print" onload="this.media='all'">
-<noscript>
-<link rel="stylesheet" href="index.css">
-<!--</noscript>-->
   
 </head>
 <body>
-
-
 
   <header>
 <img src="/images/logo.webp" fetchpriority="high" alt="Pokémon Gaming Logo"/>
@@ -105,7 +73,6 @@ h1 {
 
   <script src="cachebuster.js" defer></script>
  
-
   <div class="filters">
     <button onclick="filterCards('all')">All</button>
     <button onclick="filterCards('legendary')">Legendary</button>
