@@ -1,534 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-<script src="script.js"></script>  
+   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regieleki Raid Guide (Pokémon GO) — Best Counters, Boosts & Tips</title>
+  <meta name="description" content="Lightweight, AdSense‑friendly Regieleki raid guide for Pokémon GO: best counters, recommended teams, weather boosts, duo/trio notes, and quick tips." />
+  <link rel="canonical" href="https://www.pokemongaming.in/regieleki.html" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Comprehensive Regieleki raid guide: counters, type weaknesses, weather boosts, team setup, and strategy tips."/>
-  <meta name="keywords" content="Regieleki, Pokémon GO raid counters, Regieleki weaknesses, raid strategy"/>
-  <meta name="author" content="Abhishek"/>
-  <title>Regieleki Raid Guide – Counters, Strategies & FAQs</title>
-  
-   <link rel="stylesheet" href="posts.css"/> 
+ <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Regieleki Raid Guide — Best Counters & Tips" />
+  <meta property="og:description" content="Clear, fast, mobile‑first Regieleki raid guide with top counters, weather boosts, and battle tips." />
+  <meta property="og:url" content="https://www.pokemongaming.in/regieleki.html" />
+  <meta property="og:site_name" content="Pokémon Gaming" />
+  <meta property="og:image" content="https://www.pokemongaming.in/images/regieleki-raid.jpg" />
 
+<!-- JSON‑LD: Article + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Regieleki Raid Guide — Best Counters & Tips",
+    "datePublished": "2025-08-23",
+    "dateModified": "2025-08-23",
+    "author": {"@type": "Organization", "name": "Pokémon Gaming"},
+    "publisher": {"@type": "Organization", "name": "Pokémon Gaming"},
+    "image": ["https://www.pokemongaming.in/images/regieleki-raid.jpg"],
+    "articleSection": ["Overview","Counters","Moves","Weather","Tips","FAQ"],
+    "mainEntityOfPage": {"@type": "WebPage","@id": "https://www.pokemongaming.in/regieleki.html"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Can Regieleki be duoed?","acceptedAnswer":{"@type":"Answer","text":"With level 40+ trainers, strong Electric teams and favorable weather, a duo is possible. Trio is comfortable for most groups."}},
+      {"@type":"Question","name":"Is shiny available?","acceptedAnswer":{"@type":"Answer","text":"Yes. Mega raids can reward shiny Gyarados when shiny is active for the species."}},
+      {"@type":"Question","name":"What weather boosts the catch?","acceptedAnswer":{"@type":"Answer","text":"Rain and Wind boost the caught Gyarados (Water/Flying)."}}
+    ]
+  }
+  </script>
+
+
+  <style>
+    :root{
+      --bg:#f6fff7; --card:#ffffff; --ink:#06221f; --muted:#455a52; --brand:#2f855a;
+      --ok:#16a34a; --warn:#b45309; --ring:0 10px 30px rgba(47,133,90,.06)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand)}
+    .wrap{max-width:1100px;margin:0 auto;padding:16px}
+    header{background:linear-gradient(90deg,#1f6f5a,#2fa67a);color:#fff;padding:14px;border-radius:8px}
+    .brand{font-weight:700}
+    nav a{color:rgba(255,255,255,.92);margin-left:10px;text-decoration:none}
+    .hero{background:var(--card);border-radius:12px;padding:18px;box-shadow:var(--ring);display:grid;gap:12px;margin-top:16px}
+    .hero img{width:100%;height:auto;border-radius:10px;object-fit:cover}
+    .grid{display:grid;gap:16px;margin-top:14px}
+    @media(min-width:980px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:var(--ring)}
+    h1{margin:0;font-size:1.6rem}
+    h2{margin-top:12px;font-size:1.1rem}
+    .kvs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+    .kvs div{background:#f0fff6;padding:10px;border-radius:8px}
+    .tbl{overflow-x:auto;margin-top:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid #e9f3ee;text-align:left;vertical-align:middle}
+    th{background:#f6fff8}
+    .poke-cell{display:flex;align-items:center;gap:10px}
+    .poke-ico{width:56px;height:56px;border-radius:10px;object-fit:contain;background:#fff;border:1px solid #eef8f2;padding:6px}
+    .type-ico{width:22px;height:22px;vertical-align:middle;object-fit:contain;margin-right:6px}
+    .ads{background:#f7fff9;border:1px dashed #dff7e9;border-radius:10px;padding:12px;text-align:center;color:var(--muted)}
+    .note{background:#fffaf0;border-left:4px solid var(--warn);padding:10px;border-radius:8px}
+    .tip{background:#ecfdf3;border-left:4px solid var(--ok);padding:10px;border-radius:8px}
+    footer{margin-top:20px;padding:18px;background:#0b2b22;color:#cfeee1;border-radius:8px}
+    code{background:#f0fff6;padding:2px 6px;border-radius:6px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
 </head>
 <body>
-
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgADGb0lySDhQsyTCPXYSU6ApRVKkCx7sp0PAd5RLZ6mvuGYoodGK1IAXzYtqCv0nNHZC4Hky6QCp6LsVQk4iJnPceE55k7qqKHf9ZihHZSNtSMKNZ5ZKyo83C5D0e0QcSi7tOptDGwlvEz8jusqgivrDYmLMDWYUIZfjcW-ywEcfKqHbwBIIWqQ8QPCbI/s1600/Grey%20Minimalist%20Tips%20Blog%20Banner%20%2810%29.webp" alt="Regieleki Header" style="width:100%; border-radius:10px;"/>
-<br>
- <br> 
-  <header class="header">
-    <h1>Regieleki Raid Guide</h1>
-    <p>Your complete resource for defeating Regieleki in Pokémon GO raids.</p>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div>
+        <div class="brand">Pokémon Gaming</div>
+        <div style="font-size:.92rem;opacity:.92">Gigantamax Venusaur — Max Battle guide</div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="/all-raids.html">All Raids</a>
+        <a href="/events.html">Events</a>
+        <a href="/contact.html" rel="nofollow">Contact</a>
+      </nav>
+    </div>
   </header>
-  <br>
-  
- <!-- <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">    
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtc4x1nw3AmQ06ZL2_o6_o5loJZC8MANlcqmINRiJwoSEJcfY4UKMnr0r8eN8tAnydl1UxLfipeozcnECOvd7usJBIBJDfJDw1mNLxTTv5E_EdTkMZZ-nGbGjaTVv67O-BAhJXyHp5vyzEO4UnW9uUZrLBScbIpPj9dFthb8bwgpgK-TT9YEX-W0nDf38/s1600/regieleki.jfif" loading="lazy" alt="Regieleki Raid Icon" style="max-width: 45%; height: auto;"/>
-</div>
-  <br>-->
-<p style="font-weight: bold; font-size: 16px;">
-  Last updated on: <span id="lastUpdatedDate"></span>
-</p>
 
-<script>
-  const updatedDate = new Date();
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  document.getElementById("lastUpdatedDate").innerText = updatedDate.toLocaleDateString("en-US", options);
-</script>
+  <main class="wrap" role="main">
+    <nav aria-label="breadcrumb" style="color:var(--muted);font-size:.95rem;margin-top:12px">Home › Raid Guides › Gigantamax Venusaur</nav>
 
+    <section class="hero" aria-labelledby="hero-h">
+      <div>
+        <h1>Regieleki Raid Guide (Pokémon GO)</h1>
+        <p class="meta">Typing: <strong>Water/Dark</strong> • Recommended group: <strong>3–6</strong> • Duo possible with top Electric teams</p>
+        <div class="kpi" aria-label="Quick KPIs">
+          <div><div class="pill">Weak to</div><div><span class="type">Electric</span> <span class="type">Grass</span> <span class="type">Fighting</span> <span class="type">Bug</span> <span class="type">Fairy</span></div></div>
+          <div><div class="pill">Boosted Catch Weather</div><div>Rain • Wind (base Gyarados)</div></div>
+          <div><div class="pill">Best Megas</div><div>Mega Manectric • Mega Ampharos • Mega Sceptile</div></div>
+        </div>
+      </div>
 
-   <nav style="text-align:center; margin:20px;">
-    <a href="#regular" class="nav-link">Regular Pokemon</a><br>
-    <a href="#shadow" class="nav-link">Shadow Pokemon</a><br>
-    <a href="#mega" class="nav-link">Mega Pokemon</a><br>
-  </nav>
-
-  <hr style="background:red;height:2px;border:none;">
-  
-  <main>
-    
-     <section id="overview" class="section">
-      <h2>What is Regieleki?</h2>
-      <p>Regieleki is a Electric type in 5 Star Raid Egg known for high CP and strong resistances. In this guide, we explore how to get Regieleki, its competitive strengths, top counters.</p>
-</section>
-    
-       <hr style="background:red;height:2px;border:none;">
-    
-    <h2>🎯 Type Effectiveness Chart</h2>
-  <table>
-    <tr><th><p>Super Effective Against</p></th><td><p>Ground</p></td></tr>
-    <tr><th><p>Resistant To</p></th><td><p>Flying, Steel, Electric</p></td></tr>
-  </table>
-
-     <hr style="background:red;height:2px;border:none;">
-  
-  <h2>👥 How Many Trainers Are Needed?</h2>
-<ul>
-  <p>2–3 high-level trainers with top counters</p>
-  <p>4–5 casual trainers</p>
-    <p>Use<strong>Sunny weather</strong> boosts Ground-type attackers</p>
-     <p>Use<strong>Rainy weather</strong> boosts Regieleki’s Electric-type moves</p>
-</ul>
-        
-   <hr style="background:red;height:2px;border:none;">
-    
-   <section id="raid" class="section">
-     <h2>Raid CP caught level:</h2>
-      <p>At Level 20 (no weather): ~1,524–1,602 CP<br>
-         At Level 25 (Rainy weather boost): ~1,905–2,002 CP<br>
-         Raid Boss having CP of 44,342</p>
+      <img src="images/64/cobalion-cover.jpg" alt="Cobalion looming over a gym in Pokémon GO" loading="lazy" width="1200" height="600">
     </section>
 
-      <hr style="background:red;height:2px;border:none;">
-    
-    <section id="counters" class="section">
-      <h2>Best Counters for Regieleki</h2>
-      <p>Top non‑Shadow counters: Garchomp, Krookodile, Golem, Golurk, Mamoswine, Groudon<br>
-         Top Shadow/Legendary counters: Shadow Garchomp, Shadow Flygon, Shadow Ursaluna, Shadow Mamoswine, Shadow Excadrill </p>
-      </section>
-    
-<hr style="background:red;height:2px;border:none;">
-    
-  <section id="regular">
-    <div class="grid-container">
-      
-  <div class="card" aria-label=" Garchomp Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgesgOUS5s2RWU_12gPHq4jl-EDTWrJjwNHwE9e6QCj8gXe83bllQ3-eIbdKXcnJyBOSMc4vXA06Q1yhNecoiNgoazPAWQtR0g-Q7iZ3IKYrVoMXwhJbmDMBMrqVLoG1s5CjeE094I0OWfgRqVbszUDcyIPWR-HxDYZlZcHzPq_mvcE_q9gGQAWI401TJk/s200/garchomp.webp');">
-        </div>
-        <div class="card-description">
-         <h3>Type: Dragon/Ground</h3>
-<h3>Fast<strong> :</strong> Mud Shot, Dragon Tail</h3>
-<h3>Charged<strong>  :</strong> Earthquake, Sand Tomb, Fire Blast, Outrage</h3>
-<h3>Elite<strong> :</strong> Earth Power</h3>
-<h3>Garchomp is a powerhouse in raids, use Dragon Tail(14) and Earthquake or Fire Blast(140).</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Krookodile details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7No7w6O71lMnOBFaq9iQ0eYqu3ErrTIrOkD-hJcRskVkdZUy34-zsb_TXAoZZoxj-kI7k_WB8tmPQwF1VTr3x3tqMr9uK8Hz7V_Qtb5vdKUl0CvloGNWSl3XXf7uxLraZq8khqXTQblmVZE0OoHHazNYAhbltwjS3z_T9Zx6ogP3qKznE9jksckpj9bM/s200/krookodile.webp');">
-        </div>
-        <div class="card-description">
-           <h3>Type: Dark/Ground</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Snarl</h3>
-          <h3><strong>Charged  : </strong>Earthquake, Brick Break, Crunch, Outrage</h3>
-          <h3>Best moveset of Krookodile are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Golem Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXmcDmYCGLslQgsWum0_snsovspIKCX1mCMl5eVAHleltdxN3Vo-9kp7Bg4pS-7LmY0KjdyY30-hE346M3NDthapZMy_Ih7-tdc5JnCMMS32NH0YmJeA5VJhFcJOAI4o0MgHVMh9oerypRIRKhUnV8Qa1OWNaCtucH9VyQxeCQJ0wTtm42MueFQub0ugk/s200/golem.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Rock</h3>
-          <h3><strong>Fast :</strong> Mud Shot, Mud Slap, Rock Throw</h3>
-          <h3><strong>Charged :</strong> Earthquake, Stone Edge, Rock Blast, Ancient Power</h3>
-          <h3>Golem is good pokemon for raids, use Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Excadrill details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmGLHrUJYPoy0TA18p4yFgMpM3xQDgKQMXvOlPYk5RTX9DJNBvc-BBPgGY2r9r2a2R2tT3x5q94AV4twsMI2yehzPrr6xXcw4y2lS1h56dzQCMczFyryRleng0INetHIYm3SuC8E2LWwGGxxU971KEoyIQ-jIe5TRr6bDT6q4QZjY2ZondzcGSbDMaEYk/s200/excadrill1.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Steel</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Mud Shot, Metal Claw</h3>
-          <h3><strong>Charged  :</strong> Earthquake, Drill Run, Scorching Sands, Rock Slide, Iron Head</h3>
-          <h3>Best moveset of Excadrill are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Golurk Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvpdwPVKuV8DayeWIm_MTVRWHhBJXn26K2AdeRI5DbSzKsSvnrt-CPDFE7DPnE4hpRNHBy2Opd8sF24g6EIyAUrp5fL7JxtA44BE04oYEJAB4xyoqkGcx7ikbMLpGNd-uiNv1xfjDfds2iauEyha4RXn-Si3PZzMDJD6mCJc7BB33Yh2xvCRgZgNhN8FA/s200/golurk.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ghost/Ground</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Astonish</h3>
-          <h3><strong>Charged  :</strong> Dynamic Punch, Earth Power, Shadow Punch, Poltergeist</h3>
-          <h3>Best moveset for Golurk are Mud Slap(19) and Poltergeist(140)</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Mamoswine Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimrVpJyIU69ZtzOzfTKpz2OlquJVMLIAMNNFmhxYBZVdP5giUc833HmfjXWO0PdcUcIsOJNvQFv5Yc1Nw4D4IAZrKLssvfDhK-FieB30oIqL7NgtwMb_6sGyIgMG9Bc5V1sVQwk1tEatM_X15RzJSq4ATDuN7C1SD6tuN2lc1eGc7lgMct-fw2qRJQ_30/s200/mamoswine.webp');">
-        </div>
-        <div class="card-description">
-         <h3>Type: Ground/Ice</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Powder Snow</h3>
-          <h3><strong>Charged :</strong> Bulldoze, High Horsepower, Stone Edge, Avalanche, Icicle Spear</h3>
-          <h3><strong>Elite :</strong> Ancient Power</h3>
-          <h3>Best moveset of Mamoswine are Mud Slap(18) and High Horsepower or Stone Edge(105).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Groudon Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDUCTwsPc70d3sKGThXButnMWbap8JBZ5unHn1Yn4QKeSLTuS9NEnmsV2R1NYVSqN6aomMmBt-rB7CmTR1fVVmG6D-1g89wvnQ2Hns3sBR-Prntil2IIRJrjrk4kMzB9pfHaWLJqsRVc6BFHYghcGuKkYw4etkV2r3CE8o7uV-X0UU-lWeumiu7OCFE-o/s200/groudon.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Ground/Fire</h3>
-<h3>Fast<strong> :</strong> Mud Shot, Dragon Tail</h3>
-<h3>Charged<strong> :</strong> Earthquake, Fire Blast, Solar Beam</h3>
-<h3>Elite<strong> :</strong> Fire Punch, Precipice Blades</h3>
-<h3>Groudon is one of the best counters, use Dragon Tail(14) and Solar Beam(180) .</h3>
-</div>
-</div>
-    
-   <div class="card" aria-label="Rhyperior Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVFdEZgcdpqDvyUfHdh1tWmRV0JRAw7VVLNXzcZn15B1bd5FTVj1OTCnx-aXAvEu1bBb27TjNh8De-8t7_vkZbzZYveipO8c-hRG7shdpMNNY6Orzqh2th0Pd40khtS50UVxxtlLZvhOtoMmpq-jqtTxt67q9NyPn7K2I_SQoPyqNtxneNS_BRv05c_0U/s200/rhyperior.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Rock/Ground</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Smack Down</h3>
-          <h3><strong>Charged  :</strong> Skull Bash, Superpower, Earthquake, Stone Edge, Surf, Breaking Swipe</h3>
-          <h3><strong>Elite  :</strong> Rock Wrecker</h3>
-          <h3>Best moveset of Rhyperior are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-        
-    <div class="card" aria-label="Dawn Wings Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4f1o_s-Fa-NLbk6cSnQ5rn9_fATts98chN34xfXUlIS_g_PP_BNXmd1b6vqyJLZZBNFXqe3fRS8859BIsodSjw_xdkzPn0-2LKaSccG1vxxgwzm2C8s6gsFKeKohUxs-T7Dh3FqZMDiY-i13UyOGgxczM7nuuosbVMe0hNkZRQusFRRmP3qjxLX4Rg0I/s200/dawn_wings_necrozma.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Psychic/Ghost</h3>
-<h3>Fast<strong> :</strong> Shadow Claw, Metal Claw, Psycho Cut</h3>
-<h3>Charged <strong> :</strong> Dark Pulse, Iron Head, Future Sight, Outrage, Moongeist Beam</h3>
-<h3>Dawn Wings is one of the best counters, use Shadow Claw or Metal Claw (6) and Moongeist beam(230).</h3>
-</div>
-</div>
+ <!--<section class="grid two">
+      <aside class="card" aria-label="Table of contents">
+        <h2>Quick Navigation</h2>
+        <nav class="toc">
+          <a href="#counters">Best Counters</a>
+          <a href="#moves">Moves & Threats</a>
+          <a href="#weather">Weather Effects</a>
+          <a href="#tips">Battle Tips</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </aside>-->
 
-     <div class="card" aria-label="Rhydon details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhorh6ITIH-qgX-O1ASzbrLFfZ6u0_u5g44zytwgBkZX-PjomnDNYBlIcg_0dyGNp4dW7MtzGRFbQrcbzncjiAcc1Hte4GZQsvACZPBDcen57XngvYLoEIJ-s8wXmj9z6enCb-EX_BIyFZ0vIoECuQ6ss_00c_R2Hh7x-SOXmTNy11B6dTlmCuxqFql1xw/s200/rhydon.webp');">
+    <div class="grid">
+      <article class="card" id="guide">
+        <h2>Quick facts</h2>
+        <div class="kvs" aria-hidden="false">
+         <div><strong>Species:</strong> Regieleki (Legendary)</div>
+          <div><strong>Types:</strong> Electric</div>
+          <div><strong>Primary weaknesses:</strong> Ground</div>
+          <div><strong>Recommended lobby:</strong> 6–40 trainers depending on Max difficulty &amp; event bonuses</div>
         </div>
-        <div class="card-description">
-          <h3>Type: Ground/Rock</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Rock Smash</h3>
-          <h3><strong>Charged :</strong> Earthquake, Stone Edge, Surf, Breaking Swipe</h3>
-<h3><strong>Elite :</strong> Megahorn</h3>
-           <h3>Best moveset of Rhydon are Mud Slap(19) and Earthquake(140).</h3>
+
+        <h2 id="what-is">About Gigantamax Venusaur in GO</h2>
+        <p class="note">
+           Cobalion has been featured in Max Battle Day / Water Festival events (example: July 19, 2025 Max Battle Day). Check official event posts for exact dates and paid Timed Research bonuses. :contentReference[oaicite:1]{index=1}
+
+        </p>
+
+        <h2 id="weaknesses">Weaknesses & resistances</h2>
+        <div class="tbl" aria-label="Weaknesses table">
+          <table>
+           <thead><tr><th>Category</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Weak to</strong></td>
+                <td>           
+                  <img class="type-ico" src="/images/types/ground.webp" alt="Ground"> Ground 
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Resists / neutral</strong></td>
+                <td>Resists Flying, Steel, Electric</td>
+              </tr>
+             <!-- <tr>
+                <td><strong>Notes</strong></td>
+                <td>Gigantamax bosses have large HP pools and often use Max/G-Max moves with battlefield effects. Expect longer fights and coordinate Revives/Max Revives. :contentReference[oaicite:2]{index=2}</td>
+              </tr>-->
+            </tbody>
+          </table>
         </div>
-      </div>
-      
-  </div>
+
+        <h2 id="moveset">Common moveset & G-Max notes</h2>
+        <p>
+          Community sim and database results list top moves for Gigantamax Venusaur as <strong>Vine Whip</strong> (fast) + <strong>G-Max Vine Lash</strong> (charged) for maximum DPS/TDO in many rotations. It can roll other Grass/Poison charged moves (e.g., Frenzy Plant in theoretical sets), but G-Max Vine Lash is the signature effect to watch for. Sunny weather boosts Grass moves; be careful with weather that amplifies its output. 
+        </p>
+
+        <h2 id="counters">Top counters (images included)</h2>
+        <p>
+          Typical fast moves: <strong>Waterfall</strong> or <strong>Dragon Breath</strong> or <strong>Bite</strong>. 
+        </p>
+
+       <!-- <h2 id="counters">Top counters (images included)</h2>
+        <p style="color:var(--muted)">Primary strategy: Electric & Grass counters first; add Rock or Fighting if the boss carries mixed coverage. Host these images locally in <code>images/64/</code> and the type icons in <code>/images/types/</code>.</p>-->
+
+        <div class="tbl" aria-label="Gigantamax Counters table">
+          <table>
+            <thead>
+              <tr>
+                <th>Pokémon</th>
+                <th>Fast Move</th>
+                <th>Charged Move(s)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+             
+
+            <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/rhyperior.webp" alt="Rhyperior"><strong>Rhyperior</strong></div>
+                </td>
+                <td>Mud Slap / Smack Down</td>
+                <td>Skull Bash / Superpower / Earthquake / Stone Edge / Surf / Breaking Swipe</td>
+                <td>Rock Wrecker</td>
+                <td>Mud Slap (19) and Earthquake (140)</td>
+             </tr>
+
+
+             <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/garchomp.webp" alt="Garchomp"><strong>Garchomp</strong></div>
+                </td>
+               <td>Mud Shot / Dragon Tail</td>
+                <td>Earthquake / Sand Tomb / Fire Blast / Outrage</td>
+                <td>Earth Power</td>
+                <td>Dragon Tail (14) and Earthquake / Fire Blast (140)<td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/dawn_wings_necrozma.webp" alt="Dawn Wings Necrozma"><strong>Dawn Wings Necrozma</strong></div>
+                </td>
+               <td>Shadow Claw / Metal Claw / Psycho Cut</td>
+                <td>Dark Pulse / Iron Head / Future Sight / Outrage / Moongeist Beam</td>
+                <td> - </td>
+                <td>Shadow Claw / Metal Claw (6) and Moongeist Beam (230)<td>
+              </tr>
+
+             <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/groudon.webp" alt="Groudon"><strong>Groudon</strong></div>
+                </td>
+                <td>Mud Shot / Dragon Tail</td>
+                <td>Earthquake / Fire Blast / Solar Beam</td>
+                <td>Fire Punch / Precipice Blades</td>
+                <td>Dragon Tail (14) and Solar Beam (180)</td>
+              </tr>
+
+
+             <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/excadrill.webp" alt="Excadrill"><strong>Excadrill</strong></div>
+                </td>
+                <td>Mud Slap / Mud Shot / Metal Claw</td>
+                <td>Earthquake / Drill Run / Scorching Sands / Rock Slide / Iron Head</td>
+                <td>-</td>
+                <td>Mud Slap (19) and Earthquake (140)</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tbl" aria-label="Gigantamax Counters table">
+          <table>
+            <thead>
+              <tr>
+                <th>Pokémon</th>
+                <th>Fast Move</th>
+                <th>Charged Move(s)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+
+<tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_groudon.webp" alt="Shadow Groudon"><strong>Shadow Groudon</strong></div>
+                </td>
+                <td>Mud Shot / Dragon Tail</td>
+                <td>Earthquake / Solar Beam / Fire Blast</td>
+                <td>Precipice Blades / Fire Punch</td>
+                <td>Dragon Tail (14) and Solar Beam (180)</td>
+              </tr>
+
+              
+             <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_garchomp.webp" alt="Shadow Garchomp"><strong>Shadow Garchomp</strong></div>
+                </td>
+                <td>Mud Shot / Dragon Tail</td>
+                <td>Earthquake / Sand Tomb / Fire Blast / Outrage</td>
+                <td>Earth Power</td>
+                <td>Dragon Tail (14) and Fire Blast / Earthquake (140)</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/64/gigantamax-lapras.webp" alt="Gigantamax Lapras icon"><strong>Gigantamax Lapras</strong></div>
+                </td>
+                <td>Fire Fang</td>
+                <td>Overheat / Fusion Flare</td>
+                <td>High raw Fire damage — great pick when available.</td>
+             </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/64/gigantamax-snorlax.webp" alt="Gigantamax Snorlax icon"><strong>Gigantamax Snorlax</strong></div>
+                </td>
+                <td>Fire Spin</td>
+                <td>Sky Attack / Overheat</td>
+                <td>Good Fire + Flying options; Sky Attack gives strong STAB Flying damage.</td>
+              </tr>
+
+             <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_rhyperior.webp" alt="Shadow Rhyperior"><strong>Shadow Rhyperior</strong></div>
+                </td>
+                <td>Mud Slap / Smack Down</td>
+                <td>Skull Bash / Superpower / Earthquake /Stone Edge /Surf / Breaking Swipe</td>
+                <td>Rock Wrecker</td>
+                <td>Mud Slap (19) and Earthquake (140)</td>
+              </tr>
+
+
+<tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_mamoswine.webp" alt="Shadow Mamoswine"><strong>Shadow Mamoswine</strong></div>
+                </td>
+                <td>Mud Slap / Powder Snow</td>
+                <td>Bulldoze / High Horsepower / Stone Edge / Avalanche / Icicle Spear</td>
+                <td>Ancient Power</td>
+                <td>Mud Slap (18) and High Horsepower / Stone Edge (105)</td>
+              </tr>
+
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_excadrill.webp" alt="Shadow Excadrill"><strong>Shadow Excadrill</strong></div>
+                </td>
+                <td>Mud Slap / Mud Shot / Metal Claw</td>
+                <td>Earthquake / Drill Run / Scorching Sands / Rock Slide / Iron Head</td>
+<td>-</td>
+                <td>Mud Slap (19) and Earthquake (140)</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+<div class="tbl" aria-label="Counters table with images">
+          <table>
+            <thead>
+              <tr>
+                <th>Pokémon</th>
+                <th>Fast Move</th>
+                <th>Charged Move(s)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+
+<tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/mega_sceptile.webp" alt="Mega Sceptile"><strong>Mega Sceptile</strong></div>
+                </td>
+                <td>Fury Cutter / Bullet Seed</td>
+                <td>Aerial Ace / Earthquake / Leaf Blade / Dragon Claw / Breaking Swipe</td>
+                <td>Frenzy Plant</td>
+                <td>Bullet Seed (7) and Earthquake (140)</td>
+              </tr>
+
+
+<tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_garchomp.webp" alt="Mega Garchomp"><strong>Mega Grachomp</strong></div>
+                </td>
+               <td>Mud Shot / Dragon Tail</td>
+                <td>Earthquake / Sand Tomb / Fire Blast / Outrage</td>
+                <td>Earth Power</td>
+                <td>Dragon Tail (14) and Fire Blast / Earthquake (140)</td>
+              </tr>
+
+              <!-- Fire -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_lucario.webp" alt="Mega Lucario"><strong>Mega Lucario</strong></div>
+                </td>
+              <td>Counter / Bullet Punch</td>
+                <td>Close Combat / Power-Up Punch / Aura Sphere / Shadow Ball / Flash Cannon / Blaze Kick / Thunder Punch</td>
+                <td>Force Palm</td>
+                <td>Counter (13) and Close Combat (105)<td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_swampert.webp" alt="Mega Swampert"><strong>Mega Swampert</strong></div>
+                </td>
+                <td>Mud Shot / Water Gun</td>
+                <td>Sludge / Sludge Wave / Earthquake / Surf / Muddy Water</td>
+<td>Hydro Cannon</td>
+                <td>Water Gun (5) and Sludge Wave (105)</td>
+              </tr>
+
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.webp" alt="Mega Rayquaza"><strong>Mega Rayquaza</strong></div></td>
+              
+                <td>Air Slash / Dragon Tail</td>
+                <td>Aerial Ace / Ancient Power / Outrage</td>
+                <td>Breaking Swipe / Hurricane</td>
+                <td>Dragon Tail (14) and Outrage (110)</td>
+              </tr>
+
+
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/blissey.webp" alt="Blissey icon"><strong>Blissey</strong></div>
+                </td>
+                <td>Fire Fang</td>
+                <td>Overheat / Fusion Flare</td>
+                <td>High raw Fire damage — great pick when available.</td>
+              </tr>
+
+              <!-- Flying -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/metang.webp" alt="Metang icon"><strong>Metang</strong></div>
+                </td>
+                <td>Fire Spin</td>
+                <td>Sky Attack / Overheat</td>
+                <td>Good Fire + Flying options; Sky Attack gives strong STAB Flying damage.</td>
+              </tr>
+
+              <!-- Ice -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/raboot.webp" alt="Raboot icon"><strong>Raboot</strong></div>
+                </td>
+                <td>Powder Snow</td>
+                <td>Avalanche / Earthquake</td>
+                <td>Top Ice DPS for neutralizing Grass/Flying weak points; Avalanche hits very hard.</td>
+              </tr>
+
+              <!-- Psychic -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/toxtricity.webp" alt="Toxtricity icon"><strong>Toxtricity</strong></div>
+                </td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/articuno.webp" alt="Articuno icon"><strong>Articuno</strong></div>
+                </td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/cryogonal.webp" alt="Cryogonal icon"><strong>Cryogonal</strong></div></td>
+                
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/rillaboom.webp" alt="Rillaboom icon"><strong>Rillaboom</strong></div></td>
+               
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/venusaur.webp" alt="Venusaur icon"><strong>Venusaur</strong></div></td>
+               
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/machamp.webp" alt="Machamp icon"><strong>Machamp</strong></div></td>
+               
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/gengar.webp" alt="Gengar icon"><strong>Gengar</strong></div></td>                
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/unfezant.webp" alt="Unfezant icon"><strong>Unfezant</strong></div></td>                
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/charizard.webp" alt="Charizard icon"><strong>Charizard</strong></div></td>               
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/charmeleon.webp" alt="Charmeleon icon"><strong>Charmeleon</strong></div></td>         
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+               <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/greedent.webp" alt="Greedent icon"><strong>Greedent</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/entei.webp" alt="Entei icon"><strong>Entei</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+               <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/excadrill.webp" alt="Excadrill icon"><strong>Excadrill</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+               <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/tranquil.webp" alt="Tranquill icon"><strong>Tranquill</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+                <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/zapdos.webp" alt="Zapdos icon"><strong>Zapdos</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+               <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/haunter.webp" alt="Haunter icon"><strong>Haunter</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+                <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/64/moltres.webp" alt="Moltres icon"><strong>Moltres</strong></div></td>
+                <td>Psycho Cut</td>
+                <td>Psystrike / Shadow Ball</td>
+                <td>Top Psychic attacker — fall back to this if Fire/Flying are scarce.</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+         <section class="ads card" aria-label="Advertisement">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+           data-ad-slot="2222222222"
+           data-ad-format="in-article"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </section>
-  
-  <hr style="border: none; height: 2px; background-color: red;">
-    
-  <section id="shadow ">
-  <div class="grid-container">
-    
- <div class="card" aria-label="Garchomp Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDJvuC3z0OAMHrmpNv4Kryp89RLaiV9sRHV0bAh8b4UJA8PWvserGkUvH3PirdNE3JUdINYtQqIkJafocYvYJZ6QgRUVWxcAZTOSpArxADV-J93e7HE0WtWSXWuhpVrHQrLSFqfV4_roMwd90HOEDJJ2CdriNqdH9SkYfEsah45z_B-wf_VyYmSqIaLk4/s200/shadow_garchomp.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Dragon/Ground</h3>
-<h3>Fast<strong> :</strong> Mud Shot, Dragon Tail</h3>
-<h3>Charged<strong>  :</strong> Earthquake, Sand Tomb, Fire Blast, Outrage</h3>
-<h3>Elite<strong> :</strong> Earth Power</h3>
-<h3>Shadow Garchomp has boosted attack power, making it even more effective in raids. Use Dragon Tail(14) and Fire Blast or Earthquake(140).</h3>
-</div>
-</div>
-    
-   <div class="card" aria-label="Flygon details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ748WKBnVTf7xXKOy1GkrINs1VFAliFrSlNw8Zf0hxeaEnd8cDra7Z5BK11IbEd_RL1eJ9z9fl9pGZXIRCTgA_o39Iz0GD35KRGaqAJB9PBUx-wNhZwN26ss5Y6M3rclkn7Ftny6Bu23-A8Ic_zGlnLfOwtmdAVn5ImsM6HAMVP61PJKm1bEs2_2lDRo/s200/shadow_flygon.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Dragon</h3>
-          <h3><strong>Fast : </strong>Mud Shot, Sand Attack, Dragon Tail</h3>
-          <h3><strong>Charged  : </strong>Boomburst, Earthquake, Scorching Sands, Stone Edge, Dragon Claw</h3>
-          <h3><strong>Elite :</strong> Earth Power</h3>
-          <h3>Best moveset of Flygon are Dragon Tail(14) and Boomburst(150).</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Ursaluna Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSzPMlWYkQJszTQnQaAu42sd1mOh5esjtSe39X_3h8sqYmoAfpTbV9JNUfpxWS3RrL4VP0wivSVCUYOtWFqQ2g2wtnbApJ5G36X41jWcxL1-roKuIPeBeuj9-a1sJsdRNwVtVE1s_rhkN_pao8ZY40XnSYM-p7HGpETbwqjdp3Ccb-4yDwYT3bKYKEZ9o/s200/shadow_ursaluna.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Normal</h3>
-          <h3><strong>Fast :</strong> Tackle, Rock Smash</h3>
-          <h3><strong>Charged  :</strong> Swift, Aerial Ace, Fire Punch, Trailblaze, Thunder Punch, Ice Punch</h3>
-          <h3><strong>Elite : </strong>High Horsepower</h3>
-          <h3>Shadow Ursaluna is one of counters for raids, use Rock Smash(17) and High Horsepower(105).</h3>
-        </div>
-      </div>
-    
-     <div class="card" aria-label="Mamoswine details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd2NkV52WeRX1qCyK-i5VU0SZx_HeE_IrApEw8_iMETvHhjF-144IyyaNzVe197hSeao9WTZpx0Cq8JWOg1TDTj0CCvU_EjOH1elYMo1bgSUhf8XSUjypQuGfG_hfS3-SFK91lHEmB7-0sP9MRbYsuysUvTXAX2yzrJZhw9kGpS8SdipWf0M9XtKUl0iE/s200/shadow_mamoswine.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Ice</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Powder Snow</h3>
-          <h3><strong>Charged :</strong> Bulldoze, High Horsepower, Stone Edge, Avalanche, Icicle Spear</h3>
-          <h3><strong>Elite :</strong> Ancient Power</h3>
-          <h3>Best moveset of Mamoswine are Mud Slap(18) and High Horsepower or Stone Edge(105).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Hippowdon details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRKUU6GmyXK0EYguvOm5KkQQfp-JHG06n2YFg8d-Ry9EAhSa9c2HjR4t1KbYOhnqir2bSqafkdWNYt5k1lrNkLgMfoT2097MpISCoH5xA7ZO9yjURw5y-VoyBoxR5C6tWepSFicpBjSnJr7uR2bQyn1lS0nJs2oe3wd3LHDF-6axwNFZ6GOokLr_mTcFc/s200/shadow_hippowdon.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground</h3>
-          <h3><strong>Fast :</strong> Sand Attack, Fire Fang, Thunder Fang, Ice Fang, Bite</h3>
-          <h3><strong>Charged :</strong> Body Slam, Earth Power,Earthquake, Stone Edge, Scorching Sands, Weather Ball</h3>
-          <h3>Best moveset of Hippowdon are Fire Fang(13) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Excadrill Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2E7eC5HghwZ9VjzyGnUtFv9U9hdbEAtimczyjcrEYOWtodsgK93zasN7N2WiqFGbapdc2abFbBaWPaFHVBsQ_FZh0JSyoynMF-OUoouh69ItMvgqhv5_SFxHCZoTL7UJgeXhJ4oH-G1V81B8mUpkeKl2BVsO8Vk2GWbuGlvgtHBRY3S_ZzcttLmRoERY/s200/shadow_excadrill.webp');">
-        </div>
-        <div class="card-description">
-         <h3>Type: Ground/Steel</h3>
-          <h3><strong>Fast:</strong> Mud Slap, Mud Shot, Metal Claw</h3>
-          <h3><strong>Charged:</strong> Earthquake, Drill Run, Scorching Sands, Rock Slide, Iron Head</h3>
-          <h3>Shadow Excadrill has boosted attack power making it even more effective in raids, use Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
 
-     <div class="card" aria-label="Golem details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW-pyHlxCd61_xEivacosQagT-gWnZr_5CGfqHgFgA4c7fymPNWIjyfWOif87pDrk_UUUJgtNqxvfJIxlZmeOyf3ad-nqAjPLCSH4h4lBgjh1tgAgWIELBKCOVsNQWnKhSUyzGqmGDjkkjHN4-IXES0hqUx27-UcTeVys5WoynpwTSkgDMfudaSWoOCEU/s200/shadow_golem.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Rock</h3>
-          <h3><strong>Fast :</strong> Mud Shot, Mud Slap, Rock Throw</h3>
-          <h3><strong>Charged :</strong> Earthquake, Stone Edge, Rock Blast, Ancient Power</h3>
-          <h3>Best moveset of Golem are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Rhydon details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLx95jQJ-Fp6K6ykNBMq6X1W5QdW_1cNOqQvJLdk6jP0DU4Y1YL6JX9vYPcThgp1tQ1_1ARPy9N3Vt4pz-DfJblAyHxxblh2JGfszcbYkXgDUU4JqvjmbC72hUPFw0l1MIwYZNY6hJneYPaRFPqfki8J5um02NyetyzWDKqttHP9xvZUNt8sYhdmjI5o4/s200/shadow_rhydon.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Rock</h3>
-          <h3><strong>Fast : </strong>Mud Slap, Rock Smash</h3>
-          <h3><strong>Charged :</strong> Earthquake, Stone Edge, Surf, Breaking Swipe</h3>
-<h3><strong>Elite :</strong> Megahorn</h3>
-          <h3>Best moveset of Rhydon are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Groudon Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVc1RTsccC2-v75O_wGsA-e9cE0PNA0sZ188l3GWhlH0YJh5A9GvJrb8tWllVhVTCntBlAmdGTea6IkQcCUZkD40yzSXmJCFMVnHL8WuhkqANjakcjLRU5WLp4r3Su-9YLQqNyYb41SzOTp1mPYZLaPmgZj4blsGqtiRhvK86RnNyDG3FwX_way1z2liY/s200/shadow_groudon.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Ground/Fire</h3>
-<h3>Fast<strong> :</strong> Mud Shot, Dragon Tail</h3>
-<h3>Charged<strong> :</strong> Earthquake, Fire Blast, Solar Beam</h3>
-<h3>Elite<strong> :</strong> Fire Punch, Precipice Blades</h3>
-<h3>Shadow Groudon has boosted attack power, making it even more effective in raids. Use Dragon Tail(14) and Solar Beam(180).</h3>
-</div>
-</div>
-    
-   <div class="card" aria-label="Rhyperior details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0LRSytVgBaLtZwCC9g1AsO_-9cEnHgKHDBv0u5X5FEfX5HWc60dWaSwXqZFbflGVz4JuwymtVocksztg4c4wvta1w02IbjBwuWOTa82sTmTnY8I2yW5uI697Ci33KtHGzuEvxTOuHmDRia59JfGzMSRLVNwi8lPnsCy2bnW07yLdKEtw-imKjTMgLZsc/s200/shadow_rhyperior.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Rock/Ground</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Smack Down</h3>
-          <h3><strong>Charged  :</strong> Skull Bash, Superpower, Earthquake, Stone Edge, Surf, Breaking Swipe</h3>
-          <h3><strong>Elite  :</strong> Rock Wrecker</h3>
-          <h3>Best moveset of Rhyperior are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Golurk Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKw-oW2IlekRPc7XyGxkiwblpcuagKS002E_b-6xDulafDMx2L-xxvFOfM0GCMPnkAf6H0YsW3sSf7ZB97-O78bYcn-QvaIACdlwadRlfeYo1ipwXoaBRgGD984jB08TsxbwbqCPPAJp4pEMdoRS87LmdoHCD8KFS8NOldaPwog9TfgoeIcrY-XSFr_Mk/s200/shadow_golurk.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ghost/Ground</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Astonish</h3>
-          <h3><strong>Charged  :</strong> Dynamic Punch, Earth Power, Shadow Punch, Poltergeist</h3>
-          <h3>Best moveset for Golurk are Mud Slap(19) and Poltergeist(140)</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Donphan details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhROuB3fomQHv7tujPHL22uB9rgyt0zX44LhW6EhRDqFcHvwIHePltslfvPaexFtWUEpPOPMrulSPUYAxDvcsV_yc8qi1ldh6PJ3MYpY83C6mj9KfdZLiJz2XgfYak7G2e9BbFqop_YZdxAr3b0kEXx-BFAjwqovSqksKIThHMDKNHiYUd-TreTsgoPbIA/s200/shadow_donphan.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground</h3>
-          <h3><strong>Fast :</strong> Tackle, Counter, Mud Slap, Charm</h3>
-          <h3><strong>Charged  :</strong> Body Slam,Earthquake, Heavy Slam, Trailblaze, Play Rough</h3>
-          <h3>Best moveset of Donphan are Charm(20) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-  </div>
-  </section>
-    
-  <hr style="border: none; height: 2px; background-color: red;">
-  
-  <section id="mega">
-  <div class="grid-container">
-    
-   <div class="card" aria-label="Garchomp Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU8iPhjH8GILgujKQvi8VrtwdpWyVBCT3Djn7Ztdtzws-I5bGxMFbCmTw4xdycXbA63slXCmFx0BZfOHJ7RpEL1wyrsVXRl6I1lr97_0lx7L1lu3FjWT_Xsu7dE8NnPm6RuWtDv5SGFz8tHiW7tGUEgjU-xcH0x9ksD0gYrg_Kct-cG2gNpwsVh97KLGw/s200/mega_garchomp.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Dragon/Ground</h3>
-<h3>Fast<strong> :</strong> Mud Shot, Dragon Tail</h3>
-<h3>Charged<strong>  :</strong> Earthquake, Sand Tomb, Fire Blast, Outrage</h3>
-<h3>Elite<strong> :</strong> Earth Power</h3>
-<h3>Mega Garchomp is a powerhouse in raids, use Dragon Tail(14) and Earthquake or Fire Blast(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Rayquaza Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXirYREQvatLwzDI02VyTUEMrN5I4Q6n-BdeCkXR9X-hJm5Gd4wGHC6VoAIeQMf95_nCNWye_jcqu68wUQsNdHKVqsS7q5SCoZ6ZTXHt8wtm5gPmQz8-n6k1s8hEdlBkXzfpuO0vNEiXNIra2dCeaTW4yH-r1sBQh3Fswu_YZaJ7nxGQsXnzZB4WtNpQA/s200/mega_rayquaza.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Dragon/Flying</h3>
-          <h3><strong>Fast :</strong> Air Slash, Dragon Tail</h3>
-          <h3><strong>Charged :</strong> Aerial Ace, Ancient Power, Outrage</h3>
-          <h3><strong>Elite :</strong> Hurricane, Breaking Swipe</h3>
-          <h3>Mega Rayquaza is a powerhouse in raids. With boosted stats, use Dragon Tail(14) and Outrage(110).</h3>
-        </div>
-      </div>
+<section class="grid two">
+      <article class="card" id="moves">
+        <h2>Moves & Threats</h2>
+        <p>Cobalion’s common fast moves are <strong>Metal Claw</strong> and <strong>Double Kick</strong>. Charged moves include <strong>Iron Head</strong>, <strong>Close Combat</strong>, and <strong>Stone Edge</strong>.</p>
+        <ul>
+          <li><strong>Iron Head</strong> hits Fairy/Rock hard but is resisted by Fire and Steel.</li>
+          <li><strong>Close Combat</strong> punishes Rock/Dark counters—favour Fire/Ghost here.</li>
+          <li><strong>Stone Edge</strong> threatens Fire/Flying—avoid Charizard if it’s present.</li>
+        </ul>
+      </article>
 
- <div class="card" aria-label=" Swampert Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgGHEI4tSFCAvzarkWar73_w0rHnEijbiz1p_fn3bWhloiDRURx6MAIG4UmjMRzWh6kaOXkZ2kyLGcSPXFjEJcRF06DxujvmeiyDl9K2SVJnhswo_kHH02esSff28iCK_a0nnrQjpfVjAOf1VqatBSXzyU-KTAB9l6XDB68QxJ783f0XEAOTf2dcImXis/s200/mega_swampert.webp');">
-        </div>
-        <div class="card-description">
-         <h3>Type: Water/Ground</h3>
-  <h3>Fast<strong>:</strong> Mud Shot, Water Gun</h3>
-  <h3>Charge<strong>:</strong> Sludge, Sludge Wave, Earthquake, Surf, Muddy Water</h3>
-    <h3>Elite<strong>:</strong> Hydro Cannon</h3>
-<h3>Mega Swampert is a powerhouse in raids. With boosted stats, use Water Gun(5) and Sludge Wave(105).</h3>
-        </div>
-      </div>
-
-    <div class="card" aria-label="Lucario Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD3fdlwz1KUwjmcwvDBzPFRZCzWmwi1UCn-84xZLTnrMJpzHGAjUSqMbZRMDMvzwM7qR9uMs5PsJ9uPuRtBFdnmKyTV9E3L-qwfCS1YhI-u8-PH55f_0ytxcHubamyJ2qEISZCNvwwyI1dAthOzr9aIjToBmhjOyKtTy8K0TVZ-DefSKJc8iRkhRn1-EI/s200/mega_lucario.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Fighting/Steel</h3>
-<h3>Fast<strong> :</strong> Counter, Bullet Punch</h3>
-<h3>Charged<strong> : </strong>Close Combat, Power-Up Punch, Aura Sphere, Shadow Ball, Flash Cannon, Blaze Lick, Thunder Punch</h3>
-<h3>Elite<strong> :</strong> Force Palm</h3>
-<h3>Mega Lucario is a powerhouse in raids. With boosted stats, use Counter(13) and Close Combat(105).</h3>
-        </div>
-      </div>
-
-    <div class="card" aria-label="Sceptile details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5Kf2K_vo_7CdKPjHw4BL3cWu3TBwDkZU-9Fr68IJcs9xdtBH-SWibVDq373RgsDp-7uc-6SAPrF51WtbINjog7JefR0SByCbVz0rqPlbLQ0g6fEnZ_RFkb8Hk1S20CWHxsJsRYc_EcWLwacUZHAHSvxHLhioc92q82xncvhoSapcPjqeAdr8IYa8mhEU/s200/mega_sceptile.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Grass</h3>
-          <h3><strong>Fast : </strong>Fury Cutter, Bullet Seed</h3>
-          <h3><strong>Charged :</strong> Aerial Ace, Earthquake, Leaf Blade, Dragon Claw, Breaking Swipe</h3>
-          <h3><strong>Elite : </strong>Frenzy Plant</h3>
-           <h3>Best moveset of Sceptile are Bullet Seed(7)and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-</div> 
+<aside class="card" id="cp">
+        <h2>CP & IV (Catch)</h2>
+        <ul>
+          <li><strong>Perfect (L20):</strong> 1727 CP</li>
+          <li><strong>Weather Boost (L25):</strong> 2159 CP</li>
+          <li><span class="pill">Boosted by: <strong>Snow</strong> & <strong>Wind</strong></span></li>
+        </ul>
+        <p class="note">Use Pinap on poor IVs; switch to Golden Razz on 96%+ or Shiny.</p>
+      </aside>
     </section>
-    
-   <hr style="background:red;height:2px;border:none;">
-         
-     <section id="moveset" class="section">
-      <h2>Regieleki Moveset</h2>
-     <p><strong>Fast Moves:</strong> Lock-On (Normal), Thunder Shock (Electric), Volt Switch (Electric)</p>
-      <p><strong>Charged Moves:</strong> Hyper Beam (Normal), Thunder (Electric), Zap Cannon (Electric)</p>
-       <p><strong>Elite Moves:</strong> Thunder Cage (Electric)</p>
+
+<section class="grid two">
+      <article class="card" id="moves">
+        <h2>Moves & Threats</h2>
+        <p>Cobalion’s common fast moves are <strong>Metal Claw</strong> and <strong>Double Kick</strong>. Charged moves include <strong>Iron Head</strong>, <strong>Close Combat</strong>, and <strong>Stone Edge</strong>.</p>
+        <ul>
+          <li><strong>Iron Head</strong> hits Fairy/Rock hard but is resisted by Fire and Steel.</li>
+          <li><strong>Close Combat</strong> punishes Rock/Dark counters—favour Fire/Ghost here.</li>
+          <li><strong>Stone Edge</strong> threatens Fire/Flying—avoid Charizard if it’s present.</li>
+        </ul>
+      </article>
+
+<aside class="card" id="cp">
+        <h2>CP & IV (Catch)</h2>
+        <ul>
+          <li><strong>Perfect (L20):</strong> 1727 CP</li>
+          <li><strong>Weather Boost (L25):</strong> 2159 CP</li>
+          <li><span class="pill">Boosted by: <strong>Snow</strong> & <strong>Wind</strong></span></li>
+        </ul>
+        <p class="note">Use Pinap on poor IVs; switch to Golden Razz on 96%+ or Shiny.</p>
+      </aside>
     </section>
-     
-     <hr style="background:red;height:2px;border:none;">
-     
-      <section id="faq" class="faq-section">
-      <h2>❓ Frequently Asked Questions</h2>
-        <details>
-         <summary>Can Regieleki be shiny in Pokémon GO?</summary>
+
+    <section class="card" id="weather">
+      <h2>Weather Effects</h2>
+     <li><strong>Rain:</strong> Buffs Water—watch for big Hydro Pump; also boosts Electric damage.</li>
+          <li><strong>Cloudy:</strong> Buffs your <strong>Fighting</strong> attackers.</li>
+          <li><strong>Wind:</strong> Boosts the <em>caught</em> Gyarados (Water/Flying) and Dragon moves.</li>
+        </ul>
+        <p class="note">The Pokémon you catch is regular Gyarados; weather boost depends on its Water/Flying typing.</p>
+    </section>
+
+           <h2 id="tips">Practical battle tips</h2>
+      <h2>Battle Tips</h2>
+      <ul>
+        <li>Prioritize <strong>Electric</strong> teams; swap to Grass when Rain powers up both sides.</li>
+        <li>Run a matching Mega for teamwide damage bonuses and extra candies.</li>
+        <li>Charm/Fairy options are safe when Crunch is common and Outrage is absent.</li>
+        <li>Dodge one nuke (Hydro Pump/Outrage) to keep shadows alive and sustain DPS.</li>
+      </ul>
+
+        <h2 id="team-size">Team size & strategy</h2>
+        <p>
+          Max Battles scale with event. For Gigantamax Venusaur rotations, community sims and event reports recommend between <strong>6–30 trainers</strong> depending on whether players bring high-tier Dynamax/Gigantamax leads and weather boosts — festival windows may allow larger lobbies and easier clears. Coordinate Mega/Max leads where allowed to maximize early damage windows. 
+        </p>
+
+        <h2 id="catch">Catch CP & shiny notes</h2>
+        <p>
+          Catch CP ranges depend on IVs and weather — community databases list capture CP windows per IV for Gigantamax Venusaur; shiny variants have been available during some event windows. Always check the active event post for exact shiny odds and capture ranges. 
+        </p>
+
+        <section id="faq" aria-label="FAQ">
+          <h2>FAQ</h2>
+           <h3>Can Regieleki be shiny in Pokémon GO?</h3>
         <p>Yes! Shiny Regieleki is available during specific events and raid rotations.</p>
-</details>
-  <details>
-        <summary> What are best moveset of Regieleki?</summary>
-        <p>Best movset of Regieleki are Volt Switch which does damage of 13 under Fast Attack and Thunder Cage of 220 under Charged Attack.</p>
-        </details>
-      <details>
-        <summary>What is the best weather to raid Regieleki?</summary>
+        <h3> What are best moveset of Regieleki?</h3>
+        <p>Best movset of Regieleki are Volt Switch which does damage of 13 under Fast Attack and Thunder Cage of 220 under Charged Attack.</p>      
+        <h3>What is the best weather to raid Regieleki?</h3>
         <p>Sunny weather boosts Ground-type attackers, Rainy weather boosts Regieleki’s Electric-type moves</p>
-</details>
-  <details>
-        <summary>Are Shadow Pokémon better?</summary>
+        <h3>Are Shadow Pokémon better?</h3>
         <p>Yes—Shadow forms have +20% attack, making them excellent choices if available.</p>
-     </details>
-        
+
+        </section>
+</article>
+
+ <aside class="card" aria-label="Sidebar">
+        <h2>Quick picks</h2>
+        <ul>
+          <li><strong>Best types:</strong> Fire, Flying, Ice, Psychic</li>
+          <li><strong>Bring:</strong> Gigantamax Cinderace, Reshiram, Moltres, Mamoswine, Mewtwo</li>
+          <li><strong>Support:</strong> Blissey or high-HP tanks for soaking G-Max DOT</li>
+        </ul>
+
+        <div class="ads" role="complementary" aria-label="secondary ad">
+          <!-- Replace with second AdSense unit -->
+          Secondary ad slot — insert AdSense code here
+        </div>
+
+        <h3>Image notes</h3>
+        <p style="font-size:.92rem;color:var(--muted)">Use optimized webp/png images in <code>images/64/</code> sized ~256×256 and icons in <code>/images/types/</code> (22×22). Compress for performance.</p>
+      </aside>
+</div>
+   
+    <section class="card" style="margin-top:12px">
+      <h2>Responsible play</h2>
+      <p>Play safely, follow local rules and event guidelines, and confirm event windows on Niantic's official Pokémon GO news page. Event details and availability change — always verify on the current event page. :contentReference[oaicite:20]{index=20}</p>
     </section>
+
+    <footer role="contentinfo">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <small>© <span id="yr">2025</span> Pokémon Gaming</small>
+        <nav style="font-size:.92rem"><a href="/privacy.html" rel="nofollow">Privacy</a> • <a href="/contact.html" rel="nofollow">Contact</a></nav>
+      </div>
+    </footer>
   </main>
-  
-     <!-- FAQ Schema Markup for SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can Regieleki be shiny in Pokémon GO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Shiny Regieleki is available during specific events and raid rotations."
-      }
-    },
-     {
-      "@type": "Question",
-      "name": "Are Shadow Pokémon better?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes—Shadow forms have +20% attack, making them excellent choices if available."
-      }
-    },
-     {
-      "@type": "Question",
-      "name": "What is the best weather to raid Regieleki?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sunny weather boosts Ground-type attackers, Rainy weather boosts Regieleki’s Electric-type moves"
-      }
-    },
-     {
-      "@type": "Question",
-      "name": "What are best moveset of Regieleki?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Best movset of Regieleki are Volt Switch which does damage of 13 under Fast Attack and Thunder Cage of 220 under Charged Attack.."
-      }
-    }
-  ]
-}
-</script>
-     
-  <hr style="border: none; height: 2px; background-color: red;">
-  
-  <h2>🔗 Related Guides</h2>
-<ul>
- <li><a href="regirock.html"> Regirock Raid Guide</a></li>
-  <li><a href="regice.html"> Regice Raid Guide</a></li>
-  <li><a href="registeel.html"> Registeel Raid Guide</a></li>
-  <li><a href="regidrago.html"> Regidrago Raid Guide</a></li>
-  <li><a href="regigigas.html"> Regigigas Raid Guide</a></li>
-</ul>
-  
-   <hr style="border: none; height: 2px; background-color: red;">
-  
-  <p>💬 Have you used Regieleki in battle? Let us know your experience in the comments!</p>
-  
-   <hr style="border: none; height: 2px; background-color: red;">
-  
-  <div class="footer"> <p>&copy; 2025 Regieleki Raid Guide.
-  <a href="terms&conditions">Terms & Conditions</a> |
-     <a href="about-us.html">About</a> | 
-              <a href="contact-us.html">Contact</a> | 
-              <a href="privacy-policy.html">Privacy Policy</a> |
-              <a href="disclaimer.html">Disclaimer</a>
-    </p> </div> 
 
-<p>Pokémon and all related content are © 1995–2025 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
-</p>
-
-</body> </html> 
+  <script>
+    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
+  </script>
+</body>
+</html>

@@ -1,551 +1,687 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  
- <script src="script.js"></script>  
+   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aerodactyl Raid Guide (Pokémon GO) — Best Counters, Boosts & Tips</title>
+  <meta name="description" content="Lightweight, AdSense‑friendly Aerodactyl raid guide for Pokémon GO: best counters, recommended teams, weather boosts, duo/trio notes, and quick tips." />
+  <link rel="canonical" href="https://www.pokemongaming.in/aerodactyl.html" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Comprehensive Aerodactyl raid guide: counters, type weaknesses, weather boosts, team setup, and strategy tips."/>
-  <meta name="keywords" content="Aerodactyl, Pokémon GO raid counters, Aerodactyl weaknesses, raid strategy"/>
-  <meta name="author" content="Abhishek"/>
- <title>Aerodactyl Raid Guide - Counters, Strategies & FAQs</title>
+ <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Aerodactyl Raid Guide — Best Counters & Tips" />
+  <meta property="og:description" content="Clear, fast, mobile‑first Aerodactyl raid guide with top counters, weather boosts, and battle tips." />
+  <meta property="og:url" content="https://www.pokemongaming.in/aerodactyl.html" />
+  <meta property="og:site_name" content="Pokémon Gaming" />
+  <meta property="og:image" content="https://www.pokemongaming.in/images/aerodactyl-raid.jpg" />
 
- <link rel="stylesheet" href="posts.css"/> 
+<!-- JSON‑LD: Article + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Aerodactyl Raid Guide — Best Counters & Tips",
+    "datePublished": "2025-08-23",
+    "dateModified": "2025-08-23",
+    "author": {"@type": "Organization", "name": "Pokémon Gaming"},
+    "publisher": {"@type": "Organization", "name": "Pokémon Gaming"},
+    "image": ["https://www.pokemongaming.in/images/aerodactyl-raid.jpg"],
+    "articleSection": ["Overview","Counters","Moves","Weather","Tips","FAQ"],
+    "mainEntityOfPage": {"@type": "WebPage","@id": "https://www.pokemongaming.in/aerodactyl.html"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Can Aerodactyl be duoed?","acceptedAnswer":{"@type":"Answer","text":"With level 40+ trainers, strong Electric teams and favorable weather, a duo is possible. Trio is comfortable for most groups."}},
+      {"@type":"Question","name":"Is shiny available?","acceptedAnswer":{"@type":"Answer","text":"Yes. Mega raids can reward shiny Gyarados when shiny is active for the species."}},
+      {"@type":"Question","name":"What weather boosts the catch?","acceptedAnswer":{"@type":"Answer","text":"Rain and Wind boost the caught Gyarados (Water/Flying)."}}
+    ]
+  }
+  </script>
 
+
+  <style>
+    :root{
+      --bg:#f6fff7; --card:#ffffff; --ink:#06221f; --muted:#455a52; --brand:#2f855a;
+      --ok:#16a34a; --warn:#b45309; --ring:0 10px 30px rgba(47,133,90,.06)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand)}
+    .wrap{max-width:1100px;margin:0 auto;padding:16px}
+    header{background:linear-gradient(90deg,#1f6f5a,#2fa67a);color:#fff;padding:14px;border-radius:8px}
+    .brand{font-weight:700}
+    nav a{color:rgba(255,255,255,.92);margin-left:10px;text-decoration:none}
+    .hero{background:var(--card);border-radius:12px;padding:18px;box-shadow:var(--ring);display:grid;gap:12px;margin-top:16px}
+    .hero img{width:100%;height:auto;border-radius:10px;object-fit:cover}
+    .grid{display:grid;gap:16px;margin-top:14px}
+    @media(min-width:980px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:var(--ring)}
+    h1{margin:0;font-size:1.6rem}
+    h2{margin-top:12px;font-size:1.1rem}
+    .kvs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+    .kvs div{background:#f0fff6;padding:10px;border-radius:8px}
+    .tbl{overflow-x:auto;margin-top:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid #e9f3ee;text-align:left;vertical-align:middle}
+    th{background:#f6fff8}
+    .poke-cell{display:flex;align-items:center;gap:10px}
+    .poke-ico{width:56px;height:56px;border-radius:10px;object-fit:contain;background:#fff;border:1px solid #eef8f2;padding:6px}
+    .type-ico{width:22px;height:22px;vertical-align:middle;object-fit:contain;margin-right:6px}
+    .ads{background:#f7fff9;border:1px dashed #dff7e9;border-radius:10px;padding:12px;text-align:center;color:var(--muted)}
+    .note{background:#fffaf0;border-left:4px solid var(--warn);padding:10px;border-radius:8px}
+    .tip{background:#ecfdf3;border-left:4px solid var(--ok);padding:10px;border-radius:8px}
+    footer{margin-top:20px;padding:18px;background:#0b2b22;color:#cfeee1;border-radius:8px}
+    code{background:#f0fff6;padding:2px 6px;border-radius:6px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
 </head>
 <body>
-
- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0zwLNnS2txZAZu1XWxUBgi-ilTRCKr66rND0jz4IukjuQz3266L2yXmmbkqyfUMbm1jJrtVrtaEN_-3bmr48Paq-Q4eBR-fSkWnFHAiswV3MQzwtVIU2rk1NM2eZB-jLCiI4ry2Ez-UZZKmPeJCXVX1X92Gptb7ktflg2IDKqvBHJTl8bxW5DQgohO4s/s1600/Untitled%20design%20%281%29.webp" alt="Mega Aerodactyl raid icon" style="max-width: 100%; height: auto;"/>  
-  <br>
-  <br>
- <header class="header">
-    <h1>Aerodactyl Raid Guide</h1>
-    <p>Your complete resource for defeating Aerodactyl in Pokémon GO raids.</p>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div>
+        <div class="brand">Pokémon Gaming</div>
+        <div style="font-size:.92rem;opacity:.92">Gigantamax Venusaur — Max Battle guide</div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="/all-raids.html">All Raids</a>
+        <a href="/events.html">Events</a>
+        <a href="/contact.html" rel="nofollow">Contact</a>
+      </nav>
+    </div>
   </header>
 
-<p style="font-weight: bold; font-size: 16px;">
-  Last updated on: <span id="lastUpdatedDate"></span>
-</p>
+  <main class="wrap" role="main">
+    <nav aria-label="breadcrumb" style="color:var(--muted);font-size:.95rem;margin-top:12px">Home › Raid Guides › Gigantamax Venusaur</nav>
 
-<script>
-  const updatedDate = new Date();
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  document.getElementById("lastUpdatedDate").innerText = updatedDate.toLocaleDateString("en-US", options);
-</script>
+    <section class="hero" aria-labelledby="hero-h">
+      <div>
+        <h1>Aerodactyl Raid Guide (Pokémon GO)</h1>
+        <p class="meta">Typing: <strong>Water/Dark</strong> • Recommended group: <strong>3–6</strong> • Duo possible with top Electric teams</p>
+        <div class="kpi" aria-label="Quick KPIs">
+          <div><div class="pill">Weak to</div><div><span class="type">Electric</span> <span class="type">Grass</span> <span class="type">Fighting</span> <span class="type">Bug</span> <span class="type">Fairy</span></div></div>
+          <div><div class="pill">Boosted Catch Weather</div><div>Rain • Wind (base Gyarados)</div></div>
+          <div><div class="pill">Best Megas</div><div>Mega Manectric • Mega Ampharos • Mega Sceptile</div></div>
+        </div>
+      </div>
 
-  
-  <nav style="text-align:center; margin:20px;">
-    <a href="#regular" class="nav-link">Regular Pokemon</a><br>
-    <a href="#shadow" class="nav-link">Shadow Pokemon</a><br>
-    <a href="#mega" class="nav-link">Mega Pokemon</a><br>
-  </nav>
-
-  <hr style="background:red;height:2px;border:none;">
-<main>
-    
-    <section id="overview" class="section">
-      <h2>What is Aerodactyl?</h2>
-      <p>Aerodactyl is a Rock/Flying type in 5 Star Mega Raid Egg known for high CP and strong resistances. In this guide, we explore how to get Mega Aerodactyl, its competitive strengths, top counters.</p>
-      </section>
-
-      <hr style="background:red;height:2px;border:none;">
-  
-  <h2>🎯 Type Effectiveness Chart</h2>
-  <table>
-    <tr><th><p>Super Effective Against</p></th><td><p>Rock, Steel, Water, Electric, Ice</p></td></tr>
-    <tr><th><p>Resistant To</p></th><td><p>Normal, Flying, Poison, Ground, Bug, Fire</p></td></tr>
-  </table>
-
-     <hr style="background:red;height:2px;border:none;">
-  
-  <h2>👥 How Many Trainers Are Needed?</h2>
-<ul>
-  <p>2–3 high-level trainers with top counters</p>
-  <p>4–5 casual trainers</p>
-  <p>Use <strong>Rainy weather </strong>to boosts Water and Electric type counters. </p>
-  <p>Use <strong>Snow weather</strong> to boosts Ice and Steel type counters.</p>
-</ul>
-        
-   <hr style="background:red;height:2px;border:none;">
-    
-    <section id="counters" class="section">
-      <h2>Best Counters for Aerodactyl</h2>
-      <p>Top non‑Shadow counters: Dusk Mane, Zekrom, Melmetal, Metagross, Kyogre<br>
-         Top Shadow/Legendary counters: Shadow Raikou, Shadow Metagross, Shadow Mewtwo, Shadow Electivire, Shadow Swampert</p>
+      <img src="images/cobalion-cover.jpg" alt="Cobalion looming over a gym in Pokémon GO" loading="lazy" width="1200" height="600">
     </section>
-    
-     <hr style="background:red;height:2px;border:none;">
-    
-   <section id="raid" class="section">
-   <h2>Raid CP caught level:</h2>
-      <p>At Level 20 (no weather): ~1,515–1,590 CP<br>
-         At Level 25 (Windy/Partly Cloudy weather boost): ~1,894–1,988 CP<br>
-         Raid Boss having CP of 43,686</p>
-    </section>      
-<hr style="border: none; height: 2px; background-color: red;">
-  
-  <section id="regular">
-  <div class="grid-container">
-    <!-- Example cards -->
-   <div class="card" aria-label="Dusk Mane Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9ZjDXYejppmRpyunGiweGrHzgSgM8FelaZhnqKPmmyZh32Xt5qM9oQXw5gOnOUQbdbUPoQpCZk-lqEo4kQXDek53GNVfGVs-aKMGal7tiNys6BJAyH6MX0B_41jEVkTceJIbBvB3yQEqPLytxWm07uNwv5utueFbTiS43iWBC7sdIuXBxUrkVY6P2AhQ/s200/dusk_mane_necrozma.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Psychic/Steel</h3>
-          <h3><strong>Fast :</strong> Shadow Claw, Metal Claw, Psycho Cut</h3>
-          <h3><strong>Charged  :</strong> Dark Pulse, Iron Head, Future Sight, Outrage, Sunsteel Strike</h3>
-          <h3>Dusk Mane is one of the best counters for Aerodactyl, use Shadow Claw or Metal Claw (6) and Sunsteel Strike(230).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Shadow Kyogre details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrUJNFexA9yT4ZTN5s_MfjCeZpZB__y1ynDfTnm6J18n-VsAvgakZp3EeRebGA5soBQgtXfXlAncNWSP5CJaObRhto6ogThPhnSDx6g8XsusloD40Wi1OpQuvAXnUOyV-ZYX9aj27crqMroK8oBuMhSrdpprkpBNuT8dO2DqJtjTyQDVvmRyIV-8QdnAI/s200/kyogre.webp');">
-      </div>
-        <div class="card-description">
-          <h3>Type: Water</h3>
-          <h3>Fast <strong>: </strong>Waterfall</h3>
-          <h3>Charged <strong>:</strong>Hydro Pump,Surf, Thunder, Blizzard</h3>
-          <h3>Elite <strong>:</strong>Origin Pulse</h3>
-          <h3>Kyogre has boosted attack power, making it even more effective in raids. Use Waterfall(13) and Hydro Pump(135)</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Xurkitree details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiStuLXuz67ljXTTg36-9uFlXe80tAw3rfAQtm1SrZyoYoxIhoBtKXyqFhIVdqHmo3WC2ymAAk3JKdO3OrQLsYQsMffQZUovIePxY6Os6VUgw74NKdm2w9z__RrjdvvRerzmzyAgjyligYgQv46kahW1H7nvgX063B0xfbQHHEZ2gqJdPEqvHmX0SQQAY/s200/xurkitree.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric</h3>
-          <h3><strong>Fast :</strong> Thunder Shock, Spark</h3>
-          <h3><strong>Charged :</strong> Discharge, Thunder, Power Whip, Dazzling Gleam</h3>
-          <h3>Best moveset of Xurkitree are Thunder Shock or Spark(13) and Thunder or Dazzling Gleam(100)</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Melmetal Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhmruzH4rO0Wg2eV_41-HuRMBVkfce2_t9ZALmjMGdfDrn8h7DMS8wZ5DbWK0pqeAYne2pXKIb3Idh5MXRGjrTPlaZqPftPiUZwYFmqJ6nkwXERJ2-ISG-bRFGXl-oYCewZVQO-J1ZooSHghAFiXrnoa-v9XQibdWTreLOdG73zG3ZUls96uMFaBWzJfM/s200/melmetal.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Steel</h3>
-          <h3><strong>Fast :</strong> Thunder Shock</h3>
-          <h3><strong>Charged  :</strong> Hyper Beam, Superpower, Rock Slide, Flash Cannon, Thunderbolt</h3>
-          <h3><strong>Elite :</strong> Double Iron Bash</h3>
-          <h3>Melmetal is one of the best counters for Aerodactyl, use Thunder Shock(4) and Hyper Beam(150).</h3>
-        </div>
-      </div>
 
-    <div class="card" aria-label="Metagross Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxggzbXTH7tiCqbEuRmErydC3HVqnpljPSX8DwbMndRVvbMqIG6NCD1lOI5QmquwH4ZOMsTnGT2jnzX0Z9KfV77rsZ8aD_FwUeNXAngbT5tFJ5el-ZCIeMGhm4naTUoO_5YGJ8fqb7rOEpt5BUWD2r-o4KPCQEbdzeprqAqAEZXoTiZDShhU6DgyfhJh4/s200/metagross.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Steel/Psychic</h3>
-          <h3><strong>Fast :</strong> Fury Cutter, Bullet Punch, Zen Headbutt</h3>
-          <h3><strong>Charged :</strong> Earthquake, Flash Cannon, Psychic</h3>
-          <h3><strong>Elite :</strong> Meteor Mash</h3>
-          <h3>Metagross is one of the best counters, use Zen Headbutt(11) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Zekrom details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT0v17MZdm5qMBbQI6aZY2kzLRDgkpLvdIrNF2_W-j3KEn2PjeMl8kBlaCLmilaywtCk3dduoURYJTir-Ql1yWuT_yZWoesQTHCNLNbdQUgGys4uPk3Uwnfp5T0nhHRnlnz-1vw_MDOrLA0LAoEoPczlm-jDJPpL602Dr0PhkFV37zFGjol6qmXKZsKZM/s200/zekrom.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Dragon/Electric</h3>
-          <h3><strong>Fast:</strong> Dragon Breath, Charge Beam</h3>
-          <h3><strong>Charged:</strong> Flash Cannon, Wild Charge, Outrage, Crunch, Fusion Bolt</h3>
-          <h3>Best moveset for Zekrom are Charge Beam(7) and Fusion Bolt(140)</h3>
-        </div>
-      </div>
-    
-  </div>
-  </section>
-  
-  <hr style="border: none; height: 2px; background-color: red;">
-      
-  <section id="shadow">
-  <div class="grid-container">
-    
-   <div class="card" aria-label="Raikou details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRZF2_uSL_4PB_9-__tIBTdFmO1g7p8mAg8mopftRXT1x7sIVoOfOfb_JlDb0FxACqfbYgnbLg9VQRjaoMg9LiR7iuvR7xe97fHCdyM9xmCT98KwALhi2KtrlvO4M5pZStiica9ESxFuIVRkrQdCgbZgY5wwheFem5WvK_qX8gCFopzPJQDOowzKu8Yxk/s200/shadow_raikou.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric</h3>
-          <h3><strong>Fast:</strong> Thunder Shock, Volt Switch</h3>
-          <h3><strong>Charged:</strong> Shadow Ball, Thunder, Thunderbolt, Wild Charge</h3>
-          <h3>Shadow Raikou has boosted attack power making it even more effective in raids, use Volt Switch(13) and Shadow Ball or Thunder(100).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Metagross Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQfDiNPT4x0aocx6VsGWbyWTRfXzr6hIB0s7dmhR9N_Px7Apu938N1Evfoe2yhghiaGK8WDMtgWS8Q0phPXyucTmsV3fuUrRbmow_QnOQJx5TbAjNxiGBsZECMgiyH5Sof1WDHTOHl5yLVgAdn5mb63OrRSvKAVHqkKx3PQSkhoUfmBD4D_zb_2e28Wog/s200/shadow_metagross.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Steel/Psychic</h3>
-          <h3><strong>Fast :</strong> Fury Cutter, Bullet Punch, Zen Headbutt</h3>
-          <h3><strong>Charged:</strong> Earthquake, Flash Cannon, Psychic</h3>
-          <h3><strong>Elite:</strong> Meteor Mash</h3>
-          <h3>Shadow Metagross has boosted attack power making it even more effective in Aerodactyl raids, use Zen Headbutt(11) and Earthquake(140).</h3>
-        </div>
-      </div>
-  
-   <div class="card" aria-label="Mewtwo Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOVnrjt12XwaKxA-D6LEA6jkjP9UdtkjmjkAu0qzoOSDDDdai_B9NHLN0JSq25wppUysVdK58YZB5k-jEGnrjkxLGqYycB08M8KfH0ZKeFpBVIB6HzI2aZJ7QDavZZ_4mZN5AhlbyChijgMESfhL7njWymREt5FkmbvooIb0N-ngyx3UH4joYwntoAXBk/s200/shadow_mewtwo.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Psychic</h3>
-          <h3><strong>Fast:</strong> Psycho Cut, Confusion</h3>
-          <h3><strong>Charged :</strong> Focus Blast, Flamethrower, Thunderbolt, Psychic, Ice Beam</h3>
-          <h3><strong>Elite :</strong> Hyper Beam, Shadow Ball, Psystrike</h3>
-          <h3>Shadow Mewtwo has boosted attack power making it even more effective in raids, use Confusion(19) and Hyper Beam(150).</h3>
-        </div>
-      </div>
-  
-  <div class="card" aria-label="Rampardos details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpMF2nd7mzSngdrTPbnQA_1Zfzi2FcyOh9q5m4JMi0G8zYTN8z-jiqh6AFoxTNg5bGMFS2XcDcPumTZo1TS0SZJJTQKslnJdjX5qH5hXh1rFKyLAvVvSSy_VSkymSyybS6_MK-AQ1XhN8jgOPNKRx_cj5Fv4D_5B3cf1d_6fBnm2vb3YF1dbtNlA6Yzvw/s200/shadow_rampardos.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Rock</h3>
-          <h3><strong>Fast :</strong> Zen Headbutt, Smack Down</h3>
-          <h3><strong>Charged  : </strong>Rock Slide, Flamethrower, Outrage</h3>
-          <h3>Best moveset of Ramparados are Smack Down(13) and Outrage(110).</h3>
-        </div>
-      </div>
-  
-   <div class="card" aria-label="Electivire details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy9tm8BTxjTpMKibeYoxedG-zHxoNNclnPeVmnNIA0KOGydQn-LKajaXdKXYD0Orcix-6JzlN1nbCco0Srnqf-FFFojlxepPNMx_sam8fYxhMRdvt9QQHtrOFwrbows6BPgqAPmUisBzmbjjc3KJhfGtLTGlHxvB9w5Xu8sUuX4gINoiQurue9Oem_zG4/s200/shadow_electivire.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric</h3>
-          <h3><strong>Fast:</strong> Low Kick, Thunder Shock</h3>
-          <h3><strong>Charged:</strong> Thunder Punch, Wild Charge, Thunder, Ice Punch</h3>
-          <h3><strong>Elite:</strong> Flamethrower</h3>
-          <h3>Shadow Electivire has boosted attack power, making it even more effective in raids. Use Low Kick(5) and Thunder(100).</h3>
-        </div>
-      </div>
-  
-  <div class="card" aria-label="Swampert Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9RLzbiVToCZaAUMt0WdlLg86TlJQyfQ0r4Su9Pq7RYK8VgM_ogkId23DUVzqAzOoTAg6BKL-PowBK8FOYelhuSZ25h0BycKU4lZ4F6SK8XQz4rpUk9NoflIeZr8s-l3VqJdJ-kPGRsXcYqVKZnnzpsdI3yg726qjOB75J2ZhJxxtAEEEF0bkB1nYFqaw/s200/shadow_swampert.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Water/Ground</h3>
-  <h3>Fast<strong>:</strong> Mud Shot, Water Gun</h3>
-  <h3>Charge<strong>:</strong> Sludge, Sludge Wave, Earthquake, Surf, Muddy Water</h3>
-    <h3>Elite<strong>:</strong> Hydro Cannon</h3>
-<h3>Shadow Swampert is a powerhouse in raids. With boosted stats, use Water Gun(5) and Sludge Wave(105).</h3>
-        </div>
-      </div>
-  
- <div class="card" aria-label="Shadow Kyogre details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcRr7ERaQ5KX_-umaSu8txLFOR03pc0KlZB7oajQE_WH98iRpNLeZebQ6O3kcLWRns7bE3TBD4B72MBfJr8PWqiggDYyZm9eOmdESKKqH8t11dEHHhfsEWl0kFb0Kp5anRxy3AhSUtEXyoXSmufhKWmWU9GoXDYBNlFiUKFXnQ_XtrvYLu0MlP_VtMb0w/s200/shadow_kyogre.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Water</h3>
-          <h3>Fast <strong>: </strong>Waterfall</h3>
-          <h3>Charged <strong>:</strong>Hydro Pump,Surf, Thunder, Blizzard</h3>
-          <h3>Elite <strong>:</strong>Origin Pulse</h3>
-          <h3>Shadow Kyogre has boosted attack power, making it even more effective in raids. Use Waterfall(13) and Hydro Pump(135)</h3>
-        </div>
-      </div>
-  
-  <div class="card" aria-label="Rhyperior details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0LRSytVgBaLtZwCC9g1AsO_-9cEnHgKHDBv0u5X5FEfX5HWc60dWaSwXqZFbflGVz4JuwymtVocksztg4c4wvta1w02IbjBwuWOTa82sTmTnY8I2yW5uI697Ci33KtHGzuEvxTOuHmDRia59JfGzMSRLVNwi8lPnsCy2bnW07yLdKEtw-imKjTMgLZsc/s200/shadow_rhyperior.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Rock/Ground</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Smack Down</h3>
-          <h3><strong>Charged  :</strong> Skull Bash, Superpower, Earthquake, Stone Edge, Surf, Breaking Swipe</h3>
-          <h3><strong>Elite  :</strong> Rock Wrecker</h3>
-          <h3>Best moveset of Rhyperior are Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Luxray details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj1kSgAQcCupXXmNaS_p77DqU2FafifZS1n_K9VfZag8Qc3iP5EH2kDImJ4HIROsucepPR51c5ebuGR7LIxBCEafdQEPbQK2sOZtyqD-7OxviyOTQPzEbrh-BdeeIdFVBO2hLAohA4lykIGzerCgWNPkVnDLiPHqHgP-U45Eo-xOb3iaIaJCpUI_bKMUo/s200/shadow_luxray.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric</h3>
-          <h3><strong>Fast:</strong>  Hidden Power, Spark, Snarl</h3>
-          <h3><strong>Charged:</strong>  Hyper Beam, Crunch, Wild Charge</h3> 
-          <h3><strong>Elite:</strong>  Psychic Fangs</h3>
-          <h3>Shadow Luxray has boosted attack power making it even more effective in raids, use Hidden Power(15) and Hyper Beam(150).</h3>
-        </div>
-      </div>
-    
-  <div class="card" aria-label="Mamoswine details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd2NkV52WeRX1qCyK-i5VU0SZx_HeE_IrApEw8_iMETvHhjF-144IyyaNzVe197hSeao9WTZpx0Cq8JWOg1TDTj0CCvU_EjOH1elYMo1bgSUhf8XSUjypQuGfG_hfS3-SFK91lHEmB7-0sP9MRbYsuysUvTXAX2yzrJZhw9kGpS8SdipWf0M9XtKUl0iE/s200/shadow_mamoswine.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Ground/Ice</h3>
-          <h3><strong>Fast :</strong> Mud Slap, Powder Snow</h3>
-          <h3><strong>Charged :</strong> Bulldoze, High Horsepower, Stone Edge, Avalanche, Icicle Spear</h3>
-          <h3><strong>Elite :</strong> Ancient Power</h3>
-          <h3>Best moveset of Mamoswine are Mud Slap(18) and High Horsepower or Stone Edge(105).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Kingler details">
-      <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLUD-c9UQOdTa28cYhTrUx09ah8UeYvmg0VF-O1x026JDeuKHy9McRiqmOBEXqzdewIHIwCVQeBOCJ-4aTAGVb7sv2WYTOIoKxmuriWjkPA_OYpenm_4xvs8imAcKShv2VyJ8PlO2u_7V70NzDI3Fd1aNah6RJoFEN_F5ZwOJJMpAwwaZn84sC8Dw9sdI/s200/shadow_kingler.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Water</h3>
-          <h3><strong>Fast :</strong> Metal Claw, Bubble</h3>
-          <h3><strong>Charged :</strong> Vise Grip, X-Scissor, Water Pulse, Crabhammer, Razor Shell</h3>
-          <h3><strong>Elite :</strong> Mud Shot</h3>
-          <h3>Shadow Kingler is one of the best counters, use Bubble(10) and Crabhammer(85).</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Zapdos details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirrLibUcUc6gIesy8a8hFG0z_1cOOEdPOr0aLWRCosTMWcyfnmwBgVw_H1CfJUi9IfTnSkGJLz6Eu0ObcNZ2n7IylRQ5nh5KIGHsP3AonR97BVlQM1-W1PfoBDnENEEbPpCZGpKOabjwU39X65y_7-a1JmtxFSantQpUWbEqlrCcy4FgwgNE_f23jbgZ4/s200/shadow_zapdos.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric/Flying</h3>
-          <h3><strong>Fast:</strong> Charge Beam, Shadow Claw, Metal Claw, Psycho Cut</h3>
-          <h3><strong>Charged:</strong> Drill Peck, Ancient Power, Zap Cannon, Thunderbolt, Thunder</h3>
-          <h3><strong>Elite :</strong> Thunder Shock</h3>
-          <h3>Shadow Zapdos has boosted attack power, making it even more effective in raids. Use Charge Beam(7) and Zap Cannon(140).</h3>
-        </div>
-      </div>
-    
-     <div class="card" aria-label="Excadrill Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2E7eC5HghwZ9VjzyGnUtFv9U9hdbEAtimczyjcrEYOWtodsgK93zasN7N2WiqFGbapdc2abFbBaWPaFHVBsQ_FZh0JSyoynMF-OUoouh69ItMvgqhv5_SFxHCZoTL7UJgeXhJ4oH-G1V81B8mUpkeKl2BVsO8Vk2GWbuGlvgtHBRY3S_ZzcttLmRoERY/s200/shadow_excadrill.webp');">
-        </div>
-        <div class="card-description">
-         <h3>Type: Ground/Steel</h3>
-          <h3><strong>Fast:</strong> Mud Slap, Mud Shot, Metal Claw</h3>
-          <h3><strong>Charged:</strong> Earthquake, Drill Run, Scorching Sands, Rock Slide, Iron Head</h3>
-          <h3>Shadow Excadrill has boosted attack power making it even more effective in Aerodactyl raids, use Mud Slap(19) and Earthquake(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Magnezone details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqUrLKMaGRUbtlADY44fx8yFXtBMiBQxS7HEGrSlDiSzO___H4dQ07J4bKpu4BqYVFfXUNeefveoyzR5eCobmZ75Jdt7AWg_DjyZmfwT5MIyYndNXcUOn8oLgQjPnpRnD6HwfsClvh4Vfv_Q9B_Bj5O2bWFgob_bokkviNa0LWet-QTRNzYtPjbSI05Z4/s200/shadow_magnezone.webp');">       
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric/Steel</h3>
-          <h3><strong>Fast:</strong> Spark, Charge Beam, Volt Switch, Metal Sound</h3>
-          <h3><strong>Charged:</strong> Flash Cannon, Zap Cannon, Wild Charge, Mirror Shot</h3>
-          <h3>Shadow Magnezone has boosted attack power making it even more effective in raids, use Volt Switch(13) and Zap Cannon(140).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Feraligator details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghREfqYRvHzkEmC9d9bCtznfP8uclPO6F0TAXYkmyjkh9K7zq41C8mKs24GFhEg-kzeZbSKD1IfANPSpD2HAjtq8oiw67RRfg7EMMduw3n5yta8oBz0rE0Lb11d7mVWSRLKRs3n5hJ5Cjo-EbBSHQ0RP14odA7drVNewxwTIHhSc5m2dyB5UsEiPt4ymE/s200/shadow_feraligator.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Water</h3>
-<h3><strong>Fast :</strong> Shadow Claw, Waterfall, Ice Fang, Bite</h3>
-<h3><strong>Charged :</strong> Hydro Pump, Ice Beam, Crunch</h3>
-          <h3><strong>Elite :</strong> Hydro Cannon, Water Gun</h3>
-          <h3>Shadow Feraligator has boosted attack power, making it even more effective in raids. Use Waterfall(13) and Hydro Pump(135).</h3>
-        </div>
-      </div>
-    
-     <div class="card" aria-label="Empoleon Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigUh4w5ngsbGoNF8_jHkFUJH5dNr-1iobJ_9HOrUY5pkW3PP93F5fD_5es81WQpHYd0n7KSkNahtJ7fdGeyGBk7rtWcZvxfr4lSf4RBwr12YYJJeKIp9_rvgATVJR7INrrkazKi6miqc8jJWooX18SXnmN0b2vICQnkwE0Xx1gaA_O-wsGbVWBEU1jg-Q/s200/shadow_empoleon.webp');">        
-        </div>
-        <div class="card-description">
-         <h3>Type: Steel/Water</h3>
-          <h3><strong>Fast :</strong> Metal Claw, Steel Wing, Waterfall</h3>
-          <h3><strong>Charged :</strong> Drill Peck, Flash Cannon, Hydro Pump, Blizzard</h3>
-          <h3><strong>Elite : </strong>Hydro Cannon</h3>
-          <h3>Shadow Empoleon has boosted attack power making it even more effective in Aerodactyl raids, use Steel Wing(14) and Hydro Pump(135).</h3>
-        </div>
-      </div>
-  </div>
-  </section>
-    
-    <hr style="border: none; height: 2px; background-color: red;">
- 
-<section id="mega">
-  <div class="grid-container">     
-    
-    <div class="card" aria-label="Primal Kyogre Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6hTxKJRZ9W6pdkcB45zbWbS8hFi26WuK0fXE4coI3evVIJEb6JQ-XGR9D2V7fnyyEARm7LHhEdsrwOVCNVTyfBZ0upHvqLq2lp1no56zhDLj8oh_5a0PfrE6GqztZLu3nACtV18FRYHRRV_zwZVN4DLvuBOeibwJgCyjNLwtz05N6-5QxQ0aPVLaeB48/s200/primal_kyogre.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Water</h3>
-<h3><strong>Fast : </strong>Waterfall</h3>
-          <h3><strong>Charged : </strong>Hydro Pump,Surf, Thunder, Blizzard</h3>
-  <h3><strong>Elite :</strong>Origin Pulse</h3>
-          <h3>Primal Kyogre is powerhouse in raids With boosted stats, use Waterfall(13) and Hydro Pump(135).</h3>
-        </div>
-      </div>
-    
-     <div class="card" aria-label="Gyarados Details">
- <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfOfEu_VSob2kCUFUJQ8VNfL2_33_Xrcj9L9BJQWmsHDqqOiOH5Piy9TtUvHaH5S_Wjj36qINq-HEvj3ltvjUkfIZ0EiFZ8PErPCugxdPT5RibsaJfRRUAOjrPwteGkwBnGIXoDSpIktrfN16nzBIoSVgqJhIyFLSE2KMUZrRmDlUftS3Fv-y_OdP8whU/s200/mega_gyarados.webp');">
-        </div>
-        <div class="card-description">
-         <h3>Type: Water/Flying</h3>
-<h3><strong>Fast : </strong>Waterfall, Dragon Breath, Bite</h3>
-<h3><strong>Charged : </strong> Hydro Pump, Outrage, Twister, Crunch</h3>
-            <h3><strong>Elite : </strong>Dragon Tail, Aqua Tail, Dragon Pulse</h3>
-          <h3>Mega Gyarados is a powerhouse in raid guide, use Dragon Tail(14) and Hydro Pump(135).</h3>
-        </div>
-      </div>
-    
-     <div class="card" aria-label="Manectric Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0nqSLfjbBfLEg-iQ7Q9h7NfJacaQ6anwEBmQYVkOmBbI9gCTPiuOinAvlN588LYsQbD6i4Wfw4FhfT_q7jPS09m9T84eBnNbp1WmJL4IQ9tDvCoqxANtYc4jLhIbqIpBx4ED0hVynau02SKfuZUcy_nWG6a_ExYkoZ6OCXodD0FKx1ldqcmsdjP0oqPA/s200/mega_manectric.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Electric</h3>
-          <h3><strong>Fast : </strong>Charge Beam, Snarl, Thunder Fang</h3>
-          <h3><strong>Charged : </strong>Flame Burst, Overheat, Thunder, Wild Charge, Psychic Fangs</h3>
-          <h3>Best moveset of Manectric are Snarl(11) and Overheat(160).</h3>
-        </div>
-      </div>
-    
-    <div class="card" aria-label="Diancie details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL3x2-yLKOINEJRQaS3vi37anC1-1KWQbrD6Kt6MuvLZGwwJuUHDSw07yLnwscdFft9nH6n66gsBsLA2yFEI2rykjNFyqd8ocsRwo2-XSf4fLlnwjbOo9W16hJAPiVeLfnbXdXpqYb3Wg2UJdfRsn1ZvlBX-RCkY2tK4x5zFlIlTqJ_VUTsPYcchHRLPY/s200/mega_diancie.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Rock/Fairy</h3>
-          <h3><strong>Fast :</strong> Tackle, Rock Throw</h3>
-          <h3><strong>Charged  :</strong> Rock Slide, Power Gem, Moonblast</h3>
-          <h3>Best moveset of Diancie are Rock Throw(13) and Moonblast(130)</h3>
-        </div>
-      </div>
-    
-   <div class="card" aria-label="Blastoise details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPXFhvzhufLlB7iPOEB534iZzTiiHM-dqTn0t5FqdKvCxOYZf70h4M_bM7f3oNo_Rmc3hTuIALzWK6hqKAuTP3bQrYgK3Rry-rPiTNKw9mvQO2nl03DzCEdSrE3xGgBvMvkW6CZKUBOt_gjpjz85lMjNWI7zO1VLWrrlpuceqLJu0Iv2N2-ZX1C8tFqWc/s200/mega_blastoise.webp');">
-        </div>
-        <div class="card-description">
-          <h3>Type: Water</h3>
-          <h3>Fast<strong> :</strong> Bite, Water Gun, Rollout</h3>
-          <h3>Charged<strong> :</strong> Flash Cannon, Ice Beam, Hydro Pump, Skull Bash</h3>
-          <h3>Elite<strong> :</strong> Hydro Cannon</h3>
-<h3>Mega Blastoise is a powerhouse in raids. With boosted stats, use Rollout(15) and Hydro Pump(135).</h3>
-        </div>
-      </div>
+ <!--<section class="grid two">
+      <aside class="card" aria-label="Table of contents">
+        <h2>Quick Navigation</h2>
+        <nav class="toc">
+          <a href="#counters">Best Counters</a>
+          <a href="#moves">Moves & Threats</a>
+          <a href="#weather">Weather Effects</a>
+          <a href="#tips">Battle Tips</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </aside>-->
 
-   <div class="card" aria-label=" Swampert Details">
-        <div class="card-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgGHEI4tSFCAvzarkWar73_w0rHnEijbiz1p_fn3bWhloiDRURx6MAIG4UmjMRzWh6kaOXkZ2kyLGcSPXFjEJcRF06DxujvmeiyDl9K2SVJnhswo_kHH02esSff28iCK_a0nnrQjpfVjAOf1VqatBSXzyU-KTAB9l6XDB68QxJ783f0XEAOTf2dcImXis/s200/mega_swampert.webp');">
+    <div class="grid">
+      <article class="card" id="guide">
+        <h2>Quick facts</h2>
+        <div class="kvs" aria-hidden="false">
+         <div><strong>Species:</strong> Aerodactyl (Legendary)</div>
+          <div><strong>Types:</strong> Rock / Flying</div>
+          <div><strong>Primary weaknesses:</strong> Rock, Steel, Water, Electric, Ice</div>
+          <div><strong>Recommended lobby:</strong> 6–40 trainers depending on Max difficulty &amp; event bonuses</div>
         </div>
-        <div class="card-description">
-         <h3>Type: Water/Ground</h3>
-  <h3>Fast<strong>:</strong> Mud Shot, Water Gun</h3>
-  <h3>Charge<strong>:</strong> Sludge, Sludge Wave, Earthquake, Surf, Muddy Water</h3>
-    <h3>Elite<strong>:</strong> Hydro Cannon</h3>
-<h3>Mega Swampert is a powerhouse in raids. With boosted stats, use Water Gun(5) and Sludge Wave(105).</h3>
-        </div>
-      </div>
 
-    <div class="card" aria-label="Tyranitar Details">
-<div class="card-image" style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoqVK0dGil2H-HdhG1ISXyE1pcq4b6qEXFYYUnhqML8jGd6zykrjrHLuZoFybm6SbDNcpgs6fA_iEg57InxFZrNJp3t7FN8OeOE_nFlsdJSoSmkhEODMz0oCObNaHPqJRtU-avJPqFzVWz1uOO4SCNujIphMa1hwQFZ0LEQR7meBQ0xGwOuuTxG69LCiw/s200/mega_tyranitar.webp');">
-</div>
-<div class="card-description">
-<h3>Type: Rock/Dark</h3>
-<h3>Fast<strong> :</strong> Iron Tail, Bite</h3>
- <h3>Charged<strong> : </strong>Stone Edge, Fire Blast, Crunch, Brutal Swing</h3>
-   <h3>Elite<strong>:</strong> Smack Down</h3>
-<h3>Mega Tyranitar is a powerhouse in raids. With boosted stats, use Iron Tail(14) and Fire Blast(140).</h3>
+        <h2 id="what-is">About Gigantamax Venusaur in GO</h2>
+        <p class="note">
+           Cobalion has been featured in Max Battle Day / Water Festival events (example: July 19, 2025 Max Battle Day). Check official event posts for exact dates and paid Timed Research bonuses. :contentReference[oaicite:1]{index=1}
+
+        </p>
+
+        <h2 id="weaknesses">Weaknesses & resistances</h2>
+        <div class="tbl" aria-label="Weaknesses table">
+          <table>
+           <thead><tr><th>Category</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Weak to</strong></td>
+                <td>           
+                  <img class="type-ico" src="/images/types/rock.webp" alt="Rock"> Rock •
+                  <img class="type-ico" src="/images/types/steel.webp" alt="Steel"> Steel •
+                  <img class="type-ico" src="/images/types/water.webp" alt="Water"> Water •
+                  <img class="type-ico" src="/images/types/electric.webp" alt="Electric"> Electric •
+                  <img class="type-ico" src="/images/types/ice.webp" alt="Ice"> Ice 
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Resists / neutral</strong></td>
+                <td>Resists Normal, Flying, Poison, Ground, Bug, Fire</td>
+              </tr>
+             <!-- <tr>
+                <td><strong>Notes</strong></td>
+                <td>Gigantamax bosses have large HP pools and often use Max/G-Max moves with battlefield effects. Expect longer fights and coordinate Revives/Max Revives. :contentReference[oaicite:2]{index=2}</td>
+              </tr>-->
+            </tbody>
+          </table>
         </div>
-      </div>
-</div> 
-  </section>
-  
-  
-  <hr style="border: none; height: 2px; background-color: red;">
-    
-     <section id="moveset" class="section">
-      <h2>Aerodactyl Moveset</h2>
-      <p><strong>Fast Moves:</strong> Rock Throw (Rock), Steel Wing (Steel), Bite (Dark)</p>
-      <p><strong>Charged Moves:</strong> Hyper Beam (Normal), Earth Power (Ground), Ancient Power (Rock), Rock Slide (Rock), Iron Head (Steel)</p>
+
+        <h2 id="moveset">Common moveset & G-Max notes</h2>
+        <p>
+          Community sim and database results list top moves for Gigantamax Venusaur as <strong>Vine Whip</strong> (fast) + <strong>G-Max Vine Lash</strong> (charged) for maximum DPS/TDO in many rotations. It can roll other Grass/Poison charged moves (e.g., Frenzy Plant in theoretical sets), but G-Max Vine Lash is the signature effect to watch for. Sunny weather boosts Grass moves; be careful with weather that amplifies its output. 
+        </p>
+
+        <h2 id="counters">Top counters (images included)</h2>
+        <p>
+          Typical fast moves: <strong>Waterfall</strong> or <strong>Dragon Breath</strong> or <strong>Bite</strong>. 
+        </p>
+
+       <!-- <h2 id="counters">Top counters (images included)</h2>
+        <p style="color:var(--muted)">Primary strategy: Electric & Grass counters first; add Rock or Fighting if the boss carries mixed coverage. Host these images locally in <code>images/</code> and the type icons in <code>/images/types/</code>.</p>-->
+
+        <div class="tbl" aria-label="Gigantamax Counters table">
+          <table>
+            <thead>
+              <tr>
+                <th>Pokémon</th>
+                <th>Fast Move</th>
+                <th>Charged Move(s)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/dusk_mane_necrozma.webp" alt="Dusk Mane Necrozma"><strong>Dusk Mane Necrozma</strong></div>
+                </td>
+                <td>Shadow Claw / Metal Claw / Psycho Cut</td>
+                <td>Dark Pulse / Iron Head / Future Sight / Outrage / Sunsteel Strike</td>
+                <td>-</td>
+                <td>Shadow Claw / Metal Claw (6) and Sunsteel Strike (230)</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/kyogre.webp" alt="Kyogre"><strong>Kyogre</strong></div>
+                </td>
+                <td>Waterfall</td>
+                <td>Hydro Pump / Thunder / Blizzard</td>
+                <td>Origin Pulse</td>
+                <td>Waterfall (13) and Hydro Pump (135)</td>
+             </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/xurkitree.webp" alt="Xurkitree"><strong>Xurkitree</strong></div>
+                </td>
+                <td>Thunder Shock / Spark</td>
+                <td>Discharge / Thunder / Power Whip / Dazzling Gleam</td>
+                <td>-</td>
+                <td>Thunder Shock / Spark (13) and Thunder / Dazzling Gleam (100)</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/melmetal.webp" alt="Melmetal"><strong>Melmetal</strong></div>
+                </td>
+                <td>Thunder Shock</td>
+                <td>Hyper Beam / Superpower / Rock Slide / Flash Cannon /  Thunderbolt</td>
+                <td>Double Iron Bash</td>
+                <td>Thunder Shock (4) and Hyper Beam(150).</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/metagross.webp" alt="Metagross"><strong>Metagross</strong></div>
+                </td>
+                <td>Fury Cutter /  Bullet Punch / Zen Headbutt</td>
+                <td>Earthquake / Flash Cannon / Psychic</td>
+                <td>Meteor Mash</td>
+                <td>Zen Headbutt (11) and Earthquake (140)</td>
+              </tr>
+
+             <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/zekrom.webp" alt="Zekrom"><strong>Zekrom</strong></div>
+                </td>
+                <td>Dragon Breath /  Charge Beam </td>
+                <td>Flash Cannon / Wild Charge / Outrage / Crunch / Fusion Bolt</td>
+                <td>-</td>
+                <td>Charge Beam (7) and Fusion Bolt (140)</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tbl" aria-label="Gigantamax Counters table">
+          <table>
+            <thead>
+              <tr>
+                <th>Pokémon</th>
+                <th>Fast Move</th>
+                <th>Charged Move(s)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_raikou.webp" alt="Shadow Raikou"><strong>Shadow Raikou</strong></div>
+                </td>
+                <td>Thunder Shock / Volt Switch</td>
+                <td>Shadow Ball / Thunder / Thunderbolt / Wild Charge</td>
+<td>-</td>
+                <td>Volt Switch (13) and Shadow Ball / Thunder (100)</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_metagross.webp" alt="Shadow Metagross"><strong>Shadow Metagross</strong></div>
+                </td>
+                <td>Fury Cutter / Bullet Punch / Zen Headbutt</td>
+                <td>Earthquake / Fash Cannon / Psychic</td>
+<td>Meteor Mesh</td>
+<td>-</td>
+                <td>Zen Headbutt (11) and Earthquake (140)</td>
+             </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_mewtwo.webp" alt="Shadow Mewtwo"><strong>Shadow Mewtwo</strong></div>
+                </td>
+                <td>Psycho Cut / Confusion</td>
+                <td>Focus Blast / Flamethrower / Thunderbolt / Psychic/ Ice Beam</td>
+<td>Shadow Ball / Psystrike / Hyper Beam </td>
+                <td>Confusion (19) and Hyper Beam (150)</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_rampardos.webp" alt="Shadow Rampardos"><strong>Shadwo Rampardos</strong></div>
+                </td>
+                <td>Zen Headbutt / Smack Down</td>
+                <td>Rock Slide / Flamethrower / Outrage</td>
+                <td>-</td>
+                <td>Smack Down (13) and Outrage (110)</td>
+              </tr>
+
+              <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_electivire.webp" alt="Shadow Electivire"><strong>Shadow Electivire</strong></div>
+                </td>
+                <td>Low Kick / Thunder Shock</td>
+                <td>Thunder Punch / Wild Charge / Thunder / Ice Punch</td>
+<td>Flamethrower</td>
+                <td>Low Kick (5) and Thunder (100)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_swampert.webp" alt="Shadow Swampert"><strong>Shadow Swampert</strong></div>
+                </td>
+                <td>Mud Shot / Water Gun</td>
+                <td>Sludge / Sludge Wave / Earthquake / Surf / Muddy Water</td>
+<td>Hydro Cannon</td>
+                <td>Water Gun (5) and Sludge Wave (105)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_kyogre.webp" alt="Shadow Kyogre"><strong>Shadow Kyogre</strong></div>
+                </td>
+                <td>Waterfall</td>
+                <td>Hydro Pump / Thunder / Surf / Blizzard</td>
+                <td>Origin Pulse
+                <td>Waterfall (13) and Hydro Pump (135)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_rhyperior.webp" alt="Shadow Rhyperior"><strong>Shadow Rhyperior</strong></div>
+                </td>
+                <td>Mud Slap / Smack Down</td>
+                <td>Skull Bash / Superpower / Earthquake / Stone Edge / Surf / Breaking Swipe</td>
+                <td>Rock Wrecker</td>
+                <td>Mud Slap (19) and Earthquake (140)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_luxray.webp" alt="Shadow Luxray"><strong>Shadow Luxray</strong></div>
+                </td>
+                <td>Hidden Power / Spark / Snarl</td>
+                <td>Hyper Beam / Crunch / Wild Charge</td>
+<td>Psychic Fangs</td>
+                <td>Hidden Power (15) and Hyper Beam (150)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_mamoswine.webp" alt="Shadow Mamoswine"><strong>Shadow Mamoswine</strong></div>
+                </td>
+                <td>Mud Slap / Powder Snow</td>
+                <td>Bulldoze / High Horsepower / Stone Edge / Avalanche / Icicle Spear</td>
+                <td>Ancient Power</td>
+                <td>Mud Slap (18) and High Horsepower / Stone Edge (105)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_kingler.webp" alt="Shadow Kingler"><strong>Shadow Kingler</strong></div>
+                </td>
+                <td>Metal Claw / Bubble</td>
+                <td>Vise Grip / X-Scissor / Water Pulse / Crabhammer / Razor Shell</td>
+                <td>Mud Shot</td>
+                <td>Bubble (10) and Crabhammer (85)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_zapdos.webp" alt="Shadow Zapdos"><strong>Shadow Zapdos</strong></div>
+                </td>
+                <td>Charge Beam /Shadow Claw / Metal Claw / Psycho Cut</td>
+                <td>Drill Peck / Ancient Power / Zap Cannon / Thunder / Thunderbolt</td>
+<td>Thunder Shock</td>
+                <td>Charge Beam (7) and Zap Cannon (140)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_excadrill.webp" alt="Shadow Excadrill"><strong>Shadow Excadrill</strong></div>
+                </td>
+                <td>Mud Slap / Mud Shot / Metal Claw</td>
+                <td>Earthquake / Drill Run / Scorching Sands / Rock Slide / Iron Head</td>
+<td>-</td>
+                <td>Mud Slap (19) and Earthquake (140)</td>
+              </tr>
+
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_magnezone.webp" alt="Shadow Magnezone"><strong>Shadow Magnezone</strong></div>
+                </td>
+                <td>Charge Beam / Volt Switch / Metal Sound / Spark</td>
+                <td>Flash Cannon / Zap Cannon / Wild Charge / Mirrir Shot</td>
+<td>-</td>
+                <td>Volt Switch (13) and Zap Cannon (140)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_feraligator.webp" alt="Shadow Feraligator"><strong>Shadow Feraligator</strong></div>
+                </td>
+                <td>Shadow Claw / Waterfall / Ice Fang /Bite</td>
+                <td>Hydro Pump / Ice Beam / Crunch</td>
+<td>Hydro Cannon / Water Gun</td>
+                <td>Waterfall (13) and Hydro Pump (135)</td>
+              </tr>
+
+ <tr>
+              <td>
+                <div class="poke-cell">
+                <img class="poke-ico" src="images/shadow_empoleon.webp" alt="Shadow Empoleon"><strong>Shadow Empoleon</strong></div>
+                </td>
+                <td>Metal Claw / Steel Wing / Waterfall</td>
+                <td>Drill Peck / Flash Cannon / Hydro Pump / Blizzard</td>
+                <td>Hydro Cannon </td>
+                <td>Steel Wing (14) and Hydro Pump (135)</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+<div class="tbl" aria-label="Counters table with images">
+          <table>
+            <thead>
+              <tr>
+                <th>Pokémon</th>
+                <th>Fast Move</th>
+                <th>Charged Move(s)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_swampert.webp" alt="Mega Swampert"><strong>Mega Swampert</strong></div>
+                </td>
+                <td>Mud Shot / Water Gun</td>
+                <td>Sludge / Sludge Wave / Earthquake / Surf / Muddy Water</td>
+<td>Hydro Cannon</td>
+                <td>Water Gun (5) and Sludge Wave (105)</td>
+              </tr>
+
+              <!-- Fire -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/primal_kyogre.webp" alt="Primal Kyogre"><strong>Primal Kyogre</strong></div>
+                </td>
+                <td>Waterfall</td>
+                <td>Hydro Pump / Surf / Thunder / Blizzard</td>
+                <td>Origin Pulse </td>
+                <td>Waterfall (13) and Hydro Pump (135)/td>
+              </tr>
+
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_gyarados.webp" alt="Mega Gyarados"><strong>Mega Gyarados</strong></div>
+                </td>
+                <td>Waterfall / Dragon Breath / Bite</td>
+                <td>Hydro Pump / Outrage / Twister / Crunch</td>
+<td>Dragon Tail / Aqua Tail / Dragon Pulse</td>
+                <td>Dragon Tail (14) and Hydro Pump (135)</td>
+              </tr>
+
+              <!-- Flying -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_manectric.webp" alt="Mega Manectric"><strong>Mega Manectric</strong></div>
+                </td>
+                <td>Charge Beam / Snarl / Thunder Fang</td>
+                <td>Flame Burst / Thunder / Wild Cahrge / Psychic Fangs / Overheat</td>
+<td>-</td>
+                <td>Snarl (11) and Overheat (160)</td>
+              </tr>
+
+              <!-- Ice -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.webp" alt="Mega Diancie"><strong>Mega Diancie</strong></div>
+                </td>
+                <td>Tackle / Rock Throw</td>
+                <td>Rock Slide / Power Gem / Moonblast</td>
+<td>-</td>
+                <td>Rock Throw (13) and Moonblast (130)</td>
+              </tr>
+
+              <!-- Psychic -->
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_blastoise.webp" alt="Mega Blastoise"><strong>Mega Blastoise</strong></div>
+                </td>
+                <td>Bite / Water Gun / Rollout</td>
+                <td>Flash Cannon / Ice Beam / Hydro Pump / Skull Bash</td>
+<td>Hydro Cannon</td>
+                <td>Rollout (15) and Hydro Pump (135)</td>
+              </tr>
+
+              <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_swampert.webp" alt="Mega Swampert"><strong>Mega Swampert</strong></div>
+                </td>
+                <td>Mud Shot / Water Gun</td>
+                <td>Sludge / Sludge Wave / Earthquake / Surf / Muddy Water</td>
+<td>Hydro Cannon</td>
+                <td>Water Gun (5) and Sludge Wave (105)</td>
+              </tr>
+
+ <tr><td>
+                <div class="poke-cell"><img class="poke-ico" src="images/mega_tyranitar.webp" alt="Mega Tyranitar"><strong>Mega Tyranitar</strong></div></td>
+                
+                <td>Iron Tail / Bite</td>
+                <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
+<td>Smack Down </td>
+                <td>Iron Tail (14) and Fire Blast (140)</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+         <section class="ads card" aria-label="Advertisement">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+           data-ad-slot="2222222222"
+           data-ad-format="in-article"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </section>
-    
-     <hr style="background:red;height:2px;border:none;">
-    
-      <section id="faq" class="faq-section">
-     <h2>❓ Frequently Asked Questions</h2>
-      <details>
-        <summary>Can Mega Aerodactyl be shiny in Pokémon GO?</summary>
+
+<section class="grid two">
+      <article class="card" id="moves">
+        <h2>Moves & Threats</h2>
+        <p>Cobalion’s common fast moves are <strong>Metal Claw</strong> and <strong>Double Kick</strong>. Charged moves include <strong>Iron Head</strong>, <strong>Close Combat</strong>, and <strong>Stone Edge</strong>.</p>
+        <ul>
+          <li><strong>Iron Head</strong> hits Fairy/Rock hard but is resisted by Fire and Steel.</li>
+          <li><strong>Close Combat</strong> punishes Rock/Dark counters—favour Fire/Ghost here.</li>
+          <li><strong>Stone Edge</strong> threatens Fire/Flying—avoid Charizard if it’s present.</li>
+        </ul>
+      </article>
+
+<aside class="card" id="cp">
+        <h2>CP & IV (Catch)</h2>
+        <ul>
+          <li><strong>Perfect (L20):</strong> 1727 CP</li>
+          <li><strong>Weather Boost (L25):</strong> 2159 CP</li>
+          <li><span class="pill">Boosted by: <strong>Snow</strong> & <strong>Wind</strong></span></li>
+        </ul>
+        <p class="note">Use Pinap on poor IVs; switch to Golden Razz on 96%+ or Shiny.</p>
+      </aside>
+    </section>
+
+<section class="grid two">
+      <article class="card" id="moves">
+        <h2>Moves & Threats</h2>
+        <p>Cobalion’s common fast moves are <strong>Metal Claw</strong> and <strong>Double Kick</strong>. Charged moves include <strong>Iron Head</strong>, <strong>Close Combat</strong>, and <strong>Stone Edge</strong>.</p>
+        <ul>
+          <li><strong>Iron Head</strong> hits Fairy/Rock hard but is resisted by Fire and Steel.</li>
+          <li><strong>Close Combat</strong> punishes Rock/Dark counters—favour Fire/Ghost here.</li>
+          <li><strong>Stone Edge</strong> threatens Fire/Flying—avoid Charizard if it’s present.</li>
+        </ul>
+      </article>
+
+<aside class="card" id="cp">
+        <h2>CP & IV (Catch)</h2>
+        <ul>
+          <li><strong>Perfect (L20):</strong> 1727 CP</li>
+          <li><strong>Weather Boost (L25):</strong> 2159 CP</li>
+          <li><span class="pill">Boosted by: <strong>Snow</strong> & <strong>Wind</strong></span></li>
+        </ul>
+        <p class="note">Use Pinap on poor IVs; switch to Golden Razz on 96%+ or Shiny.</p>
+      </aside>
+    </section>
+
+    <section class="card" id="weather">
+      <h2>Weather Effects</h2>
+     <li><strong>Rain:</strong> Buffs Water—watch for big Hydro Pump; also boosts Electric damage.</li>
+          <li><strong>Cloudy:</strong> Buffs your <strong>Fighting</strong> attackers.</li>
+          <li><strong>Wind:</strong> Boosts the <em>caught</em> Gyarados (Water/Flying) and Dragon moves.</li>
+        </ul>
+        <p class="note">The Pokémon you catch is regular Gyarados; weather boost depends on its Water/Flying typing.</p>
+    </section>
+
+           <h2 id="tips">Practical battle tips</h2>
+      <h2>Battle Tips</h2>
+      <ul>
+        <li>Prioritize <strong>Electric</strong> teams; swap to Grass when Rain powers up both sides.</li>
+        <li>Run a matching Mega for teamwide damage bonuses and extra candies.</li>
+        <li>Charm/Fairy options are safe when Crunch is common and Outrage is absent.</li>
+        <li>Dodge one nuke (Hydro Pump/Outrage) to keep shadows alive and sustain DPS.</li>
+      </ul>
+
+        <h2 id="team-size">Team size & strategy</h2>
+        <p>
+          Max Battles scale with event. For Gigantamax Venusaur rotations, community sims and event reports recommend between <strong>6–30 trainers</strong> depending on whether players bring high-tier Dynamax/Gigantamax leads and weather boosts — festival windows may allow larger lobbies and easier clears. Coordinate Mega/Max leads where allowed to maximize early damage windows. 
+        </p>
+
+        <h2 id="catch">Catch CP & shiny notes</h2>
+        <p>
+          Catch CP ranges depend on IVs and weather — community databases list capture CP windows per IV for Gigantamax Venusaur; shiny variants have been available during some event windows. Always check the active event post for exact shiny odds and capture ranges. 
+        </p>
+
+        <section id="faq" aria-label="FAQ">
+          <h2>FAQ</h2>
+          <h3>Can Mega Aerodactyl be shiny in Pokémon GO?</h3>
         <p>Shiny Aerodactyl has been released in raids or events.</p>
-      </details>  
-        <details>
-        <summary>What are best moveset of Aerodactyl?</summary>
+   
+        <h3>What are best moveset of Aerodactyl?</h3>
         <p>Best moveset of Aerodactyl are Steel Wing which does damage of 14 under Fast Attack and Hyper Beam of 150 under Charged Attack.</p>
-      </details>
-        <details>
-         <summary> Are Shadow Pokémon better?</summary>
-        <p>Yes—Shadow forms have +20% attack, making them excellent choices if available.</p>
-      </details>
-        <details>
-       <summary>What is the best weather to raid Mega Aerodactyl?</summary>
-        <p>Rainy weather to boosts Water and Electric type counters. Snow weather to boosts Ice and Steel type counters.</p>
-      </details>
-    </section>
     
-    </main>
-  
-   <!-- FAQ Schema Markup for SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can Mega Aerodactyl be shiny in Pokémon GO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Shiny Aerodactyl has been released in raids or events."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best weather to raid Mega Aerodactyl?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Rainy weather to boosts Water and Electric type counters, Snow weather to boosts Ice and Steel type counters"
-      }
-    },
-     {
-      "@type": "Question",
-      "name": "Are Shadow Pokémon better?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes—Shadow forms have +20% attack, making them excellent choices if available."
-      }
-    },
-     {
-      "@type": "Question",
-      "name": "What are best moveset of Aerodactyl?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Best moveset of Aerodactyl are Steel Wing which does damage of 14 under Fast Attack and Hyper Beam of 150 under Charged Attack."
-      }
-    }
-  ]
-}
-</script>
-     
-  <hr style="border: none; height: 2px; background-color: red;">
-  
-  <h2>🔗 Related Guides</h2>
-<ul>
-  <li><a href="aggron.html">Aggron Raid Guide</a></li>
-  <li><a href="heracross.html">Heracross Raid Guide</a></li>
-  <li><a href="beedrill.html">Beedrill Raid Guide</a></li>
-  <li><a href="venusaur.html">Venusaur Raid Guide</a></li>
-   <li><a href="manectric.html">Manectric Raid Guide</a></li>
-</ul>
-  
-   <hr style="border: none; height: 2px; background-color: red;">
-  
-  <p>💬 Have you used Mega Aerodactyl in battle? Let us know your experience in the comments!</p>
-     
-  <hr style="border: none; height: 2px; background-color: red;">
-  
-  <div class="footer"> <p>© 2025 Aerodactyl Raid Guide.
-    <a href="terms&conditions">Terms & Conditions</a> |
-     <a href="about-us.html">About</a> | 
-              <a href="contact-us.html">Contact</a> | 
-              <a href="privacy-policy.html">Privacy Policy</a> |
-              <a href="disclaimer.html">Disclaimer</a>
+         <h3> Are Shadow Pokémon better?</h3>
+        <p>Yes—Shadow forms have +20% attack, making them excellent choices if available.</p>
+    
+       <h3>What is the best weather to raid Mega Aerodactyl?</h3>
+        <p>Rainy weather to boosts Water and Electric type counters. Snow weather to boosts Ice and Steel type counters.</p>
 
-    </p> </div> 
+        </section>
+</article>
 
-<p>Pokémon and all related content are © 1995–2025 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
-</p>
+ <aside class="card" aria-label="Sidebar">
+        <h2>Quick picks</h2>
+        <ul>
+          <li><strong>Best types:</strong> Fire, Flying, Ice, Psychic</li>
+          <li><strong>Bring:</strong> Gigantamax Cinderace, Reshiram, Moltres, Mamoswine, Mewtwo</li>
+          <li><strong>Support:</strong> Blissey or high-HP tanks for soaking G-Max DOT</li>
+        </ul>
 
-</body> </html> 
+        <div class="ads" role="complementary" aria-label="secondary ad">
+          <!-- Replace with second AdSense unit -->
+          Secondary ad slot — insert AdSense code here
+        </div>
+
+        <h3>Image notes</h3>
+        <p style="font-size:.92rem;color:var(--muted)">Use optimized webp/png images in <code>images/</code> sized ~256×256 and icons in <code>/images/types/</code> (22×22). Compress for performance.</p>
+      </aside>
+</div>
+   
+    <section class="card" style="margin-top:12px">
+      <h2>Responsible play</h2>
+      <p>Play safely, follow local rules and event guidelines, and confirm event windows on Niantic's official Pokémon GO news page. Event details and availability change — always verify on the current event page. :contentReference[oaicite:20]{index=20}</p>
+    </section>
+
+    <footer role="contentinfo">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <small>© <span id="yr">2025</span> Pokémon Gaming</small>
+        <nav style="font-size:.92rem"><a href="/privacy.html" rel="nofollow">Privacy</a> • <a href="/contact.html" rel="nofollow">Contact</a></nav>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
+  </script>
+</body>
+</html>

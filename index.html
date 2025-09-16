@@ -1,661 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<style>
-body,html {
-  margin:0;
-  padding:0;
-  font-family:'Segoe UI',sans-serif;
-  background:#f0f4ff;
-  color:#222;
-  min-height:100%
-}
-
-header {
-  padding:20px;
-  text-align:center;
-  background-color:rgba(0,0,0,.85);
-  color:#fff;
-}
-
-h1 {
-  margin:0 0 10px;
-}
-
-.custom-button-container {
-    text-align: center;
-    margin: 30px 0;
-  }
-
-  .custom-button {
-    background: linear-gradient(135deg, #ff3c00, #ffcc00); /* Red to yellow */
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    margin: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-
-  .custom-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-  }
-
-
-.filters {
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  margin:0;
-  flex-wrap:wrap;
-}
-
-.filters button {
-  padding:8px 14px;
-  border:none;
-  background:#1565C0;
-  color:#fff;
-  border-radius:20px;
-  cursor:pointer;
-  font-size:14px;
-}
-
-.filters button:hover {
-  background:#1565c0;
-}
-
-.search-box {
-  text-align:center;
-  padding:10px;
-}
-
-.search-box input {
-  padding:10px;
-  width:90%;
-  max-width:400px;
-  border-radius:5px;
-  border:1px solid #ccc;
-}
-
-.image-container {
- position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-width:100%;
-height:auto;
-}
-
-.image-container img {
-  display:block;
-  width:100%;
-  height:auto;
-}
-
-.overlay-text {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
-  padding: 10px;
-  font-weight: 700;
-  text-align: center;
-  font-size: 16px;
-  background: transparent !important;
-  line-height: 1.2;
-  min-height: 40px;  /* reserve space */
-  box-sizing: border-box;
-  will-change: transform;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-  padding:20px;
-  flex:1;
-}
-
-.card {
-  background:#f5f5f5;
-  border-radius:16px;
-  padding:16px;
-  box-shadow:0 4px 8px rgba(0,0,0,.1);
-  transition:transform .2s;
-  text-align:center;
-}
-
-.card:hover {
-  transform:translateY(-5px);
-}
-
-.card img {
-  max-width:100%;
-  height:auto;
-  border-radius:12px;
-  margin-bottom:12px;
-}
-
-.card a {
-  text-decoration:none;
-  color:#333;
-  font-weight:700;
-  font-size:18px;
-}
-
-.card-content {
-  padding:15px;
-}
-
-.card-content h2 {
-  margin:0 0 10px;
-  font-size:18px;
-}
-
-.card-content p {
-  font-size:14px;
-  color:#555;
-}
-
-.footer {
-  background-color:#0b0f19;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-  font-size:15px;
-  margin-top:auto;
-  width:100%;
-  box-sizing:border-box;
-}
-
-.footer a {
-  color:#ffeb3b;
-  text-decoration:none;
-  font-weight:500;
-  margin:0 6px;
-}
-
-.footer a:hover {
-  text-decoration:underline;
-}
-
-/* Inserted responsive-img styles here */
-img.responsive-img {
-width: 100%; /* scales down responsively */
-  height: auto;    /* keeps correct aspect ratio */
-  display: block; 
-border-radius:12px;
-}
-
-/* Media queries */
-@media (max-width:600px){
-  .filters {
-    flex-direction:column;
-    align-items:center;
-  }
-  img.responsive-img {
-   width: 100%;   /* full width on small screens */
-    height: auto; 
-  }
-}
-
-@media (min-width:1200px){
-  img.responsive-img {
-    max-width: 1000px;
-  }
-}
-</style>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="google-site-verification" content="BTG1RBCVB7"/>
-  <title>Pokémon GO Raid Guides – Pokémon Gaming</title>
-  <meta name="description" content="Explore Pokémon GO raid guides including Legendary, Mega, and Mythical bosses. Find best counters, weaknesses, CP ranges, and shiny info." />
-<meta content='pokemon, raid guide, mega raids, legendary raids, gigantamax, pokemongaming.in' name='keywords'/>
-  <link rel="canonical" href="https://www.pokemongaming.in/" />
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BTG1RBCVB7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BTG1RBCVB7');
-</script>
-
-  <!--<link rel="stylesheet" href="index.css">-->
-
-  
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5470141690688832"
-     crossorigin="anonymous"></script>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Gaming — Your Ultimate Raid Guide</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-<img src="/images/logo_225.webp" fetchpriority="high" alt="Pokémon Gaming Logo" width="150" height="150"/>
-    <h1>Pokémon GO Raid Guides</h1>
-    <p>Find best counters, weaknesses, CP ranges and shiny info.</p>
-  </header>
-<br>
-<br>
-
-<!--<div class="custom-button-container">
-  <a href="" class="custom-button">Type Effective Calculator</a>
-  <a href="" class="custom-button">Battle Simulator</a>
-</div>
-<br>-->
-
-  <script src="cachebuster.js" defer></script>
- 
-  <div class="filters">
-    <button onclick="filterCards('all')">All</button>
-    <button onclick="filterCards('legendary')">Legendary</button>
-    <button onclick="filterCards('mega')">Mega</button>
-    <button onclick="filterCards('gigantamax')">Gigantamax</button>
+  <header class="site-header">
+  <div class="container header-center">
+    <h1 class="logo">Pokémon Gaming</h1>
+    <nav class="nav">
+      <a href="homepage.html" class="active">Home</a>
+      <a href="all-raids.html">All Raids</a>
+    </nav>
   </div>
+</header>
 
-  <div class="search-box">
-    <input type="text" id="searchBox" placeholder="Search raids..." onkeyup="searchGuides()">
-  </div>
-
-  <div class="grid">
-
-    <div class="card" data-type="legendary">
-      <a href="cobalion.html" aria-label="Cobalion Raid Guide">
-<div class="image-container">
-        <img src="/images/cobalion.webp" fetchpriority="high" alt="Cobalion Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Cobalion Raid Guide</h2>
-          <p>Steel/Fighting Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
+  <section class="hero" style="background-image: url('images/hero-bg.webp');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Pokémon Gaming — Your Ultimate Raid Guide</h2>
+      <p>Get the latest strategies, counters, and updates for all raid bosses</p>
     </div>
-</div>
+  </section>
 
-<div class="card" data-type="mega">
-      <a href="slowbro.html" aria-label="Mega Slowbro Raid Guide">
-<div class="image-container">
-        <img src="/images/slowbro.webp" fetchpriority="high"  alt="Mega Slowbro Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h3>Mega Slowbro Raid Guide</h3>
-          <p>Water/Psychic Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">⭐ Featured Raids</h2>
+      <div class="raid-grid">
+
+      <div class="raid-card">
+        <img src="images/gigantamax_garbodor.webp" loading="lazy" alt="Gigantamax Garbodor Raid">
+        <div class="card-content">
+        <h3>Gigantamax Garbodor</h3>
+        <a href="gigantamax_garbodor.html" aria-label="Gigantamax Garbodor Raid Guide">View Guide</a>
+      </div>
+      </div>
+
+      </div>
     </div>
-</div>
+  </section>
 
-<div class="card" data-type="legendary">
-      <a href="ho-oh.html" aria-label="Ho-oh Raid Guide">
-<div class="image-container">
-        <img src="/images/ho-oh.webp" fetchpriority="high"  alt="Ho-Oh Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h3>Ho-Oh Raid Guide</h3>
-          <p>Fire/Flying Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
+  <section class="section alt-bg">
+      <h2 class="section-title">🆕 Latest Raids</h2>
+      <div class="raid-grid">
+       
+      <div class="raid-card">
+        <img src="images/mega_sharpedo.webp" loading="lazy" alt="Mega Sharpedo Raid">
+        <div class="card-content">
+        <h3>Mega Sharpedo</h3>
+        <a href="mega_sharpedo.html" aria-label="Mega Sharpedo Raid Guide">View Guide</a>
+      </div>
+      </div>
+
+    <div class="raid-card">
+        <img src="images/mega_camerupt.webp" loading="lazy" alt="Mega Camerupt Raid">
+        <div class="card-content">
+        <h3>Mega Camerupt</h3>
+        <a href="mega_camerupt.html" aria-label="Mega Camerupt Raid Guide">View Guide</a>
+      </div> 
+      </div> 
+
+<div class="raid-card">
+        <img src="images/mega_metagross.webp" loading="lazy" alt="Mega Metagross Raid">
+        <div class="card-content">
+        <h3>Mega Metagross</h3>
+        <a href="mega_metagross.html" aria-label="Mega Metagross Raid Guide">View Guide</a>
+      </div> 
+      </div> 
+       
+      </div>
+  </section>
+
+  <section class="section text-center">
+    <div class="container">
+      <a href="all-raids.html" class="btn large">➡️ See All Raids</a>
     </div>
-</div>
+  </section>
 
-<div class="card" data-type="legendary">
-      <a href="od.html" aria-label="Origin Dialga Raid Guide">
-<div class="image-container">
-        <img src="/images/dialga-origin.webp" fetchpriority="high"  alt="Dialga Origin Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Origin Dialga Raid Guide</h2>
-          <p>Steel/Dragon Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-<div class="card" data-type="legendary">
-      <a href="op.html" aria-label="Origin Palkia Raid Guide">
-<div class="image-container">
-        <img src="/images/origin-palkia.webp" fetchpriority="high"  alt="Palkia Origin Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Origin Palkia Raid Guide</h2>
-          <p>Water/Dragon Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="legendary">
-      <a href="solgaleo.html" aria-label="Solgaleo Raid Guide">
-<div class="image-container">
-          <img src="/images/solgaleo.webp" fetchpriority="high"  alt="Solgaleo Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Solgaleo Raid Guide</h2>
-          <p>Psychic/Steel Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="legendary">
-      <a href="virizion.html" aria-label="Virizion Raid Guide">
-<div class="image-container">
-       <img src="/images/virizion.webp" fetchpriority="high"  alt="Virizion Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Virizion Raid Guide</h2>
-          <p>Grass/Fighting Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="legendary">
-      <a href="terrakion.html" aria-label="Terrakion Raid Guide">
-<div class="image-container">
-        <img src="/images/terrakion.webp" fetchpriority="high"  alt="Terrakion Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Terrakion Raid Guide</h2>
-          <p>Rock/Fighting Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="legendary">
-      <a href="tapu-bulu.html" aria-label="Tapu Bulu Raid Guide">
-<div class="image-container">
-       <img src="/images/tapu-bulu.webp" fetchpriority="high"  alt="Tapu Bulu Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Tapu Bulu Raid Guide</h2>
-          <p>Grass/Fairy Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="uxie.html" aria-label="Uxie Raid Guide">
-<div class="image-container">
-         <img src="/images/uxie.webp" fetchpriority="high"  alt="Uxie Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Uxie Raid Guide</h2>
-          <p>Psychic Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="regigigas.html" aria-label="Regigigas Raid Guide">
-<div class="image-container">
-          <img src="/images/regigigas.webp" fetchpriority="high"  alt="Regigigas Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Regigigas Raid Guide</h2>
-          <p>Normal Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="regidrago.html" aria-label="Regidrago Raid Guide">
-<div class="image-container">
-        <img src="/images/regidrago.webp" fetchpriority="high"  alt="Regidrago Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Regidrago Raid Guide</h2>
-          <p>Dragon Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="regieleki.html" aria-label="Regieleki Raid Guide">
-<div class="image-container">
-       <img src="/images/regieleki.webp" fetchpriority="high"  alt="Regieleki Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Regieleki Raid Guide</h2>
-          <p>Electric Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="registeel.html" aria-label="Registeel Raid Guide">
-<div class="image-container">
-        <img src="/images/registeel.webp" fetchpriority="high"  alt="Registeel Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Registeel Raid Guide</h2>
-          <p>Steel Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="regice.html" aria-label="Regice Raid Guide">
-<div class="image-container">
-        <img src="/images/regice.webp" fetchpriority="high"  alt="Regice Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Regice Raid Guide</h2>
-          <p>Ice Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="regirock.html" aria-label="Regirock Raid Guide">
-<div class="image-container">
-        <img src="/images/regirock.webp" fetchpriority="high"  alt="Regirock Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Regirock Raid Guide</h2>
-          <p>Rock Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="mesprit.html" aria-label="Mesprit Raid Guide">
-<div class="image-container">
-       <img src="/images/mesprit.webp" fetchpriority="high"  alt="Mesprit Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Mesprit Raid Guide</h2>
-          <p>Psychic Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="legendary">
-      <a href="azelf.html" aria-label="Azelf Raid Guide">
-<div class="image-container">
-         <img src="/images/azelf.webp" fetchpriority="high"  alt="Azelf Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Azelf Raid Guide</h2>
-          <p>Psychic Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="legendary">
-      <a href="tapu-lele.html" aria-label="Tapu Lele Raid Guide">
-<div class="image-container">
-        <img src="/images/tapu-lele.webp" fetchpriority="high"  alt="Tapu Lele Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Tapu Lele Raid Guide</h2>
-          <p>Fairy/Psychic Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="legendary">
-      <a href="tapu-fini.html" aria-label="Tapu Fini Raid Guide">
-<div class="image-container">
-          <img src="/images/tapu-fini.webp" fetchpriority="high"  alt="Tapu Fini Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Tapu Fini Raid Guide</h2>
-          <p>Water/Fairy Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
- <div class="card" data-type="legendary">
-      <a href="lugia.html" aria-label="Lugia Raid Guide">
-<div class="image-container">
-        <img src="/images/lugia.webp" fetchpriority="high"  alt="Lugia Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Lugia Raid Guide</h2>
-          <p>Flying/Psychic Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
- <div class="card" data-type="legendary">
-      <a href="lunala.html" aria-label="Lunala Raid Guide">
-<div class="image-container">
-         <img src="/images/lunala.webp" fetchpriority="high"  alt="Lunala Raid Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Lunala Raid Guide</h2>
-          <p>Ghost/Psychic Legendary – Best counters, weaknesses & shiny info.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="manectric.html" aria-label="Mega Manectric Raid Guide">
-<div class="image-container">
-        <img src="/images/manectric.webp" fetchpriority="high"  alt="Mega Manectric Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Mega Manectric Raid Guide</h2>
-          <p>Electric Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-<div class="card" data-type="mega">
-      <a href="ampharos.html" aria-label="Mega Ampharos Raid Guide">
-<div class="image-container">
-        <img src="/images/ampharos.webp" fetchpriority="high"  alt="Mega Ampharos Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Mega Ampharos Raid Guide</h2>
-          <p>Electric Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="aerodactyl.html" aria-label="Mega Aerodactyl Raid Guide">
-<div class="image-container">
-        <img src="/images/aerodactyl.webp" fetchpriority="high"  alt="Mega Aerodactyl Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Mega Aerodactyl Raid Guide</h2>
-          <p>Rock/Flying Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="venusaur.html" aria-label="Mega Venusaur Raid Guide">
-<div class="image-container">
-          <img src="/images/venusaur.webp" fetchpriority="high"  alt="Mega Venusaur Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Mega Venusaur Raid Guide</h2>
-          <p>Grass/Poison Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="beedrill.html" aria-label="Mega Beedrill Raid Guide">
-<div class="image-container">
-       <img src="/images/beedrill.webp" fetchpriority="high"  alt="Mega Beedrill Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Mega Beedrill Raid Guide</h2>
-          <p>Bug/Poison Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="heracross.html" aria-label="Mega Heracross Raid Guide">
-<div class="image-container">
-        <img src="/images/heracross.webp" fetchpriority="high"  alt="Mega Heracross Guide" width="340" height="191" class="responsive-img"/>
-          <div class="overlay-text">
-          <h2>Mega Heracross Raid Guide</h2>
-          <p>Bug/Fighting Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="aggron.html" aria-label="Mega Aggron Raid Guide">
-<div class="image-container">
-         <img src="/images/aggron.webp" fetchpriority="high"  alt="Mega Aggron Guide" width="340" height="191" class="responsive-img"/>
-          <div class="overlay-text">
-          <h2>Mega Aggron Raid Guide</h2>
-          <p>Steel/Rock Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-    <div class="card" data-type="mega">
-      <a href="blastoise.html" aria-label="Mega Blastoise Raid Guide">
-<div class="image-container">
-         <img src="/images/blastoise.webp" fetchpriority="high"  alt="Mega Blastoise Guide" width="340" height="191" class="responsive-img" />
-        <div class="overlay-text">
-          <h2>Mega Blastoise Raid Guide</h2>
-          <p>Water Mega – Weaknesses, CP, shiny check and counters.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="gigantamax">
-      <a href="gigantamax-butterfree.html" aria-label="Gigantamax Butterfee Raid Guide">
-<div class="image-container">
-        <img src="/images/butterfree.webp" fetchpriority="high"  alt="Gigantamax Butterfree Guide" width="340" height="191" class="responsive-img" />
-        <div class="overlay-text">
-          <h2>Butterfree Raid Guide</h2>
-          <p>Bug/Flying Legendary – Best counters, weaknesses and weather boost.</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-     <div class="card" data-type="gigantamax">
-      <a href="gigantamax-lapras.html" aria-label="Gigantamax Lapras Raid Guide">
-<div class="image-container">
-       <img src="/images/lapras.webp" fetchpriority="high"  alt="Gigantamax Lapras Guide" width="340" height="191" class="responsive-img"/>
-        <div class="overlay-text">
-          <h2>Lapras Raid Guide</h2>
-          <p>Water/Ice Legendary – Best counters, weaknesses and weather boost.</p>
-        </div>
-      </a>
-    </div>
-</div>
- 
-  </div>
-
- <footer class="footer"> <p>© 2025 Pokémon Gaming – www.pokemongaming.in
-     <a href="terms&conditions">Terms & Conditions</a> |
+  <footer class="site-footer">
+   <p>© 2025 Pokémon Gaming – www.pokemongaming.in |
+     <a href="terms&conditions.html">Terms & Conditions</a> |
      <a href="about-us.html">About</a> | 
               <a href="contact-us.html">Contact</a> | 
               <a href="privacy-policy.html">Privacy Policy</a> |
@@ -664,28 +91,8 @@ border-radius:12px;
 
 <p>Pokémon and all related content are © 1995–2025 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
 </p>
-  
-  <script>
-    function filterCards(type) {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        if (type === 'all' || card.getAttribute('data-type') === type) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
 
-    function searchGuides() {
-      const query = document.getElementById('searchBox').value.toLowerCase();
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        card.style.display = title.includes(query) ? 'block' : 'none';
-      });
-    }
-  </script>
+  </footer>
 
 </body>
 </html>
