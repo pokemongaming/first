@@ -4,6 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+.nav {
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center;
+}
+.nav a {
+  flex: 1 1 auto; /* adapt width instead of breaking */
+  text-align: center; 
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+
 
 body, html {
   font-family: 'Segoe UI', sans-serif;
@@ -32,19 +48,6 @@ body, html {
 .site-header .logo {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.nav {
-  margin-top: 10px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s ease;
 }
 
 /* Header Centering */
@@ -93,7 +96,9 @@ body, html {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  min-height: 60vh;
+  height: auto;
+  padding: 40px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
