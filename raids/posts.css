@@ -62,11 +62,25 @@ nav a {
   margin-top: 16px;
 }
 
+/* Hero image with smooth resizing */
 .hero img {
-  width: 100%;
-  height: auto;
+  display: block;
+  margin: 0 auto;       /* center on desktop */
+  max-width: 800px;     /* desktop max width */
+  width: 100%;          /* responsive scaling */
+  height: auto;         /* maintain aspect ratio */
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;  /* keep full image visible */
+  transition: width 0.5s ease, max-width 0.5s ease; /* smooth resizing */
+}
+
+/* Mobile: stretch full width */
+@media (max-width: 768px) {
+  .hero img {
+    max-width: 100%;     /* override desktop max */
+    width: 100%;         /* force full width */
+    object-fit: cover;   /* fill width, may crop slightly */
+  }
 }
 
 .grid {
