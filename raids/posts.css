@@ -27,6 +27,7 @@ html, body {
   color: var(--ink);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 a { color: var(--brand); }
@@ -93,6 +94,13 @@ nav a {
   .grid { grid-template-columns: 2fr 1fr; }
 }
 
+/* Mobile: stack grid columns */
+@media(max-width: 979px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   background: var(--card-bg);
   border-radius: 12px;
@@ -114,6 +122,13 @@ h2 { margin-top: 12px; font-size: 1.1rem; }
   background: var(--kvs-bg);
   padding: 10px;
   border-radius: 8px;
+}
+
+/* Mobile: stack key-value boxes */
+@media(max-width: 768px){
+  .kvs {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tbl { overflow-x: auto; margin-top: 12px; }
@@ -154,6 +169,12 @@ th { background: var(--bg); }
   vertical-align: middle;
   object-fit: contain;
   margin-right: 6px;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .ads {
@@ -203,6 +224,13 @@ th { background: var(--bg); }
   position: static;
   bottom: 0;
   width: 100%;
+}
+
+/* Adjust font-size for small screens */
+@media(max-width: 480px){
+  html {
+    font-size: 14px;
+  }
 }
 
 code {
