@@ -4,28 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.nav {
-  flex-wrap: wrap; /* allow wrapping */
-  justify-content: center;
-}
-.nav a {
-  flex: 1 1 auto; /* adapt width instead of breaking */
-  text-align: center; 
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
 
-
-
-body, html {
+html, body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9fafb;
   color: #222;
   line-height: 1.6;
+  overflow-x: hidden; /* Prevent sideways scroll */
 }
 
 /* Container */
@@ -37,7 +22,7 @@ body, html {
 
 /* Header */
 .site-header {
-  background: #1e40af; /* deep blue */
+  background: #1e40af;
   color: #fff;
   padding: 15px 0;
   position: sticky;
@@ -45,12 +30,6 @@ body, html {
   z-index: 1000;
 }
 
-.site-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Header Centering */
 .header-center {
   display: flex;
   flex-direction: column;
@@ -60,31 +39,30 @@ body, html {
 }
 
 .header-center .logo {
-  margin: 0;
   font-size: 1.8rem;
   font-weight: bold;
+  margin: 0;
 }
 
+/* Navigation */
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .nav a {
-  text-decoration: none;
-  font-weight: 600;
+  flex: 1 1 auto;
+  text-align: center;
   color: #fff;
-  background: #2563eb; /* Blue background for better contrast */
+  text-decoration: none;
+  background: #2563eb;
   padding: 8px 14px;
   border-radius: 8px;
-  transition: background 0.3s;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
-
-.nav a:hover,
-.nav a.active {
-  background: #1e40af; /* Darker blue on hover/active */
-}
-
 
 .nav a:hover,
 .nav a.active {
@@ -97,7 +75,6 @@ body, html {
   background-size: cover;
   background-position: center;
   min-height: 60vh;
-  height: auto;
   padding: 40px 20px;
   display: flex;
   align-items: center;
@@ -108,11 +85,8 @@ body, html {
 
 .hero .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.6); /* Dark overlay for contrast */
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
@@ -136,7 +110,7 @@ body, html {
 }
 
 .alt-bg {
-  background: #eef2ff; /* very light blue for contrast */
+  background: #eef2ff;
 }
 
 .section-title {
@@ -151,7 +125,7 @@ body, html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-padding: 0 10px;
+  padding: 0 10px;
 }
 
 .raid-card {
@@ -168,12 +142,25 @@ padding: 0 10px;
   transform: translateY(-5px);
 }
 
-.raid-card img {
+/* Image Container for proper aspect ratio */
+.raid-card .img-container {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
+.raid-card .img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Card Content */
 .card-content {
   padding: 15px;
   text-align: center;
@@ -208,21 +195,27 @@ padding: 0 10px;
 
 /* Footer */
 .site-footer {
+  width: 100%;
   background: #1e40af;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.site-footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .site-footer a {
-  color: #fff; /* white links */
+  color: #fff;
   text-decoration: none;
   margin: 0 5px;
 }
 
 .site-footer a:hover {
-  color: #dbeafe; /* light blue on hover */
+  color: #dbeafe;
   text-decoration: underline;
 }
 
@@ -234,9 +227,8 @@ padding: 0 10px;
   .hero p {
     font-size: 1rem;
   }
-}
 
-html, body {
-  overflow-x: hidden; /* stops sideways scrollbars */
+  .raid-card .img-container {
+    height: 140px;
+  }
 }
-
