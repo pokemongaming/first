@@ -26,7 +26,29 @@
     .date{font-size:13px; color:var(--accent);}
     ul.badge{display:flex; gap:8px; padding:0; list-style:none; margin:8px 0;}
     ul.badge li{background:var(--glass); padding:6px 8px; border-radius:999px; font-size:12px; color:var(--muted);}
-    footer{color:var(--muted); font-size:13px; margin-top:18px;}
+    .site-footer {
+      background: #1a202c;
+      color: #cbd5e0;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .site-footer a {
+      color: #f6e05e; /* Pokémon yellow */
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s;
+    }
+
+    .site-footer a:hover {
+      color: #faf089;
+    }
+
+    .footer-content p {
+      margin: 0.6rem 0;
+      font-size: 0.9rem;
+    }
     a.cite{color:var(--muted); text-decoration:underline dotted; }
     @media (max-width:520px){ header h1{font-size:18px} }
   </style>
@@ -188,17 +210,21 @@
       </ul>
     </section>
 
-    <footer class="card" style="background:transparent;border-top:1px solid rgba(255,255,255,0.03);">
-      <div style="margin-bottom:8px;">Notes & sources:</div>
-      <div class="meta">
-        This page summarizes confirmed Oct 2025 Pokémon GO events as reported by Niantic and major community outlets. For full, official event pages and complete in-game details (timed research, exact raid bosses, bonus specifics, ticket info), check the official Pokémon GO news site and the linked community references below.
-      </div>
-      <ul style="margin-top:10px; color:var(--muted);">
-        <li><a class="cite" href="#" onclick="return false;">Official Pokémon GO news — Community Day announcement (Solosis). </a></li>
-        <li><a class="cite" href="#" onclick="return false;">Pokémon GO October 2025 event calendar (community timeline). </a></li>
-        <li><a class="cite" href="#" onclick="return false;">Detailed month calendar / coverage (mein-mmo / restart / Serebii summaries). </a></li>
-      </ul>
-    </footer>
-  </div>
+    <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Pokémon Gaming. All rights reserved.</p>
+      <p>
+        <a href="terms&conditions.html">Terms & Conditions</a> |
+        <a href="contact-us.html">Contact</a> |
+        <a href="about-us.html">About</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="disclaimer.html">Disclaimer</a>
+      </p>
+      <p>Pokémon and all related content are © 1995–2025 Nintendo, Game Freak, and The Pokémon Company.  
+      All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
+
