@@ -56,9 +56,23 @@
   <h1>Mega Metagross Raid Guide – Pokémon GO</h1>
 </header>
 
-      <img src="images/mega_metagross.webp" alt="Mega Metagross" loading="lazy" width="1200" height="600">
+  <! --   <img src="images/mega_metagross.webp" alt="Mega Metagross" loading="lazy" width="1200" height="600">-->
     </section>
 
+<p id="last-updated"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-IN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
 
  <!--<section class="grid two">
       <aside class="card" aria-label="Table of contents">
