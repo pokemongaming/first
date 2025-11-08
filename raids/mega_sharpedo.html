@@ -45,6 +45,21 @@
      <!-- <img src="images/mega_sharpedo.webp" alt="Mega Sharpedo" loading="lazy" width="1200" height="600">-->
     </section>
 
+   <p id="last-updated"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-IN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
+
 <section>
       <p><strong>Mega Sharpedo</strong> is a dual-type <strong>Water/Dark</strong> Pokémon in Pokémon GO, known for its high Attack stat and glass-cannon nature. With its razor-sharp teeth and powerful Water-type moves, it can be a dangerous raid boss — but with the right counters and team composition, you can easily take it down.</p>
     </section>
