@@ -65,6 +65,20 @@
     <p>Face the mighty steel elephant — Gigantamax Copperajah, the powerhouse of Galar’s construction sites.</p>
 
 </header>
+<p id="last-updated"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-IN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
 
 
      <!-- <img src="images/gigantamax_copperajah_cover.webp" alt="Gigantamax Copperajah" loading="lazy" width="1200" height="600">-->
