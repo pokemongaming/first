@@ -24,6 +24,20 @@
     <p>Face the golden stretch cat of Galar — Gigantamax Meowth, the money-loving mascot with a record-breaking reach!</p>
 </header>
 
+<p id="last-updated"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-IN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
 
      <!-- <img src="images/gigantamax_meowth_cover.webp" alt="Gigantamax Meowth" loading="lazy" width="1200" height="600">-->
     </section>
