@@ -24,6 +24,20 @@
     <p>Master the Ice & Water-type melody Pokémon in both Pokémon GO and Sword & Shield raids.</p>
 
 </header>
+<p id="last-updated"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-IN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
 
 
      <!-- <img src="images/gigantamax_lapras_cover.webp" alt="Gigantamax Lapras" loading="lazy" width="1200" height="600">-->
