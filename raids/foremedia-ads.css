@@ -1,0 +1,136 @@
+/* foremedia-ads.css
+   Optimized, responsive CSS for ForeMedia ad placements on pokemongaming.in.
+   - Prevents layout shift (CLS) by reserving space
+   - Centers ads and keeps them responsive
+   - Supports ForeMedia default container IDs and generic .fm-ad slots
+   - Provides a friendly fallback box when an ad fails to serve
+   Install: <link rel="stylesheet" href="/path/to/foremedia-ads.css"> in your <head>
+*/
+
+/* Basic box model safety */
+#foremediaads-c1,
+#foremediaads-e1,
+#foremediaads-footer_float,
+.fm-ad,
+.ad-slot {
+  box-sizing: border-box;
+  width: 100%;               /* use full content column width */
+  display: flex;
+  justify-content: center;   /* center the ad iframe/ins */
+  align-items: center;
+  margin: 18px 0;
+  padding: 0 8px;            /* small horizontal breathing room */
+  position: relative;
+  z-index: 1;                /* ensure ad sits above background content */
+}
+
+/* Reserve vertical space to avoid CLS. Adjust heights for common unit sizes. */
+#foremediaads-c1.ad-slot,
+#foremediaads-e1.ad-slot,
+#foremediaads-footer_float.ad-slot,
+.fm-ad.ad-slot {
+  min-height: 250px;         /* desktop-friendly default */
+  max-width: 1100px;         /* match your .wrap max width */
+}
+
+/* Mobile: slightly smaller reserved box */
+@media (max-width: 767px) {
+  #foremediaads-c1.ad-slot,
+  #foremediaads-e1.ad-slot,
+  #foremediaads-footer_float.ad-slot,
+  .fm-ad.ad-slot {
+    min-height: 180px;
+    padding: 0 6px;
+  }
+}
+
+/* If ForeMedia serves smaller units (like 300x250 or responsive iframes)
+   allow the inner element to size naturally while outer preserves space */
+#foremediaads-c1 iframe,
+#foremediaads-e1 iframe,
+#foremediaads-footer_float iframe,
+.fm-ad iframe,
+#foremediaads-c1 ins,
+#foremediaads-e1 ins,
+#foremediaads-footer_float ins,
+.fm-ad ins {
+  width: 100% !important;    /* responsive width */
+  height: auto !important;   /* let the creative decide height */
+  min-height: 100px;         /* safety fallback */
+  max-width: 1100px;         
+  border: 0;
+}
+
+/* Provide a light placeholder if no ad is served. This shows the site visitor
+   that the area is reserved and prevents collapsing to zero height. ForeMedia
+   will replace this when an ad is available. */
+#foremediaads-c1.empty,
+#foremediaads-e1.empty,
+#foremediaads-footer_float.empty,
+.fm-ad.empty {
+  background: linear-gradient(180deg, rgba(240,247,255,0.6), rgba(246,250,240,0.6));
+  border: 1px dashed rgba(150,150,150,0.18);
+  color: rgba(80,80,80,0.9);
+  font-size: 0.9rem;
+  padding: 12px;
+  text-align: center;
+  min-height: 160px;
+}
+
+/* Small 'Advertisement' label (visually accessible but unobtrusive). If you
+   already render your own label, you can remove these rules. */
+#foremediaads-c1.empty::before,
+#foremediaads-e1.empty::before,
+#foremediaads-footer_float.empty::before,
+.fm-ad.empty::before {
+  content: "Advertisement";
+  display: block;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: rgba(60,60,60,0.7);
+}
+
+/* Floating/footer ad specifics: allow the footer_float to stick but not cover
+   essential UI. Keep mobile behavior conservative. */
+#foremediaads-footer_float {
+  pointer-events: auto;
+}
+
+@media (min-width: 980px) {
+  /* Desktop: allow slightly taller ad area for leaderboard/large units */
+  #foremediaads-c1.ad-slot,
+  #foremediaads-e1.ad-slot {
+    min-height: 280px;
+  }
+}
+
+/* Ensure existing .ads class from your main css doesn't collapse the container */
+.ads {
+  min-height: 120px; /* if you apply .ads to ad containers, this prevents collapse */
+}
+
+/* Defensive rules: avoid accidental hiding from future styles */
+#foremediaads-c1,
+#foremediaads-e1,
+#foremediaads-footer_float,
+.fm-ad,
+.ad-slot {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+/* Helpful utility you can add via JS when an ad has loaded to remove placeholder.
+   Example (pseudo): document.getElementById('foremediaads-c1').classList.remove('empty')
+*/
+
+/* Accessibility: ensure ad containers are reachable by screen readers (if needed)
+   but still announced as advertisements. You can add aria-label in the HTML too. */
+[role="complementary"] .ad-slot,
+.ad-slot[aria-label^="Advertisement"] {
+  outline: none;
+}
+
+/* End of foremedia-ads.css */
