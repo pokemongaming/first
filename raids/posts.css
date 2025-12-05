@@ -1,51 +1,52 @@
-/* ============= ROOT COLORS ============= */
+/* ===========================
+   GLOBAL THEME VARIABLES
+   =========================== */
 :root {
-  --bg: #f6fff7;
-  --card: #ffffff;
-  --ink: #06221f;
-  --muted: #455a52;
-  --brand: #2f855a;
-  --ok: #16a34a;
-  --warn: #b45309;
-  --ring: 0 10px 30px rgba(47,133,90,.06);
-  --hero-bg: #e6f7ff;
-  --card-bg: #fffbea;
-  --kvs-bg: #f0fff6;
-  --ads-bg: #f9f9ff;
-  --note-bg: #fff5f5;
-  --tip-bg: #f0fff4;
-  --footer-bg: #1a1a1a;
+  --bg:#f6fff7;
+  --card:#ffffff;
+  --ink:#06221f;
+  --muted:#455a52;
+  --brand:#2f855a;
+  --ok:#16a34a;
+  --warn:#b45309;
+  --ring:0 10px 30px rgba(47,133,90,.06);
+  --hero-bg:#e6f7ff;
+  --card-bg:#fffbea;
+  --kvs-bg:#f0fff6;
+  --ads-bg:#f9f9ff;
+  --note-bg:#fff5f5;
+  --tip-bg:#f0fff4;
+  --footer-bg:#1a1a1a;
 }
 
-/* ============= GLOBAL ============= */
+/* Reset */
 * {
   box-sizing: border-box;
 }
-
 body, html {
   margin: 0;
   padding: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
   line-height: 1.6;
-  width: 100%;
-  overflow-x: hidden;
 }
+a { color: var(--brand); }
 
-a {
-  color: var(--brand);
-}
-
-/* ============= HEADER ============= */
+/* ===========================
+   HEADER
+   =========================== */
 header {
-  background: linear-gradient(90deg, #1f6f5a, #2fa67a);
+  background: linear-gradient(90deg,#1f6f5a,#2fa67a);
   color: #fff;
   padding: 14px;
   border-radius: 8px;
 }
+.brand { font-weight: 700; }
 
-/* ============= HERO ============= */
+/* ===========================
+   HERO
+   =========================== */
 .hero {
   background: var(--hero-bg);
   border-radius: 12px;
@@ -55,7 +56,6 @@ header {
   gap: 12px;
   margin-top: 16px;
 }
-
 .hero img {
   width: 100%;
   height: auto;
@@ -63,22 +63,35 @@ header {
   object-fit: cover;
 }
 
-/* ============= GRID ============= */
+/* ===========================
+   GRID
+   =========================== */
 .grid {
   display: grid;
   gap: 16px;
   margin-top: 14px;
 }
 
-/* ============= TABLE OF CONTENTS ============= */
+/* ===========================
+   RESPONSIVE FIXES
+   =========================== */
+@media (max-width:768px) {
+  header h1 { font-size: 20px; }
+  nav { flex-direction: column; }
+
+  .raid-card h3 { font-size: 16px; }
+  .raid-card p { font-size: 13px; }
+}
+
+/* ===========================
+   TABLE OF CONTENTS
+   =========================== */
 .toc {
   background: #f0fdf4;
   border-left: 5px solid var(--brand);
   padding: 1rem;
   margin: 1rem 0;
-  width: 100%;
 }
-
 .toc a {
   display: block;
   color: var(--brand);
@@ -86,7 +99,9 @@ header {
   margin: 0.2rem 0;
 }
 
-/* ============= AD SLOT ============= */
+/* ===========================
+   ADS STYLE
+   =========================== */
 .ad-slot {
   min-height: 100px;
   display: block;
@@ -99,37 +114,27 @@ header {
   margin: 1rem 0;
   border: 1px dashed #16a34a;
 }
+.ad-slot.empty::before { content: "Advertisement"; }
 
-.ad-slot.empty::before {
-  content: "Advertisement";
-}
-
-/* ============= FOOTER ============= */
+/* ===========================
+   FOOTER
+   =========================== */
 .site-footer {
   width: 100%;
-  background: #1a202c;
-  color: #cbd5e0;
-  padding: 2rem 1rem;
-  text-align: center;
-  margin-top: 3rem;
+  background: #0f172a;
+  color: #fff;
+  padding: 20px;
+}
+.footer-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 15px;
 }
 
-.site-footer a {
-  color: #f6e05e;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.site-footer a:hover {
-  color: #faf089;
-}
-
-.footer-content p {
-  margin: .6rem 0;
-  font-size: .9rem;
-}
-
-/* ============= AUTHOR BOX ============= */
+/* ===========================
+   AUTHOR BOX
+   =========================== */
 .author-box {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -137,29 +142,58 @@ header {
   border-radius: 12px;
 }
 
-/* ============= TABLES / POKEMON UI ============= */
+/* ===========================
+   CARD STYLE
+   =========================== */
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--ring);
+}
+
+/* Typography */
+h1 { margin: 0; font-size: 1.6rem; }
+h2 { margin-top: 12px; font-size: 1.1rem; }
+
+/* KVS SECTION */
+.kvs {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+.kvs div {
+  background: var(--kvs-bg);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* ===========================
+   TABLES
+   =========================== */
 .tbl {
   overflow-x: auto;
   margin-top: 12px;
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
 }
-
 td, th {
   padding: 10px;
   border-bottom: 1px solid #e9f3ee;
   text-align: left;
+  vertical-align: middle;
 }
+th { background: var(--bg); }
 
+/* Pokémon Cells */
 .poke-cell {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .poke-ico {
   width: 100px;
   height: 100px;
@@ -169,7 +203,6 @@ td, th {
   border: 1px solid #eef8f2;
   padding: 6px;
 }
-
 .type-ico {
   width: 22px;
   height: 22px;
@@ -177,50 +210,60 @@ td, th {
   margin-right: 6px;
 }
 
-/* ============= RESPONSIVE @MEDIA (FIXED!) ============= */
-@media (max-width: 768px) {
-
-  header h1 {
-    font-size: 20px;
-  }
-
-  .hero img,
-  .header-image,
-  .featured-image img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  /* Full stretch content */
-  body, html, .content, article {
-    padding: 0 12px !important;
-    width: 100% !important;
-  }
-
-  .toc {
-    width: 100% !important;
-  }
-
-  .author-box {
-    width: 100% !important;
-  }
-
-  .ad-slot {
-    width: 100% !important;
-    min-height: auto;
-    line-height: normal;
-    padding: 20px 0;
-  }
-
-  table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  footer {
-    text-align: center;
-  }
+/* ===========================
+   NOTE BOX
+   =========================== */
+.note {
+  background: var(--note-bg);
+  border-left: 4px solid var(--warn);
+  padding: 10px;
+  border-radius: 8px;
 }
 
-/* END */
+/* Last Updated */
+#last-updated {
+  font-size:.9em;
+  color:#777;
+  font-style:italic;
+  margin-top:10px;
+}
+
+/* ===========================
+   HORIZONTAL SCROLL SECTIONS
+   =========================== */
+
+.horizontal-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll > * {
+  display: inline-block;
+  width: 92%; 
+  margin-right: 12px;
+  vertical-align: top;
+  scroll-snap-align: start;
+  white-space: normal;
+}
+
+/* Scrollbar */
+.horizontal-scroll::-webkit-scrollbar { height: 6px; }
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background:#cbd5e0;
+  border-radius:4px;
+}
+
+/* Optional card look inside horizontal scroll */
+.horizontal-scroll .card,
+.horizontal-scroll section {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--ring);
+  padding: 16px;
+}
+
