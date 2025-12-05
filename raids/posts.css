@@ -1,276 +1,141 @@
-/* ===========================
-   GLOBAL THEME VARIABLES
-   =========================== */
-:root {
-  --bg:#f6fff7;
-  --card:#ffffff;
-  --ink:#06221f;
-  --muted:#455a52;
-  --brand:#2f855a;
-  --ok:#16a34a;
-  --warn:#b45309;
-  --ring:0 10px 30px rgba(47,133,90,.06);
-  --hero-bg:#e6f7ff;
-  --card-bg:#fffbea;
-  --kvs-bg:#f0fff6;
-  --ads-bg:#f9f9ff;
-  --note-bg:#fff5f5;
-  --tip-bg:#f0fff4;
-  --footer-bg:#1a1a1a;
-}
+/* ======================================================
+   BASE FIXES (SAFE TO KEEP)
+   ====================================================== */
 
-/* Reset */
-* { box-sizing: border-box; }
-
-body, html {
-  margin: 0;
-  padding: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.6;
-}
-
-a { color: var(--brand); }
-
-/* ===========================
-   HEADER
-   =========================== */
-header {
-  background: linear-gradient(90deg,#1f6f5a,#2fa67a);
-  color: #fff;
-  padding: 14px;
-  border-radius: 8px;
-}
-.brand { font-weight: 700; }
-
-/* ===========================
-   HERO
-   =========================== */
-.hero {
-  background: var(--hero-bg);
-  border-radius: 12px;
-  padding: 18px;
-  box-shadow: var(--ring);
-  display: grid;
-  gap: 12px;
-  margin-top: 16px;
-}
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* ===========================
-   GRID LAYOUT
-   =========================== */
-.grid {
-  display: grid;
-  gap: 16px;
-  margin-top: 14px;
-}
-
-/* ===========================
-   RESPONSIVE FIXES
-   =========================== */
-@media (max-width:768px) {
-  header h1 { font-size: 20px; }
-  nav { flex-direction: column; }
-
-  .raid-card h3 { font-size: 16px; }
-  .raid-card p { font-size: 13px; }
-}
-
-/* ===========================
-   TABLE OF CONTENTS
-   =========================== */
-.toc {
-  background: #f0fdf4;
-  border-left: 5px solid var(--brand);
-  padding: 1rem;
-  margin: 1rem 0;
-}
-.toc a {
-  display: block;
-  color: var(--brand);
-  text-decoration: none;
-  margin: 0.2rem 0;
-}
-
-/* ===========================
-   ADS STYLE
-   =========================== */
-.ad-slot {
-  min-height: 100px;
-  width: 100%;
-  background: #f0fdf4;
-  text-align: center;
-  line-height: 100px;
-  color: #555;
-  font-size: 14px;
-  margin: 1rem 0;
-  border: 1px dashed #16a34a;
-}
-.ad-slot.empty::before { content: "Advertisement"; }
-
-/* ===========================
-   FOOTER
-   =========================== */
-.site-footer {
-  width: 100%;
-  background: #0f172a;
-  color: #fff;
-  padding: 20px;
-}
-.footer-content {
-  width: 100%;
+img {
   max-width: 100%;
-  margin: 0;
-  padding: 0 15px;
+  height: auto;
 }
 
-/* ===========================
-   AUTHOR BOX
-   =========================== */
-.author-box {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: #dcfce7;
-  border-radius: 12px;
-}
-
-/* ===========================
-   CARD
-   =========================== */
-.card {
-  background: var(--card-bg);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: var(--ring);
-}
-
-/* Typography */
-h1 { margin: 0; font-size: 1.6rem; }
-h2 { margin-top: 12px; font-size: 1.1rem; }
-
-/* ===========================
-   KEY-VALUE SECTION (KVS)
-   =========================== */
-.kvs {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 8px;
-  margin-top: 8px;
-}
-.kvs div {
-  background: var(--kvs-bg);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-/* ===========================
-   TABLES
-   =========================== */
-.tbl {
-  overflow-x: auto;
-  margin-top: 12px;
-}
 table {
   width: 100%;
   border-collapse: collapse;
 }
-td, th {
-  padding: 10px;
-  border-bottom: 1px solid #e9f3ee;
-  text-align: left;
-  vertical-align: middle;
-}
-th { background: var(--bg); }
 
-.poke-cell {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.poke-ico {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid #eef8f2;
-  padding: 6px;
-}
-.type-ico {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  margin-right: 6px;
+.container,
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
 }
 
-/* ===========================
-   NOTE BOX
-   =========================== */
-.note {
-  background: var(--note-bg);
-  border-left: 4px solid var(--warn);
-  padding: 10px;
-  border-radius: 8px;
+/* Prevent full-page horizontal scroll */
+body, html {
+  overflow-x: hidden;
 }
 
-#last-updated {
-  font-size:.9em;
-  color:#777;
-  font-style:italic;
-  margin-top:10px;
-}
-
-/* ============================================
-   MOBILE-ONLY HORIZONTAL SCROLL SECTIONS
-   ============================================ */
+/* ======================================================
+   MOBILE HORIZONTAL SCROLL FOR SELECTED SECTIONS ONLY
+   ====================================================== */
 
 @media (max-width: 768px) {
 
-  .horizontal-scroll {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding-bottom: 10px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+  /* Sections that should scroll horizontally */
+  .section-overview,
+  .section-weakness,
+  .section-counters,
+  .section-dynamax,
+  .section-moveset,
+  .section-weather,
+  .section-size,
+  .section-rewards,
+  .section-avoid,
+  .section-faqs,
+  .section-conclusion {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      display: block;
+      width: 100%;
+      padding-bottom: 14px;
+      scroll-snap-type: x mandatory;
   }
 
-  .horizontal-scroll > * {
-    display: inline-block;
-    width: 90%;
-    margin-right: 14px;
-    vertical-align: top;
-    white-space: normal;
-    scroll-snap-align: start;
+  /* Children inside become horizontal cards */
+  .section-overview > *,
+  .section-weakness > *,
+  .section-counters > *,
+  .section-dynamax > *,
+  .section-moveset > *,
+  .section-weather > *,
+  .section-size > *,
+  .section-rewards > *,
+  .section-avoid > *,
+  .section-faqs > *,
+  .section-conclusion > * {
+      display: inline-block;
+      vertical-align: top;
+      width: 88vw;
+      margin-right: 14px;
+      white-space: normal;
+      scroll-snap-align: start;
   }
 
-  .horizontal-scroll::-webkit-scrollbar { height: 5px; }
-  .horizontal-scroll::-webkit-scrollbar-thumb {
-    background:#cbd5e0;
-    border-radius:4px;
+  /* Optional scrollbar styling */
+  .section-overview::-webkit-scrollbar,
+  .section-weakness::-webkit-scrollbar,
+  .section-counters::-webkit-scrollbar,
+  .section-dynamax::-webkit-scrollbar,
+  .section-moveset::-webkit-scrollbar,
+  .section-weather::-webkit-scrollbar,
+  .section-size::-webkit-scrollbar,
+  .section-rewards::-webkit-scrollbar,
+  .section-avoid::-webkit-scrollbar,
+  .section-faqs::-webkit-scrollbar,
+  .section-conclusion::-webkit-scrollbar {
+      height: 6px;
+  }
+
+  .section-overview::-webkit-scrollbar-thumb,
+  .section-weakness::-webkit-scrollbar-thumb,
+  .section-counters::-webkit-scrollbar-thumb,
+  .section-dynamax::-webkit-scrollbar-thumb,
+  .section-moveset::-webkit-scrollbar-thumb,
+  .section-weather::-webkit-scrollbar-thumb,
+  .section-size::-webkit-scrollbar-thumb,
+  .section-rewards::-webkit-scrollbar-thumb,
+  .section-avoid::-webkit-scrollbar-thumb,
+  .section-faqs::-webkit-scrollbar-thumb,
+  .section-conclusion::-webkit-scrollbar-thumb {
+      background: #bbb;
+      border-radius: 10px;
   }
 }
 
-/* ============================================
-   DESKTOP — KEEP NORMAL (NO HORIZONTAL SCROLL)
-   ============================================ */
+/* ======================================================
+   DESKTOP FIX (NORMAL MODE)
+   ====================================================== */
 
 @media (min-width: 769px) {
-  .horizontal-scroll {
-    overflow-x: visible !important;
-    white-space: normal !important;
+  .section-overview,
+  .section-weakness,
+  .section-counters,
+  .section-dynamax,
+  .section-moveset,
+  .section-weather,
+  .section-size,
+  .section-rewards,
+  .section-avoid,
+  .section-faqs,
+  .section-conclusion {
+      overflow-x: visible;
+      white-space: normal;
   }
-  .horizontal-scroll > * {
-    display: block !important;
-    width: 100% !important;
-    margin-right: 0 !important;
+
+  .section-overview > *,
+  .section-weakness > *,
+  .section-counters > *,
+  .section-dynamax > *,
+  .section-moveset > *,
+  .section-weather > *,
+  .section-size > *,
+  .section-rewards > *,
+  .section-avoid > *,
+  .section-faqs > *,
+  .section-conclusion > * {
+      display: block;
+      width: 100%;
+      margin-right: 0;
   }
 }
