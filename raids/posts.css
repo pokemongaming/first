@@ -1,4 +1,21 @@
 /* ======================================================
+   COLOR THEME (ADDED)
+   ====================================================== */
+
+:root {
+  --bg: #f5fff6;
+  --ink: #072b1c;
+  --card: #ffffff;
+  --accent: #16a34a;
+  --accent-light: #dcfce7;
+  --border: #c7e5d2;
+  --scroll-bg: #e6f6ea;
+  --scroll-thumb: #16a34a;
+  --section-bg: #ffffff;
+  --section-shadow: rgba(0,0,0,0.05);
+}
+
+/* ======================================================
    BASE FIXES (SAFE TO KEEP)
    ====================================================== */
 
@@ -19,9 +36,11 @@ table {
   overflow: visible;
 }
 
-/* Prevent full-page horizontal scroll */
 body, html {
+  background: var(--bg);
+  color: var(--ink);
   overflow-x: hidden;
+  font-family: system-ui, Arial, sans-serif;
 }
 
 /* ======================================================
@@ -30,7 +49,7 @@ body, html {
 
 @media (max-width: 768px) {
 
-  /* Sections that should scroll horizontally */
+  /* Make selected sections scrollable */
   .section-overview,
   .section-weakness,
   .section-counters,
@@ -48,11 +67,16 @@ body, html {
       white-space: nowrap;
       display: block;
       width: 100%;
-      padding-bottom: 14px;
+      padding: 15px 0;
       scroll-snap-type: x mandatory;
+
+      background: var(--section-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 4px 14px var(--section-shadow);
   }
 
-  /* Children inside become horizontal cards */
+  /* Items inside become horizontal cards */
   .section-overview > *,
   .section-weakness > *,
   .section-counters > *,
@@ -67,12 +91,18 @@ body, html {
       display: inline-block;
       vertical-align: top;
       width: 88vw;
-      margin-right: 14px;
+      margin-right: 16px;
+      padding: 14px;
       white-space: normal;
       scroll-snap-align: start;
+
+      background: var(--accent-light);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px var(--section-shadow);
   }
 
-  /* Optional scrollbar styling */
+  /* Scrollbar styling */
   .section-overview::-webkit-scrollbar,
   .section-weakness::-webkit-scrollbar,
   .section-counters::-webkit-scrollbar,
@@ -85,6 +115,8 @@ body, html {
   .section-faqs::-webkit-scrollbar,
   .section-conclusion::-webkit-scrollbar {
       height: 6px;
+      background: var(--scroll-bg);
+      border-radius: 10px;
   }
 
   .section-overview::-webkit-scrollbar-thumb,
@@ -98,7 +130,7 @@ body, html {
   .section-avoid::-webkit-scrollbar-thumb,
   .section-faqs::-webkit-scrollbar-thumb,
   .section-conclusion::-webkit-scrollbar-thumb {
-      background: #bbb;
+      background: var(--scroll-thumb);
       border-radius: 10px;
   }
 }
@@ -108,6 +140,7 @@ body, html {
    ====================================================== */
 
 @media (min-width: 769px) {
+
   .section-overview,
   .section-weakness,
   .section-counters,
@@ -121,6 +154,10 @@ body, html {
   .section-conclusion {
       overflow-x: visible;
       white-space: normal;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
   }
 
   .section-overview > *,
@@ -137,5 +174,9 @@ body, html {
       display: block;
       width: 100%;
       margin-right: 0;
+      padding: 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
   }
 }
