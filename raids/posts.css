@@ -1,22 +1,22 @@
 /* ======================================================
-   COLOR THEME (ADDED)
+   OPTION A — OLD COLOR THEME INSERTED INTO NEW CSS
    ====================================================== */
 
 :root {
-  --bg: #f5fff6;
-  --ink: #072b1c;
-  --card: #ffffff;
-  --accent: #16a34a;
-  --accent-light: #dcfce7;
-  --border: #c7e5d2;
-  --scroll-bg: #e6f6ea;
-  --scroll-thumb: #16a34a;
-  --section-bg: #ffffff;
-  --section-shadow: rgba(0,0,0,0.05);
+  --bg: #f6fff7;        /* from old css */
+  --ink: #06221f;       /* from old css */
+  --card: #ffffff;      /* neutral */
+  --accent: #2f855a;    /* using old brand as accent */
+  --accent-light: #f0fff6; /* similar to old kvs-bg */
+  --border: #d3d3e0;    /* match old ads border */
+  --scroll-bg: #eef8f2; /* soft variant */
+  --scroll-thumb: #2f855a; /* old brand */
+  --section-bg: #fffbea;   /* old card-bg */
+  --section-shadow: rgba(0,0,0,0.06);
 }
 
 /* ======================================================
-   BASE FIXES (SAFE TO KEEP)
+   BASE FIXES
    ====================================================== */
 
 img {
@@ -28,15 +28,6 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #e9f3ee;
-  text-align: left;
-  vertical-align: middle;
-}
-
-th { background: var(--bg); }
 
 .container,
 .content-wrapper {
@@ -53,12 +44,11 @@ body, html {
 }
 
 /* ======================================================
-   MOBILE HORIZONTAL SCROLL FOR SELECTED SECTIONS ONLY
+   MOBILE HORIZONTAL SCROLL FOR SELECTED SECTIONS
    ====================================================== */
 
 @media (max-width: 768px) {
 
-  /* Make selected sections scrollable */
   .section-overview,
   .section-weakness,
   .section-counters,
@@ -85,7 +75,6 @@ body, html {
       box-shadow: 0 4px 14px var(--section-shadow);
   }
 
-  /* Items inside become horizontal cards */
   .section-overview > *,
   .section-weakness > *,
   .section-counters > *,
@@ -111,7 +100,7 @@ body, html {
       box-shadow: 0 2px 10px var(--section-shadow);
   }
 
-  /* Scrollbar styling */
+  /* Scrollbar */
   .section-overview::-webkit-scrollbar,
   .section-weakness::-webkit-scrollbar,
   .section-counters::-webkit-scrollbar,
@@ -145,7 +134,7 @@ body, html {
 }
 
 /* ======================================================
-   DESKTOP FIX (NORMAL MODE)
+   DESKTOP VERSION (NORMAL)
    ====================================================== */
 
 @media (min-width: 769px) {
