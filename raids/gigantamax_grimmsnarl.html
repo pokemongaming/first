@@ -63,39 +63,42 @@
    FIX: Author Box + Footer full-width (mobile)
    Removes side gaps and forces 100% stretch
    ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
 
 @media (max-width: 768px) {
 
-  /* Author Box Wrapper */
-  .author-box,
-  .author,
-  .post-author,
-  #author-box {
-    width: 100vw !important;
-    margin: 0 calc(50% - 50vw) !important; /* pull edge-to-edge */
-    padding-left: 16px;
-    padding-right: 16px;
-    box-sizing: border-box;
-  }
-
-  /* Footer full stretch */
-  .site-footer,
-  footer,
-  .footer-content,
-  #footer {
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
     width: 100vw !important;
     margin: 0 calc(50% - 50vw) !important;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     box-sizing: border-box;
   }
 
-  /* Remove any parent overflow limiting width */
-  body,
-  .container,
+  /* Remove extra padding from parent containers */
   .content-wrapper,
-  .page-wrapper {
-    overflow-x: hidden !important;
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
   }
 }
 
