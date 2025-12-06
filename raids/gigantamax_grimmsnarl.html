@@ -58,6 +58,36 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 
    /* ============================================
    FIX: Author Box + Footer full-width (mobile)
@@ -249,7 +279,7 @@
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Grimmsnarl.</p>
 
-
+<div class="gmax-scroll">
          <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
             <thead>
@@ -263,7 +293,7 @@
               </tr>
             </thead>
             <tbody>
-
+<div class="gmax-card">
  <tr>
               <td>
                <!--  <div class="poke-cell">
@@ -277,7 +307,7 @@
                 <td>Zen Headbutt(11) and G-Max Replenish(350)</td>
               </tr>
 
-
+</div>
 <tr>
               <td>
                 <!-- <div class="poke-cell">
