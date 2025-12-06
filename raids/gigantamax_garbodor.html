@@ -56,6 +56,49 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+
+/* ----- DEFAULT: Desktop (no scroll) ----- */
+.horizontal-scroll {
+  display: block;        /* Stack items normally */
+  overflow: visible;     /* No scroll */
+}
+
+.horizontal-scroll .scroll-item {
+  width: 100%;           /* Full width on desktop */
+  margin-bottom: 12px;   /* Space between items */
+}
+
+
+/* ----- MOBILE: Enable Horizontal Scroll ----- */
+@media (max-width: 768px) {
+  .horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 14px;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+  }
+
+  .horizontal-scroll .scroll-item {
+    flex: 0 0 auto;
+    width: 230px;        /* Card size on mobile */
+    margin-bottom: 0;
+  }
+
+  /* Optional: mobile scrollbar */
+  .horizontal-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  .horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #16a34a;
+    border-radius: 3px;
+  }
+}
+
+
+
   </style>
 
 </head>
@@ -126,8 +169,12 @@
         <section id="overview">
         <!--<p class="note">-->
       <h2>Overview</h2>
+<div class="horizontal-scroll">
+    <div class="scroll-item">
       <p>Gigantamax Garbodor is a pure <strong>Poison-type</strong> Pokémon with impressive bulk and a powerful signature move. It debuted in Pokémon Sword & Shield as a Gigantamax form, where its garbage body becomes a toxic mountain containing old toys and even a miniature submarine!</p>
       <p>In Pokémon GO, Garbodor’s Gigantamax form is expected to appear in future events or raids, mirroring its strength from the console titles.</p>
+</div>
+</div>
     </section>
 
 
@@ -197,6 +244,9 @@
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Garbodor.</p>
 
+<div class="horizontal-scroll">
+    <div class="scroll-item">
+
         <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
             <thead>
@@ -210,6 +260,7 @@
               </tr>
             </thead>
             <tbody>
+
 
 <tr>
               <td>
@@ -306,11 +357,15 @@
 
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
         </div>
+</div>
+</div>
 </section>
 
 <section id="dynamax">
 <h2>Dynamax & Support Picks</h2>
       <p>Not every raid group will have multiple Gigantamax picks. Dynamax Pokémon make excellent support, either by adding burst damage or soaking time during G-Max residual windows.</p>
+<div class="horizontal-scroll">
+    <div class="scroll-item">
 
  <div class="tbl" aria-label="Dynamax Counters table">
           <table>
@@ -592,6 +647,8 @@
           </table>
 
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
+</div>
+</div>
         </div>
 </section>
 
@@ -702,7 +759,11 @@
 
 <section id="conclusion">
 <h2>Conclusion</h2>
+<div class="horizontal-scroll">
+    <div class="scroll-item">
       <p>Gigantamax Garbodor is a mechanically interesting raid boss: its Poison type is predictable, but the G-Max residual damage forces teams to plan for survivability, not just pure DPS. Prioritize Ground and Psychic Gigantamax picks, add Dynamax support for sustained windows, and include at least one high-TDO tank if your lobby is smaller. With the counters and tactics above, you’ll clear Garbodor efficiently and maximize your rewards.</p>
+</div>
+</div>
 </section>
 
 
