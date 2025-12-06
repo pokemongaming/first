@@ -58,6 +58,47 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Author Box Wrapper */
+  .author-box,
+  .author,
+  .post-author,
+  #author-box {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important; /* pull edge-to-edge */
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Footer full stretch */
+  .site-footer,
+  footer,
+  .footer-content,
+  #footer {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Remove any parent overflow limiting width */
+  body,
+  .container,
+  .content-wrapper,
+  .page-wrapper {
+    overflow-x: hidden !important;
+  }
+}
+
   </style>
 
 </head>
