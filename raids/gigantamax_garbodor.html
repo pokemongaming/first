@@ -57,47 +57,45 @@
       border-radius: 12px;
     }
 
-/* Horizontal scroll section (mobile only) */
+/* ----- DEFAULT: Desktop (no scroll) ----- */
+.horizontal-scroll {
+  display: block;        /* Stack items normally */
+  overflow: visible;     /* No scroll */
+}
+
+.horizontal-scroll .scroll-item {
+  width: 100%;           /* Full width on desktop */
+  margin-bottom: 12px;   /* Space between items */
+}
+
+
+/* ----- MOBILE: Enable Horizontal Scroll ----- */
 @media (max-width: 768px) {
   .horizontal-scroll {
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 0;               /* Remove padding gap */
-    margin: 0;                /* Remove left/right margins */
-    gap: 0.75rem;             /* space between cards only */
-    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+    gap: 14px;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
   }
 
-  .horizontal-scroll::-webkit-scrollbar {
-    display: none;            /* Hide scrollbar on mobile */
-  }
-
-  .scroll-item {
+  .horizontal-scroll .scroll-item {
     flex: 0 0 auto;
-    scroll-snap-align: start;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 12px;
-    margin: 0;                /* Remove card side margins */
-    min-width: 80%;           /* Size of each card */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 230px;        /* Card size on mobile */
+    margin-bottom: 0;
+  }
+
+  /* Optional: mobile scrollbar */
+  .horizontal-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  .horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #16a34a;
+    border-radius: 3px;
   }
 }
-
-/* Desktop mode – normal layout */
-@media (min-width: 769px) {
-  .horizontal-scroll {
-    display: block;
-    overflow: visible;
-  }
-
-  .scroll-item {
-    min-width: auto;
-    margin-bottom: 1rem;
-  }
-}
-
 
 
 
