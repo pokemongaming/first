@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Gigantamax Alcremie Raid Guide — Counters, Moves & Strategy | Pokémon GO</title>
+  <title>Gigantamax Alcremie Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Complete Gigantamax Alcremie raid guide for Pokémon GO — weaknesses, best Gigantamax & Dynamax counters, movesets, weather tips, recommended lobby sizes, rewards and battle strategy." />
+  <meta name="description" content="Detailed Gigantamax Alcremie raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers." />
   <meta name="robots" content="index, follow" />
 <link rel="stylesheet" href="foremedia-ads.css" />
 
   <link rel="stylesheet" href="posts.css"/>
 
+<link rel="stylesheet" href="posts.css"/>
+<link rel="alternate" hreflang="en-us" href="https://pokemongaming.in/raids/gigantamax_alcremie.html" />
+<link rel="alternate" hreflang="en-gb" href="https://pokemongaming.in/raids/gigantamax_alcremie.html" />
+
+
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/analytics"></script>
 
-<meta property="og:title" content="Gigantamax Alcremie Raid Guide — Counters, Moves & Strategy">
-  <meta property="og:description" content="Defeat Gigantamax Alcremie in Pokémon GO raids: learn its weaknesses, best Gigantamax and Dynamax counters, moveset warnings, weather interactions, and catch tips.">
+<meta property="og:title" content="Gigantamax Alcremie Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
+  <meta property="og:description" content="Detailed Gigantamax Alcremie raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pokemongaming.in/raids/gigantamax_alcremie.html">
   <meta property="og:image" content="https://pokemongaming.in/raids/images/gigantamax_alcremie.png">
@@ -58,6 +63,79 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  /* Remove extra padding from parent containers */
+  .content-wrapper,
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
+  }
+}
   </style>
 
 </head>
@@ -85,7 +163,7 @@
 </script>
 
 
-    <img src="images/gigantamax_alcremie.png" alt="Gigantamax Alcremie" loading="lazy" width="1200" height="600">
+    <img src="images/gigantamax_alcremie.png" alt="Gigantamax Alcremie Pokémon GO Raid Boss US/UK" loading="lazy" width="1200" height="600">
     </section>
 
 <section class="ad-container">
@@ -101,18 +179,15 @@
 
 <section class="toc">
       <h3>Table of Contents</h3>
-      <a href="#overview">Overview</a>
       <a href="#weakness">Weakness</a>
       <a href="#counters">Best Pokemon</a>
       <a href="#gigantamax">Best Gigantamax Counters</a>
       <a href="#dynamax">Dynamax & Support Picks</a>
       <a href="#moveset">Moveset</a>
-      <a href="#weather">Weather Effects & Battle Flow</a>
+      <a href="#weather">Weather Effects</a>
       <a href="#size">Size</a>
       <a href="#rewards">Rewards</a>
-      <a href="#avoid">Avoid</a>
       <a href="#faq">FAQs</a>
-      <a href="#conclusion">Conclusion</a>
     </section>
 
 
@@ -129,13 +204,14 @@
 
 
 
-         <section id="overview">
+         <section class="overview">
         <!--<p class="note">-->
       <h2>Overview</h2>
       <p>Alcremie’s Gigantamax form magnifies its Fairy typing and gives it a bulkier HP pool and potentially stronger charged moves (Dazzling Gleam, Draining Kiss, and event coverage like Psyshock or Shadow Ball). In raid form, it behaves like a resilient Fairy boss that rewards correct super-effective counters (Poison, Steel, Ghost in some cases) and punishes teams that bring common physical attackers without coverage. Because of the enlarged HP, energy efficiency and repeatable charged-move value become more important than single-hit burst.</p>
     <p class="pro-tip"><strong>Pro tip:</strong> If the charged-move preview shows heavy Fairy moves (Dazzling Gleam / Moonblast), prioritize Poison + Steel counters; if Psychic coverage appears, Ghost becomes a high priority.
 
      </p>
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 
@@ -149,17 +225,17 @@
               <tr>
                 <td><strong>Weak to</strong></td>
                 <td>
-                  <img class="type-ico" src="images/poison.png" alt="Poison type"> Poison •
-                  <img class="type-ico" src="images/steel.png" alt="Steel type"> Steel
+                  <img class="type-ico" src="images/poison.png" alt="Best Pokémon Counters for Gigantamax Alcremie Raid US/UK"> Poison •
+                  <img class="type-ico" src="images/steel.png" alt="Best Pokémon Counters for Gigantamax Alcremie Raid US/UK"> Steel
                 </td>
               </tr>
               <tr>
                 <td><strong>Resists</strong></td>
                 <td>
-                  <img class="type-ico" src="images/bug.png" alt="Bug type"> Bug •
-                  <img class="type-ico" src="images/dark.png" alt="Dark type"> Dark •
-                  <img class="type-ico" src="images/fighting.png" alt="Fighting type"> Fighting •
-                  <img class="type-ico" src="images/dragon.png" alt="Dragon type"> Dragon
+                  <img class="type-ico" src="images/bug.png" alt="Best Pokémon Counters for Gigantamax Alcremie Raid US/UK"> Bug •
+                  <img class="type-ico" src="images/dark.png" alt="Best Pokémon Counters for Gigantamax Alcremie Raid US/UK"> Dark •
+                  <img class="type-ico" src="images/fighting.png" alt="Best Pokémon Counters for Gigantamax Alcremie Raid US/UK"> Fighting •
+                  <img class="type-ico" src="images/dragon.png" alt="Best Pokémon Counters for Gigantamax Alcremie Raid US/UK"> Dragon
 </td>
               </tr>
               <tr>
@@ -171,6 +247,7 @@
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
         </div>
+</section>
 
 <section class="ad-container">
 <div id="foremediaads-e1" class="ad-slot empty"></div>
@@ -196,14 +273,14 @@
     <li><strong>Eternatus</strong> </li>
     <li><strong>Metagross</strong> </li>
   </ul>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
-<section id="gigantamax">
+<!--<section id="gigantamax">-->
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Alcremie.</p>
 
-
+<div class="gmax-scroll">
          <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
             <thead>
@@ -329,19 +406,20 @@
                 <td>Poison Jab(13) and G-Max Stun Shock(350)</td>
               </tr>
 
-
-
-
             </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
+        
+</section>
 
-        </div>
 
 <section id="dynamax">
 <h2>Dynamax & Support Picks</h2>
       <p>Not every raid group will have multiple Gigantamax picks. Dynamax Pokémon make excellent support, either by adding burst damage or soaking time during G-Max residual windows.</p>
 
+<div class="gmax-scroll">
 
        <div class="tbl" aria-label="Dynamax Counters table">
           <table>
@@ -553,11 +631,13 @@
 <td>-</td>
               </tr>
 
-            </tbody>
+             </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-
-        </div>
+        
+</section>
 
   <!--  <section class="ads card" aria-label="Advertisement">
       <ins class="adsbygoogle"
@@ -659,7 +739,7 @@
     <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
         </section>
-<section id="conclusion">
+<section class="conclusion">
 <h2>Conclusion</h2>
       <p>Gigantamax Alcremie is a mechanically interesting raid boss: its Fairy type is predictable, but the G-Max residual damage forces teams to plan for survivability, not just pure DPS. Prioritize Poison and Steel Gigantamax picks, add Dynamax support for sustained windows, and include at least one high-TDO tank if your lobby is smaller. With the counters and tactics above, you’ll clear Alcremie efficiently and maximize your rewards.</p>
 </section>

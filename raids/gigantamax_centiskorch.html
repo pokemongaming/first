@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Gigantamax Centiskorch Raid Guide — Counters, Moves & Strategy | Pokémon GO</title>
+  <title>Gigantamax Centiskorch Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Complete Gigantamax Centiskorch raid guide for Pokémon GO — weaknesses, best Gigantamax & Dynamax counters, movesets, weather tips, recommended lobby sizes, rewards and battle strategy." />
+  <meta name="description" content="Detailed Gigantamax Centiskorch raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers."/>
   <meta name="robots" content="index, follow" />
 <link rel="stylesheet" href="foremedia-ads.css" />
 
   <link rel="stylesheet" href="posts.css"/>
+<link rel="alternate" hreflang="en-us" href="https://pokemongaming.in/raids/gigantamax_centiskorch.html" />
+<link rel="alternate" hreflang="en-gb" href="https://pokemongaming.in/raids/gigantamax_centiskorch.html" />
 
-<meta property="og:title" content="Gigantamax Centiskorch Raid Guide — Counters, Moves & Strategy">
-  <meta property="og:description" content="Defeat Gigantamax Centiskorch in Pokémon GO raids: learn its weaknesses, best Gigantamax and Dynamax counters, moveset warnings, weather interactions, and catch tips.">
+<meta property="og:title" content="Gigantamax Centiskorch Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
+  <meta property="og:description" content="Detailed Gigantamax Centiskorch raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pokemongaming.in/raids/gigantamax_centiskorch.html">
   <meta property="og:image" content="https://pokemongaming.in/raids/images/gigantamax_centiskorch.png">
@@ -29,7 +31,7 @@
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/analytics"></script>
 
  <style>
-    :root {
+     :root {
       --bg: #f9fff9;
       --card: #ffffff;
       --ink: #15291b;
@@ -58,6 +60,79 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  /* Remove extra padding from parent containers */
+  .content-wrapper,
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
+  }
+}
   </style>
 
 </head>
@@ -84,7 +159,7 @@
   });
 </script>
 
-      <img src="images/gigantamax_centiskorch.png" alt="Gigantamax Centiskorch" loading="lazy" width="1200" height="600">
+      <img src="images/gigantamax_centiskorch.png" alt="Gigantamax Centiskorch Pokémon GO Raid Boss US/UK" loading="lazy" width="1200" height="600">
     </section>
 
 <section class="ad-container">
@@ -101,18 +176,15 @@
 
 <section class="toc">
       <h3>Table of Contents</h3>
-      <a href="#overview">Overview</a>
       <a href="#weakness">Weakness</a>
       <a href="#counters">Best Pokemon</a>
       <a href="#gigantamax">Best Gigantamax Counters</a>
       <a href="#dynamax">Dynamax & Support Picks</a>
       <a href="#moveset">Moveset</a>
-      <a href="#weather">Weather Effects & Battle Flow</a>
+      <a href="#weather">Weather Effects</a>
       <a href="#size">Size</a>
       <a href="#rewards">Rewards</a>
-      <a href="#avoid">Avoid</a>
       <a href="#faq">FAQs</a>
-      <a href="#conclusion">Conclusion</a>
     </section>
 
 
@@ -129,12 +201,12 @@
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 
-        <section id="overview">
+        <section class="overview">
         <!--<p class="note">-->
       <h2>Overview</h2>
       <p>Centiskorch in Gigantamax form is a Fire/Bug raid boss that amplifies damage and HP. Expect high-power Fire STABs (e.g., Fire Blast / Overheat analogues), large-area flamethrowers, and possible Bug-type charged moves (Bug Buzz) or coverage like Earthquake or Iron Head in special spawns. Because of its Fire typing, Centiskorch is especially vulnerable to Water, Rock, and Ground depending on moves. Prioritize counters that can land repeatedly into long HP bars and survive charged coverage.</p>
         <p class="pro-tip"><strong>Pro tip:</strong> If you have access to top Rock attackers (Rampardos, Tyranitar) and Ground (Groudon, Rhyperior), those will greatly reduce required players — but Water is the safest, most accessible core for most rosters.</p>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
         <section id="weakness">
@@ -147,20 +219,20 @@
               <tr>
                 <td><strong>Weak to</strong></td>
                 <td>
-                  <img class="type-ico" src="images/rock.png" alt="Rock type"> Rock •
-                  <img class="type-ico" src="images/flying.png" alt="Flying type"> Flying •
-                  <img class="type-ico" src="images/water.png" alt="Water type"> Water
+                  <img class="type-ico" src="images/rock.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Rock •
+                  <img class="type-ico" src="images/flying.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Flying •
+                  <img class="type-ico" src="images/water.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Water
                 </td>
               </tr>
               <tr>
                 <td><strong>Resists</strong></td>
                 <td>
-                  <img class="type-ico" src="images/fighting.png" alt="Fighting type"> Fighting •
-                  <img class="type-ico" src="images/bug.png" alt="Bug type"> Bug •
-                  <img class="type-ico" src="images/steel.png" alt="Steel type"> Steel •
-                  <img class="type-ico" src="images/grass.png" alt="Grass type"> Grass •
-                  <img class="type-ico" src="images/ice.png" alt="Ice type"> Ice •
-                  <img class="type-ico" src="images/fairy.png" alt="Fairy type"> Fairy
+                  <img class="type-ico" src="images/fighting.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Fighting •
+                  <img class="type-ico" src="images/bug.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Bug •
+                  <img class="type-ico" src="images/steel.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Steel •
+                  <img class="type-ico" src="images/grass.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Grass •
+                  <img class="type-ico" src="images/ice.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Ice •
+                  <img class="type-ico" src="images/fairy.png" alt="Best Pokémon Counters for Gigantamax Centiskorch Raid US/UK"> Fairy
 </td>
               </tr>
               <tr>
@@ -172,7 +244,7 @@
 
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
         </div>
-
+</section>
 <section class="ad-container">
 <div id="foremediaads-e1" class="ad-slot empty"></div>
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/e1"></script>
@@ -197,13 +269,13 @@
     <li><strong>Kabutops</strong> </li>
     <li><strong>Blastoise</strong> </li>
   </ul>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 <section id="gigantamax">
 
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Centiskorch.</p>
-
+<div class="gmax-scroll">
 
          <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
@@ -322,17 +394,19 @@
                 <td>Pound(6) and G-Max Hydrosnipe(350)</td>
               </tr>
 
-
             </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-        </div>
+        
+</section>
 
 <section id="dynamax">
 <h2>Dynamax & Support Picks</h2>
       <p>Not every raid group will have multiple Gigantamax picks. Dynamax Pokémon make excellent support, either by adding burst damage or soaking time during G-Max residual windows.</p>
 
-
+<div class="gmax-scroll">
        <div class="tbl" aria-label="Dynamax Counters table">
           <table>
             <thead>
@@ -589,14 +663,13 @@
                 <td>Thunder Shock</td>
               </tr>
 
-
-            </tbody>
+             </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-        </div>
-
-  
-
+        
+</section>
 
 <section class="grid two">
       <article class="card" id="moves">

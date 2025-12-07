@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Gigantamax Appletun Raid Guide — Counters, Moves & Strategy | Pokémon GO</title>
+  <title>Gigantamax Appletun Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Complete Gigantamax Appletun raid guide for Pokémon GO — weaknesses, best Gigantamax & Dynamax counters, movesets, weather tips, recommended lobby sizes, rewards and battle strategy." />
+  <meta name="description" content="Detailed Gigantamax Appletun raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers."/>
   <meta name="robots" content="index, follow" />
 <link rel="stylesheet" href="foremedia-ads.css" />
 
   <link rel="stylesheet" href="posts.css"/>
+<link rel="alternate" hreflang="en-us" href="https://pokemongaming.in/raids/gigantamax_appletun.html" />
+<link rel="alternate" hreflang="en-gb" href="https://pokemongaming.in/raids/gigantamax_appletun.html" />
 
-<meta property="og:title" content="Gigantamax Appletun Raid Guide — Counters, Moves & Strategy">
-  <meta property="og:description" content="Defeat Gigantamax Appletun in Pokémon GO raids: learn its weaknesses, best Gigantamax and Dynamax counters, moveset warnings, weather interactions, and catch tips.">
+<meta property="og:title" content="Gigantamax Appletun Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
+  <meta property="og:description" content="Detailed Gigantamax Appletun raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pokemongaming.in/raids/gigantamax_appletun.html">
   <meta property="og:image" content="https://pokemongaming.in/raids/images/gigantamax_appletun.png">
@@ -58,6 +60,79 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  /* Remove extra padding from parent containers */
+  .content-wrapper,
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
+  }
+}
   </style>
 
 </head>
@@ -85,7 +160,7 @@
 </script>
 
 
-      <img src="images/gigantamax_appletun.png" alt="Gigantamax Appletun" loading="lazy" width="1200" height="600">
+      <img src="images/gigantamax_appletun.png" alt="Gigantamax Appletun Pokémon GO Raid Boss US/UK" loading="lazy" width="1200" height="600">
     </section>
 
 <section class="ad-container">
@@ -101,18 +176,15 @@
 
 <section class="toc">
       <h3>Table of Contents</h3>
-      <a href="#overview">Overview</a>
       <a href="#weakness">Weakness</a>
       <a href="#counters">Best Pokemon</a>
       <a href="#gigantamax">Best Gigantamax Counters</a>
       <a href="#dynamax">Dynamax & Support Picks</a>
       <a href="#moveset">Moveset</a>
-      <a href="#weather">Weather Effects & Battle Flow</a>
+      <a href="#weather">Weather Effects</a>
       <a href="#size">Size</a>
       <a href="#rewards">Rewards</a>
-      <a href="#avoid">Avoid</a>
       <a href="#faq">FAQs</a>
-      <a href="#conclusion">Conclusion</a>
     </section>
 
 
@@ -128,13 +200,14 @@
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 
-        <section id="overview">
+        <section class="overview">
         <!--<p class="note">-->
       <h2>Overview</h2>
       <p>Appletun’s Gigantamax form increases its HP significantly and emphasizes its Grass typing while borrowing move coverage from its evolutions. In raid form it behaves like a durable Grass-based boss that can threaten with Dragon- or Fairy-type charged moves depending on the variant. Expect long fights where consistent super-effective damage (Ice, Fire, Dragon, Flying depending on exact moves) and good shield management are keys to success.</p>
     <p class="pro-tip"><strong>Pro tip:</strong> Always check the charged-move preview. Appletun often pairs a strong Grass charged move (Frenzy Plant/Leaf Storm) with a Dragon or Fairy charged move — that preview determines whether you prioritize Dragon/Fairy or Ice/Fire counters.
 
      </p>
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 
@@ -148,21 +221,21 @@
               <tr>
                 <td><strong>Weak to</strong></td>
                 <td>
-                  <img class="type-ico" src="images/ice.png" alt="Ice type"> Ice •
-                  <img class="type-ico" src="images/flying.png" alt="Flying type"> Flying •
-                  <img class="type-ico" src="images/poison.png" alt="Poison type"> Poison •
-                  <img class="type-ico" src="images/bug.png" alt="Bug type"> Bug •
-                  <img class="type-ico" src="images/dragon.png" alt="Dragon type"> Dragon •
-                  <img class="type-ico" src="images/fairy.png" alt="Fairy type"> Fairy
+                  <img class="type-ico" src="images/ice.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Ice •
+                  <img class="type-ico" src="images/flying.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Flying •
+                  <img class="type-ico" src="images/poison.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Poison •
+                  <img class="type-ico" src="images/bug.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Bug •
+                  <img class="type-ico" src="images/dragon.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Dragon •
+                  <img class="type-ico" src="images/fairy.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Fairy
                 </td>
               </tr>
               <tr>
                 <td><strong>Resists</strong></td>
                 <td>
-                  <img class="type-ico" src="images/electric.png" alt="Electric type"> Electric •
-                  <img class="type-ico" src="images/grass.png" alt="Grass type"> Grass •
-                  <img class="type-ico" src="images/water.png" alt="Water type"> Water •
-                  <img class="type-ico" src="images/ground.png" alt="Ground type"> Ground
+                  <img class="type-ico" src="images/electric.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Electric •
+                  <img class="type-ico" src="images/grass.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Grass •
+                  <img class="type-ico" src="images/water.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Water •
+                  <img class="type-ico" src="images/ground.png" alt="Best Pokémon Counters for Gigantamax Appletun Raid US/UK"> Ground
 </td>
               </tr>
               <tr>
@@ -174,7 +247,7 @@
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
         </div>
-
+</section>
 <section class="ad-container">
 <div id="foremediaads-e1" class="ad-slot empty"></div>
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/e1"></script>
@@ -201,7 +274,7 @@
     <li><strong>Gengar</strong> </li>
     <li><strong>Blissey</strong> </li>
   </ul>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 <section id="gigantamax">
@@ -209,7 +282,7 @@
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Appletun.</p>
 
-
+<div class="gmax-scroll">
          <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
             <thead>
@@ -276,9 +349,6 @@
 <td>Hex(8) and G-Max Terror(350)</td>
               </tr>
 
-
-  
-
    <tr>
               <td>
                <!--<div class="poke-cell">
@@ -292,19 +362,20 @@
                 <td>Zen Headbutt(11) and G-Max Replenish(350)</td>
               </tr>
 
-
-
-            </tbody>
+           </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
+        
+</section>
 
-        </div>
 
 <section id="dynamax">
 <h2>Dynamax & Support Picks</h2>
       <p>Not every raid group will have multiple Gigantamax picks. Dynamax Pokémon make excellent support, either by adding burst damage or soaking time during G-Max residual windows.</p>
 
-
+<div class="gmax-scroll">
        <div class="tbl" aria-label="Dynamax Counters table">
           <table>
             <thead>
@@ -534,10 +605,6 @@
           <td>Wild Charge</td>
               </tr>
 
-
-
-
-
    <tr>
                 <td>
                <!--<div class="poke-cell"><img class="poke-ico" src="images/dynamax_toxtricity.png" alt="Dynamax Toxtricity"><strong>-->Dynamax Toxtricity<!--</strong></div>-->
@@ -560,11 +627,14 @@
 <td>-</td>
               </tr>
              
-            </tbody>
+             </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
+        
+</section>
 
-        </div>
 
   <!--  <section class="ads card" aria-label="Advertisement">
       <ins class="adsbygoogle"
@@ -620,7 +690,7 @@
        <h2 id="team-size">Size</h2>
 
         <p>Recommended: <strong>15–20 trainers</strong> for comfortable clears with mixed player levels. With many Gigantamax / Dynamax counters, 10–14 can work. Under 8 trainers should be attempted only if all participants are high-level and coordinated with ideal counters and Dynamax/G-Max boosts.</p>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
  <section id="rewards">
@@ -663,7 +733,8 @@
         </section>
 <section id="conclusion">
 <h2>Conclusion</h2>
-      <p>Gigantamax Appletun is a mechanically interesting raid boss: its Grass/Dragon combo is predictable, but the G-Max residual damage forces teams to plan for survivability, not just pure DPS. Prioritize Ice Gigantamax picks, add Dynamax support for sustained windows, and include at least one high-TDO tank if your lobby is smaller. With the counters and tactics above, you’ll clear Appletun efficiently and maximize your rewards.</p>
+      <p>Gigantamax Appletun is a mechanically interesting raid boss: its Grass/Dragon combo is predictable, but the G-Max residual damage forces teams to plan for survivability, not just pure DPS. Prioritize Ice Gigantamax picks, add Dynamax support for sustained windows, and include at least one high-TDO tank if your lobby is smaller. With the counters and tactics above, you’ll clear Appletun efficiently and maximize your rewards.
+</p>
 </section>
 <!--<h2>Related Guides</h2>
 <p>Looking for more counters? Check out our 

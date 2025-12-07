@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Gigantamax Blastoise Raid Guide — Counters, Moves & Strategy | Pokémon GO</title>
+  <title>Gigantamax Blastoise Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Complete Gigantamax Blastoise raid guide for Pokémon GO — weaknesses, best Gigantamax & Dynamax counters, movesets, weather tips, recommended lobby sizes, rewards and battle strategy." />
+  <meta name="description" content="Detailed Gigantamax Blastoise raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers."/>
   <meta name="robots" content="index, follow" />
 <link rel="stylesheet" href="foremedia-ads.css" />
 
   <link rel="stylesheet" href="posts.css"/>
+<link rel="alternate" hreflang="en-us" href="https://pokemongaming.in/raids/gigantamax_blastoise.html" />
+<link rel="alternate" hreflang="en-gb" href="https://pokemongaming.in/raids/gigantamax_blastoise.html" />
 
-<meta property="og:title" content="Gigantamax Blastoise Raid Guide — Counters, Moves & Strategy">
-  <meta property="og:description" content="Defeat Gigantamax Blastosie in Pokémon GO raids: learn its weaknesses, best Gigantamax and Dynamax counters, moveset warnings, weather interactions, and catch tips.">
+<meta property="og:title" content="Gigantamax Blastoise Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
+  <meta property="og:description" content="Detailed Gigantamax Blastoise raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pokemongaming.in/raids/gigantamax_blastoise.html">
   <meta property="og:image" content="https://pokemongaming.in/raids/images/gigantamax_blastoise.png">
@@ -29,7 +31,7 @@
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/analytics"></script>
 
  <style>
-    :root {
+     :root {
       --bg: #f9fff9;
       --card: #ffffff;
       --ink: #15291b;
@@ -58,6 +60,79 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  /* Remove extra padding from parent containers */
+  .content-wrapper,
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
+  }
+}
   </style>
 
 </head>
@@ -85,7 +160,7 @@
   });
 </script>
 
-      <img src="images/gigantamax_blastoise.png" alt="Gigantamax Blastoise" loading="lazy" width="1200" height="600">
+      <img src="images/gigantamax_blastoise.png" alt="Gigantamax Blastoise Pokémon GO Raid Boss US/UK" loading="lazy" width="1200" height="600">
     </section>
 
 <section class="ad-container">
@@ -101,18 +176,15 @@
 
 <section class="toc">
       <h3>Table of Contents</h3>
-      <a href="#overview">Overview</a>
       <a href="#weakness">Weakness</a>
       <a href="#counters">Best Pokemon</a>
       <a href="#gigantamax">Best Gigantamax Counters</a>
       <a href="#dynamax">Dynamax & Support Picks</a>
       <a href="#moveset">Moveset</a>
-      <a href="#weather">Weather Effects & Battle Flow</a>
+      <a href="#weather">Weather Effects</a>
       <a href="#size">Size</a>
       <a href="#rewards">Rewards</a>
-      <a href="#avoid">Avoid</a>
       <a href="#faq">FAQs</a>
-      <a href="#conclusion">Conclusion</a>
     </section>
 
 
@@ -129,14 +201,14 @@
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 
-         <section id="overview">
+         <section class="overview">
         <!--<p class="note">-->
       <h2>Overview</h2>
       <p>Blastoise’s Gigantamax form amplifies its role as a Water-type tank: massive HP pool, strong water STABs (e.g., Hydro Pump / Origin Pulse analogues) and potential secondary coverage like Ice Beam or Flash Cannon in event variants. In raid fights, expect longevity—clear time comes down to efficient sustained damage, energy economy, and smart shield use. While purely Water strong counters dominate, be ready for mixed coverage if the charged-move preview shows secondary types.</p>
 
     <p class="pro-tip"><strong>Pro tip:</strong> For Gigantamax Blastoise, Hydro-based boss moves reward Ground-lite thinking only in rare variants; primarily stack Electric and Grass counters unless preview shows Ice/Steel moves.
      </p>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
         <section id="weakness">
@@ -149,17 +221,17 @@
               <tr>
                 <td><strong>Weak to</strong></td>
                 <td>
-                  <img class="type-ico" src="images/electric.png" alt="Electric type"> Electric •
-                  <img class="type-ico" src="images/grass.png" alt="Grass type"> Grass
+                  <img class="type-ico" src="images/electric.png" alt="Best Pokémon Counters for Gigantamax Blastoise Raid US/UK"> Electric •
+                  <img class="type-ico" src="images/grass.png" alt="Best Pokémon Counters for Gigantamax Blastoise Raid US/UK"> Grass
                 </td>
               </tr>
               <tr>
                 <td><strong>Resists</strong></td>
                 <td>
-                  <img class="type-ico" src="images/fire.png" alt="Fire type"> Fire •
-                  <img class="type-ico" src="images/water.png" alt="Water type"> Water •
-                  <img class="type-ico" src="images/ice.png" alt="Ice type"> Ice •
-                  <img class="type-ico" src="images/steel.png" alt="Steel type"> Steel
+                  <img class="type-ico" src="images/fire.png" alt="Best Pokémon Counters for Gigantamax Blastoise Raid US/UK"> Fire •
+                  <img class="type-ico" src="images/water.png" alt="Best Pokémon Counters for Gigantamax Blastoise Raid US/UK"> Water •
+                  <img class="type-ico" src="images/ice.png" alt="Best Pokémon Counters for Gigantamax Blastoise Raid US/UK"> Ice •
+                  <img class="type-ico" src="images/steel.png" alt="Best Pokémon Counters for Gigantamax Blastoise Raid US/UK"> Steel
 </td>
               </tr>
               <tr>
@@ -170,7 +242,7 @@
           </table>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
         </div>
-
+</section>
 <section class="ad-container">
 <div id="foremediaads-e1" class="ad-slot empty"></div>
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/e1"></script>
@@ -194,7 +266,7 @@
     <li><strong>Moltres</strong> </li>
     <li><strong>Machamp</strong> </li>
   </ul>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
 <section id="gigantamax">
@@ -202,7 +274,7 @@
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Blastoise.</p>
 
-
+<div class="gmax-scroll">
          <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
             <thead>
@@ -319,19 +391,20 @@
                 <td>Poison Jab(13) and G-Max Stun Shock(350)</td>
               </tr>
 
-
-
-
-            </tbody>
+           </tbody>
           </table>
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-        </div>
+        
+</section>
+
 
 <section id="dynamax">
 <h2>Dynamax & Support Picks</h2>
       <p>Not every raid group will have multiple Gigantamax picks. Dynamax Pokémon make excellent support, either by adding burst damage or soaking time during G-Max residual windows.</p>
 
-
+<div class="gmax-scroll">
        <div class="tbl" aria-label="Dynamax Counters table">
           <table>
             <thead>
@@ -600,13 +673,13 @@
           <td>Wild Charge</td>
               </tr>
 
-
-
             </tbody>
           </table>
-
+       </div>
+</div>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-        </div>
+        
+</section>
 
   <!--  <section class="ads card" aria-label="Advertisement">
       <ins class="adsbygoogle"
@@ -666,7 +739,7 @@
        <h2 id="team-size">Size</h2>
 
         <p>Recommended: <strong>15–20 trainers</strong> for comfortable clears with mixed player levels. With many Gigantamax / Dynamax counters, 10–14 can work. Under 8 trainers should be attempted only if all participants are high-level and coordinated with ideal counters and Mega/Dynamax/G-Max boosts.</p>
-
+</section>
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
 
  <section id="rewards">
@@ -710,7 +783,7 @@
 <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
     
         </section>
-<section id="conclusion">
+<section class="conclusion">
 <h2>Conclusion</h2>
       <p>Gigantamax Blastoise is a mechanically interesting raid boss: its Water type is predictable, but the G-Max residual damage forces teams to plan for survivability, not just pure DPS. Prioritize Electric and Grass Gigantamax picks, add Dynamax support for sustained windows, and include at least one high-TDO tank if your lobby is smaller. With the counters and tactics above, you’ll clear Blastoise efficiently and maximize your rewards.</p>
 </section>

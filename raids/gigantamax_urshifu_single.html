@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Gigantamax Urshifu Raid Guide — Counters, Moves & Strategy | Pokémon GO</title>
+  <title>Gigantamax Urshifu Single Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Complete Gigantamax Urshifu raid guide for Pokémon GO — weaknesses, best Gigantamax & Dynamax counters, movesets, weather tips, recommended lobby sizes, rewards and battle strategy." />
+  <meta name="description" content="Detailed Gigantamax Urshifu Single raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers."/>
   <meta name="robots" content="index, follow" />
 <link rel="stylesheet" href="foremedia-ads.css" />
 
   <link rel="stylesheet" href="posts.css"/>
+<link rel="alternate" hreflang="en-us" href="https://pokemongaming.in/raids/gigantamax_urshifu_single.html" />
+<link rel="alternate" hreflang="en-gb" href="https://pokemongaming.in/raids/gigantamax_urshifu_single.html" />
 
-<meta property="og:title" content="Gigantamax Urshifu Raid Guide — Counters, Moves & Strategy">
-  <meta property="og:description" content="Defeat Gigantamax Urshifu in Pokémon GO raids: learn its weaknesses, best Gigantamax and Dynamax counters, moveset warnings, weather interactions, and catch tips.">
+<meta property="og:title" content="Gigantamax Urshifu Single Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
+  <meta property="og:description" content="Detailed Gigantamax Urshifu Single raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pokemongaming.in/raids/gigantamax_urshifu_single.html">
   <meta property="og:image" content="https://pokemongaming.in/images/gigantamax_urshifu.png">
@@ -58,6 +60,79 @@
       background: #dcfce7;
       border-radius: 12px;
     }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  /* Remove extra padding from parent containers */
+  .content-wrapper,
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
+  }
+}
   </style>
 
 
@@ -86,7 +161,7 @@
 </script>
 
 
-     <img src="images/gigantamax_urshifu_single.png" alt="Gigantamax Urshifu" loading="lazy" width="1200" height="600">
+     <img src="images/gigantamax_urshifu_single.png" alt="Gigantamax Urshifu Pokémon GO Raid Boss US/UK" loading="lazy" width="1200" height="600">
     </section>
 
    <section class="ad-container">
@@ -105,18 +180,15 @@
 
 <section class="toc">
       <h3>Table of Contents</h3>
-      <a href="#overview">Overview</a>
       <a href="#weakness">Weakness</a>
       <a href="#counters">Best Pokemon</a>
       <a href="#gigantamax">Best Gigantamax Counters</a>
       <a href="#dynamax">Dynamax & Support Picks</a>
       <a href="#moveset">Moveset</a>
-      <a href="#weather">Weather Effects & Battle Flow</a>
+      <a href="#weather">Weather Effects</a>
       <a href="#size">Size</a>
       <a href="#rewards">Rewards</a>
-      <a href="#avoid">Avoid</a>
       <a href="#faq">FAQs</a>
-      <a href="#conclusion">Conclusion</a>
     </section>
 
  <div class="grid" style="margin-top:14px">
@@ -150,18 +222,18 @@
               <tr>
                 <td><strong>Weak to</strong></td>
                 <td>
-                  <img class="type-ico" src="images/fairy.png" alt="Fairy type"> Fairy •
-                  <img class="type-ico" src="images/flying.png" alt="Flying type"> Flying •
-                  <img class="type-ico" src="images/fighting.png" alt="Fighting type"> Fighting
+                  <img class="type-ico" src="images/fairy.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Fairy •
+                  <img class="type-ico" src="images/flying.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Flying •
+                  <img class="type-ico" src="images/fighting.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Fighting
                 </td>
               </tr>
               <tr>
                 <td><strong>Resists</strong></td>
                 <td>
-                  <img class="type-ico" src="images/dark.png" alt="Dark type"> Dark •
-                  <img class="type-ico" src="images/ghost.png" alt="Ghost type"> Ghost •
-                  <img class="type-ico" src="images/psychic.png" alt="Psychic type"> Psychic •
-                  <img class="type-ico" src="images/rock.png" alt="Rock type"> Rock
+                  <img class="type-ico" src="images/dark.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Dark •
+                  <img class="type-ico" src="images/ghost.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Ghost •
+                  <img class="type-ico" src="images/psychic.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Psychic •
+                  <img class="type-ico" src="images/rock.png" alt="Best Pokémon Counters for Gigantamax Urshifu Raid US/UK"> Rock
 </td>
               </tr>
               <tr>
@@ -204,7 +276,7 @@
 <section id="gigantamax">
 <h2>Best Gigantamax Counters</h2>
       <p>Gigantamax Pokémon that amplify the right types give you a powerful edge. Below are top Gigantamax counters with short notes on why they excel vs G-Max Urshifu.</p>
-
+<div class="gmax-scroll">
 
          <div class="tbl" aria-label="Gigantamax Counters table">
           <table>
@@ -332,18 +404,21 @@
                 <td>Pound(6) and G-Max Hydrosnipe(350)</td>
               </tr>
 
-            </tbody>
+             </tbody>
           </table>
-        <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-        </div>
+       </div>
+</div>
+<hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
+        
 </section>
+
 
 <section id="dynamax">
 
 <h2>Dynamax & Support Picks</h2>
       <p>Not every raid group will have multiple Gigantamax picks. Dynamax Pokémon make excellent support, either by adding burst damage or soaking time during G-Max residual windows.</p>
 
-
+<div class="gmax-scroll">
        <div class="tbl" aria-label="Dynamax Counters table">
           <table>
             <thead>
@@ -547,11 +622,14 @@
           <td>Frenzy Plant</td>
               </tr>
 
-            </tbody>
+             </tbody>
           </table>
-       <hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
-        </div>
+       </div>
+</div>
+<hr style="border: 0; height: 2px; background-color: red; margin: 20px 0;">
+        
 </section>
+
 
 
   <!--  <section class="ads card" aria-label="Advertisement">
