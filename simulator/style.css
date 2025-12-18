@@ -1,0 +1,220 @@
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #d22f27;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   SELECTION AREA
+   ========================= */
+#selection-area {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    min-width: 220px;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 22px;
+    background: #ffcb05;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #f2b807;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+/* =========================
+   BATTLE AREA
+   ========================= */
+#battle-area {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pokemon-field {
+    margin: 20px;
+}
+
+.pokemon-display {
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Pokémon images */
+.pokemon-display img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================
+   TEAM AREA
+   ========================= */
+#playerTeam {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* =========================
+   HP BAR
+   ========================= */
+.hp-bar-container {
+    width: 150px;
+    height: 15px;
+    border: 1px solid #000;
+    background: #ddd;
+    margin: 6px auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hp-bar {
+    height: 100%;
+    width: 100%;
+    background: green;
+    transition: width 0.4s ease;
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+.shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(-5px, 0); }
+    50%  { transform: translate(5px, 0); }
+    75%  { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+.fade-out {
+    animation: fadeOut 0.6s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* =========================
+   BATTLE LOG
+   ========================= */
+#battle-log {
+    background: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+#logContent {
+    text-align: left;
+    font-size: 14px;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    /* Stack selection area */
+    #selection-area {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    select {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .pokemon-field {
+        margin: 10px 0;
+    }
+
+    .pokemon-display {
+        width: 100%;
+        max-width: 190px;
+        margin: 0 auto 15px;
+        padding: 8px;
+    }
+
+    .pokemon-display img {
+        max-width: 180px;
+    }
+
+    .hp-bar-container {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    #playerTeam {
+        gap: 12px;
+    }
+
+    #battle-log {
+        height: 160px;
+        font-size: 13px;
+    }
+}

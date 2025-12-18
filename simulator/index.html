@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Raid Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pokémon Raid Simulator</h1>
+
+    <div id="selection-area">
+        <div>
+            <h2>Choose Raid Boss</h2>
+            <select id="raidBossSelect"></select>
+        </div>
+        <div>
+            <h2>Choose Your Pokémon</h2>
+            <select id="teamSelect" multiple size="8"></select>
+        </div>
+        <button id="startBattleBtn">Start Battle</button>
+    </div>
+
+    <div id="battle-area" class="hidden">
+        <div id="boss-area" class="pokemon-field">
+            <h2>Raid Boss</h2>
+            <div class="pokemon-display">
+                <img id="bossImage" alt="Boss Pokémon">
+                <div class="hp-bar-container">
+                    <div id="bossHpBar" class="hp-bar"></div>
+                </div>
+                <p id="bossHpText"></p>
+            </div>
+        </div>
+
+        <div id="player-area" class="pokemon-field">
+            <h2>Your Team</h2>
+            <div id="playerTeam"></div>
+        </div>
+
+        <div id="controls">
+            <button id="attackBtn">Attack</button>
+        </div>
+
+        <div id="battle-log">
+            <h3>Battle Log</h3>
+            <div id="logContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
