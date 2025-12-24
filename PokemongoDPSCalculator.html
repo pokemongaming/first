@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon GO DPS Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Pokémon GO DPS Calculator to calculate fast move, charged move, and total DPS with STAB and weather boost. Accurate and mobile friendly.">
+
+<style>
+body{
+  margin:0;
+  background:#0b0b0b;
+  color:#fff;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+.container{
+  max-width:720px;
+  margin:auto;
+  padding:16px;
+}
+h1{
+  font-size:22px;
+  margin-bottom:12px;
+}
+.card{
+  background:#151515;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 0 14px rgba(0,0,0,0.5);
+}
+label{
+  display:block;
+  margin-top:14px;
+  font-size:14px;
+  opacity:0.9;
+}
+input,select{
+  width:100%;
+  margin-top:6px;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  font-size:15px;
+  background:#222;
+  color:#fff;
+}
+button{
+  margin-top:18px;
+  width:100%;
+  padding:12px;
+  font-size:16px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(90deg,#00ff6a,#00c853);
+  font-weight:700;
+  cursor:pointer;
+}
+.result{
+  margin-top:18px;
+  text-align:center;
+}
+.value{
+  font-size:26px;
+  font-weight:900;
+}
+.explain{
+  margin-top:10px;
+  font-size:13px;
+  color:#ccc;
+  line-height:1.5;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Pokémon GO DPS Calculator</h1>
+
+<div class="card">
+
+<label>Fast Move Damage</label>
+<input type="number" id="fastDmg" value="10" min="1">
+
+<label>Fast Move Duration (seconds)</label>
+<input type="number" id="fastTime" value="1" step="0.1">
+
+<label>Charged Move Damage</label>
+<input type="number" id="chargeDmg" value="100" min="1">
+
+<label>Charged Move Duration (seconds)</label>
+<input type="number" id="chargeTime" value="3" step="0.1">
+
+<label>STAB (Same Type Attack Bonus)</label>
+<select id="stab">
+  <option value="yes">Yes (+20%)</option>
+  <option value="no">No</option>
+</select>
+
+<label>Weather Boost</label>
+<select id="weather">
+  <option value="no">No</option>
+  <option value="yes">Yes (+20%)</option>
+</select>
+
+<button onclick="calculateDPS()">Calculate DPS</button>
+
+<div class="result">
+  <div class="value">Fast DPS: <span id="fastResult">—</span></div>
+  <div class="value">Charged DPS: <span id="chargeResult">—</span></div>
+  <div class="value">Total DPS: <span id="totalResult">—</span></div>
+</div>
+
+<div class="explain">
+This Pokémon GO DPS calculation includes fast and charged move damage,
+with optional Same Type Attack Bonus (STAB) and weather boost.
+Actual in-game DPS may vary depending on energy generation and dodging.
+</div>
+
+</div>
+</div>
+
+<script>
+function calculateDPS(){
+  let fastDmg=parseFloat(document.getElementById("fastDmg").value);
+  let fastTime=parseFloat(document.getElementById("fastTime").value);
+  let chargeDmg=parseFloat(document.getElementById("chargeDmg").value);
+  let chargeTime=parseFloat(document.getElementById("chargeTime").value);
+  let stab=document.getElementById("stab").value;
+  let weather=document.getElementById("weather").value;
+
+  let fastDPS=fastDmg/fastTime;
+  let chargeDPS=chargeDmg/chargeTime;
+
+  let multiplier=1;
+  if(stab==="yes") multiplier+=0.2;
+  if(weather==="yes") multiplier+=0.2;
+
+  fastDPS*=multiplier;
+  chargeDPS*=multiplier;
+
+  let totalDPS=(fastDPS+chargeDPS)/2;
+
+  document.getElementById("fastResult").innerText=fastDPS.toFixed(2);
+  document.getElementById("chargeResult").innerText=chargeDPS.toFixed(2);
+  document.getElementById("totalResult").innerText=totalDPS.toFixed(2);
+}
+</script>
+
+</body>
+</html>
