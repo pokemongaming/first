@@ -745,7 +745,7 @@ function updateMoves() {
   const poke = document.getElementById("pokemon").value;
   const fast = document.getElementById("fastMove");
   const charged = document.getElementById("chargedMove");
-  const elite = document.getElementById(" eliteMove");
+  const elite = document.getElementById("eliteMove");
   
   fast.innerHTML = "";
   charged.innerHTML = "";
