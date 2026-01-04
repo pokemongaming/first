@@ -21,6 +21,70 @@
   gtag('config', 'G-BTG1RBCVB7');
 </script>
 
+  <style>
+.raid-countdown {
+  background: #0b1220;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  margin: 16px 0;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(250,204,21,0.35);
+}
+
+.local-time {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.countdown-timer {
+  font-size: 22px;
+  font-weight: bold;
+  color: #facc15;
+}
+</style>
+
+  <script>
+function startRaidCountdown() {
+  document.querySelectorAll(".raid-countdown").forEach(el => {
+    const startTime = new Date(el.dataset.utc);
+    const timerEl = el.querySelector(".countdown-timer");
+    const localTimeEl = el.querySelector(".local-time");
+
+    // Show visitor's local time automatically
+    localTimeEl.innerHTML =
+      "Starts at: " +
+      startTime.toLocaleString([], {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZoneName: "short"
+      });
+
+    setInterval(() => {
+      const now = new Date();
+      const diff = startTime - now;
+
+      if (diff <= 0) {
+        timerEl.innerHTML = "🟢 Raid is Live!";
+        return;
+      }
+
+      const h = Math.floor(diff / (1000 * 60 * 60));
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+
+      timerEl.innerHTML = `${h}h ${m}m ${s}s remaining`;
+    }, 1000);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", startRaidCountdown);
+</script>
+
 
 </head>
 <body>
@@ -55,6 +119,49 @@
 <script type="text/javascript" async src="https://platform.foremedia.net/code/60744/c1"></script>
 </section>
 
+    <section class="section" id="raids">
+    <div class="container">
+      <h2 class="section-title">Upcoming Raids</h2>
+          <div class="raid-countdown" data-utc="2026-01-05T04:30:00Z">
+  <h3>🔥 Genesect Raid – 5 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+          </div>
+      <div class="raid-countdown" data-utc="2026-01-16T04:30:00Z">
+  <h3>🔥 Incarnate Thundurus Raid – 16 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div><div class="raid-countdown" data-utc="2026-01-25T04:30:00Z">
+  <h3>🔥 Incarnate Tornadus Raid – 25 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div><div class="raid-countdown" data-utc="2026-01-05T04:30:00Z">
+  <h3>🔥 Mega Blaziken Raid – 5 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div><div class="raid-countdown" data-utc="2026-01-16T04:30:00Z">
+  <h3>🔥 Mega Sceptile Raid – 16 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div><div class="raid-countdown" data-utc="2026-01-25T04:30:00Z">
+  <h3>🔥 Mega Ampharos Raid – 25 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div>
+        </div>
+
+        <div class="raid-card">
+ <!--         <div class="img-container">
+            <img src="raids/images/gigantamax_grimmsnarl.webp" alt="Gigantamax Grimmsnarl">
+          </div>-->
+          <div class="card-content">
+            <h3>Gigantamax Grimmsnarl</h3>
+            <a href="raids/gigantamax_grimmsnarl.html" class="btn">View Guide</a>
+          </div>
+        </div>
+</div>
+</div>
+    </section>
 
   <section class="section" id="raids">
     <div class="container">
@@ -80,8 +187,6 @@
             <a href="raids/gigantamax_grimmsnarl.html" class="btn">View Guide</a>
           </div>
         </div>
-
-
 </div>
 </div>
 </section>
@@ -97,8 +202,8 @@
             <img src="raids/images/mega_sharpedo.webp" alt="Mega Sharpedo">
           </div>-->
           <div class="card-content">
-            <h3>Mega Sharpedo</h3>
-            <a href="raids/mega_sharpedo.html" class="btn">View Guide</a>
+            <h3>Genesect</h3>
+            <a href="raids/genesect.html" class="btn">View Guide</a>
           </div>
         </div>
 
@@ -107,8 +212,38 @@
             <img src="raids/images/mega_camerupt.webp" alt="Mega Camerupt">
           </div>-->
           <div class="card-content">
-            <h3>Mega Camerupt</h3>
-            <a href="raids/mega_camerupt.html" class="btn">View Guide</a>
+            <h3>Incarnate Thundurus</h3>
+            <a href="raids/incarnate_thundurus.html" class="btn">View Guide</a>
+          </div>
+        </div>
+
+        <div class="raid-card">
+   <!--       <div class="img-container">
+            <img src="raids/images/mega_camerupt.webp" alt="Mega Camerupt">
+          </div>-->
+          <div class="card-content">
+            <h3>Incarnate Tornadus</h3>
+            <a href="raids/incarnate_tornadus.html" class="btn">View Guide</a>
+          </div>
+        </div> 
+        
+        <div class="raid-card">
+   <!--       <div class="img-container">
+            <img src="raids/images/mega_camerupt.webp" alt="Mega Camerupt">
+          </div>-->
+          <div class="card-content">
+            <h3>Mega Blaziken</h3>
+            <a href="raids/mega_blaziken.html" class="btn">View Guide</a>
+          </div>
+        </div>
+        
+        <div class="raid-card">
+   <!--       <div class="img-container">
+            <img src="raids/images/mega_camerupt.webp" alt="Mega Camerupt">
+          </div>-->
+          <div class="card-content">
+            <h3>Mega Sceptile</h3>
+            <a href="raids/mega_sceptile.html" class="btn">View Guide</a>
           </div>
         </div>
 
@@ -118,8 +253,8 @@
             <img src="raids/images/mega_metagross.webp" alt="Mega Metagross">
           </div>-->
           <div class="card-content">
-            <h3>Mega Metagross</h3>
-            <a href="raids/mega_metagross.html" class="btn">View Guide</a>
+            <h3>Mega Ampharos</h3>
+            <a href="raids/mega_ampharos.html" class="btn">View Guide</a>
           </div>
         </div>
 
