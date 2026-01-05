@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO True or False Quiz</title>
+<meta name="description" content="Test your Pokémon GO knowledge with this True or False quiz. Learn about raids, type matchups, and moves.">
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 10px;
+}
+
+.quiz-container {
+  max-width: 720px;
+  margin: auto;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.question {
+  margin: 18px 0 10px;
+  font-weight: 600;
+}
+
+.option {
+  display: block;
+  padding: 11px;
+  margin-bottom: 8px;
+  background: #eef2ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #dbeafe;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #f59e0b;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>Pokémon GO True or False Quiz</h1>
+<p>Test your knowledge about Pokémon GO raids, counters, and type effectiveness.</p>
+
+<form id="quizForm">
+
+<div class="question">1. Weather boosts increase a Pokémon raid boss's CP.</div>
+<label class="option"><input type="radio" name="q1" value="1"> True</label>
+<label class="option"><input type="radio" name="q1" value="0"> False</label>
+
+<div class="question">2. Electric-type attacks are super effective against Ground-types.</div>
+<label class="option"><input type="radio" name="q2" value="0"> True</label>
+<label class="option"><input type="radio" name="q2" value="1"> False</label>
+
+<div class="question">3. Machamp is one of the best counters for Snorlax in raids.</div>
+<label class="option"><input type="radio" name="q3" value="1"> True</label>
+<label class="option"><input type="radio" name="q3" value="0"> False</label>
+
+<div class="question">4. Mega Evolutions are permanent in Pokémon GO.</div>
+<label class="option"><input type="radio" name="q4" value="0"> True</label>
+<label class="option"><input type="radio" name="q4" value="1"> False</label>
+
+<div class="question">5. Ghost-type moves are super effective against Psychic-types.</div>
+<label class="option"><input type="radio" name="q5" value="1"> True</label>
+<label class="option"><input type="radio" name="q5" value="0"> False</label>
+
+<button type="button" onclick="checkScore()">Submit Quiz</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<p style="margin-top:16px;text-align:center;">
+📘 Learn more with our  
+<a href="/pokemon-go-raid-guides" target="_blank">Pokémon GO Raid Guides</a>
+</p>
+
+</div>
+
+<script>
+function checkScore() {
+  let score = 0;
+  document.querySelectorAll("input:checked").forEach(el => {
+    score += parseInt(el.value);
+  });
+
+  document.getElementById("result").innerHTML =
+    "You scored " + score + " / 5 ✅";
+}
+</script>
+
+</body>
+</html>
