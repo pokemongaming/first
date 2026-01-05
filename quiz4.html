@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Pokémon by Type Quiz</title>
+<meta name="description" content="Can you guess the Pokémon by its type combination? Test your Pokémon GO knowledge with this fun quiz.">
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 10px;
+}
+
+.quiz-container {
+  max-width: 720px;
+  margin: auto;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  background: #e5e7eb;
+  font-weight: 600;
+}
+
+.question {
+  margin: 18px 0 10px;
+  font-weight: 600;
+}
+
+.option {
+  display: block;
+  padding: 11px;
+  margin-bottom: 8px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #e0f2fe;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #0ea5e9;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>Guess the Pokémon by Type</h1>
+<p>Identify the Pokémon using only its type combination. No images needed!</p>
+
+<form id="quizForm">
+
+<div class="question">
+1. Which Pokémon is <br>
+<span class="type-badge">Fire</span>
+<span class="type-badge">Fighting</span>
+</div>
+<label class="option"><input type="radio" name="q1" value="1"> Blaziken</label>
+<label class="option"><input type="radio" name="q1" value="0"> Infernape</label>
+<label class="option"><input type="radio" name="q1" value="0"> Emboar</label>
+
+<div class="question">
+2. Which Pokémon is <br>
+<span class="type-badge">Dragon</span>
+<span class="type-badge">Flying</span>
+</div>
+<label class="option"><input type="radio" name="q2" value="1"> Rayquaza</label>
+<label class="option"><input type="radio" name="q2" value="0"> Salamence</label>
+<label class="option"><input type="radio" name="q2" value="0"> Dragonite</label>
+
+<div class="question">
+3. Which Pokémon is <br>
+<span class="type-badge">Water</span>
+<span class="type-badge">Dark</span>
+</div>
+<label class="option"><input type="radio" name="q3" value="1"> Greninja</label>
+<label class="option"><input type="radio" name="q3" value="0"> Sharpedo</label>
+<label class="option"><input type="radio" name="q3" value="0"> Crawdaunt</label>
+
+<div class="question">
+4. Which Pokémon is <br>
+<span class="type-badge">Ghost</span>
+<span class="type-badge">Poison</span>
+</div>
+<label class="option"><input type="radio" name="q4" value="1"> Gengar</label>
+<label class="option"><input type="radio" name="q4" value="0"> Dragapult</label>
+<label class="option"><input type="radio" name="q4" value="0"> Mismagius</label>
+
+<div class="question">
+5. Which Pokémon is <br>
+<span class="type-badge">Steel</span>
+<span class="type-badge">Psychic</span>
+</div>
+<label class="option"><input type="radio" name="q5" value="1"> Metagross</label>
+<label class="option"><input type="radio" name="q5" value="0"> Jirachi</label>
+<label class="option"><input type="radio" name="q5" value="0"> Bronzong</label>
+
+<button type="button" onclick="checkScore()">Submit Quiz</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<p style="margin-top:16px;text-align:center;">
+🧠 Learn type matchups using our  
+<a href="/pokemon-go-type-chart" target="_blank">Pokémon Type Chart</a>
+</p>
+
+</div>
+
+<script>
+function checkScore() {
+  let score = 0;
+  document.querySelectorAll("input:checked").forEach(el => {
+    score += parseInt(el.value);
+  });
+
+  document.getElementById("result").innerHTML =
+    "You scored " + score + " / 5 🎉";
+}
+</script>
+
+</body>
+</html>
