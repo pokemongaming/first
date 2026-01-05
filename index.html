@@ -49,10 +49,12 @@
 function startRaidCountdown() {
   document.querySelectorAll(".raid-countdown").forEach(el => {
     const startTime = new Date(el.dataset.utc);
+    const raidDurationMinutes = 840;
+
     const timerEl = el.querySelector(".countdown-timer");
     const localTimeEl = el.querySelector(".local-time");
 
-    // Show visitor's local time automatically
+    // Show visitor's local time
     localTimeEl.innerHTML =
       "Starts at: " +
       startTime.toLocaleString([], {
@@ -64,15 +66,26 @@ function startRaidCountdown() {
         timeZoneName: "short"
       });
 
-    setInterval(() => {
+    const endTime = new Date(startTime.getTime() + raidDurationMinutes * 60000);
+
+    const interval = setInterval(() => {
       const now = new Date();
       const diff = startTime - now;
 
+      // ❌ Raid fully ended → remove block
+      if (now >= endTime) {
+        clearInterval(interval);
+        el.remove(); // or el.style.display = "none";
+        return;
+      }
+
+      // 🟢 Raid live
       if (diff <= 0) {
         timerEl.innerHTML = "🟢 Raid is Live!";
         return;
       }
 
+      // ⏳ Countdown
       const h = Math.floor(diff / (1000 * 60 * 60));
       const m = Math.floor((diff / (1000 * 60)) % 60);
       const s = Math.floor((diff / 1000) % 60);
