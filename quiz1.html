@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO Type Effectiveness Quiz</title>
+<meta name="description" content="Test your Pokémon GO type effectiveness knowledge. 10-question quiz to improve raid and PvP performance.">
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 10px;
+}
+
+.quiz-container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.question {
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.option {
+  display: block;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #eef2f7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #dbeafe;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>Pokémon GO Type Effectiveness Quiz</h1>
+<p>Test your Pokémon GO battle knowledge. This quiz helps you choose better raid counters and PvP attackers.</p>
+
+<form id="quizForm">
+
+<div class="question">1. Which type is super effective against Dragon?</div>
+<label class="option"><input type="radio" name="q1" value="0"> Fire</label>
+<label class="option"><input type="radio" name="q1" value="1"> Ice</label>
+<label class="option"><input type="radio" name="q1" value="0"> Water</label>
+
+<div class="question">2. Which type resists Electric attacks?</div>
+<label class="option"><input type="radio" name="q2" value="1"> Ground</label>
+<label class="option"><input type="radio" name="q2" value="0"> Flying</label>
+<label class="option"><input type="radio" name="q2" value="0"> Steel</label>
+
+<div class="question">3. Fighting moves are weak against?</div>
+<label class="option"><input type="radio" name="q3" value="1"> Fairy</label>
+<label class="option"><input type="radio" name="q3" value="0"> Rock</label>
+<label class="option"><input type="radio" name="q3" value="0"> Ice</label>
+
+<div class="question">4. Which type is super effective against Water?</div>
+<label class="option"><input type="radio" name="q4" value="1"> Electric</label>
+<label class="option"><input type="radio" name="q4" value="0"> Fire</label>
+<label class="option"><input type="radio" name="q4" value="0"> Steel</label>
+
+<div class="question">5. Ghost attacks are super effective against?</div>
+<label class="option"><input type="radio" name="q5" value="1"> Psychic</label>
+<label class="option"><input type="radio" name="q5" value="0"> Normal</label>
+<label class="option"><input type="radio" name="q5" value="0"> Fighting</label>
+
+<button type="button" onclick="checkScore()">Submit Quiz</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<p style="margin-top:15px;text-align:center;">
+👉 Improve your score using our  
+<a href="/pokemon-go-type-chart" target="_blank">Type Effectiveness Chart</a>  
+</p>
+
+</div>
+
+<script>
+function checkScore() {
+  let score = 0;
+  document.querySelectorAll("input:checked").forEach(el => {
+    score += parseInt(el.value);
+  });
+
+  document.getElementById("result").innerHTML =
+    "You scored " + score + " / 5 🎯";
+}
+</script>
+
+</body>
+</html>
