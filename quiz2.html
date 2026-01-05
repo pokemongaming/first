@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO Raid Counter Quiz</title>
+<meta name="description" content="Test your Pokémon GO raid counter knowledge. Choose the best Pokémon counters for popular raid bosses.">
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 10px;
+}
+
+.quiz-container {
+  max-width: 720px;
+  margin: auto;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.question {
+  margin: 18px 0 10px;
+  font-weight: 600;
+}
+
+.option {
+  display: block;
+  padding: 11px;
+  margin-bottom: 8px;
+  background: #eef2ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #dbeafe;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>Pokémon GO Raid Counter Quiz</h1>
+<p>Can you pick the best raid counters? Test your knowledge and improve your raid performance.</p>
+
+<form id="quizForm">
+
+<div class="question">1. Best counter for Mega Blaziken?</div>
+<label class="option"><input type="radio" name="q1" value="1"> Mewtwo (Psychic)</label>
+<label class="option"><input type="radio" name="q1" value="0"> Charizard (Fire)</label>
+<label class="option"><input type="radio" name="q1" value="0"> Tyranitar (Rock)</label>
+
+<div class="question">2. Best counter for Dragonite?</div>
+<label class="option"><input type="radio" name="q2" value="1"> Mamoswine (Ice)</label>
+<label class="option"><input type="radio" name="q2" value="0"> Machamp (Fighting)</label>
+<label class="option"><input type="radio" name="q2" value="0"> Gyarados (Water)</label>
+
+<div class="question">3. Best counter for Kyogre?</div>
+<label class="option"><input type="radio" name="q3" value="1"> Zekrom (Electric)</label>
+<label class="option"><input type="radio" name="q3" value="0"> Reshiram (Fire)</label>
+<label class="option"><input type="radio" name="q3" value="0"> Groudon (Ground)</label>
+
+<div class="question">4. Best counter for Lugia?</div>
+<label class="option"><input type="radio" name="q4" value="1"> Rampardos (Rock)</label>
+<label class="option"><input type="radio" name="q4" value="0"> Venusaur (Grass)</label>
+<label class="option"><input type="radio" name="q4" value="0"> Blaziken (Fire)</label>
+
+<div class="question">5. Best counter for Mewtwo?</div>
+<label class="option"><input type="radio" name="q5" value="1"> Giratina (Origin)</label>
+<label class="option"><input type="radio" name="q5" value="0"> Machamp</label>
+<label class="option"><input type="radio" name="q5" value="0"> Garchomp</label>
+
+<button type="button" onclick="checkScore()">Submit Quiz</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<p style="margin-top:16px;text-align:center;">
+🔍 Find exact counters using our  
+<a href="/raid-counter-finder" target="_blank">Raid Counter Finder Tool</a>
+</p>
+
+</div>
+
+<script>
+function checkScore() {
+  let score = 0;
+  document.querySelectorAll("input:checked").forEach(el => {
+    score += parseInt(el.value);
+  });
+
+  document.getElementById("result").innerHTML =
+    "You scored " + score + " / 5 🏆";
+}
+</script>
+
+</body>
+</html>
