@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon Type Weakness Calculator | Pokémon GO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Calculate Pokémon weaknesses, resistances, and immunities using our Pokémon GO Type Weakness Calculator. Supports dual types.">
+
+<style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;margin:0}
+.container{max-width:900px;margin:auto;background:#fff;padding:20px}
+h1{text-align:center;color:#e53935}
+
+/* BADGES */
+.badge{display:inline-block;padding:5px 10px;margin:4px;border-radius:14px;font-size:13px;font-weight:bold;color:#fff}
+.normal{background:#A8A77A;color:#000}
+.fire{background:#EE8130}
+.water{background:#6390F0}
+.grass{background:#7AC74C}
+.electric{background:#F7D02C;color:#000}
+.ice{background:#96D9D6;color:#000}
+.fighting{background:#C22E28}
+.poison{background:#A33EA1}
+.ground{background:#E2BF65;color:#000}
+.flying{background:#A98FF3}
+.psychic{background:#F95587}
+.bug{background:#A6B91A;color:#000}
+.rock{background:#B6A136}
+.ghost{background:#735797}
+.dragon{background:#6F35FC}
+.dark{background:#705746}
+.steel{background:#B7B7CE;color:#000}
+.fairy{background:#D685AD;color:#000}
+
+select,button{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  font-size:15px;
+}
+
+.result{margin-top:20px}
+h3{margin-bottom:5px}
+
+@media(max-width:768px){
+  h1{font-size:22px}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Type Weakness Calculator</h1>
+
+<p>Select one or two Pokémon types to see weaknesses and resistances.</p>
+
+<select id="type1">
+  <option value="">Select Primary Type</option>
+</select>
+
+<select id="type2">
+  <option value="">Select Secondary Type (Optional)</option>
+</select>
+
+<button onclick="calculate()">Calculate Weakness</button>
+
+<div class="result" id="result"></div>
+</div>
+
+<script>
+const types = [
+"Normal","Fire","Water","Grass","Electric","Ice","Fighting","Poison",
+"Ground","Flying","Psychic","Bug","Rock","Ghost","Dragon","Dark","Steel","Fairy"
+];
+
+const chart = {
+Normal:{weak:["Fighting"],resist:[],immune:["Ghost"]},
+Fire:{weak:["Water","Ground","Rock"],resist:["Fire","Grass","Ice","Bug","Steel","Fairy"],immune:[]},
+Water:{weak:["Electric","Grass"],resist:["Fire","Water","Ice","Steel"],immune:[]},
+Grass:{weak:["Fire","Ice","Poison","Flying","Bug"],resist:["Water","Electric","Grass","Ground"],immune:[]},
+Electric:{weak:["Ground"],resist:["Electric","Flying","Steel"],immune:[]},
+Ice:{weak:["Fire","Fighting","Rock","Steel"],resist:["Ice"],immune:[]},
+Fighting:{weak:["Flying","Psychic","Fairy"],resist:["Bug","Rock","Dark"],immune:[]},
+Poison:{weak:["Ground","Psychic"],resist:["Grass","Fighting","Poison","Bug","Fairy"],immune:[]},
+Ground:{weak:["Water","Grass","Ice"],resist:["Poison","Rock"],immune:["Electric"]},
+Flying:{weak:["Electric","Ice","Rock"],resist:["Grass","Fighting","Bug"],immune:["Ground"]},
+Psychic:{weak:["Bug","Ghost","Dark"],resist:["Fighting","Psychic"],immune:[]},
+Bug:{weak:["Fire","Flying","Rock"],resist:["Grass","Fighting","Ground"],immune:[]},
+Rock:{weak:["Water","Grass","Fighting","Ground","Steel"],resist:["Normal","Fire","Poison","Flying"],immune:[]},
+Ghost:{weak:["Ghost","Dark"],resist:["Poison","Bug"],immune:["Normal","Fighting"]},
+Dragon:{weak:["Ice","Dragon","Fairy"],resist:["Fire","Water","Electric","Grass"],immune:[]},
+Dark:{weak:["Fighting","Bug","Fairy"],resist:["Ghost","Dark"],immune:["Psychic"]},
+Steel:{weak:["Fire","Fighting","Ground"],resist:["Normal","Grass","Ice","Flying","Psychic","Bug","Rock","Dragon","Steel","Fairy"],immune:["Poison"]},
+Fairy:{weak:["Poison","Steel"],resist:["Fighting","Bug","Dark"],immune:["Dragon"]}
+};
+
+types.forEach(t=>{
+  type1.innerHTML+=`<option>${t}</option>`;
+  type2.innerHTML+=`<option>${t}</option>`;
+});
+
+function calculate(){
+  let t1=type1.value;
+  let t2=type2.value;
+  if(!t1){alert("Select at least one type");return}
+
+  let mult={};
+  types.forEach(t=>mult[t]=1);
+
+  [t1,t2].forEach(t=>{
+    if(!t) return;
+    chart[t].weak.forEach(w=>mult[w]*=2);
+    chart[t].resist.forEach(r=>mult[r]*=0.5);
+    chart[t].immune.forEach(i=>mult[i]=0);
+  });
+
+  let weak=[],resist=[],immune=[];
+  for(let t in mult){
+    if(mult[t]>1) weak.push(t);
+    else if(mult[t]==0) immune.push(t);
+    else if(mult[t]<1) resist.push(t);
+  }
+
+  result.innerHTML=`
+    <h3>Weak to:</h3>${weak.map(t=>`<span class="badge ${t.toLowerCase()}">${t}</span>`).join("") || "None"}
+    <h3>Resistant to:</h3>${resist.map(t=>`<span class="badge ${t.toLowerCase()}">${t}</span>`).join("") || "None"}
+    <h3>Immune to:</h3>${immune.map(t=>`<span class="badge ${t.toLowerCase()}">${t}</span>`).join("") || "None"}
+  `;
+}
+</script>
+</body>
+</html>
