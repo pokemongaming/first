@@ -1,6 +1,6 @@
 // ===================== Pokémon Data =====================
 const pokemonList = [
-    { name: "Mega Abomasnow", cp: 2500, hp: 160, attack: 140, img: "images/abomasnow.webp" },
+    { name: "Mega Abomasnow", cp: 2500, hp: 160, attack: 140, types: ["Grass","Ice"], img: "images/abomasnow.webp" },
     { name: "Mega Absol", cp: 2800, hp: 150, attack: 160, types: ["Dark"], img: "images/absol.webp" },
     { name: "Mega Aerodactyl", cp: 2700, hp: 170, attack: 150, types: ["Rock","Flying"], img: "images/aerodactyl.webp" },
     { name: "Mega Aggron", cp: 2650, hp: 165, attack: 145, types: ["Steel", "Rock"], img: "images/aggron.webp" },
