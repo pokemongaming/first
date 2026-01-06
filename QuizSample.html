@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO Quiz</title>
+<meta name="description" content="Interactive Pokémon GO quiz with instant feedback.">
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 10px;
+}
+.quiz-container {
+  max-width: 720px;
+  margin: auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.progress {
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #2563eb;
+  transition: width 0.4s ease;
+}
+h1 { text-align:center; font-size:1.4rem; }
+.question-count { text-align:center; font-weight:600; margin-bottom:8px; }
+.question { font-weight:600; margin-bottom:12px; }
+.option {
+  padding:12px;
+  background:#f1f5f9;
+  border-radius:10px;
+  margin-bottom:8px;
+  cursor:pointer;
+}
+.option:hover { transform: scale(1.02); }
+.correct { background:#dcfce7; border:2px solid #22c55e; }
+.wrong { background:#fee2e2; border:2px solid #ef4444; }
+.feedback { margin-top:10px; font-weight:600; }
+.result-box { text-align:center; }
+.result-box a { font-weight:600; color:#2563eb; text-decoration:none; }
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1 id="quizTitle">Pokémon GO Quiz</h1>
+
+<div class="progress">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<div id="quizArea"></div>
+</div>
+
+<script>
+/* ========= ONLY CHANGE THIS PART ========= */
+
+const quizConfig = {
+  title: "Pokémon GO Type Effectiveness Quiz",
+  ctaHtml: `
+    👉 <a href="/pokemon-go-type-chart">Type Chart</a><br>
+    👉 <a href="/raid-counter-finder">Raid Counter Finder</a>
+  `,
+  questions: [
+    {
+      q: "Which type is super effective against Dragon?",
+      options: ["Fire", "Ice", "Water"],
+      answer: 1,
+      explanation: "Ice-type moves are super effective against Dragon Pokémon."
+    },
+    {
+      q: "Which type is immune to Electric attacks?",
+      options: ["Flying", "Ground", "Steel"],
+      answer: 1,
+      explanation: "Ground-type Pokémon are immune to Electric moves."
+    }
+  ]
+};
+
+/* ========= DO NOT TOUCH BELOW ========= */
+
+document.getElementById("quizTitle").innerText = quizConfig.title;
+
+let current = 0;
+let score = 0;
+
+const quizArea = document.getElementById("quizArea");
+const progressFill = document.getElementById("progressFill");
+
+function loadQuestion() {
+  progressFill.style.width =
+    ((current / quizConfig.questions.length) * 100) + "%";
+
+  const q = quizConfig.questions[current];
+
+  quizArea.innerHTML = `
+    <div class="question-count">Question ${current + 1} of ${quizConfig.questions.length}</div>
+    <div class="question">${q.q}</div>
+    ${q.options.map((opt, i) =>
+      `<div class="option" onclick="selectAnswer(${i}, this)">${opt}</div>`
+    ).join("")}
+    <div class="feedback" id="feedback"></div>
+  `;
+}
+
+function selectAnswer(index, element) {
+  const q = quizConfig.questions[current];
+  document.querySelectorAll(".option").forEach(o => o.onclick = null);
+
+  if (index === q.answer) {
+    element.classList.add("correct");
+    score++;
+    document.getElementById("feedback").innerHTML = "✅ Correct! " + q.explanation;
+  } else {
+    element.classList.add("wrong");
+    document.querySelectorAll(".option")[q.answer].classList.add("correct");
+    document.getElementById("feedback").innerHTML = "❌ Wrong! " + q.explanation;
+  }
+
+  setTimeout(() => {
+    current++;
+    current < quizConfig.questions.length ? loadQuestion() : showResult();
+  }, 1200);
+}
+
+function showResult() {
+  progressFill.style.width = "100%";
+
+  const level =
+    score >= quizConfig.questions.length * 0.8 ? "🔥 Expert Trainer" :
+    score >= quizConfig.questions.length * 0.5 ? "⚡ Learning Trainer" :
+    "📘 Beginner";
+
+  quizArea.innerHTML = `
+    <div class="result-box">
+      <h2>${level}</h2>
+      <p>You scored <strong>${score} / ${quizConfig.questions.length}</strong></p>
+      <p>Improve using these tools:</p>
+      <p>${quizConfig.ctaHtml}</p>
+    </div>
+  `;
+}
+
+loadQuestion();
+</script>
+
+</body>
+</html>
