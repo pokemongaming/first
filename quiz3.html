@@ -9,64 +9,47 @@
 <style>
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f8fafc;
+  background: #f3f4f6;
   margin: 0;
   padding: 10px;
 }
-
 .quiz-container {
   max-width: 720px;
   margin: auto;
-  background: #ffffff;
+  background: #fff;
   padding: 18px;
-  border-radius: 14px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
-
-h1 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.question {
-  margin: 18px 0 10px;
-  font-weight: 600;
-}
-
-.option {
-  display: block;
-  padding: 11px;
-  margin-bottom: 8px;
-  background: #f1f5f9;
+.progress {
+  background: #e5e7eb;
+  height: 8px;
   border-radius: 10px;
-  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 16px;
 }
-
-.option:hover {
-  background: #e0e7ff;
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #2563eb;
+  transition: width 0.4s ease;
 }
-
-.option input {
-  margin-right: 8px;
+h1 { text-align:center; font-size:1.4rem; }
+.question-count { text-align:center; font-weight:600; margin-bottom:8px; }
+.question { font-weight:600; margin-bottom:12px; }
+.option {
+  padding:12px;
+  background:#f1f5f9;
+  border-radius:10px;
+  margin-bottom:8px;
+  cursor:pointer;
 }
-
-button {
-  width: 100%;
-  padding: 14px;
-  background: #9333ea;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.result {
-  margin-top: 16px;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
+.option:hover { transform: scale(1.02); }
+.correct { background:#dcfce7; border:2px solid #22c55e; }
+.wrong { background:#fee2e2; border:2px solid #ef4444; }
+.feedback { margin-top:10px; font-weight:600; }
+.result-box { text-align:center; }
+.result-box a { font-weight:600; color:#2563eb; text-decoration:none; }
 </style>
 </head>
 
@@ -76,55 +59,120 @@ button {
 <h1>Pokémon GO Best Moveset Quiz</h1>
 <p>Choose the best moveset for each Pokémon to maximize damage in raids and PvP battles.</p>
 
-<form id="quizForm">
+<div class="progress">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
 
-<div class="question">1. Best charged move for Reshiram?</div>
-<label class="option"><input type="radio" name="q1" value="1"> Overheat</label>
-<label class="option"><input type="radio" name="q1" value="0"> Draco Meteor</label>
-<label class="option"><input type="radio" name="q1" value="0"> Crunch</label>
-
-<div class="question">2. Best fast move for Mewtwo (Psychic attacker)?</div>
-<label class="option"><input type="radio" name="q2" value="1"> Psycho Cut</label>
-<label class="option"><input type="radio" name="q2" value="0"> Confusion</label>
-<label class="option"><input type="radio" name="q2" value="0"> Shadow Claw</label>
-
-<div class="question">3. Best charged move for Kyogre?</div>
-<label class="option"><input type="radio" name="q3" value="1"> Origin Pulse</label>
-<label class="option"><input type="radio" name="q3" value="0"> Surf</label>
-<label class="option"><input type="radio" name="q3" value="0"> Blizzard</label>
-
-<div class="question">4. Best fast move for Rayquaza?</div>
-<label class="option"><input type="radio" name="q4" value="1"> Dragon Tail</label>
-<label class="option"><input type="radio" name="q4" value="0"> Air Slash</label>
-<label class="option"><input type="radio" name="q4" value="0"> Steel Wing</label>
-
-<div class="question">5. Best charged move for Mega Gengar?</div>
-<label class="option"><input type="radio" name="q5" value="1"> Shadow Ball</label>
-<label class="option"><input type="radio" name="q5" value="0"> Sludge Bomb</label>
-<label class="option"><input type="radio" name="q5" value="0"> Focus Blast</label>
-
-<button type="button" onclick="checkScore()">Submit Quiz</button>
-</form>
-
-<div class="result" id="result"></div>
-
-<p style="margin-top:16px;text-align:center;">
-📘 Learn more in our  
-<a href="/pokemon-go-best-movesets" target="_blank">Pokémon GO Moveset Guides</a>
-</p>
-
+<div id="quizArea"></div>
 </div>
 
 <script>
-function checkScore() {
-  let score = 0;
-  document.querySelectorAll("input:checked").forEach(el => {
-    score += parseInt(el.value);
-  });
+/* ========= ONLY CHANGE THIS PART ========= */
 
-  document.getElementById("result").innerHTML =
-    "You scored " + score + " / 5 ⚡";
+const quizConfig = {
+  title: "Learn more in our ",
+  ctaHtml: `
+    👉 <a href="/pokemon-go-best-movesets" target="_blank">Pokémon GO Moveset Guides</a>
+  `,
+  questions: [
+    {
+      q: "Best charged move for Reshiram?",
+      options: ["Overheat","Draco Meteor","Crunch"],
+      answer: 1,
+      explanation: "Overheat is best charged move for Reshiram."
+    },
+{
+      q: "Best charged move for Mewtwo?",
+      options: ["Psycho Cut, Confusion, Shadow Claw"],
+      answer: 1,
+      explanation: "Psycho Cut is best charged move for Mewtwo."
+    },
+{
+      q: "Best charged move for Kyogre?",
+      options: ["Origin Pulse", "Surf", "Blizzard"],
+      answer: 1,
+      explanation: "Origin Pulse is best charged move for Kyogre."
+    },
+{
+      q: "Best charged move for Rayquaza?",
+      options: ["Dragon Tail", "Air Slash", "Steel Wing"],
+      answer: 1,
+      explanation: "Dragon Tail is best charged move for Rayquaza."
+    },
+    {
+      q: "Best charged move for Mega Gengar?",
+      options: ["Shadow Ball", "Sludge Bomb", "Focus Blast"],
+      answer: 1,
+      explanation: "Shadow Ball is best charged move for Mega Gengar."
+    }
+  ]
+};
+
+/* ========= DO NOT TOUCH BELOW ========= */
+
+document.getElementById("quizTitle").innerText = quizConfig.title;
+
+let current = 0;
+let score = 0;
+
+const quizArea = document.getElementById("quizArea");
+const progressFill = document.getElementById("progressFill");
+
+function loadQuestion() {
+  progressFill.style.width =
+    ((current / quizConfig.questions.length) * 100) + "%";
+
+  const q = quizConfig.questions[current];
+
+  quizArea.innerHTML = `
+    <div class="question-count">Question ${current + 1} of ${quizConfig.questions.length}</div>
+    <div class="question">${q.q}</div>
+    ${q.options.map((opt, i) =>
+      `<div class="option" onclick="selectAnswer(${i}, this)">${opt}</div>`
+    ).join("")}
+    <div class="feedback" id="feedback"></div>
+  `;
 }
+
+function selectAnswer(index, element) {
+  const q = quizConfig.questions[current];
+  document.querySelectorAll(".option").forEach(o => o.onclick = null);
+
+  if (index === q.answer) {
+    element.classList.add("correct");
+    score++;
+    document.getElementById("feedback").innerHTML = "✅ Correct! " + q.explanation;
+  } else {
+    element.classList.add("wrong");
+    document.querySelectorAll(".option")[q.answer].classList.add("correct");
+    document.getElementById("feedback").innerHTML = "❌ Wrong! " + q.explanation;
+  }
+
+  setTimeout(() => {
+    current++;
+    current < quizConfig.questions.length ? loadQuestion() : showResult();
+  }, 1200);
+}
+
+function showResult() {
+  progressFill.style.width = "100%";
+
+  const level =
+    score >= quizConfig.questions.length * 0.8 ? "🔥 Expert Trainer" :
+    score >= quizConfig.questions.length * 0.5 ? "⚡ Learning Trainer" :
+    "📘 Beginner";
+
+  quizArea.innerHTML = `
+    <div class="result-box">
+      <h2>${level}</h2>
+      <p>You scored <strong>${score} / ${quizConfig.questions.length}</strong></p>
+      <p>Improve using these tools:</p>
+      <p>${quizConfig.ctaHtml}</p>
+    </div>
+  `;
+}
+
+loadQuestion();
 </script>
 
 </body>

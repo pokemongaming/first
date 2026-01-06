@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pokémon GO Quiz</title>
-<meta name="description" content="Interactive Pokémon GO quiz with instant feedback.">
+<title>Guess the Pokémon by Type Quiz</title>
+<meta name="description" content="Can you guess the Pokémon by its type combination? Test your Pokémon GO knowledge with this fun quiz.">
 
 <style>
 body {
@@ -56,7 +56,8 @@ h1 { text-align:center; font-size:1.4rem; }
 <body>
 
 <div class="quiz-container">
-<h1 id="quizTitle">Pokémon GO Quiz</h1>
+<h1>Guess the Pokémon by Type</h1>
+<p>Identify the Pokémon using only its type combination. No images needed!</p>
 
 <div class="progress">
   <div class="progress-fill" id="progressFill"></div>
@@ -69,23 +70,52 @@ h1 { text-align:center; font-size:1.4rem; }
 /* ========= ONLY CHANGE THIS PART ========= */
 
 const quizConfig = {
-  title: "Pokémon GO Type Effectiveness Quiz",
+  title: "Learn type matchups using our",
   ctaHtml: `
-    👉 <a href="/pokemon-go-type-chart">Type Chart</a><br>
-    👉 <a href="/raid-counter-finder">Raid Counter Finder</a>
+    👉 <a href="/pokemon-go-type-chart" target="_blank">Pokémon Type Chart</a>
   `,
   questions: [
     {
-      q: "Which type is super effective against Dragon?",
-      options: ["Fire", "Ice", "Water"],
+      q: "Which Pokémon is <br>
+<span class="type-badge">Fire</span>
+<span class="type-badge">Fighting</span>",
+      options: ["Blaziken","Infernape","Emboar"],
       answer: 1,
-      explanation: "Ice-type moves are super effective against Dragon Pokémon."
+      explanation: "Blaziken is Fire / Fighting type pokemon."
+    },
+{
+      q: "Which Pokémon is <br>
+<span class="type-badge">Dragon</span>
+<span class="type-badge">Flying</span>
+",
+      options: ["Rayquaza", "Salamence","Dragonite"],
+      answer: 1,
+      explanation: "Rayquaza is Dragon / Flying type pokemon."
+    },
+{
+      q: "Which Pokémon is <br>
+<span class="type-badge">Water</span>
+<span class="type-badge">Dark</span>",
+      options: ["Greninja", "Sharpedo", "Crawdaunt"],
+      answer: 1,
+      explanation: "Greninja is Water / Dark type pokemon."
+    },
+{
+      q: "Which Pokémon is <br>
+<span class="type-badge">Ghost</span>
+<span class="type-badge">Poison</span>
+",
+      options: ["Gengar", "Dragapult", "Mismagius"],
+      answer: 1,
+      explanation: "Gengar is Ghost / Poison type pokemon."
     },
     {
-      q: "Which type is immune to Electric attacks?",
-      options: ["Flying", "Ground", "Steel"],
+      q: "Which Pokémon is <br>
+<span class="type-badge">Steel</span>
+<span class="type-badge">Psychic</span>",
+      options: ["Metagross", "Jirachi", "Bronzong"],
       answer: 1,
-      explanation: "Ground-type Pokémon are immune to Electric moves."
+      explanation: "Metgaross is Steel / Psychic type pokemon."
     }
   ]
 };
