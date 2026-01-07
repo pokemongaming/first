@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon GO Raid Counter Finder Tool</title>
+<meta name="description" content="Pokémon GO Raid Counter Finder Tool. Select any raid boss and instantly get the best counters, moves, weather boost, and best types to use.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body { font-family: Arial, sans-serif; background:#f6f7fb; margin:0; }
+.container { max-width:1000px; margin:auto; padding:16px; }
+
+h1 { text-align:center; }
+
+.card {
+  background:#fff;
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+select {
+  padding:10px;
+  font-size:16px;
+  width:100%;
+  max-width:400px;
+  display:block;
+  margin:0 auto 20px;
+}
+
+.section {
+  margin-top:16px;
+}
+
+.section h2 {
+  border-bottom:2px solid #eee;
+  padding-bottom:4px;
+}
+
+.counter-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap:12px;
+}
+
+.counter-card {
+  background:#fdfdfd;
+  border-radius:10px;
+  padding:10px;
+  text-align:center;
+  box-shadow:0 1px 4px rgba(0,0,0,0.1);
+}
+
+.badge {
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:14px;
+  color:#fff;
+  font-weight:bold;
+  font-size:13px;
+  margin:2px;
+}
+
+/* Type colors */
+.normal{background:#A8A77A}
+.fire{background:#EE8130}
+.water{background:#6390F0}
+.electric{background:#F7D02C;color:#000}
+.grass{background:#7AC74C}
+.ice{background:#96D9D6;color:#000}
+.fighting{background:#C22E28}
+.poison{background:#A33EA1}
+.ground{background:#E2BF65;color:#000}
+.flying{background:#A98FF3}
+.psychic{background:#F95587}
+.bug{background:#A6B91A;color:#000}
+.rock{background:#B6A136}
+.ghost{background:#735797}
+.dragon{background:#6F35FC}
+.dark{background:#705746}
+.steel{background:#B7B7CE;color:#000}
+.fairy{background:#D685AD}
+
+.footer-links {
+  text-align:center;
+  margin-top:20px;
+}
+.footer-links a {
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Pokémon GO Raid Counter Finder</h1>
+
+<p style="text-align:center;">
+Select a raid boss and instantly see the best counters, best moves, and best attack types.
+</p>
+
+<div class="card">
+
+<select id="bossSelect">
+  <option value="">Select Raid Boss</option>
+</select>
+
+<div id="output"></div>
+
+</div>
+
+<div class="footer-links">
+<a href="/pokemon-go-type-chart/">📊 Type Chart</a> |
+<a href="/type-weakness-calculator/">🧮 Weakness Calculator</a>
+</div>
+
+</div>
+
+<script>
+const raidData = {
+  "Genesect": {
+    types: ["bug","steel"],
+    weather: "Rainy (Bug) / Snow (Steel)",
+    bestTypes: ["fire"],
+    counters: [
+      {name:"Mega Blaziken", moves:"Fire Spin + Blast Burn"},
+      {name:"Reshiram", moves:"Fire Fang + Overheat"},
+      {name:"Mega Charizard Y", moves:"Fire Spin + Blast Burn"},
+      {name:"Chandelure", moves:"Fire Spin + Overheat"},
+      {name:"Darmanitan", moves:"Fire Fang + Overheat"}
+    ]
+  },
+  "Lugia": {
+    types: ["psychic","flying"],
+    weather: "Windy",
+    bestTypes: ["rock","electric","ice","ghost","dark"],
+    counters: [
+      {name:"Mega Tyranitar", moves:"Bite + Brutal Swing"},
+      {name:"Rampardos", moves:"Smack Down + Rock Slide"},
+      {name:"Zekrom", moves:"Charge Beam + Wild Charge"},
+      {name:"Chandelure", moves:"Hex + Shadow Ball"},
+      {name:"Weavile", moves:"Snarl + Avalanche"}
+    ]
+  },
+  "Mega Blaziken": {
+    types: ["fire","fighting"],
+    weather: "Sunny / Cloudy",
+    bestTypes: ["water","flying","psychic","ground"],
+    counters: [
+      {name:"Mega Swampert", moves:"Water Gun + Hydro Cannon"},
+      {name:"Mewtwo", moves:"Confusion + Psystrike"},
+      {name:"Rayquaza", moves:"Air Slash + Hurricane"},
+      {name:"Garchomp", moves:"Mud Shot + Earth Power"},
+      {name:"Kyogre", moves:"Waterfall + Surf"}
+    ]
+  }
+};
+
+const bossSelect = document.getElementById("bossSelect");
+const output = document.getElementById("output");
+
+// Fill dropdown
+Object.keys(raidData).forEach(boss=>{
+  const opt = document.createElement("option");
+  opt.value = boss;
+  opt.textContent = boss;
+  bossSelect.appendChild(opt);
+});
+
+bossSelect.addEventListener("change", ()=>{
+  const boss = bossSelect.value;
+  if(!boss){
+    output.innerHTML = "";
+    return;
+  }
+
+  const data = raidData[boss];
+
+  output.innerHTML = `
+    <div class="section">
+      <h2>🧬 Boss Info</h2>
+      <p><strong>Types:</strong> ${data.types.map(t=>`<span class="badge ${t}">${t.charAt(0).toUpperCase()+t.slice(1)}</span>`).join(" ")}</p>
+      <p><strong>Weather Boost:</strong> ${data.weather}</p>
+      <p><strong>Best Attack Types:</strong> ${data.bestTypes.map(t=>`<span class="badge ${t}">${t.charAt(0).toUpperCase()+t.slice(1)}</span>`).join(" ")}</p>
+    </div>
+
+    <div class="section">
+      <h2>🔥 Best Counters</h2>
+      <div class="counter-grid">
+        ${data.counters.map(c=>`
+          <div class="counter-card">
+            <strong>${c.name}</strong><br>
+            <small>${c.moves}</small>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+});
+</script>
+
+</body>
+</html>

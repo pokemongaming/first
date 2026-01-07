@@ -75,51 +75,234 @@ const quizConfig = {
     👉 <a href="/pokemon-go-best-movesets" target="_blank">Pokémon GO Moveset Guides</a>
   `,
   questions: [
-    {"q":"What is the best fast move for Mewtwo?","options":["Confusion","Psycho Cut","Zen Headbutt","Extrasensory"],"answer":1},
-    {"q":"What is the best charged move for Mewtwo?","options":["Psychic","Shadow Ball","Focus Blast","Hyper Beam"],"answer":1},
-    {"q":"What is the best fast move for Rayquaza?","options":["Dragon Tail","Air Slash","Iron Tail","Ancient Power"],"answer":0},
-    {"q":"What is the best charged move for Rayquaza?","options":["Outrage","Dragon Pulse","Aerial Ace","Hurricane"],"answer":0},
-    {"q":"What is the best fast move for Kyogre?","options":["Waterfall","Surf","Hydro Pump","Blizzard"],"answer":0},
-
-    {"q":"What is the best charged move for Kyogre?","options":["Surf","Thunder","Hydro Pump","Blizzard"],"answer":2},
-    {"q":"What is the best fast move for Groudon?","options":["Mud Shot","Dragon Tail","Mud Slap","Fire Punch"],"answer":2},
-    {"q":"What is the best charged move for Groudon?","options":["Earthquake","Fire Blast","Solar Beam","Dragon Claw"],"answer":0},
-    {"q":"What is the best fast move for Dragonite?","options":["Steel Wing","Dragon Tail","Dragon Breath","Hurricane"],"answer":2},
-    {"q":"What is the best charged move for Dragonite?","options":["Hurricane","Outrage","Dragon Claw","Hyper Beam"],"answer":1},
-
-    {"q":"What is the best fast move for Garchomp?","options":["Mud Shot","Dragon Tail","Earth Power","Sand Tomb"],"answer":1},
-    {"q":"What is the best charged move for Garchomp?","options":["Earth Power","Outrage","Fire Blast","Sand Tomb"],"answer":0},
-    {"q":"What is the best fast move for Metagross?","options":["Bullet Punch","Zen Headbutt","Iron Tail","Confusion"],"answer":0},
-    {"q":"What is the best charged move for Metagross?","options":["Flash Cannon","Earthquake","Meteor Mash","Psychic"],"answer":2},
-    {"q":"What is the best fast move for Tyranitar?","options":["Iron Tail","Smack Down","Bite","Fire Fang"],"answer":1},
-
-    {"q":"What is the best charged move for Tyranitar (Rock)?","options":["Stone Edge","Crunch","Fire Blast","Earthquake"],"answer":0},
-    {"q":"What is the best fast move for Machamp?","options":["Bullet Punch","Counter","Karate Chop","Rock Smash"],"answer":1},
-    {"q":"What is the best charged move for Machamp?","options":["Dynamic Punch","Close Combat","Heavy Slam","Rock Slide"],"answer":0},
-    {"q":"What is the best fast move for Gengar?","options":["Sucker Punch","Shadow Claw","Hex","Lick"],"answer":1},
-    {"q":"What is the best charged move for Gengar?","options":["Dark Pulse","Sludge Bomb","Shadow Ball","Focus Blast"],"answer":2},
-
-    {"q":"What is the best fast move for Reshiram?","options":["Fire Fang","Dragon Breath","Zen Headbutt","Crunch"],"answer":1},
-    {"q":"What is the best charged move for Reshiram?","options":["Draco Meteor","Overheat","Crunch","Stone Edge"],"answer":1},
-    {"q":"What is the best fast move for Zekrom?","options":["Dragon Breath","Charge Beam","Shadow Claw","Metal Claw"],"answer":0},
-    {"q":"What is the best charged move for Zekrom?","options":["Wild Charge","Crunch","Outrage","Flash Cannon"],"answer":0},
-    {"q":"What is the best fast move for Lucario?","options":["Bullet Punch","Counter","Metal Claw","Force Palm"],"answer":1},
-
-    {"q":"What is the best charged move for Lucario?","options":["Aura Sphere","Close Combat","Flash Cannon","Shadow Ball"],"answer":0},
-    {"q":"What is the best fast move for Conkeldurr?","options":["Poison Jab","Counter","Low Kick","Rock Smash"],"answer":1},
-    {"q":"What is the best charged move for Conkeldurr?","options":["Dynamic Punch","Stone Edge","Focus Blast","Earthquake"],"answer":0},
-    {"q":"What is the best fast move for Rampardos?","options":["Smack Down","Zen Headbutt","Take Down","Iron Tail"],"answer":0},
-    {"q":"What is the best charged move for Rampardos?","options":["Rock Slide","Outrage","Flamethrower","Stone Edge"],"answer":3},
-
-    {"q":"What is the best fast move for Mamoswine?","options":["Mud Slap","Powder Snow","Ice Fang","Ancient Power"],"answer":1},
-    {"q":"What is the best charged move for Mamoswine?","options":["Bulldoze","Avalanche","Stone Edge","High Horsepower"],"answer":1},
-    {"q":"What is the best fast move for Roserade?","options":["Poison Jab","Bullet Seed","Magical Leaf","Razor Leaf"],"answer":1},
-    {"q":"What is the best charged move for Roserade?","options":["Grass Knot","Sludge Bomb","Dazzling Gleam","Solar Beam"],"answer":0},
-
-    {"q":"What is the best fast move for Chandelure?","options":["Hex","Fire Spin","Incinerate","Ember"],"answer":0},
-    {"q":"What is the best charged move for Chandelure?","options":["Flame Charge","Shadow Ball","Overheat","Fire Blast"],"answer":1},
-    {"q":"What is the best fast move for Hydreigon?","options":["Dragon Breath","Bite","Steel Wing","Dark Pulse"],"answer":1},
-    {"q":"What is the best charged move for Hydreigon?","options":["Dark Pulse","Dragon Pulse","Flash Cannon","Earth Power"],"answer":0}
+    {
+     "q":"What is the best fast move for Mewtwo?",
+     "options":["Confusion","Psycho Cut","Zen Headbutt","Extrasensory"],
+     "answer":0,
+      "explanation":"Confusion is best fast move for Mewtwo because of damage of 19."
+},
+    {
+     "q":"What is the best charged move for Mewtwo?",
+     "options":["Psychic","Shadow Ball","Focus Blast","Hyper Beam"],
+      "answer":2,
+      "explanation":"Focus Blast is best charged move for Mewtwo because of damage of 140."
+},
+    { 
+     "q":"What is the best fast move for Rayquaza?",
+     "options":["Dragon Tail","Air Slash","Iron Tail","Ancient Power"],
+      "answer":0,
+      "explanation":"Dragon Tail is best fast move for Rayquaza because of damage of 14."
+},
+    {
+      "q":"What is the best charged move for Rayquaza?",
+      "options":["Outrage","Dragon Ascent","Aerial Ace","Hurricane"],
+      "answer":1,
+      "explanation":"Dragon Ascent is best charged move for Rayquaza because of damage of 140."
+},
+    {
+      "q":"What is the best fast move for Machamp?",
+      "options":["Karate Chop","Bullet Punch","Dynamic Punch","Counter"],
+      "answer":3,
+      "explanation":"Counter is best fast move for Machamp because of damage of 13."
+},
+    {
+      "q":"What is the best charged move for Machamp?",
+      "options":["Submission","Close Combat","Stone Edge","Payback"],
+      "answer":1,
+      "explanation":"Close Combat is best charged move for Machamp because of damage of 105."
+},
+    {
+       "q":"What is the best fast move for Dhelmise?",
+       "options":["Astonish","Close Combat","Stone Edge","Payback"],
+       "answer":0,
+      "explanation":"Astonish is best fast move for Dhelmise because of damage of 7."
+},
+    {
+      "q":"What is the best charged move for Dhelmise?",
+      "options":["Earthquake","Fire Blast","Solar Beam","Shadow Ball"],
+      "answer":3,
+      "explanation":"Shadow Ball is best charged move for Dhelmise because of damage of 100."
+},
+    {
+      "q":"What is the best fast move for Dragonite?",
+      "options":["Steel Wing","Dragon Tail","Dragon Breath","Hurricane"],
+      "answer":1,
+      "explanation":"Dragon Tail is best fast move for Dragonite because of damage of 14."
+},
+    {
+      "q":"What is the best charged move for Dragonite?",
+      "options":["Hurricane","Outrage","Dragon Claw","Hyper Beam"],
+      "answer":3,
+      "explanation":"Hyper Beam is best charged move for Dragonite because of damage of 150."
+},
+    {
+      "q":"What is the best fast move for Garchomp?",
+       "options":["Mud Shot","Dragon Tail","Earth Power","Sand Tomb"],
+      "answer":1,
+      "explanation":"Dragon Tail is best charged move for Garchomp because of damage of 14."
+},
+    {
+      "q":"What is the best charged move for Garchomp?",
+      "options":["Earth Power","Outrage","Fire Blast","Sand Tomb"],
+      "answer":2,
+      "explanation":"Fire Blast is best charged move for Garchomp because of damage of 140."
+},
+    {
+      "q":"What is the best fast move for Metagross?",
+      "options":["Bullet Punch","Zen Headbutt","Iron Tail","Confusion"],
+      "answer":1,
+      "explanation":"Zen Headbutt is best fast move for Metagross because of damage of 11."
+},
+    {
+      "q":"What is the best charged move for Metagross?",
+      "options":["Flash Cannon","Earthquake","Meteor Mash","Psychic"],
+      "answer":1,
+      "explanation":"Earthquake is best charged move for Metagross because of damage of 140."
+},
+    {
+      "q":"What is the best fast move for Tyranitar?",
+      "options":["Iron Tail","Smack Down","Bite","Fire Fang"],
+      "answer":0,
+      "explanation":"Iron Tail is best fast move for Tyranitar because of damage of 14."
+},
+    {
+      "q":"What is the best charged move for Tyranitar?",
+      "options":["Stone Edge","Crunch","Fire Blast","Earthquake"],
+      "answer":2,
+      "explanation":"Fire Blast is best charged move for Tyranitar because of damage of 140."
+},
+    {
+      "q":"What is the best fast move for Salamence?",
+      "options":["Sucker Punch","Shadow Claw","Hex", "Dragon Tail"],
+      "answer":3,
+      "explanation":"Dragon Tail is best fast move for Salamence because of damage of 14."
+},
+    {
+      "q":"What is the best charged move for Salamence?",
+      "options":["Draco Meteor","Sucker Punch","Shadow Claw","Hex"],
+      "answer":0,
+      "explanation":"Draco Meteor is best charged move for Salamence because of damage of 150."
+},
+    {
+      "q":"What is the best fast move for Gengar?",
+      "options":["Sucker Punch","Shadow Claw","Hex","Lick"],
+      "answer":2,
+      "explanation":"Hex is best fast move for Gengar because of damage of 8."
+},
+    {
+      "q":"What is the best charged move for Gengar?",
+       "options":["Dark Pulse","Sludge Bomb","Shadow Ball","Focus Blast"],
+       "answer":3,
+      "explanation":"Focus Blast is best charged move for Gengar because of damage of 140."
+},
+    {
+      "q":"What is the best fast move for Reshiram?",
+      "options":["Fire Fang","Dragon Breath","Zen Headbutt","Crunch"],
+      "answer":0,
+      "explanation":"Fire Fang is best fast move for Reshiram because of damage of 13."
+},
+    { 
+      "q":"What is the best charged move for Reshiram?",
+      "options":["Draco Meteor","Overheat","Crunch","Stone Edge"],
+      "answer":1,
+      "explanation":"Overheat is best charged move for Reshiram because of damage of 160."
+},
+    {
+      "q":"What is the best fast move for Zekrom?",
+      "options":["Dragon Breath","Charge Beam","Shadow Claw","Metal Claw"],
+      "answer":1,
+      "explanation":"Charge Beam is best fast move for Zekrom because of damage of 7."
+},
+    {
+      "q":"What is the best charged move for Zekrom?",
+      "options":["Wild Charge","Crunch","Outrage","Flash Cannon"],
+      "answer":2,
+      "explanation":"Outrage is best charged move for Zekrom because of damage of 110."
+},
+    {
+      "q":"What is the best fast move for Lucario?",
+      "options":["Bullet Punch","Counter","Metal Claw","Force Palm"],
+      "answer":1,
+      "explanation":"Counter is best fast move for Lucario because of damage of 13."
+},
+    {
+      "q":"What is the best charged move for Lucario?",
+      "options":["Aura Sphere","Close Combat","Flash Cannon","Shadow Ball"],
+      "answer":1,
+      "explanation":"Close Combat is best charged move for Lucario because of damage of 105."
+},
+    {
+      "q":"What is the best fast move for Conkeldurr?",
+      "options":["Poison Jab","Earthquake","Low Kick","Rock Smash"],
+      "answer":0,
+      "explanation":"Poison Jab is best fast move for Conkeldurr because of damage of 13."
+},
+    {
+      "q":"What is the best charged move for Conkeldurr?",
+      "options":["Dynamic Punch","Stone Edge","Focus Blast","Earthquake"],
+      "answer":2,
+      "explanation":"Focus Blast is best charged move for Conkeldurr because of damage of 140."
+},
+    {
+      "q":"What is the best fast move for Rampardos?",
+      "options":["Smack Down","Zen Headbutt","Take Down","Iron Tail"],
+      "answer":0,
+      "explanation":"Smack Down is best fast move for Rampardos because of damage of 13."
+},
+    {
+      "q":"What is the best charged move for Rampardos?",
+      "options":["Rock Slide","Outrage","Flamethrower","Stone Edge"],
+      "answer":1,
+      "explanation":"Outrage is best charged move for Rampardos because of damage of 110."
+},
+    {
+      "q":"What is the best fast move for Mamoswine?",
+      "options":["Mud Slap","Powder Snow","Ice Fang","Ancient Power"],
+      "answer":0,
+      "explanation":"Mud Slap is best fast move for Mamoswine because of damage of 19."
+},
+    {
+      "q":"What is the best charged move for Mamoswine?",
+      "options":["Bulldoze","Avalanche","Stone Edge","Ancient Power"],
+      "answer":2,
+      "explanation":"Stone Edge is best charged move for Mamoswine because of damage of 105."
+},
+    {
+      "q":"What is the best fast move for Roserade?",
+      "options":["Poison Jab","Bullet Seed","Magical Leaf","Razor Leaf"],
+      "answer":2,
+      "explanation":"Magical Leaf is best fast move for Roserade because of damage of 17."
+},
+    {
+      "q":"What is the best charged move for Roserade?",
+      "options":["Grass Knot","Sludge Bomb","Dazzling Gleam","Solar Beam"],
+      "answer":3,
+      "explanation":"Solar Beam is best charged move for Roserade because of damage of 180."
+},
+    {
+      "q":"What is the best fast move for Chandelure?",
+      "options":["Hex","Fire Spin","Incinerate","Ember"],
+      "answer":2,
+      "explanation":"Incinerate is best fast move for Chandelure because of damage of 32."
+},
+    {
+      "q":"What is the best charged move for Chandelure?",
+      "options":["Flame Charge","Shadow Ball","Overheat","Fire Blast"],
+      "answer":2,
+      "explanation":"Overheat is best charged move for Chandelure because of damage of 160."
+},
+    {
+      "q":"What is the best fast move for Hydreigon?",
+      "options":["Dragon Breath","Brutal Swing","Steel Wing","Dark Pulse"],
+      "answer":0,
+      "explanation":"Dragon Breath is best fast move for Hydreigon because of damage of 6."
+},
+    {
+      "q":"What is the best charged move for Hydreigon?",
+      "options":["Dark Pulse","Dragon Pulse","Flash Cannon","Earth Power"],
+      "answer":2,
+      "explanation":"Flash Cannon is best charged move for Hydreigon because of damage of 100."
+}
   ]
 };
 
