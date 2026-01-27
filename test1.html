@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pokémon GO Raid Guides, Counters & Tools | PokemonGaming.in</title>
+<meta name="description" content="Best Pokémon GO raid guides, counters, Mega raids, Gigantamax, DPS calculator, and type chart.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<script type="text/javascript" async src="https://platform.foremedia.net/code/60744/analytics"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BTG1RBCVB7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BTG1RBCVB7');
+</script>
+
+
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#0f172a; color:#fff; }
+a { color: inherit; text-decoration: none; }
+
+header { background:#020617; padding:15px; position:sticky; top:0; }
+.nav { display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:auto; }
+.menu a { margin:0 10px; font-weight:bold; }
+
+.container { max-width:1100px; margin:auto; padding:15px; }
+
+.hero { text-align:center; padding:40px 15px; }
+.hero h1 { font-size:28px; }
+
+.search-box input {
+  width:100%; max-width:500px; padding:12px; border-radius:8px; border:none;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap:15px;
+}
+
+.card {
+  background:#020617;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:bold;
+}
+.card:hover { background:#1e293b; }
+
+.raid-countdown {
+  background: #0b1220;
+  color: #fff;
+  padding: 16px;
+  border-radius: 14px;
+  margin: 16px 0;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(250,204,21,0.35);
+}
+
+.local-time {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.countdown-timer {
+  font-size: 22px;
+  font-weight: 700;
+  color: #facc15;
+}
+
+.section-title { margin:30px 0 15px; font-size:20px; }
+
+footer { background:#020617; padding:20px; text-align:center; margin-top:40px; }
+</style>
+
+ <script>
+function startRaidCountdown() {
+  document.querySelectorAll(".raid-countdown").forEach(el => {
+    const startTime = new Date(el.dataset.utc);
+    const raidDurationMinutes = 840;
+
+    const timerEl = el.querySelector(".countdown-timer");
+    const localTimeEl = el.querySelector(".local-time");
+
+    // Show visitor's local time
+    localTimeEl.innerHTML =
+      "Starts at: " +
+      startTime.toLocaleString([], {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZoneName: "short"
+      });
+
+    const endTime = new Date(startTime.getTime() + raidDurationMinutes * 60000);
+
+    const interval = setInterval(() => {
+      const now = new Date();
+      const diff = startTime - now;
+
+      // ❌ Raid fully ended → remove block
+      if (now >= endTime) {
+        clearInterval(interval);
+        el.remove(); // or el.style.display = "none";
+        return;
+      }
+
+      // 🟢 Raid live
+      if (diff <= 0) {
+        timerEl.innerHTML = "🟢 Raid is Live!";
+        return;
+      }
+
+      // ⏳ Countdown
+      const h = Math.floor(diff / (1000 * 60 * 60));
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+
+      timerEl.innerHTML = `${h}h ${m}m ${s}s remaining`;
+    }, 1000);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", startRaidCountdown);
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Pokémon Gaming",
+  "url": "https://pokemongaming.in/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pokemongaming.in/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+</head>
+<body>
+
+<!--<header>
+  <div class="nav">
+    <div><strong>PokemonGaming.in</strong></div>
+    <div class="menu">
+      <a href="/">Home</a>
+      <a href="raids/">Raids</a>
+      <a href="tools/">Tools</a>
+      <a href="guides/">Guides</a>
+      <a href="blog/">Blog</a>
+    </div>
+  </div>
+</header>-->
+
+<div class="hero">
+  <h1>Pokémon GO Raid Guides, Counters & Tools</h1>
+  <p>Find the best counters, weaknesses, and strategies for every raid boss.</p>
+  <!--<div class="search-box">
+    <input type="text" placeholder="Search Pokémon, e.g. Mewtwo, Rayquaza...">
+  </div>-->
+</div>
+
+<!--<h1>Pokémon GO Raid Guides, Counters, Type Charts & Tools</h1>-->
+
+<p>Welcome to <strong>PokemonGaming.in</strong>, a dedicated fan-made Pokémon GO guide website created to help trainers win more raids, understand type matchups, and build stronger teams. Whether you are a beginner or a high-level player, our goal is to provide clear, accurate, and easy-to-follow guides for everything related to Pokémon GO battles and raids.</p>
+
+  <p>
+Pokémon GO raids are one of the most important parts of the game for trainers in the United States, United Kingdom and around the world. On PokémonGaming.in, you’ll find complete Pokémon GO raid guides, the best counters for every boss, a powerful battle simulator, a type effectiveness chart, and a type weakness calculator to help you build the strongest teams.
+</p>
+<p>
+Whether you are preparing for Tier 5 legendary raids, Mega raids, or special event bosses, our tools and guides help you defeat raid bosses faster, use fewer resources, and maximize your rewards. All raid timers are shown in your local time zone, making it easy for US and UK players to plan their raids.
+</p>
+
+<p>Raids are one of the most exciting parts of Pokémon GO, but they can also be challenging if you don’t know which Pokémon to use, which moves are best, or how many players you need. That’s where our raid guides come in. We publish detailed raid guides for Legendary, Mega, and Gigantamax Pokémon, including boss weaknesses, best counters, recommended teams, and battle strategies.</p>
+
+<h2>What You’ll Find on PokemonGaming.in</h2>
+
+<ul>
+  <li><strong>Pokémon GO Raid Guides:</strong> Step-by-step guides for Legendary, Mega, Shadow, and Gigantamax raids with counters, movesets, and team recommendations.</li>
+  <li><strong>Raid Counter Finder Tools:</strong> Tools that help you quickly find the best Pokémon to use against any raid boss.</li>
+  <li><strong>Type Effectiveness Charts:</strong> Easy-to-understand Pokémon type charts that explain strengths, weaknesses, and resistances.</li>
+  <li><strong>DPS & Damage Calculators:</strong> Tools to compare Pokémon damage output and build the most powerful teams.</li>
+ <li><strong>Pokémon GO Quizzes:</strong> Fun and educational quizzes to test your knowledge of Pokémon types, moves, and battles.</li>
+</ul>
+
+<section class="section" id="raids">
+    <div class="container">
+      <h2 class="section-title">Upcoming Raids</h2>
+          <div class="raid-countdown" data-utc="2026-01-05T04:30:00Z">
+  <h3>🔥 Genesect Raid – 5 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+          </div>
+      <div class="raid-countdown" data-utc="2026-01-16T04:30:00Z">
+  <h3>🔥 Incarnate Thundurus Raid – 16 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div>
+      <div class="raid-countdown" data-utc="2026-01-25T04:30:00Z">
+  <h3>🔥 Incarnate Tornadus Raid – 25 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div>
+      <div class="raid-countdown" data-utc="2026-01-05T04:30:00Z">
+  <h3>🔥 Mega Blaziken Raid – 5 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div>
+      <div class="raid-countdown" data-utc="2026-01-16T04:30:00Z">
+  <h3>🔥 Mega Sceptile Raid – 16 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div>
+      <div class="raid-countdown" data-utc="2026-01-25T04:30:00Z">
+  <h3>🔥 Mega Ampharos Raid – 25 January 2026</h3>
+  <p class="local-time"></p>
+  <p class="countdown-timer">Loading...</p>
+      </div>
+      
+        </div>
+    </section>
+
+<div class="container">
+
+<h2 class="section-title">Main Categories</h2>
+<div class="grid">
+ <!-- <a class="card" href="/raids/">All Raids</a>-->
+  <a class="card" href="raids/mega/index.html">Mega Raids</a>
+  <a class="card" href="raids/gigantamax/index.html">Gigantamax</a>
+  <!--<a class="card" href="/raids/shadow/">Shadow Raids</a>-->
+  <a class="card" href="tools.html">Tools</a>
+  <a class="card" href="effectiveness_chart.html">Type Effectiveness Chart</a>
+</div>
+
+<!--<h2 class="section-title">Popular Raid Guides</h2>
+<div class="grid">
+  <a class="card" href="/raids/mega_rayquaza.html">Mega Rayquaza</a>
+  <a class="card" href="/raids/mewtwo.html">Mewtwo</a>
+  <a class="card" href="/raids/mega_blaziken.html">Mega Blaziken</a>
+  <a class="card" href="/raids/mega_tyranitar.html">Mega Tyranitar</a>
+</div>
+
+<h2 class="section-title">Tools</h2>
+<div class="grid">
+  <a class="card" href="tools.html">Counter Finder</a>
+  <a class="card" href="effectiveness_chart.html">Type Effectiveness Chart</a>
+</div>-->
+
+</div>
+
+<h2>Legendary, Mega & Gigantamax Raid Guides</h2>
+
+<p>Our raid guide section covers all major raid categories in Pokémon GO. You’ll find guides for Legendary Pokémon like Dialga, Giratina, Reshiram, and more. We also cover Mega Pokémon raids and special Gigantamax and Dynamax-style battle guides.</p>
+
+<p>Each raid guide is carefully written and includes:</p>
+
+<ul>
+  <li>Boss type and weaknesses</li>
+  <li>Best Pokémon counters with correct moves</li>
+  <li>Recommended team compositions for different group sizes</li>
+  <li>Moves to watch out for</li>
+  <li>Catch CP and shiny availability</li>
+  <li>Simple strategy tips for winning the raid</li>
+</ul>
+
+<h2>Helpful Tools for Pokémon GO Trainers</h2>
+
+<p>In addition to guides, PokemonGaming.in also offers useful tools to make your gameplay easier. Our tools are designed to help you calculate damage, understand type matchups, and quickly find the best counters for any raid boss.</p>
+
+<p>These tools are especially helpful if you want to:</p>
+
+<ul>
+  <li>Build the strongest possible raid team</li>
+  <li>Save time when preparing for raids</li>
+  <li>Learn which Pokémon and moves perform best</li>
+  <li>Improve your overall battle performance</li>
+</ul>
+
+<h2>Why Trust PokemonGaming.in?</h2>
+
+<p>This website is built by Pokémon GO players, for Pokémon GO players. All guides are written in simple language, based on in-game mechanics, and updated regularly when the game changes. We focus on accuracy, clarity, and usefulness instead of copying short or incomplete information.</p>
+
+<p>PokemonGaming.in is a fan-made educational guide website. We are not affiliated with Niantic, Nintendo, or The Pokémon Company. Pokémon and Pokémon GO are trademarks of their respective owners.</p>
+
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2026 Pokémon Gaming. All rights reserved.</p>
+      <p>
+        <a href="terms-and-conditions.html">Terms & Conditions</a> |
+        <a href="contact-us.html">Contact</a> |
+        <a href="about-us.html">About</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="disclaimer.html">Disclaimer</a>
+
+<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. It is an independent fan-made Pokémon GO guide website providing educational raid guides, counters and tools for trainers worldwide. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
+</p>
+
+      </p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
