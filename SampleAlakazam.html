@@ -47,7 +47,7 @@
       "name": "What are the best moveset of Alakazam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Best moveset of Alakazam are Confusion (Fast Attack, 19 damage) and Focus Blast (Charged Attack, 140 damage)."
+        "text": "Confusion is a strong fast move, and Focus Blast is a powerful charged move for raids."
       }
     },
 {
@@ -298,7 +298,7 @@
     <h2>Stats & Basic Info</h2>
     <table id="statsTable">
       <tr><td>Type</td><td>Psychic</td></tr>
-      <tr><td>Max CP</td><td>4565</td></tr>
+      <tr><td>Max CP</td><td>5099</td></tr>
       <tr><td>Weather Boost</td><td>Windy</td></tr>
       <tr><td>Shiny</td><td>Yes</td></tr>
     </table>
@@ -380,8 +380,8 @@
     <li>Rayquaza – Flying boost</li>
     <li>Gengar, Banette, Gardevoir – Ghost boost</li>
     <li>Pinsir, Scizor, Metagross – Bug boost</li>
-    <li>Alakazam – Psychic boost</li>
-    <li>Gardevoir – Electric boost</li>
+    <li>Alakazam, Gardevoir – Psychic boost</li>
+    <li>Gardevoir – Fairy boost</li>
   </ul>
 
   <!-- MOVES -->
@@ -511,7 +511,7 @@
                 <td>Gust (25) and Hyper Beam (150)</td>
               </tr>
 
-          </tbody>h
+          </tbody>
           </table>
          </div>
 </div>
@@ -803,17 +803,17 @@
 
 <h2>Best Team Compositions</h2>
 
-<h3>Small Group (2-3 Trainers)</h3>
+<h3>Small Group (3-4 Trainers)</h3>
 <p>
-With strong Ice, Dragon, or Ground-type counters and at least one Mega Pokémon, Mega Alakazam can be defeated by 3 to 4 high-level trainers.
+With strong Bug, Dark or Ghost-type counters and at least one Mega Pokémon, Mega Alakazam can be defeated by 3 to 4 high-level trainers.
 </p>
 
-<h3>Medium Group (4-5 Trainers)</h3>
+<h3>Medium Group (5-7 Trainers)</h3>
 <p>
 A group of 5 to 7 trainers with decent counters should have no trouble defeating Mega Alakazam.
 </p>
 
-<h3>Large Group (6+ Trainers)</h3>
+<h3>Large Group (7+ Trainers)</h3>
 <p>
 Mega Alakazam becomes very easy with a large group, but avoid overfilling the lobby to save raid passes.
 </p>
@@ -847,7 +847,7 @@ Mega Alakazam becomes very easy with a large group, but avoid overfilling the lo
       <li>Dark and Ghost types are the best counters.</li>
   <li>Dodge Focus Blast and Shadow Ball if possible.</li>
   <li>Relobby quickly because Alakazam is glassy but hits hard.</li>
-  <li>With strong teams, Mega Alakazam is an easy duo.</li>
+  <li>Possible duo with optimized teams.</li>
     </ul>
   </section>
 
@@ -858,7 +858,6 @@ Mega Alakazam becomes very easy with a large group, but avoid overfilling the lo
    <!-- <tr><td>Evolution Line</td><td>Base → Stage → Final → Mega</td></tr>
     <tr><td>Mega Energy (First)</td><td>200</td></tr>
     <tr><td>Subsequent Cost</td><td>40</td></tr>-->
-    <tr><td>Buddy Distance</td><td>5 km</td></tr>
     <!--<tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
     <tr><td>Mega Boost Bonus</td><td>Extra Dark-type Candy</td></tr>-->
   </table>
@@ -876,7 +875,7 @@ Mega Alakazam becomes very easy with a large group, but avoid overfilling the lo
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
     <h2>Buddy Distance</h2>
-    <p id="buddyDistance">5 km (per Pokémon GO buddy distance)</p>
+    <p id="buddyDistance">3 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
@@ -888,35 +887,36 @@ Mega Alakazam becomes very easy with a large group, but avoid overfilling the lo
 <script>
   const raidConfig = {
     raidBoss: "Mega Alakazam",
-    megaType: "Ghost / Dark",
+    megaType: "Psychic",
     pageDescription: "Mega Alakazam Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
-    heroSummary: "Mega Alakazam is one of the Ghost / Dark-type Pokémon in Pokémon GO raids.",
+    heroSummary: "Mega Alakazam is one of the Psychic-type Pokémon in Pokémon GO raids.",
     moves: [
-      { type: "Fast", name: "Shadow Claw, Feint Attack" },
-      { type: "Charged", name: "Power Gem, Shadow Sneak, Foul Play, Dazzling Gleam, Drain Punch" }
+      { type: "Fast", name: "Psycho Cut, Confusion" },
+      { type: "Charged", name: "Focus Blast, Shadow Ball, Fire Punch, Future Sight" },
+      { type: "Elite", name: "Counter, Psychic, Dazzling Gleam" }
     ],
     counters: [
-      { name: "Zacian", description: "Top Fairy attacker" },
-      { name: "Salamence", description: "Top Dragon option" }, 
-      { name: "Garchomp", description: "Top Dragon-type attacker" },
-      { name: "Hatterene", description: "Top Fairy option" },
-      { name: "Togekiss", description: "Top Fairy attacker" },
-      { name: "Gengar", description: "Top Ghost option" },
-      { name: "Black Kyurem", description: "Top Dragon DPS option" },
-      { name: "Dawn Wings Necrozma", description: "Top Ghost option" },
-      { name: "Tapu Lele", description: "Top Ghost option" }
-    ],
+  { name: "Dusk Mane Necrozma", description: "Strong Ghost-type attacker" },
+  { name: "Gardevoir", description: "Fairy-type option with Shadow Ball" }, 
+  { name: "Origin Giratina", description: "Top Ghost-type bulk attacker" },
+  { name: "Yveltal", description: "Top Dark-type DPS option" },
+  { name: "Darkrai", description: "High DPS Dark-type attacker" },
+  { name: "Salamence", description: "Bite + Brutal Swing Dark attacker" },
+  { name: "Pinsir", description: "Bug-type DPS option" },
+  { name: "Scizor", description: "Bug/Steel bulk counter" },
+  { name: "Volcarona", description: "Bug-type damage dealer" }
+],
     cpRanges: [
-      "Non-Boosted 100%: ~1110 CP",
-      "Weather Boosted 100%: ~1387 CP"
+      "Non-Boosted 100%: ~2577 CP",
+      "Weather Boosted 100%: ~3221 CP"
     ],
     strategy: [
-      "<li>Dark and Ghost types are the best counters.</li>
-  <li>Dodge Focus Blast and Shadow Ball if possible.</li>
-  <li>Relobby quickly because Alakazam is glassy but hits hard.</li>
-  <li>With strong teams, Mega Alakazam is an easy duo.</li>"
+      "Dark and Ghost types are the best counters.",
+  "Dodge Focus Blast and Shadow Ball if possible.",
+  "Relobby quickly because Alakazam is glassy but hits hard.",
+  "Possible duo with optimized teams."
     ],
-    buddyDistance: "5 km (per Pokémon GO buddy distance)"
+    buddyDistance: "3 km (per Pokémon GO buddy distance)"
   };
   
   // Populate moves
@@ -987,7 +987,7 @@ Mega Alakazam becomes very easy with a large group, but avoid overfilling the lo
         <li>Dark and Ghost types are the best counters.</li>
   <li>Dodge Focus Blast and Shadow Ball if possible.</li>
   <li>Relobby quickly because Alakazam is glassy but hits hard.</li>
-  <li>With strong teams, Mega Alakazam is an easy duo.</li>
+  <li>Possible duo with optimized teams.</li>
       </ul>
     `;
   }
@@ -1017,7 +1017,7 @@ Mega Alakazam becomes very easy with a large group, but avoid overfilling the lo
           <h3>Can Mega Alakazam be shiny in Pokémon GO?</h3>
         <p>Shiny Alakazam has been released in raids or events.</p>
         <h3>What are best moveset of Alakazam?</h3>
-        <p>Best moveset of Alakazam are Confusion which does damage of 19 under Fast Attack and Focus Blast of 140 under Charged Attack.</p>
+        <p>Confusion is a strong fast move, and Focus Blast is a powerful charged move for raids.</p>
          <h3> Are Shadow Pokémon better?</h3>
         <p>Yes—Shadow forms have +20% attack, making them excellent choices if available.</p>
        <h3>What is the best weather to raid Mega Alakazam?</h3>
