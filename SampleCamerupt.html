@@ -29,7 +29,7 @@
   gtag('config', 'G-BTG1RBCVB7');
 </script>
 
-<script type="application/ld+json">
+<!--<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -76,7 +76,7 @@
     }
   ]
 }
-</script>
+</script>-->
 
 <script type="application/ld+json">
 {
@@ -300,7 +300,7 @@
     <h2>Stats & Basic Info</h2>
     <table id="statsTable">
       <tr><td>Type</td><td>Fire / Ground</td></tr>
-      <tr><td>Max CP</td><td>4565</td></tr>
+      <tr><td>Max CP</td><td>3641</td></tr>
       <tr><td>Weather Boost</td><td>Sunny</td></tr>
       <tr><td>Shiny</td><td>Yes</td></tr>
     </table>
@@ -384,8 +384,6 @@
   <ul>
     <li>Swampert, Blastoise, Gyarados, Slowbro, Sharpedo – Water boost</li>
     <li>Garchomp – Ground boost</li>
-    <li>Rayquaza - Dragon boost</li>
-    <li>Rayquaza - Flying boost</li>
   </ul>
 
   <!-- MOVES -->
@@ -761,7 +759,7 @@
     <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_garchomp.png" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
                 </td>
               <td>Mud Shot / Dragon Tail</td>
-                <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipr</td>
+                <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
                 <td>Earth Power</td>
                 <td>Dragon Tail (14) and Earthquake / Fire Blast (140)</td>
               </tr>
@@ -805,19 +803,18 @@
   </section>
 
 <section class="card" id="weather">
-      <h2>🌦️ Weather Boost</h2>
+      
 <h2>🌦️ Weather Boost</h2>
 
 <p>Mega Camerupt gets a weather boost in:</p>
 <ul>
-    <li>Sunny → boosts Fire</li>
-    <li>Clear → boosts Ground</li>
+    <li>Sunny / Clear → boosts Fire & Ground</li>
 </ul>
 
 <p>Your counters get boosted in:</p>
 <ul>
     <li>Rainy → boosts Water</li>
-    <li>Sunny → boosts Ground</li>
+    
 </ul>
 
 <p>If Mega Camerupt opens with a fast-charging special move (like Eruption), switch to a Water-type to soak the hit and retaliate quickly.</p>
@@ -893,7 +890,7 @@
    <!-- <tr><td>Evolution Line</td><td>Base → Stage → Final → Mega</td></tr>
     <tr><td>Mega Energy (First)</td><td>200</td></tr>
     <tr><td>Subsequent Cost</td><td>40</td></tr>-->
-    <tr><td>Buddy Distance</td><td>5 km</td></tr>
+    
     <!--<tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
     <tr><td>Mega Boost Bonus</td><td>Extra Dark-type Candy</td></tr>-->
   </table>
@@ -911,7 +908,7 @@
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
     <h2>Buddy Distance</h2>
-    <p id="buddyDistance">5 km (per Pokémon GO buddy distance)</p>
+    <p id="buddyDistance">3 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
@@ -923,36 +920,30 @@
 <script>
   const raidConfig = {
     raidBoss: "Mega Camerupt",
-    megaType: "Ghost / Dark",
+    megaType: "Fire / Ground",
     pageDescription: "Mega Camerupt Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
-    heroSummary: "Mega Camerupt is one of the Ghost / Dark-type Pokémon in Pokémon GO raids.",
+    heroSummary: "Mega Camerupt is one of the Fire / Ground-type Pokémon in Pokémon GO raids.",
     moves: [
-      { type: "Fast", name: "Shadow Claw, Feint Attack" },
-      { type: "Charged", name: "Power Gem, Shadow Sneak, Foul Play, Dazzling Gleam, Drain Punch" }
+      { type: "Fast", name: "Rock Smash, Ember, Incinerate" },
+      { type: "Charged", name: "Earthquake, Earth Power, Overheat, Solar Beam" }
     ],
     counters: [
-      { name: "Zacian", description: "Top Fairy attacker" },
-      { name: "Salamence", description: "Top Dragon option" }, 
-      { name: "Garchomp", description: "Top Dragon-type attacker" },
-      { name: "Hatterene", description: "Top Fairy option" },
-      { name: "Togekiss", description: "Top Fairy attacker" },
-      { name: "Gengar", description: "Top Ghost option" },
-      { name: "Black Kyurem", description: "Top Dragon DPS option" },
-      { name: "Dawn Wings Necrozma", description: "Top Ghost option" },
-      { name: "Tapu Lele", description: "Top Ghost option" }
+      { name: "Kyogre", description: "Top Water attacker" },
+      { name: "Swampert", description: "Top Water option" }, 
+      { name: "Gyarados", description: "Top Water-type attacker" }
     ],
     cpRanges: [
-      "Non-Boosted 100%: ~1110 CP",
-      "Weather Boosted 100%: ~1387 CP"
-    ],
+      "Non-Boosted 100%: ~1840 CP",
+      "Weather Boosted 100%: ~2300 CP"
+    ], 
     strategy: [
-      "<li><strong>Start with your strongest Flying or Water attacker</strong> — these give the fastest DPS advantage.</li>
-  <li><strong>Prioritize Psychic attackers</strong> if Mega Camerupt uses Fighting moves you need to punish at range.</li>
-  <li><strong>Dodge charged moves</strong> like Brave Bird or Focus Blast when possible — this preserves team longevity.</li>
-  <li><strong>Rejoin the battle quickly</strong> if your team faints to avoid wasting time and increase total damage done.</li>
-  <li>If the weather boosts one of your effective types, bring those Pokémon first.</li>"
+      "Lead with a high-level Water attacker (Primal Kyogre or Mega Swampert) for maximum initial damage.",
+  "Focus on defeating shields quickly with Water DPS — Hydro Cannon / Origin Pulse are especially strong.",
+  "Dodge charged Earth Power to preserve your attackers’ HP.",
+  "If you lack top Water counters, supplement with Ground attackers to exploit Mega Camerupt’s secondary weakness.",
+  "Rejoin instantly if your team faints to maximize damage output within raid time."
     ],
-    buddyDistance: "5 km (per Pokémon GO buddy distance)"
+    buddyDistance: "3 km (per Pokémon GO buddy distance)"
   };
   
   // Populate moves
@@ -1020,11 +1011,11 @@
       </table>
       <h3>Best Strategy for ${config.raidBoss}</h3>
       <ul>
-        <li><strong>Start with your strongest Flying or Water attacker</strong> — these give the fastest DPS advantage.</li>
-  <li><strong>Prioritize Psychic attackers</strong> if Mega Camerupt uses Fighting moves you need to punish at range.</li>
-  <li><strong>Dodge charged moves</strong> like Brave Bird or Focus Blast when possible — this preserves team longevity.</li>
-  <li><strong>Rejoin the battle quickly</strong> if your team faints to avoid wasting time and increase total damage done.</li>
-  <li>If the weather boosts one of your effective types, bring those Pokémon first.</li>
+        <li>Lead with a high-level Water attacker (Primal Kyogre or Mega Swampert) for maximum initial damage.</li>
+  <li>Focus on defeating shields quickly with Water DPS — Hydro Cannon / Origin Pulse are especially strong.</li>
+  <li>Dodge charged Earth Power to preserve your attackers’ HP.</li>
+  <li>If you lack top Water counters, supplement with Ground attackers to exploit Mega Camerupt’s secondary weakness. </li>
+  <li>Rejoin instantly if your team faints to maximize damage output within raid time.</li>
       </ul>
     `;
   }
@@ -1051,7 +1042,7 @@
           <h3>Can Mega Camerupt be shiny in Pokémon GO?</h3>
         <p>Not currently. Shiny Camerupt has not yet been released in raids or events.</p>
         <h3>What are best moveset of Camerupt?</h3>
-        <p>Best moveset of Camerupt are Incinerate which does damage of 32 under Fast Attack and Solar Beam of 180 under Charged Attack.</p>
+        <p>Incinerate paired with Solar Beam is Camerupt’s strongest moveset, capable of punishing unprepared Water-type attackers.</p>
          <h3> Are Shadow Pokémon better?</h3>
         <p>Yes—Shadow forms have +20% attack, making them excellent choices if available.</p>
        <h3>What is the best weather to raid Mega Camerupt?</h3>

@@ -300,7 +300,7 @@
     <h2>Stats & Basic Info</h2>
     <table id="statsTable">
       <tr><td>Type</td><td>Fire / Dragon</td></tr>
-      <tr><td>Max CP</td><td>4565</td></tr>
+      <tr><td>Max CP</td><td>4353</td></tr>
       <tr><td>Weather Boost</td><td>Sunny, Windy</td></tr>
       <tr><td>Shiny</td><td>Yes</td></tr>
     </table>
@@ -863,7 +863,7 @@
    <!-- <tr><td>Evolution Line</td><td>Base → Stage → Final → Mega</td></tr>
     <tr><td>Mega Energy (First)</td><td>200</td></tr>
     <tr><td>Subsequent Cost</td><td>40</td></tr>-->
-    <tr><td>Buddy Distance</td><td>5 km</td></tr>
+    
     <!--<tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
     <tr><td>Mega Boost Bonus</td><td>Extra Dark-type Candy</td></tr>-->
   </table>
@@ -881,7 +881,7 @@
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
     <h2>Buddy Distance</h2>
-    <p id="buddyDistance">5 km (per Pokémon GO buddy distance)</p>
+    <p id="buddyDistance">3 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
@@ -893,36 +893,35 @@
 <script>
   const raidConfig = {
     raidBoss: "Mega Charizard X",
-    megaType: "Ghost / Dark",
+    megaType: "Fire / Dragon",
     pageDescription: "Mega Charizard X Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
-    heroSummary: "Mega Charizard X is one of the Ghost / Dark-type Pokémon in Pokémon GO raids.",
+    heroSummary: "Mega Charizard X is one of the Fire / Dragon-type Pokémon in Pokémon GO raids.",
     moves: [
-      { type: "Fast", name: "Shadow Claw, Feint Attack" },
-      { type: "Charged", name: "Power Gem, Shadow Sneak, Foul Play, Dazzling Gleam, Drain Punch" }
-    ],
+      { type: "Fast", name: "Air Slash, Fire Spin" },
+      { type: "Charged", name: "Fire Blast, Overheat, Dragon Claw" },
+      { type: "Elite", name: "Wing Attack, Ember, Dragon Breath, Blast Burn, Flamethrower" }
+    ], 
     counters: [
-      { name: "Zacian", description: "Top Fairy attacker" },
+      { name: "Reshiram", description: "Top Fairy attacker" },
       { name: "Salamence", description: "Top Dragon option" }, 
-      { name: "Garchomp", description: "Top Dragon-type attacker" },
-      { name: "Hatterene", description: "Top Fairy option" },
-      { name: "Togekiss", description: "Top Fairy attacker" },
-      { name: "Gengar", description: "Top Ghost option" },
-      { name: "Black Kyurem", description: "Top Dragon DPS option" },
-      { name: "Dawn Wings Necrozma", description: "Top Ghost option" },
-      { name: "Tapu Lele", description: "Top Ghost option" }
+      { name: "Dragapult", description: "Top Dragon-type attacker" },
+      { name: "Tyranitar", description: "Top Fairy option" },
+      { name: "Rampardos", description: "Top Fairy attacker" },
+      { name: "Tyrantrum", description: "Top Ghost option" },
+      { name: "Groudon", description: "Top Dragon DPS option" },
+      { name: "Rhyperior", description: "Top Ghost option" }
     ],
     cpRanges: [
-      "Non-Boosted 100%: ~1110 CP",
-      "Weather Boosted 100%: ~1387 CP"
+      "Non-Boosted 100%: ~2200 CP",
+      "Weather Boosted 100%: ~2750 CP"
     ],
     strategy: [
-      "<li><strong>Start with your strongest Flying or Water attacker</strong> — these give the fastest DPS advantage.</li>
-  <li><strong>Prioritize Psychic attackers</strong> if Mega Charizard X uses Fighting moves you need to punish at range.</li>
-  <li><strong>Dodge charged moves</strong> like Brave Bird or Focus Blast when possible — this preserves team longevity.</li>
-  <li><strong>Rejoin the battle quickly</strong> if your team faints to avoid wasting time and increase total damage done.</li>
-  <li>If the weather boosts one of your effective types, bring those Pokémon first.</li>"
+      "Rock and Ground types are the safest and strongest options.",
+  "Dragon-types deal high damage but also take super effective damage.",
+  "Dodge Dragon Claw if using Dragon attackers.",
+  "2–3 strong trainers can defeat this raid comfortably."
     ],
-    buddyDistance: "5 km (per Pokémon GO buddy distance)"
+    buddyDistance: "3 km (per Pokémon GO buddy distance)"
   };
   
   // Populate moves
@@ -990,11 +989,10 @@
       </table>
       <h3>Best Strategy for ${config.raidBoss}</h3>
       <ul>
-        <li><strong>Start with your strongest Flying or Water attacker</strong> — these give the fastest DPS advantage.</li>
-  <li><strong>Prioritize Psychic attackers</strong> if Mega Charizard X uses Fighting moves you need to punish at range.</li>
-  <li><strong>Dodge charged moves</strong> like Brave Bird or Focus Blast when possible — this preserves team longevity.</li>
-  <li><strong>Rejoin the battle quickly</strong> if your team faints to avoid wasting time and increase total damage done.</li>
-  <li>If the weather boosts one of your effective types, bring those Pokémon first.</li>
+        <li>Rock and Ground types are the safest and strongest options.</li>
+  <li>Dragon-types deal high damage but also take super effective damage.</li>
+  <li>Dodge Dragon Claw if using Dragon attackers.</li>
+  <li>2–3 strong trainers can defeat this raid comfortably.</li>
       </ul>
     `;
   }
