@@ -284,7 +284,7 @@
     <h2>Stats & Basic Info</h2>
     <table id="statsTable">
       <tr><td>Type</td><td>Fire / Flying</td></tr>
-      <tr><td>Max CP</td><td>4565</td></tr>
+      <tr><td>Max CP</td><td>5037</td></tr>
       <tr><td>Weather Boost</td><td>Sunny, Windy</td></tr>
       <tr><td>Shiny</td><td>Yes</td></tr>
     </table>
@@ -819,10 +819,10 @@
   <section id="strategy" class="card">
     <h2>Raid Strategy</h2>
     <ul id="strategyList">
-      <li>Use Rock-type attackers only for fastest clear.</li>
-  <li>Mega Charizard Y takes double super-effective damage from Rock.</li>
-  <li>Dodge Blast Burn if using fragile attackers.</li>
-  <li>It can be soloed with top Rock counters in good conditions.</li>
+      <li>Use Rock-type attackers only for fastest clear.",
+  <li>Mega Charizard Y takes double super-effective damage from Rock.",
+  <li>Dodge Blast Burn if using fragile attackers.",
+  <li>It can be soloed with top Rock counters in good conditions."
     </ul>
   </section>
 
@@ -833,7 +833,7 @@
    <!-- <tr><td>Evolution Line</td><td>Base → Stage → Final → Mega</td></tr>
     <tr><td>Mega Energy (First)</td><td>200</td></tr>
     <tr><td>Subsequent Cost</td><td>40</td></tr>-->
-    <tr><td>Buddy Distance</td><td>5 km</td></tr>
+    
     <!--<tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
     <tr><td>Mega Boost Bonus</td><td>Extra Dark-type Candy</td></tr>-->
   </table>
@@ -851,7 +851,7 @@
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
     <h2>Buddy Distance</h2>
-    <p id="buddyDistance">5 km (per Pokémon GO buddy distance)</p>
+    <p id="buddyDistance">3 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
@@ -863,36 +863,32 @@
 <script>
   const raidConfig = {
     raidBoss: "Mega Charizard Y",
-    megaType: "Ghost / Dark",
+    megaType: "Fire / Flying",
     pageDescription: "Mega Charizard Y Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
-    heroSummary: "Mega Charizard Y is one of the Ghost / Dark-type Pokémon in Pokémon GO raids.",
+    heroSummary: "Mega Charizard Y is one of the Fire / Flying-type Pokémon in Pokémon GO raids.",
     moves: [
-      { type: "Fast", name: "Shadow Claw, Feint Attack" },
-      { type: "Charged", name: "Power Gem, Shadow Sneak, Foul Play, Dazzling Gleam, Drain Punch" }
+      { type: "Fast", name: "Air Slash, Fire Spin" },
+      { type: "Charged", name: "Dragon Claw, Fire Blast, Air Cutter, Overheat" },
+      { type: "Elite", name: "Dragon Breath, Ember, Wing Attack, Flamethrower, Blast Burn" }
     ],
     counters: [
-      { name: "Zacian", description: "Top Fairy attacker" },
-      { name: "Salamence", description: "Top Dragon option" }, 
-      { name: "Garchomp", description: "Top Dragon-type attacker" },
-      { name: "Hatterene", description: "Top Fairy option" },
-      { name: "Togekiss", description: "Top Fairy attacker" },
-      { name: "Gengar", description: "Top Ghost option" },
-      { name: "Black Kyurem", description: "Top Dragon DPS option" },
-      { name: "Dawn Wings Necrozma", description: "Top Ghost option" },
-      { name: "Tapu Lele", description: "Top Ghost option" }
+      { name: "Ampharos", description: "Top Fairy attacker" },
+      { name: "Carracosta", description: "Top Dragon option" }, 
+      { name: "Omastar", description: "Top Dragon-type attacker" },
+      { name: "Blastoise", description: "Top Fairy option" },
+      { name: "Kyogre", description: "Top Fairy attacker" }
     ],
     cpRanges: [
-      "Non-Boosted 100%: ~1110 CP",
-      "Weather Boosted 100%: ~1387 CP"
+      "Non-Boosted 100%: ~2546 CP",
+      "Weather Boosted 100%: ~3182 CP"
     ],
     strategy: [
-      "<li><strong>Start with your strongest Flying or Water attacker</strong> — these give the fastest DPS advantage.</li>
-  <li><strong>Prioritize Psychic attackers</strong> if Mega Charizard Y uses Fighting moves you need to punish at range.</li>
-  <li><strong>Dodge charged moves</strong> like Brave Bird or Focus Blast when possible — this preserves team longevity.</li>
-  <li><strong>Rejoin the battle quickly</strong> if your team faints to avoid wasting time and increase total damage done.</li>
-  <li>If the weather boosts one of your effective types, bring those Pokémon first.</li>"
+      "Use Rock-type attackers only for fastest clear.</li>
+  "Mega Charizard Y takes double super-effective damage from Rock.</li>
+  "Dodge Blast Burn if using fragile attackers.</li>
+  "It can be soloed with top Rock counters in good conditions.</li>"
     ],
-    buddyDistance: "5 km (per Pokémon GO buddy distance)"
+    buddyDistance: "3 km (per Pokémon GO buddy distance)"
   };
   
   // Populate moves
@@ -960,11 +956,10 @@
       </table>
       <h3>Best Strategy for ${config.raidBoss}</h3>
       <ul>
-        <li><strong>Start with your strongest Flying or Water attacker</strong> — these give the fastest DPS advantage.</li>
-  <li><strong>Prioritize Psychic attackers</strong> if Mega Charizard Y uses Fighting moves you need to punish at range.</li>
-  <li><strong>Dodge charged moves</strong> like Brave Bird or Focus Blast when possible — this preserves team longevity.</li>
-  <li><strong>Rejoin the battle quickly</strong> if your team faints to avoid wasting time and increase total damage done.</li>
-  <li>If the weather boosts one of your effective types, bring those Pokémon first.</li>
+        <li>Use Rock-type attackers only for fastest clear.</li>
+  <li>Mega Charizard Y takes double super-effective damage from Rock.</li>
+  <li>Dodge Blast Burn if using fragile attackers.</li>
+  <li>It can be soloed with top Rock counters in good conditions.</li>
       </ul>
     `;
   }
