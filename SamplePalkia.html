@@ -903,8 +903,8 @@ Palkia becomes very easy with a large group, but avoid overfilling the lobby to 
     ],
     counters: [
       { name: "Primal Groudon", description: "Top Ground-type attacker" },
-      { name: "Gyarados", description: "Top Ground attacker" }, 
-      { name: "Zekrom", description: "Top Ground-type attacker" }
+      { name: "Gyarados", description: "Top Water attacker" }, 
+      { name: "Zekrom", description: "Top Electric-type attacker" }
     ],
     strategy: [
       "Use Dragon or Fairy Pokémon for best results.",
@@ -919,9 +919,7 @@ Palkia becomes very easy with a large group, but avoid overfilling the lobby to 
   const movesList = document.getElementById("movesList");
   movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
 
-  // Populate CP
-  const cpList = document.getElementById("cpList");
-  cpList.innerHTML = raidConfig.cpRanges.map(c => `<li>${c}</li>`).join("");
+ 
 
   // Populate strategy
   const strategyList = document.getElementById("strategyList");
