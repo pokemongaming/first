@@ -112,15 +112,18 @@ footer{
 </style>
 </head>
 
+
+
 <body>
 
 <div class="container">
   <h1>Pokémon GO Tools & Calculators</h1>
+<p id="last-updated"></p>
+
 <p class="intro">
 <p>Welcome to the Pokémon GO tools section of <strong>PokemonGaming.in</strong>. This page is dedicated to useful tools that help trainers understand battle mechanics, build stronger teams, and prepare better for raids and PvP battles. Instead of guessing which Pokémon to use, these tools allow you to make smarter and more informed decisions.</p>
 
 <p>Whether you are preparing for a Legendary raid, a Mega raid, or just want to understand type matchups and damage output, our tools are designed to make your gameplay easier and more efficient.</p>
-</p>
   </div>
 
 <h2>Available Tools on PokemonGaming.in</h2>
@@ -185,13 +188,26 @@ footer{
         <a href="about-us.html">About</a> |
         <a href="privacy-policy.html">Privacy Policy</a> |
         <a href="disclaimer.html">Disclaimer</a>
-
+</p>
 <p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. It is an independent fan-made Pokémon GO guide website providing educational raid guides, counters and tools for trainers worldwide. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
 </p>
 
-      </p>
+      
     </div>
   </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
 
 </body>
 </html>

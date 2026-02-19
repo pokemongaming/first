@@ -44,7 +44,7 @@ footer{text-align:center;margin-top:20px;color:#777;font-size:14px}
 <body>
 <div class="container">
 <h1>Pokémon Type Effectiveness Chart</h1>
-
+<p id="last-updated"></p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -188,5 +188,18 @@ footer{text-align:center;margin-top:20px;color:#777;font-size:14px}
 
 <footer>© 2026 Pokémon Type Chart – pokemongaming.in</footer>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
 </body>
 </html>

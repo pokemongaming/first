@@ -194,6 +194,21 @@ Whether you are preparing for Tier 5 legendary raids, Mega raids, or special eve
  <li><strong>Pokémon GO Quizzes:</strong> Fun and educational quizzes to test your knowledge of Pokémon types, moves, and battles.</li>
 </ul>
 
+<p id="last-updated"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
+
 <!--<section class="section" id="raids">
     <div class="container">
       <h2 class="section-title">Upcoming Raids</h2>
@@ -365,11 +380,11 @@ Whether you are preparing for Tier 5 legendary raids, Mega raids, or special eve
         <a href="about-us.html">About</a> |
         <a href="privacy-policy.html">Privacy Policy</a> |
         <a href="disclaimer.html">Disclaimer</a>
-
+</p>
 <p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. It is an independent fan-made Pokémon GO guide website providing educational raid guides, counters and tools for trainers worldwide. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
 </p>
 
-      </p>
+     
     </div>
   </footer>
 
