@@ -272,9 +272,10 @@
       <span class="type ice">Ice</span>
     </div>
     <p class="summary" id="heroSummary">
-      White Kyurem is a powerful <strong>Dragon/Ice-type Legendary Pokémon</strong> in Pokémon GO.
-It delivers devastating Ice-type burst damage combined with strong Dragon coverage.
-This guide explains weaknesses, best counters, weather impact, and optimized raid strategy.
+      White Kyurem is one of the strongest Dragon-type raid bosses in Pokémon GO. 
+As a Dragon and Ice-type Pokémon, it combines devastating Dragon-type attacks 
+with powerful Ice-type coverage, making it extremely dangerous in Legendary Raids. 
+Compared to regular Kyurem, White Kyurem has significantly higher offensive stats and can quickly defeat unprepared teams.
 </p>
 
   <!-- TAB NAV -->
@@ -327,27 +328,64 @@ This guide explains weaknesses, best counters, weather impact, and optimized rai
               </tr>            
             </tbody>
           </table>
-<p><strong>Notes:</strong> Use Steel-type Pokémon for consistent survivability and stable damage output.</p>
+<p><strong>Notes:</strong> White Kyurem does not have any double weaknesses, but its powerful Dragon-type charged moves can heavily punish Dragon counters. Team selection and weather conditions play a major role in raid success.</p>
         </div>
 </section>
 
 <section id="counters">
      <h2>Best White Kyurem Counters</h2>
 
-  <h3>Steel-type Counters</h3>
+<h3>🪨 Rock-Type Counters (Strong vs Ice Moves)</h3>
+
+<p>
+Rock attackers perform well against Ice typing and can survive 
+longer if Dragon moves are not boosted.
+</p>
+
+<ul>
+<li>Smack Down + Rock Slide</li>
+<li>Smack Down + Stone Edge</li>
+</ul>
+
+  <h3>⚙ Steel-Type Counters (High Survivability)</h3>
+
+<p>
+Steel-types resist Ice-type attacks and provide excellent durability. 
+They are ideal when White Kyurem has Blizzard or other Ice-type moves.
+</p>
+
+<ul>
+<li>Bullet Punch + Meteor Mash</li>
+<li>Metal Claw + Flash Cannon</li>
+</ul>
   <ul>
     <li><strong>Dialga:</strong> (Metal Claw)</li>
     <li><strong>Metagross:</strong> (Bullet Punch / Meteor Mash)</li>
   </ul>
 
-  <h3>Fighting-type Counters</h3>
+  <h3>🥊 Fighting-Type Counters (Reliable & Safe)</h3>
+
+<p>
+Fighting-type Pokémon are among the safest and most consistent choices. 
+They deal strong super-effective damage without being weak to Dragon attacks.
+</p>
+
+<ul>
+<li>Counter + Aura Sphere</li>
+<li>Counter + Dynamic Punch</li>
+<li>Mega Fighting Pokémon provide strong team-wide boosts</li>
+</ul>
   <ul>
     <li><strong>Conkeldurr:</strong> (Counter / Dynamic Punch)</li>
     
     <li><strong>Terrakion:</strong> (Double Kick / Sacred Sword)</li>
   </ul>
 
-  <h3>Dragon-type Counters</h3>
+  <h3>🐉 Dragon-Type Counters (Highest DPS, Higher Risk)</h3>
+<p>
+Dragon-type Pokémon deal massive damage but take super-effective 
+damage in return. Use them in coordinated groups for fast clears.
+</p>
   <ul>
     <li><strong>Dialga:</strong> (Draco Meteor)</li>
     <li><strong>Palkia:</strong> (Dragon Tail / Draco Meteor)</li>
@@ -761,7 +799,7 @@ Steel-types handle Blizzard best.
 Understanding CP ranges helps trainers evaluate the strength of White Kyurem when caught from raids.
 </p>
 
-    <ul id="cpList">
+    <ul>
       <li><strong>Perfect (L20):</strong> 2,533-2,641 CP</li>
           <li><strong>Weather Boost (L25):</strong> 3,167-3,289 CP</li>
           <li><span class="pill">Boosted by: <strong>Snowy</strong> & <strong>Windy</strong></span></li>
@@ -849,15 +887,38 @@ White Kyurem becomes very easy with a large group, but avoid overfilling the lob
   <li>Terrakion</li>
 </ul>
 
+<h2>Recommended Group Size</h2>
+
+<ul>
+<li><strong>3 Trainers:</strong> Possible with max-level optimized teams</li>
+<li><strong>4 Trainers:</strong> Reliable completion</li>
+<li><strong>5+ Trainers:</strong> Comfortable win</li>
+</ul>
+
+<p>
+Because of White Kyurem’s high Attack stat, small groups must use 
+well-powered counters and coordinate Mega Evolutions.
+</p>
+
 <!-- STRATEGY -->
   <section id="strategy" class="card">
     <h2>Raid Strategy</h2>
-    <ul id="strategyList">
-      <li>Lead with Steel-types for stability.</li>
-<li>Avoid heavy Dragon teams in Windy weather.</li>
-<li>Use Mega Steel or Mega Fighting evolutions if available.</li>
-<li>Coordinate relobbies for smaller groups.</li>
-    </ul>
+    <h3>Identify the Charged Move Early</h3>
+<p>
+If White Kyurem is using Blizzard, prioritize Steel and Rock types. 
+If it uses Dragon-type moves, mix in Fighting or Steel Pokémon to avoid heavy Dragon-type damage.
+</p>
+
+<h3>Coordinate Mega Evolutions</h3>
+<p>
+Mega Fighting, Mega Steel, or Mega Dragon Pokémon significantly increase overall raid DPS. Proper coordination improves clear times.
+</p>
+
+<h3>Balance DPS and Bulk</h3>
+<p>
+Full Dragon teams clear faster but faint often. 
+Balanced teams reduce relobby time and improve stability.
+</p>
   </section>
 
   <!-- EVOLUTION 
@@ -912,22 +973,12 @@ White Kyurem becomes very easy with a large group, but avoid overfilling the lob
       { name: "Conkeldurr", description: "Top Fighting attacker" },
       { name: "Terrakion", description: "Top Rock/Fighting attacker" }
     ],
-    strategy: [
-      "Lead with Steel-types for stability.",
-"Avoid heavy Dragon teams in Windy weather.",
-"Use Mega Steel or Mega Fighting evolutions if available.",
-"Coordinate relobbies for smaller groups."
-    ],
-    buddyDistance: "20 km (per Pokémon GO buddy distance)"
+     buddyDistance: "20 km (per Pokémon GO buddy distance)"
   };
   
   // Populate moves
   const movesList = document.getElementById("movesList");
   movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
-
-  // Populate strategy
-  const strategyList = document.getElementById("strategyList");
-  strategyList.innerHTML = raidConfig.strategy.map(s => `<li>${s}</li>`).join("");
 
   // Populate buddy distance
   document.getElementById("buddyDistance").textContent = raidConfig.buddyDistance;
@@ -999,7 +1050,8 @@ Shiny White Kyurem is available in Pokémon GO. The shiny version has green high
 </p>
 
   <h2>Why Raid White Kyurem?</h2>
-  <p>Its dual-type nature tests team-building skills, encouraging players to prepare diverse counters. Capturing White Kyurem also enables evolution synergy for Black and White Kyurem forms, adding value to your Pokémon roster.</p>
+  <p>Yes. White Kyurem is one of the strongest Dragon-type attackers in Pokémon GO and performs exceptionally well in PvE content. 
+It is highly valuable for raid-focused trainers and worth investing Candy and XL Candy into.</p>
 
         <section id="faq" aria-label="FAQ">
           <h2>FAQ</h2>
@@ -1016,7 +1068,9 @@ Shiny White Kyurem is available in Pokémon GO. The shiny version has green high
         </section>
 
 <h2>Conclusion</h2>
-<p>White Kyurem is a flexible but vulnerable Legendary Pokémon. With the right team, it is one of the easier Tier 5 raids in Pokémon GO.</p>
+<p>White Kyurem is a high-damage legendary raid boss that rewards preparation and optimized teams. 
+Use Fighting and Steel types for safety, Rock types for Ice-heavy movesets, and Dragon types for maximum DPS in coordinated raids. 
+Weather boosts and Mega Evolution timing can make a significant difference.</p>
 
 <h2>Related Guides</h2>
 <p>Looking for more counters? Check out our 

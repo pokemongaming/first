@@ -272,8 +272,12 @@
       <span class="type ice">Ice</span>
     </div>
     <p class="summary" id="heroSummary">
-      Black Kyurem is a powerful <strong>Dragon/Ice-type Legendary Pokémon</strong> in Pokémon GO. 
-With extremely high offensive stats and strong coverage moves, this raid boss demands optimized counters and coordinated team play.
+      Black Kyurem is one of the most powerful Dragon-type raid bosses in Pokémon GO. 
+As a Dragon and Ice-type Pokémon, it combines massive offensive power 
+with strong bulk, making it significantly more dangerous than standard Kyurem. 
+With extremely high Attack stats and access to powerful Dragon and Ice moves, 
+Black Kyurem requires optimized counters and proper team coordination 
+to defeat efficiently.
 </p>
 
   <!-- TAB NAV -->
@@ -326,26 +330,62 @@ With extremely high offensive stats and strong coverage moves, this raid boss de
               </tr>            
             </tbody>
           </table>
-<p><strong>Notes:</strong> Focus on high-DPS Steel or Fighting attackers for stable performance.</p>
+<p><strong>Notes:</strong> Black Kyurem has no double weaknesses, but its massive damage output makes it more challenging than most legendary raid bosses. 
+Its Dragon-type attacks can quickly eliminate glass-cannon counters, 
+so team balance is critical.</p>
         </div>
 </section>
 
 <section id="counters">
      <h2>Best Black Kyurem Counters</h2>
 
-  <h3>Steel-type Counters</h3>
+  <h3>⚙ Steel-Type Counters (High Durability)</h3>
+
+<p>
+Steel-types resist Ice-type moves and deal super-effective damage. 
+They last longer in battle and reduce the need to relobby.
+</p>
+<ul>
+<li>Bullet Punch</li>
+<li>Meteor Mash or Flash Cannon</li>
+</ul>
   <ul>
     <li><strong>Dialga:</strong> (Metal Claw)</li>
     <li><strong>Metagross:</strong> (Bullet Punch / Meteor Mash)</li>
   </ul>
 
-  <h3>Fighting-type Counters</h3>
+  <h3>🥊 Fighting-Type Counters (Safest Option)</h3>
+<p>
+Fighting-type Pokémon are among the safest and most consistent choices. 
+They deal strong super-effective damage and are not weak to Dragon moves.
+</p>
+<ul>
+<li>Fast Move: Counter</li>
+<li>Charged Move: Aura Sphere or Dynamic Punch</li>
+<li>Mega Fighting Pokémon significantly boost group damage</li>
+</ul>
   <ul>
    
     <li><strong>Terrakion:</strong> (Double Kick / Sacred Sword)</li>
   </ul>
 
-  <h3>Dragon-type Counters</h3>
+<h3>🪨 Rock-Type Counters (Strong vs Ice Moves)</h3>
+
+<p>
+Rock-type attackers perform well, especially when Black Kyurem 
+uses Blizzard or other Ice-type charged attacks.
+</p>
+<ul>
+<li>Smack Down</li>
+<li>Rock Slide or Stone Edge</li>
+</ul>
+
+  <h3>🐉 Dragon-Type Counters (Maximum DPS)</h3>
+<p>
+Dragon attackers provide the highest damage output but are risky 
+because they take super-effective damage from Dragon moves. 
+Use them in coordinated groups for fast clears.
+</p>
   <ul>
     <li><strong>Dialga:</strong> (Draco Meteor)</li>
     <li><strong>Palkia:</strong> (Dragon Tail / Draco Meteor)</li>
@@ -742,7 +782,7 @@ Be cautious of <strong>Blizzard</strong> (heavy Ice damage) and <strong>Outrage<
 Understanding CP ranges helps trainers evaluate the strength of Black Kyurem when caught from raids.
 </p>
 
-    <ul id="cpList">
+    <ul>
       <li><strong>Perfect (L20):</strong> 2,533-2,631 CP</li>
           <li><strong>Weather Boost (L25):</strong> 3,167-3,289 CP</li>
           <li><span class="pill">Boosted by: <strong>Snowy</strong> & <strong>Windy</strong></span></li>
@@ -830,15 +870,41 @@ Black Kyurem becomes very easy with a large group, but avoid overfilling the lob
   <li>Terrakion</li>
 </ul>
 
+<h2>Recommended Group Size</h2>
+
+<ul>
+<li><strong>3 Trainers:</strong> Possible with maxed counters</li>
+<li><strong>4 Trainers:</strong> Reliable clear</li>
+<li><strong>5+ Trainers:</strong> Very safe win</li>
+</ul>
+
+<p>
+Because of Black Kyurem’s higher Attack stat, smaller groups require optimized level 40+ counters.
+</p>
+
 <!-- STRATEGY -->
   <section id="strategy" class="card">
     <h2>Raid Strategy</h2>
-    <ul id="strategyList">
-      <li>Prioritize Steel-types for stability.</li>
-<li>Avoid overloading Dragon-types in Dragon weather.</li>
-<li>Use Mega Steel or Mega Fighting evolutions if available.</li>
-<li>Coordinate relobbies for small teams.</li>
-    </ul>
+    <h3>Identify Charged Move Quickly</h3>
+<p>
+If Black Kyurem is using Blizzard, switch to Steel or Rock-heavy teams. 
+If it has a Dragon-type charged move, mix in Fighting or Steel Pokémon 
+to avoid frequent fainting.
+</p>
+
+<h3>Use Mega Boosts Strategically</h3>
+<p>
+Mega Fighting, Mega Steel, or Mega Dragon Pokémon 
+increase team-wide DPS significantly. Coordinate activation timing 
+with your raid group.
+</p>
+
+<h3>Balance Damage and Survivability</h3>
+<p>
+High-DPS Dragon teams clear faster but may faint frequently. 
+Balanced teams reduce relobby time and improve consistency.
+</p>
+
   </section>
 
   <!-- EVOLUTION 
@@ -894,22 +960,12 @@ Black Kyurem becomes very easy with a large group, but avoid overfilling the lob
       { name: "Metagross", description: "Top Steel option" },
       { name: "Terrakion", description: "Top Fighting / Rock attacker" }
     ],
-    strategy: [
-      "Prioritize Steel-types for stability.", 
-"Avoid overloading Dragon-types in Dragon weather.", 
-"Use Mega Steel or Mega Fighting evolutions if available.", 
-"Coordinate relobbies for small teams."
-    ],
     buddyDistance: "20 km (per Pokémon GO buddy distance)"
   };
   
   // Populate moves
   const movesList = document.getElementById("movesList");
   movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
-
-  // Populate strategy
-  const strategyList = document.getElementById("strategyList");
-  strategyList.innerHTML = raidConfig.strategy.map(s => `<li>${s}</li>`).join("");
 
   // Populate buddy distance
   document.getElementById("buddyDistance").textContent = raidConfig.buddyDistance;
@@ -981,7 +1037,9 @@ Shiny Black Kyurem is available in Pokémon GO. The shiny version has green high
 </p>
 
   <h2>Why Raid Black Kyurem?</h2>
-  <p>Its dual-type nature tests team-building skills, encouraging players to prepare diverse counters. Capturing Black Kyurem also enables evolution synergy for Black and White Kyurem forms, adding value to your Pokémon roster.</p>
+  <p>Yes. Black Kyurem is among the strongest Dragon-type attackers in Pokémon GO and has strong PvE relevance. 
+It is a top-tier investment for trainers focusing on raid performance. 
+Stocking up on Candy and XL Candy is highly recommended.</p>
 
         <section id="faq" aria-label="FAQ">
           <h2>FAQ</h2>
@@ -998,7 +1056,10 @@ Shiny Black Kyurem is available in Pokémon GO. The shiny version has green high
         </section>
 
 <h2>Conclusion</h2>
-<p>Black Kyurem is a flexible but vulnerable Legendary Pokémon. With the right team, it is one of the higher-DPS Tier 5 raid bosses requiring coordinated counters in Pokémon GO.</p>
+<p>Black Kyurem is a high-damage legendary raid boss that rewards preparation and optimized teams. 
+Use Fighting or Steel types for stability, Rock types for Ice-heavy movesets, 
+and Dragons for maximum DPS in coordinated groups. 
+Plan around weather boosts and Mega Evolutions to secure smooth victories.</p>
 
 <h2>Related Guides</h2>
 <p>Looking for more counters? Check out our 
