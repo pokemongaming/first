@@ -144,6 +144,124 @@
       text-decoration: none;
       margin: 0.2rem 0;
     }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  background: #f4f4f4;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #ffcc00;
+  color: #000;
+  border-color: #ffcc00;
+}
+
+.tab-btn:active {
+  transform: scale(0.97);
+}
+
+.type-wrapper {
+  margin: 10px 0;
+}
+
+.type {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 6px;
+}
+
+/* Electric */
+.type.electric {
+  background: #F7D02C;
+  color: #000;
+}
+
+/* Flying */
+.type.flying {
+  background: #A98FF3;
+}
+
+/* Rock */
+.type.rock {
+  background: #B6A136;
+}
+
+/* Ice */
+.type.ice {
+  background: #96D9D6;
+  color: #000;
+}
+
+/* Ground */
+.type.ground {
+  background: #E2BF65;
+  color: #000;
+}
+
+/* Fire */
+.type.fire {
+  background: #EE8130;
+}
+
+/* Water */
+.type.water {
+  background: #6390F0;
+}
+
+/* Grass */
+.type.grass {
+  background: #7AC74C;
+}
+
+/* Psychic */
+.type.psychic {
+  background: #F95587;
+}
+
+/* Dark */
+.type.dark {
+  background: #705746;
+}
+
+/* Dragon */
+.type.dragon {
+  background: #6F35FC;
+}
+
+/* Fairy */
+.type.fairy {
+  background: #D685AD;
+  color: #000;
+}
+
+/* Steel */
+.type.steel {
+  background: #B7B7CE;
+  color: #000;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
    
     .author-box {
       margin-top: 2rem;
@@ -262,7 +380,7 @@
 
   <!-- HERO CARD -->
   
-    <div class="types" id="heroTypes">
+    <div class="type-wrapper">
       <span class="type ice">Ice</span>
       <span class="type flying">Flying</span>
     </div>
@@ -273,17 +391,15 @@ Although it has solid defensive stats, Articuno possesses a major weakness that 
 This complete raid guide explains Articuno’s weaknesses, best counters, weather boosts, recommended group sizes, and battle strategies to help you win efficiently.
 </p>
 
-  <!-- TAB NAV -->
-  <div class="tabs">
-    <a href="#stats">Stats</a>
-    <a href="#moves">Moves</a>
-    <a href="#counters">Counters</a>
-    <a href="#cp">CP</a>
-    <a href="#strategy">Strategy</a>
-    <!--<a href="#evolution">Evolution</a>-->
-    <a href="#buddy">Buddy</a>
-    <a href="#shadowMegaSection">Shadow vs Mega</a>
-  </div>
+   <div class="tabs">
+  <a href="#stats" class="tab-btn">Stats</a>
+  <a href="#moves" class="tab-btn">Moves</a>
+  <a href="#counters" class="tab-btn">Counters</a>
+  <a href="#cp" class="tab-btn">CP</a>
+  <a href="#strategy" class="tab-btn">Strategy</a>
+  <a href="#buddy" class="tab-btn">Buddy</a>
+  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
 <h2>Articuno Overview</h2>
 <p>
@@ -821,14 +937,33 @@ Understanding CP ranges helps trainers evaluate the strength of Articuno when ca
 <p>
 Weather conditions can strongly influence your raid performance:
 </p>
-  
-<ul>
-<li><strong>Rainy weather:</strong> Boosts Electric-type moves.</li>
-<li><strong>Partly Cloudy weather:</strong> Boosts Rock-type counters.</li>
-<li><strong>Sunny weather:</strong> Boosts Fire-type counters.</li>
-<li><strong>Snow:</strong> Boosts Articuno’s Ice-type moves</li>
-<li><strong>Windy:</strong> Boosts Articuno’s Flying-type moves</li>
-</ul>
+  <table>
+<tr>
+<th>Weather</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td>Rainy</td>
+<td>Boosts Electric-type moves.</td>
+</tr>
+<tr>
+<td>Windy</td>
+<td>Boosts Articuno’s Flying-type moves</td>
+</tr>
+<tr>
+<td>Partly Cloudy</td>
+<td>Boosts Rock-type counters.</td>
+</tr>
+<tr>
+<td>Snowy</td>
+<td>Boosts Articuno’s Ice-type moves</td>
+</tr>
+<tr>
+<td>Sunny</td>
+<td>Boosts Fire-type counters.</td>
+</tr>
+</table>
+
 <p>
 Partly Cloudy weather is ideal because it boosts Rock attacks, making raids significantly faster.
 Avoid Snow or Windy weather if possible, as these conditions strengthen Articuno’s own attacks.

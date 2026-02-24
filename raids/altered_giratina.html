@@ -142,6 +142,124 @@
       text-decoration: none;
       margin: 0.2rem 0;
     }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  background: #f4f4f4;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #ffcc00;
+  color: #000;
+  border-color: #ffcc00;
+}
+
+.tab-btn:active {
+  transform: scale(0.97);
+}
+
+.type-wrapper {
+  margin: 10px 0;
+}
+
+.type {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 6px;
+}
+
+/* Electric */
+.type.electric {
+  background: #F7D02C;
+  color: #000;
+}
+
+/* Flying */
+.type.flying {
+  background: #A98FF3;
+}
+
+/* Rock */
+.type.rock {
+  background: #B6A136;
+}
+
+/* Ice */
+.type.ice {
+  background: #96D9D6;
+  color: #000;
+}
+
+/* Ground */
+.type.ground {
+  background: #E2BF65;
+  color: #000;
+}
+
+/* Fire */
+.type.fire {
+  background: #EE8130;
+}
+
+/* Water */
+.type.water {
+  background: #6390F0;
+}
+
+/* Grass */
+.type.grass {
+  background: #7AC74C;
+}
+
+/* Psychic */
+.type.psychic {
+  background: #F95587;
+}
+
+/* Dark */
+.type.dark {
+  background: #705746;
+}
+
+/* Dragon */
+.type.dragon {
+  background: #6F35FC;
+}
+
+/* Fairy */
+.type.fairy {
+  background: #D685AD;
+  color: #000;
+}
+
+/* Steel */
+.type.steel {
+  background: #B7B7CE;
+  color: #000;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
    
     .author-box {
       margin-top: 2rem;
@@ -178,16 +296,6 @@
   font-size: 14px;
   line-height: 1.4;
 }
-
-
-
-.tbl img.type-ico {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
 
 
    /* ============================================
@@ -268,7 +376,7 @@
 <main>
 <div class="container">
   
-    <div class="types" id="heroTypes">
+    <div class="type-wrapper">
       <span class="type dragon">Dragon</span>
       <span class="type ghost">Ghost</span>
     </div>
@@ -280,17 +388,15 @@ its durability can significantly extend raid battles, especially for smaller gro
 This complete raid guide explains Giratina’s weaknesses, the best counters to use,
 weather advantages, ideal team compositions, and battle strategies to help you defeat it efficiently.</p>
 
-  <!-- TAB NAV -->
   <div class="tabs">
-    <a href="#stats">Stats</a>
-    <a href="#moves">Moves</a>
-    <a href="#counters">Counters</a>
-    <a href="#cp">CP</a>
-    <a href="#strategy">Strategy</a>
-    <!--<a href="#evolution">Evolution</a>-->
-    <a href="#buddy">Buddy</a>
-    <a href="#shadowMegaSection">Shadow vs Mega</a>
-  </div>
+  <a href="#stats" class="tab-btn">Stats</a>
+  <a href="#moves" class="tab-btn">Moves</a>
+  <a href="#counters" class="tab-btn">Counters</a>
+  <a href="#cp" class="tab-btn">CP</a>
+  <a href="#strategy" class="tab-btn">Strategy</a>
+  <a href="#buddy" class="tab-btn">Buddy</a>
+  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
   <h2>Giratina (Altered Forme) Overview</h2>
 <p>
@@ -842,12 +948,30 @@ Understanding CP ranges helps trainers evaluate the strength of Altered Giratina
 <p>
 Weather conditions can dramatically impact your battle performance:
 </p>
-<ul>
-<li><strong>Foggy weather:</strong> boosts Ghost- and Dark-type moves.</li>
-<li><strong>Snowy weather:</strong> boosts Ice-type counters.</li>
-<li><strong>Windy weather:</strong> boosts Dragon-type moves.</li>
-<li><strong>Cloudy weather:</strong> boosts Fairy-type counters.</li>
-</ul>
+
+<table>
+<tr>
+<th>Weather</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td>Snowy</td>
+<td>boosts Ice-type counters.</td>
+</tr>
+<tr>
+<td>Windy</td>
+<td>boosts Dragon-type moves.</td>
+</tr>
+<tr>
+<td>Cloudy</td>
+<td>boosts Fairy-type counters.<</td>
+</tr>
+<tr>
+<td>Foggy</td>
+<td>boosts Ghost- and Dark-type moves.</td>
+</tr>
+</table>
+
   <p>
 Choosing weather-boosted counters can shorten the raid significantly.
 </p>
