@@ -148,6 +148,124 @@
       text-decoration: none;
       margin: 0.2rem 0;
     }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  background: #f4f4f4;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #ffcc00;
+  color: #000;
+  border-color: #ffcc00;
+}
+
+.tab-btn:active {
+  transform: scale(0.97);
+}
+
+.type-wrapper {
+  margin: 10px 0;
+}
+
+.type {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 6px;
+}
+
+/* Electric */
+.type.electric {
+  background: #F7D02C;
+  color: #000;
+}
+
+/* Flying */
+.type.flying {
+  background: #A98FF3;
+}
+
+/* Rock */
+.type.rock {
+  background: #B6A136;
+}
+
+/* Ice */
+.type.ice {
+  background: #96D9D6;
+  color: #000;
+}
+
+/* Ground */
+.type.ground {
+  background: #E2BF65;
+  color: #000;
+}
+
+/* Fire */
+.type.fire {
+  background: #EE8130;
+}
+
+/* Water */
+.type.water {
+  background: #6390F0;
+}
+
+/* Grass */
+.type.grass {
+  background: #7AC74C;
+}
+
+/* Psychic */
+.type.psychic {
+  background: #F95587;
+}
+
+/* Dark */
+.type.dark {
+  background: #705746;
+}
+
+/* Dragon */
+.type.dragon {
+  background: #6F35FC;
+}
+
+/* Fairy */
+.type.fairy {
+  background: #D685AD;
+  color: #000;
+}
+
+/* Steel */
+.type.steel {
+  background: #B7B7CE;
+  color: #000;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
    
     .author-box {
       margin-top: 2rem;
@@ -266,31 +384,26 @@
 
   <!-- HERO CARD -->
   
-    <div class="types" id="heroTypes">
-      <span class="type flying">Flying</span>
-      <span class="type electric">Electric</span>
-    </div>
+    <div class="type-wrapper">
+  <span class="type electric">Electric</span>
+  <span class="type flying">Flying</span>
+</div>
     <p class="summary" id="heroSummary">
-     Zapdos is a Legendary Electric and Flying-type Pokémon in Pokémon GO and one of the original Kanto Legendary birds. As a Tier 5 raid boss, Zapdos delivers strong Electric-type damage and can quickly overwhelm unprepared teams. However, it has a key weakness that makes it manageable with proper planning. This complete Zapdos raid guide covers its weaknesses, best counters, weather impact, ideal team setups, and battle strategies to help you defeat it efficiently.
-</p>
+     <p><strong>Zapdos</strong> is one of the original Legendary Birds from the Kanto region and remains a powerful Electric-type attacker in Pokémon GO. As a Tier 5 Raid Boss, Zapdos combines strong Electric damage with Flying-type coverage, making preparation essential for victory.</p>
+
+<p>This complete guide covers weaknesses, best counters, weather boosts, CP values, catching tips, and advanced battle strategy to help you defeat Zapdos efficiently.</p>
 
   <!-- TAB NAV -->
   <div class="tabs">
-    <a href="#stats">Stats</a>
-    <a href="#moves">Moves</a>
-    <a href="#counters">Counters</a>
-    <a href="#cp">CP</a>
-    <a href="#strategy">Strategy</a>
-    <!--<a href="#evolution">Evolution</a>-->
-    <a href="#buddy">Buddy</a>
-    <a href="#shadowMegaSection">Shadow vs Mega</a>
-  </div>
+  <a href="#stats" class="tab-btn">Stats</a>
+  <a href="#moves" class="tab-btn">Moves</a>
+  <a href="#counters" class="tab-btn">Counters</a>
+  <a href="#cp" class="tab-btn">CP</a>
+  <a href="#strategy" class="tab-btn">Strategy</a>
+  <a href="#buddy" class="tab-btn">Buddy</a>
+  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
   
-<h2>Zapdos Overview</h2>
-<p>
-Zapdos has a dual Electric/Flying typing. This combination gives it powerful offensive coverage but also leaves it vulnerable to specific types.
-</p>
-
 <!-- STATS -->
   <section id="stats" class="card">
     <h2>Stats & Basic Info</h2>
@@ -329,7 +442,8 @@ Zapdos has a dual Electric/Flying typing. This combination gives it powerful off
             
             </tbody>
           </table>
-<p><strong>Notes:</strong>Unlike Moltres, Zapdos does not have a double weakness. However, Rock-type Pokémon are still generally the strongest counters due to their high damage output and resistance to Flying-type attacks.</p>
+<p><strong>Notes:</strong>Because of its Flying typing, Rock-type moves deal double super-effective damage. Rock attackers are the most efficient way to defeat Zapdos.
+</p>
         </div>
 </section>
 
@@ -801,14 +915,30 @@ Understanding CP ranges helps trainers evaluate the strength of Zapdos when caug
 <p>
 Weather conditions significantly affect Zapdos raids:
 </p>
-  
-<ul>
-<li><strong>Windy weather:</strong> Boosts Flying-, Psychic-, Dragon-type moves </li>
-<li><strong>Rainy weather:</strong> Boosts Electric-type moves and makes the raid slightly harder</li>
-<li><strong>Snow:</strong> Boosts Ice-type moves</li>
-<li><strong>Partly Cloudy weather:</strong> Boosts Rock-type counters (best for you)</li>
-</ul>
 
+<table>
+<tr>
+<th>Weather</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td>Rainy</td>
+<td>Boosts Electric-type moves and makes the raid slightly harder</td>
+</tr>
+<tr>
+<td>Windy</td>
+<td>Boosts Flying-, Psychic-, Dragon-type moves</td>
+</tr>
+<tr>
+<td>Partly Cloudy</td>
+<td>Boosts Rock counters (Best condition)</td>
+</tr>
+<tr>
+<td>Snow</td>
+<td>Boosts Ice counters</td>
+</tr>
+</table>
+  
 <p>
 Partly Cloudy weather provides the biggest advantage by boosting Rock-type damage.
 Avoid Rainy weather if possible, as it strengthens Zapdos’ Electric attacks.</p>
@@ -1056,6 +1186,14 @@ Zapdos remains one of the strongest Electric-type attackers in Pokémon GO. It p
 <p>
 Because it does not have a double weakness, Zapdos raids require slightly better preparation than Moltres, but they are still very achievable with the right team setup.</p>
 
+<h2>Catching Zapdos – Pro Tips</h2>
+
+<ul>
+<li>Use Golden Razz Berry every throw</li>
+<li>Throw after attack animation</li>
+<li>Aim for Excellent Curveball throws</li>
+<li>Lock the circle before throwing</li>
+</ul>
 
         <section id="faq" aria-label="FAQ">
           <h2>FAQ</h2>
