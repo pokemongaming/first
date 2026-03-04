@@ -140,6 +140,22 @@
       --toxic: #9333ea;
       --ring: 0 10px 30px rgba(22,163,74,0.1);
     }
+  
+  .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
    
     .toc {
       background: #f0fdf4;
@@ -153,6 +169,372 @@
       text-decoration: none;
       margin: 0.2rem 0;
     }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  background: #f4f4f4;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #ffcc00;
+  color: #000;
+  border-color: #ffcc00;
+}
+
+.tab-btn:active {
+  transform: scale(0.97);
+}
+
+.type-wrapper {
+  margin: 10px 0;
+}
+
+.type {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 6px;
+}
+
+/* Electric */
+.type.electric {
+  background: #F7D02C;
+  color: #000;
+}
+
+/* Flying */
+.type.flying {
+  background: #A98FF3;
+}
+
+/* Rock */
+.type.rock {
+  background: #B6A136;
+}
+
+/* Ice */
+.type.ice {
+  background: #96D9D6;
+  color: #000;
+}
+
+/* Ground */
+.type.ground {
+  background: #E2BF65;
+  color: #000;
+}
+
+/* Fire */
+.type.fire {
+  background: #EE8130;
+}
+
+/* Water */
+.type.water {
+  background: #6390F0;
+}
+
+/* Bug */
+.type.bug {
+  background: #3390F0;
+}
+
+/* Grass */
+.type.grass {
+  background: #7AC74C;
+}
+
+/* Psychic */
+.type.psychic {
+  background: #F95587;
+}
+
+/* Dark */
+.type.dark {
+  background: #705746;
+}
+
+/* Dragon */
+.type.dragon {
+  background: #6F35FC;
+}
+
+/* Fairy */
+.type.fairy {
+  background: #D685AD;
+  color: #000;
+}
+
+/* Steel */
+.type.steel {
+  background: #B7B7CE;
+  color: #000;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+   
+    .author-box {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #dcfce7;
+      border-radius: 12px;
+    }
+   /* Horizontal scroll ONLY for the G-Max list */
+.gmax-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Individual Pokémon cards */
+.gmax-card {
+  flex: 0 0 280px; /* fixed width – scroll works perfectly */
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.gmax-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.gmax-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+   /* ============================================
+   FIX: Author Box + Footer full-width (mobile)
+   Removes side gaps and forces 100% stretch
+   ============================================ */
+/* ============================================
+   FULL-WIDTH HORIZONTAL SCROLL (MOBILE)
+   Works even inside padded containers
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Force horizontal-scroll section to stretch full width */
+  .horizontal-scroll {
+    width: 100vw !important;
+    margin: 0 calc(50% - 50vw) !important;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+  }
+
+  /* Remove extra padding from parent containers */
+  .content-wrapper,
+  .container,
+  .page-content,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Make internal cards scroll smoothly */
+  .horizontal-scroll > * {
+    flex: 0 0 auto;      /* prevents shrinking */
+    scroll-snap-align: center;
+  }
+
+  /* Safety (no horizontal white gap on page) */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+  </style><style>
+  :root {
+      --bg: #f9fff9;
+      --card: #ffffff;
+      --ink: #15291b;
+      --muted: #4b5563;
+      --brand: #16a34a;
+      --toxic: #9333ea;
+      --ring: 0 10px 30px rgba(22,163,74,0.1);
+    }
+  
+  .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+   
+    .toc {
+      background: #f0fdf4;
+      border-left: 5px solid var(--brand);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .toc a {
+      display: block;
+      color: var(--brand);
+      text-decoration: none;
+      margin: 0.2rem 0;
+    }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  background: #f4f4f4;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #ffcc00;
+  color: #000;
+  border-color: #ffcc00;
+}
+
+.tab-btn:active {
+  transform: scale(0.97);
+}
+
+.type-wrapper {
+  margin: 10px 0;
+}
+
+.type {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 6px;
+}
+
+/* Electric */
+.type.electric {
+  background: #F7D02C;
+  color: #000;
+}
+
+/* Flying */
+.type.flying {
+  background: #A98FF3;
+}
+
+/* Rock */
+.type.rock {
+  background: #B6A136;
+}
+
+/* Ice */
+.type.ice {
+  background: #96D9D6;
+  color: #000;
+}
+
+/* Ground */
+.type.ground {
+  background: #E2BF65;
+  color: #000;
+}
+
+/* Fire */
+.type.fire {
+  background: #EE8130;
+}
+
+/* Water */
+.type.water {
+  background: #6390F0;
+}
+
+/* Bug */
+.type.bug {
+  background: #3390F0;
+}
+
+/* Grass */
+.type.grass {
+  background: #7AC74C;
+}
+
+/* Psychic */
+.type.psychic {
+  background: #F95587;
+}
+
+/* Dark */
+.type.dark {
+  background: #705746;
+}
+
+/* Dragon */
+.type.dragon {
+  background: #6F35FC;
+}
+
+/* Fairy */
+.type.fairy {
+  background: #D685AD;
+  color: #000;
+}
+
+/* Steel */
+.type.steel {
+  background: #B7B7CE;
+  color: #000;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
    
     .author-box {
       margin-top: 2rem;
@@ -271,7 +653,7 @@
 
   <!-- HERO CARD -->
   
-    <div class="types" id="heroTypes">
+    <div class="type-wrapper">
       <span class="type steel">Steel</span>
       <span class="type ground">Ground</span>
     </div>
@@ -286,14 +668,14 @@ its bulk can extend raid duration if trainers do not bring optimized counters</p
 
   <!-- TAB NAV -->
   <div class="tabs">
-    <a href="#stats">Stats</a>
-    <a href="#moves">Moves</a>
-    <a href="#counters">Counters</a>
-    <a href="#cp">CP</a>
-    <a href="#strategy">Strategy</a>
-    <a href="#evolution">Evolution</a>
-    <a href="#buddy">Buddy</a>
-    <a href="#shadowMegaSection">Shadow vs Mega</a>
+  <a href="#stats" class="tab-btn">Stats</a>
+  <a href="#moves" class="tab-btn">Moves</a>
+  <a href="#counters" class="tab-btn">Counters</a>
+  <a href="#cp" class="tab-btn">CP</a>
+  <a href="#strategy" class="tab-btn">Strategy</a>
+  <a href="#evolution" class="tab-btn">Evolution</a>
+  <a href="#buddy" class="tab-btn">Buddy</a>
+  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
   </div>
 
 
@@ -326,14 +708,9 @@ its bulk can extend raid duration if trainers do not bring optimized counters</p
            <thead><tr><th>Category</th><th>Details</th></tr></thead>
             <tbody>
               <tr>
-                <td><strong>❌ Double Weak To:</strong></td>
-                <td>           
-                  <img class="type-ico" src="images/water.png" alt="Water type weakness icon"> Water •
-                      </td>
-              </tr>
-              <tr>
                 <td><strong>❌ Weak To:</strong></td>
-                <td>           
+                <td> 
+<img class="type-ico" src="images/water.png" alt="Water type weakness icon"> Water •          
                   <img class="type-ico" src="images/fighting.png" alt="Fighting type weakness icon"> Fighting •
                   <img class="type-ico" src="images/ground.png" alt="Ground type weakness icon"> Ground •
                   <img class="type-ico" src="images/fire.png" alt="Fire type weakness icon"> Fire
@@ -468,6 +845,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Earthquake / Fire Blast / Solar Beam</td>
                 <td>Precipice Blades / Fire Punch</td>
                 <td>Fire Punch and Solar Beam</td>
+<td>Deals powerful Ground-type damage that hits Mega Steelix super-effectively. Its high bulk allows it to survive Earthquake while maintaining consistent DPS.</td>
               </tr>
               
                <tr><td>
@@ -477,6 +855,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Hydro Pump / Surf / Thunder / Blizzard</td>
                 <td>Origin Pulse</td>
                 <td>Waterfall and Hydro Pump</td>
+<td>Exploits Steelix’s Water weakness with extremely high Water-type DPS. Origin Pulse and Waterfall melt its HP quickly.</td>
               </tr>
 
  <tr>
@@ -488,15 +867,18 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Close Combat / Power-Up Punch / Aura Sphere / Shadow Ball / Flash Cannon / Meteor Mash / Blaze Kick / Thunder Punch</td>
                 <td>Force Palm</td>
                 <td>Counter and Close Combat</td>
+<td>Counter and Aura Sphere deal super-effective Fighting damage. Lucario’s high attack stat makes it one of the strongest non-Mega options.</td>
               </tr>
 
 <tr><td>
      <!--           <div class="poke-cell"><img class="poke-ico" src="images/keldeo.webp" alt="Keldeo"><strong>-->Keldeo(Original)<!--</strong></div>-->
                 </td>
-              <td>Fire Fang / Dragon Breath</td>
-                <td>Stone Edge / Overheat / Draco Meteor / Crunch</td>
-                <td>Fusion Flare</td>
-                <td>Fire Fang and Overheat</td>
+              
+               <td>Low Kick / Poison Jab</td>
+                <td>Close Combat / Sacred Sword / X-Scissor / Aqua Jet / Hydro Pump</td>
+                <td>None</td>
+                <td>Poison Jab and Hydro Pump</td>
+<td>Fighting-type STAB attacks hit Steelix super-effectively, while Water typing helps resist Steel-type moves.</td>
               </tr>
  <tr>
               <td>
@@ -507,6 +889,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Close Combat / Earthquake / Rock Slide</td>
                 <td>Sacred Sword</td>
                 <td>Smack Down and Earthquake</td>
+<td>Double Kick and Sacred Sword provide strong Fighting-type damage, efficiently exploiting Steelix’s weakness.</td>
               </tr>
 
  <tr>
@@ -518,6 +901,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Stone Edge / Overheat / Draco Meteor / Crunch</td>
                 <td>Fusion Flare</td>
                 <td>Fire Fang and Overheat</td>
+<td>Fire Fang and Fusion Flare deal super-effective Fire damage against Steel typing, making it a powerful ranged attacker.</td>
               </tr>
 
  <tr>
@@ -529,6 +913,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Superpower / Earthquake / Bulldoze / Stone Edge</td>
                 <td>Sandsear Storm</td>
                 <td>Extrasensory and Sandsear Storm</td>
+<td>Mud Shot combined with Earthquake or Sandsear Storm delivers strong Ground-type damage that hits Steelix for super-effective damage</td>
               </tr>
 
 <tr>
@@ -538,8 +923,9 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 </td>
               <td>Low Kick / Poison Jab</td>
                 <td>Close Combat / Sacred Sword / X-Scissor / Aqua Jet / Hydro Pump</td>
-                <td>-</td>
+                <td>None</td>
                 <td>Poison Jab and Hydro Pump</td>
+<td>Fighting-type STAB moves consistently pressure Steelix while Water typing improves survivability.</td>
              </tr>
  <tr>
    <td>
@@ -550,6 +936,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
    <td>Shadow Ball / Mystical Fire / Overheat</td>
    <td>Mind Blown</td>
    <td>Incinerate and Overheat</td>
+<td>Incinerate and Overheat deal strong Fire-type damage, taking advantage of Steelix’s Fire weakness.</td>
  </tr>
 
             </tbody>
@@ -588,6 +975,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Hydro Pump / Surf / Thunder / Blizzard</td>
                 <td>Origin Pulse</td>
                 <td>Waterfall and Hydro Pump</td>
+<td>Shadow boost increases Water-type DPS significantly, making it one of the fastest ways to defeat Mega Steelix.</td>
               </tr>
 <tr>
               <td>
@@ -598,6 +986,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Earthquake / Fire Blast / Solar Beam</td>
                 <td>Precipice Blades / Fire Punch</td>
                 <td>Dragon Tail and Solar Beam</td>
+<td>Shadow boost enhances Ground-type damage output, overwhelming Steelix’s defenses quickly.</td>
               </tr>
 
 <tr>
@@ -609,6 +998,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Focus Blast / Aura Sphere / Brave Bird / Overheat / Blaze Kick</td>
                 <td>Stone Edge / Blast Burn</td>
                 <td>Counter / Fire Spin and Overheat</td>
+<td>Combines Fighting and Fire-type super-effective damage with Shadow bonus for very high DPS.</td>
               </tr>
 
 <tr><td>
@@ -618,6 +1008,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Ancient Power / Fire Blast / Heat Wave / Overheat</td>
                 <td>Sky Attack</td>
                 <td>Fire Spin and Overheat</td>
+<td>Fire Spin and Overheat deal heavy Fire-type damage, amplified by Shadow attack boost.</td>
               </tr>
 
 <tr>
@@ -629,6 +1020,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Dynamic Punch / Focus Blast / Stone Edge</td>
                 <td>Brutal Swing</td>
                 <td>Counter / Poison Jab and Focus Blast</td>
+<td>Counter and Dynamic Punch deal powerful super-effective Fighting damage with increased Shadow DPS.</td>
               </tr>
 <tr>
               <td>
@@ -639,6 +1031,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Air Cutter / Fire Blast / Overheat / Dragon Claw</td>
                 <td>Wing Attack / Ember / Dragon Breath / Blast Burn / Flamethrower</td>
                 <td>Fire Spin and Overheat</td>
+<td>Fire Spin and Blast Burn/Overheat exploit Steel typing while Shadow bonus increases burst damage.</td>
               </tr>
 
 <tr>
@@ -650,6 +1043,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Brave Bird / Fire Blast / Solar Beam</td>
                 <td>Earthquake / Sacred Fire</td>
                 <td>Incinerate and Solar Beam</td>
+<td>Incinerate and Sacred Fire apply strong Fire-type pressure, enhanced by Shadow attack bonus.</td>
               </tr>
 <tr>
               <td>
@@ -660,8 +1054,8 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Earth Power / Stone Edge / Iron Head / Fire Blast / Flamethrower</td>
                 <td>Magma Storm</td>
                 <td>Fire Spin and Fire Blast</td>
+<td>Fire-type attacks hit Steel typing effectively while Heatran resists many Steelix moves.</td>
               </tr>
-
 
 <tr>
               <td>
@@ -672,6 +1066,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
                 <td>Earth Power</td>
                 <td>Dragon Tail and Fire Blast / Earthquake</td>
+<td>Earth Power or Earthquake deal strong Ground-type damage, and Shadow boost maximizes DPS output.</td>
               </tr>
 
  <tr>
@@ -681,8 +1076,9 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 </td>
              <td>Tackle / Fire Fang / Incinerate</td>
                 <td>Focus Blast / Rock Slide / Overheat / Psychic</td>
-                <td>-</td>
+                <td>None</td>
                 <td>Incinerate and Overheat</td>
+<td>Pure Fire-type damage with Shadow boost makes it a high-risk, high-reward attacker.</td>
               </tr>
 
 <tr>
@@ -694,6 +1090,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Vise Grip / X-Scissor / Water Pulse / Crabhammer / Razor Shell</td>
                 <td>Mud Shot</td>
                 <td>Bubble and Crabhammer</td>
+<td>Crabhammer delivers powerful Water-type damage, boosted further by Shadow attack increase.</td>
               </tr>
 
 <tr><td>
@@ -703,6 +1100,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Shadow Ball / Overheat / Flame Charge / Energy Ball</td>
                 <td>Poltergeist</td>
                 <td>Incinerate and Overheat</td>
+<td>Overheat provides heavy Fire-type burst damage enhanced by Shadow boost.</td>
               </tr>
 
 <tr><td>
@@ -712,6 +1110,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Focus Blast / Rock Slide / Heat Wave / Flame Charge</td>
                 <td>Blast Burn</td>
                 <td>Ember and Focus Blast</td>
+<td>Fighting and Fire coverage allow consistent super-effective damage with Shadow bonus.</td>
               </tr>
              
             </tbody>
@@ -747,8 +1146,9 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 </td>
                <td>Counter / Struggle Bug</td>
                 <td>Close Combat / Upper Hand / Earthquake / Rock Blast / Megahorn</td>
-                <td>-</td>
+                <td>None</td>
                 <td>Struggle Bug and Earthquake</td>
+<td>Provides Fighting-type team boost while dealing strong super-effective damage with Counter and Close Combat.</td>
               </tr>
 
 <tr><td>
@@ -758,6 +1158,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Skull Bash / Flash Cannon / Hydro Pump / Ice Beam</td>
                 <td>Hydro Cannon</td>
                 <td>Rollout and Hydro Pump</td>
+<td>Boosts all Water-type teammates while delivering steady Water-type super-effective damage.</td>
               </tr>
 
              <tr><td>
@@ -767,6 +1168,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Dragon Claw / Fire Blast / Air Cutter / Overheat</td>
                 <td>Dragon Breath / Ember / Wing Attack / Flamethrower / Blast Burn</td>
                 <td>Fire Spin and Overheat</td>
+<td>Fire-type attacks hit Steelix super-effectively while boosting Fire-type teammates.</td>
               </tr>
 
 <tr><td>
@@ -776,6 +1178,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Sludge / Sludge Wave / Earthquake / Surf / Muddy Water</td>
                 <td>Hydro Cannon</td>
                 <td>Water Gun and Earthquake</td>
+<td>Water-type attacks hit Steelix for super-effective damage and boost team Water attackers.</td>
               </tr>
 
 <tr>
@@ -787,6 +1190,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
                 <td>Earth Power</td>
                 <td>Dragon Tail and Fire Blast / Earthquake</td>
+<td>Ground-type attacks deal consistent super-effective damage while boosting Ground-type teammates.</td>
               </tr>
 
 
@@ -797,6 +1201,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Dragon Claw / Fire Blast / Air Cutter / Overheat</td>
                 <td>Dragon Breath / Ember / Wing Attack / Flamethrower / Blast Burn</td>
                 <td>Fire Spin and Overheat</td>
+<td>High Fire-type DPS combined with Mega boost increases total team damage significantly.</td>
               </tr>
 
 <tr><td>
@@ -806,6 +1211,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Focus Blast / Aura Sphere / Brave Bird / Overheat / Blaze Kick</td>
                 <td>Stone Edge / Blast Burn</td>
                 <td>Counter / Fire Spin and Overheat</td>
+<td>Combines Fighting and Fire coverage while boosting both types for teammates.</td>
               </tr>
              
 <tr><td>
@@ -815,6 +1221,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
                 <td>Close Combat / Power-Up Punch / Aura Sphere / Shadow Ball / Flash Cannon / Meteor Mash / Blaze Kick / Thunder Punch</td>
                 <td>Force Palm</td>
                 <td>Counter and Close Combat</td>
+<td>One of the strongest Fighting-type Megas, providing team-wide boost and extremely high DPS.</td>
               </tr>
 
 
@@ -834,7 +1241,7 @@ Fighting Pokémon provide consistent damage but are not as powerful as Water cou
           <li><strong>Weather Boost (L25):</strong> 2,512-2,622 CP</li>
           <li><span class="pill">Boosted by: <strong>Snowy</strong> & <strong>Sunny</strong></span></li>
     </ul>
-<p>Keep in mind that weather-boosted Mega Steelix is significantly harder to defeat, so always prepare strong Ice, Dragon, Fairy, or Ground-type counters.</p>
+<p>Keep in mind that weather-boosted Mega Steelix is significantly harder to defeat, so always prepare strong Water, Fire, Fighting or Ground-type counters.</p>
 
   </section>
 
@@ -940,8 +1347,7 @@ Build your team around powerful Water Pokémon to maximize damage against the do
 
 <h3>Avoid Electric-Type Attackers</h3>
 <p>
-Mega Steelix double resists Electric moves, 
-making them extremely inefficient.
+Electric-type attacks are completely ineffective against Ground typing.
 </p>
 
 <h3>Use Mega Boosts Early</h3>
@@ -955,12 +1361,13 @@ boosts team-wide Water damage significantly.
   <section id="evolution" class="card">
   <h2>Evolution, Mega Details & Buddy Distance</h2>
   <table>
-   <!-- <tr><td>Evolution Line</td><td>Base → Stage → Final → Mega</td></tr>
+   <tr><td>Evolution Line</td><td>Base(Onix) → Final(Steelix) → Mega(Steelix)</td></tr>
     <tr><td>Mega Energy (First)</td><td>200</td></tr>
-    <tr><td>Subsequent Cost</td><td>40</td></tr>-->
+    <tr><td>Subsequent Cost</td><td>40</td></tr>
     <tr><td>Buddy Distance</td><td>5 km</td></tr>
-    <!--<tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
-    <tr><td>Mega Boost Bonus</td><td>Extra Dark-type Candy</td></tr>-->
+    <tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
+    <tr><td>Mega Boost Bonus(Walking)</td><td>Extra Candy</td></tr>
+    <tr><td>Mega Boost Bonus(Catch)</td><td>Extra Steel/Ground-type Candy</td></tr>
   </table>
 </section>
 
@@ -1000,20 +1407,9 @@ boosts team-wide Water damage significantly.
       { name: "Lucario", description: "Top shadow option" }, 
       { name: "Blaziken", description: "Top Ground-type attacker" },
       { name: "Conkeldurr", description: "Top Legendary option" },
-      { name: "Heatran", description: "Top Dragon / Ground attacker" },
       { name: "Terrakion", description: "Top shadow option" },
       { name: "Reshiram", description: "Top Ice / Dragon DPS option" },
       { name: "Landorus", description: "Top Legenday option" }
-    ],
-    cpRanges: [
-      "Non-Boosted 100%: ~2097 CP",
-      "Weather Boosted 100%: ~2622 CP"
-    ],
-    strategy: [
-      "Lead with your highest DPS counters like Mega Lucario or Primal Kyogre",
- "Dodge charged Earthquake and Heavy Slam when possible to preserve your team’s health",
-  |"Rejoin quickly if your Pokémon faint — every bit of extra damage helps",
-  "If weather boosts Water attacks (rain) or Ground attacks (sunny), prioritize those counters"
     ],
     buddyDistance: "5 km (per Pokémon GO buddy distance)"
   };
@@ -1021,14 +1417,6 @@ boosts team-wide Water damage significantly.
   // Populate moves
   const movesList = document.getElementById("movesList");
   movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
-
-  // Populate CP
-  const cpList = document.getElementById("cpList");
-  cpList.innerHTML = raidConfig.cpRanges.map(c => `<li>${c}</li>`).join("");
-
-  // Populate strategy
-  const strategyList = document.getElementById("strategyList");
-  strategyList.innerHTML = raidConfig.strategy.map(s => `<li>${s}</li>`).join("");
 
   // Populate buddy distance
   document.getElementById("buddyDistance").textContent = raidConfig.buddyDistance;
@@ -1081,14 +1469,7 @@ boosts team-wide Water damage significantly.
           </tr>
         </tbody>
       </table>
-      <h3>Best Strategy for ${config.raidBoss}</h3>
-      <ul>
-        <li>Lead with your highest DPS counters like Mega Lucario or Primal Kyogre.</li>
-  <li>Dodge charged Earthquake and Heavy Slam when possible to preserve your team’s health.</li>
-  <li>Rejoin quickly if your Pokémon faint — every bit of extra damage helps.</li>
-  <li>If weather boosts Water attacks (rain) or Ground attacks (sunny), prioritize those counters.</li>
-      </ul>
-    `;
+          `;
   }
 
   generateShadowMegaComparison(raidConfig);
@@ -1128,12 +1509,12 @@ Shiny Mega Steelix is available in Pokémon GO. The shiny version has green high
 <h2>🏁 Conclusion</h2>
 <p>Mega Steelix’s bulk and Steel/Ground typing make it a challenge, but with strong Fighting, Water, Fire, and Ground counters, you can take it down efficiently. Focus on exploiting its weaknesses, coordinate with fellow trainers, and take advantage of weather boosts to maximize damage and earn rewards like Mega Energy and Shiny Steelix.</p>
 
-<h2>Related Guides</h2>
+<!--<h2>Related Guides</h2>
 <p>Looking for more counters? Check out our 
   <a href="mega_lucario.html">Mega Lucario Raid Guide,</a> 
  <a href="mega_blaziken.html">Mega Blaziken Raid Guide,</a> 
 <a href="mega_charizard_y.html">Mega Charizard Y Raid Guide</a> 
-</p>
+</p>-->
 
  <aside class="card" aria-label="Sidebar">
         <h2>Quick picks</h2>
@@ -1156,14 +1537,14 @@ Shiny Mega Steelix is available in Pokémon GO. The shiny version has green high
 
 <section class="author-box">
       <h3>About the Author</h3>
-      <p>Written by <strong>Pokémon Gaming Team</strong> — bringing expert raid guides and battle strategies. Explore more guides like <a href="mega_charizard_x.html">Mega Charizard X</a>, <a href="mega_blastoise.html">Mega Blastoise</a>.</p>
+      <p>Written by <strong>Pokémon Gaming Team</strong> — bringing expert raid guides and battle strategies. <!--Explore more guides like <a href="mega_charizard_x.html">Mega Charizard X</a>, <a href="mega_blastoise.html">Mega Blastoise</a>.--></p>
     </section>
 </main>
 
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>© 2026 Mega Steelix Raid Guide</p>
+      <p>© 2025-2026 pokémongaming.in</p>
       <p>
        <a href="../terms-and-conditions.html">Terms & Conditions</a> |
      <a href="../about-us.html">About</a> | 
