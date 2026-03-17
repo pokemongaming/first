@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="posts.css">
 <link rel="alternate" hreflang="x-default" href="https://pokemongaming.in/raids/dialga.html">
-
+<meta name="author" content="Abhishek">
 <meta property="og:title" content="Dialga Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
   <meta property="og:description" content="Detailed Dialga raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
@@ -283,6 +283,36 @@
   color: #000;
 }
 
+.pokemon-gallery{
+max-width:900px;
+margin:40px auto;
+text-align:center;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.image-card{
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img{
+width:100%;
+max-width:200px;
+height:auto;
+}
+
+.image-card p{
+margin-top:8px;
+font-weight:600;
+}
+
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
@@ -322,6 +352,21 @@ html {
   margin: 4px 0;
   font-size: 14px;
   line-height: 1.4;
+}
+
+.breadcrumb{
+font-size:14px;
+margin:15px 0;
+color:#555;
+}
+
+.breadcrumb a{
+color:#0073e6;
+text-decoration:none;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
 }
 
 
@@ -373,14 +418,43 @@ html {
 </head>
 
 <body>
-<section class="hero" >
+<section class="hero">
 
- <header>
- <h1>Dialga Raid Guide — Counters, Weakness & Strategy</h1>
-<p>Your complete resource for defeating <strong>STEEL / DRAGON MASTER</strong> in Pokémon GO raids.</p>
+<!--<nav class="breadcrumb">
+<a href="https://pokemongaming.in/">Home</a> ›
+<a href="https://pokemongaming.in/raids/">Raids</a> ›
+<span>Dialga Raid Guide</span>
+</nav>-->
 
-</header>
+<h1>Dialga Raid Guide – Best Counters, Weakness, CP & Strategy</h1>
 
+<p>
+<strong>Dialga</strong> is a powerful Legendary Pokémon in Pokémon GO known for its unique 
+<strong>Steel and Dragon typing</strong>. This typing gives Dialga many resistances, 
+making it one of the tougher raid bosses to defeat during Legendary Raid battles.
+</p>
+
+<p>
+In this raid guide, you will learn everything needed to defeat Dialga efficiently, 
+including its weaknesses, best counters, movesets, catch CP ranges, shiny availability, 
+and the best strategies for both small and large raid groups.
+</p>
+
+<div class="raid-quick-info">
+<p><strong>Raid Boss:</strong> Dialga</p>
+        <div>
+<strong>Type:</strong>
+ <div class="type-wrapper">
+      <span class="type steel">Steel</span>
+<span class="type dragon">Dragon</span>
+</div>
+</div>
+<p><strong>Raid Tier:</strong> 5-Star Legendary Raid</p>
+<p><strong>Recommended Trainers:</strong> 3–5</p>
+<p><strong>Raid Boss CP:</strong><section class="hero"> 53394</p>
+<p><strong>Shiny Available:</strong> Yes</p>
+<p><strong>Main Weaknesses:</strong> Fighting and Ground</p>
+</div>
   
    <p id="last-updated"></p>
 
@@ -401,57 +475,36 @@ html {
 
 <main>
 <div class="container">
+<section>
+<h2>🧭 Quick Navigation</h2>
+<div class="tabs">
+<a href="#stats" class="tab-btn">Stats</a>
+<a href="#weakness" class="tab-btn">Weakness</a>
+<a href="#moves" class="tab-btn">Moves</a>
+<a href="#counters" class="tab-btn">Best Counters</a>
+<a href="#cp" class="tab-btn">Catch CP</a>
+<a href="#weather" class="tab-btn">Weather Boost</a>
+<a href="#strategy" class="tab-btn">Raid Strategy</a>
+<a href="#shiny" class="tab-btn">Shiny</a>
+<a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
-  <!-- HERO CARD -->
-  
-    <div class="type-wrapper">
-      <span class="type dragon">Dragon</span>
-      <span class="type steel">Steel</span>
-    </div>
-    <p class="summary" id="heroSummary">
-Dialga is one of the most powerful Legendary Pokémon available in 
-<strong>Pokémon GO 5-Star raids</strong>. Known as the ruler of time, Dialga is a <strong>Steel and Dragon-type Pokémon</strong> that has excellent defensive typing and strong offensive power.
+
+<h2>📖 Introduction</h2>
+
+<p>
+<em>Dialga</em> is one of the most iconic Legendary Pokémon in Pokémon GO. 
+As the Pokémon that controls time, Dialga has extremely strong defensive 
+typing thanks to its Steel and Dragon combination. This gives it many 
+resistances to common attack types, making it a challenging raid boss 
+for trainers who are not prepared.
 </p>
 
 <p>
-Originally introduced in <strong>Generation IV</strong>, Dialga is the mascot Pokémon of Pokémon Diamond and plays a major role in Pokémon lore. In Pokémon GO raids, Dialga can be difficult to defeat because of its unique Steel/Dragon typing, which gives it many resistances.
-</p>
-
-<p>
-However, with the correct counters and proper raid strategy, trainers can defeat 
-Dialga efficiently. This guide explains everything you need to know about Dialga 
-raids including its weaknesses, best counters, movesets, CP ranges, weather 
-boosts, and the best strategies for beginners and experienced players.</p>
-
-  <!-- TAB NAV -->
-  <div class="tabs">
-  <a href="#stats" class="tab-btn">Stats</a>
-  <a href="#moves" class="tab-btn">Moves</a>
-  <a href="#counters" class="tab-btn">Counters</a>
-  <a href="#cp" class="tab-btn">CP</a>
-  <a href="#strategy" class="tab-btn">Strategy</a>
-
-  <a href="#buddy" class="tab-btn">Buddy</a>
-  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
-  </div>
-
-
-<!-- STATS -->
-  <section id="stats" class="card">
-    <h2>Stats & Basic Info</h2>
-    <table id="statsTable">
-      <tr><td>Type</td><td>Dragon / Steel</td></tr>
-      <tr><td>Max CP</td><td>4565</td></tr>
-      <tr><td>Weather Boost</td><td>Windy, Snowy</td></tr>
-      <tr><td>Shiny</td><td>Yes</td></tr>
-    </table>
-  </section>
-
-<h2>🧬 About Dialga in Pokémon GO</h2>
-
-<p>
-Dialga has strong defensive stats combined with excellent typing,
-which makes it one of the most durable Legendary Pokémon in raids.
+Despite its strong defenses, Dialga has two important weaknesses that 
+trainers can exploit: Fighting and Ground-type attacks. By using 
+powerful counters with these types, players can defeat Dialga efficiently 
+even with smaller raid groups.
 </p>
 
 <p>Dialga is extremely valuable for:</p>
@@ -460,6 +513,40 @@ which makes it one of the most durable Legendary Pokémon in raids.
     <li>Master League PvP</li>
     <li>Legendary collection</li>
 </ul>
+
+<p>
+This guide explains Dialga’s weaknesses, the best Pokémon counters, 
+optimal raid strategies, and catch CP ranges to help trainers maximize 
+their chances of success in Legendary Raid battles.
+</p>
+
+</section>
+
+<section id="lore">
+
+<h2>About Dialga</h2>
+
+<p>
+Dialga is known as the <strong>Temporal Pokemon</strong> and controls time in the Pokemon universe. 
+Because of its Steel and Dragon typing, Dialga has many resistances and only two weaknesses.
+</p>
+
+</section>
+
+<!-- STATS -->
+  <section id="stats" class="card">
+    <h2>📊 Dialga Stats</h2>
+    <table id="statsTable">
+      <tr><td>Type</td><td>Dragon / Steel</td></tr>
+      <tr><td>Max CP</td><td>4565</td></tr>
+      <tr><td>Weather Boost</td><td>Windy, Snowy</td></tr>
+      <tr><td>Shiny</td><td>Yes</td></tr>
+<tr><td>Base Attack</td><td>275</td></tr>
+<tr><td>Base Defence</td><td>211</td></tr>
+<tr><td>Base Stamina</td><td>205</td></tr>
+    </table>
+<p>Dialga has very high attack and strong bulk, which makes it both a dangerous raid boss and a powerful Pokémon to use after catching it.</p>
+  </section>
 
 <!--<p>🎥 Watch Dialga Raid Guide Video</p>
   <div class="video-container">
@@ -472,6 +559,34 @@ which makes it one of the most durable Legendary Pokémon in raids.
     loading="lazy">
   </iframe>
   </div>-->
+
+<section id="cp" class="card">
+    <h2>🎯 Catch CP & 100% IV</h2>
+<p>
+After defeating Dialga in the raid, you will encounter it for capture.
+</p>
+
+<p>CP Range:</p>
+
+    <ul>
+          <li>No Weather Boost:  2,217-2,307 CP</li>
+          <li>Weather Boost:  2,771-2,884 CP</li>
+    </ul>
+
+<p>100% IV:</p>
+ <ul>
+          <li>2307 (Normal)</li>
+          <li>2884 (Weather Boosted)</li>
+    </ul>
+
+<p>Use:</p>
+
+ <ul>
+          <li>Golden Razz Berry</li>
+          <li>Curveball Excellent Throws</li>
+    </ul>
+
+  </section>
 
 <section id="weakness">
         <h2>⚠️ Dialga Weaknesses</h2>
@@ -486,23 +601,23 @@ has a few important weaknesses that trainers can take advantage of.
               <tr>
                 <td><strong>❌ Weak To:</strong></td>
                 <td>           
-                  <img class="type-ico" src="images/fighting.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Fighting •
-                  <img class="type-ico" src="images/ground.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Ground 
+                  <img class="type-ico" src="images/fighting.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Fighting •
+                  <img class="type-ico" src="images/ground.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Ground 
                 </td>
               </tr>
               <tr>
                 <td><strong>✅ Resistant / Immune To:</strong></td>
                 <td>
-                <img class="type-ico" src="images/normal.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Normal •
-                <img class="type-ico" src="images/flying.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Flying •
-                <img class="type-ico" src="images/poison.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Poison •
-                <img class="type-ico" src="images/rock.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Rock •
-                <img class="type-ico" src="images/bug.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Bug •
-                <img class="type-ico" src="images/water.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Water •
-                <img class="type-ico" src="images/steel.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Steel •
-                <img class="type-ico" src="images/grass.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Grass •
-                <img class="type-ico" src="images/psychic.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Psychic •
-                <img class="type-ico" src="images/electric.png" alt="Best Pokémon Counters for Dialga Raid US/UK"> Electric 
+                <img class="type-ico" src="images/normal.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Normal •
+                <img class="type-ico" src="images/flying.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Flying •
+                <img class="type-ico" src="images/poison.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Poison •
+                <img class="type-ico" src="images/rock.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Rock •
+                <img class="type-ico" src="images/bug.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Bug •
+                <img class="type-ico" src="images/water.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Water •
+                <img class="type-ico" src="images/steel.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Steel •
+                <img class="type-ico" src="images/grass.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Grass •
+                <img class="type-ico" src="images/psychic.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Psychic •
+                <img class="type-ico" src="images/electric.webp" alt="Best Pokémon Counters for Dialga Raid US/UK"> Electric 
                 </td>
               </tr>           
             </tbody>
@@ -535,8 +650,7 @@ with moves like Counter combined with Dynamic Punch or Aura Sphere.
 <p>One of the strongest Fighting attackers with huge damage output.</p>
     <li><strong>Terrakion:</strong> (Double Kick + Sacred Sword)</li>
 <p>High DPS Fighting attacker ideal for raids.</p>
-    <li><strong>Alakazam:</strong> (Counter / Focus Blast)</li>
-  </ul>
+     </ul>
 
   <h3>🌍 Ground-Type Counters (Strong Alternative)</h3>
 
@@ -571,56 +685,8 @@ good options because Fighting attacks are super effective
 against Steel-type Pokémon.
 </p>
 
-  <section>
-  <h2>🧠 Battle Strategy & Tactical Advice</h2>
-  <p>Dialga’s Steel and Dragon typing makes it particularly weak to Fighting and Ground moves — use this to your advantage. Pokémon such as Machamp with Counter and DynamicPunch, Lucario with Counter and Aura Sphere, and Conkeldurr can hit Dialga hard and quickly reduce its health. Ground-type attackers like Excadrill or Groudon with Earthquake also deal strong damage and help balance your team’s offensive output. </p>
-
-  <p>Weather conditions significantly influence this battle. During Snow or Windy weather, both Fighting and Ground-type moves get weather boosts, increasing your damage output and making counters even more effective. Trainers should check the weather before assembling their team so they can take full advantage of these conditions and reduce the time needed to defeat Dialga. </p>
-
-  <p>Dialga’s charged moves like Draco Meteor and Iron Head hit hard and can quickly wear down your counters if not handled carefully. Dodging these charged attacks when possible — especially when your Pokémon are low on health — can prolong their survival and improve your overall raid success, particularly in smaller groups. Communicating with fellow trainers about move timings and when to dodge increases your team’s survival chances in tight battles. </p>
-
-  <p>When planning your raid team, lead with your strongest DPS counters that exploit Dialga’s weaknesses. If those Pokémon begin to faint early, rotate in secondary attackers that still deal effective damage but offer greater bulk. This balanced approach helps maintain consistent damage output throughout the encounter and increases your odds of defeating Dialga before the raid timer expires.</p>
-  </section>
-
-<h2>Best Mega Evolutions</h2>
-  <p>Recommended Megas to use against Dialga:</p>
-  <ul>
-    <li>Lucario, Blaziken, Heracross, Latios, Gallade, Alakazam – 🥊 Fighting boost</li>
-    <li>Garchomp, Swampert – 🌍 Ground boost</li>
-    <li>Latios - 🐉 Dragon boost</li>
-  </ul>
-
-<h2>Difficulty</h2>
-<p>Dialga is not just tough—it hits hard. Charged moves like Draco Meteor and Iron Head can wipe out unprepared Pokémon quickly. Even large groups need strategic timing, shields, and strong counters to bring it down efficiently. Battles against Dialga reward careful planning and knowledge of type advantages.</p>
-
-  <!-- MOVES -->
-  <section id="moves" class="card">
-    <h2>🌀 Dialga Moveset</h2>
-
-<p>
-Dialga has several powerful Dragon and Steel type attacks 
-that can deal heavy damage during raids.
-</p>
-
-<h3>🗡️ Fast Moves</h3>
-<ul>
-  <li>Metal Claw</li>
-  <li>Dragon Breath</li>
-</ul>
-
-<h3>💥 Charged Moves</h3>
-<ul>
-  <li>Iron Head</li>
-  <li>Thunder</li>
-  <li>Draco Meteor</li>
-</ul>
-
-<p><strong>Most dangerous moveset:</strong> Dragon Breath + Iron Head or Draco Meteor</p>
-
-  </section>
-
 <section id="regular">
-<h2>Best Regular Counters</h2>
+<h2>🏆 Best Regular Counters</h2>
 <p>Regular pokemon that amplify the right types give you a powerful edge. Below are top Regular counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -640,7 +706,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
        <!--       <div class="poke-cell">
-                <img class="poke-ico" src="images/lucario.png" alt="Lucario"><strong>-->Lucario<!--</strong></div>-->
+                <img class="poke-ico" src="images/lucario.webp" alt="Lucario"><strong>-->Lucario<!--</strong></div>-->
                 </td>
                <td>Counter / Bullet Punch</td>
                 <td>Close Combat / Power-Up Punch / Aura Sphere / Shadow Ball / Flash Cannon / Meteor Mash / Blaze Kick / Thunder Punch</td>
@@ -652,7 +718,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
         <!--        <div class="poke-cell">
-                <img class="poke-ico" src="images/terrakion.png" alt="Terrakion"><strong>-->Terrakion<!--</strong></div>-->
+                <img class="poke-ico" src="images/terrakion.webp" alt="Terrakion"><strong>-->Terrakion<!--</strong></div>-->
                 </td>
                 <td>Double Kick / Smack Down / Zen Headbutt</td>
                 <td>Close Combat / Earthquake / Rock Slide</td>
@@ -664,7 +730,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
   <!--              <div class="poke-cell">
-                <img class="poke-ico" src="images/landorus.png" alt="Landorus"><strong>-->Landorus<!--</strong></div>-->
+                <img class="poke-ico" src="images/landorus.webp" alt="Landorus"><strong>-->Landorus<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Extrasensory</td>
                 <td>Superpower / Earthquake / Bulldoze / Stone Edge</td>
@@ -677,7 +743,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
        <!--       <div class="poke-cell">
-                <img class="poke-ico" src="images/keldeo.png" alt="Keldeo"><strong>-->Keldeo(Resolute)<!--</strong></div>-->
+                <img class="poke-ico" src="images/keldeo.webp" alt="Keldeo"><strong>-->Keldeo(Resolute)<!--</strong></div>-->
                 </td>
                <td>Low Kick / Poison Jab</td>
                 <td>Close Combat / Sacred Sword / X-Scissor / Aqua Jet / Hydro Pump</td>
@@ -689,7 +755,7 @@ that can deal heavy damage during raids.
  <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/groudon.png" alt="Groudon"><strong>-->Groudon<!--</strong></div>-->
+                <img class="poke-ico" src="images/groudon.webp" alt="Groudon"><strong>-->Groudon<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Fire Blast / Solar Beam</td>
@@ -700,7 +766,7 @@ that can deal heavy damage during raids.
  <tr>
               <td>
   <!--              <div class="poke-cell">
-                <img class="poke-ico" src="images/primal_groudon.png" alt="Primal Groudon"><strong>-->Primal Groudon<!--</strong></div>-->
+                <img class="poke-ico" src="images/primal_groudon.webp" alt="Primal Groudon"><strong>-->Primal Groudon<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Fire Blast / Solar Beam</td>
@@ -712,7 +778,7 @@ that can deal heavy damage during raids.
  <tr>
               <td>
   <!--              <div class="poke-cell">
-                <img class="poke-ico" src="images/urshifu.png" alt="Urshifu"><strong>-->Urshifu Single Strike<!--</strong></div>-->
+                <img class="poke-ico" src="images/urshifu.webp" alt="Urshifu"><strong>-->Urshifu Single Strike<!--</strong></div>-->
                 </td>
                 <td>Sucker Punch / Rock Smash / Counter</td>
                 <td>Close Combat / Brick Break / Dynamic Punch / Payback</td>
@@ -724,7 +790,7 @@ that can deal heavy damage during raids.
  <tr>
               <td>
   <!--              <div class="poke-cell">
-                <img class="poke-ico" src="images/urshifu.png" alt="Urshifu"><strong>-->Urshifu Rapid Strike<!--</strong></div>-->
+                <img class="poke-ico" src="images/urshifu.webp" alt="Urshifu"><strong>-->Urshifu Rapid Strike<!--</strong></div>-->
                 </td>
                 <td>Waterfall / Rock Smash / Counter</td>
                 <td>Close Combat / Brick Break / Dynamic Punch / Aqua Jet</td>
@@ -736,7 +802,7 @@ that can deal heavy damage during raids.
  <tr>
               <td>
  <!--               <div class="poke-cell">
-                <img class="poke-ico" src="images/excadrill.png" alt="Excadrill"><strong>-->Excadrill<!--</strong></div>-->
+                <img class="poke-ico" src="images/excadrill.webp" alt="Excadrill"><strong>-->Excadrill<!--</strong></div>-->
                 </td>
                <td>Mud Slap / Mud Shot / Metal Claw</td>
                 <td>Earthquake / Drill Run / Scorching Sands / Rock Slide / Iron Head</td>
@@ -748,7 +814,7 @@ that can deal heavy damage during raids.
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/blaziken.png" alt="Blaziken"><strong>-->Blaziken<!--</strong></div>-->
+                <img class="poke-ico" src="images/blaziken.webp" alt="Blaziken"><strong>-->Blaziken<!--</strong></div>-->
                 </td>
                <td>Counter / Fire Spin / Ember</td>
                 <td>Focus Blast / Aura Sphere / Brave Bird / Overheat / Blaze Kick</td>
@@ -760,7 +826,7 @@ that can deal heavy damage during raids.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/kartana.png" alt="Kartana"><strong>-->Kartana<!--</strong></div>-->
+                <img class="poke-ico" src="images/kartana.webp" alt="Kartana"><strong>-->Kartana<!--</strong></div>-->
                 </td>
                <td>Air Slash / Fury Cutter / Razor Leaf</td>
                 <td>Sacred Sword / Aerial Ace / X-Scissor / Leaf Blade / Night Slash</td>
@@ -788,7 +854,7 @@ that can deal heavy damage during raids.
 </section>
 
 <section id="shadow">
-<h2>Best Shadow Counters</h2>
+<h2>👤 Best Shadow Counters</h2>
 <p>Shadow pokemon that amplify the right types give you a powerful edge. Below are top Shadow counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -808,7 +874,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_groudon.png" alt="Shadow Groudon"><strong>-->Shadow Groudon<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_groudon.webp" alt="Shadow Groudon"><strong>-->Shadow Groudon<!--</strong></div>-->
                 </td>
               <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Fire Blast / Solar Beam</td>
@@ -820,7 +886,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_excadrill.png" alt="Shadow Excadrill"><strong>-->Shadow Excadrill<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_excadrill.webp" alt="Shadow Excadrill"><strong>-->Shadow Excadrill<!--</strong></div>-->
                 </td>
                <td>Mud Slap / Mud Shot / Metal Claw</td>
                 <td>Earthquake / Drill Run / Scorching Sands / Rock Slide / Iron Head</td>
@@ -832,7 +898,7 @@ that can deal heavy damage during raids.
             <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_blaziken.png" alt="Shadow Blaziken"><strong>-->Shadow Blaziken<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_blaziken.webp" alt="Shadow Blaziken"><strong>-->Shadow Blaziken<!--</strong></div>-->
                 </td>
                <td>Counter / Fire Spin / Ember</td>
                 <td>Focus Blast / Aura Sphere / Brave Bird / Overheat / Blaze Kick</td>
@@ -844,7 +910,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_conkeldurr.png" alt="Shadow Conkeldurr"><strong>-->Shadow Conkeldurr<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_conkeldurr.webp" alt="Shadow Conkeldurr"><strong>-->Shadow Conkeldurr<!--</strong></div>-->
                 </td>
               <td>Counter / Poison Jab</td>
                 <td>Dynamic Punch / Focus Blast / Stone Edge</td>
@@ -876,7 +942,7 @@ that can deal heavy damage during raids.
   <tr>
               <td>
    <!--             <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_raikou.png" alt="Shadow Raikou"><strong>-->Shadow Raikou<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_raikou.webp" alt="Shadow Raikou"><strong>-->Shadow Raikou<!--</strong></div>-->
                 </td>
                <td>Thunder Shock / Volt Switch</td>
                 <td>Aura Sphere / Shadow Ball / Thunder / Thunderbolt / Wild Charge</td>
@@ -888,7 +954,7 @@ that can deal heavy damage during raids.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_machamp.png" alt="Shadow Machamp"><strong>-->Shadow Machamp<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_machamp.webp" alt="Shadow Machamp"><strong>-->Shadow Machamp<!--</strong></div>-->
                 </td>
                <td>Counter / Bullet Punch</td>
                 <td>Dynamic Punch / Close Combat / Cross Chop / Rock Slide / Heavy Slam</td>
@@ -900,7 +966,7 @@ that can deal heavy damage during raids.
 <tr>
               <td>
    <!--             <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_hariyama.png" alt="Shadow Hariyama"><strong>-->Shadow Hariyama<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_hariyama.webp" alt="Shadow Hariyama"><strong>-->Shadow Hariyama<!--</strong></div>-->
                 </td>
                <td>Counter / Force Palm / Bullet Punch</td>
                 <td>Close Combat / Dynamic Punch / Superpower / Upper Hand / Heavy Slam</td>
@@ -912,7 +978,7 @@ that can deal heavy damage during raids.
   <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_mamoswine.png" alt="Shadow Mamoswine"><strong>-->Shadow Mamoswine<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_mamoswine.webp" alt="Shadow Mamoswine"><strong>-->Shadow Mamoswine<!--</strong></div>-->
                 </td>
                 <td>Mud Slap / Powder Snow</td>
                 <td>Bulldoze / High Horsepower / Stone Edge / Avalanche / Icicle Spear</td>
@@ -930,7 +996,7 @@ that can deal heavy damage during raids.
 </section>
 
 <section id="mega">
-<h2>Best Mega Counters</h2>
+<h2>⚡ Best Mega Counters</h2>
 <p>Mega pokemon that amplify the right types give you a powerful edge. Below are top Mega counters with short notes on why they excel.</p>
 
 <div class="gmax-scroll">
@@ -950,7 +1016,7 @@ that can deal heavy damage during raids.
                
 
               <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_lucario.png" alt="Mega Lucario"><strong>-->Mega Lucario<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_lucario.webp" alt="Mega Lucario"><strong>-->Mega Lucario<!--</strong></div>-->
                 </td>
                <td>Counter / Bullet Punch</td>
                 <td>Close Combat / Power-Up Punch / Aura Sphere / Shadow Ball / Flash Cannon / Meteor Mash / Blaze Kick / Thunder Punch</td>
@@ -962,7 +1028,7 @@ that can deal heavy damage during raids.
               <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/mega_garchomp.png" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
+                <img class="poke-ico" src="images/mega_garchomp.webp" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
@@ -974,7 +1040,7 @@ that can deal heavy damage during raids.
 
               <!-- Ice -->
               <tr><td>
-       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_heracross.png" alt="Mega Heracross"><strong>-->Mega Heracross<!--</strong></div>-->
+       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_heracross.webp" alt="Mega Heracross"><strong>-->Mega Heracross<!--</strong></div>-->
                 </td>
                <td>Counter / Struggle Bug</td>
                 <td>Close Combat / Upper Hand / Earthquake / Rock Blast / Megahorn</td>
@@ -985,7 +1051,7 @@ that can deal heavy damage during raids.
 
               <!-- Psychic -->
               <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_swampert.png" alt="Mega Swampert"><strong>-->Mega Swampert<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_swampert.webp" alt="Mega Swampert"><strong>-->Mega Swampert<!--</strong></div>-->
                 </td>
              <td>Mud Shot / Water Gun</td>
                 <td>Sludge Wave / Sludge / Earthquake / Surf / Muddy Water</td>
@@ -995,7 +1061,7 @@ that can deal heavy damage during raids.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_blaziken.png" alt="Mega Blaziken"><strong>-->Mega Blaziken<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_blaziken.webp" alt="Mega Blaziken"><strong>-->Mega Blaziken<!--</strong></div>-->
                 </td>
               <td>Counter / Fire Spin / Ember</td>
                 <td>Focus Blast / Aura Sphere / Brave Bird / Overheat / Blaze Kick</td>
@@ -1005,7 +1071,7 @@ that can deal heavy damage during raids.
               </tr>
 
 <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_latios.png" alt="Mega Latios"><strong>-->Mega Latios<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_latios.webp" alt="Mega Latios"><strong>-->Mega Latios<!--</strong></div>-->
                 </td>
             <td>Zen Headbutt / Dragon Breath</td>
                 <td>Aura Sphere / Solar Beam / Psychic / Dragon Claw</td>
@@ -1015,7 +1081,7 @@ that can deal heavy damage during raids.
               </tr>
 
 <tr><td>
-   <!--             <div class="poke-cell"><img class="poke-ico" src="images/mega_alakazam.png" alt="Mega Alakazam"><strong>-->Mega Alakazam<!--</strong></div>-->
+   <!--             <div class="poke-cell"><img class="poke-ico" src="images/mega_alakazam.webp" alt="Mega Alakazam"><strong>-->Mega Alakazam<!--</strong></div>-->
                 </td>
               <td>Psycho Cut / Confusion</td>
                 <td>Focus Blast / Shadow Ball / Fire Punch / Future Sight</td>
@@ -1025,7 +1091,7 @@ that can deal heavy damage during raids.
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_gallade.png" alt="Mega Gallade"><strong>-->Mega Gallade<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_gallade.webp" alt="Mega Gallade"><strong>-->Mega Gallade<!--</strong></div>-->
                 </td>
               <td>Low Kick / Confusion / Psycho Cut / Charm</td>
                 <td>Close Combat / Leaf Blade / Psychic</td>
@@ -1038,84 +1104,10 @@ that can deal heavy damage during raids.
           </table>
          </div>
 </div>
-
-    
 </section>
 
-
-<!-- CP -->
-  <section id="cp" class="card">
-    <h2>🎯 Catch CP & 100% IV</h2>
-<p>
-Understanding CP ranges helps trainers evaluate the strength of Dialga when caught from raids.
-</p>
-
-<p>CP Range:</p>
-
-    <ul>
-          <li>No Weather Boost:  2,217-2,307 CP</li>
-          <li>Weather Boost:  2,771-2,884 CP</li>
-    </ul>
-
-<p>100% IV:</p>
- <ul>
-          <li>2307 (Normal)</li>
-          <li>2884 (Weather Boosted)</li>
-    </ul>
-
-<p>Use:</p>
-
- <ul>
-          <li>Golden Razz Berry</li>
-          <li>Curveball Excellent Throws</li>
-    </ul>
-
-  </section>
-
-<section class="card" id="weather">
-      <h2>🌦️ Weather Boost</h2>
-
-<p>
-Weather conditions in Pokémon GO can boost Dialga's power 
-during raids and also increase the CP of the Pokémon you catch.
-</p>
-
-<table>
-<tr>
-<th>Weather</th>
-</tr>
-<tr>
-<td>
-<strong>🌬️ Windy</strong>
-<ul>
-<li>Boosts Dragon-type moves.</li>
-</ul>
-</td>
-<td>
-<strong>☁️ Cloudy</strong>
-<ul>
-<li>Boosts Fighting moves</li>
-</ul>
-</td>
-<td>
-<strong>🌨️ Snowy</strong>
-<ul>
-<li>Boosts Steel-type moves</li>
-</ul>
-</td>
-<td>
-<strong>☀️ Sunny</strong>
-<ul>
-<li>Boosts Ground moves</li>
-</ul>
-</td>
-</tr>
-</table>
-
-          </section>
-
 <section class="card">
-  <h2>Revive & Potion Cost</h2>
+  <h2>💊 Revive & Potion Cost</h2>
   <ul>
     <li>Average revives used: 8–14</li>
     <li>Average potions used: 10–18</li>
@@ -1124,17 +1116,8 @@ during raids and also increase the CP of the Pokémon you catch.
   </ul>
 </section>
 
-<!--<section class="card">
-  <h2>Seasonal Availability</h2>
-  <ul>
-    <li>Appears in Mega Raids during special events</li>
-    <li>Returns approximately once every 6–12 months</li>
-    <li>Best time to farm Mega Energy is during debut rotation</li>
-  </ul>
-</section>-->
-
 <section class="card">
-  <h2>Common Raid Mistakes</h2>
+  <h2>❌ Common Raid Mistakes</h2>
   <ul>
     <li>Not bringing a Mega Pokémon for team boosts</li>
     <li>Using weather-boosted Pokémon of the wrong type</li>
@@ -1143,7 +1126,8 @@ during raids and also increase the CP of the Pokémon you catch.
   </ul>
 </section>
 
-<h2>Sample Team Composition</h2>
+<section class="card">
+<h2>🧩 Best Team Compositions</h2>
 
 <ul>
 <li>Lead with strongest Fighting-type attacker</li>
@@ -1157,8 +1141,6 @@ Maintaining consistent super-effective damage
 is key to defeating Dialga quickly.
 </p>
 
-<h2>Recommended Teams</h2>
-
 <h3>🥊 Fighting-type Counters</h3>
 <ul>
   <li>Mega Lucario (Counter + Aura Sphere)</li>
@@ -1171,15 +1153,39 @@ is key to defeating Dialga quickly.
 
 <h3>🌍 Ground-type Counters</h3>
 <ul>
-  <li>Primal Groudon (Mud Shot + Precipice Blades)</li>
-  <li>Mega Garchomp (Mud Shot + Earth Power)</li>
+  <li>Primal Groudon (Mud Shot + Precipice Blades) - Strongest Ground attacker in the game</li>
+  <li>Mega Garchomp (Mud Shot + Earth Power) - Huge DPS + boosts Ground types</li>
   <li>Landorus (Therian) (Mud Shot + Earthquake)</li>
   <li>Garchomp (Mud Shot + Earth Power)</li>
   <li>Excadrill (Mud-Slap + Drill Run)</li>
   <li>Rhyperior</li>
 </ul>
 
-<h2>Recommended Group Size</h2>
+</section>
+
+<section class="card">
+<h2>👥 Raid Difficulty & Trainers Needed</h2>
+
+<h3>Beginner Strategy</h3>
+
+<p>
+If you are new to Legendary raids, the easiest way to defeat Dialga is to raid with a group of at least 5–6 trainers. 
+Focus on using strong Fighting or Ground Pokémon and revive them quickly if they faint.
+</p>
+
+<h3>Intermediate Strategy</h3>
+
+<p>
+Players with level 35+ counters can defeat Dialga with a team of 3–4 trainers. 
+Using Mega Evolutions and weather boosts can reduce the raid difficulty significantly.
+</p>
+
+<h3>Expert Strategy</h3>
+
+<p>
+Experienced players can defeat Dialga in a duo using high-level counters such as Primal Groudon, Mega Lucario, and Terrakion.
+Proper dodge timing and optimized teams are critical for success.
+</p>
 
 <p>
 Dialga is bulky due to its strong defensive typing, 
@@ -1192,29 +1198,136 @@ but it is manageable with proper counters.
 <li><strong>5+ Trainers:</strong> Very safe win</li>
 </ul>
 
-<!-- STRATEGY -->
-  <section id="strategy" class="card">
-    <h2>🧠 Raid Strategy</h2>
-    <h3>Avoid Dragon-Type Attackers</h3>
+</section>
+
+<section id="strategy" class="card">
+    <h2>🧠 Raid Strategy & Advanced Tips</h2>
+
+<h3>1. Avoid Dragon-Type Attackers</h3>
 <p>
 Although Dialga is part Dragon-type, its Steel typing resists Dragon moves. 
 Using Dragon attackers results in reduced damage output.
 </p>
 
-<h3>Watch for Draco Meteor</h3>
+<h3>2. Watch for Draco Meteor</h3>
 <p>
 Dialga’s Dragon-type charged move can deal heavy damage. 
 While Fighting-types are effective, some may faint quickly 
 if not properly leveled.
 </p>
 
-<h3>Coordinate Mega Evolutions</h3>
+<h3>3. Coordinate Mega Evolutions</h3>
 <p>
 Using a Mega Fighting or Mega Ground Pokémon boosts 
 super-effective damage for your entire team. 
 Coordinate with other trainers to maintain consistent boosted damage.
   </p>
+
+<p>Dialga’s Steel and Dragon typing makes it particularly weak to Fighting and Ground moves — use this to your advantage. Pokémon such as Machamp with Counter and DynamicPunch, Lucario with Counter and Aura Sphere, and Conkeldurr can hit Dialga hard and quickly reduce its health. Ground-type attackers like Excadrill or Groudon with Earthquake also deal strong damage and help balance your team’s offensive output. </p>
+
+  <p>Weather conditions significantly influence this battle. During Snow or Windy weather, both Fighting and Ground-type moves get weather boosts, increasing your damage output and making counters even more effective. Trainers should check the weather before assembling their team so they can take full advantage of these conditions and reduce the time needed to defeat Dialga. </p>
+
+  <p>Dialga’s charged moves like Draco Meteor and Iron Head hit hard and can quickly wear down your counters if not handled carefully. Dodging these charged attacks when possible — especially when your Pokémon are low on health — can prolong their survival and improve your overall raid success, particularly in smaller groups. Communicating with fellow trainers about move timings and when to dodge increases your team’s survival chances in tight battles. </p>
+
+  <p>When planning your raid team, lead with your strongest DPS counters that exploit Dialga’s weaknesses. If those Pokémon begin to faint early, rotate in secondary attackers that still deal effective damage but offer greater bulk. This balanced approach helps maintain consistent damage output throughout the encounter and increases your odds of defeating Dialga before the raid timer expires.</p>
   </section>
+
+<section class="card" id="weather">
+      <h2>🌦️ Weather Boost</h2>
+
+<p>
+Weather conditions in Pokémon GO can boost Dialga's power 
+during raids and also increase the CP of the Pokémon you catch.
+</p>
+
+<h3>🌬️ Windy Weather</h3>
+<ul>
+<li>Boosts Dragon-type moves.</li>
+</ul>
+<h3>☁️ Cloudy Weather</h3>
+<ul>
+<li>Boosts Fighting moves</li>
+</ul>
+<h3>🌨️ Snowy Weather</h3>
+<ul>
+<li>Boosts Steel-type moves</li>
+</ul>
+<h3>☀️ Sunny Weather</h3>
+<ul>
+<li>Boosts Ground moves</li>
+</ul>
+
+          </section>
+
+
+  <!-- MOVES -->
+  <section id="moves" class="card">
+    <h2>🌀 Dialga Moveset</h2>
+
+<p>
+Dialga has several powerful Dragon and Steel type attacks 
+that can deal heavy damage during raids.
+</p>
+
+<h3>🗡️ Fast Moves</h3>
+<ul>
+  <li>Metal Claw</li>
+  <li>Dragon Breath</li>
+</ul>
+
+<h3>💥 Charged Moves</h3>
+<ul>
+  <li>Iron Head</li>
+  <li>Thunder</li>
+  <li>Draco Meteor</li>
+</ul>
+
+<p><strong>Most dangerous moveset:</strong> Draco Meteor is Dialga’s strongest attack and can quickly knock out Dragon-type counters.</p>
+
+  </section>
+
+<section id="pvepvp">
+<h2>⚔️ Is Dialga Good in PvP and PvE?</h2>
+
+<h3>PvE (Raids)</h3>
+
+<p>
+Dialga is one of the best Dragon-type attackers in Pokémon GO thanks to its high attack stat and strong moves.It performs well against many raid bosses that are weak to Dragon moves.
+</p>
+
+<h3>PvP (Master League)</h3>
+
+<p>Dialga is one of the best Pokémon in Master League PvP. Reasons:</p>
+<ul>
+<li>Strong bulk</li>
+<li>Powerful Dragon Breath fast move</li>
+<li>Steel typing provides many resistances</li>
+</ul>
+<p>Dialga is often considered a core Master League Pokémon.</p>
+</section>
+
+<section id="shiny">
+
+<h2>✨ Can Dialga Be Shiny in Pokémon GO?</h2>
+
+<p>
+Yes, trainers can encounter a <strong>Shiny Dialga</strong> after successfully 
+defeating Dialga in a Legendary Raid battle.
+</p>
+
+<p>
+Shiny Dialga has a slightly different color appearance compared to the 
+normal version. The shiny form features a brighter turquoise tone on 
+its body accents instead of the deeper blue found on the regular form.
+</p>
+
+<p>
+Shiny Legendary Pokémon are highly sought after by collectors, and the 
+best way to increase the chance of obtaining one is by participating in 
+multiple Dialga raids whenever it returns to the raid rotation.
+</p>
+
+</section>
 
   <!-- EVOLUTION 
   <section id="evolution" class="card">
@@ -1240,12 +1353,12 @@ Coordinate with other trainers to maintain consistent boosted damage.
 
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
-    <h2>Buddy Distance</h2>
+    <h2>🚶 Buddy Distance</h2>
     <p id="buddyDistance">20 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
-  <section id="shadowMegaSection" class="card"><h2>Shadow & Mega Comparison</h2>
+  <section id="shadowMegaSection" class="card"><h2>⚖️ Shadow & Mega Comparison</h2>
 </section>
 
 </div>
@@ -1325,55 +1438,85 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<h2>🎁 Rewards</h2>
+<h2>🧬 Best Mega Evolutions</h2>
+  <p>Recommended Megas to use against Dialga:</p>
   <ul>
-    <li>Chance to catch Shiny Dialga (with boosted IVs)</li>
-    <li>Rare Candy & XL Candy</li>
+    <li>Lucario, Blaziken, Heracross, Latios, Gallade, Alakazam – 🥊 Fighting boost</li>
+    <li>Garchomp, Swampert – 🌍 Ground boost</li>
+    <li>Latios - 🐉 Dragon boost</li>
   </ul>
 
-
 <h2>📌 Is Dialga Worth Raiding?</h2>
-  <p>Dialga is one of the most valuable Steel-type Pokémon in Pokémon GO. 
-It performs well in Master League PvP and is a solid raid attacker. 
-Farming Dialga raids provides Candy and XL Candy for powering it up, 
-making it a highly desirable legendary to invest in.</p>
+  <p>Yes, Dialga is one of the most valuable Legendary Pokémon in Pokémon GO. Reasons to raid Dialga:</p>
+<ul>
+<li>Excellent in Master League PvP</li>
+<li>Powerful Dragon-type attacker</li>
+<li>Rare Legendary Pokémon</li>
+<li>Chance to catch Shiny Dialga</li>
+</ul>
 
-<h2>Dialga Raid Strategy</h2>
-
-<h3>Beginner Strategy</h3>
-
-<p>
-If you are new to Legendary raids, the easiest way to defeat Dialga is to raid with a group of at least 5–6 trainers. 
-Focus on using strong Fighting or Ground Pokémon and revive them quickly if they faint.
-</p>
-
-<h3>Intermediate Strategy</h3>
+<section id="raid-rewards">
+<h2>🎁 Raid Rewards</h2>
 
 <p>
-Players with level 35+ counters can defeat Dialga with a team of 3–4 trainers. 
-Using Mega Evolutions and weather boosts can reduce the raid difficulty significantly.
-</p>
+    Defeating <strong>Dialga</strong> in a 5-Star Raid Battle rewards trainers with a variety of useful items.
+    These rewards help players power up Pokémon, change moves, and prepare for future raids.
+  </p>
 
-<h3>Expert Strategy</h3>
+<table>
+<thead>
+<tr>
+<th>Reward</th>
+<th>Typical Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Golden Razz Berry</td>
+<td>3 – 12</td>
+</tr>
+<tr>
+<td>Rare Candy</td>
+<td>3 – 9</td>
+</tr>
+<tr>
+<td>Revive</td>
+<td>6 – 15</td>
+</tr>
+<tr>
+<td>Hyper Potion</td>
+<td>6 – 15</td>
+</tr>
+<tr>
+<td>Fast TM</td>
+<td>0 – 2</td>
+</tr>
+<tr>
+<td>Charged TM</td>
+<td>0 – 2</td>
+</tr>
+<tr>
+<td>Stardust</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Premier Balls</h3>
 
 <p>
-Experienced players can defeat Dialga in a duo using high-level counters such as Primal Groudon, Mega Lucario, and Terrakion.
-Proper dodge timing and optimized teams are critical for success.
-</p>
+    After defeating <strong>Dialga</strong>, trainers receive <strong>Premier Balls</strong> to attempt the catch.
+    The number of Premier Balls usually ranges from <strong>8 to 16</strong> depending on raid performance.
+  </p>
 
-<h2>Can Dialga Be Shiny?</h2>
+<ul>
+<li>Damage contribution during the raid</li>
+<li>Gym control by your team</li>
+<li>Friendship bonus with raid participants</li>
+<li>Speed of defeating the raid boss</li>
+</ul>
 
-<p>
-Yes, Shiny Dialga is available in Pokémon GO raids.
-After defeating the raid boss, trainers have a chance to 
-encounter its shiny form.
-</p>
-
-<p>
-Shiny Dialga features a lighter blue color compared to the 
-normal version. Like other Legendary Pokémon, shiny encounters 
-are random and cannot be guaranteed.
-</p>
+</section>
 
 <h2>Can Dialga Be Soloed?</h2>
 
@@ -1384,8 +1527,32 @@ Dialga cannot realistically be soloed in Pokémon GO because of its high HP and 
 However, strong players can defeat it in a <strong>duo</strong> using maxed counters and Mega boosts.
 </p>
 
+<section class="pokemon-gallery">
+
+<h2>🖼️ Regular vs Shiny Dialga Forms</h2>
+<p>
+The shiny form features a brighter turquoise tone on 
+its body accents instead of the deeper blue found on the regular form.
+</p>
+
+<div class="image-grid">
+
+<div class="image-card">
+<img src="dialga.webp" alt="Normal Dialga" loading="lazy" width="200" height="200">
+<p>Dialga</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_dialga.webp" alt="Shiny Dialga" loading="lazy" width="200" height="200">
+<p>Shiny Dialga</p>
+</div>
+
+</div>
+
+</section>
+
         <section id="faq" aria-label="FAQ">
-          <h2>FAQ</h2>
+          <h2>❓ FAQ</h2>
           <h3>Can Dialga be shiny in Pokémon GO?</h3>
         <p>Yes! Shiny Dialga is available in Pokémon GO. The shiny version features a striking greenish-blue hue.</p>
         <h3>What are best moveset of Dialga?</h3>
@@ -1396,8 +1563,21 @@ However, strong players can defeat it in a <strong>duo</strong> using maxed coun
         <p>Dialga has high defense and strong attacks. Using proper type advantage and dodging charged moves makes this raid manageable for experienced trainers.</p>
         </section>
 
-<h2>Regular Sprite</h2>
-<img src="images/mega_abomasnow13.webp" alt="Mega Abomasnow Pokémon GO Raid Boss" loading="lazy" width="600" height="600">
+<section id="related">
+<h2>🔗 Related Raid Guides</h2>
+
+<p>You may also find these Pokémon GO raid guides helpful:</p>
+
+<ul>
+<li><a href="palkia.html">Palkia Raid Guide</a></li>
+<li><a href="origin_dialga.html">Origin Forme Dialga Raid Guide</a></li>
+<li><a href="origin_palkia.html">Origin Forme Palkia Raid Guide</a></li>
+<li><a href="reshiram.html">Reshiram Raid Guide</a></li>
+<li><a href="zekrom.html">Zekrom Raid Guide</a></li>
+<li><a href="altered_giratina.html">Altered Giratina Raid Guide</a></li>
+</ul>
+
+</section>
 
 <h2>🏁 Conclusion</h2>
   <p>Dialga remains one of the most valuable Legendary Pokémon 
@@ -1406,30 +1586,16 @@ using the best counters, and coordinating with other players,
 trainers can successfully defeat Dialga and add this powerful 
 Dragon Pokémon to their collection.</p>
 
-<h2>Related Guides</h2>
-<p>Looking for more counters? Check out our</p> 
-  <ul>
-
-<li><a href="/raids/palkia.html">Palkia Raid Guide</a></li>
-
-<li><a href="/raids/reshiram.html">Reshiram Raid Guide</a></li>
-
-<li><a href="/raids/zekrom.html">Zekrom Raid Guide</a></li>
-
-<li><a href="/raids/primal_kyogre.html">Primal Kyogre Raid Guide</a></li>
-
-<li><a href="/raids/primal_groudon.html">Primal Groudon Raid Guide</a></li>
-
-</ul>
-
- <aside class="card" aria-label="Sidebar">
-        <h2>Quick picks</h2>
+<section id="quick-picks">
+<!--<aside class="card" aria-label="Sidebar">-->
+        <h2>⚡ Quick picks</h2>
         <ul>
           <li><strong>Best Mega Team:</strong> Lucario, Blaziken, Garchomp</li>
           <li><strong>Best Shadow Team:</strong> Groudon, Excadrill</li>
           <li><strong>Best Regular Team:</strong> Primal Groudon, Keldeo</li>
         </ul>  
-      </aside> 
+      <!--</aside>-->
+</section>
 
 <section class="author-box">
       <h3>About the Author</h3>
@@ -1463,3 +1629,4 @@ Completed 500+ Mega raids and specializes in raid optimization and counter analy
 
 </body>
 </html>
+

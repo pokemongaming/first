@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="posts.css">
 <link rel="alternate" hreflang="x-default" href="https://pokémongaming.in/raids/ho-oh.html">
-
+<meta name="author" content="Abhishek">
 <meta property="og:title" content="Ho-Oh Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
   <meta property="og:description" content="Complete Ho-Oh raid guide in Pokémon Go- weakness, best counters, moveset, CP ranges, weather boosts and raid strategy.">
   <meta property="og:type" content="article">
@@ -36,6 +36,14 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "What is Ho-Oh’s exclusive move?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ho-Oh can use powerful moves like Sacred Fire, which deals massive damage and has a chance to burn the opponent, making it dangerous in raids."
+      }
+    },
+{
+      "@type": "Question",
       "name": "Can Ho-Oh be shiny in Pokémon GO?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -44,18 +52,10 @@
     },
     {
       "@type": "Question",
-      "name": "What is the best moveset of Ho-Oh?",
+      "name": "Is Ho-Oh difficult to defeat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The best moveset for Ho-Oh is Incinerate (Fast Move) and Sacred Fire or Brave Bird (Charged Move)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many trainers are needed to defeat Ho-Oh?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typically, 3–5 trainers with strong counter Pokémon are enough to defeat Ho-Oh efficiently. Larger groups make the raid faster and safer."
+        "text": "It has very high HP and strong attack stats. Using Rock or Water-type counters is the most efficient strategy to defeat it in raids."
       }
     },
     {
@@ -64,6 +64,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ho-Oh has high attack and decent bulk. Proper type advantage, dodging charged moves, and using strong counters make it manageable for experienced players."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Ho-Oh unique?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Its rainbow-colored feathers, Fire/Flying typing, and signature move Sacred Fire make Ho-Oh visually iconic and strategically powerful in Max Raid Battles."
       }
     }
   ]
@@ -247,6 +255,21 @@
   background: #EE8130;
 }
 
+.breadcrumb{
+font-size:14px;
+margin:15px 0;
+color:#555;
+}
+
+.breadcrumb a{
+color:#0073e6;
+text-decoration:none;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
+}
+
 /* Water */
 .type.water {
   background: #6390F0;
@@ -282,6 +305,36 @@
 .type.steel {
   background: #B7B7CE;
   color: #000;
+}
+
+.pokemon-gallery{
+max-width:900px;
+margin:40px auto;
+text-align:center;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.image-card{
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img{
+width:100%;
+max-width:200px;
+height:auto;
+}
+
+.image-card p{
+margin-top:8px;
+font-weight:600;
 }
 
 /* Smooth scroll */
@@ -375,14 +428,39 @@ html {
 </head>
 
 <body>
-<section class="hero" >
+<section class="hero">
+<!--<nav class="breadcrumb">
+<a href="https://pokemongaming.in/">Home</a> ›
+<a href="https://pokemongaming.in/raids/">Raids</a> ›
+<span>Ho-Oh Raid Guide</span>
+</nav>-->
+<h1>Ho-Oh Raid Guide – Best Counters, Weakness, CP & Strategy</h1>
 
- <header>
- <h1>Ho-Oh Raid Guide — Counters, Weakness & Strategy</h1>
-<p>Your complete resource for defeating <strong>LEGENDARY RAINBOW</strong> in Pokémon GO raids.</p>
+<p>
+<strong>Ho-Oh</strong> is a powerful Fire and Flying-type Legendary Pokémon in Pokémon GO raids. 
+Known as the Rainbow Pokémon, Ho-Oh has strong defensive stats and powerful Fire-type attacks that can challenge unprepared trainers.
+</p>
 
-</header>
+<p>
+Because of its Fire and Flying typing, Ho-Oh has a major weakness to <strong>Rock-type attacks</strong>, which deal massive damage. 
+Using strong Rock-type Pokémon is the best strategy to defeat Ho-Oh quickly in raid battles.
+</p>
 
+<div class="raid-quick-info">
+<p><strong>Raid Boss:</strong> Ho-Oh</p>
+<div>
+<strong>Type:</strong>
+ <div class="type-wrapper">
+      <span class="type fire">Fire</span>
+<span class="type flying">Flying</span>
+</div>
+</div>
+<p><strong>Raid Tier:</strong> Legendary (5-Star)</p>
+<p><strong>Recommended Trainers:</strong> 3–5</p>
+<p><strong>Raid Boss CP: </strong>48276</p>
+<p><strong>Shiny Available:</strong> Yes</p>
+<p><strong>Major Weakness:</strong> Rock</p>
+</div>
   
    <p id="last-updated"></p>
 
@@ -403,53 +481,32 @@ html {
 
 <main>
 <div class="container">
+<section>
+<h2>🧭 Quick Navigation</h2>
+<div class="tabs">
+<a href="#stats" class="tab-btn">Stats</a>
+<a href="#weakness" class="tab-btn">Weakness</a>
+<a href="#moves" class="tab-btn">Moves</a>
+<a href="#counters" class="tab-btn">Best Counters</a>
+<a href="#cp" class="tab-btn">Catch CP</a>
+<a href="#weather" class="tab-btn">Weather Boost</a>
+<a href="#strategy" class="tab-btn">Raid Strategy</a>
+<a href="#shiny" class="tab-btn">Shiny</a>
+<a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
-  <!-- HERO CARD -->
-  
-    <div class="type-wrapper">
-      <span class="type fire">Fire</span>
-      <span class="type flying">Flying</span>
-    </div>
-    <p class="summary" id="heroSummary">
-     Ho-Oh is a Legendary Fire and Flying-type raid boss in Pokémon GO that combines high offensive power with respectable bulk. Its double typing grants it a wide range of resistances — including to common types like Bug and Fairy — which can make it deceptively tricky to counter if you don’t plan your team carefully. Although many players focus on raw CP, understanding Ho-Oh’s type weaknesses and move interactions is key to forming an effective strategy.</p>
 
-  <p>Ho-Oh is especially weak to Water, Electric, Rock, and Ice-type moves, but the best counters aren’t just about dealing damage — they must also survive Ho-Oh’s powerful charged attacks. Weather conditions further influence how counters perform in battle, making it important to adjust your team depending on local weather. This guide breaks down not only the best counters, but also the deeper tactics that give you an edge in raid battles.</p>
+<h2>📖 Introduction</h2>
 
-  <p>Below, you’ll find everything you need to plan your team, maximize your damage, and take down Ho-Oh more efficiently — whether you’re raiding with many friends or just a few.</p>
-
-  <!-- TAB NAV -->
-  <div class="tabs">
-  <a href="#stats" class="tab-btn">Stats</a>
-  <a href="#moves" class="tab-btn">Moves</a>
-  <a href="#counters" class="tab-btn">Counters</a>
-  <a href="#cp" class="tab-btn">CP</a>
-  <a href="#strategy" class="tab-btn">Strategy</a>
-
-  <a href="#buddy" class="tab-btn">Buddy</a>
-  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
-  </div>
-
-<h2>Ho-Oh Overview</h2>
 <p>
-Ho-Oh’s dual Fire/Flying typing gives it powerful offensive coverage
-while also creating an important vulnerability.
-Understanding this weakness is the key to defeating it efficiently.
+<strong>Ho-Oh</strong> is one of the most iconic Legendary Pokémon in Pokémon GO. 
+Originally discovered in the Johto region, this majestic Fire and Flying-type Pokémon is known for its incredible power and vibrant rainbow wings.
 </p>
 
-<!-- STATS -->
-  <section id="stats" class="card">
-    <h2>Stats & Basic Info</h2>
-    <table id="statsTable">
-      <tr><td>Type</td><td>Fire / Flying</td></tr>
-      <tr><td>Max CP</td><td>4367</td></tr>
-      <tr><td>Weather Boost</td><td>Windy, Sunny</td></tr>
-      <tr><td>Shiny</td><td>Yes</td></tr>
-    </table>
-  </section>
-
-<h2>🧬 About Ho-Oh in Pokémon GO</h2>
-
-<p>Ho-Oh is a <strong>Fire/Flying-type</strong> Legendary Pokémon from the Johto region. It has excellent stats and a very strong signature move, Sacred Fire, which makes it especially valuable.</p>
+<p>
+In raid battles, Ho-Oh can be a challenging opponent due to its high durability and powerful Fire-type moves such as Sacred Fire and Fire Blast. 
+However, trainers who use strong Rock-type counters can defeat Ho-Oh efficiently.
+</p>
 
 <p>Ho-Oh is popular for:</p>
 <ul>
@@ -457,6 +514,27 @@ Understanding this weakness is the key to defeating it efficiently.
     <li>Master League PvP</li>
     <li>Legendary and shiny collection</li>
 </ul>
+
+<p>
+This Ho-Oh raid guide covers everything trainers need to know, including the best counters, weaknesses, catch CP ranges, weather boosts, shiny availability, and effective raid strategies.
+</p>
+
+</section>
+
+<!-- STATS -->
+  <section id="stats" class="card">
+    <h2>📊 Ho-Oh Stats</h2>
+    <table id="statsTable">
+      <tr><td>Type</td><td>Fire / Flying</td></tr>
+      <tr><td>Max CP</td><td>4434</td></tr>
+      <tr><td>Weather Boost</td><td>Windy, Sunny</td></tr>
+      <tr><td>Shiny</td><td>Yes</td></tr>
+<tr><td>Base Attack</td><td>239</td></tr>
+<tr><td>Base Defence</td><td>175</td></tr>
+<tr><td>Base Stamina</td><td>207</td></tr>
+    </table>
+<p>Ho-Oh has very high attack, which makes it dangerous for unprepared trainers.</p>
+  </section>
 
 <!--<p>🎥 Watch Ho-Oh Raid Guide Video</p>
   <div class="video-container">
@@ -470,42 +548,69 @@ Understanding this weakness is the key to defeating it efficiently.
   </iframe>
   </div>-->
 
+<section id="cp" class="card">
+    <h2>🎯 Catch CP & 100% IV</h2>
+<p>After defeating Ho-Oh, you encounter a normal Ho-Oh.</p>
+
+<p>CP Range:</p>
+
+    <ul>
+          <li>No Weather Boost:  2,119-2,207 CP</li>
+          <li>Weather Boost:  2,649-2,759 CP</li>
+    </ul>
+
+<p>100% IV:</p>
+ <ul>
+          <li>2207 (Normal)</li>
+          <li>2759 (Weather Boosted)</li>
+    </ul>
+
+<p>Use:</p>
+
+ <ul>
+          <li>Golden Razz Berry</li>
+          <li>Curveball Excellent Throws</li>
+    </ul>
+
+<p>Keep in mind that weather-boosted Ho-Oh is significantly harder to defeat, so always prepare strong Rock, Water or Electric-type counters.</p>
+
+  </section>
+
 <section id="weakness">
-        <h2>Weaknesses & resistances</h2>
+        <h2>⚠️ Ho-Oh Weaknesses</h2>
         <div class="tbl">
+<p>Ho-Oh is weak to the following types:</p>
           <table>
            <thead><tr><th>Category</th><th>Details</th></tr></thead>
             <tbody>
               <tr>
                 <td><strong>❌ Weak To:</strong></td>
                 <td>           
-                  <img class="type-ico" src="images/rock.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Rock •
-<img class="type-ico" src="images/water.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Water •
-                  <img class="type-ico" src="images/electric.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Electric 
+                  <img class="type-ico" src="images/rock.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Rock •
+<img class="type-ico" src="images/water.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Water •
+                  <img class="type-ico" src="images/electric.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Electric 
                 </td>
               </tr>
               <tr>
                 <td><strong>✅ Resistant To:</strong></td>
                 <td>
-                <img class="type-ico" src="images/fighting.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Fighting •
-                <img class="type-ico" src="images/bug.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Bug •
-                <img class="type-ico" src="images/steel.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Steel •
-                <img class="type-ico" src="images/fire.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Fire •
-                <img class="type-ico" src="images/ground.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Ground •
-<img class="type-ico" src="images/fairy.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Fairy •
-                <img class="type-ico" src="images/grass.png" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Grass 
+                <img class="type-ico" src="images/fighting.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Fighting •
+                <img class="type-ico" src="images/bug.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Bug •
+                <img class="type-ico" src="images/steel.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Steel •
+                <img class="type-ico" src="images/fire.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Fire •
+                <img class="type-ico" src="images/ground.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Ground •
+<img class="type-ico" src="images/fairy.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Fairy •
+                <img class="type-ico" src="images/grass.webp" alt="Best Pokémon Counters for Ho-Oh Raid US/UK"> Grass 
                 </td>
               </tr>
             </tbody>
           </table>
-<p><strong>Notes:</strong> Ho-Oh has a <strong>double weakness to Rock-type moves</strong>,
-meaning Rock attacks deal 256% damage.
-This makes Rock-type Pokémon the clear best counters in almost all situations.</p>
+<p><strong>Notes:</strong> Ho-Oh resists Grass, Bug, Fighting, Steel, and Fire moves. Using those types is inefficient.</p>
         </div>
 </section>
 
 <section id="counters">
-     <h2>Best Ho-Oh Counters</h2>
+     <h2>🗡️ Best Ho-Oh Counters</h2>
 
   <p>
 To defeat Ho-Oh quickly, prioritize Rock-type attackers.
@@ -513,7 +618,7 @@ Water and Electric Pokémon are effective,
 but they do not match the raw power of Rock due to the double weakness.
 </p>
 
-  <h3>Rock-Type Counters (Top Priority)</h3>
+  <h3>🪨 Rock-Type Counters (Top Priority)</h3>
 
 <p>
 Rock-type Pokémon provide the highest DPS against Ho-Oh.
@@ -529,10 +634,12 @@ Coordinating Mega boosts can dramatically reduce raid duration.
 </p>
   <ul>
     <li><strong>Rampardos:</strong> (Smack Down / Rock Slide)</li>
+<p>Massive attack stat makes it a top damage dealer.</p>
     <li><strong>Rhyperior:</strong> (Smack Down / Rock Wrecker)</li>
+<p>Excellent Rock Counters</p>
   </ul>
 
-<h3>Water-Type Counters</h3>
+<h3>💧 Water-Type Counters</h3>
 
 <p>
 Water Pokémon deal super-effective damage to Ho-Oh’s Fire typing.
@@ -542,10 +649,12 @@ making them more competitive.
 </p>
 <ul>
   <li><strong>Kyogre:</strong> (Waterfall / Origin Pulse)</li>
+<p><p>Excellent Water Counters</p>
   <li><strong>Blastoise:</strong> (Hydro Cannon)</li>
+<p>Exploits Ho-Oh’s Fire typing.</p>
 </ul>
   
-<h3>Electric-Type Counters</h3>
+<h3>⚡Electric-Type Counters</h3>
 
 <p>
 Electric Pokémon exploit Ho-Oh’s Flying typing.
@@ -554,53 +663,13 @@ especially during Rainy weather.
 </p>
 <ul>
   <li><strong>Ampharos:</strong> (Volt Switch)</li>
+<p>Strong because Ho-Oh is Flying-type.</p>
 </ul>
   
 </section>
 
-  <section>
-  <h2>Battle Strategy & Tactical Advice</h2>
-  <p>Ho-Oh’s Fire and Flying dual typing gives it significant weaknesses to Water, Electric, Rock, and Ice-type attacks. Counters like Kyogre with Waterfall and Surf, Zapdos with Thunder Shock and Thunderbolt, and Rampardos with Smack Down and Rock Slide are great choices because they hit Ho-Oh’s weaknesses hard while resisting its Fire-type moves.</p>
-
-  <p>Weather conditions matter a lot in this fight. In Rainy weather, Water-type moves get a boost — making Kyogre and other Water counters even more effective. In Windy conditions, Flying moves are boosted, which indirectly softens Ho-Oh’s offense and enhances Rock counters like Terrakion. Trainers should check the weather before assembling their team and adjust accordingly to take advantage of boosted moves.</p>
-
-  <p>Ho-Oh can use powerful charged moves like Sacred Fire and Brave Bird that hit hard and quickly whittle down your team’s health. Learning to dodge these charged attacks — especially when your counters are low on HP — improves their survivability and increases your chances of success, particularly in smaller raid groups.</p>
-
-  <p>When planning your team, start with your highest DPS counters that exploit Ho-Oh’s weaknesses. If those Pokémon begin to faint, rotate in secondary attackers that still deal super-effective damage but offer more durability. In larger raid groups, coordinating roles — for example, focusing Water counters first and then reinforcing with Rock and Electric types — helps maintain consistent pressure and makes the battle smoother.</p>
-
-  <p>If you have access to Mega Evolutions that support your counter pool — such as Mega Ampharos for Electric support or Mega Blastoise for Water support — using them can further increase your team’s effectiveness and shorten battle time. Pairing strategic teams with careful dodging and weather awareness ensures a more efficient fight against this powerful Legendary raid boss.</p>
-  </section>
-
-<h2>Best Mega Evolutions</h2>
-  <p>Recommended Megas to use against Ho-Oh:</p>
-  <ul>
-    <li>Mega Diancie – Rock/Fairy (Rock boost)</li>
-<li>Mega Aerodactyl – Rock/Flying (Rock boost)</li>
-<li>Mega Tyranitar – Rock/Dark (Rock boost)</li>
-<li>Mega Aggron – Steel only (NO Rock boost)</li>
-<li>Mega Blastoise – Water boost</li>
-<li>Mega Ampharos – Electric boost</li>
-<li>Mega Rayquaza – Dragon/Flying boost</li>
-  </ul>
-
-<h2>Difficulty</h2>
-   <p>Large teams can overwhelm it with coordinated counters, while smaller squads must prioritize type advantage, dodging, and optimal DPS rotation.</p>
-
-  <!-- MOVES -->
-  <section id="moves" class="card">
-    <h2>Best Moveset</h2>
-    <ul id="movesList">
-      <li><strong>Fast:</strong> Hidden Power, Steel Wing, Incinerate, Extrasensory</li>
-      <li><strong>Charged:</strong> Brave Bird, Fire Blast, Solar Beam</li> 
-       <li><strong>Elite:</strong> Earthquake, Sacred Fire</li>
-    </ul>
-
-<p><strong>Most dangerous moveset:</strong> Incinerate + Sacred Fire or Brave Bird</p>
-
-  </section>
-
 <section id="regular">
-<h2>Best Regular Counters</h2>
+<h2>🏆 Best Regular Counters</h2>
 <p>Regular Pokémon that amplify the right types give you a powerful edge. Below are top Regular counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -608,11 +677,11 @@ especially during Rainy weather.
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
@@ -620,7 +689,7 @@ especially during Rainy weather.
              <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/rhyperior.png" alt="Rhyperior"><strong>-->Rhyperior<!--</strong></div>-->
+                <img class="poke-ico" src="images/rhyperior.webp" alt="Rhyperior"><strong>-->Rhyperior<!--</strong></div>-->
                 </td>
                <td>Mud Slap / Smack Down</td>
                 <td>Skull Bash / Superpower / Earthquake / Stone Edge / Surf / Breaking Swipe</td>
@@ -630,7 +699,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/stonjourner.png" alt="Stonjourner"><strong>-->Stonjourner<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/stonjourner.webp" alt="Stonjourner"><strong>-->Stonjourner<!--</strong></div>-->
                 </td>
              <td>Rock Throw</td>
                 <td>Stone Edge / Rock Slide / Stomp</td>
@@ -652,7 +721,7 @@ especially during Rainy weather.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/gigalith.png" alt="Gigalith"><strong>-->Gigalith<!--</strong></div>-->
+                <img class="poke-ico" src="images/gigalith.webp" alt="Gigalith"><strong>-->Gigalith<!--</strong></div>-->
                 </td>
                <td>Mud Slap / Smack Down</td>
                 <td>Superpower / Rock Slide / Heavy Slam / Solar Beam</td>
@@ -672,7 +741,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/primal_kyogre.png" alt="Primal Kyogre"><strong>-->Primal Kyogre<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/primal_kyogre.webp" alt="Primal Kyogre"><strong>-->Primal Kyogre<!--</strong></div>-->
                 </td>
              <td>Waterfall</td>
                 <td>Hydro Pump / Surf / Thunder / Blizzard / Avalanche</td>
@@ -684,7 +753,7 @@ especially during Rainy weather.
 <tr>
               <td>
    <!--             <div class="poke-cell">
-                <img class="poke-ico" src="images/rampardos.png" alt="Rampardos"><strong>-->Rampardos<!--</strong></div>-->
+                <img class="poke-ico" src="images/rampardos.webp" alt="Rampardos"><strong>-->Rampardos<!--</strong></div>-->
                 </td>
                <td>Smack Down / Zen Headbutt</td>
                 <td>Rock Slide / Flamethrower / Outrage</td>
@@ -706,7 +775,7 @@ especially during Rainy weather.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/tyranitar.png" alt="Tyranitar"><strong>-->Tyranitar<!--</strong></div>-->
+                <img class="poke-ico" src="images/tyranitar.webp" alt="Tyranitar"><strong>-->Tyranitar<!--</strong></div>-->
                 </td>
                <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -716,7 +785,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/aerodactyl.png" alt="Aerodactyl"><strong>-->Aerodactyl<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/aerodactyl.webp" alt="Aerodactyl"><strong>-->Aerodactyl<!--</strong></div>-->
                 </td>
               <td>Rock Throw / Steel Wing / Dragon Breath / Bite</td>
                 <td>Hyper Beam / Earth Power / Ancient Power / Rock Slide / Iron Head</td>
@@ -734,7 +803,7 @@ especially during Rainy weather.
 </section>
 
 <section id="shadow">
-<h2>Best Shadow Counters</h2>
+<h2>👤 Best Shadow Counters</h2>
 <p>Shadow Pokémon that amplify the right types give you a powerful edge. Below are top Shadow counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -742,11 +811,11 @@ especially during Rainy weather.
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
@@ -754,7 +823,7 @@ especially during Rainy weather.
              <tr>
               <td>
    <!--             <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_rampardos.png" alt="Shadow Rampardos"><strong>-->Shadow Rampardos<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_rampardos.webp" alt="Shadow Rampardos"><strong>-->Shadow Rampardos<!--</strong></div>-->
                 </td>
                <td>Smack Down / Zen Headbutt</td>
                 <td>Rock Slide / Flamethrower / Outrage</td>
@@ -764,7 +833,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_golem.png" alt="Shadow Golem"><strong>-->Shadow Golem<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_golem.webp" alt="Shadow Golem"><strong>-->Shadow Golem<!--</strong></div>-->
                 </td>
               <td>Mud Slap / Mud Shot / Rock Throw</td>
                 <td>Stone Edge / Earthquake / Rock Blast / Ancient Power</td>
@@ -774,7 +843,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/shadow_omastar.png" alt="Shadow Omastar"><strong>-->Shadow Omastar<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/shadow_omastar.webp" alt="Shadow Omastar"><strong>-->Shadow Omastar<!--</strong></div>-->
                 </td>
               <td>Mud Shot / Water Gun</td>
                 <td>Hydro Pump / Ancient Power / Rock Blast</td>
@@ -784,7 +853,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_aurorus.png" alt="Shadow Aurorus"><strong>-->Shadow Aurorus<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_aurorus.webp" alt="Shadow Aurorus"><strong>-->Shadow Aurorus<!--</strong></div>-->
                 </td>
               <td>Rock Throw / Powder Snow / Frost Breath</td>
                 <td>Ancient Power / Meteor Beam / Hyper Beam / Weather Ball / Blizzard / Thunderbolt</td>
@@ -814,7 +883,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/shadow_aerodactyl.png" alt="Shadow Aerodactyl"><strong>-->Shadow Aerodactyl<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/shadow_aerodactyl.webp" alt="Shadow Aerodactyl"><strong>-->Shadow Aerodactyl<!--</strong></div>-->
                 </td>
               <td>Rock Throw / Steel Wing / Dragon Breath / Bite</td>
                 <td>Hyper Beam / Earth Power / Ancient Power / Rock Slide / Iron Head</td>
@@ -826,7 +895,7 @@ especially during Rainy weather.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_gigalith.png" alt="Shadow Gigalith"><strong>-->Shadow Gigalith<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_gigalith.webp" alt="Shadow Gigalith"><strong>-->Shadow Gigalith<!--</strong></div>-->
                 </td>
                <td>Mud Slap / Smack Down</td>
                 <td>Superpower / Rock Slide / Heavy Slam / Solar Beam</td>
@@ -837,7 +906,7 @@ especially during Rainy weather.
 
 
 <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/shadow_archeops.png" alt="Shadow Archeops"><strong>-->Shadow Archeops<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/shadow_archeops.webp" alt="Shadow Archeops"><strong>-->Shadow Archeops<!--</strong></div>-->
                 </td>
               <td>Wing Attack / Steel Wing</td>
                 <td>Dragon Claw / Ancient Power / Crunch</td>
@@ -849,7 +918,7 @@ especially during Rainy weather.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_tyranitar.png" alt="Shadow Tyranitar"><strong>-->Shadow Tyranitar<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_tyranitar.webp" alt="Shadow Tyranitar"><strong>-->Shadow Tyranitar<!--</strong></div>-->
                 </td>
                <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -859,7 +928,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_aggron.png" alt="Shadow Aggron"><strong>-->Shadow Aggron<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_aggron.webp" alt="Shadow Aggron"><strong>-->Shadow Aggron<!--</strong></div>-->
                 </td>
               <td>Smack Down / Iron Tail / Metal Sound / Dragon Tail</td>
                 <td>Stone Edge / Rock Tomb / Meteor Beam / Heavy Slam / Thunder</td>
@@ -869,7 +938,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_crustle.png" alt="Shadow Crustle"><strong>-->Shadow Crustle<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_crustle.webp" alt="Shadow Crustle"><strong>-->Shadow Crustle<!--</strong></div>-->
                 </td>
               <td>Smack Down / Fury Cutter</td>
                 <td>Rock Slide / Rock Wrecker / Rock Blast / X-Scissor</td>
@@ -879,7 +948,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_alola_golem.png" alt="Shadow Alola Golem"><strong>-->Shadow Alola Golem<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/shadow_alola_golem.webp" alt="Shadow Alola Golem"><strong>-->Shadow Alola Golem<!--</strong></div>-->
                 </td>
               <td>Volt Switch / Rock Throw</td>
                 <td>Stone Edge / Wild Charge / Rock Blast</td>
@@ -897,7 +966,7 @@ especially during Rainy weather.
 </section>
 
 <section id="mega">
-<h2>Best Mega Counters</h2>
+<h2>⚡ Best Mega Counters</h2>
 <p>Mega Pokémon that amplify the right types give you a powerful edge. Below are top Mega counters with short notes on why they excel.</p>
 
 <div class="gmax-scroll">
@@ -906,17 +975,17 @@ especially during Rainy weather.
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
              
  <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.png" alt="Mega Diancie"><strong>-->Mega Diancie<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.webp" alt="Mega Diancie"><strong>-->Mega Diancie<!--</strong></div>-->
                 </td>
               <td>Tackle / Rock Throw</td>
                 <td>Rock Slide / Power Gem / Moonblast</td>
@@ -926,7 +995,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_aerodactyl.png" alt="Mega Aerodactyl"><strong>-->Mega Aerodactyl<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_aerodactyl.webp" alt="Mega Aerodactyl"><strong>-->Mega Aerodactyl<!--</strong></div>-->
                 </td>
               <td>Rock Throw / Steel Wing / Dragon Breath / Bite</td>
                 <td>Hyper Beam / Earth Power / Ancient Power / Rock Slide / Iron Head</td>
@@ -936,7 +1005,7 @@ especially during Rainy weather.
               </tr>
 
  <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_aggron.png" alt="Mega Aggron"><strong>-->Mega Aggron<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_aggron.webp" alt="Mega Aggron"><strong>-->Mega Aggron<!--</strong></div>-->
                 </td>
               <td>Smack Down / Iron Tail / Metal Sound / Dragon Tail</td>
                 <td>Stone Edge / Rock Tomb / Meteor Beam / Heavy Slam / Thunder</td>
@@ -947,7 +1016,7 @@ especially during Rainy weather.
 
 
 <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_ampharos.png" alt="Mega Ampharos"><strong>-->Mega Ampharos<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_ampharos.webp" alt="Mega Ampharos"><strong>-->Mega Ampharos<!--</strong></div>-->
                 </td>
               <td>Charge Beam / Volt Switch</td>
                 <td>Focus Blast / Power Gem / Trailblaze / Zap Cannon / Thunder / Thunder Punch / Brutal Swing</td>
@@ -957,7 +1026,7 @@ especially during Rainy weather.
               </tr>
 
 <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_blastoise.png" alt="Mega Blastoise"><strong>-->Mega Blastoise<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_blastoise.webp" alt="Mega Blastoise"><strong>-->Mega Blastoise<!--</strong></div>-->
                 </td>
               <td>Rollout / Water Gun / Bite</td>
                 <td>Skull Bash / Flash Cannon / Hydro Pump / Ice Beam</td>
@@ -967,7 +1036,7 @@ especially during Rainy weather.
               </tr>
 
  <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.png" alt="Mega Rayquaza"><strong>-->Mega Rayquaza<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.webp" alt="Mega Rayquaza"><strong>-->Mega Rayquaza<!--</strong></div>-->
                 </td>
               <td>Air Slash / Dragon Tail</td>
                 <td>Aerial Ace / Dragon Ascent / Ancient Power / Outrage</td>
@@ -979,7 +1048,7 @@ especially during Rainy weather.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/mega_tyranitar.png" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
+                <img class="poke-ico" src="images/mega_tyranitar.webp" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
                 </td>
                <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -992,58 +1061,10 @@ especially during Rainy weather.
           </table>
          </div>
 </div>
-
-    
 </section>
 
-<!-- CP -->
-  <section id="cp" class="card">
-    <h2>CP Ranges</h2>
-<p>
-Understanding CP ranges helps trainers evaluate the strength of Ho-Oh when caught from raids.
-</p>
-
-    <ul>
-      <li><strong>Perfect (L20):</strong> 2,119-2,207 CP</li>
-          <li><strong>Weather Boost (L25):</strong> 2,649-2,759 CP</li>
-          <li><span class="pill">Boosted by: <strong>Sunny</strong> & <strong>Windy</strong></span></li>
-    </ul>
-<p>Keep in mind that weather-boosted Ho-Oh is significantly harder to defeat, so always prepare strong Rock, Water or Electric-type counters.</p>
-
-  </section>
-
-<section class="card" id="weather">
-      <h2>🌦️ Weather Boost</h2>
-
-<p>Ho-Oh gets a weather boost in:</p>
-
-<table>
-<tr>
-<th>Weather</th>
-<th>Effect</th>
-</tr>
-<tr>
-<td>Sunny</td>
-<td>Boosts Fire-type moves (very helpful)</td>
-</tr>
-<tr>
-<td>Windy</td>
-<td>Boosts Flying-type moves (excellent condition)</td>
-</tr>
-<tr>
-<td>Partly Cloudy</td>
-<td>Boosts Rock moves</td>
-</tr>
-<tr>
-<td>Rainy</td>
-<td>Boosts Water-types and Electric-types</td>
-</tr>
-</table>
-
-          </section>
-
 <section class="card">
-  <h2>Revive & Potion Cost</h2>
+  <h2>💊 Revive & Potion Cost</h2>
   <ul>
     <li>Average revives used: 8–14</li>
     <li>Average potions used: 10–18</li>
@@ -1053,7 +1074,7 @@ Understanding CP ranges helps trainers evaluate the strength of Ho-Oh when caugh
 </section>
 
 <section class="card">
-  <h2>Common Raid Mistakes</h2>
+  <h2>❌ Common Raid Mistakes</h2>
   <ul>
     <li>Avoid using fragile Fire or Grass attackers that will faint quickly to Ho-Oh’s strong Fire- and Ground-type moves.</li>
 <li> Also be cautious with Ice attackers if Ho-Oh carries Rock coverage.
@@ -1061,7 +1082,8 @@ Understanding CP ranges helps trainers evaluate the strength of Ho-Oh when caugh
   </ul>
 </section>
 
-<h2>Team Composition Example</h2>
+<section class="card">
+<h2>🧩 Best Team Compositions</h2>
 
 <ul>
 <li>Lead with strongest Rock-type attacker</li>
@@ -1075,20 +1097,22 @@ Avoid Bug, Grass, or Steel Pokémon,
 as Ho-Oh resists those types.
 </p>
 
-<h2>Recommended Teams</h2>
-
 <h3>🪨 Rock-type Counters</h3>
 <p>Rock-type Pokémon are the most reliable choices due to the double weakness:</p>
 <ul>
-  <li>Mega Tyranitar (Smack Down + Stone Edge)</li>
-  <li>Rampardos (Smack Down + Rock Slide)</li>
-  <li>Rhyperior (Smack Down + Rock Wrecker)</li>
+  <li>Mega Tyranitar (Smack Down + Stone Edge) - Extremely high DPS and boosts other Rock attackers.</li>
+  <li>Rampardos (Smack Down + Rock Slide) - Massive attack stat makes it a top damage dealer.</li>
+  <li>Rhyperior (Smack Down + Rock Wrecker) - One of the strongest Rock attackers in raids.</li>
   <li>Terrakion (Smack Down + Rock Slide)</li>
   <li>Tyranitar (Smack Down + Stone Edge)</li>
   <li>Gigalith</li>
 </ul>
 
-<h2>Recommended Group Size</h2>
+</section>
+
+  
+<section class="card">
+<h2>👥 Raid Difficulty & Trainers Needed</h2>
 
 <p>
 Ho-Oh is generally easier than Lugia because of its double Rock weakness.
@@ -1107,71 +1131,159 @@ High-level trainers with optimized Rock attackers
 can duo Ho-Oh under favorable weather conditions.
 </p>
 
-<!-- STRATEGY -->
-  <section id="strategy" class="card">
-    <h2>Raid Strategy</h2>
-    <h3>Stack Rock Attackers</h3>
+</section>
+
+<section id="strategy" class="card">
+    <h2>🧠 Raid Strategy & Advanced Tips</h2>
+
+<h3>1. Stack Rock Attackers</h3>
 <p>
 The simplest and most effective strategy is to build a team focused almost entirely on Rock-type damage.
 Because of Ho-Oh’s double weakness, even mid-tier Rock attackers can perform extremely well.
 </p>
 
-<h3>Watch Out for Brave Bird</h3>
+<h3>2. Watch Out for Brave Bird</h3>
 <p>
 Ho-Oh can use strong Flying-type moves like Brave Bird, which deal heavy damage to certain counters.
 Dodging charged moves helps preserve your strongest attackers and increases overall damage efficiency.
 </p>
 
-<h3>Coordinate Mega Evolutions</h3>
+<h3>3. Coordinate Mega Evolutions</h3>
 <p>
 Only one Mega Evolution boost is needed at a time.
 Coordinate within your group so Rock-type Mega bonuses remain active throughout the battle.
 </p>
+
+<p>Ho-Oh’s Fire and Flying dual typing gives it significant weaknesses to Water, Electric, Rock, and Ice-type attacks. Counters like Kyogre with Waterfall and Surf, Zapdos with Thunder Shock and Thunderbolt, and Rampardos with Smack Down and Rock Slide are great choices because they hit Ho-Oh’s weaknesses hard while resisting its Fire-type moves.</p>
+
+  <p>Weather conditions matter a lot in this fight. In Rainy weather, Water-type moves get a boost — making Kyogre and other Water counters even more effective. In Windy conditions, Flying moves are boosted, which indirectly softens Ho-Oh’s offense and enhances Rock counters like Terrakion. Trainers should check the weather before assembling their team and adjust accordingly to take advantage of boosted moves.</p>
+
+  <p>Ho-Oh can use powerful charged moves like Sacred Fire and Brave Bird that hit hard and quickly whittle down your team’s health. Learning to dodge these charged attacks — especially when your counters are low on HP — improves their survivability and increases your chances of success, particularly in smaller raid groups.</p>
+
+  <p>When planning your team, start with your highest DPS counters that exploit Ho-Oh’s weaknesses. If those Pokémon begin to faint, rotate in secondary attackers that still deal super-effective damage but offer more durability. In larger raid groups, coordinating roles — for example, focusing Water counters first and then reinforcing with Rock and Electric types — helps maintain consistent pressure and makes the battle smoother.</p>
+
+  <p>If you have access to Mega Evolutions that support your counter pool — such as Mega Ampharos for Electric support or Mega Blastoise for Water support — using them can further increase your team’s effectiveness and shorten battle time. Pairing strategic teams with careful dodging and weather awareness ensures a more efficient fight against this powerful Legendary raid boss.</p>
   </section>
+
+<section class="card" id="weather">
+      <h2>🌦️ Weather Boost</h2>
+
+<p>Ho-Oh gets a weather boost in:</p>
+
+<h3>☀️ Sunny Weather</h3>
+<ul>
+<li>Boosts Fire-type moves (very helpful)</li>
+</ul>
+<h3>🌬️ Windy Weather</h3>
+<ul>
+<li>Boosts Flying-type moves (excellent condition)</li>
+</ul>
+<h3>⛅ Partly Cloudy Weather</h3>
+<ul>
+<li>Boosts Rock moves</li>
+</ul>
+<h3>Rainy Weather</h3>
+<ul>
+<li>🌧️ Boosts Water-types and Electric-types</li>
+</ul>
+
+<section id="moves" class="card">
+    <h2>🌀 Ho-Oh Moveset</h2>
+    
+<h3>🗡️ Fast Moves</h3>
+<ul>
+  <li>Hidden Power</li>
+  <li>Steel Wing</li>
+<li>Incinerate</li>
+  <li>Extrasensory</li>
+</ul>
+
+<h3>💥 Charged Moves</h3>
+<ul>
+  <li>Brave Bird</li>
+  <li>Fire Blast</li>
+  <li>Solar Beam</li>
+</ul>
+
+<h3>🔄 Elite Moves</h3>
+<ul>
+<li>Sacred Fire</li>
+<li>Earthquake</li>
+</ul>
+
+  </section>
+
+<section id="dodge-moves">
+<h2>Moves to Dodge</h2>
+<ul>
+<li>Sacred Fire: very high damage and burns</li>
+<li>Brave Bird: strong Flying-type move</li>
+</ul>
+</section>
+
+<section id="pvepvp">
+<h2>🎮 Is Ho-Oh Good in PvE and PvP?</h2>
+<h3>PvE (Raids)</h3>
+<p>Ho-Oh is excellent for raid attackers, especially against Grass and Bug-type bosses. Its signature Sacred Fire deals heavy damage to multiple Pokémon types.</p>
+
+<h3>PvP</h3>
+<p>Ho-Oh is situational in PvP, mainly in Master League. Its high attack and access to Flying/Fire moves make it a threat, but its low defense compared to other legendaries can make it vulnerable.</p>
+</section>
+
+<section id="shiny">
+
+<h2>✨ Can Ho-Oh Be Shiny in Pokémon GO?</h2>
+
+<p>
+Yes, trainers can encounter a <strong>Shiny Ho-Oh</strong> after defeating Ho-Oh in a raid battle. 
+Shiny Ho-Oh has a distinctive golden color compared to the normal red and green appearance.
+</p>
+
+<p>
+The shiny encounter chance for Legendary raids is typically around <strong>1 in 20</strong>, making raid battles one of the best ways to obtain a shiny Legendary Pokémon.
+</p>
+
+<p>
+If you encounter a shiny Ho-Oh after the raid, it is guaranteed to be caught if you land the Poké Ball successfully.
+</p>
+
+</section>
 
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
-    <h2>Buddy Distance</h2>
+    <h2>🚶 Buddy Distance</h2>
     <p id="buddyDistance">20 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
   <section id="shadowMegaSection" class="card">
-<h2>Shadow & Mega Comparison</h2>
+<h2>⚖️ Shadow & Mega Comparison</h2>
 </section>
 
 </div>
 
 <!-- CONFIG + JS -->
 <script>
+document.addEventListener("DOMContentLoaded", function () {
   const raidConfig = {
     raidBoss: "Ho-Oh",
     megaType: "Fire / Flying",
     pageDescription: "Ho-Oh Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
     heroSummary: "Ho-Oh is one of the strongest Fire / Flying-type Legendary Pokémon in Pokémon GO raids.",
-    moves: [
-      { type: "Fast", name: "Hidden Power, Steel Wing, Incinerate, Extrasensory" },
-      { type: "Charged", name: "Brave Bird, Fire Blast, Solar Beam" },
-      { type: "Elite", name: "Earthquake, Sacred Fire"}
-    ],
-    counters: [
-      { name: "Rampardos", description: "Top Rock-type attacker" },
-      { name: "Rhyperior", description: "Top Rock attacker" }, 
-      { name: "Terrakion", description: "Top Legendary attacker" }
-    ],
+    
         buddyDistance: "20 km (per Pokémon GO buddy distance)"
   };
   
-  // Populate moves
-  const movesList = document.getElementById("movesList");
-  movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
+  const buddy = document.getElementById("buddyDistance");
+  if (buddy) {
+    buddy.textContent = raidConfig.buddyDistance;
+  }
 
-  // Populate buddy distance
-  document.getElementById("buddyDistance").textContent = raidConfig.buddyDistance;
-
-  // Generate Shadow vs Mega
+  // Generate Shadow vs Mega comparison
   function generateShadowMegaComparison(config) {
     const container = document.getElementById("shadowMegaSection");
+    if (!container) return;
+
     container.innerHTML = `
       <h2>Shadow vs Mega Pokémon Comparison</h2>
       <p>
@@ -1222,32 +1334,121 @@ Coordinate within your group so Rock-type Mega bonuses remain active throughout 
   }
 
   generateShadowMegaComparison(raidConfig);
-
+});
 </script>
 
-<h2>Rewards</h2>
+<h2>🧬 Best Mega Evolutions</h2>
+  <p>Recommended Megas to use against Ho-Oh:</p>
   <ul>
-    <li>Chance to catch Shiny Ho-Oh (with boosted IVs)</li>
-    <li>Rare Candy & XL Candy</li>
+    <li>Mega Diancie – 🪨 Rock boost</li>
+<li>Mega Aerodactyl – 🪨 Rock boost</li>
+<li>Mega Tyranitar – 🪨 Rock boost</li>
+<li>Mega Blastoise – 💧 Water boost</li>
+<li>Mega Ampharos – ⚡ Electric boost</li>
+<li>Mega Rayquaza – 🐉 Dragon / 🕊️ Flying boost</li>
   </ul>
-
 
 <h2>📌 Is Ho-Oh Worth Raiding?</h2>
 
-<p>
-Ho-Oh is a strong Fire-type attacker in Pokémon GO and has relevance in both PvE and collection value. Its shiny form is highly sought after,
-making it a popular raid target during events.
-</p>
+<p>Yes, for these reasons:</p>
+<ul>
+<li>Legendary Pokémon with strong Fire/Flying typing</li>
+<li>Useful for collection and shiny hunt</li>
+<li>PvE usefulness for countering Grass/Bug bosses</li>
+</ul>
+
+<section id="raid-rewards">
+<h2>🎁 Raid Rewards</h2>
 
 <p>
-Because it has a double weakness, Ho-Oh raids are efficient for farming Legendary Pokémon with smaller groups.
+Defeating Ho-Oh in a 5-Star raid rewards trainers with several useful items. 
+The exact number of rewards may vary depending on raid performance, team 
+contribution, and friendship bonuses.
 </p>
 
-  <h2>PvP Relevance</h2>
-  <p>Ho-Oh is a strong pick in Master League thanks to Sacred Fire and Brave Bird.</p>
+<h3>Main Raid Rewards</h3>
+
+<table>
+<tr>
+<th>Reward</th>
+<th>Typical Amount</th>
+</tr>
+<tr>
+<td>Golden Razz Berry</td>
+<td>3 – 12</td>
+</tr>
+<tr>
+<td>Rare Candy</td>
+<td>3 – 9</td>
+</tr>
+<tr>
+<td>Revive</td>
+<td>6 – 15</td>
+</tr>
+<tr>
+<td>Hyper Potion</td>
+<td>6 – 15</td>
+</tr>
+<tr>
+<td>Fast TM</td>
+<td>0 – 2</td>
+</tr>
+<tr>
+<td>Charged TM</td>
+<td>0 – 2</td>
+</tr>
+<tr>
+<td>Stardust</td>
+<td>1000</td>
+</tr>
+</table>
+
+<h3>Premier Balls</h3>
+
+<p>
+After the raid battle, trainers receive Premier Balls to catch Ho-Oh. 
+The number of Premier Balls typically ranges between <strong>8 and 16</strong>, depending on:
+</p>
+
+<ul>
+<li>Total damage dealt during the raid</li>
+<li>Gym control bonus</li>
+<li>Team contribution</li>
+<li>Friendship level with other trainers</li>
+</ul>
+
+<p>
+Completing a Legendary raid also grants approximately <strong>10,000 XP</strong>, 
+with additional XP possible through friendship bonuses.
+</p>
+
+</section>
+
+<section class="pokemon-gallery">
+
+<h2>🖼️ Regular vs Shiny Ho-Oh Forms</h2>
+<p>
+Shiny Ho-Oh has a distinctive golden color compared to the normal red and green appearance.
+</p>
+
+<div class="image-grid">
+
+<div class="image-card">
+<img src="ho-oh.webp" alt="Normal Ho-Oh" loading="lazy" width="200" height="200">
+<p>Ho-Oh</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_ho-oh.webp" alt="Shiny Ho-Oh" loading="lazy" width="200" height="200">
+<p>Shiny Ho-Oh</p>
+</div>
+
+</div>
+
+</section>
 
         <section id="faq" aria-label="FAQ">
-          <h2>FAQ</h2>
+          <h2>❓ FAQ</h2>
           <h3>Can Ho-Oh be shiny in Pokémon GO?</h3>
         <p>Shiny Ho-Oh features a golden-red glow and is available during this raid period.</p>
         <h3>What is Ho-Oh’s exclusive move?</h3>
@@ -1261,6 +1462,23 @@ Because it has a double weakness, Ho-Oh raids are efficient for farming Legendar
 
         </section>
 
+<section id="related">
+<h2>🔗 Related Raid Guides</h2>
+
+<p>You may also find these Pokémon GO raid guides helpful:</p>
+
+<ul>
+<li><a href="reshiram.html">Reshiram Raid Guide</a></li>
+<li><a href="zekrom.html">Zekrom Raid Guide</a></li>
+<li><a href="lugia.html">Lugia Raid Guide</a></li>
+<li><a href="articuno.html">Articuno Raid Guide</a></li>
+<li><a href="moltres.html">Moltres Raid Guide</a></li>
+<li><a href="zapdos.html">Zapdos Raid Guide</a></li>
+
+</ul>
+
+</section>
+
 <h2>🏁 Conclusion</h2>
 <p>Ho-Oh raids become significantly easier when you prioritize Rock-type counters.
 Take advantage of Partly Cloudy weather, coordinate Mega boosts, and focus on consistent high DPS.
@@ -1269,34 +1487,24 @@ Take advantage of Partly Cloudy weather, coordinate Mega boosts, and focus on co
 <p>
 With proper preparation, you can defeat this Legendary Fire/Flying Pokémon and add it to your collection efficiently.</p>
 
-<h2>Related Guides</h2>
-<p>Looking for more counters? Check out our 
- <!-- <a href="mega_diancie.html">Mega Diancie Raid Guide,</a> -->
- <a href="lugia.html">Lugia Raid Guide,</a> 
-<a href="mega_aerodactyl.html">Mega Aerodactyl Raid Guide</a> 
-</p>
+  <p>Efficiently defeating Ho-Oh requires maximizing type advantages, choosing weather-boosted attackers, and timing shields correctly. Even small groups can succeed with high-level Rock, Electric, or Water Pokémon, making the raid rewarding and strategic for trainers of all levels.</p>
 
- <aside class="card" aria-label="Sidebar">
-        <h2>Quick picks</h2>
+<section id="quick-picks">
+<!--<aside class="card" aria-label="Sidebar">-->
+        <h2>⚡Quick picks</h2>
         <ul>
           <li><strong>Best Mega Team:</strong> Diancie, Tyranitar, Aerodactyl</li>
           <li><strong>Best Shadow Team:</strong> Rhyperior, Tyrantrum, Mamoswine</li>
-        </ul>
-
-
-
-   
-      </aside>
-   <h2>Summary</h2>
-  <p>Efficiently defeating Ho-Oh requires maximizing type advantages, choosing weather-boosted attackers, and timing shields correctly. Even small groups can succeed with high-level Rock, Electric, or Water Pokémon, making the raid rewarding and strategic for trainers of all levels.</p>
-  
+        </ul>   
+      <!--</aside>-->
+</section>
 
 <section class="author-box">
       <h3>About the Author</h3>
-      <p>Written by <strong>Pokémon Gaming Team</strong> — bringing expert raid guides and battle strategies. Explore more guides like <a href="mega_aggron.html">Mega Aggron</a>, <a href="mega_ampharos.html">Mega Ampharos</a>.</p>
+      <p>Written by Abhishek — Level 50 Pokémon GO Trainer (since 2019).
+Completed 500+ Mega raids and specializes in raid optimization and counter analysis. Explore more guides like <a href="mega_aggron.html">Mega Aggron</a>, <a href="mega_ampharos.html">Mega Ampharos</a>.</p>
     </section>
 </main>
-
 
   <footer class="site-footer">
     <div class="footer-content">
@@ -1311,7 +1519,7 @@ With proper preparation, you can defeat this Legendary Fire/Flying Pokémon and 
 
     </p> 
 
-<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
+<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only. This website is not affiliated with or endorsed by Nintendo, Niantic, or The Pokémon Company.
 </p>
 </div>
 </footer>
@@ -1323,3 +1531,4 @@ With proper preparation, you can defeat this Legendary Fire/Flying Pokémon and 
 
 </body>
 </html>
+

@@ -292,6 +292,36 @@
   color: #000;
 }
 
+.pokemon-gallery{
+max-width:900px;
+margin:40px auto;
+text-align:center;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.image-card{
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img{
+width:100%;
+max-width:200px;
+height:auto;
+}
+
+.image-card p{
+margin-top:8px;
+font-weight:600;
+}
+
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
@@ -320,6 +350,21 @@ html {
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.breadcrumb{
+font-size:14px;
+margin:15px 0;
+color:#555;
+}
+
+.breadcrumb a{
+color:#0073e6;
+text-decoration:none;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
 }
 
 .gmax-card h3 {
@@ -379,17 +424,44 @@ html {
 
   </style>
 
+
 </head>
 
 <body>
 <section class="hero">
+<!--<nav class="breadcrumb">
+<a href="https://pokemongaming.in/">Home</a> ›
+<a href="https://pokemongaming.in/raids/">Raids</a> ›
+<span>Mega Alakazam Raid Guide</span>
+</nav>-->
+<h1>Mega Alakazam Raid Guide – Best Counters, Weakness, CP & Strategy</h1>
 
- <header>
- <h1>Mega Alakazam Raid Guide — Counters, Weakness & Strategy</h1>
-<p>Your complete resource for defeating Mega Alakazam in Pokémon GO Mega raids.</p>
+<p>
+<strong>Mega Alakazam</strong> is a powerful Psychic-type Mega Raid Boss in Pokémon GO. 
+With extremely high attack stats and fast Psychic-type moves, this raid boss can deal heavy damage to unprepared teams.
+However, it also has clear weaknesses that trainers can exploit to defeat it efficiently.
+</p>
 
-</header>
+<p>
+In this Mega Alakazam raid guide, you will learn everything needed to win the battle, including the best counters,
+weaknesses, recommended moves, catch CP ranges, weather boosts, shiny availability, and expert raid strategies.
+Whether you are a beginner or an experienced Pokémon GO trainer, this guide will help you defeat Mega Alakazam quickly.
+</p>
 
+<div class="raid-quick-info">
+<p><strong>Raid Boss:</strong> Mega Alakazam</p>
+<div>
+<strong>Type:</strong>
+ <div class="type-wrapper">
+      <span class="type psychic">Psychic</span>
+</div>
+</div>
+<p><strong>Raid Tier:</strong> Mega Raid</p>
+<p><strong>Recommended Trainers:</strong> 3–5</p>
+<p><strong>Raid Boss CP:</strong> 45324</p>
+<p><strong>Shiny Available:</strong> Yes</p>
+<p><strong>Main Weakness:</strong> Dark, Ghost, Bug</p>
+</div>
   
    <p id="last-updated"></p>
 
@@ -410,50 +482,35 @@ html {
 
 <main>
 <div class="container">
+<section>
 
-  <!-- HERO CARD -->
-  
-    <div class="type-wrapper">
-      <span class="type psychic">Psychic</span>
-    </div>
-    <p class="summary" id="heroSummary">
-    Mega Alakazam is a Psychic-type Mega Raid Boss in Pokémon GO known for its fast attacks, high Special Attack, and challenging hit patterns. Though its typing gives it certain strengths, it also means clear weaknesses trainers can exploit when they choose the right counters. Defeating Mega Alakazam efficiently requires more than just picking the highest CP Pokémon — it requires understanding how its moves behave and how weather and typing influence the battle outcome.</p>
+<h2>🧭 Quick Navigation</h2>
+<div class="tabs">
+<a href="#stats" class="tab-btn">Stats</a>
+<a href="#weakness" class="tab-btn">Weakness</a>
+<a href="#moves" class="tab-btn">Moves</a>
+<a href="#counters" class="tab-btn">Best Counters</a>
+<a href="#cp" class="tab-btn">Catch CP</a>
+<a href="#weather" class="tab-btn">Weather Boost</a>
+<a href="#strategy" class="tab-btn">Raid Strategy</a>
+<a href="#shiny" class="tab-btn">Shiny</a>
+<a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
-  <p>Psychic-type Pokémon in raids are dangerous because many traditional fighters don’t have the bulk to withstand their charged attacks. However, since Mega Alakazam is primarily weak to Bug, Ghost, and Dark-type attacks, trainers can build teams focused around these types to take advantage of its weakness profile. This guide explains not only which Pokémon to use, but how to use them effectively to beat Mega Alakazam quickly whether you’re battling alone or in a group.</p>
 
-  <p>Below you’ll find detailed breakdowns of Mega Alakazam’s weaknesses, recommended counters, weather effects, and advanced battle strategies to improve your success rate in every raid encounter.</p>
+<h2>📖 Introduction</h2>
 
-  <!-- TAB NAV -->
-  <div class="tabs">
-  <a href="#stats" class="tab-btn">Stats</a>
-  <a href="#moves" class="tab-btn">Moves</a>
-  <a href="#counters" class="tab-btn">Counters</a>
-  <a href="#cp" class="tab-btn">CP</a>
-  <a href="#strategy" class="tab-btn">Strategy</a>
-  <a href="#evolution" class="tab-btn">Evolution</a>
-  <a href="#buddy" class="tab-btn">Buddy</a>
-  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
-  </div>
-
-<h2>Mega Alakazam Overview</h2>
 <p>
-Mega Alakazam’s Psychic typing makes it vulnerable to a few key types while resisting common moves. Its low defense and stamina mean battles can be completed quickly with high DPS attackers. Understanding its strengths and weaknesses is essential for a successful raid.
+Mega Alakazam is one of the most powerful Psychic-type Pokémon available in Pokémon GO raids. 
+Originally introduced in the first generation of Pokémon games, Alakazam is known for its incredible intelligence 
+and extremely high special attack power.
 </p>
 
-<!-- STATS -->
-  <section id="stats" class="card">
-    <h2>Stats & Basic Info</h2>
-    <table id="statsTable">
-      <tr><td>Type</td><td>Psychic</td></tr>
-      <tr><td>Max CP</td><td>5099</td></tr>
-      <tr><td>Weather Boost</td><td>Windy</td></tr>
-      <tr><td>Shiny</td><td>Yes</td></tr>
-    </table>
-  </section>
-
-<h2>🧬 About Mega Alakazam in Pokémon GO</h2>
-
-<p>Mega Alakazam is a <strong>Psychic-type</strong> Pokémon. When Mega Evolved, it gains massive attack power and provides damage bonuses to Psychic-type Pokémon in raids.</p>
+<p>
+When it Mega Evolves, Mega Alakazam becomes even more dangerous, gaining increased offensive strength and access 
+to fast Psychic-type moves that can quickly defeat weaker Pokémon. Trainers who challenge this raid boss should 
+prepare strong counters that exploit its weaknesses.
+</p>
 
 <p>Mega Alakazam is useful because:</p>
 <ul>
@@ -461,6 +518,30 @@ Mega Alakazam’s Psychic typing makes it vulnerable to a few key types while re
     <li>It is one of the strongest Psychic-type attackers in the game</li>
     <li>It is great for fast raid clears due to its high damage output</li>
 </ul>
+
+<p>
+Fortunately, Mega Alakazam has several weaknesses that can be used to defeat it effectively. Dark-type and Ghost-type 
+Pokémon perform particularly well against Psychic raid bosses. With the right team composition and strategy, 
+a small group of trainers can defeat Mega Alakazam and earn valuable Mega Energy rewards.
+</p>
+
+</section>
+
+<!-- STATS -->
+  <section id="stats" class="card">
+    <h2>📊 Mega Alakazam Stats</h2>
+    <table id="statsTable">
+      <tr><td>Type</td><td>Psychic</td></tr>
+      <tr><td>Max CP</td><td>5099</td></tr>
+      <tr><td>Weather Boost</td><td>Windy</td></tr>
+      <tr><td>Shiny</td><td>Yes</td></tr>
+<tr><td>Base Attack</td><td>367</td></tr>
+<tr><td>Base Defence</td><td>207</td></tr>
+<tr><td>Base Stamina</td><td>146</td></tr>
+    </table>
+<p>Mega Alakazam has one of the highest attack stats in Pokémon GO, which allows it to deal massive damage in raids.
+However, its low HP and defenses mean it can be defeated relatively quickly with the right counters.</p>
+  </section>
 
 <!--<p>🎥 Watch Mega Alakazam Raid Guide Video</p>
   <div class="video-container">
@@ -474,9 +555,35 @@ Mega Alakazam’s Psychic typing makes it vulnerable to a few key types while re
   </iframe>
   </div>-->
 
+<section id="cp" class="card">
+    <h2>🎯 Catch CP & 100% IV</h2>
+<p>After defeating Mega Alakazam, you will encounter a normal Alakazam.</p>
+<p>CP Range:</p>
+
+    <ul>
+          <li>No Weather Boost:  2150 – 2257 CP</li>
+          <li>Weather Boost:  2687 – 2821 CP CP</li>
+    </ul>
+
+<p>100% IV:</p>
+ <ul>
+          <li>2257 (Normal)</li>
+          <li>2821 (Weather Boosted)</li>
+    </ul>
+
+<p>Use:</p>
+
+ <ul>
+          <li>Golden Razz Berry</li>
+          <li>Curveball Excellent Throws</li>
+    </ul>
+
+  </section>
+
 <section id="weakness">
-        <h2>Weaknesses & resistances</h2>
+        <h2>⚠️ Mega Alakazam Weaknesses</h2>
         <div class="tbl">
+<p>Mega Alakazam is weak to the following types:</p>
           <table>
            <thead><tr><th>Category</th><th>Details</th></tr></thead>
             <tbody>
@@ -484,15 +591,15 @@ Mega Alakazam’s Psychic typing makes it vulnerable to a few key types while re
                 <td><strong>❌ Weak To:</strong></td>
                 <td>           
                   <img class="type-ico" src="images/bug.png" alt="Bug type weakness icon"> Bug •
-<img class="type-ico" src="images/ghost.png" alt="Ghost type weakness icon"> Ghost •
-                  <img class="type-ico" src="images/dark.png" alt="Dark type weakness icon"> Dark 
+<img class="type-ico" src="images/ghost.webp" alt="Ghost type weakness icon"> Ghost •
+                  <img class="type-ico" src="images/dark.webp" alt="Dark type weakness icon"> Dark 
                 </td>
               </tr>
               <tr>
                 <td><strong>✅ Resistant To:</strong></td>
                 <td>
-                <img class="type-ico" src="images/fighting.png" alt="Fighting type weakness icon"> Fighting •
-                <img class="type-ico" src="images/psychic.png" alt="Psychic type weakness icon"> Psychic 
+                <img class="type-ico" src="images/fighting.webp" alt="Fighting type weakness icon"> Fighting •
+                <img class="type-ico" src="images/psychic.webp" alt="Psychic type weakness icon"> Psychic 
                 </td>
               </tr>
             </tbody>
@@ -515,8 +622,9 @@ Ghost-type Pokémon are another excellent option. Moves like Lick or Shadow Claw
 </p>
   <ul>
     <li><strong>Chandelure:</strong> (Hex / Shadow Ball)</li>
-    <li><strong>Gengar:</strong> (Lick / Shadow Ball)</li>
-    <li><strong>Origin Giratina:</strong> (Shadow Claw / Shadow Ball)</li>
+<p>Many ghost attackers have very high attack stats.</p>
+        <li><strong>Origin Giratina:</strong> (Shadow Claw / Shadow Ball)</li>
+<p>Ghost moves hit Psychic Pokémon super effectively.</p>
   </ul>
 
   <h3>🌑 Dark-Type Counters (Top Choice)</h3>
@@ -525,8 +633,9 @@ Dark-type Pokémon are the strongest against Mega Alakazam’s Psychic typing. F
 </p>
   <ul>
     <li><strong>Yveltal:</strong> (Snarl / Dark Pulse)</li>
+<p>Psychic attacks do not deal extra damage to Dark Pokémon.</p>
     <li><strong>Darkrai:</strong> (Snarl)</li>
-    <li><strong>Tyranitar:</strong> (Bite / Brutal Swing)</li>
+<p>Many Dark attackers have very high DPS.</p>
   </ul>
 
   <h3>🐛 Bug-Type Counters</h3>
@@ -535,9 +644,10 @@ Bug-type Pokémon can also deal super-effective damage. They are generally lower
 </p>
   <ul>
     <li><strong>Pinsir:</strong> (Fury Cutter / X-Scissor)</li>
+<p>Bug moves are super effective vs Psychic.</p>
     <li><strong>Scizor:</strong> (Fury Cutter / X-Scissor)</li>
-    <li><strong>Volcarona:</strong> (Bug Bite / Bug Buzz)</li>
-  </ul>
+<p>Some options like Scizor are easy to obtain.</p>
+      </ul>
 
 </section>
 
@@ -546,44 +656,8 @@ Bug-type Pokémon can also deal super-effective damage. They are generally lower
 Dark-type Pokémon resist Psychic-type moves while dealing super-effective damage, making them the most reliable counters. Ghost-types also deal super-effective damage, but they take neutral damage in return. This makes Dark-types slightly safer in small-group raids.
 </p>
 
-  <section>
-  <h2>Battle Strategy & Team Planning</h2>
-  <p>Pokémon like Gengar, Darkrai, and Tyranitar can exploit this weakness with powerful charged attacks. When constructing your team, focus on Pokémon that not only hit super-effectively but also resist Mega Alakazam’s Psychic moves — this improves survivability.</p>
-
-  <p>Weather plays an important role. In Foggy or Partly Cloudy conditions, Dark-type moves receive a weather boost, making them particularly effective against Mega Alakazam. Trainers should avoid using primarily Fighting-type or Normal-type Pokémon, as they are often not resilient enough against Psychic-type charged moves without high defense stats.</p>
-
-  <p>Dodging charged attacks like Psychic or Future Sight can add valuable seconds for your team, especially in smaller raid lobbies. A good tactic is to send in your highest DPS counter first and then rotate in secondary attackers as needed. This helps maximize damage while maintaining overall team health.</p>
-
-  <p>Group coordination also matters. If you have multiple trainers available, balance your team composition with varied attackers to ensure you’re not relying only on a single Pokémon’s performance. This reduces the chance of switching mid-battle and losing valuable time. With thoughtful team choices and strategic dodging, Mega Alakazam should fall more consistently.</p>
-  </section>
-
-<h2>Best Mega Evolutions</h2>
-  <p>Recommended Megas to use against Mega Alakazam:</p>
-  <ul>
-    <li>Tyranitar, Houndoom, Salamence, Gyarados, Metagross, Absol, Alakazam – Dark boost</li>
-    <li>Rayquaza – Dragon boost</li>
-    <li>Rayquaza – Flying boost</li>
-    <li>Gengar, Banette, Gardevoir – Ghost boost</li>
-    <li>Pinsir, Scizor, Metagross – Bug boost</li>
-    <li>Alakazam, Gardevoir – Psychic boost</li>
-    <li>Gardevoir – Fairy boost</li>
-  </ul>
-
-  <!-- MOVES -->
-  <section id="moves" class="card">
-    <h2>Best Moveset</h2>
-    <ul id="movesList">
-      <li><strong>Fast:</strong> Psycho Cut, Confusion</li>
-      <li><strong>Charged:</strong> Focus Blast, Shadow Ball, Fire Punch, Future Sight</li>
-      <li><strong>Elite:</strong> Counter, Psychic, Dazzling Gleam</li>
-    </ul>
-
-<p class="pro-tip"><strong>Pro tip:</strong> While it has very low defense, its huge attack stat means that Shadow Ball and Focus Blast can instantly knock out careless counters.</p>
-
-  </section>
-<p>If your counters have the right movesets, these types will consistently deal super-effective damage throughout the fight.</p>
 <section id="regular">
-<h2>Best Regular Counters</h2>
+<h2>🏆 Best Regular Counters</h2>
 <p>Regular pokemon that amplify the right types give you a powerful edge. Below are top Regular counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -591,11 +665,11 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
@@ -603,7 +677,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
               <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/dawn_wings_necrozma.png" alt="Dawn Wings Necrozma"><strong>-->Dawn Wings Necrozma<!--</strong></div>-->
+                <img class="poke-ico" src="images/dawn_wings_necrozma.webp" alt="Dawn Wings Necrozma"><strong>-->Dawn Wings Necrozma<!--</strong></div>-->
                 </td>
                <td>Shadow Claw / Metal Claw / Psycho Cut</td>
                 <td>Dark Pulse / Iron Head / Future Sight / Outrage / Moongeist Beam</td>
@@ -614,7 +688,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 <tr>
               <td>
        <!--       <div class="poke-cell">
-                <img class="poke-ico" src="images/zacian.png" alt="Zacian"><strong>-->Zacian<!--</strong></div>-->
+                <img class="poke-ico" src="images/zacian.webp" alt="Zacian"><strong>-->Zacian<!--</strong></div>-->
                 </td>
                <td>Metal Claw / Air Slash</td>
                 <td>Play Rough / Close Combat / Giga Impact / Behemoth Blade</td>
@@ -635,7 +709,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
  <tr>
               <td>
   <!--              <div class="poke-cell">
-                <img class="poke-ico" src="images/gholdengo.png" alt="Gholdengo"><strong>-->Gholdengo<!--</strong></div>-->
+                <img class="poke-ico" src="images/gholdengo.webp" alt="Gholdengo"><strong>-->Gholdengo<!--</strong></div>-->
                 </td>
                <td>Astonish / Hex</td>
                 <td>Power Gem / Shadow Ball / Dazzling Gleam / Focus Blast</td>
@@ -646,7 +720,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
  <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/tyranitar.png" alt="Tyranitar"><strong>-->Tyranitar<!--</strong></div>-->
+                <img class="poke-ico" src="images/tyranitar.webp" alt="Tyranitar"><strong>-->Tyranitar<!--</strong></div>-->
                 </td>
                <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -657,7 +731,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/darkrai.png" alt="Darkrai"><strong>-->Darkrai<!--</strong></div>-->
+                <img class="poke-ico" src="images/darkrai.webp" alt="Darkrai"><strong>-->Darkrai<!--</strong></div>-->
                 </td>
                <td>Snarl / Feint Attack</td>
                 <td>Focus Blast / Shadow Ball / Dark Pulse</td>
@@ -669,7 +743,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/dusk_mane_necrozma.png" alt="Dusk Mane Necrozma"><strong>-->Dusk Mane Necrozma<!--</strong></div>-->
+                <img class="poke-ico" src="images/dusk_mane_necrozma.webp" alt="Dusk Mane Necrozma"><strong>-->Dusk Mane Necrozma<!--</strong></div>-->
                 </td>
                <td>Shadow Claw / Metal Claw / Psycho Cut</td>
                 <td>Dark Pulse / Iron Head / Future Sight / Outrage / Sunsteel Strike</td>
@@ -716,7 +790,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 </section>
 
 <section id="shadow">
-<h2>Best Shadow Counters</h2>
+<h2>👤 Best Shadow Counters</h2>
 <p>Shadow pokemon that amplify the right types give you a powerful edge. Below are top Shadow counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -724,11 +798,11 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
@@ -745,7 +819,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
  <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_darkrai.png" alt="Shadow Darkrai"><strong>-->Shadow Darkrai<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_darkrai.webp" alt="Shadow Darkrai"><strong>-->Shadow Darkrai<!--</strong></div>-->
                 </td>
                <td>Snarl / Feint Attack</td>
                 <td>Focus Blast / Shadow Ball / Dark Pulse</td>
@@ -767,7 +841,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
  <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_mewtwo.png" alt="Shadow Mewtwo"><strong>-->Shadow Mewtwo<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_mewtwo.webp" alt="Shadow Mewtwo"><strong>-->Shadow Mewtwo<!--</strong></div>-->
                 </td>
               <td>Psycho Cut / Confusion</td>
                 <td>Focus Blast / Flamethrower / Thunderbolt / Psychic / Ice Beam</td>
@@ -788,7 +862,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_chandelure.png" alt="Shadow Chandelure"><strong>-->Shadow Chandelure<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_chandelure.webp" alt="Shadow Chandelure"><strong>-->Shadow Chandelure<!--</strong></div>-->
                 </td>
                <td>Hex / Fire Spin / Incinerate</td>
                 <td>Shadow Ball / Overheat / Flame Charge / Energy Ball</td>
@@ -816,7 +890,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 </section>
 <p>If your counters have the right movesets, these types will consistently deal super-effective damage throughout the fight.</p>
 <section id="mega">
-<h2>Best Mega Counters</h2>
+<h2>⚡ Best Mega Counters</h2>
 <p>Mega pokemon that amplify the right types give you a powerful edge. Below are top Mega counters with short notes on why they excel.</p>
 
 <div class="gmax-scroll">
@@ -825,17 +899,17 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
 
 <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_tyranitar.png" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_tyranitar.webp" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
                 </td>
              <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -863,7 +937,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 <td>Boosts Ghost-types and delivers extremely high super-effective DPS.</td>
               </tr>
 <tr><td>
-       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_houndoom.png" alt="Mega Houndoom"><strong>-->Mega Houndoom<!--</strong></div>-->
+       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_houndoom.webp" alt="Mega Houndoom"><strong>-->Mega Houndoom<!--</strong></div>-->
                 </td>
                 <td>Fire Fang / Snarl</td>
                 <td>Fire Blast / Flamethrower / Crunch / Foul Play</td>
@@ -883,7 +957,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
               </tr>
 
 <tr><td>
-   <!--             <div class="poke-cell"><img class="poke-ico" src="images/mega_pinsir.png" alt="Mega Pinsir"><strong>-->Mega Pinsir<!--</strong></div>-->
+   <!--             <div class="poke-cell"><img class="poke-ico" src="images/mega_pinsir.webp" alt="Mega Pinsir"><strong>-->Mega Pinsir<!--</strong></div>-->
                 </td>
               <td>Rock Smash / Bug Bite / Fury Cutter</td>
                 <td>Vise Grip / Close Combat / Superpower / X-Scissor</td>
@@ -892,7 +966,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 <td>Boosts Bug-types and deals super-effective Bug damage.</td>
               </tr>
 <tr><td>
-       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_absol.png" alt="Mega Absol"><strong>-->Mega Absol<!--</strong></div>-->
+       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_absol.webp" alt="Mega Absol"><strong>-->Mega Absol<!--</strong></div>-->
                 </td>
                <td>Psycho Cut / Snarl</td>
                 <td>Megahorn / Thunder / Dark Pulse / Payback</td>
@@ -902,7 +976,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_gyarados.png" alt="Mega Gyarados"><strong>-->Mega Gyarados<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_gyarados.webp" alt="Mega Gyarados"><strong>-->Mega Gyarados<!--</strong></div>-->
                 </td>
                <td>Waterfall / Dragon Breath / Bite</td>
                 <td>Hydro Pump / Outrage / Twister / Crunch</td>
@@ -914,7 +988,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
  <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/mega_scizor.png" alt="Mega Scizor"><strong>-->Mega Scizor<!--</strong></div>-->
+                <img class="poke-ico" src="images/mega_scizor.webp" alt="Mega Scizor"><strong>-->Mega Scizor<!--</strong></div>-->
                 </td>
               <td>Fury Cutter / Bullet Punch</td>
                 <td>Iron Head / X-Scissor / Trailblaze / Night Slash</td>
@@ -924,7 +998,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
               </tr>
 
 <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_banette.png" alt="Mega Banette"><strong>-->Mega Banette<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_banette.webp" alt="Mega Banette"><strong>-->Mega Banette<!--</strong></div>-->
                 </td>
               <td>Hex / Shadow Claw</td>
                 <td>Shadow Ball / Thunder / Dazzling Gleam</td>
@@ -934,7 +1008,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
               </tr>
 
  <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_metagross.png" alt="Mega Metagross"><strong>-->Mega Metagross<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_metagross.webp" alt="Mega Metagross"><strong>-->Mega Metagross<!--</strong></div>-->
                 </td>
               <td>Fury Cutter / Bullet Punch / Zen Headbutt</td>
                 <td>Earthquake / Flash Cannon / Psychic</td>
@@ -944,7 +1018,7 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
               </tr>
 
 <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_gardevoir.png" alt="Mega Gardevoir"><strong>-->Mega Gardevoir<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_gardevoir.webp" alt="Mega Gardevoir"><strong>-->Mega Gardevoir<!--</strong></div>-->
                 </td>
               <td>Magical Leaf / Charge Beam / Confusion / Charm</td>
                 <td>Shadow Ball / Psychic / Triple Axel / Dazzling Gleam</td>
@@ -957,51 +1031,10 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
           </table>
          </div>
 </div>
-
-    
 </section>
 
-
-<!-- CP -->
-  <section id="cp" class="card">
-    <h2>CP Ranges</h2>
-<p>After defeating Mega Alakazam, you will catch a normal Alakazam.</p>
-    <ul>
-          <li><strong>Perfect (L20):</strong> 2,475-2,577 CP</li>
-          <li><strong>Weather Boost (L25):</strong> 3,094-3,221 CP</li>
-          <li><span class="pill">Boosted by: <strong>Windy</strong></span></li>
-    </ul>
-  </section>
-
-<section class="card" id="weather">
-      <h2>🌦️ Weather Boost</h2>
-
-<p>Mega Alakazam gets a weather boost in:</p>
-
-<table>
-<tr>
-<th>Weather</th>
-<th>Effect</th>
-</tr>
-<tr>
-<td>Windy</td>
-<td>boosts Psychic-types</td>
-</tr>
-<tr>
-<td>Rainy</td>
-<td>boosts Bug-types.</td>
-</tr>
-<tr>
-<td>Foggy</td>
-<td>boosts Dark & Ghost</td>
-</tr>
-</table>
-
-
-          </section>
-
 <section class="card">
-  <h2>Revive & Potion Cost</h2>
+  <h2>💊 Revive & Potion Cost</h2>
   <ul>
     <li>Average revives used: 8–14</li>
     <li>Average potions used: 10–18</li>
@@ -1010,22 +1043,13 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
   </ul>
 </section>
 
-<!--<section class="card">
-  <h2>Seasonal Availability</h2>
-  <ul>
-    <li>Appears in Mega Raids during special events</li>
-    <li>Returns approximately once every 6–12 months</li>
-    <li>Best time to farm Mega Energy is during debut rotation</li>
-  </ul>
-</section>-->
-
 <section class="card">
-  <h2>Common Raid Mistakes</h2>
+  <h2>❌ Common Raid Mistakes</h2>
   <p>Avoid using fragile Water or Ice attackers—they'll often be outpaced by Alakazam's high damage. Be cautious if Mega Alakazam runs Shadow Ball or Focus Blast, as these can quickly knock out fragile counters.</p>
 </section>
 
-
-<h2>Team Composition Example</h2>
+<section class="card">
+<h2>🧩 Best Team Compositions</h2>
 
 <ul>
 <li>Lead with strongest Dark-type attacker</li>
@@ -1038,8 +1062,6 @@ Dark-type Pokémon resist Psychic-type moves while dealing super-effective damag
 Avoid Psychic and Fighting Pokémon for offense, 
 as they are less effective and may faint quickly.
 </p>
-
-<h2>Recommended Teams</h2>
 
 <h3>Optimized Team</h3>
 <ul>
@@ -1061,7 +1083,10 @@ as they are less effective and may faint quickly.
   <li>Banette</li>
 </ul>
 
-<h2>Recommended Group Size</h2>
+</section>
+
+<section class="card">
+<h2>👥 Raid Difficulty & Trainers Needed</h2>
 
 <p>
 Due to its low stamina, Mega Alakazam can be defeated quickly with high-DPS counters.
@@ -1077,24 +1102,126 @@ Due to its low stamina, Mega Alakazam can be defeated quickly with high-DPS coun
 High-level trainers using optimized Dark- or Ghost-type Pokémon can easily defeat Mega Alakazam even in small groups.
 </p>
 
-<!-- STRATEGY -->
-  <section id="strategy" class="card">
-    <h2>Raid Strategy</h2>
-    <h3>Use High DPS Counters</h3>
+</section>
+
+<section id="strategy" class="card">
+    <h2>🧠 Raid Strategy & Advanced Tips</h2>
+    <h3>1. Use High DPS Counters</h3>
 <p>
 Mega Alakazam is frail, so high-DPS counters like Dark and Ghost Pokémon are the best choice. Focus on maximizing damage output rather than tanking hits.
 </p>
 
-<h3>Avoid Psychic and Fighting Types</h3>
+<h3>2. Avoid Psychic and Fighting Types</h3>
 <p>
 While Psychic and Fighting Pokémon may survive longer, they deal neutral damage and can be quickly defeated by Mega Alakazam’s charged attacks. Stick to super-effective types.
 </p>
 
-<h3>Coordinate Mega Evolutions</h3>
+<h3>3. Coordinate Mega Evolutions</h3>
 <p>
 A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate with your group to ensure the Mega boost is active throughout the raid for maximum efficiency.
 </p>
+ 
+  <p>Pokémon like Gengar, Darkrai, and Tyranitar can exploit this weakness with powerful charged attacks. When constructing your team, focus on Pokémon that not only hit super-effectively but also resist Mega Alakazam’s Psychic moves — this improves survivability.</p>
+
+  <p>Weather plays an important role. In Foggy or Partly Cloudy conditions, Dark-type moves receive a weather boost, making them particularly effective against Mega Alakazam. Trainers should avoid using primarily Fighting-type or Normal-type Pokémon, as they are often not resilient enough against Psychic-type charged moves without high defense stats.</p>
+
+  <p>Dodging charged attacks like Psychic or Future Sight can add valuable seconds for your team, especially in smaller raid lobbies. A good tactic is to send in your highest DPS counter first and then rotate in secondary attackers as needed. This helps maximize damage while maintaining overall team health.</p>
+
+  <p>Group coordination also matters. If you have multiple trainers available, balance your team composition with varied attackers to ensure you’re not relying only on a single Pokémon’s performance. This reduces the chance of switching mid-battle and losing valuable time. With thoughtful team choices and strategic dodging, Mega Alakazam should fall more consistently.</p>
   </section>
+
+<section class="card" id="weather">
+      <h2>🌦️ Weather Boost</h2>
+
+<p>Mega Alakazam gets a weather boost in:</p>
+
+
+<h3>🌬️ Windy Weather</h3>
+<ul>
+<li>boosts Psychic-types counters.</li>
+</ul>
+<h3>🌧️ Rainy Weather</h3>
+<ul>
+<li>boosts Bug-types counters.</li>
+</ul>
+<h3>🌫️ Foggy Weather</h3>
+<ul>
+<li>boosts Dark & Ghost counters.</li>
+</ul>
+
+          </section>
+
+<section id="moves" class="card">
+    <h2>🌀 Mega Alakazam Moveset</h2>
+<p>The best moveset for Mega Alakazam is:</p>
+
+<h3>🗡️ Fast Moves</h3>
+<ul>
+  <li>Psycho Cut</li>
+  <li>Confusion</li>
+</ul>
+
+<h3>💥 Charged Moves</h3>
+<ul>
+  <li>Focus Blast</li>
+<li>Shadow Ball</li>
+<li>Fire Punch</li>
+<li>Future Sight</li>
+</ul>
+
+  <h3>🔄 Elite Moves</h3>
+   <ul>
+   <li>Counter</li>
+<li>Psychic</li>
+<li>Dazzling Gleam</li>
+    </ul>
+
+
+<p class="pro-tip"><strong>Pro tip:</strong> While it has very low defense, its huge attack stat means that Shadow Ball and Focus Blast can instantly knock out careless counters.</p>
+
+  </section>
+<p>If your counters have the right movesets, these types will consistently deal super-effective damage throughout the fight.</p>
+
+</section>
+
+<section id="pvepvp">
+<h2>🎮 Is Mega Alakazam Good in PvE and PvP?</h2>
+<h3>Is Mega Alakazam Good in PvP?</h2>
+
+<p>
+Mega Evolutions are not allowed in most PvP leagues, so Mega Alakazam is mainly used for raids
+</p>
+
+<h3>Is Mega Alakazam Good in PvE?</h2>
+
+<p>
+Mega Alakazam is one of the best Psychic-type Mega evolutions for raids because it boosts Psychic-type damage for all teammates.
+
+It can significantly increase raid damage against Fighting and Poison-type raid bosses.
+</p>
+
+<section id="shiny">
+
+<h2>✨ Can Mega Alakazam Be Shiny in Pokémon GO?</h2>
+
+<p>
+Yes, trainers have a chance to encounter a <strong>Shiny Alakazam</strong> after defeating Mega Alakazam in a raid battle. 
+While the Mega form itself cannot be caught, players will encounter a regular Alakazam after the raid, 
+which may appear in its shiny form.
+</p>
+
+<p>
+Shiny Alakazam has a slightly different color compared to the normal version, with a more golden appearance. 
+Because shiny Pokémon are rare, many trainers participate in multiple Mega raids to increase their chances of 
+finding one.
+</p>
+
+<p>
+Completing Mega raids also rewards trainers with Mega Energy, which can later be used to Mega Evolve their own 
+Alakazam in Pokémon GO.
+</p>
+
+</section>
 
   <!-- EVOLUTION -->
   <section id="evolution" class="card">
@@ -1103,11 +1230,15 @@ A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate
    <tr><td>Evolution Line</td><td>Base(Abra) → Stage(Kadabra) → Final(Alakazam) → Mega(Alakazam)</td></tr>
     <tr><td>Mega Energy (First)</td><td>200</td></tr>
     <tr><td>Subsequent Cost</td><td>40</td></tr>
+<tr><td>Buddy Distance</td><td>3 km</td></tr>
     <tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
     <tr><td>Mega Boost Bonus(Walking)</td><td>Extra Candy</td></tr>
     <tr><td>Mega Boost Bonus(Catch)</td><td>Extra Psychic-type Candy</td></tr>
+<tr><td>Mega Boost Bonus(Buddy^)</td><td>5 Mega Energy per candy</td></tr>
   </table>
 </section>
+
+(^ denotes first mega evolved)
 
 <!--<section id="resources" class="card">
   <h2>Revives, Potions & Availability</h2>
@@ -1120,51 +1251,38 @@ A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate
 
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
-    <h2>Buddy Distance</h2>
+    <h2>🚶 Buddy Distance</h2>
     <p id="buddyDistance">3 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
-  <section id="shadowMegaSection" class="card"><h2>Shadow & Mega Comparison</h2></section>
+  <section id="shadowMegaSection" class="card"><h2>⚖️ Shadow & Mega Comparison</h2></section>
 
 </div>
 
 <!-- CONFIG + JS -->
 <script>
+document.addEventListener("DOMContentLoaded", function () {
   const raidConfig = {
     raidBoss: "Mega Alakazam",
     megaType: "Psychic",
     pageDescription: "Mega Alakazam Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
     heroSummary: "Mega Alakazam is one of the Psychic-type Pokémon in Pokémon GO raids.",
-    moves: [
-      { type: "Fast", name: "Psycho Cut, Confusion" },
-      { type: "Charged", name: "Focus Blast, Shadow Ball, Fire Punch, Future Sight" },
-      { type: "Elite", name: "Counter, Psychic, Dazzling Gleam" }
-    ],
-    counters: [
-  { name: "Dusk Mane Necrozma", description: "Strong Ghost-type attacker" },
-  { name: "Gardevoir", description: "Fairy-type option with Shadow Ball" }, 
-  { name: "Origin Giratina", description: "Top Ghost-type bulk attacker" },
-  { name: "Yveltal", description: "Top Dark-type DPS option" },
-  { name: "Darkrai", description: "High DPS Dark-type attacker" },
-  { name: "Salamence", description: "Bite + Brutal Swing Dark attacker" },
-  { name: "Pinsir", description: "Bug-type DPS option" },
-  { name: "Scizor", description: "Bug/Steel bulk counter" },
-  { name: "Volcarona", description: "Bug-type damage dealer" }
-],
+    
     buddyDistance: "3 km (per Pokémon GO buddy distance)"
   };
   
-  // Populate moves
-  const movesList = document.getElementById("movesList");
-  movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
+ // Populate buddy distance
+  const buddy = document.getElementById("buddyDistance");
+  if (buddy) {
+    buddy.textContent = raidConfig.buddyDistance;
+  }
 
-  // Populate buddy distance
-  document.getElementById("buddyDistance").textContent = raidConfig.buddyDistance;
-
-  // Generate Shadow vs Mega
+  // Generate Shadow vs Mega comparison
   function generateShadowMegaComparison(config) {
     const container = document.getElementById("shadowMegaSection");
+    if (!container) return;
+
     container.innerHTML = `
       <h2>Shadow vs Mega Pokémon Comparison</h2>
       <p>
@@ -1214,21 +1332,165 @@ A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate
   }
 
   generateShadowMegaComparison(raidConfig);
-
+});
 </script>
 
-<h2>Rewards</h2>
+<h2>🧬 Best Mega Evolutions</h2>
+  <p>Recommended Megas to use against Mega Alakazam:</p>
   <ul>
-    <li>Mega Energy for Alakazam</li>
-    <li>Chance to catch Alakazam (with boosted IVs)</li>
-    <li>Rare Candy & XL Candy</li>
+    <li>Tyranitar, Houndoom, Salamence, Gyarados, Metagross, Absol, Alakazam – 🌑 Dark boost</li>
+    <li>Rayquaza – 🐉 Dragon boost</li>
+    <li>Rayquaza – 🕊️ Flying boost</li>
+    <li>Gengar, Banette, Gardevoir – 👻 Ghost boost</li>
+    <li>Pinsir, Scizor, Metagross – 🐛 Bug boost</li>
+    <li>Alakazam, Gardevoir – 🔮 Psychic boost</li>
+    <li>Gardevoir – ✨ Fairy boost</li>
   </ul>
+
+
+<h2>🎁 Raid Rewards</h2>
+  <section id="raid-rewards">
+
+<p>
+Defeating <strong>Mega Alakazam</strong> in a Mega Raid in Pokémon GO rewards trainers with 
+various useful items such as Rare Candy, Golden Razz Berries, and Mega Energy. 
+These rewards help players power up Pokémon, heal their teams, and Mega Evolve 
+their own Alakazam.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Reward</th>
+<th>Typical Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Golden Razz Berry</td>
+<td>2 – 6</td>
+</tr>
+<tr>
+<td>Rare Candy</td>
+<td>2 – 6</td>
+</tr>
+<tr>
+<td>Revive</td>
+<td>3 – 10</td>
+</tr>
+<tr>
+<td>Hyper Potion</td>
+<td>3 – 10</td>
+</tr>
+<tr>
+<td>Fast TM</td>
+<td>0 – 1</td>
+</tr>
+<tr>
+<td>Charged TM</td>
+<td>0 – 1</td>
+</tr>
+<tr>
+<td>Stardust</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Mega Energy Reward</h3>
+
+<p>
+Trainers also receive <strong>Mega Alakazam Mega Energy</strong> after completing the raid. 
+The amount depends on how quickly the raid boss is defeated.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Raid Completion Speed</th>
+<th>Mega Energy Reward</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very Fast</td>
+<td>200 Mega Energy</td>
+</tr>
+<tr>
+<td>Fast</td>
+<td>175 Mega Energy</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>150 Mega Energy</td>
+</tr>
+<tr>
+<td>Slow</td>
+<td>100 Mega Energy</td>
+</tr>
+</tbody>
+</table>
+
+</section>
 
   <h2>📌 Is Mega Alakazam Worth Raiding?</h2>
   <p>Mega Alakazam is valuable for its Mega Energy, which can be used to power up other Psychic-type Pokémon. Its high attack makes it ideal for quick raids and for practicing coordinated Mega strategies. Despite being frail, it is easy to farm if you have strong counters.</p> 
 
+<section class="pokemon-gallery">
+
+<h2>🖼️ Regular vs Shiny Mega Alakazam Forms</h2>
+<p>
+Shiny Alakazam has a slightly different color compared to the normal version, with a more golden appearance. 
+</p>
+
+<div class="image-grid">
+
+<div class="image-card">
+<img src="abra.webp" alt="Normal Abra" loading="lazy" width="200" height="200">
+<p>Abra</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_abra.webp" alt="Shiny Abra" loading="lazy" width="200" height="200">
+<p>Shiny Abra</p>
+</div>
+
+<div class="image-card">
+<img src="kadabra.webp" alt="Normal Kadabra" loading="lazy" width="200" height="200">
+<p>Kadabra</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_kadabra.webp" alt="Shiny Kadabra" loading="lazy" width="200" height="200">
+<p>Shiny Kadabra</p>
+</div>
+
+<div class="image-card">
+<img src="alakazam.webp" alt="Normal Alakazam" loading="lazy" width="200" height="200">
+<p>Alakazam</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_alakazam.webp" alt="Shiny Alakazam" loading="lazy" width="200" height="200">
+<p>Shiny Alakazam</p>
+</div>
+
+<div class="image-card">
+<img src="mega_alakazam.webp" alt="Normal Mega Alakazam" loading="lazy" width="200" height="200">
+<p>Mega Alakazam</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_mega_alakazam.webp" alt="Shiny Mega Alakazam" loading="lazy" width="200" height="200">
+<p>Shiny Mega Alakazam</p>
+</div>
+
+</div>
+
+</section>
+
         <section id="faq" aria-label="FAQ">
-          <h2>FAQ</h2>
+          <h2>❓ FAQ</h2>
           <h3>Can Mega Alakazam be shiny in Pokémon GO?</h3>
         <p>Shiny Alakazam has been released in raids or events.</p>
         <h3>Is Mega Alakazam hard to defeat?</h3>
@@ -1248,38 +1510,54 @@ A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate
 
         </section>
 
+<section id="related">
+
+<h2>🔗 Related Raid Guides</h2>
+
+<p>You may also find these Pokémon GO raid guides useful:</p>
+
+<ul>
+
+<li><a href="mega_pinsir.html">Mega Pinsir Raid Guide</a></li>
+
+<li><a href="mega_houndoom.html">Mega Houndoom Raid Guide</a></li>
+
+<!--<li><a href="/raids/mega_slowbro.html">Mega Slowbro Raid Guide</a></li>
+
+<li><a href="/raids/mega_steelix.html">Mega Steelix Raid Guide</a></li>-->
+
+<li><a href="groudon.html">Primal Groudon Raid Guide</a></li>
+
+<li><a href="kyogre.html">Primal Kyogre Raid Guide</a></li>
+
+</ul>
+
+</section>
+
 <h2>🏁 Conclusion</h2>
 <p>Mega Alakazam raids are fast-paced and efficient when using high-DPS Dark- and Ghost-type counters. Coordinate Mega boosts, take advantage of Foggy weather, and focus on exploiting its weaknesses for maximum efficiency. With the right preparation, you can defeat Mega Alakazam quickly and collect valuable Mega Energy.</p>
-
-<!--<h2>Related Guides</h2>
-<p>Looking for more counters? Check out our 
-  <a href="mega_tyranitar.html">Mega Tyranitar Raid Guide,</a> 
- <a href="mega_rayquaza.html">Mega Rayquaza Raid Guide,</a> 
-<a href="mega_gengar.html">Mega Gengar Raid Guide</a> 
-</p>-->
-
- <aside class="card" aria-label="Sidebar">
-        <h2>Quick picks</h2>
-        <ul>
-          <li><strong>Best Mega Team:</strong> Tyranitar, Rayquaza, Gengar</li>
-          <li><strong>Best Shadow Team:</strong> Tyranitar, Darkrai, Hydreigon</li>
-          <li><strong>Best Regular Team:</strong> Dawn Wings Necrozma</li>
-        </ul>
-      </aside>
-
-<h2>Summary</h2>
 <ul>
 <li>Focus on Dark, Ghost, or Bug types.</li>
 <li>Expect huge damage coming in, but low bulk from the boss.</li>
 <li>Dodge dangerous charged moves to reduce revives.</li>
 <li>Bring a team-boosting Mega if possible.</li>
 </ul>
-   
-  
+
+<section id="quick-picks">
+ <!--<aside class="card" aria-label="Sidebar">-->
+        <h2>⚡Quick picks</h2>
+        <ul>
+          <li><strong>Best Mega Team:</strong> Tyranitar, Rayquaza, Gengar</li>
+          <li><strong>Best Shadow Team:</strong> Tyranitar, Darkrai, Hydreigon</li>
+          <li><strong>Best Regular Team:</strong> Dawn Wings Necrozma</li>
+        </ul>
+      <!--</aside>-->  
+</section>
 
 <section class="author-box">
       <h3>About the Author</h3>
-      <p>Written by <strong>Pokémon Gaming Team</strong> — bringing expert raid guides and battle strategies. <!--Explore more guides like <a href="mega_scizor.html">Mega Scizor</a>, <a href="mega_pinsir.html">Mega Pinsir</a>.--></p>
+      <p>Written by Abhishek — Level 50 Pokémon GO Trainer (since 2019).
+Completed 500+ Mega raids and specializes in raid optimization and counter analysis. <!--Explore more guides like <a href="mega_scizor.html">Mega Scizor</a>, <a href="mega_pinsir.html">Mega Pinsir</a>.--></p>
     </section>
 </main>
 
@@ -1297,7 +1575,7 @@ A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate
 
     </p> 
 
-<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
+<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only. This website is not affiliated with or endorsed by Nintendo, Niantic, or The Pokémon Company.
 </p>
 </div>
 </footer>
@@ -1309,4 +1587,5 @@ A single Mega Dark or Mega Ghost Pokémon provides a team-wide boost. Coordinate
 
 </body>
 </html>
+
 

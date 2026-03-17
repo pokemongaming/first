@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="posts.css">
 <link rel="alternate" hreflang="x-default" href="https://pokemongaming.in/raids/reshiram.html">
-
+<meta name="author" content="Abhishek">
 <meta property="og:title" content="Reshiram Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
   <meta property="og:description" content="Detailed Reshiram raid guide for Pokémon GO players worldwide — best counters, moves, CP ranges, weather boosts and strategy for US/UK trainers.">
   <meta property="og:type" content="article">
@@ -44,14 +44,6 @@
     },
     {
       "@type": "Question",
-      "name": "Can Reshiram be defeated with 3 trainers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, if all trainers use optimized high-level Dragon counters."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "What is the biggest threat?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -64,6 +56,38 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A Dragon-type Mega Evolution boosts overall Dragon damage for the team."
+      }
+    },
+{
+      "@type": "Question",
+      "name": "Can Reshiram be defeated with 3 trainers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if all trainers use optimized high-level Dragon counters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What moves does Reshiram use in raids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reshiram can use moves like Fusion Flare, Draco Meteor, Overheat, and Dragon Pulse, dealing massive Fire and Dragon-type damage to opponents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Reshiram difficult to defeat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With extremely high special attack and solid overall stats, Reshiram can be a challenging raid boss. Properly powered Dragon or Rock-type counters make the battle easier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Reshiram unique?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Its Dragon/Fire typing, legendary status, and signature move Fusion Flare make Reshiram visually impressive and strategically powerful in raid battles."
       }
     }
   ]
@@ -141,8 +165,8 @@
       --toxic: #9333ea;
       --ring: 0 10px 30px rgba(22,163,74,0.1);
     }
-
-.video-container {
+  
+  .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -157,7 +181,7 @@
   width: 100%;
   height: 100%;
 }
-  
+   
     .toc {
       background: #f0fdf4;
       border-left: 5px solid var(--brand);
@@ -267,14 +291,24 @@
   background: #705746;
 }
 
-/* Normal */
-.type.normal {
-  background: #705743;
-}
-
 /* Dragon */
 .type.dragon {
   background: #6F35FC;
+}
+
+.breadcrumb{
+font-size:14px;
+margin:15px 0;
+color:#555;
+}
+
+.breadcrumb a{
+color:#0073e6;
+text-decoration:none;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
 }
 
 /* Fairy */
@@ -287,6 +321,36 @@
 .type.steel {
   background: #B7B7CE;
   color: #000;
+}
+
+.pokemon-gallery{
+max-width:900px;
+margin:40px auto;
+text-align:center;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.image-card{
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img{
+width:100%;
+max-width:200px;
+height:auto;
+}
+
+.image-card p{
+margin-top:8px;
+font-weight:600;
 }
 
 /* Smooth scroll */
@@ -381,13 +445,34 @@ html {
 
 <body>
 <section class="hero">
+<!--<nav class="breadcrumb">
+<a href="https://pokemongaming.in/">Home</a> ›
+<a href="https://pokemongaming.in/raids/">Raids</a> ›
+<span>Reshiram Raid Guide</span>
+</nav>-->
+<h1>Reshiram Raid Guide – Best Counters, Weakness, CP & Strategy</h1>
 
- <header>
- <h1>Reshiram Raid Guide — Counters, Weakness & Strategy</h1>
-<p>Your complete resource for defeating <strong>FIERY DRAGON</strong> in Pokémon GO raids.</p>
+<p>
+<strong>Reshiram</strong> is a Legendary Dragon and Fire-type Raid Boss in Pokémon GO. 
+It has a few key vulnerabilities, including Dragon, Ground, Rock, and especially Dragon-type counters. 
+This guide will show you the best counters, weaknesses, movesets, CP ranges, weather boosts, and strategies to defeat Reshiram efficiently.
+</p>
 
-</header>
-
+<div class="raid-quick-info">
+<p><strong>Raid Boss:</strong> Reshiram</p>
+<div>
+<strong>Type:</strong>
+ <div class="type-wrapper">
+      <span class="type dragon">Dragon</span>
+<span class="type fire">Fire</span>
+</div>
+</div>
+<p><strong>Raid Tier:</strong> Legendary Raid</p>
+<p><strong>Recommended Trainers:</strong> 3–5</p>
+<p><strong>Raid Boss CP:</strong> 53394</p>
+<p><strong>Shiny Available:</strong> Yes</p>
+<p><strong>Major Weakness:</strong> Dragon, Ground, Rock</p>
+</div>
   
    <p id="last-updated"></p>
 
@@ -408,47 +493,47 @@ html {
 
 <main>
 <div class="container">
+<section>
+<h2>🧭 Quick Navigation</h2>
+<div class="tabs">
+<a href="#stats" class="tab-btn">Stats</a>
+<a href="#weakness" class="tab-btn">Weakness</a>
+<a href="#moves" class="tab-btn">Moves</a>
+<a href="#counters" class="tab-btn">Best Counters</a>
+<a href="#cp" class="tab-btn">Catch CP</a>
+<a href="#weather" class="tab-btn">Weather Boost</a>
+<a href="#strategy" class="tab-btn">Raid Strategy</a>
+<a href="#shiny" class="tab-btn">Shiny</a>
+<a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
-  <!-- HERO CARD -->
-  
-    <div class="type-wrapper">
+<h2>📖 Introduction</h2>
 
-      <span class="type dragon">Dragon</span>
-      <span class="type fire">Fire</span>
-    </div>
-    <p class="summary" id="heroSummary">
-      Reshiram is a Legendary Dragon and Fire-type raid boss in Pokémon GO known for its powerful moveset and tough defensive stats. Its dual typing gives it specific resistances, but also clear exploitable weaknesses that trainers can take advantage of. Simply using high-CP Pokémon isn’t enough — successful raids depend on picking counters that hit Reshiram’s weaknesses while balancing survivability and damage output.</p>
-
-  <p>Reshiram’s unique combination of Dragon and Fire means it resists many common attacking types while being weak to Rock, Dragon, Ground moves. Weather conditions and move effectiveness also influence how battles play out, so adjusting your team based on weather boosts can make a big difference. This guide breaks down the best counters and explains not only *which* Pokémon to use, but *why* and *how* to use them effectively.</p>
-
-  <p>Below, you’ll find Reshiram’s weaknesses, recommended counters, weather impact analysis, and tactical battle strategies to help you clear this raid reliably — whether you’re raiding solo or with a group.</p> 
-
-  <!-- TAB NAV -->
-  <div class="tabs">
-  <a href="#stats" class="tab-btn">Stats</a>
-  <a href="#moves" class="tab-btn">Moves</a>
-  <a href="#counters" class="tab-btn">Counters</a>
-  <a href="#cp" class="tab-btn">CP</a>
-  <a href="#strategy" class="tab-btn">Strategy</a>
-  
-  <a href="#buddy" class="tab-btn">Buddy</a>
-  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
-  </div>
-
-<h2>Reshiram Overview</h2>
 <p>
-Reshiram is a Legendary Pokémon known as the Vast White Pokémon. It represents truth and is closely associated with the Unova region's mythology. In Pokémon GO raids, Reshiram appears as a powerful Tier 5 raid boss with extremely strong attack stats.
+Reshiram is a powerful Legendary Pokémon with Dragon and Fire typing, making it one of the most challenging raids in Pokémon GO. 
+It deals heavy damage with moves like <strong>Dragon Breath</strong> and <strong>Fusion Flare</strong>, which can threaten unprepared teams.
 </p>
+
+<p>
+Despite its strength, Reshiram has several exploitable weaknesses. Trainers can take advantage of Dragon, Ground, and Rock-type counters 
+to defeat it faster. Whether you are a beginner or an experienced raider, this guide will help you plan your team, understand 
+its moves, and maximize your raid rewards.
+</p>
+</section> 
 
 <!-- STATS -->
   <section id="stats" class="card">
-    <h2>Stats & Basic Info</h2>
+    <h2>📊 Reshiram Stats</h2>
     <table id="statsTable">
       <tr><td>Type</td><td>Dragon / Fire</td></tr>
       <tr><td>Max CP</td><td>4620</td></tr>
       <tr><td>Weather Boost</td><td>Windy, Sunny</td></tr>
       <tr><td>Shiny</td><td>Yes</td></tr>
+<tr><td>Base Attack</td><td>275</td></tr>
+<tr><td>Base Defence</td><td>170</td></tr>
+<tr><td>Base Stamina</td><td>225</td></tr>
     </table>
+<p>Reshiram is very offensive-focused, so dodging moves can help conserve your counters.</p>
   </section>
 
   <!--<p>🎥 Watch Reshiram Raid Guide Video</p>-->
@@ -462,6 +547,32 @@ Reshiram is a Legendary Pokémon known as the Vast White Pokémon. It represents
     loading="lazy">
   </iframe>
 </div>-->
+
+<section id="cp" class="card">
+    <h2>🎯 Catch CP & 100% IV</h2>
+<p>After defeating Reshiram, you’ll encounter a wild Reshiram.</p>
+
+<p>CP Range:</p>
+
+    <ul>
+          <li>No Weather Boost:  2,217-2,307 CP</li>
+          <li>Weather Boost:  2,771-2,884 CP</li>
+    </ul>
+
+<p>100% IV:</p>
+ <ul>
+          <li>2307 (Normal)</li>
+          <li>2884 (Weather Boosted)</li>
+    </ul>
+
+<p>Use:</p>
+
+ <ul>
+          <li>Golden Razz Berry</li>
+          <li>Curveball Excellent Throws</li>
+    </ul>
+
+  </section>
   
 <section id="weakness">
         <h2>⚠️ Reshiram Weaknesses</h2>
@@ -475,30 +586,30 @@ Reshiram is weak against three main types:
               <tr>
                 <td><strong>❌ Weak To:</strong></td>
                 <td>           
-                  <img class="type-ico" src="images/rock.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Rock •
-                  <img class="type-ico" src="images/ground.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Ground •
-                  <img class="type-ico" src="images/dragon.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Dragon  
+                  <img class="type-ico" src="images/rock.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Rock •
+                  <img class="type-ico" src="images/ground.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Ground •
+                  <img class="type-ico" src="images/dragon.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Dragon  
                 </td>
               </tr>
               <tr>
                 <td><strong>✅ Resistant To:</strong></td>
                 <td>
                 <img class="type-ico" src="images/bug.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Bug •
-                <img class="type-ico" src="images/steel.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Steel •
-                <img class="type-ico" src="images/fire.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Fire •
-                <img class="type-ico" src="images/grass.png" alt="Best Pokémon Counters for Reshiram Raid US/UK">  Grass •
-                <img class="type-ico" src="images/electric.png" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Electric 
+                <img class="type-ico" src="images/steel.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Steel •
+                <img class="type-ico" src="images/fire.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Fire •
+                <img class="type-ico" src="images/grass.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK">  Grass •
+                <img class="type-ico" src="images/electric.webp" alt="Best Pokémon Counters for Reshiram Raid US/UK"> Electric 
                 </td>
               </tr>
             </tbody>
           </table>
-<p><strong>Notes:</strong> Because Reshiram has no double weakness, using high-DPS super-effective counters is critical for a fast and safe raid clear.</p>
+<p><strong>Notes:</strong> Fire typing makes Reshiram resistant to Grass, Bug, Steel, Ice, and Fire, so avoid these counters.</p>
         </div>
 </section>
 
 <section id="counters">
      <h2>🗡️ Best Counters for Reshiram</h2>
-
+<p>The strongest Pokémon to defeat Reshiram are Dragon-type or Rock-type attackers.</p>
   <h3>🐉 Dragon-Type Counters (Highest DPS Option)</h3>
 
 <p>
@@ -514,8 +625,11 @@ Dragon attackers may faint quickly.
 </ul>
   <ul>
     <li><strong>Tyrantrum :</strong> (Dragon Tail)</li>
+<p>Top DPS Dragon counter</p>
     <li><strong>Haxorus :</strong> (Dragon Tail / Breaking Swipe)</li>
+<p>Dual STAB, strong overall</p>
     <li><strong>Latios:</strong> (Dragon Breath / Dragon Claw)</li>
+<p>Very resistant to Fire</p>
   </ul>
 
   <h3>🪨 Rock-Type Counters (Safe and Effective)</h3>
@@ -531,8 +645,9 @@ making them more durable during the battle.
 </ul>
   <ul>
     <li><strong>Tyrantrum:</strong> (Rock Throw)</li>
-    <li><strong>Aerodactyl:</strong> (Rock Throw / Rock Slide)</li>
+    <p>Great for groups</p>
     <li><strong>Rampardos:</strong> (Smack Down / Rock Slide)</li>
+<p>Best Rock counter</p>
   </ul>
 
 <h3>🌍 Ground-Type Counters (Strong Backup Option)</h3>
@@ -543,68 +658,15 @@ when Ground-type moves are boosted.
 </p>
   <ul>
     <li><strong>Rhyperior:</strong> (Rock Wrecker)</li>
+<p>Fast, efficient solo</p>
     <li><strong>Groudon:</strong> (Mud Shot / Precipice Blades) </li>
+<p>Legendary powerhouse</p>
    </ul>
 
 </section>
 
-<section>
-  <h2>🧠 Battle Strategy & Tactical Insights</h2>
-  <p>Reshiram’s Dragon and Fire dual typing gives it several key weaknesses — particularly to **Rock**, **Dragon**, **Ground** moves. Counters that exploit these weaknesses not only deal super-effective damage but are also more likely to survive Reshiram’s charged attacks. For example, **Mamoswine with Powder Snow and Avalanche** deals heavy Ice-type damage, while **Rayquaza with Dragon Tail and Outrage** provides strong Dragon-type pressure. **Gardevoir with Charm and Dazzling Gleam** is a reliable counter that resists many of Reshiram’s charged hits.</p>
-
-  <p>Weather conditions significantly influence this fight. In **Partly Cloudy** or **Cloudy weather**, Dragon moves receive boosts, which strengthens Dragon counters. Checking the in-game weather before assembling your team helps you take advantage of these boosted moves and maximize your overall damage per second (DPS).</p>
-
-  <p>Reshiram can use powerful charged moves like **Overheat** and **Dragon Claw**, which can quickly knock out unprepared counters. Learning to dodge the most damaging charged moves — especially when your Pokémon are low on health — can greatly improve survivability and total damage output. This is particularly important in smaller raid groups where every hit matters more.</p>
-
-  <p>When planning your raid team, lead with your highest DPS counters that exploit Reshiram’s weaknesses. Once those Pokémon begin to faint, rotate in secondary attackers that still deal super-effective damage but offer greater bulk or durability. In larger raid lobbies, coordinating roles — such as sending Ice and Dragon counters first followed by Ground types — helps keep constant pressure on Reshiram and makes the battle smoother overall.</p>
-
-  <p>Using Mega Evolutions that support your counter types — such as **Mega Ampharos** for Electric or **Mega Gardevoir** for support — can further boost your team’s effectiveness. With thoughtful team composition, weather-aware planning, and tactical dodging, you’ll be in a strong position to defeat Reshiram efficiently and maximize your catch chances.</p>
-</section>
-  
-<h2>Best Mega Evolutions</h2>
-  <p>Recommended Megas to use against Reshiram:</p>
-  <ul>
-    <li>Rayquaza, Garchomp, Salamence, Latios, Latias – 🐉 Dragon boost</li>
-    <li>Diancie, Tyranitar, Aerodactyl – 🪨 Rock boost</li>
-  </ul>
-
-<h2>Difficulty</h2>
-<p>Solo or duo attempts are extremely difficult, requiring careful dodging and strategic switch-ins. Larger groups can brute-force the raid, but coordination and type synergy are always beneficial.</p>
-
-  <!-- MOVES -->
-  <section id="moves" class="card">
-    <h2>🌀 Reshiram Moveset</h2>
-<p>The best moveset for Reshiram is:</p>
-
-<h3>🗡️ Fast Moves</h3>
-<ul>
-  <li>Fire Fang</li>
-  <li>Dragon Breath</li>
-</ul>
-
-<h3>💥 Charged Moves</h3>
-<ul>
-  <li>Stone Edge</li>
-  <li>Draco Meteor</li>
-  <li>Overheat</li>
-  <li>Crunch</li>
-</ul>
-
-  <h3>🔄 Elite Moves</h3>
-   <ul>
-   <li>Fusion Flare</li>
-    </ul>
-
-<p><strong>Danger:</strong> Draco Meteor and Overheat can hit hard, so dodge charged moves when possible to preserve your counters’ health. </p>
-
-  <p>
-<strong>Overheat</strong> is extremely dangerous as it deals heavy damage and lowers Reshiram’s attack afterward, so dodging is recommended if possible. Fusion Flare also hits very hard, particularly against Grass and Steel types.
-</p>
-
-  </section>
-
 <section id="regular">
-<h2>Best Regular Counters</h2>
+<h2>🏆 Best Regular Counters</h2>
 <p>Regular pokemon that amplify the right types give you a powerful edge. Below are top Regular counters with short notes on why they excel.</p><div class="gmax-scroll">
         <div class="tbl">
           <table>
@@ -623,7 +685,7 @@ when Ground-type moves are boosted.
             <tr>
               <td>
                <!--<div class="poke-cell">
-                <img class="poke-ico" src="images/eternarus.png" alt="Eternatus"><strong>-->Eternatus<!--</strong></div>-->
+                <img class="poke-ico" src="images/eternarus.webp" alt="Eternatus"><strong>-->Eternatus<!--</strong></div>-->
                 </td>
                <td>Poison Jab / Dragon Tail</td>
                 <td>Flamethrower / Dragon Pulse / Sludge Bomb</td>
@@ -645,7 +707,7 @@ when Ground-type moves are boosted.
    <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/origin_palkia.png" alt="Origin Palkia"><strong>-->Origin Palkia<!--</strong></div>-->
+                <img class="poke-ico" src="images/origin_palkia.webp" alt="Origin Palkia"><strong>-->Origin Palkia<!--</strong></div>-->
                 </td>
                <td>Dragon Breath / Dragon Tail</td>
                 <td>Hydro Pump / Fire Blast / Aqua Tail / Draco Meteor</td>
@@ -675,7 +737,7 @@ when Ground-type moves are boosted.
               </tr>
 
  <tr><td>
-       <!--         <div class="poke-cell"><img class="poke-ico" src="images/garchomp.png" alt="Garchomp"><strong>-->Garchomp<!--</strong></div>-->
+       <!--         <div class="poke-cell"><img class="poke-ico" src="images/garchomp.webp" alt="Garchomp"><strong>-->Garchomp<!--</strong></div>-->
                 </td>
                 <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
@@ -687,7 +749,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/palkia.png" alt="Palkia"><strong>-->Palkia<!--</strong></div>-->
+                <img class="poke-ico" src="images/palkia.webp" alt="Palkia"><strong>-->Palkia<!--</strong></div>-->
                 </td>
               <td>Dragon Breath / Dragon Tail</td>
                 <td>Fire Blast / Hydro Pump / Aqua Tail / Draco Meteor</td>
@@ -697,7 +759,7 @@ when Ground-type moves are boosted.
              </tr>
 
 <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/regidrago.png" alt="Regidrago"><strong>-->Regidrago<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/regidrago.webp" alt="Regidrago"><strong>-->Regidrago<!--</strong></div>-->
                 </td>
               <td>Bite</td>
                 <td>Hyper Beam / Vise Grip / Outrage / Dragon Pulse / Breaking Swipe</td>
@@ -707,7 +769,7 @@ when Ground-type moves are boosted.
               </tr>
 
  <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/rayquaza.png" alt="Rayquaza"><strong>-->Rayquaza<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/rayquaza.webp" alt="Rayquaza"><strong>-->Rayquaza<!--</strong></div>-->
                 </td>
               <td>Air Slash / Dragon Tail</td>
                 <td>Aerial Ace / Dragon Ascent / Ancient Power / Outrage</td>
@@ -719,7 +781,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/haxorus.png" alt="Haxorus"><strong>-->Haxorus<!--</strong></div>-->
+                <img class="poke-ico" src="images/haxorus.webp" alt="Haxorus"><strong>-->Haxorus<!--</strong></div>-->
                 </td>
                <td>Counter / Dragon Tail</td>
                 <td>Earthquake / Surf / Dragon Claw / Night Slash</td>
@@ -731,7 +793,7 @@ when Ground-type moves are boosted.
  <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/rhyperior.png" alt="Rhyperior"><strong>-->Rhyperior<!--</strong></div>-->
+                <img class="poke-ico" src="images/rhyperior.webp" alt="Rhyperior"><strong>-->Rhyperior<!--</strong></div>-->
                 </td>
                <td>Mud Slap / Smack Down</td>
                 <td>Skull Bash / Superpower / Earthquake / Stone Edge / Surf / Breaking Swipe</td>
@@ -749,7 +811,7 @@ when Ground-type moves are boosted.
 </section>
 
 <section id="shadow">
-<h2>Best Shadow Counters</h2>
+<h2>👤 Best Shadow Counters</h2>
 <p>Shadow pokemon that amplify the right types give you a powerful edge. Below are top Shadow counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -779,7 +841,7 @@ when Ground-type moves are boosted.
                <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_garchomp.png" alt="Shadow Garchomp"><strong>-->Shadow Garchomp<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_garchomp.webp" alt="Shadow Garchomp"><strong>-->Shadow Garchomp<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
@@ -791,7 +853,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_palkia.png" alt="Shadow Palkia"><strong>-->Shadow Palkia<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_palkia.webp" alt="Shadow Palkia"><strong>-->Shadow Palkia<!--</strong></div>-->
                 </td>
               <td>Dragon Breath / Dragon Tail</td>
                 <td>Fire Blast / Hydro Pump / Aqua Tail / Draco Meteor</td>
@@ -813,7 +875,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_groudon.png" alt="Shadow Groudon"><strong>-->Shadow Groudon<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_groudon.webp" alt="Shadow Groudon"><strong>-->Shadow Groudon<!--</strong></div>-->
                 </td>
               <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Fire Blast / Solar Beam</td>
@@ -835,7 +897,7 @@ when Ground-type moves are boosted.
   <tr>
               <td>
    <!--             <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_dragonite.png" alt="Shadow Dragonite"><strong>-->Shadow Dragonite<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_dragonite.webp" alt="Shadow Dragonite"><strong>-->Shadow Dragonite<!--</strong></div>-->
                 </td>
                <td>Steel Wing / Dragon Tail / Dragon Breath</td>
                 <td>Hyper Beam / Superpower / Hurricane / Thunder Punch / Outrage / Dragon Claw</td>
@@ -847,7 +909,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_dialga.png" alt="Shadow Dialga"><strong>-->Shadow Dialga<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_dialga.webp" alt="Shadow Dialga"><strong>-->Shadow Dialga<!--</strong></div>-->
                 </td>
                <td>Metal Claw / Dragon Breath</td>
                 <td>Iron Head / Thunder / Draco Meteor</td>
@@ -857,7 +919,7 @@ when Ground-type moves are boosted.
               </tr>
 
  <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/shadow_tyranitar.png" alt="Shadow Tyranitar"><strong>-->Shadow Tyranitar<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/shadow_tyranitar.webp" alt="Shadow Tyranitar"><strong>-->Shadow Tyranitar<!--</strong></div>-->
                 </td>
              <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -869,7 +931,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
    <!--             <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_rampardos.png" alt="Shadow Rampardos"><strong>-->Shadow Rampardos<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_rampardos.webp" alt="Shadow Rampardos"><strong>-->Shadow Rampardos<!--</strong></div>-->
                 </td>
                <td>Smack Down / Zen Headbutt</td>
                 <td>Rock Slide / Flamethrower / Outrage</td>
@@ -879,7 +941,7 @@ when Ground-type moves are boosted.
               </tr>
 
 <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/shadow_latios.png" alt="Shadow Latios"><strong>-->Shadow Latios<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/shadow_latios.webp" alt="Shadow Latios"><strong>-->Shadow Latios<!--</strong></div>-->
                 </td>
              <td>Zen Headbutt / Dragon Breath</td>
                 <td>Aura Sphere / Solar Beam / Psychic / Dragon Claw</td>
@@ -898,7 +960,7 @@ when Ground-type moves are boosted.
 </section>
 
 <section id="mega">
-<h2>Best Mega Counters</h2>
+<h2>⚡ Best Mega Counters</h2>
 <p>Mega pokemon that amplify the right types give you a powerful edge. Below are top Mega counters with short notes on why they excel.</p>
 
 <div class="gmax-scroll">
@@ -917,7 +979,7 @@ when Ground-type moves are boosted.
             <tbody>
 
 <tr><td>
-   <!--             <div class="poke-cell"><img class="poke-ico" src="images/mega_latias.png" alt="Mega Latias"><strong>-->Mega Latias<!--</strong></div>-->
+   <!--             <div class="poke-cell"><img class="poke-ico" src="images/mega_latias.webp" alt="Mega Latias"><strong>-->Mega Latias<!--</strong></div>-->
                 </td>
               <td>Zen Headbutt / Dragon Breath / Charm</td>
                 <td>Aura Sphere / Thunder / Psychic / Outrage</td>
@@ -927,7 +989,7 @@ when Ground-type moves are boosted.
               </tr>
 
 <tr><td>
-  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_aerodactyl.png" alt="Mega Aerodactyl"><strong>-->Mega Aerodactyl<!--</strong></div>-->
+  <!--              <div class="poke-cell"><img class="poke-ico" src="images/mega_aerodactyl.webp" alt="Mega Aerodactyl"><strong>-->Mega Aerodactyl<!--</strong></div>-->
                 </td>
               <td>Rock Throw / Steel Wing / Dragon Breath / Bite</td>
                 <td>Hyper Beam / Earth Power / Ancient Power / Rock Slide / Iron Head</td>
@@ -939,7 +1001,7 @@ when Ground-type moves are boosted.
 <tr>
               <td>
     <!--            <div class="poke-cell">
-                <img class="poke-ico" src="images/mega_tyranitar.png" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
+                <img class="poke-ico" src="images/mega_tyranitar.webp" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
                 </td>
                <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -949,7 +1011,7 @@ when Ground-type moves are boosted.
               </tr>
 
 <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_latios.png" alt="Mega Latios"><strong>-->Mega Latios<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_latios.webp" alt="Mega Latios"><strong>-->Mega Latios<!--</strong></div>-->
                 </td>
               <td>Zen Headbutt / Dragon Breath</td>
                 <td>Aura Sphere / Solar Beam / Psychic / Dragon Claw</td>
@@ -959,7 +1021,7 @@ when Ground-type moves are boosted.
               </tr>
              
 <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.png" alt="Mega Rayquaza"><strong>-->Mega Rayquaza<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.webp" alt="Mega Rayquaza"><strong>-->Mega Rayquaza<!--</strong></div>-->
                 </td>
               <td>Air Slash / Dragon Tail</td>
                 <td>Aerial Ace / Dragon Ascent / Ancient Power / Outrage</td>
@@ -969,7 +1031,7 @@ when Ground-type moves are boosted.
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.png" alt="Mega Diancie"><strong>-->Mega Diancie<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.webp" alt="Mega Diancie"><strong>-->Mega Diancie<!--</strong></div>-->
                 </td>
               <td>Tackle / Rock Throw</td>
                 <td>Rock Slide / Power Gem / Moonblast</td>
@@ -991,7 +1053,7 @@ when Ground-type moves are boosted.
   <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/mega_garchomp.png" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
+                <img class="poke-ico" src="images/mega_garchomp.webp" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
@@ -1004,74 +1066,10 @@ when Ground-type moves are boosted.
           </table>
          </div>
 </div>
-
-    
 </section>
 
-<!-- CP -->
-  <section id="cp" class="card">
-    <h2>🎯 Catch CP & 100% IV</h2>
-<p>Understanding CP ranges helps trainers evaluate the strength of Reshiram when caught from raids.</p>
-
-<p>CP Range:</p>
-
-    <ul>
-          <li>No Weather Boost:  2,217-2,307 CP</li>
-          <li>Weather Boost:  2,771-2,884 CP</li>
-    </ul>
-
-<p>100% IV:</p>
- <ul>
-          <li>2307 (Normal)</li>
-          <li>2884 (Weather Boosted)</li>
-    </ul>
-
-<p>Use:</p>
-
- <ul>
-          <li>Golden Razz Berry</li>
-          <li>Curveball Excellent Throws</li>
-    </ul>
-
-  </section>
-
-<section class="card" id="weather">
-      <h2>🌦️ Weather Boost</h2>
-
-<p>
-Reshiram is <strong>boosted in Sunny and Windy weather</strong>, making it stronger and faster in those conditions.
-</p>
-
-<table>
-<tr>
-<th>Weather</th>
-</tr>
-<tr>
-<td>
-<strong>☀️ Sunny</strong>
-<ul>
-<li>Boosts Fire-type moves</li>
-</ul>
-</td>
-<td>
-<strong>🌬️ Windy</strong>
-<ul>
-<li>Boosts Dragon-type moves</li>
-</ul>
-</td>
-<td>
-<strong>⛅ Partly Cloudy</strong>
-<ul>
-<li>Boosts Rock-types moves</li>
-</ul>
-</td>
-</tr>
-</table>
-
-          </section>
-
 <section class="card">
-  <h2>Revive & Potion Cost</h2>
+  <h2>💊 Revive & Potion Cost</h2>
   <ul>
     <li>Average revives used: 8–14</li>
     <li>Average potions used: 10–18</li>
@@ -1081,7 +1079,7 @@ Reshiram is <strong>boosted in Sunny and Windy weather</strong>, making it stron
 </section>
 
 <section class="card">
-  <h2>Common Raid Mistakes</h2>
+  <h2>❌ Common Raid Mistakes</h2>
   <ul>
     <li>Not bringing a Mega Pokémon for team boosts</li>
     <li>Using weather-boosted Pokémon of the wrong type</li>
@@ -1090,8 +1088,8 @@ Reshiram is <strong>boosted in Sunny and Windy weather</strong>, making it stron
   </ul>
 </section>
 
-
-<h2>Sample Team Composition</h2>
+<section class="card">
+<h2>🧩 Best Team Compositions</h2>
 
 <ul>
 <li>Lead with strongest Dragon attacker</li>
@@ -1104,8 +1102,6 @@ Reshiram is <strong>boosted in Sunny and Windy weather</strong>, making it stron
 Maintaining steady super-effective damage 
 while minimizing relobby time is key to defeating Reshiram efficiently.
 </p>
-
-<h2>Recommended Team Setups</h2>
 
 <h3>Best Team (3–5 Trainers)</h3>
 <ul>
@@ -1126,7 +1122,10 @@ while minimizing relobby time is key to defeating Reshiram efficiently.
 
 <p>This mix covers all three key weakness types (Ground, Rock, Dragon) and keeps your counters resilient. </p>
 
-<h2>Recommended Group Size</h2>
+</section>
+
+<section class="card">
+<h2>👥 Raid Difficulty & Trainers Needed</h2>
 
 <p>
 Reshiram is moderately bulky but manageable with strong counters.
@@ -1138,45 +1137,193 @@ Reshiram is moderately bulky but manageable with strong counters.
 <li><strong>5+ Trainers:</strong> Very safe win</li>
 </ul>
 
-<h2>Catch Tips</h2>
-<ul>
-<li>Use Golden Razz Berries for best catch chance</li>
-<li>Curve Excellent throws are highly recommended</li>
-<li>Wait for Reshiram’s attack animation before throwing</li>
-<li>Be patient, as Reshiram can dodge occasionally</li>
-</ul>
+</section>
 
-<!-- STRATEGY -->
-  <section id="strategy" class="card">
-    <h2>🧠 Raid Strategy</h2>
-    <h3>Choose Between Speed or Stability</h3>
+<section id="strategy" class="card">
+    <h2>🧠 Raid Strategy & Advanced Tips</h2>
+
+<h3>1. Choose Between Speed or Stability</h3>
 <p>
 Dragon-type teams provide the fastest clears but can faint quickly. 
 Rock-type Pokémon offer better survivability while maintaining strong damage output.
 </p>
 
-<h3>Watch for Draco Meteor</h3>
+<h3>2. Watch for Draco Meteor</h3>
 <p>
 Reshiram’s Dragon-type charged move can deal massive damage. 
 Be prepared to relobby if using multiple Dragon-type attackers.
 </p>
 
-<h3>Coordinate Mega Evolutions</h3>
+<h3>3. Coordinate Mega Evolutions</h3>
 <p>
 Using a Mega Dragon or Mega Rock Pokémon boosts team-wide damage. 
 Coordinate with your group to maintain consistent boosted DPS 
 throughout the battle.
 </p>
-  </section>
+
+<p>Reshiram’s Dragon and Fire dual typing gives it several key weaknesses — particularly to **Rock**, **Dragon**, **Ground** moves. Counters that exploit these weaknesses not only deal super-effective damage but are also more likely to survive Reshiram’s charged attacks. For example, **Mamoswine with Powder Snow and Avalanche** deals heavy Ice-type damage, while **Rayquaza with Dragon Tail and Outrage** provides strong Dragon-type pressure. **Gardevoir with Charm and Dazzling Gleam** is a reliable counter that resists many of Reshiram’s charged hits.</p>
+
+  <p>Weather conditions significantly influence this fight. In **Partly Cloudy** or **Cloudy weather**, Dragon moves receive boosts, which strengthens Dragon counters. Checking the in-game weather before assembling your team helps you take advantage of these boosted moves and maximize your overall damage per second (DPS).</p>
+
+  <p>Reshiram can use powerful charged moves like **Overheat** and **Dragon Claw**, which can quickly knock out unprepared counters. Learning to dodge the most damaging charged moves — especially when your Pokémon are low on health — can greatly improve survivability and total damage output. This is particularly important in smaller raid groups where every hit matters more.</p>
+
+  <p>When planning your raid team, lead with your highest DPS counters that exploit Reshiram’s weaknesses. Once those Pokémon begin to faint, rotate in secondary attackers that still deal super-effective damage but offer greater bulk or durability. In larger raid lobbies, coordinating roles — such as sending Ice and Dragon counters first followed by Ground types — helps keep constant pressure on Reshiram and makes the battle smoother overall.</p>
+
+  <p>Using Mega Evolutions that support your counter types — such as **Mega Ampharos** for Electric or **Mega Gardevoir** for support — can further boost your team’s effectiveness. With thoughtful team composition, weather-aware planning, and tactical dodging, you’ll be in a strong position to defeat Reshiram efficiently and maximize your catch chances.</p>
+
+<h2>Beginner Raid Strategy</h2>
+
+<p>
+If you are new to legendary raids, follow these simple tips:
+</p>
+
+<ul>
+<li>Join raids with at least 6 trainers</li>
+<li>Use strong Dragon or Rock attackers</li>
+<li>Revive fainted Pokémon quickly</li>
+<li>Focus on dealing consistent damage</li>
+</ul>
+
+<h2>Advanced Raid Strategy</h2>
+
+<p>
+Experienced trainers can defeat Reshiram more efficiently using optimized raid teams.
+</p>
+
+<ul>
+<li>Use Mega Evolutions like Mega Rayquaza</li>
+<li>Coordinate attacks with teammates</li>
+<li>Use Party Play bonuses</li>
+<li>Build high-DPS teams</li>
+</ul>
+
+<h2>Solo / Duo / Group Difficulty</h2>
+
+<table>
+<tr>
+<th>Raid Difficulty</th>
+<th>Recommended Trainers</th>
+</tr>
+
+<tr>
+<td>Solo</td>
+<td>Impossible</td>
+</tr>
+
+<tr>
+<td>Duo</td>
+<td>Very difficult</td>
+</tr>
+
+<tr>
+<td>Small Group</td>
+<td>3-4 trainers</td>
+</tr>
+
+<tr>
+<td>Safe Group</td>
+<td>5-7 trainers</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="card" id="weather">
+      <h2>🌦️ Weather Boost</h2>
+
+<p>
+Reshiram is <strong>boosted in Sunny and Windy weather</strong>, making it stronger and faster in those conditions.
+</p>
+
+<h3>☀️ Sunny Weather</h3>
+<ul>
+<li>Boosts Fire-type moves</li>
+</ul>
+<h3>🌬️ Windy Weather</h3>
+<ul>
+<li>Boosts Dragon-type moves</li>
+</ul>
+<h3>⛅ Partly Cloudy Weather</h3>
+<ul>
+<li>Boosts Rock-types moves</li>
+</ul>
+
+
+          </section>
+
+ <section id="moves" class="card">
+    <h2>🌀 Reshiram Moveset</h2>
+<p>The best moveset for Reshiram is:</p>
+
+<h3>🗡️ Fast Moves</h3>
+<ul>
+  <li>Fire Fang</li>
+  <li>Dragon Breath</li>
+</ul>
+
+<h3>💥 Charged Moves</h3>
+<ul>
+  <li>Stone Edge</li>
+  <li>Draco Meteor</li>
+  <li>Overheat</li>
+  <li>Crunch</li>
+</ul>
+
+  <h3>🔄 Elite Moves</h3>
+   <ul>
+   <li>Fusion Flare</li>
+    </ul>
+
+</section>
+
+<section id="dangerous-moves">
+<h2>Most Dangerous Moves</h2>
+<p><strong>Danger:</strong> Draco Meteor and Overheat can hit hard, so dodge charged moves when possible to preserve your counters’ health. </p>
+
+  <p>
+<strong>Overheat</strong> is extremely dangerous as it deals heavy damage and lowers Reshiram’s attack afterward, so dodging is recommended if possible. Fusion Flare also hits very hard, particularly against Grass and Steel types.
+
+</section>
+
+<section id="pvepvp">
+<h2>🎮 Is Reshiram Good in PvE and PvP?</h2>
+<h3>Is Reshiram Good in PvP?</h2>
+
+<p>
+Reshiram can perform well in the Master League thanks to its 
+high attack stat and powerful Dragon and Fire type moves.
+</p>
+
+<h3>Is Reshiram Good in PvE?</h2>
+
+<p>
+Reshiram is one of the strongest Fire type attackers in Pokémon GO 
+and is widely used in raid battles.
+</p>
+
+<section id="shiny">
+<h2>✨ Shiny Reshiram</h2>
+
+<p>
+Yes, players have a chance to encounter a <strong>Shiny Reshiram</strong> after completing its Legendary raid. 
+Shiny Reshiram has a slightly darker, silver-tinted appearance compared to the standard version, making it a rare and collectible Pokémon.
+</p>
+
+<p>
+The shiny rate in Legendary raids is higher than wild encounters, so participating in multiple raids increases your chances 
+of obtaining this rare version. Keep in mind that shiny Pokémon cannot be evolved—they are only available in their base or raid forms.
+</p>
+</section>
 
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
-    <h2>Buddy Distance</h2>
+    <h2>🚶 Buddy Distance</h2>
     <p id="buddyDistance">20 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
-  <section id="shadowMegaSection" class="card"><h2>Shadow & Mega Comparison</h2>
+  <section id="shadowMegaSection" class="card"><h2>⚖️ Shadow & Mega Comparison</h2>
 </section>
 
 </div>
@@ -1256,102 +1403,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<h2>🎁 Rewards</h2>
+<h2>🧬 Best Mega Evolutions</h2>
+  <p>Recommended Megas to use against Reshiram:</p>
   <ul>
-    <li>Chance to catch Shiny Reshiram (with boosted IVs)</li>
-    <li>Rare Candy & XL Candy</li>
+    <li>Rayquaza, Garchomp, Salamence, Latios, Latias – 🐉 Dragon boost</li>
+    <li>Diancie, Tyranitar, Aerodactyl – 🪨 Rock boost</li>
   </ul>
 
-<h2>Beginner Raid Strategy</h2>
-
-<p>
-If you are new to legendary raids, follow these simple tips:
-</p>
-
-<ul>
-<li>Join raids with at least 6 trainers</li>
-<li>Use strong Dragon or Rock attackers</li>
-<li>Revive fainted Pokémon quickly</li>
-<li>Focus on dealing consistent damage</li>
-</ul>
-
-<h2>Advanced Raid Strategy</h2>
-
-<p>
-Experienced trainers can defeat Reshiram more efficiently using optimized raid teams.
-</p>
-
-<ul>
-<li>Use Mega Evolutions like Mega Rayquaza</li>
-<li>Coordinate attacks with teammates</li>
-<li>Use Party Play bonuses</li>
-<li>Build high-DPS teams</li>
-</ul>
-
-<h2>Solo / Duo / Group Difficulty</h2>
-
-<table>
-<tr>
-<th>Raid Difficulty</th>
-<th>Recommended Trainers</th>
-</tr>
-
-<tr>
-<td>Solo</td>
-<td>Impossible</td>
-</tr>
-
-<tr>
-<td>Duo</td>
-<td>Very difficult</td>
-</tr>
-
-<tr>
-<td>Small Group</td>
-<td>3-4 trainers</td>
-</tr>
-
-<tr>
-<td>Safe Group</td>
-<td>5-7 trainers</td>
-</tr>
-
-</table>
-
-<h2>Can Reshiram Be Shiny?</h2>
-
-<p>
-Yes. Trainers have a chance to encounter shiny Reshiram after 
-winning the raid battle.
-</p>
-
-<h2>How to Catch Reshiram?</h2>
-
-<ul>
-<li>Use Golden Razz Berries</li>
-<li>Throw Excellent Curveballs</li>
-<li>Wait for the attack animation before throwing</li>
-</ul>
-
-<h2>🎮 Is Reshiram Good in PvP?</h2>
-
-<p>
-Reshiram can perform well in the Master League thanks to its 
-high attack stat and powerful Dragon and Fire type moves.
-</p>
-
-<h2>Is Reshiram Good in PvE?</h2>
-
-<p>
-Reshiram is one of the strongest Fire type attackers in Pokémon GO 
-and is widely used in raid battles.
-</p>
-
   <h2>📌 Is Reshiram Worth Raiding?</h2>
-<p>
-Reshiram is one of the strongest Fire-type attackers in Pokémon GO and performs well in raids and Master League PvP formats. 
-Collecting Candy and XL Candy from raids allows trainers to power it up for long-term competitive use, making it a highly valuable legendary target.
-</p>
+<ul>
+<li>Yes, for its high CP, shiny form, and strong Dragon / Fire moves.</li>
+<li>Useful for PvE DPS, solo raids, and Legendary collection.</li>
+<li>PvP uses are moderate but not top-tier (mostly Ultra/Master League niche).</li>
+</ul>
+
+<h2>Beginner Guide for Reshiram Raid</h2>
+<ul>
+<li>Win the Reshiram raid.</li>
+<li>Use strong Dragon or Rock-type Pokémon.</li>
+<li>Collect candies or Mega Energy for your counters.</li>
+<li>Use dodging for high damage moves.</li>
+</ul>
 
 <h2>How to Catch Reshiram?</h2>
 
@@ -1376,8 +1448,98 @@ Reshiram is considered one of the strongest Fire-type attackers in Pokémon GO. 
 Many trainers power up Reshiram because it performs exceptionally well against Grass, Ice, and Steel-type raid bosses.
 </p>
 
+<section id="raid-rewards">
+<h2>🎁 Raid Rewards</h2>
+
+<p>After defeating <strong>Reshiram</strong> in a 5-Star raid in Pokémon GO, trainers receive several rewards including healing items, Rare Candy, and a chance to catch Reshiram. The exact rewards may vary depending on raid performance and bonuses.</p>
+
+<table>
+<thead>
+<tr>
+<th>Reward</th>
+<th>Typical Amount</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Golden Razz Berry</td>
+<td>3 – 12</td>
+</tr>
+
+<tr>
+<td>Rare Candy</td>
+<td>3 – 9</td>
+</tr>
+
+<tr>
+<td>Revive</td>
+<td>6 – 15</td>
+</tr>
+
+<tr>
+<td>Hyper Potion</td>
+<td>6 – 15</td>
+</tr>
+
+<tr>
+<td>Fast TM</td>
+<td>0 – 2</td>
+</tr>
+
+<tr>
+<td>Charged TM</td>
+<td>0 – 2</td>
+</tr>
+
+<tr>
+<td>Stardust</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Premier Balls</h3>
+
+<p>After winning the raid, trainers receive <strong>Premier Balls</strong> to catch Reshiram. The number of Premier Balls depends on several factors:</p>
+
+<ul>
+<li>Damage dealt during the raid</li>
+<li>Gym control bonus</li>
+<li>Friendship bonus with raid participants</li>
+<li>Team contribution</li>
+</ul>
+
+<p>Trainers usually receive <strong>8 – 16 Premier Balls</strong> to attempt catching Reshiram.</p>
+
+</section>
+
+
+<section class="pokemon-gallery">
+
+<h2>🖼️ Regular vs Shiny Reshiram Forms</h2>
+<p>
+Shiny Reshiram has a slightly darker, silver-tinted appearance compared to the standard version, making it a rare and collectible Pokémon.
+</p>
+
+<div class="image-grid">
+
+<div class="image-card">
+<img src="reshiram.webp" alt="Normal Reshiram" loading="lazy" width="200" height="200">
+<p>Reshiram</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_reshiram.webp" alt="Shiny Reshiram" loading="lazy" width="200" height="200">
+<p>Shiny Reshiram</p>
+</div>
+
+</div>
+
+</section>
+
         <section id="faq" aria-label="FAQ">
-          <h2>FAQ</h2>
+          <h2>❓ FAQ</h2>
           <h3>Can Reshiram be shiny in Pokémon GO?</h3>
         <p>Yes! Shiny Reshiram is available. The shiny version has lighter body with gold accents and slightly different flame coloration.</p>
         <h3>Can Reshiram be defeated with 3 trainers?</h3>
@@ -1395,8 +1557,19 @@ Many trainers power up Reshiram because it performs exceptionally well against G
 
         </section>
 
-<h2>Regular Sprite</h2>
-<img src="images/mega_abomasnow13.webp" alt="Mega Abomasnow Pokémon GO Raid Boss" loading="lazy" width="600" height="600">
+<section id="related">
+<h2>🔗 Related Raid Guides</h2>
+
+<p>You may also find these Legendary and Mega Pokémon raid guides helpful:</p>
+
+<ul>
+<li><a href="zekrom.html">Zekrom Raid Guide</a></li>
+<li><a href="palkia.html">Palkia Raid Guide</a></li>
+<li><a href="dialga.html">Dialga Raid Guide</a></li>
+<li><a href="altered_giratina.html">Altered Giratina Raid Guide</a></li>
+<li><a href="kyogre.html">Primal Kyogre Raid Guide</a></li>
+</ul>
+</section>
 
 <h2>🏁 Conclusion</h2>
 <p>
@@ -1405,24 +1578,6 @@ Use Dragon-types for maximum DPS or Rock-types for safer clears.
 Monitor weather conditions, coordinate Mega boosts, 
 and prepare backup Pokémon to ensure a smooth and successful raid.
 </p>
-
-<h2>Related Guides</h2>
-<p>Looking for more counters? Check out our 
-  <a href="zekrom.html">Zekrom Raid Guide</a>
-<a href="groudon.html">Primal Groudon Raid Guide</a>
-<a href="kyogre.html">Primal Kyogre Raid Guide</a> 
-</p>
-
- <aside class="card" aria-label="Sidebar">
-        <h2>Quick picks</h2>
-        <ul>
-          <li><strong>Best Mega Team:</strong> Rayquaza, Garchomp</li>
-          <li><strong>Best Shadow Team:</strong> Palkia, Garchomp</li>
-          <li><strong>Best Regular Team:</strong> Primal Groudon</li>
-        </ul>
-</aside>
-
-<h2>Summary</h2>
 <ul>
 <li>Use high-level Rock, Dragon, or Ground Pokémon to exploit weaknesses.</li>
 <li>Avoid relying on Fire, Water, or Flying types unless weather-boosted.</li>
@@ -1430,13 +1585,23 @@ and prepare backup Pokémon to ensure a smooth and successful raid.
 <li>Adjust your team based on weather effects and raid group size for the most efficient victory.</li>
 </ul>
 
+<section id="quick-picks">
+<!--<aside class="card" aria-label="Sidebar">-->
+        <h2>⚡Quick picks</h2>
+        <ul>
+          <li><strong>Best Mega Team:</strong> Rayquaza, Garchomp</li>
+          <li><strong>Best Shadow Team:</strong> Palkia, Garchomp</li>
+          <li><strong>Best Regular Team:</strong> Primal Groudon</li>
+        </ul>
+<!--</aside>-->
+</section>
+
 <section class="author-box">
       <h3>About the Author</h3>
       <p>Written by Abhishek — Level 50 Pokémon GO Trainer (since 2019).
 Completed 500+ Mega raids and specializes in raid optimization and counter analysis. Explore more guides like <a href="mega_aerodactyl.html">Mega Aerodactyl</a><!--, <a href="mega_latias.html">Mega Latias</a>, <a href="mega_tyranitar.html">Mega Tyranitar</a>.--></p>
     </section>
 </main>
-
 
  <footer class="site-footer">
     <div class="footer-content">
@@ -1463,3 +1628,4 @@ Completed 500+ Mega raids and specializes in raid optimization and counter analy
 
 </body>
 </html>
+

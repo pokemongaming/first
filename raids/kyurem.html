@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="posts.css">
 <link rel="alternate" hreflang="x-default" href="https://pokemongaming.in/raids/kyurem.html">
-
+<meta name="author" content="Abhishek">
 <meta property="og:title" content="Kyurem Raid Guide — Counters, Moves & Strategy | Pokémon GO (US/UK)">
   <meta property="og:description" content="Detailed Kyurem raid guide for Pokémon GO players worldwide — best counters, moves, Dynamax & Gigantamax strategies for US/UK trainers.">
   <meta property="og:type" content="article">
@@ -35,18 +35,18 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "What is Kyurem’s exclusive move?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kyurem can use powerful moves such as Ice Beam and Dragon Pulse, dealing massive damage and controlling the battlefield in Max Raid Battles."
+      }
+    },
+{
+      "@type": "Question",
       "name": "Can Kyurem be shiny in Pokémon GO?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes! Shiny Kyurem is available. It features a beautiful icy-blue body with yellow accents."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best moveset of Kyurem?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The best raid moveset for Kyurem is Dragon Breath paired with Glaciate (Elite) or Blizzard."
       }
     },
     {
@@ -71,6 +71,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Its access to powerful moves like Blizzard, Draco Meteor, and Glaciate makes it a strong Ice- and Dragon-type attacker."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Kyurem unique?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Its icy draconic form, signature Dragon/Ice typing, and devastating moves make Kyurem both visually impressive and strategically challenging in Max Raid Battles."
       }
     }
   ]
@@ -269,14 +277,24 @@
   background: #F95587;
 }
 
+.breadcrumb{
+font-size:14px;
+margin:15px 0;
+color:#555;
+}
+
+.breadcrumb a{
+color:#0073e6;
+text-decoration:none;
+}
+
+.breadcrumb a:hover{
+text-decoration:underline;
+}
+
 /* Dark */
 .type.dark {
   background: #705746;
-}
-
-/* Normal */
-.type.normal {
-  background: #705743;
 }
 
 /* Dragon */
@@ -294,6 +312,36 @@
 .type.steel {
   background: #B7B7CE;
   color: #000;
+}
+
+.pokemon-gallery{
+max-width:900px;
+margin:40px auto;
+text-align:center;
+}
+
+.image-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.image-card{
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img{
+width:100%;
+max-width:200px;
+height:auto;
+}
+
+.image-card p{
+margin-top:8px;
+font-weight:600;
 }
 
 /* Smooth scroll */
@@ -388,13 +436,41 @@ html {
 
 <body>
 <section class="hero">
+<!--<nav class="breadcrumb">
+<a href="https://pokemongaming.in/">Home</a> ›
+<a href="https://pokemongaming.in/raids/">Raids</a> ›
+<span>Kyurem Raid Guide</span>
+</nav>-->
+<h1>Kyurem Raid Guide – Best Counters, Weakness, CP & Strategy</h1>
 
- <header>
- <h1>Kyurem Raid Guide — Counters, Weakness & Strategy</h1>
-<p>Your complete resource for defeating <strong>FROZEN DRAGON</strong> in Pokémon GO raids.</p>
+<p>
+<strong>Kyurem</strong> is a powerful Legendary Dragon and Ice-type Pokémon that appears in 
+five-star raids in Pokémon GO. Because of its unique typing, Kyurem has several important 
+weaknesses that trainers can exploit using the right counters.
+</p>
 
-</header>
+<p>
+This Kyurem raid guide covers everything you need to defeat the raid boss successfully, 
+including its weaknesses, best counters, recommended strategies, catch CP ranges, 
+weather boosts, and shiny availability. With the right team and preparation, trainers 
+can defeat Kyurem efficiently and add this legendary Pokémon to their collection.
+</p>
 
+<div class="raid-quick-info">
+<p><strong>Raid Boss:</strong> Kyurem</p>
+<div>
+<strong>Type:</strong>
+ <div class="type-wrapper">
+      <span class="type dragon">Dragon</span>
+<span class="type ice">Ice</span>
+</div>
+</div>
+<p><strong>Raid Tier:</strong> Legendary (5-Star Raid)</p>
+<p><strong>Recommended Trainers:</strong> 3–5</p>
+<p><strong>Raid Boss CP: </strong>43478</p>
+<p><strong>Shiny Available:</strong> Yes</p>
+<p><strong>Major Weakness:</strong> Fighting, Rock, Steel, Dragon, Fairy</p>
+</div>
   
    <p id="last-updated"></p>
 
@@ -415,47 +491,57 @@ html {
 
 <main>
 <div class="container">
+<section>
+<h2>🧭 Quick Navigation</h2>
+<div class="tabs">
+<a href="#stats" class="tab-btn">Stats</a>
+<a href="#weakness" class="tab-btn">Weakness</a>
+<a href="#moves" class="tab-btn">Moves</a>
+<a href="#counters" class="tab-btn">Best Counters</a>
+<a href="#cp" class="tab-btn">Catch CP</a>
+<a href="#weather" class="tab-btn">Weather Boost</a>
+<a href="#strategy" class="tab-btn">Raid Strategy</a>
+<a href="#shiny" class="tab-btn">Shiny</a>
+<a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
+</div>
 
-  <!-- HERO CARD -->
-  
-    <div class="type-wrapper">
 
-      <span class="type dragon">Dragon</span>
-      <span class="type ice">Ice</span>
-    </div>
-    <p class="summary" id="heroSummary">
-    Kyurem is a powerful Ice and Dragon-type Legendary raid boss in Pokémon GO, known for its high bulk and mixed offensive capabilities. Its dual typing grants it resistance to several common attack types while leaving it vulnerable to a few key weaknesses that savvy trainers can exploit. Simply bringing high-CP Pokémon isn’t enough — understanding Kyurem’s typing interactions, move patterns, and how weather affects your damage output is essential for consistent success.</p>
+<h2>📖 Introduction</h2>
 
-  <p>Because Kyurem resists many standard attacking types but is weak to Fighting, Rock, Dragon, Steel, and Fairy moves, trainers need to build teams that maximize damage while minimizing knockouts. This guide breaks down not just the best counters, but what makes them effective in different battle situations, how weather boosts influence outcomes, and practical tips that help you clear this raid efficiently whether you’re battling solo or in a larger group.</p>
-
-  <p>Below you’ll find Kyurem’s weaknesses, recommended counters, weather analysis, and strategic advice to help you defeat this legendary Pokémon with confidence.</p>
-
-  <!-- TAB NAV -->
- <div class="tabs">
-  <a href="#stats" class="tab-btn">Stats</a>
-  <a href="#moves" class="tab-btn">Moves</a>
-  <a href="#counters" class="tab-btn">Counters</a>
-  <a href="#cp" class="tab-btn">CP</a>
-  <a href="#strategy" class="tab-btn">Strategy</a>
-  
-  <a href="#buddy" class="tab-btn">Buddy</a>
-  <a href="#shadowMegaSection" class="tab-btn">Shadow vs Mega</a>
-  </div>
-
-<h2>Kyurem Overview</h2>
 <p>
-Kyurem’s Dragon/Ice typing creates several important weaknesses while also granting useful resistances. Because it has multiple super-effective weaknesses, building a focused team allows for relatively fast raid clears.
+Kyurem is a legendary Pokémon from the Unova region and is known as the Boundary Pokémon. 
+In Pokémon GO, Kyurem appears as a powerful five-star raid boss that requires strong 
+counters and teamwork to defeat.
 </p>
+
+<p>
+With its Dragon and Ice typing, Kyurem can deal heavy damage using powerful moves such 
+as Blizzard and Dragon-type attacks. However, it also has several important weaknesses 
+that trainers can use to their advantage.
+</p>
+
+<p>
+This raid guide will help trainers understand Kyurem’s strengths and weaknesses, choose 
+the best Pokémon counters, and learn effective battle strategies. Whether you are 
+raiding with a small group of experienced trainers or a larger team, this guide will 
+help you defeat Kyurem and increase your chances of catching it afterward.
+</p>
+
+</section>
 
 <!-- STATS -->
   <section id="stats" class="card">
-    <h2>Stats & Basic Info</h2>
+    <h2>📊 Kyurem Stats</h2>
     <table id="statsTable">
       <tr><td>Type</td><td>Dragon / Ice</td></tr>
       <tr><td>Max CP</td><td>4041</td></tr>
       <tr><td>Weather Boost</td><td>Windy, Snowy</td></tr>
       <tr><td>Shiny</td><td>Yes</td></tr>
+<tr><td>Base Attack</td><td>246</td></tr>
+<tr><td>Base Defence</td><td>180</td></tr>
+<tr><td>Base Stamina</td><td>255</td></tr>
     </table>
+<p>Kyurem has high attack, so dodging charged moves is important.</p>
   </section>
 
   <!--<p>🎥 Watch Kyurem Raid Guide Video</p>-->
@@ -470,40 +556,67 @@ Kyurem’s Dragon/Ice typing creates several important weaknesses while also gra
   </iframe>
 </div>-->
 
+<section id="cp" class="card">
+    <h2>🎯 Catch CP & 100% IV</h2>
+
+
+<p>CP Range:</p>
+
+    <ul>
+          <li>No Weather Boost:  1,957-2,042 CP</li>
+          <li>Weather Boost:  2,446-2,553 CP</li>
+    </ul>
+
+<p>100% IV:</p>
+ <ul>
+          <li>2042 (Normal)</li>
+          <li>2553 (Weather Boosted)</li>
+    </ul>
+
+<p>Use:</p>
+
+ <ul>
+          <li>Golden Razz Berry</li>
+          <li>Curveball Excellent Throws</li>
+    </ul>
+
+  </section> 
+
 <section id="weakness">
-        <h2>Weaknesses & resistances</h2>
+        <h2>⚠️ Kyurem Weaknesses</h2>
         <div class="tbl">
+<p><strong>Key:</strong> Dragon moves are risky because Kyurem also has Dragon attacks.</p>
           <table>
            <thead><tr><th>Category</th><th>Details</th></tr></thead>
             <tbody>
               <tr>
-                <td><strong>Weak to</strong></td>
+                <td><strong>❌ Weak to</strong></td>
                 <td>           
-                  <img class="type-ico" src="images/fighting.png" alt="Fighting type weakness icon"> Fighting •
-                  <img class="type-ico" src="images/rock.png" alt="Rock type weakness icon"> Rock •                            
-<img class="type-ico" src="images/steel.png" alt="Steel type weakness icon"> Steel •
-                  <img class="type-ico" src="images/dragon.png" alt="Dragon type weakness icon"> Dragon •                 
-             <img class="type-ico" src="images/fairy.png" alt="Fairy type weakness icon"> Fairy  
+                  <img class="type-ico" src="images/fighting.webp" alt="Fighting type weakness icon"> Fighting •
+                  <img class="type-ico" src="images/rock.webp" alt="Rock type weakness icon"> Rock •                            
+<img class="type-ico" src="images/steel.webp" alt="Steel type weakness icon"> Steel •
+                  <img class="type-ico" src="images/dragon.webp" alt="Dragon type weakness icon"> Dragon •                 
+             <img class="type-ico" src="images/fairy.webp" alt="Fairy type weakness icon"> Fairy  
                 </td>
               </tr>
               <tr>
-                <td><strong>Resists to</strong></td>
+                <td><strong>✅ Resists to</strong></td>
                 <td>
-                <img class="type-ico" src="images/water.png" alt="Water type weakness icon"> Water •
-<img class="type-ico" src="images/grass.png" alt="Grass type weakness icon"> Grass •     
- <img class="type-ico" src="images/electric.png" alt="Electric type weakness icon"> Electric 
+                <img class="type-ico" src="images/water.webp" alt="Water type weakness icon"> Water •
+<img class="type-ico" src="images/grass.webp" alt="Grass type weakness icon"> Grass •     
+ <img class="type-ico" src="images/electric.webp" alt="Electric type weakness icon"> Electric 
                 </td>
               </tr>            
             </tbody>
           </table>
-<p><strong>Notes:</strong> Kyurem does not have a double weakness, but its multiple single weaknesses make it more manageable compared to bulkier legendary bosses.</p>
+<p><strong>Notes:</strong> Avoid using Ice-type Pokémon since Kyurem will resist their attacks.</p>
         </div>
 </section>
 
 <section id="counters">
-     <h2>Best Kyurem Counters</h2>
+     <h2>🗡️ Best Kyurem Counters</h2>
 
-  <h3>⚙ Steel-Type Counters (High Durability)</h3>
+  <h3>⚙️ Steel-Type Counters (High Durability)</h3>
 <p>
 Steel-type attackers deal super-effective damage while resisting 
 Kyurem’s Ice-type moves. They provide excellent survivability 
@@ -512,6 +625,7 @@ and reduce relobby time.
   <ul>
     <li><strong>Dialga:</strong> (Metal Claw)</li>
     <li><strong>Metagross:</strong> (Bullet Punch / Meteor Mash)</li>
+<p>Extremely high DPS</p>
   </ul>
 
 <h3>🪨 Rock-Type Counters (Great vs Ice Moves)</h3>
@@ -535,7 +649,9 @@ even when Kyurem uses Dragon-type moves.
 </ul>
   <ul>
     <li><strong>Conkeldurr:</strong> (Counter / Dynamic Punch)</li>
+<p>Very high attack stat</p>
     <li><strong>Terrakion:</strong> (Double Kick / Sacred Sword)</li>
+<p>One of the strongest Fighting attackers</p>
   </ul>
 
   <h3>🐉 Dragon-Type Counters (High Risk, High Reward)</h3>
@@ -546,55 +662,16 @@ has strong coordination and high-level attackers.
 </p>
   <ul>
     <li><strong>Dialga:</strong> (Draco Meteor)</li>
+<p>One of the highest Dragon-type DPS Pokémon</p>
     <li><strong>Palkia:</strong> (Dragon Tail / Draco Meteor)</li>
+<p>Excellent for short-man raids</p>
 
   </ul>
 
 </section>
 
-  <section>
-  <h2>Battle Strategy & Tactical Insights</h2>
-  <p>Kyurem’s Ice and Dragon dual-typing means it has several important weaknesses — notably to Rock, Dragon, Fairy, Steel, and Fighting-type attacks. Pokémon such as Tyranitar with Smack Down and Stone Edge, Metagross with Bullet Punch and Meteor Mash, and Garchomp with Dragon Tail and Outrage are excellent choices because they hit Kyurem’s weaknesses while also resisting many of its moves. Fairy counters like Togekiss or Gardevoir help cover the Dragon side of Kyurem’s typing and offer better durability against charged attacks.</p>
-
-  <p>Weather conditions play an important role in this raid. In Snowy weather, Ice moves — including some of Kyurem’s own attacks — may be stronger, but Rock, Dragon, and Steel typing also benefit under certain conditions like Partly Cloudy or Windy weather. Trainers should always check the in-game weather before selecting their team, as boosted attacks from weather can significantly increase your overall damage per second (DPS).</p>
-
-  <p>Kyurem’s charged moves such as Ice Beam and Draco Meteor hit hard and can quickly wear down your counters if they’re not resistant or bulky enough. Learning when to dodge — especially heavy charged attacks — can improve your team’s survivability and allow your strongest counters to stay active longer. In smaller raid groups, strategic dodging becomes even more important, as every HP matters.</p>
-
-  <p>When building your raid party, lead with your highest DPS counters that exploit Kyurem’s weaknesses. Once those Pokémon start to fall, rotate in secondary attackers that still deal super-effective damage but offer greater bulk. In larger lobbies, coordinating roles — such as starting with Rock and Steel counters followed by Fairy and Dragon types — helps streamline the battle and maintain a high pace of damage across the raid timer.</p>
-
-  <p>If you have powerful Mega Evolutions that support your primary counter types (such as Mega Aggron for Steel coverage or Mega Gardevoir for Fairy support), consider using them early to empower your team. Proper team sequencing and weather-aware planning give you the best shot at a fast and clean Kyurem raid clear.</p>
-  </section>
-
-<h2>Best Mega Evolutions</h2>
-  <p>Recommended Megas to use against Kyurem:</p>
-  <ul>
-    <li>Lucario, Blaziken, Heracross, Latias, Latios – Fighting boost</li>
-    <li>Metagross – Steel boost</li>
-    <li>Rayquaza, Latios, Latias, Garchomp – Dragon boost</li>
-    <li>Gardevoir – Fairy boost</li>
-    <li>Diancie, Tyranitar - Rock boost</li>
-  </ul>
-
-<h2>Difficulty</h2>
-<p>Its HP is moderate to high, making it a formidable raid boss for small and medium-sized groups. Proper type coverage, shields, and dodging charged moves are essential, especially for solo or duo raids.</p>
-
-  <!-- MOVES -->
-  <section id="moves" class="card">
-    <h2>Best Moveset</h2>
-    <ul id="movesList">
-      <li><strong>Fast:</strong> Steel Wing, Dragon Breath</li>
-      <li><strong>Charged:</strong> Dragon Claw, Blizzard, Draco Meteor</li> 
-       <li><strong>Elite:</strong> Glaciate</li>
-    </ul>
-
-<p>
-Blizzard is the most dangerous charged move. Steel-types perform best when Blizzard is present.
-</p>
-
-  </section>
-
 <section id="regular">
-<h2>Best Regular Counters</h2>
+<h2>🏆 Best Regular Counters</h2>
 <p>Regular pokemon that amplify the right types give you a powerful edge. Below are top Regular counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -602,11 +679,11 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
@@ -614,7 +691,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               <tr>
               <td>
        <!--       <div class="poke-cell">
-                <img class="poke-ico" src="images/zacian.png" alt="Zacian"><strong>-->Zacian<!--</strong></div>-->
+                <img class="poke-ico" src="images/zacian.webp" alt="Zacian"><strong>-->Zacian<!--</strong></div>-->
                 </td>
                <td>Metal Claw / Air Slash</td>
                 <td>Play Rough / Close Combat / Giga Impact / Behemoth Blade</td>
@@ -656,7 +733,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
         <!--        <div class="poke-cell">
-                <img class="poke-ico" src="images/zamazenta.png" alt="Zamazenta"><strong>-->Zamazenta<!--</strong></div>-->
+                <img class="poke-ico" src="images/zamazenta.webp" alt="Zamazenta"><strong>-->Zamazenta<!--</strong></div>-->
                 </td>
                 <td>Metal Claw / Ice Fang</td>
                 <td>Moon Blast / Close Combat / Giga Impact / Behemoth Bash</td>
@@ -668,7 +745,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/dusk_mane_necrozma.png" alt="Dusk Mane Necrozma"><strong>-->Dusk Mane Necrozma<!--</strong></div>-->
+                <img class="poke-ico" src="images/dusk_mane_necrozma.webp" alt="Dusk Mane Necrozma"><strong>-->Dusk Mane Necrozma<!--</strong></div>-->
                 </td>
                <td>Shadow Claw / Metal Claw / Psycho Cut</td>
                 <td>Dark Pulse / Iron Head / Future Sight / Outrage / Sunsteel Strike</td>
@@ -690,7 +767,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/origin_palkia.png" alt="Origin Palkia"><strong>-->Origin Palkia<!--</strong></div>-->
+                <img class="poke-ico" src="images/origin_palkia.webp" alt="Origin Palkia"><strong>-->Origin Palkia<!--</strong></div>-->
                 </td>
                <td>Dragon Breath / Dragon Tail</td>
                 <td>Hydro Pump / Fire Blast / Aqua Tail / Draco Meteor</td>
@@ -702,7 +779,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/eternarus.png" alt="Eternatus"><strong>-->Eternatus<!--</strong></div>-->
+                <img class="poke-ico" src="images/eternarus.webp" alt="Eternatus"><strong>-->Eternatus<!--</strong></div>-->
                 </td>
                <td>Poison Jab / Dragon Tail</td>
                 <td>Flamethrower / Dragon Pulse / Sludge Bomb</td>
@@ -724,7 +801,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
   <tr>
               <td>
        <!--       <div class="poke-cell">
-                <img class="poke-ico" src="images/keldeo.png" alt="Keldeo"><strong>-->Keldeo(Resolute)<!--</strong></div>-->
+                <img class="poke-ico" src="images/keldeo.webp" alt="Keldeo"><strong>-->Keldeo(Resolute)<!--</strong></div>-->
                 </td>
                <td>Low Kick / Poison Jab</td>
                 <td>Close Combat / Sacred Sword / X-Scissor / Aqua Jet / Hydro Pump</td>
@@ -772,7 +849,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 </section>
 
 <section id="shadow">
-<h2>Best Shadow Counters</h2>
+<h2>👤 Best Shadow Counters</h2>
 <p>Shadow pokemon that amplify the right types give you a powerful edge. Below are top Shadow counters with short notes on why they excel.</p>
 <div class="gmax-scroll">
         <div class="tbl">
@@ -780,11 +857,11 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
@@ -802,7 +879,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
       <!--          <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_palkia.png" alt="Shadow Palkia"><strong>-->Shadow Palkia<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_palkia.webp" alt="Shadow Palkia"><strong>-->Shadow Palkia<!--</strong></div>-->
                 </td>
               <td>Dragon Breath / Dragon Tail</td>
                 <td>Fire Blast / Hydro Pump / Aqua Tail / Draco Meteor</td>
@@ -814,7 +891,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_conkeldurr.png" alt="Shadow Conkeldurr"><strong>-->Shadow Conkeldurr<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_conkeldurr.webp" alt="Shadow Conkeldurr"><strong>-->Shadow Conkeldurr<!--</strong></div>-->
                 </td>
               <td>Counter / Poison Jab</td>
                 <td>Dynamic Punch / Focus Blast / Stone Edge</td>
@@ -826,7 +903,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/shadow_blaziken.png" alt="Shadow Blaziken"><strong>-->Shadow Blaziken<!--</strong></div>-->
+                <img class="poke-ico" src="images/shadow_blaziken.webp" alt="Shadow Blaziken"><strong>-->Shadow Blaziken<!--</strong></div>-->
                 </td>
                <td>Counter / Fire Spin / Ember</td>
                 <td>Focus Blast / Aura Sphere / Brave Bird / Overheat / Blaze Kick</td>
@@ -854,7 +931,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 </section>
 
 <section id="mega">
-<h2>Best Mega Counters</h2>
+<h2>⚡ Best Mega Counters</h2>
 <p>Mega pokemon that amplify the right types give you a powerful edge. Below are top Mega counters with short notes on why they excel.</p>
 
 <div class="gmax-scroll">
@@ -863,17 +940,17 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
             <thead>
               <tr>
                 <th>Pokémon</th>
-                <th>Fast Moves</th>
-                <th>Charged Moves</th>
-                <th>Elite Moves</th>
-                <th>Best Moves</th>
-<th>Why This Counter Works</th>
+                <th>🗡️ Fast Moves</th>
+                <th>💥 Charged Moves</th>
+                <th>🔄 Elite Moves</th>
+                <th>🏆 Best Moves</th>
+<th>🧪 Why This Counter Works</th>
               </tr>
             </thead>
             <tbody>
              
  <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_lucario.png" alt="Mega Lucario"><strong>-->Mega Lucario<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_lucario.webp" alt="Mega Lucario"><strong>-->Mega Lucario<!--</strong></div>-->
                 </td>
              <td>Counter / Bullet Punch</td>
                 <td>Close Combat / Power-Up Punch / Aura Sphere / Shadow Ball / Flash Cannon / Meteor Mash / Blaze Kick / Thunder Punch</td>
@@ -883,7 +960,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               </tr>
 
 <tr><td>
-      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.png" alt="Mega Diancie"><strong>-->Mega Diancie<!--</strong></div>-->
+      <!--          <div class="poke-cell"><img class="poke-ico" src="images/mega_diancie.webp" alt="Mega Diancie"><strong>-->Mega Diancie<!--</strong></div>-->
                 </td>
               <td>Tackle / Rock Throw</td>
                 <td>Rock Slide / Power Gem / Moonblast</td>
@@ -893,7 +970,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               </tr>
 
 <tr><td>
-         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.png" alt="Mega Rayquaza"><strong>-->Mega Rayquaza<!--</strong></div>-->
+         <!--       <div class="poke-cell"><img class="poke-ico" src="images/mega_rayquaza.webp" alt="Mega Rayquaza"><strong>-->Mega Rayquaza<!--</strong></div>-->
                 </td>
               <td>Air Slash / Dragon Tail</td>
                 <td>Aerial Ace / Dragon Ascent / Ancient Power / Outrage</td>
@@ -903,7 +980,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               </tr>
 
 <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_latias.png" alt="Mega Latias"><strong>-->Mega Latias<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_latias.webp" alt="Mega Latias"><strong>-->Mega Latias<!--</strong></div>-->
                 </td>
             <td>Zen Headbutt / Dragon Breath / Charm</td>
                 <td>Aura Sphere / Thunder / Psychic / Outrage</td>
@@ -913,7 +990,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               </tr>
 
 <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_latios.png" alt="Mega Latios"><strong>-->Mega Latios<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_latios.webp" alt="Mega Latios"><strong>-->Mega Latios<!--</strong></div>-->
                 </td>
              <td>Zen Headbutt / Dragon Breath</td>
                 <td>Aura Sphere / Solar Beam / Psychic / Dragon Claw</td>
@@ -945,7 +1022,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 <tr>
               <td>
      <!--           <div class="poke-cell">
-                <img class="poke-ico" src="images/mega_garchomp.png" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
+                <img class="poke-ico" src="images/mega_garchomp.webp" alt="Mega Garchomp"><strong>-->Mega Garchomp<!--</strong></div>-->
                 </td>
                <td>Mud Shot / Dragon Tail</td>
                 <td>Earthquake / Sand Tomb / Fire Blast / Outrage / Breaking Swipe</td>
@@ -955,7 +1032,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               </tr>
 
  <tr><td>
-        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_tyranitar.png" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
+        <!--        <div class="poke-cell"><img class="poke-ico" src="images/mega_tyranitar.webp" alt="Mega Tyranitar"><strong>-->Mega Tyranitar<!--</strong></div>-->
                 </td>
              <td>Iron Tail / Dragon Breath / Bite</td>
                 <td>Stone Edge / Fire Blast / Crunch / Brutal Swing</td>
@@ -965,7 +1042,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
               </tr>
 
 <tr><td>
-       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_heracross.png" alt="Mega Heracross"><strong>-->Mega Heracross<!--</strong></div>-->
+       <!--         <div class="poke-cell"><img class="poke-ico" src="images/mega_heracross.webp" alt="Mega Heracross"><strong>-->Mega Heracross<!--</strong></div>-->
                 </td>
                <td>Counter / Struggle Bug</td>
                 <td>Close Combat / Upper Hand / Earthquake / Rock Blast / Megahorn</td>
@@ -976,7 +1053,7 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
 
 
   <tr><td>
-    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_metagross.png" alt="Mega Metagross"><strong>-->Mega Metagross<!--</strong></div>-->
+    <!--            <div class="poke-cell"><img class="poke-ico" src="images/mega_metagross.webp" alt="Mega Metagross"><strong>-->Mega Metagross<!--</strong></div>-->
                 </td>
                <td>Fury Cutter / Bullet Punch / Zen Headbutt</td>
                 <td>Earthquake / Flash Cannon / Psychic</td>
@@ -989,56 +1066,10 @@ Blizzard is the most dangerous charged move. Steel-types perform best when Blizz
           </table>
          </div>
 </div>
-
-    
 </section>
 
-<!-- CP -->
-  <section id="cp" class="card">
-    <h2>CP Ranges</h2>
-<p>
-Understanding CP ranges helps trainers evaluate the strength of Kyurem when caught from raids.
-</p>
-
-    <ul>
-      <li><strong>Perfect (L20):</strong> 1,957-2,042 CP</li>
-          <li><strong>Weather Boost (L25):</strong> 2,446-2,553 CP</li>
-          <li><span class="pill">Boosted by: <strong>Snowy</strong> & <strong>Windy</strong></span></li>
-    </ul>
-<p>Keep in mind that weather-boosted Kyurem is significantly harder to defeat, so always prepare strong Ice, Dragon, Fairy-type counters.</p>
-
-  </section>
-
-<section class="card" id="weather">
-      <h2>Weather Boost Effects</h2>
-
-<table>
-<tr>
-<th>Weather</th>
-<th>Effect</th>
-</tr>
-<tr>
-<td>Cloudy</td>
-<td>Boosts Fighting & Fairy counters</td>
-</tr>
-<tr>
-<td>Snowy</td>
-<td>Boosts Kyurem’s Ice-type moves (makes raid harder)</td>
-</tr>
-<tr>
-<td>Partly Cloudy</td>
-<td>Boosts Rock counters</td>
-</tr>
-<tr>
-<td>Windy</td>
-<td>Boosts Dragon attackers</td>
-</tr>
-</table>
-
-          </section>
-
 <section class="card">
-  <h2>Revive & Potion Cost</h2>
+  <h2>💊 Revive & Potion Cost</h2>
   <ul>
     <li>Average revives used: 8–14</li>
     <li>Average potions used: 10–18</li>
@@ -1047,17 +1078,8 @@ Understanding CP ranges helps trainers evaluate the strength of Kyurem when caug
   </ul>
 </section>
 
-<!--<section class="card">
-  <h2>Seasonal Availability</h2>
-  <ul>
-    <li>Appears in Mega Raids during special events</li>
-    <li>Returns approximately once every 6–12 months</li>
-    <li>Best time to farm Mega Energy is during debut rotation</li>
-  </ul>
-</section>-->
-
 <section class="card">
-  <h2>Common Raid Mistakes</h2>
+  <h2>❌ Common Raid Mistakes</h2>
   <ul>
     <li>Not bringing a Mega Pokémon for team boosts</li>
     <li>Using weather-boosted Pokémon of the wrong type</li>
@@ -1066,7 +1088,8 @@ Understanding CP ranges helps trainers evaluate the strength of Kyurem when caug
   </ul>
 </section>
 
-<h2>Sample Team Composition</h2>
+<section class="card">
+<h2>🧩 Best Team Compositions</h2>
 
 <ul>
 <li>Lead with strongest Fighting-type attacker</li>
@@ -1079,12 +1102,9 @@ Understanding CP ranges helps trainers evaluate the strength of Kyurem when caug
 Maintaining consistent super-effective damage while minimizing relobby time ensures a smooth victory.
 </p>
 
-
-<h2>Recommended Raid Teams</h2>
-
 <h3>⚡ High DPS Team (Small Groups)</h3>
 <ul>
-<li>Mega Rayquaza</li>
+<li>Mega Rayquaza - Mega boost increases Dragon damage for the whole team</li>
 <li>Mega Garchomp</li>
 <li>Dialga (Metal Claw + Iron Head)</li>
 <li>Rayquaza</li>
@@ -1095,14 +1115,17 @@ Maintaining consistent super-effective damage while minimizing relobby time ensu
 <h3>🛡 Balanced Team (Safer Clear)</h3>
 <ul>
 <li>Dialga (Metal Claw + Iron Head)</li>
-<li>Metagross (Bullet Punch + Meteor Mash)</li>
-<li>Lucario (Counter + Aura Sphere)</li>
-<li>Terrakion (Double Kick + Sacred Sword)</li>
+<li>Metagross (Bullet Punch + Meteor Mash) - Meteor Mash is one of the strongest moves in Pokémon GO</li>
+<li>Lucario (Counter + Aura Sphere) - Fighting hits Kyurem super effectively</li>
+<li>Terrakion (Double Kick + Sacred Sword) - One of the strongest Fighting attackers</li>
 <li>Togekiss</li>
 <li>Garchomp</li>
 </ul>
 
-<h2>Recommended Group Size</h2>
+</section>
+
+<section class="card">
+<h2>👥 Raid Difficulty & Trainers Needed</h2>
 
 <p>
 Kyurem is less bulky than some other legendary raid bosses, making it manageable with smaller groups.
@@ -1114,92 +1137,158 @@ Kyurem is less bulky than some other legendary raid bosses, making it manageable
 <li><strong>5+ Trainers:</strong> Very safe win</li>
 </ul>
 
-<!-- STRATEGY -->
-  <section id="strategy" class="card">
-    <h2>Raid Strategy</h2>
-    <h3>Adjust Based on Moveset</h3>
+</section>
+
+<section id="strategy" class="card">
+    <h2>🧠 Raid Strategy & Advanced Tips</h2>
+
+<h3>1. Adjust Based on Moveset</h3>
 <p>
 If Kyurem has Blizzard, prioritize Steel or Rock counters for better survivability. If it uses Dragon-type charged moves, mix in Fighting or Steel Pokémon for stability.
 </p>
 
-<h3>Balance DPS and Bulk</h3>
+<h3>2. Balance DPS and Bulk</h3>
 <p>
 While Dragon attackers can shorten raid time, a balanced team including Fighting and Steel types reduces fainting and relobby delays.
 </p>
 
-<h3>Coordinate Mega Evolutions</h3>
+<h3>3. Coordinate Mega Evolutions</h3>
 <p>
 Mega Fighting, Mega Steel, or Mega Rock Pokémon can significantly increase overall damage output. 
 Coordinate activation with your group for maximum efficiency.
 </p>
+
+<p>Kyurem’s Ice and Dragon dual-typing means it has several important weaknesses — notably to Rock, Dragon, Fairy, Steel, and Fighting-type attacks. Pokémon such as Tyranitar with Smack Down and Stone Edge, Metagross with Bullet Punch and Meteor Mash, and Garchomp with Dragon Tail and Outrage are excellent choices because they hit Kyurem’s weaknesses while also resisting many of its moves. Fairy counters like Togekiss or Gardevoir help cover the Dragon side of Kyurem’s typing and offer better durability against charged attacks.</p>
+
+  <p>Weather conditions play an important role in this raid. In Snowy weather, Ice moves — including some of Kyurem’s own attacks — may be stronger, but Rock, Dragon, and Steel typing also benefit under certain conditions like Partly Cloudy or Windy weather. Trainers should always check the in-game weather before selecting their team, as boosted attacks from weather can significantly increase your overall damage per second (DPS).</p>
+
+  <p>Kyurem’s charged moves such as Ice Beam and Draco Meteor hit hard and can quickly wear down your counters if they’re not resistant or bulky enough. Learning when to dodge — especially heavy charged attacks — can improve your team’s survivability and allow your strongest counters to stay active longer. In smaller raid groups, strategic dodging becomes even more important, as every HP matters.</p>
+
+  <p>When building your raid party, lead with your highest DPS counters that exploit Kyurem’s weaknesses. Once those Pokémon start to fall, rotate in secondary attackers that still deal super-effective damage but offer greater bulk. In larger lobbies, coordinating roles — such as starting with Rock and Steel counters followed by Fairy and Dragon types — helps streamline the battle and maintain a high pace of damage across the raid timer.</p>
+
+  <p>If you have powerful Mega Evolutions that support your primary counter types (such as Mega Aggron for Steel coverage or Mega Gardevoir for Fairy support), consider using them early to empower your team. Proper team sequencing and weather-aware planning give you the best shot at a fast and clean Kyurem raid clear.</p>
   </section>
 
-  <!-- EVOLUTION 
-  <section id="evolution" class="card">
-  <h2>Evolution, Mega Details & Buddy Distance</h2>
-  <table>
-   <tr><td>Evolution Line</td><td>Base → Stage → Final → Mega</td></tr>
-    <tr><td>Mega Energy (First)</td><td>200</td></tr>
-    <tr><td>Subsequent Cost</td><td>40</td></tr>
-    <tr><td>Buddy Distance</td><td>20 km</td></tr>
-    <tr><td>Mega Energy via Buddy</td><td>Yes</td></tr>
-    <tr><td>Mega Boost Bonus</td><td>Extra Dark-type Candy</td></tr>
-  </table>
-</section>-->
+<section class="card" id="weather">
+      <h2>🌦️ Weather Boost Effects</h2>
 
-<!--<section id="resources" class="card">
-  <h2>Revives, Potions & Availability</h2>
-  <ul>
-    <li>Average revives used: 8–14</li>
-    <li>Dodging reduces potion usage</li>
-    <li>Returns every 6–12 months in Mega rotations</li>
-  </ul>
-</section>-->
+
+<h3>☁️ Cloudy Weather</h3>
+<ul>
+<li>Boosts Fighting & Fairy counters</li>
+</ul>
+<h3>🌨️ Snowy Weather</h3>
+<ul>
+<li>Boosts Kyurem’s Ice-type moves (makes raid harder)</li>
+</ul>
+<h3>⛅ Partly Cloudy Weather</h3>
+<ul>
+<li>Boosts Rock counters</li>
+</ul>
+<h3>🌬️ Windy Weather</h3>
+<ul>
+<li>Boosts Dragon attackers</li>
+</ul>
+
+          </section>
+
+<section id="moves" class="card">
+    <h2>🌀 Kyurem Moveset</h2>
+    
+<h3>🗡️ Fast Moves</h3>
+<ul>
+  <li>Steel Wing</li>
+  <li>Dragon Breath</li>
+</ul>
+
+<h3>💥 Charged Moves</h3>
+<ul>
+  <li>Dragon Claw</li>
+  <li>Blizzard</li>
+  <li>Draco Meteor</li>
+</ul>
+
+<h3>🔄 Elite Moves</h3>
+<ul>
+<li>Glaciate</li>
+</ul>
+
+<p class="pro-tip"><strong>Pro tip:</strong> Blizzard is the most dangerous charged move. Steel-types perform best when Blizzard is present.</p>
+
+  </section>
+
+<section id="dodge-moves">
+<h2>Moves to Dodge</h2>
+<ul>
+<li>Outrage (Dragon-type, very high damage)</li>
+<li>Blizzard (Ice-type, fast charge)</li>
+</ul>
+</section>
+
+<section id="pvepvp">
+<h2>🎮 Is Kyurem Good in PvE and PvP?</h2>
+<h3>PvE (Raids)</h3>
+<p>Kyurem is very strong in raids due to high attack, but battles last long because of high HP.</p>
+<h3>PvP</h3>
+<p>Kyurem is situationally strong in PvP Ultra League or Master League, but less common than Giratina or Dragonite.</p>
+</section>
+
+  <section id="shiny">
+
+<h2>✨ Can Kyurem Be Shiny in Pokémon GO?</h2>
+
+<p>
+Yes, trainers have a chance to encounter <strong>Shiny Kyurem</strong> after defeating 
+Kyurem in a raid battle. Shiny Kyurem has a slightly different color appearance compared 
+to its normal form, making it a valuable addition for collectors and shiny hunters.
+</p>
+
+<p>
+Shiny Kyurem maintains the same battle strength and stats as the regular version, but 
+its unique appearance makes it highly sought after by many players in Pokémon GO.
+</p>
+
+<p>
+Participating in multiple Kyurem raids will increase your chances of encountering a 
+shiny version, so trainers often complete several raids during Kyurem raid rotations.
+</p>
+
+</section>
 
 <!-- BUDDY DISTANCE -->
   <section id="buddy" class="card">
-    <h2>Buddy Distance</h2>
+    <h2>🚶 Buddy Distance</h2>
     <p id="buddyDistance">20 km (per Pokémon GO buddy distance)</p>
   </section>
 
   <!-- SHADOW VS MEGA -->
-  <section id="shadowMegaSection" class="card"><h2>Shadow & Mega Comparison</h2></section>
+  <section id="shadowMegaSection" class="card"><h2>⚖️ Shadow & Mega Comparison</h2></section>
 
 </div>
 
 <!-- CONFIG + JS -->
 <script>
+document.addEventListener("DOMContentLoaded", function () {
   const raidConfig = {
     raidBoss: "Kyurem",
     megaType: "Dragon / Ice",
     pageDescription: "Kyurem Raid Guide with stats, moves, best counters, CP, strategy, evolution & buddy info.",
     heroSummary: "Kyurem is one of the strongest Dragon / Ice-type Legendary Pokémon in Pokémon GO raids.",
-    moves: [
-      { type: "Fast", name: "Steel Wing, Dragon Breath" },
-      { type: "Charged", name: "Blizzard, Dragon Claw, Draco Meteor" },
-      { type: "Elite", name: "Glaciate"}
-    ],
-    counters: [
-      { name: "Dialga", description: "Top Steel-type attacker" },
-      { name: "Palkia", description: "Top Dragon attacker" }, 
-      { name: "Rayquaza", description: "Top Legendary-type attacker" },
-      { name: "Metagross", description: "Top Steel option" },
-      { name: "Conkeldurr", description: "Top Fighting attacker" },
-      { name: "Terrakion", description: "Top Fighting/Rock attacker" }
-    ],
+    
     buddyDistance: "20 km (per Pokémon GO buddy distance)"
   };
   
-  // Populate moves
-  const movesList = document.getElementById("movesList");
-  movesList.innerHTML = raidConfig.moves.map(m => `<li><strong>${m.type}:</strong> ${m.name}</li>`).join("");
-
   // Populate buddy distance
-  document.getElementById("buddyDistance").textContent = raidConfig.buddyDistance;
+  const buddy = document.getElementById("buddyDistance");
+  if (buddy) {
+    buddy.textContent = raidConfig.buddyDistance;
+  }
 
-  // Generate Shadow vs Mega
+  // Generate Shadow vs Mega comparison
   function generateShadowMegaComparison(config) {
     const container = document.getElementById("shadowMegaSection");
+    if (!container) return;
+
     container.innerHTML = `
       <h2>Shadow vs Mega Pokémon Comparison</h2>
       <p>
@@ -1249,27 +1338,144 @@ Coordinate activation with your group for maximum efficiency.
   }
 
   generateShadowMegaComparison(raidConfig);
-
+});
 </script>
 
-<h2>Rewards</h2>
+<h2>🧬 Best Mega Evolutions</h2>
+  <p>Recommended Megas to use against Kyurem:</p>
   <ul>
-    <li>Chance to catch Shiny Kyurem (with boosted IVs)</li>
-    <li>Rare Candy & XL Candy</li>
+    <li>Lucario, Blaziken, Heracross, Latias, Latios – 🥊 Fighting boost</li>
+    <li>Metagross – ⚙️ Steel boost</li>
+    <li>Rayquaza, Latios, Latias, Garchomp – 🐉 Dragon boost</li>
+    <li>Gardevoir – ✨ Fairy boost</li>
+    <li>Diancie, Tyranitar - 🪨 Rock boost</li>
   </ul>
 
-<h2>Shiny Kyurem</h2>
+  <h2>📌 Why Raid Kyurem?</h2>
+  <ul>
+<li>Legendary Pokémon worth catching</li>
+<li>Useful for Ice- and Dragon-type counters</li>
+<li>Shiny Kyurem is available</li>
+</ul>
+
+<section id="raid-rewards">
+<h2>🎁 Raid Rewards</h2>
+
 <p>
-Shiny Kyurem is available in Pokémon GO. The shiny version has green highlights instead of blue and is highly valuable for collectors and battlers.
+Defeating <strong>Kyurem</strong> in a 5-Star Raid Battle rewards trainers with useful items,
+experience points, and a chance to catch Kyurem. The exact rewards depend on raid
+performance, team contribution, and friendship bonuses.
 </p>
 
-  <h2>Why Raid Kyurem?</h2>
-  <p>Kyurem is valuable for collectors and competitive players. 
-It has future relevance due to its alternate forms and remains useful in raid rotations. 
-Farming Candy and XL Candy prepares trainers for powering up its stronger forms.</p>
+<table>
+<tr>
+<th>Reward Item</th>
+<th>Possible Amount</th>
+</tr>
+
+<tr>
+<td>Golden Razz Berry</td>
+<td>3 – 12</td>
+</tr>
+
+<tr>
+<td>Rare Candy</td>
+<td>3 – 9</td>
+</tr>
+
+<tr>
+<td>Revive</td>
+<td>6 – 15</td>
+</tr>
+
+<tr>
+<td>Hyper Potion</td>
+<td>6 – 15</td>
+</tr>
+
+<tr>
+<td>Fast TM</td>
+<td>0 – 2</td>
+</tr>
+
+<tr>
+<td>Charged TM</td>
+<td>0 – 2</td>
+</tr>
+
+<tr>
+<td>Stardust</td>
+<td>1000</td>
+</tr>
+
+</table>
+
+<h3>Premier Balls (Catch Attempt)</h3>
+
+<p>
+After winning the raid, trainers receive <strong>Premier Balls</strong> to catch Kyurem.
+The number of balls depends on several factors such as damage contribution,
+gym control, and friendship bonuses.
+</p>
+
+<ul>
+<li>Minimum: 8 Premier Balls</li>
+<li>Maximum: 16+ Premier Balls</li>
+</ul>
+
+<h3>Bonus Rewards</h3>
+
+<table>
+<tr>
+<th>Bonus</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>Raid Completion XP</td>
+<td>10,000 XP</td>
+</tr>
+
+<tr>
+<td>Friendship Bonus XP</td>
+<td>Extra XP when raiding with friends</td>
+</tr>
+
+<tr>
+<td>Catch Encounter</td>
+<td>Chance to catch Kyurem (Shiny possible)</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="pokemon-gallery">
+
+<h2>🖼️ Regular vs Shiny Kyurem Forms</h2>
+<p>
+Shiny Kyurem has a slightly different color appearance compared 
+to its normal form, making it a valuable addition for collectors and shiny hunters.
+</p>
+
+<div class="image-grid">
+
+<div class="image-card">
+<img src="kyurem.webp" alt="Normal Kyurem" loading="lazy" width="200" height="200">
+<p>Kyurem</p>
+</div>
+
+<div class="image-card">
+<img src="shiny_kyurem.webp" alt="Shiny Kyurem" loading="lazy" width="200" height="200">
+<p>Shiny Kyurem</p>
+</div>
+
+</div>
+
+</section>
 
         <section id="faq" aria-label="FAQ">
-          <h2>FAQ</h2>
+          <h2>❓ FAQ</h2>
           <h3>Can Kyurem be shiny in Pokémon GO?</h3>
         <p>Yes! Shiny Kyurem is available. It features a beautiful icy-blue body with yellow accents.</p>
         <h3>What is Kyurem’s exclusive move?</h3>
@@ -1285,33 +1491,46 @@ Farming Candy and XL Candy prepares trainers for powering up its stronger forms.
 
         </section>
 
-<h2>Conclusion</h2>
+<section id="related">
+<h2>🔗 Related Raid Guides</h2>
+
+<p>You may also find these Pokémon GO raid guides helpful:</p>
+
+<ul>
+<li><a href="reshiram.html">Reshiram Raid Guide</a></li>
+<li><a href="zekrom.html">Zekrom Raid Guide</a></li>
+<li><a href="palkia.html">Palkia Raid Guide</a></li>
+<li><a href="dialga.html">Dialga Raid Guide</a></li>
+<li><a href="altered_giratina.html">Giratina (Altered Forme) Raid Guide</a></li>
+<li><a href="kyogre.html">Primal Kyogre Raid Guide</a></li>
+
+</ul>
+
+</section>
+
+<h2>🏁 Conclusion</h2>
 <p>Kyurem raids are manageable thanks to its multiple weaknesses. 
 Use Fighting, Rock, or Steel-type Pokémon for stable clears, and consider Dragon attackers for faster runs. 
 Monitor weather conditions, coordinate Mega boosts, and prepare balanced teams for optimal results.</p>
 
-<h2>Related Guides</h2>
-<p>Looking for more counters? Check out our 
-  <a href="mega_blaziken.html">Mega Blaziken Raid Guide,</a> 
- <a href="mega_lucario.html">Mega Lucario Raid Guide</a> 
+<p>To beat Kyurem efficiently, use high-level Dragon, Fighting, and Fairy Pokémon with optimized movesets. Solo attempts require maxed-out counters, while larger groups benefit from coordinated DPS rotations and shield management. Weather conditions and move selection can greatly influence battle success.
 </p>
 
- <aside class="card" aria-label="Sidebar">
-        <h2>Quick picks</h2>
+<section id="quick-picks">
+<!--<aside class="card" aria-label="Sidebar">-->
+        <h2>⚡Quick picks</h2>
         <ul>
           <li><strong>Best Mega Team:</strong> Blaziken, Lucario</li>
           <li><strong>Best Shadow Team:</strong> Metagross</li>
           <li><strong>Best Regular Team:</strong> Keldeo, Dusk Mane Necrozma, Zamazenta</li>
         </ul>
-      </aside>
-
-<h2>Summary</h2>
-<p>To beat Kyurem efficiently, use high-level Dragon, Fighting, and Fairy Pokémon with optimized movesets. Solo attempts require maxed-out counters, while larger groups benefit from coordinated DPS rotations and shield management. Weather conditions and move selection can greatly influence battle success.
-</p>
+      <!--</aside>-->
+</section>
    
 <section class="author-box">
       <h3>About the Author</h3>
-      <p>Written by <strong>Pokémon Gaming Team</strong> — bringing expert raid guides and battle strategies. Explore more guides like <a href="mega_latias.html">Mega Latias</a>, <a href="mega_tyranitar.html">Mega Tyranitar</a>.</p>
+      <p>Written by Abhishek — Level 50 Pokémon GO Trainer (since 2019).
+Completed 500+ Mega raids and specializes in raid optimization and counter analysis. Explore more guides like <a href="mega_latias.html">Mega Latias</a>, <a href="mega_tyranitar.html">Mega Tyranitar</a>.</p>
     </section>
 </main>
 
@@ -1328,7 +1547,7 @@ Monitor weather conditions, coordinate Mega boosts, and prepare balanced teams f
 
     </p> 
 
-<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
+<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only. This website is not affiliated with or endorsed by Nintendo, Niantic, or The Pokémon Company.
 </p>
 </div>
 </footer>
@@ -1337,5 +1556,7 @@ Monitor weather conditions, coordinate Mega boosts, and prepare balanced teams f
     document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
   </script>
 
+
 </body>
 </html>
+
