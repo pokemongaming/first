@@ -145,12 +145,35 @@
 <style>
 
 /* =========================
-   GLOBAL RESET
+   DESIGN SYSTEM (ROOT)
 ========================= */
-* {
+:root {
+  --bg: #0b0f14;
+  --card: #12161d;
+  --border: #1f2937;
+
+  --text-main: #e5e7eb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+
+  --accent-green: #22c55e;
+  --accent-red: #ef4444;
+  --accent-yellow: #eab308;
+  --accent-blue: #3b82f6;
+
+  --radius: 14px;
+  --transition: 0.25s ease;
+}
+
+/* =========================
+   RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* =========================
@@ -158,20 +181,20 @@
 ========================= */
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #0b0f14;
-  color: #e5e7eb; /* gray-200 */
-  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text-main);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* =========================
    TYPOGRAPHY
 ========================= */
-
-/* Headings */
 h1, h2, h3, h4 {
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   margin-bottom: 12px;
+  line-height: 1.3;
 }
 
 h1 { font-size: 30px; }
@@ -179,51 +202,56 @@ h2 { font-size: 24px; }
 h3 { font-size: 20px; }
 h4 { font-size: 16px; }
 
-/* Paragraphs */
 p {
   font-size: 15px;
-  color: #d1d5db; /* gray-300 */
+  color: var(--text-secondary);
   margin-bottom: 14px;
 }
 
-/* Small text */
 .small-text {
   font-size: 12px;
-  color: #9ca3af; /* gray-400 */
+  color: var(--text-muted);
+}
+
+/* Better readability */
+.content p {
+  margin-bottom: 16px;
 }
 
 /* =========================
    LINKS
 ========================= */
 a {
-  color: #60a5fa;
+  color: var(--accent-blue);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: 0.85;
 }
 
 /* =========================
-   CARD SYSTEM
+   CARD SYSTEM (UPGRADED)
 ========================= */
 .card {
-  background: #12161d;
-  border: 1px solid #1f2937;
-  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 20px;
-  transition: 0.3s ease;
+  transition: var(--transition);
 }
 
 .card:hover {
   border-color: #374151;
+  transform: translateY(-2px);
 }
 
 /* =========================
    SECTION SPACING
 ========================= */
 .section {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /* =========================
@@ -241,16 +269,22 @@ a:hover {
   gap: 20px;
 }
 
-/* Mobile Responsive */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 @media (max-width: 768px) {
   .grid-2,
-  .grid-3 {
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
 }
 
 /* =========================
-   LISTS
+   LISTS (IMPROVED)
 ========================= */
 ul {
   padding-left: 18px;
@@ -258,24 +292,23 @@ ul {
 
 li {
   margin-bottom: 8px;
-  color: #d1d5db;
+  color: var(--text-secondary);
 }
 
 /* =========================
-   TABLES
+   TABLES (PREMIUM)
 ========================= */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 12px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
 th {
   background: linear-gradient(to right, #2563eb, #4f46e5);
-  color: white;
-  text-align: left;
+  color: #fff;
   padding: 12px;
   font-size: 14px;
 }
@@ -292,7 +325,7 @@ tr:hover td {
 }
 
 /* =========================
-   BADGES / TAGS
+   BADGES
 ========================= */
 .badge {
   display: inline-block;
@@ -302,25 +335,10 @@ tr:hover td {
   font-weight: 600;
 }
 
-.badge-green {
-  background: rgba(34,197,94,0.1);
-  color: #22c55e;
-}
-
-.badge-red {
-  background: rgba(239,68,68,0.1);
-  color: #ef4444;
-}
-
-.badge-yellow {
-  background: rgba(234,179,8,0.1);
-  color: #eab308;
-}
-
-.badge-blue {
-  background: rgba(59,130,246,0.1);
-  color: #3b82f6;
-}
+.badge-green { background: rgba(34,197,94,0.1); color: var(--accent-green); }
+.badge-red { background: rgba(239,68,68,0.1); color: var(--accent-red); }
+.badge-yellow { background: rgba(234,179,8,0.1); color: var(--accent-yellow); }
+.badge-blue { background: rgba(59,130,246,0.1); color: var(--accent-blue); }
 
 /* =========================
    BUTTONS
@@ -332,11 +350,11 @@ tr:hover td {
   font-weight: 600;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 .btn-primary {
-  background: #22c55e;
+  background: var(--accent-green);
   color: black;
 }
 
@@ -360,103 +378,90 @@ tr:hover td {
 /* spacing */
 .mt-2 { margin-top: 8px; }
 .mt-4 { margin-top: 16px; }
+.mt-6 { margin-top: 24px; }
 .mb-4 { margin-bottom: 16px; }
 
-/* text colors */
-.text-white { color: #ffffff; }
-.text-gray { color: #9ca3af; }
-.text-light { color: #d1d5db; }
-
-/* alignment */
+/* text */
 .text-center { text-align: center; }
+.text-white { color: #fff; }
+.text-muted { color: var(--text-muted); }
 
-/* highlight */
-.highlight {
-  color: #22c55e;
+/* highlights */
+.green { color: var(--accent-green); font-weight: 600; }
+.red { color: var(--accent-red); font-weight: 600; }
+.yellow { color: var(--accent-yellow); font-weight: 600; }
+.blue { color: var(--accent-blue); font-weight: 600; }
+
+/* =========================
+   INFOGRAPHIC (FIXED DARK UI)
+========================= */
+.infographic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.infographic .step {
+  background: var(--card);
+  flex: 1 1 calc(33% - 20px);
+  padding: 15px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+/* =========================
+   TYPE BADGES (POKEMON)
+========================= */
+.type {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
   font-weight: 600;
 }
 
-/* Electric */
-.type.electric {
-  background: #F7D02C;
-  color: #000;
+/* TYPE COLORS */
+.type.fire { background:#EE8130; }
+.type.water { background:#6390F0; }
+.type.grass { background:#7AC74C; }
+.type.electric { background:#F7D02C; color:#000; }
+.type.ice { background:#96D9D6; color:#000; }
+.type.fighting { background:#C22E28; }
+.type.poison { background:#A33EA1; }
+.type.ground { background:#E2BF65; color:#000; }
+.type.flying { background:#A98FF3; }
+.type.psychic { background:#F95587; }
+.type.bug { background:#A6B91A; }
+.type.rock { background:#B6A136; }
+.type.ghost { background:#735797; }
+.type.dragon { background:#6F35FC; }
+.type.dark { background:#705746; }
+.type.steel { background:#B7B7CE; color:#000; }
+.type.fairy { background:#D685AD; color:#000; }
+
+/* =========================
+   IMAGE IMPROVEMENTS
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Flying */
-.type.flying {
-  background: #A98FF3;
+/* =========================
+   SCROLLBAR (OPTIONAL PREMIUM)
+========================= */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-/* Rock */
-.type.rock {
-  background: #B6A136;
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 10px;
 }
 
-/* Ice */
-.type.ice {
-  background: #96D9D6;
-  color: #000;
-}
-
-.infographic {display:flex; flex-wrap:wrap; gap:15px; margin-top:20px;}
-.infographic .step {background:#e6f2ff; flex:1 1 calc(33% - 20px); padding:15px; border-radius:10px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-.infographic .step h4 {margin:10px 0; color:#2c5364;}
-
-/* Ground */
-.type.ground {
-  background: #E2BF65;
-  color: #000;
-}
-
-/* Fire */
-.type.fire {
-  background: #EE8130;
-}
-
-/* Water */
-.type.water {
-  background: #6390F0;
-}
-
-/* Grass */
-.type.grass {
-  background: #7AC74C;
-}
-
-/* Psychic */
-.type.psychic {
-  background: #F95587;
-}
-
-/* Dark */
-.type.dark {
-  background: #705746;
-}
-
-/* Dragon */
-.type.dragon {
-  background: #6F35FC;
-}
-
-/* Fairy */
-.type.fairy {
-  background: #D685AD;
-  color: #000;
-}
-
-.type-ico {
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-  object-fit: contain;
-  margin-right: 6px;
-}
-
-/* Steel */
-.type.steel {
-  background: #B7B7CE;
-  color: #000;
-}
 </style>
 
 </head>
@@ -676,7 +681,7 @@ For optimal performance, players should focus on fast, high-DPS attackers rather
 Dodging charged moves can further improve survivability, but in most cases, maximizing damage output is the key to a fast and successful clear.
 </p>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
       <h3 class="text-xl text-gray-500 uppercase mb-4">Tier Ranking</h3>
       <div class="overflow-x-auto">
 <table class="w-full text-sm border border-gray-200 rounded-lg shadow-sm">
@@ -800,7 +805,7 @@ Mega Absol is at rank 79 and categorized in <a href="a_tier.html">A Tier</a> whe
 
 <section class="mt-12">
 <h2 class="text-2xl text-gray-500 uppercase mb-4">Meta & Usage</h2>
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">    
+<div class="card">    
 <p class="text-gray-400">
 Mega Absol performs modestly in raids and is most useful as an Dark attacker (boosting Dark‑type damage for teammates). Its Dark typing adds some niche resistances, making it valuable against certain typings like Dark, Ghost, Psychic bosses.
 </p>
@@ -809,7 +814,7 @@ Mega Absol performs modestly in raids and is most useful as an Dark attacker (bo
 
 <section class="mt-12">
 <h2 class="text-2xl text-gray-500 uppercase mb-4">Information</h2>
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <p class="text-gray-400">
 Information about Absol in pokedex.</p>
 <br>
@@ -906,7 +911,7 @@ Information about Absol in pokedex.</p>
 
 <section class="mt-12">
 <h2 class="text-2xl font-bold mb-4">CP Chart (Catch CP & Weather Boost) </h2>
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <p class="text-gray-300 leading-relaxed">
 Knowing the CP ranges helps you identify high-IV Absol after the raid:</p>
 <br>
@@ -950,7 +955,7 @@ If you encounter an Absol near the upper limit, chances are it has high IVs. Wea
 
 <section class="mb-12">
 <h2 class="text-2xl font-bold mb-4">Best Counters for Mega Absol: </h2>
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <p class="text-gray-300 leading-relaxed">
 Choosing the right counters is the key to winning efficiently:</p>
 <br>
@@ -1010,7 +1015,7 @@ Fighting-types dominate this raid due to their high DPS and effectiveness agains
 </section>
 
 <section class="mt-12">
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">Mega Absol Moveset: </h2>
 <span class="text-[10px] text-gray-500">Possible attacks</span>
 <h3 class="text-xl font-bold mb-4">Fast Moves: </h3>
@@ -1445,7 +1450,7 @@ Always adjust your team depending on the boss moveset if possible.</p>
 </div>
 </section>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
       <h3 class="text-xl text-gray-500 uppercase mb-4">Max CP Values</h3>
 
 <!--<h3>Example IV Table</h3>
@@ -1493,7 +1498,7 @@ Mega Absol's has <span class="highlight">3732 </span>max CP (at Level 50). A Meg
       </ul>
     </div>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">Shiny Mega Absol: </h2>
 <p class="text-gray-300 leading-relaxed">
 Shiny Absol is one of the most popular shiny Pokémon in Pokémon GO.</p>
@@ -1509,7 +1514,7 @@ Shiny Absol is one of the most popular shiny Pokémon in Pokémon GO.</p>
 <p class="text-gray-300 leading-relaxed">
 Shiny rates are boosted in Mega raids, making this a great opportunity for shiny hunters.</p>
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid-2">
 
 <div class="bg-[#12161d] p-4 rounded-xl text-center border border-gray-800">
       <p class="text-gray-400 text-xs mb-2">Normal</p>
@@ -1738,7 +1743,7 @@ Finally, Mega Evolution isn’t always necessary, but a strategic use of a Mega 
       </div>
 
 <h2 class="text-2xl font-bold mb-4">Raid Strategy: </h2>
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <p class="text-gray-300 leading-relaxed">
 Mega Absol raids are all about <strong>speed and efficiency</strong>. Since it has low defenses, the goal is to maximize damage output rather than focus heavily on survivability.</p>
 <br>
@@ -1849,7 +1854,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
 
 </section>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">Pro Tips for Winning: </h2>
 <ul class="space-y-4 text-sm text-gray-300">
     
@@ -1898,7 +1903,7 @@ Additionally, players have the chance to catch a high-IV or shiny Absol, making 
 </p>
 </section>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
       <h3 class="text-xl text-gray-500 uppercase mb-4">Counter Strategy Breakdown</h3>
 <p class="text-gray-400">
 The key to defeating Mega Absol efficiently lies in maximizing Fire-type damage output. High DPS attackers should be prioritized over bulky Pokémon, as the goal is to finish the raid quickly rather than sustain damage over time.
@@ -1907,7 +1912,7 @@ Using Mega Evolution strategically provides a team-wide boost, increasing overal
 </p>
 </div>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">Best Team Composition: </h2>
 <p class="text-gray-300 leading-relaxed">
 A well-balanced team ensures maximum efficiency.
@@ -1937,7 +1942,7 @@ If you mission is to complete the raid as soon as possible then best team would 
 
 </div>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">Catching Mega Absol (After Raid Tips)</h2>
 <p class="text-gray-300 leading-relaxed">
 Catching Absol after defeating the raid is crucial.
@@ -1963,7 +1968,7 @@ Consistently landing Excellent throws will greatly improve your chances of catch
 </p>
 </div>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">IV and Appraisal Guide</h2>
 <p class="text-gray-300 leading-relaxed">
 After catching Absol, check its IVs.
@@ -2017,7 +2022,7 @@ Level 25: ~2,432 CP.
   </p>
 </section>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">PvP Analysis</h2>
 <p class="text-gray-300 leading-relaxed">
 Regular Absol is strong in Great League and Ultra League thanks to:
@@ -2267,10 +2272,10 @@ Efficient farming ensures continuous Mega Evolution access:
 </div>
 </section>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
 <h2 class="text-2xl font-bold mb-4">Counters Guide</h2>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
+<div class="card">
   <div class="overflow-x-auto">
 <table class="w-full text-sm text-left border border-gray-200 rounded-xl overflow-hidden shadow-md">
 
