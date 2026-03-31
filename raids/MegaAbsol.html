@@ -143,6 +143,239 @@
 </script>
 
 <style>
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #0b0f14;
+  color: #e5e7eb; /* gray-200 */
+  line-height: 1.6;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+
+/* Paragraphs */
+p {
+  font-size: 15px;
+  color: #d1d5db; /* gray-300 */
+  margin-bottom: 14px;
+}
+
+/* Small text */
+.small-text {
+  font-size: 12px;
+  color: #9ca3af; /* gray-400 */
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CARD SYSTEM
+========================= */
+.card {
+  background: #12161d;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  border-color: #374151;
+}
+
+/* =========================
+   SECTION SPACING
+========================= */
+.section {
+  margin-top: 40px;
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #d1d5db;
+}
+
+/* =========================
+   TABLES
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  color: white;
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+}
+
+td {
+  background: #ffffff;
+  color: #111827;
+  padding: 10px;
+  font-size: 14px;
+}
+
+tr:hover td {
+  background: #f3f4f6;
+}
+
+/* =========================
+   BADGES / TAGS
+========================= */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.badge-green {
+  background: rgba(34,197,94,0.1);
+  color: #22c55e;
+}
+
+.badge-red {
+  background: rgba(239,68,68,0.1);
+  color: #ef4444;
+}
+
+.badge-yellow {
+  background: rgba(234,179,8,0.1);
+  color: #eab308;
+}
+
+.badge-blue {
+  background: rgba(59,130,246,0.1);
+  color: #3b82f6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #22c55e;
+  color: black;
+}
+
+.btn-primary:hover {
+  background: #16a34a;
+}
+
+.btn-secondary {
+  background: #1f2937;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #374151;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+
+/* spacing */
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mb-4 { margin-bottom: 16px; }
+
+/* text colors */
+.text-white { color: #ffffff; }
+.text-gray { color: #9ca3af; }
+.text-light { color: #d1d5db; }
+
+/* alignment */
+.text-center { text-align: center; }
+
+/* highlight */
+.highlight {
+  color: #22c55e;
+  font-weight: 600;
+}
+
 /* Electric */
 .type.electric {
   background: #F7D02C;
@@ -228,7 +461,7 @@
 
 </head>
 
-<body class="bg-[#0a0c10] text-white font-sans p-6">
+<body class="bg-[#0a0c10] text-gray-200 font-[Inter] p-6">
 <header style="background:#16a34a;padding:12px;text-align:center;">
   <a href="/" style="color:white;margin:10px;font-weight:bold;">Home</a>
   <a href="/raids/" style="color:white;margin:10px;font-weight:bold;">Raids</a>
@@ -249,7 +482,7 @@ This guide is created for educational and informational purposes to help Pokémo
         <div class="flex gap-2 mb-4">
             <span class="bg-purple-900/30 text-purple-400 text-xs px-2 py-1 rounded border border-purple-500/30">DARK</span>
             </div>
-        <h1 class="text-6xl font-black tracking-tighter italic leading-none">
+        <h1 class="text-3xl font-black tracking-tighter italic leading-none">
             MEGA <br> <span class="text-green-400">ABSOL</span>
         </h1>
         <p class="text-gray-400 text-xl font-bold mt-2">RAID GUIDE</p>
@@ -286,7 +519,7 @@ This guide is created for educational and informational purposes to help Pokémo
 </div>
 
 <main class="max-w-5xl mx-auto bg-[#12161d] rounded-3xl p-8 border border-gray-800">
-        <h2 class="text-gray-500 text-xs font-bold mb-8 tracking-widest">BOSS OVERVIEW</h2>
+        <h2 class="text-gray-500 text-2xl font-bold mb-8 tracking-widest">BOSS OVERVIEW</h2>
 
 <section class="mt-6 bg-[#11131a] p-6 rounded-2xl shadow-lg">
   <h2 class="text-2xl font-bold mb-4">Raid Difficulty</h2>
@@ -388,30 +621,30 @@ It is also weak to Fighting, Bug and Fairy, but Fighting-types like Mega Lopunny
 </div>
 <br>
 <div class="card">
-<h2 class="text-gray-500 text-[18px] font-bold mb-4">Battle Infographic</h2>
+<h2 class="text-gray-500 text-2xl font-bold mb-4">Battle Infographic</h2>
 <div class="infographic">
   <div class="step">
-    <h4 class="text-gray-500 text-[18px] font-bold mb-4">Step 1: Team Composition</h4>
+    <h4 class="text-gray-500 text-l font-bold mb-4">Step 1: Team Composition</h4>
     <p class="text-gray-400 text-[16px] mt-1">Togekiss, Mega Gardevoir, Machamp, Mega Lucario – top DPS counters</p>
   </div>
   <div class="step">
-    <h4 class="text-gray-500 text-[18px] font-bold mb-4">Step 2: Weather Advantage</h4>
+    <h4 class="text-gray-500 text-l font-bold mb-4">Step 2: Weather Advantage</h4>
     <p class="text-gray-400 text-[16px] mt-1">Cloudy weather boosts Fighing and Fairy-moves, Foggy weather boosts Absol. Plan accordingly.</p>
   </div>
   <div class="step">
-    <h4 class="text-gray-500 text-[18px] font-bold mb-4">Step 3: Mega Evolution Timing</h4>
+    <h4 class="text-gray-500 text-l font-bold mb-4">Step 3: Mega Evolution Timing</h4>
     <p class="text-gray-400 text-[16px] mt-1">Activate Mega at start to boost team damage output for optimal DPS.</p>
   </div>
   <div class="step">
-    <h4 class="text-gray-500 text-[18px] font-bold mb-4">Step 4: Dodging Strategy</h4>
+    <h4 class="text-gray-500 text-l font-bold mb-4">Step 4: Dodging Strategy</h4>
     <p class="text-gray-400 text-[16px] mt-1">Dodge Brutal Swing only; ignore minor moves to maintain DPS.</p>
   </div>
   <div class="step">
-    <h4 class="text-gray-500 text-[18px] font-bold mb-4">Step 5: Relobby Smartly</h4>
+    <h4 class="text-gray-500 text-l font-bold mb-4">Step 5: Relobby Smartly</h4>
     <p class="text-gray-400 text-[16px] mt-1">After fainting, rejoin raid immediately instead of reviving Pokémon.</p>
   </div>
   <div class="step">
-    <h4 class="text-gray-500 text-[18px] font-bold mb-4">Step 6: Raid Completion</h4>
+    <h4 class="text-gray-500 text-l font-bold mb-4">Step 6: Raid Completion</h4>
     <p class="text-gray-400 text-[16px] mt-1">Finish efficiently for Mega Energy, shiny chances, and XP rewards.</p>
   </div>
 </div>
@@ -444,7 +677,7 @@ Dodging charged moves can further improve survivability, but in most cases, maxi
 </p>
 
 <div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
-      <h3 class="text-[10px] text-gray-500 uppercase mb-4">Tier Ranking</h3>
+      <h3 class="text-xl text-gray-500 uppercase mb-4">Tier Ranking</h3>
       <div class="overflow-x-auto">
 <table class="w-full text-sm border border-gray-200 rounded-lg shadow-sm">
 
@@ -481,7 +714,7 @@ Mega Absol is at rank 79 and categorized in <a href="a_tier.html">A Tier</a> whe
 
   <!-- Section Header -->
   <div class="flex justify-between items-end mb-6 border-b border-gray-800 pb-4">
-    <h2 class="text-2xl font-bold mb-4"">
+    <h2 class="text-2xl font-bold mb-4">
       Mega Evolution Strategy
     </h2>
     <span class="text-[10px] text-gray-500">Damage boost & candy bonus</span>
@@ -492,7 +725,7 @@ Mega Absol is at rank 79 and categorized in <a href="a_tier.html">A Tier</a> whe
     <!-- ✅ Best Megas Against -->
     <div class="bg-[#12161d] p-6 rounded-2xl border border-gray-800">
 
-      <h3 class="text-sm font-bold text-white mb-4">Best Megas Against Mega Absol</h3>
+      <h3 class="text-xl font-bold text-white mb-4">Best Megas Against Mega Absol</h3>
 <p class="text-xs text-gray-400 mb-4">
         Recommended Megas to use against Mega Absol:
       </p>
@@ -533,7 +766,7 @@ Mega Absol is at rank 79 and categorized in <a href="a_tier.html">A Tier</a> whe
     <!-- ✅ Boost Mega Absol -->
     <div class="bg-[#12161d] p-6 rounded-2xl border border-gray-800">
 
-      <h3 class="text-sm font-bold text-white mb-4">Boost Mega Absol</h3>
+      <h3 class="text-xl font-bold text-white mb-4">Boost Mega Absol</h3>
 
       <p class="text-xs text-gray-400 mb-4">
         These Mega Pokémon increase Candy, Candy XL, and damage for Grass & Ice types.
@@ -566,7 +799,7 @@ Mega Absol is at rank 79 and categorized in <a href="a_tier.html">A Tier</a> whe
   </div>
 
 <section class="mt-12">
-<h2 class="text-[10px] text-gray-500 uppercase mb-4">Meta & Usage</h2>
+<h2 class="text-2xl text-gray-500 uppercase mb-4">Meta & Usage</h2>
 <div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">    
 <p class="text-gray-400">
 Mega Absol performs modestly in raids and is most useful as an Dark attacker (boosting Dark‑type damage for teammates). Its Dark typing adds some niche resistances, making it valuable against certain typings like Dark, Ghost, Psychic bosses.
@@ -575,7 +808,7 @@ Mega Absol performs modestly in raids and is most useful as an Dark attacker (bo
 </section>
 
 <section class="mt-12">
-<h2 class="text-[10px] text-gray-500 uppercase mb-4">Information</h2>
+<h2 class="text-2xl text-gray-500 uppercase mb-4">Information</h2>
 <div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
 <p class="text-gray-400">
 Information about Absol in pokedex.</p>
@@ -604,7 +837,7 @@ Information about Absol in pokedex.</p>
         
         <!-- Top Counters Header -->
         <div class="flex justify-between items-end mb-6 border-b border-gray-800 pb-4">
-            <h2 class="text-xs font-bold tracking-widest text-gray-500 uppercase">Top Counters</h2>
+            <h2 class="text-2xl font-bold tracking-widest text-gray-500 uppercase">Top Counters</h2>
             <div class="text-[10px] text-gray-500">Sort by <span class="text-white ml-1">Rank ▾</span></div>
 </div>
 
@@ -721,7 +954,7 @@ If you encounter an Absol near the upper limit, chances are it has high IVs. Wea
 <p class="text-gray-300 leading-relaxed">
 Choosing the right counters is the key to winning efficiently:</p>
 <br>
-<h3 class="text-2xl font-bold mb-4">Top Tier Counters: </h3>
+<h3 class="text-xl font-bold mb-4">Top Tier Counters: </h3>
 <ul class="space-y-4 text-sm text-gray-300">
     <li>
      <ul>
@@ -753,7 +986,7 @@ Choosing the right counters is the key to winning efficiently:</p>
     </li>
     </ul>
 <br>
-<h3 class="text-2xl font-bold mb-4">Strong Alternatives: </h3>
+<h3 class="text-xl font-bold mb-4">Strong Alternatives: </h3>
 <ul class="space-y-4 text-sm text-gray-300">
     <li>
      <ul>
@@ -780,7 +1013,7 @@ Fighting-types dominate this raid due to their high DPS and effectiveness agains
 <div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
 <h2 class="text-2xl font-bold mb-4">Mega Absol Moveset: </h2>
 <span class="text-[10px] text-gray-500">Possible attacks</span>
-<h3 class="text-2xl font-bold mb-4">Fast Moves: </h3>
+<h3 class="text-xl font-bold mb-4">Fast Moves: </h3>
 <p class="text-gray-300 leading-relaxed">
 Mega Absol has access to 2 Fast Attacks (Psycho Cut and Snarl), which cover Psychic and Dark-type attacks. When using Snarl you will benefit from STAB (Same-Type-Attack-Bonus), which increases the move damage by ×1.2.
 </p>
@@ -891,7 +1124,7 @@ Snarl is the preferred fast move due to its higher energy generation, allowing f
 Psycho Cut is faster but slightly less efficient overall in raid scenarios.
 </p>
 
-<h3 class="text-2xl font-bold mb-4">Charged Moves: </h3>
+<h3 class="text-xl font-bold mb-4">Charged Moves: </h3>
 <p class="text-gray-300 leading-relaxed">
 Mega Absol has access to 4 Charge Attacks (Dark Pulse, Megahorn, Thunder, and Payback), which cover Dark, Bug, and Electric-type attacks. When using Dark Pulse and Payback you will benefit from STAB (Same-Type-Attack-Bonus), which increases the move damage by ×1.2.
 </p>
@@ -1085,7 +1318,7 @@ Thunder provides higher burst damage but requires more energy, while Megahorn is
 but generally less optimal in raid scenarios.
 </p>
 
-<h3 class="text-2xl font-bold mb-4">Elite Moves: </h3>
+<h3 class="text-xl font-bold mb-4">Elite Moves: </h3>
 <p class="text-gray-300 leading-relaxed">
 Mega Absol has access to 1 Elite Attacks (Brutal Swing), which cover Dark, Bug, and Electric-type attacks. When using Brutal Swing you will benefit from STAB (Same-Type-Attack-Bonus), which increases the move damage by ×1.2.
 </p>
@@ -1160,7 +1393,7 @@ For Mega Absol, Elite moves are generally not recommended for raid performance. 
 offer significantly better damage output and efficiency.
 </p>
 
-<h3 class="text-2xl font-bold mb-4">Moveset Analysis: </h3>
+<h3 class="text-xl font-bold mb-4">Moveset Analysis: </h3>
 <ul class="space-y-4 text-sm text-gray-300">
     <li>
       <strong>Dark Pulse</strong> is the most common and dangerous move.
@@ -1213,7 +1446,7 @@ Always adjust your team depending on the boss moveset if possible.</p>
 </section>
 
 <div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
-      <h3 class="text-[10px] text-gray-500 uppercase mb-4">Max CP Values</h3>
+      <h3 class="text-xl text-gray-500 uppercase mb-4">Max CP Values</h3>
 
 <!--<h3>Example IV Table</h3>
   <table>
@@ -1223,8 +1456,8 @@ Always adjust your team depending on the boss moveset if possible.</p>
     <tr><td>95.6%</td><td>13/15/15</td><td>1448</td><td>1930</td><td>2413</td><td>3820</td></tr>
   </table>-->
 <br>
-<p class="text-gray-400">
-Mega Absol's has 3732 max CP (at Level 50). A Mega Absol obtained from Raids can be encountered from 1799 CP to 1886 CP, and weather boosted, in the 2249 CP to 2358 CP range. In Special Research, Mega Absol can be found in the 1349 CP to 1414 CP range.</p>
+<p>
+Mega Absol's has <span class="highlight">3732 </span>max CP (at Level 50). A Mega Absol obtained from Raids can be encountered from 1799 CP to 1886 CP, and weather boosted, in the 2249 CP to 2358 CP range. In Special Research, Mega Absol can be found in the 1349 CP to 1414 CP range.</p>
 <br>
       <ul class="space-y-2 text-sm">
         <li class="flex justify-between">
@@ -1264,7 +1497,7 @@ Mega Absol's has 3732 max CP (at Level 50). A Mega Absol obtained from Raids can
 <h2 class="text-2xl font-bold mb-4">Shiny Mega Absol: </h2>
 <p class="text-gray-300 leading-relaxed">
 Shiny Absol is one of the most popular shiny Pokémon in Pokémon GO.</p>
-<h3 class="text-2xl font-bold mb-4">Features: </h3>
+<h3 class="text-xl font-bold mb-4">Features: </h3>
 <ul class="space-y-4 text-sm text-gray-300">
     <li>
       Bright red color instead of white.
@@ -1342,13 +1575,13 @@ You can collect Mega Energy by defeating Mega Absol raids. Once unlocked, you ca
 </div>
 </section>
 
-<div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
-<h2 class="text-2xl font-bold mb-4">Raid Difficulty Analysis: </h2>
-<p class="text-gray-300 leading-relaxed">
+<div class="card">
+<h2>Raid Difficulty Analysis</h2>
+<p>
 Mega Absol is considered a moderately easy Mega Raid.</p>
 
-<h3 class="text-2xl font-bold mb-4">Why it's easy: </h3>
-<ul class="space-y-4 text-sm text-gray-300">
+<h3>Why it's easy: </h3>
+<ul>
     
     <li>
       Low defense.
@@ -1360,8 +1593,8 @@ Mega Absol is considered a moderately easy Mega Raid.</p>
       Clear weakness.
     </li>
     </ul>
-<h3 class="text-2xl font-bold mb-4">What makes it tricky: </h3>
-<ul class="space-y-4 text-sm text-gray-300">
+<h3>What makes it tricky: </h3>
+<ul>
     
     <li>
       High attack stat.
@@ -1370,7 +1603,7 @@ Mega Absol is considered a moderately easy Mega Raid.</p>
       Fast damage output.
     </li>
     </ul>
-<p class="text-gray-300 leading-relaxed">
+<p>
 Overall, it’s a great raid for beginners and experienced players alike.</p>
 </div>
 
@@ -1455,7 +1688,7 @@ To gain an advantage, players can use weather-boosted Fire-type Pokémon during 
 If possible, raiding during neutral weather conditions provides the safest and most balanced experience.
 </p>
 
-<h3 class="text-2xl font-bold mb-4">Strategy Tip: </h3>
+<h3 class="text-xl font-bold mb-4">Strategy Tip: </h3>
 <p class="text-gray-300 leading-relaxed">
 Always try to raid in Cloudy weather for maximum damage output.</p>
 
@@ -1492,7 +1725,7 @@ These techniques can significantly reduce raid time.:
 </p>
 
 <div id="strategy" class="tab-content max-w-5xl mx-auto">
-  <h2 class="text-xl font-bold mb-4">Strategy</h2>
+  <h2 class="text-2xl font-bold mb-4">Strategy</h2>
 
   <p class="text-gray-300 mb-4">Mega Absol hits hard but has a focused weakness profile. Trainers should build teams heavy in Fairy, Fighting, and Bug types, prioritizing Pokémon that can resist its Dark-type charged moves while dealing consistent damage. Pokémon like Mega Gardevoir, Togekiss, and Machamp shine in this role because they combine strong counter moves with survivability.
 
@@ -1509,7 +1742,7 @@ Finally, Mega Evolution isn’t always necessary, but a strategic use of a Mega 
 <p class="text-gray-300 leading-relaxed">
 Mega Absol raids are all about <strong>speed and efficiency</strong>. Since it has low defenses, the goal is to maximize damage output rather than focus heavily on survivability.</p>
 <br>
-<h3 class="text-2xl font-bold mb-4">Key Strategy Points: </h3>
+<h3 class="text-xl font-bold mb-4">Key Strategy Points: </h3>
 <p class="text-red-400 font-semibold">1. Use Fighting-types as primary attackers.</p>
 <br>
     <p class="text-gray-300">They deal the highest damage and can quickly bring down Mega Absol.</p>
@@ -1558,7 +1791,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
 
   </div>
 
-<h2 class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-6">
+<h2 class="text-2xl font-bold tracking-widest text-gray-500 uppercase mb-6">
     Strategy by Skill Level
   </h2>
 
@@ -1566,7 +1799,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
 
     <!-- Beginner -->
     <div class="bg-[#12161d] rounded-2xl p-6 border border-gray-800">
-      <h3 class="text-sm font-bold text-green-400 mb-4"><!--🟢--> Beginner</h2>
+      <h3 class="text-xl font-bold text-green-400 mb-4"><!--🟢--> Beginner</h2>
       <ul class="space-y-3 text-sm text-gray-300">
         <li>• If you are a new player, join a group of four or more trainers and focus on using Fire-type Pokémon whenever possible.</li>
       </ul>
@@ -1574,7 +1807,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
 
     <!-- 
     <div class="bg-[#12161d] rounded-2xl p-6 border border-gray-800">
-      <h3 class="text-sm font-bold text-yellow-400 mb-4">🟡 Intermediate</h2>
+      <h3 class="text-xl font-bold text-yellow-400 mb-4">🟡 Intermediate</h2>
       <ul class="space-y-3 text-sm text-gray-300">
         <li>• Raid with <span class="text-white font-semibold">8+ trainers</span></li>
         <li>• Build full Ice-type team</li>
@@ -1585,7 +1818,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
 
     
     <div class="bg-[#12161d] rounded-2xl p-6 border border-gray-800">
-      <h3 class="text-sm font-bold text-red-400 mb-4">🔴 Advanced / Pro</h2>
+      <h3 class="text-xl font-bold text-red-400 mb-4">🔴 Advanced / Pro</h2>
       <ul class="space-y-3 text-sm text-gray-300">
         <li>• Attempt <span class="text-white font-semibold">duo or trio raids</span></li>
         <li>• Maximize <span class="text-orange-400">DPS + Mega boost timing</span></li>
@@ -1596,7 +1829,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
     </div>-->
 
 <div class="bg-[#12161d] p-6 rounded-2xl border border-purple-500/20">
-      <h3 class="text-sm font-bold text-purple-400 mb-4"><!--⚔️--> Duo Strategy</h3>
+      <h3 class="text-xl font-bold text-purple-400 mb-4"><!--⚔️--> Duo Strategy</h3>
       <ul class="text-sm text-gray-300 space-y-2">
         <li>• Two experienced trainers using strong Fire-type attackers and Mega boosts can defeat Mega Absol without much difficulty.
 </li>
@@ -1604,7 +1837,7 @@ Coordinate so that a Mega Fighting or Mega Fairy Pokémon is active throughout t
     </div>
 
 <div class="bg-[#12161d] p-6 rounded-2xl border border-blue-500/20 md:col-span-2">
-      <h3 class="text-sm font-bold text-blue-400 mb-4"><!--👥--> Trio Strategy</h3>
+      <h3 class="text-xl font-bold text-blue-400 mb-4"><!--👥--> Trio Strategy</h3>
       <ul class="text-sm text-gray-300 space-y-2">
         <li>• Three trainers with mid-level counters should comfortably defeat the raid boss.</li>
       </ul>
@@ -1666,7 +1899,7 @@ Additionally, players have the chance to catch a high-IV or shiny Absol, making 
 </section>
 
 <div class="bg-[#12161d] p-5 rounded-xl border border-gray-800">
-      <h3 class="text-[10px] text-gray-500 uppercase mb-4">Counter Strategy Breakdown</h3>
+      <h3 class="text-xl text-gray-500 uppercase mb-4">Counter Strategy Breakdown</h3>
 <p class="text-gray-400">
 The key to defeating Mega Absol efficiently lies in maximizing Fire-type damage output. High DPS attackers should be prioritized over bulky Pokémon, as the goal is to finish the raid quickly rather than sustain damage over time.
 
@@ -1680,7 +1913,7 @@ Using Mega Evolution strategically provides a team-wide boost, increasing overal
 A well-balanced team ensures maximum efficiency.
 </p>
 
-<h3 class="text-2xl font-bold mb-4">Ideal Team: </h3>
+<h3 class="text-xl font-bold mb-4">Ideal Team: </h3>
 <ul class="space-y-4 text-sm text-gray-300">
     
     <li>
@@ -1690,7 +1923,7 @@ A well-balanced team ensures maximum efficiency.
       1 Mega Evolution (Mega Lopunny recommended).
     </li>
     </ul>
-<h3 class="text-2xl font-bold mb-4">Backup Pokemon: </h3>
+<h3 class="text-xl font-bold mb-4">Backup Pokemon: </h3>
 <p class="text-gray-300 leading-relaxed">
 Always keep extra Fighting-types in your storage for relobby situations.</p>
 
@@ -1709,7 +1942,7 @@ If you mission is to complete the raid as soon as possible then best team would 
 <p class="text-gray-300 leading-relaxed">
 Catching Absol after defeating the raid is crucial.
 </p>
-<h3 class="text-2xl font-bold mb-4">Tips:</h3>
+<h3 class="text-xl font-bold mb-4">Tips:</h3>
 <ul class="space-y-4 text-sm text-gray-300">
     
     <li>
@@ -1735,7 +1968,7 @@ Consistently landing Excellent throws will greatly improve your chances of catch
 <p class="text-gray-300 leading-relaxed">
 After catching Absol, check its IVs.
 </p>
-<h3 class="text-2xl font-bold mb-4">Perfect IV CP:</h3>
+<h3 class="text-xl font-bold mb-4">Perfect IV CP:</h3>
 <p class="text-gray-300 leading-relaxed">
 Level 20: ~1,946 CP.
 </p>
