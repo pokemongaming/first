@@ -3384,14 +3384,23 @@ Make at least one Mega Fire Pokémon active for team-wide boost.</p>
 </div>
 
 </section>
+
+
+<div id="author_box"></div>
+
+<script>
+fetch('/author_box.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('author_box').innerHTML = data;
+  });
+</script>
+
+<hr>
 </div>
 </main>
 
- <div id="footer"></div>
-
-  <script>
-    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
-  </script>
+<div id="footer"></div>
 
 <script>
 fetch('/footer.html')
@@ -3400,6 +3409,10 @@ fetch('/footer.html')
     document.getElementById('footer').innerHTML = data;
   });
 </script>
+
+  <script>
+    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
+  </script>
 
 </body>
 </html>

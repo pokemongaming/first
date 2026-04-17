@@ -5510,28 +5510,21 @@ TDO (Total Damage Output): Mega Alakazam = Low</p>
 </section>
 <hr>
 
-<section class="raid-card author-box">
-  <h2>✍️ About the Author</h2>
-  <p>
-    This guide is written by a dedicated Pokémon GO trainer with over 
-    <strong>5+ years of experience</strong> in raid battles, PvE strategies, and team building.
-  </p>
+<div id="author_box"></div>
 
-  <p>
-    All strategies are tested in real gameplay to ensure accuracy and effectiveness.
-  </p>
-<p><strong>Content Accuracy:</strong> Based on current Pokémon GO raid mechanics and gameplay testing.</p>
-  </section>
+<script>
+fetch('/author_box.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('author_box').innerHTML = data;
+  });
+</script>
+
 <hr>
-
 </div>
 </main>
 
- <div id="footer"></div>
-
-  <script>
-    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
-  </script>
+<div id="footer"></div>
 
 <script>
 fetch('/footer.html')
@@ -5540,6 +5533,10 @@ fetch('/footer.html')
     document.getElementById('footer').innerHTML = data;
   });
 </script>
+
+  <script>
+    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
+  </script>
 
 </body>
 </html>

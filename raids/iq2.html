@@ -5261,20 +5261,21 @@ Mega Sharpedo’s design and stats perfectly align with its role as a glass cann
 
 </section>
 <hr>
-<section class="author-box">
-      <h3>About the Author</h3>
-      <p>Written by Abhishek — Level 50 Pokémon GO Trainer (since 2019).
-Completed 500+ Mega raids and specializes in raid optimization and counter analysis. </p>
-    </section>
+<<div id="author_box"></div>
+
+<script>
+fetch('/author_box.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('author_box').innerHTML = data;
+  });
+</script>
+
 <hr>
 </div>
 </main>
 
- <div id="footer"></div>
-
-  <script>
-    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
-  </script>
+<div id="footer"></div>
 
 <script>
 fetch('/footer.html')
@@ -5283,6 +5284,10 @@ fetch('/footer.html')
     document.getElementById('footer').innerHTML = data;
   });
 </script>
+
+  <script>
+    document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
+  </script>
 
 </body>
 </html>

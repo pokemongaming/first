@@ -1,0 +1,23 @@
+<script>
+const currentPage = window.location.pathname;
+
+const posts = [
+  {title: "Mega Alakazam Raid Guide", url: "/raids/mega_alakazam.html", type: "raid"},
+  {title: "Mega Banette Raid Guide", url: "/raids/mega_banette.html", type: "raid"},
+  {title: "Best Raid Attackers", url: "/guides/best-attackers.html", type: "guide"},
+  {title: "Weather Boost Guide", url: "/guides/weather-boost.html", type: "guide"},
+  {title: "April Raid Update", url: "/news/april-raid-update.html", type: "news"}
+];
+
+let related = posts.filter(p => p.url !== currentPage);
+
+let output = "";
+
+related.sort(() => 0.5 - Math.random());
+
+related.slice(0, 4).forEach(post => {
+  output += `<p><a href="${post.url}">${post.title}</a></p>`;
+});
+
+document.getElementById("related_posts").innerHTML = output;
+</script>
