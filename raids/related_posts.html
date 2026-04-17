@@ -1,5 +1,5 @@
 <script>
-const currentPage = window.location.pathname;
+const currentPage = window.location.pathname.replace(/\/$/, ""); // fix trailing slash
 
 const posts = [
   {title: "Mega Alakazam Raid Guide", url: "/raids/mega_alakazam.html", type: "raid"},
@@ -9,15 +9,33 @@ const posts = [
   {title: "April Raid Update", url: "/news/april-raid-update.html", type: "news"}
 ];
 
-let related = posts.filter(p => p.url !== currentPage);
+// Detect page type automatically
+let currentType = "raid";
+if (currentPage.includes("/guides/")) currentType = "guide";
+if (currentPage.includes("/news/")) currentType = "news";
 
-let output = "";
+// Filter posts (same type first)
+let related = posts.filter(p =>
+  p.type === currentType && p.url !== currentPage
+);
 
+// Fallback if less posts
+if (related.length < 3) {
+  related = posts.filter(p => p.url !== currentPage);
+}
+
+// Shuffle
 related.sort(() => 0.5 - Math.random());
 
+// Generate output
+let output = "";
 related.slice(0, 4).forEach(post => {
   output += `<p><a href="${post.url}">${post.title}</a></p>`;
 });
 
-document.getElementById("related_posts").innerHTML = output;
+// Safe render
+const container = document.getElementById("related_posts");
+if (container) {
+  container.innerHTML = output;
+}
 </script>
