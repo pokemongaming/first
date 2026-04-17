@@ -3970,6 +3970,52 @@ Mega Manectric is easy to counter — but only if you fully commit to Ground-typ
   <div id="related_posts"></div>
 </div>-->
 
+<div id="related_posts"></div>
+
+<script>
+window.onload = function () {
+
+  const container = document.getElementById("related_posts");
+  if (!container) return;
+
+  const currentPage = window.location.pathname.toLowerCase();
+
+  fetch('/data/posts.json')
+    .then(res => res.json())
+    .then(posts => {
+
+      let currentType = "raid";
+      if (currentPage.includes("/guides/")) currentType = "guide";
+      if (currentPage.includes("/news/")) currentType = "news";
+
+      let related = posts.filter(p =>
+        p.type === currentType &&
+        !currentPage.includes(p.url.toLowerCase())
+      );
+
+      if (related.length < 2) {
+        related = posts.filter(p =>
+          !currentPage.includes(p.url.toLowerCase())
+        );
+      }
+
+      related.sort(() => 0.5 - Math.random());
+
+      let output = "";
+      related.slice(0, 4).forEach(post => {
+        output += `<p><a href="${post.url}">${post.title}</a></p>`;
+      });
+
+      container.innerHTML = output;
+
+    })
+    .catch(err => {
+      console.log("❌ JSON load failed", err);
+    });
+
+};
+</script>
+
 <hr>
 <div id="author_box"></div>
 
@@ -4001,65 +4047,6 @@ fetch('/author_box.html')
   .then(data => {
     document.getElementById('author_box').innerHTML = data;
   });
-</script>
-
-
-
-<div id="related_posts"></div>
-
-<script>
-window.onload = function () {
-
-  const container = document.getElementById("related_posts");
-
-  if (!container) {
-    console.log("❌ related_posts div not found");
-    return;
-  }
-
-  const currentPage = window.location.pathname.toLowerCase();
-
-  const posts = [
-    {title: "Mega Alakazam Raid Guide", url: "/raids/mega_alakazam.html", type: "raid"},
-    {title: "Mega Banette Raid Guide", url: "/raids/mega_banette.html", type: "raid"},
-    {title: "Mega Aerodactyl Raid Guide", url: "/raids/aerodactyl.html", type: "raid"},
-    {title: "Best Raid Attackers", url: "/guides/best_attackers.html", type: "guide"},
-    {title: "Weather Boost Guide", url: "/guides/weather_boost.html", type: "guide"},
-    {title: "April Raid Update", url: "/news/april_raid_update.html", type: "news"}
-  ];
-
-  // detect page type
-  let currentType = "raid";
-  if (currentPage.includes("/guides/")) currentType = "guide";
-  if (currentPage.includes("/news/")) currentType = "news";
-
-  // filter same type
-  let related = posts.filter(p =>
-    p.type === currentType &&
-    !currentPage.includes(p.url.toLowerCase())
-  );
-
-  // fallback if empty
-  if (related.length === 0) {
-    related = posts.filter(p =>
-      !currentPage.includes(p.url.toLowerCase())
-    );
-  }
-
-  // shuffle
-  related.sort(() => 0.5 - Math.random());
-
-  // build output
-  let output = "";
-  related.slice(0, 4).forEach(post => {
-    output += `<p><a href="${post.url}">${post.title}</a></p>`;
-  });
-
-  container.innerHTML = output;
-
-  console.log("✅ Related posts loaded");
-
-};
 </script>
 
   <script>
