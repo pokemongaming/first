@@ -501,10 +501,15 @@ text-decoration:underline;
 </head>
 
 <body>
-<header style="background:#16a34a;padding:12px;text-align:center;">
-  <a href="/" style="color:white;margin:10px;font-weight:bold;">Home</a>
-  <a href="/raids/" style="color:white;margin:10px;font-weight:bold;">Raids</a>
-</header>
+<div id="header"></div>
+
+<script>
+fetch('/header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
 
 <section class="hero">
 <nav class="breadcrumb">
