@@ -5270,28 +5270,19 @@ Completed 500+ Mega raids and specializes in raid optimization and counter analy
 </div>
 </main>
 
- <footer class="site-footer">
-    <div class="footer-content">
-      <p>© 2025–2026 pokémongaming.in</p>
-      <p>
-       <a href="../terms-and-conditions.html">Terms & Conditions</a> |
-     <a href="../about-us.html">About</a> | 
-<a href="../copyright_page.html">Copyright</a> |
-              <a href="../contact-us.html">Contact</a> | 
-              <a href="../privacy-policy.html">Privacy Policy</a> |
-              <a href="../disclaimer.html">Disclaimer</a>
-
-    </p> 
-
-<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. This guide is created for educational and informational purposes to help Pokémon GO players understand raid mechanics and improve gameplay strategy. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only. This website is not affiliated with or endorsed by Nintendo, Niantic, or The Pokémon Company.
-</p>
-</div>
-</footer>
+ <div id="footer"></div>
 
   <script>
     document.getElementById('yr') && (document.getElementById('yr').textContent = new Date().getFullYear());
   </script>
 
+<script>
+fetch('/footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  });
+</script>
 
 </body>
 </html>
