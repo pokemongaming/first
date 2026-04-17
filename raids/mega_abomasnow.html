@@ -432,10 +432,7 @@ text-decoration:underline;
 </head>
 
 <body>
-<header style="background:#16a34a;padding:12px;text-align:center;">
-  <a href="/" style="color:white;margin:10px;font-weight:bold;">Home</a>
-  <a href="/raids/" style="color:white;margin:10px;font-weight:bold;">Raids</a>
-</header>
+<div id="header"></div>
 
 <section class="hero">
 <nav class="breadcrumb">
@@ -3386,15 +3383,57 @@ Make at least one Mega Fire Pokémon active for team-wide boost.</p>
 </section>
 
 
-<div id="author_box"></div>
-
+<div class="container card">
+  <h2>🔥 Related Posts</h2>
+  <p>You may also find these Pokémon GO raid guides helpful:</p>
+<div id="related_posts"></div>
+</div>
 <script>
-fetch('/author_box.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('author_box').innerHTML = data;
-  });
+window.onload = function () {
+
+  const container = document.getElementById("related_posts");
+  if (!container) return;
+
+  const currentPage = window.location.pathname.toLowerCase();
+
+  fetch('/data/posts.json')
+    .then(res => res.json())
+    .then(posts => {
+
+      let currentType = "raid";
+      if (currentPage.includes("/guides/")) currentType = "guide";
+      if (currentPage.includes("/news/")) currentType = "news";
+
+      let related = posts.filter(p =>
+        p.type === currentType &&
+        !currentPage.includes(p.url.toLowerCase())
+      );
+
+      if (related.length < 2) {
+        related = posts.filter(p =>
+          !currentPage.includes(p.url.toLowerCase())
+        );
+      }
+
+      related.sort(() => 0.5 - Math.random());
+
+      let output = "";
+      related.slice(0, 4).forEach(post => {
+        output += `<p><a href="${post.url}">${post.title}</a></p>`;
+      });
+
+      container.innerHTML = output;
+
+    })
+    .catch(err => {
+      console.log("❌ JSON load failed", err);
+    });
+
+};
 </script>
+
+<hr>
+<div id="author_box"></div>
 
 <hr>
 </div>
@@ -3403,10 +3442,26 @@ fetch('/author_box.html')
 <div id="footer"></div>
 
 <script>
+fetch('/header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<script>
 fetch('/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
+  });
+</script>
+
+<script>
+fetch('/author_box.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('author_box').innerHTML = data;
   });
 </script>
 
