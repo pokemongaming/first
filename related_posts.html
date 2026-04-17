@@ -1,29 +1,30 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-const currentPage = window.location.pathname.replace(/\/$/, "").toLowerCase();
+const currentPage = window.location.pathname.toLowerCase();
 
 const posts = [
   {title: "Mega Alakazam Raid Guide", url: "/raids/iq1.html", type: "raid"},
   {title: "Mega Banette Raid Guide", url: "/raids/iq2.html", type: "raid"},
+  {title: "Mega Aerodactyl Raid Guide", url: "/raids/iq3.html", type: "raid"},
   {title: "Best Raid Attackers", url: "/guides/best-attackers.html", type: "guide"},
   {title: "Weather Boost Guide", url: "/guides/weather-boost.html", type: "guide"},
   {title: "April Raid Update", url: "/news/april-raid-update.html", type: "news"}
 ];
 
-// Detect page type automatically
+// Detect type
 let currentType = "raid";
 if (currentPage.includes("/guides/")) currentType = "guide";
 if (currentPage.includes("/news/")) currentType = "news";
 
-// Filter safely (IMPORTANT FIX)
+// Filter SAME TYPE
 let related = posts.filter(p =>
   p.type === currentType &&
   !currentPage.includes(p.url.toLowerCase())
 );
 
-// Fallback (if empty)
-if (related.length === 0) {
+// 🔥 IMPORTANT FALLBACK
+if (related.length < 2) {
   related = posts.filter(p =>
     !currentPage.includes(p.url.toLowerCase())
   );
@@ -38,12 +39,11 @@ related.slice(0, 4).forEach(post => {
   output += `<p><a href="${post.url}">${post.title}</a></p>`;
 });
 
-// Render safely
+// Render
 const container = document.getElementById("related_posts");
 if (container) {
   container.innerHTML = output;
 }
 
 });
-console.log("Current:", currentPage, "Related:", related);
 </script>
