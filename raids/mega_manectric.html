@@ -503,14 +503,6 @@ text-decoration:underline;
 <body>
 <div id="header"></div>
 
-<script>
-fetch('/header.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('header').innerHTML = data;
-  });
-</script>
-
 <section class="hero">
 <nav class="breadcrumb">
 <a href="https://pokemongaming.in/">Home</a> ›
@@ -3978,16 +3970,30 @@ Mega Manectric is easy to counter — but only if you fully commit to Ground-typ
   <div id="related_posts"></div>
 </div>
 
+<hr>
+<div id="author_box"></div>
+
+<hr>
+</div>
+</main>
+
+<div id="footer"></div>
+
 <script>
-fetch('/related_posts.html')
+fetch('/header.html')
   .then(res => res.text())
   .then(data => {
-    document.getElementById('related_posts').innerHTML = data;
+    document.getElementById('header').innerHTML = data;
   });
 </script>
 
-<hr>
-<div id="author_box"></div>
+<script>
+fetch('/footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  });
+</script>
 
 <script>
 fetch('/author_box.html')
@@ -3997,17 +4003,11 @@ fetch('/author_box.html')
   });
 </script>
 
-<hr>
-</div>
-</main>
-
-<div id="footer"></div>
-
 <script>
-fetch('/footer.html')
+fetch('/related_posts.html')
   .then(res => res.text())
   .then(data => {
-    document.getElementById('footer').innerHTML = data;
+    document.getElementById('related_posts').innerHTML = data;
   });
 </script>
 
