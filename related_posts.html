@@ -1,0 +1,49 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+const currentPage = window.location.pathname.toLowerCase();
+
+const posts = [
+  {title: "Mega Alakazam Raid Guide", url: "/raids/mega_alakazam.html", type: "raid"},
+  {title: "Mega Banette Raid Guide", url: "/raids/banette.html", type: "raid"},
+  {title: "Mega Aerodactyl Raid Guide", url: "/raids/mega_aerodactyl.html", type: "raid"},
+  {title: "Best Raid Attackers", url: "/guides/best_attackers.html", type: "guide"},
+  {title: "Weather Boost Guide", url: "/guides/weather_boost.html", type: "guide"},
+  {title: "April Raid Update", url: "/news/april_raid_update.html", type: "news"}
+];
+
+// Detect type
+let currentType = "raid";
+if (currentPage.includes("/guides/")) currentType = "guide";
+if (currentPage.includes("/news/")) currentType = "news";
+
+// Filter SAME TYPE
+let related = posts.filter(p =>
+  p.type === currentType &&
+  !currentPage.includes(p.url.toLowerCase())
+);
+
+// 🔥 IMPORTANT FALLBACK
+if (related.length < 2) {
+  related = posts.filter(p =>
+    !currentPage.includes(p.url.toLowerCase())
+  );
+}
+
+// Shuffle
+related.sort(() => 0.5 - Math.random());
+
+// Output
+let output = "";
+related.slice(0, 4).forEach(post => {
+  output += `<p><a href="${post.url}">${post.title}</a></p>`;
+});
+
+// Render
+const container = document.getElementById("related_posts");
+if (container) {
+  container.innerHTML = output;
+}
+
+});
+</script>

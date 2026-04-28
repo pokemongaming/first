@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Pokémon GO Tools – Simulator, Type Chart & Weakness Calculator</title>
+<meta name="description" content="All-in-one Pokémon GO tools: Raid simulator, type effectiveness chart, and type weakness calculator in one place.">
+
+
+<!-- OpenGraph for social -->
+<meta property="og:title" content="Fun Pokémon & Gaming Quizzes">
+<meta property="og:description" content="Test your Pokémon and gaming knowledge with interactive quizzes.">
+<meta property="og:type" content="website">
+
+<style>
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:#f4f6f8;
+  color:#222;
+}
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+h1{
+  text-align:center;
+  color:#e53935;
+  margin-bottom:10px;
+}
+.subtitle{
+  text-align:center;
+  color:#555;
+  margin-bottom:30px;
+  font-size:16px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:18px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card h2{
+  margin:0 0 10px 0;
+  font-size:20px;
+}
+.card p{
+  margin:0 0 15px 0;
+  color:#555;
+  font-size:14px;
+  line-height:1.4;
+}
+
+.play-btn{
+  margin-top:auto;
+  background:#e53935;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  padding:10px;
+  font-size:15px;
+  font-weight:600;
+  text-align:center;
+}
+
+/* CATEGORY COLORS */
+.pokemon{border-top:6px solid #ef5350}
+.trivia{border-top:6px solid #42a5f5}
+.logic{border-top:6px solid #66bb6a}
+.fun{border-top:6px solid #ffa726}
+.challenge{border-top:6px solid #ab47bc}
+
+/* SEO TEXT */
+.seo-text{
+  margin-top:40px;
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+.seo-text h2{
+  margin-top:0;
+}
+
+footer{
+  text-align:center;
+  color:#777;
+  font-size:13px;
+  margin:30px 0 10px;
+}
+</style>
+</head>
+
+
+
+<body>
+
+<div class="container">
+  <h1>Pokémon GO Tools & Calculators</h1>
+<p id="last-updated"></p>
+
+<p class="intro">
+<p>Welcome to the Pokémon GO tools section of <strong>PokemonGaming.in</strong>. This page is dedicated to useful tools that help trainers understand battle mechanics, build stronger teams, and prepare better for raids and PvP battles. Instead of guessing which Pokémon to use, these tools allow you to make smarter and more informed decisions.</p>
+
+<p>Whether you are preparing for a Legendary raid, a Mega raid, or just want to understand type matchups and damage output, our tools are designed to make your gameplay easier and more efficient.</p>
+  </div>
+
+<h2>Available Tools on PokemonGaming.in</h2>
+
+  <div class="grid">
+
+    <!-- QUIZ CARDS -->
+
+    <div class="card pokemon" onclick="location.href='effectiveness_chart.html'">
+      <h2>🧠Pokémon Type Effectiveness Chart</h2>
+      <p>How each Pokémon type interacts with others. You can quickly see which types are strong, weak, or resistant to other types.</p>
+      <div class="play-btn">Play Now</div>
+    </div>
+
+    <div class="card pokemon" onclick="location.href='type_weakness_calculator.html'">
+      <h2>⚔️ Type Weakness Calculator</h2>
+      <p>Select one or two Pokémon types to see weaknesses and resistances.</p>
+      <div class="play-btn">Start Quiz</div>
+    </div>
+
+    <div class="card pokemon" onclick="location.href='simulator/index.html'">
+      <h2>🔥 Pokémon Raid Simulator</h2>
+      <p>Choose the best counters for popular raid bosses.</p>
+      <div class="play-btn">Try Now</div>
+    </div>
+
+
+  </div>
+
+ <h2>Why These Tools Are Useful</h2>
+
+<ul>
+  <li>They save time when preparing for raids</li>
+  <li>They help you choose the strongest possible team</li>
+  <li>They improve your understanding of Pokémon GO battle mechanics</li>
+  <li>They reduce wasted raid passes and resources</li>
+  <li>They are useful for both beginners and advanced players</li>
+</ul>
+
+<h2>Who Should Use These Tools?</h2>
+
+<p>These tools are made for:</p>
+
+<ul>
+  <li>New players who want to learn the basics</li>
+  <li>Raiders who want to optimize their teams</li>
+  <li>Players who want to understand DPS and type effectiveness</li>
+  <li>Anyone who wants to improve their performance in Pokémon GO</li>
+</ul>
+
+<h2>More Tools Coming Soon</h2>
+
+<p>We are constantly working on adding more helpful tools and improving existing ones. In the future, you can expect more calculators, planners, and interactive guides to help you get even better at Pokémon GO.</p>
+
+
+   <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2026 Pokémon Gaming. All rights reserved.</p>
+      <p>
+        <a href="terms-and-conditions.html">Terms & Conditions</a> |
+        <a href="contact-us.html">Contact</a> |
+        <a href="about-us.html">About</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="disclaimer.html">Disclaimer</a>
+</p>
+<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. It is an independent fan-made Pokémon GO guide website providing educational raid guides, counters and tools for trainers worldwide. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only.
+</p>
+
+      
+    </div>
+  </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const updatedDate = new Date(document.lastModified);
+    const formattedDate = updatedDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").innerHTML = 
+      "🕓 Last updated on: " + formattedDate;
+  });
+</script>
+
+</body>
+</html>
+

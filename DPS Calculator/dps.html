@@ -1,0 +1,28 @@
+<section class="dps-calculator">
+  <h2>Move Damage (DPS) Calculator</h2>
+
+  <label>Pokémon</label>
+  <select id="pokemon" onchange="updateMoves()">
+    <option value="">Select</option>
+    <option value="Machamp">Machamp</option>
+    <option value="Gardevoir">Gardevoir</option>
+  </select>
+
+  <label>Fast Move</label>
+  <select id="fastMove"></select>
+
+  <label>Charged Move</label>
+  <select id="chargedMove"></select>
+
+  <label>Weather</label>
+  <select id="weatherDps">
+    <option value="">None</option>
+    <option>Cloudy</option>
+    <option>Sunny</option>
+    <option>Windy</option>
+  </select>
+
+  <button onclick="calculateDPS()">Calculate DPS</button>
+
+  <div id="dpsResult" class="result-box"></div>
+</section>

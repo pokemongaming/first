@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO True or False Quiz</title>
+<meta name="description" content="Test your Pokémon GO knowledge with this True or False quiz. Learn about raids, type matchups, and moves.">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 10px;
+}
+.quiz-container {
+  max-width: 720px;
+  margin: auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.progress {
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #2563eb;
+  transition: width 0.4s ease;
+}
+h1 { text-align:center; font-size:1.4rem; }
+.question-count { text-align:center; font-weight:600; margin-bottom:8px; }
+.question { font-weight:600; margin-bottom:12px; }
+.option {
+  padding:12px;
+  background:#f1f5f9;
+  border-radius:10px;
+  margin-bottom:8px;
+  cursor:pointer;
+}
+.option:hover { transform: scale(1.02); }
+.correct { background:#dcfce7; border:2px solid #22c55e; }
+.wrong { background:#fee2e2; border:2px solid #ef4444; }
+.feedback { margin-top:10px; font-weight:600; }
+.result-box { text-align:center; }
+.result-box a { font-weight:600; color:#2563eb; text-decoration:none; }
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>Pokémon GO True or False Quiz</h1>
+<p>Test your knowledge about Pokémon GO raids, counters, and type effectiveness.</p>
+
+<div class="progress">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<div id="quizArea"></div>
+</div>
+
+<script>
+/* ========= ONLY CHANGE THIS PART ========= */
+
+const quizConfig = {
+  title: "Learn more with our",
+  ctaHtml: `
+    👉 <a href="/pokemon-go-raid-guides" target="_blank">Pokémon GO Raid Guides</a>
+  `,
+  questions: [
+    {"q":"Mega Evolutions increase CP in Pokémon GO.","options":["False","True"],"answer":1},
+    {"q":"Shiny Pokémon always have higher stats.","options":["False","True"],"answer":0},
+    {"q":"Weather boost increases Pokémon level in the wild.","options":["False","True"],"answer":1},
+    {"q":"You can dodge attacks in raid battles.","options":["False","True"],"answer":1},
+    {"q":"Shadow Pokémon deal more damage than normal Pokémon.","options":["False","True"],"answer":1},
+
+    {"q":"Purified Pokémon always have lower IVs.","options":["False","True"],"answer":0},
+    {"q":"Remote Raid Pass can be used for any raid.","options":["False","True"],"answer":1},
+    {"q":"Mega Pokémon can be used in GO Battle League.","options":["False","True"],"answer":0},
+    {"q":"Best Buddy Pokémon get a CP boost.","options":["False","True"],"answer":1},
+    {"q":"Legendary Pokémon can be traded.","options":["False","True"],"answer":1},
+
+    {"q":"You can solo all Tier 5 raids.","options":["False","True"],"answer":0},
+    {"q":"Type effectiveness multiplies damage.","options":["False","True"],"answer":1},
+    {"q":"XL Candy is used to power Pokémon beyond level 40.","options":["False","True"],"answer":1},
+    {"q":"Shiny rate is same for all Pokémon.","options":["False","True"],"answer":0},
+    {"q":"You can get shiny Pokémon from raids.","options":["False","True"],"answer":1},
+
+    {"q":"Mega Rayquaza is Dragon / Flying type.","options":["False","True"],"answer":1},
+    {"q":"Shadow Pokémon take more damage than normal.","options":["False","True"],"answer":1},
+    {"q":"Weather boost increases Stardust rewards.","options":["False","True"],"answer":1},
+    {"q":"You can TM Frustration anytime.","options":["False","True"],"answer":0},
+    {"q":"Lucky Pokémon cost less stardust to power up.","options":["False","True"],"answer":1},
+
+    {"q":"Mega Evolution is permanent.","options":["False","True"],"answer":0},
+    {"q":"Purifying a Pokémon always makes it better.","options":["False","True"],"answer":0},
+    {"q":"You can invite friends to remote raids.","options":["False","True"],"answer":1},
+    {"q":"Weather boost increases catch CP.","options":["False","True"],"answer":1},
+    {"q":"Only one Mega Pokémon can be active at a time.","options":["False","True"],"answer":1},
+
+    {"q":"Gigantamax Pokémon exist in Pokémon GO.","options":["False","True"],"answer":0},
+    {"q":"Community Day Pokémon have higher shiny rates.","options":["False","True"],"answer":1
+},
+    {"q":"Trading a Pokémon can reroll IVs.","options":["False","True"],"answer":1
+},
+    {"q":"Mythical Pokémon can be traded freely.","options":["False","True"],"answer":0
+},
+    {"q":"Shadow Pokémon cannot Mega Evolve.","options":["False","True"],"answer":1
+},
+
+    {"q":"Weather boost affects raid bosses.","options":["False","True"],"answer":1
+},
+    {"q":"Dodging always prevents all damage.","options":["False","True"],"answer":0
+},
+    {"q":"You can solo some Tier 3 raids.","options":["False","True"],"answer":1
+},
+    {"q":"Mega Pokémon boost same-type attacks of other players.","options":["False","True"],"answer":1
+},
+    {"q":"Using correct counters makes raids easier.","options":["False","True"],"answer":1
+},
+
+    {"q":"Shadow Pokémon are always worse than normal.","options":["False","True"],"answer":0
+},
+    {"q":"You can change fast moves using TM.","options":["False","True"],"answer":1
+},
+    {"q":"Friendship level affects trade cost.","options":["False","True"],"answer":1
+},
+    {
+      "q":"Weather boost affects egg hatches.",
+      "options":["False","True"],
+      "answer":0
+    },
+    {
+      "q":"Best counters depend on boss type.",
+      "options":["False","True"],
+      "answer":1
+    }
+  ]
+};
+
+/* ========= DO NOT TOUCH BELOW ========= */
+
+
+
+let current = 0;
+let score = 0;
+
+const quizArea = document.getElementById("quizArea");
+const progressFill = document.getElementById("progressFill");
+
+function loadQuestion() {
+  progressFill.style.width =
+    ((current / quizConfig.questions.length) * 100) + "%";
+
+  const q = quizConfig.questions[current];
+
+  quizArea.innerHTML = `
+    <div class="question-count">Question ${current + 1} of ${quizConfig.questions.length}</div>
+    <div class="question">${q.q}</div>
+    ${q.options.map((opt, i) =>
+      `<div class="option" onclick="selectAnswer(${i}, this)">${opt}</div>`
+    ).join("")}
+    <div class="feedback" id="feedback"></div>
+  `;
+}
+
+function selectAnswer(index, element) {
+  const q = quizConfig.questions[current];
+  document.querySelectorAll(".option").forEach(o => o.onclick = null);
+
+  if (index === q.answer) {
+    element.classList.add("correct");
+    score++;
+    document.getElementById("feedback").innerHTML = "✅ Correct! " + q.explanation;
+  } else {
+    element.classList.add("wrong");
+    document.querySelectorAll(".option")[q.answer].classList.add("correct");
+    document.getElementById("feedback").innerHTML = "❌ Wrong! " + q.explanation;
+  }
+
+  setTimeout(() => {
+    current++;
+    current < quizConfig.questions.length ? loadQuestion() : showResult();
+  }, 1200);
+}
+
+function showResult() {
+  progressFill.style.width = "100%";
+
+  const level =
+    score >= quizConfig.questions.length * 0.8 ? "🔥 Expert Trainer" :
+    score >= quizConfig.questions.length * 0.5 ? "⚡ Learning Trainer" :
+    "📘 Beginner";
+
+  quizArea.innerHTML = `
+    <div class="result-box">
+      <h2>${level}</h2>
+      <p>You scored <strong>${score} / ${quizConfig.questions.length}</strong></p>
+      <p>Improve using these tools:</p>
+      <p>${quizConfig.ctaHtml}</p>
+    </div>
+  `;
+}
+
+loadQuestion();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO Type Effectiveness Quiz</title>
+<meta name="description" content="Test your Pokémon GO type effectiveness knowledge. 50-question quiz to improve raid and PvP performance.">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 10px;
+}
+.quiz-container {
+  max-width: 720px;
+  margin: auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.progress {
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #2563eb;
+  transition: width 0.4s ease;
+}
+h1 { text-align:center; font-size:1.4rem; }
+.question-count { text-align:center; font-weight:600; margin-bottom:8px; }
+.question { font-weight:600; margin-bottom:12px; }
+.option {
+  padding:12px;
+  background:#f1f5f9;
+  border-radius:10px;
+  margin-bottom:8px;
+  cursor:pointer;
+}
+.option:hover { transform: scale(1.02); }
+.correct { background:#dcfce7; border:2px solid #22c55e; }
+.wrong { background:#fee2e2; border:2px solid #ef4444; }
+.feedback { margin-top:10px; font-weight:600; }
+.result-box { text-align:center; }
+.result-box a { font-weight:600; color:#2563eb; text-decoration:none; }
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>Pokémon GO Type Effectiveness Quiz</h1>
+<p>Test your Pokémon GO battle knowledge. This quiz helps you choose better raid counters and PvP attackers.</p>
+
+<div class="progress">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<div id="quizArea"></div>
+</div>
+
+<script>
+/* ========= ONLY CHANGE THIS PART ========= */
+
+const quizConfig = {
+  title: "Pokémon GO Type Effectiveness Quiz",
+  ctaHtml: `
+    👉 <a href="effectiveness_chart.html" target="_blank">Type Effectiveness Chart</a>  
+  `,
+  questions: [
+    {
+    "q":"Which type is super effective against Dragon?",
+      "options":["Ice","Fire","Water","Electric"],
+      "answer":0,
+      "explanation":"Ice types moves are super effective against Dragon type attacks."
+    },
+    {
+    "q":"Which type is super effective against Water?",
+      "options":["Fire","Electric","Ice","Steel"],
+      "answer":1,
+      "explanation":"Electric types moves are super effective against Water type attacks."
+    },
+    {
+      "q":"Which type is super effective against Flying?",
+      "options":["Grass","Electric","Fighting","Bug"],
+      "answer":1,
+      "explanation":"Electric types moves are super effective against Flying type attacks."
+    },
+    {
+      "q":"Which type is super effective against Psychic?",
+      "options":["Ghost","Fighting","Fairy","Ground"],
+      "answer":0,
+      "explanation":"Ghost types moves are super effective against Psychic type attacks."
+    },
+    {
+      "q":"Which type is super effective against Dark?",
+      "options":["Ghost","Psychic","Fighting","Poison"],
+      "answer":2,
+      "explanation":"Fighting types moves are super effective against Dark type attacks."
+    },
+    {
+      "q":"Which type is super effective against Steel?",
+      "options":["Water","Fire","Grass","Ice"],
+      "answer":1,
+      "explanation":"Fire types moves are super effective against Steel type attacks."
+    },
+    {
+      "q":"Which type is super effective against Rock?",
+      "options":["Fire","Flying","Fighting","Bug"],
+      "answer":2,
+      "explanation":"Fighting types moves are super effective against Rock type attacks."
+    },
+    {
+      "q":"Which type is super effective against Ground?",
+      "options":["Electric","Ice","Poison","Steel"],
+      "answer":1,
+      "explanation":"Ice types moves are super effective against Ground type attacks."
+    },
+    {
+      "q":"Which type is super effective against Grass?",
+      "options":["Water","Fire","Electric","Ground"],
+      "answer":1,
+      "explanation":"Fire types moves are super effective against Grass type attacks."
+    },
+    {
+      "q":"Which type is super effective against Fairy?",
+      "options":["Dragon","Poison","Dark","Fighting"],
+      "answer":1,
+      "explanation":"Poison types moves are super effective against Fairy type attacks."
+    },
+    {
+      "q":"Which type is NOT very effective against Steel?",
+      "options":["Dragon","Fire","Ice","Rock"],
+      "answer":0,
+      "explanation":"Dragon types moves are not very effective against Steel type attacks."
+    },
+    {
+      "q":"Which type is immune to Normal moves?",
+      "options":["Ghost","Steel","Rock","Dark"],
+      "answer":0,
+      "explanation":"Ghost types moves are immune to Normal type attacks."
+    },
+    {
+      "q":"Which type is immune to Ground moves?",
+      "options":["Bug","Flying","Steel","Grass"],
+      "answer":1,
+      "explanation":"Flying types moves are immune to Ground type attacks."
+    },
+    {
+      "q":"Which type is immune to Electric moves?",
+      "options":["Ground","Dragon","Grass","Steel"],
+      "answer":0,
+      "explanation":"Ground types moves are immune to Electric type attacks."
+    },
+    {
+      "q":"Which type is immune to Dragon moves?",
+      "options":["Fairy","Steel","Ice","Psychic"],
+      "answer":0,
+      "explanation":"Fairy types moves are immune to Dragon type attacks."
+    },
+    {
+      "q":"Ice is super effective against which of these?",
+      "options":["Water","Fire","Dragon","Steel"],
+      "answer":2,
+      "explanation":"Ice types moves are super effective against Dragon type attacks."
+    },
+    {
+      "q":"Fighting is super effective against which type?",
+      "options":["Ghost","Fairy","Steel","Psychic"],
+      "answer":2,
+      "explanation":"Fighting types moves are super effective against Steel type attacks."
+    },
+    {
+      "q":"Ghost is super effective against which type?",
+      "options":["Normal","Dark","Psychic","Fairy"],
+      "answer":2,
+      "explanation":"Ghost types moves are super effective against Psychic type attacks."
+    },
+    {
+      "q":"Dark is super effective against which type?",
+      "options":["Fighting","Ghost","Fairy","Steel"],
+      "answer":1,
+      "explanation":"Dark types moves are super effective against Ghost type attacks."
+    },
+    {
+      "q":"Bug is super effective against which type?",
+      "options":["Fire","Psychic","Steel","Fairy"],
+      "answer":1,
+      "explanation":"Bug types moves are super effective against Psychic type attacks."
+    },
+    {
+      "q":"Which type resists Electric?",
+      "options":["Flying","Ground","Water","Grass"],
+      "answer":3,
+      "explanation":"Grass types moves resists Electric type attacks."
+    },
+    {
+      "q":"Which type resists Fire?",
+      "options":["Water","Rock","Dragon","Fire"],
+      "answer":1,
+      "explanation":"Rock types moves resists Fire type attacks."
+    },
+    {
+      "q":"Which type resists Ice?",
+      "options":["Fire","Water","Steel","Ice"],
+      "answer":0,
+      "explanation":"Fire types moves resists Ice type attacks."
+    },
+    {
+      "q":"Which type resists Fairy?",
+      "options":["Dark","Dragon","Steel","Fighting"],
+      "answer":2,
+      "explanation":"Steel types moves resists Fairy type attacks."
+    },
+    {
+      "q":"Which type resists Psychic?",
+      "options":["Poison","Fighting","Dark","Ghost"],
+      "answer":2,
+      "explanation":"Dark types moves resists Psychic type attacks."
+    },
+    {
+      "q":"Rayquaza is weak to which type?",
+      "options":["Fire","Ice","Water","Electric"],
+      "answer":1,
+      "explanation":"Ice types moves are super effective against Rayquaza attacks."
+    },
+    {
+      "q":"Groudon is weak to which type?",
+      "options":["Electric","Water","Fire","Steel"],
+      "answer":1,
+      "explanation":"Water types moves are super effective against Groudon attacks."
+    },
+    {
+      "q":"Kyogre is weak to which type?",
+      "options":["Grass","Fire","Ice","Steel"],
+      "answer":0,
+      "explanation":"Grass types moves are super effective against Kyogre attacks."
+    },
+    {
+      "q":"Dragonite is double weak to which type?",
+      "options":["Dragon","Fairy","Ice","Rock"],
+      "answer":2,
+      "explanation":"Ice types moves are double super effective against Dragonite attacks."
+    },
+    {
+      "q":"Garchomp is double weak to which type?",
+      "options":["Ice","Fairy","Dragon","Water"],
+      "answer":0,
+      "explanation":"Ice types moves are double super effective against Garchomp attacks."
+    },
+    {
+      "q":"Which type is super effective against Lugia?",
+      "options":["Psychic","Dark","Ghost","Ice"],
+      "answer":3,
+      "explanation":"Ice types moves are super effective against Lugia attacks."
+    },
+    {
+      "q":"Mewtwo is weak to which type?",
+      "options":["Fighting","Psychic","Ghost","Steel"],
+      "answer":2,
+      "explanation":"Ghost types moves are super effective against Mewtwo attacks."
+    },
+    {
+      "q":"Giratina is weak to which type?",
+      "options":["Normal","Dragon","Poison","Bug"],
+      "answer":1,
+      "explanation":"Dragon types moves are super effective against Giratina attacks."
+    },
+    {
+      "q":"Ho-Oh is double weak to which type?",
+      "options":["Electric","Rock","Water","Ice"],
+      "answer":1,
+      "explanation":"Rock types moves are double super effective against Ho-Oh attacks."
+    },
+    {
+      "q":"Charizard is double weak to which type?",
+      "options":["Water","Electric","Rock","Ice"],
+      "answer":2,
+      "explanation":"Rock types moves are double super effective against Charizard attacks."
+    },
+    {
+      "q":"Which type is super effective against Bug?",
+      "options":["Grass","Fire","Fighting","Ground"],
+      "answer":1,
+      "explanation":"Fire types moves are super effective against Bug type attacks."
+    },
+    {
+      "q":"Which type is super effective against Poison?",
+      "options":["Grass","Fairy","Ground","Bug"],
+      "answer":2,
+      "explanation":"Ground types moves are super effective against Poison type attacks."
+    },
+    {
+      "q":"Which type is super effective against Electric?",
+      "options":["Flying","Water","Ground","Steel"],
+      "answer":2,
+      "explanation":"Ground types moves are super effective against Electric type attacks."
+    },
+    {
+      "q":"Which type is super effective against Ice?",
+      "options":["Fire","Water","Electric","Grass"],
+      "answer":0,
+      "explanation":"Fire types moves are super effective against Ice type attacks."
+    },
+    {
+      "q":"Which type is super effective against Fighting?",
+      "options":["Dark","Fairy","Bug","Rock"],
+      "answer":1,
+      "explanation":"Fairy types moves are super effective against Fighting type attacks."
+    },
+    {
+      "q":"Which type is NOT affected by Ghost moves?",
+      "options":["Psychic","Normal","Steel","Dark"],
+      "answer":1,
+      "explanation":"Normal types moves are not affected by Ghost type attacks."
+    },
+    {
+      "q":"Which type is NOT affected by Dragon moves?",
+      "options":["Steel","Fairy","Ice","Rock"],
+      "answer":1,
+      "explanation":"Fairy types moves are not affected by Dragon type attacks."
+    },
+    {
+      "q":"Which type is NOT affected by Poison moves?",
+      "options":["Fairy","Steel","Grass","Bug"],
+      "answer":1,
+      "explanation":"Steel types moves are not affected by Poison type attacks."
+    },
+    {
+      "q":"Which type is NOT affected by Electric moves?",
+      "options":["Flying","Water","Ground","Steel"],
+      "answer":2,
+      "explanation":"Ground types moves are not affected by Electric type attacks."
+    },
+    {
+      "q":"Which type is NOT affected by Normal moves?",
+      "options":["Dark","Ghost","Steel","Rock"],
+      "answer":1,
+      "explanation":"Ghost types moves are not affected by Normal type attacks."
+    }
+  ]
+};
+
+/* ========= DO NOT TOUCH BELOW ========= */
+
+
+
+let current = 0;
+let score = 0;
+
+const quizArea = document.getElementById("quizArea");
+const progressFill = document.getElementById("progressFill");
+
+function loadQuestion() {
+  progressFill.style.width =
+    ((current / quizConfig.questions.length) * 100) + "%";
+
+  const q = quizConfig.questions[current];
+
+  quizArea.innerHTML = `
+    <div class="question-count">Question ${current + 1} of ${quizConfig.questions.length}</div>
+    <div class="question">${q.q}</div>
+    ${q.options.map((opt, i) =>
+      `<div class="option" onclick="selectAnswer(${i}, this)">${opt}</div>`
+    ).join("")}
+    <div class="feedback" id="feedback"></div>
+  `;
+}
+
+function selectAnswer(index, element) {
+  const q = quizConfig.questions[current];
+  document.querySelectorAll(".option").forEach(o => o.onclick = null);
+
+  if (index === q.answer) {
+    element.classList.add("correct");
+    score++;
+    document.getElementById("feedback").innerHTML = "✅ Correct! " + q.explanation;
+  } else {
+    element.classList.add("wrong");
+    document.querySelectorAll(".option")[q.answer].classList.add("correct");
+    document.getElementById("feedback").innerHTML = "❌ Wrong! " + q.explanation;
+  }
+
+  setTimeout(() => {
+    current++;
+    current < quizConfig.questions.length ? loadQuestion() : showResult();
+  }, 1200);
+}
+
+function showResult() {
+  progressFill.style.width = "100%";
+
+  const level =
+    score >= quizConfig.questions.length * 4.0 ? "🔥 Expert Trainer" :
+    score >= quizConfig.questions.length * 2.5 ? "⚡ Learning Trainer" :
+    "📘 Beginner";
+
+  quizArea.innerHTML = `
+    <div class="result-box">
+      <h2>${level}</h2>
+      <p>You scored <strong>${score} / ${quizConfig.questions.length}</strong></p>
+      <p>Improve using these tools:</p>
+      <p>${quizConfig.ctaHtml}</p>
+    </div>
+  `;
+}
+
+loadQuestion();
+</script>
+
+</body>
+</html>

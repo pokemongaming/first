@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon GO Raid Counter Ranking Tool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Pokémon GO Raid Counter Ranking Tool. Find the best, good, and budget counters for raid bosses sorted by DPS.">
+
+<style>
+body{
+  margin:0;
+  background:#0a0a0a;
+  color:#fff;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+.container{
+  max-width:800px;
+  margin:auto;
+  padding:16px;
+}
+h1{
+  font-size:22px;
+  margin-bottom:12px;
+}
+.card{
+  background:#151515;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 0 14px rgba(0,0,0,0.5);
+}
+label{
+  display:block;
+  margin-bottom:6px;
+  font-size:14px;
+}
+select{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  background:#222;
+  color:#fff;
+  font-size:15px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:16px;
+}
+th,td{
+  padding:10px;
+  text-align:left;
+}
+th{
+  background:#222;
+  font-size:14px;
+}
+td{
+  border-bottom:1px solid #333;
+  font-size:14px;
+}
+.tag{
+  padding:4px 8px;
+  border-radius:8px;
+  font-size:12px;
+  font-weight:700;
+}
+.best{background:#00c853;}
+.good{background:#ffb300;}
+.budget{background:#e53935;}
+.seo{
+  margin-top:14px;
+  font-size:13px;
+  color:#ccc;
+  line-height:1.5;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Pokémon GO Raid Counter Ranking Tool</h1>
+
+<div class="card">
+
+<label>Select Raid Boss</label>
+<select id="boss" onchange="loadCounters()">
+  <option value="mewtwo">Mewtwo</option>
+  <option value="rayquaza">Rayquaza</option>
+  <option value="giratina">Giratina</option>
+</select>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pokémon</th>
+      <th>Moveset</th>
+      <th>DPS</th>
+      <th>Tier</th>
+    </tr>
+  </thead>
+  <tbody id="counterTable"></tbody>
+</table>
+
+<div class="seo">
+This Pokémon GO counter ranking tool automatically sorts raid counters
+based on estimated DPS. Rankings may vary depending on weather boost,
+friendship bonus, and individual Pokémon levels.
+</div>
+
+</div>
+</div>
+
+<script>
+const counterData={
+  mewtwo:[
+    {name:"Tyranitar",move:"Bite / Brutal Swing",dps:23.5,tier:"best"},
+    {name:"Hydreigon",move:"Bite / Brutal Swing",dps:22.8,tier:"best"},
+    {name:"Darkrai",move:"Snarl / Shadow Ball",dps:21.9,tier:"good"},
+    {name:"Gengar",move:"Shadow Claw / Shadow Ball",dps:20.5,tier:"good"},
+    {name:"Weavile",move:"Snarl / Foul Play",dps:18.2,tier:"budget"}
+  ],
+  rayquaza:[
+    {name:"Mamoswine",move:"Powder Snow / Avalanche",dps:24.2,tier:"best"},
+    {name:"Galarian Darmanitan",move:"Ice Fang / Avalanche",dps:23.6,tier:"best"},
+    {name:"Weavile",move:"Ice Shard / Avalanche",dps:21.1,tier:"good"},
+    {name:"Glaceon",move:"Frost Breath / Avalanche",dps:19.5,tier:"budget"}
+  ],
+  giratina:[
+    {name:"Garchomp",move:"Dragon Tail / Outrage",dps:22.9,tier:"best"},
+    {name:"Rayquaza",move:"Dragon Tail / Outrage",dps:22.4,tier:"best"},
+    {name:"Dragonite",move:"Dragon Tail / Outrage",dps:21.3,tier:"good"},
+    {name:"Salamence",move:"Dragon Tail / Draco Meteor",dps:20.1,tier:"budget"}
+  ]
+};
+
+function loadCounters(){
+  const boss=document.getElementById("boss").value;
+  const table=document.getElementById("counterTable");
+  table.innerHTML="";
+
+  let list=counterData[boss].sort((a,b)=>b.dps-a.dps);
+
+  list.forEach(c=>{
+    let tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td>${c.name}</td>
+      <td>${c.move}</td>
+      <td>${c.dps}</td>
+      <td><span class="tag ${c.tier}">${c.tier.toUpperCase()}</span></td>
+    `;
+    table.appendChild(tr);
+  });
+}
+
+loadCounters();
+</script>
+
+</body>
+</html>
