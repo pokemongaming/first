@@ -84,6 +84,30 @@ footer {
   padding: 20px;
   background: #020617;
 }
+
+.promo-card {
+  background:#111827;
+  padding:15px;
+  border-radius:10px;
+  border:1px solid #1f2937;
+  position:relative;
+}
+
+.promo-code {
+  font-size:18px;
+  font-weight:700;
+  color:#38bdf8;
+}
+
+.expiry {
+  font-size:12px;
+  color:#94a3b8;
+}
+
+.expired {
+  opacity:0.4;
+}
+
 </style>
 </head>
 <body>
@@ -103,22 +127,128 @@ footer {
   <p>Raid Bosses, Counters, IVs & More</p>
 </section>
 
+<section id="promo">
+  <h2 class="section-title">🎁 Active Promo Codes</h2>
+  <div id="promoContainer" class="grid"></div>
+</section>
+
+<script>
+// ===== FETCH FROM JSON (recommended) =====
+// If not using JSON yet, replace fetch with your array
+
+fetch('/data/promocodes.json')
+  .then(res => res.json())
+  .then(promoCodes => {
+
+    const container = document.getElementById("promoContainer");
+    const today = new Date();
+
+    // ===== FILTER (REMOVE EXPIRED) =====
+    const activeCodes = promoCodes.filter(promo => {
+      return new Date(promo.expiry) >= today;
+    });
+
+    // ===== SORT (latest expiry first) =====
+    activeCodes.sort((a, b) => {
+      return new Date(b.expiry) - new Date(a.expiry);
+    });
+
+    // ===== RENDER =====
+    activeCodes.forEach(promo => {
+
+      const expiryDate = new Date(promo.expiry);
+      const daysLeft = Math.ceil((expiryDate - today) / (1000 * 60 * 60 * 24));
+
+      const card = document.createElement("div");
+      card.className = "promo-card";
+
+      card.innerHTML = `
+        <div class="promo-code">${promo.code}</div>
+        <p>${promo.reward}</p>
+        <div class="expiry">⏳ ${daysLeft} days left</div>
+        <button onclick="copyCode('${promo.code}')">Copy</button>
+      `;
+
+      container.appendChild(card);
+    });
+
+  });
+
+// ===== COPY FUNCTION =====
+function copyCode(code) {
+  navigator.clipboard.writeText(code);
+  alert("Copied: " + code);
+}
+</script>
+
 <section class="section" id="raids">
-  <h2>🔥 Latest Raid Guides</h2>
+  <h2>🔥 Latest Mega Raid Guides</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://img.pokemondb.net/artwork/manectric-mega.jpg">
-      <h3>Mega Manectric</h3>
+      <img src="https://img.pokemondb.net/artwork/altaria-mega.jpg">
+      <h3>Mega Altaria</h3>
       <p>Best counters, weaknesses & tips.</p>
     </div>
     <div class="card">
-      <img src="https://img.pokemondb.net/artwork/banette-mega.jpg">
-      <h3>Mega Banette</h3>
+      <img src="https://img.pokemondb.net/artwork/camerupt-mega.jpg">
+      <h3>Mega Camerupt</h3>
       <p>Complete raid strategy guide.</p>
     </div>
     <div class="card">
-      <img src="https://img.pokemondb.net/artwork/aerodactyl-mega.jpg">
-      <h3>Mega Aerodactyl</h3>
+      <img src="https://img.pokemondb.net/artwork/glalie-mega.jpg">
+      <h3>Mega Glalie</h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+	    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/falinks-mega.jpg">
+      <h3>Mega Falinks</h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="raids">
+  <h2>🔥 Latest Legendary Raid Guides</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/tapu-lele.jpg">
+      <h3>Tapu Lele</h3>
+      <p>Best counters, weaknesses & tips.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/tapu-bulu.jpg">
+      <h3>Tapu Bulu</h3>
+      <p>Complete raid strategy guide.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/tapu-fini.jpg">
+      <h3>Tapu Fini</h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="raids">
+  <h2>🔥 Latest Ultra Beast Raid Guides</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/pheromosa.jpg">
+      <h3>Pheromosa</h3>
+      <p>Best counters, weaknesses & tips.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/buzzwole.jpg">
+      <h3>Buzzwole</h3>
+      <p>Complete raid strategy guide.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/xurkitree.jpg">
+      <h3>Xurkitree</h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+	    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/nihilego.jpg">
+      <h3>Nihilego</h3>
       <p>Top counters & shiny comparison.</p>
     </div>
   </div>
