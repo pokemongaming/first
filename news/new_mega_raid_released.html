@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Mega Raid Released</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b1020;
+      color:#ffffff;
+      line-height:1.6;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .hero{
+      position:relative;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      overflow:hidden;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url('mega-raid-banner.webp');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at top right, rgba(255,0,140,0.25), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(0,162,255,0.25), transparent 35%);
+      z-index:1;
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:900px;
+      padding:20px;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:10px 18px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.18);
+      backdrop-filter:blur(8px);
+      font-size:14px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      margin-bottom:25px;
+      color:#ffd700;
+      font-weight:bold;
+    }
+
+    .hero h1{
+      font-size:70px;
+      line-height:1.1;
+      margin-bottom:20px;
+      font-weight:900;
+      text-shadow:0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#d5d9e4;
+      max-width:700px;
+      margin:0 auto 35px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:18px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 32px;
+      border-radius:14px;
+      font-size:16px;
+      font-weight:bold;
+      transition:0.3s ease;
+      display:inline-block;
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg,#ff006e,#ff4d00);
+      color:white;
+      box-shadow:0 10px 25px rgba(255,0,110,0.35);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-4px);
+      box-shadow:0 14px 30px rgba(255,0,110,0.45);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.15);
+      backdrop-filter:blur(8px);
+    }
+
+    .btn-secondary:hover{
+      background:rgba(255,255,255,0.14);
+      transform:translateY(-4px);
+    }
+
+    .info-section{
+      padding:90px 20px;
+      background:#12192f;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      margin-bottom:14px;
+    }
+
+    .section-title p{
+      color:#b8bfd3;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1b2440;
+      border-radius:22px;
+      padding:30px;
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border-color:#ff006e;
+      box-shadow:0 12px 35px rgba(0,0,0,0.35);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      font-size:24px;
+      color:#ffffff;
+    }
+
+    .card p{
+      color:#c3c9db;
+      font-size:15px;
+    }
+
+    .highlight{
+      color:#ff4d8d;
+      font-weight:bold;
+    }
+
+    .boss-preview{
+      padding:100px 20px;
+      background:#0d1326;
+    }
+
+    .preview-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .preview-image img{
+      width:100%;
+      border-radius:28px;
+      display:block;
+      box-shadow:0 20px 50px rgba(0,0,0,0.4);
+    }
+
+    .preview-content h2{
+      font-size:48px;
+      margin-bottom:25px;
+    }
+
+    .preview-content p{
+      color:#c2c8d9;
+      margin-bottom:20px;
+      font-size:17px;
+    }
+
+    .stats{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+
+    .stat-box{
+      flex:1;
+      min-width:130px;
+      background:#18213b;
+      padding:22px;
+      border-radius:18px;
+      text-align:center;
+    }
+
+    .stat-box h3{
+      font-size:32px;
+      color:#ff4d8d;
+      margin-bottom:8px;
+    }
+
+    .stat-box span{
+      color:#cfd5e6;
+      font-size:14px;
+    }
+
+    .cta{
+      padding:100px 20px;
+      text-align:center;
+      background:
+        linear-gradient(135deg,#ff006e 0%,#5b00ff 100%);
+    }
+
+    .cta h2{
+      font-size:52px;
+      margin-bottom:20px;
+    }
+
+    .cta p{
+      max-width:700px;
+      margin:auto auto 35px;
+      font-size:18px;
+      color:#f2f2f2;
+    }
+
+    footer{
+      background:#070b15;
+      text-align:center;
+      padding:30px 20px;
+      color:#9da4ba;
+      font-size:14px;
+    }
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .preview-grid{
+        grid-template-columns:1fr;
+      }
+
+      .preview-content h2{
+        font-size:38px;
+      }
+
+      .cta h2{
+        font-size:38px;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .hero{
+        min-height:85vh;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="badge">
+        ⚡ Mega Raid Alert
+      </div>
+
+      <h1>
+        New Mega Raid Released
+      </h1>
+
+      <p>
+        Check out the newest boss and prepare your strongest counters for the latest Mega Raid challenge. Gather your team and jump into battle now.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">
+          View Raid Guide
+        </a>
+
+        <a href="#" class="btn btn-secondary">
+          Read More Updates
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+  <section class="info-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Why This Mega Raid Matters</h2>
+
+        <p>
+          This newly released Mega Raid brings exclusive rewards, powerful bonuses, and exciting battle opportunities for trainers worldwide.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>🔥 Powerful Boss</h3>
+
+          <p>
+            Face one of the strongest Mega Raid bosses released this season with enhanced attack patterns and dangerous charged moves.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>✨ Shiny Chance</h3>
+
+          <p>
+            Trainers may encounter a <span class="highlight">shiny version</span> after defeating the raid boss during the event period.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🎁 Exclusive Rewards</h3>
+
+          <p>
+            Earn Mega Energy, Rare Candy, Golden Razz Berries, and premium rewards by completing Mega Raid battles.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BOSS PREVIEW -->
+  <section class="boss-preview">
+
+    <div class="container">
+
+      <div class="preview-grid">
+
+        <div class="preview-image">
+          <img src="mega-boss.webp" alt="Mega Raid Boss">
+        </div>
+
+        <div class="preview-content">
+
+          <h2>
+            The Newest Mega Boss Has Arrived
+          </h2>
+
+          <p>
+            Trainers across the world are preparing to battle the latest Mega Raid boss. This raid features enhanced power, boosted rewards, and exciting battle mechanics.
+          </p>
+
+          <p>
+            Build your strongest team, coordinate with friends, and prepare effective counters to maximize your chances of victory.
+          </p>
+
+          <div class="stats">
+
+            <div class="stat-box">
+              <h3>5★</h3>
+              <span>Raid Difficulty</span>
+            </div>
+
+            <div class="stat-box">
+              <h3>300+</h3>
+              <span>Mega Energy</span>
+            </div>
+
+            <div class="stat-box">
+              <h3>✨</h3>
+              <span>Shiny Available</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Ready For The Battle?
+      </h2>
+
+      <p>
+        Stay updated with the latest Pokémon GO Mega Raid guides, counters, strategies, and event bonuses on your favorite raid website.
+      </p>
+
+      <a href="#" class="btn btn-primary">
+        Explore Raid Guides
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Pokémon Gaming • Mega Raid News & Guides
+  </footer>
+
+</body>
+</html>
