@@ -106,6 +106,102 @@ footer {
   opacity:0.4;
 }
 
+.countdown-container{
+width:100%;
+max-width:900px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,0,0,0.4);
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.badge{
+display:inline-block;
+background:#ffd447;
+color:#000;
+padding:10px 18px;
+border-radius:50px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:1.1rem;
+color:#cfd8ff;
+margin-bottom:40px;
+}
+
+.timer{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.time-box{
+background:#16244d;
+padding:30px 20px;
+border-radius:18px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.time-box span{
+display:block;
+}
+
+.number{
+font-size:4rem;
+font-weight:bold;
+color:#ffd447;
+margin-bottom:10px;
+}
+
+.label{
+font-size:1rem;
+text-transform:uppercase;
+letter-spacing:2px;
+color:#cfd8ff;
+}
+
+.footer-text{
+margin-top:35px;
+font-size:1rem;
+color:#d6ddff;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:2rem;
+}
+
+.timer{
+grid-template-columns:repeat(2,1fr);
+}
+
+.number{
+font-size:3rem;
+}
+}
+
+@media(max-width:480px){
+
+.timer{
+grid-template-columns:1fr;
+}
+
+.number{
+font-size:2.8rem;
+}
+}
+
 </style>
 </head>
 <body>
@@ -169,6 +265,97 @@ footer {
 
   </div>
 </section>
+
+<div class="countdown-container">
+
+<div class="badge">Pokémon GO Fest 2026</div>
+
+<h1>Global Event Countdown</h1>
+
+<p class="subtitle">
+Countdown to Pokémon GO Fest 2026 Global Event starting on July 11, 2026
+</p>
+
+<div class="timer">
+
+<div class="time-box">
+<span class="number" id="days">00</span>
+<span class="label">Days</span>
+</div>
+
+<div class="time-box">
+<span class="number" id="hours">00</span>
+<span class="label">Hours</span>
+</div>
+
+<div class="time-box">
+<span class="number" id="minutes">00</span>
+<span class="label">Minutes</span>
+</div>
+
+<div class="time-box">
+<span class="number" id="seconds">00</span>
+<span class="label">Seconds</span>
+</div>
+
+</div>
+
+<p class="footer-text">
+Prepare for Mega Mewtwo raids, shiny hunting, habitats, and exclusive bonuses.
+</p>
+
+</div>
+
+<script>
+
+const goFestDate = new Date("July 11, 2026 10:00:00").getTime();
+
+const countdown = setInterval(() => {
+
+const now = new Date().getTime();
+
+const distance = goFestDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+);
+
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60)) / (1000 * 60)
+);
+
+const seconds = Math.floor(
+(distance % (1000 * 60)) / 1000
+);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+if(distance < 0){
+
+clearInterval(countdown);
+
+document.querySelector(".timer").innerHTML = `
+<div style="
+grid-column:1/-1;
+font-size:2rem;
+font-weight:bold;
+color:#ffd447;
+padding:30px;
+">
+🎉 Pokémon GO Fest 2026 Has Started!
+</div>
+`;
+
+}
+
+},1000);
+
+</script>
 
 <!--<section id="promo">
   <h2 class="section-title">🎁 Active Promo Codes</h2>
