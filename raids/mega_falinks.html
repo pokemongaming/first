@@ -450,7 +450,44 @@ text-decoration:underline;
   padding: 15px;
 }
 
-/* Video */
+.video-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    overflow:hidden;
+
+    padding:40px 20px;
+    border-radius:20px;
+
+    /* Desktop side fill background */
+    background:url("mega-altaria-bg.jpg") center/cover no-repeat;
+}
+
+/* Optional dark overlay */
+.video-container::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+}
+
+.video-container iframe{
+    position:relative;
+    z-index:2;
+
+    width:360px;
+    height:640px;
+
+    border:none;
+    border-radius:18px;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+<!--/* Video */
 .video-container {
   width: 100%;
   border-radius: 12px;
@@ -461,7 +498,7 @@ text-decoration:underline;
   width: 100%;
   height: 400px;
   border: none;
-}
+}-->
 
 /* Title */
 .title {
@@ -499,7 +536,22 @@ details p {
   color: #cbd5f5;
 }
 
-/* Desktop layout */
+@media(max-width:768px){
+
+   .video-container{
+      background:none;
+      padding:0;
+      border-radius:0;
+   }
+
+   .video-container iframe{
+      width:100%;
+      height:80vh;
+      border-radius:0;
+   }
+}
+
+<!--/* Desktop layout */
 @media (min-width: 768px) {
   .flex {
     display: flex;
@@ -518,7 +570,7 @@ details p {
     height: 100%;
     min-height: 400px;
   }
-}
+}-->
 
   /* Make internal cards scroll smoothly */
   .horizontal-scroll > * {
@@ -727,12 +779,18 @@ Falinks itself is a unique pure Fighting-type Pokémon made up of six coordinate
 
 <div class="containerabhi">
 
-  <div class="flex">
+  <!--<div class="flex">-->
     
     
-    <div class="video-container">
+	<div class="video-container">
+   <iframe
+      src="https://www.youtube.com/embed/OeTvpeB3MTQ" allow="fullscreen">
+   </iframe>
+</div>
+	
+    <!--<div class="video-container">
       <iframe src="https://www.youtube.com/embed/OeTvpeB3MTQ"></iframe>
-    </div>
+    </div>-->
 
     
     <div class="side-info">
@@ -743,7 +801,7 @@ Falinks itself is a unique pure Fighting-type Pokémon made up of six coordinate
         <strong>Best Counters:</strong> Mega Alakazam, Mega Rayquaza, Shadow Mewtwo<br>
         <strong>Tip:</strong> Use Psychic-type moves for maximum damage
       </div>
-    </div>
+    <!--</div>-->
 
   </div>
 
