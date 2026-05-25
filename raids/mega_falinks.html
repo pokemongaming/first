@@ -519,6 +519,55 @@ details p {
   }
 }-->
 
+/* Title */
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* Info box */
+.info-box {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Expandable section */
+details {
+  background: #1e293b;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.video-title{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.video-description{
+    font-size:15px;
+    color:#cbd5e1;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
 .video-container {
   width: 100%;
   max-width: 420px;
@@ -531,6 +580,27 @@ details p {
   height: 100%;
   border: none;
   border-radius: 12px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .video-container {
+    flex: 1;
+  }
+
+  .side-info {
+    flex: 1;
+  }
+
+  .video-container iframe {
+    height: 100%;
+    min-height: 400px;
+  }
 }
 
   /* Make internal cards scroll smoothly */
@@ -738,6 +808,15 @@ Falinks itself is a unique pure Fighting-type Pokémon made up of six coordinate
 
 </section><hr>
 
+   <div class="video-title">
+        Mega Altaria Raid Battle
+    </div>
+
+    <div class="video-description">
+        Watch this powerful Pokémon GO Mega Altaria raid battle,
+        including counters, battle gameplay, and raid strategy.
+    </div>
+
 <div class="video-container">
   <iframe
     src="https://www.youtube.com/embed/OeTvpeB3MTQ"
@@ -745,6 +824,34 @@ Falinks itself is a unique pure Fighting-type Pokémon made up of six coordinate
     allowfullscreen>
   </iframe>
 </div>
+
+<div class="side-info">
+      <div class="title">Mega Falinks</div>
+
+      <div class="info-box">
+        <strong>Weakness:</strong> Flying, Psychic, Fairy<br>
+        <strong>Best Counters:</strong> Mega Alakazam, Mega Rayquaza, Shadow Mewtwo<br>
+        <strong>Tip:</strong> Use Psychic-type moves for maximum damage
+      </div>
+    </div>
+
+  </div>
+
+  
+  <details>
+    <summary>Raid Strategy</summary>
+    <p>Focus on Psychic-type attackers. Dodge charged moves to survive longer.</p>
+  </details>
+
+  <details>
+    <summary>Best Moves</summary>
+    <p>Confusion, Future Sight, Psychic are highly effective.</p>
+  </details>
+
+  <details>
+    <summary>Weather Boost</summary>
+    <p>Cloudy weather boosts Fughting-type moves.</p>
+  </details>
 
 <!--<div class="containerabhi">
 
