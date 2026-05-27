@@ -561,22 +561,22 @@ Countdown to Pokémon GO Fest 2026 Global Event starting on July 11, 2026
 <div class="timer">
 
 <div class="card">
-<span class="number" id="days">00</span>
+<span class="number" id="fest-days">00</span>
 <span class="label">Days</span>
 </div>
 
 <div class="card">
-<span class="number" id="hours">00</span>
+<span class="number" id="fest-hours">00</span>
 <span class="label">Hours</span>
 </div>
 
 <div class="card">
-<span class="number" id="minutes">00</span>
+<span class="number" id="fest-minutes">00</span>
 <span class="label">Minutes</span>
 </div>
 
 <div class="card">
-<span class="number" id="seconds">00</span>
+<span class="number" id="fest-seconds">00</span>
 <span class="label">Seconds</span>
 </div>
 
@@ -613,10 +613,10 @@ const seconds = Math.floor(
 (distance % (1000 * 60)) / 1000
 );
 
-document.getElementById("days").innerHTML = days;
-document.getElementById("hours").innerHTML = hours;
-document.getElementById("minutes").innerHTML = minutes;
-document.getElementById("seconds").innerHTML = seconds;
+document.getElementById("fest-days").innerHTML = days;
+document.getElementById("fest-hours").innerHTML = hours;
+document.getElementById("fest-minutes").innerHTML = minutes;
+document.getElementById("fest-seconds").innerHTML = seconds;
 
 if(distance < 0){
 
