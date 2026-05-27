@@ -164,6 +164,123 @@ box-shadow:0 0 25px rgba(0,0,0,0.4);
 border:1px solid rgba(255,255,255,0.1);
 }
 
+.alert-wrapper{
+    max-width:900px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.red-alert{
+    background:linear-gradient(135deg,#ff1f1f,#b30000);
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 8px 30px rgba(255,0,0,0.35);
+    border:2px solid rgba(255,255,255,0.15);
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.02);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.red-alert h1{
+    margin-top:0;
+    font-size:40px;
+    color:#ffffff;
+}
+
+.red-alert p{
+    font-size:18px;
+    line-height:1.7;
+    color:#ffeaea;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.time-box1{
+    background:rgba(255,255,255,0.12);
+    padding:18px;
+    border-radius:18px;
+    min-width:100px;
+}
+
+.time-box1 h2{
+    margin:0;
+    font-size:38px;
+    color:#fff;
+}
+
+.time-box1 span{
+    font-size:14px;
+    color:#ffe3e3;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* BUTTON */
+
+.alert-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:white;
+    color:#c40000;
+    padding:16px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.alert-btn:hover{
+    background:#ffe3e3;
+    transform:translateY(-3px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .red-alert h1{
+        font-size:30px;
+    }
+
+    .red-alert p{
+        font-size:16px;
+    }
+
+    .time-box1{
+        min-width:80px;
+        padding:14px;
+    }
+
+    .time-box h2{
+        font-size:28px;
+    }
+
+}
+
 .badge{
 display:inline-block;
 background:#ffd447;
@@ -265,6 +382,97 @@ font-size:2.8rem;
 <section class="hero-image-scroll">
 <img src="header_image.webp" alt="Pokemon GO Fest 2026">
 </section>
+
+<div class="alert-wrapper">
+
+    <div class="red-alert">
+
+        <h1>Pokemon Go: Forever Forward</h1>
+
+        <p>
+            Pokémon GO Forever Forward Season is almost here.
+            Prepare for Mega Mewtwo raids, GO Fest 2026,
+            new Mega Evolutions, and powerful Dynamax battles.
+        </p>
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown">
+
+            <div class="time-box">
+                <h2 id="days">00</h2>
+                <span>Days</span>
+            </div>
+
+            <div class="time-box">
+                <h2 id="hours">00</h2>
+                <span>Hours</span>
+            </div>
+
+            <div class="time-box">
+                <h2 id="minutes">00</h2>
+                <span>Minutes</span>
+            </div>
+
+            <div class="time-box">
+                <h2 id="seconds">00</h2>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+
+        <a href="https://pokemongaming.in/news/forever_forward.html"
+           class="alert-btn">
+           View Full Season Guide
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+/* COUNTDOWN DATE */
+/* CHANGE DATE BELOW */
+
+const countdownDate = new Date("June 2, 2026 10:00:00").getTime();
+
+const timer = setInterval(function(){
+
+    const now = new Date().getTime();
+
+    const distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+
+    document.getElementById("hours").innerHTML = hours;
+
+    document.getElementById("minutes").innerHTML = minutes;
+
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if(distance < 0){
+
+        clearInterval(timer);
+
+        document.querySelector(".countdown").innerHTML =
+        "<h2>Season Is Live!</h2>";
+
+    }
+
+},1000);
+
+</script>
 
 <section class="section fade" style="max-width:1100px;margin:auto;text-align:center;">
   <h2>Introduction</h2>
