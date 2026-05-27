@@ -434,10 +434,16 @@ font-size:2.8rem;
 
 <script>
 
-/* COUNTDOWN DATE */
-/* CHANGE DATE BELOW */
+const countdownDate = new Date(2026, 5, 2, 10, 0, 0).getTime();
 
-const countdownDate = new Date("2026-06-02T10:00:00+05:30").getTime();
+/*
+2026 = year
+5 = June (months start from 0)
+2 = date
+10 = hour
+0 = minute
+0 = second
+*/
 
 const timer = setInterval(function(){
 
@@ -447,11 +453,19 @@ const timer = setInterval(function(){
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
 
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
 
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) / 1000
+    );
 
     document.getElementById("days").innerHTML = days;
 
