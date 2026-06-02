@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pokemon Endless Runner</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f172a;
+font-family:Arial, sans-serif;
+overflow:hidden;
+}
+
+#gameContainer{
+position:relative;
+width:100vw;
+height:100vh;
+overflow:hidden;
+background:linear-gradient(to bottom,#60a5fa 0%,#93c5fd 50%,#86efac 50%,#4ade80 100%);
+}
+
+#ground{
+position:absolute;
+bottom:0;
+width:200%;
+height:120px;
+background:repeating-linear-gradient(
+90deg,
+#15803d 0px,
+#15803d 40px,
+#166534 40px,
+#166534 80px
+);
+animation:groundMove 2s linear infinite;
+}
+
+@keyframes groundMove{
+0%{transform:translateX(0);}
+100%{transform:translateX(-80px);}
+}
+
+#player{
+position:absolute;
+bottom:120px;
+left:100px;
+width:90px;
+height:90px;
+background-image:url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+image-rendering:pixelated;
+z-index:10;
+}
+
+.obstacle{
+position:absolute;
+bottom:120px;
+width:70px;
+height:70px;
+background-image:url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+image-rendering:pixelated;
+}
+
+.coin{
+position:absolute;
+width:50px;
+height:50px;
+background-image:url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+}
+
+#scoreBoard{
+position:absolute;
+top:20px;
+left:20px;
+background:rgba(0,0,0,0.6);
+padding:15px 20px;
+color:white;
+border-radius:14px;
+font-size:20px;
+z-index:100;
+}
+
+#startScreen,
+#gameOverScreen{
+position:absolute;
+inset:0;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background:rgba(0,0,0,0.8);
+color:white;
+z-index:200;
+text-align:center;
+padding:20px;
+}
+
+.hidden{
+display:none !important;
+}
+
+h1{
+font-size:52px;
+margin-bottom:20px;
+color:#facc15;
+text-shadow:3px 3px #000;
+}
+
+p{
+font-size:20px;
+margin-bottom:12px;
+}
+
+button{
+padding:14px 28px;
+font-size:20px;
+border:none;
+border-radius:14px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+font-weight:bold;
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#dc2626;
+}
+
+#mobileControls{
+position:absolute;
+bottom:30px;
+right:20px;
+z-index:100;
+}
+
+#jumpBtn{
+width:90px;
+height:90px;
+border-radius:50%;
+font-size:24px;
+background:#2563eb;
+}
+
+.cloud{
+position:absolute;
+width:180px;
+height:70px;
+background:rgba(255,255,255,0.9);
+border-radius:100px;
+opacity:0.8;
+}
+
+.cloud::before,
+.cloud::after{
+content:'';
+position:absolute;
+background:white;
+border-radius:50%;
+}
+
+.cloud::before{
+width:70px;
+height:70px;
+left:20px;
+top:-25px;
+}
+
+.cloud::after{
+width:90px;
+height:90px;
+right:20px;
+top:-40px;
+}
+
+@media(max-width:768px){
+#player{
+width:75px;
+height:75px;
+}
+
+.obstacle{
+width:60px;
+height:60px;
+}
+
+h1{
+font-size:38px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="gameContainer">
+
+<div class="cloud" style="top:80px; left:15%;"></div>
+<div class="cloud" style="top:140px; left:65%; transform:scale(0.8);"></div>
+
+<div id="scoreBoard">
+Score: <span id="score">0</span><br>
+Pokeballs: <span id="coins">0</span>
+</div>
+
+<div id="player"></div>
+<div id="ground"></div>
+
+<div id="mobileControls">
+<button id="jumpBtn">⬆</button>
+</div>
+
+<div id="startScreen">
+<h1>Pokemon Runner</h1>
+<p>Jump over wild Pokemon and collect Pokeballs.</p>
+<p>Press SPACE or TAP jump button.</p>
+<br>
+<button onclick="startGame()">Start Game</button>
+</div>
+
+<div id="gameOverScreen" class="hidden">
+<h1>Game Over</h1>
+<p>Your Score: <span id="finalScore">0</span></p>
+<p>Pokeballs Collected: <span id="finalCoins">0</span></p>
+<br>
+<button onclick="restartGame()">Play Again</button>
+</div>
+
+</div>
+
+<script>
+const player = document.getElementById('player');
+const gameContainer = document.getElementById('gameContainer');
+const scoreText = document.getElementById('score');
+const coinsText = document.getElementById('coins');
+const gameOverScreen = document.getElementById('gameOverScreen');
+const startScreen = document.getElementById('startScreen');
+const finalScore = document.getElementById('finalScore');
+const finalCoins = document.getElementById('finalCoins');
+const jumpBtn = document.getElementById('jumpBtn');
+
+let isJumping = false;
+let gravity = 0.9;
+let position = 120;
+let velocity = 0;
+let score = 0;
+let coins = 0;
+let gameRunning = false;
+let gameSpeed = 7;
+let obstacleInterval;
+let coinInterval;
+let animationFrame;
+
+function startGame(){
+startScreen.classList.add('hidden');
+gameRunning = true;
+score = 0;
+coins = 0;
+gameLoop();
+spawnObstacles();
+spawnCoins();
+updateScore();
+}
+
+function restartGame(){
+location.reload();
+}
+
+function jump(){
+if(!isJumping && gameRunning){
+velocity = 18;
+isJumping = true;
+}
+}
+
+function updatePlayer(){
+velocity -= gravity;
+position += velocity;
+
+if(position <= 120){
+position = 120;
+velocity = 0;
+isJumping = false;
+}
+
+player.style.bottom = position + 'px';
+}
+
+function spawnObstacles(){
+obstacleInterval = setInterval(()=>{
+const obstacle = document.createElement('div');
+obstacle.classList.add('obstacle');
+obstacle.style.left = window.innerWidth + 'px';
+
+const pokemonIds = [1,4,7,52,133,143];
+const randomId = pokemonIds[Math.floor(Math.random()*pokemonIds.length)];
+obstacle.style.backgroundImage = `url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomId}.png')`;
+
+gameContainer.appendChild(obstacle);
+
+let obstaclePosition = window.innerWidth;
+
+const moveObstacle = setInterval(()=>{
+if(!gameRunning){
+clearInterval(moveObstacle);
+return;
+}
+
+obstaclePosition -= gameSpeed;
+obstacle.style.left = obstaclePosition + 'px';
+
+const playerRect = player.getBoundingClientRect();
+const obstacleRect = obstacle.getBoundingClientRect();
+
+if(
+playerRect.left < obstacleRect.right - 10 &&
+playerRect.right > obstacleRect.left + 10 &&
+playerRect.top < obstacleRect.bottom - 10 &&
+playerRect.bottom > obstacleRect.top + 10
+){
+endGame();
+}
+
+if(obstaclePosition < -100){
+obstacle.remove();
+clearInterval(moveObstacle);
+score += 10;
+updateScore();
+}
+},20);
+
+},1800);
+}
+
+function spawnCoins(){
+coinInterval = setInterval(()=>{
+const coin = document.createElement('div');
+coin.classList.add('coin');
+coin.style.left = window.innerWidth + 'px';
+coin.style.bottom = (200 + Math.random()*180) + 'px';
+
+gameContainer.appendChild(coin);
+
+let coinPosition = window.innerWidth;
+
+const moveCoin = setInterval(()=>{
+if(!gameRunning){
+clearInterval(moveCoin);
+return;
+}
+
+coinPosition -= gameSpeed;
+coin.style.left = coinPosition + 'px';
+
+const playerRect = player.getBoundingClientRect();
+const coinRect = coin.getBoundingClientRect();
+
+if(
+playerRect.left < coinRect.right &&
+playerRect.right > coinRect.left &&
+playerRect.top < coinRect.bottom &&
+playerRect.bottom > coinRect.top
+){
+coins++;
+updateScore();
+coin.remove();
+clearInterval(moveCoin);
+}
+
+if(coinPosition < -60){
+coin.remove();
+clearInterval(moveCoin);
+}
+},20);
+
+},2500);
+}
+
+function updateScore(){
+scoreText.textContent = score;
+coinsText.textContent = coins;
+}
+
+function gameLoop(){
+if(!gameRunning) return;
+
+updatePlayer();
+
+score += 0.05;
+scoreText.textContent = Math.floor(score);
+
+if(Math.floor(score) % 100 === 0){
+gameSpeed = 7 + Math.floor(score / 100);
+}
+
+animationFrame = requestAnimationFrame(gameLoop);
+}
+
+function endGame(){
+gameRunning = false;
+clearInterval(obstacleInterval);
+clearInterval(coinInterval);
+cancelAnimationFrame(animationFrame);
+
+finalScore.textContent = Math.floor(score);
+finalCoins.textContent = coins;
+
+setTimeout(()=>{
+gameOverScreen.classList.remove('hidden');
+},400);
+}
+
+document.addEventListener('keydown',(e)=>{
+if(e.code === 'Space'){
+jump();
+}
+});
+
+jumpBtn.addEventListener('touchstart',jump);
+jumpBtn.addEventListener('click',jump);
+</script>
+
+</body>
+</html>
