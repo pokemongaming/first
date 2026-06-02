@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who's That Pokémon?</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+min-height:100vh;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+
+#gameContainer{
+width:100%;
+max-width:900px;
+background:rgba(255,255,255,0.05);
+border-radius:32px;
+padding:30px;
+text-align:center;
+backdrop-filter:blur(10px);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+h1{
+font-size:56px;
+margin-bottom:12px;
+color:#facc15;
+text-shadow:3px 3px #000;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:24px;
+color:#cbd5e1;
+}
+
+#topBar{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-bottom:28px;
+}
+
+.statBox{
+background:rgba(255,255,255,0.08);
+padding:14px 22px;
+border-radius:18px;
+font-size:18px;
+font-weight:bold;
+}
+
+#pokemonArea{
+margin:30px 0;
+min-height:320px;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+#pokemonImage{
+width:280px;
+height:280px;
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+image-rendering:pixelated;
+transition:0.4s;
+filter:brightness(0);
+}
+
+#pokemonImage.revealed{
+filter:brightness(1);
+transform:scale(1.05);
+}
+
+#choices{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
+margin-top:20px;
+}
+
+.choiceBtn{
+padding:18px;
+border:none;
+border-radius:18px;
+font-size:20px;
+font-weight:bold;
+background:#2563eb;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+.choiceBtn:hover{
+transform:translateY(-2px);
+background:#1d4ed8;
+}
+
+.choiceBtn.correct{
+background:#22c55e !important;
+}
+
+.choiceBtn.wrong{
+background:#ef4444 !important;
+}
+
+#message{
+margin-top:24px;
+font-size:28px;
+font-weight:bold;
+min-height:40px;
+}
+
+#nextBtn{
+margin-top:20px;
+padding:16px 34px;
+border:none;
+border-radius:18px;
+font-size:22px;
+font-weight:bold;
+background:#f59e0b;
+color:white;
+cursor:pointer;
+display:none;
+}
+
+#nextBtn:hover{
+background:#d97706;
+}
+
+#finalScreen{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.9);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+z-index:100;
+padding:20px;
+}
+
+.hidden{
+display:none !important;
+}
+
+#finalScreen h2{
+font-size:58px;
+margin-bottom:20px;
+color:#22c55e;
+}
+
+#finalScreen p{
+font-size:26px;
+margin-bottom:12px;
+}
+
+#restartBtn{
+margin-top:24px;
+padding:16px 34px;
+font-size:22px;
+font-weight:bold;
+border:none;
+border-radius:18px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+}
+
+#restartBtn:hover{
+background:#dc2626;
+}
+
+@media(max-width:768px){
+#pokemonImage{
+width:220px;
+height:220px;
+}
+
+#choices{
+grid-template-columns:1fr;
+}
+
+h1{
+font-size:40px;
+}
+
+.choiceBtn{
+font-size:18px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="gameContainer">
+
+<h1>Who's That Pokémon?</h1>
+<p class="subtitle">Guess the Pokémon from its silhouette.</p>
+
+<div id="topBar">
+<div class="statBox">Score: <span id="score">0</span></div>
+<div class="statBox">Question: <span id="question">1</span>/10</div>
+</div>
+
+<div id="pokemonArea">
+<div id="pokemonImage"></div>
+</div>
+
+<div id="choices"></div>
+
+<div id="message"></div>
+
+<button id="nextBtn" onclick="nextQuestion()">Next Pokémon</button>
+
+</div>
+
+<div id="finalScreen" class="hidden">
+<h2>Quiz Complete!</h2>
+<p>Your Score: <span id="finalScore"></span>/10</p>
+<p id="performanceText"></p>
+<button id="restartBtn" onclick="location.reload()">Play Again</button>
+</div>
+
+<script>
+const pokemonList = [
+{id:25,name:'Pikachu'},
+{id:1,name:'Bulbasaur'},
+{id:4,name:'Charmander'},
+{id:7,name:'Squirtle'},
+{id:39,name:'Jigglypuff'},
+{id:52,name:'Meowth'},
+{id:94,name:'Gengar'},
+{id:133,name:'Eevee'},
+{id:143,name:'Snorlax'},
+{id:149,name:'Dragonite'},
+{id:54,name:'Psyduck'},
+{id:150,name:'Mewtwo'}
+];
+
+let score = 0;
+let currentQuestion = 1;
+let currentPokemon;
+let answered = false;
+
+const pokemonImage = document.getElementById('pokemonImage');
+const choicesDiv = document.getElementById('choices');
+const scoreText = document.getElementById('score');
+const questionText = document.getElementById('question');
+const messageText = document.getElementById('message');
+const nextBtn = document.getElementById('nextBtn');
+const finalScreen = document.getElementById('finalScreen');
+const finalScore = document.getElementById('finalScore');
+const performanceText = document.getElementById('performanceText');
+
+function shuffle(array){
+for(let i=array.length-1;i>0;i--){
+const j=Math.floor(Math.random()*(i+1));
+[array[i],array[j]]=[array[j],array[i]];
+}
+}
+
+function generateQuestion(){
+answered = false;
+messageText.textContent = '';
+nextBtn.style.display = 'none';
+choicesDiv.innerHTML = '';
+pokemonImage.classList.remove('revealed');
+
+currentPokemon = pokemonList[Math.floor(Math.random()*pokemonList.length)];
+
+pokemonImage.style.backgroundImage = `url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${currentPokemon.id}.png')`;
+
+let options = [currentPokemon.name];
+
+while(options.length < 4){
+const randomPokemon = pokemonList[Math.floor(Math.random()*pokemonList.length)].name;
+if(!options.includes(randomPokemon)){
+options.push(randomPokemon);
+}
+}
+
+shuffle(options);
+
+options.forEach(option=>{
+const btn = document.createElement('button');
+btn.classList.add('choiceBtn');
+btn.textContent = option;
+btn.onclick = ()=>checkAnswer(btn,option);
+choicesDiv.appendChild(btn);
+});
+}
+
+function checkAnswer(button,selected){
+if(answered) return;
+answered = true;
+
+pokemonImage.classList.add('revealed');
+
+const buttons = document.querySelectorAll('.choiceBtn');
+
+buttons.forEach(btn=>{
+if(btn.textContent === currentPokemon.name){
+btn.classList.add('correct');
+}
+
+if(btn.textContent === selected && selected !== currentPokemon.name){
+btn.classList.add('wrong');
+}
+
+btn.disabled = true;
+});
+
+if(selected === currentPokemon.name){
+score++;
+scoreText.textContent = score;
+messageText.textContent = 'Correct!';
+messageText.style.color = '#22c55e';
+}else{
+messageText.textContent = 'Wrong! It was ' + currentPokemon.name;
+messageText.style.color = '#ef4444';
+}
+
+nextBtn.style.display = 'inline-block';
+}
+
+function nextQuestion(){
+currentQuestion++;
+questionText.textContent = currentQuestion;
+
+if(currentQuestion > 10){
+endGame();
+}else{
+generateQuestion();
+}
+}
+
+function endGame(){
+finalScreen.classList.remove('hidden');
+finalScore.textContent = score;
+
+if(score === 10){
+performanceText.textContent = 'Pokemon Master!';
+}else if(score >= 7){
+performanceText.textContent = 'Great Trainer!';
+}else if(score >= 4){
+performanceText.textContent = 'Good Try!';
+}else{
+performanceText.textContent = 'Keep Training!';
+}
+}
+
+generateQuestion();
+</script>
+
+</body>
+</html>

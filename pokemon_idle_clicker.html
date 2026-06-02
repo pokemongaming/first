@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokemon Idle Clicker</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+overflow-x:hidden;
+}
+
+#game{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+#topBar{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:12px;
+margin-bottom:20px;
+}
+
+.statBox{
+background:rgba(255,255,255,0.08);
+padding:14px 20px;
+border-radius:18px;
+font-size:18px;
+font-weight:bold;
+backdrop-filter:blur(10px);
+}
+
+#mainSection{
+display:grid;
+grid-template-columns:1fr 380px;
+gap:20px;
+}
+
+#clickArea{
+background:rgba(255,255,255,0.05);
+border-radius:28px;
+padding:30px;
+text-align:center;
+position:relative;
+overflow:hidden;
+min-height:620px;
+}
+
+#pokemonImage{
+width:260px;
+height:260px;
+margin:auto;
+background-image:url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+image-rendering:pixelated;
+cursor:pointer;
+transition:transform 0.1s;
+}
+
+#pokemonImage:active{
+transform:scale(0.95);
+}
+
+#clickPower{
+font-size:22px;
+margin-top:18px;
+color:#facc15;
+}
+
+#floatingText{
+position:absolute;
+pointer-events:none;
+font-size:28px;
+font-weight:bold;
+color:#22c55e;
+animation:floatUp 1s linear forwards;
+}
+
+@keyframes floatUp{
+0%{
+opacity:1;
+transform:translateY(0);
+}
+100%{
+opacity:0;
+transform:translateY(-120px);
+}
+}
+
+#shop{
+background:rgba(255,255,255,0.05);
+border-radius:28px;
+padding:20px;
+max-height:620px;
+overflow-y:auto;
+}
+
+.shopTitle{
+font-size:28px;
+margin-bottom:16px;
+color:#facc15;
+}
+
+.shopItem{
+background:rgba(255,255,255,0.08);
+padding:16px;
+border-radius:18px;
+margin-bottom:14px;
+transition:0.2s;
+}
+
+.shopItem:hover{
+transform:translateY(-2px);
+}
+
+.shopItem h3{
+margin-bottom:8px;
+}
+
+.shopItem p{
+margin-bottom:10px;
+color:#cbd5e1;
+}
+
+.shopBtn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:14px;
+background:#2563eb;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.shopBtn:hover{
+background:#1d4ed8;
+}
+
+#pokemonCollection{
+margin-top:24px;
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:28px;
+}
+
+.collectionGrid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+gap:16px;
+margin-top:18px;
+}
+
+.pokemonCard{
+background:rgba(255,255,255,0.08);
+padding:12px;
+border-radius:18px;
+text-align:center;
+}
+
+.pokemonSprite{
+width:80px;
+height:80px;
+margin:auto;
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+image-rendering:pixelated;
+}
+
+h1{
+font-size:52px;
+margin-bottom:12px;
+color:#facc15;
+}
+
+.subtitle{
+font-size:20px;
+color:#cbd5e1;
+margin-bottom:24px;
+}
+
+@media(max-width:900px){
+#mainSection{
+grid-template-columns:1fr;
+}
+
+#pokemonImage{
+width:200px;
+height:200px;
+}
+
+h1{
+font-size:38px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="game">
+
+<h1>Pokemon Idle Clicker</h1>
+<p class="subtitle">Catch Pokecoins, unlock Pokemon, and build your ultimate collection.</p>
+
+<div id="topBar">
+<div class="statBox">Pokecoins: <span id="coins">0</span></div>
+<div class="statBox">Per Click: <span id="clickValue">1</span></div>
+<div class="statBox">Auto Income: <span id="autoIncome">0</span>/sec</div>
+<div class="statBox">Pokemon Owned: <span id="ownedCount">1</span></div>
+</div>
+
+<div id="mainSection">
+
+<div id="clickArea">
+<div id="pokemonImage"></div>
+<div id="clickPower">Tap Pikachu to earn Pokecoins!</div>
+</div>
+
+<div id="shop">
+<div class="shopTitle">Upgrade Shop</div>
+
+<div class="shopItem">
+<h3>⚡ Better Pokeballs</h3>
+<p>Increase coins per click.</p>
+<p>Cost: <span id="clickUpgradeCost">25</span></p>
+<button class="shopBtn" onclick="buyClickUpgrade()">Upgrade</button>
+</div>
+
+<div class="shopItem">
+<h3>🤖 Auto Catcher</h3>
+<p>Generate automatic Pokecoins every second.</p>
+<p>Cost: <span id="autoUpgradeCost">50</span></p>
+<button class="shopBtn" onclick="buyAutoUpgrade()">Buy Auto Catcher</button>
+</div>
+
+<div class="shopItem">
+<h3>🔥 Charmander</h3>
+<p>Unlock new Pokemon collection.</p>
+<p>Cost: 100</p>
+<button class="shopBtn" onclick="unlockPokemon('Charmander',4)">Unlock</button>
+</div>
+
+<div class="shopItem">
+<h3>💧 Squirtle</h3>
+<p>Unlock new Pokemon collection.</p>
+<p>Cost: 200</p>
+<button class="shopBtn" onclick="unlockPokemon('Squirtle',7)">Unlock</button>
+</div>
+
+<div class="shopItem">
+<h3>🌿 Bulbasaur</h3>
+<p>Unlock new Pokemon collection.</p>
+<p>Cost: 350</p>
+<button class="shopBtn" onclick="unlockPokemon('Bulbasaur',1)">Unlock</button>
+</div>
+
+<div class="shopItem">
+<h3>🐉 Dragonite</h3>
+<p>Rare legendary unlock.</p>
+<p>Cost: 1000</p>
+<button class="shopBtn" onclick="unlockPokemon('Dragonite',149)">Unlock</button>
+</div>
+
+</div>
+
+</div>
+
+<div id="pokemonCollection">
+<h2>Your Pokemon Collection</h2>
+<div class="collectionGrid" id="collectionGrid"></div>
+</div>
+
+</div>
+
+<script>
+let coins = 0;
+let clickValue = 1;
+let autoIncome = 0;
+let ownedPokemon = 1;
+let clickUpgradeCost = 25;
+let autoUpgradeCost = 50;
+
+const pokemonImage = document.getElementById('pokemonImage');
+const coinsText = document.getElementById('coins');
+const clickValueText = document.getElementById('clickValue');
+const autoIncomeText = document.getElementById('autoIncome');
+const ownedCountText = document.getElementById('ownedCount');
+const clickUpgradeCostText = document.getElementById('clickUpgradeCost');
+const autoUpgradeCostText = document.getElementById('autoUpgradeCost');
+const clickArea = document.getElementById('clickArea');
+const collectionGrid = document.getElementById('collectionGrid');
+
+const unlocked = ['Pikachu'];
+
+function updateUI(){
+coinsText.textContent = Math.floor(coins);
+clickValueText.textContent = clickValue;
+autoIncomeText.textContent = autoIncome;
+ownedCountText.textContent = ownedPokemon;
+clickUpgradeCostText.textContent = clickUpgradeCost;
+autoUpgradeCostText.textContent = autoUpgradeCost;
+}
+
+pokemonImage.addEventListener('click',(e)=>{
+coins += clickValue;
+updateUI();
+showFloatingText('+' + clickValue,e.clientX,e.clientY);
+});
+
+function showFloatingText(text,x,y){
+const floating = document.createElement('div');
+floating.id = 'floatingText';
+floating.textContent = text;
+
+const rect = clickArea.getBoundingClientRect();
+
+floating.style.left = (x - rect.left) + 'px';
+floating.style.top = (y - rect.top) + 'px';
+
+clickArea.appendChild(floating);
+
+setTimeout(()=>{
+floating.remove();
+},1000);
+}
+
+function buyClickUpgrade(){
+if(coins >= clickUpgradeCost){
+coins -= clickUpgradeCost;
+clickValue += 1;
+clickUpgradeCost = Math.floor(clickUpgradeCost * 1.8);
+updateUI();
+}
+}
+
+function buyAutoUpgrade(){
+if(coins >= autoUpgradeCost){
+coins -= autoUpgradeCost;
+autoIncome += 2;
+autoUpgradeCost = Math.floor(autoUpgradeCost * 2);
+updateUI();
+}
+}
+
+function unlockPokemon(name,id){
+const costs = {
+Charmander:100,
+Squirtle:200,
+Bulbasaur:350,
+Dragonite:1000
+};
+
+if(coins >= costs[name] && !unlocked.includes(name)){
+coins -= costs[name];
+unlocked.push(name);
+ownedPokemon++;
+
+const card = document.createElement('div');
+card.classList.add('pokemonCard');
+
+card.innerHTML = `
+<div class="pokemonSprite" style="background-image:url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png')"></div>
+<h4>${name}</h4>
+`;
+
+collectionGrid.appendChild(card);
+updateUI();
+}
+}
+
+setInterval(()=>{
+coins += autoIncome;
+updateUI();
+},1000);
+
+unlockPokemon('Pikachu',25);
+updateUI();
+</script>
+
+</body>
+</html>

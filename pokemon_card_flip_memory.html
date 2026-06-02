@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokemon Card Flip Memory Game</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+min-height:100vh;
+color:white;
+padding:20px;
+}
+
+#gameContainer{
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+h1{
+font-size:54px;
+margin-bottom:10px;
+color:#facc15;
+text-shadow:3px 3px #000;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:24px;
+color:#cbd5e1;
+}
+
+#topBar{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-bottom:28px;
+}
+
+.statBox{
+background:rgba(255,255,255,0.08);
+padding:14px 22px;
+border-radius:18px;
+font-size:18px;
+font-weight:bold;
+backdrop-filter:blur(10px);
+}
+
+#gameBoard{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(120px,1fr));
+    gap:18px;
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    position:relative;
+    aspect-ratio:3/4;
+    width:100%;
+    perspective:1000px;
+    cursor:pointer;
+}
+
+.cardInner{
+position:absolute;
+width:100%;
+height:100%;
+transform-style:preserve-3d;
+transition:transform 0.6s;
+}
+
+.card.flipped .cardInner{
+transform:rotateY(180deg);
+}
+
+.cardFront,
+.cardBack{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+border-radius:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.cardFront{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+font-size:32px;
+font-weight:bold;
+}
+
+.cardBack{
+background:rgba(255,255,255,0.12);
+transform:rotateY(180deg);
+flex-direction:column;
+padding:12px;
+}
+
+.cardBack img{
+width:85%;
+height:85%;
+object-fit:contain;
+image-rendering:pixelated;
+}
+
+.matched .cardInner{
+animation:matchedGlow 0.8s ease;
+}
+
+@keyframes matchedGlow{
+0%{transform:scale(1) rotateY(180deg);}
+50%{transform:scale(1.08) rotateY(180deg);}
+100%{transform:scale(1) rotateY(180deg);}
+}
+
+#winScreen{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.9);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+z-index:100;
+}
+
+.hidden{
+display:none !important;
+}
+
+#winScreen h2{
+font-size:56px;
+margin-bottom:20px;
+color:#22c55e;
+}
+
+#winScreen p{
+font-size:24px;
+margin-bottom:12px;
+}
+
+button{
+padding:16px 34px;
+font-size:22px;
+font-weight:bold;
+border:none;
+border-radius:18px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#dc2626;
+}
+
+@media(max-width:900px){
+#gameBoard{
+grid-template-columns:repeat(3,minmax(100px,1fr));
+}
+}
+
+@media(max-width:600px){
+#gameBoard{
+   grid-template-columns:repeat(2,minmax(100px,1fr));
+        gap:12px;
+}
+
+.cardFront{
+font-size:32px;
+}
+
+h1{
+font-size:38px;
+}
+
+.subtitle{
+font-size:18px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="gameContainer">
+
+<h1>Pokemon Card Flip</h1>
+<p class="subtitle">Match all Pokémon pairs to win the memory challenge.</p>
+
+<div id="topBar">
+<div class="statBox">Moves: <span id="moves">0</span></div>
+<div class="statBox">Matches: <span id="matches">0</span>/8</div>
+<div class="statBox">Time: <span id="timer">0</span>s</div>
+</div>
+
+<div id="gameBoard"></div>
+
+</div>
+
+<div id="winScreen" class="hidden">
+<h2>You Win!</h2>
+<p>Total Moves: <span id="finalMoves"></span></p>
+<p>Total Time: <span id="finalTime"></span>s</p>
+<button onclick="restartGame()">Play Again</button>
+</div>
+
+<script>
+const pokemonData = [
+{id:25,name:'Pikachu'},
+{id:1,name:'Bulbasaur'},
+{id:4,name:'Charmander'},
+{id:7,name:'Squirtle'},
+{id:39,name:'Jigglypuff'},
+{id:52,name:'Meowth'},
+{id:133,name:'Eevee'},
+{id:94,name:'Gengar'}
+];
+
+let cards = [...pokemonData,...pokemonData];
+let flippedCards = [];
+let matchedPairs = 0;
+let moves = 0;
+let timer = 0;
+let timerInterval;
+let lockBoard = false;
+
+const board = document.getElementById('gameBoard');
+const movesText = document.getElementById('moves');
+const matchesText = document.getElementById('matches');
+const timerText = document.getElementById('timer');
+const winScreen = document.getElementById('winScreen');
+const finalMoves = document.getElementById('finalMoves');
+const finalTime = document.getElementById('finalTime');
+
+function shuffle(array){
+for(let i=array.length-1;i>0;i--){
+const j=Math.floor(Math.random()*(i+1));
+[array[i],array[j]]=[array[j],array[i]];
+}
+}
+
+shuffle(cards);
+
+function startTimer(){
+timerInterval = setInterval(()=>{
+timer++;
+timerText.textContent = timer;
+},1000);
+}
+
+function createBoard(){
+startTimer();
+
+cards.forEach((pokemon,index)=>{
+const card = document.createElement('div');
+card.classList.add('card');
+card.dataset.name = pokemon.name;
+
+card.innerHTML = `
+<div class="cardInner">
+<div class="cardFront">⚡</div>
+<div class="cardBack">
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png">
+</div>
+</div>
+`;
+
+card.addEventListener('click',()=>flipCard(card,pokemon.name));
+
+board.appendChild(card);
+});
+}
+
+function flipCard(card,name){
+if(lockBoard) return;
+if(card.classList.contains('flipped')) return;
+
+card.classList.add('flipped');
+flippedCards.push({card,name});
+
+if(flippedCards.length === 2){
+moves++;
+movesText.textContent = moves;
+
+checkMatch();
+}
+}
+
+function checkMatch(){
+lockBoard = true;
+
+const [first,second] = flippedCards;
+
+if(first.name === second.name){
+first.card.classList.add('matched');
+second.card.classList.add('matched');
+
+matchedPairs++;
+matchesText.textContent = matchedPairs;
+
+flippedCards = [];
+lockBoard = false;
+
+if(matchedPairs === 8){
+winGame();
+}
+}else{
+setTimeout(()=>{
+first.card.classList.remove('flipped');
+second.card.classList.remove('flipped');
+
+flippedCards = [];
+lockBoard = false;
+},900);
+}
+}
+
+function winGame(){
+clearInterval(timerInterval);
+
+setTimeout(()=>{
+winScreen.classList.remove('hidden');
+finalMoves.textContent = moves;
+finalTime.textContent = timer;
+},600);
+}
+
+function restartGame(){
+location.reload();
+}
+
+createBoard();
+</script>
+
+</body>
+</html>
