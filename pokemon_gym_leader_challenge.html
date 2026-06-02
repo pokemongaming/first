@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokemon Gym Leader Challenge</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+height:100vh;
+overflow:hidden;
+}
+
+#game{
+width:100%;
+height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+#topBar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:rgba(0,0,0,0.35);
+border-bottom:2px solid rgba(255,255,255,0.1);
+}
+
+.stat{
+background:rgba(255,255,255,0.08);
+padding:10px 16px;
+border-radius:14px;
+font-weight:bold;
+}
+
+#battleArena{
+flex:1;
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+padding:30px;
+background:linear-gradient(to bottom,#60a5fa 0%,#bae6fd 45%,#86efac 45%,#22c55e 100%);
+}
+
+.trainerSection{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.pokemonCard{
+width:220px;
+background:rgba(255,255,255,0.12);
+padding:18px;
+border-radius:24px;
+backdrop-filter:blur(10px);
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.pokemonImage{
+width:130px;
+height:130px;
+margin:auto;
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+image-rendering:pixelated;
+}
+
+.hpBarContainer{
+width:100%;
+height:18px;
+background:#1e293b;
+border-radius:999px;
+overflow:hidden;
+margin-top:12px;
+}
+
+.hpBar{
+height:100%;
+background:#22c55e;
+width:100%;
+transition:0.3s;
+}
+
+#battleLog{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.72);
+padding:18px 24px;
+border-radius:20px;
+font-size:20px;
+font-weight:bold;
+min-width:260px;
+text-align:center;
+}
+
+#controls{
+padding:20px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+background:#111827;
+}
+
+.moveBtn{
+padding:16px;
+border:none;
+border-radius:18px;
+font-size:18px;
+font-weight:bold;
+background:#2563eb;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+.moveBtn:hover{
+transform:translateY(-2px);
+background:#1d4ed8;
+}
+
+#startScreen,
+#endScreen{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.88);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+z-index:100;
+}
+
+.hidden{
+display:none !important;
+}
+
+h1{
+font-size:54px;
+margin-bottom:18px;
+color:#facc15;
+text-shadow:3px 3px #000;
+}
+
+p{
+font-size:20px;
+margin-bottom:10px;
+line-height:1.5;
+}
+
+button.mainBtn{
+margin-top:20px;
+padding:15px 32px;
+font-size:22px;
+font-weight:bold;
+border:none;
+border-radius:18px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+}
+
+button.mainBtn:hover{
+background:#dc2626;
+}
+
+.badge{
+font-size:50px;
+margin:10px;
+}
+
+@media(max-width:768px){
+#battleArena{
+padding:15px;
+}
+
+.pokemonCard{
+width:160px;
+padding:12px;
+}
+
+.pokemonImage{
+width:90px;
+height:90px;
+}
+
+h1{
+font-size:38px;
+}
+
+.moveBtn{
+font-size:16px;
+padding:14px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="game">
+
+<div id="topBar">
+<div class="stat">Gym Leader: <span id="leaderName">Brock</span></div>
+<div class="stat">Badges: <span id="badgeCount">0</span>/4</div>
+</div>
+
+<div id="battleArena">
+
+<div class="trainerSection">
+<div></div>
+<div class="pokemonCard">
+<h2 id="enemyPokemonName">Onix</h2>
+<div class="pokemonImage" id="enemyPokemon"></div>
+<div class="hpBarContainer">
+<div class="hpBar" id="enemyHP"></div>
+</div>
+<p>HP: <span id="enemyHPText">100</span></p>
+</div>
+</div>
+
+<div id="battleLog">Prepare for battle!</div>
+
+<div class="trainerSection">
+<div class="pokemonCard">
+<h2>Pikachu</h2>
+<div class="pokemonImage" id="playerPokemon"></div>
+<div class="hpBarContainer">
+<div class="hpBar" id="playerHP"></div>
+</div>
+<p>HP: <span id="playerHPText">100</span></p>
+</div>
+<div></div>
+</div>
+
+</div>
+
+<div id="controls">
+<button class="moveBtn" onclick="playerAttack('Thunderbolt',22)">⚡ Thunderbolt</button>
+<button class="moveBtn" onclick="playerAttack('Quick Attack',14)">💨 Quick Attack</button>
+<button class="moveBtn" onclick="playerAttack('Iron Tail',18)">🛡 Iron Tail</button>
+<button class="moveBtn" onclick="playerAttack('Electro Ball',20)">🔵 Electro Ball</button>
+</div>
+
+<div id="startScreen">
+<h1>Gym Leader Challenge</h1>
+<p>Battle Gym Leaders and earn badges.</p>
+<p>Defeat all 4 Gym Leaders to become Champion.</p>
+<button class="mainBtn" onclick="startGame()">Start Challenge</button>
+</div>
+
+<div id="endScreen" class="hidden">
+<h1 id="endTitle">Victory!</h1>
+<div id="badgeArea"></div>
+<p id="endText"></p>
+<button class="mainBtn" onclick="location.reload()">Play Again</button>
+</div>
+
+</div>
+
+<script>
+const leaders = [
+{
+leader:'Brock',
+pokemon:'Onix',
+id:95,
+emoji:'🪨'
+},
+{
+leader:'Misty',
+pokemon:'Starmie',
+id:121,
+emoji:'💧'
+},
+{
+leader:'Lt. Surge',
+pokemon:'Raichu',
+id:26,
+emoji:'⚡'
+},
+{
+leader:'Blaine',
+pokemon:'Arcanine',
+id:59,
+emoji:'🔥'
+}
+];
+
+let currentLeader = 0;
+let playerHP = 100;
+let enemyHP = 100;
+let badges = 0;
+let gameStarted = false;
+
+const playerPokemon = document.getElementById('playerPokemon');
+const enemyPokemon = document.getElementById('enemyPokemon');
+const enemyPokemonName = document.getElementById('enemyPokemonName');
+const leaderName = document.getElementById('leaderName');
+const battleLog = document.getElementById('battleLog');
+const playerHPBar = document.getElementById('playerHP');
+const enemyHPBar = document.getElementById('enemyHP');
+const playerHPText = document.getElementById('playerHPText');
+const enemyHPText = document.getElementById('enemyHPText');
+const badgeCount = document.getElementById('badgeCount');
+const endScreen = document.getElementById('endScreen');
+const endTitle = document.getElementById('endTitle');
+const endText = document.getElementById('endText');
+const badgeArea = document.getElementById('badgeArea');
+
+playerPokemon.style.backgroundImage = "url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png')";
+
+function startGame(){
+document.getElementById('startScreen').classList.add('hidden');
+gameStarted = true;
+loadLeader();
+}
+
+function loadLeader(){
+const leader = leaders[currentLeader];
+leaderName.textContent = leader.leader;
+enemyPokemonName.textContent = leader.pokemon;
+enemyPokemon.style.backgroundImage = `url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${leader.id}.png')`;
+
+playerHP = 100;
+enemyHP = 100;
+updateHP();
+
+battleLog.textContent = leader.leader + ' challenges you!';
+}
+
+function updateHP(){
+playerHPBar.style.width = playerHP + '%';
+enemyHPBar.style.width = enemyHP + '%';
+
+playerHPText.textContent = playerHP;
+enemyHPText.textContent = enemyHP;
+
+if(playerHP < 40){
+playerHPBar.style.background = '#ef4444';
+}else{
+playerHPBar.style.background = '#22c55e';
+}
+
+if(enemyHP < 40){
+enemyHPBar.style.background = '#ef4444';
+}else{
+enemyHPBar.style.background = '#22c55e';
+}
+}
+
+function playerAttack(move,damage){
+if(!gameStarted) return;
+
+const actualDamage = damage + Math.floor(Math.random()*8);
+enemyHP -= actualDamage;
+
+if(enemyHP < 0) enemyHP = 0;
+
+battleLog.textContent = 'Pikachu used ' + move + '!';
+updateHP();
+
+if(enemyHP <= 0){
+winBattle();
+return;
+}
+
+setTimeout(enemyTurn,1000);
+}
+
+function enemyTurn(){
+const enemyMoves = ['Rock Smash','Water Pulse','Flame Wheel','Thunder Punch'];
+const move = enemyMoves[Math.floor(Math.random()*enemyMoves.length)];
+const damage = 10 + Math.floor(Math.random()*15);
+
+playerHP -= damage;
+if(playerHP < 0) playerHP = 0;
+
+battleLog.textContent = leaders[currentLeader].pokemon + ' used ' + move + '!';
+updateHP();
+
+if(playerHP <= 0){
+loseGame();
+}
+}
+
+function winBattle(){
+const leader = leaders[currentLeader];
+
+badges++;
+badgeCount.textContent = badges;
+
+battleLog.textContent = 'You defeated ' + leader.leader + '!';
+
+if(currentLeader >= leaders.length - 1){
+setTimeout(()=>{
+showVictory();
+},1500);
+}else{
+currentLeader++;
+setTimeout(()=>{
+loadLeader();
+},2000);
+}
+}
+
+function showVictory(){
+endScreen.classList.remove('hidden');
+endTitle.textContent = 'Pokemon Champion!';
+endText.textContent = 'You defeated all Gym Leaders and earned every badge!';
+
+leaders.forEach(l=>{
+const badge = document.createElement('span');
+badge.classList.add('badge');
+badge.textContent = l.emoji;
+badgeArea.appendChild(badge);
+});
+}
+
+function loseGame(){
+endScreen.classList.remove('hidden');
+endTitle.textContent = 'Defeated!';
+endText.textContent = 'A Gym Leader defeated your Pikachu.';
+}
+</script>
+
+</body>
+</html>
