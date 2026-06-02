@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokemon Reaction Speed Game</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#1e293b,#0f172a);
+height:100vh;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+}
+
+#gameContainer{
+width:100%;
+max-width:900px;
+height:95vh;
+background:rgba(255,255,255,0.05);
+border:2px solid rgba(255,255,255,0.1);
+border-radius:28px;
+position:relative;
+overflow:hidden;
+backdrop-filter:blur(10px);
+}
+
+#header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.2);
+}
+
+.statBox{
+background:rgba(255,255,255,0.08);
+padding:12px 18px;
+border-radius:16px;
+font-size:18px;
+font-weight:bold;
+}
+
+#arena{
+position:relative;
+width:100%;
+height:calc(100% - 90px);
+overflow:hidden;
+}
+
+#pokemon{
+position:absolute;
+width:110px;
+height:110px;
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+cursor:pointer;
+transition:transform 0.12s;
+user-select:none;
+}
+
+#pokemon:hover{
+transform:scale(1.08);
+}
+
+#startScreen,
+#gameOverScreen,
+#comboText{
+position:absolute;
+inset:0;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+z-index:10;
+}
+
+#startScreen,
+#gameOverScreen{
+background:rgba(0,0,0,0.82);
+}
+
+.hidden{
+display:none !important;
+}
+
+h1{
+font-size:54px;
+margin-bottom:20px;
+color:#facc15;
+text-shadow:3px 3px #000;
+}
+
+p{
+font-size:20px;
+margin-bottom:12px;
+line-height:1.5;
+}
+
+button{
+padding:15px 32px;
+font-size:20px;
+font-weight:bold;
+border:none;
+border-radius:16px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#dc2626;
+}
+
+#comboText{
+pointer-events:none;
+font-size:48px;
+font-weight:bold;
+color:#22c55e;
+animation:pop 0.6s ease;
+}
+
+@keyframes pop{
+0%{transform:scale(0.5);opacity:0;}
+50%{transform:scale(1.2);opacity:1;}
+100%{transform:scale(1);opacity:0;}
+}
+
+.spark{
+position:absolute;
+width:16px;
+height:16px;
+border-radius:50%;
+background:white;
+animation:sparkAnim 0.6s linear forwards;
+}
+
+@keyframes sparkAnim{
+0%{
+transform:translate(0,0) scale(1);
+opacity:1;
+}
+100%{
+transform:translate(var(--x),var(--y)) scale(0);
+opacity:0;
+}
+}
+
+@media(max-width:768px){
+#pokemon{
+width:85px;
+height:85px;
+}
+
+h1{
+font-size:38px;
+}
+
+p{
+font-size:18px;
+}
+
+.statBox{
+font-size:15px;
+padding:10px 14px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="gameContainer">
+
+<div id="header">
+<div class="statBox">Score: <span id="score">0</span></div>
+<div class="statBox">Time: <span id="time">30</span>s</div>
+<div class="statBox">Combo: <span id="combo">0</span>x</div>
+</div>
+
+<div id="arena">
+<div id="pokemon"></div>
+
+<div id="startScreen">
+<h1>Pokemon Reaction Speed</h1>
+<p>Tap Pokémon as fast as possible before time runs out.</p>
+<p>Build combos for higher score multipliers.</p>
+<br>
+<button onclick="startGame()">Start Game</button>
+</div>
+
+<div id="gameOverScreen" class="hidden">
+<h1>Time Up!</h1>
+<p>Final Score: <span id="finalScore">0</span></p>
+<p>Best Combo: <span id="bestCombo">0</span>x</p>
+<br>
+<button onclick="restartGame()">Play Again</button>
+</div>
+
+<div id="comboText" class="hidden"></div>
+
+</div>
+</div>
+
+<script>
+const pokemon = document.getElementById('pokemon');
+const arena = document.getElementById('arena');
+const scoreText = document.getElementById('score');
+const timeText = document.getElementById('time');
+const comboText = document.getElementById('combo');
+const comboPopup = document.getElementById('comboText');
+const finalScore = document.getElementById('finalScore');
+const bestComboText = document.getElementById('bestCombo');
+const gameOverScreen = document.getElementById('gameOverScreen');
+const startScreen = document.getElementById('startScreen');
+
+let score = 0;
+let timeLeft = 30;
+let combo = 0;
+let bestCombo = 0;
+let gameRunning = false;
+let timer;
+
+const pokemonIds = [1,4,7,25,39,52,54,94,95,133,143,149,150];
+
+function randomPokemon(){
+const id = pokemonIds[Math.floor(Math.random()*pokemonIds.length)];
+pokemon.style.backgroundImage = `url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png')`;
+}
+
+function movePokemon(){
+const arenaRect = arena.getBoundingClientRect();
+const maxX = arenaRect.width - 120;
+const maxY = arenaRect.height - 120;
+
+const x = Math.random() * maxX;
+const y = Math.random() * maxY;
+
+pokemon.style.left = x + 'px';
+pokemon.style.top = y + 'px';
+
+randomPokemon();
+}
+
+function startGame(){
+startScreen.classList.add('hidden');
+gameRunning = true;
+movePokemon();
+
+ timer = setInterval(()=>{
+ timeLeft--;
+ timeText.textContent = timeLeft;
+ 
+ if(timeLeft <= 0){
+ endGame();
+ }
+ },1000);
+}
+
+function createSpark(x,y){
+for(let i=0;i<8;i++){
+const spark = document.createElement('div');
+spark.classList.add('spark');
+
+spark.style.left = x + 'px';
+spark.style.top = y + 'px';
+
+const randomX = (Math.random()*120-60)+'px';
+const randomY = (Math.random()*120-60)+'px';
+
+spark.style.setProperty('--x',randomX);
+spark.style.setProperty('--y',randomY);
+
+arena.appendChild(spark);
+
+setTimeout(()=>{
+spark.remove();
+},600);
+}
+}
+
+pokemon.addEventListener('click',(e)=>{
+if(!gameRunning) return;
+
+combo++;
+if(combo > bestCombo){
+bestCombo = combo;
+}
+
+const gained = 10 * combo;
+score += gained;
+
+scoreText.textContent = score;
+comboText.textContent = combo;
+
+comboPopup.textContent = '+' + gained;
+comboPopup.classList.remove('hidden');
+
+setTimeout(()=>{
+comboPopup.classList.add('hidden');
+},400);
+
+createSpark(e.clientX,e.clientY);
+
+movePokemon();
+});
+
+arena.addEventListener('click',(e)=>{
+if(e.target !== pokemon && gameRunning){
+combo = 0;
+comboText.textContent = combo;
+}
+});
+
+function endGame(){
+gameRunning = false;
+clearInterval(timer);
+
+pokemon.style.display = 'none';
+
+finalScore.textContent = score;
+bestComboText.textContent = bestCombo;
+
+setTimeout(()=>{
+gameOverScreen.classList.remove('hidden');
+},500);
+}
+
+function restartGame(){
+location.reload();
+}
+</script>
+
+</body>
+</html>
