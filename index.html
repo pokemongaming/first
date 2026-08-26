@@ -1,7428 +1,1833 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Gaming Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+<script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+    window.ezstandalone = window.ezstandalone || {};
+    ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+<script src="//ezoicanalytics.com/analytics.js"></script>
+
 <style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
 
+header {
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.hero-command-center{
+header h1 {
+  font-size: 24px;
+  color: #38bdf8;
+}
 
-min-height:850px;
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
 
-position:relative;
+.hero-image-scroll{
+width:100%;
+height:260px;
+overflow-y:auto;
+overflow-x:hidden;
+border-radius:18px;
+background:#0b1020;
+-webkit-overflow-scrolling:touch;
+}
 
-overflow:hidden;
+.hero-image-scroll img{
+width:100%;
+height:auto;
+display:block;
+}
 
-display:flex;
+/* Desktop */
+@media(min-width:769px){
 
-align-items:center;
+.hero-image-scroll{
+height:auto;
+overflow:visible;
+}
 
-justify-content:center;
+}
 
-padding:80px 5%;
+<!--.hero{
+width:100%;
+height:420px;
+background:url('header_image.webp') center center no-repeat;
+background-size:contain;
+background-color:#0b1020;
+border-radius:18px;
+margin-bottom:30px;
+}
 
-background:
+@media(max-width:768px){
 
-linear-gradient(
-180deg,
-rgba(0,20,40,.75),
-rgba(0,10,25,.95)
-),
-
-url('/images/pokemon-world-bg.webp');
-
-background-size:cover;
-
+.hero{
+height:240px;
+background-size:contain;
 background-position:center;
-
-color:white;
-
 }
 
+}-->
 
+<!--.hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url('header_image.webp');
 
-.hero-background-overlay{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-position:absolute;
+  min-height: 200vh;
+}-->
 
-inset:0;
-
-background:
-
-radial-gradient(
-circle,
-rgba(0,229,255,.25),
-transparent 60%
-);
-
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
 
-.hero-container{
+.card:hover {
+  transform: translateY(-5px);
+}
 
-position:relative;
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-z-index:2;
+.card h3 {
+  margin: 10px 0;
+}
 
-max-width:1200px;
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
 
+.promo-card {
+  background:#111827;
+  padding:15px;
+  border-radius:10px;
+  border:1px solid #1f2937;
+  position:relative;
+}
+
+.promo-code {
+  font-size:18px;
+  font-weight:700;
+  color:#38bdf8;
+}
+
+.expiry {
+  font-size:12px;
+  color:#94a3b8;
+}
+
+.expired {
+  opacity:0.4;
+}
+
+.countdown-container{
 width:100%;
-
-text-align:center;
-
-}
-
-
-
-/* Status */
-
-
-.trainer-status-panel{
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-margin-bottom:40px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.status-item{
-
-background:
-
-rgba(8,35,53,.8);
-
-border:1px solid #1b6ea8;
-
-padding:15px 30px;
-
-border-radius:30px;
-
+max-width:800px;
+background:rgba(255,255,255,0.08);
 backdrop-filter:blur(10px);
-
-}
-
-
-
-.status-dot{
-
-display:inline-block;
-
-width:10px;
-
-height:10px;
-
-border-radius:50%;
-
-margin-right:10px;
-
-}
-
-
-
-.green{
-
-background:#00ff88;
-
-}
-
-
-.blue{
-
-background:#00d9ff;
-
-}
-
-
-.yellow{
-
-background:#ffd54f;
-
-}
-
-
-
-/* Hero */
-
-
-.hologram-badge{
-
-display:inline-block;
-
-padding:14px 35px;
-
-border-radius:50px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 25px rgba(0,229,255,.5);
-
-}
-
-
-
-.hero-content h1{
-
-font-size:60px;
-
-margin:35px 0;
-
-line-height:1.15;
-
-background:
-
-linear-gradient(
-90deg,
-#ffffff,
-#7df9ff
-);
-
--webkit-background-clip:text;
-
-color:transparent;
-
-}
-
-
-
-.hero-content p{
-
-max-width:850px;
-
-margin:auto;
-
-font-size:20px;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-/* Buttons */
-
-
-.hero-buttons{
-
-margin-top:40px;
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.hero-btn{
-
-padding:18px 40px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-
-
-.primary{
-
-background:#00b8ff;
-
-color:white;
-
-}
-
-
-
-.secondary{
-
-background:#082335;
-
-color:#7df9ff;
-
-border:1px solid #00e5ff;
-
-}
-
-
-
-.hero-btn:hover{
-
-transform:translateY(-5px);
-
-box-shadow:
-
-0 0 25px rgba(0,229,255,.5);
-
-}
-
-
-
-/* Scanner */
-
-
-.scanner-panel{
-
-margin-top:70px;
-
-}
-
-
-
-.scanner-circle{
-
-width:180px;
-
-height:180px;
-
-margin:auto;
-
-border-radius:50%;
-
-border:2px solid #00e5ff;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-position:relative;
-
-animation:pulse 3s infinite;
-
-}
-
-
-
-.scanner-icon{
-
-font-size:60px;
-
-}
-
-
-
-.scanner-line{
-
-position:absolute;
-
-width:100%;
-
-height:2px;
-
-background:#00e5ff;
-
-animation:scan 2s infinite;
-
-}
-
-
-
-.scanner-text{
-
-margin-top:20px;
-
-color:#7df9ff;
-
-letter-spacing:2px;
-
-}
-
-
-
-/* Floating Cards */
-
-
-.floating-card{
-
-position:absolute;
-
-background:#082335;
-
-border:1px solid #1b6ea8;
-
-padding:20px;
-
-border-radius:20px;
-
-color:#7df9ff;
-
+padding:30px;
+border-radius:24px;
 text-align:center;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.3);
-
-animation:floating 4s infinite;
-
+box-shadow:0 0 25px rgba(0,0,0,0.4);
+border:1px solid rgba(255,255,255,0.1);
 }
 
-
-
-.card-one{
-
-top:25%;
-
-left:5%;
-
+.alert-wrapper{
+    max-width:900px;
+    margin:50px auto;
+    padding:20px;
 }
 
-
-
-.card-two{
-
-top:45%;
-
-right:5%;
-
+.red-alert{
+    background:linear-gradient(135deg,#ff1f1f,#b30000);
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 8px 30px rgba(255,0,0,0.35);
+    border:2px solid rgba(255,255,255,0.15);
+    animation:pulse 2s infinite;
 }
-
-
-
-.card-three{
-
-bottom:15%;
-
-left:10%;
-
-}
-
-
-
-@keyframes scan{
-
-0%{
-
-transform:translateY(-70px);
-
-}
-
-100%{
-
-transform:translateY(70px);
-
-}
-
-}
-
-
 
 @keyframes pulse{
 
-50%{
+    0%{
+        transform:scale(1);
+    }
 
-box-shadow:
+    50%{
+        transform:scale(1.02);
+    }
 
-0 0 40px #00e5ff;
-
-}
-
-}
-
-
-
-@keyframes floating{
-
-50%{
-
-transform:translateY(-15px);
+    100%{
+        transform:scale(1);
+    }
 
 }
 
+.red-alert h1{
+    margin-top:0;
+    font-size:40px;
+    color:#ffffff;
 }
 
+.red-alert p{
+    font-size:18px;
+    line-height:1.7;
+    color:#ffeaea;
+}
 
+/* COUNTDOWN */
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.time-box1{
+    background:rgba(255,255,255,0.12);
+    padding:18px;
+    border-radius:18px;
+    min-width:100px;
+}
+
+.time-box1 h2{
+    margin:0;
+    font-size:38px;
+    color:#fff;
+}
+
+.time-box1 span{
+    font-size:14px;
+    color:#ffe3e3;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* BUTTON */
+
+.alert-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:white;
+    color:#c40000;
+    padding:16px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.alert-btn:hover{
+    background:#ffe3e3;
+    transform:translateY(-3px);
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
+    .red-alert h1{
+        font-size:30px;
+    }
 
-.hero-content h1{
+    .red-alert p{
+        font-size:16px;
+    }
 
-font-size:38px;
+    .time-box1{
+        min-width:80px;
+        padding:14px;
+    }
 
-}
-
-
-.hero-content p{
-
-font-size:16px;
-
-}
-
-
-.floating-card{
-
-display:none;
+    .time-box h2{
+        font-size:28px;
+    }
 
 }
 
-
-.trainer-status-panel{
-
-gap:10px;
-
-}
-
-
-.status-item{
-
-padding:12px 20px;
-
-}
-
-}
-
-
-.live-raid-scanner{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#031522,
-#08273d
-);
-
-color:white;
-
-}
-
-
-
-.raid-scanner-header{
-
-text-align:center;
-
-}
-
-
-
-.scanner-badge{
-
+.badge{
 display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
+background:#ffd447;
+color:#000;
+padding:10px 18px;
+border-radius:50px;
+font-weight:bold;
+margin-bottom:20px;
 }
 
-
-
-.raid-scanner-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
+h1{
+font-size:3rem;
+margin-bottom:10px;
 }
 
-
-
-.raid-scanner-header p{
-
-max-width:800px;
-
-margin:auto;
-
-color:#d8f7ff;
-
-font-size:18px;
-
-line-height:1.8;
-
+.subtitle{
+font-size:1.1rem;
+color:#cfd8ff;
+margin-bottom:40px;
 }
 
-
-
-
-/* Cards */
-
-
-.raid-grid-home{
-
+.timer{
 display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
-
-
-
-.raid-card-home{
-
-background:#082335;
-
-border-radius:30px;
-
-padding:35px;
-
-text-align:center;
-
-border:1px solid #1b6ea8;
-
-transition:.3s;
-
-position:relative;
-
-overflow:hidden;
-
+.time-box{
+background:#16244d;
+padding:20px 10px;
+border-radius:18px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
 
-
-
-.raid-card-home:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 0 30px rgba(0,229,255,.4);
-
+.time-box span{
+display:block;
 }
 
+.number{
+font-size:4rem;
+font-weight:bold;
+color:#ffd447;
+margin-bottom:10px;
+}
 
-
-
-.raid-type{
-
-font-size:14px;
-
+.label{
+font-size:1rem;
+text-transform:uppercase;
 letter-spacing:2px;
-
-color:#ffd54f;
-
+color:#cfd8ff;
 }
 
-
-
-.pokemon-icon{
-
-font-size:70px;
-
-margin:25px 0;
-
+.footer-text{
+margin-top:35px;
+font-size:1rem;
+color:#d6ddff;
 }
-
-
-
-
-.raid-card-home h3{
-
-font-size:28px;
-
-color:#7df9ff;
-
-}
-
-
-
-
-.type-badge{
-
-display:inline-block;
-
-padding:8px 20px;
-
-border-radius:20px;
-
-background:#0d3048;
-
-color:#fff;
-
-margin:15px;
-
-}
-
-
-
-.raid-info{
-
-margin-top:25px;
-
-}
-
-
-
-.raid-info div{
-
-display:flex;
-
-justify-content:space-between;
-
-padding:14px 0;
-
-border-bottom:1px solid #1b6ea8;
-
-}
-
-
-
-.raid-info span{
-
-color:#ffd54f;
-
-}
-
-
-
-.raid-card-home a{
-
-display:inline-block;
-
-margin-top:25px;
-
-padding:15px 30px;
-
-border-radius:30px;
-
-background:#00b8ff;
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-
-
-/* Console */
-
-
-.raid-console{
-
-margin-top:70px;
-
-background:#082335;
-
-border-radius:25px;
-
-padding:25px;
-
-display:flex;
-
-justify-content:center;
-
-gap:50px;
-
-flex-wrap:wrap;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.raid-console strong{
-
-color:#7df9ff;
-
-margin-left:10px;
-
-}
-
-
 
 @media(max-width:768px){
 
-
-.raid-scanner-header h2{
-
-font-size:35px;
-
-}
-
-
-.raid-console{
-
-flex-direction:column;
-
-text-align:center;
-
-gap:20px;
-
-}
-
-}
-
-
-.event-command-center{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#08273d,
-#031522
-);
-
-color:white;
-
-}
-
-
-
-
-.event-header{
-
-text-align:center;
-
-}
-
-
-
-.event-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.event-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.event-header p{
-
-max-width:850px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-/* Main Event */
-
-
-.main-event-card{
-
-margin-top:60px;
-
-background:#082335;
-
-border:1px solid #1b6ea8;
-
-border-radius:35px;
-
-padding:45px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:40px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.event-icon{
-
-font-size:90px;
-
-}
-
-
-
-.event-details h3{
-
-font-size:35px;
-
-color:#ffd54f;
-
-}
-
-
-
-.event-details p{
-
-color:#d8f7ff;
-
-}
-
-
-
-.countdown-box{
-
-display:flex;
-
-gap:15px;
-
-margin:30px 0;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.countdown-box div{
-
-background:#0d3048;
-
-padding:20px;
-
-border-radius:15px;
-
-text-align:center;
-
-min-width:90px;
-
-}
-
-
-
-.countdown-box span{
-
-display:block;
-
-font-size:32px;
-
-color:#7df9ff;
-
-}
-
-
-
-.event-details a{
-
-display:inline-block;
-
-padding:15px 35px;
-
-border-radius:30px;
-
-background:#00b8ff;
-
-color:white;
-
-text-decoration:none;
-
-}
-
-
-
-/* Event Cards */
-
-
-.event-grid-home{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-
-
-.event-card-home{
-
-background:#082335;
-
-padding:35px;
-
-border-radius:25px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-
-
-.event-card-home:hover{
-
-transform:translateY(-8px);
-
-box-shadow:
-
-0 0 25px rgba(0,229,255,.35);
-
-}
-
-
-
-.event-card-icon{
-
-font-size:55px;
-
-}
-
-
-
-.event-card-home h3{
-
-color:#7df9ff;
-
-}
-
-
-
-.event-progress{
-
-display:inline-block;
-
-margin:15px;
-
-padding:8px 25px;
-
-border-radius:20px;
-
-background:#0d3048;
-
-color:#ffd54f;
-
-}
-
-
-
-.event-card-home a{
-
-display:block;
-
-margin-top:20px;
-
-color:#7df9ff;
-
-text-decoration:none;
-
-}
-
-
-
-/* Calendar */
-
-
-.calendar-panel-home{
-
-margin-top:70px;
-
-background:#082335;
-
-padding:35px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.calendar-panel-home h3{
-
-color:#7df9ff;
-
-font-size:30px;
-
-}
-
-
-
-.calendar-row{
-
-display:flex;
-
-justify-content:space-between;
-
-padding:20px 0;
-
-border-bottom:1px solid #1b6ea8;
-
-}
-
-
-
-.calendar-row strong{
-
-color:#ffd54f;
-
-}
-
-
-
-.calendar-row span{
-
-color:#7df9ff;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.event-header h2{
-
-font-size:35px;
-
-}
-
-
-.main-event-card{
-
-text-align:center;
-
-}
-
-
-.calendar-row{
-
-flex-direction:column;
-
-gap:10px;
-
-}
-
-}
-
-
-.reward-terminal{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#031522,
-#08273d
-);
-
-color:white;
-
-}
-
-
-
-
-.reward-header{
-
-text-align:center;
-
-}
-
-
-
-.reward-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.reward-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.reward-header p{
-
-max-width:800px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-/* Promo Cards */
-
-
-.promo-grid-home{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-
-
-.promo-card-home{
-
-background:#082335;
-
-padding:35px;
-
-border-radius:30px;
-
-text-align:center;
-
-border:1px solid #1b6ea8;
-
-transition:.3s;
-
-}
-
-
-
-.promo-card-home:hover{
-
-transform:translateY(-8px);
-
-box-shadow:
-
-0 0 25px rgba(0,229,255,.35);
-
-}
-
-
-
-.promo-label{
-
-color:#ffd54f;
-
-font-size:14px;
-
-letter-spacing:2px;
-
-}
-
-
-
-.gift-icon{
-
-font-size:65px;
-
-margin:20px;
-
-}
-
-
-
-.promo-card-home h3{
-
-font-size:28px;
-
-color:#7df9ff;
-
-}
-
-
-
-.reward-list{
-
-background:#0d3048;
-
-padding:20px;
-
-border-radius:15px;
-
-line-height:2;
-
-}
-
-
-
-.expiry{
-
-margin:20px 0;
-
-color:#d8f7ff;
-
-}
-
-
-
-.expiry strong{
-
-color:#ffd54f;
-
-}
-
-
-
-.copy-code,
-.disabled-code{
-
-padding:14px 35px;
-
-border-radius:30px;
-
-border:none;
-
-cursor:pointer;
-
-font-weight:bold;
-
-}
-
-
-
-.copy-code{
-
-background:#00b8ff;
-
-color:white;
-
-}
-
-
-
-.disabled-code{
-
-background:#444;
-
-color:#aaa;
-
-}
-
-
-
-.expired{
-
-opacity:.6;
-
-}
-
-
-
-/* Scanner */
-
-
-.reward-system-panel{
-
-margin-top:70px;
-
-padding:35px;
-
-background:#082335;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.reward-system-panel h3{
-
-color:#7df9ff;
-
-font-size:30px;
-
-}
-
-
-
-.scanner-stats{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(180px,1fr));
-
-gap:20px;
-
-margin-top:25px;
-
-}
-
-
-
-.scanner-stats div{
-
-background:#0d3048;
-
-padding:20px;
-
-border-radius:20px;
-
-text-align:center;
-
-}
-
-
-
-.scanner-stats strong{
-
-display:block;
-
-font-size:28px;
-
-color:#ffd54f;
-
-margin-top:10px;
-
-}
-
-
-
-/* Alert */
-
-
-.reward-alert-panel{
-
-margin-top:50px;
-
-padding:30px;
-
-background:#082335;
-
-border-radius:25px;
-
-border:1px solid #1b6ea8;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:30px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.alert-icon{
-
-font-size:55px;
-
-}
-
-
-
-.reward-alert-panel h3{
-
-color:#7df9ff;
-
-}
-
-
-
-.reward-alert-panel button{
-
-padding:15px 35px;
-
-border-radius:30px;
-
-background:#00b8ff;
-
-color:white;
-
-border:none;
-
-font-weight:bold;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.reward-header h2{
-
-font-size:35px;
-
-}
-
-
-.reward-alert-panel{
-
-text-align:center;
-
-}
-
-}
-
-
-.mega-database{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#08273d,
-#031522
-);
-
-color:white;
-
-}
-
-
-
-
-.mega-header{
-
-text-align:center;
-
-}
-
-
-
-.mega-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.mega-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.mega-header p{
-
-max-width:850px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-
-/* Filter */
-
-
-.mega-filter-panel{
-
-display:flex;
-
-justify-content:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-margin-top:50px;
-
-}
-
-
-
-.mega-filter-panel button{
-
-padding:12px 25px;
-
-border-radius:30px;
-
-background:#082335;
-
-color:#7df9ff;
-
-border:1px solid #1b6ea8;
-
-cursor:pointer;
-
-}
-
-
-
-.mega-filter-panel .active{
-
-background:#00b8ff;
-
-color:white;
-
-}
-
-
-
-/* Cards */
-
-
-.mega-grid-home{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(270px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-
-
-.mega-card-home{
-
-background:#082335;
-
-padding:35px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-
-
-.mega-card-home:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 0 30px rgba(0,229,255,.35);
-
-}
-
-
-
-.mega-image{
-
-font-size:80px;
-
-}
-
-
-
-.raid-tag{
-
-color:#ffd54f;
-
-font-size:14px;
-
-letter-spacing:2px;
-
-margin:15px;
-
-}
-
-
-
-.mega-card-home h3{
-
-font-size:28px;
-
-color:#7df9ff;
-
-}
-
-
-
-.difficulty span{
-
-color:#ffd54f;
-
-}
-
-
-
-.weakness-box{
-
-margin-top:20px;
-
-background:#0d3048;
-
-padding:18px;
-
-border-radius:15px;
-
-line-height:1.8;
-
-}
-
-
-
-.weakness-box strong{
-
-display:block;
-
-color:#ffd54f;
-
-}
-
-
-
-.mega-energy{
-
-margin:20px 0;
-
-color:#7df9ff;
-
-}
-
-
-
-.mega-card-home a{
-
-display:inline-block;
-
-padding:15px 30px;
-
-background:#00b8ff;
-
-border-radius:30px;
-
-text-decoration:none;
-
-color:white;
-
-font-weight:bold;
-
-}
-
-
-
-/* Footer */
-
-
-.mega-database-footer{
-
-margin-top:70px;
-
-padding:30px;
-
-background:#082335;
-
-border-radius:25px;
-
-border:1px solid #1b6ea8;
-
-display:flex;
-
-justify-content:center;
-
-gap:60px;
-
-flex-wrap:wrap;
-
-text-align:center;
-
-}
-
-
-
-.mega-database-footer strong{
-
-display:block;
-
-font-size:28px;
-
-color:#ffd54f;
-
-margin-top:10px;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.mega-header h2{
-
-font-size:35px;
-
-}
-
-
-.mega-database-footer{
-
-gap:30px;
-
-}
-
-}
-
-
-.counter-laboratory{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#031522,
-#08273d
-);
-
-color:white;
-
-}
-
-
-
-
-.lab-header{
-
-text-align:center;
-
-}
-
-
-
-.lab-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.lab-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.lab-header p{
-
-max-width:850px;
-
-margin:auto;
-
-color:#d8f7ff;
-
-line-height:1.8;
-
-}
-
-
-
-/* Scanner */
-
-
-.boss-scanner-panel{
-
-margin-top:60px;
-
-padding:40px;
-
-background:#082335;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-}
-
-
-
-.scanner-title{
-
-font-size:28px;
-
-color:#ffd54f;
-
-margin-bottom:25px;
-
-}
-
-
-
-.boss-selector{
-
-padding:15px 30px;
-
-border-radius:30px;
-
-background:#0d3048;
-
-color:white;
-
-border:1px solid #00e5ff;
-
-font-size:18px;
-
-}
-
-
-
-.analyze-button{
-
-margin-left:15px;
-
-padding:15px 30px;
-
-border:none;
-
-border-radius:30px;
-
-background:#00b8ff;
-
-color:white;
-
-font-weight:bold;
-
-}
-
-
-
-/* Analysis */
-
-
-.analysis-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(230px,1fr));
-
-gap:25px;
-
-margin-top:50px;
-
-}
-
-
-
-.analysis-card{
-
-background:#082335;
-
-padding:30px;
-
-border-radius:25px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-}
-
-
-
-.analysis-icon{
-
-font-size:55px;
-
-}
-
-
-
-.analysis-card h3{
-
-color:#7df9ff;
-
-}
-
-
-
-/* Ranking */
-
-
-.counter-ranking-panel{
-
-margin-top:60px;
-
-padding:40px;
-
-background:#082335;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.counter-ranking-panel h3{
-
-color:#7df9ff;
-
-font-size:30px;
-
-}
-
-
-
-.counter-row{
-
-display:grid;
-
-grid-template-columns:220px 1fr 60px;
-
-gap:20px;
-
-align-items:center;
-
-margin:25px 0;
-
-}
-
-
-
-.pokemon-counter{
-
-color:#ffd54f;
-
-}
-
-
-
-.damage-bar{
-
-height:18px;
-
-background:#0d3048;
-
-border-radius:20px;
-
-overflow:hidden;
-
-}
-
-
-
-.damage-fill{
-
-height:100%;
-
-background:#00b8ff;
-
-}
-
-
-
-.one{
-
-width:100%;
-
-}
-
-
-.two{
-
-width:96%;
-
-}
-
-
-.three{
-
-width:91%;
-
-}
-
-
-.four{
-
-width:85%;
-
-}
-
-
-
-/* Team */
-
-
-.team-builder-panel{
-
-margin-top:60px;
-
-padding:40px;
-
-background:#082335;
-
-border-radius:30px;
-
-text-align:center;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.team-slots{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(120px,1fr));
-
-gap:20px;
-
-margin:30px 0;
-
+h1{
+font-size:2rem;
 }
 
-
-
-.team-slots div{
-
-background:#0d3048;
-
-padding:25px;
-
-border-radius:20px;
-
-font-size:18px;
-
+.timer{
+grid-template-columns:repeat(2,1fr);
 }
-
 
-
-.team-builder-panel a{
-
-display:inline-block;
-
-padding:16px 35px;
-
-background:#00b8ff;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:30px;
-
-font-weight:bold;
-
+.number{
+font-size:3rem;
 }
-
-
-
-@media(max-width:768px){
-
-
-.lab-header h2{
-
-font-size:35px;
-
 }
-
 
-.counter-row{
+@media(max-width:480px){
 
+.timer{
 grid-template-columns:1fr;
-
-}
-
-.analyze-button{
-
-margin-top:20px;
-
-margin-left:0;
-
-}
-
-}
-
-
-.pokedex-archive{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#08273d,
-#031522
-);
-
-color:white;
-
-}
-
-
-
-
-.pokedex-header{
-
-text-align:center;
-
-}
-
-
-
-.pokedex-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.pokedex-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.pokedex-header p{
-
-max-width:850px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-/* Region */
-
-
-.region-terminal{
-
-display:flex;
-
-justify-content:center;
-
-gap:12px;
-
-flex-wrap:wrap;
-
-margin-top:50px;
-
-}
-
-
-
-.region-terminal button{
-
-padding:12px 25px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #1b6ea8;
-
-color:#7df9ff;
-
-cursor:pointer;
-
-}
-
-
-
-.region-terminal .active{
-
-background:#00b8ff;
-
-color:white;
-
-}
-
-
-
-
-
-/* Search */
-
-
-.pokedex-search{
-
-margin:40px auto;
-
-display:flex;
-
-justify-content:center;
-
-gap:15px;
-
-}
-
-
-
-.pokedex-search input{
-
-width:350px;
-
-padding:16px 25px;
-
-border-radius:30px;
-
-border:1px solid #00e5ff;
-
-background:#082335;
-
-color:white;
-
-}
-
-
-
-.pokedex-search button{
-
-padding:15px 30px;
-
-border-radius:30px;
-
-border:none;
-
-background:#00b8ff;
-
-color:white;
-
-}
-
-
-
-
-
-/* Pokemon Cards */
-
-
-.pokemon-database-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-margin-top:40px;
-
-}
-
-
-
-.pokemon-card-home{
-
-background:#082335;
-
-padding:30px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-
-
-.pokemon-card-home:hover{
-
-transform:translateY(-8px);
-
-box-shadow:
-
-0 0 25px rgba(0,229,255,.35);
-
-}
-
-
-
-.pokemon-number{
-
-color:#ffd54f;
-
-}
-
-
-
-.pokemon-image{
-
-font-size:75px;
-
-margin:20px;
-
-}
-
-
-
-.pokemon-card-home h3{
-
-color:#7df9ff;
-
-font-size:28px;
-
-}
-
-
-
-.pokemon-type{
-
-display:inline-block;
-
-padding:8px 20px;
-
-background:#0d3048;
-
-border-radius:20px;
-
-color:#ffd54f;
-
-}
-
-
-
-.pokemon-details{
-
-margin:20px 0;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-.pokemon-card-home a{
-
-padding:14px 30px;
-
-background:#00b8ff;
-
-border-radius:30px;
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-
-
-
-/* Stats */
-
-
-.pokedex-stat-panel{
-
-margin-top:70px;
-
-background:#082335;
-
-padding:30px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-display:flex;
-
-justify-content:center;
-
-gap:60px;
-
-flex-wrap:wrap;
-
-text-align:center;
-
-}
-
-
-
-.pokedex-stat-panel strong{
-
-display:block;
-
-font-size:30px;
-
-color:#ffd54f;
-
-margin-top:10px;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.pokedex-header h2{
-
-font-size:35px;
-
-}
-
-
-.pokedex-search{
-
-flex-direction:column;
-
-}
-
-
-.pokedex-search input{
-
-width:auto;
-
-}
-
-
-.pokedex-stat-panel{
-
-gap:30px;
-
-}
-
-}
-
-
-.trainer-tools-hub{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#031522,
-#08273d
-);
-
-color:white;
-
-}
-
-
-
-.tools-header{
-
-text-align:center;
-
-}
-
-
-
-.tools-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.tools-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.tools-header p{
-
-max-width:850px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-
-/* Tool Cards */
-
-
-.tools-grid-home{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-
-
-.tool-card-home{
-
-background:#082335;
-
-padding:35px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-
-
-.tool-card-home:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 0 30px rgba(0,229,255,.35);
-
-}
-
-
-
-.tool-icon{
-
-font-size:70px;
-
-}
-
-
-
-.tool-card-home h3{
-
-font-size:28px;
-
-color:#7df9ff;
-
-}
-
-
-
-.tool-card-home p{
-
-color:#d8f7ff;
-
-line-height:1.7;
-
-}
-
-
-
-.tool-feature{
-
-display:inline-block;
-
-padding:10px 20px;
-
-background:#0d3048;
-
-border-radius:20px;
-
-color:#ffd54f;
-
-margin:15px;
-
-}
-
-
-
-.tool-card-home a{
-
-display:inline-block;
-
-padding:15px 35px;
-
-background:#00b8ff;
-
-border-radius:30px;
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-
-
-
-/* Terminal */
-
-
-.tool-terminal-panel{
-
-margin-top:70px;
-
-padding:35px;
-
-background:#082335;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.tool-terminal-panel h3{
-
-color:#7df9ff;
-
-font-size:30px;
-
-}
-
-
-
-.tool-stats{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(200px,1fr));
-
-gap:20px;
-
-margin-top:30px;
-
-}
-
-
-
-.tool-stats div{
-
-background:#0d3048;
-
-padding:25px;
-
-border-radius:20px;
-
-text-align:center;
-
-}
-
-
-
-.tool-stats strong{
-
-display:block;
-
-font-size:30px;
-
-color:#ffd54f;
-
-margin-top:10px;
-
-}
-
-
-
-
-@media(max-width:768px){
-
-
-.tools-header h2{
-
-font-size:35px;
-
-}
-
-}
-
-
-.trainer-arcade{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#08273d,
-#031522
-);
-
-color:white;
-
-}
-
-
-
-
-.arcade-header{
-
-text-align:center;
-
-}
-
-
-
-.arcade-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.arcade-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.arcade-header p{
-
-max-width:850px;
-
-margin:auto;
-
-color:#d8f7ff;
-
-line-height:1.8;
-
-}
-
-
-
-
-/* Games */
-
-
-.arcade-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-
-
-.game-card{
-
-background:#082335;
-
-padding:35px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-
-
-.game-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 0 30px rgba(0,229,255,.35);
-
-}
-
-
-
-.game-icon{
-
-font-size:75px;
-
-}
-
-
-
-.game-card h3{
-
-font-size:27px;
-
-color:#7df9ff;
-
-}
-
-
-
-.game-card p{
-
-color:#d8f7ff;
-
-line-height:1.7;
-
-}
-
-
-
-.game-info{
-
-padding:12px;
-
-background:#0d3048;
-
-border-radius:20px;
-
-color:#ffd54f;
-
-margin:20px 0;
-
-}
-
-
-
-.game-card a{
-
-display:inline-block;
-
-padding:15px 35px;
-
-background:#00b8ff;
-
-color:white;
-
-border-radius:30px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-
-/* Achievements */
-
-
-.achievement-panel{
-
-margin-top:70px;
-
-padding:40px;
-
-background:#082335;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.achievement-panel h3{
-
-text-align:center;
-
-font-size:30px;
-
-color:#7df9ff;
-
-}
-
-
-
-.achievement-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(150px,1fr));
-
-gap:20px;
-
-margin-top:30px;
-
-}
-
-
-
-.achievement-grid div{
-
-background:#0d3048;
-
-padding:25px;
-
-border-radius:20px;
-
-text-align:center;
-
-font-size:18px;
-
-color:#ffd54f;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.arcade-header h2{
-
-font-size:35px;
-
-}
-
-}
-
-
-.research-reports{
-
-padding:90px 5%;
-
-background:
-
-linear-gradient(
-180deg,
-#031522,
-#08273d
-);
-
-color:white;
-
-}
-
-
-
-
-.research-header{
-
-text-align:center;
-
-}
-
-
-
-.research-status{
-
-display:inline-block;
-
-padding:12px 35px;
-
-border-radius:30px;
-
-background:#082335;
-
-border:1px solid #00e5ff;
-
-color:#7df9ff;
-
-box-shadow:
-
-0 0 20px rgba(0,229,255,.4);
-
-}
-
-
-
-.research-header h2{
-
-font-size:48px;
-
-margin:25px 0;
-
-color:#7df9ff;
-
-text-shadow:
-
-0 0 20px #00e5ff;
-
-}
-
-
-
-.research-header p{
-
-max-width:850px;
-
-margin:auto;
-
-line-height:1.8;
-
-color:#d8f7ff;
-
-}
-
-
-
-
-/* Featured */
-
-
-.featured-report{
-
-margin-top:60px;
-
-background:#082335;
-
-border:1px solid #1b6ea8;
-
-border-radius:35px;
-
-padding:45px;
-
-display:flex;
-
-align-items:center;
-
-gap:40px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.report-image{
-
-font-size:90px;
-
-}
-
-
-
-.report-tag{
-
-color:#ffd54f;
-
-letter-spacing:2px;
-
-}
-
-
-
-.report-content h3{
-
-font-size:35px;
-
-color:#7df9ff;
-
-}
-
-
-
-.report-content p{
-
-color:#d8f7ff;
-
-line-height:1.8;
-
-}
-
-
-
-.report-content a{
-
-display:inline-block;
-
-margin-top:20px;
-
-padding:15px 35px;
-
-background:#00b8ff;
-
-border-radius:30px;
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-
-
-/* Cards */
-
-
-.report-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-
-
-.report-card{
-
-background:#082335;
-
-padding:35px;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-
-
-.report-card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:
-
-0 0 25px rgba(0,229,255,.35);
-
-}
-
-
-
-.report-icon{
-
-font-size:60px;
-
-}
-
-
-
-.report-card h3{
-
-color:#7df9ff;
-
-}
-
-
-
-.report-card p{
-
-color:#d8f7ff;
-
-line-height:1.7;
-
-}
-
-
-
-.report-card a{
-
-color:#ffd54f;
-
-text-decoration:none;
-
-}
-
-
-
-/* Latest */
-
-
-.latest-report-panel{
-
-margin-top:70px;
-
-padding:35px;
-
-background:#082335;
-
-border-radius:30px;
-
-border:1px solid #1b6ea8;
-
-}
-
-
-
-.latest-report-panel h3{
-
-font-size:30px;
-
-color:#7df9ff;
-
-}
-
-
-
-.latest-row{
-
-display:flex;
-
-justify-content:space-between;
-
-padding:20px 0;
-
-border-bottom:1px solid #1b6ea8;
-
-}
-
-
-
-.latest-row span{
-
-color:#ffd54f;
-
-}
-
-
-
-
-@media(max-width:768px){
-
-
-.research-header h2{
-
-font-size:35px;
-
 }
-
 
-.featured-report{
-
-text-align:center;
-
-justify-content:center;
-
+.number{
+font-size:2.8rem;
 }
-
-
-.latest-row{
-
-flex-direction:column;
-
-gap:10px;
-
 }
 
-}
 </style>
 </head>
 <body>
 
-<section class="hero-command-center">
+<header>
+  <h1>Pokémon Gaming</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#raids">Raids</a>
+    <a href="#guides">Guides</a>
+    <a href="#news">News</a>
+  </nav>
+</header>
 
+<section class="hero-image-scroll">
+<img src="header_image.webp" alt="Pokemon GO Fest 2026">
+</section>
 
-<div class="hero-background-overlay"></div>
+<div class="alert-wrapper">
 
+    <div class="red-alert">
 
-<div class="hero-container">
+        <h1>Pokemon Go: Forever Forward</h1>
 
+        <p>
+            Pokémon GO Forever Forward Season is almost here.
+            Prepare for Mega Mewtwo raids, GO Fest 2026,
+            new Mega Evolutions, and powerful Dynamax battles.
+        </p>
 
-<!-- Status Panel -->
+        <!-- COUNTDOWN -->
 
-<div class="trainer-status-panel">
+        <div class="countdown">
 
+            <div class="time-box">
+                <h2 id="days">00</h2>
+                <span>Days</span>
+            </div>
 
-<div class="status-item">
+            <div class="time-box">
+                <h2 id="hours">00</h2>
+                <span>Hours</span>
+            </div>
 
-<span class="status-dot green"></span>
+            <div class="time-box">
+                <h2 id="minutes">00</h2>
+                <span>Minutes</span>
+            </div>
 
-Active Raids
+            <div class="time-box">
+                <h2 id="seconds">00</h2>
+                <span>Seconds</span>
+            </div>
 
-<strong>12</strong>
+        </div>
 
-</div>
+        <!-- BUTTON -->
 
+        <a href="https://pokemongaming.in/news/forever_forward.html"
+           class="alert-btn">
+           View Full Season Guide
+        </a>
 
-<div class="status-item">
-
-<span class="status-dot blue"></span>
-
-Events
-
-<strong>5</strong>
-
-</div>
-
-
-<div class="status-item">
-
-<span class="status-dot yellow"></span>
-
-New Guides
-
-<strong>24</strong>
-
-</div>
-
-
-</div>
-
-
-
-<!-- Main Content -->
-
-<div class="hero-content">
-
-
-<div class="hologram-badge">
-
-⚡ TRAINER COMMAND CENTER
-
-</div>
-
-
-
-<h1>
-
-Pokémon GO Raid Guides,
-<br>
-
-Database & Trainer Tools
-
-</h1>
-
-
-
-<p>
-
-Master Pokémon GO with detailed raid counters,
-Mega Evolution strategies, Pokémon database,
-event updates, calculators, and interactive trainer tools.
-
-</p>
-
-
-
-<div class="hero-buttons">
-
-
-<a href="/raids/" class="hero-btn primary">
-
-⚔️ Explore Raid Database
-
-</a>
-
-
-<a href="/pokedex/" class="hero-btn secondary">
-
-📖 Open Pokédex
-
-</a>
-
+    </div>
 
 </div>
 
+<script>
 
+const countdownDate = new Date(2026, 5, 2, 10, 0, 0).getTime();
 
-</div>
+/*
+2026 = year
+5 = June (months start from 0)
+2 = date
+10 = hour
+0 = minute
+0 = second
+*/
 
+const timer = setInterval(function(){
 
+    const now = new Date().getTime();
 
-<!-- Scanner Panel -->
+    const distance = countdownDate - now;
 
-<div class="scanner-panel">
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
 
-<div class="scanner-circle">
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
 
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) / 1000
+    );
 
-<div class="scanner-line"></div>
+    document.getElementById("days").innerHTML = days;
 
+    document.getElementById("hours").innerHTML = hours;
 
-<div class="scanner-icon">
+    document.getElementById("minutes").innerHTML = minutes;
 
-🔴
+    document.getElementById("seconds").innerHTML = seconds;
 
-</div>
+    if(distance < 0){
 
+        clearInterval(timer);
 
-</div>
+        document.querySelector(".countdown").innerHTML =
+        "<h2>Season Is Live!</h2>";
 
+    }
 
+},1000);
 
-<div class="scanner-text">
+</script>
 
-RAID SCANNER ONLINE
+<section class="section fade" style="max-width:1100px;margin:auto;text-align:center;">
+  <h2>Introduction</h2>
 
-<br>
+  <p style="color:#9ca3af;line-height:1.8;margin-top:20px;">
+    Pokémon GO raids are one of the most exciting and rewarding features in the game, but winning consistently requires more than just high CP Pokémon. Understanding type effectiveness, selecting the right counters, and adapting to weather conditions can significantly improve your success rate.
 
-Searching Pokémon World...
+This website is designed to provide complete raid guides that go beyond basic stats. Each guide includes detailed move analysis, PvP relevance, solo and team strategies, and real gameplay insights to help both beginners and advanced players.
 
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-<!-- Floating Cards -->
-
-
-<div class="floating-card card-one">
-
-⚡
-
-Mega Raids
-
-<br>
-
-Updated Daily
-
-</div>
-
-
-
-<div class="floating-card card-two">
-
-🎁
-
-Promo Codes
-
-<br>
-
-Live Rewards
-
-</div>
-
-
-
-<div class="floating-card card-three">
-
-🧪
-
-Battle Tools
-
-<br>
-
-Build Your Team
-
-</div>
-
-
+Whether you're looking to defeat a raid boss quickly, farm rare candy, or hunt shiny Pokémon, you’ll find everything you need here in a clear and structured format.</p>
+  </p>
 
 </section>
 
-<section class="live-raid-scanner">
+<section class="section fade" style="max-width:1100px;margin:auto;text-align:center;">
+  <h2>🎮 About PokemonGaming.in</h2>
 
+  <p style="color:#9ca3af;line-height:1.8;margin-top:20px;">
+    PokemonGaming.in is a dedicated platform for Pokémon GO trainers who want to master raids, build powerful teams, and stay updated with the latest in-game events. 
+    Our website provides detailed raid guides, counter breakdowns, and battle strategies designed for both beginners and advanced players.
+  </p>
 
-<div class="raid-scanner-header">
+  <p style="color:#9ca3af;line-height:1.8;margin-top:15px;">
+    Every guide is carefully structured to help you understand Pokémon weaknesses, best counters, move effectiveness, and real battle scenarios. 
+    Instead of generic information, we focus on practical strategies that help you win raids faster and more efficiently.
+  </p>
 
+  <p style="color:#9ca3af;line-height:1.8;margin-top:15px;">
+    Whether you're preparing for legendary raids, mega evolutions, or special events, you will learn how to choose the right team, optimize damage output, and improve your overall gameplay experience.
+  </p>
+</section>
 
-<div class="scanner-badge">
+<!-- UNIQUE SECTION -->
+<section class="section fade" style="max-width:1100px;margin:auto;">
+  <h2>🔥 Trainer Advantage</h2>
 
-⚡ LIVE RAID NETWORK ONLINE
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:25px;">
 
-</div>
+    <div class="card">
+      <h3>⚡ Best Counters Simplified</h3>
+      <p>We explain WHY each counter works, not just list them—helping you make smarter raid decisions.</p>
+    </div>
 
+    <div class="card">
+      <h3>📊 Real Strategy Insights</h3>
+      <p>Learn battle strategies used by experienced trainers to defeat raids efficiently.</p>
+    </div>
 
-<h2>
+    <div class="card">
+      <h3>🎯 Beginner to Pro Guides</h3>
+      <p>Step-by-step explanations make it easy for new players while still valuable for experts.</p>
+    </div>
 
-LIVE RAID SCANNER
+    <div class="card">
+      <h3>🚀 Always Updated</h3>
+      <p>Stay ahead with the latest raid bosses, move changes, and event updates.</p>
+    </div>
 
-</h2>
+  </div>
+</section>
 
+<section class="games-section">
+    <h2>🎮 Pokémon Mini Games</h2>
 
-<p>
+    <div class="game-card">
+        <a href="/pokemon_endless_runner.html">Play Pokemon Endless Runner Game</a>
+    </div>
+	
+	 <!--<div class="game-card">
+        <a href="/pokemon_reaction_speed.html">Play Pokemon Reaction Speed Game</a>
+    </div>
+	
+	 <div class="game-card">
+        <a href="/pokemon_gym_leader_challenge.html">Play Pokemon Gym Leader Challenge Game</a>
+    </div>
+	
+	 <div class="game-card">
+        <a href="/pokemon_idle_clicker.html">Play Pokemon Idle Clicker Game</a>
+    </div>
+	
+		 <div class="game-card">
+        <a href="/who_that_pokemon.html">Play Who's That Pokemon Game</a>
+    </div>
+	
+	 <div class="game-card">
+        <a href="/pokemon_card_flip_memory.html">Play Pokemon Card Flip Memory Game</a>
+    </div>-->
+	
+	</section>
 
-Track current Pokémon GO raids, discover powerful raid bosses,
-check weaknesses, and prepare your perfect battle team.
+<section class="section" id="fest">
+<!--<div class="countdown-container">-->
 
+<div class="badge">Pokémon GO Fest 2026</div>
+
+<h1>Global Event Countdown</h1>
+
+<p class="subtitle">
+Countdown to Pokémon GO Fest 2026 Global Event starting on July 11, 2026
 </p>
 
+<div class="timer">
+
+<div class="card">
+<span class="number" id="fest-days">00</span>
+<span class="label">Days</span>
+</div>
+
+<div class="card">
+<span class="number" id="fest-hours">00</span>
+<span class="label">Hours</span>
+</div>
+
+<div class="card">
+<span class="number" id="fest-minutes">00</span>
+<span class="label">Minutes</span>
+</div>
+
+<div class="card">
+<span class="number" id="fest-seconds">00</span>
+<span class="label">Seconds</span>
+</div>
 
 </div>
 
+<p class="footer-text">
+Prepare for Mega Mewtwo raids, shiny hunting, habitats, and exclusive bonuses.
+</p>
 
+<!--</div>-->
+</section>
 
-<!-- Raid Cards -->
+<script>
 
+const goFestDate = new Date("July 11, 2026 10:00:00").getTime();
 
-<div class="raid-grid-home">
+const countdown = setInterval(() => {
 
+const now = new Date().getTime();
 
+const distance = goFestDate - now;
 
-<!-- Mega Raid -->
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+);
 
-<div class="raid-card-home mega">
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60)) / (1000 * 60)
+);
 
+const seconds = Math.floor(
+(distance % (1000 * 60)) / 1000
+);
 
-<div class="raid-type">
+document.getElementById("fest-days").innerHTML = days;
+document.getElementById("fest-hours").innerHTML = hours;
+document.getElementById("fest-minutes").innerHTML = minutes;
+document.getElementById("fest-seconds").innerHTML = seconds;
 
-🔥 MEGA RAID
+if(distance < 0){
 
+clearInterval(countdown);
+
+document.querySelector(".timer").innerHTML = `
+<div style="
+grid-column:1/-1;
+font-size:2rem;
+font-weight:bold;
+color:#ffd447;
+padding:30px;
+">
+🎉 Pokémon GO Fest 2026 Has Started!
 </div>
+`;
 
+}
 
-<div class="pokemon-icon">
+},1000);
 
-⚡
+</script>
 
-</div>
+<!--<section id="promo">
+  <h2 class="section-title">🎁 Active Promo Codes</h2>
+  <div id="promoContainer" class="grid"></div>
+</section>
 
+<script>
+// ===== FETCH FROM JSON (recommended) =====
+// If not using JSON yet, replace fetch with your array
 
-<h3>
+fetch('/data/promocodes.json')
+  .then(res => res.json())
+  .then(promoCodes => {
 
-Mega Manectric
+    const container = document.getElementById("promoContainer");
+    const today = new Date();
 
-</h3>
+    // ===== FILTER (REMOVE EXPIRED) =====
+    const activeCodes = promoCodes.filter(promo => {
+      return new Date(promo.expiry) >= today;
+    });
 
+    // ===== SORT (latest expiry first) =====
+    activeCodes.sort((a, b) => {
+      return new Date(b.expiry) - new Date(a.expiry);
+    });
 
-<div class="type-badge">
+    // ===== RENDER =====
+    activeCodes.forEach(promo => {
 
-Electric Type
+      const expiryDate = new Date(promo.expiry);
+      const daysLeft = Math.ceil((expiryDate - today) / (1000 * 60 * 60 * 24));
 
-</div>
+      const card = document.createElement("div");
+      card.className = "promo-card";
 
+      card.innerHTML = `
+        <div class="promo-code">${promo.code}</div>
+        <p>${promo.reward}</p>
+        <div class="expiry">⏳ ${daysLeft} days left</div>
+        <button onclick="copyCode('${promo.code}')">Copy</button>
+      `;
 
+      container.appendChild(card);
+    });
 
-<div class="raid-info">
+  });
 
+// ===== COPY FUNCTION =====
+function copyCode(code) {
+  navigator.clipboard.writeText(code);
+  alert("Copied: " + code);
+}
+</script>-->
 
-<div>
+<section class="section fade" style="max-width:1100px;margin:auto;text-align:center;">
+  <h2>Beginner Guide</h2>
 
-⚔️ Difficulty
+  <p style="color:#9ca3af;line-height:1.8;margin-top:20px;">
+    If you're new to Pokémon GO raids, here are a few basics to get started:
 
-<span>
+Raids are cooperative battles where players team up to defeat powerful bosses within a time limit. Each boss has specific weaknesses, and choosing the right Pokémon is key to victory.
 
-⭐⭐⭐☆☆
-
-</span>
-
-</div>
-
-
-<div>
-
-🌍 Weakness
-
-<span>
-
-Ground
-
-</span>
-
-</div>
-
-
-<div>
-
-⏳ Ends In
-
-<span>
-
-2 Days 14 Hours
-
-</span>
-
-</div>
-
-
-</div>
-
-
-
-<a href="/raids/mega_manectric.html">
-
-View Raid Guide ⚡
-
-</a>
-
-
-</div>
-
-
-
-
-
-<!-- Legendary Raid -->
-
-
-<div class="raid-card-home legendary">
-
-
-<div class="raid-type">
-
-⭐ LEGENDARY RAID
-
-</div>
-
-
-<div class="pokemon-icon">
-
-🐉
-
-</div>
-
-
-<h3>
-
-Rayquaza
-
-</h3>
-
-
-<div class="type-badge">
-
-Dragon / Flying
-
-</div>
-
-
-
-<div class="raid-info">
-
-
-<div>
-
-⚔️ Difficulty
-
-<span>
-
-⭐⭐⭐⭐☆
-
-</span>
-
-</div>
-
-
-<div>
-
-❄️ Weakness
-
-<span>
-
-Ice
-
-</span>
-
-</div>
-
-
-<div>
-
-⏳ Ends In
-
-<span>
-
-5 Days
-
-</span>
-
-</div>
-
-
-</div>
-
-
-
-<a href="/raids/rayquaza.html">
-
-View Raid Guide 🐉
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-<!-- Shadow Raid -->
-
-
-<div class="raid-card-home shadow">
-
-
-<div class="raid-type">
-
-🌑 SHADOW RAID
-
-</div>
-
-
-<div class="pokemon-icon">
-
-👻
-
-</div>
-
-
-<h3>
-
-Shadow Mewtwo
-
-</h3>
-
-
-<div class="type-badge">
-
-Psychic Type
-
-</div>
-
-
-
-<div class="raid-info">
-
-
-<div>
-
-⚔️ Difficulty
-
-<span>
-
-⭐⭐⭐⭐⭐
-
-</span>
-
-</div>
-
-
-<div>
-
-👻 Weakness
-
-<span>
-
-Ghost / Dark
-
-</span>
-
-</div>
-
-
-<div>
-
-⏳ Ends In
-
-<span>
-
-Weekend Event
-
-</span>
-
-</div>
-
-
-</div>
-
-
-
-<a href="/raids/shadow_mewtwo.html">
-
-View Raid Guide 👻
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<!-- Scanner Footer -->
-
-
-<div class="raid-console">
-
-
-<div>
-
-🟢 Raid System Status
-
-<strong>
-
-ONLINE
-
-</strong>
-
-</div>
-
-
-<div>
-
-📡 Last Updated
-
-<strong>
-
-Today
-
-</strong>
-
-</div>
-
-
-<div>
-
-🎯 Available Guides
-
-<strong>
-
-150+
-
-</strong>
-
-</div>
-
-
-</div>
-
-
+Using type advantages, dodging charged moves, and coordinating with other players can significantly improve your chances. Even beginners can win tough raids by using the right strategy.</p>
 
 </section>
 
-<section class="event-command-center">
-
-
-<div class="event-header">
-
-
-<div class="event-status">
-
-⏳ EVENT NETWORK ACTIVE
-
-</div>
-
-
-<h2>
-
-EVENT COMMAND CENTER
-
-</h2>
-
-
-<p>
-
-Never miss a Pokémon GO event. Track seasons, Community Days,
-special events, bonuses, and important trainer activities.
-
-</p>
-
-
-</div>
-
-
-
-<!-- Main Countdown -->
-
-<div class="main-event-card">
-
-
-<div class="event-icon">
-
-🎉
-
-</div>
-
-
-<div class="event-details">
-
-
-<h3>
-
-Pokémon GO Fest 2026
-
-</h3>
-
-
-<p>
-
-Global Celebration Event
-
-</p>
-
-
-
-<div class="countdown-box">
-
-
-<div>
-
-<span>
-
-12
-
-</span>
-
-Days
-
-</div>
-
-
-<div>
-
-<span>
-
-08
-
-</span>
-
-Hours
-
-</div>
-
-
-<div>
-
-<span>
-
-42
-
-</span>
-
-Minutes
-
-</div>
-
-
-<div>
-
-<span>
-
-15
-
-</span>
-
-Seconds
-
-</div>
-
-
-</div>
-
-
-<a href="/events/go-fest-2026.html">
-
-View Event Details 🚀
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-<!-- Event Cards -->
-
-
-<div class="event-grid-home">
-
-
-
-<div class="event-card-home">
-
-
-<div class="event-card-icon">
-
-🌎
-
-</div>
-
-
-<h3>
-
-Current Season
-
-</h3>
-
-
-<p>
-
-Forever Forward Season
-
-</p>
-
-
-<div class="event-progress">
-
-ACTIVE
-
-</div>
-
-
-<a href="/events/current-season.html">
-
-Explore Season
-
-</a>
-
-
-</div>
-
-
-
-
-
-<div class="event-card-home">
-
-
-<div class="event-card-icon">
-
-🎯
-
-</div>
-
-
-<h3>
-
-Community Day
-
-</h3>
-
-
-<p>
-
-Next Community Day Event
-
-</p>
-
-
-<div class="event-progress">
-
-UPCOMING
-
-</div>
-
-
-<a href="/events/community-day.html">
-
-Event Guide
-
-</a>
-
-
-</div>
-
-
-
-
-
-<div class="event-card-home">
-
-
-<div class="event-card-icon">
-
-⭐
-
-</div>
-
-
-<h3>
-
-Spotlight Hour
-
-</h3>
-
-
-<p>
-
-Weekly Pokémon Spotlight
-
-</p>
-
-
-<div class="event-progress">
-
-WEEKLY
-
-</div>
-
-
-<a href="/events/spotlight-hour.html">
-
-View Schedule
-
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-<!-- Event Calendar -->
-
-
-<div class="calendar-panel-home">
-
-
-<h3>
-
-📅 Trainer Event Calendar
-
-</h3>
-
-
-<div class="calendar-row">
-
-
-<div>
-
-August 2026
-
-</div>
-
-
-<strong>
-
-Mega Raids
-
-</strong>
-
-
-<span>
-
-Active
-
-</span>
-
-
-</div>
-
-
-
-<div class="calendar-row">
-
-
-<div>
-
-September 2026
-
-</div>
-
-
-<strong>
-
-Community Events
-
-</strong>
-
-
-<span>
-
-Upcoming
-
-</span>
-
-
-</div>
-
-
-
-<div class="calendar-row">
-
-
-<div>
-
-October 2026
-
-</div>
-
-
-<strong>
-
-Special Research
-
-</strong>
-
-
-<span>
-
-Planned
-
-</span>
-
-
-</div>
-
-
-
-</div>
-
-
+<section class="hero">
+    <h1>Welcome, Trainers!</h1>
+
+    <p>
+        Your adventure starts here. Explore the latest Pokémon GO raid guides,
+        event coverage, Pokédex entries, shiny hunting resources, PvP rankings,
+        Team GO Rocket strategies, useful tools, and interactive games—all in one place.
+    </p>
+
+    <p>
+        Whether you're challenging powerful raid bosses, completing your Pokédex,
+        searching for rare shiny Pokémon, climbing the GO Battle League rankings,
+        or simply looking for your next Pokémon GO adventure, our guides and tools
+        are designed to help you get the most out of every journey.
+    </p>
+
+    <a href="/raids/" class="btn">Explore Latest Raids</a>
+    <a href="/pokedex/" class="btn">Browse Pokédex</a>
+</section>
+
+<section class="section" id="raids">
+  <h2>🔥 Latest Mega Raid Guides</h2>
+  <p>Detailed guides for Mega Evolutions, including boost effects and candy advantages.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/altaria-mega.jpg">
+      <h3><a href="raids/mega_altaria.html">Mega Altaria</a></h3>
+      <p>Best counters, weaknesses & tips.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/camerupt-mega.jpg">
+      <h3><a href="raids/mega_camerupt.html">Mega Camerupt</a></h3>
+      <p>Complete raid strategy guide.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/glalie-mega.jpg">
+      <h3><a href="raids/mega_glalie.html">Mega Glalie</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+	    <div class="card">
+      <img src="https://pokemongaming.in/raids/mega_falinks.jpeg">
+      <h3><a href="raids/mega_falinks.html">Mega Falinks</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+		    <div class="card">
+      <img src="https://pokemongaming.in/raids/mega_mewtwo_x.png">
+      <h3><a href="raids/mega_mewtwo_x.html">Mega Mewtwo X</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+		    <div class="card">
+      <img src="https://pokemongaming.in/raids/mega_mewtwo_y.png">
+      <h3><a href="raids/mega_mewtwo_y.html">Mega Mewtwo Y</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="raids">
+  <h2>🔥 Latest Legendary Raid Guides</h2>
+  <p>High-level strategies for defeating powerful legendary Pokémon.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/tapu-lele.jpg">
+      <h3><a href="raids/tapu_lele.html">Tapu Lele</a></h3>
+      <p>Best counters, weaknesses & tips.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/tapu-bulu.jpg">
+      <h3><a href="raids/tapu_bulu.html">Tapu Bulu</a></h3>
+      <p>Complete raid strategy guide.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/tapu-fini.jpg">
+      <h3><a href="raids/tapu_fini.html">Tapu Fini</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="raids">
+  <h2>🔥 Latest Ultra Beast Raid Guides</h2>
+  <p>Learn how to handle ultra beast pokemon</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/pheromosa.jpg">
+      <h3><a href="raids/pheromosa.html">Pheromosa</a></h3>
+      <p>Best counters, weaknesses & tips.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/buzzwole.jpg">
+      <h3><a href="raids/buzzwole.html">Buzzwole</a></h3>
+      <p>Complete raid strategy guide.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/xurkitree.jpg">
+      <h3><a href="raids/xurkitree.html">Xurkitree</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+	    <div class="card">
+      <img src="https://img.pokemondb.net/artwork/nihilego.jpg">
+      <h3><a href="raids/nihilego.html">Nihilego</a></h3>
+      <p>Top counters & shiny comparison.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <h2>Latest Raid Bosses</h2>
+
+    <p>
+        Prepare for your next raid with our detailed Pokémon GO raid guides.
+        Learn about weaknesses, best counters, CP ranges, shiny availability,
+        weather boosts, raid difficulty, and battle strategies to maximize
+        your chances of success.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Mega Ampharos Raid Guide</h3>
+            <p>
+                Discover Mega Ampharos's weaknesses, top counters, weather boosts,
+                CP values, shiny availability, and raid recommendations.
+            </p>
+            <a href="/raids/mega-ampharos.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Mega Lopunny Raid Guide</h3>
+            <p>
+                Learn how to defeat Mega Lopunny with the strongest counters,
+                raid tips, and catch CP information.
+            </p>
+            <a href="/raids/mega-lopunny.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Mega Altaria Raid Guide</h3>
+            <p>
+                Get ready for Mega Altaria raids with weakness analysis,
+                counter recommendations, and shiny details.
+            </p>
+            <a href="/raids/mega-altaria.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Pheromosa Raid Guide</h3>
+            <p>
+                Find the best Pokémon to use against Pheromosa and learn
+                about its strengths, weaknesses, and raid strategy.
+            </p>
+            <a href="/raids/pheromosa.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Legendary Raid Guides</h3>
+            <p>
+                Browse guides for current and returning Legendary Pokémon,
+                including counters, CP charts, and shiny availability.
+            </p>
+            <a href="/raids/legendary-raids.html">View Guides →</a>
+        </div>
+
+        <div class="card">
+            <h3>Raid Counters Hub</h3>
+            <p>
+                Explore the strongest raid attackers and counter recommendations
+                for Mega, Legendary, Shadow, and Ultra Beast raids.
+            </p>
+            <a href="/raids/raid-counters.html">View Hub →</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/raids/" class="btn">View All Raid Guides →</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Latest Pokémon GO Events</h2>
+
+    <p>
+        Stay up to date with the latest Pokémon GO events, bonuses, featured Pokémon,
+        shiny opportunities, and special research. Our event guides help trainers
+        make the most of limited-time activities and rewards.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Community Day Guides</h3>
+            <p>
+                Complete Community Day coverage featuring event bonuses,
+                shiny Pokémon, exclusive moves, and preparation tips.
+            </p>
+            <a href="/events/community-day-guides.html">View Guides →</a>
+        </div>
+
+        <div class="card">
+            <h3>Spotlight Hour Guides</h3>
+            <p>
+                Learn about featured Pokémon, bonus rewards, and whether
+                each Spotlight Hour is worth participating in.
+            </p>
+            <a href="/events/spotlight-hour-guides.html">View Guides →</a>
+        </div>
+
+        <div class="card">
+            <h3>GO Fest Coverage</h3>
+            <p>
+                Explore GO Fest event details, raid bosses, habitat spawns,
+                special research, and exclusive rewards.
+            </p>
+            <a href="/events/go-fest.html">View Coverage →</a>
+        </div>
+
+        <div class="card">
+            <h3>Seasonal Events</h3>
+            <p>
+                Track all seasonal celebrations, themed events,
+                event bonuses, and featured Pokémon throughout the year.
+            </p>
+            <a href="/events/seasonal-events.html">View Events →</a>
+        </div>
+
+        <div class="card">
+            <h3>Research Day Events</h3>
+            <p>
+                Find details on Research Day tasks, shiny opportunities,
+                encounter rewards, and event strategies.
+            </p>
+            <a href="/events/research-day-events.html">View Events →</a>
+        </div>
+
+        <div class="card">
+            <h3>Event News & Updates</h3>
+            <p>
+                Stay informed with the latest Pokémon GO announcements,
+                event schedules, and official updates.
+            </p>
+            <a href="/events/news.html">Read Updates →</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/events/" class="btn">View All Events →</a>
+    </div>
 
 </section>
 
-<section class="reward-terminal">
-
-
-<div class="reward-header">
-
-
-<div class="reward-status">
-
-🎁 TRAINER REWARD SYSTEM ONLINE
-
-</div>
-
-
-<h2>
-
-PROMO CODE TERMINAL
-
-</h2>
-
-
-<p>
-
-Discover active Pokémon GO promo codes, free rewards,
-special bonuses, and limited-time trainer gifts.
-
-</p>
-
-
-</div>
-
-
-
-
-<!-- Active Rewards -->
-
-
-<div class="promo-grid-home">
-
-
-
-<div class="promo-card-home active">
-
-
-<div class="promo-label">
-
-🟢 ACTIVE CODE
-
-</div>
-
-
-<div class="gift-icon">
-
-🎁
-
-</div>
-
-
-<h3>
-
-TRAINER2026
-
-</h3>
-
-
-<p>
-
-Reward:
-
-</p>
-
-
-<div class="reward-list">
-
-⭐ Poké Balls
-
-<br>
-
-✨ Stardust Bonus
-
-<br>
-
-🍬 Candy Rewards
-
-</div>
-
-
-
-<div class="expiry">
-
-Expires:
-
-<strong>
-
-August 20, 2026
-
-</strong>
-
-</div>
-
-
-
-<button class="copy-code">
-
-Copy Code
-
-</button>
-
-
-
-</div>
-
-
-
-
-
-<div class="promo-card-home active">
-
-
-<div class="promo-label">
-
-🟢 ACTIVE CODE
-
-</div>
-
-
-<div class="gift-icon">
-
-🎟️
-
-</div>
-
-
-<h3>
-
-GOADVENTURE26
-
-</h3>
-
-
-<p>
-
-Reward:
-
-</p>
-
-
-<div class="reward-list">
-
-🎯 Raid Pass
-
-<br>
-
-⭐ Premium Items
-
-<br>
-
-🧪 Research Bonus
-
-</div>
-
-
-
-<div class="expiry">
-
-Expires:
-
-<strong>
-
-September 05, 2026
-
-</strong>
-
-</div>
-
-
-
-<button class="copy-code">
-
-Copy Code
-
-</button>
-
-
-
-</div>
-
-
-
-
-<div class="promo-card-home expired">
-
-
-<div class="promo-label">
-
-🔴 EXPIRED
-
-</div>
-
-
-<div class="gift-icon">
-
-📦
-
-</div>
-
-
-<h3>
-
-OLDCODE2026
-
-</h3>
-
-
-<p>
-
-Reward Archive
-
-</p>
-
-
-<div class="reward-list">
-
-Previously Available
-
-<br>
-
-Trainer Items
-
-</div>
-
-
-
-<button class="disabled-code">
-
-Expired
-
-</button>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<!-- Reward System -->
-
-
-<div class="reward-system-panel">
-
-
-<h3>
-
-⚡ Reward Scanner Status
-
-</h3>
-
-
-<div class="scanner-stats">
-
-
-<div>
-
-Active Codes
-
-<strong>
-
-12
-
-</strong>
-
-</div>
-
-
-<div>
-
-Total Rewards
-
-<strong>
-
-50+
-
-</strong>
-
-</div>
-
-
-<div>
-
-Last Updated
-
-<strong>
-
-Today
-
-</strong>
-
-</div>
-
-
-<div>
-
-Auto Checking
-
-<strong>
-
-ON
-
-</strong>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<!-- Notification -->
-
-
-<div class="reward-alert-panel">
-
-
-<div class="alert-icon">
-
-📢
-
-</div>
-
-
-<div>
-
-<h3>
-
-Never Miss A Reward
-
-</h3>
-
-
-<p>
-
-Bookmark this page for new Pokémon GO promo codes,
-free items, and limited-time bonuses.
-
-</p>
-
-
-</div>
-
-
-<button>
-
-Enable Alerts
-
-</button>
-
-
-</div>
-
-
-
+<section class="section">
+    <h2>Pokémon Database</h2>
+
+    <p>
+        Explore our growing Pokémon Database featuring detailed Pokémon profiles,
+        stats, typings, evolutions, shiny information, movesets, PvP analysis,
+        raid performance, and battle recommendations. Browse Pokémon by region
+        and discover your favorites from every generation.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Kanto Region</h3>
+            <p>
+                Home to iconic Pokémon such as Charizard, Dragonite, Gengar,
+                Blastoise, Venusaur, and Mewtwo.
+            </p>
+            <a href="/regions/kanto.html">Explore Kanto →</a>
+        </div>
+
+        <div class="card">
+            <h3>Johto Region</h3>
+            <p>
+                Discover Johto favorites including Ampharos, Tyranitar,
+                Heracross, Scizor, Lugia, and Ho-Oh.
+            </p>
+            <a href="/regions/johto.html">Explore Johto →</a>
+        </div>
+
+        <div class="card">
+            <h3>Hoenn Region</h3>
+            <p>
+                Browse powerful Pokémon such as Rayquaza, Metagross,
+                Salamence, Blaziken, Swampert, and Sceptile.
+            </p>
+            <a href="/regions/hoenn.html">Explore Hoenn →</a>
+        </div>
+
+        <div class="card">
+            <h3>Sinnoh Region</h3>
+            <p>
+                Explore Sinnoh Pokémon including Garchomp, Lucario,
+                Togekiss, Dialga, Palkia, and Giratina.
+            </p>
+            <a href="/regions/sinnoh.html">Explore Sinnoh →</a>
+        </div>
+
+        <div class="card">
+            <h3>Unova Region</h3>
+            <p>
+                Meet powerful Pokémon such as Hydreigon, Excadrill,
+                Zekrom, Reshiram, and Haxorus.
+            </p>
+            <a href="/regions/unova.html">Explore Unova →</a>
+        </div>
+
+        <div class="card">
+            <h3>Kalos Region</h3>
+            <p>
+                Discover Kalos stars including Greninja, Talonflame,
+                Aegislash, Goodra, and Xerneas.
+            </p>
+            <a href="/regions/kalos.html">Explore Kalos →</a>
+        </div>
+
+        <div class="card">
+            <h3>Alola Region</h3>
+            <p>
+                Browse Alola Pokémon including Decidueye, Incineroar,
+                Primarina, Tapu Fini, Kartana, and Necrozma.
+            </p>
+            <a href="/regions/alola.html">Explore Alola →</a>
+        </div>
+
+        <div class="card">
+            <h3>Galar Region</h3>
+            <p>
+                Explore Galar Pokémon such as Dragapult, Corviknight,
+                Cinderace, Rillaboom, and Zacian.
+            </p>
+            <a href="/regions/galar.html">Explore Galar →</a>
+        </div>
+
+        <div class="card">
+            <h3>Paldea Region</h3>
+            <p>
+                Discover the newest Pokémon from Paldea, including
+                Meowscarada, Skeledirge, Quaquaval, and legendary Pokémon.
+            </p>
+            <a href="/regions/paldea.html">Explore Paldea →</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/pokedex/" class="btn">Explore Pokédex →</a>
+    </div>
 
 </section>
 
-<section class="mega-database">
-
-
-<div class="mega-header">
-
-
-<div class="mega-status">
-
-⚡ MEGA EVOLUTION DATABASE ONLINE
-
-</div>
-
-
-<h2>
-
-MEGA RAID DATABASE
-
-</h2>
-
+<section class="section">
+    <h2>Team GO Rocket Guides</h2>
 
 <p>
-
-Explore powerful Mega Pokémon, discover raid weaknesses,
-build your battle team, and access complete trainer guides.
-
+    Team GO Rocket leaders and Giovanni regularly change their Pokémon lineups,
+    making preparation essential for successful battles. Explore our detailed
+    guides featuring the latest lineups, best counters, battle strategies,
+    and Shadow Pokémon recommendations.
 </p>
 
+<div class="grid">
+
+    <div class="card">
+        <h3>Giovanni Guide</h3>
+        <p>
+            Learn Giovanni's current lineup, best counters, battle strategies,
+            and Shadow Legendary rewards. Prepare for one of Pokémon GO's
+            toughest battles.
+        </p>
+        <a href="/rocket/giovanni-guide.html">Read Guide →</a>
+    </div>
+
+    <div class="card">
+        <h3>Arlo Guide</h3>
+        <p>
+            Discover Arlo's latest team composition and the most effective
+            Pokémon to defeat him quickly and efficiently.
+        </p>
+        <a href="/rocket/arlo-guide.html">Read Guide →</a>
+    </div>
+
+    <div class="card">
+        <h3>Cliff Guide</h3>
+        <p>
+            Get up-to-date counters, lineup analysis, and battle tips to
+            overcome Cliff and claim valuable Shadow Pokémon rewards.
+        </p>
+        <a href="/rocket/cliff-guide.html">Read Guide →</a>
+    </div>
+
+    <div class="card">
+        <h3>Sierra Guide</h3>
+        <p>
+            Learn the best Pokémon and strategies for defeating Sierra's
+            current lineup and earning exclusive encounters.
+        </p>
+        <a href="/rocket/sierra-guide.html">Read Guide →</a>
+    </div>
+
+    <div class="card">
+        <h3>Best Shadow Pokémon</h3>
+        <p>
+            Explore rankings of the strongest Shadow Pokémon for raids,
+            PvP battles, Team GO Rocket encounters, and gym battles.
+        </p>
+        <a href="/rocket/best-shadow-pokemon.html">View Rankings →</a>
+    </div>
 
 </div>
+</section>
 
 
+<section class="section fade" style="max-width:1100px;margin:auto;text-align:center;">
+  <h2>Tips & Strategy</h2>
 
+  <p style="color:#9ca3af;line-height:1.8;margin-top:20px;">
+    Winning raids consistently requires smart gameplay, not just strong Pokémon. One key strategy is to build a balanced team with high DPS attackers rather than relying on a single powerful Pokémon.
 
-<!-- Filter Panel -->
+Dodging charged moves at the right time can help your team survive longer, especially in solo or duo raids. Weather conditions also play an important role, as they can boost both your attacks and the raid boss’s moves.
 
-
-<div class="mega-filter-panel">
-
-
-<button class="active">
-
-All Mega Raids
-
-</button>
-
-
-<button>
-
-Dragon
-
-</button>
-
-
-<button>
-
-Ghost
-
-</button>
-
-
-<button>
-
-Steel
-
-</button>
-
-
-<button>
-
-Electric
-
-</button>
-
-
-<button>
-
-Dark
-
-</button>
-
-
-</div>
-
-
-
-
-
-<!-- Mega Cards -->
-
-
-<div class="mega-grid-home">
-
-
-
-<!-- Lucario -->
-
-
-<div class="mega-card-home">
-
-
-<div class="mega-image">
-
-🥊
-
-</div>
-
-
-<div class="raid-tag">
-
-FIGHTING / STEEL
-
-</div>
-
-
-<h3>
-
-Mega Lucario
-
-</h3>
-
-
-<div class="difficulty">
-
-Difficulty:
-
-<span>
-
-⭐⭐⭐☆☆
-
-</span>
-
-</div>
-
-
-
-<div class="weakness-box">
-
-Weakness:
-
-<strong>
-
-Fire 🔥
-
-Ground 🌍
-
-Fighting 🥊
-
-</strong>
-
-</div>
-
-
-
-<div class="mega-energy">
-
-⚡ Mega Energy Available
-
-</div>
-
-
-
-<a href="/raids/mega_lucario.html">
-
-Open Raid Guide
-
-</a>
-
-
-
-</div>
-
-
-
-
-
-<!-- Gengar -->
-
-
-<div class="mega-card-home">
-
-
-<div class="mega-image">
-
-👻
-
-</div>
-
-
-<div class="raid-tag">
-
-GHOST / POISON
-
-</div>
-
-
-<h3>
-
-Mega Gengar
-
-</h3>
-
-
-<div class="difficulty">
-
-Difficulty:
-
-<span>
-
-⭐⭐⭐⭐☆
-
-</span>
-
-</div>
-
-
-
-<div class="weakness-box">
-
-Weakness:
-
-<strong>
-
-Ghost 👻
-
-Dark 🌑
-
-Psychic 🔮
-
-</strong>
-
-</div>
-
-
-
-<div class="mega-energy">
-
-⚡ Mega Energy Available
-
-</div>
-
-
-
-<a href="/raids/mega_gengar.html">
-
-Open Raid Guide
-
-</a>
-
-
-
-</div>
-
-
-
-
-
-
-<!-- Manectric -->
-
-
-<div class="mega-card-home">
-
-
-<div class="mega-image">
-
-⚡
-
-</div>
-
-
-<div class="raid-tag">
-
-ELECTRIC
-
-</div>
-
-
-<h3>
-
-Mega Manectric
-
-</h3>
-
-
-<div class="difficulty">
-
-Difficulty:
-
-<span>
-
-⭐⭐⭐☆☆
-
-</span>
-
-</div>
-
-
-
-<div class="weakness-box">
-
-Weakness:
-
-<strong>
-
-Ground 🌍
-
-</strong>
-
-</div>
-
-
-
-<div class="mega-energy">
-
-⚡ Mega Energy Available
-
-</div>
-
-
-
-<a href="/raids/mega_manectric.html">
-
-Open Raid Guide
-
-</a>
-
-
-
-</div>
-
-
-
-
-
-<!-- Ampharos -->
-
-
-<div class="mega-card-home">
-
-
-<div class="mega-image">
-
-🐑
-
-</div>
-
-
-<div class="raid-tag">
-
-ELECTRIC / DRAGON
-
-</div>
-
-
-<h3>
-
-Mega Ampharos
-
-</h3>
-
-
-<div class="difficulty">
-
-Difficulty:
-
-<span>
-
-⭐⭐⭐☆☆
-
-</span>
-
-</div>
-
-
-
-<div class="weakness-box">
-
-Weakness:
-
-<strong>
-
-Ground 🌍
-
-Ice ❄️
-
-Dragon 🐉
-
-</strong>
-
-</div>
-
-
-
-<div class="mega-energy">
-
-⚡ Mega Energy Available
-
-</div>
-
-
-
-<a href="/raids/mega_ampharos.html">
-
-Open Raid Guide
-
-</a>
-
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-<!-- Database Footer -->
-
-
-<div class="mega-database-footer">
-
-
-<div>
-
-📚 Total Guides
-
-<strong>
-
-50+
-
-</strong>
-
-</div>
-
-
-<div>
-
-⚡ Mega Pokémon
-
-<strong>
-
-40+
-
-</strong>
-
-</div>
-
-
-<div>
-
-🔄 Updated
-
-<strong>
-
-Daily
-
-</strong>
-
-</div>
-
-
-</div>
-
-
+Planning ahead and understanding the boss mechanics can make even difficult raids manageable.  </p>
 
 </section>
 
-<section class="counter-laboratory">
-
-
-<div class="lab-header">
-
-
-<div class="lab-status">
-
-🧪 BATTLE ANALYSIS SYSTEM ONLINE
-
-</div>
-
-
-<h2>
-
-RAID COUNTER LABORATORY
-
-</h2>
-
+<section class="section">
+    <h2>PvP Battle League</h2>
 
 <p>
-
-Analyze raid bosses, discover the strongest counters,
-and build the perfect battle team using advanced trainer data.
-
+    Master Pokémon GO Trainer Battles with our PvP guides, rankings, and team-building resources.
+    Whether you're competing in the Great League, Ultra League, or Master League,
+    our guides help you choose stronger teams, understand the meta, and improve
+    your win rate in the GO Battle League.
 </p>
 
+<div class="grid">
+
+    <div class="card">
+        <h3>Great League Rankings</h3>
+        <p>
+            Discover the strongest Pokémon for Great League battles, including
+            top meta picks, budget options, and recommended movesets.
+        </p>
+        <a href="/pvp/great-league-rankings.html">View Rankings →</a>
+    </div>
+
+    <div class="card">
+        <h3>Ultra League Rankings</h3>
+        <p>
+            Explore the best Pokémon for Ultra League and learn which teams
+            are performing well in the current PvP meta.
+        </p>
+        <a href="/pvp/ultra-league-rankings.html">View Rankings →</a>
+    </div>
+
+    <div class="card">
+        <h3>Master League Rankings</h3>
+        <p>
+            Find the strongest legendary, mythical, and fully powered Pokémon
+            dominating Master League battles.
+        </p>
+        <a href="/pvp/master-league-rankings.html">View Rankings →</a>
+    </div>
+
+    <div class="card">
+        <h3>Team Building Guides</h3>
+        <p>
+            Learn how to build balanced PvP teams, cover weaknesses, and create
+            effective strategies for every league.
+        </p>
+        <a href="/pvp/team-building-guides.html">Read Guides →</a>
+    </div>
+
+    <div class="card">
+        <h3>Move Update Analysis</h3>
+        <p>
+            Stay updated with move buffs, nerfs, and seasonal balance changes
+            that impact the GO Battle League meta.
+        </p>
+        <a href="/pvp/move-update-analysis.html">View Analysis →</a>
+    </div>
 
 </div>
 
-
-
-
-<!-- Boss Scanner -->
-
-
-<div class="boss-scanner-panel">
-
-
-<div class="scanner-title">
-
-🎯 Select Raid Boss
-
+<div style="text-align:center; margin-top:20px;">
+    <a href="/pvp/" class="btn">Visit PvP Hub →</a>
 </div>
-
-
-<select class="boss-selector">
-
-
-<option>
-
-Mega Manectric
-
-</option>
-
-
-<option>
-
-Mega Lucario
-
-</option>
-
-
-<option>
-
-Mega Gengar
-
-</option>
-
-
-<option>
-
-Mega Ampharos
-
-</option>
-
-
-<option>
-
-Rayquaza
-
-</option>
-
-
-</select>
-
-
-<button class="analyze-button">
-
-Analyze Weakness
-
-</button>
-
-
-
-</div>
-
-
-
-
-
-<!-- Weakness Analysis -->
-
-
-<div class="analysis-grid">
-
-
-
-<div class="analysis-card">
-
-
-<div class="analysis-icon">
-
-⚡
-
-</div>
-
-
-<h3>
-
-Raid Boss
-
-</h3>
-
-
-<p>
-
-Mega Manectric
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="analysis-card">
-
-
-<div class="analysis-icon">
-
-🎯
-
-</div>
-
-
-<h3>
-
-Weakness Detected
-
-</h3>
-
-
-<p>
-
-Ground Type
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="analysis-card">
-
-
-<div class="analysis-icon">
-
-☀️
-
-</div>
-
-
-<h3>
-
-Weather Boost
-
-</h3>
-
-
-<p>
-
-Sunny Weather
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<!-- Counter Ranking -->
-
-
-<div class="counter-ranking-panel">
-
-
-<h3>
-
-🏆 Top Counter Ranking
-
-</h3>
-
-
-
-<div class="counter-row">
-
-
-<div class="pokemon-counter">
-
-🌋 Primal Groudon
-
-</div>
-
-
-<div class="damage-bar">
-
-<div class="damage-fill one">
-
-</div>
-
-</div>
-
-
-<span>
-
-100%
-
-</span>
-
-
-</div>
-
-
-
-
-<div class="counter-row">
-
-
-<div class="pokemon-counter">
-
-🐉 Mega Garchomp
-
-</div>
-
-
-<div class="damage-bar">
-
-<div class="damage-fill two">
-
-</div>
-
-</div>
-
-
-<span>
-
-96%
-
-</span>
-
-
-</div>
-
-
-
-
-
-<div class="counter-row">
-
-
-<div class="pokemon-counter">
-
-🤖 Shadow Excadrill
-
-</div>
-
-
-<div class="damage-bar">
-
-<div class="damage-fill three">
-
-</div>
-
-</div>
-
-
-<span>
-
-91%
-
-</span>
-
-
-</div>
-
-
-
-
-<div class="counter-row">
-
-
-<div class="pokemon-counter">
-
-🦏 Rhyperior
-
-</div>
-
-
-<div class="damage-bar">
-
-<div class="damage-fill four">
-
-</div>
-
-</div>
-
-
-<span>
-
-85%
-
-</span>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-<!-- Team Builder -->
-
-
-<div class="team-builder-panel">
-
-
-<h3>
-
-⚔️ Build My Raid Team
-
-</h3>
-
-
-
-<div class="team-slots">
-
-
-<div>
-
-Slot 1
-
-<br>
-
-🌋
-
-</div>
-
-
-<div>
-
-Slot 2
-
-<br>
-
-🐉
-
-</div>
-
-
-<div>
-
-Slot 3
-
-<br>
-
-🤖
-
-</div>
-
-
-<div>
-
-Slot 4
-
-<br>
-
-🦏
-
-</div>
-
-
-<div>
-
-Slot 5
-
-<br>
-
-+
-
-</div>
-
-
-<div>
-
-Slot 6
-
-<br>
-
-+
-
-</div>
-
-
-</div>
-
-
-
-<a href="/tools/raid-counter-finder.html">
-
-Open Full Counter Tool
-
-</a>
-
-
-
-</div>
-
-
+</section>
+
+
+<section class="section" id="guides">
+  <h2>📘 Popular Guides</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Best Raid Attackers</h3>
+      <p><a href="guides/best_attackers.html">Top Raid Attackers.</a></p>
+    </div>
+    <div class="card">
+      <h3>Weather Boost Guide</h3>
+      <p><a href="guides/weather_boost.html">Weather Boost Chart.</a></p>
+    </div>
+    <div class="card">
+      <h3>Guides & Strategy Hub</h3>
+      <p><a href="guides/index.html">Pokémon GO Guides & Strategy Hub.</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section fade" style="max-width:1100px;margin:auto;text-align:center;">
+  <h2>Tips for Successful Raiding</h2>
+
+  <p style="color:#9ca3af;line-height:1.8;margin-top:20px;">
+    Always check the raid boss’s moveset before the battle so you can prepare the best counters and avoid dangerous attacks. Use weather-boosted Pokémon whenever possible because they deal extra damage and improve your raid performance. Coordinate with friends for high-level raids to maximize efficiency, complete battles faster, and save resources. Bring a mix of Meta, Budget, and Free-to-Play counters for flexibility in different raid situations. Learning type weaknesses and resistances is also important because it helps you avoid wasted damage and survive longer in battle.  </p>
 
 </section>
 
-<section class="pokedex-archive">
-
-
-<div class="pokedex-header">
-
-
-<div class="pokedex-status">
-
-📖 POKÉDEX DATABASE CONNECTED
-
-</div>
-
-
-<h2>
-
-POKÉDEX ARCHIVE
-
-</h2>
-
+<section class="section">
+    <h2>Shiny Pokémon Collection</h2>
 
 <p>
-
-Explore Pokémon from every region, discover evolution lines,
-types, abilities, and battle information inside the trainer database.
-
+    Build your ultimate shiny collection with our comprehensive shiny Pokémon guides.
+    Track shiny releases, discover rare shiny Pokémon, learn about event-exclusive
+    shinies, and find out which raid bosses currently have shiny variants available.
 </p>
 
+<div class="grid">
+
+    <div class="card">
+        <h3>Shiny Checklist</h3>
+        <p>
+            Keep track of your shiny collection with our complete Pokémon GO
+            shiny checklist covering every available shiny Pokémon.
+        </p>
+        <a href="/shinies/shiny-checklist.html">View Checklist →</a>
+    </div>
+
+    <div class="card">
+        <h3>Rarest Shinies</h3>
+        <p>
+            Discover some of the hardest-to-find shiny Pokémon in Pokémon GO,
+            including limited-time, regional, and event-exclusive shinies.
+        </p>
+        <a href="/shinies/rarest-shinies.html">Read Guide →</a>
+    </div>
+
+    <div class="card">
+        <h3>Event Shinies</h3>
+        <p>
+            Stay updated on shiny Pokémon featured during Community Days,
+            GO Fest events, seasonal celebrations, and special research events.
+        </p>
+        <a href="/shinies/event-shinies.html">View Event Shinies →</a>
+    </div>
+
+    <div class="card">
+        <h3>Mega Raid Shinies</h3>
+        <p>
+            Explore all Mega Raid bosses that can reward shiny encounters,
+            along with shiny hunting tips and raid recommendations.
+        </p>
+        <a href="/shinies/mega-raid-shinies.html">View Guide →</a>
+    </div>
 
 </div>
 
-
-
-
-
-<!-- Region Navigation -->
-
-
-<div class="region-terminal">
-
-
-<button class="active">
-
-Kanto
-
-</button>
-
-
-<button>
-
-Johto
-
-</button>
-
-
-<button>
-
-Hoenn
-
-</button>
-
-
-<button>
-
-Sinnoh
-
-</button>
-
-
-<button>
-
-Unova
-
-</button>
-
-
-<button>
-
-Kalos
-
-</button>
-
-
-<button>
-
-Alola
-
-</button>
-
-
-<button>
-
-Galar
-
-</button>
-
-
-<button>
-
-Paldea
-
-</button>
-
-
+<div style="text-align:center; margin-top:20px;">
+    <a href="/shinies/" class="btn">Visit Shiny Hub →</a>
 </div>
-
-
-
-
-
-<!-- Search -->
-
-
-<div class="pokedex-search">
-
-
-<input type="text" placeholder="Search Pokémon...">
-
-
-<button>
-
-🔍 Search
-
-</button>
-
-
-</div>
-
-
-
-
-
-<!-- Pokemon Cards -->
-
-
-<div class="pokemon-database-grid">
-
-
-
-<div class="pokemon-card-home">
-
-
-<div class="pokemon-number">
-
-#001
-
-</div>
-
-
-<div class="pokemon-image">
-
-🌱
-
-</div>
-
-
-<h3>
-
-Bulbasaur
-
-</h3>
-
-
-<div class="pokemon-type">
-
-Grass / Poison
-
-</div>
-
-
-<div class="pokemon-details">
-
-Height: 0.7m
-
-<br>
-
-Evolution: Ivysaur
-
-</div>
-
-
-<a href="/pokedex/bulbasaur.html">
-
-View Pokémon
-
-</a>
-
-
-</div>
-
-
-
-
-
-<div class="pokemon-card-home">
-
-
-<div class="pokemon-number">
-
-#025
-
-</div>
-
-
-<div class="pokemon-image">
-
-⚡
-
-</div>
-
-
-<h3>
-
-Pikachu
-
-</h3>
-
-
-<div class="pokemon-type">
-
-Electric
-
-</div>
-
-
-<div class="pokemon-details">
-
-Height: 0.4m
-
-<br>
-
-Evolution: Raichu
-
-</div>
-
-
-<a href="/pokedex/pikachu.html">
-
-View Pokémon
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-<div class="pokemon-card-home">
-
-
-<div class="pokemon-number">
-
-#150
-
-</div>
-
-
-<div class="pokemon-image">
-
-🧬
-
-</div>
-
-
-<h3>
-
-Mewtwo
-
-</h3>
-
-
-<div class="pokemon-type">
-
-Psychic
-
-</div>
-
-
-<div class="pokemon-details">
-
-Height: 2.0m
-
-<br>
-
-Legendary Pokémon
-
-</div>
-
-
-<a href="/pokedex/mewtwo.html">
-
-View Pokémon
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-<div class="pokemon-card-home">
-
-
-<div class="pokemon-number">
-
-#384
-
-</div>
-
-
-<div class="pokemon-image">
-
-🐉
-
-</div>
-
-
-<h3>
-
-Rayquaza
-
-</h3>
-
-
-<div class="pokemon-type">
-
-Dragon / Flying
-
-</div>
-
-
-<div class="pokemon-details">
-
-Height: 7.0m
-
-<br>
-
-Legendary Pokémon
-
-</div>
-
-
-<a href="/pokedex/rayquaza.html">
-
-View Pokémon
-
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<!-- Database Stats -->
-
-
-<div class="pokedex-stat-panel">
-
-
-<div>
-
-📚 Pokémon Entries
-
-<strong>
-
-1000+
-
-</strong>
-
-</div>
-
-
-<div>
-
-🌎 Regions
-
-<strong>
-
-9
-
-</strong>
-
-</div>
-
-
-<div>
-
-⚡ Types
-
-<strong>
-
-18
-
-</strong>
-
-</div>
-
-
-<div>
-
-🔄 Updated
-
-<strong>
-
-Daily
-
-</strong>
-
-</div>
-
-
-</div>
-
-
-
 
 </section>
 
-<section class="trainer-tools-hub">
-
-
-<div class="tools-header">
-
-
-<div class="tools-status">
-
-🛠️ TRAINER UTILITY SYSTEM ONLINE
-
-</div>
-
-
-<h2>
-
-TRAINER TOOLS HUB
-
-</h2>
-
-
-<p>
-
-Power up your Pokémon journey with calculators,
-battle analysis tools, evolution guides, and trainer utilities.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<!-- Tools Grid -->
-
-
-<div class="tools-grid-home">
-
-
-
-<div class="tool-card-home">
-
-
-<div class="tool-icon">
-
-⚔️
-
-</div>
-
-
-<h3>
-
-Raid Counter Finder
-
-</h3>
-
-
-<p>
-
-Find the best attackers against any raid boss.
-
-</p>
-
-
-<div class="tool-feature">
-
-AI Battle Analysis
-
-</div>
-
-
-<a href="/tools/raid-counter-finder.html">
-
-Open Tool
-
-</a>
-
-
-</div>
-
-
-
-
-
-<div class="tool-card-home">
-
-
-<div class="tool-icon">
-
-📊
-
-</div>
-
-
-<h3>
-
-CP Calculator
-
-</h3>
-
-
-<p>
-
-Calculate Pokémon CP after powering up.
-
-</p>
-
-
-<div class="tool-feature">
-
-Power-Up Prediction
-
-</div>
-
-
-<a href="/tools/cp-calculator.html">
-
-Open Tool
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-<div class="tool-card-home">
-
-
-<div class="tool-icon">
-
-🧬
-
-</div>
-
-
-<h3>
-
-IV Calculator
-
-</h3>
-
-
-<p>
-
-Check Pokémon attack, defense and stamina IVs.
-
-</p>
-
-
-<div class="tool-feature">
-
-Stat Analysis
-
-</div>
-
-
-<a href="/tools/iv-calculator.html">
-
-Open Tool
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="tool-card-home">
-
-
-<div class="tool-icon">
-
-🔥
-
-</div>
-
-
-<h3>
-
-Type Effectiveness
-
-</h3>
-
-
-<p>
-
-Discover strengths and weaknesses between types.
-
-</p>
-
-
-<div class="tool-feature">
-
-18 Type Database
-
-</div>
-
-
-<a href="/tools/type-chart.html">
-
-Open Tool
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="tool-card-home">
-
-
-<div class="tool-icon">
-
-🔄
-
-</div>
-
-
-<h3>
-
-Evolution Calculator
-
-</h3>
-
-
-<p>
-
-Find evolution requirements and candy costs.
-
-</p>
-
-
-<div class="tool-feature">
-
-Evolution Tracking
-
-</div>
-
-
-<a href="/tools/evolution-calculator.html">
-
-Open Tool
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="tool-card-home">
-
-
-<div class="tool-icon">
-
-🍬
-
-</div>
-
-
-<h3>
-
-Candy Calculator
-
-</h3>
-
-
-<p>
-
-Calculate walking distance and candy rewards.
-
-</p>
-
-
-<div class="tool-feature">
-
-Buddy Analysis
-
-</div>
-
-
-<a href="/tools/candy-calculator.html">
-
-Open Tool
-
-</a>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-<!-- Tool Terminal -->
-
-
-<div class="tool-terminal-panel">
-
-
-<h3>
-
-⚡ Trainer System Status
-
-</h3>
-
-
-
-<div class="tool-stats">
-
-
-<div>
-
-Available Tools
-
-<strong>
-
-25+
-
-</strong>
-
-</div>
-
-
-<div>
-
-Calculations Completed
-
-<strong>
-
-100K+
-
-</strong>
-
-</div>
-
-
-<div>
-
-Database Entries
-
-<strong>
-
-1000+
-
-</strong>
-
-</div>
-
-
-<div>
-
-System Status
-
-<strong>
-
-ONLINE
-
-</strong>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
+<section class="section">
+    <h2>Pokémon GO Tools</h2>
+
+    <p>
+        Make smarter decisions with our collection of Pokémon GO tools.
+        Calculate CP, check IVs, understand type matchups, plan evolutions,
+        and find the best counters for raid battles.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>CP Calculator</h3>
+            <p>
+                Estimate a Pokémon's Combat Power and understand how
+                powering up affects its battle performance.
+            </p>
+            <a href="/tools/cp-calculator.html">Open Tool →</a>
+        </div>
+
+        <div class="card">
+            <h3>IV Calculator</h3>
+            <p>
+                Check Individual Values (IVs) to determine your Pokémon's
+                potential and identify high-quality catches.
+            </p>
+            <a href="/tools/iv-calculator.html">Open Tool →</a>
+        </div>
+
+        <div class="card">
+            <h3>Type Effectiveness Tool</h3>
+            <p>
+                Quickly find strengths, weaknesses, resistances, and
+                vulnerabilities for every Pokémon type.
+            </p>
+            <a href="/tools/type-effectiveness.html">Open Tool →</a>
+        </div>
+
+        <div class="card">
+            <h3>Evolution Calculator</h3>
+            <p>
+                Calculate evolution requirements, Candy costs,
+                and future Pokémon forms before evolving.
+            </p>
+            <a href="/tools/evolution-calculator.html">Open Tool →</a>
+        </div>
+
+        <div class="card">
+            <h3>Raid Counter Finder</h3>
+            <p>
+                Discover the strongest counters against raid bosses
+                and build more effective battle teams.
+            </p>
+            <a href="/tools/raid-counter-finder.html">Open Tool →</a>
+        </div>
+
+        <div class="card">
+            <h3>XP Calculator</h3>
+            <p>
+                Estimate XP gains from friendships, raids,
+                catches, and Lucky Egg bonuses.
+            </p>
+            <a href="/tools/xp-calculator.html">Open Tool →</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/tools/" class="btn">Open Tools Hub →</a>
+    </div>
 </section>
 
-<section class="trainer-arcade">
-
-
-<div class="arcade-header">
-
-
-<div class="arcade-status">
-
-🎮 TRAINER ARCADE ONLINE
-
-</div>
-
-
-<h2>
-
-TRAINER ARCADE
-
-</h2>
-
-
-<p>
-
-Play Pokémon-inspired mini games, test your knowledge,
-challenge your memory, and become a better trainer.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<!-- Game Cards -->
-
-
-<div class="arcade-grid">
-
-
-
-<div class="game-card">
-
-
-<div class="game-icon">
-
-🧩
-
-</div>
-
-
-<h3>
-
-Pokémon Word Challenge
-
-</h3>
-
-
-<p>
-
-Guess Pokémon names using clues and hints.
-
-</p>
-
-
-<div class="game-info">
-
-Difficulty:
-
-⭐⭐⭐☆☆
-
-</div>
-
-
-<a href="/games/pokemon-wordle.html">
-
-PLAY NOW
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="game-card">
-
-
-<div class="game-icon">
-
-🔊
-
-</div>
-
-
-<h3>
-
-Guess Pokémon Cry
-
-</h3>
-
-
-<p>
-
-Identify Pokémon by their unique sounds.
-
-</p>
-
-
-<div class="game-info">
-
-Difficulty:
-
-⭐⭐⭐⭐☆
-
-</div>
-
-
-<a href="/games/pokemon-cry.html">
-
-PLAY NOW
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="game-card">
-
-
-<div class="game-icon">
-
-✨
-
-</div>
-
-
-<h3>
-
-Shiny Hunt Simulator
-
-</h3>
-
-
-<p>
-
-Experience the excitement of finding rare Pokémon.
-
-</p>
-
-
-<div class="game-info">
-
-Luck Mode:
-
-ACTIVE
-
-</div>
-
-
-<a href="/games/shiny-hunt.html">
-
-PLAY NOW
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="game-card">
-
-
-<div class="game-icon">
-
-🧠
-
-</div>
-
-
-<h3>
-
-Pokémon Memory Battle
-
-</h3>
-
-
-<p>
-
-Match Pokémon pairs and test your memory.
-
-</p>
-
-
-<div class="game-info">
-
-Rounds:
-
-10
-
-</div>
-
-
-<a href="/games/memory-match.html">
-
-PLAY NOW
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="game-card">
-
-
-<div class="game-icon">
-
-🎁
-
-</div>
-
-
-<h3>
-
-Poké Pack Opening
-
-</h3>
-
-
-<p>
-
-Open virtual packs and discover Pokémon cards.
-
-</p>
-
-
-<div class="game-info">
-
-Rare Chance:
-
-5%
-
-</div>
-
-
-<a href="/games/pack-opening.html">
-
-PLAY NOW
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="game-card">
-
-
-<div class="game-icon">
-
-🏆
-
-</div>
-
-
-<h3>
-
-Trainer League
-
-</h3>
-
-
-<p>
-
-Battle through tournaments and earn rankings.
-
-</p>
-
-
-<div class="game-info">
-
-Rank:
-
-Rookie
-
-</div>
-
-
-<a href="/games/trainer-league.html">
-
-PLAY NOW
-
-</a>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-<!-- Achievement Panel -->
-
-
-<div class="achievement-panel">
-
-
-<h3>
-
-🏆 Trainer Achievement System
-
-</h3>
-
-
-<div class="achievement-grid">
-
-
-<div>
-
-🥉
-
-<br>
-
-New Trainer
-
-</div>
-
-
-<div>
-
-🥈
-
-<br>
-
-Battle Expert
-
-</div>
-
-
-<div>
-
-🥇
-
-<br>
-
-Pokémon Master
-
-</div>
-
-
-<div>
-
-⭐
-
-<br>
-
-Arcade Champion
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
+<section class="section">
+    <h2>Pokémon Games & Challenges</h2>
+
+    <p>
+        Take a break from raids and battles with our collection of fun Pokémon games
+        and challenges. Test your Pokémon knowledge, improve your memory, and see
+        how well you know the Pokémon world through interactive quizzes and puzzles.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Pokémon Wordle</h3>
+            <p>
+                Guess the hidden Pokémon using clues based on typing,
+                generation, abilities, and more.
+            </p>
+            <a href="/games/pokemon-wordle.html">Play Game →</a>
+        </div>
+
+        <div class="card">
+            <h3>Guess the Pokémon</h3>
+            <p>
+                Identify Pokémon from silhouettes, images, descriptions,
+                or Pokédex clues.
+            </p>
+            <a href="/games/guess-the-pokemon.html">Play Game →</a>
+        </div>
+
+        <div class="card">
+            <h3>Guess the Pokémon Cry</h3>
+            <p>
+                Listen carefully and see if you can identify Pokémon
+                from their iconic cries.
+            </p>
+            <a href="/games/guess-the-pokemon-cry.html">Play Game →</a>
+        </div>
+
+        <div class="card">
+            <h3>Evolution Puzzle</h3>
+            <p>
+                Arrange Pokémon evolution chains correctly and test
+                your knowledge of Pokémon families.
+            </p>
+            <a href="/games/evolution-puzzle.html">Play Game →</a>
+        </div>
+
+        <div class="card">
+            <h3>Pokédex Completion Challenge</h3>
+            <p>
+                Track your Pokédex progress and challenge yourself
+                to complete regional and national collections.
+            </p>
+            <a href="/games/pokedex-completion-challenge.html">Play Challenge →</a>
+        </div>
+
+        <div class="card">
+            <h3>Memory Matching Game</h3>
+            <p>
+                Match Pokémon cards as quickly as possible and improve
+                your memory skills while having fun.
+            </p>
+            <a href="/games/pokemon-memory-game.html">Play Game →</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/games/" class="btn">Play All Games →</a>
+    </div>
+</section>
+```
+
+
+<section class="section">
+    <h2>Popular Guides</h2>
+
+    <p>
+        Discover some of our most popular Pokémon GO guides covering raids,
+        Mega Evolutions, Shadow Pokémon, gym battles, and resource farming.
+        Whether you're a new trainer or a veteran player, these guides can help
+        you improve your gameplay and progress faster.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Best Mega Evolutions</h3>
+            <p>
+                Compare the strongest Mega Pokémon for raids, gym battles,
+                and team support bonuses.
+            </p>
+            <a href="/guides/best-mega-evolutions.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Best Raid Attackers</h3>
+            <p>
+                Explore the top Pokémon for raids and learn which attackers
+                perform best against legendary and Mega Raid bosses.
+            </p>
+            <a href="/guides/best-raid-attackers.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Strongest Shadow Pokémon</h3>
+            <p>
+                Discover the most powerful Shadow Pokémon for raids, PvP,
+                and Team GO Rocket battles.
+            </p>
+            <a href="/guides/strongest-shadow-pokemon.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Best Gym Defenders</h3>
+            <p>
+                Find out which Pokémon are best suited for defending gyms
+                and slowing down attacking trainers.
+            </p>
+            <a href="/guides/best-gym-defenders.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>Stardust Farming Guide</h3>
+            <p>
+                Learn the most effective methods for earning Stardust through
+                catches, events, battles, and special bonuses.
+            </p>
+            <a href="/guides/stardust-farming-guide.html">Read Guide →</a>
+        </div>
+
+        <div class="card">
+            <h3>XP Grinding Guide</h3>
+            <p>
+                Level up faster with proven XP farming strategies, friendship
+                bonuses, lucky eggs, and event opportunities.
+            </p>
+            <a href="/guides/xp-grinding-guide.html">Read Guide →</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/guides/" class="btn">View All Guides →</a>
+    </div>
 </section>
 
-<section class="research-reports">
 
-
-<div class="research-header">
-
-
-<div class="research-status">
-
-📰 TRAINER RESEARCH NETWORK ACTIVE
-
-</div>
-
-
-<h2>
-
-RESEARCH REPORTS
-
-</h2>
-
-
-<p>
-
-Discover the latest Pokémon GO strategies,
-raid analysis, event updates, and trainer discoveries.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<!-- Featured Report -->
-
-
-<div class="featured-report">
-
-
-<div class="report-image">
-
-⚡
-
-</div>
-
-
-
-<div class="report-content">
-
-
-<div class="report-tag">
-
-FEATURED GUIDE
-
-</div>
-
-
-<h3>
-
-Mega Lucario Raid Complete Battle Analysis
-
-</h3>
-
-
-<p>
-
-Discover the best counters, weaknesses,
-moveset analysis, CP charts, and expert battle strategies.
-
-</p>
-
-
-<a href="/raids/mega_lucario.html">
-
-Read Full Report
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- Article Grid -->
-
-
-<div class="report-grid">
-
-
-
-<div class="report-card">
-
-
-<div class="report-icon">
-
-⚔️
-
-</div>
-
-
-<h3>
-
-Latest Raid Guides
-
-</h3>
-
-
-<p>
-
-Complete raid counters and battle strategies.
-
-</p>
-
-
-<a href="/raids/">
-
-Explore Raids
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="report-card">
-
-
-<div class="report-icon">
-
-⏳
-
-</div>
-
-
-<h3>
-
-Event Reports
-
-</h3>
-
-
-<p>
-
-Upcoming events, bonuses, and trainer updates.
-
-</p>
-
-
-<a href="/events/">
-
-View Events
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="report-card">
-
-
-<div class="report-icon">
-
-📊
-
-</div>
-
-
-<h3>
-
-Pokémon Analysis
-
-</h3>
-
-
-<p>
-
-Deep analysis of Pokémon performance and usage.
-
-</p>
-
-
-<a href="/analysis/">
-
-Read Analysis
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="report-card">
-
-
-<div class="report-icon">
-
-🔥
-
-</div>
-
-
-<h3>
-
-Trending Guides
-
-</h3>
-
-
-<p>
-
-Most viewed trainer resources this week.
-
-</p>
-
-
-<a href="/guides/">
-
-View Trending
-
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- Latest Articles -->
-
-
-<div class="latest-report-panel">
-
-
-<h3>
-
-📡 Latest Research Updates
-
-</h3>
-
-
-
-<div class="latest-row">
-
-
-<div>
-
-Mega Beedrill Raid Guide
-
-</div>
-
-
-<span>
-
-New
-
-</span>
-
-
-</div>
-
-
-
-
-<div class="latest-row">
-
-
-<div>
-
-Mega Houndoom Counter Analysis
-
-</div>
-
-
-<span>
-
-Updated
-
-</span>
-
-
-</div>
-
-
-
-
-<div class="latest-row">
-
-
-<div>
-
-Mega Gengar Battle Strategy
-
-</div>
-
-
-<span>
-
-Popular
-
-</span>
-
-
-</div>
-
-
-
-
-<div class="latest-row">
-
-
-<div>
-
-Mega Ampharos Complete Guide
-
-</div>
-
-
-<span>
-
-New
-
-</span>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
+<section class="section" id="news">
+  <h2>📰 Latest News</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>New Mega Raid Released</h3>
+      <p><a href="news/new_mega_raid_released.html">Check out the newest boss.</a></p>
+    </div>
+    <div class="card">
+      <h3>Community Day Update</h3>
+      <p><a href="news/upcoming_bonuses_revealed.html">Upcoming bonuses revealed.</a></p>
+    </div>
+  </div>
 </section>
+
+<section class="section" id="about">
+    <h2>About Pokémon Gaming</h2>
+
+    <p>
+        Pokémon Gaming is a community-driven resource dedicated to helping trainers
+        get the most out of their Pokémon GO adventures. Our goal is to provide
+        useful, easy-to-understand guides covering raids, events, Pokémon databases,
+        Team GO Rocket battles, PvP strategies, shiny hunting, and much more.
+    </p>
+
+    <p>
+        Whether you're a new trainer learning the basics or a seasoned player
+        looking for advanced raid counters and battle strategies, you'll find
+        content designed to support every stage of your journey. We regularly
+        update our guides to reflect the latest Pokémon GO events, raid rotations,
+        and game changes.
+    </p>
+
+    <p>
+        In addition to guides and news, we offer interactive tools, calculators,
+        challenges, and Pokémon-themed games to make learning and exploring
+        the world of Pokémon GO even more enjoyable.
+    </p>
+
+    <p>
+        Thank you for visiting Pokémon Gaming. We hope our guides, tools,
+        and resources help you become a stronger trainer and enjoy every
+        adventure along the way.
+    </p>
+
+    <p><strong>Happy hunting, Trainer!</strong> </p>
+</section>
+
+<!-- 728x90 Ad -->
+<div style="text-align:center; margin:20px 0;">
+<script>
+  atOptions = {
+    'key' : '8d41df8e84cff1ed8324de1c82591191',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/8d41df8e84cff1ed8324de1c82591191/invoke.js"></script>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025–2026 pokémongaming.in</p>
+      <p>
+       <a href="../terms-and-conditions.html">Terms & Conditions</a> |
+     <a href="../about-us.html">About</a> | 
+<a href="../copyright_page.html">Copyright</a> |
+              <a href="../contact-us.html">Contact</a> | 
+              <a href="../privacy-policy.html">Privacy Policy</a> |
+              <a href="../disclaimer.html">Disclaimer</a>
+
+    </p> 
+
+<p>Pokémon and all related content are © 1995–2026 Nintendo, Game Freak, and The Pokémon Company. This guide is created for educational and informational purposes to help Pokémon GO players understand raid mechanics and improve gameplay strategy. All trademarks and content belong to their respective owners and are used here for informational and educational purposes only. This website is not affiliated with or endorsed by Nintendo, Niantic, or The Pokémon Company.
+</p>
+</div>
+</footer>
+<script src="https://pl26325102.effectivecpmnetwork.com/62/8b/c1/628bc17080aadd318aa1decc35bf6e8b.js"></script>
+
 </body>
 </html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon GO Raid Guides 2026 – Counters, Strategy & Tips</title>
+  <meta name="description" content="Comprehensive Pokémon GO raid guides for 2026 – find counters, tiered strategies, CP ranges, and tips for every raid boss.">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header, footer { background: #4CAF50; color: white; padding: 20px; text-align: center; }
+    main { max-width: 1100px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+    h1, h2, h3 { color: #2E7D32; }
+    nav a { margin: 0 10px; color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .raid-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin: 10px 0; background: #f7f7f7; transition: transform 0.2s; }
+    .raid-card:hover { transform: scale(1.02); }
+    .raid-card h3 { margin-top: 0; }
+    .raid-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    p { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pokémon GO Raid Guides 2026</h1>
+  <nav>
+    <a href="/raids/megavictreebel.html">Mega Victreebel</a>
+    <a href="/raids/megadragonite.html">Mega Dragonite</a>
+    <a href="/raids/megapinsir.html">Mega Pinsir</a>
+    <a href="/raids/megamalamar.html">Mega Malamar</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Welcome to Our Pokémon GO Raid Guide Hub</h2>
+    <p>Looking to conquer Mega Raids in Pokémon GO? Our 2026 raid guides are fully updated, providing detailed counters, CP ranges, tiered strategies for both free and budget players, and tips to optimize your raid experience.</p>
+    <p>We focus on giving practical advice, explaining why each counter works, and how to handle different movesets and weather conditions.</p>
+  </section>
+
+  <section id="raid-guides">
+    <h2>Featured Raid Guides</h2>
+    <div class="raid-list">
+
+      <div class="raid-card" id="mega-victreebel">
+        <h3>Mega Victreebel</h3>
+        <p>Grass/Poison-type Mega Raid. Learn the best Meta, Budget, and Free player counters, plus strategies for handling Sludge Bomb and weather boosts.</p>
+        <a href="raids/megavictreebel.html">Read Full Guide →</a>
+      </div>
+
+      <div class="raid-card" id="mega-dragonite">
+        <h3>Mega Dragonite</h3>
+        <p>Dragon/Flying-type Mega Raid. Find optimal counters including Ice, Fairy, and Dragon-types, plus team compositions for solo and group raids.</p>
+        <a href="raids/megadragonite.html">Read Full Guide →</a>
+      </div>
+
+      <div class="raid-card" id="mega-pinsir">
+        <h3>Mega Pinsir</h3>
+        <p>Bug-type Mega Raid. Includes top counters, strategies for Charge Move timing, and tips for taking advantage of weather conditions.</p>
+        <a href="raids/megapinsir.html">Read Full Guide →</a>
+      </div>
+
+      <div class="raid-card" id="mega-malamar">
+        <h3>Mega Malamar</h3>
+        <p>Dark/Psychic-type Mega Raid. Learn the best counters for Meta and Budget players, plus strategies to handle dangerous charged moves efficiently.</p>
+        <a href="raids/megamalamar.html">Read Full Guide →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Tips for Successful Raiding</h2>
+    <ul>
+      <li>Always check the raid boss’s moveset before the battle.</li>
+      <li>Use weather-boosted Pokémon whenever possible for extra damage.</li>
+      <li>Coordinate with friends for high-level raids to maximize efficiency.</li>
+      <li>Bring a mix of Meta, Budget, and Free player counters for flexibility.</li>
+      <li>Learn type weaknesses and resistances to minimize wasted damage.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why Our Guides Are Different</h2>
+    <p>We don’t just list counters — we explain <strong>why each Pokémon works</strong>, which moves to prioritize, and how to approach the raid depending on your team and player level. Our guides are written to be practical, comprehensive, and easy to follow.</p>
+    <p>Each guide is regularly updated to reflect the latest game updates, Pokémon stats, and raid changes.</p>
+  </section>
+  
+  <section>
+  <h2>Pokémon GO Raid Guides, Counters & Strategies</h2>
+  <p>Welcome to your ultimate hub for Pokémon GO raid guides. Whether you're preparing for Mega Raids, Legendary battles, or PvP challenges, this site provides detailed strategies, counter lists, and gameplay insights to help you win efficiently.</p>
+  <a href="">👉 Explore Raid Guides</a>
+  </section>
+  
+  <section>
+  <h2>Introduction</h2>
+  <p>Pokémon GO raids are one of the most exciting and rewarding features in the game, but winning consistently requires more than just high CP Pokémon. Understanding type effectiveness, selecting the right counters, and adapting to weather conditions can significantly improve your success rate.
+
+This website is designed to provide complete raid guides that go beyond basic stats. Each guide includes detailed move analysis, PvP relevance, solo and team strategies, and real gameplay insights to help both beginners and advanced players.
+
+Whether you're looking to defeat a raid boss quickly, farm rare candy, or hunt shiny Pokémon, you’ll find everything you need here in a clear and structured format.</p>
+  </section>
+  
+  <section>
+  <h2>Featured Raid Guides</h2>
+  <p>Explore some of the most popular and powerful raid bosses currently available.</p>
+  <h3>Mega Aerodactyl</h3>
+  <p>High-speed Rock/Flying attacker with strong raid relevance. Learn best counters and weather strategies.</p>
+  <h3>Primal Kyogre</h3>
+  <p>One of the strongest Water-type raid bosses with powerful charged moves. Discover top Electric and Grass counters.</p>
+  <h3>Primal Groudon</h3>
+  <p>A dominant Ground-type legendary with massive attack power. Master the best strategies to defeat it efficiently.</p>
+  </section>
+  
+  <section>
+  <h2>4. LATEST / UPDATED GUIDES</h2>
+  <p>Stay updated with the latest raid bosses, newly added guides, and recently updated strategies. Pokémon GO frequently rotates raid bosses, so keeping up with current meta changes is essential.</p>
+  </section>
+  
+  <section>
+  <h2>5. CATEGORIES SECTION</h2>
+  <p>Browse guides based on different raid and gameplay categories.</p>
+  <h3>Categories with explanation:</h3>
+  <h4>Mega Raids</h4>
+  <p>Detailed guides for Mega Evolutions, including boost effects and candy advantages.</p>
+  <h4>Legendary Raids</h4>
+  <p>High-level strategies for defeating powerful legendary Pokémon.</p>
+  <h4>Shadow Raids</h4>
+  <p>Learn how to handle enraged mechanics and purified gems.</p>
+  <h4>PvP Guides</h4>
+  <p>Understand how raid Pokémon perform in battle leagues and cups.</p>
+  <h4>Beginner Guides</h4>
+  <p>Perfect starting point for new players learning raid mechanics.</p>
+  </section>
+  
+  <section>
+  <h2>6. HOW TO USE THIS SITE</h2>
+  <p>Each raid guide on this site is structured to give you complete information in one place. You’ll find move analysis, counter lists, CP charts, and strategies for different player levels.
+
+Start by checking the boss’s weaknesses, then review the best counters based on your available Pokémon. Finally, use the strategy section to optimize your team depending on whether you are raiding solo or with a group.</p>
+  </section>
+  
+  <section>
+  <h2>7. BEGINNER GUIDE SECTION</h2>
+  <p>If you're new to Pokémon GO raids, here are a few basics to get started:
+
+Raids are cooperative battles where players team up to defeat powerful bosses within a time limit. Each boss has specific weaknesses, and choosing the right Pokémon is key to victory.
+
+Using type advantages, dodging charged moves, and coordinating with other players can significantly improve your chances. Even beginners can win tough raids by using the right strategy.</p>
+  </section>
+  
+  <section>
+  <h2>8. TYPES & COUNTERS OVERVIEW</h2>
+  <p>Understanding Pokémon types is essential for winning raids. Each type has strengths and weaknesses that directly affect battle performance.
+
+For example, Water-types are weak against Electric and Grass moves, while Dragon-types are vulnerable to Ice and Fairy attacks. By selecting counters with the right type advantage, you can deal more damage and finish raids faster.</p>
+  </section>
+  
+  <section>
+  <h2>9. TIPS & STRATEGY SECTION</h2>
+  <p>Winning raids consistently requires smart gameplay, not just strong Pokémon. One key strategy is to build a balanced team with high DPS attackers rather than relying on a single powerful Pokémon.
+
+Dodging charged moves at the right time can help your team survive longer, especially in solo or duo raids. Weather conditions also play an important role, as they can boost both your attacks and the raid boss’s moves.
+
+Planning ahead and understanding the boss mechanics can make even difficult raids manageable.</p>
+  </section>
+  
+    <section>
+  <h2>10. ABOUT US</h2>
+  <p>This website was created to help Pokémon GO players access reliable, easy-to-understand raid guides in one place. The goal is to simplify complex battle mechanics and provide practical strategies that players can actually use.
+
+All guides are designed with real gameplay experience in mind, focusing on clarity, accuracy, and usefulness rather than just raw data.</p>
+  </section>
+  
+  <section>
+  <h2>11. FAQ SECTION</h2>
+  Q: Are these raid guides updated regularly?
+Yes, guides are updated based on current raid rotations and game changes.
+
+Q: Can I solo raid bosses using these guides?
+Some bosses can be soloed depending on your level and counters. Each guide includes difficulty and strategy details.
+
+Q: Do I need legendary Pokémon to win raids?
+No, many budget counters are effective when used correctly.
+
+Q: Are shiny Pokémon rates included?
+Yes, shiny comparisons and chances are discussed in relevant guides.
+  </section>
+  
+  <section>
+  <h2>12. INTERNAL LINKS / EXPLORE MORE</h2>
+  Explore more guides and improve your gameplay:
+
+Best raid counters
+PvP builds and strategies
+Mega evolution benefits
+Weather boost mechanics
+  </section>
+  
+</main>
+
+<footer>
+  <p>&copy; 2026 Pokémon Gaming Guides – All rights reserved.</p>
+</footer>
+
+</body>
+</html>-->

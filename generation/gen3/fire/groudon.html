@@ -1,0 +1,5548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Groudon Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses & Raids</title>
+
+    <meta name="description"
+          content="Complete Groudon Pokémon GO guide covering stats, max CP, Ground typing, weaknesses, resistances, best moves, raid performance, PvP, IVs, shiny Groudon, availability, Primal Reversion and more.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/groudon.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #8fa2ff;
+            --accent-2: #657cff;
+
+            --ground: #d6a743;
+            --water: #4e9dff;
+            --grass: #5dcf82;
+            --ice: #72d6dc;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(111, 130, 255, .11),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8, 11, 18, .92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding:
+                0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+            max-width: var(--max);
+            margin: auto;
+            padding: 35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(214,167,67,.16),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            color:
+                var(--ground);
+
+            background:
+                rgba(214,167,67,.08);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom:
+                12px;
+        }
+
+        .hero-subtitle {
+
+            max-width:
+                700px;
+
+            font-size:
+                1rem;
+
+            color:
+                #c2cad7;
+        }
+
+        .hero-tags {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                800;
+        }
+
+        .ground-tag {
+            color: var(--ground);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height:
+                300px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+        .hero-pokemon img {
+
+            width:
+                min(100%, 320px);
+
+            filter:
+                drop-shadow(
+                    0 25px 30px rgba(0,0,0,.45)
+                );
+        }
+
+        .pokemon-placeholder {
+
+            width:
+                260px;
+
+            height:
+                260px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(214,167,67,.20),
+                    transparent 65%
+                );
+
+            font-size:
+                7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                18px;
+        }
+
+        .quick-stat {
+
+            padding:
+                18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .quick-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                1.25rem;
+        }
+
+        .quick-stat span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                minmax(0, 1fr) 290px;
+
+            gap:
+                20px;
+
+            margin-top:
+                20px;
+        }
+
+
+        /* =====================================================
+           MAIN SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom:
+                20px;
+
+            padding:
+                28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+
+            margin-bottom:
+                20px;
+        }
+
+        .section-number {
+
+            display:
+                block;
+
+            margin-bottom:
+                6px;
+
+            color:
+                var(--accent);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem, 3vw, 2rem);
+
+            margin-bottom:
+                9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                10px;
+        }
+
+        .stat-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .64rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                .04em;
+        }
+
+        .stat-card strong {
+
+            display:
+                block;
+
+            margin-top:
+                4px;
+
+            font-size:
+                1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+
+            padding:
+                18px;
+
+            border:
+                1px solid rgba(214,167,67,.3);
+
+            background:
+                rgba(214,167,67,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width:
+                50px;
+
+            height:
+                50px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(214,167,67,.13);
+
+            font-size:
+                1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+            color:
+                var(--ground);
+
+            font-size:
+                .75rem;
+
+            font-weight:
+                850;
+        }
+
+
+        /* =====================================================
+           WEAKNESS GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                15px;
+        }
+
+        .effect-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-card .effect-icon {
+            font-size:
+                1.5rem;
+
+            margin-bottom:
+                6px;
+        }
+
+        .effect-card strong {
+            display:
+                block;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x:
+                auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align:
+                left;
+
+            font-size:
+                .76rem;
+        }
+
+        .data-table th {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .05em;
+        }
+
+        .move-name {
+            font-weight:
+                850;
+        }
+
+        .move-type {
+            color:
+                var(--ground);
+
+            font-weight:
+                800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top:
+                15px;
+
+            padding:
+                18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(214,167,67,.1),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(214,167,67,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        /* =====================================================
+           RAID RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap:
+                15px;
+
+            align-items:
+                center;
+
+            padding:
+                12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom:
+                0;
+        }
+
+        .rating-bar {
+
+            height:
+                8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius:
+                99px;
+
+            overflow:
+                hidden;
+        }
+
+        .rating-fill {
+
+            height:
+                100%;
+
+            width:
+                var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius:
+                inherit;
+        }
+
+        .rating-value {
+            text-align:
+                right;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding:
+                14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size:
+                .75rem;
+        }
+
+        .comparison-table th {
+            background:
+                var(--surface-2);
+
+            text-align:
+                left;
+        }
+
+
+        /* =====================================================
+           IV GRID
+        ===================================================== */
+
+        .iv-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                10px;
+
+            margin-top:
+                15px;
+        }
+
+        .iv-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .iv-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1.35rem;
+        }
+
+        .iv-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        /* =====================================================
+           FORM TREE
+        ===================================================== */
+
+        .form-tree {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                14px;
+
+            flex-wrap:
+                wrap;
+
+            margin:
+                20px 0;
+        }
+
+        .form-node {
+
+            padding:
+                16px 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .form-node strong {
+            display:
+                block;
+        }
+
+        .form-node span {
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+        .form-arrow {
+            color:
+                var(--accent);
+
+            font-size:
+                1.4rem;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                8px;
+
+            margin-top:
+                15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                9px;
+
+            color:
+                #c8cfda;
+
+            font-size:
+                .78rem;
+        }
+
+        .checklist li::before {
+
+            content:
+                "✓";
+
+            margin-right:
+                8px;
+
+            color:
+                var(--success);
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position:
+                sticky;
+
+            top:
+                88px;
+
+            align-self:
+                start;
+        }
+
+        .side-card {
+
+            margin-bottom:
+                15px;
+
+            padding:
+                20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size:
+                .9rem;
+        }
+
+        .side-nav {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                4px;
+        }
+
+        .side-nav a {
+
+            display:
+                block;
+
+            padding:
+                8px 10px;
+
+            border-radius:
+                7px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+
+            font-weight:
+                700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color:
+                white;
+        }
+
+        .related-link {
+
+            display:
+                block;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color:
+                var(--muted);
+
+            font-size:
+                .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom:
+                0;
+        }
+
+        .related-link:hover {
+            color:
+                var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom:
+                0;
+        }
+
+        summary {
+
+            cursor:
+                pointer;
+
+            font-weight:
+                850;
+
+            font-size:
+                .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size:
+                .78rem;
+        }
+
+
+        /* =====================================================
+           DISCLAIMER
+        ===================================================== */
+
+        .editorial-note {
+
+            padding:
+                17px;
+
+            margin-top:
+                20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        footer p {
+
+            margin:
+                0;
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .sidebar {
+                position:
+                    static;
+            }
+
+            .hero-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .hero-pokemon {
+                order:
+                    -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width: 650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding:
+                    20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .effect-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+                    gap: 6px;
+            }
+
+            .rating-value {
+                text-align:
+                    left;
+            }
+
+            .main-nav {
+                display:
+                    none;
+            }
+
+        }
+
+/* =========================================================
+   GROUDON FORM SYSTEM
+========================================================= */
+
+.groudon-form-section {
+    max-width: 1150px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-kicker {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 50px;
+    background: #f3e5d1;
+    color: #754a1d;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.form-header h2 {
+    margin: 12px 0;
+    font-size: clamp(32px, 5vw, 52px);
+}
+
+.form-header p {
+    max-width: 850px;
+    line-height: 1.8;
+    color: #5d5d5d;
+}
+
+
+/* CHARACTER CARD */
+
+.groudon-character-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 35px;
+    border-radius: 26px;
+    margin: 30px 0;
+    color: #fff;
+    box-shadow: 0 18px 50px rgba(0,0,0,.18);
+}
+
+.primal-card {
+    background:
+        linear-gradient(
+            135deg,
+            #301508,
+            #7b3712,
+            #c97827
+        );
+}
+
+.character-main {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.pokemon-number {
+    font-size: 18px;
+    font-weight: 900;
+    opacity: .65;
+}
+
+.character-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    opacity: .75;
+}
+
+.character-main h3 {
+    margin: 5px 0;
+    font-size: 40px;
+}
+
+.character-main p {
+    margin: 0 0 15px;
+    opacity: .85;
+}
+
+.character-role {
+    text-align: right;
+}
+
+.character-role span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    opacity: .7;
+}
+
+.character-role strong {
+    display: block;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.character-role small {
+    opacity: .75;
+}
+
+
+/* TYPE */
+
+.type-row {
+    display: flex;
+    gap: 10px;
+}
+
+.type-pill {
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.ground-type {
+    background: #9b7330;
+}
+
+.fire-type {
+    background: #b84a20;
+}
+
+
+/* INFO */
+
+.groudon-info-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.info-box {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.info-box span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.info-box strong {
+    font-size: 17px;
+}
+
+
+/* BLOCK */
+
+.guide-block {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    margin: 55px 0;
+}
+
+.block-number {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: #f0e2cf;
+    color: #704416;
+    font-weight: 900;
+}
+
+.guide-block h3 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.guide-block p {
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* TIP */
+
+.tip-box,
+.editorial-warning {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff7e8;
+    border-left: 4px solid #b96e24;
+}
+
+.tip-box strong,
+.editorial-warning strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tip-box span {
+    line-height: 1.7;
+}
+
+
+/* TYPE GRID */
+
+.type-large-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.large-type-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: #f7f7f7;
+}
+
+.large-type-card span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 38px;
+}
+
+.large-type-card strong {
+    display: block;
+    font-size: 22px;
+}
+
+.large-type-card small {
+    color: #777;
+}
+
+
+/* TABLE */
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.groudon-comparison {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+.groudon-comparison th,
+.groudon-comparison td {
+    padding: 16px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: left;
+}
+
+.groudon-comparison th {
+    background: #f4f4f4;
+}
+
+
+/* STATS */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 15px;
+}
+
+.stat-box {
+    padding: 25px;
+    border-radius: 18px;
+    background: #f7f7f7;
+}
+
+.stat-box span {
+    display: block;
+    font-size: 11px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.stat-box strong {
+    display: block;
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+
+/* WEAKNESSES */
+
+.weakness-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 18px;
+}
+
+.weakness-card {
+    padding: 25px;
+    border-radius: 20px;
+    background: #fff3ef;
+    border: 1px solid #ffd9d0;
+}
+
+.weakness-icon {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.weakness-card strong {
+    font-size: 20px;
+}
+
+
+/* RESISTANCE */
+
+.resistance-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 12px;
+}
+
+.resistance-grid div {
+    padding: 16px;
+    border-radius: 14px;
+    background: #f2f7f1;
+    font-weight: 700;
+}
+
+
+/* MOVES */
+
+.move-build {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    background: #f8f5ef;
+    border: 1px solid #e6d8c2;
+}
+
+.move-build-header span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.move-build-header strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+.move-slots {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.move-slot {
+    padding: 18px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.move-slot small {
+    display: block;
+    margin-bottom: 7px;
+    color: #777;
+}
+
+
+/* RAID */
+
+.raid-role-card {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    background: #f7f7f7;
+}
+
+.raid-role-card span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.raid-role-card strong {
+    display: block;
+    margin-top: 7px;
+    font-size: 19px;
+}
+
+
+/* ENERGY */
+
+.energy-panel,
+.availability-panel {
+    padding: 28px;
+    border-radius: 20px;
+    background: #fff8e9;
+    border: 1px solid #ead29d;
+}
+
+.energy-panel span,
+.availability-panel span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.energy-panel strong,
+.availability-panel strong {
+    display: block;
+    margin: 8px 0;
+    font-size: 24px;
+}
+
+
+/* BONUSES */
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 18px;
+}
+
+.bonus-card {
+    padding: 25px;
+    border-radius: 18px;
+    background: #f7f7f7;
+}
+
+.bonus-card span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.bonus-card strong {
+    display: block;
+    font-size: 18px;
+}
+
+
+/* IV */
+
+.iv-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.iv-card {
+    text-align: center;
+    padding: 25px;
+    border-radius: 18px;
+    background: #f5f5f5;
+}
+
+.iv-card strong {
+    display: block;
+    font-size: 30px;
+}
+
+.iv-card span {
+    color: #777;
+}
+
+
+/* SHINY */
+
+.shiny-primal-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    background: #fff8d9;
+}
+
+.shiny-symbol {
+    font-size: 42px;
+}
+
+.shiny-primal-card strong {
+    font-size: 20px;
+}
+
+
+/* INVESTMENT */
+
+.investment-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 18px;
+}
+
+.investment-card {
+    padding: 25px;
+    border-radius: 18px;
+    background: #f7f7f7;
+}
+
+.investment-card strong {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/* FAQ */
+
+.groudon-faq {
+    display: grid;
+    gap: 12px;
+}
+
+.groudon-faq details {
+    padding: 19px 20px;
+    border-radius: 14px;
+    background: #f7f7f7;
+}
+
+.groudon-faq summary {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.groudon-faq p {
+    margin-bottom: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .groudon-character-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .character-role {
+        text-align: left;
+    }
+
+    .groudon-info-grid,
+    .stat-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .resistance-grid,
+    .bonus-grid,
+    .investment-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .groudon-form-section {
+        padding: 0 14px;
+    }
+
+    .character-main {
+        align-items: flex-start;
+    }
+
+    .character-main h3 {
+        font-size: 30px;
+    }
+
+    .pokemon-number {
+        display: none;
+    }
+
+    .groudon-info-grid,
+    .stat-grid,
+    .type-large-grid,
+    .weakness-grid,
+    .move-slots,
+    .raid-role-card,
+    .resistance-grid,
+    .bonus-grid,
+    .investment-grid,
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guide-block {
+        grid-template-columns: 1fr;
+    }
+
+    .block-number {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="page">
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/ground.html">
+        Ground Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Groudon
+    </strong>
+
+</div>
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            
+
+            <h1>
+                Groudon
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Regular Groudon is a powerful Ground-type
+                Legendary Pokémon from the Hoenn region.
+                In Pokémon GO, it is best known for its
+                strong Ground-type raid performance and
+                its separate Primal Reversion form.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag ground-tag">
+                    Ground
+                </span>
+
+                <span class="tag">
+                    #383
+                </span>
+
+                <span class="tag">
+                    Legendary
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    No Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🦖
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            270
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            228
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            205
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~4,653
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon Overview
+        </h2>
+
+        <p>
+            Groudon is a Ground-type Legendary Pokémon
+            introduced in Generation 3. It does not evolve
+            through a normal evolution chain, but it can
+            undergo Primal Reversion into Primal Groudon.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#383</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 3</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Hoenn</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Ground</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>270</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>228</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>205</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>~4,653</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Groudon Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌎
+        </div>
+
+        <div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Groudon's Typing Matters
+    </h3>
+
+    <p>
+        Groudon's pure Ground typing gives it a clear
+        offensive identity. Ground-type attacks are
+        particularly useful against Pokémon vulnerable
+        to Ground damage, making Groudon a natural choice
+        for several raid matchups.
+    </p>
+
+</section>
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+                <h2>
+            Groudon Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks are super effective
+                against Ground-type Groudon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass-type attackers can exploit Groudon's
+                Ground typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attackers can also deal
+                super-effective damage.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Groudon has a strong matchup against
+                Electric-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Ground typing gives Groudon useful
+                resistance to Poison attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks are resisted by
+                Ground-type Pokémon.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        
+
+        <h2>
+            Groudon Attack, Defense & HP
+        </h2>
+
+        <p>
+            Groudon has a high Attack stat combined with
+            solid Defense and HP, giving it the stat profile
+            expected from a Legendary Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>270</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>228</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>205</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~4,653</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+            CP is calculated from Pokémon GO's underlying
+            stats, IVs and level. A Pokémon's displayed CP
+            should not be treated as an IV percentage.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon Best Moves
+        </h2>
+
+        <p>
+            Groudon's strongest Ground-focused moveset is
+            particularly important for raid performance.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Ground Raid Moveset
+        </strong>
+
+        <p>
+            Mud Shot + Precipice Blades
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                    <th>
+                        Use
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Mud Shot
+                    </td>
+
+                    <td class="move-type">
+                        Ground
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Ground PvE / PvP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Precipice Blades
+                    </td>
+
+                    <td class="move-type">
+                        Ground
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Premium Ground option
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can depend on events, Elite TMs
+        and Pokémon GO's current move availability. Always
+        verify the current moveset before publishing a
+        time-sensitive recommendation.
+
+    </div>
+
+</section>
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        
+
+        <h2>
+            Groudon Raid Tier
+        </h2>
+
+        <p>
+            Groudon is one of the important Ground-type
+            Legendary options for Pokémon GO PvE teams,
+            particularly when using its strongest Ground
+            moveset.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Ground Raids
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 95%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            9.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Electric Counters
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 96%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            9.6/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Rock Matchups
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 94%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            9.4/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Poison Matchups
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 94%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            9.4/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Groudon?
+    </h3>
+
+    <p>
+        Groudon is worth considering when you need a strong
+        Ground-type attacker and have a Groudon with a useful
+        moveset and sufficient resources for investment.
+    </p>
+
+</section>
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            What Counters Groudon?
+        </h2>
+
+        <p>
+            Groudon's Ground typing makes Water, Grass and
+            Ice attackers the primary counter categories.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water Attackers
+            </strong>
+
+            <p>
+                Powerful Water Pokémon can exploit Groudon's
+                Water weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass Attackers
+            </strong>
+
+            <p>
+                Strong Grass attackers are another effective
+                counter category.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice Attackers
+            </strong>
+
+            <p>
+                Ice attackers can also deal super-effective
+                damage.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Exact raid counters should be generated from the
+        current boss moveset, weather, available forms and
+        current Pokémon GO move data.
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     08 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon IV Guide
+        </h2>
+
+        <p>
+            Individual Values determine additional Attack,
+            Defense and HP points. For a traditional PvE
+            Groudon, 15/15/15 is the perfect IV combination.
+        </p>
+
+    </div>
+
+
+   <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Groudon
+    </h3>
+
+    <p>
+        A 15/15/15 Groudon is considered a perfect IV
+        specimen. However, lower-IV Groudon can still be
+        excellent raid attackers when powered up and given
+        the right moveset.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     09 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon PvP Guide
+        </h2>
+
+        <p>
+            Groudon's high stats and Ground typing can make
+            it particularly interesting in Master League
+            environments.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Groudon's high maximum CP allows it to compete in
+        the Master League environment. Its Ground typing
+        and charged-move pressure can make it useful against
+        certain opponents while requiring careful management
+        of its weaknesses.
+    </p>
+	
+	 <h3>
+        Great League & Ultra League
+    </h3>
+
+    <p>
+        Groudon's very high CP makes the lower leagues less
+        natural formats for a standard Groudon investment.
+        League-specific rules and CP limits should always
+        be checked before recommending a particular build.
+    </p>
+
+</section>
+
+<section class="section" id="shadow-groudon">
+
+    <div class="section-heading">
+
+        
+
+        <h2>
+            Shadow Groudon 
+        </h2>
+
+        <p>
+            Shadow Groudon is the Shadow variant of Groudon.
+            It should be evaluated separately from regular
+            Groudon because Shadow Pokémon have different
+            battle characteristics and resource requirements.
+        </p>
+
+    </div>
+
+
+    <!-- Shadow Character Card -->
+
+    <div class="best-move">
+
+        <strong>
+            Shadow Groudon
+        </strong>
+
+        <p>
+            A high-powered Ground-type Legendary build that
+            can be particularly attractive for players focused
+            on raid damage.
+        </p>
+
+    </div>
+
+
+    <!-- Shadow Quick Stats -->
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #383
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Ground
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+             Shadow
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                EVOLUTION
+            </span>
+
+            <strong>
+                None
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- Shadow Mechanics -->
+
+    <h3>
+        How Shadow Groudon Works
+    </h3>
+
+    <p>
+        Shadow Groudon uses the same underlying species and
+        Ground typing as regular Groudon, but Shadow Pokémon
+        have a different offensive and defensive battle
+        profile. This makes Shadow Groudon a separate
+        investment option rather than simply another cosmetic
+        version of the regular Pokémon.
+    </p>
+	
+	<h3>
+        Shadow Groudon vs Regular Groudon
+    </h3>
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Groudon
+                    </th>
+
+                    <th>
+                        Shadow Groudon
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Groudon
+                    </td>
+
+                    <td>
+                        Groudon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Higher offensive pressure /
+                        lower durability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Possible when eligible
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Investment
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        More resource-sensitive
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <!-- Shadow Type -->
+
+    <h3>
+        Shadow Groudon Type
+    </h3>
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌎
+        </div>
+
+        <div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <span>
+                Shadow Groudon remains a Ground-type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        The Shadow status does not change Groudon's basic
+        Pokémon typing. Its primary weaknesses therefore remain
+        associated with the Ground type.
+    </p>
+
+
+    <!-- Shadow Weaknesses -->
+
+    <h3>
+        Shadow Groudon Weaknesses
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water attacks are super effective against
+                Ground-type Groudon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks are also super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attackers can exploit Groudon's
+                Ground typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Shadow Moves -->
+
+    <h3>
+        Shadow Groudon Best Moves
+    </h3>
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Ground Raid Build
+        </strong>
+
+        <p>
+            Use the strongest currently available Ground-focused
+            moveset for the role you want Shadow Groudon to perform.
+            Move availability should be checked against current
+            Pokémon GO data before publication.
+        </p>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration warning:
+        </strong>
+
+        <p>
+            Newly obtained Shadow Pokémon can have Frustration.
+            Because move availability and Rocket-related events
+            can affect when Frustration can be replaced, check
+            the current Pokémon GO event rules before using
+            Charged TMs on a Shadow Groudon.
+        </p>
+
+    </div>
+	
+	 <h3>
+        Shadow Groudon for Raids
+    </h3>
+
+    <p>
+        Shadow Groudon is particularly interesting for players
+        who prioritize damage output. The Shadow mechanic gives
+        it a different offensive profile from regular Groudon,
+        although the trade-off is reduced durability.
+    </p>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 96%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 70%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Lower
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Ground Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 95%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <p>
+        The exact ranking of Shadow Groudon compared with other
+        Ground attackers can change as Pokémon GO introduces
+        new moves, forms and Pokémon.
+    </p>
+
+
+    <!-- Shadow IV -->
+
+    <h3>
+        Shadow Groudon IV Guide
+    </h3>
+
+    <p>
+        Shadow Pokémon should not automatically be discarded
+        because they do not have perfect IVs. Their Shadow
+        battle characteristics can make a strong specimen useful
+        even when its IVs are not 15/15/15.
+    </p>
+
+
+   <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        A 15/15/15 Shadow Groudon is a perfect-IV Shadow
+        specimen, but IV perfection is not the only factor
+        that determines whether a Shadow Groudon is worth
+        powering up.
+    </p>
+
+
+    <!-- Purification -->
+
+    <h3>
+        Shadow Groudon vs Purified Groudon
+    </h3>
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow battle bonus
+                    </td>
+
+                    <td>
+                        Retained
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        Can be relevant
+                    </td>
+
+                    <td>
+                        Removed through purification
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Investment goal
+                    </td>
+
+                    <td>
+                        Damage-focused builds
+                    </td>
+
+                    <td>
+                        Standard/purified builds
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Think before purifying:
+        </strong>
+
+        <p>
+            Purification is not simply an upgrade button. If
+            your goal is maximum Shadow raid performance,
+            compare the Shadow build with the purified result
+            before committing to purification.
+        </p>
+
+    </div>
+
+
+    <!-- Shadow Investment -->
+
+    <h3>
+        Should You Power Up Shadow Groudon?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep a Shadow Groudon with strong overall IVs.
+        </li>
+
+        <li>
+            Check whether its Charged Move setup is suitable.
+        </li>
+
+        <li>
+            Consider the cost of Shadow power-ups.
+        </li>
+
+        <li>
+            Compare its raid performance with your existing
+            Ground attackers.
+        </li>
+
+        <li>
+            Do not purify automatically just to increase its IVs.
+        </li>
+
+        <li>
+            Consider keeping multiple Groudon builds if you
+            participate heavily in raids.
+        </li>
+
+    </ul>
+
+
+    <!-- Availability -->
+
+    <h3>
+        Shadow Groudon Availability
+    </h3>
+
+    <p>
+        Shadow Legendary availability is controlled by Pokémon
+        GO's Team GO Rocket storylines, events and related
+        rotations. Availability should therefore be displayed
+        dynamically rather than permanently claiming that
+        Shadow Groudon is currently obtainable.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Team GO Rocket and Shadow
+            Legendary schedule before planning a Shadow
+            Groudon hunt.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" id="primal-reversion">
+
+    <div class="section-heading">
+
+        <span class="form-kicker">
+            SPECIAL FORM
+        </span>
+
+        <h2>
+            Primal Groudon
+        </h2>
+
+        <p>
+            Primal Reversion is Groudon's temporary transformation
+            into its ancient, empowered form. In Pokémon GO,
+            Primal Groudon is one of the most powerful options for
+            Ground-focused raid teams and also provides useful
+            bonuses while active.
+        </p>
+
+    </div>
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+
+            <span>Species</span>
+
+            <strong>
+                Groudon
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Pokédex</span>
+
+            <strong>
+                #383
+            </strong>
+
+        </div>
+
+
+
+         <div class="stat-card">
+
+            <span>Form</span>
+
+            <strong>
+                Primal
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Typing</span>
+
+            <strong>
+                Ground / Fire
+            </strong>
+
+        </div>
+
+    </div>
+
+
+      <h3>
+                What Is Primal Reversion?
+            </h3>
+
+            <p>
+                Primal Reversion is a special transformation
+                available to Groudon. Instead of permanently
+                evolving into a new Pokémon, Groudon temporarily
+                enters its Primal form.
+            </p>
+
+            <p>
+                When Primal Reversion is active, Groudon gains
+                the characteristics and gameplay benefits
+                associated with Primal Groudon.
+            </p>
+
+            <div class="type-box">
+
+                <strong>
+                    Important:
+                </strong>
+
+                <span>
+                    Primal Reversion should not be treated as a
+                    normal evolution. Your underlying Pokémon
+                    remains Groudon.
+                </span>
+
+            </div>
+                    
+              <h3>
+                Primal Groudon Type
+            </h3>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <span>
+                        🌎
+                    </span>
+
+                    <strong>
+                        Ground
+                    </strong>
+
+                    <small>
+                        Primary Type
+                    </small>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span>
+                        🔥
+                    </span>
+
+                    <strong>
+                        Fire
+                    </strong>
+
+                    <small>
+                        Secondary Type
+                    </small>
+
+                </div>
+
+            </div>
+
+            <p>
+                Unlike standard Groudon, which is a pure Ground
+                type, Primal Groudon is a Ground / Fire type.
+                This change is important when evaluating its
+                weaknesses and resistances.
+            </p>
+
+            <h3>
+                Groudon Forms Compared
+            </h3>
+
+               <div class="table-wrap">
+
+        <table class="comparison-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Feature
+                            </th>
+
+                            <th>
+                                Regular
+                            </th>
+
+                            <th>
+                                Shadow
+                            </th>
+
+                            <th>
+                                Primal
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Species
+                            </td>
+
+                            <td>
+                                Groudon
+                            </td>
+
+                            <td>
+                                Groudon
+                            </td>
+
+                            <td>
+                                Groudon
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Type
+                            </td>
+
+                            <td>
+                                Ground
+                            </td>
+
+                            <td>
+							Ground
+                            </td>
+
+                            <td>
+                                Ground / Fire
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Shadow Bonus
+                            </td>
+
+                            <td>
+                                No
+                            </td>
+
+                            <td>
+                                Yes
+                            </td>
+
+                            <td>
+                                Not applicable
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Primal Reversion
+                            </td>
+							
+							 <td>
+                                No
+                            </td>
+
+                            <td>
+                                Special-case mechanics
+                            </td>
+
+                            <td>
+                                Yes
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                Temporary Form
+                            </td>
+
+                            <td>
+                                No
+                            </td>
+
+                            <td>
+                                No
+                            </td>
+
+                            <td>
+                                Yes
+                            </td>
+
+                        </tr>
+						
+						 <tr>
+
+                            <td>
+                                Raid Role
+                            </td>
+
+                            <td>
+                                Ground attacker
+                            </td>
+
+                            <td>
+                                Damage-focused option
+                            </td>
+
+                            <td>
+                                Elite Ground option
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+			
+		
+			
+			<h3>
+                Primal Groudon Stats
+            </h3>
+
+            <p>
+                Primal Groudon has an exceptionally strong
+                offensive and defensive profile. For your live
+                database, keep these numerical values connected
+                to your current Pokémon GO data source rather
+                than hard-coding values that may become outdated.
+            </p>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <span>
+                        Attack
+                    </span>
+
+                    <strong>
+                        Elite
+                    </strong>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span>
+                        Defense
+                    </span>
+
+                    <strong>
+                        Elite
+                    </strong>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span>
+                        HP
+                    </span>
+
+                    <strong>
+                        High
+                    </strong>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span>
+                        Max CP
+                    </span>
+
+                    <strong>
+                        Dynamic
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <h3>
+                Primal Groudon Weaknesses
+            </h3>
+
+            <p>
+                Primal Groudon's Ground / Fire typing gives it
+                a different weakness profile from regular Groudon.
+            </p>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <span class="weakness-icon">
+                        💧
+                    </span>
+
+                    <strong>
+                        Water
+                    </strong>
+
+                    <p>
+                        Water-type attacks are super effective.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span class="weakness-icon">
+                        🌎
+                    </span>
+
+                    <strong>
+                        Ground
+                    </strong>
+
+                    <p>
+                        Ground-type attacks are super effective.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <h3>
+                Primal Groudon Resistances
+            </h3>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                <div>
+                    🔥 Fire
+                </div>
+
+                <div>
+                    ⚡ Electric
+                </div>
+
+                <div>
+                    🐞 Bug
+                </div>
+
+                <div>
+                    🧪 Poison
+                </div>
+
+                <div>
+                    🪨 Rock
+                </div>
+
+                <div>
+                    🧚 Fairy
+                </div>
+
+            </div>
+			</div>
+
+  
+
+             <h3>
+                Primal Groudon Best Moves
+            </h3>
+
+            <p>
+                For raid use, choose the Ground-focused moveset
+                when you want Primal Groudon to fill a Ground
+                attacker role. A Fire-oriented moveset can be
+                considered for matchups where Fire damage is
+                preferred.
+            </p>
+
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <span>
+                        RECOMMENDED RAID ROLE
+                    </span>
+
+                    <strong>
+                        Ground Attacker
+                    </strong>
+
+                </div>
+
+                <div class="effect-grid">
+
+        <div class="effect-card">
+
+                        <small>
+                            FAST MOVE
+                        </small>
+
+                        <strong>
+                            Current Ground Fast Move
+                        </strong>
+
+                    </div>
+
+ <div class="effect-card">
+
+                        <small>
+                            CHARGED MOVE
+                        </small>
+
+                        <strong>
+                            Current Ground Charged Move
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+  
+
+             <h3>
+                Primal Groudon Raid Performance
+            </h3>
+
+            <p>
+                Primal Groudon is particularly valuable in raids
+                where Ground-type damage is effective. It combines
+                high offensive power with strong durability and
+                can also provide additional team utility through
+                its Primal status.
+            </p>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+		
+		 <div>
+
+                    <span>
+                        PRIMARY ROLE
+                    </span>
+
+                    <strong>
+                        Ground-Type Raid Attacker
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        BEST USE
+                    </span>
+
+                    <strong>
+                        High-level raids
+                    </strong>
+
+                </div>
+				</div>
+
+            </div>
+			
+			 <h3>
+                Primal Energy
+            </h3>
+
+            <p>
+                Primal Energy is used to activate Primal Reversion.
+                Players can acquire Primal Energy through
+                eligible Pokémon GO activities and events.
+            </p>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                <span>
+                    RESOURCE
+                </span>
+
+                <strong>
+                    Primal Energy
+                </strong>
+
+                <p>
+                    The exact amount required and available
+                    acquisition methods should be displayed from
+                    your current game data.
+                </p>
+
+            </div>
+			</div>
+			
+			 <h3>
+                Primal Groudon Bonuses
+            </h3>
+
+            <p>
+                Primal Reversion provides more than a visual
+                transformation. Primal Pokémon can provide
+                gameplay benefits while the Primal form is active.
+            </p>
+
+           <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <span>
+                        ⚔️
+                    </span>
+
+                    <strong>
+                        Raid Utility
+                    </strong>
+
+                    <p>
+                        Primal Groudon can strengthen appropriate
+                        raid teams.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span>
+                        🍬
+                    </span>
+
+                    <strong>
+                        Candy Benefits
+                    </strong>
+					
+					 <p>
+                        Primal activity can provide useful
+                        Candy-related bonuses.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <span>
+                        ⭐
+                    </span>
+
+                    <strong>
+                        Adventure Benefits
+                    </strong>
+
+                    <p>
+                        Additional bonuses can apply while the
+                        Primal Pokémon is active.
+                    </p>
+
+                </div>
+
+            </div>
+
+  <h3>
+                Primal Groudon IV Guide
+            </h3>
+
+            <p>
+                Primal Groudon's IVs are inherited from the
+                Groudon being used for Primal Reversion.
+                Therefore, choose the Groudon you want to
+                invest in carefully.
+            </p>
+
+           <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <strong>
+                        15
+                    </strong>
+
+                    <span>
+                        Attack IV
+                    </span>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <strong>
+                        15
+                    </strong>
+
+                    <span>
+                        Defense IV
+                    </span>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <strong>
+                        15
+                    </strong>
+
+                    <span>
+                        HP IV
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+                A perfect 15/15/15 Groudon is an excellent
+                collector and investment target, but a non-perfect
+                Groudon can still be extremely effective.
+            </p>
+
+  
+
+            <h3>
+                Shiny Primal Groudon
+            </h3>
+
+           <div class="effect-grid">
+
+        <div class="effect-card">
+
+                <span class="shiny-symbol">
+                    ✨
+                </span>
+
+                <div>
+
+                    <strong>
+                        Shiny Primal Groudon
+                    </strong>
+
+                    <p>
+                        A Shiny Groudon can retain its Shiny
+                        identity when used for Primal Reversion.
+                    </p>
+
+                </div>
+				
+				</div>
+
+            </div>
+
+            <p>
+                For collectors, a Shiny Groudon with strong IVs
+                can therefore be an especially valuable candidate
+                for Primal Reversion.
+            </p>
+
+    
+
+            <h3>
+                Should You Invest in Primal Groudon?
+            </h3>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                    <strong>
+                        RAIDERS
+                    </strong>
+
+                    <p>
+                        Excellent long-term target for players
+                        who regularly build optimized raid teams.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <strong>
+                        COLLECTORS
+                    </strong>
+
+                    <p>
+                        An important special form for a complete
+                        Groudon collection.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <strong>
+                        CASUAL PLAYERS
+                    </strong>
+
+                    <p>
+                        Prioritize your strongest Groudon and
+                        manage Primal Energy carefully.
+                    </p>
+
+                </div>
+
+            </div>
+
+              <h3>
+                Primal Groudon Availability
+            </h3>
+
+            <p>
+                Primal Groudon availability is connected to
+                Pokémon GO events, Primal Raids and the game's
+                current rotation. Avoid presenting an old event
+                date as permanent availability.
+            </p>
+
+            <div class="effect-grid">
+
+        <div class="effect-card">
+
+                <span>
+                    CURRENT STATUS
+                </span>
+
+                <strong>
+                    Update with Live Game Data
+                </strong>
+
+                <p>
+                    This field should be updated whenever Niantic
+                    changes Primal Groudon availability.
+                </p>
+
+            </div>
+			
+			</div>
+         
+</section>
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon Evolution & Primal Reversion
+        </h2>
+
+    </div>
+
+
+    <p>
+        Groudon does not have a normal evolutionary chain.
+        Instead, Pokémon GO can feature Groudon's separate
+        Primal Reversion form.
+    </p>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Groudon
+            </strong>
+
+            <span>
+                Regular Form
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Primal Groudon
+            </strong>
+
+            <span>
+                Primal Reversion
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Shiny Groudon
+        </h2>
+
+    </div>
+
+
+    <p>
+        Shiny Groudon is available in Pokémon GO through
+        eligible Groudon encounters. Its coloration differs
+        noticeably from the standard Groudon appearance.
+    </p>
+
+
+    <div class="comparison-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Form
+                    </th>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        Appearance
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Groudon
+                    </td>
+
+                    <td>
+                        Available
+                    </td>
+
+                    <td>
+                        Standard coloration
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Groudon
+                    </td>
+
+                    <td>
+                        Available
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Shadow, Shiny &amp; Primal Reversion
+        </h2>
+
+    </div>
+
+    <ul class="section-links">
+
+        <li>
+            <a href="#forms">
+                Primal Reversion
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow-groudon">
+                Shadow Groudon
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Groudon
+            </a>
+        </li>
+
+        <li>
+            <a href="#special-forms">
+                Other Special Forms
+            </a>
+        </li>
+
+    </ul>
+
+    <p>
+        Special-form information should be updated whenever
+        Pokémon GO introduces or changes a relevant mechanic.
+    </p>
+
+</section>
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+        Building a high-level Legendary attacker requires
+        more than simply catching one Pokémon. Candy, Candy XL
+        and Stardust all become important when pushing Groudon
+        toward higher levels.
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Candy for meaningful power-up projects.
+        </li>
+
+        <li>
+            Collect Candy XL for high-level investment.
+        </li>
+
+        <li>
+            Check the moveset before spending Elite resources.
+        </li>
+
+        <li>
+            Compare Groudon with other Ground attackers.
+        </li>
+
+        <li>
+            Keep high-IV specimens for long-term projects.
+        </li>
+
+    </ul>
+
+</section>
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        
+
+        <h2>
+            Groudon Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+        Groudon is a Legendary Pokémon and its availability
+        is controlled by Pokémon GO's event and raid rotation
+        system.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Availability Status
+        </strong>
+
+        <p>
+            Check the current Pokémon GO Legendary Raid and
+            event schedule before planning a Groudon hunt.
+        </p>
+
+    </div>
+
+
+    <p>
+        Historical appearances should be documented separately
+        from current availability so that older event information
+        does not accidentally appear to be a current encounter
+        method.
+    </p>
+
+</section>
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            How to Use Groudon
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the raid boss's weaknesses.
+        </li>
+
+        <li>
+            Confirm Groudon has the appropriate moveset.
+        </li>
+
+        <li>
+            Check Groudon's level and IVs.
+        </li>
+
+        <li>
+            Consider weather and team composition.
+        </li>
+
+        <li>
+            Compare it with your other Ground attackers.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        During Team Building
+    </h3>
+
+    <p>
+        Groudon should not automatically occupy every Ground
+        slot in a raid team. Compare its damage, survivability,
+        move timing and available alternatives for the specific
+        boss.
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+        A strong Groudon can remain useful for a long time,
+        particularly if you regularly participate in raids
+        where Ground attacks are valuable.
+    </p>
+
+</section>
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+    
+
+        <h2>
+            Regular Groudon vs Primal Groudon
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Groudon
+                    </th>
+
+                    <th>
+                        Primal Groudon
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Form
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Primal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Normal Evolution
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Transformation
+                    </td>
+
+                    <td>
+                        —
+                    </td>
+
+                    <td>
+                        Primal Reversion
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Primary Role
+                    </td>
+
+                    <td>
+                        Ground attacker
+                    </td>
+
+                    <td>
+                        Enhanced special form
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Separate Guide
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+       
+
+        <h2>
+            Groudon FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            Is Groudon a Legendary Pokémon?
+        </summary>
+
+        <p>
+            Yes. Groudon is a Legendary Pokémon originally
+            introduced in Generation 3.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Groudon?
+        </summary>
+
+        <p>
+            Regular Groudon is a pure Ground-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Groudon weak to?
+        </summary>
+
+        <p>
+            Groudon is weak to Water, Grass and Ice attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Groudon evolve?
+        </summary>
+
+        <p>
+            Groudon does not have a normal evolution. It can
+            instead undergo Primal Reversion into Primal Groudon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Groudon available?
+        </summary>
+
+        <p>
+            Yes. Shiny Groudon can be obtained through eligible
+            Pokémon GO encounters.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Groudon good for raids?
+        </summary>
+
+        <p>
+            Groudon can be an excellent Ground-type raid
+            attacker when equipped with an appropriate
+            Ground-focused moveset.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Groudon good in Master League?
+        </summary>
+
+        <p>
+            Groudon can have significant Master League relevance,
+            although its effectiveness depends on moveset,
+            IVs, shields and the current metagame.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Primal Groudon the same as regular Groudon?
+        </summary>
+
+        <p>
+            No. Primal Groudon is a separate special form and
+            should have its own stats, mechanics and guide.
+        </p>
+
+    </details>
+	
+	 <details>
+
+        <summary>
+            Is Shadow Groudon Ground type?
+        </summary>
+
+        <p>
+            Yes. Shadow Groudon retains Groudon's Ground typing.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Groudon stronger than regular Groudon?
+        </summary>
+
+        <p>
+            Shadow Pokémon have increased offensive pressure
+            but reduced defensive durability. Whether Shadow
+            Groudon is the better choice depends on the specific
+            battle and investment goal.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Groudon?
+        </summary>
+
+        <p>
+            Not automatically. Compare the Shadow and purified
+            versions before making the decision, especially if
+            your goal is raid damage.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Groudon good for raids?
+        </summary>
+
+        <p>
+            Shadow Groudon can be a strong raid option when
+            equipped with an appropriate Ground-focused moveset,
+            particularly for players prioritizing damage.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Groudon become Primal Groudon?
+        </summary>
+
+        <p>
+            Primal Reversion mechanics should be checked against
+            the current Pokémon GO rules because special-form
+            interactions can differ from the standard Pokémon
+            game mechanics.
+        </p>
+
+    </details>
+	
+	<details>
+
+                    <summary>
+                        What is Primal Groudon?
+                    </summary>
+
+                    <p>
+                        Primal Groudon is Groudon's temporary
+                        Primal Reversion form.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What type is Primal Groudon?
+                    </summary>
+
+                    <p>
+                        Primal Groudon is Ground / Fire type.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Is Primal Groudon good for raids?
+                    </summary>
+
+                    <p>
+                        Yes. It is an extremely strong option for
+                        Ground-focused raid teams.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Does Primal Reversion permanently evolve Groudon?
+                    </summary>
+
+                    <p>
+                        No. Primal Reversion is a temporary form
+                        rather than a conventional permanent
+                        evolution.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Can Shiny Groudon become Primal Groudon?
+                    </summary>
+
+                    <p>
+                        Yes. A Shiny Groudon can retain its Shiny
+                        appearance through Primal Reversion.
+                    </p>
+
+                </details>
+
+</section>
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & data note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Game mechanics, moves,
+            availability, raid rotations and other live data
+            can change over time. Verify current in-game
+            information before making investment decisions.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+        </p>
+
+    </div>
+
+</section>
+</div>
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Groudon Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+             <a href="overview">
+        Groudon Overview
+    </a>
+	</li>
+
+ <li>
+    <a href="#stats">
+        Stats & Max CP
+    </a>
+</li>
+
+ <li>
+    <a href="#type">
+        Type
+    </a>
+	</li>
+
+ <li>
+    <a href="#weaknesses">
+        Weaknesses & Resistances
+    </a>
+	</li>
+
+ <li>
+    <a href="#moves">
+        Best Moves
+    </a>
+	</li>
+
+ <li>
+    <a href="#shadow-groudon">
+        Shadow Groudon
+    </a>
+	</li>
+
+ <li>
+    <a href="#primal-reversion">
+        Primal Groudon
+    </a>
+	</li>
+
+ <li>
+    <a href="#shiny">
+        Shiny Groudon
+    </a>
+	</li>
+
+ <li>
+    <a href="#availability">
+        Availability
+    </a>
+	</li>
+
+ <li>
+    <a href="#guide">
+        Individual Groudon Guide
+    </a>
+	</li>
+
+ <li>
+    <a href="#faq">
+        FAQ
+    </a>
+          </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+        <a class="related-link"
+           href="/pokemon/primal-groudon.html">
+
+            Primal Groudon Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-types/ground.html">
+
+            Ground Type Hub →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/kyogre.html">
+
+            Kyogre Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/rayquaza.html">
+
+            Rayquaza Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-3.html">
+
+            Gen 3 Pokémon →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="side-card">
+
+        <h3>
+            Groudon Quick Facts
+        </h3>
+
+        <p>
+            <strong>Type:</strong>
+            Ground
+        </p>
+
+        <p>
+            <strong>Generation:</strong>
+            3
+        </p>
+
+        <p>
+            <strong>Pokédex:</strong>
+            #383
+        </p>
+
+        <p>
+            <strong>Evolution:</strong>
+            None
+        </p>
+
+        <p>
+            <strong>Special Form:</strong>
+            Primal Groudon
+        </p>
+
+    </div>
+
+
+</aside>
+</div>
+</main>
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

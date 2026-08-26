@@ -1,0 +1,4237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Lairon Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shadow & Shiny</title>
+
+<meta name="description"
+      content="Complete Lairon Pokémon GO guide covering Lairon stats, max CP, Steel and Rock typing, weaknesses, resistances, best moves, IVs, PvP, Shadow Lairon, Shiny Lairon, evolution to Aggron and availability.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/lairon.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #9ca9ff;
+    --accent-2: #687cff;
+
+    --steel: #aeb7c7;
+    --rock: #b08b52;
+
+    --water: #4e9dff;
+    --fighting: #ff766d;
+    --ground: #d6a743;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --shiny: #ffe36e;
+    --shadow: #8c7cff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(111, 130, 255, .11),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8, 11, 18, .92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(174,183,199,.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--steel);
+
+    background:
+        rgba(174,183,199,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing: -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 1rem;
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.steel-tag {
+    color: var(--steel);
+}
+
+.rock-tag {
+    color: var(--rock);
+}
+
+.shiny-tag {
+    color: var(--shiny);
+}
+
+.shadow-tag {
+    color: var(--shadow);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(174,183,199,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    margin-bottom: 20px;
+    padding: 28px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-kicker {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem, 3vw, 2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid rgba(174,183,199,.30);
+
+    background:
+        rgba(174,183,199,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(174,183,199,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--steel);
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   TYPE GRID
+========================================================= */
+
+.type-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.type-card {
+    padding: 18px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-card strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.type-card span {
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card span {
+    color: var(--muted);
+    font-size: .7rem;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.28);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+
+    background:
+        var(--surface-2);
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.steel-move {
+    color: var(--steel);
+    font-weight: 800;
+}
+
+.rock-move {
+    color: var(--rock);
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(174,183,199,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(174,183,199,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   IV GRID
+========================================================= */
+
+.iv-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+    font-size: 1.35rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.form-node {
+    min-width: 145px;
+
+    padding: 16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+.form-arrow {
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.shadow-card {
+    border-color:
+        rgba(140,124,255,.30);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(140,124,255,.10),
+            var(--surface-2)
+        );
+}
+
+.shiny-card {
+    border-color:
+        rgba(255,227,110,.28);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,227,110,.08),
+            var(--surface-2)
+        );
+}
+
+.shiny-symbol {
+    color: var(--shiny);
+    font-size: 2rem;
+}
+
+.shadow-symbol {
+    color: var(--shadow);
+    font-size: 2rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   SECTION LINKS
+========================================================= */
+
+.section-links {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin: 18px 0;
+}
+
+.section-links a {
+    display: block;
+
+    padding: 12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    color: var(--muted);
+
+    font-size: .78rem;
+    font-weight: 750;
+}
+
+.section-links a:hover {
+    color: white;
+    border-color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width: 650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .effect-grid,
+    .type-grid,
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .form-arrow {
+        transform: rotate(90deg);
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">Types</a>
+
+            <a href="/pokedex.html">Pokédex</a>
+
+            <a href="/raids/">Raids</a>
+
+            <a href="/guides/">Guides</a>
+
+            <a href="/tools/">Tools</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">Home</a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">Pokémon Database</a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/steel.html">Steel Type</a>
+
+    <span>›</span>
+
+    <strong>Lairon</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                GEN 3 • HOENN • #305
+            </span>
+
+            <h1>
+                Lairon
+            </h1>
+
+            <p class="hero-subtitle">
+                Lairon is a Steel/Rock-type Pokémon from the
+                Hoenn region. In Pokémon GO, it is the middle
+                stage of the Aron evolutionary family, sitting
+                between Aron and Aggron. Lairon also has
+                Shadow and Shiny variants.
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag steel-tag">
+                    Steel
+                </span>
+
+                <span class="tag rock-tag">
+                    Rock
+                </span>
+
+                <span class="tag">
+                    #305
+                </span>
+
+                <span class="tag">
+                    Gen 3
+                </span>
+
+                <span class="tag shiny-tag">
+                    ✨ Shiny Available
+                </span>
+
+                <span class="tag shadow-tag">
+                    Shadow
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own licensed/owned Lairon asset -->
+
+            <div class="pokemon-placeholder">
+                🛡️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>158</strong>
+
+        <span>ATTACK</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>198</strong>
+
+        <span>DEFENSE</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>155</strong>
+
+        <span>HP</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>2,324</strong>
+
+        <span>MAX CP • LEVEL 50</span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            01 • DATABASE
+        </span>
+
+        <h2>
+            Lairon Overview
+        </h2>
+
+        <p>
+            Lairon is the first evolution of Aron and the
+            middle stage of the Aron evolutionary family.
+            It is a dual Steel/Rock-type Pokémon introduced
+            in Generation 3.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#305</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 3</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Hoenn</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Steel / Rock</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>158</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>198</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>155</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>2,324</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+            Lairon's Pokémon GO base stats are 158 Attack,
+            198 Defense and 155 HP. Its Level 50 maximum CP
+            is 2,324 with perfect IVs.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Lairon Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            ⚙️
+        </div>
+
+        <div>
+
+            <strong>
+                Steel / Rock
+            </strong>
+
+            <span>
+                Dual Type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Lairon's Typing Matters
+    </h3>
+
+    <p>
+        Lairon's Steel/Rock combination gives it a wide
+        resistance profile, but it also creates two major
+        weaknesses. Fighting- and Ground-type attacks are
+        especially dangerous because both types exploit
+        Lairon particularly hard.
+    </p>
+
+
+    <div class="type-grid">
+
+        <div class="type-card">
+
+            <strong>
+                ⚙️ Steel
+            </strong>
+
+            <span>
+                Provides many useful resistances and supports
+                Lairon's defensive identity.
+            </span>
+
+        </div>
+
+
+        <div class="type-card">
+
+            <strong>
+                🪨 Rock
+            </strong>
+
+            <span>
+                Adds Rock typing but also contributes to
+                Lairon's Fighting, Ground and Water weaknesses.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            03 • BATTLE MATCHUPS
+        </span>
+
+        <h2>
+            Lairon Weaknesses & Resistances
+        </h2>
+
+        <p>
+            Lairon's dual typing produces a particularly
+            important defensive profile for a middle-stage
+            Pokémon.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks deal heavily increased
+                damage to Lairon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Ground attacks are one of Lairon's major
+                defensive threats.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks exploit Lairon's Rock
+                typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+            <div class="effect-icon">☠️</div>
+            <strong>Poison</strong>
+            <p>Lairon has a particularly strong Poison matchup.</p>
+        </div>
+
+        <div class="effect-card resistance">
+            <div class="effect-icon">🕊️</div>
+            <strong>Flying</strong>
+            <p>Flying attacks are resisted by Lairon's typing.</p>
+        </div>
+
+        <div class="effect-card resistance">
+            <div class="effect-icon">⚪</div>
+            <strong>Normal</strong>
+            <p>Normal-type attacks deal reduced damage.</p>
+        </div>
+
+        <div class="effect-card resistance">
+            <div class="effect-icon">🐞</div>
+            <strong>Bug</strong>
+            <p>Bug-type attacks are resisted.</p>
+        </div>
+
+        <div class="effect-card resistance">
+            <div class="effect-icon">🐉</div>
+            <strong>Dragon</strong>
+            <p>Dragon attacks deal reduced damage.</p>
+        </div>
+
+        <div class="effect-card resistance">
+            <div class="effect-icon">🧚</div>
+            <strong>Fairy</strong>
+            <p>Fairy-type attacks are resisted.</p>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+            Lairon's Fighting and Ground weaknesses are
+            especially significant because of the interaction
+            between its Steel and Rock types.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            04 • STATS
+        </span>
+
+        <h2>
+            Lairon Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+            Lairon is much more defensive than offensive on
+            paper. Its 198 Defense is its strongest base stat,
+            while its 158 Attack limits its effectiveness as
+            a serious PvE attacker.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>158</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>198</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>155</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>LEVEL 50 MAX CP</span>
+            <strong>2,324</strong>
+        </div>
+
+    </div>
+
+
+    <h3>
+        CP Milestones
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+                    <th>Level</th>
+                    <th>Maximum CP</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Level 15</td>
+                    <td>881</td>
+                </tr>
+
+                <tr>
+                    <td>Level 20</td>
+                    <td>1,174</td>
+                </tr>
+
+                <tr>
+                    <td>Level 25</td>
+                    <td>1,468</td>
+                </tr>
+
+                <tr>
+                    <td>Level 40</td>
+                    <td>2,056</td>
+                </tr>
+
+                <tr>
+                    <td>Level 50</td>
+                    <td>2,324</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        CP is influenced by level, base stats and IVs.
+        A higher CP does not automatically mean that a
+        Pokémon has perfect IVs.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     05 MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            05 • MOVESET
+        </span>
+
+        <h2>
+            Lairon Best Moves
+        </h2>
+
+        <p>
+            Lairon's strongest currently listed Steel-oriented
+            PvE moveset is Metal Claw with Heavy Slam. Metal
+            Claw with Rock Slide provides an alternative when
+            Rock damage is desired.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Steel Moveset
+        </strong>
+
+        <p>
+            Metal Claw + Heavy Slam
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Rock-Oriented Alternative
+        </strong>
+
+        <p>
+            Metal Claw + Rock Slide
+        </p>
+
+    </div>
+
+
+    <h3>
+        Fast Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Move</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Role</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Metal Claw
+                    </td>
+
+                    <td class="steel-move">
+                        Steel
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Preferred Steel option
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Iron Tail
+                    </td>
+
+                    <td class="steel-move">
+                        Steel
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Alternative
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Metal Sound
+                    </td>
+
+                    <td class="steel-move">
+                        Steel
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Alternative
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Charged Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Move</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Use</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Heavy Slam
+                    </td>
+
+                    <td class="steel-move">
+                        Steel
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Recommended Steel build
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Slide
+                    </td>
+
+                    <td class="rock-move">
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Preferred Rock alternative
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Body Slam
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        PvP utility
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Tomb
+                    </td>
+
+                    <td class="rock-move">
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        PvP option
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change as Pokémon GO updates
+        its move pool. Legacy or event-specific moves should
+        be checked before recommending an Elite TM.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     06 RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            06 • PVE
+        </span>
+
+        <h2>
+            Is Lairon Good for Raids?
+        </h2>
+
+        <p>
+            Lairon is generally not a strong choice for
+            Pokémon GO raids. Its relatively low offensive
+            output means that there are many stronger Steel
+            and Rock attackers available.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Steel PvE
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 30%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Rock PvE
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 28%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Defense
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 62%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Decent
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Lairon for Raids?
+    </h3>
+
+    <p>
+        Usually, no. Lairon is better viewed as an
+        evolutionary-stage Pokémon, collection target or
+        occasional PvP experiment rather than a priority
+        raid investment.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     07 COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            07 • COUNTERS
+        </span>
+
+        <h2>
+            What Counters Lairon?
+        </h2>
+
+        <p>
+            Lairon's primary weaknesses are Fighting, Ground
+            and Water, with Fighting and Ground being the most
+            important due to their particularly strong matchup.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting Attackers
+            </strong>
+
+            <p>
+                Fighting-type moves exploit Lairon's dual
+                Steel/Rock typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground Attackers
+            </strong>
+
+            <p>
+                Ground attacks are another extremely strong
+                counter category.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water Attackers
+            </strong>
+
+            <p>
+                Water attacks also deal super-effective damage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     08 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Lairon IV Guide
+        </h2>
+
+        <p>
+            Lairon's IV value depends heavily on what you want
+            to do with it. A 15/15/15 specimen is perfect, but
+            perfection is not necessary for every use case.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>15</strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>15</strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>15</strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Lairon
+    </h3>
+
+    <p>
+        A 15/15/15 Lairon is a perfect-IV specimen. For
+        collectors, evolution projects and players interested
+        in Great or Ultra League experiments, keeping a range
+        of IV spreads can be more useful than keeping only
+        perfect-IV Pokémon.
+    </p>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            PvP IV reminder:
+        </strong>
+
+        <p>
+            The best PvP IV spread is not necessarily 15/15/15.
+            League CP limits can favor different Attack,
+            Defense and HP combinations.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     09 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            09 • PVP
+        </span>
+
+        <h2>
+            Lairon PvP Guide
+        </h2>
+
+        <p>
+            Lairon can technically be used in Trainer Battles,
+            but it is generally an underpowered choice compared
+            with stronger Steel and Rock Pokémon.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+        Lairon can fit below the Great League CP limit, but
+        its performance is limited by its weaknesses and
+        competition from more specialized Pokémon.
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+        Lairon can also be built for Ultra League, although
+        investing heavily in it is usually difficult to justify
+        when stronger options are available.
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Lairon's maximum CP is not high enough to make it a
+        natural Master League investment.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            PvP Build
+        </strong>
+
+        <p>
+            Metal Sound + Rock Tomb + Body Slam can be considered
+            for PvP experimentation, but Lairon is not a
+            top-tier competitive choice.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     10 EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            10 • EVOLUTION
+        </span>
+
+        <h2>
+            Lairon Evolution Family
+        </h2>
+
+        <p>
+            Lairon is the middle evolution of the Aron family.
+            In Pokémon GO, Aron evolves into Lairon for 25 Candy,
+            and Lairon evolves into Aggron for 100 Candy.
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Aron
+            </strong>
+
+            <span>
+                #304
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Lairon
+            </strong>
+
+            <span>
+                #305
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Aggron
+            </strong>
+
+            <span>
+                #306
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                Aron → Lairon
+            </strong>
+
+            <p>
+                Requires 25 Aron Candy in Pokémon GO.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Lairon → Aggron
+            </strong>
+
+            <p>
+                Requires 100 Lairon Candy in Pokémon GO.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Final Evolution
+            </strong>
+
+            <p>
+                Aggron is the final evolutionary stage of
+                the Aron family.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        The level-based evolution requirements from the
+        mainline Pokémon games should not be confused with
+        Pokémon GO's Candy-based evolution system.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     11 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow-lairon">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            11 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Lairon
+        </h2>
+
+        <p>
+            Shadow Lairon is a Shadow version of Lairon. It
+            keeps Lairon's Steel/Rock typing but has the
+            Shadow Pokémon battle modifier, which increases
+            offensive pressure while reducing defensive
+            durability.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card shadow-card">
+
+            <div class="shadow-symbol">
+                😈
+            </div>
+
+            <strong>
+                Shadow Form
+            </strong>
+
+            <p>
+                Lairon with the Shadow status.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Type
+            </strong>
+
+            <p>
+                Steel / Rock
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Species
+            </strong>
+
+            <p>
+                Lairon #305
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Lairon vs Regular Lairon
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Lairon
+                    </td>
+
+                    <td>
+                        Lairon
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Typing
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Durability
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Offensive Pressure
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Lairon Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Shadow status does not remove Lairon's
+                Fighting weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Ground remains one of Shadow Lairon's
+                biggest threats.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water remains super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Lairon Moves
+    </h3>
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Shadow Steel Build
+        </strong>
+
+        <p>
+            Metal Claw + Heavy Slam
+        </p>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration:
+        </strong>
+
+        <p>
+            Shadow Pokémon can have Frustration as their
+            Charged Move. Check the current Team GO Rocket
+            event rules before planning to replace it with
+            another Charged Move.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Lairon?
+    </h3>
+
+    <p>
+        Do not treat purification as an automatic upgrade.
+        If you are keeping Shadow Lairon for collection,
+        evolution or personal PvP experimentation, compare
+        the Shadow version with the purified result before
+        committing resources.
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check its IVs before transferring it.
+        </li>
+
+        <li>
+            Check whether Frustration is currently removable.
+        </li>
+
+        <li>
+            Consider whether you plan to evolve it into Aggron.
+        </li>
+
+        <li>
+            Compare the Shadow and purified versions before
+            spending Stardust.
+        </li>
+
+        <li>
+            Keep interesting Shadow specimens if you collect
+            Shadow Pokémon.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     12 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            12 • SHINY
+        </span>
+
+        <h2>
+            Shiny Lairon
+        </h2>
+
+        <p>
+            Shiny Lairon is available in Pokémon GO. Its
+            alternate coloration makes it a popular collection
+            target, particularly for players building a complete
+            Shiny Aron evolutionary family.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card shiny-card">
+
+            <div class="shiny-symbol">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Lairon
+            </strong>
+
+            <p>
+                Alternate-color variant of Lairon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Type
+            </strong>
+
+            <p>
+                Steel / Rock
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Battle Stats
+            </strong>
+
+            <p>
+                Shiny status does not create a separate
+                species with different base stats.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Regular vs Shiny Lairon
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Lairon
+                    </th>
+
+                    <th>
+                        Shiny Lairon
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Lairon
+                    </td>
+
+                    <td>
+                        Lairon
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shiny Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Base Stats
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Same species stats
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Evolution
+                    </td>
+
+                    <td>
+                        Can evolve
+                    </td>
+
+                    <td>
+                        Can evolve
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shiny Lairon Evolution
+    </h3>
+
+    <p>
+        A Shiny Lairon can be evolved into Shiny Aggron.
+        Likewise, a Shiny Aron can evolve through the family
+        while retaining its Shiny status.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     13 SPECIAL FORMS
+===================================================== -->
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            13 • SPECIAL FORMS
+        </span>
+
+        <h2>
+            Regular, Shadow & Shiny Lairon
+        </h2>
+
+        <p>
+            These variants should be treated as different
+            collection and investment options rather than
+            separate Pokémon species.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #305
+                    </td>
+
+                    <td>
+                        #305
+                    </td>
+
+                    <td>
+                        #305
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Depends on form availability
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Evolution
+                    </td>
+
+                    <td>
+                        Aggron
+                    </td>
+
+                    <td>
+                        Aggron if eligible
+                    </td>
+
+                    <td>
+                        Shiny Aggron
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     14 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            14 • RESOURCES
+        </span>
+
+        <h2>
+            Lairon Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+            Lairon is a middle-stage Pokémon, so your long-term
+            resource decision often comes down to whether you
+            plan to keep Lairon itself or evolve it into Aggron.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                25 Candy
+            </strong>
+
+            <p>
+                Aron → Lairon evolution cost.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                100 Candy
+            </strong>
+
+            <p>
+                Lairon → Aggron evolution cost.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                XL Candy
+            </strong>
+
+            <p>
+                Useful for high-level power-ups when investing
+                in eligible Pokémon.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep good IV Lairon candidates before evolving.
+        </li>
+
+        <li>
+            Save Candy if you plan to build Aggron.
+        </li>
+
+        <li>
+            Check the moveset before major investment.
+        </li>
+
+        <li>
+            Compare Lairon's role with Aggron before spending
+            large amounts of Stardust.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     15 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            15 • AVAILABILITY
+        </span>
+
+        <h2>
+            Lairon Availability
+        </h2>
+
+        <p>
+            Lairon's availability can change as Pokémon GO
+            rotates wild encounters, events, research encounters
+            and other acquisition methods.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Pokémon GO event and encounter
+            rotation before publishing a permanent claim about
+            how Lairon can currently be obtained.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Weather Boost
+    </h3>
+
+    <p>
+        Lairon's Steel/Rock typing is associated with
+        Snow and Partly Cloudy weather boosts in Pokémon GO.
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Snow
+            </strong>
+
+            <p>
+                Boosts Steel-type aspects of Lairon's typing
+                and moves.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ☁️
+            </div>
+
+            <strong>
+                Partly Cloudy
+            </strong>
+
+            <p>
+                Boosts Rock-type aspects of Lairon's typing
+                and moves.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     16 INDIVIDUAL GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            16 • INDIVIDUAL GUIDE
+        </span>
+
+        <h2>
+            How to Use Lairon
+        </h2>
+
+        <p>
+            Lairon's best use depends on whether you are
+            collecting it, preparing an evolution or testing
+            it in Trainer Battles.
+        </p>
+
+    </div>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep a high-IV regular Lairon.
+        </li>
+
+        <li>
+            Consider keeping a Shiny Lairon.
+        </li>
+
+        <li>
+            Keep interesting Shadow specimens.
+        </li>
+
+        <li>
+            Consider saving one for the complete Aron family.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Evolution Projects
+    </h3>
+
+    <p>
+        If your ultimate goal is Aggron, check Lairon's IVs
+        and moves before evolving. A good Lairon candidate can
+        become a useful part of your Aggron collection.
+    </p>
+
+
+    <h3>
+        For PvP
+    </h3>
+
+    <p>
+        Check the specific league's CP limit and use an
+        appropriate IV spread rather than automatically
+        choosing a 15/15/15 specimen.
+    </p>
+
+
+    <h3>
+        For Raids
+    </h3>
+
+    <p>
+        Lairon should generally not be a priority raid
+        investment. Its offensive stats are not competitive
+        with the stronger Steel and Rock attackers available
+        in Pokémon GO.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     17 COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            17 • COMPARISON
+        </span>
+
+        <h2>
+            Aron vs Lairon vs Aggron
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Aron
+                    </th>
+
+                    <th>
+                        Lairon
+                    </th>
+
+                    <th>
+                        Aggron
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #304
+                    </td>
+
+                    <td>
+                        #305
+                    </td>
+
+                    <td>
+                        #306
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                    <td>
+                        Steel / Rock
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Stage
+                    </td>
+
+                    <td>
+                        First
+                    </td>
+
+                    <td>
+                        Middle
+                    </td>
+
+                    <td>
+                        Final
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        GO Evolution Cost
+                    </td>
+
+                    <td>
+                        —
+                    </td>
+
+                    <td>
+                        25 Candy
+                    </td>
+
+                    <td>
+                        100 Candy
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Max CP
+                    </td>
+
+                    <td>
+                        Lower
+                    </td>
+
+                    <td>
+                        2,324
+                    </td>
+
+                    <td>
+                        Higher
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     18 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            18 • FAQ
+        </span>
+
+        <h2>
+            Lairon FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Lairon?
+        </summary>
+
+        <p>
+            Lairon is a dual Steel/Rock-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lairon weak to?
+        </summary>
+
+        <p>
+            Lairon is especially vulnerable to Fighting and
+            Ground attacks, and it is also weak to Water.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lairon's max CP?
+        </summary>
+
+        <p>
+            Lairon's maximum CP is 2,324 at Level 50 with
+            perfect IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What are Lairon's best moves?
+        </summary>
+
+        <p>
+            Metal Claw and Heavy Slam are the recommended
+            Steel-oriented moveset. Metal Claw and Rock Slide
+            can be used for a Rock-oriented build.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lairon good for raids?
+        </summary>
+
+        <p>
+            Lairon is generally not a strong raid attacker.
+            There are many stronger Steel and Rock attackers
+            available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lairon good in PvP?
+        </summary>
+
+        <p>
+            Lairon can be used in Great and Ultra League,
+            but it is generally an underperforming choice
+            compared with stronger alternatives.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do I evolve Aron into Lairon?
+        </summary>
+
+        <p>
+            In Pokémon GO, Aron evolves into Lairon using
+            25 Aron Candy.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do I evolve Lairon into Aggron?
+        </summary>
+
+        <p>
+            Lairon evolves into Aggron using 100 Lairon Candy
+            in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Lairon available?
+        </summary>
+
+        <p>
+            Yes. Shiny Lairon is available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Shiny Lairon evolve into Shiny Aggron?
+        </summary>
+
+        <p>
+            Yes. A Shiny Lairon retains its Shiny status when
+            evolved into Aggron.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Lairon available?
+        </summary>
+
+        <p>
+            Shadow Lairon is a Shadow variant of Lairon.
+            Its current acquisition method should be checked
+            against the active Team GO Rocket rotation.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Lairon?
+        </summary>
+
+        <p>
+            Not automatically. Consider its IVs, intended use,
+            evolution plans and the benefits of keeping the
+            Shadow status before purifying it.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Lairon evolve into Shadow Aggron?
+        </summary>
+
+        <p>
+            Shadow Pokémon that are eligible for evolution can
+            retain their Shadow status through evolution.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lairon better than Aggron?
+        </summary>
+
+        <p>
+            Aggron is the final evolution and has a substantially
+            higher overall combat profile. Lairon is primarily
+            valuable as the middle stage of the Aron family or
+            for collection and niche use.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What weather boosts Lairon?
+        </summary>
+
+        <p>
+            Lairon's Steel/Rock typing is associated with Snow
+            and Partly Cloudy weather boosts.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounter methods, events, availability and battle
+            rankings can change over time.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Lairon Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="#counters">
+                    Counters
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow-lairon">
+                    Shadow Lairon
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Lairon
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#battle-guide">
+                    Individual Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+        <a class="related-link"
+           href="/pokemon/aron.html">
+
+            Aron Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/aggron.html">
+
+            Aggron Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/mega-aggron.html">
+
+            Mega Aggron Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-types/steel.html">
+
+            Steel Type Hub →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-types/rock.html">
+
+            Rock Type Hub →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-3.html">
+
+            Gen 3 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Lairon Quick Facts
+        </h3>
+
+        <p>
+            <strong>Type:</strong>
+            Steel / Rock
+        </p>
+
+        <p>
+            <strong>Pokédex:</strong>
+            #305
+        </p>
+
+        <p>
+            <strong>Generation:</strong>
+            3
+        </p>
+
+        <p>
+            <strong>Max CP:</strong>
+            2,324
+        </p>
+
+        <p>
+            <strong>Evolution:</strong>
+            Aggron
+        </p>
+
+        <p>
+            <strong>Shiny:</strong>
+            Available
+        </p>
+
+        <p>
+            <strong>Shadow:</strong>
+            Variant available depending on current rotation
+        </p>
+
+    </div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
