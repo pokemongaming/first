@@ -1,0 +1,5130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Flying-Type Pokémon GO Hub | Gen 1–9, Stats, Weaknesses, Moves & Guides
+</title>
+
+<meta name="description"
+content="Complete Flying-type Pokémon GO Hub covering Generations 1–9, evolution families, typing, Max CP, Attack, Defense, HP, weaknesses, resistances, best moves, raid performance, Mega Evolution, Shadow Pokémon, Dynamax, Gigantamax, shiny availability and individual Pokémon guides.">
+
+<meta name="robots"
+content="index, follow, max-image-preview:large">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/flying-type.html">
+
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root{
+
+    --bg:#070a0f;
+    --bg2:#0d1219;
+    --panel:#121a23;
+    --panel2:#18232e;
+
+    --border:#293642;
+
+    --text:#f4f7fa;
+    --muted:#aab5bf;
+
+    --flying:#8fa8e8;
+    --flying-light:#c8d5ff;
+
+    --green:#63d49a;
+    --red:#ff7373;
+    --yellow:#ffd166;
+    --blue:#70b8ff;
+
+    --max:1250px;
+
+    --radius:18px;
+
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    margin:0;
+
+    background:
+
+    radial-gradient(
+        circle at 10% 5%,
+        rgba(143,168,232,.17),
+        transparent 32%
+    ),
+
+    radial-gradient(
+        circle at 90% 10%,
+        rgba(112,184,255,.10),
+        transparent 30%
+    ),
+
+    var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.7;
+
+}
+
+a{
+
+    color:var(--flying-light);
+
+    text-decoration:none;
+
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+.container{
+
+    width:
+    min(
+        var(--max),
+        calc(100% - 32px)
+    );
+
+    margin:auto;
+
+}
+
+.section{
+
+    padding:
+        72px 0;
+
+}
+
+.section-title{
+
+    margin:
+        0 0 12px;
+
+    font-size:
+        clamp(30px,4vw,46px);
+
+    line-height:1.1;
+
+}
+
+.section-intro{
+
+    max-width:950px;
+
+    margin:
+        0 0 32px;
+
+    color:var(--muted);
+
+    font-size:17px;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+        rgba(7,10,15,.96);
+
+    backdrop-filter:
+        blur(14px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.header-inner{
+
+    min-height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    color:#fff;
+
+    font-size:21px;
+
+    font-weight:950;
+
+}
+
+.logo span{
+    color:var(--flying-light);
+}
+
+.main-nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.main-nav a{
+
+    color:#d7dfe7;
+
+    font-size:14px;
+
+    font-weight:800;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    padding:
+        78px 0 65px;
+
+}
+
+.breadcrumb{
+
+    margin-bottom:26px;
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap:45px;
+
+    align-items:center;
+
+}
+
+.hero h1{
+
+    margin:
+        0 0 25px;
+
+    font-size:
+        clamp(44px,7vw,80px);
+
+    line-height:.98;
+
+}
+
+.hero h1 span{
+
+    display:block;
+
+    color:var(--flying-light);
+
+}
+
+.hero-description{
+
+    max-width:850px;
+
+    color:#c7d0d8;
+
+    font-size:18px;
+
+}
+
+.hero-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:48px;
+
+    padding:
+        0 20px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+    color:#fff;
+
+    font-weight:900;
+
+}
+
+.btn-primary{
+
+    background:#6377a8;
+
+    border-color:var(--flying-light);
+
+}
+
+.btn:hover{
+
+    text-decoration:none;
+
+    transform:translateY(-1px);
+
+}
+
+.hero-card{
+
+    padding:30px;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(143,168,232,.22),
+        rgba(18,26,35,.98)
+    );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:25px;
+
+}
+
+.hero-card-title{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+}
+
+.hero-stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.hero-stat{
+
+    padding:18px;
+
+    background:
+        rgba(0,0,0,.25);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+}
+
+.hero-stat strong{
+
+    display:block;
+
+    font-size:24px;
+
+}
+
+.hero-stat span{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+
+/* =========================================================
+   QUICK NAV
+========================================================= */
+
+.quick-nav{
+    margin-top:-24px;
+}
+
+.quick-nav-inner{
+
+    display:flex;
+
+    gap:10px;
+
+    overflow-x:auto;
+
+    padding:15px;
+
+    background:
+        rgba(18,26,35,.98);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.quick-nav a{
+
+    flex:none;
+
+    padding:
+        9px 14px;
+
+    background:#0c1218;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.notice{
+
+    padding:
+        18px 20px;
+
+    background:#10171e;
+
+    border:
+        1px solid var(--border);
+
+    border-left:
+        4px solid var(--flying-light);
+
+    border-radius:14px;
+
+}
+
+.notice strong{
+    color:#fff;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+.info-card{
+
+    padding:25px;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        var(--panel2),
+        #0d141b
+    );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:
+        var(--flying-light);
+
+}
+
+.info-card h3{
+    margin-top:0;
+}
+
+.info-card p{
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   GENERATIONS
+========================================================= */
+
+.generation-tabs{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:
+        25px 0;
+
+}
+
+.gen-btn{
+
+    padding:
+        10px 15px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:10px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+.gen-btn:hover,
+.gen-btn.active{
+
+    background:#6377a8;
+
+    border-color:
+        var(--flying-light);
+
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution-family{
+
+    margin-bottom:20px;
+
+    padding:28px;
+
+    background:#0f161e;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:20px;
+
+}
+
+.evolution-family h3{
+    margin-top:0;
+}
+
+.evolution-line{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.evolution-node{
+
+    min-width:155px;
+
+    padding:18px;
+
+    background:#18232e;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+    text-align:center;
+
+}
+
+.evolution-arrow{
+
+    color:var(--flying-light);
+
+    font-size:27px;
+
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:15px;
+
+}
+
+.stat-card{
+
+    padding:22px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.stat-label{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+.stat-value{
+
+    font-size:28px;
+
+    font-weight:950;
+
+}
+
+
+/* =========================================================
+   TYPE MATCHUPS
+========================================================= */
+
+.matchup-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:20px;
+
+}
+
+.matchup-box{
+
+    padding:25px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.matchup-box h3{
+    margin-top:0;
+}
+
+.weakness{
+    border-top:4px solid var(--red);
+}
+
+.resistance{
+    border-top:4px solid var(--green);
+}
+
+.matchup-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:9px;
+
+}
+
+.type-badge{
+
+    padding:
+        7px 12px;
+
+    background:#29333c;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   WEATHER
+========================================================= */
+
+.weather-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:16px;
+
+}
+
+.weather-card{
+
+    padding:22px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.weather-card h3{
+    margin-top:0;
+}
+
+.weather-card p{
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.data-table{
+
+    width:100%;
+
+    min-width:850px;
+
+    border-collapse:collapse;
+
+}
+
+.data-table th,
+.data-table td{
+
+    padding:15px;
+
+    text-align:left;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.data-table th{
+
+    background:#19242d;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+}
+
+.data-table td{
+    color:#c5ced6;
+}
+
+.data-table tr:hover td{
+    background:#17212a;
+}
+
+
+/* =========================================================
+   MOVES
+========================================================= */
+
+.move-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:16px;
+
+}
+
+.move-card{
+
+    padding:21px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.move-card h3{
+    margin-top:0;
+}
+
+.move-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+.move-tag{
+
+    padding:
+        5px 9px;
+
+    background:#29333c;
+
+    border-radius:7px;
+
+    font-size:12px;
+
+}
+
+
+/* =========================================================
+   RAID
+========================================================= */
+
+.raid-tier{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:15px;
+
+}
+
+.tier{
+
+    padding:22px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.tier strong{
+
+    display:block;
+
+    font-size:25px;
+
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.variant-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:15px;
+
+}
+
+.variant-card{
+
+    padding:20px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.variant-card h3{
+    margin-top:0;
+}
+
+.variant-card p{
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   SHINY
+========================================================= */
+
+.shiny-comparison{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:20px;
+
+}
+
+.shiny-box{
+
+    padding:25px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.shiny-label{
+
+    display:inline-block;
+
+    padding:
+        5px 10px;
+
+    background:#29333c;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   DATABASE
+========================================================= */
+
+.database-toolbar{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.search-box{
+
+    flex:1;
+
+    min-width:240px;
+
+    padding:
+        13px 15px;
+
+    color:#fff;
+
+    background:#0d141a;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+}
+
+.search-box:focus{
+
+    border-color:
+        var(--flying-light);
+
+}
+
+.filter-select{
+
+    padding:
+        13px 15px;
+
+    color:#fff;
+
+    background:#0d141a;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+}
+
+.pokemon-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+.pokemon-card{
+
+    padding:20px;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #18232e,
+        #0d141a
+    );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+
+}
+
+.pokemon-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:
+        var(--flying-light);
+
+}
+
+.pokemon-number{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+.pokemon-image{
+
+    min-height:150px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.pokemon-image img{
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+}
+
+.pokemon-card h3{
+
+    margin:
+        5px 0;
+
+    font-size:21px;
+
+}
+
+.pokemon-type{
+
+    display:inline-block;
+
+    padding:
+        5px 9px;
+
+    background:#2b353e;
+
+    border-radius:7px;
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+.pokemon-mini-stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:7px;
+
+    margin-top:15px;
+
+}
+
+.mini-stat{
+
+    padding:8px;
+
+    background:#0a0f13;
+
+    border-radius:9px;
+
+    text-align:center;
+
+}
+
+.mini-stat strong{
+
+    display:block;
+
+}
+
+.mini-stat span{
+
+    color:var(--muted);
+
+    font-size:10px;
+
+}
+
+
+/* =========================================================
+   GUIDES
+========================================================= */
+
+.guide-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+.guide-card{
+
+    padding:22px;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #18232e,
+        #0d141a
+    );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.guide-card h3{
+    margin-top:0;
+}
+
+.guide-card p{
+    color:var(--muted);
+}
+
+.guide-link{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    max-width:950px;
+}
+
+.faq details{
+
+    margin-bottom:12px;
+
+    padding:
+        18px 20px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+}
+
+.faq summary{
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+.faq p{
+
+    margin-bottom:0;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   EDITORIAL
+========================================================= */
+
+.editorial-box{
+
+    padding:28px;
+
+    background:#0d141a;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.editorial-meta{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.editorial-meta div{
+
+    padding:15px;
+
+    background:#17222b;
+
+    border-radius:12px;
+
+}
+
+.editorial-meta span{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:var(--muted);
+
+    font-size:12px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer{
+
+    margin-top:40px;
+
+    padding:50px 0;
+
+    background:#040607;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:30px;
+
+}
+
+.footer-grid h3{
+    margin-top:0;
+}
+
+.footer-grid a{
+
+    display:block;
+
+    margin:7px 0;
+
+    color:var(--muted);
+
+}
+
+.footer-note{
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:#858e96;
+
+    font-size:13px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .pokemon-grid{
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .guide-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .variant-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .raid-tier{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+}
+
+@media(max-width:800px){
+
+    .main-nav{
+        display:none;
+    }
+
+    .hero-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .matchup-grid,
+    .move-grid,
+    .shiny-comparison{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .weather-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        width:
+            calc(100% - 20px);
+
+    }
+
+    .section{
+
+        padding:50px 0;
+
+    }
+
+    .hero{
+
+        padding:
+            55px 0 45px;
+
+    }
+
+    .hero h1{
+
+        font-size:46px;
+
+    }
+
+    .hero-description{
+
+        font-size:16px;
+
+    }
+
+    .card-grid,
+    .pokemon-grid,
+    .guide-grid,
+    .variant-grid,
+    .raid-tier,
+    .weather-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .editorial-meta{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .evolution-arrow{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+<div class="container header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/raids/">Raids</a>
+
+<a href="/pokemon/">Pokémon Database</a>
+
+<a href="/guides/">Guides</a>
+
+<a href="/pvp/">PvP</a>
+
+<a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+ /
+<a href="/pokemon/">Pokémon Database</a>
+ /
+Flying Type
+
+</div>
+
+
+<div class="hero-grid">
+
+
+<div>
+
+<h1>
+
+🪽 Flying-Type
+
+<span>
+Pokémon GO Hub
+</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Explore Flying-type Pokémon in Pokémon GO from
+Generations 1–9. Compare evolution families, typing,
+maximum CP, Attack, Defense and HP, weaknesses,
+resistances, best moves, raid performance, Mega forms,
+Shadow Pokémon, Dynamax and Gigantamax availability,
+shiny information and detailed individual Pokémon guides.
+
+</p>
+
+
+<div class="hero-actions">
+
+<a href="#pokemon-database"
+class="btn btn-primary">
+
+Explore Flying Pokémon
+
+</a>
+
+<a href="#matchups"
+class="btn">
+
+Weaknesses & Resistances
+
+</a>
+
+<a href="#individual-guides"
+class="btn">
+
+Individual Guides
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="hero-card-title">
+
+Flying Type Overview
+
+</div>
+
+
+<div class="hero-stat-grid">
+
+
+<div class="hero-stat">
+
+<strong>
+Gen 1–9
+</strong>
+
+<span>
+Generation coverage
+</span>
+
+</div>
+
+
+<div class="hero-stat">
+
+<strong>
+Flying
+</strong>
+
+<span>
+Primary type
+</span>
+
+</div>
+
+
+<div class="hero-stat">
+
+<strong>
+Electric
+</strong>
+
+<span>
+Key weakness
+</span>
+
+</div>
+
+
+<div class="hero-stat">
+
+<strong>
+Ground
+</strong>
+
+<span>
+Important immunity
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     QUICK NAVIGATION
+========================================================= -->
+
+<div class="container quick-nav">
+
+<div class="quick-nav-inner">
+
+<a href="#overview">Overview</a>
+
+<a href="#generations">Gen 1–9</a>
+
+<a href="#evolution">Evolution</a>
+
+<a href="#type">Type</a>
+
+<a href="#stats">Stats</a>
+
+<a href="#matchups">Weaknesses</a>
+
+<a href="#weather">Weather</a>
+
+<a href="#moves">Moves</a>
+
+<a href="#raids">Raid Tier</a>
+
+<a href="#mega">Mega / Primal</a>
+
+<a href="#variants">Shadow / Dynamax</a>
+
+<a href="#shiny">Shiny</a>
+
+<a href="#availability">Availability</a>
+
+<a href="#individual-guides">Guides</a>
+
+<a href="#faq">FAQ</a>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================================================
+     OVERVIEW
+========================================================= -->
+
+<section class="section"
+id="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying-Type Pokémon GO Overview
+
+</h2>
+
+
+<p class="section-intro">
+
+Flying is one of Pokémon GO's most recognizable types.
+Its biggest advantage is not simply the Flying label itself:
+dual typing, access to Flying attacks, Ground immunity and
+the weather system can all affect how an individual Pokémon
+performs.
+
+</p>
+
+
+<div class="notice">
+
+<strong>
+Trainer tip:
+</strong>
+
+Never evaluate a Flying Pokémon only from its type.
+A Flying/Dragon Pokémon, Flying/Steel Pokémon and
+Flying/Fighting Pokémon can have very different defensive
+profiles.
+
+</div>
+
+
+<br>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+🪽 Flying Attacks
+</h3>
+
+<p>
+
+Flying-type attacks can be useful against Fighting,
+Bug and Grass opponents, making Flying attackers valuable
+in specific raid and PvP matchups.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+⚡ Key Weaknesses
+</h3>
+
+<p>
+
+Flying Pokémon can be vulnerable to Electric, Ice and Rock
+attacks depending on their complete typing.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+🌍 Ground Immunity
+</h3>
+
+<p>
+
+Flying typing provides an important Ground-type immunity
+interaction, although dual typing can alter other parts of
+the matchup.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     GENERATIONS
+========================================================= -->
+
+<section class="section"
+id="generations">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying Pokémon by Generation
+
+</h2>
+
+
+<p class="section-intro">
+
+Browse Flying-type Pokémon introduced across Generations
+1 through 9. Regional forms and dual-type Pokémon should
+be handled separately where their typing differs.
+
+</p>
+
+
+<div class="generation-tabs">
+
+<button class="gen-btn active"
+data-gen="all">
+All
+</button>
+
+<button class="gen-btn"
+data-gen="1">
+Gen 1
+</button>
+
+<button class="gen-btn"
+data-gen="2">
+Gen 2
+</button>
+
+<button class="gen-btn"
+data-gen="3">
+Gen 3
+</button>
+
+<button class="gen-btn"
+data-gen="4">
+Gen 4
+</button>
+
+<button class="gen-btn"
+data-gen="5">
+Gen 5
+</button>
+
+<button class="gen-btn"
+data-gen="6">
+Gen 6
+</button>
+
+<button class="gen-btn"
+data-gen="7">
+Gen 7
+</button>
+
+<button class="gen-btn"
+data-gen="8">
+Gen 8
+</button>
+
+<button class="gen-btn"
+data-gen="9">
+Gen 9
+</button>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+Generation 1 — Kanto
+</h3>
+
+<p>
+
+The original generation introduced several iconic
+Flying combinations, including Normal/Flying and
+Bug/Flying families.
+
+</p>
+
+<a href="/pokemon/gen-1/flying/">
+Explore Gen 1 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 2 — Johto
+</h3>
+
+<p>
+
+Johto expanded Flying representation with several
+new evolution families and legendary Pokémon.
+
+</p>
+
+<a href="/pokemon/gen-2/flying/">
+Explore Gen 2 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 3 — Hoenn
+</h3>
+
+<p>
+
+Hoenn introduced several important Flying Pokémon,
+including families with different battle roles.
+
+</p>
+
+<a href="/pokemon/gen-3/flying/">
+Explore Gen 3 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 4 — Sinnoh
+</h3>
+
+<p>
+
+Sinnoh added new Flying Pokémon as well as evolutions
+connected to earlier generations.
+
+</p>
+
+<a href="/pokemon/gen-4/flying/">
+Explore Gen 4 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 5 — Unova
+</h3>
+
+<p>
+
+Explore Unova Flying Pokémon and their different
+evolution and battle characteristics.
+
+</p>
+
+<a href="/pokemon/gen-5/flying/">
+Explore Gen 5 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 6 — Kalos
+</h3>
+
+<p>
+
+Kalos added new Flying combinations and Pokémon with
+different strategic applications.
+
+</p>
+
+<a href="/pokemon/gen-6/flying/">
+Explore Gen 6 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 7 — Alola
+</h3>
+
+<p>
+
+Explore Alolan Flying Pokémon, regional forms and
+their different defensive combinations.
+
+</p>
+
+<a href="/pokemon/gen-7/flying/">
+Explore Gen 7 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 8 — Galar
+</h3>
+
+<p>
+
+Explore Galar Flying Pokémon and later-generation
+evolution families.
+
+</p>
+
+<a href="/pokemon/gen-8/flying/">
+Explore Gen 8 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 9 — Paldea
+</h3>
+
+<p>
+
+Explore Paldea Flying Pokémon and newer dual-type
+combinations.
+
+</p>
+
+<a href="/pokemon/gen-9/flying/">
+Explore Gen 9 →
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EVOLUTION FAMILIES
+========================================================= -->
+
+<section class="section"
+id="evolution">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying-Type Evolution Families
+
+</h2>
+
+
+<p class="section-intro">
+
+Evolution information should tell Trainers how the family
+progresses and what changes between forms rather than simply
+displaying Pokémon names.
+
+</p>
+
+
+<div class="evolution-family">
+
+<h3>
+Pidgey Evolution Family
+</h3>
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Pidgey
+</strong>
+
+<br>
+
+Normal / Flying
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-node">
+
+<strong>
+Pidgeotto
+</strong>
+
+<br>
+
+Normal / Flying
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-node">
+
+<strong>
+Pidgeot
+</strong>
+
+<br>
+
+Normal / Flying
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<h3>
+Spearow Evolution Family
+</h3>
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Spearow
+</strong>
+
+<br>
+
+Normal / Flying
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-node">
+
+<strong>
+Fearow
+</strong>
+
+<br>
+
+Normal / Flying
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<h3>
+Rookidee Evolution Family
+</h3>
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Rookidee
+</strong>
+
+<br>
+
+Flying
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-node">
+
+<strong>
+Corvisquire
+</strong>
+
+<br>
+
+Flying
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-node">
+
+<strong>
+Corviknight
+</strong>
+
+<br>
+
+Flying / Steel
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<h3>
+Noibat Evolution Family
+</h3>
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Noibat
+</strong>
+
+<br>
+
+Flying / Dragon
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-node">
+
+<strong>
+Noivern
+</strong>
+
+<br>
+
+Flying / Dragon
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TYPE
+========================================================= -->
+
+<section class="section"
+id="type">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying Type Explained
+
+</h2>
+
+
+<p class="section-intro">
+
+Flying is especially interesting because it appears in many
+dual-type combinations. Those combinations can completely
+change a Pokémon's weaknesses, resistances and battle role.
+
+</p>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+Flying / Normal
+</h3>
+
+<p>
+
+A common combination with a broad matchup profile. Individual
+species must be evaluated using their complete typing.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Flying / Dragon
+</h3>
+
+<p>
+
+Dragon/Flying Pokémon have a very different defensive profile
+from pure Flying Pokémon and should be analyzed separately.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Flying / Steel
+</h3>
+
+<p>
+
+Steel provides numerous additional resistances and changes
+the practical value of Flying's weaknesses.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Flying / Fighting
+</h3>
+
+<p>
+
+This combination can provide useful offensive coverage while
+creating its own set of weaknesses.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="section"
+id="stats">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying Pokémon Max CP & Stats
+
+</h2>
+
+
+<p class="section-intro">
+
+Maximum CP is useful for quick comparisons, but Attack,
+Defense, HP, moves and typing provide a much better picture
+of actual battle performance.
+
+</p>
+
+
+<div class="stat-grid">
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest Max CP
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest Attack
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest Defense
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest HP
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="table-wrapper">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Attack
+</th>
+
+<th>
+Defense
+</th>
+
+<th>
+HP
+</th>
+
+<th>
+Max CP
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td>
+Rayquaza
+</td>
+
+<td>
+Dragon / Flying
+</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Dragonite
+</td>
+
+<td>
+Dragon / Flying
+</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Togekiss
+</td>
+
+<td>
+Fairy / Flying
+</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Yveltal
+</td>
+
+<td>
+Dark / Flying
+</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Corviknight
+</td>
+
+<td>
+Flying / Steel
+</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>—</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<br>
+
+
+<div class="notice">
+
+<strong>
+Important:
+</strong>
+
+Use Pokémon GO-specific stats rather than main-series
+base-stat values. Verify Max CP and stat values before
+publishing.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WEAKNESSES / RESISTANCES
+========================================================= -->
+
+<section class="section"
+id="matchups">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying-Type Weaknesses & Resistances
+
+</h2>
+
+
+<p class="section-intro">
+
+For a pure Flying-type Pokémon, Electric, Ice and Rock
+are important weaknesses. Flying also has a distinctive
+interaction with Ground attacks.
+
+</p>
+
+
+<div class="matchup-grid">
+
+
+<div class="matchup-box weakness">
+
+<h3>
+⚠️ Flying Weaknesses
+</h3>
+
+<div class="matchup-list">
+
+<span class="type-badge">
+Electric
+</span>
+
+<span class="type-badge">
+Ice
+</span>
+
+<span class="type-badge">
+Rock
+</span>
+
+</div>
+
+<p>
+
+These are the core weaknesses of a pure Flying-type
+defensive profile.
+
+</p>
+
+</div>
+
+
+<div class="matchup-box resistance">
+
+<h3>
+🛡️ Flying Resistances / Immunity
+
+</h3>
+
+<div class="matchup-list">
+
+<span class="type-badge">
+Ground: Immune
+</span>
+
+<span class="type-badge">
+Bug
+</span>
+
+<span class="type-badge">
+Fighting
+</span>
+
+<span class="type-badge">
+Grass
+</span>
+
+</div>
+
+<p>
+
+Flying provides important defensive interactions against
+Ground, Bug, Fighting and Grass attacks.
+
+</p>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="notice">
+
+<strong>
+Dual-type warning:
+</strong>
+
+A Flying/Steel Pokémon does not have the same weaknesses
+as a Flying/Dragon or Flying/Fighting Pokémon. Individual
+guides should always contain the complete matchup chart.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WEATHER
+========================================================= -->
+
+<section class="section"
+id="weather">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying-Type Weather & Battle Conditions
+
+</h2>
+
+
+<p class="section-intro">
+
+Weather can influence move performance and encounter
+conditions in Pokémon GO. Explain weather effects alongside
+the specific Pokémon rather than treating every Flying
+Pokémon identically.
+
+</p>
+
+
+<div class="weather-grid">
+
+
+<article class="weather-card">
+
+<h3>
+🌬️ Windy Weather
+</h3>
+
+<p>
+
+Flying-type attacks can receive weather-related benefits
+under appropriate in-game conditions.
+
+</p>
+
+</article>
+
+
+<article class="weather-card">
+
+<h3>
+⚡ Rainy Weather
+</h3>
+
+<p>
+
+Rain can strengthen Electric-type attacks, making it an
+important consideration when a Flying Pokémon faces an
+Electric counter.
+
+</p>
+
+</article>
+
+
+<article class="weather-card">
+
+<h3>
+❄️ Snow
+</h3>
+
+<p>
+
+Snow can strengthen Ice-type attacks, another important
+consideration against Flying Pokémon.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     BEST MOVES
+========================================================= -->
+
+<section class="section"
+id="moves">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Best Flying-Type Moves
+
+</h2>
+
+
+<p class="section-intro">
+
+A move should only be called "best" after considering the
+specific Pokémon, battle format, energy generation, damage,
+move timing and available alternatives.
+
+</p>
+
+
+<div class="move-grid">
+
+
+<article class="move-card">
+
+<h3>
+Wing Attack
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Fast Move
+</span>
+
+<span class="move-tag">
+Flying
+</span>
+
+</div>
+
+<p>
+
+A Flying fast move whose usefulness varies according to
+the Pokémon and battle format.
+
+</p>
+
+</article>
+
+
+<article class="move-card">
+
+<h3>
+Air Slash
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Fast Move
+</span>
+
+<span class="move-tag">
+Flying
+</span>
+
+</div>
+
+<p>
+
+A Flying fast attack that can provide a different
+damage and energy profile.
+
+</p>
+
+</article>
+
+
+<article class="move-card">
+
+<h3>
+Sky Attack
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Charged Move
+</span>
+
+<span class="move-tag">
+Flying
+</span>
+
+</div>
+
+<p>
+
+A major Flying charged move that can be particularly
+important on Pokémon with suitable fast-move access.
+
+</p>
+
+</article>
+
+
+<article class="move-card">
+
+<h3>
+Hurricane
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Charged Move
+</span>
+
+<span class="move-tag">
+Flying
+</span>
+
+</div>
+
+<p>
+
+A powerful Flying charged attack whose usefulness depends
+on the Pokémon's complete moveset and intended role.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RAID TIER
+========================================================= -->
+
+<section class="section"
+id="raids">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying-Type Raid Tier
+
+</h2>
+
+
+<p class="section-intro">
+
+Flying attackers can be valuable when a raid boss is weak
+to Flying attacks. Raid rankings should be based on actual
+damage performance rather than CP alone.
+
+</p>
+
+
+<div class="raid-tier">
+
+
+<div class="tier">
+
+<strong>
+S
+</strong>
+
+<span>
+Top-tier Flying attacker
+</span>
+
+</div>
+
+
+<div class="tier">
+
+<strong>
+A
+</strong>
+
+<span>
+Excellent specialist
+</span>
+
+</div>
+
+
+<div class="tier">
+
+<strong>
+B
+</strong>
+
+<span>
+Useful counter
+</span>
+
+</div>
+
+
+<div class="tier">
+
+<strong>
+C
+</strong>
+
+<span>
+Limited specialist value
+</span>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="notice">
+
+<strong>
+Raid ranking rule:
+</strong>
+
+Explain why a Pokémon receives its ranking using moves,
+Attack, typing, survivability, boss matchup and alternatives.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MEGA / PRIMAL
+========================================================= -->
+
+<section class="section"
+id="mega">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Mega & Primal Flying Pokémon
+
+</h2>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+Mega Evolution
+</h3>
+
+<p>
+
+Where a Flying Pokémon has a Mega Evolution in Pokémon GO,
+explain its typing, raid damage, Mega Energy requirements,
+bonuses and best situations for using it.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Primal Reversion
+</h3>
+
+<p>
+
+Primal Reversion is species-specific. Do not create a
+generic Primal section claiming that all Flying Pokémon
+have one.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Regular vs Mega
+</h3>
+
+<p>
+
+Compare the regular and Mega forms using the same battle
+conditions so the reader can understand whether the
+additional investment is worthwhile.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SHADOW / DYNAMAX / GIGANTAMAX
+========================================================= -->
+
+<section class="section"
+id="variants">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Shadow, Dynamax & Gigantamax Flying Pokémon
+
+</h2>
+
+
+<div class="variant-grid">
+
+
+<article class="variant-card">
+
+<h3>
+🌑 Shadow
+</h3>
+
+<p>
+
+For eligible Pokémon, explain Shadow availability,
+damage changes, purification considerations and resource
+investment.
+
+</p>
+
+</article>
+
+
+<article class="variant-card">
+
+<h3>
+⚡ Dynamax
+</h3>
+
+<p>
+
+When available, explain Dynamax-specific mechanics,
+moves and practical battle applications.
+
+</p>
+
+</article>
+
+
+<article class="variant-card">
+
+<h3>
+👑 Gigantamax
+</h3>
+
+<p>
+
+Keep Gigantamax information separate from ordinary
+Dynamax information because the mechanics and availability
+can differ.
+
+</p>
+
+</article>
+
+
+<article class="variant-card">
+
+<h3>
+🔄 Form Comparison
+</h3>
+
+<p>
+
+Compare Regular, Shadow, Mega, Dynamax and Gigantamax
+only where the species actually has those forms.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SHINY
+========================================================= -->
+
+<section class="section"
+id="shiny">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Shiny Flying Pokémon
+
+</h2>
+
+
+<p class="section-intro">
+
+A strong shiny section should explain availability,
+appearance differences and realistic encounter methods.
+
+</p>
+
+
+<div class="shiny-comparison">
+
+
+<div class="shiny-box">
+
+<span class="shiny-label">
+Regular
+</span>
+
+<h3>
+Regular Appearance
+</h3>
+
+<p>
+
+Describe the Pokémon's standard appearance and notable
+visual characteristics.
+
+</p>
+
+</div>
+
+
+<div class="shiny-box">
+
+<span class="shiny-label">
+✨ Shiny
+</span>
+
+<h3>
+Shiny Appearance
+</h3>
+
+<p>
+
+Describe the actual shiny color differences and clearly
+state whether the shiny is currently obtainable.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AVAILABILITY
+========================================================= -->
+
+<section class="section"
+id="availability">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying Pokémon Availability
+
+</h2>
+
+
+<p class="section-intro">
+
+Availability changes with seasons, events and rotations.
+Never present a temporary event encounter as permanent.
+
+</p>
+
+
+<div class="table-wrapper">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Wild
+</th>
+
+<th>
+Egg
+</th>
+
+<th>
+Raid
+</th>
+
+<th>
+Research
+</th>
+
+<th>
+Event
+</th>
+
+<th>
+Shiny
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+Pidgey
+</td>
+
+<td>
+Rotation dependent
+</td>
+
+<td>
+Check current pool
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Yes, when featured
+</td>
+
+<td>
+Check
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Dratini
+</td>
+
+<td>
+Rotation dependent
+</td>
+
+<td>
+Check current pool
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Rookidee
+</td>
+
+<td>
+Check current availability
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<br>
+
+
+<div class="notice">
+
+<strong>
+Update recommendation:
+</strong>
+
+Add a "Last Checked" date to pages containing temporary
+availability information.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DATABASE
+========================================================= -->
+
+<section class="section"
+id="pokemon-database">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Flying Pokémon Database
+
+</h2>
+
+
+<p class="section-intro">
+
+Search Flying Pokémon by name or generation. Every result
+should link to an individual page containing substantially
+more information than this hub.
+
+</p>
+
+
+<div class="database-toolbar">
+
+<input
+id="pokemonSearch"
+class="search-box"
+type="search"
+placeholder="Search Flying Pokémon..."
+aria-label="Search Flying Pokémon">
+
+
+<select
+id="generationFilter"
+class="filter-select">
+
+<option value="all">
+All Generations
+</option>
+
+<option value="1">Generation 1</option>
+
+<option value="2">Generation 2</option>
+
+<option value="3">Generation 3</option>
+
+<option value="4">Generation 4</option>
+
+<option value="5">Generation 5</option>
+
+<option value="6">Generation 6</option>
+
+<option value="7">Generation 7</option>
+
+<option value="8">Generation 8</option>
+
+<option value="9">Generation 9</option>
+
+</select>
+
+</div>
+
+
+<div class="pokemon-grid"
+id="pokemonGrid">
+
+
+<!-- Pidgeot -->
+
+<article class="pokemon-card"
+data-name="pidgeot"
+data-gen="1">
+
+<div class="pokemon-number">
+#0018 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/pidgeot.webp"
+alt="Pidgeot Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Pidgeot
+</h3>
+
+<span class="pokemon-type">
+Normal / Flying
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/pidgeot/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Fearow -->
+
+<article class="pokemon-card"
+data-name="fearow"
+data-gen="1">
+
+<div class="pokemon-number">
+#0022 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/fearow.webp"
+alt="Fearow Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Fearow
+</h3>
+
+<span class="pokemon-type">
+Normal / Flying
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/fearow/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Dragonite -->
+
+<article class="pokemon-card"
+data-name="dragonite"
+data-gen="1">
+
+<div class="pokemon-number">
+#0149 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/dragonite.webp"
+alt="Dragonite Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Dragonite
+</h3>
+
+<span class="pokemon-type">
+Dragon / Flying
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/dragonite/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Skarmory -->
+
+<article class="pokemon-card"
+data-name="skarmory"
+data-gen="2">
+
+<div class="pokemon-number">
+#0227 · Gen 2
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/skarmory.webp"
+alt="Skarmory Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Skarmory
+</h3>
+
+<span class="pokemon-type">
+Steel / Flying
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/skarmory/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Rayquaza -->
+
+<article class="pokemon-card"
+data-name="rayquaza"
+data-gen="3">
+
+<div class="pokemon-number">
+#0384 · Gen 3
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/rayquaza.webp"
+alt="Rayquaza Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Rayquaza
+</h3>
+
+<span class="pokemon-type">
+Dragon / Flying
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/rayquaza/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Staraptor -->
+
+<article class="pokemon-card"
+data-name="staraptor"
+data-gen="4">
+
+<div class="pokemon-number">
+#0398 · Gen 4
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/staraptor.webp"
+alt="Staraptor Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Staraptor
+</h3>
+
+<span class="pokemon-type">
+Normal / Flying
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/staraptor/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Noivern -->
+
+<article class="pokemon-card"
+data-name="noivern"
+data-gen="6">
+
+<div class="pokemon-number">
+#0715 · Gen 6
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/noivern.webp"
+alt="Noivern Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Noivern
+</h3>
+
+<span class="pokemon-type">
+Flying / Dragon
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/noivern/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- Corviknight -->
+
+<article class="pokemon-card"
+data-name="corviknight"
+data-gen="8">
+
+<div class="pokemon-number">
+#0823 · Gen 8
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/corviknight.webp"
+alt="Corviknight Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Corviknight
+</h3>
+
+<span class="pokemon-type">
+Flying / Steel
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<br>
+
+<a href="/pokemon/corviknight/">
+View Guide →
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INDIVIDUAL GUIDES
+========================================================= -->
+
+<section class="section"
+id="individual-guides">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Individual Flying Pokémon Guides
+
+</h2>
+
+
+<p class="section-intro">
+
+These pages should go significantly deeper than the hub.
+Each guide should answer the questions a Trainer has about
+that particular Pokémon.
+
+</p>
+
+
+<div class="guide-grid">
+
+
+<article class="guide-card">
+
+<h3>
+Rayquaza Guide
+</h3>
+
+<p>
+
+Evolution and availability, Dragon/Flying typing, raid
+performance, Flying moves, Mega Rayquaza, shiny availability,
+Shadow information where applicable and investment advice.
+
+</p>
+
+<a class="guide-link"
+href="/pokemon/rayquaza/">
+
+Read Rayquaza Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Dragonite Guide
+</h3>
+
+<p>
+
+Dragonite's stats, evolution family, Dragon/Flying typing,
+raid and PvP roles, moves, Shadow form, shiny availability
+and investment considerations.
+
+</p>
+
+<a class="guide-link"
+href="/pokemon/dragonite/">
+
+Read Dragonite Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Pidgeot Guide
+</h3>
+
+<p>
+
+Pidgeot evolution requirements, Normal/Flying typing,
+moves, PvP role, Mega Evolution, shiny availability and
+resource planning.
+
+</p>
+
+<a class="guide-link"
+href="/pokemon/pidgeot/">
+
+Read Pidgeot Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Skarmory Guide
+</h3>
+
+<p>
+
+Steel/Flying typing, defensive profile, PvP performance,
+moves, evolution and availability information.
+
+</p>
+
+<a class="guide-link"
+href="/pokemon/skarmory/">
+
+Read Skarmory Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Staraptor Guide
+</h3>
+
+<p>
+
+Staraptor evolution family, Flying moves, raid performance,
+PvP role, Community Day considerations and investment advice.
+
+</p>
+
+<a class="guide-link"
+href="/pokemon/staraptor/">
+
+Read Staraptor Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Corviknight Guide
+</h3>
+
+<p>
+
+Corviknight's Flying/Steel typing, evolution family,
+PvP potential, moves, availability and form information.
+
+</p>
+
+<a class="guide-link"
+href="/pokemon/corviknight/">
+
+Read Corviknight Guide →
+
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TRAINER GUIDE
+========================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+How to Choose a Flying Pokémon
+
+</h2>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+1. Identify the Target
+</h3>
+
+<p>
+
+First determine whether you need a Flying Pokémon for
+raids, PvP, gyms, collection or another purpose.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+2. Check Dual Typing
+</h3>
+
+<p>
+
+Never assume every Flying Pokémon has the same weaknesses.
+The second type can completely change the matchup.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+3. Check the Moveset
+</h3>
+
+<p>
+
+Fast-move energy generation and charged-move efficiency
+can change a Pokémon's practical performance.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+4. Consider Weather
+</h3>
+
+<p>
+
+Weather can affect both your Flying attacker and the
+counter moves used against it.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+5. Compare Forms
+</h3>
+
+<p>
+
+If Mega, Shadow, Dynamax or Gigantamax versions exist,
+compare them separately.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+6. Spend Resources Carefully
+</h3>
+
+<p>
+
+Candy, Stardust, XL Candy and Elite TMs can be limited.
+Explain whether the investment is actually worthwhile.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section"
+id="faq">
+
+<div class="container faq">
+
+<h2 class="section-title">
+
+Flying-Type Pokémon GO FAQ
+
+</h2>
+
+
+<details>
+
+<summary>
+What is Flying weak to in Pokémon GO?
+</summary>
+
+<p>
+
+Pure Flying typing is weak to Electric, Ice and Rock attacks.
+Dual typing can change the complete matchup.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What types are Flying strong against?
+</summary>
+
+<p>
+
+Flying-type attacks are especially useful against Fighting,
+Bug and Grass-type opponents.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does Flying have an immunity to Ground?
+</summary>
+
+<p>
+
+Flying typing has a special defensive interaction with
+Ground-type attacks. Individual Pokémon should still be
+evaluated using their complete typing and current game
+mechanics.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is the best Flying Pokémon?
+</summary>
+
+<p>
+
+There is no universal answer. A raid attacker, PvP Pokémon
+and defensive Pokémon can have completely different
+requirements.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Rayquaza good for raids?
+</summary>
+
+<p>
+
+Rayquaza can be a major Flying/Dragon investment, but its
+current moveset, form, availability and the specific raid
+boss should be considered before recommending it.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are all Flying Pokémon good raid attackers?
+</summary>
+
+<p>
+
+No. Type alone does not determine raid performance. Stats,
+moves, survivability and the boss matchup all matter.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should Mega, Shadow and Dynamax information appear on every
+Flying Pokémon page?
+</summary>
+
+<p>
+
+Only when those forms actually exist and are relevant to
+that species. Conditional content is much better than
+filling every page with irrelevant sections.
+
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="editorial-box">
+
+<h2>
+Editorial & Data Methodology
+</h2>
+
+
+<p>
+
+Pokémon GO data changes over time. Statistics, moves,
+availability, raid rotations and special forms should be
+checked and updated whenever the game changes.
+
+</p>
+
+
+<p>
+
+This hub should provide more than raw statistics. Individual
+pages should add original explanations, practical comparisons,
+battle recommendations and context that helps Trainers make
+decisions.
+
+</p>
+
+
+<p>
+
+Temporary event information should include an update date
+where possible so visitors can understand how current the
+information is.
+
+</p>
+
+
+<div class="editorial-meta">
+
+
+<div>
+
+<strong>
+Written by
+</strong>
+
+<span>
+Pokémon Gaming Editorial Team
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Reviewed by
+</strong>
+
+<span>
+Pokémon GO Guide Reviewer
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Last Updated
+</strong>
+
+<span>
+August 21, 2026
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RELATED HUBS
+========================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Related Type Hubs
+
+</h2>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+⚙️ Steel-Type Hub
+</h3>
+
+<p>
+
+Explore Steel Pokémon, stats, resistances, weaknesses,
+moves and individual guides.
+
+</p>
+
+<a href="/pokemon/steel-type.html">
+Open Steel Hub →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+👻 Ghost-Type Hub
+</h3>
+
+<p>
+
+Explore Ghost Pokémon, raid roles, PvP information,
+evolutions and forms.
+
+</p>
+
+<a href="/pokemon/ghost-type.html">
+Open Ghost Hub →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+☠️ Poison-Type Hub
+</h3>
+
+<p>
+
+Explore Poison Pokémon by generation, evolution family,
+stats and battle roles.
+
+</p>
+
+<a href="/pokemon/poison-type.html">
+Open Poison Hub →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+⭐ Normal-Type Hub
+</h3>
+
+<p>
+
+Explore Normal Pokémon, evolution families, stats,
+moves, availability and individual guides.
+
+</p>
+
+<a href="/pokemon/normal-type.html">
+Open Normal Hub →
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+Pokémon Gaming
+</h3>
+
+<p>
+
+Independent Pokémon GO guides, database resources,
+raid information and gaming tools.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Explore
+</h3>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Information
+</h3>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/contact.html">
+Contact
+</a>
+
+<a href="/editorial-policy.html">
+Editorial Policy
+</a>
+
+<a href="/privacy-policy.html">
+Privacy Policy
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Legal
+</h3>
+
+<a href="/terms.html">
+Terms
+</a>
+
+<a href="/disclaimer.html">
+Disclaimer
+</a>
+
+<a href="/cookie-policy.html">
+Cookie Policy
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-note">
+
+<p>
+
+Pokémon Gaming is an independent fan website and is not
+affiliated with, sponsored by, or endorsed by Nintendo,
+The Pokémon Company, Niantic or any other Pokémon-related
+rights holder.
+
+Pokémon and Pokémon character names are trademarks of
+their respective owners.
+
+</p>
+
+<p>
+© 2026 Pokémon Gaming. All rights reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   DATABASE SEARCH
+========================================================= */
+
+const searchInput =
+document.getElementById(
+    "pokemonSearch"
+);
+
+const generationFilter =
+document.getElementById(
+    "generationFilter"
+);
+
+const pokemonCards =
+document.querySelectorAll(
+    ".pokemon-card"
+);
+
+
+function filterPokemon(){
+
+    const search =
+        searchInput.value
+        .toLowerCase()
+        .trim();
+
+    const generation =
+        generationFilter.value;
+
+
+    pokemonCards.forEach(card => {
+
+        const name =
+            card.dataset.name
+            .toLowerCase();
+
+        const gen =
+            card.dataset.gen;
+
+
+        const searchMatch =
+            name.includes(search);
+
+        const generationMatch =
+            generation === "all" ||
+            generation === gen;
+
+
+        if(
+            searchMatch &&
+            generationMatch
+        ){
+
+            card.style.display = "";
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+searchInput.addEventListener(
+    "input",
+    filterPokemon
+);
+
+
+generationFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
+/* =========================================================
+   GENERATION BUTTONS
+========================================================= */
+
+const generationButtons =
+document.querySelectorAll(
+    ".gen-btn"
+);
+
+
+generationButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function(){
+
+            generationButtons
+            .forEach(btn => {
+
+                btn.classList
+                .remove("active");
+
+            });
+
+
+            this.classList.add(
+                "active"
+            );
+
+
+            generationFilter.value =
+                this.dataset.gen;
+
+
+            filterPokemon();
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+
+</html>

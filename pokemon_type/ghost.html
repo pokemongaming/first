@@ -1,0 +1,3391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ghost-Type Pokémon GO Guide | Gen 1–9, Stats, Moves, Raids & More</title>
+
+<meta name="description"
+content="Complete Ghost-type Pokémon GO guide covering Gen 1–9, evolution families, typing, Max CP, Attack, Defense, HP, weaknesses, resistances, best moves, raid performance, Mega and Primal forms, Shadow, Dynamax, Gigantamax, shiny availability and individual Pokémon guides.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon-types/ghost.html">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --bg: #08070d;
+    --bg-soft: #100d17;
+    --surface: #16121f;
+    --surface-2: #1d1828;
+    --surface-3: #272033;
+
+    --border: #352c43;
+
+    --text: #f7f4fb;
+    --muted: #b4adbd;
+
+    --ghost: #9b7bb7;
+    --ghost-light: #c7a9df;
+    --ghost-dark: #684d82;
+
+    --green: #59d98b;
+    --red: #ff6d78;
+    --blue: #6dbaff;
+    --gold: #e8c56b;
+
+    --max-width: 1220px;
+
+    --radius-sm: 10px;
+    --radius: 18px;
+    --radius-lg: 26px;
+
+    --shadow:
+        0 25px 70px rgba(0,0,0,.32);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            #21182d,
+            var(--bg) 45%
+        );
+
+    color: var(--text);
+    line-height: 1.75;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: min(
+        calc(100% - 32px),
+        var(--max-width)
+    );
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background:
+        rgba(8,7,13,.94);
+
+    backdrop-filter: blur(16px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo {
+    font-size: 1.35rem;
+    font-weight: 950;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--ghost-light);
+}
+
+.navigation {
+    display: flex;
+    gap: 21px;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.navigation a {
+    color: var(--muted);
+    font-size: .88rem;
+    font-weight: 750;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   BREADCRUMBS
+========================================================= */
+
+.breadcrumbs {
+    padding: 20px 0 12px;
+
+    color: var(--muted);
+    font-size: .83rem;
+}
+
+.breadcrumbs span {
+    color: var(--ghost-light);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 52px;
+
+    border-radius: var(--radius-lg);
+
+    border:
+        1px solid
+        rgba(155,123,183,.48);
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(155,123,183,.25),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 15% 100%,
+            rgba(104,77,130,.18),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(155,123,183,.12),
+            rgba(22,18,31,.98)
+        );
+
+    box-shadow: var(--shadow);
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: -130px;
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(155,123,183,.10);
+
+    filter: blur(15px);
+}
+
+.type-label {
+    display: inline-flex;
+
+    padding: 7px 14px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(155,123,183,.14);
+
+    border:
+        1px solid
+        rgba(155,123,183,.42);
+
+    color: var(--ghost-light);
+
+    font-size: .75rem;
+    font-weight: 900;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.hero h1 {
+    max-width: 950px;
+
+    margin-top: 18px;
+
+    font-size:
+        clamp(
+            2.25rem,
+            5vw,
+            4.3rem
+        );
+
+    line-height: 1.05;
+}
+
+.hero h1 strong {
+    display: block;
+    color: var(--ghost);
+}
+
+.hero-description {
+    max-width: 920px;
+
+    margin-top: 23px;
+
+    color: var(--muted);
+
+    font-size: 1.06rem;
+}
+
+.hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 27px;
+}
+
+.hero-pill {
+    padding: 8px 13px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .79rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   AD SPACE
+========================================================= */
+
+.ad-space {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 28px 0;
+
+    border:
+        1px dashed #3d344b;
+
+    border-radius: var(--radius-sm);
+
+    color: #777080;
+
+    font-size: .77rem;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.page-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        285px;
+
+    gap: 28px;
+
+    margin-top: 28px;
+}
+
+.content {
+    min-width: 0;
+}
+
+.sidebar {
+    position: sticky;
+    top: 94px;
+
+    align-self: start;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.section {
+    margin-bottom: 30px;
+
+    padding: 31px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.section h2 {
+    margin-bottom: 14px;
+
+    font-size:
+        clamp(
+            1.45rem,
+            3vw,
+            2.05rem
+        );
+
+    line-height: 1.2;
+}
+
+.section h3 {
+    margin: 24px 0 10px;
+    font-size: 1.12rem;
+}
+
+.section p {
+    color: var(--muted);
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   QUICK NAVIGATION
+========================================================= */
+
+.quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.quick-nav a {
+    padding: 8px 12px;
+
+    background: var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    color: var(--muted);
+
+    font-size: .79rem;
+    font-weight: 750;
+}
+
+.quick-nav a:hover {
+    color: white;
+    border-color: var(--ghost);
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.info-card {
+    padding: 20px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.info-card h3 {
+    margin: 0 0 7px;
+    font-size: 1rem;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: .86rem;
+}
+
+
+/* =========================================================
+   GENERATIONS
+========================================================= */
+
+.generation-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.generation-card {
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface-2),
+            var(--bg-soft)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+.generation-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        var(--ghost);
+}
+
+.generation-number {
+    color: var(--ghost-light);
+
+    font-size: .76rem;
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.generation-card h3 {
+    margin: 7px 0;
+}
+
+.generation-card p {
+    margin: 0;
+    font-size: .84rem;
+}
+
+.generation-card a {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: var(--ghost-light);
+
+    font-weight: 850;
+    font-size: .82rem;
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution {
+    display: grid;
+
+    grid-template-columns:
+        1fr 50px 1fr 50px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+.evolution-card {
+    padding: 20px;
+
+    background: var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.evolution-card strong {
+    display: block;
+    font-size: 1.05rem;
+}
+
+.evolution-card span {
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.evolution-arrow {
+    text-align: center;
+
+    color: var(--ghost);
+
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.stat {
+    padding: 20px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: .78rem;
+}
+
+.stat-value {
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--ghost-light);
+
+    font-size: 1.85rem;
+    font-weight: 950;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    min-width: 680px;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px 14px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+}
+
+th {
+    background:
+        var(--surface-2);
+
+    color: white;
+
+    font-size: .76rem;
+
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+td {
+    color: var(--muted);
+    font-size: .86rem;
+}
+
+
+/* =========================================================
+   WEAKNESS / RESISTANCE
+========================================================= */
+
+.effectiveness {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.effect-box {
+    padding: 22px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.effect-box h3 {
+    margin-top: 0;
+}
+
+.weakness h3 {
+    color: var(--red);
+}
+
+.resistance h3 {
+    color: var(--green);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.tag {
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    background:
+        var(--surface-3);
+
+    color: var(--muted);
+
+    font-size: .77rem;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SPECIAL FORMS
+========================================================= */
+
+.special-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.special-card {
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface-2),
+            var(--bg-soft)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.special-card h3 {
+    margin-top: 0;
+}
+
+.special-card p {
+    font-size: .86rem;
+}
+
+
+/* =========================================================
+   INDIVIDUAL GUIDES
+========================================================= */
+
+.guide-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.guide-card {
+    padding: 22px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.guide-card h3 {
+    margin-top: 0;
+}
+
+.guide-card p {
+    font-size: .85rem;
+}
+
+.guide-card a {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: var(--ghost-light);
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   CALLOUT
+========================================================= */
+
+.callout {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-left:
+        4px solid var(--ghost);
+
+    background:
+        rgba(155,123,183,.07);
+
+    color: var(--muted);
+
+    border-radius:
+        0 var(--radius-sm)
+        var(--radius-sm) 0;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq {
+    border-top:
+        1px solid var(--border);
+
+    margin-top: 20px;
+}
+
+.faq-item {
+    padding: 18px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.faq-item h3 {
+    margin: 0 0 7px;
+    font-size: 1rem;
+}
+
+.faq-item p {
+    margin: 0;
+    font-size: .87rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar-card {
+    padding: 20px;
+    margin-bottom: 16px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.sidebar-card h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.sidebar-card a {
+    display: block;
+
+    padding: 7px 0;
+
+    color: var(--muted);
+
+    font-size: .82rem;
+}
+
+.sidebar-card a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    margin-top: 60px;
+
+    padding:
+        50px 0 25px;
+
+    background:
+        #060509;
+
+    border-top:
+        1px solid var(--border);
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap: 30px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+    color: var(--muted);
+    font-size: .84rem;
+}
+
+.footer a {
+    display: block;
+    margin: 5px 0;
+}
+
+.copyright {
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color: #707987;
+
+    font-size: .75rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px) {
+
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .generation-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .hero {
+        padding: 30px 22px;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .info-grid,
+    .generation-grid,
+    .stat-grid,
+    .effectiveness,
+    .special-grid,
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .evolution {
+        grid-template-columns: 1fr;
+    }
+
+    .evolution-arrow {
+        transform: rotate(90deg);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+<div class="container header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="navigation">
+
+<a href="/pokemon/">Pokémon</a>
+
+<a href="/raids/">Raids</a>
+
+<a href="/pvp/">PvP</a>
+
+<a href="/pokemon-types/">Types</a>
+
+<a href="/tools/">Tools</a>
+
+<a href="/guides/">Guides</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumbs">
+
+Home /
+Pokémon Database /
+Pokémon Types /
+<span>Ghost</span>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<span class="type-label">
+Ghost Type
+</span>
+
+<h1>
+
+Ghost-Type Pokémon GO
+<strong>Complete Hub</strong>
+
+</h1>
+
+<p class="hero-description">
+
+Explore Ghost-type Pokémon in Pokémon GO with a
+generation-by-generation database covering Gen 1–9,
+evolution families, typing, Max CP, Attack, Defense,
+HP, weaknesses, resistances, best moves, raid roles,
+Mega and Primal forms, Shadow Pokémon, Dynamax,
+Gigantamax, shiny availability, encounter methods
+and individual Pokémon guides.
+
+</p>
+
+<div class="hero-pills">
+
+<span class="hero-pill">Gen 1–9</span>
+<span class="hero-pill">Evolution Families</span>
+<span class="hero-pill">PvE</span>
+<span class="hero-pill">PvP</span>
+<span class="hero-pill">Mega / Primal</span>
+<span class="hero-pill">Shadow</span>
+<span class="hero-pill">Dynamax</span>
+<span class="hero-pill">Shiny</span>
+
+</div>
+
+</section>
+
+
+<div class="ad-space">
+Advertisement
+</div>
+
+
+<div class="page-layout">
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<article class="content">
+
+
+<!-- =====================================================
+     1. GHOST TYPE HUB
+===================================================== -->
+
+<section class="section" id="hub">
+
+<h2>
+1. Ghost-Type Pokémon GO Hub
+</h2>
+
+<p>
+
+Ghost-type Pokémon have a distinctive place in Pokémon GO.
+Some are powerful raid attackers, some are highly relevant
+in PvP, and others are primarily interesting because of
+their evolution families, shiny forms, Shadow variants or
+limited availability.
+
+</p>
+
+<p>
+
+This hub is designed to answer both beginner and advanced
+questions. A new player can learn the basics of Ghost
+typing, while experienced trainers can move directly into
+stats, moves, raid roles and individual Pokémon analysis.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Ghost Raid Attackers
+</h3>
+
+<p>
+Compare Ghost Pokémon according to practical PvE performance,
+movesets and matchup value.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Ghost PvP Pokémon
+</h3>
+
+<p>
+Explore Ghost Pokémon for Great, Ultra and Master League
+where appropriate.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Collectors
+</h3>
+
+<p>
+Find evolution families, shiny forms, Shadow versions,
+special forms and availability information.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     2. GEN 1-9
+===================================================== -->
+
+<section class="section" id="generations">
+
+<h2>
+2. Ghost Pokémon by Generation — Gen 1 to Gen 9
+</h2>
+
+<p>
+
+Ghost Pokémon have appeared across multiple generations.
+Organizing them by generation gives readers a useful route
+into the database while preserving the history of each
+Pokémon family.
+
+</p>
+
+<div class="generation-grid">
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 1
+</span>
+
+<h3>
+Kanto
+</h3>
+
+<p>
+Explore the original Kanto Ghost Pokémon and their
+evolution families.
+</p>
+
+<a href="/pokemon-types/ghost/gen-1.html">
+Explore Gen 1 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 2
+</span>
+
+<h3>
+Johto
+</h3>
+
+<p>
+Discover Johto Ghost Pokémon, forms and battle roles.
+</p>
+
+<a href="/pokemon-types/ghost/gen-2.html">
+Explore Gen 2 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 3
+</span>
+
+<h3>
+Hoenn
+</h3>
+
+<p>
+Explore Hoenn Ghost Pokémon and their evolution lines.
+</p>
+
+<a href="/pokemon-types/ghost/gen-3.html">
+Explore Gen 3 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 4
+</span>
+
+<h3>
+Sinnoh
+</h3>
+
+<p>
+Explore Sinnoh Ghost Pokémon and later evolution families.
+</p>
+
+<a href="/pokemon-types/ghost/gen-4.html">
+Explore Gen 4 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 5
+</span>
+
+<h3>
+Unova
+</h3>
+
+<p>
+Review Unova Ghost Pokémon and their battle applications.
+</p>
+
+<a href="/pokemon-types/ghost/gen-5.html">
+Explore Gen 5 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 6
+</span>
+
+<h3>
+Kalos
+</h3>
+
+<p>
+Explore Kalos Ghost Pokémon and dual-type combinations.
+</p>
+
+<a href="/pokemon-types/ghost/gen-6.html">
+Explore Gen 6 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 7
+</span>
+
+<h3>
+Alola
+</h3>
+
+<p>
+Explore Alolan Ghost Pokémon and regional forms.
+</p>
+
+<a href="/pokemon-types/ghost/gen-7.html">
+Explore Gen 7 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 8
+</span>
+
+<h3>
+Galar / Hisui
+</h3>
+
+<p>
+Explore relevant Ghost Pokémon and regional variants.
+</p>
+
+<a href="/pokemon-types/ghost/gen-8.html">
+Explore Gen 8 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 9
+</span>
+
+<h3>
+Paldea
+</h3>
+
+<p>
+Explore Paldean Ghost Pokémon and their individual roles.
+</p>
+
+<a href="/pokemon-types/ghost/gen-9.html">
+Explore Gen 9 →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     3. EVOLUTION FAMILY
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<h2>
+3. Ghost-Type Evolution Families
+</h2>
+
+<p>
+
+Evolution information is more useful when it explains the
+player's progression rather than simply displaying three
+names in a row.
+
+</p>
+
+<p>
+
+For each Ghost evolution family, explain Candy requirements,
+evolution methods, useful moves, final-form performance,
+special forms and whether the evolution is worth investing
+in.
+
+</p>
+
+<div class="evolution">
+
+<div class="evolution-card">
+
+<strong>
+Gastly
+</strong>
+
+<span>
+Base Form
+</span>
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-card">
+
+<strong>
+Haunter
+</strong>
+
+<span>
+Middle Evolution
+</span>
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-card">
+
+<strong>
+Gengar
+</strong>
+
+<span>
+Final Evolution
+</span>
+
+</div>
+
+</div>
+
+<div class="callout">
+
+An individual family page should explain what changes at
+each stage instead of repeating the same generic evolution
+description for every Pokémon.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     4. TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<h2>
+4. Ghost Type — Typing & Battle Identity
+</h2>
+
+<p>
+
+Ghost is both an offensive and defensive typing with a
+number of distinctive interactions. The secondary typing
+of an individual Pokémon can significantly change its
+actual matchup profile.
+
+</p>
+
+<p>
+
+For example, a pure Ghost Pokémon should not be treated
+the same way as a Ghost/Poison, Ghost/Dark, Ghost/Fairy
+or Ghost/Dragon Pokémon.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Pure Ghost
+</h3>
+
+<p>
+Use the basic Ghost type profile when evaluating pure
+Ghost Pokémon.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Dual-Type Ghost
+</h3>
+
+<p>
+Secondary typing can add resistances, weaknesses and
+different offensive opportunities.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+STAB
+</h3>
+
+<p>
+Ghost-type Pokémon receive Same-Type Attack Bonus when
+using Ghost-type attacks.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     5. MAX CP
+===================================================== -->
+
+<section class="section" id="max-cp">
+
+<h2>
+5. Ghost Pokémon Max CP
+</h2>
+
+<p>
+
+Maximum CP is useful for understanding a Pokémon's
+potential level ceiling, but it should never be treated
+as the only measure of battle strength.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Pokémon</th>
+<th>Max CP</th>
+<th>Typing</th>
+<th>Primary Role</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Gengar</td>
+<td>Verify current data</td>
+<td>Ghost / Poison</td>
+<td>Raid / PvP</td>
+</tr>
+
+<tr>
+<td>Chandelure</td>
+<td>Verify current data</td>
+<td>Ghost / Fire</td>
+<td>Raid</td>
+</tr>
+
+<tr>
+<td>Giratina</td>
+<td>Verify current data</td>
+<td>Ghost / Dragon</td>
+<td>Raid / PvP</td>
+</tr>
+
+<tr>
+<td>Dragapult</td>
+<td>Verify current data</td>
+<td>Dragon / Ghost</td>
+<td>Raid / PvP</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="callout">
+
+Always verify current Pokémon GO statistics before
+publication. Do not use estimated CP values simply to
+fill a database table.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     6. ATTACK DEFENSE HP
+===================================================== -->
+
+<section class="section" id="stats">
+
+<h2>
+6. Attack, Defense & HP
+</h2>
+
+<p>
+
+Base statistics provide more useful context than CP alone.
+Attack can strongly influence raid damage, while Defense
+and HP become especially important when evaluating
+survivability and PvP performance.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat">
+
+<span class="stat-label">
+Attack
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>Individual Pokémon</p>
+
+</div>
+
+<div class="stat">
+
+<span class="stat-label">
+Defense
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>Individual Pokémon</p>
+
+</div>
+
+<div class="stat">
+
+<span class="stat-label">
+HP
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>Individual Pokémon</p>
+
+</div>
+
+<div class="stat">
+
+<span class="stat-label">
+Battle Role
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>PvE / PvP</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     7. WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<h2>
+7. Ghost-Type Weaknesses
+</h2>
+
+<p>
+
+Ghost-type matchups should be explained at the type level,
+while individual Pokémon guides should always account for
+secondary typing.
+
+</p>
+
+<div class="effectiveness">
+
+<div class="effect-box weakness">
+
+<h3>
+Important Ghost Weaknesses
+</h3>
+
+<div class="tags">
+
+<span class="tag">
+Ghost
+</span>
+
+<span class="tag">
+Dark
+</span>
+
+</div>
+
+</div>
+
+<div class="effect-box">
+
+<h3>
+Battle Strategy
+</h3>
+
+<p>
+
+When fighting a Ghost-type raid boss, identify the complete
+typing first. A dual-type boss may have a very different
+counter list from a pure Ghost Pokémon.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     8. RESISTANCES
+===================================================== -->
+
+<section class="section" id="resistances">
+
+<h2>
+8. Ghost-Type Resistances & Immunities
+</h2>
+
+<p>
+
+Ghost Pokémon have several distinctive defensive
+interactions. These become even more interesting when
+secondary typing is involved.
+
+</p>
+
+<div class="effectiveness">
+
+<div class="effect-box resistance">
+
+<h3>
+Important Resistances
+</h3>
+
+<div class="tags">
+
+<span class="tag">
+Poison
+</span>
+
+<span class="tag">
+Bug
+</span>
+
+</div>
+
+</div>
+
+<div class="effect-box">
+
+<h3>
+Ghost Defensive Mechanics
+</h3>
+
+<p>
+
+Ghost typing also has special interactions with certain
+attack types. Always distinguish the standard type chart
+from Pokémon GO's specific battle implementation when
+writing detailed mechanics.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     9. BEST MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<h2>
+9. Best Ghost-Type Moves
+</h2>
+
+<p>
+
+A strong moves section should explain why a move is useful
+instead of simply presenting a ranked list.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Move</th>
+<th>Type</th>
+<th>Category</th>
+<th>Best Use</th>
+<th>What To Evaluate</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Ghost Fast Move</td>
+<td>Ghost</td>
+<td>Fast</td>
+<td>Raid / PvP</td>
+<td>Damage and energy generation</td>
+</tr>
+
+<tr>
+<td>Ghost Charged Move</td>
+<td>Ghost</td>
+<td>Charged</td>
+<td>Raid</td>
+<td>Damage and energy cost</td>
+</tr>
+
+<tr>
+<td>Coverage Move</td>
+<td>Varies</td>
+<td>Charged</td>
+<td>PvP</td>
+<td>Matchup coverage</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="callout">
+
+Move recommendations should be updated whenever Pokémon GO
+changes move availability, move stats or exclusive moves.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     10. RAID TIER
+===================================================== -->
+
+<section class="section" id="raid-tier">
+
+<h2>
+10. Ghost Pokémon Raid Tier
+</h2>
+
+<p>
+
+A Ghost raid tier list should consider practical battle
+performance rather than simply CP or Attack.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Factor</th>
+<th>What It Means</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Damage</td>
+<td>Practical damage output during raids.</td>
+</tr>
+
+<tr>
+<td>Moveset</td>
+<td>Quality of Fast and Charged Moves.</td>
+</tr>
+
+<tr>
+<td>Survivability</td>
+<td>How long the attacker can remain useful.</td>
+</tr>
+
+<tr>
+<td>Availability</td>
+<td>How realistically players can obtain it.</td>
+</tr>
+
+<tr>
+<td>Investment</td>
+<td>Stardust, Candy, XL Candy and other resources.</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="callout">
+
+Don't write “S Tier” without explaining the reason.
+The explanation is what makes the tier list useful to
+the reader.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     11. MEGA / PRIMAL
+===================================================== -->
+
+<section class="section" id="mega">
+
+<h2>
+11. Mega & Primal Ghost Pokémon
+</h2>
+
+<p>
+
+Special forms deserve dedicated analysis because their
+battle value can differ significantly from the standard
+form.
+
+</p>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<h3>
+Mega Evolution
+</h3>
+
+<p>
+
+For applicable Ghost Pokémon, document Mega Energy,
+typing, stats, moves, raid performance, duration and
+team benefits.
+
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>
+Primal Reversion
+</h3>
+
+<p>
+
+If a Pokémon has a Primal form, explain Primal Energy,
+availability, battle performance and practical use cases.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     12. SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<h2>
+12. Shadow Ghost Pokémon
+</h2>
+
+<p>
+
+Shadow Pokémon should be evaluated separately from their
+regular counterparts because offensive performance,
+resource requirements and survivability can differ.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Version</th>
+<th>Purpose</th>
+<th>Investment Question</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Regular</td>
+<td>Standard battle performance</td>
+<td>Is the normal version sufficient?</td>
+</tr>
+
+<tr>
+<td>Shadow</td>
+<td>Higher offensive specialization</td>
+<td>Does the extra offensive pressure justify the cost?</td>
+</tr>
+
+<tr>
+<td>Purified</td>
+<td>Alternative collection/battle option</td>
+<td>Does purification provide a meaningful benefit?</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     13. DYNAMAX / GIGANTAMAX
+===================================================== -->
+
+<section class="section" id="dynamax">
+
+<h2>
+13. Dynamax & Gigantamax Ghost Pokémon
+</h2>
+
+<p>
+
+Dynamax and Gigantamax should be separated from standard
+raid information because they belong to different battle
+systems and have their own mechanics.
+
+</p>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<h3>
+Dynamax
+</h3>
+
+<p>
+
+When applicable, document Max Battle availability,
+requirements, Max Moves and practical battle value.
+
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>
+Gigantamax
+</h3>
+
+<p>
+
+Explain Gigantamax availability, unique mechanics and
+how the form differs from the normal Pokémon.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     14. SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<h2>
+14. Shiny Ghost Pokémon
+</h2>
+
+<p>
+
+Shiny information is valuable for collectors and should
+clearly distinguish between released and unreleased shiny
+forms.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Pokémon</th>
+<th>Shiny</th>
+<th>Current Availability</th>
+<th>Historical Availability</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Example Ghost Pokémon</td>
+<td>Verify</td>
+<td>Verify</td>
+<td>Verify</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="callout">
+
+Do not claim that a shiny is currently available simply
+because the shiny exists in the game's underlying assets.
+Shiny release and current encounter availability are
+different things.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     15. AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<h2>
+15. Ghost Pokémon Availability
+</h2>
+
+<p>
+
+Availability is one of the most useful sections for
+players because it answers the practical question:
+“How can I obtain this Pokémon right now?”
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Wild
+</h3>
+
+<p>
+Document current wild encounters and event-dependent
+availability.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Raids
+</h3>
+
+<p>
+Document current and historical raid appearances.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Research
+</h3>
+
+<p>
+Include research encounters when applicable.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Eggs
+</h3>
+
+<p>
+Document relevant egg pools when applicable.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Events
+</h3>
+
+<p>
+Explain event-specific encounter opportunities.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Trading
+</h3>
+
+<p>
+Useful when a Pokémon isn't currently obtainable directly.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     16. INDIVIDUAL GUIDES
+===================================================== -->
+
+<section class="section" id="individual-guides">
+
+<h2>
+16. Individual Ghost Pokémon Guides
+</h2>
+
+<p>
+
+The hub should be the starting point, not the endpoint.
+Each important Ghost Pokémon should have its own deeper
+guide containing information specific to that Pokémon.
+
+</p>
+
+<div class="guide-grid">
+
+
+<div class="guide-card">
+
+<h3>
+Gengar
+</h3>
+
+<p>
+
+Evolution family, stats, moves, raid performance, PvP,
+Mega Evolution, Shadow information, shiny and availability.
+
+</p>
+
+<a href="/pokemon/gengar.html">
+Read Gengar Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Giratina
+</h3>
+
+<p>
+
+Origin and Altered forms, typing, moves, raid roles,
+PvP performance, shiny availability and special forms.
+
+</p>
+
+<a href="/pokemon/giratina.html">
+Read Giratina Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Chandelure
+</h3>
+
+<p>
+
+Ghost/Fire typing, evolution, moves, raid performance,
+PvP applications and investment considerations.
+
+</p>
+
+<a href="/pokemon/chandelure.html">
+Read Chandelure Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Aegislash
+</h3>
+
+<p>
+
+Typing, forms, evolution requirements, moves and
+battle applications where available.
+
+</p>
+
+<a href="/pokemon/aegislash.html">
+Read Aegislash Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Mimikyu
+</h3>
+
+<p>
+
+Typing, availability, evolution information and
+battle potential where applicable.
+
+</p>
+
+<a href="/pokemon/mimikyu.html">
+Read Mimikyu Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Dragapult
+</h3>
+
+<p>
+
+Dragon/Ghost typing, evolution family, stats, moves,
+raid performance and PvP considerations.
+
+</p>
+
+<a href="/pokemon/dragapult.html">
+Read Dragapult Guide →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     17. INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+<h2>
+17. Which Ghost Pokémon Should You Power Up?
+</h2>
+
+<p>
+
+The best investment depends on what the trainer actually
+needs. A high-CP Pokémon isn't automatically the best
+choice for every battle format.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Raid Investment
+</h3>
+
+<p>
+Prioritize strong attackers with useful Ghost moves and
+relevant raid matchups.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+PvP Investment
+</h3>
+
+<p>
+Evaluate individual Pokémon separately for each league.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Shadow Investment
+</h3>
+
+<p>
+Compare Shadow and regular versions before spending
+large amounts of Stardust.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Mega Investment
+</h3>
+
+<p>
+Consider Mega Energy and team utility when applicable.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Shiny Investment
+</h3>
+
+<p>
+Collection value can matter independently of battle
+performance.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Future Investment
+</h3>
+
+<p>
+Consider whether future move updates or forms could
+change a Pokémon's usefulness.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     18. RAID MATCHUPS
+===================================================== -->
+
+<section class="section" id="raid-matchups">
+
+<h2>
+18. Ghost-Type Raid Matchups
+</h2>
+
+<p>
+
+Ghost attackers are most useful when their typing and
+moves align with the raid boss. A useful guide should
+therefore explain practical matchups instead of claiming
+that every Ghost attacker is universally strong.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Raid Situation</th>
+<th>Ghost Relevance</th>
+<th>What To Check</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Psychic-type Boss</td>
+<td>Potentially valuable</td>
+<td>Boss secondary typing and moveset.</td>
+</tr>
+
+<tr>
+<td>Ghost-type Boss</td>
+<td>Potentially valuable</td>
+<td>Ghost resistance/weakness interactions.</td>
+</tr>
+
+<tr>
+<td>Other Vulnerable Boss</td>
+<td>Situational</td>
+<td>Complete type chart and available counters.</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     19. BEGINNER GUIDE
+===================================================== -->
+
+<section class="section" id="beginner">
+
+<h2>
+19. Ghost Pokémon for Beginners
+</h2>
+
+<p>
+
+A beginner doesn't need a perfect six-Pokémon team on day
+one. The most useful approach is to build a small collection
+of reliable attackers and gradually improve them.
+
+</p>
+
+<h3>
+Start With Useful Encounters
+</h3>
+
+<p>
+
+Prioritize Ghost Pokémon that are readily obtainable and
+have useful moves rather than spending all resources on a
+rare Pokémon simply because its CP is high.
+
+</p>
+
+<h3>
+Check the Moves
+</h3>
+
+<p>
+
+A Pokémon with excellent stats can still perform poorly if
+its available moves don't suit the battle you are preparing
+for.
+
+</p>
+
+<h3>
+Don't Overspend Stardust
+</h3>
+
+<p>
+
+New players should generally avoid powering every Pokémon
+to the maximum level. Save expensive resources for Pokémon
+with a clear purpose.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     20. ADVANCED ANALYSIS
+===================================================== -->
+
+<section class="section" id="advanced">
+
+<h2>
+20. Advanced Ghost-Type Analysis
+</h2>
+
+<p>
+
+Advanced readers should be able to move beyond simple
+stat comparisons. A serious Pokémon GO database should
+explain how typing, moves, stats, form, availability and
+battle format interact.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Typing
+</h3>
+
+<p>
+Analyze both primary and secondary typing.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Moveset
+</h3>
+
+<p>
+Compare Fast and Charged Move combinations rather than
+individual moves in isolation.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+PvE
+</h3>
+
+<p>
+Consider practical raid damage and survivability.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+PvP
+</h3>
+
+<p>
+Consider league-specific performance and matchup coverage.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Availability
+</h3>
+
+<p>
+A theoretically strong Pokémon is less accessible if
+obtaining it is difficult.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Investment
+</h3>
+
+<p>
+Include Stardust, Candy, XL Candy and special resources.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     21. FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<h2>
+21. Ghost-Type Pokémon GO FAQ
+</h2>
+
+<div class="faq">
+
+
+<div class="faq-item">
+
+<h3>
+What are Ghost-type Pokémon weak against?
+</h3>
+
+<p>
+
+Ghost typing has important interactions with Ghost and Dark
+attacks. Always check the complete typing of a dual-type
+Pokémon before selecting counters.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Are Ghost Pokémon good in raids?
+</h3>
+
+<p>
+
+Some Ghost Pokémon are excellent raid attackers, while
+others are more valuable in PvP or as collection targets.
+Moves and typing are important factors.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Which Ghost Pokémon should I power up?
+</h3>
+
+<p>
+
+The best choice depends on whether your goal is raids,
+PvP, Mega utility, collection or another specific purpose.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Is Shadow always better than regular?
+</h3>
+
+<p>
+
+No. Shadow Pokémon can provide stronger offensive output,
+but their overall value depends on the battle, resources
+and availability.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Are all Ghost Pokémon available in the wild?
+</h3>
+
+<p>
+
+No. Different species may appear through wild encounters,
+raids, research, eggs, events, trading or other methods.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Is Max CP enough to determine the best Ghost Pokémon?
+</h3>
+
+<p>
+
+No. CP is only one part of the picture. Moves, typing,
+stats, battle format and availability can be more important.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     22. RELATED GUIDES
+===================================================== -->
+
+<section class="section" id="related">
+
+<h2>
+22. Related Pokémon GO Resources
+</h2>
+
+<div class="guide-grid">
+
+
+<div class="guide-card">
+
+<h3>
+Ghost Raid Counters
+</h3>
+
+<p>
+Find counters for Ghost-type raid bosses.
+</p>
+
+<a href="/raids/ghost-raid-counters.html">
+Open Raid Counter Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Type Effectiveness Chart
+</h3>
+
+<p>
+Compare Pokémon GO type matchups.
+</p>
+
+<a href="/tools/type-effectiveness.html">
+Open Type Chart →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+CP Calculator
+</h3>
+
+<p>
+Calculate Pokémon CP and compare investment options.
+</p>
+
+<a href="/tools/cp-calculator.html">
+Open CP Calculator →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+IV Calculator
+</h3>
+
+<p>
+Analyze IV combinations before investing resources.
+</p>
+
+<a href="/tools/iv-calculator.html">
+Open IV Calculator →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     23. EDITORIAL / DATA POLICY
+===================================================== -->
+
+<section class="section" id="editorial">
+
+<h2>
+23. About This Ghost-Type Guide
+</h2>
+
+<p>
+
+Pokémon GO is an evolving game. Raid rotations, moves,
+events, Pokémon availability and special forms can change
+over time.
+
+</p>
+
+<p>
+
+For that reason, this page should be reviewed whenever
+a major Pokémon GO update changes the underlying data.
+Time-sensitive information should always display the
+appropriate current status instead of being presented as
+permanent fact.
+
+</p>
+
+<div class="callout">
+
+<strong>Editorial standard:</strong>
+
+Verify numerical statistics, moves, availability,
+special-form information and event details before
+publishing or updating the page.
+
+</div>
+
+</section>
+
+
+</article>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-card">
+
+<h3>
+Ghost Hub
+</h3>
+
+<a href="#hub">
+Ghost Type Hub
+</a>
+
+<a href="#generations">
+Gen 1–9
+</a>
+
+<a href="#evolution">
+Evolution Family
+</a>
+
+<a href="#type">
+Type
+</a>
+
+<a href="#max-cp">
+Max CP
+</a>
+
+<a href="#stats">
+Attack / Defense / HP
+</a>
+
+<a href="#weaknesses">
+Weaknesses
+</a>
+
+<a href="#resistances">
+Resistances
+</a>
+
+<a href="#moves">
+Best Moves
+</a>
+
+<a href="#raid-tier">
+Raid Tier
+</a>
+
+<a href="#mega">
+Mega / Primal
+</a>
+
+<a href="#shadow">
+Shadow
+</a>
+
+<a href="#dynamax">
+Dynamax / Gigantamax
+</a>
+
+<a href="#shiny">
+Shiny
+</a>
+
+<a href="#availability">
+Availability
+</a>
+
+<a href="#individual-guides">
+Individual Guides
+</a>
+
+<a href="#investment">
+Investment
+</a>
+
+<a href="#advanced">
+Advanced Analysis
+</a>
+
+<a href="#faq">
+FAQ
+</a>
+
+</div>
+
+
+<div class="ad-space">
+Advertisement
+</div>
+
+
+<div class="sidebar-card">
+
+<h3>
+Explore
+</h3>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/pokemon-types/">
+Type Database
+</a>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/events/">
+Events
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+PokémonGaming
+</h3>
+
+<p>
+
+Independent Pokémon GO guides, database resources,
+raid information and player tools.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Pokémon
+</h3>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/pokemon-types/">
+Type Database
+</a>
+
+<a href="/pokemon-generations/">
+Generations
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Guides
+</h3>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/events/">
+Events
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Website
+</h3>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/contact.html">
+Contact
+</a>
+
+<a href="/privacy-policy.html">
+Privacy Policy
+</a>
+
+<a href="/terms.html">
+Terms
+</a>
+
+<a href="/disclaimer.html">
+Disclaimer
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 PokémonGaming.
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This website is an independent fan resource and is
+not affiliated with or endorsed by The Pokémon Company,
+Nintendo or Niantic.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+
+    "@type": "Article",
+
+    "headline":
+    "Ghost-Type Pokémon GO Complete Guide",
+
+    "description":
+    "Complete Ghost-type Pokémon GO guide covering generations, evolution families, statistics, weaknesses, resistances, moves, raid performance, special forms, shiny availability and individual Pokémon guides.",
+
+    "author": {
+        "@type": "Organization",
+        "name": "PokémonGaming"
+    },
+
+    "publisher": {
+        "@type": "Organization",
+        "name": "PokémonGaming"
+    },
+
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id":
+        "https://pokemongaming.in/pokemon-types/ghost.html"
+    }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Gen 5 Pokémon Database – Unova Pokédex #494–#649</title>
+
+<meta name="description"
+      content="Complete Pokémon GO Gen 5 Unova Pokédex covering Pokémon #494–#649, evolution families, types, stats, weaknesses, resistances, moves, raids, shiny availability and individual Pokémon guides.">
+
+<meta name="keywords"
+      content="Gen 5 Pokémon, Unova Pokémon, Unova Pokédex, Pokémon GO Gen 5, Pokémon GO Unova Pokédex, Pokémon #494 #649">
+
+<meta name="robots" content="index, follow">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root{
+    --bg:#07111f;
+    --bg2:#0d1b2e;
+    --card:#10243b;
+    --card2:#142b45;
+    --text:#f5f8ff;
+    --muted:#aebed1;
+    --border:#294765;
+    --accent:#56c8ff;
+    --accent2:#8a7dff;
+    --success:#42d392;
+    --warning:#ffc857;
+    --danger:#ff6678;
+    --shadow:0 15px 40px rgba(0,0,0,.28);
+    --radius:18px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #142f4e 0,
+            var(--bg) 45%
+        );
+
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(7,17,31,.94);
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--border);
+}
+
+.header-inner{
+    max-width:1250px;
+    margin:auto;
+
+    padding:15px 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:1.25rem;
+    font-weight:900;
+    letter-spacing:.4px;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.main-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+
+    font-size:.92rem;
+    color:var(--muted);
+}
+
+.main-nav a:hover{
+    color:#fff;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    max-width:1250px;
+    margin:0 auto;
+
+    padding:65px 20px 45px;
+
+    text-align:center;
+}
+
+.hero-badge{
+    display:inline-block;
+
+    padding:7px 14px;
+
+    border:1px solid #37688c;
+    border-radius:999px;
+
+    background:rgba(86,200,255,.08);
+
+    color:var(--accent);
+
+    font-size:.82rem;
+    font-weight:800;
+
+    letter-spacing:.5px;
+}
+
+.hero h1{
+    margin-top:18px;
+
+    font-size:
+        clamp(2.1rem,5vw,4.4rem);
+
+    line-height:1.05;
+}
+
+.hero h1 span{
+    color:var(--accent);
+}
+
+.hero p{
+    max-width:850px;
+    margin:20px auto 0;
+
+    color:var(--muted);
+
+    font-size:1.05rem;
+}
+
+.hero-buttons{
+    margin-top:28px;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.hero-button{
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    background:var(--accent);
+
+    color:#03101b;
+
+    font-weight:900;
+
+    transition:.2s;
+}
+
+.hero-button:hover{
+    transform:translateY(-2px);
+}
+
+.hero-button.secondary{
+    background:#172e48;
+    color:#fff;
+
+    border:1px solid var(--border);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+    width:min(1250px, calc(100% - 30px));
+    margin:auto;
+}
+
+.section{
+    margin-bottom:55px;
+}
+
+.section-heading{
+    margin-bottom:22px;
+}
+
+.section-heading h2{
+    font-size:clamp(1.55rem,3vw,2.3rem);
+}
+
+.section-heading p{
+    margin-top:7px;
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.info-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:16px;
+}
+
+.info-card{
+    padding:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card),
+            var(--card2)
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+}
+
+.info-card .icon{
+    font-size:1.7rem;
+}
+
+.info-card strong{
+    display:block;
+    margin-top:10px;
+    font-size:1.4rem;
+}
+
+.info-card span{
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+
+/* =========================================================
+   GENERATION OVERVIEW
+========================================================= */
+
+.overview{
+    display:grid;
+    grid-template-columns:1.3fr .7fr;
+    gap:20px;
+}
+
+.panel{
+    padding:26px;
+
+    background:rgba(16,36,59,.88);
+
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+}
+
+.panel h3{
+    margin-bottom:12px;
+}
+
+.panel p{
+    color:var(--muted);
+}
+
+.key-points{
+    display:grid;
+    gap:11px;
+
+    margin-top:18px;
+}
+
+.key-point{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+}
+
+.key-point b{
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.database-toolbar{
+    padding:20px;
+
+    margin-bottom:25px;
+
+    background:rgba(16,36,59,.9);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    display:grid;
+
+    grid-template-columns:
+        1.6fr
+        .8fr
+        .8fr;
+
+    gap:12px;
+}
+
+.search-box,
+.filter{
+    width:100%;
+
+    padding:13px 15px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    background:#081728;
+
+    color:#fff;
+
+    outline:none;
+}
+
+.search-box:focus,
+.filter:focus{
+    border-color:var(--accent);
+}
+
+
+/* =========================================================
+   POKEMON GRID
+========================================================= */
+
+.pokemon-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+.pokemon-card{
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            160deg,
+            #112944,
+            #0b1d31
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:
+        transform .2s,
+        border-color .2s;
+}
+
+.pokemon-card:hover{
+    transform:translateY(-5px);
+
+    border-color:#4b87b5;
+}
+
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 15px 0;
+}
+
+.dex-number{
+    color:var(--muted);
+    font-weight:800;
+    font-size:.85rem;
+}
+
+.badge{
+    padding:4px 8px;
+
+    border-radius:999px;
+
+    background:#183b58;
+
+    color:var(--accent);
+
+    font-size:.7rem;
+    font-weight:900;
+}
+
+.pokemon-image{
+    width:150px;
+    height:150px;
+
+    object-fit:contain;
+
+    margin:12px auto;
+}
+
+.pokemon-info{
+    padding:15px;
+}
+
+.pokemon-name{
+    font-size:1.25rem;
+    font-weight:900;
+}
+
+.types{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+
+    margin:9px 0 13px;
+}
+
+.type{
+    padding:4px 9px;
+
+    border-radius:999px;
+
+    font-size:.7rem;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+}
+
+.type.fire{background:#7d271d}
+.type.water{background:#1b4f87}
+.type.grass{background:#246b3d}
+.type.electric{background:#75641a}
+.type.ice{background:#347b86}
+.type.fighting{background:#702a22}
+.type.poison{background:#672c70}
+.type.ground{background:#73552d}
+.type.flying{background:#536b9c}
+.type.psychic{background:#7a2c57}
+.type.bug{background:#527022}
+.type.rock{background:#655b37}
+.type.ghost{background:#40316c}
+.type.dragon{background:#44309b}
+.type.dark{background:#342b2b}
+.type.steel{background:#4f5c68}
+.type.fairy{background:#8b4d72}
+.type.normal{background:#5d6370}
+
+.card-stats{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:6px;
+}
+
+.stat{
+    padding:8px 5px;
+
+    text-align:center;
+
+    background:#091827;
+
+    border-radius:9px;
+}
+
+.stat small{
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.65rem;
+}
+
+.stat strong{
+    font-size:.85rem;
+}
+
+.card-meta{
+    margin-top:12px;
+
+    display:grid;
+
+    gap:6px;
+
+    color:var(--muted);
+
+    font-size:.78rem;
+}
+
+.card-meta strong{
+    color:#fff;
+}
+
+.card-actions{
+    display:flex;
+
+    gap:8px;
+
+    margin-top:14px;
+}
+
+.card-button{
+    flex:1;
+
+    padding:9px;
+
+    border:1px solid var(--border);
+
+    border-radius:9px;
+
+    background:#132e49;
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:.78rem;
+
+    cursor:pointer;
+}
+
+.card-button:hover{
+    background:#1b4265;
+}
+
+
+/* =========================================================
+   EVOLUTION FAMILIES
+========================================================= */
+
+.evolution-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.evolution-family{
+    padding:20px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.family-title{
+    font-weight:900;
+
+    margin-bottom:15px;
+}
+
+.family-line{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:9px;
+}
+
+.family-pokemon{
+    padding:8px 11px;
+
+    background:#0a1b2c;
+
+    border-radius:10px;
+
+    font-size:.82rem;
+}
+
+.arrow{
+    color:var(--accent);
+    font-weight:900;
+}
+
+
+/* =========================================================
+   TYPE TABLE
+========================================================= */
+
+.table-wrapper{
+    overflow-x:auto;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:700px;
+}
+
+th,
+td{
+    padding:13px;
+
+    text-align:left;
+
+    border-bottom:1px solid var(--border);
+}
+
+th{
+    background:#132b45;
+}
+
+td{
+    color:var(--muted);
+}
+
+tr:last-child td{
+    border-bottom:none;
+}
+
+
+/* =========================================================
+   GUIDE SECTION
+========================================================= */
+
+.guide-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+}
+
+.guide-card{
+    padding:23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #112942,
+            #0c1e31
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.guide-card h3{
+    margin-bottom:10px;
+}
+
+.guide-card p{
+    color:var(--muted);
+}
+
+.guide-card ul{
+    margin:13px 0 0 18px;
+
+    color:var(--muted);
+}
+
+.guide-card li{
+    margin-bottom:6px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    display:grid;
+
+    gap:12px;
+}
+
+details{
+    padding:17px 19px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:13px;
+}
+
+summary{
+    cursor:pointer;
+
+    font-weight:800;
+}
+
+details p{
+    margin-top:10px;
+
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    margin-top:60px;
+
+    padding:40px 20px;
+
+    background:#050d17;
+
+    border-top:1px solid var(--border);
+}
+
+.footer-inner{
+    max-width:1250px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr
+        repeat(3,1fr);
+
+    gap:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p,
+footer a{
+    color:var(--muted);
+
+    font-size:.88rem;
+}
+
+.footer-links{
+    display:grid;
+
+    gap:7px;
+}
+
+.copyright{
+    max-width:1250px;
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    border-top:1px solid #182c40;
+
+    color:#6e8298;
+
+    font-size:.8rem;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-state{
+    display:none;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    border:1px dashed var(--border);
+
+    border-radius:var(--radius);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .pokemon-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+    .info-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .evolution-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .database-toolbar{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .search-box{
+        grid-column:1/-1;
+    }
+
+    .overview{
+        grid-template-columns:1fr;
+    }
+}
+
+
+@media(max-width:720px){
+
+    .header-inner{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .main-nav{
+        gap:10px;
+    }
+
+    .hero{
+        padding-top:45px;
+    }
+
+    .pokemon-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:12px;
+    }
+
+    .evolution-grid,
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+
+    .database-toolbar{
+        grid-template-columns:1fr;
+    }
+
+    .search-box{
+        grid-column:auto;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
+@media(max-width:470px){
+
+    .container{
+        width:min(100% - 20px,1250px);
+    }
+
+    .pokemon-grid{
+        grid-template-columns:1fr;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+    }
+
+    .pokemon-image{
+        width:180px;
+        height:180px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+    Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="#overview">Overview</a>
+<a href="#pokedex">Pokédex</a>
+<a href="#evolution">Evolution</a>
+<a href="#types">Types</a>
+<a href="#guides">Guides</a>
+<a href="#faq">FAQ</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero">
+
+<span class="hero-badge">
+    GENERATION 5 • UNOVA
+</span>
+
+<h1>
+    Gen 5 Pokémon
+    <span>Database</span>
+</h1>
+
+<p>
+    Explore the Unova Pokédex from #494 Victini
+    through #649 Genesect. Discover evolution families,
+    Pokémon types, battle statistics, weaknesses,
+    resistances, shiny information, raid usefulness,
+    Shadow availability and individual Pokémon guides.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#pokedex" class="hero-button">
+    Explore Unova Pokédex
+</a>
+
+<a href="#evolution" class="hero-button secondary">
+    Evolution Families
+</a>
+
+</div>
+
+</section>
+
+
+<main class="container">
+
+
+<!-- ======================================================
+     QUICK FACTS
+====================================================== -->
+
+<section class="section">
+
+<div class="info-grid">
+
+<div class="info-card">
+    <div class="icon">📖</div>
+    <strong>156</strong>
+    <span>Pokémon in Gen 5</span>
+</div>
+
+<div class="info-card">
+    <div class="icon">🔢</div>
+    <strong>#494–#649</strong>
+    <span>National Pokédex Range</span>
+</div>
+
+<div class="info-card">
+    <div class="icon">🌍</div>
+    <strong>Unova</strong>
+    <span>Generation 5 Region</span>
+</div>
+
+<div class="info-card">
+    <div class="icon">⭐</div>
+    <strong>2010</strong>
+    <span>Original Generation Debut</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     OVERVIEW
+====================================================== -->
+
+<section id="overview" class="section">
+
+<div class="section-heading">
+
+<h2>
+    🌍 Gen 5 / Unova Overview
+</h2>
+
+<p>
+    Everything you need to navigate the fifth generation
+    Pokémon database.
+</p>
+
+</div>
+
+<div class="overview">
+
+<div class="panel">
+
+<h3>
+    What is Generation 5?
+</h3>
+
+<p>
+    Generation 5 introduced the Unova region and a large
+    new group of Pokémon. The generation begins with
+    Victini at National Pokédex #494 and ends with
+    Genesect at #649.
+</p>
+
+<div class="key-points">
+
+<div class="key-point">
+    <b>01</b>
+    <span>
+        Complete National Pokédex range from #494 to #649.
+    </span>
+</div>
+
+<div class="key-point">
+    <b>02</b>
+    <span>
+        Multiple three-stage evolution families including
+        Snivy, Tepig and Oshawott.
+    </span>
+</div>
+
+<div class="key-point">
+    <b>03</b>
+    <span>
+        Legendary and Mythical Pokémon include Reshiram,
+        Zekrom, Kyurem, Victini and Genesect.
+    </span>
+</div>
+
+<div class="key-point">
+    <b>04</b>
+    <span>
+        This database can be expanded with Pokémon GO
+        moves, raid roles, PvP information and availability.
+    </span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+    Gen 5 Highlights
+</h3>
+
+<div class="key-points">
+
+<div class="key-point">
+    <b>🔥</b>
+    <span>Reshiram</span>
+</div>
+
+<div class="key-point">
+    <b>⚡</b>
+    <span>Zekrom</span>
+</div>
+
+<div class="key-point">
+    <b>🐉</b>
+    <span>Kyurem</span>
+</div>
+
+<div class="key-point">
+    <b>✨</b>
+    <span>Victini</span>
+</div>
+
+<div class="key-point">
+    <b>🧬</b>
+    <span>Genesect</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     POKEDEX
+====================================================== -->
+
+<section id="pokedex" class="section">
+
+<div class="section-heading">
+
+<h2>
+    📖 Unova Pokédex
+</h2>
+
+<p>
+    Search Pokémon by name, National Pokédex number,
+    or primary type.
+</p>
+
+</div>
+
+
+<div class="database-toolbar">
+
+<input
+    type="search"
+    id="pokemonSearch"
+    class="search-box"
+    placeholder="Search Pokémon... e.g. Zekrom, 644, dragon"
+    aria-label="Search Gen 5 Pokémon"
+>
+
+<select id="typeFilter" class="filter">
+
+<option value="all">
+    All Types
+</option>
+
+<option value="normal">Normal</option>
+<option value="fire">Fire</option>
+<option value="water">Water</option>
+<option value="electric">Electric</option>
+<option value="grass">Grass</option>
+<option value="ice">Ice</option>
+<option value="fighting">Fighting</option>
+<option value="poison">Poison</option>
+<option value="ground">Ground</option>
+<option value="flying">Flying</option>
+<option value="psychic">Psychic</option>
+<option value="bug">Bug</option>
+<option value="rock">Rock</option>
+<option value="ghost">Ghost</option>
+<option value="dragon">Dragon</option>
+<option value="dark">Dark</option>
+<option value="steel">Steel</option>
+
+</select>
+
+
+<select id="roleFilter" class="filter">
+
+<option value="all">
+    All Roles
+</option>
+
+<option value="starter">
+    Starter
+</option>
+
+<option value="legendary">
+    Legendary
+</option>
+
+<option value="mythical">
+    Mythical
+</option>
+
+<option value="common">
+    Regular Pokémon
+</option>
+
+</select>
+
+</div>
+
+
+<div id="pokemonGrid" class="pokemon-grid"></div>
+
+<div id="emptyState" class="empty-state">
+
+<h3>
+    No Pokémon found
+</h3>
+
+<p>
+    Try another Pokémon name, number or type.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     EVOLUTION
+====================================================== -->
+
+<section id="evolution" class="section">
+
+<div class="section-heading">
+
+<h2>
+    🧬 Gen 5 Evolution Families
+</h2>
+
+<p>
+    Key evolution lines from the Unova Pokédex.
+</p>
+
+</div>
+
+
+<div class="evolution-grid">
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🌿 Snivy Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Snivy
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Servine
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Serperior
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🔥 Tepig Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Tepig
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Pignite
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Emboar
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🌊 Oshawott Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Oshawott
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Dewott
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Samurott
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    ⚡ Blitzle Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Blitzle
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Zebstrika
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🐉 Axew Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Axew
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Fraxure
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Haxorus
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🐲 Deino Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Deino
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Zweilous
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Hydreigon
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🦴 Drilbur Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Drilbur
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Excadrill
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🦊 Zorua Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Zorua
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Zoroark
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<div class="family-title">
+    🐒 Timburr Family
+</div>
+
+<div class="family-line">
+
+<span class="family-pokemon">
+    Timburr
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Gurdurr
+</span>
+
+<span class="arrow">→</span>
+
+<span class="family-pokemon">
+    Conkeldurr
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     TYPES
+====================================================== -->
+
+<section id="types" class="section">
+
+<div class="section-heading">
+
+<h2>
+    ⚔️ Gen 5 Type Overview
+</h2>
+
+<p>
+    Type information is useful when evaluating raid
+    counters, PvP matchups and defensive roles.
+</p>
+
+</div>
+
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Type</th>
+<th>Example Gen 5 Pokémon</th>
+<th>Useful Against</th>
+<th>Common Weaknesses</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>🔥 Fire</td>
+<td>Victini, Reshiram, Darmanitan</td>
+<td>Grass, Ice, Bug, Steel</td>
+<td>Water, Ground, Rock</td>
+</tr>
+
+<tr>
+<td>🌊 Water</td>
+<td>Oshawott, Samurott, Basculin</td>
+<td>Fire, Ground, Rock</td>
+<td>Electric, Grass</td>
+</tr>
+
+<tr>
+<td>🌿 Grass</td>
+<td>Snivy, Serperior, Sawsbuck</td>
+<td>Water, Ground, Rock</td>
+<td>Fire, Ice, Poison, Flying, Bug</td>
+</tr>
+
+<tr>
+<td>⚡ Electric</td>
+<td>Blitzle, Zebstrika, Zekrom</td>
+<td>Water, Flying</td>
+<td>Ground</td>
+</tr>
+
+<tr>
+<td>🐉 Dragon</td>
+<td>Haxorus, Hydreigon, Zekrom</td>
+<td>Dragon</td>
+<td>Ice, Dragon, Fairy</td>
+</tr>
+
+<tr>
+<td>🌑 Dark</td>
+<td>Zorua, Zoroark, Hydreigon</td>
+<td>Psychic, Ghost</td>
+<td>Fighting, Bug, Fairy</td>
+</tr>
+
+<tr>
+<td>⚙️ Steel</td>
+<td>Klink, Ferrothorn, Excadrill</td>
+<td>Ice, Rock, Fairy</td>
+<td>Fire, Fighting, Ground</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     GUIDES
+====================================================== -->
+
+<section id="guides" class="section">
+
+<div class="section-heading">
+
+<h2>
+    📚 Individual Pokémon Guide
+</h2>
+
+<p>
+    Recommended content structure for each Gen 5 Pokémon
+    page.
+</p>
+
+</div>
+
+
+<div class="guide-grid">
+
+<div class="guide-card">
+
+<h3>
+    📊 Stats & CP
+</h3>
+
+<p>
+    Provide the Pokémon's relevant battle statistics,
+    maximum CP information and useful IV checkpoints.
+</p>
+
+<ul>
+
+<li>Attack</li>
+<li>Defense</li>
+<li>HP / Stamina</li>
+<li>Maximum CP</li>
+<li>IV information</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    🛡️ Weaknesses & Resistances
+</h3>
+
+<p>
+    Explain which attacking types are effective and
+    which attacks the Pokémon can resist.
+</p>
+
+<ul>
+
+<li>Super-effective types</li>
+<li>Resisted types</li>
+<li>Double weaknesses where applicable</li>
+<li>Raid counter implications</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    💥 Best Moves</h3>
+
+<p>
+    Build a useful moveset section rather than simply
+    listing every move.
+</p>
+
+<ul>
+
+<li>Fast Move</li>
+<li>Charged Move</li>
+<li>Raid moveset</li>
+<li>PvP moveset</li>
+<li>Elite TM considerations</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    ⭐ Raid & Battle Role
+</h3>
+
+<p>
+    Explain whether the Pokémon is useful in raids,
+    PvP, gyms or other battle situations.
+</p>
+
+<ul>
+
+<li>Raid attacker role</li>
+<li>Gym usefulness</li>
+<li>Great League</li>
+<li>Ultra League</li>
+<li>Master League</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    ✨ Shiny Information
+</h3>
+
+<p>
+    Include shiny availability separately from the normal
+    Pokémon information.
+</p>
+
+<ul>
+
+<li>Shiny available?</li>
+<li>Shiny appearance</li>
+<li>Release information</li>
+<li>How to encounter it</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    🌑 Shadow Information
+</h3>
+
+<p>
+    Where applicable, explain Shadow availability and
+    whether the Shadow form changes its battle role.
+</p>
+
+<ul>
+
+<li>Shadow availability</li>
+<li>Shadow evolution</li>
+<li>Purified Pokémon</li>
+<li>Frustration considerations</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    🔄 Evolution Guide
+</h3>
+
+<p>
+    Explain the complete evolution family and the
+    requirements needed to reach the final form.
+</p>
+
+<ul>
+
+<li>Candy requirements</li>
+<li>Evolution items</li>
+<li>Special evolution methods</li>
+<li>Buddy requirements</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+    📍 Availability
+</h3>
+
+<p>
+    Keep encounter information updated when events,
+    raids, research or other Pokémon GO mechanics change.
+</p>
+
+<ul>
+
+<li>Wild encounters</li>
+<li>Eggs</li>
+<li>Raids</li>
+<li>Research</li>
+<li>Events</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FAQ
+====================================================== -->
+
+<section id="faq" class="section">
+
+<div class="section-heading">
+
+<h2>
+    ❓ Gen 5 Pokémon FAQ
+</h2>
+
+<p>
+    Common questions about the Unova Pokédex.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<details>
+
+<summary>
+How many Pokémon are in Generation 5?
+</summary>
+
+<p>
+Generation 5 contains 156 Pokémon in the National
+Pokédex, numbered #494 through #649.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What region is Generation 5 based on?
+</summary>
+
+<p>
+Generation 5 introduced the Unova region.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who is the first Gen 5 Pokémon?
+</summary>
+
+<p>
+Victini is National Pokédex #494 and is the first
+Pokémon in the Generation 5 National Pokédex range.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who is the last Gen 5 Pokémon?
+</summary>
+
+<p>
+Genesect is National Pokédex #649 and is the final
+Pokémon in the Generation 5 range.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which Gen 5 Pokémon are legendary?
+</summary>
+
+<p>
+Important Unova Legendary Pokémon include Cobalion,
+Terrakion, Virizion, Tornadus, Thundurus, Landorus,
+Reshiram, Zekrom and Kyurem.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which Gen 5 Pokémon are Mythical?
+</summary>
+
+<p>
+Victini, Keldeo, Meloetta and Genesect are among the
+Mythical Pokémon introduced in Generation 5.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can this page be used as a Pokémon GO database?
+</summary>
+
+<p>
+Yes. The structure is designed so Pokémon GO-specific
+information such as Max CP, movesets, raid performance,
+PvP rankings, Shadow forms, shiny availability and
+event history can be added to individual entries.
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+<div>
+
+<h3>
+    Pokémon Gaming
+</h3>
+
+<p>
+    Independent Pokémon GO guides, databases,
+    raid information and tools for Trainers.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Pokémon Database
+</h3>
+
+<div class="footer-links">
+
+<a href="/pokemon/gen-1.html">
+    Gen 1
+</a>
+
+<a href="/pokemon/gen-2.html">
+    Gen 2
+</a>
+
+<a href="/pokemon/gen-3.html">
+    Gen 3
+</a>
+
+<a href="/pokemon/gen-4.html">
+    Gen 4
+</a>
+
+<a href="/pokemon/gen-5.html">
+    Gen 5
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+    Guides
+</h3>
+
+<div class="footer-links">
+
+<a href="/raids/">
+    Raid Guides
+</a>
+
+<a href="/pvp/">
+    PvP Guides
+</a>
+
+<a href="/pokemon/">
+    Pokédex
+</a>
+
+<a href="/tools/">
+    Pokémon GO Tools
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+    Information
+</h3>
+
+<div class="footer-links">
+
+<a href="/about.html">
+    About
+</a>
+
+<a href="/contact.html">
+    Contact
+</a>
+
+<a href="/privacy-policy.html">
+    Privacy Policy
+</a>
+
+<a href="/terms.html">
+    Terms
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Pokémon Gaming. This is an independent fan website
+and is not affiliated with or endorsed by The Pokémon Company,
+Nintendo or Niantic.
+
+</div>
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+/*
+=========================================================
+GEN 5 DATABASE
+#494 - #649
+=========================================================
+*/
+
+const pokemon = [
+
+[494,"Victini","psychic","fire",464,"mythical"],
+[495,"Snivy","grass",null,308,"starter"],
+[496,"Servine","grass",null,338,"starter"],
+[497,"Serperior","grass",null,528,"starter"],
+
+[498,"Tepig","fire",null,308,"starter"],
+[499,"Pignite","fire","fighting",418,"starter"],
+[500,"Emboar","fire","fighting",528,"starter"],
+
+[501,"Oshawott","water",null,308,"starter"],
+[502,"Dewott","water",null,413,"starter"],
+[503,"Samurott","water",null,528,"starter"],
+
+[504,"Patrat","normal",null,255,"common"],
+[505,"Watchog","normal",null,420,"common"],
+
+[506,"Lillipup","normal",null,275,"common"],
+[507,"Herdier","normal",null,370,"common"],
+[508,"Stoutland","normal",null,500,"common"],
+
+[509,"Purrloin","dark",null,281,"common"],
+[510,"Liepard","dark",null,446,"common"],
+
+[511,"Pansage","grass",null,316,"common"],
+[512,"Simisage","grass",null,498,"common"],
+
+[513,"Pansear","fire",null,316,"common"],
+[514,"Simisear","fire",null,498,"common"],
+
+[515,"Panpour","water",null,316,"common"],
+[516,"Simipour","water",null,498,"common"],
+
+[517,"Munna","psychic",null,292,"common"],
+[518,"Musharna","psychic",null,487,"common"],
+
+[519,"Pidove","normal","flying",264,"common"],
+[520,"Tranquill","normal","flying",358,"common"],
+[521,"Unfezant","normal","flying",488,"common"],
+
+[522,"Blitzle","electric",null,295,"common"],
+[523,"Zebstrika","electric",null,497,"common"],
+
+[524,"Roggenrola","rock",null,280,"common"],
+[525,"Boldore","rock",null,390,"common"],
+[526,"Gigalith","rock",null,515,"common"],
+
+[527,"Woobat","psychic","flying",323,"common"],
+[528,"Swoobat","psychic","flying",425,"common"],
+
+[529,"Drilbur","ground",null,328,"common"],
+[530,"Excadrill","ground","steel",508,"common"],
+
+[531,"Audino","normal",null,445,"common"],
+
+[532,"Timburr","fighting",null,305,"common"],
+[533,"Gurdurr","fighting",null,405,"common"],
+[534,"Conkeldurr","fighting",null,505,"common"],
+
+[535,"Tympole","water",null,294,"common"],
+[536,"Palpitoad","water","ground",384,"common"],
+[537,"Seismitoad","water","ground",509,"common"],
+
+[538,"Throh","fighting",null,465,"common"],
+[539,"Sawk","fighting",null,465,"common"],
+
+[540,"Sewaddle","bug","grass",310,"common"],
+[541,"Swadloon","bug","grass",380,"common"],
+[542,"Leavanny","bug","grass",500,"common"],
+
+[543,"Venipede","bug","poison",260,"common"],
+[544,"Whirlipede","bug","poison",360,"common"],
+[545,"Scolipede","bug","poison",485,"common"],
+
+[546,"Cottonee","grass","fairy",280,"common"],
+[547,"Whimsicott","grass","fairy",480,"common"],
+
+[548,"Petilil","grass",null,280,"common"],
+[549,"Lilligant","grass",null,480,"common"],
+
+[550,"Basculin","water",null,460,"common"],
+
+[551,"Sandile","ground","dark",292,"common"],
+[552,"Krokorok","ground","dark",351,"common"],
+[553,"Krookodile","ground","dark",519,"common"],
+
+[554,"Darumaka","fire",null,315,"common"],
+[555,"Darmanitan","fire",null,480,"common"],
+
+[556,"Maractus","grass",null,461,"common"],
+
+[557,"Dwebble","bug","rock",325,"common"],
+[558,"Crustle","bug","rock",475,"common"],
+
+[559,"Scraggy","dark","fighting",348,"common"],
+[560,"Scrafty","dark","fighting",488,"common"],
+
+[561,"Sigilyph","psychic","flying",490,"common"],
+
+[562,"Yamask","ghost",null,303,"common"],
+[563,"Cofagrigus","ghost",null,483,"common"],
+
+[564,"Tirtouga","water","rock",355,"common"],
+[565,"Carracosta","water","rock",495,"common"],
+
+[566,"Archen","rock","flying",401,"common"],
+[567,"Archeops","rock","flying",567,"common"],
+
+[568,"Trubbish","poison",null,329,"common"],
+[569,"Garbodor","poison",null,474,"common"],
+
+[570,"Zorua","dark",null,330,"common"],
+[571,"Zoroark","dark",null,505,"common"],
+
+[572,"Minccino","normal",null,300,"common"],
+[573,"Cinccino","normal",null,470,"common"],
+
+[574,"Gothita","psychic",null,290,"common"],
+[575,"Gothorita","psychic",null,390,"common"],
+[576,"Gothitelle","psychic",null,490,"common"],
+
+[577,"Solosis","psychic",null,290,"common"],
+[578,"Duosion","psychic",null,370,"common"],
+[579,"Reuniclus","psychic",null,490,"common"],
+
+[580,"Ducklett","water","flying",305,"common"],
+[581,"Swanna","water","flying",473,"common"],
+
+[582,"Vanillite","ice",null,305,"common"],
+[583,"Vanillish","ice",null,395,"common"],
+[584,"Vanilluxe","ice",null,535,"common"],
+
+[585,"Deerling","normal","grass",335,"common"],
+[586,"Sawsbuck","normal","grass",475,"common"],
+
+[587,"Emolga","electric","flying",428,"common"],
+
+[588,"Karrablast","bug",null,315,"common"],
+[589,"Escavalier","bug","steel",495,"common"],
+
+[590,"Foongus","grass","poison",294,"common"],
+[591,"Amoonguss","grass","poison",464,"common"],
+
+[592,"Frillish","water","ghost",335,"common"],
+[593,"Jellicent","water","ghost",480,"common"],
+
+[594,"Alomomola","water",null,470,"common"],
+
+[595,"Joltik","bug","electric",319,"common"],
+[596,"Galvantula","bug","electric",472,"common"],
+
+[597,"Ferroseed","grass","steel",305,"common"],
+[598,"Ferrothorn","grass","steel",489,"common"],
+
+[599,"Klink","steel",null,300,"common"],
+[600,"Klang","steel",null,440,"common"],
+[601,"Klinklang","steel",null,520,"common"],
+
+[602,"Tynamo","electric",null,275,"common"],
+[603,"Eelektrik","electric",null,405,"common"],
+[604,"Eelektross","electric",null,515,"common"],
+
+[605,"Elgyem","psychic",null,335,"common"],
+[606,"Beheeyem","psychic",null,485,"common"],
+
+[607,"Litwick","ghost","fire",275,"common"],
+[608,"Lampent","ghost","fire",370,"common"],
+[609,"Chandelure","ghost","fire",520,"common"],
+
+[610,"Axew","dragon",null,320,"common"],
+[611,"Fraxure","dragon",null,410,"common"],
+[612,"Haxorus","dragon",null,540,"common"],
+
+[613,"Cubchoo","ice",null,305,"common"],
+[614,"Beartic","ice",null,505,"common"],
+
+[615,"Cryogonal","ice",null,485,"common"],
+
+[616,"Shelmet","bug",null,305,"common"],
+[617,"Accelgor","bug",null,495,"common"],
+
+[618,"Stunfisk","ground","electric",471,"common"],
+
+[619,"Mienfoo","fighting",null,350,"common"],
+[620,"Mienshao","fighting",null,510,"common"],
+
+[621,"Druddigon","dragon",null,485,"common"],
+
+[622,"Golett","ground","ghost",303,"common"],
+[623,"Golurk","ground","ghost",483,"common"],
+
+[624,"Pawniard","dark","steel",340,"common"],
+[625,"Bisharp","dark","steel",490,"common"],
+
+[626,"Bouffalant","normal",null,490,"common"],
+
+[627,"Rufflet","normal","flying",350,"common"],
+[628,"Braviary","normal","flying",510,"common"],
+
+[629,"Vullaby","dark","flying",370,"common"],
+[630,"Mandibuzz","dark","flying",510,"common"],
+
+[631,"Heatmor","fire",null,484,"common"],
+[632,"Durant","bug","steel",484,"common"],
+
+[633,"Deino","dark","dragon",300,"common"],
+[634,"Zweilous","dark","dragon",420,"common"],
+[635,"Hydreigon","dark","dragon",600,"common"],
+
+[636,"Larvesta","bug","fire",360,"common"],
+[637,"Volcarona","bug","fire",550,"common"],
+
+[638,"Cobalion","steel","fighting",580,"legendary"],
+[639,"Terrakion","rock","fighting",580,"legendary"],
+[640,"Virizion","grass","fighting",580,"legendary"],
+
+[641,"Tornadus","flying",null,580,"legendary"],
+[642,"Thundurus","electric","flying",580,"legendary"],
+[643,"Reshiram","dragon","fire",680,"legendary"],
+[644,"Zekrom","dragon","electric",680,"legendary"],
+[645,"Landorus","ground","flying",600,"legendary"],
+[646,"Kyurem","dragon","ice",660,"legendary"],
+
+[647,"Keldeo","water","fighting",580,"mythical"],
+[648,"Meloetta","normal","psychic",600,"mythical"],
+[649,"Genesect","bug","steel",600,"mythical"]
+
+];
+
+
+/*
+=========================================================
+UTILITY
+=========================================================
+*/
+
+function capitalize(name){
+
+    return name.charAt(0).toUpperCase()
+         + name.slice(1);
+
+}
+
+
+function getTypeClass(type){
+
+    return type || "";
+
+}
+
+
+function getImage(id){
+
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+
+}
+
+
+/*
+=========================================================
+CREATE CARD
+=========================================================
+*/
+
+function createCard(p){
+
+    const [
+        id,
+        name,
+        type1,
+        type2,
+        stat,
+        role
+    ] = p;
+
+
+    let roleLabel = "Regular";
+
+    if(role === "starter"){
+        roleLabel = "Starter";
+    }
+
+    if(role === "legendary"){
+        roleLabel = "Legendary";
+    }
+
+    if(role === "mythical"){
+        roleLabel = "Mythical";
+    }
+
+
+    return `
+
+<article
+    class="pokemon-card"
+    data-name="${name.toLowerCase()}"
+    data-number="${id}"
+    data-type="${type1}"
+    data-role="${role}"
+>
+
+<div class="card-top">
+
+<span class="dex-number">
+    #${id}
+</span>
+
+<span class="badge">
+    ${roleLabel}
+</span>
+
+</div>
+
+
+<img
+    class="pokemon-image"
+    src="${getImage(id)}"
+    alt="${capitalize(name)} official artwork"
+    loading="lazy"
+    onerror="this.style.display='none'"
+>
+
+
+<div class="pokemon-info">
+
+<div class="pokemon-name">
+
+${capitalize(name)}
+
+</div>
+
+
+<div class="types">
+
+<span class="type ${getTypeClass(type1)}">
+    ${type1}
+</span>
+
+${type2 ? `
+
+<span class="type ${getTypeClass(type2)}">
+    ${type2}
+</span>
+
+` : ""}
+
+</div>
+
+
+<div class="card-stats">
+
+<div class="stat">
+
+<small>Base</small>
+
+<strong>
+    ${stat}
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>Gen</small>
+
+<strong>
+    5
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>Dex</small>
+
+<strong>
+    #${id}
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="card-meta">
+
+<div>
+    Type:
+    <strong>
+        ${capitalize(type1)}
+        ${type2 ? " / " + capitalize(type2) : ""}
+    </strong>
+</div>
+
+<div>
+    Region:
+    <strong>
+        Unova
+    </strong>
+</div>
+
+<div>
+    Shiny:
+    <strong>
+        Check individual guide
+    </strong>
+</div>
+
+</div>
+
+
+<div class="card-actions">
+
+<a
+    href="/pokemon/${name.toLowerCase()}.html"
+    class="card-button"
+>
+    Guide
+</a>
+
+<a
+    href="/raids/${name.toLowerCase()}-raid.html"
+    class="card-button"
+>
+    Raid
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+`;
+
+}
+
+
+/*
+=========================================================
+RENDER
+=========================================================
+*/
+
+const grid =
+    document.getElementById("pokemonGrid");
+
+const emptyState =
+    document.getElementById("emptyState");
+
+
+function renderPokemon(list){
+
+    grid.innerHTML =
+        list.map(createCard).join("");
+
+    emptyState.style.display =
+        list.length ? "none" : "block";
+
+}
+
+
+/*
+=========================================================
+INITIAL LOAD
+=========================================================
+*/
+
+renderPokemon(pokemon);
+
+
+/*
+=========================================================
+FILTER
+=========================================================
+*/
+
+const search =
+    document.getElementById("pokemonSearch");
+
+const typeFilter =
+    document.getElementById("typeFilter");
+
+const roleFilter =
+    document.getElementById("roleFilter");
+
+
+function filterPokemon(){
+
+    const query =
+        search.value
+        .trim()
+        .toLowerCase();
+
+    const selectedType =
+        typeFilter.value;
+
+    const selectedRole =
+        roleFilter.value;
+
+
+    const filtered =
+        pokemon.filter(p => {
+
+            const [
+                id,
+                name,
+                type1,
+                type2,
+                stat,
+                role
+            ] = p;
+
+
+            const matchesSearch =
+                !query ||
+                name.toLowerCase().includes(query) ||
+                String(id).includes(query) ||
+                type1.includes(query) ||
+                (type2 && type2.includes(query));
+
+
+            const matchesType =
+                selectedType === "all" ||
+                type1 === selectedType ||
+                type2 === selectedType;
+
+
+            const matchesRole =
+                selectedRole === "all" ||
+                role === selectedRole;
+
+
+            return (
+                matchesSearch &&
+                matchesType &&
+                matchesRole
+            );
+
+        });
+
+
+    renderPokemon(filtered);
+
+}
+
+
+search.addEventListener(
+    "input",
+    filterPokemon
+);
+
+typeFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+roleFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+</script>
+
+
+</body>
+</html>

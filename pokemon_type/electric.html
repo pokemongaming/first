@@ -1,0 +1,5075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Electric Type Pokémon GO Hub — Best Electric Pokémon, Weaknesses, Moves & Guides</title>
+
+    <meta name="description"
+          content="Complete Pokémon GO Electric Type Hub covering Electric Pokémon from Gen 1–9, evolution families, max CP, stats, weaknesses, resistances, best moves, raid rankings, Mega, Shadow, Dynamax, Gigantamax, Shiny Pokémon, availability and individual guides.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/electric-type.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+	/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --electric: #f7c928;
+    --electric-dark: #c99a00;
+    --electric-light: #fff4b3;
+
+    --bg: #080b12;
+    --bg-2: #0d111b;
+    --card: #111722;
+    --card-2: #151c29;
+
+    --border: rgba(255,255,255,.09);
+
+    --text: #f4f7fb;
+    --muted: #9ca8ba;
+
+    --success: #55d88a;
+    --danger: #ff6577;
+
+    --max-width: 1240px;
+
+    --radius: 18px;
+
+    --shadow:
+        0 15px 50px rgba(0,0,0,.28);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(247,201,40,.08),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
+    line-height: 1.7;
+
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+
+    width: min(
+        calc(100% - 32px),
+        var(--max-width)
+    );
+
+    margin-inline: auto;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background:
+        rgba(8,11,18,.94);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.header-inner {
+
+    width: min(
+        calc(100% - 32px),
+        var(--max-width)
+    );
+
+    min-height: 72px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: 900;
+
+    font-size: 19px;
+
+}
+
+
+.logo-icon {
+
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff27a,
+            var(--electric)
+        );
+
+    color: #111;
+
+    box-shadow:
+        0 5px 25px
+        rgba(247,201,40,.25);
+
+}
+
+
+.main-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.main-nav a {
+
+    padding:
+        8px 13px;
+
+    border-radius: 9px;
+
+    color: var(--muted);
+
+    font-weight: 600;
+
+    transition: .2s ease;
+
+}
+
+
+.main-nav a:hover {
+
+    color: var(--text);
+
+    background:
+        rgba(255,255,255,.06);
+
+}
+
+
+.mobile-menu {
+
+    display: none;
+
+    background: none;
+
+    border: 0;
+
+    color: white;
+
+    font-size: 26px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb-wrap {
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding:
+        13px 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+.breadcrumb a:hover {
+
+    color:
+        var(--electric);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.electric-hero {
+
+    position: relative;
+
+    min-height: 530px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            100deg,
+            rgba(8,11,18,.98),
+            rgba(8,11,18,.72),
+            rgba(8,11,18,.88)
+        ),
+
+        url("/images/electric/electric-hero.webp")
+        center / cover no-repeat;
+
+}
+
+
+.electric-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -150px;
+    top: -130px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(247,201,40,.25),
+            transparent 65%
+        );
+
+    pointer-events: none;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding:
+        90px 0;
+
+}
+
+
+.type-badge-large {
+
+    display: inline-flex;
+
+    padding:
+        8px 14px;
+
+    border:
+        1px solid
+        rgba(247,201,40,.4);
+
+    background:
+        rgba(247,201,40,.08);
+
+    color:
+        var(--electric);
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero-content h1 {
+
+    font-family:
+        Rajdhani,
+        Inter,
+        sans-serif;
+
+    font-size:
+        clamp(44px, 7vw, 78px);
+
+    line-height: 1;
+
+    letter-spacing: -.025em;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-subtitle {
+
+    max-width: 780px;
+
+    color: #c5cedb;
+
+    font-size: 18px;
+
+}
+
+
+.hero-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+}
+
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding:
+        0 20px;
+
+    border-radius: 11px;
+
+    font-weight: 800;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.btn-primary {
+
+    background:
+        var(--electric);
+
+    color: #111;
+
+    box-shadow:
+        0 10px 35px
+        rgba(247,201,40,.2);
+
+}
+
+
+.btn-secondary {
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid var(--border);
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.section {
+
+    padding:
+        80px 0;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.section-number {
+
+    color:
+        var(--electric);
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    padding-top: 7px;
+
+}
+
+
+.eyebrow {
+
+    color:
+        var(--electric);
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing:
+        .15em;
+
+    text-transform:
+        uppercase;
+
+    margin-bottom: 6px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family:
+        Rajdhani,
+        Inter,
+        sans-serif;
+
+    font-size:
+        clamp(30px, 4vw, 46px);
+
+    line-height: 1.05;
+
+}
+
+
+.section-heading p:not(.eyebrow) {
+
+    color:
+        var(--muted);
+
+    margin-top: 10px;
+
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.summary-card {
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card),
+            var(--card-2)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition: .2s ease;
+
+}
+
+
+.summary-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(247,201,40,.3);
+
+}
+
+
+.summary-icon {
+
+    font-size: 28px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.summary-card h3 {
+
+    font-size: 14px;
+
+    color: var(--muted);
+
+}
+
+
+.summary-card p {
+
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================================
+   INFO PANEL
+========================================================= */
+
+.info-panel,
+.methodology {
+
+    padding:
+        35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(247,201,40,.07),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid
+        rgba(247,201,40,.16);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.info-panel h2,
+.methodology h2 {
+
+    font-family:
+        Rajdhani,
+        sans-serif;
+
+    font-size: 34px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.info-panel p,
+.methodology p {
+
+    color:
+        #bac4d3;
+
+    margin-bottom: 15px;
+
+}
+
+
+.info-panel p:last-child,
+.methodology p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   GENERATIONS
+========================================================= */
+
+.generation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+
+}
+
+
+.generation-card {
+
+    min-height: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 22px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition: .2s ease;
+
+}
+
+
+.generation-card:hover {
+
+    border-color:
+        var(--electric);
+
+    transform:
+        translateY(-4px);
+
+}
+
+
+.generation-card span {
+
+    color:
+        var(--electric);
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: .12em;
+
+}
+
+
+.generation-card strong {
+
+    font-size: 22px;
+
+}
+
+
+.generation-card small {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.filter-bar {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.filter {
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--card);
+
+    color:
+        var(--muted);
+
+    padding:
+        8px 14px;
+
+    border-radius:
+        999px;
+
+    cursor: pointer;
+
+}
+
+
+.filter:hover,
+.filter.active {
+
+    background:
+        var(--electric);
+
+    color:
+        #111;
+
+    border-color:
+        var(--electric);
+
+}
+
+
+/* =========================================================
+   POKEMON CARDS
+========================================================= */
+
+.pokemon-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.pokemon-card {
+
+    overflow: hidden;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition: .2s ease;
+
+}
+
+
+.pokemon-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--shadow);
+
+    border-color:
+        rgba(247,201,40,.35);
+
+}
+
+
+.pokemon-image {
+
+    position: relative;
+
+    aspect-ratio: 16 / 10;
+
+    display: grid;
+
+    place-items: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(247,201,40,.14),
+            transparent 70%
+        );
+
+}
+
+
+.pokemon-image img {
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+
+}
+
+
+.generation-tag {
+
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    background:
+        rgba(0,0,0,.6);
+
+    padding:
+        5px 9px;
+
+    border-radius:
+        7px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+}
+
+
+.pokemon-info {
+
+    padding:
+        20px;
+
+}
+
+
+.pokedex-number {
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.pokemon-info h3 {
+
+    font-size: 24px;
+
+    margin:
+        2px 0 8px;
+
+}
+
+
+.type-pills {
+
+    display: flex;
+
+    gap: 6px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.type {
+
+    padding:
+        4px 9px;
+
+    border-radius:
+        999px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.type.electric {
+
+    background:
+        rgba(247,201,40,.15);
+
+    color:
+        var(--electric);
+
+}
+
+
+.type.dragon {
+
+    background:
+        rgba(115,89,220,.2);
+
+    color:
+        #b8a9ff;
+
+}
+
+
+.pokemon-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin:
+        18px 0;
+
+}
+
+
+.pokemon-stats span {
+
+    padding:
+        8px;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border-radius:
+        8px;
+
+    font-size: 12px;
+
+}
+
+
+.pokemon-stats b {
+
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-size: 9px;
+
+}
+
+
+.guide-link {
+
+    display: block;
+
+    padding-top:
+        14px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:
+        var(--electric);
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.evolution-family {
+
+    padding:
+        25px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.evolution-family h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.evolution-line {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.evolution-line span {
+
+    padding:
+        6px 9px;
+
+    background:
+        rgba(247,201,40,.09);
+
+    color:
+        var(--electric);
+
+    border-radius:
+        7px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.evolution-line b {
+
+    color:
+        var(--muted);
+
+}
+
+
+.evolution-family p {
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.evolution-family a {
+
+    color:
+        var(--electric);
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   MATCHUPS
+========================================================= */
+
+.matchup-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.matchup-card {
+
+    padding:
+        30px;
+
+    border-radius:
+        var(--radius);
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--card);
+
+}
+
+
+.matchup-card.weakness {
+
+    border-color:
+        rgba(255,101,119,.22);
+
+}
+
+
+.matchup-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.matchup-header span {
+
+    font-size: 24px;
+
+}
+
+
+.type-large {
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    margin-bottom: 12px;
+
+}
+
+
+.matchup-card p {
+
+    color:
+        var(--muted);
+
+}
+
+
+.resistance-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.resistance-list span {
+
+    padding:
+        7px 10px;
+
+    background:
+        rgba(85,216,138,.1);
+
+    border:
+        1px solid
+        rgba(85,216,138,.15);
+
+    color:
+        var(--success);
+
+    border-radius:
+        8px;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.stat-table-wrapper,
+.shiny-table-wrapper {
+
+    overflow-x:
+        auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.pokemon-table {
+
+    width: 100%;
+
+    border-collapse:
+        collapse;
+
+    min-width:
+        720px;
+
+}
+
+
+.pokemon-table th {
+
+    background:
+        #171e2b;
+
+    color:
+        var(--electric);
+
+    text-align:
+        left;
+
+    font-size: 12px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .06em;
+
+}
+
+
+.pokemon-table th,
+.pokemon-table td {
+
+    padding:
+        15px;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.pokemon-table tbody tr:hover {
+
+    background:
+        rgba(255,255,255,.025);
+
+}
+
+
+.data-note {
+
+    margin-top:
+        12px;
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   MOVES
+========================================================= */
+
+.move-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.move-card {
+
+    padding:
+        27px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--card);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.move-card.featured {
+
+    border-color:
+        rgba(247,201,40,.3);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(247,201,40,.1),
+            var(--card)
+        );
+
+}
+
+
+.move-type {
+
+    color:
+        var(--electric);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing:
+        .12em;
+
+}
+
+
+.move-card h3 {
+
+    font-size:
+        25px;
+
+    margin:
+        8px 0;
+
+}
+
+
+.move-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+.move-meta {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    margin-top:
+        20px;
+
+    padding-top:
+        14px;
+
+    border-top:
+        1px solid var(--border);
+
+    font-size:
+        12px;
+
+}
+
+
+/* =========================================================
+   RAID TIER
+========================================================= */
+
+.tier-panel {
+
+    display: grid;
+
+    gap: 12px;
+
+}
+
+
+.tier-row {
+
+    display: grid;
+
+    grid-template-columns:
+        75px 1fr;
+
+    align-items:
+        center;
+
+    gap: 18px;
+
+    padding:
+        18px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+}
+
+
+.tier-rank {
+
+    width:
+        58px;
+
+    height:
+        58px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        14px;
+
+    font-size:
+        25px;
+
+    font-weight:
+        900;
+
+}
+
+
+.tier-s {
+
+    background:
+        rgba(247,201,40,.15);
+
+    color:
+        var(--electric);
+
+}
+
+
+.tier-a {
+
+    background:
+        rgba(85,216,138,.12);
+
+    color:
+        var(--success);
+
+}
+
+
+.tier-b {
+
+    background:
+        rgba(130,160,255,.12);
+
+    color:
+        #9cb4ff;
+
+}
+
+
+.tier-content h3 {
+
+    margin-bottom:
+        3px;
+
+}
+
+
+.tier-content p {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================================
+   SPECIAL FORMS
+========================================================= */
+
+.special-grid,
+.max-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        20px;
+
+}
+
+
+.special-card,
+.max-card {
+
+    padding:
+        32px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--card);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.special-label {
+
+    color:
+        var(--electric);
+
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .12em;
+
+}
+
+
+.special-card h3,
+.max-card h3 {
+
+    font-size:
+        28px;
+
+    margin:
+        8px 0;
+
+}
+
+
+.special-card p,
+.max-card p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.special-card a,
+.max-card a {
+
+    color:
+        var(--electric);
+
+    font-weight:
+        800;
+
+}
+
+
+.max-symbol {
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    background:
+        rgba(247,201,40,.12);
+
+    color:
+        var(--electric);
+
+    border-radius:
+        13px;
+
+    font-weight:
+        900;
+
+    font-size:
+        25px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+/* =========================================================
+   SHADOW
+========================================================= */
+
+.shadow-panel {
+
+    display:
+        flex;
+
+    gap:
+        25px;
+
+    align-items:
+        flex-start;
+
+    padding:
+        35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(110,80,160,.15),
+            var(--card)
+        );
+
+    border:
+        1px solid
+        rgba(140,110,190,.2);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.shadow-icon {
+
+    font-size:
+        50px;
+
+}
+
+
+.shadow-panel h3 {
+
+    font-size:
+        27px;
+
+    margin-bottom:
+        8px;
+
+}
+
+
+.shadow-panel p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.dark-link {
+
+    color:
+        var(--electric);
+
+    font-weight:
+        800;
+
+}
+
+
+/* =========================================================
+   SHINY
+========================================================= */
+
+.shiny-yes {
+
+    color:
+        var(--success);
+
+    font-weight:
+        700;
+
+}
+
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.availability-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        15px;
+
+}
+
+
+.availability-card {
+
+    padding:
+        24px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.availability-card > span {
+
+    font-size:
+        30px;
+
+}
+
+
+.availability-card h3 {
+
+    margin:
+        12px 0 7px;
+
+}
+
+
+.availability-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   INDIVIDUAL GUIDES
+========================================================= */
+
+.guide-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        16px;
+
+}
+
+
+.guide-card {
+
+    padding:
+        24px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition:
+        .2s ease;
+
+}
+
+
+.guide-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(247,201,40,.3);
+
+}
+
+
+.guide-card > span {
+
+    color:
+        var(--electric);
+
+    font-size:
+        11px;
+
+    font-weight:
+        900;
+
+}
+
+
+.guide-card h3 {
+
+    font-size:
+        24px;
+
+    margin:
+        5px 0;
+
+}
+
+
+.guide-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.guide-card strong {
+
+    color:
+        var(--electric);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
+   DECISION PANEL
+========================================================= */
+
+.decision-panel {
+
+    padding:
+        35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(247,201,40,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid
+        rgba(247,201,40,.2);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.decision-panel h2 {
+
+    font-family:
+        Rajdhani,
+        sans-serif;
+
+    font-size:
+        34px;
+
+}
+
+
+.decision-list {
+
+    margin-top:
+        25px;
+
+    display:
+        grid;
+
+    gap:
+        12px;
+
+}
+
+
+.decision-list > div {
+
+    display:
+        flex;
+
+    gap:
+        15px;
+
+    padding:
+        15px;
+
+    background:
+        rgba(0,0,0,.16);
+
+    border-radius:
+        10px;
+
+}
+
+
+.decision-list span {
+
+    color:
+        var(--electric);
+
+    font-weight:
+        900;
+
+}
+
+
+.decision-list p {
+
+    color:
+        var(--muted);
+
+}
+
+
+.decision-list strong {
+
+    color:
+        var(--text);
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq-list {
+
+    display:
+        grid;
+
+    gap:
+        10px;
+
+}
+
+
+.faq-list details {
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+    padding:
+        18px 20px;
+
+}
+
+
+.faq-list summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        800;
+
+}
+
+
+.faq-list p {
+
+    color:
+        var(--muted);
+
+    margin-top:
+        12px;
+
+    padding-top:
+        12px;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+/* =========================================================
+   RELATED
+========================================================= */
+
+.related-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        10px;
+
+}
+
+
+.related-grid a {
+
+    padding:
+        17px;
+
+    background:
+        var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        11px;
+
+    font-weight:
+        700;
+
+    transition:
+        .2s ease;
+
+}
+
+
+.related-grid a:hover {
+
+    color:
+        var(--electric);
+
+    border-color:
+        rgba(247,201,40,.3);
+
+}
+
+
+/* =========================================================
+   EDITORIAL
+========================================================= */
+
+.editorial-box {
+
+    display:
+        flex;
+
+    gap:
+        25px;
+
+    padding:
+        35px;
+
+    border:
+        1px solid
+        rgba(247,201,40,.2);
+
+    background:
+        rgba(247,201,40,.05);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.editorial-icon {
+
+    font-size:
+        45px;
+
+}
+
+
+.editorial-box h2 {
+
+    font-family:
+        Rajdhani,
+        sans-serif;
+
+    font-size:
+        34px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.editorial-box p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        12px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+
+    margin-top:
+        60px;
+
+    border-top:
+        1px solid var(--border);
+
+    background:
+        #06080d;
+
+}
+
+
+.footer-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:
+        40px;
+
+    padding:
+        60px 0;
+
+}
+
+
+.footer-grid h3 {
+
+    font-size:
+        20px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.footer-grid h4 {
+
+    color:
+        var(--electric);
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.footer-grid p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+.footer-grid a {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+    margin:
+        6px 0;
+
+}
+
+
+.footer-grid a:hover {
+
+    color:
+        var(--electric);
+
+}
+
+
+.footer-bottom {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        20px 0;
+
+}
+
+
+.footer-bottom p {
+
+    color:
+        #727d8d;
+
+    font-size:
+        11px;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .summary-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .pokemon-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .generation-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .evolution-grid,
+    .move-grid,
+    .guide-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .availability-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .related-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .main-nav {
+
+        display:
+            none;
+
+        position:
+            absolute;
+
+        top:
+            72px;
+
+        left:
+            16px;
+
+        right:
+            16px;
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        padding:
+            12px;
+
+        background:
+            #0c111a;
+
+        border:
+            1px solid var(--border);
+
+        border-radius:
+            14px;
+
+    }
+
+
+    .main-nav.open {
+
+        display:
+            flex;
+
+    }
+
+
+    .mobile-menu {
+
+        display:
+            block;
+
+    }
+
+
+    .electric-hero {
+
+        min-height:
+            600px;
+
+    }
+
+
+    .hero-content {
+
+        padding:
+            70px 0;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size:
+            46px;
+
+    }
+
+
+    .section {
+
+        padding:
+            55px 0;
+
+    }
+
+
+    .summary-grid,
+    .pokemon-grid,
+    .generation-grid,
+    .evolution-grid,
+    .move-grid,
+    .guide-grid,
+    .availability-grid,
+    .related-grid,
+    .special-grid,
+    .max-grid,
+    .matchup-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .shadow-panel,
+    .editorial-box {
+
+        flex-direction:
+            column;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .container {
+
+        width:
+            min(
+                calc(100% - 22px),
+                var(--max-width)
+            );
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size:
+            39px;
+
+    }
+
+
+    .hero-subtitle {
+
+        font-size:
+            15px;
+
+    }
+
+
+    .summary-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .info-panel,
+    .methodology,
+    .decision-panel,
+    .editorial-box,
+    .shadow-panel {
+
+        padding:
+            23px;
+
+    }
+
+}
+	</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            <span class="logo-icon">⚡</span>
+            <span>Pokémon Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/">Home</a>
+
+            <a href="/raids/">Raids</a>
+
+            <a href="/pokemon/">Pokémon</a>
+
+            <a href="/guides/">Guides</a>
+
+            <a href="/tools/">Tools</a>
+
+        </nav>
+
+        <button class="mobile-menu"
+                aria-label="Open navigation">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb-wrap">
+
+    <div class="container breadcrumb">
+
+        <a href="/">Home</a>
+
+        <span>›</span>
+
+        <a href="/pokemon/">Pokémon Database</a>
+
+        <span>›</span>
+
+        <strong>Electric Type</strong>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="electric-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="type-badge-large">
+            ⚡ ELECTRIC TYPE
+        </div>
+
+        <h1>
+            Electric Type Pokémon GO Hub
+        </h1>
+
+        <p class="hero-subtitle">
+
+            Your complete Electric-type Pokémon GO reference —
+            from Generation 1 through Generation 9, including
+            evolution families, stats, weaknesses, resistances,
+            moves, raid performance, Mega Evolution, Shadow,
+            Dynamax, Gigantamax, Shiny availability and individual
+            Pokémon guides.
+
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#electric-pokemon"
+               class="btn btn-primary">
+                Explore Electric Pokémon
+            </a>
+
+            <a href="#weaknesses"
+               class="btn btn-secondary">
+                View Weaknesses
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK TYPE SUMMARY
+========================================================= -->
+
+<section class="container section">
+
+    <div class="section-heading">
+
+        <span class="section-number">01</span>
+
+        <div>
+            <p class="eyebrow">TYPE INTELLIGENCE</p>
+
+            <h2>
+                Electric Type at a Glance
+            </h2>
+        </div>
+
+    </div>
+
+
+    <div class="summary-grid">
+
+        <article class="summary-card">
+
+            <div class="summary-icon">⚡</div>
+
+            <h3>Type</h3>
+
+            <p>
+                Electric
+            </p>
+
+        </article>
+
+
+        <article class="summary-card">
+
+            <div class="summary-icon">🛡️</div>
+
+            <h3>Weak Against</h3>
+
+            <p>
+                Ground
+            </p>
+
+        </article>
+
+
+        <article class="summary-card">
+
+            <div class="summary-icon">⚔️</div>
+
+            <h3>Strong Against</h3>
+
+            <p>
+                Water & Flying
+            </p>
+
+        </article>
+
+
+        <article class="summary-card">
+
+            <div class="summary-icon">🌩️</div>
+
+            <h3>Weather Boost</h3>
+
+            <p>
+                Rainy Weather
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY ELECTRIC TYPE MATTERS
+========================================================= -->
+
+<section class="container section">
+
+    <div class="info-panel">
+
+        <p class="eyebrow">
+            TRAINER'S FIELD GUIDE
+        </p>
+
+        <h2>
+            Why Electric Pokémon Matter in Pokémon GO
+        </h2>
+
+        <p>
+            Electric-type Pokémon occupy an important role in
+            Pokémon GO because their attacks are super effective
+            against Water- and Flying-type opponents. This makes
+            strong Electric attackers particularly useful for
+            certain raids, Gym battles and other PvE situations.
+        </p>
+
+        <p>
+            However, not every Electric Pokémon performs the same
+            role. Some are powerful raid attackers, while others
+            are better suited for PvP, collecting, evolution
+            progression or specialized teams.
+        </p>
+
+        <p>
+            This hub is designed to help Trainers understand
+            those differences instead of simply listing Pokémon
+            names and statistics.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GENERATION NAVIGATION
+========================================================= -->
+
+<section class="container section"
+         id="generations">
+
+    <div class="section-heading">
+
+        <span class="section-number">02</span>
+
+        <div>
+
+            <p class="eyebrow">
+                POKÉDEX EXPLORER
+            </p>
+
+            <h2>
+                Electric Pokémon by Generation
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="generation-grid">
+
+        <a href="#gen1" class="generation-card">
+            <span>GEN 1</span>
+            <strong>Kanto</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen2" class="generation-card">
+            <span>GEN 2</span>
+            <strong>Johto</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen3" class="generation-card">
+            <span>GEN 3</span>
+            <strong>Hoenn</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen4" class="generation-card">
+            <span>GEN 4</span>
+            <strong>Sinnoh</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen5" class="generation-card">
+            <span>GEN 5</span>
+            <strong>Unova</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen6" class="generation-card">
+            <span>GEN 6</span>
+            <strong>Kalos</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen7" class="generation-card">
+            <span>GEN 7</span>
+            <strong>Alola</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen8" class="generation-card">
+            <span>GEN 8</span>
+            <strong>Galar</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+        <a href="#gen9" class="generation-card">
+            <span>GEN 9</span>
+            <strong>Paldea</strong>
+            <small>Electric Pokémon</small>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     POKEMON DATABASE
+========================================================= -->
+
+<section class="container section"
+         id="electric-pokemon">
+
+    <div class="section-heading">
+
+        <span class="section-number">03</span>
+
+        <div>
+
+            <p class="eyebrow">
+                DATABASE
+            </p>
+
+            <h2>
+                Electric Type Pokémon
+            </h2>
+
+            <p>
+                Browse Electric Pokémon and compare their
+                evolutionary stages, stats and battle roles.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="filter-bar">
+
+        <button class="filter active">
+            All
+        </button>
+
+        <button class="filter">
+            Gen 1
+        </button>
+
+        <button class="filter">
+            Gen 2
+        </button>
+
+        <button class="filter">
+            Gen 3
+        </button>
+
+        <button class="filter">
+            Gen 4
+        </button>
+
+        <button class="filter">
+            Gen 5
+        </button>
+
+        <button class="filter">
+            Gen 6
+        </button>
+
+        <button class="filter">
+            Gen 7
+        </button>
+
+        <button class="filter">
+            Gen 8
+        </button>
+
+        <button class="filter">
+            Gen 9
+        </button>
+
+    </div>
+
+
+    <div class="pokemon-grid">
+
+        <!-- Pikachu -->
+
+        <article class="pokemon-card">
+
+            <div class="pokemon-image">
+
+                <img src="/images/pokemon/pikachu.webp"
+                     alt="Pikachu Pokémon GO"
+                     loading="lazy">
+
+                <span class="generation-tag">
+                    GEN 1
+                </span>
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span class="pokedex-number">
+                    #025
+                </span>
+
+                <h3>
+                    Pikachu
+                </h3>
+
+                <div class="type-pills">
+
+                    <span class="type electric">
+                        Electric
+                    </span>
+
+                </div>
+
+                <div class="pokemon-stats">
+
+                    <span>
+                        <b>ATK</b>
+                        112
+                    </span>
+
+                    <span>
+                        <b>DEF</b>
+                        96
+                    </span>
+
+                    <span>
+                        <b>HP</b>
+                        111
+                    </span>
+
+                </div>
+
+                <a href="/pokemon/pikachu.html"
+                   class="guide-link">
+                    View Pikachu Guide →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Raichu -->
+
+        <article class="pokemon-card">
+
+            <div class="pokemon-image">
+
+                <img src="/images/pokemon/raichu.webp"
+                     alt="Raichu Pokémon GO"
+                     loading="lazy">
+
+                <span class="generation-tag">
+                    GEN 1
+                </span>
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span class="pokedex-number">
+                    #026
+                </span>
+
+                <h3>
+                    Raichu
+                </h3>
+
+                <div class="type-pills">
+
+                    <span class="type electric">
+                        Electric
+                    </span>
+
+                </div>
+
+                <div class="pokemon-stats">
+
+                    <span>
+                        <b>ATK</b>
+                        193
+                    </span>
+
+                    <span>
+                        <b>DEF</b>
+                        151
+                    </span>
+
+                    <span>
+                        <b>HP</b>
+                        155
+                    </span>
+
+                </div>
+
+                <a href="/pokemon/raichu.html"
+                   class="guide-link">
+                    View Raichu Guide →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Ampharos -->
+
+        <article class="pokemon-card">
+
+            <div class="pokemon-image">
+
+                <img src="/images/pokemon/ampharos.webp"
+                     alt="Ampharos Pokémon GO"
+                     loading="lazy">
+
+                <span class="generation-tag">
+                    GEN 2
+                </span>
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span class="pokedex-number">
+                    #181
+                </span>
+
+                <h3>
+                    Ampharos
+                </h3>
+
+                <div class="type-pills">
+
+                    <span class="type electric">
+                        Electric
+                    </span>
+
+                </div>
+
+                <div class="pokemon-stats">
+
+                    <span>
+                        <b>ATK</b>
+                        211
+                    </span>
+
+                    <span>
+                        <b>DEF</b>
+                        169
+                    </span>
+
+                    <span>
+                        <b>HP</b>
+                        207
+                    </span>
+
+                </div>
+
+                <a href="/pokemon/ampharos.html"
+                   class="guide-link">
+                    View Ampharos Guide →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Electivire -->
+
+        <article class="pokemon-card">
+
+            <div class="pokemon-image">
+
+                <img src="/images/pokemon/electivire.webp"
+                     alt="Electivire Pokémon GO"
+                     loading="lazy">
+
+                <span class="generation-tag">
+                    GEN 4
+                </span>
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span class="pokedex-number">
+                    #466
+                </span>
+
+                <h3>
+                    Electivire
+                </h3>
+
+                <div class="type-pills">
+
+                    <span class="type electric">
+                        Electric
+                    </span>
+
+                </div>
+
+                <div class="pokemon-stats">
+
+                    <span>
+                        <b>ATK</b>
+                        249
+                    </span>
+
+                    <span>
+                        <b>DEF</b>
+                        163
+                    </span>
+
+                    <span>
+                        <b>HP</b>
+                        181
+                    </span>
+
+                </div>
+
+                <a href="/pokemon/electivire.html"
+                   class="guide-link">
+                    View Electivire Guide →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Zekrom -->
+
+        <article class="pokemon-card">
+
+            <div class="pokemon-image">
+
+                <img src="/images/pokemon/zekrom.webp"
+                     alt="Zekrom Pokémon GO"
+                     loading="lazy">
+
+                <span class="generation-tag">
+                    GEN 5
+                </span>
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span class="pokedex-number">
+                    #644
+                </span>
+
+                <h3>
+                    Zekrom
+                </h3>
+
+                <div class="type-pills">
+
+                    <span class="type electric">
+                        Electric
+                    </span>
+
+                    <span class="type dragon">
+                        Dragon
+                    </span>
+
+                </div>
+
+                <div class="pokemon-stats">
+
+                    <span>
+                        <b>ATK</b>
+                        275
+                    </span>
+
+                    <span>
+                        <b>DEF</b>
+                        211
+                    </span>
+
+                    <span>
+                        <b>HP</b>
+                        205
+                    </span>
+
+                </div>
+
+                <a href="/pokemon/zekrom.html"
+                   class="guide-link">
+                    View Zekrom Guide →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Xurkitree -->
+
+        <article class="pokemon-card">
+
+            <div class="pokemon-image">
+
+                <img src="/images/pokemon/xurkitree.webp"
+                     alt="Xurkitree Pokémon GO"
+                     loading="lazy">
+
+                <span class="generation-tag">
+                    GEN 7
+                </span>
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span class="pokedex-number">
+                    #796
+                </span>
+
+                <h3>
+                    Xurkitree
+                </h3>
+
+                <div class="type-pills">
+
+                    <span class="type electric">
+                        Electric
+                    </span>
+
+                </div>
+
+                <div class="pokemon-stats">
+
+                    <span>
+                        <b>ATK</b>
+                        330
+                    </span>
+
+                    <span>
+                        <b>DEF</b>
+                        144
+                    </span>
+
+                    <span>
+                        <b>HP</b>
+                        195
+                    </span>
+
+                </div>
+
+                <a href="/pokemon/xurkitree.html"
+                   class="guide-link">
+                    View Xurkitree Guide →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EVOLUTION FAMILIES
+========================================================= -->
+
+<section class="container section"
+         id="evolution-families">
+
+    <div class="section-heading">
+
+        <span class="section-number">04</span>
+
+        <div>
+
+            <p class="eyebrow">
+                EVOLUTION DATABASE
+            </p>
+
+            <h2>
+                Electric Type Evolution Families
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="evolution-grid">
+
+        <article class="evolution-family">
+
+            <h3>
+                ⚡ Pichu → Pikachu → Raichu
+            </h3>
+
+            <div class="evolution-line">
+
+                <span>Pichu</span>
+
+                <b>→</b>
+
+                <span>Pikachu</span>
+
+                <b>→</b>
+
+                <span>Raichu</span>
+
+            </div>
+
+            <p>
+                A classic Electric-type family. Trainers should
+                consider candy requirements, moves and the role
+                of each evolutionary stage before evolving.
+            </p>
+
+            <a href="/pokemon/pikachu-family.html">
+                Explore Evolution Family →
+            </a>
+
+        </article>
+
+
+        <article class="evolution-family">
+
+            <h3>
+                ⚡ Elekid → Electabuzz → Electivire
+            </h3>
+
+            <div class="evolution-line">
+
+                <span>Elekid</span>
+
+                <b>→</b>
+
+                <span>Electabuzz</span>
+
+                <b>→</b>
+
+                <span>Electivire</span>
+
+            </div>
+
+            <p>
+                A multi-stage Electric family with a final
+                evolution that can play an important offensive role.
+            </p>
+
+            <a href="/pokemon/electivire-family.html">
+                Explore Evolution Family →
+            </a>
+
+        </article>
+
+
+        <article class="evolution-family">
+
+            <h3>
+                ⚡ Mareep → Flaaffy → Ampharos
+            </h3>
+
+            <div class="evolution-line">
+
+                <span>Mareep</span>
+
+                <b>→</b>
+
+                <span>Flaaffy</span>
+
+                <b>→</b>
+
+                <span>Ampharos</span>
+
+            </div>
+
+            <p>
+                A popular Electric family with both regular and
+                Mega Evolution considerations.
+            </p>
+
+            <a href="/pokemon/ampharos-family.html">
+                Explore Evolution Family →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TYPE MECHANICS
+========================================================= -->
+
+<section class="container section"
+         id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">05</span>
+
+        <div>
+
+            <p class="eyebrow">
+                BATTLE MECHANICS
+            </p>
+
+            <h2>
+                Electric Type Matchups
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="matchup-grid">
+
+
+        <article class="matchup-card weakness"
+                 id="weaknesses">
+
+            <div class="matchup-header">
+
+                <span>⚠️</span>
+
+                <h3>
+                    Electric Weakness
+                </h3>
+
+            </div>
+
+            <div class="type-large">
+                🌍 Ground
+            </div>
+
+            <p>
+                Ground-type attacks are especially important
+                when building a counter team against Electric
+                Pokémon.
+            </p>
+
+        </article>
+
+
+        <article class="matchup-card resistance">
+
+            <div class="matchup-header">
+
+                <span>🛡️</span>
+
+                <h3>
+                    Electric Resistances
+                </h3>
+
+            </div>
+
+            <div class="resistance-list">
+
+                <span>⚡ Electric</span>
+
+                <span>🛩️ Flying</span>
+
+                <span>⚙️ Steel</span>
+
+                <span>⚡ Electric Attacks</span>
+
+            </div>
+
+            <p>
+                Electric Pokémon can resist several attack
+                categories, depending on their secondary typing.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="container section"
+         id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">06</span>
+
+        <div>
+
+            <p class="eyebrow">
+                STAT LAB
+            </p>
+
+            <h2>
+                Electric Pokémon Stats
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-table-wrapper">
+
+        <table class="pokemon-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Pokémon</th>
+
+                    <th>Type</th>
+
+                    <th>Attack</th>
+
+                    <th>Defense</th>
+
+                    <th>HP</th>
+
+                    <th>Max CP</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <strong>Pikachu</strong>
+                    </td>
+
+                    <td>
+                        Electric
+                    </td>
+
+                    <td>112</td>
+
+                    <td>96</td>
+
+                    <td>111</td>
+
+                    <td>1060+</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Raichu</strong>
+                    </td>
+
+                    <td>
+                        Electric
+                    </td>
+
+                    <td>193</td>
+
+                    <td>151</td>
+
+                    <td>155</td>
+
+                    <td>2500+</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Ampharos</strong>
+                    </td>
+
+                    <td>
+                        Electric
+                    </td>
+
+                    <td>211</td>
+
+                    <td>169</td>
+
+                    <td>207</td>
+
+                    <td>3200+</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Electivire</strong>
+                    </td>
+
+                    <td>
+                        Electric
+                    </td>
+
+                    <td>249</td>
+
+                    <td>163</td>
+
+                    <td>181</td>
+
+                    <td>3300+</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Zekrom</strong>
+                    </td>
+
+                    <td>
+                        Electric / Dragon
+                    </td>
+
+                    <td>275</td>
+
+                    <td>211</td>
+
+                    <td>205</td>
+
+                    <td>4500+</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <p class="data-note">
+        Stats and CP values should be maintained from your
+        site's verified Pokémon GO data source. Recheck values
+        whenever the game receives balance or stat changes.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     BEST MOVES
+========================================================= -->
+
+<section class="container section"
+         id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">07</span>
+
+        <div>
+
+            <p class="eyebrow">
+                MOVE LIBRARY
+            </p>
+
+            <h2>
+                Best Electric Moves
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="move-grid">
+
+        <article class="move-card">
+
+            <span class="move-type">
+                FAST MOVE
+            </span>
+
+            <h3>
+                Spark
+            </h3>
+
+            <p>
+                A fast Electric attack useful on Pokémon that
+                have access to it.
+            </p>
+
+            <div class="move-meta">
+
+                <span>⚡ Electric</span>
+
+                <span>Fast</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="move-card">
+
+            <span class="move-type">
+                FAST MOVE
+            </span>
+
+            <h3>
+                Volt Switch
+            </h3>
+
+            <p>
+                An Electric fast move that can be valuable when
+                optimizing damage output.
+            </p>
+
+            <div class="move-meta">
+
+                <span>⚡ Electric</span>
+
+                <span>Fast</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="move-card featured">
+
+            <span class="move-type">
+                CHARGED MOVE
+            </span>
+
+            <h3>
+                Wild Charge
+            </h3>
+
+            <p>
+                One of the most recognizable Electric charged
+                attacks and an important move to evaluate when
+                building Electric attackers.
+            </p>
+
+            <div class="move-meta">
+
+                <span>⚡ Electric</span>
+
+                <span>Charged</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RAID TIER
+========================================================= -->
+
+<section class="container section"
+         id="raid-tier">
+
+    <div class="section-heading">
+
+        <span class="section-number">08</span>
+
+        <div>
+
+            <p class="eyebrow">
+                PVE PERFORMANCE
+            </p>
+
+            <h2>
+                Electric Type Raid Tier
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="tier-panel">
+
+        <div class="tier-row">
+
+            <div class="tier-rank tier-s">
+                S
+            </div>
+
+            <div class="tier-content">
+
+                <h3>
+                    Elite Electric Attackers
+                </h3>
+
+                <p>
+                    Pokémon with exceptional offensive
+                    performance and strong Electric movesets.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="tier-row">
+
+            <div class="tier-rank tier-a">
+                A
+            </div>
+
+            <div class="tier-content">
+
+                <h3>
+                    Excellent Raid Attackers
+                </h3>
+
+                <p>
+                    Reliable choices that can perform very well
+                    in appropriate raid matchups.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="tier-row">
+
+            <div class="tier-rank tier-b">
+                B
+            </div>
+
+            <div class="tier-content">
+
+                <h3>
+                    Useful Specialists
+                </h3>
+
+                <p>
+                    Valuable when a Trainer needs additional
+                    Electric-type options.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MEGA / PRIMAL
+========================================================= -->
+
+<section class="container section"
+         id="mega">
+
+    <div class="section-heading">
+
+        <span class="section-number">09</span>
+
+        <div>
+
+            <p class="eyebrow">
+                SPECIAL FORMS
+            </p>
+
+            <h2>
+                Mega & Special Electric Pokémon
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <article class="special-card">
+
+            <span class="special-label">
+                MEGA
+            </span>
+
+            <h3>
+                Mega Ampharos
+            </h3>
+
+            <p>
+                A Mega Evolution that combines Electric and
+                Dragon typing and can provide additional strategic
+                value during appropriate battles.
+            </p>
+
+            <a href="/raids/mega_ampharos.html">
+                Mega Ampharos Raid Guide →
+            </a>
+
+        </article>
+
+
+        <article class="special-card">
+
+            <span class="special-label">
+                SPECIAL FORM
+            </span>
+
+            <h3>
+                Form & Variant Database
+            </h3>
+
+            <p>
+                Track special forms separately so Trainers can
+                understand which versions are available and how
+                they differ from the standard Pokémon.
+            </p>
+
+            <a href="/pokemon/special-forms.html">
+                Explore Special Forms →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SHADOW
+========================================================= -->
+
+<section class="container section"
+         id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">10</span>
+
+        <div>
+
+            <p class="eyebrow">
+                SHADOW DATABASE
+            </p>
+
+            <h2>
+                Shadow Electric Pokémon
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="shadow-panel">
+
+        <div class="shadow-icon">
+            🌑
+        </div>
+
+        <div>
+
+            <h3>
+                Shadow Pokémon Can Change the Battle Equation
+            </h3>
+
+            <p>
+                Shadow Pokémon should not simply be treated as
+                cosmetic variants. Their battle performance can
+                differ significantly from the regular version.
+                Compare their damage potential, survivability,
+                purification options and resource requirements
+                before investing Stardust and Candy.
+            </p>
+
+            <a href="/pokemon/shadow/electric.html"
+               class="dark-link">
+                Explore Shadow Electric Pokémon →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DYNAMAX / GIGANTAMAX
+========================================================= -->
+
+<section class="container section"
+         id="dynamax">
+
+    <div class="section-heading">
+
+        <span class="section-number">11</span>
+
+        <div>
+
+            <p class="eyebrow">
+                MAX BATTLE SYSTEM
+            </p>
+
+            <h2>
+                Dynamax & Gigantamax Electric Pokémon
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="max-grid">
+
+        <article class="max-card">
+
+            <div class="max-symbol">
+                D
+            </div>
+
+            <h3>
+                Dynamax
+            </h3>
+
+            <p>
+                Keep Dynamax-capable Pokémon organized separately
+                so Trainers can quickly identify their options for
+                Max Battles.
+            </p>
+
+            <a href="/max-battles/dynamax-electric.html">
+                Dynamax Electric Guide →
+            </a>
+
+        </article>
+
+
+        <article class="max-card">
+
+            <div class="max-symbol">
+                G
+            </div>
+
+            <h3>
+                Gigantamax
+            </h3>
+
+            <p>
+                Track Gigantamax availability, battle requirements
+                and individual form guides independently from the
+                standard database.
+            </p>
+
+            <a href="/max-battles/gigantamax-electric.html">
+                Gigantamax Guide →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SHINY
+========================================================= -->
+
+<section class="container section"
+         id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">12</span>
+
+        <div>
+
+            <p class="eyebrow">
+                COLLECTION GUIDE
+            </p>
+
+            <h2>
+                Shiny Electric Pokémon
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="shiny-table-wrapper">
+
+        <table class="pokemon-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Pokémon</th>
+
+                    <th>Shiny</th>
+
+                    <th>Availability</th>
+
+                    <th>Where to Check</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Pikachu</td>
+
+                    <td>
+                        <span class="shiny-yes">
+                            ✓ Available
+                        </span>
+                    </td>
+
+                    <td>
+                        Event / Wild availability varies
+                    </td>
+
+                    <td>
+                        Event Guides
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Raichu</td>
+
+                    <td>
+                        <span class="shiny-yes">
+                            ✓ Available
+                        </span>
+                    </td>
+
+                    <td>
+                        Evolution / availability varies
+                    </td>
+
+                    <td>
+                        Pokémon Guide
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Ampharos</td>
+
+                    <td>
+                        <span class="shiny-yes">
+                            ✓ Available
+                        </span>
+                    </td>
+
+                    <td>
+                        Evolution / events
+                    </td>
+
+                    <td>
+                        Ampharos Guide
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AVAILABILITY
+========================================================= -->
+
+<section class="container section"
+         id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">13</span>
+
+        <div>
+
+            <p class="eyebrow">
+                WHERE TO FIND THEM
+            </p>
+
+            <h2>
+                Electric Pokémon Availability
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="availability-grid">
+
+        <article class="availability-card">
+
+            <span>🌳</span>
+
+            <h3>
+                Wild Encounters
+            </h3>
+
+            <p>
+                Some Electric Pokémon can appear in the wild,
+                although availability can change with seasons,
+                events and biome-related encounters.
+            </p>
+
+        </article>
+
+
+        <article class="availability-card">
+
+            <span>🥚</span>
+
+            <h3>
+                Eggs
+            </h3>
+
+            <p>
+                Egg pools change periodically. Check current
+                event and egg-hatching guides before assuming a
+                Pokémon is currently available.
+            </p>
+
+        </article>
+
+
+        <article class="availability-card">
+
+            <span>⚔️</span>
+
+            <h3>
+                Raids
+            </h3>
+
+            <p>
+                Electric Pokémon may appear in raids depending
+                on the current raid rotation and events.
+            </p>
+
+        </article>
+
+
+        <article class="availability-card">
+
+            <span>🚀</span>
+
+            <h3>
+                Team GO Rocket
+            </h3>
+
+            <p>
+                Shadow availability can change as Rocket
+                lineups rotate.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INDIVIDUAL GUIDES
+========================================================= -->
+
+<section class="container section"
+         id="individual-guides">
+
+    <div class="section-heading">
+
+        <span class="section-number">14</span>
+
+        <div>
+
+            <p class="eyebrow">
+                DEEP-DIVE GUIDES
+            </p>
+
+            <h2>
+                Individual Electric Pokémon Guides
+            </h2>
+
+            <p>
+                Each Pokémon should have its own detailed page
+                rather than forcing every piece of information
+                into one enormous database table.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="guide-grid">
+
+        <a href="/pokemon/pikachu.html"
+           class="guide-card">
+
+            <span>#025</span>
+
+            <h3>
+                Pikachu
+            </h3>
+
+            <p>
+                Stats, evolution, moves, shiny, forms,
+                availability and battle information.
+            </p>
+
+            <strong>
+                Open Guide →
+            </strong>
+
+        </a>
+
+
+        <a href="/pokemon/raichu.html"
+           class="guide-card">
+
+            <span>#026</span>
+
+            <h3>
+                Raichu
+            </h3>
+
+            <p>
+                Complete Raichu database and battle guide.
+            </p>
+
+            <strong>
+                Open Guide →
+            </strong>
+
+        </a>
+
+
+        <a href="/pokemon/ampharos.html"
+           class="guide-card">
+
+            <span>#181</span>
+
+            <h3>
+                Ampharos
+            </h3>
+
+            <p>
+                Regular, Mega, shiny, moves and battle analysis.
+            </p>
+
+            <strong>
+                Open Guide →
+            </strong>
+
+        </a>
+
+
+        <a href="/pokemon/electivire.html"
+           class="guide-card">
+
+            <span>#466</span>
+
+            <h3>
+                Electivire
+            </h3>
+
+            <p>
+                Evolution, moves, raid performance and
+                investment guide.
+            </p>
+
+            <strong>
+                Open Guide →
+            </strong>
+
+        </a>
+
+
+        <a href="/pokemon/zekrom.html"
+           class="guide-card">
+
+            <span>#644</span>
+
+            <h3>
+                Zekrom
+            </h3>
+
+            <p>
+                Legendary Electric/Dragon Pokémon guide with
+                raid and moveset analysis.
+            </p>
+
+            <strong>
+                Open Guide →
+            </strong>
+
+        </a>
+
+
+        <a href="/pokemon/xurkitree.html"
+           class="guide-card">
+
+            <span>#796</span>
+
+            <h3>
+                Xurkitree
+            </h3>
+
+            <p>
+                Ultra Beast Electric attacker guide.
+            </p>
+
+            <strong>
+                Open Guide →
+            </strong>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW TO CHOOSE
+========================================================= -->
+
+<section class="container section">
+
+    <div class="decision-panel">
+
+        <div>
+
+            <p class="eyebrow">
+                TRAINER DECISION GUIDE
+            </p>
+
+            <h2>
+                Which Electric Pokémon Should You Build?
+            </h2>
+
+        </div>
+
+        <div class="decision-list">
+
+            <div>
+                <span>01</span>
+
+                <p>
+                    <strong>For Raids:</strong>
+                    prioritize strong offensive performance,
+                    useful moves and matchup efficiency.
+                </p>
+            </div>
+
+
+            <div>
+                <span>02</span>
+
+                <p>
+                    <strong>For PvP:</strong>
+                    evaluate moves, typing, bulk and league
+                    CP limits rather than Max CP alone.
+                </p>
+            </div>
+
+
+            <div>
+                <span>03</span>
+
+                <p>
+                    <strong>For Mega Evolution:</strong>
+                    consider both battle usefulness and the
+                    bonuses provided to your raid party.
+                </p>
+            </div>
+
+
+            <div>
+                <span>04</span>
+
+                <p>
+                    <strong>For Collection:</strong>
+                    prioritize Shiny, event, costume, Shadow
+                    and other rare variants.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DATA METHODOLOGY
+========================================================= -->
+
+<section class="container section">
+
+    <div class="methodology">
+
+        <p class="eyebrow">
+            ABOUT THIS DATABASE
+        </p>
+
+        <h2>
+            How We Organize Electric Pokémon Data
+        </h2>
+
+        <p>
+            Pokémon GO information can change as the game receives
+            new moves, balance adjustments, events, raid rotations
+            and new Pokémon releases. For that reason, this hub
+            separates permanent reference information from
+            time-sensitive availability information.
+        </p>
+
+        <p>
+            Battle recommendations should also be interpreted in
+            context. A Pokémon that looks impressive on paper may
+            not always be the best choice for a particular raid,
+            PvP league or moveset.
+        </p>
+
+        <p>
+            Whenever possible, individual guides should explain
+            <strong>why</strong> a Pokémon is recommended rather
+            than simply assigning it a ranking.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="container section"
+         id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">15</span>
+
+        <div>
+
+            <p class="eyebrow">
+                COMMON QUESTIONS
+            </p>
+
+            <h2>
+                Electric Type Pokémon FAQ
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-list">
+
+
+        <details>
+
+            <summary>
+                What is Electric type weak against?
+            </summary>
+
+            <p>
+                Electric-type Pokémon are primarily vulnerable
+                to Ground-type attacks. Secondary typing can
+                introduce additional weaknesses or resistances.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                What are Electric Pokémon strong against?
+            </summary>
+
+            <p>
+                Electric-type attacks are particularly useful
+                against Water- and Flying-type opponents.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Is the highest CP Electric Pokémon always the best?
+            </summary>
+
+            <p>
+                No. Max CP is only one part of Pokémon GO
+                performance. Attack, Defense, HP, moveset,
+                typing, role and the specific battle matchup
+                all matter.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Should I evolve every Electric Pokémon?
+            </summary>
+
+            <p>
+                Not necessarily. Before evolving a Pokémon,
+                consider its IVs, moves, intended role, evolution
+                cost and whether the evolved form has meaningful
+                value for your account.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Are Shadow Electric Pokémon worth powering up?
+            </summary>
+
+            <p>
+                Some can be excellent investments, but the answer
+                depends on the individual Pokémon, moveset,
+                available resources and the battles you intend
+                to use it for.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Where can I find current Electric Pokémon events?
+            </summary>
+
+            <p>
+                Check the site's current event calendar and
+                individual Pokémon availability pages because
+                encounters can change with events and seasons.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RELATED GUIDES
+========================================================= -->
+
+<section class="container section">
+
+    <div class="section-heading">
+
+        <span class="section-number">16</span>
+
+        <div>
+
+            <p class="eyebrow">
+                KEEP EXPLORING
+            </p>
+
+            <h2>
+                Related Pokémon GO Guides
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="related-grid">
+
+        <a href="/pokemon/fire-type.html">
+            🔥 Fire Type Hub
+        </a>
+
+        <a href="/pokemon/water-type.html">
+            💧 Water Type Hub
+        </a>
+
+        <a href="/pokemon/grass-type.html">
+            🌿 Grass Type Hub
+        </a>
+
+        <a href="/pokemon/ground-type.html">
+            🌍 Ground Type Hub
+        </a>
+
+        <a href="/raids/">
+            ⚔️ Raid Database
+        </a>
+
+        <a href="/tools/iv-calculator.html">
+            🧮 IV Calculator
+        </a>
+
+        <a href="/tools/cp-calculator.html">
+            📊 CP Calculator
+        </a>
+
+        <a href="/pokemon/">
+            📖 Complete Pokémon Database
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL / ORIGINAL VALUE
+========================================================= -->
+
+<section class="container section">
+
+    <div class="editorial-box">
+
+        <span class="editorial-icon">
+            🧠
+        </span>
+
+        <div>
+
+            <h2>
+                More Than a Pokémon List
+            </h2>
+
+            <p>
+                The goal of this database is to help Trainers make
+                better decisions. Instead of only displaying CP
+                numbers and type icons, individual guides should
+                explain evolution choices, battle roles, useful
+                moves, resource investment and practical situations
+                where each Pokémon performs well.
+            </p>
+
+            <p>
+                That additional analysis is what turns a basic
+                database into a useful Pokémon GO resource.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                Pokémon Gaming
+            </h3>
+
+            <p>
+                Independent Pokémon GO guides, databases,
+                raid resources and Trainer tools.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Pokémon
+            </h4>
+
+            <a href="/pokemon/">Pokédex</a>
+            <a href="/pokemon/electric-type.html">Electric Type</a>
+            <a href="/pokemon/fire-type.html">Fire Type</a>
+            <a href="/pokemon/water-type.html">Water Type</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Guides
+            </h4>
+
+            <a href="/raids/">Raid Guides</a>
+            <a href="/guides/">Game Guides</a>
+            <a href="/events/">Events</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Website
+            </h4>
+
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Pokémon Gaming. Independent fan resource.
+            </p>
+
+            <p>
+                Pokémon and Pokémon GO are trademarks of their
+                respective owners. This website is not affiliated
+                with or endorsed by Niantic, Nintendo, Game Freak
+                or The Pokémon Company.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+document.querySelector(".mobile-menu")
+.addEventListener("click", function(){
+
+    document.querySelector(".main-nav")
+    .classList.toggle("open");
+
+});
+
+</script>
+
+</body>
+</html>

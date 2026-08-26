@@ -1,0 +1,4051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gen 9 Pokémon Database — Paldea Pokédex #906–#1025</title>
+
+<meta name="description"
+content="Complete Generation 9 Pokémon database covering the Paldea Pokédex #906–#1025, including evolution families, types, stats, weaknesses, resistances, Paradox Pokémon, Legendary Pokémon, Mythical Pokémon, Terastal, Shiny, Pokémon GO, raids and individual Pokémon guides.">
+
+<meta name="robots" content="index,follow">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+
+    --bg:#050d17;
+    --bg2:#091827;
+
+    --card:#10273c;
+    --card2:#15314b;
+
+    --border:#29475f;
+
+    --text:#f5f9ff;
+    --muted:#a9bdcf;
+
+    --cyan:#5edcff;
+    --blue:#649cff;
+    --purple:#9a82ff;
+    --green:#52d99a;
+    --yellow:#ffd166;
+    --orange:#ff9b52;
+    --red:#ff6e7e;
+
+    --radius:18px;
+
+    --shadow:
+        0 18px 45px rgba(0,0,0,.28);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:
+        radial-gradient(
+            circle at top,
+            #183b58 0,
+            #050d17 48%
+        );
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.6;
+
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:
+        rgba(5,13,23,.95);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.header-inner{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:
+        14px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    font-size:1.25rem;
+
+    font-weight:950;
+
+}
+
+.logo span{
+    color:var(--cyan);
+}
+
+.nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    color:var(--muted);
+
+    font-size:.85rem;
+
+}
+
+.nav a:hover{
+    color:white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:
+        75px 20px 60px;
+
+    text-align:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:
+        7px 15px;
+
+    border:
+        1px solid #3f718e;
+
+    border-radius:999px;
+
+    background:
+        rgba(94,220,255,.08);
+
+    color:var(--cyan);
+
+    font-size:.75rem;
+
+    font-weight:950;
+
+}
+
+.hero h1{
+
+    margin-top:18px;
+
+    font-size:
+        clamp(2.3rem,5vw,4.5rem);
+
+    line-height:1.05;
+
+}
+
+.hero h1 span{
+    color:var(--cyan);
+}
+
+.hero p{
+
+    max-width:950px;
+
+    margin:
+        20px auto 0;
+
+    color:var(--muted);
+
+    font-size:1.04rem;
+
+}
+
+.hero-actions{
+
+    margin-top:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.hero-button{
+
+    padding:
+        12px 20px;
+
+    border-radius:11px;
+
+    background:var(--cyan);
+
+    color:#04121b;
+
+    font-weight:950;
+
+}
+
+.hero-button.secondary{
+
+    background:#142d47;
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.container{
+
+    width:
+        min(1300px,calc(100% - 30px));
+
+    margin:auto;
+
+}
+
+.section{
+
+    margin-bottom:65px;
+
+}
+
+.section-title{
+
+    margin-bottom:22px;
+
+}
+
+.section-title h2{
+
+    font-size:
+        clamp(1.6rem,3vw,2.3rem);
+
+}
+
+.section-title p{
+
+    margin-top:6px;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   QUICK CARDS
+========================================================= */
+
+.quick-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap:15px;
+
+}
+
+.quick-card{
+
+    padding:21px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card),
+            var(--card2)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.quick-icon{
+    font-size:1.6rem;
+}
+
+.quick-number{
+
+    margin-top:7px;
+
+    font-size:1.35rem;
+
+    font-weight:950;
+
+}
+
+.quick-label{
+
+    color:var(--muted);
+
+    font-size:.8rem;
+
+}
+
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.panel-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.25fr .75fr;
+
+    gap:20px;
+
+}
+
+.panel{
+
+    padding:26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(16,39,60,.96),
+            rgba(8,25,40,.96)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.panel h3{
+    margin-bottom:10px;
+}
+
+.panel p{
+    color:var(--muted);
+}
+
+.feature-list{
+
+    margin-top:17px;
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.feature strong{
+    color:var(--cyan);
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.toolbar{
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr .7fr .7fr .7fr;
+
+    gap:11px;
+
+    padding:19px;
+
+    margin-bottom:22px;
+
+    background:
+        rgba(15,38,59,.92);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.search,
+.filter{
+
+    width:100%;
+
+    padding:
+        12px 14px;
+
+    background:#071624;
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+.search:focus,
+.filter:focus{
+    border-color:var(--cyan);
+}
+
+
+/* =========================================================
+   POKEMON GRID
+========================================================= */
+
+.pokemon-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:17px;
+
+}
+
+.pokemon-card{
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            155deg,
+            #122c46,
+            #091a2b
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:19px;
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform .2s,
+        border-color .2s;
+
+}
+
+.pokemon-card:hover{
+
+    transform:
+        translateY(-5px);
+
+    border-color:#5790b4;
+
+}
+
+.card-top{
+
+    padding:
+        14px 14px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:5px;
+
+}
+
+.dex-number{
+
+    color:var(--muted);
+
+    font-size:.78rem;
+
+    font-weight:900;
+
+}
+
+.category{
+
+    padding:
+        4px 8px;
+
+    border-radius:999px;
+
+    background:#173c58;
+
+    color:var(--cyan);
+
+    font-size:.60rem;
+
+    font-weight:950;
+
+}
+
+.pokemon-image{
+
+    display:block;
+
+    width:155px;
+    height:155px;
+
+    object-fit:contain;
+
+    margin:
+        10px auto;
+
+}
+
+.card-body{
+    padding:15px;
+}
+
+.pokemon-name{
+
+    font-size:1.12rem;
+
+    font-weight:950;
+
+}
+
+.types{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:6px;
+
+    margin:
+        8px 0 13px;
+
+}
+
+.type{
+
+    padding:
+        4px 9px;
+
+    border-radius:999px;
+
+    text-transform:uppercase;
+
+    font-size:.62rem;
+
+    font-weight:950;
+
+}
+
+
+/* =========================================================
+   TYPE COLORS
+========================================================= */
+
+.type.normal{background:#626a73}
+.type.fire{background:#833020}
+.type.water{background:#215b93}
+.type.grass{background:#2c7043}
+.type.electric{background:#77651b}
+.type.ice{background:#367d8c}
+.type.fighting{background:#742d25}
+.type.poison{background:#702e70}
+.type.ground{background:#795b30}
+.type.flying{background:#526a9c}
+.type.psychic{background:#793159}
+.type.bug{background:#57741f}
+.type.rock{background:#6c6038}
+.type.ghost{background:#46346d}
+.type.dragon{background:#49339b}
+.type.dark{background:#3d302f}
+.type.steel{background:#53636e}
+.type.fairy{background:#914f77}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:6px;
+
+}
+
+.stat{
+
+    padding:8px 3px;
+
+    background:#081724;
+
+    border-radius:8px;
+
+    text-align:center;
+
+}
+
+.stat small{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.57rem;
+
+}
+
+.stat strong{
+    font-size:.78rem;
+}
+
+.card-info{
+
+    margin-top:11px;
+
+    display:grid;
+
+    gap:5px;
+
+    color:var(--muted);
+
+    font-size:.72rem;
+
+}
+
+.card-info strong{
+    color:white;
+}
+
+.card-actions{
+
+    display:flex;
+
+    gap:7px;
+
+    margin-top:13px;
+
+}
+
+.card-action{
+
+    flex:1;
+
+    padding:8px;
+
+    text-align:center;
+
+    background:#142f49;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:8px;
+
+    font-size:.7rem;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:17px;
+
+}
+
+.evolution-card{
+
+    padding:20px;
+
+    background:var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.evolution-title{
+
+    margin-bottom:13px;
+
+    font-weight:950;
+
+}
+
+.evolution-line{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+}
+
+.evo{
+
+    padding:
+        8px 10px;
+
+    background:#081927;
+
+    border-radius:8px;
+
+    font-size:.73rem;
+
+}
+
+.arrow{
+
+    color:var(--cyan);
+
+    font-weight:950;
+
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+========================================================= */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.feature-card{
+
+    padding:24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #132c46,
+            #0b1d30
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.feature-card .icon{
+    font-size:1.8rem;
+}
+
+.feature-card h3{
+    margin-top:8px;
+}
+
+.feature-card p{
+
+    margin-top:7px;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   LEGENDARY
+========================================================= */
+
+.legendary-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+.legendary-card{
+
+    padding:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #292047,
+            #0d1d31
+        );
+
+    border:
+        1px solid #514574;
+
+    border-radius:15px;
+
+}
+
+.legendary-card h3{
+    font-size:.98rem;
+}
+
+.legendary-card p{
+
+    margin-top:5px;
+
+    color:var(--muted);
+
+    font-size:.78rem;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap{
+
+    overflow-x:auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+table{
+
+    width:100%;
+
+    min-width:750px;
+
+    border-collapse:collapse;
+
+}
+
+th,
+td{
+
+    padding:13px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:left;
+
+}
+
+th{
+    background:#132d47;
+}
+
+td{
+    color:var(--muted);
+}
+
+tr:last-child td{
+    border-bottom:none;
+}
+
+
+/* =========================================================
+   GUIDE
+========================================================= */
+
+.guide-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:17px;
+
+}
+
+.guide{
+
+    padding:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #122a43,
+            #091b2c
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.guide h3{
+    margin-bottom:8px;
+}
+
+.guide p{
+    color:var(--muted);
+}
+
+.guide ul{
+
+    margin:
+        12px 0 0 17px;
+
+    color:var(--muted);
+
+}
+
+.guide li{
+    margin-bottom:5px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+
+    display:grid;
+
+    gap:11px;
+
+}
+
+details{
+
+    padding:
+        17px 19px;
+
+    background:var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+}
+
+summary{
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+details p{
+
+    margin-top:9px;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty{
+
+    display:none;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    border:
+        1px dashed var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    margin-top:65px;
+
+    padding:
+        45px 20px;
+
+    background:#040b13;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+.footer-grid{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p,
+footer a{
+
+    color:var(--muted);
+
+    font-size:.84rem;
+
+}
+
+.footer-links{
+
+    display:grid;
+
+    gap:7px;
+
+}
+
+.copyright{
+
+    max-width:1300px;
+
+    margin:
+        30px auto 0;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid #182a3c;
+
+    color:#718496;
+
+    font-size:.75rem;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1150px){
+
+    .pokemon-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+    .quick-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+    .legendary-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+    .guide-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:850px){
+
+    .header-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .panel-grid{
+        grid-template-columns:1fr;
+    }
+
+    .toolbar{
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .search{
+        grid-column:1/-1;
+    }
+
+    .pokemon-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .evolution-grid,
+    .feature-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .legendary-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:550px){
+
+    .container{
+        width:
+            min(100% - 20px,1300px);
+    }
+
+    .hero{
+        padding-top:45px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .quick-grid,
+    .pokemon-grid,
+    .evolution-grid,
+    .feature-grid,
+    .legendary-grid,
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+
+    .toolbar{
+        grid-template-columns:1fr;
+    }
+
+    .search{
+        grid-column:auto;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="nav">
+
+<a href="#overview">Overview</a>
+
+<a href="#pokedex">Pokédex</a>
+
+<a href="#evolution">Evolution</a>
+
+<a href="#paradox">Paradox</a>
+
+<a href="#legendary">Legendary</a>
+
+<a href="#guides">Guides</a>
+
+<a href="#faq">FAQ</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<span class="badge">
+GENERATION IX • PALDEA • #906–#1025
+</span>
+
+<h1>
+Gen 9 Pokémon
+<span>Database</span>
+</h1>
+
+<p>
+
+Explore Generation 9 from Sprigatito, Fuecoco and Quaxly
+through Koraidon, Miraidon, Terapagos and Pecharunt.
+Search and filter the complete Paldea-era Pokédex,
+explore evolution families, Paradox Pokémon, Legendary
+Pokémon, Mythical Pokémon, Terastal mechanics, Shiny
+information and Pokémon GO guide resources.
+
+</p>
+
+<div class="hero-actions">
+
+<a href="#pokedex"
+class="hero-button">
+Explore Gen 9 Pokédex
+</a>
+
+<a href="#paradox"
+class="hero-button secondary">
+Explore Paradox Pokémon
+</a>
+
+</div>
+
+</section>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     QUICK FACTS
+===================================================== -->
+
+<section class="section">
+
+<div class="quick-grid">
+
+<div class="quick-card">
+
+<div class="quick-icon">📖</div>
+
+<div class="quick-number">120</div>
+
+<div class="quick-label">
+New Species
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">🔢</div>
+
+<div class="quick-number">#906–1025</div>
+
+<div class="quick-label">
+National Pokédex
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">🌎</div>
+
+<div class="quick-number">Paldea</div>
+
+<div class="quick-label">
+Primary Region
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">💎</div>
+
+<div class="quick-number">Terastal</div>
+
+<div class="quick-label">
+Signature Mechanic
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">⏳</div>
+
+<div class="quick-number">Paradox</div>
+
+<div class="quick-label">
+Past & Future Forms
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section id="overview" class="section">
+
+<div class="section-title">
+
+<h2>
+🌎 Gen 9 Overview — Paldea
+</h2>
+
+<p>
+Generation 9 introduced the Paldea region and the Terastal phenomenon.
+</p>
+
+</div>
+
+
+<div class="panel-grid">
+
+
+<div class="panel">
+
+<h3>
+What makes Gen 9 different?
+</h3>
+
+<p>
+
+Generation 9 introduced a large collection of new Pokémon,
+including three new starter families, new regional evolutions,
+Paradox Pokémon, several Legendary Pokémon and the
+mysterious Mythical Pokémon Pecharunt.
+
+</p>
+
+
+<div class="feature-list">
+
+<div class="feature">
+<strong>01</strong>
+<span>Sprigatito, Fuecoco and Quaxly are the Paldea starters.</span>
+</div>
+
+<div class="feature">
+<strong>02</strong>
+<span>Terastalization became the generation's signature battle mechanic.</span>
+</div>
+
+<div class="feature">
+<strong>03</strong>
+<span>Paradox Pokémon introduced unusual ancient and futuristic designs.</span>
+</div>
+
+<div class="feature">
+<strong>04</strong>
+<span>Koraidon and Miraidon are the central Legendary Pokémon.</span>
+</div>
+
+<div class="feature">
+<strong>05</strong>
+<span>Terapagos is closely connected to the Terastal phenomenon.</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+Gen 9 Highlights
+</h3>
+
+<div class="feature-list">
+
+<div class="feature">
+<strong>🌿</strong>
+<span>Meowscarada</span>
+</div>
+
+<div class="feature">
+<strong>🔥</strong>
+<span>Skeledirge</span>
+</div>
+
+<div class="feature">
+<strong>💧</strong>
+<span>Quaquaval</span>
+</div>
+
+<div class="feature">
+<strong>⚡</strong>
+<span>Miraidon</span>
+</div>
+
+<div class="feature">
+<strong>🐉</strong>
+<span>Koraidon</span>
+</div>
+
+<div class="feature">
+<strong>🦖</strong>
+<span>Great Tusk</span>
+</div>
+
+<div class="feature">
+<strong>🤖</strong>
+<span>Iron Valiant</span>
+</div>
+
+<div class="feature">
+<strong>💎</strong>
+<span>Terapagos</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     POKEDEX
+===================================================== -->
+
+<section id="pokedex" class="section">
+
+<div class="section-title">
+
+<h2>
+📖 Complete Gen 9 Pokédex
+</h2>
+
+<p>
+Search by Pokémon name, National Pokédex number,
+type, category or Paldea group.
+</p>
+
+</div>
+
+
+<div class="toolbar">
+
+<input
+id="search"
+class="search"
+type="search"
+placeholder="Search Sprigatito, Koraidon, 1000, dragon..."
+aria-label="Search Generation 9 Pokémon"
+>
+
+
+<select id="typeFilter" class="filter">
+
+<option value="all">All Types</option>
+
+<option value="normal">Normal</option>
+<option value="fire">Fire</option>
+<option value="water">Water</option>
+<option value="grass">Grass</option>
+<option value="electric">Electric</option>
+<option value="ice">Ice</option>
+<option value="fighting">Fighting</option>
+<option value="poison">Poison</option>
+<option value="ground">Ground</option>
+<option value="flying">Flying</option>
+<option value="psychic">Psychic</option>
+<option value="bug">Bug</option>
+<option value="rock">Rock</option>
+<option value="ghost">Ghost</option>
+<option value="dragon">Dragon</option>
+<option value="dark">Dark</option>
+<option value="steel">Steel</option>
+<option value="fairy">Fairy</option>
+
+</select>
+
+
+<select id="categoryFilter" class="filter">
+
+<option value="all">All Categories</option>
+
+<option value="starter">Starter</option>
+
+<option value="paradox">Paradox</option>
+
+<option value="legendary">Legendary</option>
+
+<option value="mythical">Mythical</option>
+
+<option value="special">Special</option>
+
+<option value="regular">Regular</option>
+
+</select>
+
+
+<select id="regionFilter" class="filter">
+
+<option value="all">All Groups</option>
+
+<option value="paldea">Paldea</option>
+
+<option value="paradox">Paradox</option>
+
+<option value="legendary">Legendary</option>
+
+<option value="kitakami">Kitakami</option>
+
+<option value="blueberry">Blueberry</option>
+
+</select>
+
+</div>
+
+
+<div id="pokemonGrid" class="pokemon-grid"></div>
+
+
+<div id="empty" class="empty">
+
+<h3>
+No Pokémon Found
+</h3>
+
+<p>
+Try another Pokémon name, number, type or category.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION FAMILIES
+===================================================== -->
+
+<section id="evolution" class="section">
+
+<div class="section-title">
+
+<h2>
+🧬 Gen 9 Evolution Families
+</h2>
+
+<p>
+Important Paldea evolution lines and branching evolutions.
+</p>
+
+</div>
+
+
+<div class="evolution-grid">
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🌿 Sprigatito Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Sprigatito</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Floragato</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Meowscarada</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🔥 Fuecoco Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Fuecoco</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Crocalor</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Skeledirge</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+💧 Quaxly Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Quaxly</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Quaxwell</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Quaquaval</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🦎 Lechonk Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Lechonk</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Oinkologne</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🦆 Wattrel Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Wattrel</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Kilowattrel</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐛 Tarountula Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Tarountula</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Spidops</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🌸 Smoliv Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Smoliv</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Dolliv</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Arboliva</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐭 Pawmi Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Pawmi</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Pawmo</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Pawmot</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐕 Fidough Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Fidough</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Dachsbun</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🌙 Greavard Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Greavard</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Houndstone</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🧠 Rellor Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Rellor</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Rabsca</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐦 Flittle Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Flittle</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Espathra</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐉 Frigibax Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Frigibax</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Arctibax</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Baxcalibur</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🪨 Nacli Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Nacli</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Naclstack</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Garganacl</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+⚙️ Varoom Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Varoom</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Revavroom</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐲 Dreepy-style New Dragon Line
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Gimmighoul</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Gholdengo</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐟 Finizen Family
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Finizen</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Palafin</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🐉 Dunsparce Branch
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Dunsparce</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Dudunsparce</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<div class="evolution-title">
+🦅 Rookidee-style Regional Evolution
+</div>
+
+<div class="evolution-line">
+
+<span class="evo">Girafarig</span>
+
+<span class="arrow">→</span>
+
+<span class="evo">Farigiraf</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PARADOX
+===================================================== -->
+
+<section id="paradox" class="section">
+
+<div class="section-title">
+
+<h2>
+⏳ Paradox Pokémon
+</h2>
+
+<p>
+Gen 9 introduced mysterious ancient and futuristic Pokémon.
+</p>
+
+</div>
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+<div class="icon">🦖</div>
+
+<h3>
+Ancient Paradox Pokémon
+</h3>
+
+<p>
+
+Ancient Paradox Pokémon are associated primarily with
+Pokémon Scarlet and have prehistoric-inspired designs,
+such as Great Tusk, Scream Tail, Brute Bonnet and Roaring Moon.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="icon">🤖</div>
+
+<h3>
+Future Paradox Pokémon
+</h3>
+
+<p>
+
+Future Paradox Pokémon are associated primarily with
+Pokémon Violet and feature futuristic mechanical designs,
+including Iron Treads, Iron Bundle and Iron Valiant.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="icon">⚔️</div>
+
+<h3>
+Battle Database
+</h3>
+
+<p>
+
+For Pokémon GO pages, Paradox Pokémon should receive
+separate availability, raid, PvP and moveset sections
+rather than being treated simply as cosmetic forms.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="table-wrap" style="margin-top:20px;">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Ancient Paradox</th>
+<th>Future Paradox</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Great Tusk</td>
+<td>Iron Treads</td>
+</tr>
+
+<tr>
+<td>Scream Tail</td>
+<td>Iron Bundle</td>
+</tr>
+
+<tr>
+<td>Brute Bonnet</td>
+<td>Iron Hands</td>
+</tr>
+
+<tr>
+<td>Flutter Mane</td>
+<td>Iron Jugulis</td>
+</tr>
+
+<tr>
+<td>Slither Wing</td>
+<td>Iron Moth</td>
+</tr>
+
+<tr>
+<td>Sandy Shocks</td>
+<td>Iron Thorns</td>
+</tr>
+
+<tr>
+<td>Roaring Moon</td>
+<td>Iron Valiant</td>
+</tr>
+
+<tr>
+<td>Walking Wake</td>
+<td>Iron Leaves</td>
+</tr>
+
+<tr>
+<td>Gouging Fire</td>
+<td>Iron Boulder</td>
+</tr>
+
+<tr>
+<td>Raging Bolt</td>
+<td>Iron Crown</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TERASTAL
+===================================================== -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>
+💎 Terastal Phenomenon
+</h2>
+
+<p>
+Terastalization is the signature battle mechanic of Gen 9.
+</p>
+
+</div>
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+<div class="icon">💎</div>
+
+<h3>
+Terastallization
+</h3>
+
+<p>
+
+A Pokémon can transform into its Tera form during battle,
+changing the presentation of its typing and enabling
+strategic use of a Tera Type.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="icon">✨</div>
+
+<h3>
+Tera Type
+</h3>
+
+<p>
+
+Every Pokémon can have a Tera Type. Strategic Tera Types
+can change offensive and defensive matchups.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="icon">🌟</div>
+
+<h3>
+Tera Raid Battles
+</h3>
+
+<p>
+
+Tera Raid Battles became a major part of the Gen 9
+experience and are an important subject for individual
+Pokémon and event guides.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LEGENDARY
+===================================================== -->
+
+<section id="legendary" class="section">
+
+<div class="section-title">
+
+<h2>
+👑 Legendary & Mythical Pokémon
+</h2>
+
+<p>
+Major Legendary and Mythical Pokémon introduced throughout Gen 9.
+</p>
+
+</div>
+
+
+<div class="legendary-grid">
+
+
+<div class="legendary-card">
+
+<h3>Koraidon</h3>
+
+<p>
+#1007 • Fighting / Dragon
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Miraidon</h3>
+
+<p>
+#1008 • Electric / Dragon
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Wo-Chien</h3>
+
+<p>
+#1001 • Dark / Grass
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Chien-Pao</h3>
+
+<p>
+#1002 • Dark / Ice
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Ting-Lu</h3>
+
+<p>
+#1003 • Dark / Ground
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Chi-Yu</h3>
+
+<p>
+#1004 • Dark / Fire
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Okidogi</h3>
+
+<p>
+#1014 • Poison / Fighting
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Munkidori</h3>
+
+<p>
+#1015 • Poison / Psychic
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Fezandipiti</h3>
+
+<p>
+#1016 • Poison / Fairy
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Ogerpon</h3>
+
+<p>
+#1017 • Legendary
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Terapagos</h3>
+
+<p>
+#1024 • Legendary
+</p>
+
+</div>
+
+
+<div class="legendary-card">
+
+<h3>Pecharunt</h3>
+
+<p>
+#1025 • Poison / Ghost • Mythical
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     DLC
+========================================================= -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>
+🎒 Gen 9 Expansion Pokémon
+</h2>
+
+<p>
+The Gen 9 Pokédex expanded beyond the original Paldea adventure.
+</p>
+
+</div>
+
+
+<div class="panel-grid">
+
+
+<div class="panel">
+
+<h3>
+🍎 The Teal Mask
+</h3>
+
+<p>
+
+The Kitakami story introduced Pokémon such as
+Ogerpon, Okidogi, Munkidori and Fezandipiti,
+along with additional returning Pokémon and new
+evolutions.
+
+</p>
+
+<div class="feature-list">
+
+<div class="feature">
+<strong>🍎</strong>
+<span>Ogerpon</span>
+</div>
+
+<div class="feature">
+<strong>🐕</strong>
+<span>Okidogi</span>
+</div>
+
+<div class="feature">
+<strong>🐒</strong>
+<span>Munkidori</span>
+</div>
+
+<div class="feature">
+<strong>🦚</strong>
+<span>Fezandipiti</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+🧊 The Indigo Disk
+</h3>
+
+<p>
+
+The Blueberry Academy story added additional Pokémon,
+new Paradox Pokémon, Terapagos and the conclusion
+of several Gen 9 storylines.
+
+</p>
+
+<div class="feature-list">
+
+<div class="feature">
+<strong>⚡</strong>
+<span>Raging Bolt</span>
+</div>
+
+<div class="feature">
+<strong>🔥</strong>
+<span>Gouging Fire</span>
+</div>
+
+<div class="feature">
+<strong>⚙️</strong>
+<span>Iron Crown</span>
+</div>
+
+<div class="feature">
+<strong>🗿</strong>
+<span>Iron Boulder</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE OVERVIEW
+===================================================== -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>
+⚔️ Gen 9 Type & Battle Overview
+</h2>
+
+<p>
+Type information for building individual Pokémon guides.
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Type</th>
+
+<th>Gen 9 Examples</th>
+
+<th>Strong Against</th>
+
+<th>Important Weaknesses</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>🌿 Grass</td>
+
+<td>Sprigatito, Meowscarada, Arboliva</td>
+
+<td>Water, Ground, Rock</td>
+
+<td>Fire, Ice, Poison, Flying, Bug</td>
+
+</tr>
+
+<tr>
+
+<td>🔥 Fire</td>
+
+<td>Fuecoco, Skeledirge, Chi-Yu</td>
+
+<td>Grass, Ice, Bug, Steel</td>
+
+<td>Water, Ground, Rock</td>
+
+</tr>
+
+<tr>
+
+<td>💧 Water</td>
+
+<td>Quaxly, Palafin, Walking Wake</td>
+
+<td>Fire, Ground, Rock</td>
+
+<td>Electric, Grass</td>
+
+</tr>
+
+<tr>
+
+<td>⚡ Electric</td>
+
+<td>Pawmi, Bellibolt, Miraidon</td>
+
+<td>Water, Flying</td>
+
+<td>Ground</td>
+
+</tr>
+
+<tr>
+
+<td>🐉 Dragon</td>
+
+<td>Baxcalibur, Koraidon, Miraidon</td>
+
+<td>Dragon</td>
+
+<td>Ice, Dragon, Fairy</td>
+
+</tr>
+
+<tr>
+
+<td>👻 Ghost</td>
+
+<td>Greavard, Houndstone, Flutter Mane</td>
+
+<td>Psychic, Ghost</td>
+
+<td>Ghost, Dark</td>
+
+</tr>
+
+<tr>
+
+<td>⚙️ Steel</td>
+
+<td>Gholdengo, Iron Treads, Iron Crown</td>
+
+<td>Ice, Rock, Fairy</td>
+
+<td>Fire, Fighting, Ground</td>
+
+</tr>
+
+<tr>
+
+<td>🧚 Fairy</td>
+
+<td>Wiglett evolution lines, Tinkaton, Flutter Mane</td>
+
+<td>Dragon, Fighting, Dark</td>
+
+<td>Poison, Steel</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     INDIVIDUAL GUIDE FRAMEWORK
+===================================================== -->
+
+<section id="guides" class="section">
+
+<div class="section-title">
+
+<h2>
+📚 Individual Gen 9 Pokémon Guide Framework
+</h2>
+
+<p>
+Recommended structure for every individual Pokémon page.
+</p>
+
+</div>
+
+
+<div class="guide-grid">
+
+
+<div class="guide">
+
+<h3>📊 Stats & Max CP</h3>
+
+<p>
+Give Trainers useful numerical information instead of
+only a short Pokédex description.
+</p>
+
+<ul>
+
+<li>Attack</li>
+<li>Defense</li>
+<li>HP / Stamina</li>
+<li>Maximum CP</li>
+<li>IV information</li>
+<li>Level information</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🛡️ Weaknesses & Resistances</h3>
+
+<p>
+Explain how the typing affects practical battles.
+</p>
+
+<ul>
+
+<li>Weaknesses</li>
+<li>Resistances</li>
+<li>Double weaknesses</li>
+<li>Raid counters</li>
+<li>PvP matchups</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>💥 Best Moves</h3>
+
+<p>
+Keep Pokémon GO movesets separate from main-series moves.
+</p>
+
+<ul>
+
+<li>Fast moves</li>
+<li>Charged moves</li>
+<li>Raid moveset</li>
+<li>PvP moveset</li>
+<li>Elite TM information</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>⭐ Raid Performance</h3>
+
+<p>
+Explain whether the Pokémon has practical raid value.
+</p>
+
+<ul>
+
+<li>Raid role</li>
+<li>Best moveset</li>
+<li>Weather boost</li>
+<li>Team value</li>
+<li>Form comparison</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🏆 PvP Performance</h3>
+
+<p>
+Provide meaningful Battle League information.
+</p>
+
+<ul>
+
+<li>Great League</li>
+<li>Ultra League</li>
+<li>Master League</li>
+<li>Moves</li>
+<li>Matchups</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>✨ Shiny Guide</h3>
+
+<p>
+Explain Shiny availability independently from normal availability.
+</p>
+
+<ul>
+
+<li>Shiny release</li>
+<li>Appearance</li>
+<li>Encounter methods</li>
+<li>Event availability</li>
+<li>Rarity</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🌑 Shadow Guide</h3>
+
+<p>
+Use this section only when a Shadow version exists in Pokémon GO.
+</p>
+
+<ul>
+
+<li>Shadow availability</li>
+<li>Shadow evolution</li>
+<li>Purification</li>
+<li>Frustration</li>
+<li>Battle performance</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>💎 Tera Guide</h3>
+
+<p>
+For Gen 9 species, explain the main-series Terastal mechanics.
+</p>
+
+<ul>
+
+<li>Tera Type</li>
+<li>Terastalization</li>
+<li>Offensive uses</li>
+<li>Defensive uses</li>
+<li>Tera Raid role</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>⏳ Paradox Guide</h3>
+
+<p>
+Paradox Pokémon should have dedicated information.
+</p>
+
+<ul>
+
+<li>Past / Future</li>
+<li>Origin concept</li>
+<li>Type</li>
+<li>Availability</li>
+<li>Battle role</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🔄 Evolution Guide</h3>
+
+<p>
+Explain exactly how Trainers obtain each evolution.
+</p>
+
+<ul>
+
+<li>Level requirements</li>
+<li>Items</li>
+<li>Walking requirements</li>
+<li>Special moves</li>
+<li>Branch evolution</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>📍 Pokémon GO Availability</h3>
+
+<p>
+Keep current Pokémon GO information separate from
+main-series information.
+</p>
+
+<ul>
+
+<li>Wild encounters</li>
+<li>Eggs</li>
+<li>Raids</li>
+<li>Research</li>
+<li>Events</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>👑 Legendary / Mythical Guide</h3>
+
+<p>
+Give important Legendary and Mythical Pokémon expanded pages.
+</p>
+
+<ul>
+
+<li>Raid counters</li>
+<li>Catch CP</li>
+<li>Moves</li>
+<li>Shiny status</li>
+<li>Best uses</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section id="faq" class="section">
+
+<div class="section-title">
+
+<h2>
+❓ Gen 9 Pokémon FAQ
+</h2>
+
+<p>
+Common questions about Paldea and Generation 9.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+How many Pokémon were introduced in Generation 9?
+</summary>
+
+<p>
+Generation 9 introduced 120 new species, numbered
+from National Pokédex #906 through #1025.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What region is Generation 9 based on?
+</summary>
+
+<p>
+Generation 9 is primarily associated with the Paldea region.
+The generation was expanded through The Teal Mask and
+The Indigo Disk.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who are the Gen 9 starters?
+</summary>
+
+<p>
+The three Paldea starters are Sprigatito, Fuecoco and Quaxly.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Terastalization?
+</summary>
+
+<p>
+Terastalization is Generation 9's signature battle mechanic.
+It allows Pokémon to adopt a Tera Type during battle.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What are Paradox Pokémon?
+</summary>
+
+<p>
+Paradox Pokémon are unusual Pokémon associated with
+past or future versions of Pokémon concepts. They include
+Ancient Paradox and Future Paradox groups.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who are the main Gen 9 Legendary Pokémon?
+</summary>
+
+<p>
+Major Gen 9 Legendary Pokémon include Koraidon,
+Miraidon, the Treasures of Ruin, the Loyal Three,
+Ogerpon and Terapagos.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Pecharunt Legendary?
+</summary>
+
+<p>
+No. Pecharunt is classified as a Mythical Pokémon.
+It is National Pokédex #1025.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is the last Gen 9 Pokémon?
+</summary>
+
+<p>
+Pecharunt is #1025, the final Pokémon introduced in
+Generation 9.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are Pokémon from the Gen 9 DLC part of Gen 9?
+</summary>
+
+<p>
+Yes. The Pokémon introduced through The Teal Mask and
+The Indigo Disk are part of the Generation 9 Pokédex expansion.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should Pokémon GO and main-series information be separated?
+</summary>
+
+<p>
+Yes. A strong database should clearly label information
+as Pokémon GO, main-series, or both. This prevents
+different CP, stats, moves and availability systems from
+being confused.
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+Pokémon Gaming
+</h3>
+
+<p>
+Independent Pokémon GO database, raid guides,
+PvP resources and Trainer tools.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Pokédex
+</h3>
+
+<div class="footer-links">
+
+<a href="/pokemon/gen-1.html">Gen 1</a>
+<a href="/pokemon/gen-2.html">Gen 2</a>
+<a href="/pokemon/gen-3.html">Gen 3</a>
+<a href="/pokemon/gen-4.html">Gen 4</a>
+<a href="/pokemon/gen-5.html">Gen 5</a>
+<a href="/pokemon/gen-6.html">Gen 6</a>
+<a href="/pokemon/gen-7.html">Gen 7</a>
+<a href="/pokemon/gen-8.html">Gen 8</a>
+<a href="/pokemon/gen-9.html">Gen 9</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Guides
+</h3>
+
+<div class="footer-links">
+
+<a href="/raids/">Raid Guides</a>
+<a href="/pvp/">PvP Guides</a>
+<a href="/pokemon/">Pokémon Database</a>
+<a href="/tools/">Tools</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Website
+</h3>
+
+<div class="footer-links">
+
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<a href="/privacy-policy.html">Privacy Policy</a>
+<a href="/terms.html">Terms</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Pokémon Gaming.
+Independent fan website.
+
+Pokémon and Pokémon character names are trademarks
+of their respective owners. This website is not affiliated
+with or endorsed by The Pokémon Company, Nintendo,
+Game Freak or Niantic.
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   GEN 9 DATABASE
+   #906–#1025
+
+   dex,
+   name,
+   type1,
+   type2,
+   group,
+   category,
+   base total
+========================================================= */
+
+const pokemon = [
+
+/* =========================================================
+   STARTERS
+========================================================= */
+
+[906,"Sprigatito","grass","", "paldea","starter",310],
+[907,"Floragato","grass","", "paldea","starter",410],
+[908,"Meowscarada","grass","dark", "paldea","starter",530],
+
+[909,"Fuecoco","fire","", "paldea","starter",310],
+[910,"Crocalor","fire","", "paldea","starter",411],
+[911,"Skeledirge","fire","ghost", "paldea","starter",530],
+
+[912,"Quaxly","water","", "paldea","starter",310],
+[913,"Quaxwell","water","", "paldea","starter",425],
+[914,"Quaquaval","water","fighting", "paldea","starter",530],
+
+
+/* =========================================================
+   PALDEA
+========================================================= */
+
+[915,"Lechonk","normal","", "paldea","regular",254],
+[916,"Oinkologne","normal","", "paldea","regular",489],
+
+[917,"Tarountula","bug","", "paldea","regular",240],
+[918,"Spidops","bug","", "paldea","regular",404],
+
+[919,"Nymble","bug","", "paldea","regular",210],
+[920,"Lokix","bug","dark", "paldea","regular",450],
+
+[921,"Pawmi","electric","", "paldea","regular",240],
+[922,"Pawmo","electric","fighting", "paldea","regular",350],
+[923,"Pawmot","electric","fighting", "paldea","regular",490],
+
+[924,"Tandemaus","normal","", "paldea","regular",305],
+[925,"Maushold","normal","", "paldea","regular",470],
+
+[926,"Fidough","fairy","", "paldea","regular",312],
+[927,"Dachsbun","fairy","", "paldea","regular",477],
+
+[928,"Smoliv","grass","normal", "paldea","regular",260],
+[929,"Dolliv","grass","normal", "paldea","regular",354],
+[930,"Arboliva","grass","normal", "paldea","regular",510],
+
+[931,"Squawkabilly","normal","flying", "paldea","regular",417],
+
+[932,"Nacli","rock","", "paldea","regular",280],
+[933,"Naclstack","rock","", "paldea","regular",355],
+[934,"Garganacl","rock","", "paldea","regular",500],
+
+[935,"Charcadet","fire","", "paldea","regular",255],
+[936,"Armarouge","fire","psychic", "paldea","regular",525],
+[937,"Ceruledge","fire","ghost", "paldea","regular",525],
+
+[938,"Tadbulb","electric","", "paldea","regular",272],
+[939,"Bellibolt","electric","", "paldea","regular",495],
+
+[940,"Wattrel","electric","flying", "paldea","regular",280],
+[941,"Kilowattrel","electric","flying", "paldea","regular",490],
+
+[942,"Maschiff","dark","", "paldea","regular",340],
+[943,"Mabosstiff","dark","", "paldea","regular",505],
+
+[944,"Shroodle","poison","normal", "paldea","regular",208],
+[945,"Grafaiai","poison","normal", "paldea","regular",485],
+
+[946,"Bramblin","grass","ghost", "paldea","regular",275],
+[947,"Brambleghast","grass","ghost", "paldea","regular",480],
+
+[948,"Toedscool","ground","grass", "paldea","regular",265],
+[949,"Toedscruel","ground","grass", "paldea","regular",515],
+
+[950,"Klawf","rock","", "paldea","regular",450],
+
+[951,"Capsakid","grass","", "paldea","regular",304],
+[952,"Scovillain","grass","fire", "paldea","regular",486],
+
+[953,"Rellor","bug","", "paldea","regular",290],
+[954,"Rabsca","bug","psychic", "paldea","regular",470],
+
+[955,"Flittle","psychic","", "paldea","regular",236],
+[956,"Espathra","psychic","", "paldea","regular",481],
+
+[957,"Tinkatink","fairy","steel", "paldea","regular",240],
+[958,"Tinkatuff","fairy","steel", "paldea","regular",420],
+[959,"Tinkaton","fairy","steel", "paldea","regular",506],
+
+[960,"Wiglett","water","", "paldea","regular",245],
+[961,"Wugtrio","water","", "paldea","regular",425],
+
+[962,"Bombirdier","flying","dark", "paldea","regular",485],
+
+[963,"Finizen","water","", "paldea","regular",315],
+[964,"Palafin","water","", "paldea","regular",457],
+
+[965,"Varoom","steel","poison", "paldea","regular",300],
+[966,"Revavroom","steel","poison", "paldea","regular",500],
+
+[967,"Cyclizar","dragon","normal", "paldea","regular",501],
+
+[968,"Orthworm","steel","", "paldea","regular",480],
+
+[969,"Glimmet","rock","poison", "paldea","regular",350],
+[970,"Glimmora","rock","poison", "paldea","regular",525],
+
+[971,"Greavard","ghost","", "paldea","regular",290],
+[972,"Houndstone","ghost","", "paldea","regular",488],
+
+[973,"Flamigo","flying","fighting", "paldea","regular",500],
+
+[974,"Cetoddle","ice","", "paldea","regular",334],
+[975,"Cetitan","ice","", "paldea","regular",521],
+
+[976,"Veluza","water","psychic", "paldea","regular",478],
+
+[977,"Dondozo","water","", "paldea","regular",530],
+
+[978,"Tatsugiri","dragon","water", "paldea","regular",475],
+
+[979,"Annihilape","fighting","ghost", "paldea","special",535],
+
+[980,"Clodsire","poison","ground", "paldea","special",430],
+
+[981,"Farigiraf","normal","psychic", "paldea","special",520],
+
+[982,"Dudunsparce","normal","", "paldea","special",520],
+
+[983,"Kingambit","dark","steel", "paldea","special",550],
+
+[984,"Great Tusk","ground","fighting", "paradox","paradox",570],
+
+[985,"Scream Tail","fairy","psychic", "paradox","paradox",570],
+
+[986,"Brute Bonnet","grass","dark", "paradox","paradox",570],
+
+[987,"Flutter Mane","ghost","fairy", "paradox","paradox",570],
+
+[988,"Slither Wing","bug","fighting", "paradox","paradox",570],
+
+[989,"Sandy Shocks","electric","ground", "paradox","paradox",570],
+
+[990,"Iron Treads","ground","steel", "paradox","paradox",570],
+
+[991,"Iron Bundle","ice","water", "paradox","paradox",570],
+
+[992,"Iron Hands","fighting","electric", "paradox","paradox",570],
+
+[993,"Iron Jugulis","dark","flying", "paradox","paradox",570],
+
+[994,"Iron Moth","fire","poison", "paradox","paradox",570],
+
+[995,"Iron Thorns","rock","electric", "paradox","paradox",570],
+
+[996,"Frigibax","dragon","ice", "paldea","regular",320],
+[997,"Arctibax","dragon","ice", "paldea","regular",423],
+[998,"Baxcalibur","dragon","ice", "paldea","regular",600],
+
+[999,"Gimmighoul","ghost","", "paldea","special",300],
+[1000,"Gholdengo","steel","ghost", "paldea","special",550],
+
+/* =========================================================
+   LEGENDARIES
+========================================================= */
+
+[1001,"Wo-Chien","dark","grass", "legendary","legendary",570],
+[1002,"Chien-Pao","dark","ice", "legendary","legendary",570],
+[1003,"Ting-Lu","dark","ground", "legendary","legendary",570],
+[1004,"Chi-Yu","dark","fire", "legendary","legendary",570],
+
+[1005,"Roaring Moon","dragon","dark", "paradox","paradox",590],
+
+[1006,"Iron Valiant","fairy","fighting", "paradox","paradox",590],
+
+[1007,"Koraidon","fighting","dragon", "legendary","legendary",670],
+[1008,"Miraidon","electric","dragon", "legendary","legendary",670],
+
+/* =========================================================
+   KITAKAMI / DLC
+========================================================= */
+
+[1009,"Walking Wake","water","dragon", "paradox","paradox",590],
+[1010,"Iron Leaves","grass","psychic", "paradox","paradox",590],
+
+[1011,"Dipplin","grass","dragon", "kitakami","special",485],
+
+[1012,"Poltchageist","grass","ghost", "kitakami","special",308],
+[1013,"Sinistcha","grass","ghost", "kitakami","special",508],
+
+[1014,"Okidogi","poison","fighting", "kitakami","legendary",555],
+[1015,"Munkidori","poison","psychic", "kitakami","legendary",555],
+[1016,"Fezandipiti","poison","fairy", "kitakami","legendary",555],
+
+[1017,"Ogerpon","grass","", "kitakami","legendary",550],
+
+[1018,"Archaludon","steel","dragon", "blueberry","special",600],
+
+[1019,"Hydrapple","grass","dragon", "blueberry","special",540],
+
+[1020,"Gouging Fire","fire","dragon", "paradox","paradox",590],
+
+[1021,"Raging Bolt","electric","dragon", "paradox","paradox",590],
+
+[1022,"Iron Boulder","rock","psychic", "paradox","paradox",590],
+
+[1023,"Iron Crown","steel","psychic", "paradox","paradox",590],
+
+[1024,"Terapagos","normal","", "legendary","legendary",670],
+
+[1025,"Pecharunt","poison","ghost", "blueberry","mythical",600]
+
+];
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+function imageURL(id){
+
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+
+}
+
+
+/* =========================================================
+   CATEGORY LABEL
+========================================================= */
+
+function label(value){
+
+    const labels = {
+
+        starter:"Starter",
+
+        paradox:"Paradox",
+
+        legendary:"Legendary",
+
+        mythical:"Mythical",
+
+        special:"Special",
+
+        regular:"Regular"
+
+    };
+
+    return labels[value] || "Pokémon";
+
+}
+
+
+/* =========================================================
+   SLUG
+========================================================= */
+
+function slugify(name){
+
+    return name
+        .toLowerCase()
+        .replace(/[.'’]/g,"")
+        .replace(/\s+/g,"-");
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+function createCard(item){
+
+    const [
+
+        id,
+        name,
+        type1,
+        type2,
+        group,
+        category,
+        baseTotal
+
+    ] = item;
+
+
+    return `
+
+<article
+
+class="pokemon-card"
+
+data-name="${name.toLowerCase()}"
+
+data-number="${id}"
+
+data-type1="${type1}"
+
+data-type2="${type2}"
+
+data-group="${group}"
+
+data-category="${category}"
+
+>
+
+
+<div class="card-top">
+
+<span class="dex-number">
+
+#${id}
+
+</span>
+
+<span class="category">
+
+${label(category)}
+
+</span>
+
+</div>
+
+
+<img
+
+class="pokemon-image"
+
+src="${imageURL(id)}"
+
+alt="${name} Pokémon"
+
+loading="lazy"
+
+onerror="this.style.display='none'"
+
+>
+
+
+<div class="card-body">
+
+
+<div class="pokemon-name">
+
+${name}
+
+</div>
+
+
+<div class="types">
+
+<span class="type ${type1}">
+
+${type1}
+
+</span>
+
+
+${
+
+type2
+
+?
+
+`
+
+<span class="type ${type2}">
+
+${type2}
+
+</span>
+
+`
+
+:
+
+""
+
+}
+
+</div>
+
+
+<div class="stat-grid">
+
+
+<div class="stat">
+
+<small>
+
+Base Total
+
+</small>
+
+<strong>
+
+${baseTotal}
+
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>
+
+Group
+
+</small>
+
+<strong>
+
+${group === "paldea"
+    ? "Paldea"
+    : group === "paradox"
+        ? "Paradox"
+        : group === "legendary"
+            ? "Legendary"
+            : group === "kitakami"
+                ? "Kitakami"
+                : "DLC"}
+
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>
+
+Dex
+
+</small>
+
+<strong>
+
+#${id}
+
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div class="card-info">
+
+<div>
+
+Shiny:
+
+<strong>
+
+Guide
+
+</strong>
+
+</div>
+
+
+<div>
+
+Shadow:
+
+<strong>
+
+Check
+
+</strong>
+
+</div>
+
+
+<div>
+
+Terastal:
+
+<strong>
+
+Available
+
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="card-actions">
+
+
+<a
+
+class="card-action"
+
+href="/pokemon/${slugify(name)}.html">
+
+Individual Guide
+
+</a>
+
+
+<a
+
+class="card-action"
+
+href="/raids/${slugify(name)}-raid.html">
+
+Raid Guide
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</article>
+
+`;
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+const grid =
+document.getElementById("pokemonGrid");
+
+const empty =
+document.getElementById("empty");
+
+
+function render(list){
+
+    grid.innerHTML =
+        list.map(createCard).join("");
+
+    empty.style.display =
+        list.length
+        ? "none"
+        : "block";
+
+}
+
+
+render(pokemon);
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+const search =
+document.getElementById("search");
+
+const typeFilter =
+document.getElementById("typeFilter");
+
+const categoryFilter =
+document.getElementById("categoryFilter");
+
+const regionFilter =
+document.getElementById("regionFilter");
+
+
+function filterPokemon(){
+
+    const query =
+        search.value
+        .trim()
+        .toLowerCase();
+
+
+    const selectedType =
+        typeFilter.value;
+
+
+    const selectedCategory =
+        categoryFilter.value;
+
+
+    const selectedGroup =
+        regionFilter.value;
+
+
+    const result =
+
+        pokemon.filter(item => {
+
+
+            const [
+
+                id,
+                name,
+                type1,
+                type2,
+                group,
+                category
+
+            ] = item;
+
+
+            const queryMatch =
+
+                !query
+
+                ||
+
+                name
+                    .toLowerCase()
+                    .includes(query)
+
+                ||
+
+                String(id)
+                    .includes(query)
+
+                ||
+
+                type1
+                    .includes(query)
+
+                ||
+
+                (
+                    type2 &&
+                    type2.includes(query)
+                );
+
+
+            const typeMatch =
+
+                selectedType === "all"
+
+                ||
+
+                type1 === selectedType
+
+                ||
+
+                type2 === selectedType;
+
+
+            const categoryMatch =
+
+                selectedCategory === "all"
+
+                ||
+
+                category === selectedCategory;
+
+
+            const groupMatch =
+
+                selectedGroup === "all"
+
+                ||
+
+                group === selectedGroup;
+
+
+            return (
+
+                queryMatch
+
+                &&
+
+                typeMatch
+
+                &&
+
+                categoryMatch
+
+                &&
+
+                groupMatch
+
+            );
+
+        });
+
+
+    render(result);
+
+}
+
+
+search.addEventListener(
+    "input",
+    filterPokemon
+);
+
+
+typeFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
+categoryFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
+regionFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+</script>
+
+
+</body>
+
+</html>

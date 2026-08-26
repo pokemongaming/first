@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Generation 1 Pokémon Database – Kanto Pokémon #001–#151</title>
+
+  <meta name="description"
+        content="Explore all 151 Generation 1 Pokémon from the Kanto region. Browse Pokémon by Pokédex number, type, evolution family, stats, weaknesses, moves, availability and more.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+  /* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #f5f7fb;
+  color: #172033;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e9f2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  background: #eef2ff;
+  border-radius: 12px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.main-nav a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5c6578;
+
+  transition: 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #4f46e5;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  background:
+    linear-gradient(
+      135deg,
+      #111827,
+      #26345c
+    );
+
+  color: white;
+  padding: 35px 0 70px;
+
+  overflow: hidden;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+
+  font-size: 13px;
+  color: #c8d0e3;
+
+  margin-bottom: 45px;
+}
+
+.breadcrumb a:hover {
+  color: white;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.generation-label {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  color: #d8ddff;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.05;
+  margin: 18px 0;
+}
+
+.hero-text p {
+  max-width: 700px;
+
+  color: #d8deed;
+  font-size: 17px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 28px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 13px 20px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition: 0.2s ease;
+}
+
+.primary-button {
+  background: white;
+  color: #18213a;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+.secondary-button:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+
+/* =========================================
+   POKEBALL
+========================================= */
+
+.hero-pokeball {
+  display: flex;
+  justify-content: center;
+}
+
+.pokeball {
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #ef4444 0 47%,
+      #151a2b 47% 53%,
+      #f8fafc 53% 100%
+    );
+
+  border: 12px solid rgba(255,255,255,0.85);
+
+  position: relative;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,0.35);
+}
+
+.pokeball-center {
+  width: 62px;
+  height: 62px;
+
+  background: white;
+
+  border: 12px solid #151a2b;
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* =========================================
+   QUICK STATS
+========================================= */
+
+.quick-stats {
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+.stat-card {
+  background: white;
+
+  border: 1px solid #e5e9f2;
+  border-radius: 16px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 30px rgba(25,35,60,0.07);
+}
+
+.stat-number {
+  display: block;
+
+  font-size: 27px;
+  font-weight: 900;
+
+  color: #4f46e5;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #697386;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.content-section,
+.pokemon-section,
+.features-section,
+.faq-section {
+  padding: 75px 0;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-kicker {
+  color: #6366f1;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-top: 5px;
+}
+
+.section-heading p {
+  color: #687386;
+  margin-top: 8px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.info-card {
+  background: white;
+
+  border: 1px solid #e5e9f2;
+  border-radius: 17px;
+
+  padding: 25px;
+
+  transition: 0.25s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(20,30,50,0.08);
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #687386;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-section {
+  background: white;
+
+  padding: 35px 0;
+
+  border-top: 1px solid #e6e9f1;
+  border-bottom: 1px solid #e6e9f1;
+}
+
+.search-box label {
+  display: block;
+
+  font-weight: 800;
+
+  margin-bottom: 8px;
+}
+
+.search-box input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border: 1px solid #d9deea;
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 4px rgba(99,102,241,0.1);
+}
+
+.type-filters {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.filter {
+  border: 1px solid #dfe3ec;
+
+  background: #f8fafc;
+
+  padding: 8px 13px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.filter:hover,
+.filter.active {
+  background: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}
+
+
+/* =========================================
+   POKEMON GRID
+========================================= */
+
+.pokemon-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.pokemon-card {
+  position: relative;
+
+  background: white;
+
+  border: 1px solid #e4e8f0;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(20,30,50,0.10);
+}
+
+.pokemon-number {
+  position: absolute;
+
+  top: 13px;
+  right: 13px;
+
+  color: #98a1b3;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  z-index: 2;
+}
+
+.pokemon-image {
+  min-height: 180px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle,
+      #eef2ff,
+      #f8fafc 65%
+    );
+}
+
+.pokemon-placeholder {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 55px;
+
+  background: white;
+
+  box-shadow:
+    0 12px 30px rgba(30,40,70,0.1);
+}
+
+.pokemon-info {
+  padding: 20px;
+}
+
+.pokemon-info h3 {
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+
+.types {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.type {
+  padding: 4px 9px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  color: white;
+}
+
+.type.grass {
+  background: #48a85c;
+}
+
+.type.poison {
+  background: #9147a7;
+}
+
+.type.fire {
+  background: #ef633d;
+}
+
+.type.water {
+  background: #4388dc;
+}
+
+.type.electric {
+  background: #e2ad17;
+}
+
+.type.flying {
+  background: #738ad8;
+}
+
+.type.psychic {
+  background: #dd4d7c;
+}
+
+.evolution {
+  min-height: 42px;
+
+  margin: 14px 0;
+
+  color: #70798a;
+
+  font-size: 12px;
+}
+
+.pokemon-link {
+  display: inline-block;
+
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.pokemon-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   EVOLUTION
+========================================= */
+
+.evolution-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.evolution-card {
+  background: white;
+
+  border: 1px solid #e4e8f0;
+
+  border-radius: 17px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  transition: 0.25s ease;
+}
+
+.evolution-card:hover {
+  transform: translateY(-4px);
+}
+
+.evolution-card > span {
+  font-size: 38px;
+}
+
+.evolution-card h3 {
+  margin: 10px 0 5px;
+}
+
+.evolution-card p {
+  color: #6b7485;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features-section {
+  background: #eef1f8;
+}
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.feature-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 17px;
+
+  border: 1px solid #e2e6ef;
+}
+
+.feature-card span {
+  font-size: 30px;
+}
+
+.feature-card h3 {
+  margin: 10px 0 5px;
+}
+
+.feature-card p {
+  color: #687386;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq-section {
+  background: white;
+}
+
+.faq-section details {
+  border: 1px solid #e0e5ef;
+
+  border-radius: 12px;
+
+  margin-bottom: 10px;
+
+  overflow: hidden;
+}
+
+.faq-section summary {
+  padding: 18px 20px;
+
+  cursor: pointer;
+
+  font-weight: 800;
+
+  list-style: none;
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-section summary::after {
+  content: "+";
+
+  float: right;
+
+  font-size: 20px;
+}
+
+.faq-section details[open] summary::after {
+  content: "−";
+}
+
+.faq-section details p {
+  padding: 0 20px 20px;
+
+  color: #687386;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+  background: #111827;
+
+  color: white;
+
+  padding: 55px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    2fr 1fr 1fr;
+
+  gap: 40px;
+}
+
+.footer-grid h3,
+.footer-grid h4 {
+  margin-bottom: 13px;
+}
+
+.footer-grid p {
+  max-width: 430px;
+
+  color: #aeb6c7;
+
+  font-size: 14px;
+}
+
+.footer-grid a {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #aeb6c7;
+
+  font-size: 13px;
+}
+
+.footer-grid a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #293143;
+
+  margin-top: 40px;
+
+  padding-top: 20px;
+
+  color: #8993a8;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .pokemon-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-pokeball {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .main-nav {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .intro-grid,
+  .evolution-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pokemon-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .hero {
+    padding-bottom: 55px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .content-section,
+  .pokemon-section,
+  .features-section,
+  .faq-section {
+    padding: 55px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pokemon-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  .pokemon-image {
+    min-height: 140px;
+  }
+
+  .pokemon-placeholder {
+    width: 75px;
+    height: 75px;
+
+    font-size: 40px;
+  }
+
+  .pokemon-info {
+    padding: 14px;
+  }
+
+  .pokemon-info h3 {
+    font-size: 16px;
+  }
+
+  .evolution {
+    font-size: 11px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    text-align: center;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+  <div class="container header-inner">
+
+    <a href="/" class="logo">
+      <span class="logo-icon">⚡</span>
+      <span>Pokémon Gaming</span>
+    </a>
+
+    <nav class="main-nav">
+
+      <a href="/">Home</a>
+      <a href="/pokedex/">Pokédex</a>
+      <a href="/raids/">Raids</a>
+      <a href="/guides/">Guides</a>
+      <a href="/tools/">Tools</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span>›</span>
+      <a href="/pokedex/">Pokédex</a>
+      <span>›</span>
+      <strong>Generation 1</strong>
+    </div>
+
+    <div class="hero-content">
+
+      <div class="hero-text">
+
+        <span class="generation-label">
+          GENERATION I • KANTO
+        </span>
+
+        <h1>Generation 1 Pokémon</h1>
+
+        <p>
+          Explore all 151 original Pokémon introduced in the Kanto region.
+          Discover their types, evolution families, stats, weaknesses,
+          moves, availability and Pokémon GO information.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#pokemon-list" class="primary-button">
+            Explore All 151
+          </a>
+
+          <a href="#evolution-families" class="secondary-button">
+            Evolution Families
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-pokeball">
+        <div class="pokeball">
+          <div class="pokeball-center"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= QUICK STATS ================= -->
+
+<section class="quick-stats">
+
+  <div class="container stats-grid">
+
+    <div class="stat-card">
+      <span class="stat-number">151</span>
+      <span class="stat-label">Pokémon</span>
+    </div>
+
+    <div class="stat-card">
+      <span class="stat-number">9</span>
+      <span class="stat-label">Generations Covered</span>
+    </div>
+
+    <div class="stat-card">
+      <span class="stat-number">15+</span>
+      <span class="stat-label">Types Represented</span>
+    </div>
+
+    <div class="stat-card">
+      <span class="stat-number">Kanto</span>
+      <span class="stat-label">Region</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section class="content-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-kicker">KANTO DATABASE</span>
+
+      <h2>Generation 1 Pokémon Overview</h2>
+
+    </div>
+
+    <div class="intro-grid">
+
+      <article class="info-card">
+
+        <h3>What is Generation 1?</h3>
+
+        <p>
+          Generation 1 is the original Pokémon generation and introduced
+          the first 151 Pokémon. These Pokémon originated from the Kanto
+          region and include many of the most recognizable Pokémon in
+          the franchise.
+        </p>
+
+      </article>
+
+
+      <article class="info-card">
+
+        <h3>Original Starters</h3>
+
+        <p>
+          Kanto's three starter Pokémon are Bulbasaur, Charmander and
+          Squirtle. Each follows a three-stage evolution family.
+        </p>
+
+      </article>
+
+
+      <article class="info-card">
+
+        <h3>Legendary Pokémon</h3>
+
+        <p>
+          Generation 1 introduced Articuno, Zapdos, Moltres and Mewtwo,
+          along with the Mythical Pokémon Mew.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+  <div class="container">
+
+    <div class="search-box">
+
+      <label for="pokemonSearch">
+        Search Generation 1 Pokémon
+      </label>
+
+      <input
+        type="search"
+        id="pokemonSearch"
+        placeholder="Search Bulbasaur, Pikachu, Mewtwo..."
+        autocomplete="off"
+      >
+
+    </div>
+
+
+    <div class="type-filters">
+
+      <button class="filter active" data-type="all">
+        All
+      </button>
+
+      <button class="filter" data-type="normal">
+        Normal
+      </button>
+
+      <button class="filter" data-type="fire">
+        Fire
+      </button>
+
+      <button class="filter" data-type="water">
+        Water
+      </button>
+
+      <button class="filter" data-type="electric">
+        Electric
+      </button>
+
+      <button class="filter" data-type="grass">
+        Grass
+      </button>
+
+      <button class="filter" data-type="ice">
+        Ice
+      </button>
+
+      <button class="filter" data-type="fighting">
+        Fighting
+      </button>
+
+      <button class="filter" data-type="poison">
+        Poison
+      </button>
+
+      <button class="filter" data-type="ground">
+        Ground
+      </button>
+
+      <button class="filter" data-type="flying">
+        Flying
+      </button>
+
+      <button class="filter" data-type="psychic">
+        Psychic
+      </button>
+
+      <button class="filter" data-type="bug">
+        Bug
+      </button>
+
+      <button class="filter" data-type="rock">
+        Rock
+      </button>
+
+      <button class="filter" data-type="ghost">
+        Ghost
+      </button>
+
+      <button class="filter" data-type="dragon">
+        Dragon
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= POKEMON LIST ================= -->
+
+<section class="pokemon-section" id="pokemon-list">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-kicker">
+        NATIONAL POKÉDEX #001–#151
+      </span>
+
+      <h2>All Generation 1 Pokémon</h2>
+
+      <p>
+        Browse the original Kanto Pokédex.
+      </p>
+
+    </div>
+
+
+    <div class="pokemon-grid" id="pokemonGrid">
+
+
+      <!-- BULBASAUR -->
+
+      <article class="pokemon-card" data-name="bulbasaur" data-type="grass">
+
+        <div class="pokemon-number">
+          #001
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🌱</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Bulbasaur</h3>
+
+          <div class="types">
+            <span class="type grass">Grass</span>
+            <span class="type poison">Poison</span>
+          </div>
+
+          <p class="evolution">
+            Bulbasaur → Ivysaur → Venusaur
+          </p>
+
+          <a href="/pokedex/bulbasaur.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- IVYSAUR -->
+
+      <article class="pokemon-card" data-name="ivysaur" data-type="grass">
+
+        <div class="pokemon-number">
+          #002
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🌿</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Ivysaur</h3>
+
+          <div class="types">
+            <span class="type grass">Grass</span>
+            <span class="type poison">Poison</span>
+          </div>
+
+          <p class="evolution">
+            Bulbasaur → Ivysaur → Venusaur
+          </p>
+
+          <a href="/pokedex/ivysaur.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- VENUSAUR -->
+
+      <article class="pokemon-card" data-name="venusaur" data-type="grass">
+
+        <div class="pokemon-number">
+          #003
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🌸</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Venusaur</h3>
+
+          <div class="types">
+            <span class="type grass">Grass</span>
+            <span class="type poison">Poison</span>
+          </div>
+
+          <p class="evolution">
+            Bulbasaur → Ivysaur → Venusaur
+          </p>
+
+          <a href="/pokedex/venusaur.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- CHARMANDER -->
+
+      <article class="pokemon-card" data-name="charmander" data-type="fire">
+
+        <div class="pokemon-number">
+          #004
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🔥</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Charmander</h3>
+
+          <div class="types">
+            <span class="type fire">Fire</span>
+          </div>
+
+          <p class="evolution">
+            Charmander → Charmeleon → Charizard
+          </p>
+
+          <a href="/pokedex/charmander.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- CHARMELEON -->
+
+      <article class="pokemon-card" data-name="charmeleon" data-type="fire">
+
+        <div class="pokemon-number">
+          #005
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🔥</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Charmeleon</h3>
+
+          <div class="types">
+            <span class="type fire">Fire</span>
+          </div>
+
+          <p class="evolution">
+            Charmander → Charmeleon → Charizard
+          </p>
+
+          <a href="/pokedex/charmeleon.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- CHARIZARD -->
+
+      <article class="pokemon-card" data-name="charizard" data-type="fire">
+
+        <div class="pokemon-number">
+          #006
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🔥</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Charizard</h3>
+
+          <div class="types">
+            <span class="type fire">Fire</span>
+            <span class="type flying">Flying</span>
+          </div>
+
+          <p class="evolution">
+            Charmander → Charmeleon → Charizard
+          </p>
+
+          <a href="/pokedex/charizard.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- SQUIRTLE -->
+
+      <article class="pokemon-card" data-name="squirtle" data-type="water">
+
+        <div class="pokemon-number">
+          #007
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">💧</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Squirtle</h3>
+
+          <div class="types">
+            <span class="type water">Water</span>
+          </div>
+
+          <p class="evolution">
+            Squirtle → Wartortle → Blastoise
+          </p>
+
+          <a href="/pokedex/squirtle.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PIKACHU -->
+
+      <article class="pokemon-card" data-name="pikachu" data-type="electric">
+
+        <div class="pokemon-number">
+          #025
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">⚡</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Pikachu</h3>
+
+          <div class="types">
+            <span class="type electric">Electric</span>
+          </div>
+
+          <p class="evolution">
+            Pichu → Pikachu → Raichu
+          </p>
+
+          <a href="/pokedex/pikachu.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- MEWTWO -->
+
+      <article class="pokemon-card" data-name="mewtwo" data-type="psychic">
+
+        <div class="pokemon-number">
+          #150
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">🧬</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Mewtwo</h3>
+
+          <div class="types">
+            <span class="type psychic">Psychic</span>
+          </div>
+
+          <p class="evolution">
+            Legendary Pokémon
+          </p>
+
+          <a href="/pokedex/mewtwo.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- MEW -->
+
+      <article class="pokemon-card" data-name="mew" data-type="psychic">
+
+        <div class="pokemon-number">
+          #151
+        </div>
+
+        <div class="pokemon-image">
+          <div class="pokemon-placeholder">✨</div>
+        </div>
+
+        <div class="pokemon-info">
+
+          <h3>Mew</h3>
+
+          <div class="types">
+            <span class="type psychic">Psychic</span>
+          </div>
+
+          <p class="evolution">
+            Mythical Pokémon
+          </p>
+
+          <a href="/pokedex/mew.html"
+             class="pokemon-link">
+            View Guide →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EVOLUTION ================= -->
+
+<section class="content-section" id="evolution-families">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-kicker">
+        EVOLUTION DATABASE
+      </span>
+
+      <h2>Generation 1 Evolution Families</h2>
+
+      <p>
+        Explore the major evolution lines introduced in Kanto.
+      </p>
+
+    </div>
+
+
+    <div class="evolution-grid">
+
+      <div class="evolution-card">
+
+        <span>🌱</span>
+
+        <h3>Bulbasaur Family</h3>
+
+        <p>
+          Bulbasaur → Ivysaur → Venusaur
+        </p>
+
+      </div>
+
+
+      <div class="evolution-card">
+
+        <span>🔥</span>
+
+        <h3>Charmander Family</h3>
+
+        <p>
+          Charmander → Charmeleon → Charizard
+        </p>
+
+      </div>
+
+
+      <div class="evolution-card">
+
+        <span>💧</span>
+
+        <h3>Squirtle Family</h3>
+
+        <p>
+          Squirtle → Wartortle → Blastoise
+        </p>
+
+      </div>
+
+
+      <div class="evolution-card">
+
+        <span>⚡</span>
+
+        <h3>Pikachu Family</h3>
+
+        <p>
+          Pichu → Pikachu → Raichu
+        </p>
+
+      </div>
+
+
+      <div class="evolution-card">
+
+        <span>👻</span>
+
+        <h3>Gastly Family</h3>
+
+        <p>
+          Gastly → Haunter → Gengar
+        </p>
+
+      </div>
+
+
+      <div class="evolution-card">
+
+        <span>🐉</span>
+
+        <h3>Dratini Family</h3>
+
+        <p>
+          Dratini → Dragonair → Dragonite
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-kicker">
+        POKÉMON INFORMATION
+      </span>
+
+      <h2>What You Can Find on Each Pokémon Page</h2>
+
+    </div>
+
+
+    <div class="features-grid">
+
+      <article class="feature-card">
+        <span>📊</span>
+        <h3>Stats</h3>
+        <p>
+          Base Attack, Defense, HP and Pokémon GO battle information.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <span>🧬</span>
+        <h3>Evolution</h3>
+        <p>
+          Evolution requirements, candy costs and complete evolution families.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <span>⚔️</span>
+        <h3>Best Moves</h3>
+        <p>
+          Recommended movesets for raids, gyms and PvP.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <span>🛡️</span>
+        <h3>Weaknesses</h3>
+        <p>
+          Type weaknesses, resistances and battle matchups.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <span>✨</span>
+        <h3>Shiny</h3>
+        <p>
+          Shiny appearance and availability information.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <span>🎯</span>
+        <h3>Pokémon GO</h3>
+        <p>
+          CP, IVs, raids, events, availability and useful gameplay tips.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-kicker">FAQ</span>
+
+      <h2>Generation 1 Pokémon FAQ</h2>
+
+    </div>
+
+
+    <details>
+
+      <summary>
+        How many Pokémon are in Generation 1?
+      </summary>
+
+      <p>
+        Generation 1 contains 151 Pokémon, beginning with Bulbasaur
+        at National Pokédex #001 and ending with Mew at #151.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Which region is Generation 1 from?
+      </summary>
+
+      <p>
+        Generation 1 Pokémon were introduced as Pokémon from the
+        Kanto region.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        What are the Gen 1 starter Pokémon?
+      </summary>
+
+      <p>
+        The original Kanto starter Pokémon are Bulbasaur, Charmander
+        and Squirtle.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        What are the Gen 1 Legendary Pokémon?
+      </summary>
+
+      <p>
+        Generation 1 introduced Articuno, Zapdos, Moltres and Mewtwo.
+        Mew is the Mythical Pokémon associated with the original Pokédex.
+      </p>
+
+    </details>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>Pokémon Gaming</h3>
+
+        <p>
+          Pokémon GO guides, raid strategies, Pokédex information,
+          tools and gaming resources.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Pokédex</h4>
+
+        <a href="/pokedex/gen1.html">Generation 1</a>
+        <a href="/pokedex/gen2.html">Generation 2</a>
+        <a href="/pokedex/gen3.html">Generation 3</a>
+        <a href="/pokedex/">Full Pokédex</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Guides</h4>
+
+        <a href="/raids/">Raid Guides</a>
+        <a href="/guides/">Game Guides</a>
+        <a href="/tools/">Pokémon Tools</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Pokémon Gaming. Independent fan website.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= SEARCH SCRIPT ================= -->
+
+<script>
+
+const searchInput = document.getElementById("pokemonSearch");
+const cards = document.querySelectorAll(".pokemon-card");
+const filters = document.querySelectorAll(".filter");
+
+let selectedType = "all";
+
+
+function filterPokemon() {
+
+  const searchTerm =
+    searchInput.value.toLowerCase().trim();
+
+
+  cards.forEach(card => {
+
+    const name =
+      card.dataset.name.toLowerCase();
+
+    const type =
+      card.dataset.type.toLowerCase();
+
+
+    const matchesSearch =
+      name.includes(searchTerm);
+
+
+    const matchesType =
+      selectedType === "all" ||
+      type === selectedType;
+
+
+    if (matchesSearch && matchesType) {
+
+      card.style.display = "";
+
+    } else {
+
+      card.style.display = "none";
+
+    }
+
+  });
+
+}
+
+
+searchInput.addEventListener(
+  "input",
+  filterPokemon
+);
+
+
+filters.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    filters.forEach(btn =>
+      btn.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    selectedType =
+      button.dataset.type;
+
+    filterPokemon();
+
+  });
+
+});
+
+</script>
+
+</body>
+</html>

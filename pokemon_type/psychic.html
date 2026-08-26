@@ -1,0 +1,2799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Psychic-Type Pokémon GO Guide: Gen 1–9, Stats, Moves, Weaknesses & Raids</title>
+
+    <meta name="description"
+          content="Complete Pokémon GO Psychic-type guide covering Gen 1–9 Pokémon, evolution families, stats, weaknesses, resistances, best moves, raid roles, Mega and Shadow Pokémon, shiny availability and individual guides.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon-types/psychic.html">
+
+    <style>
+
+        :root {
+            --bg: #090b14;
+            --bg-soft: #111522;
+            --card: #151a2a;
+            --card-2: #1b2133;
+            --border: #30384f;
+
+            --text: #f4f6fb;
+            --muted: #aab2c5;
+
+            --psychic: #e85d9e;
+            --psychic-dark: #b93772;
+
+            --success: #55d68a;
+            --warning: #f4c95d;
+            --danger: #ff6b6b;
+            --info: #64b5f6;
+
+            --max-width: 1200px;
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #201324 0,
+                    var(--bg) 42%
+                );
+
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(100% - 32px, var(--max-width));
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(9, 11, 20, 0.94);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            min-height: 70px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 900;
+        }
+
+        .logo span {
+            color: var(--psychic);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .main-nav a {
+            color: var(--muted);
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .main-nav a:hover {
+            color: var(--text);
+        }
+
+        /* =========================
+           BREADCRUMB
+        ========================= */
+
+        .breadcrumbs {
+            padding: 20px 0 10px;
+            color: var(--muted);
+            font-size: .85rem;
+        }
+
+        .breadcrumbs span {
+            color: var(--psychic);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            margin-top: 10px;
+            padding: 42px;
+
+            border:
+                1px solid rgba(232, 93, 158, .4);
+
+            border-radius: 24px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(232, 93, 158, .18),
+                    rgba(17, 21, 34, .96)
+                );
+
+            box-shadow:
+                0 25px 80px rgba(0,0,0,.3);
+        }
+
+        .type-badge {
+            display: inline-flex;
+
+            padding: 7px 14px;
+
+            border-radius: 999px;
+
+            background: rgba(232,93,158,.15);
+            border: 1px solid rgba(232,93,158,.4);
+
+            color: #ff9bc4;
+
+            font-size: .8rem;
+            font-weight: 900;
+
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+
+        .hero h1 {
+            max-width: 850px;
+
+            margin-top: 16px;
+
+            font-size:
+                clamp(2rem, 5vw, 4rem);
+
+            line-height: 1.05;
+        }
+
+        .hero h1 span {
+            color: var(--psychic);
+        }
+
+        .hero-description {
+            max-width: 850px;
+
+            margin-top: 20px;
+
+            color: var(--muted);
+
+            font-size: 1.05rem;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            margin-top: 24px;
+        }
+
+        .meta-pill {
+            padding: 8px 12px;
+
+            background: rgba(255,255,255,.05);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            color: var(--muted);
+
+            font-size: .82rem;
+        }
+
+        /* =========================
+           AD PLACEHOLDER
+        ========================= */
+
+        .ad-slot {
+            min-height: 90px;
+
+            margin: 28px 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border:
+                1px dashed #3d465d;
+
+            border-radius: 12px;
+
+            color: #70798c;
+
+            font-size: .8rem;
+        }
+
+        /* =========================
+           CONTENT LAYOUT
+        ========================= */
+
+        .content-layout {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                280px;
+
+            gap: 28px;
+
+            margin-top: 30px;
+        }
+
+        .main-content {
+            min-width: 0;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 92px;
+            align-self: start;
+        }
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .section {
+            margin-bottom: 36px;
+
+            padding: 28px;
+
+            background: var(--card);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .section h2 {
+            margin-bottom: 14px;
+
+            font-size: clamp(1.4rem, 3vw, 2rem);
+        }
+
+        .section h3 {
+            margin: 24px 0 10px;
+
+            font-size: 1.15rem;
+        }
+
+        .section p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        .section strong {
+            color: var(--text);
+        }
+
+        /* =========================
+           TYPE OVERVIEW
+        ========================= */
+
+        .type-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 22px;
+        }
+
+        .type-card {
+            padding: 18px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            background: var(--bg-soft);
+        }
+
+        .type-card strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .type-card p {
+            margin: 0;
+            font-size: .9rem;
+        }
+
+        /* =========================
+           GENERATION NAV
+        ========================= */
+
+        .generation-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .generation-nav a {
+            padding: 8px 13px;
+
+            background: var(--bg-soft);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 10px;
+
+            color: var(--muted);
+
+            font-size: .85rem;
+            font-weight: 800;
+        }
+
+        .generation-nav a:hover {
+            color: white;
+
+            border-color:
+                var(--psychic);
+        }
+
+        /* =========================
+           SEARCH
+        ========================= */
+
+        .database-tools {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin: 20px 0;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 220px;
+
+            padding: 12px 15px;
+
+            background: var(--bg);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 10px;
+
+            color: white;
+
+            outline: none;
+        }
+
+        .search-box:focus {
+            border-color:
+                var(--psychic);
+        }
+
+        /* =========================
+           POKEMON GRID
+        ========================= */
+
+        .pokemon-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+        }
+
+        .pokemon-card {
+            padding: 18px;
+
+            background: var(--bg-soft);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            transition:
+                transform .2s ease,
+                border-color .2s ease;
+        }
+
+        .pokemon-card:hover {
+            transform: translateY(-3px);
+
+            border-color:
+                var(--psychic);
+        }
+
+        .pokemon-number {
+            color: var(--muted);
+            font-size: .8rem;
+        }
+
+        .pokemon-name {
+            margin-top: 5px;
+
+            font-size: 1.1rem;
+            font-weight: 900;
+        }
+
+        .pokemon-type {
+            display: inline-block;
+
+            margin-top: 8px;
+
+            padding: 4px 9px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(232,93,158,.12);
+
+            color: #ff9bc4;
+
+            font-size: .72rem;
+            font-weight: 800;
+        }
+
+        /* =========================
+           TABLES
+        ========================= */
+
+        .table-wrapper {
+            overflow-x: auto;
+
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            min-width: 650px;
+        }
+
+        th,
+        td {
+            padding: 13px 14px;
+
+            text-align: left;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        th {
+            color: white;
+
+            background: #1b2030;
+
+            font-size: .82rem;
+
+            text-transform: uppercase;
+        }
+
+        td {
+            color: var(--muted);
+            font-size: .9rem;
+        }
+
+        /* =========================
+           STAT CARDS
+        ========================= */
+
+        .stat-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            padding: 20px;
+
+            background: var(--bg-soft);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+
+            margin-top: 5px;
+
+            font-size: 1.8rem;
+
+            font-weight: 900;
+
+            color: var(--psychic);
+        }
+
+        /* =========================
+           WEAKNESS / RESISTANCE
+        ========================= */
+
+        .effectiveness-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 16px;
+
+            margin-top: 20px;
+        }
+
+        .effect-box {
+            padding: 20px;
+
+            border-radius: 14px;
+
+            background: var(--bg-soft);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .effect-box h3 {
+            margin-top: 0;
+        }
+
+        .weakness h3 {
+            color: #ff8585;
+        }
+
+        .resistance h3 {
+            color: #71df9b;
+        }
+
+        .type-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .type-tag {
+            padding: 7px 10px;
+
+            background: #22283a;
+
+            border-radius: 8px;
+
+            color: var(--muted);
+
+            font-size: .8rem;
+        }
+
+        /* =========================
+           RATING
+        ========================= */
+
+        .tier {
+            display: inline-flex;
+
+            padding: 7px 12px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(244,201,93,.12);
+
+            color: var(--warning);
+
+            font-weight: 900;
+        }
+
+        /* =========================
+           EVOLUTION
+        ========================= */
+
+        .evolution-line {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            align-items: center;
+
+            margin-top: 22px;
+        }
+
+        .evolution-step {
+            padding: 20px;
+
+            background: var(--bg-soft);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            text-align: center;
+        }
+
+        .evolution-arrow {
+            text-align: center;
+
+            color: var(--psychic);
+
+            font-size: 1.4rem;
+        }
+
+        /* =========================
+           FEATURE CARDS
+        ========================= */
+
+        .feature-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            padding: 20px;
+
+            background: var(--bg-soft);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+        }
+
+        /* =========================
+           GUIDE CARDS
+        ========================= */
+
+        .guide-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .guide-card {
+            padding: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #1c2132,
+                    #111521
+                );
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+        }
+
+        .guide-card h3 {
+            margin-top: 0;
+        }
+
+        .guide-card a {
+            display: inline-block;
+
+            margin-top: 12px;
+
+            color: #ff9bc4;
+
+            font-weight: 800;
+        }
+
+        /* =========================
+           FAQ
+        ========================= */
+
+        .faq-item {
+            padding: 18px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .faq-item:last-child {
+            border-bottom: 0;
+        }
+
+        .faq-item h3 {
+            margin: 0 0 8px;
+        }
+
+        /* =========================
+           SIDEBAR
+        ========================= */
+
+        .side-card {
+            padding: 20px;
+
+            background: var(--card);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            margin-bottom: 16px;
+        }
+
+        .side-card h3 {
+            margin-bottom: 12px;
+
+            font-size: 1rem;
+        }
+
+        .side-card a {
+            display: block;
+
+            padding: 8px 0;
+
+            color: var(--muted);
+
+            font-size: .88rem;
+        }
+
+        .side-card a:hover {
+            color: white;
+        }
+
+        /* =========================
+           EDITOR NOTE
+        ========================= */
+
+        .editor-note {
+            padding: 18px;
+
+            margin-top: 20px;
+
+            border-left:
+                4px solid var(--psychic);
+
+            background:
+                rgba(232,93,158,.06);
+
+            color: var(--muted);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 50px;
+
+            padding: 45px 0;
+
+            background: #070910;
+
+            border-top:
+                1px solid var(--border);
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr 1fr 1fr;
+
+            gap: 30px;
+        }
+
+        footer h3 {
+            margin-bottom: 12px;
+        }
+
+        footer p,
+        footer a {
+            color: var(--muted);
+
+            font-size: .9rem;
+        }
+
+        footer a {
+            display: block;
+
+            margin: 6px 0;
+        }
+
+        .copyright {
+            margin-top: 35px;
+
+            padding-top: 20px;
+
+            border-top:
+                1px solid var(--border);
+
+            color: #727b90;
+
+            font-size: .8rem;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .hero {
+                padding: 26px 20px;
+            }
+
+            .section {
+                padding: 21px;
+            }
+
+            .type-grid,
+            .stat-grid,
+            .pokemon-grid,
+            .feature-grid,
+            .guide-grid,
+            .effectiveness-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .evolution-line {
+                grid-template-columns: 1fr;
+            }
+
+            .evolution-arrow {
+                transform: rotate(90deg);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-nav {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a class="logo" href="/">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="/pokemon/">Pokémon</a>
+            <a href="/raids/">Raids</a>
+            <a href="/pvp/">PvP</a>
+            <a href="/pokemon-types/">Types</a>
+            <a href="/tools/">Tools</a>
+            <a href="/guides/">Guides</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- BREADCRUMBS -->
+
+    <div class="breadcrumbs">
+        Home /
+        Pokémon Database /
+        Pokémon Types /
+        <span>Psychic</span>
+    </div>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <span class="type-badge">
+            Psychic Type
+        </span>
+
+        <h1>
+            Psychic-Type Pokémon GO
+            <span>Complete Guide</span>
+        </h1>
+
+        <p class="hero-description">
+            Explore the Psychic-type Pokémon available in Pokémon GO,
+            from Generation 1 through Generation 9. This guide brings
+            together evolution families, battle statistics, weaknesses,
+            resistances, best moves, raid performance, Mega and Shadow
+            forms, shiny availability and individual Pokémon guides.
+        </p>
+
+        <div class="hero-meta">
+
+            <span class="meta-pill">
+                Generations 1–9
+            </span>
+
+            <span class="meta-pill">
+                Evolution Database
+            </span>
+
+            <span class="meta-pill">
+                Raid Analysis
+            </span>
+
+            <span class="meta-pill">
+                PvE & PvP
+            </span>
+
+            <span class="meta-pill">
+                Shiny Information
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <div class="ad-slot">
+        Advertisement
+    </div>
+
+
+    <div class="content-layout">
+
+        <article class="main-content">
+
+
+            <!-- =====================
+                 1. TYPE HUB
+            ====================== -->
+
+            <section class="section" id="psychic-overview">
+
+                <h2>
+                    1. Psychic-Type Pokémon GO Hub
+                </h2>
+
+                <p>
+                    Psychic-type Pokémon occupy an important role across
+                    Pokémon GO's raid, gym and PvP systems. Some are built
+                    around powerful Psychic-type damage, while others gain
+                    value from their secondary typing, movepool or unique
+                    battle role.
+                </p>
+
+                <p>
+                    This hub is designed to help trainers quickly answer
+                    practical questions such as which Psychic Pokémon are
+                    worth powering up, which ones are useful attackers,
+                    which Pokémon have Mega or Shadow forms and which
+                    evolution families deserve Candy and Stardust investment.
+                </p>
+
+                <div class="type-grid">
+
+                    <div class="type-card">
+                        <strong>Primary Role</strong>
+                        <p>
+                            Psychic attackers and specialist battle
+                            Pokémon.
+                        </p>
+                    </div>
+
+                    <div class="type-card">
+                        <strong>Generations</strong>
+                        <p>
+                            Psychic Pokémon appear throughout Gen 1–9.
+                        </p>
+                    </div>
+
+                    <div class="type-card">
+                        <strong>Battle Formats</strong>
+                        <p>
+                            Raid battles, gyms and GO Battle League.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 2. GENERATIONS
+            ====================== -->
+
+            <section class="section" id="generations">
+
+                <h2>
+                    2. Psychic Pokémon by Generation
+                </h2>
+
+                <p>
+                    Use the generation navigation below to organize the
+                    Psychic-type database. Each generation can eventually
+                    have its own dedicated landing page and individual
+                    Pokémon guides.
+                </p>
+
+                <div class="generation-nav">
+
+                    <a href="#gen1">Gen 1</a>
+                    <a href="#gen2">Gen 2</a>
+                    <a href="#gen3">Gen 3</a>
+                    <a href="#gen4">Gen 4</a>
+                    <a href="#gen5">Gen 5</a>
+                    <a href="#gen6">Gen 6</a>
+                    <a href="#gen7">Gen 7</a>
+                    <a href="#gen8">Gen 8</a>
+                    <a href="#gen9">Gen 9</a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 3. DATABASE
+            ====================== -->
+
+            <section class="section" id="database">
+
+                <h2>
+                    3. Psychic Pokémon Database
+                </h2>
+
+                <p>
+                    Search the Psychic-type database by Pokémon name,
+                    generation or battle role. In the production version,
+                    connect these cards to individual Pokémon pages.
+                </p>
+
+                <div class="database-tools">
+
+                    <input
+                        class="search-box"
+                        id="pokemonSearch"
+                        type="search"
+                        placeholder="Search Psychic Pokémon..."
+                        aria-label="Search Psychic Pokémon">
+
+                </div>
+
+                <div class="pokemon-grid" id="pokemonGrid">
+
+                    <article
+                        class="pokemon-card"
+                        data-name="Abra">
+
+                        <span class="pokemon-number">
+                            #063
+                        </span>
+
+                        <div class="pokemon-name">
+                            Abra
+                        </div>
+
+                        <span class="pokemon-type">
+                            Psychic
+                        </span>
+
+                    </article>
+
+
+                    <article
+                        class="pokemon-card"
+                        data-name="Kadabra">
+
+                        <span class="pokemon-number">
+                            #064
+                        </span>
+
+                        <div class="pokemon-name">
+                            Kadabra
+                        </div>
+
+                        <span class="pokemon-type">
+                            Psychic
+                        </span>
+
+                    </article>
+
+
+                    <article
+                        class="pokemon-card"
+                        data-name="Alakazam">
+
+                        <span class="pokemon-number">
+                            #065
+                        </span>
+
+                        <div class="pokemon-name">
+                            Alakazam
+                        </div>
+
+                        <span class="pokemon-type">
+                            Psychic
+                        </span>
+
+                    </article>
+
+
+                    <article
+                        class="pokemon-card"
+                        data-name="Mewtwo">
+
+                        <span class="pokemon-number">
+                            #150
+                        </span>
+
+                        <div class="pokemon-name">
+                            Mewtwo
+                        </div>
+
+                        <span class="pokemon-type">
+                            Psychic
+                        </span>
+
+                    </article>
+
+
+                    <article
+                        class="pokemon-card"
+                        data-name="Metagross">
+
+                        <span class="pokemon-number">
+                            #376
+                        </span>
+
+                        <div class="pokemon-name">
+                            Metagross
+                        </div>
+
+                        <span class="pokemon-type">
+                            Psychic / Steel
+                        </span>
+
+                    </article>
+
+
+                    <article
+                        class="pokemon-card"
+                        data-name="Gardevoir">
+
+                        <span class="pokemon-number">
+                            #282
+                        </span>
+
+                        <div class="pokemon-name">
+                            Gardevoir
+                        </div>
+
+                        <span class="pokemon-type">
+                            Psychic / Fairy
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 4. EVOLUTION
+            ====================== -->
+
+            <section class="section" id="evolution">
+
+                <h2>
+                    4. Evolution Families
+                </h2>
+
+                <p>
+                    Evolution families are one of the most useful ways to
+                    organize a Pokémon database. Trainers can see where
+                    their Candy and Stardust investments eventually lead.
+                </p>
+
+                <h3>
+                    Example: Abra Evolution Family
+                </h3>
+
+                <div class="evolution-line">
+
+                    <div class="evolution-step">
+                        <strong>Abra</strong>
+                        <p>Base Form</p>
+                    </div>
+
+                    <div class="evolution-arrow">
+                        →
+                    </div>
+
+                    <div class="evolution-step">
+                        <strong>Kadabra</strong>
+                        <p>Second Stage</p>
+                    </div>
+
+                    <div class="evolution-arrow">
+                        →
+                    </div>
+
+                    <div class="evolution-step">
+                        <strong>Alakazam</strong>
+                        <p>Final Stage</p>
+                    </div>
+
+                </div>
+
+                <div class="editor-note">
+                    <strong>Database note:</strong>
+                    Your production database should include evolution
+                    requirements, Candy cost, evolution method, buddy
+                    requirements where applicable and special evolution
+                    conditions.
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 5. TYPE
+            ====================== -->
+
+            <section class="section" id="type">
+
+                <h2>
+                    5. Psychic Pokémon Type Information
+                </h2>
+
+                <p>
+                    Psychic is one of the core Pokémon types. A Pokémon's
+                    actual battle performance depends not only on its
+                    Psychic typing but also on secondary typing, moves,
+                    stats and the opponent's typing.
+                </p>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Pure Psychic
+                        </h3>
+
+                        <p>
+                            Pokémon with Psychic as their only type often
+                            have a straightforward set of strengths and
+                            weaknesses.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Dual Type
+                        </h3>
+
+                        <p>
+                            A second type can dramatically change a
+                            Pokémon's defensive profile and offensive
+                            matchups.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 6. MAX CP
+            ====================== -->
+
+            <section class="section" id="cp">
+
+                <h2>
+                    6. Max CP
+                </h2>
+
+                <p>
+                    Max CP is useful when deciding which Pokémon deserve
+                    long-term Stardust and Candy investment. CP alone,
+                    however, should not determine whether a Pokémon is
+                    useful in raids or PvP.
+                </p>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Pokémon</th>
+                                <th>Max CP</th>
+                                <th>Primary Type</th>
+                                <th>Battle Role</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Mewtwo</td>
+                                <td>Verify in database</td>
+                                <td>Psychic</td>
+                                <td>Raid / PvP</td>
+                            </tr>
+
+                            <tr>
+                                <td>Alakazam</td>
+                                <td>Verify in database</td>
+                                <td>Psychic</td>
+                                <td>Raid Attacker</td>
+                            </tr>
+
+                            <tr>
+                                <td>Gardevoir</td>
+                                <td>Verify in database</td>
+                                <td>Psychic / Fairy</td>
+                                <td>Raid / PvP</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 7. STATS
+            ====================== -->
+
+            <section class="section" id="stats">
+
+                <h2>
+                    7. Attack, Defense & HP
+                </h2>
+
+                <p>
+                    Pokémon GO uses its own battle-stat system. Attack,
+                    Defense and HP provide a better picture of a Pokémon's
+                    role than CP alone.
+                </p>
+
+                <div class="stat-grid">
+
+                    <div class="stat-card">
+                        <strong>Attack</strong>
+                        <span class="stat-number">—</span>
+                        <p>
+                            Verify per Pokémon.
+                        </p>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>Defense</strong>
+                        <span class="stat-number">—</span>
+                        <p>
+                            Verify per Pokémon.
+                        </p>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>HP</strong>
+                        <span class="stat-number">—</span>
+                        <p>
+                            Verify per Pokémon.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 8. WEAKNESSES
+            ====================== -->
+
+            <section class="section" id="weaknesses">
+
+                <h2>
+                    8. Psychic-Type Weaknesses
+                </h2>
+
+                <p>
+                    Psychic-type Pokémon can take increased damage from
+                    certain attack types. The exact defensive matchup
+                    changes when a Pokémon has a secondary type.
+                </p>
+
+                <div class="effectiveness-grid">
+
+                    <div class="effect-box weakness">
+
+                        <h3>
+                            Common Psychic Weaknesses
+                        </h3>
+
+                        <div class="type-tags">
+
+                            <span class="type-tag">
+                                Bug
+                            </span>
+
+                            <span class="type-tag">
+                                Ghost
+                            </span>
+
+                            <span class="type-tag">
+                                Dark
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="effect-box resistance">
+
+                        <h3>
+                            Defensive Consideration
+                        </h3>
+
+                        <p>
+                            Always check the complete typing of the
+                            individual Pokémon before selecting counters.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 9. RESISTANCES
+            ====================== -->
+
+            <section class="section" id="resistances">
+
+                <h2>
+                    9. Psychic-Type Resistances
+                </h2>
+
+                <p>
+                    Psychic-type Pokémon can resist certain types of
+                    incoming damage. Dual-type Pokémon may gain additional
+                    resistances or lose some defensive advantages depending
+                    on their second type.
+                </p>
+
+                <div class="type-tags">
+
+                    <span class="type-tag">
+                        Fighting
+                    </span>
+
+                    <span class="type-tag">
+                        Psychic
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 10. BEST MOVES
+            ====================== -->
+
+            <section class="section" id="moves">
+
+                <h2>
+                    10. Best Psychic-Type Moves
+                </h2>
+
+                <p>
+                    A Pokémon's best moves depend on whether you are
+                    building it for raids, gyms or PvP. A move that looks
+                    strong on paper may not always be the best option for
+                    every battle format.
+                </p>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Move</th>
+                                <th>Type</th>
+                                <th>Format</th>
+                                <th>Recommended Use</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Psychic-type Fast Move</td>
+                                <td>Psychic</td>
+                                <td>PvE / PvP</td>
+                                <td>Depends on Pokémon</td>
+                            </tr>
+
+                            <tr>
+                                <td>Psychic-type Charged Move</td>
+                                <td>Psychic</td>
+                                <td>PvE / PvP</td>
+                                <td>Depends on moveset</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="editor-note">
+                    For production pages, explain <strong>why</strong>
+                    each recommended moveset works instead of simply
+                    displaying a move name. Include energy generation,
+                    damage output, STAB and matchup considerations where
+                    appropriate.
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 11. RAID TIER
+            ====================== -->
+
+            <section class="section" id="raid">
+
+                <h2>
+                    11. Psychic Pokémon Raid Tier
+                </h2>
+
+                <p>
+                    Raid value should be evaluated using actual battle
+                    performance rather than popularity or CP alone.
+                    Consider moveset, damage output, survivability,
+                    availability and competing attackers.
+                </p>
+
+                <span class="tier">
+                    Tier depends on individual Pokémon
+                </span>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>What to Evaluate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Damage</td>
+                                <td>Practical raid DPS</td>
+                            </tr>
+
+                            <tr>
+                                <td>Survivability</td>
+                                <td>Time spent dealing damage</td>
+                            </tr>
+
+                            <tr>
+                                <td>Moveset</td>
+                                <td>Fast + charged move combination</td>
+                            </tr>
+
+                            <tr>
+                                <td>Availability</td>
+                                <td>How easily trainers can obtain it</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 12. MEGA / PRIMAL
+            ====================== -->
+
+            <section class="section" id="mega">
+
+                <h2>
+                    12. Mega & Primal Forms
+                </h2>
+
+                <p>
+                    Some Pokémon associated with this type may have special
+                    forms such as Mega Evolution. These forms can change
+                    their battle statistics, typing, moves or usefulness
+                    in raids.
+                </p>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Mega Evolution
+                        </h3>
+
+                        <p>
+                            Explain the Mega form, Mega Energy requirements,
+                            raid role, typing changes and team bonus.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Primal Form
+                        </h3>
+
+                        <p>
+                            If applicable, document Primal mechanics,
+                            energy requirements and battle advantages.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 13. SHADOW
+            ====================== -->
+
+            <section class="section" id="shadow">
+
+                <h2>
+                    13. Shadow Psychic Pokémon
+                </h2>
+
+                <p>
+                    Shadow Pokémon can have a significantly different
+                    offensive profile from their regular counterparts.
+                    A useful guide should compare the Shadow and regular
+                    versions instead of simply listing that a Shadow form
+                    exists.
+                </p>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Potential Advantage</th>
+                                <th>Consideration</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Regular</td>
+                                <td>Standard investment</td>
+                                <td>Normal resources</td>
+                            </tr>
+
+                            <tr>
+                                <td>Shadow</td>
+                                <td>Higher offensive pressure</td>
+                                <td>Resource and defensive trade-offs</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 14. DYNAMAX
+            ====================== -->
+
+            <section class="section" id="dynamax">
+
+                <h2>
+                    14. Dynamax & Gigantamax
+                </h2>
+
+                <p>
+                    Where Dynamax or Gigantamax versions are available,
+                    maintain them as separate database attributes.
+                    Do not assume that a standard Pokémon's raid,
+                    Dynamax and Gigantamax performance are interchangeable.
+                </p>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Dynamax
+                        </h3>
+
+                        <p>
+                            Document availability, Max Battle role and
+                            relevant mechanics.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Gigantamax
+                        </h3>
+
+                        <p>
+                            Document Gigantamax availability and any
+                            special battle characteristics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 15. SHINY
+            ====================== -->
+
+            <section class="section" id="shiny">
+
+                <h2>
+                    15. Shiny Psychic Pokémon
+                </h2>
+
+                <p>
+                    Shiny availability should be documented individually.
+                    Avoid assuming that a Pokémon's shiny form is available
+                    simply because the regular species exists in Pokémon GO.
+                </p>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Pokémon</th>
+                                <th>Shiny Available?</th>
+                                <th>How to Obtain</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Example Pokémon</td>
+                                <td>Verify current status</td>
+                                <td>Events / raids / wild / research</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 16. AVAILABILITY
+            ====================== -->
+
+            <section class="section" id="availability">
+
+                <h2>
+                    16. Psychic Pokémon Availability
+                </h2>
+
+                <p>
+                    Availability changes over time. A useful database should
+                    tell players where a Pokémon can currently be obtained
+                    and distinguish current availability from historical
+                    availability.
+                </p>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Wild Encounters
+                        </h3>
+
+                        <p>
+                            Record whether the Pokémon currently appears
+                            through wild encounters.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Raids
+                        </h3>
+
+                        <p>
+                            Record current and notable historical raid
+                            availability.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Research
+                        </h3>
+
+                        <p>
+                            Document Field Research, Special Research and
+                            event research when applicable.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Events
+                        </h3>
+
+                        <p>
+                            Connect the Pokémon to relevant event pages.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 17. INDIVIDUAL GUIDES
+            ====================== -->
+
+            <section class="section" id="individual-guides">
+
+                <h2>
+                    17. Individual Psychic Pokémon Guides
+                </h2>
+
+                <p>
+                    The type hub should be the entry point, not the final
+                    destination. Every important Pokémon can have a
+                    dedicated guide containing information specific to
+                    that species.
+                </p>
+
+                <div class="guide-grid">
+
+                    <article class="guide-card">
+
+                        <h3>
+                            Mewtwo Guide
+                        </h3>
+
+                        <p>
+                            Stats, moves, raid performance, Shadow form,
+                            shiny information and investment advice.
+                        </p>
+
+                        <a href="/pokemon/mewtwo.html">
+                            View Mewtwo Guide →
+                        </a>
+
+                    </article>
+
+
+                    <article class="guide-card">
+
+                        <h3>
+                            Alakazam Guide
+                        </h3>
+
+                        <p>
+                            Evolution family, best moves, raid role,
+                            Mega information and battle analysis.
+                        </p>
+
+                        <a href="/pokemon/alakazam.html">
+                            View Alakazam Guide →
+                        </a>
+
+                    </article>
+
+
+                    <article class="guide-card">
+
+                        <h3>
+                            Gardevoir Guide
+                        </h3>
+
+                        <p>
+                            Psychic/Fairy typing, evolution, moves,
+                            raid value and shiny availability.
+                        </p>
+
+                        <a href="/pokemon/gardevoir.html">
+                            View Gardevoir Guide →
+                        </a>
+
+                    </article>
+
+
+                    <article class="guide-card">
+
+                        <h3>
+                            Metagross Guide
+                        </h3>
+
+                        <p>
+                            Psychic/Steel typing, evolution family,
+                            Mega form and battle applications.
+                        </p>
+
+                        <a href="/pokemon/metagross.html">
+                            View Metagross Guide →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 18. GEN 1–9 HUB
+            ====================== -->
+
+            <section class="section" id="gen1-9">
+
+                <h2>
+                    18. Psychic Pokémon Gen 1–9 Index
+                </h2>
+
+                <p>
+                    Build this section into a proper generation index.
+                    Each generation should have a dedicated explanation
+                    rather than simply being a collection of names.
+                </p>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Generation</th>
+                                <th>Region</th>
+                                <th>Guide</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr id="gen1">
+                                <td>Generation 1</td>
+                                <td>Kanto</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-1.html">
+                                        Psychic Gen 1 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen2">
+                                <td>Generation 2</td>
+                                <td>Johto</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-2.html">
+                                        Psychic Gen 2 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen3">
+                                <td>Generation 3</td>
+                                <td>Hoenn</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-3.html">
+                                        Psychic Gen 3 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen4">
+                                <td>Generation 4</td>
+                                <td>Sinnoh</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-4.html">
+                                        Psychic Gen 4 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen5">
+                                <td>Generation 5</td>
+                                <td>Unova</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-5.html">
+                                        Psychic Gen 5 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen6">
+                                <td>Generation 6</td>
+                                <td>Kalos</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-6.html">
+                                        Psychic Gen 6 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen7">
+                                <td>Generation 7</td>
+                                <td>Alola</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-7.html">
+                                        Psychic Gen 7 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen8">
+                                <td>Generation 8</td>
+                                <td>Galar / Hisui</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-8.html">
+                                        Psychic Gen 8 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr id="gen9">
+                                <td>Generation 9</td>
+                                <td>Paldea</td>
+                                <td>
+                                    <a href="/pokemon-types/psychic/gen-9.html">
+                                        Psychic Gen 9 →
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 19. INVESTMENT GUIDE
+            ====================== -->
+
+            <section class="section">
+
+                <h2>
+                    19. Which Psychic Pokémon Should You Power Up?
+                </h2>
+
+                <p>
+                    Do not recommend every Pokémon equally. A useful guide
+                    should help trainers decide where to spend Stardust,
+                    Candy and Elite resources.
+                </p>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Raid Investment
+                        </h3>
+
+                        <p>
+                            Prioritize Pokémon with strong practical
+                            performance against relevant raid bosses.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            PvP Investment
+                        </h3>
+
+                        <p>
+                            Evaluate Great League, Ultra League and
+                            Master League performance separately.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Mega Investment
+                        </h3>
+
+                        <p>
+                            Consider Mega Energy, team bonuses and
+                            candy-generation utility.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Collection Investment
+                        </h3>
+
+                        <p>
+                            Shiny, costume, regional and event forms can
+                            have collection value even when their battle
+                            performance is limited.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 20. FAQ
+            ====================== -->
+
+            <section class="section" id="faq">
+
+                <h2>
+                    20. Psychic Pokémon GO FAQ
+                </h2>
+
+                <div class="faq-item">
+
+                    <h3>
+                        What are Psychic-type Pokémon weak to?
+                    </h3>
+
+                    <p>
+                        Psychic-type Pokémon have weaknesses that should be
+                        considered when selecting raid counters. Always
+                        check the complete typing of the individual Pokémon.
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>
+                        Is every Psychic Pokémon good for raids?
+                    </h3>
+
+                    <p>
+                        No. Typing alone does not determine raid performance.
+                        Stats, moves, availability and battle mechanics all
+                        matter.
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>
+                        Should I power up a Shadow Psychic Pokémon?
+                    </h3>
+
+                    <p>
+                        It depends on the Pokémon, its moveset and your
+                        available resources. Shadow and regular versions
+                        should be compared individually.
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>
+                        Are shiny Psychic Pokémon always available?
+                    </h3>
+
+                    <p>
+                        No. Shiny availability can depend on releases,
+                        events and other game-specific circumstances.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 21. RELATED GUIDES
+            ====================== -->
+
+            <section class="section">
+
+                <h2>
+                    21. Related Pokémon GO Guides
+                </h2>
+
+                <div class="guide-grid">
+
+                    <article class="guide-card">
+
+                        <h3>
+                            Psychic Raid Counters
+                        </h3>
+
+                        <p>
+                            Find effective counters for Psychic-type raid
+                            bosses.
+                        </p>
+
+                        <a href="/raids/psychic-raid-counters.html">
+                            Read Guide →
+                        </a>
+
+                    </article>
+
+                    <article class="guide-card">
+
+                        <h3>
+                            Type Effectiveness Chart
+                        </h3>
+
+                        <p>
+                            Learn how Pokémon GO types interact in battle.
+                        </p>
+
+                        <a href="/tools/type-effectiveness.html">
+                            Open Type Chart →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 22. EDITORIAL
+            ====================== -->
+
+            <section class="section">
+
+                <h2>
+                    About This Guide
+                </h2>
+
+                <p>
+                    This Psychic-type hub is intended as a living reference
+                    page. Game data, availability, moves and event details
+                    can change, so individual sections should be reviewed
+                    whenever Pokémon GO receives relevant updates.
+                </p>
+
+                <div class="editor-note">
+
+                    <strong>Editorial information</strong><br>
+
+                    Written for Pokémon GO players by the PokémonGaming
+                    editorial team.<br>
+
+                    Last reviewed:
+                    <time datetime="2026-08-25">
+                        August 25, 2026
+                    </time>
+
+                </div>
+
+            </section>
+
+        </article>
+
+
+        <!-- =====================
+             SIDEBAR
+        ====================== -->
+
+        <aside class="sidebar">
+
+            <div class="side-card">
+
+                <h3>
+                    Psychic Hub
+                </h3>
+
+                <a href="#psychic-overview">
+                    Overview
+                </a>
+
+                <a href="#generations">
+                    Gen 1–9
+                </a>
+
+                <a href="#evolution">
+                    Evolution
+                </a>
+
+                <a href="#stats">
+                    Stats
+                </a>
+
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+
+                <a href="#resistances">
+                    Resistances
+                </a>
+
+                <a href="#moves">
+                    Best Moves
+                </a>
+
+                <a href="#raid">
+                    Raid Tier
+                </a>
+
+                <a href="#mega">
+                    Mega / Primal
+                </a>
+
+                <a href="#shadow">
+                    Shadow
+                </a>
+
+                <a href="#dynamax">
+                    Dynamax
+                </a>
+
+                <a href="#shiny">
+                    Shiny
+                </a>
+
+                <a href="#availability">
+                    Availability
+                </a>
+
+            </div>
+
+
+            <div class="ad-slot">
+                Advertisement
+            </div>
+
+
+            <div class="side-card">
+
+                <h3>
+                    Popular Guides
+                </h3>
+
+                <a href="/raids/">
+                    Pokémon GO Raid Guides
+                </a>
+
+                <a href="/pokemon/">
+                    Pokémon Database
+                </a>
+
+                <a href="/pvp/">
+                    PvP Guides
+                </a>
+
+                <a href="/tools/">
+                    Pokémon GO Tools
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>
+                    PokémonGaming
+                </h3>
+
+                <p>
+                    Independent Pokémon GO guides, databases, raid
+                    information, tools and player resources.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Pokémon
+                </h3>
+
+                <a href="/pokemon/">
+                    Pokémon Database
+                </a>
+
+                <a href="/pokemon-types/">
+                    Type Database
+                </a>
+
+                <a href="/pokemon-generations/">
+                    Generations
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Guides
+                </h3>
+
+                <a href="/raids/">
+                    Raid Guides
+                </a>
+
+                <a href="/pvp/">
+                    PvP Guides
+                </a>
+
+                <a href="/events/">
+                    Events
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Website
+                </h3>
+
+                <a href="/about.html">
+                    About
+                </a>
+
+                <a href="/contact.html">
+                    Contact
+                </a>
+
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="/terms.html">
+                    Terms
+                </a>
+
+                <a href="/disclaimer.html">
+                    Disclaimer
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 PokémonGaming. All rights reserved.
+
+            Pokémon and Pokémon GO are trademarks of their respective
+            owners. This website is an independent fan resource and is
+            not affiliated with or endorsed by The Pokémon Company,
+            Nintendo or Niantic.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+    /* =========================
+       POKEMON SEARCH
+    ========================= */
+
+    const searchInput =
+        document.getElementById("pokemonSearch");
+
+    const pokemonCards =
+        document.querySelectorAll(".pokemon-card");
+
+
+    searchInput.addEventListener("input", function () {
+
+        const query =
+            this.value.toLowerCase().trim();
+
+        pokemonCards.forEach(card => {
+
+            const name =
+                card.dataset.name.toLowerCase();
+
+            card.style.display =
+                name.includes(query)
+                    ? ""
+                    : "none";
+
+        });
+
+    });
+
+</script>
+
+
+<!--
+===========================================================
+STRUCTURED DATA
+===========================================================
+-->
+
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+
+    "headline":
+        "Psychic-Type Pokémon GO Complete Guide",
+
+    "description":
+        "Complete guide to Psychic-type Pokémon in Pokémon GO covering generations, evolution, stats, weaknesses, resistances, moves, raids, Mega and Shadow forms, shiny availability and individual Pokémon guides.",
+
+    "author": {
+        "@type": "Organization",
+        "name": "PokémonGaming"
+    },
+
+    "publisher": {
+        "@type": "Organization",
+        "name": "PokémonGaming"
+    },
+
+    "datePublished":
+        "2026-08-25",
+
+    "dateModified":
+        "2026-08-25",
+
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id":
+            "https://pokemongaming.in/pokemon-types/psychic.html"
+    }
+}
+
+</script>
+
+
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+
+    "mainEntity": [
+
+        {
+            "@type": "Question",
+            "name":
+                "What are Psychic-type Pokémon weak to?",
+
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text":
+                    "Psychic-type Pokémon have specific type weaknesses, but the exact matchup should be checked against the individual Pokémon's complete typing."
+            }
+        },
+
+        {
+            "@type": "Question",
+            "name":
+                "Is every Psychic Pokémon good for raids?",
+
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text":
+                    "No. Raid performance depends on stats, moves, typing, battle mechanics and practical availability."
+            }
+        },
+
+        {
+            "@type": "Question",
+            "name":
+                "Should I power up a Shadow Psychic Pokémon?",
+
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text":
+                    "The decision depends on the individual Pokémon, moveset, battle role and the resources available to the trainer."
+            }
+        }
+
+    ]
+}
+
+</script>
+
+</body>
+</html>

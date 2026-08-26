@@ -1,0 +1,1282 @@
+<html>
+<head>
+<style>
+/* =========================================================
+   GENERATION DATABASE
+========================================================= */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-kicker {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--accent);
+
+    font-size: .72rem;
+
+    font-weight: 900;
+
+    letter-spacing: .1em;
+}
+
+.section-heading p {
+    max-width: 900px;
+}
+
+
+/* GENERATION STAT BAR */
+
+.generation-overview {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin: 25px 0 28px;
+}
+
+.generation-stat {
+
+    padding: 18px;
+
+    text-align: center;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.generation-stat strong {
+
+    display: block;
+
+    color: var(--accent);
+
+    font-size: 1.4rem;
+
+    line-height: 1.2;
+}
+
+.generation-stat span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 750;
+}
+
+
+/* GENERATION GRID */
+
+.generation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+/* GENERATION CARD */
+
+.generation-card {
+
+    position: relative;
+
+    padding: 23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface-2),
+            var(--bg-soft)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.generation-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #515d7d;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.22);
+}
+
+
+/* CARD HEADER */
+
+.generation-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.generation-number {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        950;
+
+    letter-spacing:
+        .08em;
+}
+
+.generation-region {
+
+    padding:
+        5px 8px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .62rem;
+
+    font-weight:
+        850;
+}
+
+
+/* ICON */
+
+.generation-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin:
+        20px 0 13px;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    font-size:
+        1.5rem;
+}
+
+
+.generation-card h3 {
+
+    margin:
+        0 0 9px;
+
+    font-size:
+        1.15rem;
+
+    line-height:
+        1.3;
+}
+
+.generation-card p {
+
+    margin:
+        0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .82rem;
+
+    line-height:
+        1.65;
+}
+
+
+/* TAGS */
+
+.generation-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        6px;
+
+    margin-top:
+        15px;
+}
+
+.generation-tags span {
+
+    padding:
+        5px 8px;
+
+    border-radius:
+        7px;
+
+    background:
+        var(--surface-3);
+
+    color:
+        #aeb5c2;
+
+    font-size:
+        .63rem;
+
+    font-weight:
+        750;
+}
+
+
+/* LINK */
+
+.generation-link {
+
+    display:
+        inline-block;
+
+    margin-top:
+        18px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        900;
+}
+
+
+/* ANALYSIS */
+
+.generation-analysis {
+
+    margin-top:
+        28px;
+
+    padding:
+        24px;
+
+    background:
+        rgba(141,156,255,.045);
+
+    border:
+        1px solid #30384d;
+
+    border-radius:
+        var(--radius);
+}
+
+.generation-analysis h3 {
+
+    margin:
+        0 0 10px;
+}
+
+.generation-analysis p {
+
+    margin-bottom:
+        12px;
+}
+
+.generation-analysis p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* FEATURES */
+
+.generation-details {
+
+    margin-top:
+        28px;
+}
+
+.generation-details h3 {
+
+    margin-bottom:
+        18px;
+}
+
+.generation-feature-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        12px;
+}
+
+.generation-feature {
+
+    padding:
+        17px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.generation-feature strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    font-size:
+        .84rem;
+}
+
+.generation-feature p {
+
+    margin:
+        0;
+
+    font-size:
+        .74rem;
+
+    line-height:
+        1.55;
+}
+
+
+/* TYPE LINKS */
+
+.generation-navigation {
+
+    margin-top:
+        28px;
+
+    padding:
+        24px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.generation-navigation h3 {
+    margin-top: 0;
+}
+
+.quick-generation-links {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        17px;
+}
+
+.quick-generation-links a {
+
+    padding:
+        8px 12px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        8px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        800;
+
+    transition:
+        .2s ease;
+}
+
+.quick-generation-links a:hover {
+
+    color:
+        white;
+
+    border-color:
+        var(--accent);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px) {
+
+    .generation-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .generation-feature-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .generation-overview {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .generation-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .generation-feature-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+</style>
+</head>
+<body>
+<!-- =====================================================
+     GEN 1–9 POKÉMON DATABASE
+===================================================== -->
+
+<section class="section" id="generations">
+
+    <div class="section-heading">
+        <span class="section-kicker">POKÉMON DATABASE</span>
+
+        <h2>
+            Pokémon Types by Generation — Gen 1 to Gen 9
+        </h2>
+
+        <p>
+            Explore Pokémon GO's type database across all nine
+            Pokémon generations. Each generation introduced new
+            Pokémon, type combinations, evolution families,
+            regional forms and battle roles. Use the generation
+            guides below to discover which Pokémon belong to each
+            type and how their typing affects raids, PvP and
+            collection.
+        </p>
+    </div>
+
+
+    <!-- GENERATION OVERVIEW -->
+
+    <div class="generation-overview">
+
+        <div class="generation-stat">
+            <strong>9</strong>
+            <span>Generations</span>
+        </div>
+
+        <div class="generation-stat">
+            <strong>18</strong>
+            <span>Pokémon Types</span>
+        </div>
+
+        <div class="generation-stat">
+            <strong>Gen 1–9</strong>
+            <span>Database Coverage</span>
+        </div>
+
+        <div class="generation-stat">
+            <strong>1–2</strong>
+            <span>Types per Pokémon</span>
+        </div>
+
+    </div>
+
+
+    <!-- GENERATION CARDS -->
+
+    <div class="generation-grid">
+
+
+        <!-- GEN 1 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 01
+                </span>
+
+                <span class="generation-region">
+                    KANTO
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                🌿
+            </div>
+
+            <h3>
+                Generation 1 — Kanto
+            </h3>
+
+            <p>
+                The original Pokémon generation introduced the
+                foundation of the Pokémon type system and many
+                Pokémon that remain important in Pokémon GO.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Normal</span>
+                <span>Fire</span>
+                <span>Water</span>
+                <span>Grass</span>
+                <span>Electric</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-1.html"
+               class="generation-link">
+
+                Explore Gen 1 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 2 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 02
+                </span>
+
+                <span class="generation-region">
+                    JOHTO
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                🌙
+            </div>
+
+            <h3>
+                Generation 2 — Johto
+            </h3>
+
+            <p>
+                Johto expanded the Pokémon world with new
+                evolution families, Legendary Pokémon and the
+                introduction of Dark and Steel types.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Dark</span>
+                <span>Steel</span>
+                <span>Psychic</span>
+                <span>Ghost</span>
+                <span>Dragon</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-2.html"
+               class="generation-link">
+
+                Explore Gen 2 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 3 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 03
+                </span>
+
+                <span class="generation-region">
+                    HOENN
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                🌋
+            </div>
+
+            <h3>
+                Generation 3 — Hoenn
+            </h3>
+
+            <p>
+                Hoenn introduced a large collection of new
+                dual-type Pokémon along with powerful Legendary
+                and Mythical Pokémon.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Ground</span>
+                <span>Rock</span>
+                <span>Dragon</span>
+                <span>Water</span>
+                <span>Fire</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-3.html"
+               class="generation-link">
+
+                Explore Gen 3 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 4 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 04
+                </span>
+
+                <span class="generation-region">
+                    SINNOH
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                ⛰️
+            </div>
+
+            <h3>
+                Generation 4 — Sinnoh
+            </h3>
+
+            <p>
+                Sinnoh introduced several powerful evolution
+                families and new evolutions for Pokémon from
+                earlier generations.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Steel</span>
+                <span>Ground</span>
+                <span>Ghost</span>
+                <span>Ice</span>
+                <span>Electric</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-4.html"
+               class="generation-link">
+
+                Explore Gen 4 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 5 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 05
+                </span>
+
+                <span class="generation-region">
+                    UNOVA
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                🏙️
+            </div>
+
+            <h3>
+                Generation 5 — Unova
+            </h3>
+
+            <p>
+                Unova introduced a large new Pokédex with many
+                Pokémon that later became useful for raids,
+                PvP and type-specific teams.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Dark</span>
+                <span>Fighting</span>
+                <span>Dragon</span>
+                <span>Ground</span>
+                <span>Psychic</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-5.html"
+               class="generation-link">
+
+                Explore Gen 5 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 6 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 06
+                </span>
+
+                <span class="generation-region">
+                    KALOS
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                ✨
+            </div>
+
+            <h3>
+                Generation 6 — Kalos
+            </h3>
+
+            <p>
+                Kalos introduced the Fairy type and added new
+                Pokémon with important Dragon, Steel and Fairy
+                matchups.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Fairy</span>
+                <span>Dragon</span>
+                <span>Dark</span>
+                <span>Steel</span>
+                <span>Psychic</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-6.html"
+               class="generation-link">
+
+                Explore Gen 6 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 7 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 07
+                </span>
+
+                <span class="generation-region">
+                    ALOLA
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                🌺
+            </div>
+
+            <h3>
+                Generation 7 — Alola
+            </h3>
+
+            <p>
+                Alola brought regional forms, new dual typings,
+                Ultra Beasts and Pokémon with distinctive battle
+                roles.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Dark</span>
+                <span>Fairy</span>
+                <span>Ghost</span>
+                <span>Electric</span>
+                <span>Psychic</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-7.html"
+               class="generation-link">
+
+                Explore Gen 7 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 8 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 08
+                </span>
+
+                <span class="generation-region">
+                    GALAR
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                ⚔️
+            </div>
+
+            <h3>
+                Generation 8 — Galar
+            </h3>
+
+            <p>
+                Galar introduced new Pokémon, regional variants,
+                new evolution methods and Pokémon associated with
+                the Galar region.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Steel</span>
+                <span>Fairy</span>
+                <span>Dark</span>
+                <span>Ghost</span>
+                <span>Dragon</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-8.html"
+               class="generation-link">
+
+                Explore Gen 8 Pokémon →
+
+            </a>
+
+        </article>
+
+
+        <!-- GEN 9 -->
+
+        <article class="generation-card">
+
+            <div class="generation-top">
+
+                <span class="generation-number">
+                    GEN 09
+                </span>
+
+                <span class="generation-region">
+                    PALDEA
+                </span>
+
+            </div>
+
+            <div class="generation-icon">
+                🏜️
+            </div>
+
+            <h3>
+                Generation 9 — Paldea
+            </h3>
+
+            <p>
+                Paldea added another generation of Pokémon with
+                new evolution families, regional forms and type
+                combinations.
+            </p>
+
+            <div class="generation-tags">
+
+                <span>Fire</span>
+                <span>Water</span>
+                <span>Grass</span>
+                <span>Dark</span>
+                <span>Fairy</span>
+
+            </div>
+
+            <a href="/pokemon-generations/gen-9.html"
+               class="generation-link">
+
+                Explore Gen 9 Pokémon →
+
+            </a>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- GENERATION TYPE ANALYSIS -->
+
+    <div class="generation-analysis">
+
+        <h3>
+            How Generations Affect the Type Database
+        </h3>
+
+        <p>
+            A Pokémon's generation does not determine whether
+            it is strong or weak by itself. Instead, each
+            generation adds new Pokémon, moves and evolution
+            families that expand the options available for
+            particular types.
+        </p>
+
+        <p>
+            This is particularly useful when building a type
+            database because a single type may contain Pokémon
+            from many different generations. For example, a
+            Ground-type collection can include early-generation
+            Pokémon alongside later additions with completely
+            different stats, moves and battle roles.
+        </p>
+
+    </div>
+
+
+    <!-- WHAT EACH GENERATION PAGE CONTAINS -->
+
+    <div class="generation-details">
+
+        <h3>
+            What You'll Find on Each Generation Page
+        </h3>
+
+        <div class="generation-feature-grid">
+
+            <div class="generation-feature">
+
+                <strong>
+                    Pokémon List
+                </strong>
+
+                <p>
+                    Browse Pokémon belonging to the generation.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    Type Breakdown
+                </strong>
+
+                <p>
+                    See the type distribution across the
+                    generation.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    Evolution Families
+                </strong>
+
+                <p>
+                    Follow Pokémon from base forms through
+                    their available evolutions.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    Battle Stats
+                </strong>
+
+                <p>
+                    Compare Attack, Defense, HP and CP information.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    Raid Roles
+                </strong>
+
+                <p>
+                    Identify Pokémon that have meaningful PvE
+                    applications.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    PvP Roles
+                </strong>
+
+                <p>
+                    Explore Pokémon that can have value in
+                    different PvP formats.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    Shiny Availability
+                </strong>
+
+                <p>
+                    Track shiny forms where they are available
+                    in Pokémon GO.
+                </p>
+
+            </div>
+
+
+            <div class="generation-feature">
+
+                <strong>
+                    Special Forms
+                </strong>
+
+                <p>
+                    Connect relevant Shadow, Mega, Primal,
+                    Dynamax and Gigantamax information.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- TYPE × GENERATION NAVIGATION -->
+
+    <div class="generation-navigation">
+
+        <h3>
+            Explore Pokémon by Type and Generation
+        </h3>
+
+        <p>
+            Use the type hubs and generation pages together.
+            For example, a visitor interested in Ground Pokémon
+            can move from the Ground Type Hub to Ground Pokémon
+            from Gen 1, Gen 2, Gen 3 and later generations.
+        </p>
+
+        <div class="quick-generation-links">
+
+            <a href="/pokemon-types/normal.html">
+                Normal
+            </a>
+
+            <a href="/pokemon-types/fire.html">
+                Fire
+            </a>
+
+            <a href="/pokemon-types/water.html">
+                Water
+            </a>
+
+            <a href="/pokemon-types/electric.html">
+                Electric
+            </a>
+
+            <a href="/pokemon-types/grass.html">
+                Grass
+            </a>
+
+            <a href="/pokemon-types/ice.html">
+                Ice
+            </a>
+
+            <a href="/pokemon-types/fighting.html">
+                Fighting
+            </a>
+
+            <a href="/pokemon-types/poison.html">
+                Poison
+            </a>
+
+            <a href="/pokemon-types/ground.html">
+                Ground
+            </a>
+
+            <a href="/pokemon-types/flying.html">
+                Flying
+            </a>
+
+            <a href="/pokemon-types/psychic.html">
+                Psychic
+            </a>
+
+            <a href="/pokemon-types/bug.html">
+                Bug
+            </a>
+
+            <a href="/pokemon-types/rock.html">
+                Rock
+            </a>
+
+            <a href="/pokemon-types/ghost.html">
+                Ghost
+            </a>
+
+            <a href="/pokemon-types/dragon.html">
+                Dragon
+            </a>
+
+            <a href="/pokemon-types/dark.html">
+                Dark
+            </a>
+
+            <a href="/pokemon-types/steel.html">
+                Steel
+            </a>
+
+            <a href="/pokemon-types/fairy.html">
+                Fairy
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>

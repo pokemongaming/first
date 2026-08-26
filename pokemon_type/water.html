@@ -1,0 +1,4011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Water-Type Pokémon Hub — Gen 1–9 | Pokémon Gaming</title>
+
+<meta name="description"
+content="Complete Water-type Pokémon Hub covering Gen 1–9. Explore Water Pokémon, evolution lines, types, CP, stats, weaknesses, resistances, best moves, raid usefulness, Mega Evolution, Primal Reversion, Shadow, Dynamax, Gigantamax, Shiny forms and individual Pokémon guides.">
+
+<meta name="robots"
+content="index, follow, max-image-preview:large">
+
+<meta name="author"
+content="Pokémon Gaming">
+
+<link rel="canonical"
+href="https://pokemongaming.in/types/water.html">
+
+<style>
+
+/* =========================================================
+   WATER TYPE HUB
+   POKEMONGAMING.IN
+   ========================================================= */
+
+:root{
+    --bg:#071522;
+    --bg-soft:#0d2132;
+    --panel:#102a3d;
+    --panel-2:#15354b;
+    --border:rgba(99,190,255,.20);
+
+    --water:#2fa9ff;
+    --water-dark:#0878c9;
+    --water-light:#8bd7ff;
+
+    --text:#f3f9ff;
+    --muted:#a9c1d2;
+
+    --success:#53e39a;
+    --warning:#ffd166;
+    --danger:#ff6b6b;
+
+    --shadow:
+        0 18px 45px rgba(0,0,0,.35);
+
+    --radius:20px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 15% 0%,
+            rgba(47,169,255,.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #06131f,
+            #071522 45%,
+            #081824
+        );
+
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    margin:0 0 10px;
+    font-size:clamp(28px,4vw,42px);
+    line-height:1.2;
+}
+
+.section-intro{
+    color:var(--muted);
+    max-width:850px;
+    margin:0 0 35px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+
+    padding:7px 12px;
+
+    border-radius:999px;
+
+    background:
+        rgba(47,169,255,.12);
+
+    border:
+        1px solid rgba(47,169,255,.30);
+
+    color:var(--water-light);
+
+    font-size:13px;
+    font-weight:700;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:
+        rgba(5,17,27,.92);
+
+    backdrop-filter:blur(16px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+.header-inner{
+    min-height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.logo{
+    font-weight:900;
+    font-size:20px;
+}
+
+.logo span{
+    color:var(--water-light);
+}
+
+.main-nav{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.main-nav a{
+    padding:9px 12px;
+    border-radius:10px;
+
+    color:var(--muted);
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.main-nav a:hover{
+    background:rgba(47,169,255,.12);
+    color:white;
+}
+
+.menu-btn{
+    display:none;
+
+    border:0;
+    background:transparent;
+
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+
+    padding:95px 0 85px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(47,169,255,.30),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #061522,
+            #0a2940 55%,
+            #07365a
+        );
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    inset:auto -10% -180px;
+
+    height:350px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(47,169,255,.18),
+            transparent 65%
+        );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1;
+    margin:18px 0;
+
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:var(--water-light);
+}
+
+.hero-description{
+    font-size:18px;
+    color:#c7deec;
+    max-width:760px;
+}
+
+.hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:13px 20px;
+
+    border-radius:12px;
+
+    font-weight:800;
+
+    transition:.2s;
+}
+
+.btn-primary{
+    background:
+        linear-gradient(
+            135deg,
+            var(--water),
+            var(--water-dark)
+        );
+
+    box-shadow:
+        0 10px 30px rgba(47,169,255,.22);
+}
+
+.btn-secondary{
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    background:
+        rgba(255,255,255,.05);
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================================================
+   QUICK STATS
+   ========================================================= */
+
+.quick-stats{
+    margin-top:-35px;
+
+    position:relative;
+    z-index:5;
+}
+
+.stats-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+}
+
+.stat-card{
+    padding:22px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(16,42,61,.96),
+            rgba(11,31,46,.96)
+        );
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:var(--shadow);
+}
+
+.stat-number{
+    font-size:30px;
+    font-weight:900;
+
+    color:var(--water-light);
+}
+
+.stat-label{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* =========================================================
+   CONTENT CARDS
+   ========================================================= */
+
+.card{
+    background:
+        linear-gradient(
+            145deg,
+            rgba(16,42,61,.95),
+            rgba(10,29,43,.95)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:26px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.18);
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+/* =========================================================
+   TYPE CHART
+   ========================================================= */
+
+.type-chart{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:16px;
+}
+
+.type-box{
+    padding:20px;
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+}
+
+.type-box h3{
+    margin-top:0;
+}
+
+.weak{
+    border-color:
+        rgba(255,107,107,.35);
+}
+
+.resist{
+    border-color:
+        rgba(83,227,154,.35);
+}
+
+.type-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.type-pill{
+    display:inline-flex;
+
+    padding:7px 11px;
+
+    border-radius:999px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    font-size:13px;
+    font-weight:800;
+}
+
+/* =========================================================
+   FILTER
+   ========================================================= */
+
+.database-toolbar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-bottom:25px;
+}
+
+.database-toolbar input,
+.database-toolbar select{
+    flex:1;
+
+    min-width:180px;
+
+    padding:13px 15px;
+
+    border-radius:12px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    background:#091b2a;
+
+    color:white;
+
+    outline:none;
+}
+
+.database-toolbar input:focus,
+.database-toolbar select:focus{
+    border-color:var(--water);
+}
+
+/* =========================================================
+   POKEMON TABLE
+   ========================================================= */
+
+.table-wrap{
+    overflow-x:auto;
+
+    border-radius:16px;
+
+    border:
+        1px solid var(--border);
+}
+
+.pokemon-table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:1050px;
+}
+
+.pokemon-table th{
+    background:#0b2538;
+
+    color:var(--water-light);
+
+    text-align:left;
+
+    padding:15px;
+
+    font-size:13px;
+
+    position:sticky;
+    top:0;
+}
+
+.pokemon-table td{
+    padding:14px 15px;
+
+    border-top:
+        1px solid rgba(255,255,255,.06);
+
+    color:#d9e9f4;
+
+    font-size:14px;
+}
+
+.pokemon-table tr:hover td{
+    background:
+        rgba(47,169,255,.055);
+}
+
+.pokemon-name{
+    font-weight:900;
+    color:white;
+}
+
+.type-tag{
+    display:inline-block;
+
+    padding:4px 8px;
+
+    margin:2px;
+
+    border-radius:7px;
+
+    font-size:11px;
+    font-weight:800;
+
+    background:
+        rgba(47,169,255,.12);
+
+    color:var(--water-light);
+}
+
+.rating{
+    color:var(--warning);
+    letter-spacing:1px;
+}
+
+/* =========================================================
+   EVOLUTION
+   ========================================================= */
+
+.evolution-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.evolution-card{
+    padding:22px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0e2b40,
+            #0b2030
+        );
+
+    border:
+        1px solid var(--border);
+}
+
+.evolution-card h3{
+    margin-top:0;
+}
+
+.evo-line{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+    color:var(--water-light);
+
+    font-weight:800;
+}
+
+.arrow{
+    color:var(--muted);
+}
+
+/* =========================================================
+   RAID TIER
+   ========================================================= */
+
+.raid-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:16px;
+}
+
+.raid-card{
+    text-align:center;
+
+    padding:22px;
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+}
+
+.raid-stars{
+    color:var(--warning);
+
+    font-size:20px;
+}
+
+/* =========================================================
+   FEATURE CARDS
+   ========================================================= */
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.feature-card{
+    padding:22px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(19,51,73,.9),
+            rgba(9,27,40,.9)
+        );
+
+    border:
+        1px solid var(--border);
+}
+
+.feature-icon{
+    font-size:32px;
+}
+
+.feature-card h3{
+    margin:10px 0 6px;
+}
+
+.feature-card p{
+    color:var(--muted);
+    margin:0;
+}
+
+/* =========================================================
+   INDIVIDUAL GUIDES
+   ========================================================= */
+
+.guide-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.guide-card{
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#0c2233;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition:.2s;
+}
+
+.guide-card:hover{
+    transform:translateY(-4px);
+
+    border-color:
+        rgba(47,169,255,.4);
+}
+
+.guide-card h3{
+    margin-top:0;
+}
+
+.guide-link{
+    color:var(--water-light);
+    font-weight:800;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.faq{
+    display:grid;
+    gap:12px;
+}
+
+details{
+    background:#0c2233;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    padding:18px 20px;
+}
+
+summary{
+    cursor:pointer;
+
+    font-weight:800;
+}
+
+details p{
+    color:var(--muted);
+
+    margin:
+        15px 0 0;
+}
+
+/* =========================================================
+   DISCLAIMER / METHODOLOGY
+   ========================================================= */
+
+.info-note{
+    padding:20px;
+
+    border-radius:16px;
+
+    background:
+        rgba(47,169,255,.07);
+
+    border-left:
+        4px solid var(--water);
+}
+
+.info-note p{
+    margin:0;
+    color:#c5dce9;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    margin-top:50px;
+
+    padding:50px 0;
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+
+    background:#05111b;
+}
+
+.footer-grid{
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:30px;
+}
+
+.footer-title{
+    font-weight:900;
+    margin-bottom:12px;
+}
+
+.footer-links{
+    display:grid;
+    gap:7px;
+}
+
+.footer-links a{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.copyright{
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid rgba(255,255,255,.06);
+
+    color:#7691a3;
+
+    font-size:13px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:900px){
+
+    .stats-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .grid-2,
+    .grid-3,
+    .feature-grid,
+    .guide-grid,
+    .evolution-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .raid-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .type-chart{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .main-nav{
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+        left:0;
+        right:0;
+
+        padding:15px;
+
+        background:#071522;
+
+        flex-direction:column;
+
+        border-bottom:
+            1px solid rgba(255,255,255,.08);
+    }
+
+    .main-nav.active{
+        display:flex;
+    }
+
+    .main-nav a{
+        width:100%;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .stats-grid,
+    .grid-2,
+    .grid-3,
+    .feature-grid,
+    .guide-grid,
+    .evolution-grid,
+    .raid-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:50px 0;
+    }
+
+    .card{
+        padding:20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     HEADER
+     ======================================================= -->
+
+<header class="site-header">
+
+<div class="container header-inner">
+
+<a href="/" class="logo">
+    Pokémon <span>Gaming</span>
+</a>
+
+<button
+    class="menu-btn"
+    id="menuBtn"
+    aria-label="Open navigation">
+    ☰
+</button>
+
+<nav class="main-nav" id="mainNav">
+
+<a href="/">Home</a>
+<a href="/types/">Types</a>
+<a href="/pokedex/">Pokédex</a>
+<a href="/raids/">Raids</a>
+<a href="/tools/">Tools</a>
+<a href="/guides/">Guides</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =======================================================
+     HERO
+     ======================================================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<span class="badge">
+💧 WATER TYPE HUB
+</span>
+
+<h1>
+Water-Type Pokémon
+<span>Gen 1–9</span>
+</h1>
+
+<p class="hero-description">
+
+Explore the Water-type Pokémon universe from Kanto through
+Paldea. Compare evolution families, Pokémon GO stats,
+maximum CP, weaknesses, resistances, best moves, raid
+performance, Mega Evolution, Primal Reversion, Shadow
+forms, Dynamax and Gigantamax availability, Shiny forms
+and individual Pokémon guides.
+
+</p>
+
+<div class="hero-actions">
+
+<a
+href="#database"
+class="btn btn-primary">
+Explore Water Pokémon
+</a>
+
+<a
+href="#raid"
+class="btn btn-secondary">
+Best Raid Attackers
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATISTICS
+     ======================================================= -->
+
+<section class="quick-stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<div class="stat-number">
+Gen 1–9
+</div>
+
+<div class="stat-label">
+Generations covered
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-number">
+💧
+</div>
+
+<div class="stat-label">
+Water type database
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-number">
+GO
+</div>
+
+<div class="stat-label">
+Pokémon GO focused
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-number">
+24/7
+</div>
+
+<div class="stat-label">
+Reference guide
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     WATER TYPE OVERVIEW
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+01 • TYPE OVERVIEW
+</span>
+
+<h2 class="section-title">
+What Is the Water Type?
+</h2>
+
+<p class="section-intro">
+
+Water is one of the most common Pokémon types and has
+played an important role in Pokémon battles since Generation
+1. In Pokémon GO, Water-type Pokémon are particularly useful
+against Fire, Ground and Rock opponents.
+
+</p>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>💧 Water-Type Strengths</h3>
+
+<p>
+Water-type attacks are super effective against
+Fire, Ground and Rock Pokémon. This makes Water
+attackers useful in many raids where the boss has
+one of these weaknesses.
+</p>
+
+<p>
+The Water category also contains several powerful
+Legendary, Mega and Primal Pokémon that can perform
+important roles in raid teams.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌊 Why Water Pokémon Matter in Pokémon GO</h3>
+
+<p>
+A strong Water roster gives Trainers answers to
+many Fire-, Ground- and Rock-type raid bosses.
+Individual Pokémon can also gain additional value
+through Mega Evolution, Shadow bonuses, special
+moves and high Attack stats.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     TYPE MATCHUP
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+02 • TYPE MATCHUPS
+</span>
+
+<h2 class="section-title">
+Water Weaknesses & Resistances
+</h2>
+
+<p class="section-intro">
+
+The exact defensive profile depends on the Pokémon's
+secondary type. The chart below describes the basic
+single Water typing.
+
+</p>
+
+<div class="type-chart">
+
+<div class="type-box weak">
+
+<h3>⚠️ Weak To</h3>
+
+<div class="type-list">
+
+<span class="type-pill">⚡ Electric</span>
+<span class="type-pill">🌿 Grass</span>
+
+</div>
+
+<p>
+Pure Water Pokémon take increased damage from
+Electric and Grass attacks.
+</p>
+
+</div>
+
+
+<div class="type-box resist">
+
+<h3>🛡️ Resists</h3>
+
+<div class="type-list">
+
+<span class="type-pill">🔥 Fire</span>
+<span class="type-pill">💧 Water</span>
+<span class="type-pill">❄️ Ice</span>
+<span class="type-pill">⚙️ Steel</span>
+
+</div>
+
+<p>
+Pure Water Pokémon naturally resist Fire,
+Water, Ice and Steel attacks.
+</p>
+
+</div>
+
+
+<div class="type-box">
+
+<h3>⚔️ Water Attacks</h3>
+
+<div class="type-list">
+
+<span class="type-pill">🔥 Fire</span>
+<span class="type-pill">🪨 Ground</span>
+<span class="type-pill">🪨 Rock</span>
+
+</div>
+
+<p>
+Water-type attacks are especially valuable
+against Fire, Ground and Rock opponents.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     GENERATION DATABASE
+     ======================================================= -->
+
+<section
+class="section"
+id="database">
+
+<div class="container">
+
+<span class="badge">
+03 • GEN 1–9 DATABASE
+</span>
+
+<h2 class="section-title">
+Water Pokémon Database
+</h2>
+
+<p class="section-intro">
+
+Search the Water-type database by Pokémon name,
+generation, typing or raid usefulness. Use this table
+as the central index for individual Pokémon pages.
+
+</p>
+
+<div class="database-toolbar">
+
+<input
+type="search"
+id="pokemonSearch"
+placeholder="Search Pokémon...">
+
+<select id="generationFilter">
+
+<option value="all">
+All Generations
+</option>
+
+<option value="1">Gen 1</option>
+<option value="2">Gen 2</option>
+<option value="3">Gen 3</option>
+<option value="4">Gen 4</option>
+<option value="5">Gen 5</option>
+<option value="6">Gen 6</option>
+<option value="7">Gen 7</option>
+<option value="8">Gen 8</option>
+<option value="9">Gen 9</option>
+
+</select>
+
+<select id="raidFilter">
+
+<option value="all">
+All Raid Ratings
+</option>
+
+<option value="5">
+★★★★★
+</option>
+
+<option value="4">
+★★★★
+</option>
+
+<option value="3">
+★★★
+</option>
+
+<option value="2">
+★★
+</option>
+
+</select>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="pokemon-table">
+
+<thead>
+
+<tr>
+
+<th>Pokémon</th>
+<th>Gen</th>
+<th>Type</th>
+<th>Evolution</th>
+<th>Max CP</th>
+<th>Attack</th>
+<th>Defense</th>
+<th>HP</th>
+<th>Raid</th>
+
+</tr>
+
+</thead>
+
+<tbody id="pokemonTable">
+
+<!-- JavaScript inserts data -->
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     EVOLUTION FAMILIES
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+04 • EVOLUTION FAMILIES
+</span>
+
+<h2 class="section-title">
+Water-Type Evolution Lines
+</h2>
+
+<p class="section-intro">
+
+Evolution families are useful when planning Candy,
+Candy XL, Buddy routes, Community Day investments
+and long-term raid teams.
+
+</p>
+
+<div class="evolution-grid">
+
+<div class="evolution-card">
+
+<h3>💧 Kanto Starters</h3>
+
+<div class="evo-line">
+
+<span>Squirtle</span>
+<span class="arrow">→</span>
+<span>Wartortle</span>
+<span class="arrow">→</span>
+<span>Blastoise</span>
+
+</div>
+
+<p>
+Blastoise can also access Mega Evolution.
+</p>
+
+</div>
+
+
+<div class="evolution-card">
+
+<h3>🌊 Johto</h3>
+
+<div class="evo-line">
+
+<span>Totodile</span>
+<span>→</span>
+<span>Croconaw</span>
+<span>→</span>
+<span>Feraligatr</span>
+
+</div>
+
+<p>
+Feraligatr is particularly interesting for
+Water-type raid and PvP builds.
+</p>
+
+</div>
+
+
+<div class="evolution-card">
+
+<h3>🌊 Hoenn</h3>
+
+<div class="evo-line">
+
+<span>Mudkip</span>
+<span>→</span>
+<span>Marshtomp</span>
+<span>→</span>
+<span>Swampert</span>
+
+</div>
+
+<p>
+Swampert has both Mega Evolution and
+important PvP applications.
+</p>
+
+</div>
+
+
+<div class="evolution-card">
+
+<h3>🌊 Sinnoh</h3>
+
+<div class="evo-line">
+
+<span>Piplup</span>
+<span>→</span>
+<span>Prinplup</span>
+<span>→</span>
+<span>Empoleon</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<h3>🌊 Unova</h3>
+
+<div class="evo-line">
+
+<span>Tympole</span>
+<span>→</span>
+<span>Palpitoad</span>
+<span>→</span>
+<span>Seismitoad</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution-card">
+
+<h3>🌊 Paldea</h3>
+
+<div class="evo-line">
+
+<span>Quaxly</span>
+<span>→</span>
+<span>Quaxwell</span>
+<span>→</span>
+<span>Quaquaval</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     STATS
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+05 • POKÉMON GO STATS
+</span>
+
+<h2 class="section-title">
+CP & Battle Stats
+</h2>
+
+<p class="section-intro">
+
+CP is only one part of a Pokémon's performance.
+For raid attackers, Attack, move quality, typing,
+available moves and special mechanics can be more
+important than raw maximum CP.
+
+</p>
+
+<div class="grid-3">
+
+<div class="card">
+
+<h3>⚔️ Attack</h3>
+
+<p>
+Attack strongly influences the damage a Pokémon
+can deal in Pokémon GO. High-Attack Water Pokémon
+are generally more attractive for raid attacking
+roles.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🛡️ Defense</h3>
+
+<p>
+Defense affects how much damage the Pokémon can
+withstand. A high Defense stat can improve survival,
+although raid attackers generally prioritize
+damage output.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>❤️ HP</h3>
+
+<p>
+HP represents the Pokémon's stamina. Higher HP
+allows a Pokémon to remain in battle longer before
+fainting.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     BEST MOVES
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+06 • MOVESET GUIDE
+</span>
+
+<h2 class="section-title">
+Best Water-Type Moves
+</h2>
+
+<p class="section-intro">
+
+The best moveset depends on whether the Pokémon
+is being used for raids, gyms or PvP. A move that
+looks strong on paper may not be optimal for every
+battle format.
+
+</p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">💦</div>
+
+<h3>Water Gun</h3>
+
+<p>
+A reliable Water fast move that can provide
+consistent Water-type damage.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">🌊</div>
+
+<h3>Waterfall</h3>
+
+<p>
+A powerful Water fast move used by several
+important Water attackers.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">💥</div>
+
+<h3>Hydro Cannon</h3>
+
+<p>
+A signature high-impact move associated with
+several Water starter evolutions.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">🌊</div>
+
+<h3>Hydro Pump</h3>
+
+<p>
+A classic powerful Water charged attack that
+appears on numerous Water Pokémon.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">🌀</div>
+
+<h3>Surf</h3>
+
+<p>
+A dependable charged move with applications
+across multiple Pokémon and battle formats.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">🐚</div>
+
+<h3>Origin Pulse</h3>
+
+<p>
+A signature move associated with Primal Kyogre
+and its high-end Water damage potential.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     RAID USEFULNESS
+     ======================================================= -->
+
+<section
+class="section"
+id="raid">
+
+<div class="container">
+
+<span class="badge">
+07 • RAID PERFORMANCE
+</span>
+
+<h2 class="section-title">
+Water Pokémon Raid Tier
+</h2>
+
+<p class="section-intro">
+
+Raid usefulness should be judged by actual damage
+output, survivability, move quality, typing and
+available special forms rather than CP alone.
+
+</p>
+
+<div class="raid-grid">
+
+<div class="raid-card">
+
+<div class="raid-stars">
+★★★★★
+</div>
+
+<h3>Primal Kyogre</h3>
+
+<p>
+Elite Water attacker and powerful Primal
+raiding asset.
+</p>
+
+</div>
+
+
+<div class="raid-card">
+
+<div class="raid-stars">
+★★★★★
+</div>
+
+<h3>Mega Swampert</h3>
+
+<p>
+Excellent Water Mega option with additional
+Ground typing.
+</p>
+
+</div>
+
+
+<div class="raid-card">
+
+<div class="raid-stars">
+★★★★★
+</div>
+
+<h3>Shadow Kyogre</h3>
+
+<p>
+High offensive potential when available with
+appropriate moves.
+</p>
+
+</div>
+
+
+<div class="raid-card">
+
+<div class="raid-stars">
+★★★★
+</div>
+
+<h3>Swampert</h3>
+
+<p>
+Strong practical option for Trainers building
+a Water team.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     MEGA / PRIMAL
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+08 • SPECIAL FORMS
+</span>
+
+<h2 class="section-title">
+Mega & Primal Water Pokémon
+</h2>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>🌊 Mega Swampert</h3>
+
+<p>
+Mega Swampert combines Water and Ground typing.
+It can provide a powerful Water-focused Mega
+option while also benefiting the team through
+Mega Evolution bonuses.
+</p>
+
+<ul>
+
+<li>Water / Ground</li>
+<li>High offensive potential</li>
+<li>Raid-focused use</li>
+<li>Mega Candy system</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌊 Primal Kyogre</h3>
+
+<p>
+Primal Kyogre is one of the defining Water-type
+Pokémon in Pokémon GO. Its Primal mechanic gives
+it exceptional raid value beyond simply being
+another Water attacker.
+</p>
+
+<ul>
+
+<li>Water type</li>
+<li>Primal Reversion</li>
+<li>Excellent Water damage</li>
+<li>Strong raid-party bonus</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     SHADOW
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+09 • SHADOW POKÉMON
+</span>
+
+<h2 class="section-title">
+Shadow Water Pokémon
+</h2>
+
+<p class="section-intro">
+
+Shadow Pokémon can have significantly different
+battle performance from their regular counterparts.
+The Shadow damage bonus can make certain Water
+attackers attractive for raids.
+
+</p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">🌑</div>
+
+<h3>Shadow Swampert</h3>
+
+<p>
+A strong offensive option when available with
+a suitable Water moveset.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">🌑</div>
+
+<h3>Shadow Feraligatr</h3>
+
+<p>
+Can benefit from strong Water moves and Shadow
+offensive bonuses.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">🌑</div>
+
+<h3>Shadow Gyarados</h3>
+
+<p>
+An important Water/Flying option with a broad
+collection of combat uses.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     DYNAMAX / GIGANTAMAX
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+10 • MAX BATTLES
+</span>
+
+<h2 class="section-title">
+Dynamax & Gigantamax Water Pokémon
+</h2>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>⚡ Dynamax Water Pokémon</h3>
+
+<p>
+Dynamax availability should be tracked separately
+from normal Pokémon GO raid performance because
+Max Battles use different mechanics from standard
+raids.
+</p>
+
+<p>
+A Pokémon can therefore have one ranking for
+normal raids and another practical value for
+Max Battles.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌊 Gigantamax Water Pokémon</h3>
+
+<p>
+Gigantamax forms are special battle forms with
+unique visual designs and G-Max moves. Your
+database should display them as separate forms
+rather than treating them as ordinary evolution
+stages.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     SHINY
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+11 • SHINY DATABASE
+</span>
+
+<h2 class="section-title">
+Shiny Water Pokémon
+</h2>
+
+<p class="section-intro">
+
+Shiny availability is tracked separately from
+normal availability because a Pokémon may exist
+in Pokémon GO without its Shiny form being released.
+
+</p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+✨
+</div>
+
+<h3>Shiny Availability</h3>
+
+<p>
+Show whether the Shiny version is currently
+available in Pokémon GO.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🎨
+</div>
+
+<h3>Shiny Comparison</h3>
+
+<p>
+Display normal and Shiny appearances side by side
+on individual Pokémon pages.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+📅
+</div>
+
+<h3>Release History</h3>
+
+<p>
+Record the event or period during which a Shiny
+form first became obtainable.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     AVAILABILITY
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+12 • AVAILABILITY
+</span>
+
+<h2 class="section-title">
+How to Obtain Water Pokémon
+</h2>
+
+<div class="grid-3">
+
+<div class="card">
+
+<h3>🥚 Eggs</h3>
+
+<p>
+Some Water Pokémon may appear through Pokémon
+Eggs depending on the current egg pool.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌿 Wild Encounters</h3>
+
+<p>
+Many Water Pokémon can appear in the wild,
+although encounter pools change with events
+and seasons.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>⚔️ Raids</h3>
+
+<p>
+Legendary and Mega Water Pokémon may rotate
+through raids.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎁 Research</h3>
+
+<p>
+Special Research, Field Research and event
+tasks can provide additional encounter routes.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎉 Events</h3>
+
+<p>
+Community events, seasonal events and themed
+events can temporarily increase Water Pokémon
+availability.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔄 Trading</h3>
+
+<p>
+Trading can help Trainers obtain Pokémon that
+are not currently appearing in their local
+encounter pools.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     INDIVIDUAL GUIDES
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+13 • INDIVIDUAL GUIDES
+</span>
+
+<h2 class="section-title">
+Water Pokémon Guides
+</h2>
+
+<p class="section-intro">
+
+Every important Water Pokémon should eventually have
+its own detailed page rather than forcing users to
+find everything inside one giant database table.
+
+</p>
+
+<div class="guide-grid">
+
+<div class="guide-card">
+
+<h3>🌊 Kyogre Guide</h3>
+
+<p>
+Stats, best moves, raid performance, Primal
+Kyogre, Shiny, weaknesses and catch strategy.
+</p>
+
+<a
+class="guide-link"
+href="/pokemon/kyogre.html">
+View Kyogre Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>🐊 Swampert Guide</h3>
+
+<p>
+Evolution, Mudkip Candy, Mega Swampert, moves,
+PvP, raids and Shadow Swampert.
+</p>
+
+<a
+class="guide-link"
+href="/pokemon/swampert.html">
+View Swampert Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>🐉 Gyarados Guide</h3>
+
+<p>
+Magikarp evolution, Mega Gyarados, moves,
+raid usefulness, PvP and Shiny information.
+</p>
+
+<a
+class="guide-link"
+href="/pokemon/gyarados.html">
+View Gyarados Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>🐢 Blastoise Guide</h3>
+
+<p>
+Squirtle evolution, Mega Blastoise, Hydro Cannon,
+raid role and Shiny information.
+</p>
+
+<a
+class="guide-link"
+href="/pokemon/blastoise.html">
+View Blastoise Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>🐊 Feraligatr Guide</h3>
+
+<p>
+Totodile evolution, best moves, Shadow form,
+PvP and Water-type battle usefulness.
+</p>
+
+<a
+class="guide-link"
+href="/pokemon/feraligatr.html">
+View Feraligatr Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>🦆 Greninja Guide</h3>
+
+<p>
+Froakie evolution, Hydro Cannon, PvP,
+raid performance and Shiny availability.
+</p>
+
+<a
+class="guide-link"
+href="/pokemon/greninja.html">
+View Greninja Guide →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     RAID TEAM BUILDING
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+14 • RAID TEAM BUILDING
+</span>
+
+<h2 class="section-title">
+How to Build a Water Raid Team
+</h2>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>🥇 Elite Team</h3>
+
+<p>
+A high-end Water team should combine strong
+non-Mega attackers with the best currently
+available Mega or Primal option.
+</p>
+
+<ul>
+
+<li>Primal Kyogre</li>
+<li>Mega Swampert</li>
+<li>Shadow Water attackers</li>
+<li>Strong Legendary attackers</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎯 Budget Team</h3>
+
+<p>
+Newer Trainers do not need six Legendary Pokémon.
+Evolved Water starters and strong community-event
+Pokémon can form a practical starting roster.
+</p>
+
+<ul>
+
+<li>Swampert</li>
+<li>Feraligatr</li>
+<li>Gyarados</li>
+<li>Empoleon</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     PVP
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+15 • PVP VALUE
+</span>
+
+<h2 class="section-title">
+Water Pokémon in PvP
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🥊
+</div>
+
+<h3>Great League</h3>
+
+<p>
+Bulk, typing and efficient charged moves can
+make certain Water Pokémon valuable in Great
+League.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🏆
+</div>
+
+<h3>Ultra League</h3>
+
+<p>
+Higher CP Water Pokémon can become more useful
+when their stats and move coverage fit the
+Ultra League environment.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+👑
+</div>
+
+<h3>Master League</h3>
+
+<p>
+Legendary Water Pokémon and high-stat species
+can become relevant in Master League.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     EXPERT TIPS
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+16 • EXPERT TIPS
+</span>
+
+<h2 class="section-title">
+Water-Type Investment Tips
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>
+Do not choose a raid attacker based only on maximum CP.
+</li>
+
+<li>
+Compare Attack, moveset, typing and battle role.
+</li>
+
+<li>
+Keep strong legacy or event-exclusive moves when
+they provide meaningful battle value.
+</li>
+
+<li>
+Consider Shadow Pokémon separately from normal Pokémon.
+</li>
+
+<li>
+Mega and Primal forms can provide team-wide benefits,
+not simply personal damage.
+</li>
+
+<li>
+Check whether a Pokémon is more valuable in raids,
+PvP or both before spending large amounts of Stardust.
+</li>
+
+<li>
+Use Candy XL carefully on Pokémon that you actually
+intend to use at high levels.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     FAQ
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+17 • FAQ
+</span>
+
+<h2 class="section-title">
+Water Pokémon FAQ
+</h2>
+
+<div class="faq">
+
+<details>
+
+<summary>
+What are Water Pokémon weak against?
+</summary>
+
+<p>
+Pure Water Pokémon are weak to Electric and Grass
+attacks. Dual typing can add or remove weaknesses.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is the best Water Pokémon for raids?
+</summary>
+
+<p>
+The answer depends on the current Pokémon GO
+movesets and available forms. Primal Kyogre,
+Mega Swampert and powerful Shadow or Legendary
+Water attackers are among the most important
+categories to evaluate.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is CP the most important Water Pokémon statistic?
+</summary>
+
+<p>
+No. CP is useful for comparing overall progression,
+but raid performance also depends heavily on Attack,
+moves, typing, survivability and special mechanics.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should I evolve every Water Pokémon?
+</summary>
+
+<p>
+Not necessarily. Before evolving a Pokémon, check
+its IVs, moves, PvP potential, raid usefulness and
+whether it has a special event or Community Day
+move.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are Shadow Water Pokémon better?
+</summary>
+
+<p>
+Shadow Pokémon receive an offensive benefit but
+also have reduced defensive durability. Whether a
+Shadow Pokémon is better depends on the battle
+and the specific comparison.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are Mega and Primal Pokémon included in this database?
+</summary>
+
+<p>
+Yes. Special forms should be displayed separately
+because they can have different stats, typing,
+moves, CP and battle roles.
+</p>
+
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     METHODOLOGY
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+18 • DATA METHODOLOGY
+</span>
+
+<h2 class="section-title">
+How We Organize This Database
+</h2>
+
+<div class="info-note">
+
+<p>
+
+Pokémon Gaming separates species information,
+Pokémon GO battle information and special-form
+information wherever possible. CP and battle
+performance can change as Pokémon GO updates
+movesets, mechanics and available forms. Always
+check the current Pokémon GO implementation when
+making major Stardust, Candy XL or raid investments.
+
+</p>
+
+</div>
+
+<br>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>📊 Battle Data</h3>
+
+<p>
+Stats, moves and battle rankings should be reviewed
+when Pokémon GO changes movesets, mechanics or
+special forms.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🧪 Editorial Review</h3>
+
+<p>
+Database entries should be reviewed before publication
+rather than blindly publishing automatically generated
+numbers or descriptions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     RELATED GUIDES
+     ======================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<span class="badge">
+19 • RELATED GUIDES
+</span>
+
+<h2 class="section-title">
+Explore More Pokémon Guides
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🔥
+</div>
+
+<h3>Fire Type</h3>
+
+<p>
+Explore Fire-type Pokémon, evolution lines,
+raid attackers and weaknesses.
+</p>
+
+<a
+class="guide-link"
+href="/types/fire.html">
+Fire Type Hub →
+</a>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🌿
+</div>
+
+<h3>Grass Type</h3>
+
+<p>
+Explore Grass Pokémon and their role against
+Water, Ground and Rock opponents.
+</p>
+
+<a
+class="guide-link"
+href="/types/grass.html">
+Grass Type Hub →
+</a>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+⚡
+</div>
+
+<h3>Electric Type</h3>
+
+<p>
+Discover Electric Pokémon and the best counters
+for Water and Flying raid bosses.
+</p>
+
+<a
+class="guide-link"
+href="/types/electric.html">
+Electric Type Hub →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-title">
+Pokémon Gaming
+</div>
+
+<p style="color:var(--muted);">
+
+Pokémon GO guides, raid strategies, Pokémon
+database information, tools and gaming resources.
+
+</p>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Database
+</div>
+
+<div class="footer-links">
+
+<a href="/pokedex/">Pokédex</a>
+<a href="/types/">Pokémon Types</a>
+<a href="/tools/">Pokémon Tools</a>
+<a href="/raids/">Raid Guides</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Guides
+</div>
+
+<div class="footer-links">
+
+<a href="/guides/">All Guides</a>
+<a href="/guides/raid/">Raid Hub</a>
+<a href="/guides/pvp/">PvP Hub</a>
+<a href="/guides/shiny/">Shiny Guide</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Information
+</div>
+
+<div class="footer-links">
+
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<a href="/privacy-policy.html">Privacy Policy</a>
+<a href="/terms.html">Terms</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Pokémon Gaming. Independent fan-created resource.
+Pokémon and Pokémon GO are trademarks of their respective
+owners.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT DATABASE
+     ======================================================= -->
+
+<script>
+
+const pokemonData = [
+
+/* =========================
+   GEN 1
+   ========================= */
+
+{
+name:"Squirtle",
+gen:1,
+type:"Water",
+evolution:"Squirtle → Wartortle → Blastoise",
+cp:"1,066",
+attack:"94",
+defense:"121",
+hp:"127",
+raid:2
+},
+
+{
+name:"Wartortle",
+gen:1,
+type:"Water",
+evolution:"Squirtle → Wartortle → Blastoise",
+cp:"1,653",
+attack:"126",
+defense:"155",
+hp:"153",
+raid:1
+},
+
+{
+name:"Blastoise",
+gen:1,
+type:"Water",
+evolution:"Squirtle → Wartortle → Blastoise",
+cp:"2,788",
+attack:"171",
+defense:"207",
+hp:"188",
+raid:3
+},
+
+{
+name:"Psyduck",
+gen:1,
+type:"Water",
+evolution:"Psyduck → Golduck",
+cp:"1,120",
+attack:"122",
+defense:"95",
+hp:"137",
+raid:1
+},
+
+{
+name:"Golduck",
+gen:1,
+type:"Water",
+evolution:"Psyduck → Golduck",
+cp:"2,553",
+attack:"191",
+defense:"162",
+hp:"190",
+raid:2
+},
+
+{
+name:"Poliwag",
+gen:1,
+type:"Water",
+evolution:"Poliwag → Poliwhirl → Poliwrath / Politoed",
+cp:"829",
+attack:"101",
+defense:"82",
+hp:"120",
+raid:1
+},
+
+{
+name:"Tentacool",
+gen:1,
+type:"Water / Poison",
+evolution:"Tentacool → Tentacruel",
+cp:"1,053",
+attack:"97",
+defense:"149",
+hp:"120",
+raid:1
+},
+
+{
+name:"Tentacruel",
+gen:1,
+type:"Water / Poison",
+evolution:"Tentacool → Tentacruel",
+cp:"2,488",
+attack:"166",
+defense:"209",
+hp:"190",
+raid:2
+},
+
+{
+name:"Slowpoke",
+gen:1,
+type:"Water / Psychic",
+evolution:"Slowpoke → Slowbro / Slowking",
+cp:"1,298",
+attack:"109",
+defense:"98",
+hp:"207",
+raid:1
+},
+
+{
+name:"Dewgong",
+gen:1,
+type:"Water / Ice",
+evolution:"Seel → Dewgong",
+cp:"2,357",
+attack:"139",
+defense:"177",
+hp:"207",
+raid:1
+},
+
+{
+name:"Cloyster",
+gen:1,
+type:"Water / Ice",
+evolution:"Shellder → Cloyster",
+cp:"2,547",
+attack:"186",
+defense:"256",
+hp:"137",
+raid:2
+},
+
+{
+name:"Krabby",
+gen:1,
+type:"Water",
+evolution:"Krabby → Kingler",
+cp:"1,446",
+attack:"181",
+defense:"124",
+hp:"102",
+raid:1
+},
+
+{
+name:"Kingler",
+gen:1,
+type:"Water",
+evolution:"Krabby → Kingler",
+cp:"2,822",
+attack:"240",
+defense:"181",
+hp:"146",
+raid:4
+},
+
+{
+name:"Horsea",
+gen:1,
+type:"Water",
+evolution:"Horsea → Seadra → Kingdra",
+cp:"1,000",
+attack:"129",
+defense:"103",
+hp:"102",
+raid:1
+},
+
+{
+name:"Staryu",
+gen:1,
+type:"Water",
+evolution:"Staryu → Starmie",
+cp:"1,009",
+attack:"137",
+defense:"112",
+hp:"102",
+raid:1
+},
+
+{
+name:"Starmie",
+gen:1,
+type:"Water / Psychic",
+evolution:"Staryu → Starmie",
+cp:"2,584",
+attack:"210",
+defense:"184",
+hp:"155",
+raid:2
+},
+
+{
+name:"Magikarp",
+gen:1,
+type:"Water",
+evolution:"Magikarp → Gyarados",
+cp:"310",
+attack:"29",
+defense:"85",
+hp:"85",
+raid:1
+},
+
+{
+name:"Gyarados",
+gen:1,
+type:"Water / Flying",
+evolution:"Magikarp → Gyarados",
+cp:"3,391",
+attack:"237",
+defense:"186",
+hp:"216",
+raid:4
+},
+
+{
+name:"Lapras",
+gen:1,
+type:"Water / Ice",
+evolution:"Standalone",
+cp:"2,641",
+attack:"165",
+defense:"174",
+hp:"277",
+raid:3
+},
+
+{
+name:"Vaporeon",
+gen:1,
+type:"Water",
+evolution:"Eevee → Vaporeon",
+cp:"3,521",
+attack:"205",
+defense:"161",
+hp:"277",
+raid:3
+},
+
+/* =========================
+   GEN 2
+   ========================= */
+
+{
+name:"Chinchou",
+gen:2,
+type:"Water / Electric",
+evolution:"Chinchou → Lanturn",
+cp:"1,210",
+attack:"106",
+defense:"97",
+hp:"181",
+raid:1
+},
+
+{
+name:"Lanturn",
+gen:2,
+type:"Water / Electric",
+evolution:"Chinchou → Lanturn",
+cp:"2,085",
+attack:"146",
+defense:"137",
+hp:"268",
+raid:2
+},
+
+{
+name:"Totodile",
+gen:2,
+type:"Water",
+evolution:"Totodile → Croconaw → Feraligatr",
+cp:"1,116",
+attack:"117",
+defense:"109",
+hp:"137",
+raid:1
+},
+
+{
+name:"Feraligatr",
+gen:2,
+type:"Water",
+evolution:"Totodile → Croconaw → Feraligatr",
+cp:"3,234",
+attack:"205",
+defense:"188",
+hp:"198",
+raid:4
+},
+
+{
+name:"Marill",
+gen:2,
+type:"Water / Fairy",
+evolution:"Marill → Azumarill",
+cp:"1,122",
+attack:"37",
+defense:"93",
+hp:"172",
+raid:1
+},
+
+{
+name:"Azumarill",
+gen:2,
+type:"Water / Fairy",
+evolution:"Marill → Azumarill",
+cp:"1,588",
+attack:"112",
+defense:"152",
+hp:"225",
+raid:2
+},
+
+{
+name:"Politoed",
+gen:2,
+type:"Water",
+evolution:"Poliwag → Poliwhirl → Politoed",
+cp:"2,618",
+attack:"174",
+defense:"179",
+hp:"207",
+raid:2
+},
+
+{
+name:"Suicune",
+gen:2,
+type:"Water",
+evolution:"Legendary",
+cp:"3,370",
+attack:"180",
+defense:"235",
+hp:"225",
+raid:3
+},
+
+/* =========================
+   GEN 3
+   ========================= */
+
+{
+name:"Mudkip",
+gen:3,
+type:"Water",
+evolution:"Mudkip → Marshtomp → Swampert",
+cp:"1,123",
+attack:"126",
+defense:"93",
+hp:"137",
+raid:1
+},
+
+{
+name:"Marshtomp",
+gen:3,
+type:"Water / Ground",
+evolution:"Mudkip → Marshtomp → Swampert",
+cp:"1,853",
+attack:"156",
+defense:"133",
+hp:"172",
+raid:2
+},
+
+{
+name:"Swampert",
+gen:3,
+type:"Water / Ground",
+evolution:"Mudkip → Marshtomp → Swampert",
+cp:"3,362",
+attack:"208",
+defense:"154",
+hp:"225",
+raid:5
+},
+
+{
+name:"Carvanha",
+gen:3,
+type:"Water / Dark",
+evolution:"Carvanha → Sharpedo",
+cp:"1,247",
+attack:"171",
+defense:"39",
+hp:"128",
+raid:1
+},
+
+{
+name:"Sharpedo",
+gen:3,
+type:"Water / Dark",
+evolution:"Carvanha → Sharpedo",
+cp:"2,654",
+attack:"243",
+defense:"83",
+hp:"172",
+raid:3
+},
+
+{
+name:"Wailmer",
+gen:3,
+type:"Water",
+evolution:"Wailmer → Wailord",
+cp:"1,439",
+attack:"136",
+defense:"68",
+hp:"277",
+raid:1
+},
+
+{
+name:"Wailord",
+gen:3,
+type:"Water",
+evolution:"Wailmer → Wailord",
+cp:"2,280",
+attack:"175",
+defense:"87",
+hp:"347",
+raid:2
+},
+
+{
+name:"Milotic",
+gen:3,
+type:"Water",
+evolution:"Feebas → Milotic",
+cp:"3,005",
+attack:"192",
+defense:"219",
+hp:"216",
+raid:3
+},
+
+{
+name:"Kyogre",
+gen:3,
+type:"Water",
+evolution:"Legendary",
+cp:"4,652",
+attack:"270",
+defense:"228",
+hp:"205",
+raid:5
+},
+
+/* =========================
+   GEN 4
+   ========================= */
+
+{
+name:"Piplup",
+gen:4,
+type:"Water",
+evolution:"Piplup → Prinplup → Empoleon",
+cp:"1,122",
+attack:"112",
+defense:"103",
+hp:"142",
+raid:1
+},
+
+{
+name:"Empoleon",
+gen:4,
+type:"Water / Steel",
+evolution:"Piplup → Prinplup → Empoleon",
+cp:"2,903",
+attack:"210",
+defense:"186",
+hp:"197",
+raid:3
+},
+
+{
+name:"Buizel",
+gen:4,
+type:"Water",
+evolution:"Buizel → Floatzel",
+cp:"1,205",
+attack:"132",
+defense:"67",
+hp:"146",
+raid:1
+},
+
+{
+name:"Floatzel",
+gen:4,
+type:"Water",
+evolution:"Buizel → Floatzel",
+cp:"2,656",
+attack:"221",
+defense:"114",
+hp:"198",
+raid:3
+},
+
+{
+name:"Shellos",
+gen:4,
+type:"Water",
+evolution:"Shellos → Gastrodon",
+cp:"1,174",
+attack:"103",
+defense:"105",
+hp:"169",
+raid:1
+},
+
+{
+name:"Gastrodon",
+gen:4,
+type:"Water / Ground",
+evolution:"Shellos → Gastrodon",
+cp:"2,685",
+attack:"169",
+defense:"143",
+hp:"244",
+raid:2
+},
+
+/* =========================
+   GEN 5
+   ========================= */
+
+{
+name:"Tympole",
+gen:5,
+type:"Water",
+evolution:"Tympole → Palpitoad → Seismitoad",
+cp:"956",
+attack:"98",
+defense:"78",
+hp:"137",
+raid:1
+},
+
+{
+name:"Seismitoad",
+gen:5,
+type:"Water / Ground",
+evolution:"Tympole → Palpitoad → Seismitoad",
+cp:"2,762",
+attack:"188",
+defense:"150",
+hp:"233",
+raid:3
+},
+
+{
+name:"Ducklett",
+gen:5,
+type:"Water / Flying",
+evolution:"Ducklett → Swanna",
+cp:"856",
+attack:"84",
+defense:"96",
+hp:"158",
+raid:1
+},
+
+{
+name:"Swanna",
+gen:5,
+type:"Water / Flying",
+evolution:"Ducklett → Swanna",
+cp:"2,088",
+attack:"182",
+defense:"132",
+hp:"181",
+raid:1
+},
+
+{
+name:"Frillish",
+gen:5,
+type:"Water / Ghost",
+evolution:"Frillish → Jellicent",
+cp:"1,139",
+attack:"115",
+defense:"134",
+hp:"146",
+raid:1
+},
+
+{
+name:"Jellicent",
+gen:5,
+type:"Water / Ghost",
+evolution:"Frillish → Jellicent",
+cp:"2,644",
+attack:"159",
+defense:"178",
+hp:"225",
+raid:2
+},
+
+{
+name:"Keldeo",
+gen:5,
+type:"Water / Fighting",
+evolution:"Mythical",
+cp:"3,418",
+attack:"260",
+defense:"192",
+hp:"209",
+raid:4
+},
+
+/* =========================
+   GEN 6
+   ========================= */
+
+{
+name:"Froakie",
+gen:6,
+type:"Water",
+evolution:"Froakie → Frogadier → Greninja",
+cp:"992",
+attack:"88",
+defense:"73",
+hp:"121",
+raid:1
+},
+
+{
+name:"Greninja",
+gen:6,
+type:"Water / Dark",
+evolution:"Froakie → Frogadier → Greninja",
+cp:"2,646",
+attack:"223",
+defense:"152",
+hp:"176",
+raid:4
+},
+
+{
+name:"Clauncher",
+gen:6,
+type:"Water",
+evolution:"Clauncher → Clawitzer",
+cp:"1,059",
+attack:"108",
+defense:"117",
+hp:"137",
+raid:1
+},
+
+{
+name:"Clawitzer",
+gen:6,
+type:"Water",
+evolution:"Clauncher → Clawitzer",
+cp:"2,817",
+attack:"221",
+defense:"171",
+hp:"174",
+raid:3
+},
+
+{
+name:"Volcanion",
+gen:6,
+type:"Fire / Water",
+evolution:"Mythical",
+cp:"3,829",
+attack:"252",
+defense:"216",
+hp:"190",
+raid:4
+},
+
+/* =========================
+   GEN 7
+   ========================= */
+
+{
+name:"Popplio",
+gen:7,
+type:"Water",
+evolution:"Popplio → Brionne → Primarina",
+cp:"1,089",
+attack:"120",
+defense:"103",
+hp:"137",
+raid:1
+},
+
+{
+name:"Primarina",
+gen:7,
+type:"Water / Fairy",
+evolution:"Popplio → Brionne → Primarina",
+cp:"3,495",
+attack:"232",
+defense:"195",
+hp:"190",
+raid:4
+},
+
+{
+name:"Wishiwashi",
+gen:7,
+type:"Water",
+evolution:"Wishiwashi",
+cp:"1,854",
+attack:"46",
+defense:"60",
+hp:"128",
+raid:1
+},
+
+{
+name:"Araquanid",
+gen:7,
+type:"Water / Bug",
+evolution:"Dewpider → Araquanid",
+cp:"2,195",
+attack:"126",
+defense:"219",
+hp:"169",
+raid:2
+},
+
+{
+name:"Tapu Fini",
+gen:7,
+type:"Water / Fairy",
+evolution:"Legendary",
+cp:"3,233",
+attack:"189",
+defense:"254",
+hp:"192",
+raid:4
+},
+
+/* =========================
+   GEN 8
+   ========================= */
+
+{
+name:"Sobble",
+gen:8,
+type:"Water",
+evolution:"Sobble → Drizzile → Inteleon",
+cp:"1,031",
+attack:"132",
+defense:"79",
+hp:"116",
+raid:1
+},
+
+{
+name:"Inteleon",
+gen:8,
+type:"Water",
+evolution:"Sobble → Drizzile → Inteleon",
+cp:"3,000",
+attack:"262",
+defense:"142",
+hp:"172",
+raid:4
+},
+
+{
+name:"Chewtle",
+gen:8,
+type:"Water",
+evolution:"Chewtle → Drednaw",
+cp:"1,160",
+attack:"114",
+defense:"85",
+hp:"134",
+raid:1
+},
+
+{
+name:"Drednaw",
+gen:8,
+type:"Water / Rock",
+evolution:"Chewtle → Drednaw",
+cp:"2,629",
+attack:"213",
+defense:"164",
+hp:"207",
+raid:3
+},
+
+{
+name:"Dracovish",
+gen:8,
+type:"Water / Dragon",
+evolution:"Fossil Pokémon",
+cp:"2,775",
+attack:"175",
+defense:"185",
+hp:"207",
+raid:3
+},
+
+/* =========================
+   GEN 9
+   ========================= */
+
+{
+name:"Quaxly",
+gen:9,
+type:"Water",
+evolution:"Quaxly → Quaxwell → Quaquaval",
+cp:"1,006",
+attack:"120",
+defense:"86",
+hp:"146",
+raid:1
+},
+
+{
+name:"Quaquaval",
+gen:9,
+type:"Water / Fighting",
+evolution:"Quaxly → Quaxwell → Quaquaval",
+cp:"2,938",
+attack:"236",
+defense:"198",
+hp:"185",
+raid:3
+},
+
+{
+name:"Finizen",
+gen:9,
+type:"Water",
+evolution:"Finizen → Palafin",
+cp:"1,106",
+attack:"105",
+defense:"109",
+hp:"154",
+raid:1
+},
+
+{
+name:"Palafin",
+gen:9,
+type:"Water",
+evolution:"Finizen → Palafin",
+cp:"3,583",
+attack:"244",
+defense:"189",
+hp:"172",
+raid:4
+},
+
+{
+name:"Veluza",
+gen:9,
+type:"Water / Psychic",
+evolution:"Standalone",
+cp:"2,916",
+attack:"236",
+defense:"148",
+hp:"207",
+raid:3
+}
+
+];
+
+
+/* =========================================================
+   RENDER TABLE
+   ========================================================= */
+
+const table =
+document.getElementById("pokemonTable");
+
+const search =
+document.getElementById("pokemonSearch");
+
+const generation =
+document.getElementById("generationFilter");
+
+const raid =
+document.getElementById("raidFilter");
+
+
+function renderTable(){
+
+const query =
+search.value.toLowerCase().trim();
+
+const gen =
+generation.value;
+
+const raidValue =
+raid.value;
+
+const filtered =
+pokemonData.filter(p => {
+
+const matchesSearch =
+p.name.toLowerCase().includes(query) ||
+p.type.toLowerCase().includes(query) ||
+p.evolution.toLowerCase().includes(query);
+
+const matchesGen =
+gen === "all" ||
+String(p.gen) === gen;
+
+const matchesRaid =
+raidValue === "all" ||
+String(p.raid) === raidValue;
+
+return matchesSearch &&
+       matchesGen &&
+       matchesRaid;
+
+});
+
+
+table.innerHTML = "";
+
+
+filtered.forEach(p => {
+
+const row =
+document.createElement("tr");
+
+const stars =
+"★".repeat(p.raid) +
+"☆".repeat(5-p.raid);
+
+row.innerHTML = `
+
+<td>
+<span class="pokemon-name">
+${p.name}
+</span>
+</td>
+
+<td>
+Gen ${p.gen}
+</td>
+
+<td>
+${p.type
+.split(" / ")
+.map(t =>
+`<span class="type-tag">${t}</span>`
+)
+.join("")}
+</td>
+
+<td>
+${p.evolution}
+</td>
+
+<td>
+${p.cp}
+</td>
+
+<td>
+${p.attack}
+</td>
+
+<td>
+${p.defense}
+</td>
+
+<td>
+${p.hp}
+</td>
+
+<td class="rating">
+${stars}
+</td>
+
+`;
+
+table.appendChild(row);
+
+});
+
+}
+
+
+search.addEventListener(
+"input",
+renderTable
+);
+
+generation.addEventListener(
+"change",
+renderTable
+);
+
+raid.addEventListener(
+"change",
+renderTable
+);
+
+renderTable();
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const mainNav =
+document.getElementById("mainNav");
+
+menuBtn.addEventListener(
+"click",
+() => {
+
+mainNav.classList.toggle(
+"active"
+);
+
+}
+);
+
+</script>
+
+
+<!-- =======================================================
+     BASIC STRUCTURED DATA
+     ======================================================= -->
+
+<script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+ "@type":"CollectionPage",
+
+ "name":
+ "Water-Type Pokémon Hub — Gen 1–9",
+
+ "description":
+ "Water-type Pokémon database covering generations 1–9, evolution families, Pokémon GO stats, weaknesses, resistances, moves, raid usefulness, special forms, Shiny information and individual guides.",
+
+ "url":
+ "https://pokemongaming.in/types/water.html",
+
+ "isPartOf":{
+   "@type":"WebSite",
+   "name":"Pokémon Gaming",
+   "url":"https://pokemongaming.in/"
+ },
+
+ "publisher":{
+   "@type":"Organization",
+   "name":"Pokémon Gaming",
+   "url":"https://pokemongaming.in/"
+ }
+}
+
+</script>
+
+</body>
+</html>

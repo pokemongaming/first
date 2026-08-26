@@ -1,0 +1,4305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Fire-Type Pokémon GO Database — Gen 1–9, Counters, CP, Moves & Raid Guide</title>
+
+<meta name="description"
+      content="Complete Fire-type Pokémon GO database covering Gen 1–9. Explore Fire Pokémon, evolution families, max CP, stats, weaknesses, resistances, best moves, raid usefulness, Mega, Primal, Shadow, Dynamax, Gigantamax, Shiny and availability.">
+
+<meta name="robots"
+      content="index, follow, max-image-preview:large">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/types/fire.html">
+
+<style>
+
+/* =========================================================
+   FIRE TYPE HUB
+   POKEMONGAMING.IN
+   ========================================================= */
+
+:root{
+    --fire:#ff5a1f;
+    --fire-dark:#a91f00;
+    --fire-light:#ffb347;
+    --ember:#ff7a18;
+
+    --bg:#090b12;
+    --bg2:#10131d;
+    --card:#151925;
+    --card2:#1c2130;
+
+    --text:#f7f8fb;
+    --muted:#aab1c2;
+
+    --border:rgba(255,255,255,.09);
+
+    --green:#43d17a;
+    --blue:#54a9ff;
+    --yellow:#ffd166;
+    --purple:#b985ff;
+
+    --shadow:
+        0 18px 45px rgba(0,0,0,.32);
+
+    --radius:20px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 20% 0%,
+            rgba(255,90,31,.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(255,179,71,.08),
+            transparent 25%
+        ),
+        var(--bg);
+
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    backdrop-filter:blur(18px);
+
+    background:
+        rgba(9,11,18,.88);
+
+    border-bottom:1px solid var(--border);
+}
+
+.header-inner{
+    max-width:1250px;
+    margin:auto;
+
+    min-height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+}
+
+.logo{
+    color:white;
+    text-decoration:none;
+
+    font-size:22px;
+    font-weight:900;
+
+    letter-spacing:-.5px;
+}
+
+.logo span{
+    color:var(--fire);
+}
+
+.main-nav{
+    display:flex;
+    gap:22px;
+}
+
+.main-nav a{
+    color:var(--muted);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+}
+
+.main-nav a:hover{
+    color:white;
+}
+
+@media(max-width:800px){
+
+    .main-nav{
+        display:none;
+    }
+
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container{
+    width:min(1250px, calc(100% - 30px));
+    margin:auto;
+}
+
+/* =========================================================
+   BREADCRUMB
+   ========================================================= */
+
+.breadcrumb{
+    padding:22px 0 10px;
+
+    font-size:13px;
+    color:var(--muted);
+}
+
+.breadcrumb a{
+    color:var(--fire-light);
+    text-decoration:none;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+    margin-top:10px;
+
+    padding:55px 35px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,90,31,.28),
+            rgba(120,20,0,.12)
+        ),
+        linear-gradient(
+            145deg,
+            #181521,
+            #0e111a
+        );
+
+    border:1px solid rgba(255,130,60,.22);
+
+    box-shadow:var(--shadow);
+
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"🔥";
+
+    position:absolute;
+
+    right:-20px;
+    top:-55px;
+
+    font-size:220px;
+
+    opacity:.07;
+
+    transform:rotate(-10deg);
+}
+
+.hero-content{
+    max-width:850px;
+    position:relative;
+    z-index:2;
+}
+
+.eyebrow{
+    color:var(--fire-light);
+
+    font-weight:900;
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:12px;
+
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:
+        clamp(36px,6vw,68px);
+
+    line-height:1.05;
+
+    margin-bottom:20px;
+
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:var(--fire);
+}
+
+.hero p{
+    color:#c6ccda;
+    font-size:18px;
+    max-width:760px;
+}
+
+/* =========================================================
+   HERO STATS
+   ========================================================= */
+
+.hero-stats{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:12px;
+
+    margin-top:30px;
+}
+
+.hero-stat{
+    background:rgba(255,255,255,.055);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:16px;
+}
+
+.hero-stat strong{
+    display:block;
+
+    font-size:25px;
+
+    color:white;
+}
+
+.hero-stat span{
+    color:var(--muted);
+    font-size:12px;
+}
+
+@media(max-width:700px){
+
+    .hero{
+        padding:35px 22px;
+    }
+
+    .hero-stats{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+/* =========================================================
+   TABLE OF CONTENTS
+   ========================================================= */
+
+.toc{
+    margin:28px 0;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:24px;
+}
+
+.toc h2{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.toc-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:10px;
+}
+
+.toc a{
+    display:block;
+
+    padding:10px 12px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.04);
+
+    color:#dfe3ec;
+
+    text-decoration:none;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+.toc a:hover{
+    background:rgba(255,90,31,.14);
+    color:white;
+}
+
+@media(max-width:850px){
+
+    .toc-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .toc-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   AD SLOT
+   ========================================================= */
+
+.ad-slot{
+    min-height:90px;
+
+    margin:25px 0;
+
+    border:1px dashed rgba(255,255,255,.12);
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:#707789;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+/*
+ Replace these containers with your approved AdSense code
+ AFTER approval.
+
+ Do not make the ad look like a navigation button.
+*/
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.section{
+    margin:55px 0;
+}
+
+.section-header{
+    margin-bottom:24px;
+}
+
+.section-number{
+    color:var(--fire);
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section h2{
+    font-size:
+        clamp(28px,4vw,42px);
+
+    line-height:1.15;
+
+    margin-top:5px;
+
+    letter-spacing:-1px;
+}
+
+.section-intro{
+    color:var(--muted);
+
+    max-width:850px;
+
+    margin-top:10px;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.card-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.card{
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.018)
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:22px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.16);
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+@media(max-width:900px){
+
+    .card-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .card-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   TYPE BADGES
+   ========================================================= */
+
+.type{
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:5px 10px;
+
+    border-radius:999px;
+
+    font-size:11px;
+
+    font-weight:900;
+
+    margin:2px;
+}
+
+.type-fire{
+    background:#c83c16;
+    color:white;
+}
+
+.type-flying{
+    background:#668bdc;
+    color:white;
+}
+
+.type-dragon{
+    background:#7050b8;
+    color:white;
+}
+
+.type-ground{
+    background:#9c7535;
+    color:white;
+}
+
+.type-fighting{
+    background:#a9362e;
+    color:white;
+}
+
+.type-ghost{
+    background:#604c88;
+    color:white;
+}
+
+.type-steel{
+    background:#73828d;
+    color:white;
+}
+
+.type-dark{
+    background:#48444e;
+    color:white;
+}
+
+.type-water{
+    background:#367acb;
+    color:white;
+}
+
+.type-rock{
+    background:#806d43;
+    color:white;
+}
+
+.type-bug{
+    background:#719c38;
+    color:white;
+}
+
+.type-poison{
+    background:#92529c;
+    color:white;
+}
+
+.type-psychic{
+    background:#c55779;
+    color:white;
+}
+
+.type-electric{
+    background:#c69a16;
+    color:white;
+}
+
+/* =========================================================
+   FILTER BAR
+   ========================================================= */
+
+.filter-box{
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    padding:20px;
+
+    border-radius:var(--radius);
+
+    margin-bottom:25px;
+}
+
+.filters{
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap:12px;
+}
+
+.filters input,
+.filters select{
+    width:100%;
+
+    padding:13px 15px;
+
+    background:#0e1119;
+
+    color:white;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+}
+
+.filters input:focus,
+.filters select:focus{
+    border-color:var(--fire);
+}
+
+@media(max-width:700px){
+
+    .filters{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   POKEMON DATABASE TABLE
+   ========================================================= */
+
+.table-wrapper{
+    overflow-x:auto;
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+}
+
+.pokemon-table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:1050px;
+
+    background:#11141d;
+}
+
+.pokemon-table th{
+    background:#1c202d;
+
+    padding:15px;
+
+    text-align:left;
+
+    color:#d9deea;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.6px;
+}
+
+.pokemon-table td{
+    padding:15px;
+
+    border-top:1px solid var(--border);
+
+    font-size:13px;
+
+    color:#d9deea;
+}
+
+.pokemon-table tr:hover{
+    background:rgba(255,90,31,.055);
+}
+
+.pokemon-name{
+    font-weight:900;
+    color:white;
+}
+
+.pokemon-number{
+    color:var(--muted);
+    font-size:11px;
+}
+
+.raid-tier{
+    font-weight:900;
+}
+
+.tier-s{
+    color:#ffb347;
+}
+
+.tier-a{
+    color:#6de38e;
+}
+
+.tier-b{
+    color:#64a9ff;
+}
+
+.tier-c{
+    color:#9ca3b5;
+}
+
+/* =========================================================
+   GENERATION CARDS
+   ========================================================= */
+
+.gen-card{
+    position:relative;
+
+    overflow:hidden;
+}
+
+.gen-card::after{
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+
+    right:-40px;
+    bottom:-40px;
+
+    background:
+        rgba(255,90,31,.10);
+}
+
+.gen-number{
+    color:var(--fire);
+
+    font-size:12px;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+}
+
+.gen-card ul{
+    list-style:none;
+
+    margin-top:15px;
+}
+
+.gen-card li{
+    color:#c7ccd7;
+
+    padding:5px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.05);
+}
+
+/* =========================================================
+   EVOLUTION
+   ========================================================= */
+
+.evolution-list{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.evolution{
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.evolution-chain{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+.evo-node{
+    padding:9px 12px;
+
+    border-radius:10px;
+
+    background:#202533;
+
+    font-weight:800;
+
+    font-size:13px;
+}
+
+.evo-arrow{
+    color:var(--fire-light);
+
+    font-weight:900;
+}
+
+/* =========================================================
+   WEAKNESS / RESISTANCE
+   ========================================================= */
+
+.matchup-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+}
+
+.matchup{
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:25px;
+}
+
+.matchup.weak{
+    border-color:
+        rgba(255,80,80,.2);
+}
+
+.matchup.resist{
+    border-color:
+        rgba(60,210,120,.2);
+}
+
+.matchup h3{
+    margin-bottom:15px;
+}
+
+.matchup-list{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+}
+
+.matchup-item{
+    padding:9px 13px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:800;
+}
+
+@media(max-width:700px){
+
+    .matchup-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   STAT BARS
+   ========================================================= */
+
+.stat-row{
+    margin:12px 0;
+}
+
+.stat-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:12px;
+
+    margin-bottom:5px;
+
+    color:#cbd1dc;
+}
+
+.stat-bar{
+    height:8px;
+
+    background:#282d39;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.stat-fill{
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--fire-dark),
+            var(--fire-light)
+        );
+
+    border-radius:20px;
+}
+
+/* =========================================================
+   MOVE CARDS
+   ========================================================= */
+
+.move-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+}
+
+.move-card{
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:22px;
+}
+
+.move-tag{
+    display:inline-block;
+
+    padding:5px 9px;
+
+    background:
+        rgba(255,90,31,.12);
+
+    color:var(--fire-light);
+
+    border-radius:8px;
+
+    font-size:11px;
+
+    font-weight:900;
+
+    margin-bottom:10px;
+}
+
+.move-card p{
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+@media(max-width:700px){
+
+    .move-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   SPECIAL FORMS
+   ========================================================= */
+
+.special-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+}
+
+.special{
+    background:
+        linear-gradient(
+            145deg,
+            #171923,
+            #10121a
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:20px;
+}
+
+.special-icon{
+    font-size:28px;
+}
+
+.special h3{
+    margin:8px 0;
+}
+
+.special p{
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+@media(max-width:950px){
+
+    .special-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .special-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   GUIDE CARDS
+   ========================================================= */
+
+.guide-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.guide-card{
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:24px;
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+.guide-card:hover{
+    transform:translateY(-4px);
+
+    border-color:
+        rgba(255,90,31,.4);
+}
+
+.guide-card .guide-number{
+    color:var(--fire);
+
+    font-weight:900;
+
+    font-size:12px;
+}
+
+.guide-card h3{
+    margin:7px 0;
+}
+
+.guide-card p{
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+.guide-card button{
+    margin-top:15px;
+
+    border:0;
+
+    background:rgba(255,90,31,.13);
+
+    color:var(--fire-light);
+
+    padding:9px 12px;
+
+    border-radius:9px;
+
+    cursor:pointer;
+
+    font-weight:800;
+}
+
+@media(max-width:850px){
+
+    .guide-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   AVAILABILITY
+   ========================================================= */
+
+.availability{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+}
+
+.availability-card{
+    background:var(--card);
+
+    padding:22px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+}
+
+.availability-card strong{
+    display:block;
+
+    color:white;
+
+    margin-bottom:5px;
+}
+
+.availability-card span{
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+@media(max-width:700px){
+
+    .availability{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.faq{
+    display:grid;
+
+    gap:12px;
+}
+
+.faq details{
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:18px 20px;
+}
+
+.faq summary{
+    cursor:pointer;
+
+    font-weight:900;
+}
+
+.faq p{
+    color:var(--muted);
+
+    margin-top:12px;
+
+    font-size:14px;
+}
+
+/* =========================================================
+   EDITORIAL BOX
+   ========================================================= */
+
+.editorial{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,90,31,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:1px solid
+        rgba(255,90,31,.2);
+
+    border-radius:var(--radius);
+
+    padding:25px;
+}
+
+.editorial p{
+    color:#c5cad5;
+
+    font-size:14px;
+
+    margin:8px 0;
+}
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal{
+    position:fixed;
+
+    inset:0;
+
+    background:
+        rgba(0,0,0,.78);
+
+    backdrop-filter:blur(10px);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    z-index:5000;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-content{
+    width:min(750px,100%);
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:#151925;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    position:relative;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.6);
+}
+
+.modal-close{
+    position:absolute;
+
+    right:18px;
+    top:15px;
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    border:1px solid var(--border);
+
+    background:#202532;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+}
+
+.modal-content h2{
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.modal-section{
+    margin-top:22px;
+
+    padding-top:18px;
+
+    border-top:1px solid var(--border);
+}
+
+.modal-section h3{
+    margin-bottom:8px;
+}
+
+.modal-section p{
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    margin-top:80px;
+
+    padding:45px 0;
+
+    background:#07090e;
+
+    border-top:1px solid var(--border);
+}
+
+.footer-grid{
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p,
+footer a{
+    color:var(--muted);
+
+    font-size:13px;
+
+    text-decoration:none;
+}
+
+.footer-links{
+    display:grid;
+
+    gap:6px;
+}
+
+.copyright{
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid var(--border);
+
+    color:#6f7685;
+
+    font-size:12px;
+}
+
+@media(max-width:700px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+button,
+a,
+input,
+select{
+    font:inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible{
+    outline:3px solid
+        rgba(255,179,71,.55);
+
+    outline-offset:2px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ======================================================
+     HEADER
+     ====================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+    Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav" aria-label="Main navigation">
+
+<a href="/">Home</a>
+<a href="/raids/">Raids</a>
+<a href="/pokedex/">Pokédex</a>
+<a href="/types/">Types</a>
+<a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+<!-- ======================================================
+     BREADCRUMB
+     ====================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+&nbsp;›&nbsp;
+
+<a href="/types/">Pokémon Types</a>
+&nbsp;›&nbsp;
+
+Fire Type
+
+</div>
+
+
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+Pokémon GO Type Database
+</div>
+
+<h1>
+🔥 <span>Fire-Type</span> Pokémon
+</h1>
+
+<p>
+Explore the Fire-type Pokémon universe from Generation 1
+through Generation 9. Compare evolution families, Pokémon GO
+stats, maximum CP, weaknesses, resistances, movesets, raid
+usefulness, Mega Evolution, Primal Reversion, Shadow Pokémon,
+Dynamax, Gigantamax, Shiny forms and availability.
+</p>
+
+<div class="hero-stats">
+
+<div class="hero-stat">
+<strong>Gen 1–9</strong>
+<span>Pokémon generations</span>
+</div>
+
+<div class="hero-stat">
+<strong>🔥 Fire</strong>
+<span>Primary type focus</span>
+</div>
+
+<div class="hero-stat">
+<strong>Raid</strong>
+<span>Battle analysis</span>
+</div>
+
+<div class="hero-stat">
+<strong>Shiny</strong>
+<span>Form tracking</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     TABLE OF CONTENTS
+     ====================================================== -->
+
+<section class="toc">
+
+<h2>🔥 Fire Type Hub Navigation</h2>
+
+<div class="toc-grid">
+
+<a href="#overview">Fire Type Overview</a>
+
+<a href="#generations">Gen 1–9</a>
+
+<a href="#evolutions">Evolution Families</a>
+
+<a href="#typing">Type Matchups</a>
+
+<a href="#stats">Stats & CP</a>
+
+<a href="#moves">Best Moves</a>
+
+<a href="#raids">Raid Usefulness</a>
+
+<a href="#special">Mega & Special Forms</a>
+
+<a href="#shadow">Shadow Pokémon</a>
+
+<a href="#dynamax">Dynamax & Gigantamax</a>
+
+<a href="#shiny">Shiny Pokémon</a>
+
+<a href="#availability">Availability</a>
+
+<a href="#guides">Individual Guides</a>
+
+<a href="#faq">FAQ</a>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     AD SLOT
+     ====================================================== -->
+
+<div class="ad-slot">
+
+Advertisement
+
+</div>
+
+
+<!-- ======================================================
+     SECTION 1
+     ====================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-header">
+
+<div class="section-number">
+01 · Type Overview
+</div>
+
+<h2>🔥 What Is the Fire Type?</h2>
+
+<p class="section-intro">
+
+Fire Pokémon specialize in powerful offensive pressure and
+are particularly useful against Grass, Ice, Bug and Steel
+opponents. In Pokémon GO, Fire attackers are especially
+valuable for raids against bosses vulnerable to Fire damage.
+
+</p>
+
+</div>
+
+
+<div class="card-grid">
+
+<article class="card">
+
+<h3>🔥 Offensive Role</h3>
+
+<p>
+Fire attackers are commonly used against Grass, Ice, Bug and
+Steel-type raid bosses. Their value depends on the Pokémon's
+Attack stat, moveset, availability and the current raid
+metagame.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>🛡️ Defensive Profile</h3>
+
+<p>
+Pure Fire Pokémon resist Bug, Fairy, Fire, Grass, Ice and
+Steel attacks in Pokémon GO. Dual typing can significantly
+change the final matchup.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>⚔️ Raid Role</h3>
+
+<p>
+Strong Fire attackers can fill dedicated raid teams, while
+Mega and Primal forms can additionally provide powerful
+party-wide type bonuses.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 2
+     ====================================================== -->
+
+<section class="section" id="generations">
+
+<div class="section-header">
+
+<div class="section-number">
+02 · Generations
+</div>
+
+<h2>🧬 Fire Pokémon by Generation</h2>
+
+<p class="section-intro">
+
+Browse Fire-type Pokémon from the original Kanto generation
+through the latest Paldean families.
+
+</p>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 1 · Kanto</div>
+
+<h3>Classic Fire Pokémon</h3>
+
+<ul>
+
+<li>Charmander → Charizard</li>
+<li>Vulpix → Ninetales</li>
+<li>Growlithe → Arcanine</li>
+<li>Ponyta → Rapidash</li>
+<li>Magmar → Magmortar</li>
+<li>Flareon</li>
+<li>Moltres</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 2 · Johto</div>
+
+<h3>Johto Flames</h3>
+
+<ul>
+
+<li>Cyndaquil → Typhlosion</li>
+<li>Slugma → Magcargo</li>
+<li>Houndour → Houndoom</li>
+<li>Entei</li>
+<li>Ho-Oh</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 3 · Hoenn</div>
+
+<h3>Hoenn Fire Force</h3>
+
+<ul>
+
+<li>Torchic → Blaziken</li>
+<li>Numel → Camerupt</li>
+<li>Torkoal</li>
+<li>Primal Groudon</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 4 · Sinnoh</div>
+
+<h3>Sinnoh Flames</h3>
+
+<ul>
+
+<li>Chimchar → Infernape</li>
+<li>Magmortar</li>
+<li>Heat Rotom</li>
+<li>Heatran</li>
+<li>Arceus Fire</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 5 · Unova</div>
+
+<h3>Unova Fire</h3>
+
+<ul>
+
+<li>Tepig → Emboar</li>
+<li>Pansear → Simisear</li>
+<li>Darumaka → Darmanitan</li>
+<li>Litwick → Chandelure</li>
+<li>Larvesta → Volcarona</li>
+<li>Reshiram</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 6 · Kalos</div>
+
+<h3>Kalos Fire</h3>
+
+<ul>
+
+<li>Fennekin → Delphox</li>
+<li>Fletchling → Talonflame</li>
+<li>Litleo → Pyroar</li>
+<li>Volcanion</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 7 · Alola</div>
+
+<h3>Alolan Flames</h3>
+
+<ul>
+
+<li>Litten → Incineroar</li>
+<li>Salandit → Salazzle</li>
+<li>Oricorio Baile</li>
+<li>Turtonator</li>
+<li>Blacephalon</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 8 · Galar</div>
+
+<h3>Galarian Fire</h3>
+
+<ul>
+
+<li>Scorbunny → Cinderace</li>
+<li>Rolycoly → Coalossal</li>
+<li>Sizzlipede → Centiskorch</li>
+<li>Galarian Darmanitan Zen</li>
+
+</ul>
+
+</article>
+
+
+<article class="card gen-card">
+
+<div class="gen-number">Generation 9 · Paldea</div>
+
+<h3>Paldean Fire</h3>
+
+<ul>
+
+<li>Fuecoco → Skeledirge</li>
+<li>Charcadet → Armarouge</li>
+<li>Charcadet → Ceruledge</li>
+<li>Iron Moth</li>
+<li>Gouging Fire</li>
+
+</ul>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 3
+     ====================================================== -->
+
+<section class="section" id="evolutions">
+
+<div class="section-header">
+
+<div class="section-number">
+03 · Evolution Database
+</div>
+
+<h2>🧬 Fire-Type Evolution Families</h2>
+
+<p class="section-intro">
+
+Evolution families help Trainers understand where Candy,
+Candy XL, Community Day moves, Elite TM requirements and
+final raid-ready forms fit into the progression.
+
+</p>
+
+</div>
+
+
+<div class="evolution-list">
+
+
+<div class="evolution">
+
+<h3>🔥 Charmander Family</h3>
+
+<div class="evolution-chain">
+
+<span class="evo-node">Charmander</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Charmeleon</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Charizard</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution">
+
+<h3>🔥 Torchic Family</h3>
+
+<div class="evolution-chain">
+
+<span class="evo-node">Torchic</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Combusken</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Blaziken</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution">
+
+<h3>🔥 Litwick Family</h3>
+
+<div class="evolution-chain">
+
+<span class="evo-node">Litwick</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Lampent</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Chandelure</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution">
+
+<h3>🔥 Cyndaquil Family</h3>
+
+<div class="evolution-chain">
+
+<span class="evo-node">Cyndaquil</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Quilava</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Typhlosion</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution">
+
+<h3>🔥 Tepig Family</h3>
+
+<div class="evolution-chain">
+
+<span class="evo-node">Tepig</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Pignite</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Emboar</span>
+
+</div>
+
+</div>
+
+
+<div class="evolution">
+
+<h3>🔥 Fuecoco Family</h3>
+
+<div class="evolution-chain">
+
+<span class="evo-node">Fuecoco</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Crocalor</span>
+<span class="evo-arrow">→</span>
+<span class="evo-node">Skeledirge</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 4
+     ====================================================== -->
+
+<section class="section" id="typing">
+
+<div class="section-header">
+
+<div class="section-number">
+04 · Type Matchups
+</div>
+
+<h2>🛡️ Fire-Type Weaknesses & Resistances</h2>
+
+<p class="section-intro">
+
+Pure Fire Pokémon have a predictable defensive profile, but
+dual-type Pokémon can have very different weaknesses and
+resistances. Always check the individual Pokémon's typing
+before selecting a raid party.
+
+</p>
+
+</div>
+
+
+<div class="matchup-grid">
+
+
+<div class="matchup weak">
+
+<h3>💥 Main Weaknesses</h3>
+
+<div class="matchup-list">
+
+<div class="matchup-item">💧 Water</div>
+<div class="matchup-item">🌍 Ground</div>
+<div class="matchup-item">🪨 Rock</div>
+
+</div>
+
+</div>
+
+
+<div class="matchup resist">
+
+<h3>🛡️ Main Resistances</h3>
+
+<div class="matchup-list">
+
+<div class="matchup-item">🐛 Bug</div>
+<div class="matchup-item">🧚 Fairy</div>
+<div class="matchup-item">🔥 Fire</div>
+<div class="matchup-item">🌿 Grass</div>
+<div class="matchup-item">❄️ Ice</div>
+<div class="matchup-item">⚙️ Steel</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="card-grid" style="margin-top:20px;">
+
+<div class="card">
+
+<h3>🔥 Fire/Flying</h3>
+
+<p>
+Charizard, Moltres and Ho-Oh gain Flying-type properties.
+Rock attacks are especially dangerous to this combination.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 Fire/Dragon</h3>
+
+<p>
+Reshiram and other Fire/Dragon Pokémon have a significantly
+different defensive profile from pure Fire Pokémon.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 Fire/Ghost</h3>
+
+<p>
+Chandelure, Alolan Marowak, Hisuian Typhlosion and other
+Fire/Ghost Pokémon combine Fire resistances with Ghost
+matchup mechanics.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 5
+     ====================================================== -->
+
+<section class="section" id="stats">
+
+<div class="section-header">
+
+<div class="section-number">
+05 · Stats Database
+</div>
+
+<h2>📊 Fire Pokémon CP & Battle Stats</h2>
+
+<p class="section-intro">
+
+CP alone does not determine raid performance. Attack,
+moveset quality, typing, weather, Mega bonuses and available
+moves should all be considered when evaluating a Fire attacker.
+
+</p>
+
+</div>
+
+
+<div class="filter-box">
+
+<div class="filters">
+
+<input
+    type="search"
+    id="pokemonSearch"
+    placeholder="Search Fire Pokémon..."
+    aria-label="Search Fire Pokémon">
+
+<select id="generationFilter">
+
+<option value="all">All Generations</option>
+<option value="1">Gen 1</option>
+<option value="2">Gen 2</option>
+<option value="3">Gen 3</option>
+<option value="4">Gen 4</option>
+<option value="5">Gen 5</option>
+<option value="6">Gen 6</option>
+<option value="7">Gen 7</option>
+<option value="8">Gen 8</option>
+<option value="9">Gen 9</option>
+
+</select>
+
+
+<select id="tierFilter">
+
+<option value="all">All Raid Tiers</option>
+<option value="S">S Tier</option>
+<option value="A">A Tier</option>
+<option value="B">B Tier</option>
+<option value="C">C Tier</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="table-wrapper">
+
+<table class="pokemon-table">
+
+<thead>
+
+<tr>
+
+<th>Pokémon</th>
+<th>Gen</th>
+<th>Type</th>
+<th>Max CP</th>
+<th>Attack</th>
+<th>Defense</th>
+<th>HP</th>
+<th>Raid Tier</th>
+<th>Guide</th>
+
+</tr>
+
+</thead>
+
+<tbody id="pokemonTableBody">
+
+
+<tr
+data-name="Charizard"
+data-generation="1"
+data-tier="A">
+
+<td>
+<div class="pokemon-name">
+Charizard
+</div>
+
+<div class="pokemon-number">
+#006
+</div>
+</td>
+
+<td>1</td>
+
+<td>
+<span class="type type-fire">Fire</span>
+<span class="type type-flying">Flying</span>
+</td>
+
+<td>3,266</td>
+<td>223</td>
+<td>173</td>
+<td>186</td>
+
+<td class="raid-tier tier-a">
+A
+</td>
+
+<td>
+<button
+class="guide-button"
+onclick="openPokemon('Charizard')">
+View
+</button>
+</td>
+
+</tr>
+
+
+<tr
+data-name="Blaziken"
+data-generation="3"
+data-tier="A">
+
+<td>
+
+<div class="pokemon-name">
+Blaziken
+</div>
+
+<div class="pokemon-number">
+#257
+</div>
+
+</td>
+
+<td>3</td>
+
+<td>
+
+<span class="type type-fire">
+Fire
+</span>
+
+<span class="type type-fighting">
+Fighting
+</span>
+
+</td>
+
+<td>3,219</td>
+<td>240</td>
+<td>141</td>
+<td>190</td>
+
+<td class="raid-tier tier-a">
+A
+</td>
+
+<td>
+
+<button
+class="guide-button"
+onclick="openPokemon('Blaziken')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+
+<tr
+data-name="Chandelure"
+data-generation="5"
+data-tier="S">
+
+<td>
+
+<div class="pokemon-name">
+Chandelure
+</div>
+
+<div class="pokemon-number">
+#609
+</div>
+
+</td>
+
+<td>5</td>
+
+<td>
+
+<span class="type type-ghost">
+Ghost
+</span>
+
+<span class="type type-fire">
+Fire
+</span>
+
+</td>
+
+<td>3,691</td>
+<td>271</td>
+<td>182</td>
+<td>155</td>
+
+<td class="raid-tier tier-s">
+S
+</td>
+
+<td>
+
+<button
+class="guide-button"
+onclick="openPokemon('Chandelure')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+
+<tr
+data-name="Reshiram"
+data-generation="5"
+data-tier="S">
+
+<td>
+
+<div class="pokemon-name">
+Reshiram
+</div>
+
+<div class="pokemon-number">
+#643
+</div>
+
+</td>
+
+<td>5</td>
+
+<td>
+
+<span class="type type-dragon">
+Dragon
+</span>
+
+<span class="type type-fire">
+Fire
+</span>
+
+</td>
+
+<td>4,565</td>
+<td>275</td>
+<td>211</td>
+<td>205</td>
+
+<td class="raid-tier tier-s">
+S
+</td>
+
+<td>
+
+<button
+class="guide-button"
+onclick="openPokemon('Reshiram')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+
+<tr
+data-name="Darmanitan"
+data-generation="5"
+data-tier="A">
+
+<td>
+
+<div class="pokemon-name">
+Darmanitan
+</div>
+
+<div class="pokemon-number">
+#555
+</div>
+
+</td>
+
+<td>5</td>
+
+<td>
+
+<span class="type type-fire">
+Fire
+</span>
+
+</td>
+
+<td>3,105</td>
+<td>263</td>
+<td>114</td>
+<td>233</td>
+
+<td class="raid-tier tier-a">
+A
+</td>
+
+<td>
+
+<button
+class="guide-button"
+onclick="openPokemon('Darmanitan')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+
+<tr
+data-name="Heatran"
+data-generation="4"
+data-tier="A">
+
+<td>
+
+<div class="pokemon-name">
+Heatran
+</div>
+
+<div class="pokemon-number">
+#485
+</div>
+
+</td>
+
+<td>4</td>
+
+<td>
+
+<span class="type type-fire">
+Fire
+</span>
+
+<span class="type type-steel">
+Steel
+</span>
+
+</td>
+
+<td>4,244</td>
+<td>251</td>
+<td>213</td>
+<td>209</td>
+
+<td class="raid-tier tier-a">
+A
+</td>
+
+<td>
+
+<button
+class="guide-button"
+onclick="openPokemon('Heatran')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+
+<tr
+data-name="Blacephalon"
+data-generation="7"
+data-tier="A">
+
+<td>
+
+<div class="pokemon-name">
+Blacephalon
+</div>
+
+<div class="pokemon-number">
+#806
+</div>
+
+</td>
+
+<td>7</td>
+
+<td>
+
+<span class="type type-fire">
+Fire
+</span>
+
+<span class="type type-ghost">
+Ghost
+</span>
+
+</td>
+
+<td>3,805</td>
+<td>315</td>
+<td>148</td>
+<td>142</td>
+
+<td class="raid-tier tier-a">
+A
+</td>
+
+<td>
+
+<button
+class="guide-button"
+onclick="openPokemon('Blacephalon')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 6
+     ====================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-header">
+
+<div class="section-number">
+06 · Moves
+</div>
+
+<h2>⚔️ Best Fire-Type Moves</h2>
+
+<p class="section-intro">
+
+Moveset quality can completely change a Pokémon's raid value.
+A Pokémon with high Attack may still perform poorly if its
+available Fire moves are weak or poorly matched to its role.
+
+</p>
+
+</div>
+
+
+<div class="move-grid">
+
+
+<div class="move-card">
+
+<div class="move-tag">
+FAST MOVES
+</div>
+
+<h3>🔥 Fire Spin</h3>
+
+<p>
+A reliable Fire-type fast attack used by several important
+Fire attackers. Its real value depends on the Pokémon using
+it and the complete moveset.
+</p>
+
+</div>
+
+
+<div class="move-card">
+
+<div class="move-tag">
+FAST MOVES
+</div>
+
+<h3>🔥 Incinerate</h3>
+
+<p>
+A powerful Fire fast move available to several high-value
+Fire Pokémon.
+</p>
+
+</div>
+
+
+<div class="move-card">
+
+<div class="move-tag">
+CHARGED MOVES
+</div>
+
+<h3>🔥 Blast Burn</h3>
+
+<p>
+One of the signature Community Day Fire charged moves.
+When available on an appropriate attacker, it can be a major
+reason to prioritize that Pokémon.
+</p>
+
+</div>
+
+
+<div class="move-card">
+
+<div class="move-tag">
+CHARGED MOVES
+</div>
+
+<h3>🔥 Overheat</h3>
+
+<p>
+A high-damage Fire charged move that can be effective for
+burst damage, although its stat and energy trade-offs must
+be considered.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 7
+     ====================================================== -->
+
+<section class="section" id="raids">
+
+<div class="section-header">
+
+<div class="section-number">
+07 · Raid Intelligence
+</div>
+
+<h2>🏆 Fire Pokémon Raid Usefulness</h2>
+
+<p class="section-intro">
+
+For raid teams, the strongest Fire Pokémon are not always
+those with the highest CP. Attack stat, move quality,
+resistances, Mega bonuses, survivability and the target
+boss's weakness all matter.
+
+</p>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<h3>🥇 Elite Fire Attackers</h3>
+
+<p>
+Reshiram, Mega Charizard Y, Mega Blaziken, Chandelure and
+other top-performing Fire attackers can form the core of a
+specialized Fire raid team.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 Mega Strategy</h3>
+
+<p>
+Mega Evolution can improve the Mega Pokémon's own performance
+while also boosting compatible attacks used by other Trainers
+during the raid.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌦️ Weather Strategy</h3>
+
+<p>
+Sunny or clear weather can increase the effectiveness of
+Fire attacks in Pokémon GO. Weather should be considered when
+planning difficult raids.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 8
+     ====================================================== -->
+
+<section class="section" id="special">
+
+<div class="section-header">
+
+<div class="section-number">
+08 · Special Forms
+</div>
+
+<h2>💎 Mega, Primal & Alternate Fire Forms</h2>
+
+<p class="section-intro">
+
+Special forms can dramatically change a Pokémon's stats,
+typing and raid role. Keep them as separate database entries
+so users can compare normal and special forms clearly.
+
+</p>
+
+</div>
+
+
+<div class="special-grid">
+
+
+<div class="special">
+
+<div class="special-icon">🔥</div>
+
+<h3>Mega Charizard Y</h3>
+
+<p>
+Fire/Flying. One of the premier Fire Mega options for raids.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">🔥</div>
+
+<h3>Mega Blaziken</h3>
+
+<p>
+Fire/Fighting. High offensive pressure and valuable Mega
+support.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">🔥</div>
+
+<h3>Mega Houndoom</h3>
+
+<p>
+Dark/Fire. Useful as both a Fire and Dark specialist.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">🌋</div>
+
+<h3>Primal Groudon</h3>
+
+<p>
+Ground/Fire. Combines elite Ground performance with a powerful
+Primal raid boost.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">🌋</div>
+
+<h3>Mega Camerupt</h3>
+
+<p>
+Fire/Ground. A specialized Mega option for Fire and Ground
+raid strategies.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">⚙️</div>
+
+<h3>Mega Heatran</h3>
+
+<p>
+Fire/Steel. A powerful special form that deserves its own
+database entry.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">👻</div>
+
+<h3>Hisuian Typhlosion</h3>
+
+<p>
+Fire/Ghost. A regional variant with a different typing and
+battle profile.
+</p>
+
+</div>
+
+
+<div class="special">
+
+<div class="special-icon">🐺</div>
+
+<h3>Galarian Darmanitan</h3>
+
+<p>
+Its alternate forms have substantially different typing and
+battle roles.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 9
+     ====================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-header">
+
+<div class="section-number">
+09 · Shadow Pokémon
+</div>
+
+<h2>👤 Shadow Fire Pokémon</h2>
+
+<p class="section-intro">
+
+Shadow Pokémon should be evaluated separately because the
+Shadow damage modifier can make some Pokémon significantly
+more attractive for offensive raid teams. However, the higher
+damage output comes with reduced defensive durability.
+
+</p>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<h3>🔥 Shadow Moltres</h3>
+
+<p>
+A valuable offensive Fire/Flying option when equipped with an
+appropriate Fire moveset.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 Shadow Entei</h3>
+
+<p>
+A strong legendary Fire option whose Shadow form can provide
+significant offensive pressure.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 Shadow Blaziken</h3>
+
+<p>
+An offensive Fire/Fighting option that can become particularly
+useful when paired with a strong Fire moveset.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 Shadow Chandelure</h3>
+
+<p>
+A high-Attack Ghost/Fire attacker with potential value in
+both Ghost and Fire raid roles depending on its moveset.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 10
+     ====================================================== -->
+
+<section class="section" id="dynamax">
+
+<div class="section-header">
+
+<div class="section-number">
+10 · Max Battles
+</div>
+
+<h2>⚡ Dynamax & Gigantamax Fire Pokémon</h2>
+
+<p class="section-intro">
+
+Dynamax and Gigantamax content should be displayed separately
+from standard Raid Battle information because Max Battles have
+different mechanics and team-building considerations.
+
+</p>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<h3>⚡ Dynamax Fire Pokémon</h3>
+
+<p>
+Dynamax Pokémon can participate in Max Battles and provide
+Max Move options based on their available attacks.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>👑 Gigantamax Charizard</h3>
+
+<p>
+Gigantamax Charizard should have a dedicated form entry,
+including its Gigantamax-specific information and Max Battle
+role.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>👑 Gigantamax Cinderace</h3>
+
+<p>
+Cinderace's Gigantamax form should be treated independently
+from standard Cinderace in a complete database.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>👑 Gigantamax Centiskorch</h3>
+
+<p>
+Centiskorch's Gigantamax form provides another Fire-focused
+Max Battle option.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 11
+     ====================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-header">
+
+<div class="section-number">
+11 · Shiny Database
+</div>
+
+<h2>✨ Shiny Fire Pokémon</h2>
+
+<p class="section-intro">
+
+Shiny availability should always be listed separately from
+normal availability. A Pokémon being available in Pokémon GO
+does not automatically mean its Shiny form is available.
+
+</p>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<h3>✨ Shiny Charizard</h3>
+
+<p>
+Shiny Charizard is especially recognizable because its final
+form changes to a dark coloration.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>✨ Shiny Blaziken</h3>
+
+<p>
+Track its Shiny availability, event history and evolution
+requirements separately from standard Blaziken.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>✨ Shiny Chandelure</h3>
+
+<p>
+A popular collectible Shiny and a useful Fire/Ghost database
+entry.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>✨ Shiny Reshiram</h3>
+
+<p>
+Legendary Shiny availability should include raid/event
+history and whether the encounter was limited.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 12
+     ====================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-header">
+
+<div class="section-number">
+12 · Availability
+</div>
+
+<h2>📅 How Fire Pokémon Appear in Pokémon GO</h2>
+
+<p class="section-intro">
+
+Availability changes over time. Avoid presenting a temporary
+event appearance as permanent availability. Instead, explain
+the most recent known method and link users to current event
+information.
+
+</p>
+
+</div>
+
+
+<div class="availability">
+
+
+<div class="availability-card">
+
+<strong>🌿 Wild Encounters</strong>
+
+<span>
+Some Fire Pokémon can appear in the wild depending on
+biome, season, events and other encounter rotations.
+</span>
+
+</div>
+
+
+<div class="availability-card">
+
+<strong>🥚 Eggs</strong>
+
+<span>
+Some species periodically appear in specific egg pools.
+Always verify the current egg rotation.
+</span>
+
+</div>
+
+
+<div class="availability-card">
+
+<strong>⚔️ Raids</strong>
+
+<span>
+Legendary, Mega and special Fire Pokémon may return through
+limited-time raid rotations.
+</span>
+
+</div>
+
+
+<div class="availability-card">
+
+<strong>🎉 Events</strong>
+
+<span>
+Community events, seasonal events and themed events can
+change encounter availability.
+</span>
+
+</div>
+
+
+<div class="availability-card">
+
+<strong>🎟️ Research</strong>
+
+<span>
+Certain Pokémon may appear through Field Research,
+Timed Research or Special Research.
+</span>
+
+</div>
+
+
+<div class="availability-card">
+
+<strong>🌑 Shadow Encounters</strong>
+
+<span>
+Shadow Fire Pokémon may be associated with specific Team GO
+Rocket rotations.
+</span>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 13
+     ====================================================== -->
+
+<section class="section" id="guides">
+
+<div class="section-header">
+
+<div class="section-number">
+13 · Individual Guides
+</div>
+
+<h2>📖 Fire Pokémon Individual Guides</h2>
+
+<p class="section-intro">
+
+The Type Hub should be the starting point. Each important
+species should then have a dedicated guide containing
+Pokémon-specific information rather than repeating generic
+Fire-type text.
+
+</p>
+
+</div>
+
+
+<div class="guide-grid">
+
+
+<article class="guide-card">
+
+<div class="guide-number">
+#006
+</div>
+
+<h3>Charizard</h3>
+
+<p>
+Fire/Flying Pokémon. Explore evolution, Mega Charizard X/Y,
+moves, raid performance, PvP, Shiny and battle strategy.
+</p>
+
+<button
+onclick="openPokemon('Charizard')">
+
+Open Guide
+
+</button>
+
+</article>
+
+
+<article class="guide-card">
+
+<div class="guide-number">
+#257
+</div>
+
+<h3>Blaziken</h3>
+
+<p>
+Fire/Fighting specialist with Mega Evolution and strong
+offensive potential.
+</p>
+
+<button
+onclick="openPokemon('Blaziken')">
+
+Open Guide
+
+</button>
+
+</article>
+
+
+<article class="guide-card">
+
+<div class="guide-number">
+#609
+</div>
+
+<h3>Chandelure</h3>
+
+<p>
+Fire/Ghost attacker with strong offensive stats and multiple
+raid applications.
+</p>
+
+<button
+onclick="openPokemon('Chandelure')">
+
+Open Guide
+
+</button>
+
+</article>
+
+
+<article class="guide-card">
+
+<div class="guide-number">
+#643
+</div>
+
+<h3>Reshiram</h3>
+
+<p>
+Dragon/Fire Legendary and one of the major Fire raid
+attackers.
+</p>
+
+<button
+onclick="openPokemon('Reshiram')">
+
+Open Guide
+
+</button>
+
+</article>
+
+
+<article class="guide-card">
+
+<div class="guide-number">
+#485
+</div>
+
+<h3>Heatran</h3>
+
+<p>
+Fire/Steel Legendary with a unique defensive typing and
+important raid applications.
+</p>
+
+<button
+onclick="openPokemon('Heatran')">
+
+Open Guide
+
+</button>
+
+</article>
+
+
+<article class="guide-card">
+
+<div class="guide-number">
+#383
+</div>
+
+<h3>Primal Groudon</h3>
+
+<p>
+Ground/Fire Primal Legendary with major Ground and Fire
+battle applications.
+</p>
+
+<button
+onclick="openPokemon('Primal Groudon')">
+
+Open Guide
+
+</button>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 14
+     ====================================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<div class="section-number">
+14 · Trainer Strategy
+</div>
+
+<h2>🧠 How to Build a Fire Raid Team</h2>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<h3>1. Check the Raid Boss</h3>
+
+<p>
+Identify the boss's weaknesses before choosing your Fire
+team. Never choose a Pokémon simply because it has a high CP.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>2. Compare Attackers</h3>
+
+<p>
+Compare Attack, moveset, survivability and actual raid
+performance rather than relying exclusively on CP.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>3. Consider Mega Support</h3>
+
+<p>
+A suitable Mega or Primal Pokémon can provide additional
+value to the entire raid party.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>4. Check Weather</h3>
+
+<p>
+Weather can alter move effectiveness and therefore change
+the most efficient raid counters.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>5. Don't Ignore Shadows</h3>
+
+<p>
+Shadow attackers can offer greater offensive pressure but
+usually sacrifice durability.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>6. Build a Backup Team</h3>
+
+<p>
+A second Fire team helps when a difficult raid knocks out
+your first group before the battle is finished.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 15
+     ====================================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<div class="section-number">
+15 · Data Interpretation
+</div>
+
+<h2>📊 CP Is Not Everything</h2>
+
+</div>
+
+
+<div class="editorial">
+
+<p>
+<strong>Why?</strong>
+A Pokémon's CP is a combined value influenced by its stats
+and level. It should not be treated as a direct ranking of
+raid damage.
+</p>
+
+<p>
+For raid analysis, consider Attack, moveset, typing, weather,
+Mega/Primal bonuses, Shadow mechanics and the specific raid
+boss matchup.
+</p>
+
+<p>
+This is why a lower-CP Pokémon can sometimes outperform a
+higher-CP Pokémon when it has a substantially better offensive
+moveset or typing.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     SECTION 16
+     ====================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-header">
+
+<div class="section-number">
+16 · Frequently Asked Questions
+</div>
+
+<h2>❓ Fire-Type Pokémon FAQ</h2>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+What is Fire strong against in Pokémon GO?
+</summary>
+
+<p>
+Fire attacks are especially useful against Grass, Ice, Bug
+and Steel-type opponents.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Fire weak to?
+</summary>
+
+<p>
+Pure Fire Pokémon are weak to Water, Ground and Rock attacks.
+Dual typing can change the exact matchup.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is the best Fire Pokémon for raids?
+</summary>
+
+<p>
+The answer depends on the raid boss, available moves,
+weather and whether Mega, Primal or Shadow Pokémon are
+allowed or useful. Strong candidates include Mega Charizard Y,
+Mega Blaziken, Reshiram and Chandelure.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Primal Groudon a Fire attacker?
+</summary>
+
+<p>
+Yes. Primal Groudon has Ground/Fire typing and can contribute
+to Fire-focused strategies in addition to its major Ground
+role.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is CP enough to choose a Fire raid attacker?
+</summary>
+
+<p>
+No. CP is only one metric. Attack, moveset, typing,
+survivability and the specific raid matchup are also
+important.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should Mega and Primal Pokémon have separate database pages?
+</summary>
+
+<p>
+Yes. For a serious Pokémon GO database, special forms should
+have their own entries so users can compare their stats,
+typing, moves and raid roles accurately.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should Shadow Pokémon have separate pages?
+</summary>
+
+<p>
+Yes. Shadow mechanics can significantly change offensive
+performance, so Shadow forms deserve dedicated information.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are all Fire Pokémon available in Pokémon GO?
+</summary>
+
+<p>
+No. Availability varies by species, form, event, raid
+rotation, research, region and other game mechanics.
+</p>
+
+</details>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FINAL EDITORIAL NOTE
+     ====================================================== -->
+
+<section class="section">
+
+<div class="editorial">
+
+<h2>🔥 About This Fire-Type Database</h2>
+
+<p>
+This Fire Type Hub is designed as a reference starting point
+for Pokémon GO Trainers. Individual Pokémon pages should
+expand on the information presented here with species-specific
+raid analysis, moveset recommendations, evolution requirements,
+availability history, Shiny information and practical battle
+advice.
+</p>
+
+<p>
+<strong>Last reviewed:</strong>
+August 2026
+</p>
+
+<p>
+Game mechanics, Pokémon availability, moves and raid rotations
+can change. Verify time-sensitive information against the
+current Pokémon GO game data and event announcements before
+publishing an “available now” claim.
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>🔥 PokémonGaming</h3>
+
+<p>
+Pokémon GO raid guides, Pokémon database, type guides,
+battle tools and Trainer resources.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Explore</h3>
+
+<div class="footer-links">
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pokedex/">
+Pokédex
+</a>
+
+<a href="/types/">
+Type Database
+</a>
+
+<a href="/tools/">
+Pokémon Tools
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>Types</h3>
+
+<div class="footer-links">
+
+<a href="/types/fire.html">
+🔥 Fire
+</a>
+
+<a href="/types/water.html">
+💧 Water
+</a>
+
+<a href="/types/grass.html">
+🌿 Grass
+</a>
+
+<a href="/types/electric.html">
+⚡ Electric
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 PokémonGaming.in · Independent Pokémon GO
+community resource.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ======================================================
+     MODAL
+     ====================================================== -->
+
+<div
+class="modal"
+id="pokemonModal"
+role="dialog"
+aria-modal="true"
+aria-labelledby="modalTitle">
+
+<div class="modal-content">
+
+<button
+class="modal-close"
+onclick="closePokemon()"
+aria-label="Close Pokémon guide">
+
+×
+</button>
+
+
+<h2 id="modalTitle">
+Pokémon
+</h2>
+
+
+<div id="modalTypes"></div>
+
+
+<div class="modal-section">
+
+<h3>📊 Battle Profile</h3>
+
+<p id="modalStats"></p>
+
+</div>
+
+
+<div class="modal-section">
+
+<h3>⚔️ Raid Role</h3>
+
+<p id="modalRaid"></p>
+
+</div>
+
+
+<div class="modal-section">
+
+<h3>🔥 Recommended Moves</h3>
+
+<p id="modalMoves"></p>
+
+</div>
+
+
+<div class="modal-section">
+
+<h3>🧬 Evolution</h3>
+
+<p id="modalEvolution"></p>
+
+</div>
+
+
+<div class="modal-section">
+
+<h3>✨ Special Forms</h3>
+
+<p id="modalSpecial"></p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   FIRE POKEMON DATABASE
+   ========================================================= */
+
+const pokemonData = {
+
+"Charizard":{
+
+types:["Fire","Flying"],
+
+stats:
+"Max CP: 3,266 · Attack: 223 · Defense: 173 · HP: 186",
+
+raid:
+"Strong Fire/Flying attacker. Its Mega Evolutions are much
+more important for high-level raid teams.",
+
+moves:
+"Fire Spin / Incinerate with Blast Burn or another strong
+Fire charged move depending on the available moveset.",
+
+evolution:
+"Charmander → Charmeleon → Charizard",
+
+special:
+"Mega Charizard X and Mega Charizard Y. Shiny form available
+through Pokémon GO's established Shiny distribution."
+},
+
+
+"Blaziken":{
+
+types:["Fire","Fighting"],
+
+stats:
+"Max CP: 3,219 · Attack: 240 · Defense: 141 · HP: 190",
+
+raid:
+"Strong offensive Fire/Fighting option. Mega Blaziken is
+particularly valuable for raid support and damage.",
+
+moves:
+"Fire Spin / Incinerate with Blast Burn for a Fire-focused
+moveset when available.",
+
+evolution:
+"Torchic → Combusken → Blaziken",
+
+special:
+"Mega Blaziken and Shadow Blaziken can be evaluated
+separately."
+},
+
+
+"Chandelure":{
+
+types:["Ghost","Fire"],
+
+stats:
+"Max CP: 3,691 · Attack: 271 · Defense: 182 · HP: 155",
+
+raid:
+"High-Attack Fire/Ghost attacker with applications in both
+Fire and Ghost roles.",
+
+moves:
+"Fire-oriented and Ghost-oriented movesets should be evaluated
+separately depending on the raid target.",
+
+evolution:
+"Litwick → Lampent → Chandelure",
+
+special:
+"Shadow and Shiny versions should have separate database
+fields when available."
+},
+
+
+"Reshiram":{
+
+types:["Dragon","Fire"],
+
+stats:
+"Max CP: 4,565 · Attack: 275 · Defense: 211 · HP: 205",
+
+raid:
+"Elite Legendary Fire attacker and an important choice for
+serious Fire raid teams.",
+
+moves:
+"Fire-focused charged and fast moves should be evaluated
+against the current raid target.",
+
+evolution:
+"Legendary Pokémon; no standard evolution.",
+
+special:
+"Shiny and special-event availability should be tracked."
+},
+
+
+"Heatran":{
+
+types:["Fire","Steel"],
+
+stats:
+"Max CP: 4,244 · Attack: 251 · Defense: 213 · HP: 209",
+
+raid:
+"Powerful Fire/Steel Legendary with an unusual defensive
+typing.",
+
+moves:
+"Use the Fire moveset when the raid target is weak to Fire;
+other moves may support different roles.",
+
+evolution:
+"Legendary Pokémon; no standard evolution.",
+
+special:
+"Track Mega Heatran separately if and when available."
+},
+
+
+"Blacephalon":{
+
+types:["Fire","Ghost"],
+
+stats:
+"High-Attack Fire/Ghost Ultra Beast with offensive raid
+potential.",
+
+raid:
+"Can contribute as a Fire attacker and also has Ghost-type
+applications.",
+
+moves:
+"Evaluate its Fire and Ghost movesets separately.",
+
+evolution:
+"Ultra Beast; no standard evolution.",
+
+special:
+"Track raid availability and Shiny status separately."
+},
+
+
+"Primal Groudon":{
+
+types:["Ground","Fire"],
+
+stats:
+"Max CP: 6,672 · Elite Primal battle profile.",
+
+raid:
+"Exceptional Ground attacker with important Fire utility
+and a powerful Primal party boost.",
+
+moves:
+"Ground and Fire movesets should be evaluated according to
+the raid boss.",
+
+evolution:
+"Groudon → Primal Reversion",
+
+special:
+"Primal form; not a standard evolution."
+}
+
+};
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+function openPokemon(name){
+
+const data = pokemonData[name];
+
+if(!data) return;
+
+document.getElementById("modalTitle")
+.innerText = name;
+
+document.getElementById("modalTypes")
+.innerHTML =
+data.types.map(type =>
+`<span class="type type-${type.toLowerCase()}">
+${type}
+</span>`
+).join("");
+
+document.getElementById("modalStats")
+.innerText =
+data.stats;
+
+document.getElementById("modalRaid")
+.innerText =
+data.raid;
+
+document.getElementById("modalMoves")
+.innerText =
+data.moves;
+
+document.getElementById("modalEvolution")
+.innerText =
+data.evolution;
+
+document.getElementById("modalSpecial")
+.innerText =
+data.special;
+
+document
+.getElementById("pokemonModal")
+.classList.add("active");
+
+document.body.style.overflow =
+"hidden";
+
+}
+
+
+function closePokemon(){
+
+document
+.getElementById("pokemonModal")
+.classList.remove("active");
+
+document.body.style.overflow =
+"";
+
+}
+
+
+/* =========================================================
+   CLOSE MODAL ON BACKDROP
+   ========================================================= */
+
+document
+.getElementById("pokemonModal")
+.addEventListener(
+"click",
+function(event){
+
+if(event.target === this){
+
+closePokemon();
+
+}
+
+});
+
+
+/* =========================================================
+   ESCAPE KEY
+   ========================================================= */
+
+document.addEventListener(
+"keydown",
+function(event){
+
+if(event.key === "Escape"){
+
+closePokemon();
+
+}
+
+});
+
+
+/* =========================================================
+   SEARCH + FILTER
+   ========================================================= */
+
+const search =
+document.getElementById("pokemonSearch");
+
+const generation =
+document.getElementById("generationFilter");
+
+const tier =
+document.getElementById("tierFilter");
+
+const rows =
+document.querySelectorAll(
+"#pokemonTableBody tr"
+);
+
+
+function filterPokemon(){
+
+const searchValue =
+search.value.toLowerCase();
+
+const generationValue =
+generation.value;
+
+const tierValue =
+tier.value;
+
+
+rows.forEach(row => {
+
+const name =
+row.dataset.name.toLowerCase();
+
+const gen =
+row.dataset.generation;
+
+const rowTier =
+row.dataset.tier;
+
+
+const matchesSearch =
+name.includes(searchValue);
+
+const matchesGeneration =
+generationValue === "all" ||
+gen === generationValue;
+
+const matchesTier =
+tierValue === "all" ||
+rowTier === tierValue;
+
+
+row.style.display =
+(
+matchesSearch &&
+matchesGeneration &&
+matchesTier
+)
+? ""
+: "none";
+
+});
+
+}
+
+
+search.addEventListener(
+"input",
+filterPokemon
+);
+
+generation.addEventListener(
+"change",
+filterPokemon
+);
+
+tier.addEventListener(
+"change",
+filterPokemon
+);
+
+
+/* =========================================================
+   PREVENT EMPTY HASH JUMPS
+   ========================================================= */
+
+document
+.querySelectorAll('a[href="#"]')
+.forEach(link => {
+
+link.addEventListener(
+"click",
+event => event.preventDefault()
+);
+
+});
+
+</script>
+
+</body>
+</html>

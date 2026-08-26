@@ -1,0 +1,5012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Poison-Type Pokémon GO Hub | Stats, Weaknesses, Moves, Raids & Guides
+</title>
+
+<meta name="description"
+      content="Complete Poison-type Pokémon GO hub covering Gen 1–9, evolution families, stats, maximum CP, weaknesses, resistances, best moves, raid performance, Shadow, Mega, Dynamax, Gigantamax, shiny availability and individual Pokémon guides.">
+
+<meta name="robots"
+      content="index, follow, max-image-preview:large">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/poison-type.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+
+    --bg:#080b0a;
+    --bg-secondary:#0e1411;
+
+    --panel:#151d18;
+    --panel-2:#1b261f;
+
+    --border:#2c3c32;
+
+    --text:#f4f8f5;
+    --muted:#aab8af;
+
+    --poison:#a040a0;
+    --poison-light:#d080d0;
+
+    --green:#55d98b;
+    --red:#ff6868;
+    --yellow:#ffd166;
+    --blue:#62b5ff;
+
+    --max-width:1250px;
+
+    --radius:18px;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    margin:0;
+
+    background:
+
+        radial-gradient(
+            circle at top left,
+            rgba(160,64,160,.20),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at top right,
+            rgba(70,130,90,.12),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.7;
+
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+a{
+
+    color:#d99be0;
+
+    text-decoration:none;
+
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+.container{
+
+    width:min(
+        var(--max-width),
+        calc(100% - 32px)
+    );
+
+    margin:auto;
+
+}
+
+.section{
+
+    padding:70px 0;
+
+}
+
+.section-title{
+
+    font-size:
+        clamp(28px,4vw,44px);
+
+    line-height:1.15;
+
+    margin:
+        0 0 12px;
+
+}
+
+.section-intro{
+
+    color:var(--muted);
+
+    max-width:900px;
+
+    margin:
+        0 0 30px;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+        rgba(8,11,10,.94);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.header-inner{
+
+    min-height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    font-size:21px;
+
+    font-weight:900;
+
+    color:white;
+
+}
+
+.logo span{
+
+    color:var(--poison-light);
+
+}
+
+.main-nav{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.main-nav a{
+
+    color:#d9e0db;
+
+    font-size:14px;
+
+    font-weight:800;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    padding:
+        80px 0 65px;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(160,64,160,.32),
+            transparent 35%
+        );
+
+}
+
+.breadcrumb{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap:45px;
+
+    align-items:center;
+
+}
+
+.hero h1{
+
+    font-size:
+        clamp(42px,7vw,78px);
+
+    line-height:.98;
+
+    margin:
+        0 0 25px;
+
+}
+
+.hero h1 span{
+
+    color:var(--poison-light);
+
+}
+
+.hero-description{
+
+    color:#c5cec8;
+
+    font-size:18px;
+
+    max-width:800px;
+
+}
+
+.hero-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:48px;
+
+    padding:
+        0 20px;
+
+    border-radius:12px;
+
+    background:var(--panel);
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+    font-weight:900;
+
+}
+
+.btn-primary{
+
+    background:var(--poison);
+
+    border-color:
+        var(--poison-light);
+
+}
+
+.btn:hover{
+
+    text-decoration:none;
+
+    transform:translateY(-1px);
+
+}
+
+.hero-card{
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(160,64,160,.28),
+            rgba(21,29,24,.95)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:25px;
+
+    padding:30px;
+
+}
+
+.hero-card-title{
+
+    color:var(--muted);
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+    letter-spacing:1.5px;
+
+}
+
+.hero-stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.hero-stat{
+
+    padding:18px;
+
+    background:
+        rgba(0,0,0,.22);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+}
+
+.hero-stat strong{
+
+    display:block;
+
+    font-size:24px;
+
+}
+
+.hero-stat span{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+
+/* =========================================================
+   QUICK NAV
+========================================================= */
+
+.quick-nav{
+
+    margin-top:-25px;
+
+}
+
+.quick-nav-inner{
+
+    display:flex;
+
+    gap:10px;
+
+    overflow-x:auto;
+
+    padding:15px;
+
+    background:
+        rgba(21,29,24,.97);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.quick-nav a{
+
+    flex:none;
+
+    padding:
+        9px 14px;
+
+    background:#101610;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.notice{
+
+    padding:
+        18px 20px;
+
+    border:
+        1px solid var(--border);
+
+    border-left:
+        4px solid var(--poison-light);
+
+    background:
+        #111813;
+
+    border-radius:14px;
+
+}
+
+.notice strong{
+    color:white;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+.info-card{
+
+    padding:25px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            var(--panel-2),
+            #101610
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition:
+        .2s ease;
+
+}
+
+.info-card:hover{
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        var(--poison-light);
+
+}
+
+.info-card h3{
+
+    margin-top:0;
+
+}
+
+.info-card p{
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   GENERATION TABS
+========================================================= */
+
+.generation-tabs{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin:
+        25px 0;
+
+}
+
+.gen-btn{
+
+    padding:
+        10px 15px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--panel);
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+.gen-btn.active,
+.gen-btn:hover{
+
+    background:
+        var(--poison);
+
+    border-color:
+        var(--poison-light);
+
+}
+
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:15px;
+
+}
+
+.stat-card{
+
+    padding:22px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.stat-label{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+.stat-value{
+
+    font-size:28px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   TYPE MATCHUPS
+========================================================= */
+
+.matchup-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:20px;
+
+}
+
+.matchup-box{
+
+    padding:25px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.matchup-box h3{
+
+    margin-top:0;
+
+}
+
+.weakness{
+
+    border-top:
+        4px solid var(--red);
+
+}
+
+.resistance{
+
+    border-top:
+        4px solid var(--green);
+
+}
+
+.type-list{
+
+    display:flex;
+
+    gap:9px;
+
+    flex-wrap:wrap;
+
+}
+
+.type-badge{
+
+    padding:
+        7px 12px;
+
+    background:#292433;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.data-table{
+
+    width:100%;
+
+    min-width:850px;
+
+    border-collapse:collapse;
+
+}
+
+.data-table th,
+.data-table td{
+
+    padding:15px;
+
+    text-align:left;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.data-table th{
+
+    background:
+        #1a241d;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+}
+
+.data-table td{
+
+    color:#c6d0c9;
+
+}
+
+.data-table tr:hover td{
+
+    background:#182019;
+
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution-family{
+
+    padding:28px;
+
+    margin-bottom:20px;
+
+    background:
+        #111813;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:20px;
+
+}
+
+.evolution-line{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.evolution-node{
+
+    min-width:150px;
+
+    padding:18px;
+
+    text-align:center;
+
+    background:
+        #1a241d;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+}
+
+.evolution-arrow{
+
+    color:
+        var(--poison-light);
+
+    font-size:26px;
+
+}
+
+
+/* =========================================================
+   MOVE CARDS
+========================================================= */
+
+.move-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:16px;
+
+}
+
+.move-card{
+
+    padding:20px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.move-card h3{
+
+    margin-top:0;
+
+}
+
+.move-meta{
+
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+}
+
+.move-tag{
+
+    padding:
+        5px 9px;
+
+    background:#292433;
+
+    border-radius:7px;
+
+    font-size:12px;
+
+}
+
+
+/* =========================================================
+   RAID TIER
+========================================================= */
+
+.raid-tier{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:15px;
+
+}
+
+.tier{
+
+    padding:22px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.tier strong{
+
+    display:block;
+
+    font-size:25px;
+
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.variant-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:15px;
+
+}
+
+.variant-card{
+
+    padding:20px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.variant-card h3{
+
+    margin-top:0;
+
+}
+
+.variant-card p{
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   SHINY
+========================================================= */
+
+.shiny-comparison{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:20px;
+
+}
+
+.shiny-box{
+
+    padding:25px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.shiny-label{
+
+    display:inline-block;
+
+    padding:
+        5px 10px;
+
+    background:#292433;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   DATABASE
+========================================================= */
+
+.database-toolbar{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+.search-box{
+
+    flex:1;
+
+    min-width:230px;
+
+    padding:
+        13px 15px;
+
+    background:#101610;
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+}
+
+.search-box:focus{
+
+    border-color:
+        var(--poison-light);
+
+}
+
+.filter-select{
+
+    padding:
+        13px 15px;
+
+    background:#101610;
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+}
+
+.pokemon-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+.pokemon-card{
+
+    padding:20px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #1b261f,
+            #101610
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+    transition:.2s;
+
+}
+
+.pokemon-card:hover{
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        var(--poison-light);
+
+}
+
+.pokemon-number{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+.pokemon-image{
+
+    min-height:150px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.pokemon-image img{
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+}
+
+.pokemon-card h3{
+
+    margin:
+        5px 0;
+
+    font-size:21px;
+
+}
+
+.pokemon-type{
+
+    display:inline-block;
+
+    padding:
+        5px 9px;
+
+    background:
+        #38243b;
+
+    border-radius:7px;
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+.pokemon-mini-stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:7px;
+
+    margin-top:15px;
+
+}
+
+.mini-stat{
+
+    padding:8px;
+
+    text-align:center;
+
+    background:#0c110d;
+
+    border-radius:9px;
+
+}
+
+.mini-stat strong{
+
+    display:block;
+
+}
+
+.mini-stat span{
+
+    color:var(--muted);
+
+    font-size:10px;
+
+}
+
+
+/* =========================================================
+   INDIVIDUAL GUIDES
+========================================================= */
+
+.guide-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+.guide-card{
+
+    padding:22px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #1b261f,
+            #101610
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.guide-card h3{
+
+    margin-top:0;
+
+}
+
+.guide-card p{
+
+    color:var(--muted);
+
+}
+
+.guide-link{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+
+    max-width:950px;
+
+}
+
+.faq details{
+
+    margin-bottom:12px;
+
+    padding:
+        18px 20px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+}
+
+.faq summary{
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+.faq p{
+
+    color:var(--muted);
+
+    margin-bottom:0;
+
+}
+
+
+/* =========================================================
+   EDITORIAL
+========================================================= */
+
+.editorial-box{
+
+    padding:28px;
+
+    background:#0e140f;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+.editorial-meta{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.editorial-meta div{
+
+    padding:15px;
+
+    background:#172019;
+
+    border-radius:12px;
+
+}
+
+.editorial-meta span{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:12px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer{
+
+    margin-top:40px;
+
+    padding:50px 0;
+
+    background:#050705;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:30px;
+
+}
+
+.footer-grid h3{
+
+    margin-top:0;
+
+}
+
+.footer-grid a{
+
+    display:block;
+
+    margin:7px 0;
+
+    color:var(--muted);
+
+}
+
+.footer-note{
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:#858d88;
+
+    font-size:13px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .pokemon-grid{
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .guide-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .variant-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .raid-tier{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+}
+
+@media(max-width:800px){
+
+    .main-nav{
+        display:none;
+    }
+
+    .hero-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+    }
+
+    .matchup-grid,
+    .move-grid,
+    .shiny-comparison{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        width:
+            calc(100% - 20px);
+
+    }
+
+    .section{
+
+        padding:50px 0;
+
+    }
+
+    .hero{
+
+        padding:
+            55px 0 45px;
+
+    }
+
+    .hero h1{
+
+        font-size:46px;
+
+    }
+
+    .hero-description{
+
+        font-size:16px;
+
+    }
+
+    .card-grid,
+    .pokemon-grid,
+    .guide-grid,
+    .variant-grid,
+    .raid-tier{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .editorial-meta{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .evolution-arrow{
+
+        transform:
+            rotate(90deg);
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="container header-inner">
+
+<a class="logo"
+   href="/">
+
+Pokémon<span>Gaming</span>
+
+</a>
+
+
+<nav class="main-nav"
+     aria-label="Main navigation">
+
+<a href="/raids/">
+Raids
+</a>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/guides/">
+Guides
+</a>
+
+<a href="/pvp/">
+PvP
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="/">
+Home
+</a>
+
+ /
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+ /
+
+Poison Type
+
+</div>
+
+
+<div class="hero-grid">
+
+
+<div>
+
+<h1>
+
+☠️ Poison-Type
+
+<span>
+Pokémon GO Hub
+</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Explore the complete Poison-type Pokémon GO database.
+Compare Pokémon from Generations 1–9, follow evolution
+families, examine Attack, Defense, HP and maximum CP,
+understand weaknesses and resistances, discover useful
+movesets and explore raid, Shadow, Mega, Dynamax,
+Gigantamax, shiny and availability information.
+
+</p>
+
+
+<div class="hero-actions">
+
+<a class="btn btn-primary"
+   href="#pokemon-database">
+
+Explore Poison Pokémon
+
+</a>
+
+
+<a class="btn"
+   href="#matchups">
+
+Type Matchups
+
+</a>
+
+
+<a class="btn"
+   href="#individual-guides">
+
+Individual Guides
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="hero-card-title">
+
+Poison Type Overview
+
+</div>
+
+
+<div class="hero-stat-grid">
+
+<div class="hero-stat">
+
+<strong>
+Gen 1–9
+</strong>
+
+<span>
+Generation coverage
+</span>
+
+</div>
+
+
+<div class="hero-stat">
+
+<strong>
+Poison
+</strong>
+
+<span>
+Primary type
+</span>
+
+</div>
+
+
+<div class="hero-stat">
+
+<strong>
+Ground
+</strong>
+
+<span>
+Major weakness
+</span>
+
+</div>
+
+
+<div class="hero-stat">
+
+<strong>
+Steel
+</strong>
+
+<span>
+Important matchup
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUICK NAV
+===================================================== -->
+
+<div class="container quick-nav">
+
+<div class="quick-nav-inner">
+
+<a href="#overview">
+Overview
+</a>
+
+<a href="#generations">
+Gen 1–9
+</a>
+
+<a href="#evolution">
+Evolution
+</a>
+
+<a href="#type">
+Type
+</a>
+
+<a href="#stats">
+Stats
+</a>
+
+<a href="#matchups">
+Weaknesses
+</a>
+
+<a href="#moves">
+Moves
+</a>
+
+<a href="#raids">
+Raids
+</a>
+
+<a href="#variants">
+Forms
+</a>
+
+<a href="#shiny">
+Shiny
+</a>
+
+<a href="#availability">
+Availability
+</a>
+
+<a href="#individual-guides">
+Guides
+</a>
+
+<a href="#faq">
+FAQ
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="section"
+         id="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison-Type Pokémon GO Overview
+
+</h2>
+
+
+<p class="section-intro">
+
+Poison-type Pokémon have a distinctive role in Pokémon GO.
+Their usefulness depends heavily on their individual stats,
+movesets and secondary typing. A Pokémon should therefore
+be evaluated as a complete package rather than by its type
+alone.
+
+</p>
+
+
+<div class="notice">
+
+<strong>
+Why this hub exists:
+</strong>
+
+Use this page for broad Poison-type information and then
+move into individual Pokémon guides when you need detailed
+evolution, moveset, raid, Shadow, shiny or availability
+information.
+
+</div>
+
+
+<br>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+☠️ Offensive Role
+</h3>
+
+<p>
+
+Poison-type attacks have specific offensive matchups.
+The practical value of an attacker depends on its available
+moves and the opponent it is fighting.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+🛡️ Defensive Role
+</h3>
+
+<p>
+
+Poison typing provides several useful resistances, but
+individual dual typings can dramatically change how a
+Pokémon handles incoming attacks.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+⚔️ Raid Role
+</h3>
+
+<p>
+
+Some Poison Pokémon are specialist raid attackers, while
+others are more valuable in PvP, collection, evolution
+families or specific type matchups.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GENERATIONS
+===================================================== -->
+
+<section class="section"
+         id="generations">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Pokémon by Generation
+
+</h2>
+
+
+<p class="section-intro">
+
+Organizing the database by generation makes it easier for
+players to discover Pokémon introduced in Kanto through
+Paldea while allowing each individual Pokémon to have its
+own detailed page.
+
+</p>
+
+
+<div class="generation-tabs">
+
+<button class="gen-btn active"
+        data-gen="all">
+All
+</button>
+
+<button class="gen-btn"
+        data-gen="1">
+Gen 1
+</button>
+
+<button class="gen-btn"
+        data-gen="2">
+Gen 2
+</button>
+
+<button class="gen-btn"
+        data-gen="3">
+Gen 3
+</button>
+
+<button class="gen-btn"
+        data-gen="4">
+Gen 4
+</button>
+
+<button class="gen-btn"
+        data-gen="5">
+Gen 5
+</button>
+
+<button class="gen-btn"
+        data-gen="6">
+Gen 6
+</button>
+
+<button class="gen-btn"
+        data-gen="7">
+Gen 7
+</button>
+
+<button class="gen-btn"
+        data-gen="8">
+Gen 8
+</button>
+
+<button class="gen-btn"
+        data-gen="9">
+Gen 9
+</button>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+Generation 1
+</h3>
+
+<p>
+
+Kanto introduced several important Poison Pokémon and
+Poison dual types.
+
+</p>
+
+<a href="/pokemon/gen-1/poison/">
+Explore Gen 1 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 2
+</h3>
+
+<p>
+
+Explore Poison Pokémon introduced in Johto.
+
+</p>
+
+<a href="/pokemon/gen-2/poison/">
+Explore Gen 2 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 3
+</h3>
+
+<p>
+
+Explore Hoenn Poison Pokémon and their evolution families.
+
+</p>
+
+<a href="/pokemon/gen-3/poison/">
+Explore Gen 3 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 4
+</h3>
+
+<p>
+
+Explore Poison Pokémon introduced through Sinnoh.
+
+</p>
+
+<a href="/pokemon/gen-4/poison/">
+Explore Gen 4 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 5
+</h3>
+
+<p>
+
+Explore Unova Poison Pokémon.
+
+</p>
+
+<a href="/pokemon/gen-5/poison/">
+Explore Gen 5 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 6
+</h3>
+
+<p>
+
+Explore Kalos Poison Pokémon and dual-type combinations.
+
+</p>
+
+<a href="/pokemon/gen-6/poison/">
+Explore Gen 6 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 7
+</h3>
+
+<p>
+
+Explore Alola Poison Pokémon and regional variations.
+
+</p>
+
+<a href="/pokemon/gen-7/poison/">
+Explore Gen 7 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 8
+</h3>
+
+<p>
+
+Explore Galar Poison Pokémon and related forms.
+
+</p>
+
+<a href="/pokemon/gen-8/poison/">
+Explore Gen 8 →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Generation 9
+</h3>
+
+<p>
+
+Explore Paldea Poison Pokémon and their evolution families.
+
+</p>
+
+<a href="/pokemon/gen-9/poison/">
+Explore Gen 9 →
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EVOLUTION FAMILIES
+===================================================== -->
+
+<section class="section"
+         id="evolution">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Evolution Families
+
+</h2>
+
+
+<p class="section-intro">
+
+Evolution information should explain the complete family,
+including Candy requirements, special evolution conditions,
+regional forms and any important differences between
+evolution stages.
+
+</p>
+
+
+<div class="evolution-family">
+
+<h3>
+Nidoran Evolution Families
+</h3>
+
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Nidoran♀
+</strong>
+
+<br>
+
+Basic Form
+
+</div>
+
+
+<div class="evolution-arrow">
+→
+</div>
+
+
+<div class="evolution-node">
+
+<strong>
+Nidorina
+</strong>
+
+<br>
+
+Evolution
+
+</div>
+
+
+<div class="evolution-arrow">
+→
+</div>
+
+
+<div class="evolution-node">
+
+<strong>
+Nidoqueen
+</strong>
+
+<br>
+
+Final Evolution
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<h3>
+Grimer Evolution Family
+</h3>
+
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Grimer
+</strong>
+
+</div>
+
+
+<div class="evolution-arrow">
+→
+</div>
+
+
+<div class="evolution-node">
+
+<strong>
+Muk
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<h3>
+Trubbish Evolution Family
+</h3>
+
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Trubbish
+</strong>
+
+</div>
+
+
+<div class="evolution-arrow">
+→
+</div>
+
+
+<div class="evolution-node">
+
+<strong>
+Garbodor
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="evolution-family">
+
+<h3>
+Mareanie Evolution Family
+</h3>
+
+
+<div class="evolution-line">
+
+<div class="evolution-node">
+
+<strong>
+Mareanie
+</strong>
+
+</div>
+
+
+<div class="evolution-arrow">
+→
+</div>
+
+
+<div class="evolution-node">
+
+<strong>
+Toxapex
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section"
+         id="type">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Type Explained
+
+</h2>
+
+
+<p class="section-intro">
+
+Poison-type Pokémon can have very different practical roles
+because many of them have secondary types. When building
+counter or attacker recommendations, always calculate the
+complete type combination.
+
+</p>
+
+
+<div class="card-grid">
+
+<div class="info-card">
+
+<h3>
+Primary Type
+</h3>
+
+<p>
+☠️ Poison
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+Common Dual Types
+</h3>
+
+<p>
+
+Poison Pokémon may also be paired with Ground, Dark, Grass,
+Water, Bug, Flying, Dragon and other types.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+Battle Identity
+</h3>
+
+<p>
+
+Poison Pokémon can specialize in raids, PvP, defensive
+matchups or specific type-based encounters.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section"
+         id="stats">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Pokémon Max CP & Stats
+
+</h2>
+
+
+<p class="section-intro">
+
+Attack, Defense, HP and maximum CP are useful comparison
+points, but they should not be treated as the complete
+measure of a Pokémon's quality.
+
+</p>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest Attack
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest Defense
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest HP
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-label">
+Highest Max CP
+</div>
+
+<div class="stat-value">
+Compare
+</div>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="table-wrapper">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Attack
+</th>
+
+<th>
+Defense
+</th>
+
+<th>
+HP
+</th>
+
+<th>
+Max CP
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Nidoking
+</td>
+
+<td>
+Poison / Ground
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Nidoqueen
+</td>
+
+<td>
+Poison / Ground
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Roserade
+</td>
+
+<td>
+Grass / Poison
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Toxapex
+</td>
+
+<td>
+Poison / Water
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+<td>
+—
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="notice">
+
+<strong>
+Data note:
+</strong>
+
+Replace the placeholders with verified Pokémon GO values.
+Do not use main-series base stats as substitutes for Pokémon
+GO statistics.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WEAKNESSES / RESISTANCES
+===================================================== -->
+
+<section class="section"
+         id="matchups">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison-Type Weaknesses & Resistances
+
+</h2>
+
+
+<p class="section-intro">
+
+Poison's type chart is useful as a starting point, but the
+final matchup depends on the Pokémon's complete typing and
+the attack being used.
+
+</p>
+
+
+<div class="matchup-grid">
+
+
+<div class="matchup-box weakness">
+
+<h3>
+⚠️ Poison Weaknesses
+</h3>
+
+
+<div class="type-list">
+
+<span class="type-badge">
+Ground
+</span>
+
+<span class="type-badge">
+Psychic
+</span>
+
+</div>
+
+
+<p>
+
+These are the major attacking types to consider when
+evaluating a pure Poison Pokémon. Dual typing can change
+individual damage relationships.
+
+</p>
+
+</div>
+
+
+<div class="matchup-box resistance">
+
+<h3>
+🛡️ Poison Resistances
+</h3>
+
+
+<div class="type-list">
+
+<span class="type-badge">
+Fighting
+</span>
+
+<span class="type-badge">
+Poison
+</span>
+
+<span class="type-badge">
+Bug
+</span>
+
+<span class="type-badge">
+Grass
+</span>
+
+<span class="type-badge">
+Fairy
+</span>
+
+</div>
+
+
+<p>
+
+Poison's defensive value comes from several useful
+resistances, particularly against Grass and Fairy attacks.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BEST MOVES
+===================================================== -->
+
+<section class="section"
+         id="moves">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Best Poison-Type Moves
+
+</h2>
+
+
+<p class="section-intro">
+
+There is no universal best moveset for every Poison Pokémon.
+The recommendation should consider fast-move energy generation,
+charged-move damage, the Pokémon's stats and the intended
+battle format.
+
+</p>
+
+
+<div class="move-grid">
+
+
+<article class="move-card">
+
+<h3>
+Poison Jab
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Fast Move
+</span>
+
+<span class="move-tag">
+Poison
+</span>
+
+</div>
+
+<p>
+
+A notable Poison fast move. Its practical performance depends
+on which Pokémon uses it and what charged attacks are paired
+with it.
+
+</p>
+
+</article>
+
+
+<article class="move-card">
+
+<h3>
+Poison Sting
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Fast Move
+</span>
+
+<span class="move-tag">
+Poison
+</span>
+
+</div>
+
+<p>
+
+A low-damage, energy-oriented option whose value depends
+strongly on the Pokémon and battle format.
+
+</p>
+
+</article>
+
+
+<article class="move-card">
+
+<h3>
+Sludge Bomb
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Charged Move
+</span>
+
+<span class="move-tag">
+Poison
+</span>
+
+</div>
+
+<p>
+
+A commonly relevant Poison charged attack. Compare its
+damage and energy requirements with the alternative charged
+moves available to each Pokémon.
+
+</p>
+
+</article>
+
+
+<article class="move-card">
+
+<h3>
+Sludge Wave
+</h3>
+
+<div class="move-meta">
+
+<span class="move-tag">
+Charged Move
+</span>
+
+<span class="move-tag">
+Poison
+</span>
+
+</div>
+
+<p>
+
+Another Poison charged attack whose value depends on the
+specific Pokémon and battle situation.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RAID TIER
+===================================================== -->
+
+<section class="section"
+         id="raids">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Pokémon Raid Tier
+
+</h2>
+
+
+<p class="section-intro">
+
+Raid rankings should be matchup-specific. A Poison attacker
+may be highly valuable against a particular raid boss while
+being inferior to other types in general use.
+
+</p>
+
+
+<div class="raid-tier">
+
+
+<div class="tier">
+
+<strong>
+S
+</strong>
+
+<span>
+Elite specialist
+</span>
+
+</div>
+
+
+<div class="tier">
+
+<strong>
+A
+</strong>
+
+<span>
+Strong attacker
+</span>
+
+</div>
+
+
+<div class="tier">
+
+<strong>
+B
+</strong>
+
+<span>
+Useful specialist
+</span>
+
+</div>
+
+
+<div class="tier">
+
+<strong>
+C
+</strong>
+
+<span>
+Limited / niche
+</span>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="notice">
+
+<strong>
+Ranking principle:
+</strong>
+
+Explain why a Pokémon receives its ranking. Consider
+moveset, stats, typing, availability, raid boss matchup,
+weather and alternative attackers.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MEGA / PRIMAL
+===================================================== -->
+
+<section class="section"
+         id="mega">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Mega & Primal Poison Pokémon
+
+</h2>
+
+
+<p class="section-intro">
+
+Only display Mega or Primal information for Pokémon that
+actually have the corresponding form in Pokémon GO.
+
+</p>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+Mega Evolution
+</h3>
+
+<p>
+
+Explain the Mega form's typing, raid role, damage potential,
+bonuses and candy-generation advantages where applicable.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Primal Reversion
+</h3>
+
+<p>
+
+Do not populate this section for a Pokémon that does not
+have a Primal form. Keep the information entity-specific.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+Mega Comparison
+</h3>
+
+<p>
+
+Compare the Mega form against the regular and Shadow forms
+when those variants exist.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SHADOW / DYNAMAX / GIGANTAMAX
+===================================================== -->
+
+<section class="section"
+         id="variants">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Shadow, Dynamax & Gigantamax
+
+</h2>
+
+
+<div class="variant-grid">
+
+
+<article class="variant-card">
+
+<h3>
+🌑 Shadow Pokémon
+</h3>
+
+<p>
+
+Explain whether a Shadow version exists, how it is obtained,
+whether purification makes sense, and how the Shadow form
+changes its practical battle role.
+
+</p>
+
+</article>
+
+
+<article class="variant-card">
+
+<h3>
+⚡ Dynamax
+</h3>
+
+<p>
+
+If the Pokémon is available in Dynamax form, explain its
+Dynamax mechanics, moves and practical usefulness.
+
+</p>
+
+</article>
+
+
+<article class="variant-card">
+
+<h3>
+👑 Gigantamax
+</h3>
+
+<p>
+
+If applicable, provide separate Gigantamax availability,
+mechanics and battle information.
+
+</p>
+
+</article>
+
+
+<article class="variant-card">
+
+<h3>
+🔄 Form Comparison
+</h3>
+
+<p>
+
+Compare the regular, Shadow, Mega, Dynamax and Gigantamax
+forms only when the forms are genuinely available.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section"
+         id="shiny">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Shiny Poison Pokémon
+
+</h2>
+
+
+<p class="section-intro">
+
+Tell players whether a shiny is available, how it looks
+different and how it can currently be encountered. Because
+availability changes, this section should be maintained.
+
+</p>
+
+
+<div class="shiny-comparison">
+
+
+<div class="shiny-box">
+
+<span class="shiny-label">
+Regular
+</span>
+
+<h3>
+Regular Form
+</h3>
+
+<p>
+
+Describe the standard appearance and any features that help
+players identify the Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="shiny-box">
+
+<span class="shiny-label">
+✨ Shiny
+</span>
+
+<h3>
+Shiny Form
+</h3>
+
+<p>
+
+Describe the actual shiny appearance and clearly state
+whether it is currently obtainable.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section"
+         id="availability">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Pokémon Availability
+
+</h2>
+
+
+<p class="section-intro">
+
+Availability is one of the most useful parts of a Pokémon
+database. Players want to know where and when they can
+actually obtain a Pokémon.
+
+</p>
+
+
+<div class="table-wrapper">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Wild
+</th>
+
+<th>
+Eggs
+</th>
+
+<th>
+Raids
+</th>
+
+<th>
+Research
+</th>
+
+<th>
+Events
+</th>
+
+<th>
+Shiny
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Grimer
+</td>
+
+<td>
+Check current rotation
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Roserade
+</td>
+
+<td>
+Limited
+</td>
+
+<td>
+Evolution
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Toxapex
+</td>
+
+<td>
+Check current rotation
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Check
+</td>
+
+<td>
+Event dependent
+</td>
+
+<td>
+Check
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="notice">
+
+<strong>
+Update policy:
+</strong>
+
+Always include the date on which time-sensitive availability
+was checked. Avoid presenting an old event rotation as a
+permanent availability rule.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DATABASE
+===================================================== -->
+
+<section class="section"
+         id="pokemon-database">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Poison Pokémon Database
+
+</h2>
+
+
+<p class="section-intro">
+
+Search the database by name or generation. Each important
+Pokémon should link to a genuinely useful individual guide.
+
+</p>
+
+
+<div class="database-toolbar">
+
+<input
+    id="pokemonSearch"
+    class="search-box"
+    type="search"
+    placeholder="Search Poison Pokémon..."
+    aria-label="Search Poison Pokémon">
+
+
+<select
+    id="generationFilter"
+    class="filter-select"
+    aria-label="Filter by generation">
+
+<option value="all">
+All Generations
+</option>
+
+<option value="1">
+Generation 1
+</option>
+
+<option value="2">
+Generation 2
+</option>
+
+<option value="3">
+Generation 3
+</option>
+
+<option value="4">
+Generation 4
+</option>
+
+<option value="5">
+Generation 5
+</option>
+
+<option value="6">
+Generation 6
+</option>
+
+<option value="7">
+Generation 7
+</option>
+
+<option value="8">
+Generation 8
+</option>
+
+<option value="9">
+Generation 9
+</option>
+
+</select>
+
+</div>
+
+
+<div class="pokemon-grid"
+     id="pokemonGrid">
+
+
+<!-- NIDORAN -->
+
+<article class="pokemon-card"
+         data-name="nidoran female"
+         data-gen="1">
+
+<div class="pokemon-number">
+#0029 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/nidoran-f.webp"
+alt="Nidoran Female Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Nidoran♀
+</h3>
+
+<span class="pokemon-type">
+Poison
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+
+<strong>—</strong>
+
+<span>
+ATK
+</span>
+
+</div>
+
+
+<div class="mini-stat">
+
+<strong>—</strong>
+
+<span>
+DEF
+</span>
+
+</div>
+
+
+<div class="mini-stat">
+
+<strong>—</strong>
+
+<span>
+HP
+</span>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/nidoran-female/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- NIDORAN MALE -->
+
+<article class="pokemon-card"
+         data-name="nidoran male"
+         data-gen="1">
+
+<div class="pokemon-number">
+#0032 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/nidoran-m.webp"
+alt="Nidoran Male Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Nidoran♂
+</h3>
+
+<span class="pokemon-type">
+Poison
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/nidoran-male/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- NIDORINA -->
+
+<article class="pokemon-card"
+         data-name="nidorina"
+         data-gen="1">
+
+<div class="pokemon-number">
+#0030 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/nidorina.webp"
+alt="Nidorina Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Nidorina
+</h3>
+
+<span class="pokemon-type">
+Poison
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/nidorina/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- NIDORINO -->
+
+<article class="pokemon-card"
+         data-name="nidorino"
+         data-gen="1">
+
+<div class="pokemon-number">
+#0033 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/nidorino.webp"
+alt="Nidorino Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Nidorino
+</h3>
+
+<span class="pokemon-type">
+Poison
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/nidorino/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- NIDOQUEEN -->
+
+<article class="pokemon-card"
+         data-name="nidoqueen"
+         data-gen="1">
+
+<div class="pokemon-number">
+#0031 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/nidoqueen.webp"
+alt="Nidoqueen Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Nidoqueen
+</h3>
+
+<span class="pokemon-type">
+Poison / Ground
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/nidoqueen/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- NIDOKING -->
+
+<article class="pokemon-card"
+         data-name="nidoking"
+         data-gen="1">
+
+<div class="pokemon-number">
+#0034 · Gen 1
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/nidoking.webp"
+alt="Nidoking Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Nidoking
+</h3>
+
+<span class="pokemon-type">
+Poison / Ground
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/nidoking/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- ROSERADE -->
+
+<article class="pokemon-card"
+         data-name="roserade"
+         data-gen="4">
+
+<div class="pokemon-number">
+#0407 · Gen 4
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/roserade.webp"
+alt="Roserade Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Roserade
+</h3>
+
+<span class="pokemon-type">
+Grass / Poison
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/roserade/">
+View Guide →
+</a>
+
+</article>
+
+
+
+<!-- TOXAPEX -->
+
+<article class="pokemon-card"
+         data-name="toxapex"
+         data-gen="7">
+
+<div class="pokemon-number">
+#0748 · Gen 7
+</div>
+
+<div class="pokemon-image">
+
+<img
+src="/images/pokemon/toxapex.webp"
+alt="Toxapex Pokémon GO"
+loading="lazy">
+
+</div>
+
+<h3>
+Toxapex
+</h3>
+
+<span class="pokemon-type">
+Poison / Water
+</span>
+
+
+<div class="pokemon-mini-stats">
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>ATK</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>DEF</span>
+</div>
+
+<div class="mini-stat">
+<strong>—</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<br>
+
+
+<a href="/pokemon/toxapex/">
+View Guide →
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INDIVIDUAL GUIDES
+===================================================== -->
+
+<section class="section"
+         id="individual-guides">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Individual Poison Pokémon Guides
+
+</h2>
+
+
+<p class="section-intro">
+
+This is the most important layer for building a high-quality
+site. Individual guides should provide information that goes
+beyond the database table.
+
+</p>
+
+
+<div class="guide-grid">
+
+
+<article class="guide-card">
+
+<h3>
+Nidoking Guide
+</h3>
+
+<p>
+
+Evolution, stats, moves, Poison/Ground typing, raid
+performance, PvP considerations, Shadow information,
+shiny availability and practical power-up advice.
+
+</p>
+
+<a class="guide-link"
+   href="/pokemon/nidoking/">
+
+Read Nidoking Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Nidoqueen Guide
+</h3>
+
+<p>
+
+Complete Nidoqueen analysis including evolution, typing,
+moves, PvP role, availability and collection value.
+
+</p>
+
+<a class="guide-link"
+   href="/pokemon/nidoqueen/">
+
+Read Nidoqueen Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Roserade Guide
+</h3>
+
+<p>
+
+Analyze Roserade's Grass/Poison typing, moves, raid
+applications, evolution requirements and battle role.
+
+</p>
+
+<a class="guide-link"
+   href="/pokemon/roserade/">
+
+Read Roserade Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Toxapex Guide
+</h3>
+
+<p>
+
+Explore Toxapex's defensive profile, evolution family,
+moves, PvP applications and availability.
+
+</p>
+
+<a class="guide-link"
+   href="/pokemon/toxapex/">
+
+Read Toxapex Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Muk Guide
+</h3>
+
+<p>
+
+Explore Muk, its evolution family, moves, regional forms,
+Shadow availability and battle applications.
+
+</p>
+
+<a class="guide-link"
+   href="/pokemon/muk/">
+
+Read Muk Guide →
+
+</a>
+
+</article>
+
+
+<article class="guide-card">
+
+<h3>
+Garbodor Guide
+</h3>
+
+<p>
+
+Review Garbodor's evolution family, typing, stats,
+moves and practical Pokémon GO role.
+
+</p>
+
+<a class="guide-link"
+   href="/pokemon/garbodor/">
+
+Read Garbodor Guide →
+
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STRATEGY
+===================================================== -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+How to Choose a Poison Pokémon
+
+</h2>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+1. Identify the Opponent
+</h3>
+
+<p>
+
+Start with the raid boss or battle opponent. The best
+Poison Pokémon depends on the matchup.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+2. Compare Moves
+</h3>
+
+<p>
+
+Fast-move energy generation and charged-move performance
+can matter more than simply comparing CP.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+3. Check the Form
+</h3>
+
+<p>
+
+Regular and Shadow versions can have different practical
+roles. Mega and other special forms should be evaluated
+separately.
+
+</p>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+4. Consider Your Resources
+</h3>
+
+<p>
+
+Candy, Stardust, Elite TMs and availability should influence
+whether powering up a Pokémon makes sense for your account.
+
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section"
+         id="faq">
+
+<div class="container faq">
+
+<h2 class="section-title">
+
+Poison-Type Pokémon GO FAQ
+
+</h2>
+
+
+<details>
+
+<summary>
+What is Poison weak against in Pokémon GO?
+</summary>
+
+<p>
+
+Pure Poison typing is vulnerable to Ground- and
+Psychic-type attacks. A dual-type Pokémon can have a
+different final matchup depending on its second type.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is the best Poison Pokémon in Pokémon GO?
+</summary>
+
+<p>
+
+There is no universal winner. The best choice depends on
+the raid boss, moveset, stats, form, weather and intended
+battle format.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are Poison Pokémon good for raids?
+</summary>
+
+<p>
+
+Some Poison Pokémon can be useful raid attackers, especially
+when their moves and stats match the boss's weaknesses.
+However, their raid value should be compared against
+other available types.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are Shadow Poison Pokémon worth powering up?
+</summary>
+
+<p>
+
+The answer depends on the individual Pokémon. Compare its
+Shadow performance, moves, resource requirements and the
+alternative attackers available to you.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should every Poison Pokémon have an individual guide?
+</summary>
+
+<p>
+
+Important Pokémon should receive dedicated guides when you
+can provide genuinely useful information. Avoid publishing
+hundreds of pages containing nearly identical text.
+
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EDITORIAL POLICY
+===================================================== -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="editorial-box">
+
+<h2>
+Editorial & Data Methodology
+</h2>
+
+
+<p>
+
+Pokémon Gaming should maintain this hub as an independent
+Pokémon GO information resource. Statistical information,
+moves, forms and availability should be verified before
+publication and updated when game mechanics or availability
+change.
+
+</p>
+
+
+<p>
+
+When information is temporary, such as event availability,
+identify the relevant date or event rather than presenting
+the information as permanent.
+
+</p>
+
+
+<p>
+
+Individual guides should include original explanations,
+comparisons, practical strategy and useful observations
+rather than simply reproducing database statistics.
+
+</p>
+
+
+<div class="editorial-meta">
+
+
+<div>
+
+<strong>
+Written by
+</strong>
+
+<span>
+Pokémon Gaming Editorial Team
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Reviewed by
+</strong>
+
+<span>
+Pokémon GO Guide Reviewer
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Last Updated
+</strong>
+
+<span>
+August 21, 2026
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RELATED GUIDES
+===================================================== -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Related Pokémon GO Resources
+
+</h2>
+
+
+<div class="card-grid">
+
+
+<article class="info-card">
+
+<h3>
+👻 Ghost-Type Hub
+</h3>
+
+<p>
+Explore Ghost Pokémon, evolution families, moves and raid
+information.
+</p>
+
+<a href="/pokemon/ghost-type.html">
+Open Ghost Hub →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+🌱 Grass-Type Hub
+</h3>
+
+<p>
+Explore Grass-type Pokémon and their battle applications.
+</p>
+
+<a href="/pokemon/grass-type.html">
+Open Grass Hub →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+⚔️ Raid Counter Finder
+</h3>
+
+<p>
+Find Pokémon counters for raid bosses based on type
+matchups and battle requirements.
+</p>
+
+<a href="/tools/raid-counter-finder.html">
+Open Counter Finder →
+</a>
+
+</article>
+
+
+<article class="info-card">
+
+<h3>
+📊 IV Calculator
+</h3>
+
+<p>
+Evaluate IV combinations and make better power-up decisions.
+</p>
+
+<a href="/tools/iv-calculator.html">
+Open IV Calculator →
+</a>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+Pokémon Gaming
+</h3>
+
+<p>
+
+Independent Pokémon GO guides, databases,
+raid resources and gaming tools.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Explore
+</h3>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/pvp/">
+PvP
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Information
+</h3>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/contact.html">
+Contact
+</a>
+
+<a href="/editorial-policy.html">
+Editorial Policy
+</a>
+
+<a href="/privacy-policy.html">
+Privacy Policy
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Legal
+</h3>
+
+<a href="/terms.html">
+Terms
+</a>
+
+<a href="/disclaimer.html">
+Disclaimer
+</a>
+
+<a href="/cookie-policy.html">
+Cookie Policy
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-note">
+
+<p>
+
+Pokémon Gaming is an independent fan website and is not
+affiliated with, sponsored by, or endorsed by Nintendo,
+The Pokémon Company, Niantic or any other Pokémon-related
+rights holder.
+
+Pokémon and Pokémon character names are trademarks of
+their respective owners.
+
+</p>
+
+
+<p>
+
+© 2026 Pokémon Gaming. All rights reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =========================================================
+   SEARCH + GENERATION FILTER
+========================================================= */
+
+const searchInput =
+    document.getElementById(
+        "pokemonSearch"
+    );
+
+const generationFilter =
+    document.getElementById(
+        "generationFilter"
+    );
+
+const pokemonCards =
+    document.querySelectorAll(
+        ".pokemon-card"
+    );
+
+
+function filterPokemon(){
+
+    const search =
+        searchInput.value
+        .toLowerCase()
+        .trim();
+
+    const generation =
+        generationFilter.value;
+
+
+    pokemonCards.forEach(card => {
+
+        const name =
+            card.dataset.name
+            .toLowerCase();
+
+        const gen =
+            card.dataset.gen;
+
+
+        const matchesSearch =
+            name.includes(search);
+
+        const matchesGeneration =
+            generation === "all" ||
+            generation === gen;
+
+
+        card.style.display =
+            matchesSearch &&
+            matchesGeneration
+            ? ""
+            : "none";
+
+    });
+
+}
+
+
+searchInput.addEventListener(
+    "input",
+    filterPokemon
+);
+
+
+generationFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
+/* =========================================================
+   GENERATION BUTTONS
+========================================================= */
+
+const generationButtons =
+    document.querySelectorAll(
+        ".gen-btn"
+    );
+
+
+generationButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        () => {
+
+            generationButtons
+                .forEach(btn => {
+
+                    btn.classList
+                       .remove("active");
+
+                });
+
+
+            button.classList.add(
+                "active"
+            );
+
+
+            generationFilter.value =
+                button.dataset.gen;
+
+
+            filterPokemon();
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>

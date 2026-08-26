@@ -1,0 +1,4590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Gen 7 Pokémon Database – Alola Pokédex #722–#809
+</title>
+
+<meta name="description"
+content="Complete Gen 7 Alola Pokémon database covering all 88 Pokémon from #722 to #809, including evolution families, types, stats, weaknesses, resistances, Alolan Forms, Ultra Beasts, Legendary Pokémon, Mythical Pokémon, shiny information, Shadow information, raids, PvP and individual Pokémon guides.">
+
+<meta name="robots"
+      content="index,follow">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+
+    --bg:#06111d;
+
+    --bg2:#091a2b;
+
+    --card:#10263d;
+
+    --card2:#142f49;
+
+    --border:#294a66;
+
+    --text:#f5f8ff;
+
+    --muted:#aabed0;
+
+    --cyan:#62d9ff;
+
+    --purple:#9b82ff;
+
+    --green:#4bd391;
+
+    --yellow:#ffd166;
+
+    --red:#ff6979;
+
+    --orange:#ff9f43;
+
+    --shadow:
+        0 18px 45px rgba(0,0,0,.28);
+
+    --radius:18px;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+
+    box-sizing:border-box;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    background:
+
+        radial-gradient(
+            circle at top,
+            #173b5a 0,
+            #06111d 48%
+        );
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.6;
+
+}
+
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+button,
+input,
+select{
+
+    font:inherit;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:
+        rgba(6,17,29,.94);
+
+    backdrop-filter:
+        blur(14px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.header-inner{
+
+    max-width:1280px;
+
+    margin:auto;
+
+    padding:
+        15px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+.logo{
+
+    font-size:1.25rem;
+
+    font-weight:950;
+
+}
+
+
+.logo span{
+
+    color:var(--cyan);
+
+}
+
+
+.main-nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:17px;
+
+    color:var(--muted);
+
+    font-size:.88rem;
+
+}
+
+
+.main-nav a:hover{
+
+    color:white;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    max-width:1280px;
+
+    margin:auto;
+
+    padding:
+        75px 20px 55px;
+
+    text-align:center;
+
+}
+
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:
+        7px 15px;
+
+    border:
+        1px solid #3c7395;
+
+    border-radius:999px;
+
+    background:
+        rgba(98,217,255,.08);
+
+    color:var(--cyan);
+
+    font-size:.78rem;
+
+    font-weight:950;
+
+    letter-spacing:.5px;
+
+}
+
+
+.hero h1{
+
+    margin-top:18px;
+
+    font-size:
+        clamp(2.3rem,5vw,4.5rem);
+
+    line-height:1.04;
+
+}
+
+
+.hero h1 span{
+
+    color:var(--cyan);
+
+}
+
+
+.hero-description{
+
+    max-width:920px;
+
+    margin:
+        20px auto 0;
+
+    color:var(--muted);
+
+    font-size:1.04rem;
+
+}
+
+
+.hero-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+
+.hero-btn{
+
+    padding:
+        12px 20px;
+
+    border-radius:12px;
+
+    background:var(--cyan);
+
+    color:#03111a;
+
+    font-weight:950;
+
+}
+
+
+.hero-btn.secondary{
+
+    background:#142e49;
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+
+    width:
+        min(1280px,calc(100% - 30px));
+
+    margin:auto;
+
+}
+
+
+.section{
+
+    margin-bottom:60px;
+
+}
+
+
+.section-heading{
+
+    margin-bottom:23px;
+
+}
+
+
+.section-heading h2{
+
+    font-size:
+        clamp(1.6rem,3vw,2.3rem);
+
+}
+
+
+.section-heading p{
+
+    margin-top:6px;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   QUICK GRID
+========================================================= */
+
+.quick-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:16px;
+
+}
+
+
+.quick-card{
+
+    padding:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card),
+            var(--card2)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+.quick-icon{
+
+    font-size:1.7rem;
+
+}
+
+
+.quick-value{
+
+    margin-top:7px;
+
+    font-size:1.4rem;
+
+    font-weight:950;
+
+}
+
+
+.quick-label{
+
+    color:var(--muted);
+
+    font-size:.86rem;
+
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.25fr .75fr;
+
+    gap:20px;
+
+}
+
+
+.panel{
+
+    padding:26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(16,38,61,.95),
+            rgba(9,27,44,.95)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+.panel h3{
+
+    margin-bottom:12px;
+
+}
+
+
+.panel p{
+
+    color:var(--muted);
+
+}
+
+
+.points{
+
+    margin-top:18px;
+
+    display:grid;
+
+    gap:11px;
+
+}
+
+
+.point{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+.point b{
+
+    color:var(--cyan);
+
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.toolbar{
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr .75fr .75fr;
+
+    gap:12px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    background:
+        rgba(16,38,61,.9);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.search,
+.select{
+
+    width:100%;
+
+    padding:
+        13px 15px;
+
+    background:#071725;
+
+    color:white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:11px;
+
+    outline:none;
+
+}
+
+
+.search:focus,
+.select:focus{
+
+    border-color:
+        var(--cyan);
+
+}
+
+
+/* =========================================================
+   POKEMON GRID
+========================================================= */
+
+.pokemon-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+
+.pokemon-card{
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            155deg,
+            #122d48,
+            #091b2d
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:20px;
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform .2s,
+        border-color .2s;
+
+}
+
+
+.pokemon-card:hover{
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #5c91b8;
+
+}
+
+
+.card-header{
+
+    padding:
+        15px 15px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.dex{
+
+    color:var(--muted);
+
+    font-size:.82rem;
+
+    font-weight:900;
+
+}
+
+
+.role{
+
+    padding:
+        4px 8px;
+
+    border-radius:999px;
+
+    background:#173c5b;
+
+    color:var(--cyan);
+
+    font-size:.66rem;
+
+    font-weight:950;
+
+}
+
+
+.pokemon-art{
+
+    display:block;
+
+    width:155px;
+
+    height:155px;
+
+    object-fit:contain;
+
+    margin:
+        12px auto;
+
+}
+
+
+.card-body{
+
+    padding:15px;
+
+}
+
+
+.pokemon-name{
+
+    font-size:1.18rem;
+
+    font-weight:950;
+
+}
+
+
+.types{
+
+    display:flex;
+
+    gap:6px;
+
+    flex-wrap:wrap;
+
+    margin:
+        8px 0 13px;
+
+}
+
+
+.type{
+
+    padding:
+        4px 9px;
+
+    border-radius:999px;
+
+    text-transform:uppercase;
+
+    font-size:.64rem;
+
+    font-weight:950;
+
+}
+
+
+/* =========================================================
+   TYPES
+========================================================= */
+
+.type.grass{background:#276b3f}
+.type.fire{background:#7f2b20}
+.type.water{background:#1f568e}
+.type.normal{background:#606874}
+.type.flying{background:#566d9b}
+.type.bug{background:#58751f}
+.type.fairy{background:#914d74}
+.type.fighting{background:#742b22}
+.type.psychic{background:#793056}
+.type.steel{background:#53616e}
+.type.ghost{background:#43346d}
+.type.dark{background:#382d2c}
+.type.rock{background:#695d37}
+.type.poison{background:#6a2d70}
+.type.dragon{background:#49329e}
+.type.ground{background:#76572d}
+.type.electric{background:#77651b}
+.type.ice{background:#397d88}
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:6px;
+
+}
+
+
+.stat{
+
+    padding:8px 4px;
+
+    background:#081725;
+
+    border-radius:8px;
+
+    text-align:center;
+
+}
+
+
+.stat small{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.61rem;
+
+}
+
+
+.stat strong{
+
+    font-size:.82rem;
+
+}
+
+
+.meta{
+
+    margin-top:12px;
+
+    display:grid;
+
+    gap:5px;
+
+    color:var(--muted);
+
+    font-size:.75rem;
+
+}
+
+
+.meta strong{
+
+    color:white;
+
+}
+
+
+.actions{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:14px;
+
+}
+
+
+.action{
+
+    flex:1;
+
+    padding:9px;
+
+    background:#142f4b;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:9px;
+
+    text-align:center;
+
+    font-size:.73rem;
+
+    font-weight:850;
+
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+
+.evo-card{
+
+    padding:20px;
+
+    background:var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.evo-title{
+
+    margin-bottom:14px;
+
+    font-weight:950;
+
+}
+
+
+.evo-line{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+
+.evo-mon{
+
+    padding:
+        8px 10px;
+
+    background:#091a2a;
+
+    border-radius:9px;
+
+    font-size:.77rem;
+
+}
+
+
+.arrow{
+
+    color:var(--cyan);
+
+    font-weight:950;
+
+}
+
+
+/* =========================================================
+   SPECIAL FORMS
+========================================================= */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+
+.form-card{
+
+    padding:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1b2446,
+            #0e2036
+        );
+
+    border:
+        1px solid #464d78;
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.form-card h3{
+
+    margin-bottom:8px;
+
+}
+
+
+.form-card p{
+
+    color:var(--muted);
+
+}
+
+
+.form-badge{
+
+    display:inline-block;
+
+    margin-top:13px;
+
+    padding:
+        5px 9px;
+
+    background:#30275d;
+
+    color:#c8c1ff;
+
+    border-radius:999px;
+
+    font-size:.68rem;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   ULTRA BEASTS
+========================================================= */
+
+.ultra-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+
+.ultra-card{
+
+    padding:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #241742,
+            #0d1c30
+        );
+
+    border:
+        1px solid #513a72;
+
+    border-radius:15px;
+
+}
+
+
+.ultra-card h3{
+
+    font-size:1rem;
+
+}
+
+
+.ultra-card p{
+
+    margin-top:5px;
+
+    color:var(--muted);
+
+    font-size:.82rem;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap{
+
+    overflow-x:auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+table{
+
+    width:100%;
+
+    min-width:760px;
+
+    border-collapse:collapse;
+
+}
+
+
+th,
+td{
+
+    padding:13px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:left;
+
+}
+
+
+th{
+
+    background:#132d48;
+
+}
+
+
+td{
+
+    color:var(--muted);
+
+}
+
+
+tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+
+/* =========================================================
+   GUIDE CARDS
+========================================================= */
+
+.guide-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+
+.guide{
+
+    padding:23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #122b45,
+            #0b1d30
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.guide h3{
+
+    margin-bottom:9px;
+
+}
+
+
+.guide p{
+
+    color:var(--muted);
+
+}
+
+
+.guide ul{
+
+    margin:
+        13px 0 0 18px;
+
+    color:var(--muted);
+
+}
+
+
+.guide li{
+
+    margin-bottom:5px;
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+
+    display:grid;
+
+    gap:12px;
+
+}
+
+
+details{
+
+    padding:
+        17px 19px;
+
+    background:var(--card);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:13px;
+
+}
+
+
+summary{
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+
+details p{
+
+    margin-top:9px;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    margin-top:60px;
+
+    padding:
+        42px 20px;
+
+    background:#040c15;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+.footer-grid{
+
+    max-width:1280px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+footer h3{
+
+    margin-bottom:10px;
+
+}
+
+
+footer p,
+footer a{
+
+    color:var(--muted);
+
+    font-size:.86rem;
+
+}
+
+
+.footer-links{
+
+    display:grid;
+
+    gap:7px;
+
+}
+
+
+.copyright{
+
+    max-width:1280px;
+
+    margin:
+        30px auto 0;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid #182b3f;
+
+    color:#71869a;
+
+    font-size:.77rem;
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty{
+
+    display:none;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:
+        1px dashed var(--border);
+
+    border-radius:
+        var(--radius);
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1100px){
+
+    .pokemon-grid{
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+    }
+
+    .quick-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .evolution-grid,
+    .form-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .ultra-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:800px){
+
+    .header-inner{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .overview-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .toolbar{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+    .search{
+
+        grid-column:1/-1;
+
+    }
+
+    .pokemon-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .guide-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:520px){
+
+    .container{
+
+        width:
+            min(100% - 20px,1280px);
+
+    }
+
+    .hero{
+
+        padding-top:45px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .quick-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .pokemon-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .evolution-grid,
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .ultra-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .toolbar{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .search{
+
+        grid-column:auto;
+
+    }
+
+}
+
+
+@media(max-width:390px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+    Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="#overview">Overview</a>
+
+<a href="#pokedex">Pokédex</a>
+
+<a href="#evolution">Evolution</a>
+
+<a href="#forms">Forms</a>
+
+<a href="#ultra">Ultra Beasts</a>
+
+<a href="#guides">Guides</a>
+
+<a href="#faq">FAQ</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<span class="hero-badge">
+    GENERATION 7 • ALOLA • #722–#809
+</span>
+
+
+<h1>
+
+Gen 7 Pokémon
+
+<span>
+Database
+</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Explore the complete Alola generation from
+Rowlet through Melmetal. Browse all 88 Gen 7
+Pokémon, evolution families, types, battle
+information, regional forms, Ultra Beasts,
+Legendary Pokémon, Mythical Pokémon, shiny
+information, Shadow information, raids and PvP.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#pokedex"
+   class="hero-btn">
+
+Explore Alola Pokédex
+
+</a>
+
+
+<a href="#forms"
+   class="hero-btn secondary">
+
+Explore Special Forms
+
+</a>
+
+</div>
+
+</section>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     QUICK FACTS
+===================================================== -->
+
+<section class="section">
+
+<div class="quick-grid">
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+📖
+</div>
+
+<div class="quick-value">
+88
+</div>
+
+<div class="quick-label">
+Gen 7 Pokémon
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+🔢
+</div>
+
+<div class="quick-value">
+#722–#809
+</div>
+
+<div class="quick-label">
+National Pokédex
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+🌴
+</div>
+
+<div class="quick-value">
+Alola
+</div>
+
+<div class="quick-label">
+Generation 7 Region
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+✨
+</div>
+
+<div class="quick-value">
+Z-Moves
+</div>
+
+<div class="quick-label">
+Gen 7 Battle Mechanic
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section id="overview"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+🌴 Gen 7 / Alola Overview
+</h2>
+
+<p>
+The seventh generation introduced the tropical
+Alola region, regional forms, Z-Moves and Ultra Beasts.
+</p>
+
+</div>
+
+
+<div class="overview-grid">
+
+
+<div class="panel">
+
+<h3>
+About Generation 7
+</h3>
+
+
+<p>
+
+Generation 7 introduced 88 new Pokémon,
+starting with Rowlet at National Pokédex #722
+and ending with Melmetal at #809. The generation
+is associated with Pokémon Sun, Pokémon Moon,
+Pokémon Ultra Sun and Pokémon Ultra Moon.
+
+</p>
+
+
+<div class="points">
+
+
+<div class="point">
+
+<b>01</b>
+
+<span>
+Rowlet, Litten and Popplio form the Alola starter trio.
+</span>
+
+</div>
+
+
+<div class="point">
+
+<b>02</b>
+
+<span>
+Regional forms became a major part of the generation.
+</span>
+
+</div>
+
+
+<div class="point">
+
+<b>03</b>
+
+<span>
+Z-Moves introduced powerful once-per-battle attacks.
+</span>
+
+</div>
+
+
+<div class="point">
+
+<b>04</b>
+
+<span>
+Ultra Beasts created a new group of unusual
+Ultra Space Pokémon.
+</span>
+
+</div>
+
+
+<div class="point">
+
+<b>05</b>
+
+<span>
+Meltan and Melmetal expanded the Gen 7 roster
+through Pokémon GO connectivity.
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+Alola Highlights
+</h3>
+
+
+<div class="points">
+
+
+<div class="point">
+<b>🌿</b>
+<span>Decidueye</span>
+</div>
+
+
+<div class="point">
+<b>🔥</b>
+<span>Incineroar</span>
+</div>
+
+
+<div class="point">
+<b>🌊</b>
+<span>Primarina</span>
+</div>
+
+
+<div class="point">
+<b>👻</b>
+<span>Mimikyu</span>
+</div>
+
+
+<div class="point">
+<b>☀️</b>
+<span>Solgaleo</span>
+</div>
+
+
+<div class="point">
+<b>🌙</b>
+<span>Lunala</span>
+</div>
+
+
+<div class="point">
+<b>⚡</b>
+<span>Zeraora</span>
+</div>
+
+
+<div class="point">
+<b>🔩</b>
+<span>Melmetal</span>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     POKEDEX
+===================================================== -->
+
+<section id="pokedex"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+📖 Complete Gen 7 Pokédex
+</h2>
+
+<p>
+Search all 88 Gen 7 species by name, Pokédex number,
+type or category.
+</p>
+
+</div>
+
+
+<div class="toolbar">
+
+
+<input
+    id="search"
+    class="search"
+    type="search"
+    placeholder="Search Rowlet, Mimikyu, 778, ghost..."
+    aria-label="Search Gen 7 Pokémon"
+>
+
+
+<select
+    id="typeFilter"
+    class="select">
+
+<option value="all">
+All Types
+</option>
+
+<option value="normal">Normal</option>
+
+<option value="fire">Fire</option>
+
+<option value="water">Water</option>
+
+<option value="grass">Grass</option>
+
+<option value="electric">Electric</option>
+
+<option value="ice">Ice</option>
+
+<option value="fighting">Fighting</option>
+
+<option value="poison">Poison</option>
+
+<option value="ground">Ground</option>
+
+<option value="flying">Flying</option>
+
+<option value="psychic">Psychic</option>
+
+<option value="bug">Bug</option>
+
+<option value="rock">Rock</option>
+
+<option value="ghost">Ghost</option>
+
+<option value="dragon">Dragon</option>
+
+<option value="dark">Dark</option>
+
+<option value="steel">Steel</option>
+
+<option value="fairy">Fairy</option>
+
+</select>
+
+
+<select
+    id="roleFilter"
+    class="select">
+
+<option value="all">
+All Categories
+</option>
+
+<option value="starter">
+Starter
+</option>
+
+<option value="legendary">
+Legendary
+</option>
+
+<option value="mythical">
+Mythical
+</option>
+
+<option value="ultrabeast">
+Ultra Beast
+</option>
+
+<option value="regular">
+Regular
+</option>
+
+</select>
+
+</div>
+
+
+<div id="pokemonGrid"
+     class="pokemon-grid">
+</div>
+
+
+<div id="empty"
+     class="empty">
+
+<h3>
+No Pokémon Found
+</h3>
+
+<p>
+Try another search term or filter.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section id="evolution"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+🧬 Gen 7 Evolution Families
+</h2>
+
+<p>
+Major evolution lines introduced in Alola.
+</p>
+
+</div>
+
+
+<div class="evolution-grid">
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🌿 Rowlet Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Rowlet
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Dartrix
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Decidueye
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🔥 Litten Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Litten
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Torracat
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Incineroar
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🌊 Popplio Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Popplio
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Brionne
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Primarina
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🐦 Pikipek Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Pikipek
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Trumbeak
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Toucannon
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🐛 Grubbin Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Grubbin
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Charjabug
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Vikavolt
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🦀 Crabrawler Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Crabrawler
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Crabominable
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🧚 Cutiefly Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Cutiefly
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Ribombee
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🐺 Rockruff Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Rockruff
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Lycanroc
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🪼 Mareanie Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Mareanie
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Toxapex
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🐴 Mudbray Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Mudbray
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Mudsdale
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🌱 Fomantis Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Fomantis
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Lurantis
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🔥 Salandit Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Salandit
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Salazzle
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🐻 Stufful Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Stufful
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Bewear
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🍓 Bounsweet Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Bounsweet
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Steenee
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Tsareena
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🦾 Wimpod Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Wimpod
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Golisopod
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+👻 Sandygast Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Sandygast
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Palossand
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🧬 Type: Null Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Type: Null
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Silvally
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🐉 Jangmo-o Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Jangmo-o
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Hakamo-o
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Kommo-o
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+☀️ Cosmog Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Cosmog
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Cosmoem
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Solgaleo / Lunala
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🧪 Poipole Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Poipole
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Naganadel
+</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+🔩 Meltan Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">
+Meltan
+</span>
+
+<span class="arrow">→</span>
+
+<span class="evo-mon">
+Melmetal
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL FORMS
+===================================================== -->
+
+<section id="forms"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+🌀 Alolan Forms & Special Forms
+</h2>
+
+<p>
+Gen 7 expanded the concept of regional forms and
+introduced several Pokémon with multiple battle forms.
+</p>
+
+</div>
+
+
+<div class="form-grid">
+
+
+<div class="form-card">
+
+<h3>
+🌺 Oricorio
+</h3>
+
+<p>
+
+Oricorio has four styles associated with different
+islands and elemental themes: Baile, Pom-Pom, Pa'u
+and Sensu.
+
+</p>
+
+<span class="form-badge">
+4 STYLES
+</span>
+
+</div>
+
+
+<div class="form-card">
+
+<h3>
+🐺 Lycanroc
+</h3>
+
+<p>
+
+Lycanroc has Midday, Midnight and Dusk forms.
+The available form can affect its appearance and
+battle characteristics.
+
+</p>
+
+<span class="form-badge">
+3 FORMS
+</span>
+
+</div>
+
+
+<div class="form-card">
+
+<h3>
+🌌 Minior
+</h3>
+
+<p>
+
+Minior has different core colors and a Meteor Form,
+making it one of the most visually distinctive
+Gen 7 Pokémon.
+
+</p>
+
+<span class="form-badge">
+MULTIPLE FORMS
+</span>
+
+</div>
+
+
+<div class="form-card">
+
+<h3>
+🧬 Silvally
+</h3>
+
+<p>
+
+Silvally can change its type using Memories.
+This makes its form system particularly important
+for a database page.
+
+</p>
+
+<span class="form-badge">
+TYPE FORMS
+</span>
+
+</div>
+
+
+<div class="form-card">
+
+<h3>
+🌑 Necrozma
+</h3>
+
+<p>
+
+Necrozma has major special forms associated with
+Solgaleo, Lunala and Ultra Necrozma.
+
+</p>
+
+<span class="form-badge">
+SPECIAL FORMS
+</span>
+
+</div>
+
+
+<div class="form-card">
+
+<h3>
+👻 Mimikyu
+</h3>
+
+<p>
+
+Mimikyu has its distinctive Disguised state and
+Busted state.
+
+</p>
+
+<span class="form-badge">
+BATTLE FORM
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ULTRA BEASTS
+===================================================== -->
+
+<section id="ultra"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+👾 Ultra Beasts
+</h2>
+
+<p>
+Ultra Beasts are unusual Pokémon associated with
+Ultra Space and form one of Gen 7's defining features.
+</p>
+
+</div>
+
+
+<div class="ultra-grid">
+
+
+<div class="ultra-card">
+<h3>Nihilego</h3>
+<p>#793 • Rock / Poison</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Buzzwole</h3>
+<p>#794 • Bug / Fighting</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Pheromosa</h3>
+<p>#795 • Bug / Fighting</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Xurkitree</h3>
+<p>#796 • Electric</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Celesteela</h3>
+<p>#797 • Steel / Flying</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Kartana</h3>
+<p>#798 • Grass / Steel</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Guzzlord</h3>
+<p>#799 • Dark / Dragon</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Stakataka</h3>
+<p>#805 • Rock / Steel</p>
+</div>
+
+
+<div class="ultra-card">
+<h3>Blacephalon</h3>
+<p>#806 • Fire / Ghost</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LEGENDARY / MYTHICAL
+===================================================== -->
+
+<section class="section">
+
+
+<div class="section-heading">
+
+<h2>
+👑 Legendary & Mythical Pokémon
+</h2>
+
+<p>
+Major Legendary, Mythical and special Pokémon introduced
+during Generation 7.
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Pokédex
+</th>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Category
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+<td>#785</td>
+<td>Tapu Koko</td>
+<td>Electric / Fairy</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#786</td>
+<td>Tapu Lele</td>
+<td>Psychic / Fairy</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#787</td>
+<td>Tapu Bulu</td>
+<td>Grass / Fairy</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#788</td>
+<td>Tapu Fini</td>
+<td>Water / Fairy</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#789</td>
+<td>Cosmog</td>
+<td>Psychic</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#790</td>
+<td>Cosmoem</td>
+<td>Psychic</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#791</td>
+<td>Solgaleo</td>
+<td>Psychic / Steel</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#792</td>
+<td>Lunala</td>
+<td>Psychic / Ghost</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#800</td>
+<td>Necrozma</td>
+<td>Psychic</td>
+<td>Legendary</td>
+</tr>
+
+
+<tr>
+<td>#801</td>
+<td>Magearna</td>
+<td>Steel / Fairy</td>
+<td>Mythical</td>
+</tr>
+
+
+<tr>
+<td>#802</td>
+<td>Marshadow</td>
+<td>Fighting / Ghost</td>
+<td>Mythical</td>
+</tr>
+
+
+<tr>
+<td>#807</td>
+<td>Zeraora</td>
+<td>Electric</td>
+<td>Mythical</td>
+</tr>
+
+
+<tr>
+<td>#808</td>
+<td>Meltan</td>
+<td>Steel</td>
+<td>Mythical</td>
+</tr>
+
+
+<tr>
+<td>#809</td>
+<td>Melmetal</td>
+<td>Steel</td>
+<td>Mythical</td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE
+===================================================== -->
+
+<section class="section">
+
+
+<div class="section-heading">
+
+<h2>
+⚔️ Gen 7 Battle & Type Overview
+</h2>
+
+<p>
+Use these type relationships as the foundation for
+individual Pokémon guides.
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Type
+</th>
+
+<th>
+Gen 7 Examples
+</th>
+
+<th>
+Strong Against
+</th>
+
+<th>
+Important Weaknesses
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+🌿 Grass
+</td>
+
+<td>
+Rowlet, Lurantis, Tapu Bulu
+</td>
+
+<td>
+Water, Ground, Rock
+</td>
+
+<td>
+Fire, Ice, Poison, Flying, Bug
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+🔥 Fire
+</td>
+
+<td>
+Litten, Incineroar, Salazzle
+</td>
+
+<td>
+Grass, Ice, Bug, Steel
+</td>
+
+<td>
+Water, Ground, Rock
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+🌊 Water
+</td>
+
+<td>
+Popplio, Primarina, Wishiwashi
+</td>
+
+<td>
+Fire, Ground, Rock
+</td>
+
+<td>
+Electric, Grass
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+⚡ Electric
+</td>
+
+<td>
+Charjabug, Vikavolt, Xurkitree
+</td>
+
+<td>
+Water, Flying
+</td>
+
+<td>
+Ground
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+🧚 Fairy
+</td>
+
+<td>
+Primarina, Ribombee, Mimikyu
+</td>
+
+<td>
+Dragon, Fighting, Dark
+</td>
+
+<td>
+Poison, Steel
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+🐉 Dragon
+</td>
+
+<td>
+Kommo-o, Naganadel, Guzzlord
+</td>
+
+<td>
+Dragon
+</td>
+
+<td>
+Ice, Dragon, Fairy
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+👻 Ghost
+</td>
+
+<td>
+Mimikyu, Palossand, Lunala
+</td>
+
+<td>
+Psychic, Ghost
+</td>
+
+<td>
+Ghost, Dark
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+⚙️ Steel
+</td>
+
+<td>
+Silvally, Solgaleo, Melmetal
+</td>
+
+<td>
+Ice, Rock, Fairy
+</td>
+
+<td>
+Fire, Fighting, Ground
+</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     Z MOVES
+===================================================== -->
+
+<section class="section">
+
+
+<div class="section-heading">
+
+<h2>
+💥 Z-Moves
+</h2>
+
+<p>
+Z-Moves were one of the defining battle mechanics
+introduced in Generation 7.
+</p>
+
+</div>
+
+
+<div class="overview-grid">
+
+
+<div class="panel">
+
+<h3>
+How Z-Moves Worked
+</h3>
+
+<p>
+
+A Trainer could equip a Z-Crystal and use a compatible
+move to unleash a powerful Z-Move. In the original
+Gen 7 battle system, this was generally limited to
+once per battle.
+
+</p>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+Database Opportunity
+</h3>
+
+<p>
+
+Your individual Pokémon pages can include a dedicated
+"Z-Move" section explaining compatible crystals,
+signature Z-Moves and historical relevance.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     INDIVIDUAL GUIDE FRAMEWORK
+===================================================== -->
+
+<section id="guides"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+📚 Individual Pokémon Guide Framework
+</h2>
+
+<p>
+Use this framework for every Gen 7 Pokémon page.
+</p>
+
+</div>
+
+
+<div class="guide-grid">
+
+
+<div class="guide">
+
+<h3>
+📊 Stats & Max CP
+</h3>
+
+<p>
+Give Trainers meaningful battle statistics instead
+of only displaying a Pokédex description.
+</p>
+
+<ul>
+
+<li>Attack</li>
+<li>Defense</li>
+<li>HP / Stamina</li>
+<li>Maximum CP</li>
+<li>IV information</li>
+<li>Level considerations</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+🛡️ Weaknesses & Resistances
+</h3>
+
+<p>
+Explain type matchups and how they affect actual
+raid and PvP decisions.
+</p>
+
+<ul>
+
+<li>Weaknesses</li>
+<li>Resistances</li>
+<li>Double weaknesses</li>
+<li>Raid implications</li>
+<li>PvP matchup considerations</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+💥 Best Moves
+</h3>
+
+<p>
+Separate Pokémon GO raid recommendations from
+PvP movesets.
+</p>
+
+<ul>
+
+<li>Fast moves</li>
+<li>Charged moves</li>
+<li>Raid moveset</li>
+<li>PvP moveset</li>
+<li>Elite TM considerations</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+⭐ Raid Performance
+</h3>
+
+<p>
+Explain whether the Pokémon has meaningful value
+as a Pokémon GO raid attacker.
+</p>
+
+<ul>
+
+<li>Raid attacker role</li>
+<li>Best raid moveset</li>
+<li>Weather considerations</li>
+<li>Team-building value</li>
+<li>Mega contribution where applicable</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+🏆 PvP Performance
+</h3>
+
+<p>
+Analyze relevant Pokémon GO Battle League roles.
+</p>
+
+<ul>
+
+<li>Great League</li>
+<li>Ultra League</li>
+<li>Master League</li>
+<li>Recommended moves</li>
+<li>Important matchups</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+✨ Shiny Guide
+</h3>
+
+<p>
+Give shiny information its own section rather than
+burying it inside the Pokédex description.
+</p>
+
+<ul>
+
+<li>Shiny availability</li>
+<li>Shiny appearance</li>
+<li>Release history</li>
+<li>Encounter methods</li>
+<li>Event availability</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+🌑 Shadow Guide
+</h3>
+
+<p>
+When a Shadow version exists in Pokémon GO, explain
+how it compares with the regular version.
+</p>
+
+<ul>
+
+<li>Shadow availability</li>
+<li>Shadow evolution</li>
+<li>Purification</li>
+<li>Frustration</li>
+<li>Battle value</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+🌀 Alolan / Special Forms
+</h3>
+
+<p>
+Regional and special forms deserve dedicated
+explanations.
+</p>
+
+<ul>
+
+<li>Form names</li>
+<li>Type differences</li>
+<li>Appearance</li>
+<li>Availability</li>
+<li>Battle differences</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+🔄 Evolution Guide
+</h3>
+
+<p>
+Explain exactly how Trainers can obtain every
+evolution.
+</p>
+
+<ul>
+
+<li>Candy requirements</li>
+<li>Evolution items</li>
+<li>Buddy requirements</li>
+<li>Special conditions</li>
+<li>Final evolution</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+📍 Pokémon GO Availability
+</h3>
+
+<p>
+Keep encounter information updated because Pokémon
+GO availability can change with events and seasons.
+</p>
+
+<ul>
+
+<li>Wild encounters</li>
+<li>Eggs</li>
+<li>Raids</li>
+<li>Research</li>
+<li>Events</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+👾 Ultra Beast Guide
+</h3>
+
+<p>
+Ultra Beasts should have dedicated pages covering
+their raid and collection value.
+</p>
+
+<ul>
+
+<li>Ultra Beast classification</li>
+<li>Raid availability</li>
+<li>Best counters</li>
+<li>Moves</li>
+<li>Shiny status</li>
+
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+💥 Z-Move History
+</h3>
+
+<p>
+For species with notable Z-Move interactions,
+provide historical information about their original
+Gen 7 battle mechanics.
+</p>
+
+<ul>
+
+<li>Compatible Z-Crystals</li>
+<li>Signature Z-Moves</li>
+<li>Move requirements</li>
+<li>Battle usage</li>
+<li>Historical context</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section id="faq"
+         class="section">
+
+
+<div class="section-heading">
+
+<h2>
+❓ Gen 7 Pokémon FAQ
+</h2>
+
+<p>
+Frequently asked questions about the Alola generation.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+How many Pokémon were introduced in Gen 7?
+</summary>
+
+<p>
+
+Generation 7 introduced 88 new Pokémon,
+covering National Pokédex numbers #722 through #809.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What region is Gen 7 from?
+</summary>
+
+<p>
+
+Generation 7 introduced the Alola region.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who are the Gen 7 starters?
+</summary>
+
+<p>
+
+The three Alola starters are Rowlet, Litten and Popplio.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Gen 7 famous for?
+</summary>
+
+<p>
+
+Generation 7 is particularly associated with Alolan
+regional forms, Z-Moves, Ultra Beasts and the Alola
+island-based adventure structure.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What are the Gen 7 Ultra Beasts?
+</summary>
+
+<p>
+
+The Gen 7 Ultra Beast group includes Nihilego,
+Buzzwole, Pheromosa, Xurkitree, Celesteela,
+Kartana, Guzzlord, Stakataka and Blacephalon.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who are the Gen 7 Legendary Pokémon?
+</summary>
+
+<p>
+
+Important Gen 7 Legendary Pokémon include the four
+Tapu, Cosmog, Cosmoem, Solgaleo, Lunala and Necrozma.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which Mythical Pokémon belong to Gen 7?
+</summary>
+
+<p>
+
+Magearna, Marshadow, Zeraora, Meltan and Melmetal
+are among the Mythical Pokémon associated with
+Generation 7.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is the final Gen 7 Pokémon?
+</summary>
+
+<p>
+
+Melmetal is National Pokédex #809 and is the final
+species introduced in Generation 7.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Why should Pokémon GO information be updated separately?
+</summary>
+
+<p>
+
+Pokémon GO availability, moves, raid roles, forms and
+other game-specific mechanics can change over time.
+The individual Pokémon pages should therefore be
+maintained independently from the static generation
+overview.
+
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+Pokémon Gaming
+</h3>
+
+<p>
+
+Independent Pokémon GO guides, databases,
+raid information and Trainer tools.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Pokédex
+</h3>
+
+<div class="footer-links">
+
+<a href="/pokemon/gen-1.html">
+Gen 1
+</a>
+
+<a href="/pokemon/gen-2.html">
+Gen 2
+</a>
+
+<a href="/pokemon/gen-3.html">
+Gen 3
+</a>
+
+<a href="/pokemon/gen-4.html">
+Gen 4
+</a>
+
+<a href="/pokemon/gen-5.html">
+Gen 5
+</a>
+
+<a href="/pokemon/gen-6.html">
+Gen 6
+</a>
+
+<a href="/pokemon/gen-7.html">
+Gen 7
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Guides
+</h3>
+
+<div class="footer-links">
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Website
+</h3>
+
+<div class="footer-links">
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/contact.html">
+Contact
+</a>
+
+<a href="/privacy-policy.html">
+Privacy Policy
+</a>
+
+<a href="/terms.html">
+Terms
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Pokémon Gaming.
+Independent fan website.
+
+Pokémon and Pokémon character names are trademarks
+of their respective owners. This website is not affiliated
+with or endorsed by The Pokémon Company, Nintendo,
+Game Freak or Niantic.
+
+</div>
+
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   GEN 7 DATA
+   #722 - #809
+========================================================= */
+
+const pokemon = [
+
+/* STARTERS */
+
+[722,"Rowlet","grass","flying","starter",320],
+[723,"Dartrix","grass","flying","starter",420],
+[724,"Decidueye","grass","ghost","starter",530],
+
+[725,"Litten","fire","","starter",320],
+[726,"Torracat","fire","","starter",420],
+[727,"Incineroar","fire","dark","starter",530],
+
+[728,"Popplio","water","","starter",320],
+[729,"Brionne","water","","starter",420],
+[730,"Primarina","water","fairy","starter",530],
+
+
+/* NORMAL / FLYING */
+
+[731,"Pikipek","normal","flying","regular",265],
+[732,"Trumbeak","normal","flying","regular",355],
+[733,"Toucannon","normal","flying","regular",485],
+
+
+/* YUNGOOS */
+
+[734,"Yungoos","normal","","regular",253],
+[735,"Gumshoos","normal","","regular",418],
+
+
+/* GRUBBIN */
+
+[736,"Grubbin","bug","","regular",300],
+[737,"Charjabug","bug","electric","regular",400],
+[738,"Vikavolt","bug","electric","regular",500],
+
+
+/* CRABRAWLER */
+
+[739,"Crabrawler","fighting","","regular",338],
+[740,"Crabominable","fighting","ice","regular",478],
+
+
+/* ORICORIO */
+
+[741,"Oricorio","fire","flying","regular",476],
+
+
+/* CUTIEFLY */
+
+[742,"Cutiefly","bug","fairy","regular",304],
+[743,"Ribombee","bug","fairy","regular",464],
+
+
+/* ROCKRUFF */
+
+[744,"Rockruff","rock","","regular",280],
+[745,"Lycanroc","rock","","regular",487],
+
+
+/* WISHIWASHI */
+
+[746,"Wishiwashi","water","","regular",175],
+
+
+/* MAREANIE */
+
+[747,"Mareanie","poison","water","regular",305],
+[748,"Toxapex","poison","water","regular",495],
+
+
+/* MUDBRAY */
+
+[749,"Mudbray","ground","","regular",385],
+[750,"Mudsdale","ground","","regular",500],
+
+
+/* DEWPIDER */
+
+[751,"Dewpider","water","bug","regular",269],
+[752,"Araquanid","water","bug","regular",454],
+
+
+/* FOMANTIS */
+
+[753,"Fomantis","grass","","regular",250],
+[754,"Lurantis","grass","","regular",480],
+
+
+/* MORELULL */
+
+[755,"Morelull","grass","fairy","regular",285],
+[756,"Shiinotic","grass","fairy","regular",405],
+
+
+/* SALANDIT */
+
+[757,"Salandit","poison","fire","regular",320],
+[758,"Salazzle","poison","fire","regular",480],
+
+
+/* STUFFUL */
+
+[759,"Stufful","normal","fighting","regular",340],
+[760,"Bewear","normal","fighting","regular",500],
+
+
+/* BOUNSWEET */
+
+[761,"Bounsweet","grass","","regular",210],
+[762,"Steenee","grass","","regular",290],
+[763,"Tsareena","grass","","regular",510],
+
+
+/* COMFEY */
+
+[764,"Comfey","fairy","","regular",485],
+
+
+/* ORANGURU */
+
+[765,"Oranguru","normal","psychic","regular",455],
+
+
+/* PASSIMIAN */
+
+[766,"Passimian","fighting","","regular",420],
+
+
+/* WIMPOD */
+
+[767,"Wimpod","bug","water","regular",230],
+[768,"Golisopod","bug","water","regular",530],
+
+
+/* SANDYGAST */
+
+[769,"Sandygast","ghost","ground","regular",320],
+[770,"Palossand","ghost","ground","regular",480],
+
+
+/* PYUKUMUKU */
+
+[771,"Pyukumuku","water","","regular",410],
+
+
+/* TYPE NULL */
+
+[772,"Type: Null","normal","","regular",534],
+[773,"Silvally","normal","","regular",570],
+
+
+/* MINIOR */
+
+[774,"Minior","rock","flying","regular",440],
+
+
+/* KOMALA */
+
+[775,"Komala","normal","","regular",480],
+
+
+/* TURTONATOR */
+
+[776,"Turtonator","fire","dragon","regular",485],
+
+
+/* TOGEDEMARU */
+
+[777,"Togedemaru","electric","steel","regular",435],
+
+
+/* MIMIKYU */
+
+[778,"Mimikyu","ghost","fairy","regular",476],
+
+
+/* BRUXISH */
+
+[779,"Bruxish","water","psychic","regular",475],
+
+
+/* DRAMPA */
+
+[780,"Drampa","normal","dragon","regular",485],
+
+
+/* DHELMISЕ */
+
+[781,"Dhelmise","ghost","grass","regular",517],
+
+
+/* JANGMO-O */
+
+[782,"Jangmo-o","dragon","","regular",300],
+[783,"Hakamo-o","dragon","fighting","regular",420],
+[784,"Kommo-o","dragon","fighting","regular",600],
+
+
+/* TAPU */
+
+[785,"Tapu Koko","electric","fairy","legendary",570],
+[786,"Tapu Lele","psychic","fairy","legendary",570],
+[787,"Tapu Bulu","grass","fairy","legendary",570],
+[788,"Tapu Fini","water","fairy","legendary",570],
+
+
+/* COSMOG */
+
+[789,"Cosmog","psychic","","legendary",200],
+[790,"Cosmoem","psychic","","legendary",400],
+
+[791,"Solgaleo","psychic","steel","legendary",680],
+[792,"Lunala","psychic","ghost","legendary",680],
+
+
+/* ULTRA BEASTS */
+
+[793,"Nihilego","rock","poison","ultrabeast",570],
+[794,"Buzzwole","bug","fighting","ultrabeast",570],
+[795,"Pheromosa","bug","fighting","ultrabeast",570],
+[796,"Xurkitree","electric","","ultrabeast",570],
+[797,"Celesteela","steel","flying","ultrabeast",570],
+[798,"Kartana","grass","steel","ultrabeast",570],
+[799,"Guzzlord","dark","dragon","ultrabeast",570],
+
+
+/* NECROZMA */
+
+[800,"Necrozma","psychic","","legendary",600],
+
+
+/* MYTHICAL */
+
+[801,"Magearna","steel","fairy","mythical",600],
+[802,"Marshadow","fighting","ghost","mythical",600],
+[803,"Poipole","poison","","ultrabeast",420],
+[804,"Naganadel","poison","dragon","ultrabeast",540],
+[805,"Stakataka","rock","steel","ultrabeast",570],
+[806,"Blacephalon","fire","ghost","ultrabeast",570],
+[807,"Zeraora","electric","","mythical",600],
+[808,"Meltan","steel","","mythical",300],
+[809,"Melmetal","steel","","mythical",600]
+
+];
+
+
+/* =========================================================
+   IMAGE URL
+========================================================= */
+
+function getImage(id){
+
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+
+}
+
+
+/* =========================================================
+   CAPITALIZE
+========================================================= */
+
+function capitalize(value){
+
+    return value
+        .charAt(0)
+        .toUpperCase()
+        + value.slice(1);
+
+}
+
+
+/* =========================================================
+   ROLE LABEL
+========================================================= */
+
+function roleLabel(role){
+
+    const labels = {
+
+        starter:"Starter",
+
+        legendary:"Legendary",
+
+        mythical:"Mythical",
+
+        ultrabeast:"Ultra Beast",
+
+        regular:"Regular"
+
+    };
+
+    return labels[role] || "Pokémon";
+
+}
+
+
+/* =========================================================
+   CREATE CARD
+========================================================= */
+
+function createCard(item){
+
+    const [
+
+        id,
+        name,
+        type1,
+        type2,
+        role,
+        baseTotal
+
+    ] = item;
+
+
+    return `
+
+<article
+
+class="pokemon-card"
+
+data-name="${name.toLowerCase()}"
+
+data-number="${id}"
+
+data-type="${type1}"
+
+data-type2="${type2}"
+
+data-role="${role}"
+
+>
+
+
+<div class="card-header">
+
+<span class="dex">
+#${id}
+</span>
+
+<span class="role">
+${roleLabel(role)}
+</span>
+
+</div>
+
+
+<img
+
+class="pokemon-art"
+
+src="${getImage(id)}"
+
+alt="${capitalize(name)} Pokémon"
+
+loading="lazy"
+
+onerror="this.style.display='none'"
+
+>
+
+
+<div class="card-body">
+
+
+<div class="pokemon-name">
+
+${capitalize(name)}
+
+</div>
+
+
+<div class="types">
+
+<span class="type ${type1}">
+${type1}
+</span>
+
+
+${
+
+type2
+
+?
+
+`
+
+<span class="type ${type2}">
+${type2}
+</span>
+
+`
+
+:
+
+""
+
+}
+
+</div>
+
+
+<div class="stats">
+
+
+<div class="stat">
+
+<small>
+Base Total
+</small>
+
+<strong>
+${baseTotal}
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>
+Generation
+</small>
+
+<strong>
+VII
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>
+Dex
+</small>
+
+<strong>
+#${id}
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div class="meta">
+
+<div>
+
+Region:
+<strong>
+Alola
+</strong>
+
+</div>
+
+
+<div>
+
+Shiny:
+<strong>
+See Guide
+</strong>
+
+</div>
+
+
+<div>
+
+Shadow:
+<strong>
+See Guide
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div class="actions">
+
+
+<a
+
+class="action"
+
+href="/pokemon/${name.toLowerCase().replace(/ /g,"-")}.html"
+
+>
+Guide
+</a>
+
+
+<a
+
+class="action"
+
+href="/raids/${name.toLowerCase().replace(/ /g,"-")}-raid.html"
+
+>
+Raid
+</a>
+
+
+</div>
+
+
+</div>
+
+</article>
+
+`;
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+const grid =
+document.getElementById("pokemonGrid");
+
+
+const empty =
+document.getElementById("empty");
+
+
+function render(list){
+
+    grid.innerHTML =
+        list.map(createCard).join("");
+
+    empty.style.display =
+        list.length
+        ? "none"
+        : "block";
+
+}
+
+
+render(pokemon);
+
+
+/* =========================================================
+   FILTER CONTROLS
+========================================================= */
+
+const search =
+document.getElementById("search");
+
+
+const typeFilter =
+document.getElementById("typeFilter");
+
+
+const roleFilter =
+document.getElementById("roleFilter");
+
+
+/* =========================================================
+   FILTER FUNCTION
+========================================================= */
+
+function filterPokemon(){
+
+    const query =
+        search.value
+        .trim()
+        .toLowerCase();
+
+
+    const selectedType =
+        typeFilter.value;
+
+
+    const selectedRole =
+        roleFilter.value;
+
+
+    const filtered =
+        pokemon.filter(item => {
+
+
+            const [
+
+                id,
+                name,
+                type1,
+                type2,
+                role
+
+            ] = item;
+
+
+            const matchesSearch =
+
+                !query ||
+
+                name
+                    .toLowerCase()
+                    .includes(query)
+
+                ||
+
+                String(id)
+                    .includes(query)
+
+                ||
+
+                type1
+                    .includes(query)
+
+                ||
+
+                (
+                    type2 &&
+                    type2.includes(query)
+                );
+
+
+            const matchesType =
+
+                selectedType === "all"
+
+                ||
+
+                type1 === selectedType
+
+                ||
+
+                type2 === selectedType;
+
+
+            const matchesRole =
+
+                selectedRole === "all"
+
+                ||
+
+                role === selectedRole;
+
+
+            return
+
+                matchesSearch
+
+                &&
+
+                matchesType
+
+                &&
+
+                matchesRole;
+
+        });
+
+
+    render(filtered);
+
+}
+
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+search.addEventListener(
+    "input",
+    filterPokemon
+);
+
+
+typeFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
+roleFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+</script>
+
+
+</body>
+
+</html>

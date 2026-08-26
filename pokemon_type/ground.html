@@ -1,0 +1,3726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Ground-Type Pokémon GO Guide | Gen 1–9, Stats, Weaknesses, Moves & Raids
+</title>
+
+<meta name="description"
+content="Complete Ground-type Pokémon GO guide covering Gen 1–9, evolution families, typing, Max CP, Attack, Defense, HP, weaknesses, resistances, best moves, raid tiers, Mega and Primal forms, Shadow, Dynamax, Gigantamax, shiny availability and individual Pokémon guides.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon-types/ground.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b0f;
+    --bg2: #10151c;
+
+    --surface: #151b23;
+    --surface2: #1b232d;
+    --surface3: #232d38;
+
+    --border: #303b49;
+
+    --text: #f5f7fa;
+    --muted: #aeb7c4;
+
+    --ground: #c49a4a;
+    --ground-light: #e4bd72;
+    --ground-dark: #8e6a2e;
+
+    --green: #58d68d;
+    --red: #ff6975;
+    --blue: #68b8ff;
+    --yellow: #f0cc61;
+
+    --max-width: 1220px;
+
+    --radius-sm: 10px;
+    --radius: 17px;
+    --radius-lg: 25px;
+
+    --shadow:
+        0 22px 70px rgba(0,0,0,.28);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            #292116,
+            var(--bg) 45%
+        );
+
+    color: var(--text);
+
+    line-height: 1.75;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+
+    width:
+        min(
+            calc(100% - 32px),
+            var(--max-width)
+        );
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background:
+        rgba(8,11,15,.95);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo {
+
+    font-size: 1.35rem;
+
+    font-weight: 950;
+
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--ground-light);
+}
+
+.navigation {
+
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+}
+
+.navigation a {
+
+    color: var(--muted);
+
+    font-size: .88rem;
+
+    font-weight: 750;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   BREADCRUMBS
+========================================================= */
+
+.breadcrumbs {
+
+    padding:
+        20px 0 12px;
+
+    color: var(--muted);
+
+    font-size: .83rem;
+}
+
+.breadcrumbs span {
+    color: var(--ground-light);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 50px;
+
+    border-radius:
+        var(--radius-lg);
+
+    border:
+        1px solid
+        rgba(196,154,74,.45);
+
+    background:
+
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(196,154,74,.23),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(196,154,74,.13),
+            rgba(21,27,35,.98)
+        );
+
+    box-shadow: var(--shadow);
+}
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    right: -120px;
+    bottom: -130px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(196,154,74,.10);
+
+    filter: blur(12px);
+}
+
+.type-label {
+
+    display: inline-flex;
+
+    padding:
+        7px 14px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(196,154,74,.13);
+
+    border:
+        1px solid
+        rgba(196,154,74,.4);
+
+    color:
+        var(--ground-light);
+
+    font-size: .75rem;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+}
+
+.hero h1 {
+
+    max-width: 950px;
+
+    margin-top: 18px;
+
+    font-size:
+        clamp(
+            2.25rem,
+            5vw,
+            4.3rem
+        );
+
+    line-height: 1.05;
+}
+
+.hero h1 strong {
+    color: var(--ground);
+}
+
+.hero-description {
+
+    max-width: 900px;
+
+    margin-top: 22px;
+
+    color: var(--muted);
+
+    font-size: 1.06rem;
+}
+
+.hero-pills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 26px;
+}
+
+.hero-pill {
+
+    padding:
+        8px 13px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   AD PLACEHOLDER
+========================================================= */
+
+.ad-space {
+
+    min-height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin:
+        28px 0;
+
+    border:
+        1px dashed #3c4757;
+
+    border-radius:
+        var(--radius-sm);
+
+    color:
+        #727d8d;
+
+    font-size: .77rem;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.page-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        285px;
+
+    gap: 28px;
+
+    margin-top: 28px;
+}
+
+.content {
+    min-width: 0;
+}
+
+.sidebar {
+
+    position: sticky;
+
+    top: 94px;
+
+    align-self: start;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 30px;
+
+    padding: 31px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section h2 {
+
+    margin-bottom: 14px;
+
+    font-size:
+        clamp(
+            1.45rem,
+            3vw,
+            2.05rem
+        );
+
+    line-height: 1.2;
+}
+
+.section h3 {
+
+    margin:
+        24px 0 10px;
+
+    font-size: 1.12rem;
+}
+
+.section p {
+
+    color: var(--muted);
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   QUICK NAV
+========================================================= */
+
+.quick-nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.quick-nav a {
+
+    padding:
+        8px 12px;
+
+    background:
+        var(--bg2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    color: var(--muted);
+
+    font-size: .79rem;
+
+    font-weight: 750;
+}
+
+.quick-nav a:hover {
+
+    color: white;
+
+    border-color:
+        var(--ground);
+}
+
+
+/* =========================================================
+   INFO CARDS
+========================================================= */
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.info-card {
+
+    padding: 20px;
+
+    background:
+        var(--bg2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.info-card h3 {
+
+    margin:
+        0 0 7px;
+
+    font-size: 1rem;
+}
+
+.info-card p {
+
+    margin: 0;
+
+    font-size: .86rem;
+}
+
+
+/* =========================================================
+   GENERATIONS
+========================================================= */
+
+.generation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.generation-card {
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface2),
+            var(--bg2)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+.generation-card:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        var(--ground);
+}
+
+.generation-number {
+
+    color:
+        var(--ground-light);
+
+    font-size: .76rem;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.generation-card h3 {
+    margin: 7px 0;
+}
+
+.generation-card p {
+
+    margin: 0;
+
+    font-size: .84rem;
+}
+
+.generation-card a {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color:
+        var(--ground-light);
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 50px 1fr 50px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+.evolution-card {
+
+    padding: 20px;
+
+    background:
+        var(--bg2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.evolution-card strong {
+
+    display: block;
+
+    font-size: 1.05rem;
+}
+
+.evolution-card span {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+}
+
+.evolution-arrow {
+
+    text-align: center;
+
+    color:
+        var(--ground);
+
+    font-size: 1.5rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.stat {
+
+    padding: 20px;
+
+    background:
+        var(--bg2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.stat-label {
+
+    color:
+        var(--muted);
+
+    font-size: .78rem;
+}
+
+.stat-value {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color:
+        var(--ground-light);
+
+    font-size: 1.85rem;
+
+    font-weight: 950;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-container {
+
+    overflow-x: auto;
+
+    margin-top: 20px;
+}
+
+table {
+
+    width: 100%;
+
+    min-width: 680px;
+
+    border-collapse:
+        collapse;
+}
+
+th,
+td {
+
+    padding:
+        13px 14px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+}
+
+th {
+
+    background:
+        var(--surface2);
+
+    color: white;
+
+    font-size: .76rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .04em;
+}
+
+td {
+
+    color:
+        var(--muted);
+
+    font-size: .86rem;
+}
+
+
+/* =========================================================
+   EFFECTIVENESS
+========================================================= */
+
+.effectiveness {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.effect-box {
+
+    padding: 22px;
+
+    background:
+        var(--bg2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.effect-box h3 {
+    margin-top: 0;
+}
+
+.weakness h3 {
+    color: var(--red);
+}
+
+.resistance h3 {
+    color: var(--green);
+}
+
+.tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.tag {
+
+    padding:
+        7px 10px;
+
+    border-radius:
+        8px;
+
+    background:
+        var(--surface3);
+
+    color:
+        var(--muted);
+
+    font-size: .77rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SPECIAL FORMS
+========================================================= */
+
+.special-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.special-card {
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface2),
+            var(--bg2)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.special-card h3 {
+    margin-top: 0;
+}
+
+.special-card p {
+    font-size: .86rem;
+}
+
+
+/* =========================================================
+   POKEMON GUIDE CARDS
+========================================================= */
+
+.guide-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.guide-card {
+
+    padding: 22px;
+
+    background:
+        var(--bg2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.guide-card h3 {
+    margin-top: 0;
+}
+
+.guide-card p {
+    font-size: .85rem;
+}
+
+.guide-card a {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color:
+        var(--ground-light);
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   CALLOUT
+========================================================= */
+
+.callout {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-left:
+        4px solid var(--ground);
+
+    background:
+        rgba(196,154,74,.07);
+
+    color:
+        var(--muted);
+
+    border-radius:
+        0 var(--radius-sm)
+        var(--radius-sm) 0;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq {
+
+    border-top:
+        1px solid var(--border);
+
+    margin-top: 20px;
+}
+
+.faq-item {
+
+    padding:
+        18px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.faq-item h3 {
+
+    margin:
+        0 0 7px;
+
+    font-size: 1rem;
+}
+
+.faq-item p {
+
+    margin: 0;
+
+    font-size: .87rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar-card {
+
+    padding: 20px;
+
+    margin-bottom: 16px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.sidebar-card h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+}
+
+.sidebar-card a {
+
+    display: block;
+
+    padding: 7px 0;
+
+    color:
+        var(--muted);
+
+    font-size: .82rem;
+}
+
+.sidebar-card a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    margin-top: 60px;
+
+    padding:
+        50px 0 25px;
+
+    background:
+        #06080b;
+
+    border-top:
+        1px solid var(--border);
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap: 30px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+
+    color:
+        var(--muted);
+
+    font-size: .84rem;
+}
+
+.footer a {
+
+    display: block;
+
+    margin:
+        5px 0;
+}
+
+.copyright {
+
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:
+        #707987;
+
+    font-size: .75rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px) {
+
+    .page-layout {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .sidebar {
+
+        position: static;
+    }
+
+    .generation-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:700px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .hero {
+        padding: 30px 22px;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .info-grid,
+    .generation-grid,
+    .stat-grid,
+    .effectiveness,
+    .special-grid,
+    .guide-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .evolution {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .evolution-arrow {
+
+        transform:
+            rotate(90deg);
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header class="header">
+
+<div class="container header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="navigation">
+
+<a href="/pokemon/">
+Pokémon
+</a>
+
+<a href="/raids/">
+Raids
+</a>
+
+<a href="/pvp/">
+PvP
+</a>
+
+<a href="/pokemon-types/">
+Types
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+<a href="/guides/">
+Guides
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- ======================================================
+     BREADCRUMB
+====================================================== -->
+
+<div class="breadcrumbs">
+
+Home /
+Pokémon Database /
+Pokémon Types /
+<span>Ground</span>
+
+</div>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero">
+
+<span class="type-label">
+Ground Type
+</span>
+
+<h1>
+
+Ground-Type Pokémon GO
+<strong>Complete Hub</strong>
+
+</h1>
+
+<p class="hero-description">
+
+Explore Ground-type Pokémon in Pokémon GO with a
+generation-by-generation database covering Gen 1–9,
+evolution families, typing, Max CP, Attack, Defense,
+HP, weaknesses, resistances, moves, raid performance,
+Mega and Primal forms, Shadow Pokémon, Dynamax,
+Gigantamax, shiny availability and individual Pokémon
+guides.
+
+</p>
+
+<div class="hero-pills">
+
+<span class="hero-pill">
+Gen 1–9
+</span>
+
+<span class="hero-pill">
+Evolution Families
+</span>
+
+<span class="hero-pill">
+PvE
+</span>
+
+<span class="hero-pill">
+PvP
+</span>
+
+<span class="hero-pill">
+Mega / Primal
+</span>
+
+<span class="hero-pill">
+Shadow
+</span>
+
+<span class="hero-pill">
+Shiny
+</span>
+
+</div>
+
+</section>
+
+
+<div class="ad-space">
+Advertisement
+</div>
+
+
+<div class="page-layout">
+
+
+<!-- ======================================================
+     CONTENT
+====================================================== -->
+
+<article class="content">
+
+
+<!-- ======================================================
+     1. GROUND HUB
+====================================================== -->
+
+<section class="section" id="hub">
+
+<h2>
+1. Ground-Type Pokémon GO Hub
+</h2>
+
+<p>
+
+Ground-type Pokémon occupy several important roles in
+Pokémon GO. Some are powerful raid attackers, some are
+valuable PvP choices, while others are primarily useful
+because of their evolution families, special forms,
+collection value or availability.
+
+</p>
+
+<p>
+
+This hub brings those different uses together so that
+trainers can move from broad Ground-type information to
+individual Pokémon guides without having to search
+through unrelated pages.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Ground Attackers
+</h3>
+
+<p>
+Compare Ground Pokémon for raid and gym attacking roles.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+PvP Options
+</h3>
+
+<p>
+Evaluate Ground Pokémon separately for Great, Ultra and
+Master League where applicable.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Collection
+</h3>
+
+<p>
+Track evolution families, shiny forms, Shadow versions
+and special availability.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     2. GENERATIONS
+====================================================== -->
+
+<section class="section" id="generations">
+
+<h2>
+2. Ground Pokémon by Generation — Gen 1 to Gen 9
+</h2>
+
+<p>
+
+Ground Pokémon were introduced across multiple generations.
+Organizing the database by generation makes it easier for
+players to discover species, evolution families and regional
+forms.
+
+</p>
+
+<div class="generation-grid">
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 1
+</span>
+
+<h3>
+Kanto
+</h3>
+
+<p>
+Explore Ground Pokémon originally introduced in Kanto.
+</p>
+
+<a href="/pokemon-types/ground/gen-1.html">
+Explore Gen 1 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 2
+</span>
+
+<h3>
+Johto
+</h3>
+
+<p>
+Explore Johto Ground Pokémon and their battle roles.
+</p>
+
+<a href="/pokemon-types/ground/gen-2.html">
+Explore Gen 2 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 3
+</span>
+
+<h3>
+Hoenn
+</h3>
+
+<p>
+Discover Hoenn Ground Pokémon, evolutions and moves.
+</p>
+
+<a href="/pokemon-types/ground/gen-3.html">
+Explore Gen 3 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 4
+</span>
+
+<h3>
+Sinnoh
+</h3>
+
+<p>
+Explore Sinnoh Ground Pokémon and their evolution families.
+</p>
+
+<a href="/pokemon-types/ground/gen-4.html">
+Explore Gen 4 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 5
+</span>
+
+<h3>
+Unova
+</h3>
+
+<p>
+Review Unova Ground Pokémon and their individual guides.
+</p>
+
+<a href="/pokemon-types/ground/gen-5.html">
+Explore Gen 5 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 6
+</span>
+
+<h3>
+Kalos
+</h3>
+
+<p>
+Explore Kalos Ground Pokémon and dual-type combinations.
+</p>
+
+<a href="/pokemon-types/ground/gen-6.html">
+Explore Gen 6 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 7
+</span>
+
+<h3>
+Alola
+</h3>
+
+<p>
+Explore Alolan Ground Pokémon and regional forms.
+</p>
+
+<a href="/pokemon-types/ground/gen-7.html">
+Explore Gen 7 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 8
+</span>
+
+<h3>
+Galar / Hisui
+</h3>
+
+<p>
+Explore relevant Ground Pokémon and regional forms.
+</p>
+
+<a href="/pokemon-types/ground/gen-8.html">
+Explore Gen 8 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span class="generation-number">
+Generation 9
+</span>
+
+<h3>
+Paldea
+</h3>
+
+<p>
+Explore Paldean Ground Pokémon and their battle roles.
+</p>
+
+<a href="/pokemon-types/ground/gen-9.html">
+Explore Gen 9 →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     3. EVOLUTION FAMILY
+====================================================== -->
+
+<section class="section" id="evolution">
+
+<h2>
+3. Ground-Type Evolution Families
+</h2>
+
+<p>
+
+Evolution families should be treated as connected player
+journeys. A trainer may encounter a basic Pokémon long
+before deciding whether its final evolution deserves
+Stardust, Candy and XL Candy.
+
+</p>
+
+<div class="evolution">
+
+<div class="evolution-card">
+
+<strong>
+Drilbur
+</strong>
+
+<span>
+Base Form
+</span>
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-card">
+
+<strong>
+Excadrill
+</strong>
+
+<span>
+Final Evolution
+</span>
+
+</div>
+
+<div class="evolution-arrow">
+→
+</div>
+
+<div class="evolution-card">
+
+<strong>
+Battle Investment
+</strong>
+
+<span>
+Evaluate role
+</span>
+
+</div>
+
+</div>
+
+<div class="callout">
+
+For every family, document Candy requirements, evolution
+conditions, final evolution performance, useful moves,
+special forms and whether investing in the final stage
+makes sense.
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     4. TYPE
+====================================================== -->
+
+<section class="section" id="type">
+
+<h2>
+4. Ground Type — What Makes It Different?
+</h2>
+
+<p>
+
+Ground typing is particularly important because Ground
+moves can play a major role against several common raid
+and battle targets.
+
+</p>
+
+<p>
+
+However, a Pokémon's complete typing matters. A Ground/
+Steel Pokémon can have a very different defensive profile
+from a pure Ground Pokémon, while Ground/Flying introduces
+another set of interactions.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Pure Ground
+</h3>
+
+<p>
+Evaluate the standard Ground defensive and offensive profile.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Ground Dual Types
+</h3>
+
+<p>
+Secondary typing can add both useful resistances and
+additional weaknesses.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+STAB
+</h3>
+
+<p>
+Ground-type attacks receive Same-Type Attack Bonus when
+used by a Ground-type Pokémon.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     5. MAX CP
+====================================================== -->
+
+<section class="section" id="max-cp">
+
+<h2>
+5. Maximum CP
+</h2>
+
+<p>
+
+Maximum CP provides a quick way to understand a Pokémon's
+potential ceiling, but it should always be considered
+alongside Attack, Defense, HP, moveset and battle role.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Max CP
+</th>
+
+<th>
+Typing
+</th>
+
+<th>
+Primary Role
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Groudon
+</td>
+
+<td>
+Verify current data
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Raid / PvP
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Excadrill
+</td>
+
+<td>
+Verify current data
+</td>
+
+<td>
+Ground / Steel
+</td>
+
+<td>
+Raid / PvP
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Garchomp
+</td>
+
+<td>
+Verify current data
+</td>
+
+<td>
+Dragon / Ground
+</td>
+
+<td>
+Raid / PvP
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Rhyperior
+</td>
+
+<td>
+Verify current data
+</td>
+
+<td>
+Ground / Rock
+</td>
+
+<td>
+Raid
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="callout">
+
+Use verified Pokémon GO values when publishing the final
+page. Avoid filling a database with approximate or copied
+statistics.
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     6. ATTACK DEFENSE HP
+====================================================== -->
+
+<section class="section" id="stats">
+
+<h2>
+6. Attack, Defense & HP
+</h2>
+
+<p>
+
+Base stats provide more useful context than CP alone.
+Attack is particularly important when comparing raid
+attackers, while Defense and HP influence survivability
+and PvP performance.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat">
+
+<span class="stat-label">
+Attack
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>
+Individual Pokémon value
+</p>
+
+</div>
+
+<div class="stat">
+
+<span class="stat-label">
+Defense
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>
+Individual Pokémon value
+</p>
+
+</div>
+
+<div class="stat">
+
+<span class="stat-label">
+HP
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>
+Individual Pokémon value
+</p>
+
+</div>
+
+<div class="stat">
+
+<span class="stat-label">
+Overall Role
+</span>
+
+<span class="stat-value">
+—
+</span>
+
+<p>
+PvE / PvP
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     7. WEAKNESSES
+====================================================== -->
+
+<section class="section" id="weaknesses">
+
+<h2>
+7. Ground-Type Weaknesses
+</h2>
+
+<p>
+
+Ground-type Pokémon have several important defensive
+matchups. These should be explained at the type level,
+while individual Pokémon pages should account for their
+secondary typing.
+
+</p>
+
+<div class="effectiveness">
+
+<div class="effect-box weakness">
+
+<h3>
+Ground Weaknesses
+</h3>
+
+<div class="tags">
+
+<span class="tag">
+Water
+</span>
+
+<span class="tag">
+Grass
+</span>
+
+<span class="tag">
+Ice
+</span>
+
+</div>
+
+</div>
+
+<div class="effect-box">
+
+<h3>
+Practical Strategy
+</h3>
+
+<p>
+
+When facing a Ground-type raid boss, first identify its
+complete typing and then choose counters based on both
+type effectiveness and actual moveset.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     8. RESISTANCES
+====================================================== -->
+
+<section class="section" id="resistances">
+
+<h2>
+8. Ground-Type Resistances & Immunity
+</h2>
+
+<p>
+
+Ground typing provides useful defensive interactions.
+Some Ground Pokémon can also gain additional resistances
+or immunities through a secondary type or ability-like
+game mechanic.
+
+</p>
+
+<div class="effectiveness">
+
+<div class="effect-box resistance">
+
+<h3>
+Important Resistances
+</h3>
+
+<div class="tags">
+
+<span class="tag">
+Poison
+</span>
+
+<span class="tag">
+Rock
+</span>
+
+</div>
+
+</div>
+
+<div class="effect-box">
+
+<h3>
+Electric Interaction
+</h3>
+
+<p>
+
+Ground typing has a special relationship with Electric-type
+attacks. Always distinguish the type chart from the actual
+Pokémon GO battle implementation when publishing detailed
+mechanics.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     9. BEST MOVES
+====================================================== -->
+
+<section class="section" id="moves">
+
+<h2>
+9. Best Ground-Type Moves
+</h2>
+
+<p>
+
+A useful moves section should explain the purpose of each
+move rather than simply ranking moves by damage.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Move
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Category
+</th>
+
+<th>
+Best Use
+</th>
+
+<th>
+Evaluation
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Ground Fast Move
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Fast
+</td>
+
+<td>
+Raid / PvP
+</td>
+
+<td>
+Evaluate energy generation and damage.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Ground Charged Move
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Charged
+</td>
+
+<td>
+Raid
+</td>
+
+<td>
+Evaluate damage and energy cost.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Coverage Move
+</td>
+
+<td>
+Varies
+</td>
+
+<td>
+Charged
+</td>
+
+<td>
+PvP
+</td>
+
+<td>
+Can improve matchup coverage.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     10. RAID TIER
+====================================================== -->
+
+<section class="section" id="raid-tier">
+
+<h2>
+10. Ground Pokémon Raid Tier
+</h2>
+
+<p>
+
+Ground Pokémon should be ranked according to their actual
+raid performance rather than simply their CP.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Factor
+</th>
+
+<th>
+What To Evaluate
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Damage Output
+</td>
+
+<td>
+Practical damage dealt during raids.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Moveset
+</td>
+
+<td>
+Fast and Charged Move quality.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Survivability
+</td>
+
+<td>
+How long the attacker remains active.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Availability
+</td>
+
+<td>
+How easy it is for trainers to obtain.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Investment
+</td>
+
+<td>
+Stardust, Candy, XL Candy and Elite resources.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="callout">
+
+A good tier list should explain <strong>why</strong> a Pokémon
+is placed in a tier instead of simply displaying an A/B/C
+letter.
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     11. MEGA PRIMAL
+====================================================== -->
+
+<section class="section" id="mega">
+
+<h2>
+11. Mega & Primal Ground Pokémon
+</h2>
+
+<p>
+
+Mega Evolution and Primal Reversion deserve separate
+analysis because these forms can substantially change
+a Pokémon's practical value.
+
+</p>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<h3>
+Mega Evolution
+</h3>
+
+<p>
+
+Document Mega Energy requirements, form availability,
+typing, stats, raid performance and team benefits where
+applicable.
+
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>
+Primal Reversion
+</h3>
+
+<p>
+
+For applicable Pokémon, explain Primal Energy,
+battle performance and the practical reasons a trainer
+might use the form.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     12. SHADOW
+====================================================== -->
+
+<section class="section" id="shadow">
+
+<h2>
+12. Shadow Ground Pokémon
+</h2>
+
+<p>
+
+Shadow Pokémon deserve their own section because the
+Shadow version can change the balance between damage,
+survivability and resource requirements.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Version
+</th>
+
+<th>
+Use
+</th>
+
+<th>
+Investment Question
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Regular
+</td>
+
+<td>
+Standard performance
+</td>
+
+<td>
+Is the normal version sufficient?
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shadow
+</td>
+
+<td>
+Offensive specialization
+</td>
+
+<td>
+Does the additional offensive pressure justify the cost?
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Purified
+</td>
+
+<td>
+Alternative collection/battle use
+</td>
+
+<td>
+Does purification provide a meaningful advantage?
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     13. DYNAMAX GIGANTAMAX
+====================================================== -->
+
+<section class="section" id="dynamax">
+
+<h2>
+13. Dynamax & Gigantamax Ground Pokémon
+</h2>
+
+<p>
+
+Dynamax and Gigantamax information should remain separate
+from standard raid statistics so readers understand which
+battle system each recommendation belongs to.
+
+</p>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<h3>
+Dynamax
+</h3>
+
+<p>
+
+Include Max Battle availability, requirements, moves and
+practical battle value when applicable.
+
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>
+Gigantamax
+</h3>
+
+<p>
+
+Document Gigantamax availability, special mechanics and
+how the form differs from the standard Pokémon.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     14. SHINY
+====================================================== -->
+
+<section class="section" id="shiny">
+
+<h2>
+14. Shiny Ground Pokémon
+</h2>
+
+<p>
+
+Shiny availability is particularly useful for collectors.
+The page should distinguish between Pokémon that have a
+released shiny form and Pokémon whose shiny has not yet
+been released.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Pokémon
+</th>
+
+<th>
+Shiny Released
+</th>
+
+<th>
+Current Availability
+</th>
+
+<th>
+Historical Availability
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Example Ground Pokémon
+</td>
+
+<td>
+Verify
+</td>
+
+<td>
+Verify
+</td>
+
+<td>
+Verify
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     15. AVAILABILITY
+====================================================== -->
+
+<section class="section" id="availability">
+
+<h2>
+15. Ground Pokémon Availability
+</h2>
+
+<p>
+
+Availability information should answer the practical
+question every player has: “How can I get this Pokémon?”
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Wild Encounters
+</h3>
+
+<p>
+Current wild availability and biome/event conditions.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Raids
+</h3>
+
+<p>
+Current and historical raid appearances.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Research
+</h3>
+
+<p>
+Research encounter availability.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Eggs
+</h3>
+
+<p>
+Egg pools and relevant hatch information.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Events
+</h3>
+
+<p>
+Community events, seasonal events and limited encounters.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Trading
+</h3>
+
+<p>
+Useful when a Pokémon is not currently available through
+direct encounters.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     16. INDIVIDUAL GUIDES
+====================================================== -->
+
+<section class="section" id="individual-guides">
+
+<h2>
+16. Individual Ground Pokémon Guides
+</h2>
+
+<p>
+
+The Ground hub should act as the central directory for
+detailed individual Pokémon pages. Each individual guide
+should contain information that is specific to that
+Pokémon instead of repeating the exact same paragraphs
+from this hub.
+
+</p>
+
+<div class="guide-grid">
+
+
+<div class="guide-card">
+
+<h3>
+Groudon
+</h3>
+
+<p>
+
+Complete Groudon guide covering stats, moves, raid
+performance, PvP, shiny, availability and special forms.
+
+</p>
+
+<a href="/pokemon/groudon.html">
+Read Groudon Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Garchomp
+</h3>
+
+<p>
+
+Dragon/Ground analysis covering evolution, moves, raid
+performance, PvP and Mega Evolution.
+
+</p>
+
+<a href="/pokemon/garchomp.html">
+Read Garchomp Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Excadrill
+</h3>
+
+<p>
+
+Ground/Steel evolution family, moves, raid value,
+PvP applications and investment advice.
+
+</p>
+
+<a href="/pokemon/excadrill.html">
+Read Excadrill Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Rhyperior
+</h3>
+
+<p>
+
+Evolution, stats, Ground and Rock roles, moves,
+raid performance and investment analysis.
+
+</p>
+
+<a href="/pokemon/rhyperior.html">
+Read Rhyperior Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Mamoswine
+</h3>
+
+<p>
+
+Ground/Ice typing, evolution, raid roles, PvP,
+Shadow information and shiny availability.
+
+</p>
+
+<a href="/pokemon/mamoswine.html">
+Read Mamoswine Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Swampert
+</h3>
+
+<p>
+
+Water/Ground typing, evolution family, Mega form,
+moves, PvP and raid applications.
+
+</p>
+
+<a href="/pokemon/swampert.html">
+Read Swampert Guide →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     17. INVESTMENT
+====================================================== -->
+
+<section class="section" id="investment">
+
+<h2>
+17. Which Ground Pokémon Should You Power Up?
+</h2>
+
+<p>
+
+This section is important because a player does not
+necessarily need the Pokémon with the highest CP.
+Investment should depend on the trainer's goal.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Raid Investment
+</h3>
+
+<p>
+
+Prioritize strong Ground attackers with useful movesets
+and relevant raid matchups.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+PvP Investment
+</h3>
+
+<p>
+
+Evaluate each Pokémon independently for Great, Ultra
+and Master League.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Shadow Investment
+</h3>
+
+<p>
+
+Compare Shadow and regular versions before spending
+large amounts of Stardust and XL Candy.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Mega Investment
+</h3>
+
+<p>
+
+Consider Mega Energy availability and team utility.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Collection Investment
+</h3>
+
+<p>
+
+Some Pokémon can be valuable because of shiny,
+regional or special-form rarity.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Future Value
+</h3>
+
+<p>
+
+Keep useful candidates when future moves or forms may
+change their practical value.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     18. GROUND RAID MATCHUPS
+====================================================== -->
+
+<section class="section" id="raid-matchups">
+
+<h2>
+18. Ground-Type Raid Matchup Guide
+</h2>
+
+<p>
+
+Ground attackers can be particularly useful against
+specific boss types. Rather than presenting a generic
+“Ground is good” statement, explain which raid situations
+actually make Ground attackers valuable.
+
+</p>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Raid Situation
+</th>
+
+<th>
+Ground Usefulness
+</th>
+
+<th>
+What To Check
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Electric-type Boss
+</td>
+
+<td>
+Potentially valuable
+</td>
+
+<td>
+Boss typing, moveset and available counters.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Fire-type Boss
+</td>
+
+<td>
+Potentially valuable
+</td>
+
+<td>
+Complete boss typing and weather.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Poison-type Boss
+</td>
+
+<td>
+Potentially valuable
+</td>
+
+<td>
+Ground effectiveness and alternative attackers.
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Rock-type Boss
+</td>
+
+<td>
+Potentially valuable
+</td>
+
+<td>
+Boss secondary typing and moves.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     19. FAQ
+====================================================== -->
+
+<section class="section" id="faq">
+
+<h2>
+19. Ground-Type Pokémon GO FAQ
+</h2>
+
+<div class="faq">
+
+
+<div class="faq-item">
+
+<h3>
+What are Ground-type Pokémon weak against?
+</h3>
+
+<p>
+
+Ground typing has important weaknesses, but a dual-type
+Pokémon must always be evaluated using its complete typing.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Are Ground Pokémon good raid attackers?
+</h3>
+
+<p>
+
+Some are excellent raid attackers, while others are more
+useful in PvP, collection or specific matchups. Stats,
+moves and availability all matter.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Should I power up Ground Pokémon for raids?
+</h3>
+
+<p>
+
+If you frequently encounter raid bosses vulnerable to
+Ground attacks, having strong Ground attackers can be
+valuable.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Is a Shadow Ground Pokémon always better?
+</h3>
+
+<p>
+
+Not automatically. Shadow Pokémon can have stronger
+offensive performance, but the resource cost and
+survivability should also be considered.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Are all Ground Pokémon available in the wild?
+</h3>
+
+<p>
+
+No. Availability can involve wild encounters, raids,
+research, eggs, events, trading and other methods.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Should CP be the main factor when choosing a Ground Pokémon?
+</h3>
+
+<p>
+
+No. CP is only one metric. Moves, stats, typing,
+battle format and availability can be more important.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     20. RELATED GUIDES
+====================================================== -->
+
+<section class="section" id="related">
+
+<h2>
+20. Related Pokémon GO Guides
+</h2>
+
+<div class="guide-grid">
+
+
+<div class="guide-card">
+
+<h3>
+Ground Raid Counters
+</h3>
+
+<p>
+Find counters for Ground-type raid bosses.
+</p>
+
+<a href="/raids/ground-raid-counters.html">
+Open Raid Counter Guide →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+Pokémon Type Chart
+</h3>
+
+<p>
+Compare type effectiveness across Pokémon GO.
+</p>
+
+<a href="/tools/type-effectiveness.html">
+Open Type Chart →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+CP Calculator
+</h3>
+
+<p>
+Calculate and compare Pokémon CP values.
+</p>
+
+<a href="/tools/cp-calculator.html">
+Open CP Calculator →
+</a>
+
+</div>
+
+
+<div class="guide-card">
+
+<h3>
+IV Calculator
+</h3>
+
+<p>
+Evaluate Pokémon IVs before investing Stardust.
+</p>
+
+<a href="/tools/iv-calculator.html">
+Open IV Calculator →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     21. EDITORIAL INFORMATION
+====================================================== -->
+
+<section class="section">
+
+<h2>
+21. About This Ground-Type Guide
+</h2>
+
+<p>
+
+This Ground-type hub is intended as a reference resource
+for Pokémon GO players. Pokémon GO mechanics, moves,
+availability, raid rotations, events and special forms
+can change over time.
+
+</p>
+
+<p>
+
+For that reason, numerical values and time-sensitive
+information should be reviewed whenever game updates
+change the underlying data.
+
+</p>
+
+<div class="callout">
+
+<strong>
+Editorial standard:
+</strong>
+
+Numerical statistics, current availability, moves,
+raid information and special-form information should
+be verified before publication.
+
+</div>
+
+</section>
+
+
+</article>
+
+
+<!-- ======================================================
+     SIDEBAR
+====================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-card">
+
+<h3>
+Ground Hub
+</h3>
+
+<a href="#hub">
+Ground Type Hub
+</a>
+
+<a href="#generations">
+Gen 1–9
+</a>
+
+<a href="#evolution">
+Evolution Families
+</a>
+
+<a href="#type">
+Type
+</a>
+
+<a href="#max-cp">
+Max CP
+</a>
+
+<a href="#stats">
+Attack / Defense / HP
+</a>
+
+<a href="#weaknesses">
+Weaknesses
+</a>
+
+<a href="#resistances">
+Resistances
+</a>
+
+<a href="#moves">
+Best Moves
+</a>
+
+<a href="#raid-tier">
+Raid Tier
+</a>
+
+<a href="#mega">
+Mega / Primal
+</a>
+
+<a href="#shadow">
+Shadow
+</a>
+
+<a href="#dynamax">
+Dynamax / Gigantamax
+</a>
+
+<a href="#shiny">
+Shiny
+</a>
+
+<a href="#availability">
+Availability
+</a>
+
+<a href="#individual-guides">
+Individual Guides
+</a>
+
+<a href="#investment">
+Investment Guide
+</a>
+
+<a href="#faq">
+FAQ
+</a>
+
+</div>
+
+
+<div class="ad-space">
+Advertisement
+</div>
+
+
+<div class="sidebar-card">
+
+<h3>
+Explore Pokémon GO
+</h3>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/events/">
+Events
+</a>
+
+<a href="/tools/">
+Pokémon GO Tools
+</a>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+PokémonGaming
+</h3>
+
+<p>
+
+Independent Pokémon GO guides, databases,
+raid information and player tools.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Pokémon
+</h3>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/pokemon-types/">
+Type Database
+</a>
+
+<a href="/pokemon-generations/">
+Generations
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Guides
+</h3>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/events/">
+Events
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Website
+</h3>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/contact.html">
+Contact
+</a>
+
+<a href="/privacy-policy.html">
+Privacy Policy
+</a>
+
+<a href="/terms.html">
+Terms
+</a>
+
+<a href="/disclaimer.html">
+Disclaimer
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 PokémonGaming.
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This website is an independent fan resource and is
+not affiliated with or endorsed by The Pokémon Company,
+Nintendo or Niantic.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ======================================================
+     STRUCTURED DATA
+====================================================== -->
+
+<script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+
+  "@type": "Article",
+
+  "headline":
+  "Ground-Type Pokémon GO Complete Guide",
+
+  "description":
+  "Complete Ground-type Pokémon GO guide covering Gen 1–9, evolution families, stats, weaknesses, resistances, moves, raid performance, Mega and Primal forms, Shadow, Dynamax, Gigantamax, shiny availability and individual Pokémon guides.",
+
+  "author": {
+    "@type": "Organization",
+    "name": "PokémonGaming"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "PokémonGaming"
+  },
+
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id":
+    "https://pokemongaming.in/pokemon-types/ground.html"
+  }
+
+}
+
+</script>
+
+
+</body>
+</html>

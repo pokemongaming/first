@@ -1,0 +1,2951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gen 6 Pokémon Database – Kalos Pokédex #650–#721</title>
+
+<meta name="description"
+content="Complete Gen 6 Kalos Pokémon database covering #650–#721, evolution families, types, stats, weaknesses, resistances, Mega Evolution, shiny availability, Shadow information, raids, PvP and individual Pokémon guides.">
+
+<meta name="robots" content="index,follow">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --bg:#07111f;
+    --bg-soft:#0b1828;
+    --card:#10243a;
+    --card-2:#142d47;
+    --border:#294965;
+    --text:#f5f8ff;
+    --muted:#aebed0;
+    --accent:#62d4ff;
+    --accent-2:#927dff;
+    --green:#45d391;
+    --yellow:#ffd166;
+    --red:#ff6878;
+    --shadow:0 18px 45px rgba(0,0,0,.28);
+    --radius:18px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top,
+            #173555 0,
+            #07111f 48%
+        );
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    background:rgba(7,17,31,.95);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--border);
+}
+
+.header-inner{
+    max-width:1280px;
+    margin:auto;
+
+    padding:15px 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:20px;
+}
+
+.logo{
+    font-weight:950;
+    font-size:1.25rem;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.main-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+
+    color:var(--muted);
+
+    font-size:.9rem;
+}
+
+.main-nav a:hover{
+    color:white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    max-width:1280px;
+    margin:auto;
+
+    padding:75px 20px 50px;
+
+    text-align:center;
+}
+
+.hero-badge{
+    display:inline-block;
+
+    padding:7px 15px;
+
+    border-radius:999px;
+
+    border:1px solid #3c7195;
+
+    background:rgba(98,212,255,.08);
+
+    color:var(--accent);
+
+    font-size:.8rem;
+
+    font-weight:900;
+
+    letter-spacing:.5px;
+}
+
+.hero h1{
+    margin-top:18px;
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    line-height:1.04;
+}
+
+.hero h1 span{
+    color:var(--accent);
+}
+
+.hero-description{
+    max-width:900px;
+
+    margin:20px auto 0;
+
+    color:var(--muted);
+
+    font-size:1.05rem;
+}
+
+.hero-buttons{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.hero-btn{
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    background:var(--accent);
+
+    color:#04121c;
+
+    font-weight:950;
+}
+
+.hero-btn.secondary{
+    background:#142b44;
+
+    color:white;
+
+    border:1px solid var(--border);
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.container{
+    width:min(1280px,calc(100% - 30px));
+
+    margin:auto;
+}
+
+.section{
+    margin-bottom:58px;
+}
+
+.section-heading{
+    margin-bottom:22px;
+}
+
+.section-heading h2{
+    font-size:
+        clamp(1.6rem,3vw,2.3rem);
+}
+
+.section-heading p{
+    margin-top:6px;
+
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:16px;
+}
+
+.quick-card{
+    padding:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--card),
+            var(--card-2)
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+}
+
+.quick-icon{
+    font-size:1.7rem;
+}
+
+.quick-value{
+    margin-top:7px;
+
+    font-size:1.4rem;
+
+    font-weight:950;
+}
+
+.quick-label{
+    color:var(--muted);
+
+    font-size:.88rem;
+}
+
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.overview-grid{
+    display:grid;
+
+    grid-template-columns:
+        1.3fr .7fr;
+
+    gap:20px;
+}
+
+.panel{
+    padding:26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(16,36,58,.95),
+            rgba(11,28,46,.95)
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+}
+
+.panel h3{
+    margin-bottom:12px;
+}
+
+.panel p{
+    color:var(--muted);
+}
+
+.points{
+    margin-top:18px;
+
+    display:grid;
+
+    gap:11px;
+}
+
+.point{
+    display:flex;
+
+    gap:10px;
+}
+
+.point b{
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.toolbar{
+    display:grid;
+
+    grid-template-columns:
+        1.5fr .75fr .75fr;
+
+    gap:12px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    background:rgba(16,36,58,.9);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.search,
+.select{
+    width:100%;
+
+    padding:13px 15px;
+
+    background:#071626;
+
+    color:white;
+
+    border:1px solid var(--border);
+
+    border-radius:11px;
+
+    outline:none;
+}
+
+.search:focus,
+.select:focus{
+    border-color:var(--accent);
+}
+
+
+/* =========================================================
+   POKEMON GRID
+========================================================= */
+
+.pokemon-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+.pokemon-card{
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            155deg,
+            #122b45,
+            #0a1b2c
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:
+        transform .2s,
+        border-color .2s;
+}
+
+.pokemon-card:hover{
+    transform:translateY(-5px);
+
+    border-color:#5289b3;
+}
+
+.card-header{
+    padding:15px 15px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.dex{
+    color:var(--muted);
+
+    font-size:.82rem;
+
+    font-weight:900;
+}
+
+.role{
+    padding:4px 8px;
+
+    border-radius:999px;
+
+    background:#173b59;
+
+    color:var(--accent);
+
+    font-size:.68rem;
+
+    font-weight:950;
+}
+
+.pokemon-art{
+    width:155px;
+    height:155px;
+
+    object-fit:contain;
+
+    margin:12px auto;
+}
+
+.card-body{
+    padding:15px;
+}
+
+.pokemon-name{
+    font-size:1.22rem;
+
+    font-weight:950;
+}
+
+.types{
+    display:flex;
+
+    gap:6px;
+
+    flex-wrap:wrap;
+
+    margin:8px 0 13px;
+}
+
+.type{
+    padding:4px 9px;
+
+    border-radius:999px;
+
+    text-transform:uppercase;
+
+    font-size:.66rem;
+
+    font-weight:950;
+}
+
+.type.grass{background:#276b3f}
+.type.fire{background:#7f2b20}
+.type.water{background:#1f568e}
+.type.normal{background:#606874}
+.type.flying{background:#566d9b}
+.type.bug{background:#58751f}
+.type.fairy{background:#914d74}
+.type.fighting{background:#742b22}
+.type.psychic{background:#793056}
+.type.steel{background:#53616e}
+.type.ghost{background:#43346d}
+.type.dark{background:#382d2c}
+.type.rock{background:#695d37}
+.type.poison{background:#6a2d70}
+.type.dragon{background:#49329e}
+.type.ground{background:#76572d}
+.type.electric{background:#77651b}
+.type.ice{background:#397d88}
+
+.stats{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:6px;
+}
+
+.stat{
+    background:#081725;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    padding:8px 4px;
+}
+
+.stat small{
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.62rem;
+}
+
+.stat strong{
+    font-size:.82rem;
+}
+
+.meta{
+    margin-top:12px;
+
+    display:grid;
+
+    gap:5px;
+
+    color:var(--muted);
+
+    font-size:.77rem;
+}
+
+.meta strong{
+    color:white;
+}
+
+.actions{
+    display:flex;
+
+    gap:8px;
+
+    margin-top:14px;
+}
+
+.action{
+    flex:1;
+
+    text-align:center;
+
+    padding:9px;
+
+    background:#142f4b;
+
+    border:1px solid var(--border);
+
+    border-radius:9px;
+
+    font-size:.75rem;
+
+    font-weight:800;
+}
+
+
+/* =========================================================
+   EVOLUTION
+========================================================= */
+
+.evolution-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.evo-card{
+    padding:20px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.evo-title{
+    font-weight:950;
+
+    margin-bottom:14px;
+}
+
+.evo-line{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+}
+
+.evo-mon{
+    padding:8px 10px;
+
+    background:#091a2a;
+
+    border-radius:9px;
+
+    font-size:.78rem;
+}
+
+.arrow{
+    color:var(--accent);
+
+    font-weight:950;
+}
+
+
+/* =========================================================
+   MEGA EVOLUTION
+========================================================= */
+
+.mega-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.mega-card{
+    padding:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #241d48,
+            #11213a
+        );
+
+    border:1px solid #4a4276;
+
+    border-radius:var(--radius);
+}
+
+.mega-card h3{
+    margin-bottom:8px;
+}
+
+.mega-card p{
+    color:var(--muted);
+}
+
+.mega-badge{
+    display:inline-block;
+
+    margin-top:13px;
+
+    padding:5px 9px;
+
+    border-radius:999px;
+
+    background:#30275d;
+
+    color:#c7bdff;
+
+    font-size:.7rem;
+
+    font-weight:900;
+}
+
+
+/* =========================================================
+   INFORMATION TABLE
+========================================================= */
+
+.table-wrap{
+    overflow-x:auto;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+table{
+    width:100%;
+
+    min-width:760px;
+
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:13px;
+
+    border-bottom:1px solid var(--border);
+
+    text-align:left;
+}
+
+th{
+    background:#132b45;
+}
+
+td{
+    color:var(--muted);
+}
+
+tr:last-child td{
+    border-bottom:none;
+}
+
+
+/* =========================================================
+   GUIDE CARDS
+========================================================= */
+
+.guide-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+}
+
+.guide{
+    padding:23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #122a44,
+            #0c1d30
+        );
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.guide h3{
+    margin-bottom:9px;
+}
+
+.guide p{
+    color:var(--muted);
+}
+
+.guide ul{
+    margin:13px 0 0 18px;
+
+    color:var(--muted);
+}
+
+.guide li{
+    margin-bottom:5px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    display:grid;
+
+    gap:12px;
+}
+
+details{
+    padding:17px 19px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:13px;
+}
+
+summary{
+    cursor:pointer;
+
+    font-weight:900;
+}
+
+details p{
+    margin-top:9px;
+
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    margin-top:60px;
+
+    padding:42px 20px;
+
+    background:#040c15;
+
+    border-top:1px solid var(--border);
+}
+
+.footer-grid{
+    max-width:1280px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr repeat(3,1fr);
+
+    gap:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p,
+footer a{
+    color:var(--muted);
+
+    font-size:.86rem;
+}
+
+.footer-links{
+    display:grid;
+
+    gap:7px;
+}
+
+.copyright{
+    max-width:1280px;
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    border-top:1px solid #182b3f;
+
+    color:#71869a;
+
+    font-size:.78rem;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty{
+    display:none;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px dashed var(--border);
+
+    border-radius:var(--radius);
+
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1100px){
+
+    .pokemon-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+    .quick-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .evolution-grid,
+    .mega-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:800px){
+
+    .header-inner{
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .overview-grid{
+        grid-template-columns:1fr;
+    }
+
+    .toolbar{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .search{
+        grid-column:1/-1;
+    }
+
+    .pokemon-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:520px){
+
+    .container{
+        width:min(100% - 20px,1280px);
+    }
+
+    .hero{
+        padding-top:45px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .quick-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pokemon-grid{
+        grid-template-columns:1fr;
+    }
+
+    .evolution-grid,
+    .mega-grid{
+        grid-template-columns:1fr;
+    }
+
+    .toolbar{
+        grid-template-columns:1fr;
+    }
+
+    .search{
+        grid-column:auto;
+    }
+
+    .footer-grid{
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+}
+
+@media(max-width:390px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+    Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="#overview">Overview</a>
+<a href="#pokedex">Pokédex</a>
+<a href="#evolution">Evolution</a>
+<a href="#mega">Mega</a>
+<a href="#battle">Battle</a>
+<a href="#guides">Guides</a>
+<a href="#faq">FAQ</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<span class="hero-badge">
+    GENERATION 6 • KALOS • #650–#721
+</span>
+
+<h1>
+    Gen 6 Pokémon
+    <span>Database</span>
+</h1>
+
+<p class="hero-description">
+    Explore the complete Kalos generation, from Chespin
+    through Volcanion. Browse Pokémon types, evolution
+    families, battle information, Mega Evolution,
+    shiny availability, Shadow information, raid roles,
+    PvP considerations and individual Pokémon guides.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#pokedex" class="hero-btn">
+    Explore Kalos Pokédex
+</a>
+
+<a href="#mega" class="hero-btn secondary">
+    Mega Evolution
+</a>
+
+</div>
+
+</section>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     QUICK FACTS
+===================================================== -->
+
+<section class="section">
+
+<div class="quick-grid">
+
+<div class="quick-card">
+
+<div class="quick-icon">📖</div>
+
+<div class="quick-value">
+    72
+</div>
+
+<div class="quick-label">
+    Gen 6 Pokémon
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">🔢</div>
+
+<div class="quick-value">
+    #650–#721
+</div>
+
+<div class="quick-label">
+    National Pokédex
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">🌍</div>
+
+<div class="quick-value">
+    Kalos
+</div>
+
+<div class="quick-label">
+    Generation 6 Region
+</div>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">✨</div>
+
+<div class="quick-value">
+    Mega Evolution
+</div>
+
+<div class="quick-label">
+    Gen 6 Signature Mechanic
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section id="overview" class="section">
+
+<div class="section-heading">
+
+<h2>
+    🌍 Gen 6 / Kalos Overview
+</h2>
+
+<p>
+    The sixth generation introduced the Kalos region,
+    Fairy typing and Mega Evolution.
+</p>
+
+</div>
+
+
+<div class="overview-grid">
+
+<div class="panel">
+
+<h3>
+    About Generation 6
+</h3>
+
+<p>
+    Generation 6 introduced 72 new Pokémon, beginning
+    with Chespin at National Pokédex #650 and ending
+    with Volcanion at #721. The generation is associated
+    with Pokémon X and Pokémon Y and the Kalos region.
+</p>
+
+<div class="points">
+
+<div class="point">
+    <b>01</b>
+    <span>
+        Chespin, Fennekin and Froakie form the Kalos
+        starter trio.
+    </span>
+</div>
+
+<div class="point">
+    <b>02</b>
+    <span>
+        Fairy became a new Pokémon type in this generation.
+    </span>
+</div>
+
+<div class="point">
+    <b>03</b>
+    <span>
+        Mega Evolution became a major battle mechanic.
+    </span>
+</div>
+
+<div class="point">
+    <b>04</b>
+    <span>
+        Xerneas, Yveltal and Zygarde are the primary
+        Legendary Pokémon of Kalos.
+    </span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+    Kalos Highlights
+</h3>
+
+<div class="points">
+
+<div class="point">
+    <b>🌿</b>
+    <span>Chesnaught</span>
+</div>
+
+<div class="point">
+    <b>🔥</b>
+    <span>Delphox</span>
+</div>
+
+<div class="point">
+    <b>🌊</b>
+    <span>Greninja</span>
+</div>
+
+<div class="point">
+    <b>🧚</b>
+    <span>Sylveon</span>
+</div>
+
+<div class="point">
+    <b>💎</b>
+    <span>Diancie</span>
+</div>
+
+<div class="point">
+    <b>🔥💧</b>
+    <span>Volcanion</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     POKEDEX
+===================================================== -->
+
+<section id="pokedex" class="section">
+
+<div class="section-heading">
+
+<h2>
+    📖 Complete Kalos Pokédex
+</h2>
+
+<p>
+    Search all 72 Gen 6 Pokémon by name, number,
+    type or category.
+</p>
+
+</div>
+
+
+<div class="toolbar">
+
+<input
+    id="search"
+    class="search"
+    type="search"
+    placeholder="Search Chespin, Greninja, 658, dragon..."
+    aria-label="Search Gen 6 Pokémon"
+>
+
+
+<select id="typeFilter" class="select">
+
+<option value="all">
+    All Types
+</option>
+
+<option value="normal">Normal</option>
+<option value="fire">Fire</option>
+<option value="water">Water</option>
+<option value="grass">Grass</option>
+<option value="electric">Electric</option>
+<option value="ice">Ice</option>
+<option value="fighting">Fighting</option>
+<option value="poison">Poison</option>
+<option value="ground">Ground</option>
+<option value="flying">Flying</option>
+<option value="psychic">Psychic</option>
+<option value="bug">Bug</option>
+<option value="rock">Rock</option>
+<option value="ghost">Ghost</option>
+<option value="dragon">Dragon</option>
+<option value="dark">Dark</option>
+<option value="steel">Steel</option>
+<option value="fairy">Fairy</option>
+
+</select>
+
+
+<select id="roleFilter" class="select">
+
+<option value="all">
+    All Categories
+</option>
+
+<option value="starter">
+    Starter
+</option>
+
+<option value="legendary">
+    Legendary
+</option>
+
+<option value="mythical">
+    Mythical
+</option>
+
+<option value="regular">
+    Regular
+</option>
+
+</select>
+
+</div>
+
+
+<div
+    id="pokemonGrid"
+    class="pokemon-grid"
+></div>
+
+
+<div
+    id="empty"
+    class="empty"
+>
+
+<h3>
+    No Pokémon Found
+</h3>
+
+<p>
+    Try another search term or filter.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION FAMILIES
+===================================================== -->
+
+<section id="evolution" class="section">
+
+<div class="section-heading">
+
+<h2>
+    🧬 Gen 6 Evolution Families
+</h2>
+
+<p>
+    Major evolution lines introduced in Kalos.
+</p>
+
+</div>
+
+
+<div class="evolution-grid">
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🌿 Chespin Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Chespin</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Quilladin</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Chesnaught</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🔥 Fennekin Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Fennekin</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Braixen</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Delphox</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🌊 Froakie Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Froakie</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Frogadier</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Greninja</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🐦 Fletchling Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Fletchling</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Fletchinder</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Talonflame</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🐞 Scatterbug Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Scatterbug</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Spewpa</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Vivillon</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🧚 Flabébé Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Flabébé</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Floette</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Florges</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🐼 Pancham Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Pancham</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Pangoro</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    ⚔️ Honedge Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Honedge</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Doublade</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Aegislash</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🦖 Tyrunt Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Tyrunt</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Tyrantrum</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🧊 Amaura Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Amaura</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Aurorus</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🐉 Goomy Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Goomy</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Sliggoo</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Goodra</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    👻 Phantump Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Phantump</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Trevenant</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🎃 Pumpkaboo Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Pumpkaboo</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Gourgeist</span>
+
+</div>
+
+</div>
+
+
+<div class="evo-card">
+
+<div class="evo-title">
+    🦇 Noibat Family
+</div>
+
+<div class="evo-line">
+
+<span class="evo-mon">Noibat</span>
+<span class="arrow">→</span>
+<span class="evo-mon">Noivern</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MEGA EVOLUTION
+===================================================== -->
+
+<section id="mega" class="section">
+
+<div class="section-heading">
+
+<h2>
+    💎 Mega Evolution in Gen 6
+</h2>
+
+<p>
+    Mega Evolution was one of the defining mechanics
+    introduced alongside Generation 6.
+</p>
+
+</div>
+
+
+<div class="mega-grid">
+
+<div class="mega-card">
+
+<h3>
+    Mega Charizard X / Y
+</h3>
+
+<p>
+    Charizard received two distinct Mega Evolutions,
+    creating different strategic roles and typings.
+</p>
+
+<span class="mega-badge">
+    MEGA EVOLUTION
+</span>
+
+</div>
+
+
+<div class="mega-card">
+
+<h3>
+    Mega Blastoise
+</h3>
+
+<p>
+    A powerful Water-type Mega Evolution with a focus
+    on offensive pressure.
+</p>
+
+<span class="mega-badge">
+    MEGA EVOLUTION
+</span>
+
+</div>
+
+
+<div class="mega-card">
+
+<h3>
+    Mega Venusaur
+</h3>
+
+<p>
+    A defensive Grass/Poison Mega Evolution with strong
+    durability and battle utility.
+</p>
+
+<span class="mega-badge">
+    MEGA EVOLUTION
+</span>
+
+</div>
+
+
+<div class="mega-card">
+
+<h3>
+    Mega Gardevoir
+</h3>
+
+<p>
+    A Fairy/Psychic Mega Evolution associated with
+    powerful special attacking capability.
+</p>
+
+<span class="mega-badge">
+    MEGA EVOLUTION
+</span>
+
+</div>
+
+
+<div class="mega-card">
+
+<h3>
+    Mega Diancie
+</h3>
+
+<p>
+    Diancie is the Gen 6 Mythical Pokémon with a Mega
+    Evolution, changing its battle profile considerably.
+</p>
+
+<span class="mega-badge">
+    GEN 6 MEGA
+</span>
+
+</div>
+
+
+<div class="mega-card">
+
+<h3>
+    Mega Evolution Database
+</h3>
+
+<p>
+    Individual Mega pages should contain CP, stats,
+    weaknesses, best moves, raid performance, shiny
+    information and availability.
+</p>
+
+<span class="mega-badge">
+    INDIVIDUAL GUIDES
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE INFORMATION
+===================================================== -->
+
+<section id="battle" class="section">
+
+<div class="section-heading">
+
+<h2>
+    ⚔️ Kalos Battle & Type Overview
+</h2>
+
+<p>
+    Use these sections as the foundation for detailed
+    individual Pokémon battle guides.
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Type</th>
+<th>Gen 6 Examples</th>
+<th>Strong Against</th>
+<th>Important Weaknesses</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>🌿 Grass</td>
+<td>Chespin, Skiddo, Gogoat</td>
+<td>Water, Ground, Rock</td>
+<td>Fire, Ice, Poison, Flying, Bug</td>
+</tr>
+
+<tr>
+<td>🔥 Fire</td>
+<td>Fennekin, Talonflame, Pyroar</td>
+<td>Grass, Ice, Bug, Steel</td>
+<td>Water, Ground, Rock</td>
+</tr>
+
+<tr>
+<td>🌊 Water</td>
+<td>Froakie, Clawitzer, Volcanion</td>
+<td>Fire, Ground, Rock</td>
+<td>Electric, Grass</td>
+</tr>
+
+<tr>
+<td>🧚 Fairy</td>
+<td>Sylveon, Xerneas, Florges</td>
+<td>Dragon, Fighting, Dark</td>
+<td>Poison, Steel</td>
+</tr>
+
+<tr>
+<td>🐉 Dragon</td>
+<td>Goodra, Noivern, Zygarde</td>
+<td>Dragon</td>
+<td>Ice, Dragon, Fairy</td>
+</tr>
+
+<tr>
+<td>🌑 Dark</td>
+<td>Greninja, Pangoro, Yveltal</td>
+<td>Psychic, Ghost</td>
+<td>Fighting, Bug, Fairy</td>
+</tr>
+
+<tr>
+<td>⚙️ Steel</td>
+<td>Honedge, Aegislash, Klefki</td>
+<td>Ice, Rock, Fairy</td>
+<td>Fire, Fighting, Ground</td>
+</tr>
+
+<tr>
+<td>🪨 Rock</td>
+<td>Tyrantrum, Aurorus, Diancie</td>
+<td>Fire, Ice, Flying, Bug</td>
+<td>Water, Grass, Fighting, Ground, Steel</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     INDIVIDUAL GUIDE FRAMEWORK
+===================================================== -->
+
+<section id="guides" class="section">
+
+<div class="section-heading">
+
+<h2>
+    📚 Individual Pokémon Guide Framework
+</h2>
+
+<p>
+    Every Pokémon page should provide useful information
+    beyond simply displaying a Pokédex entry.
+</p>
+
+</div>
+
+
+<div class="guide-grid">
+
+
+<div class="guide">
+
+<h3>
+    📊 Stats & Maximum CP
+</h3>
+
+<p>
+    Give Trainers the important battle statistics and
+    explain what those numbers mean in practical play.
+</p>
+
+<ul>
+<li>Attack</li>
+<li>Defense</li>
+<li>HP / Stamina</li>
+<li>Maximum CP</li>
+<li>IV information</li>
+<li>Level considerations</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    🛡️ Weaknesses & Resistances
+</h3>
+
+<p>
+    Clearly explain type matchups instead of simply
+    presenting an unexplained list.
+</p>
+
+<ul>
+<li>Weaknesses</li>
+<li>Resistances</li>
+<li>Double weaknesses</li>
+<li>Raid counter implications</li>
+<li>PvP matchup considerations</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    💥 Best Moves
+</h3>
+
+<p>
+    Separate raid and PvP recommendations so readers
+    understand why a moveset is useful.
+</p>
+
+<ul>
+<li>Fast moves</li>
+<li>Charged moves</li>
+<li>Raid moveset</li>
+<li>PvP moveset</li>
+<li>Elite TM considerations</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    ⭐ Raid Performance
+</h3>
+
+<p>
+    Explain where the Pokémon fits into Pokémon GO
+    raid teams rather than assigning an arbitrary rating.
+</p>
+
+<ul>
+<li>Raid attacker role</li>
+<li>Best raid moveset</li>
+<li>Weather considerations</li>
+<li>Team-building value</li>
+<li>Mega boost where applicable</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    🏆 PvP Performance
+</h3>
+
+<p>
+    Provide separate analysis for Pokémon GO Battle League
+    where the Pokémon is relevant.
+</p>
+
+<ul>
+<li>Great League</li>
+<li>Ultra League</li>
+<li>Master League</li>
+<li>Recommended moves</li>
+<li>Important matchups</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    ✨ Shiny Guide
+</h3>
+
+<p>
+    Keep shiny information separate from the normal
+    Pokédex entry.
+</p>
+
+<ul>
+<li>Shiny available?</li>
+<li>Shiny appearance</li>
+<li>Release information</li>
+<li>Encounter methods</li>
+<li>Event availability</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    🌑 Shadow Guide
+</h3>
+
+<p>
+    When a Shadow version exists, explain how it compares
+    with the regular form.
+</p>
+
+<ul>
+<li>Shadow availability</li>
+<li>Shadow evolution</li>
+<li>Purification</li>
+<li>Frustration</li>
+<li>Battle value</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    🔄 Evolution Guide
+</h3>
+
+<p>
+    Explain how Trainers can obtain every evolution in
+    the family.
+</p>
+
+<ul>
+<li>Candy requirements</li>
+<li>Evolution items</li>
+<li>Buddy requirements</li>
+<li>Special evolution mechanics</li>
+<li>Final evolution</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    📍 Availability
+</h3>
+
+<p>
+    Keep this section updated as Pokémon GO encounter
+    methods change.
+</p>
+
+<ul>
+<li>Wild encounters</li>
+<li>Eggs</li>
+<li>Raids</li>
+<li>Research</li>
+<li>Events</li>
+</ul>
+
+</div>
+
+
+<div class="guide">
+
+<h3>
+    🧬 Mega / Special Forms
+</h3>
+
+<p>
+    Where relevant, explain Mega Evolution and other
+    significant forms separately from the base Pokémon.
+</p>
+
+<ul>
+<li>Mega Evolution</li>
+<li>Form changes</li>
+<li>Special mechanics</li>
+<li>Raid role</li>
+<li>Shiny form</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LEGENDARY / MYTHICAL
+===================================================== -->
+
+<section class="section">
+
+<div class="section-heading">
+
+<h2>
+    👑 Legendary & Mythical Pokémon
+</h2>
+
+<p>
+    The major Legendary and Mythical Pokémon introduced
+    in Generation 6.
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Pokédex</th>
+<th>Pokémon</th>
+<th>Type</th>
+<th>Category</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>#716</td>
+<td>Xerneas</td>
+<td>Fairy</td>
+<td>Legendary</td>
+</tr>
+
+<tr>
+<td>#717</td>
+<td>Yveltal</td>
+<td>Dark / Flying</td>
+<td>Legendary</td>
+</tr>
+
+<tr>
+<td>#718</td>
+<td>Zygarde</td>
+<td>Dragon / Ground</td>
+<td>Legendary</td>
+</tr>
+
+<tr>
+<td>#719</td>
+<td>Diancie</td>
+<td>Rock / Fairy</td>
+<td>Mythical</td>
+</tr>
+
+<tr>
+<td>#720</td>
+<td>Hoopa</td>
+<td>Psychic / Ghost</td>
+<td>Mythical</td>
+</tr>
+
+<tr>
+<td>#721</td>
+<td>Volcanion</td>
+<td>Fire / Water</td>
+<td>Mythical</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section id="faq" class="section">
+
+<div class="section-heading">
+
+<h2>
+    ❓ Gen 6 Pokémon FAQ
+</h2>
+
+<p>
+    Frequently asked questions about the Kalos generation.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<details>
+
+<summary>
+How many Pokémon are in Gen 6?
+</summary>
+
+<p>
+There are 72 Pokémon introduced in Generation 6,
+covering National Pokédex numbers #650 through #721.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What region is Gen 6 from?
+</summary>
+
+<p>
+Generation 6 introduced the Kalos region.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who is the first Gen 6 Pokémon?
+</summary>
+
+<p>
+Chespin is National Pokédex #650 and begins the
+Generation 6 Pokémon range.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Who is the final Gen 6 Pokémon?
+</summary>
+
+<p>
+Volcanion is National Pokédex #721 and is the final
+Pokémon in the Generation 6 range.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What are the Gen 6 starter Pokémon?
+</summary>
+
+<p>
+The Kalos starter trio consists of Chespin, Fennekin
+and Froakie.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What Legendary Pokémon were introduced in Gen 6?
+</summary>
+
+<p>
+Xerneas, Yveltal and Zygarde are the principal
+Legendary Pokémon introduced in Generation 6.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which Mythical Pokémon were introduced in Gen 6?
+</summary>
+
+<p>
+Diancie, Hoopa and Volcanion are the Mythical Pokémon
+introduced during Generation 6.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Why is Gen 6 important for Pokémon GO?
+</summary>
+
+<p>
+Gen 6 introduced Pokémon that can occupy important
+roles in raids, PvP and Mega Evolution. Individual
+Pokémon GO availability can change over time, so the
+availability section of each guide should be maintained
+separately.
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+    Pokémon Gaming
+</h3>
+
+<p>
+    Independent Pokémon GO guides, databases,
+    raid information and Trainer tools.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Pokédex
+</h3>
+
+<div class="footer-links">
+
+<a href="/pokemon/gen-1.html">Gen 1</a>
+<a href="/pokemon/gen-2.html">Gen 2</a>
+<a href="/pokemon/gen-3.html">Gen 3</a>
+<a href="/pokemon/gen-4.html">Gen 4</a>
+<a href="/pokemon/gen-5.html">Gen 5</a>
+<a href="/pokemon/gen-6.html">Gen 6</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+    Guides
+</h3>
+
+<div class="footer-links">
+
+<a href="/raids/">Raid Guides</a>
+<a href="/pvp/">PvP Guides</a>
+<a href="/pokemon/">Pokémon Database</a>
+<a href="/tools/">Tools</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+    Website
+</h3>
+
+<div class="footer-links">
+
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<a href="/privacy-policy.html">Privacy Policy</a>
+<a href="/terms.html">Terms</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Pokémon Gaming. Independent fan website.
+Pokémon and Pokémon character names are trademarks
+of their respective owners. This website is not affiliated
+with or endorsed by The Pokémon Company, Nintendo,
+Game Freak or Niantic.
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   COMPLETE GEN 6 DATA
+   National Dex #650 - #721
+========================================================= */
+
+const pokemon = [
+
+[650,"Chespin","grass","",350,"starter"],
+[651,"Quilladin","grass","",405,"starter"],
+[652,"Chesnaught","grass","fighting",530,"starter"],
+
+[653,"Fennekin","fire","",350,"starter"],
+[654,"Braixen","fire","",409,"starter"],
+[655,"Delphox","fire","psychic",534,"starter"],
+
+[656,"Froakie","water","",314,"starter"],
+[657,"Frogadier","water","",405,"starter"],
+[658,"Greninja","water","dark",530,"starter"],
+
+[659,"Bunnelby","normal","",237,"regular"],
+[660,"Diggersby","normal","ground",423,"regular"],
+
+[661,"Fletchling","normal","flying",278,"regular"],
+[662,"Fletchinder","fire","flying",382,"regular"],
+[663,"Talonflame","fire","flying",499,"regular"],
+
+[664,"Scatterbug","bug","",200,"regular"],
+[665,"Spewpa","bug","",213,"regular"],
+[666,"Vivillon","bug","flying",411,"regular"],
+
+[667,"Litleo","fire","normal",369,"regular"],
+[668,"Pyroar","fire","normal",507,"regular"],
+
+[669,"Flabebe","fairy","",303,"regular"],
+[670,"Floette","fairy","",371,"regular"],
+[671,"Florges","fairy","",552,"regular"],
+
+[672,"Skiddo","grass","",350,"regular"],
+[673,"Gogoat","grass","",531,"regular"],
+
+[674,"Pancham","fighting","",348,"regular"],
+[675,"Pangoro","fighting","dark",495,"regular"],
+
+[676,"Furfrou","normal","",472,"regular"],
+
+[677,"Espurr","psychic","",355,"regular"],
+[678,"Meowstic","psychic","",466,"regular"],
+
+[679,"Honedge","steel","ghost",325,"regular"],
+[680,"Doublade","steel","ghost",448,"regular"],
+[681,"Aegislash","steel","ghost",520,"regular"],
+
+[682,"Spritzee","fairy","",341,"regular"],
+[683,"Aromatisse","fairy","",462,"regular"],
+
+[684,"Swirlix","fairy","",341,"regular"],
+[685,"Slurpuff","fairy","",480,"regular"],
+
+[686,"Inkay","dark","psychic",288,"regular"],
+[687,"Malamar","dark","psychic",482,"regular"],
+
+[688,"Binacle","rock","water",306,"regular"],
+[689,"Barbaracle","rock","water",500,"regular"],
+
+[690,"Skrelp","poison","water",320,"regular"],
+[691,"Dragalge","poison","dragon",494,"regular"],
+
+[692,"Clauncher","water","",330,"regular"],
+[693,"Clawitzer","water","",500,"regular"],
+
+[694,"Helioptile","electric","normal",289,"regular"],
+[695,"Heliolisk","electric","normal",481,"regular"],
+
+[696,"Tyrunt","rock","dragon",362,"regular"],
+[697,"Tyrantrum","rock","dragon",521,"regular"],
+
+[698,"Amaura","rock","ice",362,"regular"],
+[699,"Aurorus","rock","ice",521,"regular"],
+
+[700,"Sylveon","fairy","",525,"regular"],
+
+[701,"Hawlucha","fighting","flying",500,"regular"],
+
+[702,"Dedenne","electric","fairy",431,"regular"],
+
+[703,"Carbink","rock","fairy",500,"regular"],
+
+[704,"Goomy","dragon","",300,"regular"],
+[705,"Sliggoo","dragon","",452,"regular"],
+[706,"Goodra","dragon","",600,"regular"],
+
+[707,"Klefki","steel","fairy",470,"regular"],
+
+[708,"Phantump","ghost","grass",309,"regular"],
+[709,"Trevenant","ghost","grass",474,"regular"],
+
+[710,"Pumpkaboo","ghost","grass",335,"regular"],
+[711,"Gourgeist","ghost","grass",494,"regular"],
+
+[712,"Bergmite","ice","",304,"regular"],
+[713,"Avalugg","ice","",514,"regular"],
+
+[714,"Noibat","flying","dragon",245,"regular"],
+[715,"Noivern","flying","dragon",535,"regular"],
+
+[716,"Xerneas","fairy","",680,"legendary"],
+[717,"Yveltal","dark","flying",680,"legendary"],
+[718,"Zygarde","dragon","ground",600,"legendary"],
+
+[719,"Diancie","rock","fairy",600,"mythical"],
+[720,"Hoopa","psychic","ghost",600,"mythical"],
+[721,"Volcanion","fire","water",600,"mythical"]
+
+];
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+function imageURL(id){
+
+    return
+    `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+
+}
+
+
+/*
+   Because JavaScript automatic semicolon insertion can
+   interfere with a return on a new line, use this version.
+*/
+
+function getImage(id){
+
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+
+}
+
+
+/* =========================================================
+   CAPITALIZE
+========================================================= */
+
+function capitalize(value){
+
+    return value
+        .charAt(0)
+        .toUpperCase()
+        + value.slice(1);
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+function createCard(item){
+
+    const [
+        id,
+        name,
+        type1,
+        type2,
+        baseStats,
+        role
+    ] = item;
+
+
+    let roleText = "Regular";
+
+    if(role === "starter"){
+        roleText = "Starter";
+    }
+
+    if(role === "legendary"){
+        roleText = "Legendary";
+    }
+
+    if(role === "mythical"){
+        roleText = "Mythical";
+    }
+
+
+    return `
+
+<article
+class="pokemon-card"
+data-name="${name.toLowerCase()}"
+data-number="${id}"
+data-type="${type1}"
+data-type2="${type2}"
+data-role="${role}"
+>
+
+
+<div class="card-header">
+
+<span class="dex">
+#${id}
+</span>
+
+<span class="role">
+${roleText}
+</span>
+
+</div>
+
+
+<img
+class="pokemon-art"
+src="${getImage(id)}"
+alt="${capitalize(name)} Pokémon"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+
+<div class="card-body">
+
+
+<div class="pokemon-name">
+${capitalize(name)}
+</div>
+
+
+<div class="types">
+
+<span class="type ${type1}">
+${type1}
+</span>
+
+${type2 ? `
+
+<span class="type ${type2}">
+${type2}
+</span>
+
+` : ""}
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+
+<small>Base Total</small>
+
+<strong>
+${baseStats}
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>Generation</small>
+
+<strong>
+VI
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<small>Dex</small>
+
+<strong>
+#${id}
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="meta">
+
+<div>
+Region:
+<strong>Kalos</strong>
+</div>
+
+<div>
+Shiny:
+<strong>See Guide</strong>
+</div>
+
+<div>
+Shadow:
+<strong>See Guide</strong>
+</div>
+
+</div>
+
+
+<div class="actions">
+
+<a
+class="action"
+href="/pokemon/${name.toLowerCase()}.html"
+>
+Guide
+</a>
+
+<a
+class="action"
+href="/raids/${name.toLowerCase()}-raid.html"
+>
+Raid
+</a>
+
+</div>
+
+
+</div>
+
+</article>
+
+`;
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+const grid =
+document.getElementById("pokemonGrid");
+
+const empty =
+document.getElementById("empty");
+
+
+function render(list){
+
+    grid.innerHTML =
+        list.map(createCard).join("");
+
+    empty.style.display =
+        list.length
+        ? "none"
+        : "block";
+
+}
+
+
+render(pokemon);
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+const search =
+document.getElementById("search");
+
+const typeFilter =
+document.getElementById("typeFilter");
+
+const roleFilter =
+document.getElementById("roleFilter");
+
+
+function filterPokemon(){
+
+    const query =
+        search.value
+        .trim()
+        .toLowerCase();
+
+    const selectedType =
+        typeFilter.value;
+
+    const selectedRole =
+        roleFilter.value;
+
+
+    const filtered =
+        pokemon.filter(item => {
+
+            const [
+                id,
+                name,
+                type1,
+                type2,
+                baseStats,
+                role
+            ] = item;
+
+
+            const matchesSearch =
+                !query ||
+                name.toLowerCase()
+                    .includes(query) ||
+                String(id)
+                    .includes(query) ||
+                type1.includes(query) ||
+                (type2 &&
+                    type2.includes(query));
+
+
+            const matchesType =
+                selectedType === "all" ||
+                type1 === selectedType ||
+                type2 === selectedType;
+
+
+            const matchesRole =
+                selectedRole === "all" ||
+                role === selectedRole;
+
+
+            return (
+                matchesSearch &&
+                matchesType &&
+                matchesRole
+            );
+
+        });
+
+
+    render(filtered);
+
+}
+
+
+search.addEventListener(
+    "input",
+    filterPokemon
+);
+
+typeFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+roleFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+</script>
+
+</body>
+</html>

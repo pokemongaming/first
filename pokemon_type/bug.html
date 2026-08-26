@@ -1,0 +1,4717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Bug-Type Pokémon GO Database | Gen 1–9, CP, Moves, Weaknesses & Raid Guide</title>
+
+<meta name="description"
+      content="Complete Bug-type Pokémon GO database covering Gen 1–9. Explore Bug Pokémon, evolution families, Max CP, Attack, Defense, HP, weaknesses, resistances, best moves, raid usefulness, Mega, Shadow, Dynamax, Gigantamax, shiny availability and individual Pokémon guides.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://www.pokemongaming.in/pokemon/types/bug/">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+
+    --bg:#080d0a;
+    --bg-soft:#0d1510;
+
+    --panel:#111a14;
+    --panel-2:#17231a;
+    --panel-3:#1d2d22;
+
+    --text:#f2f7f3;
+    --muted:#aab8ae;
+
+    --border:rgba(255,255,255,.09);
+
+    --bug:#8fbc3f;
+    --bug-light:#b9df61;
+    --bug-dark:#536f25;
+
+    --water:#4da6ff;
+    --fire:#ff7043;
+    --flying:#9d8cff;
+    --rock:#b39b72;
+    --electric:#ffd84d;
+
+    --success:#55d98a;
+    --danger:#ff6262;
+    --gold:#ffd86b;
+
+    --shadow:
+        0 20px 60px rgba(0,0,0,.35);
+
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:
+
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(143,188,63,.13),
+            transparent 34%
+        ),
+
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(185,223,97,.06),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.7;
+
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+
+    width:
+        min(
+            1180px,
+            calc(100% - 32px)
+        );
+
+    margin:auto;
+
+}
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar{
+
+    padding:
+        8px 16px;
+
+    text-align:center;
+
+    background:#0b100d;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+.top-bar strong{
+    color:var(--bug-light);
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+        rgba(8,13,10,.92);
+
+    backdrop-filter:
+        blur(16px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.navbar{
+
+    min-height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    font-size:20px;
+
+    font-weight:900;
+
+}
+
+.logo span{
+    color:var(--bug-light);
+}
+
+.nav{
+
+    display:flex;
+
+    gap:6px;
+
+}
+
+.nav a{
+
+    padding:
+        8px 12px;
+
+    border-radius:8px;
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+.nav a:hover{
+
+    background:var(--panel-2);
+
+    color:#fff;
+
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb{
+
+    padding:
+        18px 0;
+
+    font-size:13px;
+
+    color:var(--muted);
+
+}
+
+.breadcrumb span{
+    margin:0 7px;
+}
+
+.breadcrumb strong{
+    color:var(--bug-light);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:
+        55px 45px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(143,188,63,.22),
+            rgba(143,188,63,.05) 48%,
+            rgba(17,26,20,.98)
+        );
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:360px;
+    height:360px;
+
+    right:-150px;
+    top:-150px;
+
+    border-radius:50%;
+
+    background:
+        rgba(143,188,63,.13);
+
+    filter:blur(20px);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+}
+
+.eyebrow{
+
+    display:inline-flex;
+
+    padding:
+        7px 12px;
+
+    border-radius:999px;
+
+    background:
+        rgba(143,188,63,.1);
+
+    border:
+        1px solid rgba(143,188,63,.25);
+
+    color:var(--bug-light);
+
+    font-size:12px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:.7px;
+
+}
+
+.hero h1{
+
+    margin-top:18px;
+
+    font-size:
+        clamp(
+            35px,
+            6vw,
+            66px
+        );
+
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+}
+
+.hero h1 span{
+    color:var(--bug-light);
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    max-width:780px;
+
+    color:var(--muted);
+
+    font-size:17px;
+
+}
+
+.hero-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:28px;
+
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:44px;
+
+    padding:
+        10px 17px;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    border:
+        1px solid var(--border);
+
+    transition:.2s;
+
+}
+
+.btn-primary{
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--bug),
+            var(--bug-light)
+        );
+
+    color:#10160c;
+
+}
+
+.btn-secondary{
+
+    background:
+        var(--panel-2);
+
+    color:#fff;
+
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:14px;
+
+    margin-top:18px;
+
+}
+
+.stat{
+
+    padding:20px;
+
+    background:var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.stat strong{
+
+    display:block;
+
+    font-size:27px;
+
+    font-weight:900;
+
+}
+
+.stat span{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout{
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        280px;
+
+    gap:24px;
+
+    margin-top:26px;
+
+}
+
+.main-content{
+    min-width:0;
+}
+
+.sidebar{
+
+    position:sticky;
+
+    top:92px;
+
+    align-self:start;
+
+}
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.section{
+
+    margin-bottom:28px;
+
+    padding:30px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.17);
+
+}
+
+.section h2{
+
+    font-size:28px;
+
+    line-height:1.2;
+
+    margin-bottom:13px;
+
+}
+
+.section h3{
+
+    margin-top:24px;
+
+    margin-bottom:9px;
+
+    font-size:20px;
+
+}
+
+.section p{
+
+    margin-bottom:14px;
+
+    color:#c5d0c8;
+
+}
+
+.section ul{
+
+    padding-left:20px;
+
+    color:#c5d0c8;
+
+}
+
+.section li{
+    margin-bottom:7px;
+}
+
+/* =========================================================
+   TYPE HERO CARD
+========================================================= */
+
+.type-card{
+
+    display:grid;
+
+    grid-template-columns:
+        150px
+        1fr;
+
+    gap:25px;
+
+    align-items:center;
+
+    padding:25px;
+
+    margin-top:20px;
+
+    border-radius:18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(143,188,63,.18),
+            rgba(143,188,63,.03)
+        );
+
+    border:
+        1px solid rgba(143,188,63,.22);
+
+}
+
+.type-icon{
+
+    width:120px;
+
+    height:120px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            var(--bug-light),
+            var(--bug)
+        );
+
+    font-size:56px;
+
+    box-shadow:
+        0 0 40px rgba(143,188,63,.28);
+
+}
+
+.type-card h3{
+    margin:0 0 7px;
+}
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:10px;
+
+}
+
+.tag{
+
+    display:inline-flex;
+
+    padding:
+        5px 10px;
+
+    border-radius:999px;
+
+    background:
+        var(--panel-3);
+
+    border:
+        1px solid var(--border);
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.tag-bug{
+
+    color:var(--bug-light);
+
+    background:
+        rgba(143,188,63,.12);
+
+    border-color:
+        rgba(143,188,63,.25);
+
+}
+
+/* =========================================================
+   TOC
+========================================================= */
+
+.toc{
+
+    padding:20px;
+
+    border-radius:16px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(143,188,63,.09),
+            var(--panel-2)
+        );
+
+    border:
+        1px solid rgba(143,188,63,.2);
+
+}
+
+.toc-title{
+
+    font-weight:900;
+
+    margin-bottom:10px;
+
+}
+
+.toc a{
+
+    display:block;
+
+    padding:6px 0;
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+.toc a:hover{
+    color:var(--bug-light);
+}
+
+/* =========================================================
+   GENERATION GRID
+========================================================= */
+
+.generation-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.generation{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+    transition:.2s;
+
+}
+
+.generation:hover{
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(143,188,63,.35);
+
+}
+
+.gen-number{
+
+    color:var(--bug-light);
+
+    font-weight:900;
+
+    font-size:12px;
+
+}
+
+.generation h3{
+
+    margin:
+        4px 0 7px;
+
+    font-size:18px;
+
+}
+
+.generation p{
+
+    margin:0;
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   EVOLUTION CARDS
+========================================================= */
+
+.evolution-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.evolution{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+}
+
+.evolution h3{
+
+    margin:0 0 7px;
+
+}
+
+.evolution p{
+
+    margin:0;
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.filters{
+
+    display:grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr;
+
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+.filters input,
+.filters select{
+
+    width:100%;
+
+    min-height:44px;
+
+    padding:
+        10px 12px;
+
+    border-radius:10px;
+
+    border:
+        1px solid var(--border);
+
+    background:#0a100c;
+
+    color:#fff;
+
+    outline:none;
+
+}
+
+.filters input:focus,
+.filters select:focus{
+
+    border-color:
+        var(--bug);
+
+}
+
+/* =========================================================
+   DATABASE TABLE
+========================================================= */
+
+.table-wrap{
+
+    overflow-x:auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:14px;
+
+}
+
+.database{
+
+    width:100%;
+
+    min-width:950px;
+
+    border-collapse:collapse;
+
+}
+
+.database th{
+
+    padding:13px;
+
+    text-align:left;
+
+    white-space:nowrap;
+
+    background:#0b110d;
+
+    font-size:12px;
+
+}
+
+.database td{
+
+    padding:13px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:#c9d3cc;
+
+    font-size:13px;
+
+}
+
+.database tr:hover td{
+
+    background:
+        rgba(255,255,255,.025);
+
+}
+
+.pokemon-name{
+
+    color:#fff;
+
+    font-weight:900;
+
+}
+
+.cp{
+
+    color:var(--gold);
+
+    font-weight:900;
+
+}
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.stat-card{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+}
+
+.stat-card strong{
+
+    display:block;
+
+    font-size:26px;
+
+}
+
+.stat-card span{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+}
+
+/* =========================================================
+   MATCHUPS
+========================================================= */
+
+.matchup-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.matchup{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+}
+
+.matchup h3{
+
+    margin:0 0 12px;
+
+}
+
+.matchup-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding:10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.matchup-item:last-child{
+    border-bottom:0;
+}
+
+.weak{
+    color:var(--danger);
+    font-weight:900;
+}
+
+.resist{
+    color:var(--success);
+    font-weight:900;
+}
+
+/* =========================================================
+   MOVE GRID
+========================================================= */
+
+.move-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.move{
+
+    padding:20px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.move h3{
+
+    margin:0 0 5px;
+
+}
+
+.move-type{
+
+    color:var(--bug-light);
+
+    font-size:11px;
+
+    font-weight:900;
+
+}
+
+.move p{
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   RAID TIERS
+========================================================= */
+
+.raid-card{
+
+    display:grid;
+
+    grid-template-columns:
+        90px
+        1fr;
+
+    gap:20px;
+
+    align-items:center;
+
+    padding:20px;
+
+    margin-top:14px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(143,188,63,.1),
+            var(--panel-2)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.raid-rank{
+
+    font-size:28px;
+
+    font-weight:900;
+
+    color:var(--bug-light);
+
+}
+
+.raid-card h3{
+    margin:0 0 6px;
+}
+
+.raid-card p{
+    margin:0;
+    font-size:13px;
+}
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.form{
+
+    padding:20px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:15px;
+
+}
+
+.form h3{
+
+    margin:0 0 7px;
+
+}
+
+.form p{
+
+    margin:0;
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   SHINY
+========================================================= */
+
+.shiny{
+
+    display:grid;
+
+    grid-template-columns:
+        120px
+        1fr;
+
+    gap:22px;
+
+    align-items:center;
+
+    padding:22px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,216,107,.08),
+            var(--panel-2)
+        );
+
+    border:
+        1px solid rgba(255,216,107,.2);
+
+    border-radius:16px;
+
+}
+
+.shiny-icon{
+
+    width:100px;
+
+    height:100px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:20px;
+
+    background:
+        #242b25;
+
+    font-size:45px;
+
+}
+
+/* =========================================================
+   GUIDE GRID
+========================================================= */
+
+.guide-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.guide{
+
+    padding:21px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.guide h3{
+
+    margin:0 0 8px;
+
+}
+
+.guide p{
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq details{
+
+    margin-bottom:10px;
+
+    background:
+        var(--panel-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.faq summary{
+
+    padding:16px;
+
+    cursor:pointer;
+
+    font-weight:800;
+
+}
+
+.faq details p{
+
+    padding:
+        0 16px 16px;
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.side-card{
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+    background:
+        var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:17px;
+
+}
+
+.side-card h3{
+
+    margin-bottom:10px;
+
+    font-size:17px;
+
+}
+
+.side-link{
+
+    display:block;
+
+    padding:9px 0;
+
+    color:var(--muted);
+
+    border-bottom:
+        1px solid var(--border);
+
+    font-size:13px;
+
+}
+
+.side-link:last-child{
+    border-bottom:0;
+}
+
+.side-link:hover{
+    color:var(--bug-light);
+}
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.disclaimer{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:#0c120e;
+
+    border:
+        1px solid var(--border);
+
+    color:#99a79d;
+
+    font-size:12px;
+
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    margin-top:40px;
+
+    padding:45px 0;
+
+    background:#060a07;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap:25px;
+
+}
+
+.footer-column h3{
+
+    margin-bottom:10px;
+
+    font-size:15px;
+
+}
+
+.footer-column p,
+.footer-column a{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    padding:4px 0;
+
+}
+
+.footer-bottom{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:#69766d;
+
+    font-size:12px;
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px){
+
+    .content-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sidebar{
+
+        position:static;
+
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .generation-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .container{
+
+        width:
+            calc(100% - 20px);
+
+    }
+
+    .hero{
+
+        padding:
+            35px 22px;
+
+        border-radius:18px;
+
+    }
+
+    .hero h1{
+
+        letter-spacing:-1px;
+
+    }
+
+    .quick-stats{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .section{
+
+        padding:
+            22px 17px;
+
+        border-radius:17px;
+
+    }
+
+    .type-card{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .type-icon{
+
+        margin:auto;
+
+    }
+
+    .generation-grid,
+    .evolution-grid,
+    .stat-grid,
+    .matchup-grid,
+    .move-grid,
+    .form-grid,
+    .guide-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .filters{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .shiny{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .shiny-icon{
+
+        margin:auto;
+
+    }
+
+    .raid-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    <strong>🐛 Bug-Type Pokémon GO Database</strong>
+
+    • Gen 1–9 • Stats • Moves • Raids • Forms • Shiny
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="container navbar">
+
+        <a href="/" class="logo">
+
+            Pokémon<span>Gaming</span>
+
+        </a>
+
+        <nav class="nav">
+
+            <a href="/pokemon/">
+                Pokémon
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/pvp/">
+                PvP
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<div class="container">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<nav class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon/">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Bug Type
+    </strong>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+
+            🐛 Pokémon GO Type Database
+
+        </span>
+
+
+        <h1>
+
+            Bug-Type Pokémon
+
+            <span>
+                Gen 1–9
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Explore the complete Bug-type Pokémon GO database.
+            Compare Bug Pokémon by generation, evolution family,
+            typing, Max CP, Attack, Defense, HP, weaknesses,
+            resistances, best moves, raid usefulness, Mega
+            Evolution, Shadow forms, Dynamax, Gigantamax,
+            shiny availability and individual Pokémon guides.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#pokemon-database"
+                class="btn btn-primary">
+
+                Explore Bug Pokémon
+
+            </a>
+
+
+            <a
+                href="#raid-usefulness"
+                class="btn btn-secondary">
+
+                Best Bug Raiders
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<section class="quick-stats">
+
+
+    <div class="stat">
+
+        <strong>
+            Gen 1–9
+        </strong>
+
+        <span>
+            Regional coverage
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong>
+            🐛 Bug
+        </strong>
+
+        <span>
+            Database type
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong>
+            3
+        </strong>
+
+        <span>
+            Main weaknesses
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong>
+            PvE
+        </strong>
+
+        <span>
+            Raid-focused analysis
+        </span>
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     CONTENT LAYOUT
+===================================================== -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     BUG TYPE HUB
+===================================================== -->
+
+<section
+    class="section"
+    id="bug-type-hub">
+
+    <h2>
+        🐛 Bug Type Hub
+    </h2>
+
+
+    <p>
+
+        Bug-type Pokémon have an important place in the Pokémon
+        GO battle system. Bug attacks can be especially useful
+        against certain Psychic-, Dark- and Grass-type opponents,
+        while individual Bug Pokémon can gain additional roles
+        from secondary typings such as Steel, Flying, Poison,
+        Fire or Rock.
+
+    </p>
+
+
+    <p>
+
+        This hub is designed to separate simple Pokédex
+        information from practical Pokémon GO analysis. A Bug
+        Pokémon is not automatically a strong Bug attacker.
+        Its Attack stat, moveset, survivability, typing,
+        availability and current battle environment all matter.
+
+    </p>
+
+
+    <div class="type-card">
+
+
+        <div class="type-icon">
+
+            🐛
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Bug Type
+            </h3>
+
+
+            <p>
+
+                Explore Bug Pokémon across all nine generations
+                and compare their roles in raids, collection,
+                evolution and other Pokémon GO activities.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag tag-bug">
+                    Bug
+                </span>
+
+                <span class="tag">
+                    Gen 1–9
+                </span>
+
+                <span class="tag">
+                    Raid Database
+                </span>
+
+                <span class="tag">
+                    Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TABLE OF CONTENTS
+===================================================== -->
+
+<section class="section">
+
+    <div class="toc">
+
+        <div class="toc-title">
+            📚 Explore This Bug Database
+        </div>
+
+
+        <a href="#generations">
+            Gen 1–9 Bug Pokémon
+        </a>
+
+
+        <a href="#evolution">
+            Evolution Families
+        </a>
+
+
+        <a href="#pokemon-database">
+            Pokémon Database
+        </a>
+
+
+        <a href="#stats">
+            Max CP & Base Stats
+        </a>
+
+
+        <a href="#matchups">
+            Weaknesses & Resistances
+        </a>
+
+
+        <a href="#moves">
+            Best Moves
+        </a>
+
+
+        <a href="#raid-usefulness">
+            Raid Tier & Usefulness
+        </a>
+
+
+        <a href="#special-forms">
+            Mega / Primal / Shadow /
+            Dynamax / Gigantamax
+        </a>
+
+
+        <a href="#shiny">
+            Shiny Pokémon
+        </a>
+
+
+        <a href="#availability">
+            Availability
+        </a>
+
+
+        <a href="#individual-guides">
+            Individual Pokémon Guides
+        </a>
+
+
+        <a href="#faq">
+            FAQ
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GEN 1–9
+===================================================== -->
+
+<section
+    class="section"
+    id="generations">
+
+    <h2>
+        🧬 Bug Pokémon by Generation
+    </h2>
+
+
+    <p>
+
+        Bug Pokémon have appeared throughout the Pokémon series,
+        beginning with the original Kanto Pokédex and expanding
+        through Johto, Hoenn, Sinnoh, Unova, Kalos, Alola,
+        Galar and Paldea.
+
+    </p>
+
+
+    <div class="generation-grid">
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 1
+            </div>
+
+            <h3>
+                Kanto
+            </h3>
+
+            <p>
+
+                Caterpie, Metapod, Butterfree,
+                Weedle, Kakuna, Beedrill,
+                Paras, Venonat, Scyther and Pinsir.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 2
+            </div>
+
+            <h3>
+                Johto
+            </h3>
+
+            <p>
+
+                Ledyba, Ledian, Spinarak,
+                Ariados, Yanma, Pineco,
+                Forretress, Scizor and Heracross.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 3
+            </div>
+
+            <h3>
+                Hoenn
+            </h3>
+
+            <p>
+
+                Wurmple families, Nincada,
+                Ninjask, Shedinja, Volbeat,
+                Illumise, Anorith, Armaldo and others.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 4
+            </div>
+
+            <h3>
+                Sinnoh
+            </h3>
+
+            <p>
+
+                Kricketot, Kricketune, Burmy,
+                Wormadam, Mothim, Combee,
+                Vespiquen, Yanmega and others.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 5
+            </div>
+
+            <h3>
+                Unova
+            </h3>
+
+            <p>
+
+                Sewaddle, Swadloon, Leavanny,
+                Venipede, Whirlipede, Scolipede,
+                Dwebble, Crustle, Joltik,
+                Galvantula and Volcarona.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 6
+            </div>
+
+            <h3>
+                Kalos
+            </h3>
+
+            <p>
+
+                Scatterbug, Spewpa, Vivillon,
+                Skiddo-related ecosystem entries,
+                and additional Bug-type species.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 7
+            </div>
+
+            <h3>
+                Alola
+            </h3>
+
+            <p>
+
+                Grubbin, Charjabug, Vikavolt,
+                Cutiefly, Ribombee,
+                Dewpider and Araquanid.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 8
+            </div>
+
+            <h3>
+                Galar
+            </h3>
+
+            <p>
+
+                Blipbug, Dottler, Orbeetle,
+                Sizzlipede, Centiskorch,
+                Skorupi-related forms and others.
+
+            </p>
+
+        </article>
+
+
+        <article class="generation">
+
+            <div class="gen-number">
+                GENERATION 9
+            </div>
+
+            <h3>
+                Paldea
+            </h3>
+
+            <p>
+
+                Tarountula, Spidops,
+                Nymble, Lokix,
+                Rellor, Rabsca and other
+                modern Bug Pokémon.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION FAMILIES
+===================================================== -->
+
+<section
+    class="section"
+    id="evolution">
+
+    <h2>
+        🧬 Bug-Type Evolution Families
+    </h2>
+
+
+    <p>
+
+        Evolution information is especially useful in Pokémon GO
+        because evolving a Pokémon can change its battle stats,
+        moves, CP, typing and practical usefulness.
+
+    </p>
+
+
+    <div class="evolution-grid">
+
+
+        <article class="evolution">
+
+            <h3>
+                🐛 Caterpie Family
+            </h3>
+
+            <p>
+
+                Caterpie → Metapod → Butterfree
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🐝 Weedle Family
+            </h3>
+
+            <p>
+
+                Weedle → Kakuna → Beedrill
+                → Mega Beedrill
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🦂 Scyther Family
+            </h3>
+
+            <p>
+
+                Scyther → Scizor
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🪲 Wurmple Families
+            </h3>
+
+            <p>
+
+                Wurmple → Silcoon → Beautifly
+                or
+                Wurmple → Cascoon → Dustox
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🐜 Nincada Family
+            </h3>
+
+            <p>
+
+                Nincada → Ninjask
+
+                <br>
+
+                Special evolution mechanics can also produce
+                Shedinja under the appropriate conditions.
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🦋 Burmy Family
+            </h3>
+
+            <p>
+
+                Burmy → Wormadam
+                or
+                Mothim
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                ⚡ Grubbin Family
+            </h3>
+
+            <p>
+
+                Grubbin → Charjabug → Vikavolt
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🐛 Blipbug Family
+            </h3>
+
+            <p>
+
+                Blipbug → Dottler → Orbeetle
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🕷️ Tarountula Family
+            </h3>
+
+            <p>
+
+                Tarountula → Spidops
+
+            </p>
+
+        </article>
+
+
+        <article class="evolution">
+
+            <h3>
+                🦗 Nymble Family
+            </h3>
+
+            <p>
+
+                Nymble → Lokix
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DATABASE
+===================================================== -->
+
+<section
+    class="section"
+    id="pokemon-database">
+
+    <h2>
+        📊 Bug-Type Pokémon Database
+    </h2>
+
+
+    <p>
+
+        Use the database below to compare representative Bug-type
+        Pokémon. For the production version of this page, the table
+        should be generated from your maintained Pokémon GO dataset
+        so that CP, stats, forms and availability can be updated
+        without manually editing every page.
+
+    </p>
+
+
+    <div class="filters">
+
+
+        <input
+            type="search"
+            id="pokemonSearch"
+            placeholder="Search Bug Pokémon..."
+        >
+
+
+        <select id="generationFilter">
+
+            <option value="all">
+                All Generations
+            </option>
+
+            <option value="1">
+                Gen 1
+            </option>
+
+            <option value="2">
+                Gen 2
+            </option>
+
+            <option value="3">
+                Gen 3
+            </option>
+
+            <option value="4">
+                Gen 4
+            </option>
+
+            <option value="5">
+                Gen 5
+            </option>
+
+            <option value="6">
+                Gen 6
+            </option>
+
+            <option value="7">
+                Gen 7
+            </option>
+
+            <option value="8">
+                Gen 8
+            </option>
+
+            <option value="9">
+                Gen 9
+            </option>
+
+        </select>
+
+
+        <select id="raidFilter">
+
+            <option value="all">
+                All Raid Tiers
+            </option>
+
+            <option value="S">
+                S Tier
+            </option>
+
+            <option value="A">
+                A Tier
+            </option>
+
+            <option value="B">
+                B Tier
+            </option>
+
+        </select>
+
+
+    </div>
+
+
+    <div class="table-wrap">
+
+
+        <table class="database">
+
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Pokémon
+                    </th>
+
+                    <th>
+                        Gen
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Evolution Family
+                    </th>
+
+                    <th>
+                        Max CP
+                    </th>
+
+                    <th>
+                        Raid Tier
+                    </th>
+
+                    <th>
+                        Main Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="pokemonTable">
+
+
+                <tr
+                    data-gen="1"
+                    data-tier="A">
+
+                    <td class="pokemon-name">
+                        Beedrill
+                    </td>
+
+                    <td>
+                        1
+                    </td>
+
+                    <td>
+                        Bug / Poison
+                    </td>
+
+                    <td>
+                        Weedle →
+                        Kakuna →
+                        Beedrill
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        A
+                    </td>
+
+                    <td>
+                        Bug attacker
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="1"
+                    data-tier="A">
+
+                    <td class="pokemon-name">
+                        Scyther
+                    </td>
+
+                    <td>
+                        1
+                    </td>
+
+                    <td>
+                        Bug / Flying
+                    </td>
+
+                    <td>
+                        Scyther →
+                        Scizor
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        A
+                    </td>
+
+                    <td>
+                        Bug attacker
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="2"
+                    data-tier="S">
+
+                    <td class="pokemon-name">
+                        Scizor
+                    </td>
+
+                    <td>
+                        2
+                    </td>
+
+                    <td>
+                        Bug / Steel
+                    </td>
+
+                    <td>
+                        Scyther →
+                        Scizor
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        S
+                    </td>
+
+                    <td>
+                        Bug / Steel
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="2"
+                    data-tier="S">
+
+                    <td class="pokemon-name">
+                        Heracross
+                    </td>
+
+                    <td>
+                        2
+                    </td>
+
+                    <td>
+                        Bug / Fighting
+                    </td>
+
+                    <td>
+                        Standalone
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        S
+                    </td>
+
+                    <td>
+                        Bug attacker
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="3"
+                    data-tier="B">
+
+                    <td class="pokemon-name">
+                        Ninjask
+                    </td>
+
+                    <td>
+                        3
+                    </td>
+
+                    <td>
+                        Bug / Flying
+                    </td>
+
+                    <td>
+                        Nincada →
+                        Ninjask
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        B
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="5"
+                    data-tier="S">
+
+                    <td class="pokemon-name">
+                        Volcarona
+                    </td>
+
+                    <td>
+                        5
+                    </td>
+
+                    <td>
+                        Bug / Fire
+                    </td>
+
+                    <td>
+                        Larvesta →
+                        Volcarona
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        S
+                    </td>
+
+                    <td>
+                        Bug / Fire
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="5"
+                    data-tier="A">
+
+                    <td class="pokemon-name">
+                        Galvantula
+                    </td>
+
+                    <td>
+                        5
+                    </td>
+
+                    <td>
+                        Bug / Electric
+                    </td>
+
+                    <td>
+                        Joltik →
+                        Galvantula
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        A
+                    </td>
+
+                    <td>
+                        Bug / Electric
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="7"
+                    data-tier="A">
+
+                    <td class="pokemon-name">
+                        Vikavolt
+                    </td>
+
+                    <td>
+                        7
+                    </td>
+
+                    <td>
+                        Bug / Electric
+                    </td>
+
+                    <td>
+                        Grubbin →
+                        Charjabug →
+                        Vikavolt
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        A
+                    </td>
+
+                    <td>
+                        Bug / Electric
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="8"
+                    data-tier="A">
+
+                    <td class="pokemon-name">
+                        Orbeetle
+                    </td>
+
+                    <td>
+                        8
+                    </td>
+
+                    <td>
+                        Bug / Psychic
+                    </td>
+
+                    <td>
+                        Blipbug →
+                        Dottler →
+                        Orbeetle
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        A
+                    </td>
+
+                    <td>
+                        Bug / Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr
+                    data-gen="9"
+                    data-tier="A">
+
+                    <td class="pokemon-name">
+                        Lokix
+                    </td>
+
+                    <td>
+                        9
+                    </td>
+
+                    <td>
+                        Bug / Dark
+                    </td>
+
+                    <td>
+                        Nymble →
+                        Lokix
+                    </td>
+
+                    <td class="cp">
+                        —
+                    </td>
+
+                    <td>
+                        A
+                    </td>
+
+                    <td>
+                        Bug / Dark
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MAX CP + STATS
+===================================================== -->
+
+<section
+    class="section"
+    id="stats">
+
+    <h2>
+        📈 Max CP, Attack, Defense & HP
+    </h2>
+
+
+    <p>
+
+        Max CP is useful for understanding a Pokémon's overall
+        progression, but it should not be treated as a complete
+        measure of raid performance. Pokémon GO battle performance
+        also depends on offensive stats, durability and moves.
+
+    </p>
+
+
+    <div class="stat-grid">
+
+
+        <div class="stat-card">
+
+            <strong>
+                Attack
+            </strong>
+
+            <span>
+                Important for raid damage and offensive pressure.
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong>
+                Defense
+            </strong>
+
+            <span>
+                Helps determine how much damage a Pokémon can
+                withstand.
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong>
+                HP
+            </strong>
+
+            <span>
+                Determines the Pokémon's base endurance.
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <h3>
+        Why Max CP should not be your only metric
+    </h3>
+
+
+    <p>
+
+        Two Pokémon can have similar CP but perform very
+        differently in raids because their Attack values,
+        movesets and typing are different. The database should
+        therefore display CP alongside the underlying battle
+        information.
+
+    </p>
+
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section
+    class="section"
+    id="matchups">
+
+    <h2>
+        🛡️ Bug-Type Weaknesses & Resistances
+    </h2>
+
+
+    <p>
+
+        Bug-type defensive matchups depend on the Pokémon's complete
+        typing. Pure Bug Pokémon have a different defensive profile
+        from Bug/Steel, Bug/Flying, Bug/Fire, Bug/Poison or
+        Bug/Dark Pokémon.
+
+    </p>
+
+
+    <div class="matchup-grid">
+
+
+        <div class="matchup">
+
+            <h3>
+                ❌ Common Bug Weaknesses
+            </h3>
+
+
+            <div class="matchup-item">
+
+                <span>
+                    🔥 Fire
+                </span>
+
+                <strong class="weak">
+                    Weak
+                </strong>
+
+            </div>
+
+
+            <div class="matchup-item">
+
+                <span>
+                    🪨 Rock
+                </span>
+
+                <strong class="weak">
+                    Weak
+                </strong>
+
+            </div>
+
+
+            <div class="matchup-item">
+
+                <span>
+                    🪽 Flying
+                </span>
+
+                <strong class="weak">
+                    Weak
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="matchup">
+
+            <h3>
+                ✅ Pure Bug Resistances
+            </h3>
+
+
+            <div class="matchup-item">
+
+                <span>
+                    🌿 Grass
+                </span>
+
+                <strong class="resist">
+                    Resistant
+                </strong>
+
+            </div>
+
+
+            <div class="matchup-item">
+
+                <span>
+                    🥊 Fighting
+                </span>
+
+                <strong class="resist">
+                    Resistant
+                </strong>
+
+            </div>
+
+
+            <div class="matchup-item">
+
+                <span>
+                    🌍 Ground
+                </span>
+
+                <strong class="resist">
+                    Resistant
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <h3>
+        Important Dual-Type Rule
+    </h3>
+
+
+    <p>
+
+        Do not copy the pure Bug matchup chart to every Bug Pokémon.
+        For example, Bug/Steel, Bug/Fire and Bug/Flying Pokémon
+        gain or lose resistances because of their second type.
+
+        Individual Pokémon pages should calculate the complete
+        matchup rather than displaying generic Bug information.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     BEST MOVES
+===================================================== -->
+
+<section
+    class="section"
+    id="moves">
+
+    <h2>
+        ⚡ Best Bug-Type Moves
+    </h2>
+
+
+    <p>
+
+        The best Bug attacker is determined by its complete moveset,
+        not simply by having Bug typing. When evaluating raid
+        performance, compare the available Fast and Charged moves
+        together with the Pokémon's Attack and survivability.
+
+    </p>
+
+
+    <div class="move-grid">
+
+
+        <article class="move">
+
+            <h3>
+                🐛 Bug Bite
+            </h3>
+
+            <div class="move-type">
+                BUG • FAST MOVE
+            </div>
+
+            <p>
+
+                A fast Bug attack available to a number of
+                Bug-type Pokémon.
+
+            </p>
+
+        </article>
+
+
+        <article class="move">
+
+            <h3>
+                🐛 Fury Cutter
+            </h3>
+
+            <div class="move-type">
+                BUG • FAST MOVE
+            </div>
+
+            <p>
+
+                A quick Bug-type move associated with several
+                notable Bug attackers.
+
+            </p>
+
+        </article>
+
+
+        <article class="move">
+
+            <h3>
+                🐛 X-Scissor
+            </h3>
+
+            <div class="move-type">
+                BUG • CHARGED MOVE
+            </div>
+
+            <p>
+
+                A commonly recognized Bug charged attack that
+                appears on several Pokémon.
+
+            </p>
+
+        </article>
+
+
+        <article class="move">
+
+            <h3>
+                🐛 Megahorn
+            </h3>
+
+            <div class="move-type">
+                BUG • CHARGED MOVE
+            </div>
+
+            <p>
+
+                A powerful Bug charged attack used by certain
+                Pokémon with access to the move.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID USEFULNESS
+===================================================== -->
+
+<section
+    class="section"
+    id="raid-usefulness">
+
+    <h2>
+        🏆 Bug-Type Raid Tier & Usefulness
+    </h2>
+
+
+    <p>
+
+        Raid rankings on this website should be treated as editorial
+        guidance rather than official Pokémon GO rankings. A
+        Pokémon's usefulness can change when new moves, forms,
+        balance updates or raid bosses are introduced.
+
+    </p>
+
+
+    <div class="raid-card">
+
+
+        <div class="raid-rank">
+            S
+        </div>
+
+
+        <div>
+
+            <h3>
+                Elite Bug Attackers
+            </h3>
+
+            <p>
+
+                Pokémon capable of delivering excellent Bug-type
+                raid damage in appropriate matchups. Examples can
+                include high-performing Mega or specialized Bug
+                attackers depending on the current Pokémon GO meta.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="raid-card">
+
+
+        <div class="raid-rank">
+            A
+        </div>
+
+
+        <div>
+
+            <h3>
+                Strong Bug Attackers
+            </h3>
+
+            <p>
+
+                Reliable attackers that can perform well against
+                suitable raid bosses but may not provide the same
+                overall performance as the highest-ranked options.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="raid-card">
+
+
+        <div class="raid-rank">
+            B
+        </div>
+
+
+        <div>
+
+            <h3>
+                Situational Bug Attackers
+            </h3>
+
+            <p>
+
+                Useful for newer trainers, themed teams, collection
+                goals or situations where stronger Bug attackers
+                are unavailable.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Recommended Bug Raid Investment
+    </h3>
+
+
+    <p>
+
+        Before spending large amounts of Stardust and Candy, compare
+        the Pokémon's current moveset, role, availability and the
+        raid bosses for which Bug damage is actually valuable.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL FORMS
+===================================================== -->
+
+<section
+    class="section"
+    id="special-forms">
+
+    <h2>
+        🌟 Mega, Primal, Shadow, Dynamax & Gigantamax
+    </h2>
+
+
+    <p>
+
+        Special forms should have their own information because
+        they can change a Pokémon's stats, moves, typing, battle
+        role or availability.
+
+    </p>
+
+
+    <div class="form-grid">
+
+
+        <article class="form">
+
+            <h3>
+                🐝 Mega Evolution
+            </h3>
+
+            <p>
+
+                Mega Beedrill is the most important dedicated
+                Mega Bug example for this hub. Give Mega forms
+                separate stats, moves, raid analysis and
+                availability information.
+
+            </p>
+
+        </article>
+
+
+        <article class="form">
+
+            <h3>
+                🌋 Primal
+            </h3>
+
+            <p>
+
+                If a Bug Pokémon receives a relevant Primal
+                mechanic in Pokémon GO, list it separately rather
+                than treating it as an ordinary species entry.
+
+            </p>
+
+        </article>
+
+
+        <article class="form">
+
+            <h3>
+                🌑 Shadow
+            </h3>
+
+            <p>
+
+                Shadow Pokémon should receive separate analysis
+                because their battle characteristics and resource
+                decisions differ from standard forms.
+
+            </p>
+
+        </article>
+
+
+        <article class="form">
+
+            <h3>
+                💥 Dynamax
+            </h3>
+
+            <p>
+
+                Dynamax availability and battle mechanics should
+                be documented separately from standard Pokémon GO
+                raid performance.
+
+            </p>
+
+        </article>
+
+
+        <article class="form">
+
+            <h3>
+                👑 Gigantamax
+            </h3>
+
+            <p>
+
+                Gigantamax Pokémon should have dedicated information
+                about G-Max mechanics, moves, availability and
+                battle usefulness.
+
+            </p>
+
+        </article>
+
+
+        <article class="form">
+
+            <h3>
+                🌎 Regional Forms
+            </h3>
+
+            <p>
+
+                Alolan, Galarian, Hisuian and Paldean variants should
+                receive individual type and availability information
+                whenever their Pokémon GO implementation differs.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section
+    class="section"
+    id="shiny">
+
+    <h2>
+        ✨ Shiny Bug Pokémon
+    </h2>
+
+
+    <p>
+
+        Shiny availability is an important part of Pokémon GO
+        collecting. The database should tell trainers whether a
+        shiny is available, how it was released and whether its
+        current acquisition method is known.
+
+    </p>
+
+
+    <div class="shiny">
+
+
+        <div class="shiny-icon">
+
+            ✨
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Shiny Availability Tracker
+            </h3>
+
+
+            <p>
+
+                Each individual Pokémon guide should contain the
+                standard form, shiny form, shiny release information
+                and current acquisition method where applicable.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                    Shiny Status
+                </span>
+
+                <span class="tag">
+                    Release History
+                </span>
+
+                <span class="tag">
+                    Collection Guide
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section
+    class="section"
+    id="availability">
+
+    <h2>
+        📅 Bug Pokémon Availability
+    </h2>
+
+
+    <p>
+
+        Pokémon GO availability changes with events, seasons,
+        raids, eggs, research and other game systems. A useful
+        database should explain the acquisition route instead of
+        simply labeling a Pokémon "available."
+
+    </p>
+
+
+    <div class="guide-grid">
+
+
+        <article class="guide">
+
+            <h3>
+                🌿 Wild
+            </h3>
+
+            <p>
+
+                Explain whether the Pokémon can currently be
+                encountered in the wild and under which conditions.
+
+            </p>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🥚 Eggs
+            </h3>
+
+            <p>
+
+                Record relevant egg pools and hatching information
+                when applicable.
+
+            </p>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                ⚔️ Raids
+            </h3>
+
+            <p>
+
+                Record raid availability and explain how trainers
+                can encounter the Pokémon through raids.
+
+            </p>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🎟️ Research
+            </h3>
+
+            <p>
+
+                Explain Field Research, Special Research and
+                event research encounters where relevant.
+
+            </p>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🎉 Events
+            </h3>
+
+            <p>
+
+                Document event appearances, Community Days,
+                special events and limited-time opportunities.
+
+            </p>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🔄 Evolution
+            </h3>
+
+            <p>
+
+                Explain Candy requirements and any special
+                evolution requirements.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INDIVIDUAL GUIDES
+===================================================== -->
+
+<section
+    class="section"
+    id="individual-guides">
+
+    <h2>
+        📖 Individual Bug Pokémon Guides
+    </h2>
+
+
+    <p>
+
+        The Bug Type Hub should be the parent resource. Individual
+        Pokémon pages should go deeper than this overview and
+        provide unique analysis for each Pokémon.
+
+    </p>
+
+
+    <div class="guide-grid">
+
+
+        <article class="guide">
+
+            <h3>
+                🐝 Mega Beedrill Guide
+            </h3>
+
+            <p>
+
+                Mega evolution, Bug/Poison typing, best moves,
+                raid usefulness, weaknesses, counters, shiny
+                availability and Mega energy information.
+
+            </p>
+
+            <a
+                href="/pokemon/mega-beedrill.html"
+                class="btn btn-secondary">
+
+                View Guide
+
+            </a>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🦂 Scizor Guide
+            </h3>
+
+            <p>
+
+                Evolution from Scyther, Bug/Steel typing,
+                moveset, raid usefulness, weaknesses,
+                resistances and shiny information.
+
+            </p>
+
+            <a
+                href="/pokemon/scizor.html"
+                class="btn btn-secondary">
+
+                View Guide
+
+            </a>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🪲 Heracross Guide
+            </h3>
+
+            <p>
+
+                Bug/Fighting analysis, raid role, moves,
+                Mega form information, shiny status,
+                availability and evolution details.
+
+            </p>
+
+            <a
+                href="/pokemon/heracross.html"
+                class="btn btn-secondary">
+
+                View Guide
+
+            </a>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🔥 Volcarona Guide
+            </h3>
+
+            <p>
+
+                Larvesta evolution requirements, Bug/Fire typing,
+                raid usefulness, moves, Candy requirements,
+                shiny status and trainer investment advice.
+
+            </p>
+
+            <a
+                href="/pokemon/volcarona.html"
+                class="btn btn-secondary">
+
+                View Guide
+
+            </a>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                ⚡ Vikavolt Guide
+            </h3>
+
+            <p>
+
+                Grubbin evolution family, Bug/Electric typing,
+                moves, CP, stats, raid role and evolution
+                requirements.
+
+            </p>
+
+            <a
+                href="/pokemon/vikavolt.html"
+                class="btn btn-secondary">
+
+                View Guide
+
+            </a>
+
+        </article>
+
+
+        <article class="guide">
+
+            <h3>
+                🦗 Lokix Guide
+            </h3>
+
+            <p>
+
+                Nymble evolution, Bug/Dark typing, moves,
+                battle role, weaknesses and availability.
+
+            </p>
+
+            <a
+                href="/pokemon/lokix.html"
+                class="btn btn-secondary">
+
+                View Guide
+
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TRAINER GUIDE
+===================================================== -->
+
+<section class="section">
+
+    <h2>
+        🧠 How to Choose a Bug Pokémon
+    </h2>
+
+
+    <h3>
+        1. Start with the raid boss
+    </h3>
+
+    <p>
+
+        First determine whether Bug damage is actually effective
+        against the raid boss. Do not build a Bug team simply
+        because a Pokémon has Bug typing.
+
+    </p>
+
+
+    <h3>
+        2. Compare Attack
+    </h3>
+
+    <p>
+
+        Attack is an important part of raid damage, but it should
+        always be evaluated alongside the Pokémon's moves.
+
+    </p>
+
+
+    <h3>
+        3. Check the moveset
+    </h3>
+
+    <p>
+
+        A Pokémon can have excellent Attack but still be a poor
+        Bug attacker if its available Bug moves are inefficient
+        for the intended role.
+
+    </p>
+
+
+    <h3>
+        4. Consider survivability
+    </h3>
+
+    <p>
+
+        A Pokémon that faints quickly may require additional
+        relobbying, which can reduce practical raid performance.
+
+    </p>
+
+
+    <h3>
+        5. Consider Mega bonuses
+    </h3>
+
+    <p>
+
+        Mega Pokémon can provide additional team value through
+        their battle effects, making them valuable even when
+        another Pokémon has stronger individual statistics.
+
+    </p>
+
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section
+    class="section faq"
+    id="faq">
+
+    <h2>
+        ❓ Bug-Type Pokémon FAQ
+    </h2>
+
+
+    <details>
+
+        <summary>
+            What are Bug-type Pokémon weak to?
+        </summary>
+
+        <p>
+
+            Pure Bug-type Pokémon are commonly weak to Fire,
+            Flying and Rock attacks. Dual typing can change the
+            final matchup.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What are Bug-type Pokémon resistant to?
+        </summary>
+
+        <p>
+
+            Pure Bug Pokémon have useful resistances including
+            Grass, Fighting and Ground. Individual dual-type
+            Pokémon can have additional resistances or weaknesses.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is the best Bug-type Pokémon for raids?
+        </summary>
+
+        <p>
+
+            Raid usefulness depends on the current Pokémon GO
+            moveset, stats, forms and matchup. Dedicated Mega and
+            high-performing Bug attackers should be compared
+            using current battle data rather than CP alone.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mega Beedrill important for Bug raids?
+        </summary>
+
+        <p>
+
+            Mega Beedrill is particularly relevant to a Bug-focused
+            database because Mega Evolution gives it a specialized
+            role as a Bug/Poison attacker and can provide Mega
+            raid bonuses.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is a high-CP Bug Pokémon automatically better?
+        </summary>
+
+        <p>
+
+            No. CP is only one part of the picture. Moves,
+            Attack, Defense, HP, typing and the specific battle
+            matchup all affect practical usefulness.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should Shadow Bug Pokémon have separate entries?
+        </summary>
+
+        <p>
+
+            Yes. If the Shadow form changes the practical battle
+            role, it deserves separate analysis rather than being
+            hidden inside the standard Pokémon entry.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How often should this page be updated?
+        </summary>
+
+        <p>
+
+            Update the database when Pokémon GO releases new
+            Pokémon, forms, moves, events or mechanics that change
+            the information displayed here.
+
+        </p>
+
+    </details>
+
+
+</section>
+
+
+<!-- =====================================================
+     METHODOLOGY
+===================================================== -->
+
+<section class="section">
+
+    <h2>
+        📚 Database Methodology
+    </h2>
+
+
+    <p>
+
+        Pokémon data and battle recommendations can change over
+        time. Numerical statistics, moves, availability and special
+        forms should be checked against current Pokémon GO data
+        before publication.
+
+    </p>
+
+
+    <p>
+
+        Raid tiers on this website are editorial recommendations.
+        They are not official rankings from Niantic or The Pokémon
+        Company.
+
+    </p>
+
+
+    <p>
+
+        Individual Pokémon pages should contain additional
+        information and analysis rather than simply repeating
+        the exact text from this Bug Type Hub.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     DISCLAIMER
+===================================================== -->
+
+<section class="section">
+
+    <div class="disclaimer">
+
+        <strong>
+            Disclaimer:
+        </strong>
+
+        Pokémon GO is a trademark of Niantic, Inc., and Pokémon,
+        Nintendo, Game Freak and Creatures are trademarks of their
+        respective owners. This website is an independent fan
+        resource and is not affiliated with or endorsed by
+        Niantic, Nintendo, The Pokémon Company, Game Freak or
+        Creatures.
+
+        <br><br>
+
+        Pokémon GO features, statistics, moves, availability,
+        events and battle mechanics can change following game
+        updates. Verify current information before making
+        gameplay decisions.
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        🐛 Bug Database
+    </h3>
+
+
+    <a
+        href="#bug-type-hub"
+        class="side-link">
+
+        Bug Type Hub
+
+    </a>
+
+
+    <a
+        href="#generations"
+        class="side-link">
+
+        Gen 1–9
+
+    </a>
+
+
+    <a
+        href="#evolution"
+        class="side-link">
+
+        Evolution Families
+
+    </a>
+
+
+    <a
+        href="#pokemon-database"
+        class="side-link">
+
+        Pokémon Database
+
+    </a>
+
+
+    <a
+        href="#stats"
+        class="side-link">
+
+        CP & Stats
+
+    </a>
+
+
+    <a
+        href="#matchups"
+        class="side-link">
+
+        Weaknesses
+
+    </a>
+
+
+    <a
+        href="#moves"
+        class="side-link">
+
+        Best Moves
+
+    </a>
+
+
+    <a
+        href="#raid-usefulness"
+        class="side-link">
+
+        Raid Tier
+
+    </a>
+
+
+    <a
+        href="#special-forms"
+        class="side-link">
+
+        Special Forms
+
+    </a>
+
+
+    <a
+        href="#shiny"
+        class="side-link">
+
+        Shiny
+
+    </a>
+
+
+    <a
+        href="#availability"
+        class="side-link">
+
+        Availability
+
+    </a>
+
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        ⚔️ Pokémon GO Tools
+    </h3>
+
+
+    <a
+        href="/tools/cp-calculator.html"
+        class="side-link">
+
+        CP Calculator
+
+    </a>
+
+
+    <a
+        href="/tools/iv-calculator.html"
+        class="side-link">
+
+        IV Calculator
+
+    </a>
+
+
+    <a
+        href="/tools/type-effectiveness.html"
+        class="side-link">
+
+        Type Effectiveness
+
+    </a>
+
+
+    <a
+        href="/tools/raid-counter-finder.html"
+        class="side-link">
+
+        Raid Counter Finder
+
+    </a>
+
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        📖 Related Types
+    </h3>
+
+
+    <a
+        href="/pokemon/types/fire/"
+        class="side-link">
+
+        Fire Type
+
+    </a>
+
+
+    <a
+        href="/pokemon/types/flying/"
+        class="side-link">
+
+        Flying Type
+
+    </a>
+
+
+    <a
+        href="/pokemon/types/rock/"
+        class="side-link">
+
+        Rock Type
+
+    </a>
+
+
+    <a
+        href="/pokemon/types/steel/"
+        class="side-link">
+
+        Steel Type
+
+    </a>
+
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+
+<div class="footer-grid">
+
+
+<div class="footer-column">
+
+    <h3>
+        PokémonGaming
+    </h3>
+
+
+    <p>
+
+        Independent Pokémon GO guides, databases,
+        raid resources and trainer tools.
+
+    </p>
+
+</div>
+
+
+<div class="footer-column">
+
+    <h3>
+        Database
+    </h3>
+
+
+    <a href="/pokemon/">
+        Pokémon Database
+    </a>
+
+
+    <a href="/pokemon/types/">
+        Type Database
+    </a>
+
+
+    <a href="/evolutions/">
+        Evolution Database
+    </a>
+
+</div>
+
+
+<div class="footer-column">
+
+    <h3>
+        Guides
+    </h3>
+
+
+    <a href="/raids/">
+        Raid Guides
+    </a>
+
+
+    <a href="/pvp/">
+        PvP Guides
+    </a>
+
+
+    <a href="/guides/">
+        Trainer Guides
+    </a>
+
+</div>
+
+
+<div class="footer-column">
+
+    <h3>
+        Website
+    </h3>
+
+
+    <a href="/about.html">
+        About
+    </a>
+
+
+    <a href="/contact.html">
+        Contact
+    </a>
+
+
+    <a href="/privacy-policy.html">
+        Privacy Policy
+    </a>
+
+
+    <a href="/terms.html">
+        Terms
+    </a>
+
+
+    <a href="/disclaimer.html">
+        Disclaimer
+    </a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+    © 2026 PokémonGaming.in.
+    Independent Pokémon GO fan resource.
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     FILTER JAVASCRIPT
+===================================================== -->
+
+<script>
+
+const searchInput =
+    document.getElementById(
+        "pokemonSearch"
+    );
+
+const generationFilter =
+    document.getElementById(
+        "generationFilter"
+    );
+
+const raidFilter =
+    document.getElementById(
+        "raidFilter"
+    );
+
+const rows =
+    document.querySelectorAll(
+        "#pokemonTable tr"
+    );
+
+
+function filterPokemon(){
+
+    const search =
+        searchInput.value
+            .toLowerCase()
+            .trim();
+
+
+    const generation =
+        generationFilter.value;
+
+
+    const raid =
+        raidFilter.value;
+
+
+    rows.forEach(row => {
+
+        const text =
+            row.textContent
+                .toLowerCase();
+
+
+        const rowGeneration =
+            row.dataset.gen;
+
+
+        const rowTier =
+            row.dataset.tier;
+
+
+        const searchMatch =
+            text.includes(search);
+
+
+        const generationMatch =
+            generation === "all" ||
+            rowGeneration === generation;
+
+
+        const raidMatch =
+            raid === "all" ||
+            rowTier === raid;
+
+
+        if(
+            searchMatch &&
+            generationMatch &&
+            raidMatch
+        ){
+
+            row.style.display = "";
+
+        }else{
+
+            row.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+searchInput.addEventListener(
+    "input",
+    filterPokemon
+);
+
+
+generationFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
+raidFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+</script>
+
+
+</body>
+</html>
