@@ -1,0 +1,3124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pokémon GO Type Chart & Type Database | All 18 Types</title>
+
+<meta name="description"
+content="Complete Pokémon GO type database covering all 18 Pokémon types, weaknesses, resistances, best attackers, raid counters, PvP matchups, type effectiveness and individual type guides.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon_type/">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #07080c;
+    --bg-soft: #0d1017;
+
+    --surface: #121620;
+    --surface-2: #181d28;
+    --surface-3: #202633;
+
+    --border: #2d3543;
+
+    --text: #f6f7fb;
+    --muted: #aeb5c2;
+
+    --accent: #8d9cff;
+
+    --green: #5edb91;
+    --red: #ff727b;
+    --yellow: #e9c86b;
+
+    --max-width: 1220px;
+
+    --radius-sm: 10px;
+    --radius: 18px;
+    --radius-lg: 28px;
+
+    --shadow:
+        0 25px 70px rgba(0,0,0,.35);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            #1b2030,
+            var(--bg) 45%
+        );
+
+    color: var(--text);
+
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+        rgba(7,8,12,.94);
+
+    backdrop-filter:
+        blur(16px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo {
+
+    font-size: 1.35rem;
+
+    font-weight: 950;
+
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.navigation {
+
+    display: flex;
+
+    gap: 22px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+}
+
+.navigation a {
+
+    color: var(--muted);
+
+    font-size: .88rem;
+
+    font-weight: 750;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+
+    width:
+        min(
+            calc(100% - 32px),
+            var(--max-width)
+        );
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   BREADCRUMBS
+========================================================= */
+
+.breadcrumbs {
+
+    padding:
+        20px 0 12px;
+
+    color: var(--muted);
+
+    font-size: .82rem;
+}
+
+.breadcrumbs span {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px;
+
+    border-radius:
+        var(--radius-lg);
+
+    border:
+        1px solid #39435b;
+
+    background:
+
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(141,156,255,.22),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 10% 100%,
+            rgba(85,103,180,.18),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(141,156,255,.10),
+            rgba(18,22,32,.98)
+        );
+
+    box-shadow:
+        var(--shadow);
+}
+
+.hero-label {
+
+    display: inline-flex;
+
+    padding:
+        7px 14px;
+
+    border-radius:
+        999px;
+
+    border:
+        1px solid #4b5574;
+
+    background:
+        rgba(141,156,255,.10);
+
+    color:
+        #b8c0ff;
+
+    font-size: .75rem;
+
+    font-weight: 900;
+
+    letter-spacing:
+        .08em;
+
+    text-transform:
+        uppercase;
+}
+
+.hero h1 {
+
+    max-width:
+        1000px;
+
+    margin-top:
+        18px;
+
+    font-size:
+        clamp(
+            2.3rem,
+            5vw,
+            4.4rem
+        );
+
+    line-height:
+        1.05;
+}
+
+.hero h1 strong {
+
+    display: block;
+
+    color:
+        var(--accent);
+}
+
+.hero-description {
+
+    max-width:
+        900px;
+
+    margin-top:
+        23px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.06rem;
+}
+
+.hero-pills {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        9px;
+
+    margin-top:
+        27px;
+}
+
+.hero-pill {
+
+    padding:
+        8px 13px;
+
+    border-radius:
+        999px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        rgba(255,255,255,.045);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   AD AREA
+========================================================= */
+
+.ad-space {
+
+    min-height:
+        100px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin:
+        28px 0;
+
+    border:
+        1px dashed #39404d;
+
+    border-radius:
+        var(--radius-sm);
+
+    color:
+        #707783;
+
+    font-size:
+        .75rem;
+}
+
+
+/* =========================================================
+   PAGE LAYOUT
+========================================================= */
+
+.page-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        285px;
+
+    gap:
+        28px;
+
+    margin-top:
+        28px;
+}
+
+.content {
+    min-width: 0;
+}
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        94px;
+
+    align-self:
+        start;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        30px;
+
+    padding:
+        31px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section h2 {
+
+    margin-bottom:
+        14px;
+
+    font-size:
+        clamp(
+            1.5rem,
+            3vw,
+            2.1rem
+        );
+
+    line-height:
+        1.2;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 8px;
+
+    font-size:
+        1.08rem;
+}
+
+.section p {
+
+    margin-bottom:
+        15px;
+
+    color:
+        var(--muted);
+}
+
+
+/* =========================================================
+   TYPE GRID
+========================================================= */
+
+.type-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        24px;
+}
+
+.type-card {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        23px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface-2),
+            var(--bg-soft)
+        );
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+.type-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        var(--accent);
+}
+
+.type-number {
+
+    color:
+        #747d8c;
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        900;
+}
+
+.type-icon {
+
+    width:
+        46px;
+
+    height:
+        46px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin:
+        12px 0;
+
+    border-radius:
+        13px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    font-size:
+        1.45rem;
+}
+
+.type-card h3 {
+
+    margin:
+        0 0 7px;
+
+    font-size:
+        1.2rem;
+}
+
+.type-card p {
+
+    margin:
+        0;
+
+    font-size:
+        .82rem;
+}
+
+.type-link {
+
+    display:
+        inline-block;
+
+    margin-top:
+        14px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .81rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   QUICK TOOLS
+========================================================= */
+
+.tool-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        14px;
+
+    margin-top:
+        20px;
+}
+
+.tool-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.tool-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+}
+
+.tool-card p {
+
+    margin:
+        0;
+
+    font-size:
+        .8rem;
+}
+
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+
+.info-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        14px;
+
+    margin-top:
+        20px;
+}
+
+.info-card {
+
+    padding:
+        21px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.info-card h3 {
+
+    margin:
+        0 0 7px;
+}
+
+.info-card p {
+
+    margin:
+        0;
+
+    font-size:
+        .84rem;
+}
+
+
+/* =========================================================
+   TYPE MATCHUP
+========================================================= */
+
+.matchup-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        20px;
+}
+
+.matchup {
+
+    padding:
+        23px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.matchup h3 {
+    margin-top: 0;
+}
+
+.matchup.weak h3 {
+    color:
+        var(--red);
+}
+
+.matchup.resist h3 {
+    color:
+        var(--green);
+}
+
+.tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        12px;
+}
+
+.tag {
+
+    padding:
+        7px 10px;
+
+    border-radius:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .77rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-container {
+
+    overflow-x:
+        auto;
+
+    margin-top:
+        20px;
+}
+
+table {
+
+    width:
+        100%;
+
+    min-width:
+        700px;
+
+    border-collapse:
+        collapse;
+}
+
+th,
+td {
+
+    padding:
+        13px 14px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+}
+
+th {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+
+    font-size:
+        .74rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .04em;
+}
+
+td {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .84rem;
+}
+
+
+/* =========================================================
+   GENERATION
+========================================================= */
+
+.generation-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        14px;
+
+    margin-top:
+        20px;
+}
+
+.generation-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--bg-soft);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.generation-card span {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        900;
+
+    text-transform:
+        uppercase;
+}
+
+.generation-card h3 {
+
+    margin:
+        6px 0;
+
+}
+
+.generation-card p {
+
+    margin:
+        0;
+
+    font-size:
+        .82rem;
+}
+
+.generation-card a {
+
+    display:
+        inline-block;
+
+    margin-top:
+        10px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .8rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   CALLOUT
+========================================================= */
+
+.callout {
+
+    margin-top:
+        20px;
+
+    padding:
+        18px;
+
+    border-left:
+        4px solid var(--accent);
+
+    background:
+        rgba(141,156,255,.06);
+
+    color:
+        var(--muted);
+
+    border-radius:
+        0 var(--radius-sm)
+        var(--radius-sm) 0;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq {
+
+    margin-top:
+        20px;
+
+    border-top:
+        1px solid var(--border);
+}
+
+.faq-item {
+
+    padding:
+        18px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.faq-item h3 {
+
+    margin:
+        0 0 7px;
+
+    font-size:
+        1rem;
+}
+
+.faq-item p {
+
+    margin:
+        0;
+
+    font-size:
+        .85rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar-card {
+
+    padding:
+        20px;
+
+    margin-bottom:
+        16px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.sidebar-card h3 {
+
+    margin-bottom:
+        10px;
+}
+
+.sidebar-card a {
+
+    display:
+        block;
+
+    padding:
+        7px 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .81rem;
+}
+
+.sidebar-card a:hover {
+    color:
+        white;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    margin-top:
+        60px;
+
+    padding:
+        50px 0 25px;
+
+    background:
+        #05060a;
+
+    border-top:
+        1px solid var(--border);
+}
+
+.footer-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:
+        30px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .83rem;
+}
+
+.footer a {
+
+    display:
+        block;
+
+    margin:
+        5px 0;
+}
+
+.copyright {
+
+    margin-top:
+        35px;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:
+        #6e7581;
+
+    font-size:
+        .74rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px) {
+
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .type-grid,
+    .generation-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .tool-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:700px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .hero {
+        padding:
+            32px 22px;
+    }
+
+    .section {
+        padding:
+            22px;
+    }
+
+    .type-grid,
+    .generation-grid,
+    .tool-grid,
+    .info-grid,
+    .matchup-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+<div class="container header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="navigation">
+
+<a href="/pokemon/">Pokémon</a>
+
+<a href="/raids/">Raids</a>
+
+<a href="/pvp/">PvP</a>
+
+<a href="/pokemon_type/">Types</a>
+
+<a href="/tools/">Tools</a>
+
+<a href="/guides/">Guides</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumbs">
+
+Home /
+<span>Pokémon Types</span>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<span class="hero-label">
+Pokémon GO Type Database
+</span>
+
+<h1>
+
+Pokémon GO
+<strong>Type Hub</strong>
+
+</h1>
+
+<p class="hero-description">
+
+Explore all 18 Pokémon types in Pokémon GO. Learn how
+each type works, what it is weak against, what it resists,
+which Pokémon belong to each type, and which attackers,
+raid counters and PvP Pokémon are worth knowing.
+
+</p>
+
+<div class="hero-pills">
+
+<span class="hero-pill">
+18 Types
+</span>
+
+<span class="hero-pill">
+Type Effectiveness
+</span>
+
+<span class="hero-pill">
+Weaknesses
+</span>
+
+<span class="hero-pill">
+Resistances
+</span>
+
+<span class="hero-pill">
+Raid Counters
+</span>
+
+<span class="hero-pill">
+PvP
+</span>
+
+<span class="hero-pill">
+Gen 1–9
+</span>
+
+<span class="hero-pill">
+Pokémon Database
+</span>
+
+</div>
+
+</section>
+
+
+<div class="ad-space">
+Advertisement
+</div>
+
+
+<div class="page-layout">
+
+
+<!-- =====================================================
+     CONTENT
+===================================================== -->
+
+<article class="content">
+
+
+<!-- =====================================================
+     1. TYPE HUB INTRO
+===================================================== -->
+
+<section class="section" id="overview">
+
+<h2>
+1. Pokémon GO Type Database
+</h2>
+
+<p>
+
+Types are one of the foundations of Pokémon GO battle
+strategy. Every Pokémon has one or two types, and those
+types influence the attacks it can use, the damage it
+takes and the opponents it can counter effectively.
+
+</p>
+
+<p>
+
+This database brings all 18 Pokémon types together in one
+place. Each type has its own detailed guide covering
+Pokémon available in that type, evolution families,
+statistics, weaknesses, resistances, moves, raid
+performance, special forms, shiny availability and
+individual Pokémon guides.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+18 Pokémon Types
+</h3>
+
+<p>
+Browse every type from Normal and Fire to Fairy and
+Dragon.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Battle Matchups
+</h3>
+
+<p>
+Understand offensive weaknesses and defensive
+resistances.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Pokémon Database
+</h3>
+
+<p>
+Move from a type hub into individual Pokémon guides.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     2. ALL 18 TYPES
+===================================================== -->
+
+<section class="section" id="all-types">
+
+<h2>
+2. All 18 Pokémon GO Types
+</h2>
+
+<p>
+
+Choose a type below to open its dedicated Pokémon GO
+database and strategy guide.
+
+</p>
+
+
+<div class="type-grid">
+
+
+<!-- NORMAL -->
+
+<div class="type-card">
+
+<span class="type-number">01</span>
+
+<div class="type-icon">◉</div>
+
+<h3>Normal</h3>
+
+<p>
+Normal-type Pokémon, weaknesses, resistances, moves and
+battle roles.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/normal.html">
+Explore Normal →
+</a>
+
+</div>
+
+
+<!-- FIRE -->
+
+<div class="type-card">
+
+<span class="type-number">02</span>
+
+<div class="type-icon">🔥</div>
+
+<h3>Fire</h3>
+
+<p>
+Fire Pokémon, raid attackers, moves, weaknesses and
+evolution families.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/fire.html">
+Explore Fire →
+</a>
+
+</div>
+
+
+<!-- WATER -->
+
+<div class="type-card">
+
+<span class="type-number">03</span>
+
+<div class="type-icon">💧</div>
+
+<h3>Water</h3>
+
+<p>
+Water-type Pokémon, raid performance, PvP and type
+matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/water.html">
+Explore Water →
+</a>
+
+</div>
+
+
+<!-- ELECTRIC -->
+
+<div class="type-card">
+
+<span class="type-number">04</span>
+
+<div class="type-icon">⚡</div>
+
+<h3>Electric</h3>
+
+<p>
+Electric Pokémon, counters, moves, raid roles and
+weaknesses.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/electric.html">
+Explore Electric →
+</a>
+
+</div>
+
+
+<!-- GRASS -->
+
+<div class="type-card">
+
+<span class="type-number">05</span>
+
+<div class="type-icon">🌿</div>
+
+<h3>Grass</h3>
+
+<p>
+Grass Pokémon, evolution families, moves and battle
+applications.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/grass.html">
+Explore Grass →
+</a>
+
+</div>
+
+
+<!-- ICE -->
+
+<div class="type-card">
+
+<span class="type-number">06</span>
+
+<div class="type-icon">❄️</div>
+
+<h3>Ice</h3>
+
+<p>
+Ice Pokémon, raid attackers, weaknesses and resistance
+profiles.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/ice.html">
+Explore Ice →
+</a>
+
+</div>
+
+
+<!-- FIGHTING -->
+
+<div class="type-card">
+
+<span class="type-number">07</span>
+
+<div class="type-icon">🥊</div>
+
+<h3>Fighting</h3>
+
+<p>
+Fighting Pokémon, raid attackers, PvP roles and
+matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/fighting.html">
+Explore Fighting →
+</a>
+
+</div>
+
+
+<!-- POISON -->
+
+<div class="type-card">
+
+<span class="type-number">08</span>
+
+<div class="type-icon">☠️</div>
+
+<h3>Poison</h3>
+
+<p>
+Poison Pokémon, typing, moves, counters and evolution
+families.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/poison.html">
+Explore Poison →
+</a>
+
+</div>
+
+
+<!-- GROUND -->
+
+<div class="type-card">
+
+<span class="type-number">09</span>
+
+<div class="type-icon">🌎</div>
+
+<h3>Ground</h3>
+
+<p>
+Ground Pokémon, raid performance, weaknesses and
+resistances.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/ground.html">
+Explore Ground →
+</a>
+
+</div>
+
+
+<!-- FLYING -->
+
+<div class="type-card">
+
+<span class="type-number">10</span>
+
+<div class="type-icon">🪽</div>
+
+<h3>Flying</h3>
+
+<p>
+Flying Pokémon, raid attackers, PvP options and
+matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/flying.html">
+Explore Flying →
+</a>
+
+</div>
+
+
+<!-- PSYCHIC -->
+
+<div class="type-card">
+
+<span class="type-number">11</span>
+
+<div class="type-icon">🔮</div>
+
+<h3>Psychic</h3>
+
+<p>
+Psychic Pokémon, moves, raid attackers and type
+effectiveness.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/psychic.html">
+Explore Psychic →
+</a>
+
+</div>
+
+
+<!-- BUG -->
+
+<div class="type-card">
+
+<span class="type-number">12</span>
+
+<div class="type-icon">🐛</div>
+
+<h3>Bug</h3>
+
+<p>
+Bug Pokémon, raid roles, evolution families and
+matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/bug.html">
+Explore Bug →
+</a>
+
+</div>
+
+
+<!-- ROCK -->
+
+<div class="type-card">
+
+<span class="type-number">13</span>
+
+<div class="type-icon">🪨</div>
+
+<h3>Rock</h3>
+
+<p>
+Rock Pokémon, raid attackers, counters and defensive
+matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/rock.html">
+Explore Rock →
+</a>
+
+</div>
+
+
+<!-- GHOST -->
+
+<div class="type-card">
+
+<span class="type-number">14</span>
+
+<div class="type-icon">👻</div>
+
+<h3>Ghost</h3>
+
+<p>
+Ghost Pokémon, special forms, moves, raids, PvP and
+shiny information.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/ghost.html">
+Explore Ghost →
+</a>
+
+</div>
+
+
+<!-- DRAGON -->
+
+<div class="type-card">
+
+<span class="type-number">15</span>
+
+<div class="type-icon">🐉</div>
+
+<h3>Dragon</h3>
+
+<p>
+Dragon Pokémon, legendary attackers, raids, PvP and
+evolution families.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/dragon.html">
+Explore Dragon →
+</a>
+
+</div>
+
+
+<!-- DARK -->
+
+<div class="type-card">
+
+<span class="type-number">16</span>
+
+<div class="type-icon">🌑</div>
+
+<h3>Dark</h3>
+
+<p>
+Dark Pokémon, raid attackers, Shadow Pokémon and
+matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/dark.html">
+Explore Dark →
+</a>
+
+</div>
+
+
+<!-- STEEL -->
+
+<div class="type-card">
+
+<span class="type-number">17</span>
+
+<div class="type-icon">⚙️</div>
+
+<h3>Steel</h3>
+
+<p>
+Steel Pokémon, resistances, raid performance and
+evolution lines.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/steel.html">
+Explore Steel →
+</a>
+
+</div>
+
+
+<!-- FAIRY -->
+
+<div class="type-card">
+
+<span class="type-number">18</span>
+
+<div class="type-icon">✨</div>
+
+<h3>Fairy</h3>
+
+<p>
+Fairy Pokémon, Dragon counters, PvP, raids and
+type matchups.
+</p>
+
+<a class="type-link"
+href="/pokemon_type/fairy.html">
+Explore Fairy →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     3. TYPE EFFECTIVENESS
+===================================================== -->
+
+<section class="section" id="effectiveness">
+
+<h2>
+3. Pokémon GO Type Effectiveness
+</h2>
+
+<p>
+
+Type effectiveness determines how much damage an attack
+does against a Pokémon based on its typing.
+
+</p>
+
+<p>
+
+For dual-type Pokémon, both types matter. This is why
+looking only at one type can sometimes produce the wrong
+counter recommendation.
+
+</p>
+
+<div class="matchup-grid">
+
+<div class="matchup weak">
+
+<h3>
+Super-Effective Damage
+</h3>
+
+<p>
+
+When an attacking type is strong against the defender's
+type, the attack deals increased damage.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">Weakness</span>
+
+<span class="tag">Counter</span>
+
+<span class="tag">Raid Strategy</span>
+
+</div>
+
+</div>
+
+
+<div class="matchup resist">
+
+<h3>
+Resisted Damage
+</h3>
+
+<p>
+
+Some attacking types deal reduced damage because of the
+defender's typing.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">Resistance</span>
+
+<span class="tag">Defense</span>
+
+<span class="tag">Matchup</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="callout">
+
+Use the individual type pages for detailed weaknesses,
+resistances and Pokémon-specific matchup analysis.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     4. ATTACKING TYPES
+===================================================== -->
+
+<section class="section" id="offense">
+
+<h2>
+4. Offensive Type Strategy
+</h2>
+
+<p>
+
+Choosing an attacking type is especially important in
+raids. The goal is generally to use attacks that exploit
+the raid boss's weaknesses while considering the boss's
+moveset and your team's survivability.
+
+</p>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+
+<strong>
+Raid Counters
+</strong>
+
+<p>
+Find Pokémon that exploit a boss's weaknesses.
+</p>
+
+</div>
+
+<div class="tool-card">
+
+<strong>
+STAB
+</strong>
+
+<p>
+Same-Type Attack Bonus can improve the value of matching
+moves.
+</p>
+
+</div>
+
+<div class="tool-card">
+
+<strong>
+Movesets
+</strong>
+
+<p>
+The best Pokémon can depend heavily on its available moves.
+</p>
+
+</div>
+
+<div class="tool-card">
+
+<strong>
+Mega Boost
+</strong>
+
+<p>
+Applicable Mega Pokémon can provide team-wide type
+benefits.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     5. DEFENSIVE TYPES
+===================================================== -->
+
+<section class="section" id="defense">
+
+<h2>
+5. Defensive Type Strategy
+</h2>
+
+<p>
+
+Defensive typing matters when choosing Pokémon that can
+survive longer against a raid boss or perform well in a
+specific PvP matchup.
+
+</p>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Consideration</th>
+
+<th>Why It Matters</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Resistance</td>
+
+<td>
+Reduces the effectiveness of certain incoming attacks.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Weakness</td>
+
+<td>
+Can make a Pokémon much easier to defeat.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Dual Typing</td>
+
+<td>
+Can create additional weaknesses and resistances.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Moveset</td>
+
+<td>
+The raid boss's actual moveset can change the matchup.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<!-- =====================================================
+     6. TYPE DATABASE BY GENERATION
+===================================================== -->
+
+<section class="section" id="generations">
+
+<h2>
+6. Type Database by Pokémon Generation
+</h2>
+
+<p>
+
+The type database connects the 18 type hubs with the
+generation database, allowing users to explore Pokémon
+from Gen 1 through Gen 9.
+
+</p>
+
+<div class="generation-grid">
+
+<div class="generation-card">
+
+<span>Generation 1</span>
+
+<h3>Kanto</h3>
+
+<p>
+Explore Kanto Pokémon and their types.
+</p>
+
+<a href="/pokemon-generations/gen-1.html">
+Explore Gen 1 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 2</span>
+
+<h3>Johto</h3>
+
+<p>
+Explore Johto Pokémon and their type combinations.
+</p>
+
+<a href="/pokemon-generations/gen-2.html">
+Explore Gen 2 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 3</span>
+
+<h3>Hoenn</h3>
+
+<p>
+Explore Hoenn Pokémon and their battle types.
+</p>
+
+<a href="/pokemon-generations/gen-3.html">
+Explore Gen 3 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 4</span>
+
+<h3>Sinnoh</h3>
+
+<p>
+Explore Sinnoh Pokémon and their type combinations.
+</p>
+
+<a href="/pokemon-generations/gen-4.html">
+Explore Gen 4 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 5</span>
+
+<h3>Unova</h3>
+
+<p>
+Explore Unova Pokémon and their types.
+</p>
+
+<a href="/pokemon-generations/gen-5.html">
+Explore Gen 5 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 6</span>
+
+<h3>Kalos</h3>
+
+<p>
+Explore Kalos Pokémon and their type combinations.
+</p>
+
+<a href="/pokemon-generations/gen-6.html">
+Explore Gen 6 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 7</span>
+
+<h3>Alola</h3>
+
+<p>
+Explore Alola Pokémon and regional forms.
+</p>
+
+<a href="/pokemon-generations/gen-7.html">
+Explore Gen 7 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 8</span>
+
+<h3>Galar / Hisui</h3>
+
+<p>
+Explore Galar and relevant regional forms.
+</p>
+
+<a href="/pokemon-generations/gen-8.html">
+Explore Gen 8 →
+</a>
+
+</div>
+
+
+<div class="generation-card">
+
+<span>Generation 9</span>
+
+<h3>Paldea</h3>
+
+<p>
+Explore Paldea Pokémon and their type combinations.
+</p>
+
+<a href="/pokemon-generations/gen-9.html">
+Explore Gen 9 →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     7. RAID TYPES
+===================================================== -->
+
+<section class="section" id="raid">
+
+<h2>
+7. Pokémon GO Raid Type Strategy
+</h2>
+
+<p>
+
+Every raid boss has one or two types. Identifying those
+types is the first step toward building an effective
+counter party.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Identify the Boss Type</h3>
+
+<p>
+Check both primary and secondary typing before choosing
+counters.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Find Weaknesses</h3>
+
+<p>
+Look for attacking types that deal super-effective damage.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Check Moves</h3>
+
+<p>
+The boss's moveset can change which counters perform best.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     8. PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<h2>
+8. Pokémon GO Type Strategy for PvP
+</h2>
+
+<p>
+
+PvP is different from raids. Shield usage, energy generation,
+charged attacks, bulk, typing and matchup coverage can all
+change the value of a Pokémon.
+
+</p>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>League</th>
+
+<th>Important Considerations</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Great League</td>
+
+<td>
+Low CP limit, bulk, typing and efficient charged moves.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Ultra League</td>
+
+<td>
+Different stat distributions and matchup requirements.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Master League</td>
+
+<td>
+High-level investment and strong meta matchups.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<!-- =====================================================
+     9. SPECIAL FORMS
+===================================================== -->
+
+<section class="section" id="special-forms">
+
+<h2>
+9. Special Pokémon Forms by Type
+</h2>
+
+<p>
+
+Type pages should also connect users to special Pokémon
+forms where relevant.
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>
+Mega Evolution</h3>
+
+<p>
+Identify applicable Mega Pokémon and their battle utility.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Primal Reversion</h3>
+
+<p>
+Connect relevant Primal Pokémon to their type guides.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Shadow Pokémon</h3>
+
+<p>
+Compare Shadow and regular forms where appropriate.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Dynamax</h3>
+
+<p>
+Document type-specific Max Battle Pokémon.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Gigantamax</h3>
+
+<p>
+Create dedicated guides for applicable Gigantamax forms.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>
+Shiny Pokémon</h3>
+
+<p>
+Connect users to shiny availability and collection guides.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     10. TYPE GUIDE STRUCTURE
+===================================================== -->
+
+<section class="section" id="type-guide">
+
+<h2>
+10. What You'll Find on Each Type Page
+</h2>
+
+<p>
+
+Each individual type hub should provide more than a list
+of Pokémon. The page should explain the type and help
+players make practical decisions.
+
+</p>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Section</th>
+
+<th>Purpose</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Type Hub</td>
+<td>Introduction and battle identity.</td>
+</tr>
+
+<tr>
+<td>Gen 1–9</td>
+<td>Organize Pokémon by generation.</td>
+</tr>
+
+<tr>
+<td>Evolution Family</td>
+<td>Explain evolution lines and requirements.</td>
+</tr>
+
+<tr>
+<td>Type</td>
+<td>Explain primary and secondary typing.</td>
+</tr>
+
+<tr>
+<td>Max CP</td>
+<td>Show maximum CP for relevant Pokémon.</td>
+</tr>
+
+<tr>
+<td>Attack / Defense / HP</td>
+<td>Explain individual Pokémon statistics.</td>
+</tr>
+
+<tr>
+<td>Weaknesses</td>
+<td>Identify effective counters.</td>
+</tr>
+
+<tr>
+<td>Resistances</td>
+<td>Explain defensive matchups.</td>
+</tr>
+
+<tr>
+<td>Best Moves</td>
+<td>Discuss useful movesets.</td>
+</tr>
+
+<tr>
+<td>Raid Tier</td>
+<td>Evaluate PvE usefulness.</td>
+</tr>
+
+<tr>
+<td>Mega / Primal</td>
+<td>Cover applicable special forms.</td>
+</tr>
+
+<tr>
+<td>Shadow</td>
+<td>Compare Shadow variants.</td>
+</tr>
+
+<tr>
+<td>Dynamax / Gigantamax</td>
+<td>Cover Max Battle forms.</td>
+</tr>
+
+<tr>
+<td>Shiny</td>
+<td>Explain shiny availability.</td>
+</tr>
+
+<tr>
+<td>Availability</td>
+<td>Explain how players can obtain Pokémon.</td>
+</tr>
+
+<tr>
+<td>Individual Guides</td>
+<td>Link to deep Pokémon-specific pages.</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<!-- =====================================================
+     11. TOOLS
+===================================================== -->
+
+<section class="section" id="tools">
+
+<h2>
+11. Pokémon GO Type Tools
+</h2>
+
+<p>
+
+The type hub can also serve as the entry point for
+interactive tools.
+
+</p>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+
+<strong>
+Type Effectiveness Calculator
+</strong>
+
+<p>
+Choose an attacker and defender to see the matchup.
+</p>
+
+</div>
+
+
+<div class="tool-card">
+
+<strong>
+Raid Counter Finder
+</strong>
+
+<p>
+Find Pokémon that exploit a raid boss's weaknesses.
+</p>
+
+</div>
+
+
+<div class="tool-card">
+
+<strong>
+CP Calculator
+</strong>
+
+<p>
+Calculate CP and compare Pokémon investments.
+</p>
+
+</div>
+
+
+<div class="tool-card">
+
+<strong>
+IV Calculator
+</strong>
+
+<p>
+Analyze Attack, Defense and HP IV combinations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     12. FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<h2>
+12. Pokémon GO Types FAQ
+</h2>
+
+<div class="faq">
+
+
+<div class="faq-item">
+
+<h3>
+How many Pokémon types are there in Pokémon GO?
+</h3>
+
+<p>
+
+Pokémon GO uses 18 Pokémon types. Individual Pokémon can
+have one or two types.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+What is the best Pokémon type?
+</h3>
+
+<p>
+
+There is no single best type for every situation.
+Different types have different offensive and defensive
+matchups, and their usefulness depends on raids, PvP and
+the specific opponent.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Why do some Pokémon have two types?
+</h3>
+
+<p>
+
+Dual-type Pokémon combine two type profiles. This can
+provide additional offensive opportunities and defensive
+resistances, but can also introduce additional weaknesses.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Are type matchups the same for raids and PvP?
+</h3>
+
+<p>
+
+The underlying type relationships are important in both
+formats, but raids and PvP use different battle systems,
+so a Pokémon's overall performance can differ significantly.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Which type is best for raids?
+</h3>
+
+<p>
+
+It depends on the raid boss. The best attacking type is
+normally the one that exploits the boss's weaknesses while
+providing strong practical damage.
+
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Should I choose Pokémon only by type?
+</h3>
+
+<p>
+
+No. Type is only one part of Pokémon GO battle performance.
+Moves, stats, forms, availability and the battle format
+also matter.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     13. EDITORIAL
+===================================================== -->
+
+<section class="section" id="editorial">
+
+<h2>
+13. About This Pokémon Type Database
+</h2>
+
+<p>
+
+Pokémon GO is regularly updated. Pokémon availability,
+moves, raid rotations, special forms and battle mechanics
+can change over time.
+
+</p>
+
+<p>
+
+For that reason, type pages should be maintained as living
+database resources rather than published once and left
+unchanged.
+
+</p>
+
+<div class="callout">
+
+<strong>Important:</strong>
+
+Numerical statistics, current availability, raid rotations,
+moves and special-form information should be verified
+before publication and updated when game changes occur.
+
+</div>
+
+</section>
+
+
+</article>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="sidebar-card">
+
+<h3>
+Type Database
+</h3>
+
+<a href="#overview">
+Overview
+</a>
+
+<a href="#all-types">
+All 18 Types
+</a>
+
+<a href="#effectiveness">
+Effectiveness
+</a>
+
+<a href="#offense">
+Offensive Strategy
+</a>
+
+<a href="#defense">
+Defensive Strategy
+</a>
+
+<a href="#generations">
+Gen 1–9
+</a>
+
+<a href="#raid">
+Raid Strategy
+</a>
+
+<a href="#pvp">
+PvP Strategy
+</a>
+
+<a href="#special-forms">
+Special Forms
+</a>
+
+<a href="#type-guide">
+Type Page Structure
+</a>
+
+<a href="#tools">
+Type Tools
+</a>
+
+<a href="#faq">
+FAQ
+</a>
+
+</div>
+
+
+<div class="ad-space">
+Advertisement
+</div>
+
+
+<div class="sidebar-card">
+
+<h3>
+Explore Pokémon GO
+</h3>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/events/">
+Events
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+PokémonGaming
+</h3>
+
+<p>
+
+Independent Pokémon GO database, raid guides,
+PvP resources and player tools.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Pokémon</h3>
+
+<a href="/pokemon/">
+Pokémon Database
+</a>
+
+<a href="/pokemon_type/">
+Type Database
+</a>
+
+<a href="/pokemon-generations/">
+Generations
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Guides
+</h3>
+
+<a href="/raids/">
+Raid Guides
+</a>
+
+<a href="/pvp/">
+PvP Guides
+</a>
+
+<a href="/events/">
+Events
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Website
+</h3>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/contact.html">
+Contact
+</a>
+
+<a href="/privacy-policy.html">
+Privacy Policy
+</a>
+
+<a href="/terms.html">
+Terms
+</a>
+
+<a href="/disclaimer.html">
+Disclaimer
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 PokémonGaming.
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This website is an independent fan resource and is
+not affiliated with or endorsed by The Pokémon Company,
+Nintendo or Niantic.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+
+    "@type": "WebPage",
+
+    "name":
+    "Pokémon GO Type Database",
+
+    "description":
+    "Complete Pokémon GO type database covering all 18 Pokémon types, type effectiveness, weaknesses, resistances, raids, PvP and individual type guides.",
+
+    "url":
+    "https://pokemongaming.in/pokemon_type/",
+
+    "isPartOf": {
+        "@type": "WebSite",
+        "name": "PokémonGaming",
+        "url": "https://pokemongaming.in/"
+    }
+}
+
+</script>
+
+
+</body>
+</html>
