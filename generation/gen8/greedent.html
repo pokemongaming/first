@@ -1,0 +1,2744 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+   content="width=device-width, initial-scale=1.0">
+
+<title>Greedent Pokémon GO Guide — Stats, Moves, IVs, Shiny, Shadow, Purified & PvP</title>
+
+<meta name="description"
+   content="Complete Greedent Pokémon GO guide covering regular Greedent, Shiny Greedent, Shadow Greedent, Purified Greedent, Lucky Greedent, 100% IV Greedent, XXL and XXS forms, stats, moves, weaknesses, PvP and more.">
+
+<meta name="robots"
+   content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/greedent.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --bg: #080b12;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #d4a04d;
+    --accent-2: #9c6b2f;
+
+    --normal: #b6a38a;
+    --shadow: #9a7cff;
+    --purified: #6fcfff;
+    --lucky: #ffd45e;
+    --shiny: #ffe36d;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(212,160,77,.13),
+            transparent 32%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(212,160,77,.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #15120d,
+            #0c111b
+        );
+
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.3rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+
+    min-height: 280px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-placeholder {
+
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,160,77,.25),
+            transparent 68%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        24px 0 10px;
+
+    font-size:
+        1.08rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size:
+        1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(182,163,138,.35);
+
+    background:
+        rgba(182,163,138,.08);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(182,163,138,.15);
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+
+    display: block;
+}
+
+.weakness {
+
+    border-color:
+        rgba(255,111,125,.28);
+}
+
+.resistance {
+
+    border-color:
+        rgba(98,216,154,.28);
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(212,160,77,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(212,160,77,.3);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+
+/* =====================================================
+   FORM CARDS
+===================================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 16px;
+}
+
+.form-card {
+
+    padding: 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.form-card h3 {
+
+    margin: 0 0 8px;
+}
+
+.shadow-form {
+
+    border-color:
+        rgba(154,124,255,.45);
+}
+
+.purified-form {
+
+    border-color:
+        rgba(111,207,255,.45);
+}
+
+.lucky-form {
+
+    border-color:
+        rgba(255,212,94,.45);
+}
+
+.shiny-form {
+
+    border-color:
+        rgba(255,227,109,.45);
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding: 12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats,
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">Types</a> <a href="/pokedex.html">Pokédex</a> <a href="/raids/">Raids</a> <a href="/guides/">Guides</a> <a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/normal.html">
+Normal Type
+</a>
+
+<span>›</span>
+
+<strong>
+Greedent
+</strong>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<h1>
+Greedent
+</h1>
+
+<p class="hero-subtitle">
+
+Greedent is a Normal-type Pokémon from the Galar
+region. It evolves from Skwovet and is known in
+Pokémon GO primarily for its bulky stat profile and
+its potential usefulness in selected PvP formats.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag normal-tag">
+Normal
+</span>
+
+<span class="tag">
+#820
+</span>
+
+<span class="tag">
+Gen 8
+</span>
+
+<span class="tag">
+Galar
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+<span class="tag">
+Evolves from Skwovet
+</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<!-- Replace with your properly licensed Greedent asset -->
+
+<div class="pokemon-placeholder">
+🐿️
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+160
+</strong>
+
+<span>
+ATTACK
+</span>
+
+</div>
+
+<div class="quick-stat">
+
+<strong>
+156
+</strong>
+
+<span>
+DEFENSE
+</span>
+
+</div>
+
+<div class="quick-stat">
+
+<strong>
+260
+</strong>
+
+<span>
+HP
+</span>
+
+</div>
+
+<div class="quick-stat">
+
+<strong>
+~2,500+
+</strong>
+
+<span>
+MAX CP
+</span>
+
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+Greedent Overview
+</h2>
+
+<p>
+
+Greedent is the evolved form of Skwovet and belongs to
+Generation 8's Galar region. Its Normal typing gives it
+a simple weakness profile, while its high HP makes it
+more durable than many players initially expect.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+POKÉDEX
+</span>
+
+<strong>
+#820
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+GENERATION
+</span>
+
+<strong>
+Gen 8
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+REGION
+</span>
+
+<strong>
+Galar
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+TYPE
+</span>
+
+<strong>
+Normal
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>
+Greedent Type
+</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">
+⚪
+</div>
+
+<div>
+
+<strong>
+Normal
+</strong>
+
+<p>
+Greedent's only Pokémon type.
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Why Normal Typing Matters
+</h3>
+
+<p>
+
+Normal-type Pokémon have relatively few weaknesses.
+Greedent is weak to Fighting-type attacks and is immune
+to Ghost-type attacks in the standard Pokémon type
+chart.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>
+Greedent Weaknesses & Resistances
+</h2>
+
+</div>
+
+<h3>
+Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🥊
+</div>
+
+<strong>
+Fighting
+</strong>
+
+<p>
+
+Fighting-type attacks are super effective against
+Greedent.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Special Type Interaction
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+👻
+</div>
+
+<strong>
+Ghost
+</strong>
+
+<p>
+
+Normal-type Pokémon do not take damage from Ghost-type
+attacks under standard type effectiveness rules.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<h2>
+Greedent Stats
+</h2>
+
+<p>
+
+Greedent's battle identity is built more around
+durability than raw offensive power. Its HP stat gives
+it a bulky profile that can be useful in appropriate
+PvP situations.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+ATTACK
+</span>
+
+<strong>
+160
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+DEFENSE
+</span>
+
+<strong>
+156
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+HP
+</span>
+
+<strong>
+260
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+ROLE
+</span>
+
+<strong>
+Bulky
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<h2>
+Greedent Best Moves
+</h2>
+
+<p>
+
+Greedent's best moveset depends heavily on whether you
+intend to use it for PvP or general collection purposes.
+
+</p>
+
+</div>
+
+<div class="best-move">
+
+<strong>
+PvP Focus
+</strong>
+
+<p>
+
+Check the current Pokémon GO move pool and league
+metagame before investing heavily in a Greedent build.
+
+</p>
+
+</div>
+
+<div class="editorial-note">
+
+<strong>
+Move availability note:</strong>
+
+<p>
+
+Pokémon GO move availability can change through events,
+balance updates and Elite TM access. Keep the moveset
+section updated using current game data.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<h2>
+Greedent PvP Guide
+</h2>
+
+<p>
+
+Greedent's large HP pool makes it more interesting in
+PvP than its moderate Attack stat might initially
+suggest.
+
+</p>
+
+</div>
+
+<h3>
+Great League
+</h3>
+
+<p>
+
+Greedent can be considered for Great League teams
+depending on its available moves and the current
+metagame. Its Normal typing and bulk create different
+matchups compared with more conventional Pokémon.
+
+</p>
+
+<h3>
+Ultra League
+</h3>
+
+<p>
+
+Ultra League Greedent requires a larger investment and
+should be evaluated based on current league performance
+and your available alternatives.
+
+</p>
+
+<h3>
+Master League
+</h3>
+
+<p>
+
+Greedent is generally not defined by the extremely high
+CP profile commonly expected from top Master League
+Pokémon.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     REGULAR GREEDENT
+===================================================== -->
+
+<section class="section" id="regular">
+
+<div class="section-heading">
+
+<h2>
+Regular Greedent
+</h2>
+
+<p>
+
+Regular Greedent is the standard form obtained by
+evolving Skwovet.
+
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="form-card">
+
+<h3>
+🐿️ Standard Form
+</h3>
+
+<p>
+
+The normal version of Greedent used as the foundation
+for PvP, collection and other builds.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<h2>
+✨ Shiny Greedent
+</h2>
+
+<p>
+
+Shiny Greedent has alternate coloration compared with
+the standard form and is primarily valuable as a
+collector variant.
+
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="form-card shiny-form">
+
+<h3>
+✨ Shiny Greedent
+</h3>
+
+<p>
+
+A Shiny Greedent has the same species identity and
+battle mechanics as regular Greedent. The main
+difference is its appearance.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Shiny Greedent Uses
+</h3>
+
+<ul class="checklist">
+
+<li>
+Useful for Pokémon collections.
+</li>
+
+<li>
+Can still be powered up and used in PvP.
+</li>
+
+<li>
+Strong IVs may make it a good long-term project.
+</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<h2>
+🌑 Shadow Greedent
+</h2>
+
+<p>
+
+Shadow Greedent is the Shadow version of Greedent and
+should be evaluated separately because Shadow Pokémon
+have a different offensive and defensive battle profile.
+
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="form-card shadow-form">
+
+<h3>
+🌑 Shadow Form
+</h3>
+
+<p>
+
+Shadow Pokémon generally gain increased offensive
+pressure while becoming less durable.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Shadow Greedent vs Regular Greedent
+</h3>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Regular
+</th>
+
+<th>
+Shadow
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Typing
+</td>
+
+<td>
+Normal
+</td>
+
+<td>
+Normal
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Offensive Profile
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Shadow Modified
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Durability
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Reduced
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Resource Cost
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Higher
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<h3>
+Should You Power Up Shadow Greedent?
+</h3>
+
+<ul class="checklist">
+
+<li>
+Check its IVs before investing resources.
+</li>
+
+<li>
+Compare it with your existing Greedent.
+</li>
+
+<li>
+Consider increased Shadow resource costs.
+</li>
+
+<li>
+Check current PvP performance.
+</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<h2>
+💎 Purified Greedent
+</h2>
+
+<p>
+
+Purified Greedent is created by purifying an eligible
+Shadow Greedent.
+
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="form-card purified-form">
+
+<h3>
+💎 Purified Form
+</h3>
+
+<p>
+
+Purification removes the Shadow status and changes the
+Pokémon back to a standard battle profile.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Purified Greedent Considerations
+</h3>
+
+<ul class="checklist">
+
+<li>
+Purification changes the Shadow battle profile.
+</li>
+
+<li>
+IV changes should be considered before purifying.
+</li>
+
+<li>
+Compare Shadow and Purified performance first.
+</li>
+
+<li>
+Do not purify only because the Pokémon appears rare.
+</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<h2>
+🍀 Lucky Greedent
+</h2>
+
+<p>
+
+Lucky Greedent is obtained when an eligible Pokémon
+trade results in a Lucky Pokémon.
+
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="form-card lucky-form">
+
+<h3>
+🍀 Lucky Pokémon
+</h3>
+
+<p>
+
+Lucky Pokémon are especially attractive for players
+planning long-term power-up investments because of
+their Stardust benefits.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Is Lucky Greedent Worth Keeping?
+</h3>
+
+<p>
+
+A Lucky Greedent can be an excellent collector item or
+investment candidate, particularly when it also has
+useful IVs for your intended PvP league.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     100 IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+<div class="section-heading">
+
+<h2>
+💯 100% IV Greedent
+</h2>
+
+<p>
+
+A 100% IV Greedent has 15 Attack, 15 Defense and 15 HP
+Individual Values.
+
+</p>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>
+15
+</strong>
+
+<p>
+Attack IV
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+15
+</strong>
+
+<p>
+Defense IV
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+15
+</strong>
+
+<p>
+HP IV
+</p>
+
+</div>
+
+</div>
+
+<div class="best-move">
+
+<strong>
+Perfect IV Combination
+</strong>
+
+<p>
+15 / 15 / 15
+</p>
+
+</div>
+
+<p>
+
+A 100% IV Greedent is an excellent collector specimen,
+although the best PvP IV spread can differ depending on
+the league and CP cap.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<h2>
+📏 XXL Greedent
+</h2>
+
+<p>
+
+XXL Greedent represents a larger size variant of the
+species.
+
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>
+📏 XXL Size
+</h3>
+
+<p>
+
+XXL size primarily affects collection and showcase
+value rather than changing Greedent's fundamental
+species stats.
+
+</p>
+
+</div>
+
+<ul class="checklist">
+
+<li>
+Useful for Pokémon showcases when eligible.
+</li>
+
+<li>
+Popular among size collectors.
+</li>
+
+<li>
+Battle mechanics remain based on the Pokémon's normal species data.
+</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<h2>
+🔍 XXS Greedent
+</h2>
+
+<p>
+
+XXS Greedent is a smaller size variant and can be
+valuable for collectors who want different size
+versions of the same Pokémon.
+
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>
+🔍 XXS Size
+</h3>
+
+<p>
+
+The XXS designation primarily represents a size
+classification and does not create a separate combat
+species.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<h2>
+Greedent Evolution
+</h2>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+FIRST STAGE
+</span>
+
+<strong>
+Skwovet
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+EVOLUTION
+</span>
+
+<strong>
+Candy Required
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+FINAL STAGE
+</span>
+
+<strong>
+Greedent
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+TYPE
+</span>
+
+<strong>
+Normal
+</strong>
+
+</div>
+
+</div>
+
+<h3>
+Evolution Line
+</h3>
+
+<div class="best-move">
+
+<strong>
+Skwovet → Greedent
+</strong>
+
+<p>
+
+Greedent is the final known evolution stage of this
+evolution family.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<h2>
+Greedent Availability
+</h2>
+
+<p>
+
+Greedent availability depends on Skwovet encounters,
+events, spawns and other Pokémon GO activities.
+
+</p>
+
+</div>
+
+<div class="best-move">
+
+<strong>
+Availability Status
+</strong>
+
+<p>
+
+Check the current Pokémon GO event and spawn schedule
+before planning a specific Greedent hunt.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+<div class="section-heading">
+
+<h2>
+Should You Invest in Greedent?
+</h2>
+
+</div>
+
+<ul class="checklist">
+
+<li>
+Keep strong PvP IV combinations for relevant leagues.
+</li>
+
+<li>
+Keep a 100% IV specimen for collection.
+</li>
+
+<li>
+Consider Lucky Greedent for Stardust-efficient investment.
+</li>
+
+<li>
+Keep rare XXL and XXS variants.
+</li>
+
+<li>
+Compare Shadow and Purified versions before investing.
+</li>
+
+<li>
+Check the current PvP meta before spending major resources.
+</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>
+Greedent FAQ
+</h2>
+
+</div>
+
+<details>
+
+<summary>
+What type is Greedent?
+</summary>
+
+<p>
+
+Greedent is a Normal-type Pokémon.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is Greedent weak to?
+</summary>
+
+<p>
+
+Greedent is weak to Fighting-type attacks.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does Greedent evolve?
+</summary>
+
+<p>
+
+Greedent is the evolved form of Skwovet.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Is Shiny Greedent available?
+</summary>
+
+<p>
+
+Shiny availability depends on eligible Pokémon GO
+encounters and current game availability.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is a 100% IV Greedent?
+</summary>
+
+<p>
+
+A perfect Greedent has 15 Attack, 15 Defense and 15 HP
+IVs.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can Greedent be Lucky?
+</summary>
+
+<p>
+
+Yes. An eligible trade can result in a Lucky Greedent.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can Greedent be XXL?
+</summary>
+
+<p>
+
+Yes. Greedent can have size classifications including
+XXL variants when available in Pokémon GO.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does XXL Greedent have stronger stats?
+</summary>
+
+<p>
+
+No. Size classifications do not create a fundamentally
+different battle species.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Is Shadow Greedent better than regular Greedent?
+</summary>
+
+<p>
+
+That depends on the battle format and current moves.
+Shadow Pokémon trade increased offensive pressure for
+reduced durability and higher investment costs.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Should I purify Shadow Greedent?
+</summary>
+
+<p>
+
+Do not purify automatically. Compare the Shadow and
+Purified versions based on your collection and battle
+goals first.
+
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Is Greedent good in PvP?
+</summary>
+
+<p>
+
+Greedent can be useful in selected PvP situations due
+to its bulk, but its effectiveness depends on moves,
+league rules and the current metagame.
+
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon availability, moves, events and game
+mechanics can change over time.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their
+respective owners. This website is an independent
+informational resource.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>
+Greedent Guide
+</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+Stats
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Best Moves
+</a>
+</li>
+
+<li>
+<a href="#pvp">
+PvP Guide
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Greedent
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Greedent
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Greedent
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Greedent
+</a>
+</li>
+
+<li>
+<a href="#perfect">
+100% IV
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+XXL
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+XXS
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>
+Greedent Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Normal
+</p>
+
+<p>
+<strong>Generation:</strong>
+8
+</p>
+
+<p>
+<strong>Region:</strong>
+Galar
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#820
+</p>
+
+<p>
+<strong>Evolves From:</strong>
+Skwovet
+</p>
+
+</div>
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+<p>
+<a href="/pokemon/skwovet.html">
+Skwovet Guide →
+</a>
+</p>
+
+<p>
+<a href="/pokemon-types/normal.html">
+Normal Type Hub →
+</a>
+</p>
+
+<p>
+<a href="/pokemon-generations/gen-8.html">
+Generation 8 Pokémon →
+</a>
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>

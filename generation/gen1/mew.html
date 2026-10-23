@@ -1,0 +1,4740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Mew Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses, Shiny & PvP
+    </title>
+
+    <meta name="description"
+          content="Complete Mew Pokémon GO guide covering Mew stats, max CP, Psychic typing, weaknesses, resistances, best moves, PvP, IVs, Shiny Mew, availability, evolution, Candy, Stardust and more.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/mew.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #d79cff;
+            --accent-2: #a95cff;
+
+            --psychic: #d96bff;
+            --ghost: #8b79d9;
+            --dark: #81715e;
+            --bug: #82bd45;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(217,107,255,.12),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 30%,
+                    rgba(169,92,255,.06),
+                    transparent 28%
+                ),
+
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.93);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(217,107,255,.18),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 15% 100%,
+                    rgba(169,92,255,.08),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #151326,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.28);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border:
+                1px solid rgba(217,107,255,.35);
+
+            border-radius: 999px;
+
+            color: var(--psychic);
+
+            background:
+                rgba(217,107,255,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding: 7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .psychic-tag {
+            color: var(--psychic);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(217,107,255,.22),
+                    rgba(169,92,255,.08),
+                    transparent 68%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+        .hero-pokemon img {
+
+            width:
+                min(100%,320px);
+
+            filter:
+                drop-shadow(
+                    0 25px 30px rgba(0,0,0,.45)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           CONTENT LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--accent);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(217,107,255,.3);
+
+            background:
+                rgba(217,107,255,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(217,107,255,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--psychic);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card small {
+
+            color: var(--muted);
+
+            font-size: .7rem;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+
+            color: var(--psychic);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(217,107,255,.1),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(217,107,255,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.35rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           COMPARISON TABLE
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+
+            text-align: left;
+        }
+
+
+        /* =====================================================
+           RESEARCH / AVAILABILITY
+        ===================================================== */
+
+        .availability-card {
+
+            padding: 24px;
+
+            border-radius: 18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(217,107,255,.12),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(217,107,255,.25);
+        }
+
+        .availability-card strong {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            font-size: 1.1rem;
+        }
+
+
+        /* =====================================================
+           MYSTICAL CARD
+        ===================================================== */
+
+        .mew-character-card {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 30px;
+
+            padding: 30px;
+
+            border-radius: 24px;
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #261434,
+                    #5b2c73,
+                    #a85fc4
+                );
+
+            box-shadow:
+                0 18px 50px rgba(0,0,0,.22);
+        }
+
+        .character-main {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        .character-number {
+
+            font-size: 18px;
+
+            font-weight: 900;
+
+            opacity: .65;
+        }
+
+        .character-label {
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            font-weight: 900;
+
+            opacity: .75;
+        }
+
+        .character-main h3 {
+
+            margin: 5px 0;
+
+            font-size: 38px;
+        }
+
+        .character-main p {
+
+            margin: 0 0 12px;
+
+            color: white;
+
+            opacity: .85;
+        }
+
+        .character-role {
+
+            text-align: right;
+        }
+
+        .character-role span {
+
+            display: block;
+
+            font-size: 10px;
+
+            letter-spacing: 1px;
+
+            opacity: .7;
+        }
+
+        .character-role strong {
+
+            display: block;
+
+            margin: 5px 0;
+
+            font-size: 20px;
+        }
+
+
+        /* =====================================================
+           SHINY
+        ===================================================== */
+
+        .shiny-card {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+            padding: 24px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,235,134,.12),
+                    rgba(217,107,255,.06)
+                );
+
+            border:
+                1px solid rgba(255,235,134,.25);
+        }
+
+        .shiny-symbol {
+
+            font-size: 42px;
+        }
+
+        .shiny-card strong {
+
+            font-size: 20px;
+        }
+
+
+        /* =====================================================
+           INVESTMENT
+        ===================================================== */
+
+        .investment-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 18px;
+        }
+
+        .investment-card {
+
+            padding: 23px;
+
+            border-radius: 18px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .investment-card span {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: var(--psychic);
+
+            font-size: 11px;
+
+            font-weight: 900;
+
+            letter-spacing: 1px;
+        }
+
+        .investment-card strong {
+
+            display: block;
+
+            font-size: 17px;
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 950px) {
+
+            .content-layout {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .sidebar {
+
+                position: static;
+            }
+
+            .hero-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .hero-pokemon {
+
+                order: -1;
+            }
+
+            .stat-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+        }
+
+
+        @media(max-width: 650px) {
+
+            .page {
+
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+
+                padding: 20px;
+            }
+
+            .quick-stats {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .investment-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .rating-row {
+
+                grid-template-columns:
+                    1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+
+                text-align: left;
+            }
+
+            .main-nav {
+
+                display: none;
+            }
+
+            .mew-character-card {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+
+            .character-role {
+
+                text-align:
+                    left;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/psychic.html">
+        Psychic Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Mew
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                MYTHICAL POKÉMON
+            </span>
+
+            <h1>
+                Mew
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Mew is a Mythical Psychic-type Pokémon from
+                the Kanto region. In Pokémon GO, Mew is best
+                known for its enormous move pool, flexible
+                battle options and importance as one of the
+                game's most distinctive Mythical Pokémon.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag psychic-tag">
+                    Psychic
+                </span>
+
+                <span class="tag">
+                    #151
+                </span>
+
+                <span class="tag">
+                    Mythical
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    No Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed Mew asset -->
+
+            <div class="pokemon-placeholder">
+                🩷
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            210
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            210
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            225
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            3,691
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CONTENT
+========================================================= -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 — OVERVIEW
+        </span>
+
+        <h2>
+            Mew Overview
+        </h2>
+
+        <p>
+
+            Mew is a Psychic-type Mythical Pokémon introduced
+            in Generation 1. It is Pokédex number #151 and has
+            no conventional evolution.
+
+        </p>
+
+    </div>
+
+
+    <div class="mew-character-card">
+
+        <div class="character-main">
+
+            <div class="character-number">
+                #151
+            </div>
+
+            <div>
+
+                <span class="character-label">
+                    MYTHICAL SPECIES
+                </span>
+
+                <h3>
+                    Mew
+                </h3>
+
+                <p>
+                    The New Species Pokémon
+                </p>
+
+                <span class="tag">
+                    Psychic
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="character-role">
+
+            <span>
+                PRIMARY IDENTITY
+            </span>
+
+            <strong>
+                Versatile Psychic
+            </strong>
+
+            <small>
+                Kanto • Generation 1
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #151
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 1
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Kanto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Psychic
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                210
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                210
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                225
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                3,691
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 — TYPE
+        </span>
+
+        <h2>
+            Mew Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🧠
+        </div>
+
+        <div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Mew's Typing Matters
+    </h3>
+
+    <p>
+
+        Mew's pure Psychic typing gives it a straightforward
+        defensive profile while its unusually broad move pool
+        gives it much more offensive flexibility than a typical
+        Psychic-type Pokémon.
+
+    </p>
+
+    <p>
+
+        The Psychic typing also gives Mew useful resistance to
+        Fighting- and Psychic-type attacks, while Bug, Dark and
+        Ghost attacks are its primary weaknesses.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 — TYPE EFFECTIVENESS
+        </span>
+
+        <h2>
+            Mew Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+
+                Bug-type attacks deal super-effective
+                damage to Psychic-type Mew.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+
+                Dark-type attacks are super effective
+                against Mew.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+
+                Ghost-type attacks also exploit Mew's
+                Psychic typing.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+
+                Psychic typing allows Mew to resist
+                Fighting-type attacks.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+
+                Mew also resists Psychic-type attacks.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚖️
+            </div>
+
+            <strong>
+                Neutral Matchups
+            </strong>
+
+            <p>
+
+                Many other attack types deal neutral
+                damage depending on the matchup.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 — STATS
+        </span>
+
+        <h2>
+            Mew Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Mew has a balanced base-stat profile, with
+            210 Attack, 210 Defense and 225 HP in Pokémon GO.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                210
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                210
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                225
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                LEVEL 50 MAX CP
+            </span>
+
+            <strong>
+                3,691
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mew Level 40 & Level 50 CP
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        Perfect IV CP
+                    </th>
+
+                    <th>
+                        Use
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Level 20
+                    </td>
+
+                    <td>
+                        1,785–1,865*
+                    </td>
+
+                    <td>
+                        Standard encounter reference
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 25
+                    </td>
+
+                    <td>
+                        2,231–2,332*
+                    </td>
+
+                    <td>
+                        Weather-boosted reference
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 40
+                    </td>
+
+                    <td>
+                        3,265
+                    </td>
+
+                    <td>
+                        Legacy max-level reference
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 50
+                    </td>
+
+                    <td>
+                        3,691
+                    </td>
+
+                    <td>
+                        Maximum standard CP
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            Encounter CP depends on level and IVs. A high CP
+            Mew is not automatically a perfect-IV Mew.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 — MOVESET
+        </span>
+
+        <h2>
+            Mew Best Moves
+        </h2>
+
+        <p>
+
+            Mew has one of the broadest move pools in Pokémon GO.
+            This makes its best moveset highly dependent on whether
+            you are building it for PvP, raids or general collection.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            PvP-Oriented Mew Build
+        </strong>
+
+        <p>
+            Shadow Claw + Wild Charge + Psyshock
+        </p>
+
+    </div>
+
+
+    <h3>
+        Useful Fast Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Fast Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Shadow Claw
+                    </td>
+
+                    <td class="move-type">
+                        Ghost
+                    </td>
+
+                    <td>
+                        PvP coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Volt Switch
+                    </td>
+
+                    <td>
+                        Electric
+                    </td>
+
+                    <td>
+                        Energy generation / coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Snarl
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Energy-focused PvP option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Tail
+                    </td>
+
+                    <td>
+                        Dragon
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Poison Jab
+                    </td>
+
+                    <td>
+                        Poison
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Important Charged Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Charged Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Psyshock
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        STAB / PvP pressure
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Psychic
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        STAB damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Wild Charge
+                    </td>
+
+                    <td>
+                        Electric
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Surf
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Overheat
+                    </td>
+
+                    <td>
+                        Fire
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Stone Edge
+                    </td>
+
+                    <td>
+                        Rock
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Ice Beam
+                    </td>
+
+                    <td>
+                        Ice
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Why Mew is unusual:
+        </strong>
+
+        <p>
+
+            Mew's unusually large move pool means there is no
+            single moveset that should automatically be presented
+            as the answer for every battle format.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 — RAID PERFORMANCE
+        </span>
+
+        <h2>
+            Is Mew Good for Raids?
+        </h2>
+
+        <p>
+
+            Mew can be used in raids because of its broad move
+            selection, but it is generally better known for its
+            versatility and PvP applications than for being a
+            top-tier specialist raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Psychic Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:72%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            7.2/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Move Coverage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:98%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvP Utility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.0/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Versatility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:99%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.9/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Mew for Raids?
+    </h3>
+
+    <p>
+
+        For most players, Mew is better viewed as a flexible
+        collector and PvP investment than as a first-choice
+        raid specialist. Its value comes from the ability to
+        build unusual coverage sets rather than from dominating
+        one specific raid category.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 RAID COUNTERS
+========================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 — COUNTERS
+        </span>
+
+        <h2>
+            What Counters Mew?
+        </h2>
+
+        <p>
+
+            Because Mew is a pure Psychic type, the most direct
+            counter categories are Bug, Dark and Ghost.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark Attackers
+            </strong>
+
+            <p>
+
+                Dark-type Pokémon are naturally suited to
+                exploiting Mew's Psychic weakness.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost Attackers
+            </strong>
+
+            <p>
+
+                Ghost-type attacks can also deal
+                super-effective damage.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug Attackers
+            </strong>
+
+            <p>
+
+                Bug-type attackers are another natural
+                counter category.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Raid note:
+        </strong>
+
+        <p>
+
+            Mew is not normally approached like a conventional
+            Legendary raid boss. Encounter availability and battle
+            rules should be checked against the current Pokémon GO
+            event or research schedule.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 — IV GUIDE
+        </span>
+
+        <h2>
+            Mew IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add additional Attack, Defense and
+            HP points to Mew. A 15/15/15 Mew is considered a
+            perfect-IV specimen.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Mew
+    </h3>
+
+    <p>
+
+        A 15/15/15 Mew is a perfect-IV Mew. However, IV
+        perfection is not automatically the most important
+        factor when choosing a Mew for PvP.
+
+    </p>
+
+
+    <h3>
+        PvP IV Considerations
+    </h3>
+
+    <p>
+
+        Mew's ideal IV distribution can depend on the league,
+        CP target and specific moveset. Before investing large
+        amounts of Stardust or Candy XL, evaluate the exact
+        build you want rather than assuming 15/15/15 is always
+        the optimal PvP spread.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     09 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 — PVP
+        </span>
+
+        <h2>
+            Mew PvP Guide
+        </h2>
+
+        <p>
+
+            PvP is one of the most interesting places to use Mew.
+            Its extremely broad move pool makes its moveset
+            difficult for opponents to predict.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Mew can be interesting in Great League when a player
+        builds around a suitable low-CP specimen. Its value
+        comes primarily from move flexibility and unpredictable
+        coverage.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Mew can also be used in Ultra League. Shadow Claw,
+        Wild Charge and Psyshock are among the combinations
+        that can give Mew significant pressure and coverage.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Mew can participate in Master League, although its
+        relatively modest maximum CP compared with the highest
+        stat-heavy Master League Pokémon can limit its overall
+        role.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Example Flexible PvP Build
+        </strong>
+
+        <p>
+            Shadow Claw + Wild Charge + Psyshock
+        </p>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            PvP warning:
+        </strong>
+
+        <p>
+
+            Mew has many viable move combinations. A "best"
+            moveset can change according to league rules,
+            team composition and the current GO Battle League
+            metagame.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     10 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 — EVOLUTION
+        </span>
+
+        <h2>
+            Mew Evolution
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Mew does not evolve into another Pokémon in Pokémon GO.
+        It is a standalone Mythical Pokémon.
+
+    </p>
+
+
+    <div class="mew-character-card">
+
+        <div class="character-main">
+
+            <div class="character-number">
+                #151
+            </div>
+
+            <div>
+
+                <span class="character-label">
+                    EVOLUTION FAMILY
+                </span>
+
+                <h3>
+                    Mew
+                </h3>
+
+                <p>
+                    No Evolution
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="character-role">
+
+            <span>
+                CANDY REQUIREMENT
+            </span>
+
+            <strong>
+                No Evolution
+            </strong>
+
+            <small>
+                Standalone Mythical Pokémon
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mew Evolution Chain
+    </h3>
+
+
+    <div class="comparison-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Pokémon
+                    </th>
+
+                    <th>
+                        Number
+                    </th>
+
+                    <th>
+                        Evolution
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Mew
+                    </td>
+
+                    <td>
+                        #151
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 — SHINY
+        </span>
+
+        <h2>
+            Shiny Mew
+        </h2>
+
+        <p>
+
+            Shiny Mew is available in Pokémon GO through
+            eligible special research opportunities. It is
+            a particularly notable collector's Pokémon because
+            Mew itself is a Mythical species.
+
+        </p>
+
+    </div>
+
+
+    <div class="shiny-card">
+
+        <div class="shiny-symbol">
+            ✨
+        </div>
+
+        <div>
+
+            <strong>
+                Shiny Mew
+            </strong>
+
+            <p>
+
+                Shiny Mew has a different coloration from
+                standard Mew and can be retained as a permanent
+                Shiny Pokémon after the encounter.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Regular Mew vs Shiny Mew
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Mew
+                    </th>
+
+                    <th>
+                        Shiny Mew
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Mew
+                    </td>
+
+                    <td>
+                        Mew
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #151
+                    </td>
+
+                    <td>
+                        #151
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Typing
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     12 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 — FORM CHECK
+        </span>
+
+        <h2>
+            Does Mew Have a Shadow Form?
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Mew does not have a standard Shadow Mew form that should
+        be treated as a normal alternative build on this page.
+        Shadow Pokémon are primarily associated with Team GO
+        Rocket mechanics and specific species availability.
+
+    </p>
+
+
+    <div class="availability-card">
+
+        <strong>
+            Shadow Mew Status
+        </strong>
+
+        <p>
+
+            No standard Shadow Mew section is included here.
+            Avoid publishing a Shadow Mew build unless Pokémon GO
+            officially introduces the form and its mechanics.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why This Matters
+    </h3>
+
+    <p>
+
+        A Pokémon database should distinguish between confirmed
+        in-game forms and hypothetical forms. This prevents
+        outdated or speculative information from being presented
+        as an actual Pokémon GO mechanic.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     13 MEGA / PRIMAL
+========================================================= -->
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 — SPECIAL FORMS
+        </span>
+
+        <h2>
+            Mew Special Forms
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Mew should not be given a Mega Evolution or Primal
+        Reversion section simply because other Pokémon have
+        those mechanics.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧬
+            </div>
+
+            <strong>
+                Mega Evolution
+            </strong>
+
+            <p>
+                No standard Mega Mew form.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌋
+            </div>
+
+            <strong>
+                Primal Reversion
+            </strong>
+
+            <p>
+                Not applicable to Mew.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <p>
+                No standard Shadow Mew build.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     14 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 — AVAILABILITY
+        </span>
+
+        <h2>
+            Mew Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Mew is a Mythical Pokémon and is not normally treated
+        like an ordinary wild Pokémon. Its availability is
+        associated with Special Research and other officially
+        scheduled Pokémon GO opportunities.
+
+    </p>
+
+
+    <div class="availability-card">
+
+        <strong>
+            Special Research
+        </strong>
+
+        <p>
+
+            Mew has historically been associated with the
+            Special Research story "A Mythical Discovery."
+
+            Current availability should always be checked against
+            the player's in-game research and current Pokémon GO
+            announcements.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Is Mew Available in the Wild?
+    </h3>
+
+    <p>
+
+        Mew should not be presented as an ordinary wild spawn.
+        Its encounter method is tied to special Pokémon GO
+        mechanics and research.
+
+    </p>
+
+
+    <h3>
+        Is Mew Available in Eggs?
+    </h3>
+
+    <p>
+
+        Mew is not a standard egg Pokémon. Availability should
+        be treated separately from normal Egg rotations.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     15 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 — RESOURCES
+        </span>
+
+        <h2>
+            Mew Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Mew requires long-term resource planning if you want
+        to build it for high-level PvP. Because Mew is a Mythical
+        Pokémon and does not evolve, its Candy is primarily used
+        for powering up and unlocking additional moves.
+
+    </p>
+
+
+    <div class="investment-grid">
+
+
+        <div class="investment-card">
+
+            <span>
+                BUDDY DISTANCE
+            </span>
+
+            <strong>
+                20 km
+            </strong>
+
+            <p>
+
+                Mew requires a long Buddy distance for Candy
+                generation.
+
+            </p>
+
+        </div>
+
+
+        <div class="investment-card">
+
+            <span>
+                SECOND CHARGED MOVE
+            </span>
+
+            <strong>
+                100 Candy + 100,000 Stardust
+            </strong>
+
+            <p>
+
+                Unlocking a second Charged Move is a major
+                resource commitment.
+
+            </p>
+
+        </div>
+
+
+        <div class="investment-card">
+
+            <span>
+                CANDY XL
+            </span>
+
+            <strong>
+                High-Level Investment
+            </strong>
+
+            <p>
+
+                Candy XL becomes important when powering Mew
+                beyond the standard level cap.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mew Investment Checklist
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Decide whether the Mew is intended for PvP or collection.
+        </li>
+
+        <li>
+            Check the available moves before investing heavily.
+        </li>
+
+        <li>
+            Save Stardust for the complete build.
+        </li>
+
+        <li>
+            Consider Candy XL requirements for high-level PvP.
+        </li>
+
+        <li>
+            Do not automatically transfer a low-IV Mew.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     16 HOW TO USE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 — BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Mew
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before PvP
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Decide which league you want to target.
+        </li>
+
+        <li>
+            Check the CP limit for your intended league.
+        </li>
+
+        <li>
+            Select a fast move that fits your team.
+        </li>
+
+        <li>
+            Choose two Charged Moves with complementary coverage.
+        </li>
+
+        <li>
+            Test the build before spending large amounts of Stardust.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        During Team Building
+    </h3>
+
+    <p>
+
+        Mew works best when its unusual move coverage fills a
+        specific role. Avoid building Mew simply because one
+        moveset is popular; its enormous move pool means team
+        composition matters.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        A strong Mew can remain interesting for a long time
+        because its available move combinations give it
+        flexibility as the PvP environment changes.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     17 REGULAR VS SHINY
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 — COMPARISON
+        </span>
+
+        <h2>
+            Regular Mew vs Shiny Mew
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Mew
+                    </th>
+
+                    <th>
+                        Shiny Mew
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Mew
+                    </td>
+
+                    <td>
+                        Mew
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #151
+                    </td>
+
+                    <td>
+                        #151
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Attack
+                    </td>
+
+                    <td>
+                        210
+                    </td>
+
+                    <td>
+                        210
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defense
+                    </td>
+
+                    <td>
+                        210
+                    </td>
+
+                    <td>
+                        210
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        HP
+                    </td>
+
+                    <td>
+                        225
+                    </td>
+
+                    <td>
+                        225
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Mechanics
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Same species mechanics
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collector Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 COLLECTOR VALUE
+========================================================= -->
+
+<section class="section" id="collector">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 — COLLECTOR GUIDE
+        </span>
+
+        <h2>
+            Why Mew Is Valuable to Collectors
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧬
+            </div>
+
+            <strong>
+                Mythical Species
+            </strong>
+
+            <p>
+
+                Mew is one of the most recognizable Mythical
+                Pokémon in the franchise.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <p>
+
+                Shiny Mew is an especially desirable addition
+                to a complete collection.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Huge Move Pool
+            </strong>
+
+            <p>
+
+                Mew's enormous move selection makes different
+                Mew builds interesting to keep.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Good Mew Collection Targets
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            High-IV Mew
+        </li>
+
+        <li>
+            PvP-eligible Mew
+        </li>
+
+        <li>
+            Shiny Mew
+        </li>
+
+        <li>
+            Legacy or notable move combinations
+        </li>
+
+        <li>
+            Event or research-specific Mew where applicable
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     19 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 — FAQ
+        </span>
+
+        <h2>
+            Mew FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            Is Mew a Legendary Pokémon?
+        </summary>
+
+        <p>
+
+            Mew is classified as a Mythical Pokémon rather
+            than a Legendary Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Mew?
+        </summary>
+
+        <p>
+
+            Mew is a pure Psychic-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mew weak to?
+        </summary>
+
+        <p>
+
+            Mew is weak to Bug, Dark and Ghost-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What does Mew resist?
+        </summary>
+
+        <p>
+
+            Mew's Psychic typing gives it resistance to
+            Fighting- and Psychic-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mew's max CP?
+        </summary>
+
+        <p>
+
+            Mew reaches a maximum CP of 3,691 at Level 50
+            with perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What are Mew's stats?
+        </summary>
+
+        <p>
+
+            Mew has 210 Attack, 210 Defense and 225 HP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mew evolve?
+        </summary>
+
+        <p>
+
+            No. Mew does not have a normal evolution chain
+            in Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Mew available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Mew has been made available through
+            eligible Pokémon GO research opportunities.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mew good for PvP?
+        </summary>
+
+        <p>
+
+            Mew can be useful in PvP because of its huge move
+            pool and unpredictable coverage. Its effectiveness
+            depends heavily on league, moveset and team composition.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mew good for raids?
+        </summary>
+
+        <p>
+
+            Mew is usable in raids but is generally more
+            interesting for its flexibility and PvP applications
+            than as a top-tier specialist raid attacker.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mew's best PvP moveset?
+        </summary>
+
+        <p>
+
+            Shadow Claw with Wild Charge and Psyshock is one
+            useful example of a flexible PvP-oriented build,
+            although the best combination depends on the current
+            league and team.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mew have a Mega Evolution?
+        </summary>
+
+        <p>
+
+            Mew does not have a standard Mega Evolution in
+            Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mew have a Primal form?
+        </summary>
+
+        <p>
+
+            No. Primal Reversion is not a Mew mechanic.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mew have a Shadow form?
+        </summary>
+
+        <p>
+
+            There is no standard Shadow Mew form that should
+            be treated as an ordinary available Pokémon GO build.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How far must I walk Mew for Candy?
+        </summary>
+
+        <p>
+
+            Mew has a 20 km Buddy Candy distance.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How much does Mew's second Charged Move cost?
+        </summary>
+
+        <p>
+
+            Mew's second Charged Move costs 100 Candy and
+            100,000 Stardust.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            availability, research rewards, PvP rankings and
+            other game data can change over time.
+
+        </p>
+
+        <p>
+
+            Always verify current in-game information before
+            spending Stardust, Candy, Candy XL or Elite TMs.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Mew Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Mew Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Mew
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Status
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#resources">
+                    Candy & Stardust
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/mewtwo.html">
+
+            Mewtwo Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/psychic.html">
+
+            Psychic Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/celebi.html">
+
+            Celebi Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/jirachi.html">
+
+            Jirachi Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-1.html">
+
+            Gen 1 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Mew Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+
+            Psychic
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+
+            1
+        </p>
+
+
+        <p>
+            <strong>
+                Region:
+            </strong>
+
+            Kanto
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+
+            #151
+        </p>
+
+
+        <p>
+            <strong>
+                Classification:
+            </strong>
+
+            Mythical
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution:
+            </strong>
+
+            None
+        </p>
+
+
+        <p>
+            <strong>
+                Max CP:
+            </strong>
+
+            3,691
+        </p>
+
+
+        <p>
+            <strong>
+                Buddy Distance:
+            </strong>
+
+            20 km
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

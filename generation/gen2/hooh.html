@@ -1,0 +1,4885 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Ho-Oh Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses, Shiny, Shadow & Lucky
+</title>
+
+<meta name="description"
+      content="Complete Ho-Oh Pokémon GO guide covering Ho-Oh stats, max CP, Fire and Flying typing, weaknesses, resistances, best moves, raids, PvP, IVs, Shiny Ho-Oh, Shadow Ho-Oh, Purified Ho-Oh, Lucky Ho-Oh, 100% IV, XXL and XXS Ho-Oh.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/ho-oh.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #ff9b4a;
+    --accent-2: #ff7043;
+
+    --fire: #ff7849;
+    --flying: #9b8cff;
+
+    --rock: #d2a84c;
+    --water: #4e9dff;
+    --electric: #f2c94c;
+
+    --success: #62d89a;
+    --danger: #ff6f7d;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(255,126,63,.13),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255,126,63,.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #171724,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--accent);
+
+    background:
+        rgba(255,126,63,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.fire-tag {
+    color: var(--fire);
+}
+
+.flying-tag {
+    color: var(--flying);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.hero-pokemon img {
+
+    width:
+        min(100%, 320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,126,63,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+
+    margin-bottom:
+        20px;
+}
+
+.section-number {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(255,126,63,.3);
+
+    background:
+        rgba(255,126,63,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(255,126,63,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display:block;
+}
+
+.type-box span {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display:block;
+}
+
+.weakness {
+
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x:auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight:850;
+}
+
+.move-type {
+    color:var(--accent);
+    font-weight:800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,126,63,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(255,126,63,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:block;
+
+    margin-bottom:5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom:0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:hidden;
+}
+
+.rating-fill {
+
+    height:100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:right;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align:left;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:"✓";
+
+    margin-right:8px;
+
+    color:
+        var(--success);
+
+    font-weight:900;
+}
+
+
+/* =========================================================
+   SPECIAL VARIANT CARDS
+========================================================= */
+
+.variant-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        20px;
+}
+
+.variant-card {
+
+    padding:
+        22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.variant-card h3 {
+
+    margin:
+        0 0 7px;
+
+    font-size:
+        1.05rem;
+}
+
+.variant-card .variant-symbol {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        10px;
+}
+
+.variant-card p {
+    font-size:.78rem;
+}
+
+.shiny-card {
+    border-color:rgba(255,220,100,.3);
+}
+
+.shadow-card {
+    border-color:rgba(150,120,220,.3);
+}
+
+.purified-card {
+    border-color:rgba(110,220,190,.3);
+}
+
+.lucky-card {
+    border-color:rgba(255,190,60,.3);
+}
+
+.size-card {
+    border-color:rgba(120,180,255,.25);
+}
+
+
+/* =========================================================
+   IV CARD
+========================================================= */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:center;
+}
+
+.iv-card strong {
+
+    display:block;
+
+    font-size:
+        1.7rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+    margin:20px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:center;
+}
+
+.form-node strong {
+    display:block;
+}
+
+.form-node span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+.form-arrow {
+
+    color:
+        var(--accent);
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom:0;
+}
+
+summary {
+
+    cursor:pointer;
+
+    font-weight:850;
+
+    font-size:.82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:.78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:4px;
+}
+
+.side-nav a {
+
+    display:block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:white;
+}
+
+.related-link {
+
+    display:block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom:0;
+}
+
+.related-link:hover {
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+footer p {
+
+    margin:0;
+
+    font-size:.72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns:1fr;
+    }
+
+    .sidebar {
+        position:static;
+    }
+
+    .hero-grid {
+        grid-template-columns:1fr;
+    }
+
+    .hero-pokemon {
+        order:-1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid {
+        grid-template-columns:1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns:1fr;
+    }
+
+    .rating-row {
+
+        grid-template-columns:
+            1fr;
+
+        gap:6px;
+    }
+
+    .rating-value {
+        text-align:left;
+    }
+
+    .main-nav {
+        display:none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/fire.html">
+        Fire Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Ho-Oh
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                LEGENDARY POKÉMON
+            </span>
+
+            <h1>
+                Ho-Oh
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Ho-Oh is a Legendary Fire- and Flying-type
+                Pokémon from the Johto region. In Pokémon GO,
+                Ho-Oh is known for its high defensive stats,
+                strong Fire-type options and important Master
+                League presence.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag fire-tag">
+                    Fire
+                </span>
+
+                <span class="tag flying-tag">
+                    Flying
+                </span>
+
+                <span class="tag">
+                    #250
+                </span>
+
+                <span class="tag">
+                    Legendary
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    No Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed Ho-Oh asset -->
+
+            <div class="pokemon-placeholder">
+                🦅
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            239
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            244
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            214
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            4,367
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 — OVERVIEW
+        </span>
+
+        <h2>
+            Ho-Oh Overview
+        </h2>
+
+        <p>
+
+            Ho-Oh is a Fire/Flying Legendary Pokémon introduced
+            in Generation 2. It does not evolve and has no normal
+            evolution chain. Its special variants and battle
+            statuses include Shiny, Shadow, Purified and Lucky
+            versions.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#250</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 2</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Johto</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Fire / Flying</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>239</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>244</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>214</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>4,367</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 — TYPE
+        </span>
+
+        <h2>
+            Ho-Oh Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🔥
+        </div>
+
+        <div>
+
+            <strong>
+                Fire / Flying
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Ho-Oh's Typing Matters
+    </h3>
+
+    <p>
+
+        Ho-Oh's Fire/Flying typing gives it several useful
+        resistances, but it also creates a major vulnerability
+        to Rock-type attacks. This is particularly important
+        in raid battles because Rock attacks can deal heavily
+        increased damage to Ho-Oh.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 — MATCHUPS
+        </span>
+
+        <h2>
+            Ho-Oh Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+
+                Rock-type attacks are Ho-Oh's biggest weakness.
+                Because Ho-Oh is both Fire and Flying type,
+                Rock attacks are especially dangerous.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+
+                Water-type attacks deal super-effective damage
+                against Ho-Oh.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+
+                Electric-type attacks also exploit Ho-Oh's
+                Flying typing.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Important Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Ho-Oh strongly resists Grass-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Ho-Oh has strong resistance to Bug attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Ho-Oh resists Fire-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 — STATS
+        </span>
+
+        <h2>
+            Ho-Oh Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Ho-Oh has a strong defensive profile with high
+            Defense and HP. Its Attack stat is also strong enough
+            to make it useful in both PvE and Master League
+            situations.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>239</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>244</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>214</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>4,367</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP depends on the Pokémon's base stats,
+            IVs and level. A higher CP does not automatically mean
+            that a Pokémon has perfect IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 — MOVES
+        </span>
+
+        <h2>
+            Ho-Oh Best Moves
+        </h2>
+
+        <p>
+
+            Ho-Oh can use Fire- and Flying-oriented movesets.
+            Its best build depends on whether you are using it
+            for raids, Gyms or PvP.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Fire Raid Build
+        </strong>
+
+        <p>
+            Incinerate + Sacred Fire
+        </p>
+
+    </div>
+
+
+    <h3>
+        Important Ho-Oh Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                    <th>
+                        Main Use
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Incinerate
+                    </td>
+
+                    <td class="move-type">
+                        Fire
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Fire damage / PvP pressure
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Sacred Fire
+                    </td>
+
+                    <td class="move-type">
+                        Fire
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Premium Fire option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Brave Bird
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        High-damage Flying option
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Move availability:
+        </strong>
+
+        <p>
+
+            Some Ho-Oh moves may depend on events or Elite TMs.
+            Check the current Pokémon GO move availability before
+            spending Elite resources.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 — RAID PERFORMANCE
+        </span>
+
+        <h2>
+            Ho-Oh Raid Performance
+        </h2>
+
+        <p>
+
+            Ho-Oh can contribute useful Fire-type damage,
+            particularly when equipped with an appropriate
+            Fire moveset. Its strong bulk also gives it useful
+            staying power.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Fire Raids
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:88%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:94%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.4/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvP Potential
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:92%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.2/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Ho-Oh?
+    </h3>
+
+    <p>
+
+        Ho-Oh is worth considering for players who want a
+        Legendary Fire/Flying Pokémon for Master League,
+        raids, collection goals or specialized battle teams.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 — COUNTERS
+        </span>
+
+        <h2>
+            What Counters Ho-Oh?
+        </h2>
+
+        <p>
+
+            Rock-type attackers are especially valuable against
+            Ho-Oh because its Fire/Flying combination makes it
+            extremely vulnerable to Rock damage.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock Attackers
+            </strong>
+
+            <p>
+
+                Rock-type Pokémon are generally the first
+                counter category to consider against Ho-Oh.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water Attackers
+            </strong>
+
+            <p>
+
+                Strong Water attackers can exploit Ho-Oh's
+                Fire typing.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric Attackers
+            </strong>
+
+            <p>
+
+                Electric attackers can take advantage of
+                Ho-Oh's Flying typing.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Exact raid counters can change depending on Ho-Oh's
+        current moveset, weather, available Pokémon and the
+        current Pokémon GO battle environment.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 — IV GUIDE
+        </span>
+
+        <h2>
+            Ho-Oh IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add additional Attack, Defense
+            and HP points to a Pokémon. A 15/15/15 Ho-Oh is
+            considered a perfect IV specimen.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect 100% Ho-Oh
+    </h3>
+
+    <p>
+
+        A Ho-Oh with 15 Attack, 15 Defense and 15 HP IVs is
+        commonly called a 100% or hundo Ho-Oh. Perfect IV Ho-Oh
+        can be especially desirable for collectors, raids and
+        Master League investment.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% Ho-Oh
+        </strong>
+
+        <p>
+
+            IV combination: 15 / 15 / 15
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 — PVP
+        </span>
+
+        <h2>
+            Ho-Oh PvP Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Ho-Oh can be particularly valuable in Master League
+        because its high overall stats allow it to operate
+        without the low CP limitations of Great League.
+        Its Fire/Flying typing gives it useful matchups,
+        while its moves can create significant shield pressure.
+
+    </p>
+
+
+    <h3>
+        Great League & Ultra League
+    </h3>
+
+    <p>
+
+        Standard Ho-Oh is generally much more naturally suited
+        to Master League because of its high CP potential.
+        Special formats can change which Pokémon are eligible,
+        so league rules should always be checked.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 — SHINY
+        </span>
+
+        <h2>
+            Shiny Ho-Oh
+        </h2>
+
+        <p>
+
+            Shiny Ho-Oh is a special coloration of Ho-Oh.
+            It remains Fire/Flying type and uses the same
+            underlying species as regular Ho-Oh.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shiny-card">
+
+        <div class="variant-symbol">
+            ✨
+        </div>
+
+        <h3>
+            Shiny Ho-Oh
+        </h3>
+
+        <p>
+
+            Shiny Ho-Oh has an alternate coloration and is
+            highly desirable among collectors. Shiny status
+            does not automatically make a Ho-Oh stronger in
+            battle.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Regular vs Shiny Ho-Oh
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Ho-Oh
+                    </td>
+
+                    <td>
+                        Ho-Oh
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Battle Stats
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Same species stats
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Appearance
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow-ho-oh">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 — SHADOW
+        </span>
+
+        <h2>
+            Shadow Ho-Oh
+        </h2>
+
+        <p>
+
+            Shadow Ho-Oh is the Shadow variant of Ho-Oh.
+            Shadow Pokémon have a different battle profile
+            from their regular counterparts and therefore
+            deserve separate investment consideration.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shadow-card">
+
+        <div class="variant-symbol">
+            🌑
+        </div>
+
+        <h3>
+            Shadow Ho-Oh
+        </h3>
+
+        <p>
+
+            Shadow Ho-Oh retains its Fire/Flying typing but
+            receives the Shadow Pokémon battle modifier.
+            It can be attractive to players who prioritize
+            offensive pressure.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Ho-Oh vs Regular Ho-Oh
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Ho-Oh
+                    </th>
+
+                    <th>
+                        Shadow Ho-Oh
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Ho-Oh
+                    </td>
+
+                    <td>
+                        Ho-Oh
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Offensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Defensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Ho-Oh Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock remains the major weakness of Shadow Ho-Oh.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric attacks exploit the Flying typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have Frustration as their
+            Charged Move. Check the current Team GO Rocket
+            event rules before using Charged TMs or planning
+            a Shadow Ho-Oh moveset.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Shadow Ho-Oh?
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the IVs before investing heavily.
+        </li>
+
+        <li>
+            Consider the Shadow resource cost.
+        </li>
+
+        <li>
+            Compare Shadow and regular Ho-Oh for your intended role.
+        </li>
+
+        <li>
+            Check whether the moveset fits your battle strategy.
+        </li>
+
+        <li>
+            Do not purify automatically just to increase IVs.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified-ho-oh">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 — PURIFIED
+        </span>
+
+        <h2>
+            Purified Ho-Oh
+        </h2>
+
+        <p>
+
+            Purified Ho-Oh is created by purifying an eligible
+            Shadow Ho-Oh. Purification changes the Pokémon's
+            status and can alter its IVs and other mechanics.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card purified-card">
+
+        <div class="variant-symbol">
+            💎
+        </div>
+
+        <h3>
+            Purified Ho-Oh
+        </h3>
+
+        <p>
+
+            Purified Ho-Oh no longer has Shadow status.
+            Purification can be useful for certain collection,
+            appraisal or gameplay goals, but players should
+            consider the consequences before purifying a strong
+            Shadow Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Ho-Oh
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Retained
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not yet purified
+                    </td>
+
+                    <td>
+                        Completed
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Investment Goal
+                    </td>
+
+                    <td>
+                        Offensive Shadow build
+                    </td>
+
+                    <td>
+                        Purified / collection build
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Purification Warning
+        </strong>
+
+        <p>
+
+            Purification cannot be undone. If your Shadow Ho-Oh
+            is rare or has strong battle potential, compare the
+            Shadow and Purified options before making a decision.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky-ho-oh">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 — LUCKY
+        </span>
+
+        <h2>
+            Lucky Ho-Oh
+        </h2>
+
+        <p>
+
+            Lucky Ho-Oh is not a separate species or evolution.
+            Lucky is a special Pokémon status obtained through
+            trading. Lucky Pokémon have a reduced Stardust cost
+            for powering up.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card lucky-card">
+
+        <div class="variant-symbol">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Ho-Oh
+        </h3>
+
+        <p>
+
+            A Lucky Ho-Oh can be an excellent long-term
+            investment because its power-up Stardust cost is
+            reduced compared with a standard Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Ho-Oh?
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Reduced Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Useful for expensive Legendary investments.
+        </li>
+
+        <li>
+            Excellent collector status.
+        </li>
+
+        <li>
+            Can be especially attractive for high-level Ho-Oh builds.
+        </li>
+
+        <li>
+            Lucky status does not automatically mean perfect IVs.
+        </li>
+
+    </ul>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Lucky IV note:
+        </strong>
+
+        <p>
+
+            Lucky Pokémon have a minimum IV floor when obtained
+            through trading, but a Lucky Ho-Oh is not automatically
+            a 100% IV Ho-Oh.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     100%
+===================================================== -->
+
+<section class="section" id="perfect-ho-oh">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 — 100% IV
+        </span>
+
+        <h2>
+            100% Ho-Oh — Perfect IV
+        </h2>
+
+        <p>
+
+            A 100% Ho-Oh, commonly called a hundo, has perfect
+            Attack, Defense and HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect IV Combination
+        </strong>
+
+        <p>
+            15 Attack / 15 Defense / 15 HP
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Is 100% Ho-Oh Valuable?
+    </h3>
+
+    <p>
+
+        Perfect IV Ho-Oh can be valuable for collectors and
+        players who want to maximize the stat product of their
+        investment. However, IV quality should be considered
+        alongside moveset, level, role and available resources.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl-ho-oh">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 — XXL
+        </span>
+
+        <h2>
+            XXL Ho-Oh
+        </h2>
+
+        <p>
+
+            XXL Ho-Oh is a size variation. XXL status does not
+            mean that the Pokémon has better Attack, Defense or
+            HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card size-card">
+
+        <div class="variant-symbol">
+            📏
+        </div>
+
+        <h3>
+            XXL Ho-Oh
+        </h3>
+
+        <p>
+
+            XXL refers to Ho-Oh's size classification rather
+            than its battle IV quality. An XXL Ho-Oh can have
+            any IV combination.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL Ho-Oh vs 100% Ho-Oh
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXL Ho-Oh
+                    </th>
+
+                    <th>
+                        100% Ho-Oh
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Meaning
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                    <td>
+                        Perfect IVs
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Attack IV
+                    </td>
+
+                    <td>
+                        Any
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Defense IV
+                    </td>
+
+                    <td>
+                        Any
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        HP IV
+                    </td>
+
+                    <td>
+                        Any
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs-ho-oh">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 — XXS
+        </span>
+
+        <h2>
+            XXS Ho-Oh
+        </h2>
+
+        <p>
+
+            XXS Ho-Oh is a small-size variation. Like XXL,
+            XXS status is separate from IV quality.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card size-card">
+
+        <div class="variant-symbol">
+            🔹
+        </div>
+
+        <h3>
+            XXS Ho-Oh
+        </h3>
+
+        <p>
+
+            XXS indicates that the individual Ho-Oh has a very
+            small size classification. It does not mean that
+            the Pokémon has low IVs or weak battle statistics.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL vs XXS Ho-Oh
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Very Large
+                    </td>
+
+                    <td>
+                        Very Small
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Ho-Oh
+                    </td>
+
+                    <td>
+                        Ho-Oh
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        IV Quality
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Battle Typing
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 — FORMS & STATUS
+        </span>
+
+        <h2>
+            Ho-Oh Forms, Variants & Statuses
+        </h2>
+
+        <p>
+
+            Ho-Oh does not evolve. Instead, individual Ho-Oh
+            can have special characteristics such as Shiny,
+            Shadow, Purified, Lucky, XXL, XXS or perfect IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Ho-Oh
+            </strong>
+
+            <span>
+                Standard
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            +
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Shiny
+            </strong>
+
+            <span>
+                Alternate Color
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            +
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Shadow
+            </strong>
+
+            <span>
+                Shadow Status
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+            <h3>✨ Shiny Ho-Oh</h3>
+            <p>
+                Alternate coloration and a highly desirable
+                collector variant.
+            </p>
+        </div>
+
+
+        <div class="variant-card">
+            <h3>🌑 Shadow Ho-Oh</h3>
+            <p>
+                Shadow battle status with increased offensive
+                pressure and reduced durability.
+            </p>
+        </div>
+
+
+        <div class="variant-card">
+            <h3>💎 Purified Ho-Oh</h3>
+            <p>
+                Created by purifying an eligible Shadow Ho-Oh.
+            </p>
+        </div>
+
+
+        <div class="variant-card">
+            <h3>🍀 Lucky Ho-Oh</h3>
+            <p>
+                Obtained through trading and has reduced
+                Stardust power-up costs.
+            </p>
+        </div>
+
+
+        <div class="variant-card">
+            <h3>💯 100% Ho-Oh</h3>
+            <p>
+                Perfect 15/15/15 Attack, Defense and HP IVs.
+            </p>
+        </div>
+
+
+        <div class="variant-card">
+            <h3>📏 XXL Ho-Oh</h3>
+            <p>
+                Large-size Ho-Oh classification.
+            </p>
+        </div>
+
+
+        <div class="variant-card">
+            <h3>🔹 XXS Ho-Oh</h3>
+            <p>
+                Small-size Ho-Oh classification.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 — RESOURCES
+        </span>
+
+        <h2>
+            Ho-Oh Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Ho-Oh is a Legendary Pokémon, so building multiple
+        high-level copies can require a significant amount of
+        Candy, Candy XL and Stardust.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Ho-Oh Candy for important power-up projects.
+        </li>
+
+        <li>
+            Collect Ho-Oh Candy XL for high-level investments.
+        </li>
+
+        <li>
+            Check the moveset before spending Elite TMs.
+        </li>
+
+        <li>
+            Consider Lucky Ho-Oh for expensive Stardust projects.
+        </li>
+
+        <li>
+            Keep high-IV Ho-Oh for long-term investment.
+        </li>
+
+        <li>
+            Keep interesting Shiny, Shadow and size variants
+            for your collection.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 — AVAILABILITY
+        </span>
+
+        <h2>
+            Ho-Oh Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Ho-Oh is a Legendary Pokémon whose availability is
+        controlled by Pokémon GO's raid rotations, events,
+        special research and other limited-time opportunities.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the latest Pokémon GO raid and event schedule
+            before publishing a claim that Ho-Oh is currently
+            obtainable.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical Ho-Oh appearances should be separated from
+        current availability so that old event information does
+        not appear to be a current encounter method.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 — BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Ho-Oh
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check whether the raid boss is weak to Fire.
+        </li>
+
+        <li>
+            Confirm Ho-Oh has the appropriate moveset.
+        </li>
+
+        <li>
+            Check Ho-Oh's level and IVs.
+        </li>
+
+        <li>
+            Consider weather and team composition.
+        </li>
+
+        <li>
+            Compare Ho-Oh with other available Fire attackers.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Ho-Oh is much more naturally suited to Master League
+        than the lower CP leagues. Its high stats, typing and
+        charged-move options allow it to pressure a variety
+        of opponents when used correctly.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        A strong Ho-Oh can be a valuable long-term Pokémon for
+        both collection and battle purposes. Before investing
+        heavily, decide whether your priority is raids, PvP,
+        collecting or building a specific special variant.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 — COMPARISON
+        </span>
+
+        <h2>
+            Ho-Oh Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Good For
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Standard Pokémon
+                    </td>
+
+                    <td>
+                        PvP / PvE
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Shadow battle modifier
+                    </td>
+
+                    <td>
+                        Damage-focused builds
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Collection / investment
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Reduced power-up Stardust
+                    </td>
+
+                    <td>
+                        Stardust-efficient builds
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        Max IV investment
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS Ho-Oh
+                    </td>
+
+                    <td>
+                        Fire / Flying
+                    </td>
+
+                    <td>
+                        Small size
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 — FAQ
+        </span>
+
+        <h2>
+            Ho-Oh FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            Is Ho-Oh a Legendary Pokémon?
+        </summary>
+
+        <p>
+
+            Yes. Ho-Oh is a Legendary Pokémon originally
+            introduced in Generation 2 and associated with
+            the Johto region.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Ho-Oh?
+        </summary>
+
+        <p>
+
+            Ho-Oh is a Fire- and Flying-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Ho-Oh weak to?
+        </summary>
+
+        <p>
+
+            Ho-Oh is weak to Rock, Water and Electric attacks.
+            Rock is especially dangerous because of Ho-Oh's
+            Fire/Flying combination.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Ho-Oh evolve?
+        </summary>
+
+        <p>
+
+            No. Ho-Oh does not have a normal evolution chain.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Ho-Oh available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Ho-Oh is available through eligible
+            Pokémon GO encounters.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Ho-Oh good?
+        </summary>
+
+        <p>
+
+            Shadow Ho-Oh can be valuable for players who want
+            a more offensive Shadow Legendary build. Its value
+            depends on moveset, IVs and the intended battle role.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Ho-Oh?
+        </summary>
+
+        <p>
+
+            Not automatically. Purification cannot be undone,
+            so compare the Shadow and Purified versions before
+            making the decision.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Ho-Oh?
+        </summary>
+
+        <p>
+
+            Lucky Ho-Oh is a Ho-Oh obtained through trading that
+            has the Lucky status and benefits from reduced
+            Stardust power-up costs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Ho-Oh?
+        </summary>
+
+        <p>
+
+            A 100% Ho-Oh has perfect IVs: 15 Attack,
+            15 Defense and 15 HP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Ho-Oh?
+        </summary>
+
+        <p>
+
+            XXL Ho-Oh is a large-size Ho-Oh. XXL status is
+            independent of IV quality.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Ho-Oh?
+        </summary>
+
+        <p>
+
+            XXS Ho-Oh is a small-size Ho-Oh. Like XXL,
+            XXS status does not automatically indicate
+            anything about IV quality.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Ho-Oh good for raids?
+        </summary>
+
+        <p>
+
+            Ho-Oh can be useful in Fire-focused raid situations
+            when equipped with an appropriate Fire moveset.
+            Its overall usefulness depends on the available
+            alternatives and current move balance.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Ho-Oh good in Master League?
+        </summary>
+
+        <p>
+
+            Yes. Ho-Oh can be highly relevant in Master League
+            thanks to its high stats, typing and charged-move
+            options.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is a Lucky Ho-Oh automatically 100% IV?
+        </summary>
+
+        <p>
+
+            No. Lucky status and perfect IVs are different
+            characteristics. A Lucky Ho-Oh can have a range
+            of IV combinations.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a Shiny Ho-Oh also be Lucky?
+        </summary>
+
+        <p>
+
+            Yes. Pokémon characteristics such as Shiny and
+            Lucky can coexist when the individual Pokémon
+            meets the requirements for both statuses.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Ho-Oh be both 100% and XXL?
+        </summary>
+
+        <p>
+
+            Yes. Size classification and IV quality are separate
+            characteristics, so an individual Ho-Oh can be both
+            XXL and 15/15/15.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Ho-Oh be both Shiny and 100% IV?
+        </summary>
+
+        <p>
+
+            Yes. Shiny status and IV quality are independent,
+            so a Shiny Ho-Oh can have perfect IVs.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            raid rotations, availability and other game data
+            can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Ho-Oh Guide
+    </h3>
+
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Ho-Oh Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Performance
+            </a>
+        </li>
+
+        <li>
+            <a href="#counters">
+                Counters
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow-ho-oh">
+                Shadow Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified-ho-oh">
+                Purified Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky-ho-oh">
+                Lucky Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#perfect-ho-oh">
+                100% Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl-ho-oh">
+                XXL Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs-ho-oh">
+                XXS Ho-Oh
+            </a>
+        </li>
+
+        <li>
+            <a href="#forms">
+                Forms & Status
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/lugia.html">
+
+        Lugia Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/tyranitar.html">
+
+        Tyranitar Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/rayquaza.html">
+
+        Rayquaza Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/fire.html">
+
+        Fire Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/flying.html">
+
+        Flying Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-2.html">
+
+        Gen 2 Pokémon →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Ho-Oh Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>Type:</strong>
+        Fire / Flying
+    </p>
+
+
+    <p>
+        <strong>Generation:</strong>
+        2
+    </p>
+
+
+    <p>
+        <strong>Pokédex:</strong>
+        #250
+    </p>
+
+
+    <p>
+        <strong>Evolution:</strong>
+        None
+    </p>
+
+
+    <p>
+        <strong>Max CP:</strong>
+        4,367
+    </p>
+
+
+    <p>
+        <strong>Special Statuses:</strong>
+        Shiny, Shadow, Purified, Lucky
+    </p>
+
+
+    <p>
+        <strong>Size Variants:</strong>
+        XXL / XXS
+    </p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

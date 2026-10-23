@@ -1,0 +1,4893 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Meditite Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+    <meta name="description"
+          content="Complete Meditite Pokémon GO guide covering stats, max CP, Fighting and Psychic typing, weaknesses, resistances, moves, PvP, IVs, Shiny Meditite, Shadow Meditite, Purified Meditite, Lucky Meditite, 100% IV, XXL, XXS and evolution into Medicham.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/meditite.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #8fa2ff;
+            --accent-2: #657cff;
+
+            --fighting: #e66b4d;
+            --psychic: #e76baa;
+
+            --water: #4e9dff;
+            --flying: #78a9ff;
+            --ghost: #9270c9;
+            --fairy: #df83c7;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --gold: #e3b84d;
+            --ice: #79d9dc;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(111,130,255,.11),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.92);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(231,107,170,.15),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            color: var(--psychic);
+
+            background:
+                rgba(231,107,170,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing: -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .fighting-tag {
+            color: var(--fighting);
+        }
+
+        .psychic-tag {
+            color: var(--psychic);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(231,107,170,.20),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           CONTENT LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--accent);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(231,107,170,.30);
+
+            background:
+                rgba(231,107,170,.06);
+
+            border-radius: var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(231,107,170,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--psychic);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           TYPE PILLS
+        ===================================================== */
+
+        .type-row {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 12px;
+        }
+
+        .type-pill {
+
+            padding:
+                7px 15px;
+
+            border-radius: 30px;
+
+            font-size: .72rem;
+
+            font-weight: 900;
+        }
+
+        .fighting-type {
+
+            background:
+                rgba(230,107,77,.16);
+
+            color: var(--fighting);
+
+            border:
+                1px solid rgba(230,107,77,.30);
+        }
+
+        .psychic-type {
+
+            background:
+                rgba(231,107,170,.16);
+
+            color: var(--psychic);
+
+            border:
+                1px solid rgba(231,107,170,.30);
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            background: var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card span {
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .effect-card p {
+
+            margin-top: 6px;
+
+            font-size: .76rem;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color: var(--psychic);
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(231,107,170,.10),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(231,107,170,.25);
+
+            border-radius: var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table {
+
+            width: 100%;
+
+            min-width: 700px;
+
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: var(--surface-2);
+        }
+
+
+        /* =====================================================
+           IV CARDS
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 20px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.6rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           SPECIAL FORM CARDS
+        ===================================================== */
+
+        .special-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .special-card {
+
+            padding: 22px;
+
+            border-radius: 18px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .special-card .special-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 10px;
+        }
+
+        .special-card strong {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            font-size: 1rem;
+        }
+
+        .special-card p {
+
+            font-size: .76rem;
+
+            margin: 0;
+        }
+
+
+        /* =====================================================
+           SIZE CARDS
+        ===================================================== */
+
+        .size-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .size-card {
+
+            padding: 25px;
+
+            border-radius: 18px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .size-card strong {
+
+            display: block;
+
+            font-size: 1.3rem;
+
+            margin-bottom: 6px;
+        }
+
+        .size-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           EVOLUTION
+        ===================================================== */
+
+        .form-tree {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+            margin: 20px 0;
+        }
+
+        .form-node {
+
+            padding:
+                16px 22px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .form-node strong {
+            display: block;
+        }
+
+        .form-node span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .form-arrow {
+
+            color: var(--accent);
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background: var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background: #06090e;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid,
+            .special-grid,
+            .size-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .rating-row {
+
+                grid-template-columns: 1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+
+                text-align: left;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .pokemon-placeholder {
+
+                width: 210px;
+                height: 210px;
+
+                font-size: 5.5rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/fighting.html">
+        Fighting Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Meditite
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                GEN 3 • HOENN
+            </span>
+
+            <h1>
+                Meditite
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Meditite is a Fighting and Psychic-type
+                Pokémon from the Hoenn region. In Pokémon GO,
+                it is best known as the first stage of the
+                Meditite → Medicham evolution family and as
+                a Pokémon with relevance in specific PvP
+                situations and collection-focused builds.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag fighting-tag">
+                    Fighting
+                </span>
+
+                <span class="tag psychic-tag">
+                    Psychic
+                </span>
+
+                <span class="tag">
+                    #307
+                </span>
+
+                <span class="tag">
+                    Gen 3
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🧘
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            78
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            107
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            102
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~784
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Meditite Overview
+        </h2>
+
+        <p>
+
+            Meditite is a dual Fighting/Psychic-type Pokémon
+            introduced in Generation 3. It evolves into
+            Medicham after receiving enough Meditite Candy.
+
+            Unlike Medicham, Meditite has relatively modest
+            combat stats and is usually more interesting as
+            an evolution, collection, PvP-cup or special-form
+            Pokémon than as a major raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #307
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 3
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Hoenn
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Fighting / Psychic
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                78
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                107
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                102
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~784
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPING
+        </span>
+
+        <h2>
+            Meditite Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🧠
+        </div>
+
+        <div>
+
+            <strong>
+                Fighting / Psychic
+            </strong>
+
+            <span>
+                Dual Type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="type-row">
+
+        <span class="type-pill fighting-type">
+            Fighting
+        </span>
+
+        <span class="type-pill psychic-type">
+            Psychic
+        </span>
+
+    </div>
+
+
+    <h3>
+        Why Meditite's Typing Matters
+    </h3>
+
+    <p>
+
+        Meditite's Fighting/Psychic typing gives it a
+        different matchup profile from a pure Fighting-type.
+        Its dual typing affects which attacks deal
+        super-effective damage and which attacks Meditite
+        can resist.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • MATCHUPS
+        </span>
+
+        <h2>
+            Meditite Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks are super effective
+                against Meditite.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost-type attacks can exploit Meditite's
+                Psychic typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🦅
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying-type attacks are super effective
+                against Meditite.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Meditite's Fighting typing gives it useful
+                resistance to Rock-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Meditite resists Fighting-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Meditite's Fighting/Psychic combination
+                provides useful resistance to Grass.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Meditite Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Meditite has a relatively low Attack stat but
+            stronger defensive values for a first-stage
+            Pokémon. Its low maximum CP means it should not
+            be evaluated in the same way as high-stat
+            Legendary Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                78
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                107
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                102
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~784
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Maximum CP depends on level and IVs. A perfect
+            IV Meditite at the highest available level has
+            a substantially different CP from a low-level
+            Meditite caught in the wild.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVES
+        </span>
+
+        <h2>
+            Meditite Best Moves
+        </h2>
+
+        <p>
+
+            Meditite's moves should generally be evaluated
+            according to the specific role and format in which
+            you intend to use it.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Approach
+        </strong>
+
+        <p>
+
+            For Meditite itself, prioritize the moveset that
+            matches the specific PvP format or collection goal.
+            Medicham is generally the more important battle
+            investment in this evolutionary family.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Information
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Current Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Check Live Data
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        PvE / PvP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Current Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Check Live Data
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        PvP / Battle
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move pools and move availability can change through
+        Pokémon GO updates and events. Verify the current
+        in-game moveset before publishing time-sensitive
+        move recommendations.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID / BATTLE
+========================================================= -->
+
+<section class="section" id="battle">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • BATTLE USE
+        </span>
+
+        <h2>
+            Is Meditite Good for Raids?
+        </h2>
+
+        <p>
+
+            Meditite is not normally considered a top-tier
+            raid attacker. Its relatively low Attack stat and
+            low maximum CP make it much less suitable for
+            conventional high-level PvE than its evolved form,
+            Medicham, or specialized Fighting-type attackers.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:25%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvP Potential
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:45%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Niche
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:85%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Meditite?
+    </h3>
+
+    <p>
+
+        Most players should first decide whether the Meditite
+        is being kept for PvP, evolution, a special-form
+        collection, a perfect-IV collection or simply as a
+        personal favorite.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • PVP
+        </span>
+
+        <h2>
+            Meditite PvP Guide
+        </h2>
+
+        <p>
+
+            Meditite's low CP ceiling makes it a niche PvP
+            Pokémon rather than a general-purpose competitive
+            choice. Its evolution, Medicham, is considerably
+            more relevant when discussing the family's PvP
+            history and investment potential.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Meditite can fit within Great League's CP limit,
+        but players should evaluate it against the current
+        format and available moves rather than assuming that
+        an unevolved Pokémon is automatically competitive.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Meditite's low maximum CP makes Ultra League an
+        unnatural environment for the species.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Meditite is not a practical Master League investment
+        because its maximum CP is far below the level normally
+        required for the format.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     08 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • EVOLUTION
+        </span>
+
+        <h2>
+            Meditite Evolution
+        </h2>
+
+        <p>
+
+            Meditite evolves into Medicham using Meditite
+            Candy. There is no branching evolution from
+            Meditite.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Meditite
+            </strong>
+
+            <span>
+                #307
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Medicham
+            </strong>
+
+            <span>
+                #308
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Tip
+        </strong>
+
+        <p>
+
+            Before evolving a Meditite, check its IVs, CP,
+            appraisal, size, Shiny status and any personal
+            collection goals. Do not automatically evolve
+            every high-CP specimen.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     09 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • SHINY
+        </span>
+
+        <h2>
+            Shiny Meditite
+        </h2>
+
+        <p>
+
+            Shiny Meditite is a special alternate-color
+            version of Meditite. Shiny status is retained
+            when the Pokémon evolves into Shiny Medicham.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Meditite
+            </strong>
+
+            <p>
+
+                An alternate-color variant that can be
+                especially desirable for collectors.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🧘
+            </div>
+
+            <strong>
+                Shiny Evolution
+            </strong>
+
+            <p>
+
+                A Shiny Meditite can evolve while retaining
+                its Shiny status.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Meditite Collection Tips
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the Shiny indicator before transferring.
+        </li>
+
+        <li>
+            Consider keeping a Shiny Meditite for evolution.
+        </li>
+
+        <li>
+            Compare IVs before choosing which Shiny to evolve.
+        </li>
+
+        <li>
+            Keep a Shiny specimen if you are building a
+            complete Hoenn collection.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     10 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Meditite
+        </h2>
+
+        <p>
+
+            Shadow Meditite is a Shadow variant of the species.
+            Shadow Pokémon have a different battle profile
+            from their standard counterparts and require
+            separate consideration when deciding whether to
+            evolve, purify or keep them unevolved.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Meditite
+            </strong>
+
+            <p>
+
+                The Shadow form retains Meditite's
+                Fighting/Psychic typing.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Shadow Battle Profile
+            </strong>
+
+            <p>
+
+                Shadow Pokémon trade defensive durability
+                for increased offensive pressure.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Meditite vs Regular Meditite
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Meditite
+                    </td>
+
+                    <td>
+                        Meditite
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Typing
+                    </td>
+
+                    <td>
+                        Fighting / Psychic
+                    </td>
+
+                    <td>
+                        Fighting / Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defensive Trade-Off
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced durability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Meditite and Frustration
+    </h3>
+
+    <p>
+
+        Shadow Pokémon may have Frustration as their Charged
+        Attack when obtained. Special Team GO Rocket events
+        can provide opportunities to replace Frustration.
+        Always check the current event rules before spending
+        resources on a Shadow Pokémon.
+
+    </p>
+
+
+    <h3>
+        Should You Purify Shadow Meditite?
+    </h3>
+
+    <p>
+
+        Do not purify a Shadow Meditite automatically.
+        Compare its IVs, potential evolution, battle use,
+        collection value and your personal goals before
+        making the decision.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     11 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Meditite
+        </h2>
+
+        <p>
+
+            Purified Meditite is created by purifying an
+            eligible Shadow Meditite. Purification changes
+            the Pokémon's status and can also affect its
+            appraisal and resource requirements.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                💠
+            </div>
+
+            <strong>
+                Purified Status
+            </strong>
+
+            <p>
+
+                Purified Meditite is no longer considered
+                a Shadow Pokémon.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Purification Benefits
+            </strong>
+
+            <p>
+
+                Purification can increase IV values and
+                provide other Pokémon GO-specific benefits.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Meditite
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Retained
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Evolution
+                    </td>
+
+                    <td>
+                        Can evolve
+                    </td>
+
+                    <td>
+                        Can evolve
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Purification warning:
+        </strong>
+
+        <p>
+
+            Purification is permanent. If your goal is to keep
+            the Shadow battle characteristics, consider the
+            Shadow Pokémon carefully before choosing Purify.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     12 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Meditite
+        </h2>
+
+        <p>
+
+            Lucky Meditite is obtained through Pokémon GO's
+            trading system. Lucky Pokémon have a special
+            background and reduced Stardust requirements for
+            power-ups.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Meditite
+            </strong>
+
+            <p>
+
+                A traded Meditite can become Lucky when the
+                trade results in the Lucky Pokémon status.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Lucky IV Floor
+            </strong>
+
+            <p>
+
+                Lucky Pokémon have a guaranteed minimum IV
+                floor, making Lucky trades attractive for
+                collectors and investment projects.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a Lucky Meditite?
+    </h3>
+
+    <p>
+
+        A Lucky Meditite can be useful for a collection,
+        evolution project or lower-Stardust investment.
+        Whether it should be evolved depends on its IVs and
+        your goals for Medicham.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     13 100% IV
+========================================================= -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • PERFECT IV
+        </span>
+
+        <h2>
+            100% IV Meditite
+        </h2>
+
+        <p>
+
+            A 100% IV Meditite has 15 Attack, 15 Defense and
+            15 HP/Stat IV. These are the maximum possible IV
+            values for a standard Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                ATTACK IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                DEFENSE IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect Meditite
+        </strong>
+
+        <p>
+
+            A 15/15/15 Meditite is a perfect-IV specimen.
+            Whether it should be evolved depends on the
+            role you want it to play and the current usefulness
+            of Medicham.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        How to Check a 100% Meditite
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Open the Pokémon appraisal screen.
+        </li>
+
+        <li>
+            Check Attack IV.
+        </li>
+
+        <li>
+            Check Defense IV.
+        </li>
+
+        <li>
+            Check HP IV.
+        </li>
+
+        <li>
+            Confirm all three IV values are 15.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     14 XXL / XXS
+========================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • SIZE
+        </span>
+
+        <h2>
+            XXL & XXS Meditite
+        </h2>
+
+        <p>
+
+            Pokémon GO can identify unusually large and
+            unusually small Pokémon using special size
+            classifications. XXL and XXS Meditite can be
+            valuable additions to a collection and may also
+            matter for size-related medals or showcases.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card">
+
+            <strong>
+                📏 XXL Meditite
+            </strong>
+
+            <span>
+                EXTRA LARGE
+            </span>
+
+            <p>
+
+                An XXL Meditite is an unusually large specimen.
+                Keep one if you are interested in showcases,
+                size collections or completing your Pokédex
+                variants.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <strong>
+                🔹 XXS Meditite
+            </strong>
+
+            <span>
+                EXTRA SMALL
+            </span>
+
+            <p>
+
+                An XXS Meditite is an unusually small specimen.
+                It can be useful for collectors who track
+                special size variants.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        XXL vs XXS Meditite
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Extra Large
+                    </td>
+
+                    <td>
+                        Extra Small
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Can Evolve
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        IVs
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Size note:
+        </strong>
+
+        <p>
+
+            Size classification and IV quality are separate
+            characteristics. An XXL or XXS Meditite does not
+            automatically have better IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     15 SPECIAL VARIANTS
+========================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • SPECIAL VARIANTS
+        </span>
+
+        <h2>
+            Meditite Special Variants
+        </h2>
+
+        <p>
+
+            Collectors may encounter Meditite in several
+            different states. These characteristics can
+            overlap, so one Meditite can potentially have
+            more than one desirable attribute.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <p>
+                Alternate-color Meditite.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <p>
+                Shadow battle variant.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💠
+            </div>
+
+            <strong>
+                Purified
+            </strong>
+
+            <p>
+                Purified Shadow Meditite.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <p>
+                Lucky Pokémon obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏆
+            </div>
+
+            <strong>
+                100% IV
+            </strong>
+
+            <p>
+                15/15/15 perfect IV specimen.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL / XXS
+            </strong>
+
+            <p>
+                Special size classifications.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     16 COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • COMPARISON
+        </span>
+
+        <h2>
+            Meditite Forms & Variants Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Fighting/Psychic
+                    </th>
+
+                    <th>
+                        Special Status
+                    </th>
+
+                    <th>
+                        Can Evolve
+                    </th>
+
+                    <th>
+                        Collection Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Perfect IV
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Size Variant
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS Meditite
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Size Variant
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     17 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • RESOURCES
+        </span>
+
+        <h2>
+            Meditite Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Meditite Candy becomes especially useful when
+            evolving Meditite into Medicham or powering up a
+            Meditite for a specific purpose.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Meditite Candy if you plan to evolve multiple
+            specimens.
+        </li>
+
+        <li>
+            Compare IVs before spending Stardust.
+        </li>
+
+        <li>
+            Keep useful Shadow and Shiny specimens separate.
+        </li>
+
+        <li>
+            Check Lucky Meditite before investing Stardust.
+        </li>
+
+        <li>
+            Keep XXL and XXS specimens if size collecting
+            matters to you.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     18 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • AVAILABILITY
+        </span>
+
+        <h2>
+            Meditite Availability
+        </h2>
+
+        <p>
+
+            Meditite availability can change through Pokémon GO
+            events, seasonal rotations, research encounters,
+            wild spawns and other special features.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and spawn
+            schedule before describing Meditite as currently
+            available through a particular encounter method.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical Meditite appearances should be separated
+        from current availability so that an old event does
+        not accidentally appear to be a current way to obtain
+        the Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     19 HOW TO USE
+========================================================= -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • TRAINER GUIDE
+        </span>
+
+        <h2>
+            How to Use Meditite
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Evolving
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check IVs.
+        </li>
+
+        <li>
+            Check whether the Meditite is Shiny.
+        </li>
+
+        <li>
+            Check Shadow or Purified status.
+        </li>
+
+        <li>
+            Check whether it is Lucky.
+        </li>
+
+        <li>
+            Check XXL or XXS size classification.
+        </li>
+
+        <li>
+            Decide whether you want Medicham.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Meditite is particularly interesting when collecting
+        special variants. A personal collection might include
+        a Shiny, Shadow, Purified, Lucky, perfect-IV, XXL and
+        XXS Meditite.
+
+    </p>
+
+
+    <h3>
+        For PvP Players
+    </h3>
+
+    <p>
+
+        Do not judge a Meditite only by its CP. For PvP,
+        IV distribution, league limits, moves and the current
+        metagame can matter more than simply having the
+        highest possible CP.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     20 INDIVIDUAL GUIDE
+========================================================= -->
+
+<section class="section" id="individual">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • INDIVIDUAL SPECIMEN GUIDE
+        </span>
+
+        <h2>
+            Which Meditite Should You Keep?
+        </h2>
+
+        <p>
+
+            The best Meditite depends on what you want from it.
+            There is no single specimen that is automatically
+            best for every player.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Best for Shiny Collection
+            </strong>
+
+            <p>
+                Shiny Meditite.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Best Shadow Project
+            </strong>
+
+            <p>
+                Strong Shadow Meditite with useful IVs.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Best Stardust Project
+            </strong>
+
+            <p>
+                A useful Lucky specimen can reduce
+                Stardust costs.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏆
+            </div>
+
+            <strong>
+                Best Perfect Collection
+            </strong>
+
+            <p>
+                15/15/15 Meditite.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📏
+            </div>
+
+            <strong>
+                Best XXL Collection
+            </strong>
+
+            <p>
+                XXL Meditite.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔹
+            </div>
+
+            <strong>
+                Best XXS Collection
+            </strong>
+
+            <p>
+                XXS Meditite.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     21 RELATED EVOLUTION
+========================================================= -->
+
+<section class="section" id="medicham">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • EVOLUTION TARGET
+        </span>
+
+        <h2>
+            Meditite → Medicham
+        </h2>
+
+        <p>
+
+            Medicham is the evolved form of Meditite. If your
+            goal is battle performance, evaluate the evolved
+            Pokémon separately rather than assuming that
+            Meditite and Medicham have the same role.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Meditite
+            </strong>
+
+            <span>
+                #307
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Medicham
+            </strong>
+
+            <span>
+                #308
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Evolution tip:
+        </strong>
+
+        <p>
+
+            Before evolving, consider whether the specimen is
+            better kept as a Shiny, Shadow, Lucky, perfect-IV,
+            XXL or XXS collector's Pokémon.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     22 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • FAQ
+        </span>
+
+        <h2>
+            Meditite FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Meditite?
+        </summary>
+
+        <p>
+
+            Meditite is a Fighting and Psychic-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Meditite weak to?
+        </summary>
+
+        <p>
+
+            Meditite is vulnerable to Flying, Ghost and
+            Fairy-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Meditite evolve?
+        </summary>
+
+        <p>
+
+            Yes. Meditite evolves into Medicham.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Meditite available?
+        </summary>
+
+        <p>
+
+            Shiny Meditite is available through eligible
+            Pokémon GO encounters.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Meditite available?
+        </summary>
+
+        <p>
+
+            Shadow Meditite can be available through
+            Team GO Rocket-related content when included
+            in the current game rotation.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Meditite be purified?
+        </summary>
+
+        <p>
+
+            Yes. An eligible Shadow Meditite can be purified.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Meditite be Lucky?
+        </summary>
+
+        <p>
+
+            Yes. Meditite can become Lucky through the
+            Pokémon GO trading system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Meditite?
+        </summary>
+
+        <p>
+
+            A 100% Meditite has perfect IVs:
+            15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is an XXL Meditite?
+        </summary>
+
+        <p>
+
+            An XXL Meditite is a Pokémon classified as
+            extra large by Pokémon GO's size system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is an XXS Meditite?
+        </summary>
+
+        <p>
+
+            An XXS Meditite is a Pokémon classified as
+            extra small by Pokémon GO's size system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Meditite good for raids?
+        </summary>
+
+        <p>
+
+            Meditite is generally not a top-tier raid attacker.
+            Its evolved form and other specialized Pokémon
+            are usually more appropriate for serious PvE teams.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Meditite good for PvP?
+        </summary>
+
+        <p>
+
+            Meditite has niche PvP potential, but its low
+            maximum CP makes it much less broadly useful than
+            its evolved form, Medicham.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I evolve my 100% Meditite?
+        </summary>
+
+        <p>
+
+            If your goal is to build a perfect Medicham,
+            a 15/15/15 Meditite is an excellent candidate.
+            However, check the current usefulness of Medicham
+            before spending resources.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Meditite?
+        </summary>
+
+        <p>
+
+            Not automatically. Compare the Shadow and
+            purified versions based on your battle and
+            collection goals before making purification
+            permanent.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Meditite evolve into Shiny Medicham?
+        </summary>
+
+        <p>
+
+            Yes. Shiny status is retained when Meditite
+            evolves into Medicham.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can XXL Meditite evolve?
+        </summary>
+
+        <p>
+
+            Yes. An XXL Meditite can evolve, although
+            collectors may choose to keep the original
+            specimen for their size collection.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can XXS Meditite evolve?
+        </summary>
+
+        <p>
+
+            Yes. An XXS Meditite can evolve into Medicham.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL NOTE
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, availability, encounters, Shadow rotations,
+            events and other game data can change over time.
+            Verify current in-game information before making
+            investment decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This website is not affiliated
+            with Nintendo, Niantic, The Pokémon Company or
+            any of their subsidiaries.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Meditite Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#battle">
+                    Battle Performance
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shiny">
+                    Shiny Meditite
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shadow">
+                    Shadow Meditite
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#purified">
+                    Purified Meditite
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#lucky">
+                    Lucky Meditite
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#perfect">
+                    100% Meditite
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#size">
+                    XXL & XXS
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#variants">
+                    Special Variants
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/medicham.html">
+
+            Medicham Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/fighting.html">
+
+            Fighting Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/psychic.html">
+
+            Psychic Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/ralts.html">
+
+            Ralts Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/makuhita.html">
+
+            Makuhita Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-3.html">
+
+            Gen 3 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Meditite Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+
+            Fighting / Psychic
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+
+            3
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+
+            #307
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution:
+            </strong>
+
+            Medicham
+        </p>
+
+
+        <p>
+            <strong>
+                Shiny:
+            </strong>
+
+            Available
+        </p>
+
+
+        <p>
+            <strong>
+                Shadow:
+            </strong>
+
+            Available when rotated into Rocket content
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

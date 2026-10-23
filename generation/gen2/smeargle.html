@@ -1,0 +1,4572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Smeargle Pokémon GO Guide — Stats, Moves, Shiny, Shadow, Lucky, Hundo, XXL & XXS
+</title>
+
+<meta name="description"
+      content="Complete Smeargle Pokémon GO guide covering Smeargle stats, typing, weaknesses, moves, Shiny Smeargle, Shadow, Purified, Lucky, 100% IV, XXL, XXS, availability, Photo Bomb mechanics and more.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/smeargle.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #9f8cff;
+    --accent-2: #7564ff;
+
+    --normal: #a8a77a;
+    --grass: #5dcf82;
+    --dark: #665c78;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #e6bd54;
+    --pink: #f58ca8;
+    --cyan: #68d8df;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(159,140,255,.12),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(159,140,255,.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(245,140,168,.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--accent);
+
+    background:
+        rgba(159,140,255,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 730px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+.shiny-tag {
+    color: var(--gold);
+}
+
+.photo-tag {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(159,140,255,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        24px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+.section-number {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.45rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(168,167,122,.35);
+
+    background:
+        rgba(168,167,122,.07);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(168,167,122,.14);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color: var(--normal);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color: var(--accent);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(159,140,255,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(159,140,255,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   VARIANT CARDS
+========================================================= */
+
+.variant-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.variant-card {
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.variant-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background:
+        var(--accent);
+}
+
+.variant-card.shiny::before {
+    background: var(--gold);
+}
+
+.variant-card.shadow::before {
+    background: #756b82;
+}
+
+.variant-card.lucky::before {
+    background: var(--gold);
+}
+
+.variant-card.size::before {
+    background: var(--cyan);
+}
+
+.variant-card h3 {
+
+    margin:
+        0 0 8px;
+
+    font-size: 1.1rem;
+}
+
+.variant-label {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    padding: 5px 8px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    color: var(--muted);
+
+    font-size: .62rem;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.7rem;
+}
+
+.iv-card span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   HUNDO
+========================================================= */
+
+.hundo-card {
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    border:
+        1px solid rgba(230,189,84,.35);
+
+    border-radius: 20px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(230,189,84,.15),
+            transparent 35%
+        ),
+
+        rgba(230,189,84,.04);
+}
+
+.hundo-card h3 {
+    margin-top: 0;
+}
+
+.hundo-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        7px 12px;
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(230,189,84,.12);
+
+    color:
+        var(--gold);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   SIZE SYSTEM
+========================================================= */
+
+.size-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.size-card {
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    background:
+        var(--surface-2);
+}
+
+.size-card.xxl {
+    border-color:
+        rgba(104,216,223,.3);
+}
+
+.size-card.xxs {
+    border-color:
+        rgba(159,140,255,.3);
+}
+
+.size-value {
+
+    font-size: 2rem;
+
+    font-weight: 950;
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.availability-box {
+
+    padding: 22px;
+
+    border:
+        1px solid rgba(98,216,154,.25);
+
+    border-radius: 18px;
+
+    background:
+        rgba(98,216,154,.05);
+}
+
+.status {
+
+    display: inline-block;
+
+    padding:
+        6px 10px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(98,216,154,.12);
+
+    color:
+        var(--success);
+
+    font-size: .65rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color:
+        #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color:
+        var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid,
+    .size-grid,
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+a:focus-visible,
+summary:focus-visible {
+
+    outline:
+        2px solid var(--accent);
+
+    outline-offset:
+        3px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main class="page">
+
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/normal.html">
+        Normal Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Smeargle
+    </strong>
+
+</div>
+
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                GENERATION 2 • PHOTO BOMBER
+            </span>
+
+            <h1>
+                Smeargle
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Smeargle is a Normal-type Pokémon from the Johto
+                region with one of the most unusual encounter
+                mechanics in Pokémon GO. Rather than appearing
+                through ordinary wild encounters, Smeargle is
+                primarily associated with the GO Snapshot
+                Photo Bomb mechanic.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag normal-tag">
+                    Normal
+                </span>
+
+                <span class="tag">
+                    #235
+                </span>
+
+                <span class="tag">
+                    Gen 2
+                </span>
+
+                <span class="tag photo-tag">
+                    Photo Bomb
+                </span>
+
+                <span class="tag shiny-tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    No Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🎨
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            40
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            83
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            146
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,323
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<!-- =======================================================
+     CONTENT LAYOUT
+======================================================= -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Smeargle Overview
+        </h2>
+
+        <p>
+
+            Smeargle is a Normal-type Pokémon originally
+            introduced in Generation 2. It is best known in
+            Pokémon GO for its unusual interaction with GO
+            Snapshot rather than for its battle performance.
+
+        </p>
+
+        <p>
+
+            Smeargle does not have a normal evolution chain.
+            Its most distinctive feature is Sketch, which gives
+            it a unique relationship with the moves used by
+            Pokémon appearing in GO Snapshot.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #235
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 2
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Johto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Normal
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                40
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                83
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                146
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~1,323
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Smeargle Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🎨
+        </div>
+
+        <div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Smeargle's Typing Matters
+    </h3>
+
+    <p>
+
+        Smeargle's Normal typing gives it a relatively simple
+        defensive profile. Its typing is not what makes Smeargle
+        interesting in Pokémon GO; the Pokémon's special move
+        and Photo Bomb mechanics are much more important.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Smeargle Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weakness
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+
+                Fighting-type attacks deal
+                super-effective damage to
+                Normal-type Smeargle.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistance
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+
+                Normal-type Pokémon are immune
+                to Ghost-type attacks in Pokémon GO.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Smeargle Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Smeargle has a relatively low Attack stat compared
+            with Pokémon commonly used for raids. Its maximum
+            CP is also modest, which limits its role in serious
+            PvE and PvP battles.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                40
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                83
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                146
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~1,323
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        CP depends on level and IVs. The maximum CP shown
+        here should be kept synchronized with your live
+        Pokémon GO database if you publish exact numerical
+        values.
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVES
+        </span>
+
+        <h2>
+            Smeargle Moves & Sketch
+        </h2>
+
+        <p>
+
+            Smeargle is unusual because its signature mechanic
+            revolves around Sketch. In Pokémon GO, its moveset
+            can reflect moves associated with the Pokémon
+            appearing in the Snapshot encounter.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Smeargle's Signature Mechanic
+        </strong>
+
+        <p>
+
+            Sketch allows Smeargle to copy certain moves from
+            the Pokémon involved in the relevant Photo Bomb
+            encounter.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Smeargle Moves Are Different
+    </h3>
+
+    <p>
+
+        Unlike ordinary Pokémon where trainers simply select
+        from a fixed move pool, Smeargle's Pokémon GO identity
+        is closely connected with its Photo Bomb mechanic.
+        This makes its individual moveset more interesting to
+        collectors than to competitive battlers.
+
+    </p>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Smeargle
+                    </th>
+
+                    <th>
+                        Importance
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Sketch
+                    </td>
+
+                    <td>
+                        Signature mechanic
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Photo Bomb
+                    </td>
+
+                    <td>
+                        Encounter mechanic
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Raid Moveset
+                    </td>
+
+                    <td>
+                        Limited battle value
+                    </td>
+
+                    <td>
+                        Low
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • RAID USE
+        </span>
+
+        <h2>
+            Is Smeargle Good for Raids?
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Smeargle is generally not a Pokémon you would build
+        specifically for high-level raid battles. Its low
+        offensive stats and modest maximum CP make it much
+        less practical than dedicated raid attackers.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Raid Damage
+            </strong>
+
+            <p>
+                Low compared with specialized attackers.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🛡️
+            </div>
+
+            <strong>
+                Durability
+            </strong>
+
+            <p>
+                Not strong enough to be a preferred raid tank.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🎨
+            </div>
+
+            <strong>
+                Collector Value
+            </strong>
+
+            <p>
+                Much more interesting as a collectible Pokémon.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • PVP
+        </span>
+
+        <h2>
+            Smeargle PvP Guide
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Smeargle's low maximum CP and unusual moveset mechanics
+        make it an uncommon competitive choice. It is better
+        known for collection, novelty and specialized gameplay
+        situations than for conventional PvP team building.
+
+    </p>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Smeargle can fall within the CP range of lower leagues,
+        but being under the CP limit does not automatically make
+        a Pokémon competitively strong.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Smeargle's maximum CP makes Ultra League use impractical
+        compared with Pokémon specifically designed for that
+        format.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Smeargle is not a conventional Master League Pokémon
+        because its maximum CP and offensive stats are far below
+        those of typical Master League specialists.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     VARIANTS
+======================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • VARIANTS
+        </span>
+
+        <h2>
+            Smeargle Forms & Special Variants
+        </h2>
+
+        <p>
+
+            Smeargle can be discussed in several collector
+            categories. However, not every category represents
+            a separate species form or a permanently different
+            Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <!-- REGULAR -->
+
+        <div class="variant-card">
+
+            <span class="variant-label">
+                Standard
+            </span>
+
+            <h3>
+                Regular Smeargle
+            </h3>
+
+            <p>
+
+                The standard Smeargle encountered through its
+                Pokémon GO encounter mechanics.
+
+            </p>
+
+        </div>
+
+
+        <!-- SHINY -->
+
+        <div class="variant-card shiny">
+
+            <span class="variant-label">
+                Shiny
+            </span>
+
+            <h3>
+                Shiny Smeargle
+            </h3>
+
+            <p>
+
+                Shiny Smeargle has an alternate coloration and
+                is especially desirable among collectors.
+
+            </p>
+
+        </div>
+
+
+        <!-- SHADOW -->
+
+        <div class="variant-card shadow">
+
+            <span class="variant-label">
+                Special Status
+            </span>
+
+            <h3>
+                Shadow Smeargle
+            </h3>
+
+            <p>
+
+                Shadow Smeargle should not be presented as a
+                standard obtainable Smeargle variant unless
+                current Pokémon GO data confirms availability.
+
+            </p>
+
+        </div>
+
+
+        <!-- PURIFIED -->
+
+        <div class="variant-card">
+
+            <span class="variant-label">
+                Special Status
+            </span>
+
+            <h3>
+                Purified Smeargle
+            </h3>
+
+            <p>
+
+                A Purified Smeargle would depend on Shadow
+                Smeargle being eligible for purification.
+                Treat this as a database status rather than
+                automatically claiming availability.
+
+            </p>
+
+        </div>
+
+
+        <!-- LUCKY -->
+
+        <div class="variant-card lucky">
+
+            <span class="variant-label">
+                Lucky
+            </span>
+
+            <h3>
+                Lucky Smeargle
+            </h3>
+
+            <p>
+
+                Lucky status is a Pokémon GO ownership and
+                trading-related status rather than a separate
+                species or permanent form.
+
+            </p>
+
+        </div>
+
+
+        <!-- HUNDO -->
+
+        <div class="variant-card lucky">
+
+            <span class="variant-label">
+                100% IV
+            </span>
+
+            <h3>
+                100% Smeargle
+            </h3>
+
+            <p>
+
+                A 100% Smeargle has 15 Attack, 15 Defense and
+                15 HP IVs. This is commonly called a Hundo.
+
+            </p>
+
+        </div>
+
+
+        <!-- XXL -->
+
+        <div class="variant-card size">
+
+            <span class="variant-label">
+                Size
+            </span>
+
+            <h3>
+                XXL Smeargle
+            </h3>
+
+            <p>
+
+                XXL refers to an exceptionally large size
+                classification, not a separate species form.
+                Display availability from current game data.
+
+            </p>
+
+        </div>
+
+
+        <!-- XXS -->
+
+        <div class="variant-card size">
+
+            <span class="variant-label">
+                Size
+            </span>
+
+            <h3>
+                XXS Smeargle
+            </h3>
+
+            <p>
+
+                XXS refers to an exceptionally small size
+                classification rather than a different form.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • SHINY
+        </span>
+
+        <h2>
+            Shiny Smeargle
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Shiny Smeargle is a particularly interesting collector
+        target because Smeargle itself is encountered through
+        a special Photo Bomb mechanic.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shiny Collector Tip
+        </strong>
+
+        <p>
+
+            When a Shiny Smeargle opportunity is active, take
+            advantage of eligible Snapshot encounters because
+            Smeargle availability can be tied to specific
+            events or special periods.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🎨
+            </div>
+
+            <strong>
+                Standard
+            </strong>
+
+            <p>
+                Normal Smeargle coloration.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <p>
+                Alternate Shiny coloration.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     SHADOW
+======================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Smeargle
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Shadow Pokémon normally receive a distinct battle
+        modifier and can require additional resources.
+        However, Smeargle should not automatically be listed
+        as a currently obtainable Shadow Pokémon.
+
+    </p>
+
+
+    <div class="availability-box">
+
+        <span class="status">
+            VERIFY LIVE DATA
+        </span>
+
+        <h3>
+            Shadow Availability
+        </h3>
+
+        <p>
+
+            If your database includes Shadow Smeargle as a
+            supported record, display the relevant source,
+            encounter method and date range. Otherwise, mark
+            Shadow Smeargle as unavailable rather than implying
+            that trainers can currently obtain one.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Regular Smeargle
+
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Smeargle
+                    </td>
+
+                    <td>
+                        Smeargle
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Requires eligible availability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Modifier
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Shadow mechanics if obtainable
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PURIFIED
+======================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Smeargle
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Purified Pokémon are created by purifying eligible
+        Shadow Pokémon. Because of that, a Purified Smeargle
+        entry depends on whether Shadow Smeargle can actually
+        exist in the relevant Pokémon GO implementation.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <p>
+                Required before purification.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Purified
+            </strong>
+
+            <p>
+                Created through the purification mechanic.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚠️
+            </div>
+
+            <strong>
+                Availability
+            </strong>
+
+            <p>
+                Must be verified against live game data.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Do not automatically create a "Purified Smeargle
+        available" claim simply because the site has a
+        Purified category. The database should distinguish
+        theoretical status from actual obtainable status.
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     LUCKY
+======================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Smeargle
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Lucky Pokémon are associated with Pokémon GO's trading
+        mechanics and receive benefits such as reduced Stardust
+        costs for powering up. Lucky is a status rather than a
+        new species form.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <p>
+                A special Pokémon GO ownership status.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💎
+            </div>
+
+            <strong>
+                Stardust Benefit
+            </strong>
+
+            <p>
+                Lucky Pokémon have reduced power-up Stardust costs.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🤝
+            </div>
+
+            <strong>
+                Trading
+            </strong>
+
+            <p>
+                Lucky status is connected to trading mechanics.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a Lucky Smeargle?
+    </h3>
+
+    <p>
+
+        For collectors, absolutely. Smeargle already has an
+        unusual encounter history, so combining it with a
+        special ownership status can make an interesting
+        collection piece.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     HUNDO
+======================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • 100% IV
+        </span>
+
+        <h2>
+            100% Smeargle — Hundo Guide
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        A 100% Smeargle, commonly called a Hundo, has perfect
+        Individual Values in Attack, Defense and HP.
+
+    </p>
+
+
+    <div class="hundo-card">
+
+        <span class="hundo-badge">
+            ★ PERFECT IV
+        </span>
+
+        <h3>
+            15 / 15 / 15 Smeargle
+        </h3>
+
+        <p>
+
+            Perfect Attack IV + Perfect Defense IV +
+            Perfect HP IV.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is a Hundo Smeargle Useful?
+    </h3>
+
+    <p>
+
+        A perfect Smeargle is much more valuable as a collector
+        achievement than as a high-end raid attacker. Its
+        relatively low battle stats limit the practical advantage
+        of perfect IVs.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • IV GUIDE
+        </span>
+
+        <h2>
+            Smeargle IV Guide
+        </h2>
+
+        <p>
+
+            Smeargle's IVs determine its additional Attack,
+            Defense and HP values. Because Smeargle is usually
+            collected rather than heavily powered up, IV goals
+            depend heavily on the trainer.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Perfect Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Perfect Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Perfect HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What IVs Should You Keep?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep a 15/15/15 Smeargle if you enjoy collecting Hundos.
+        </li>
+
+        <li>
+            Keep unusual IV combinations if you collect rare encounters.
+        </li>
+
+        <li>
+            Prioritize special Shiny Smeargle encounters for collection value.
+        </li>
+
+        <li>
+            Consider Lucky status separately from IV quality.
+        </li>
+
+        <li>
+            Do not transfer a rare Smeargle solely because its IVs are low.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     XXL / XXS
+======================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • SIZE
+        </span>
+
+        <h2>
+            XXL & XXS Smeargle
+        </h2>
+
+        <p>
+
+            Pokémon GO can classify Pokémon according to their
+            size measurements. XXL and XXS are size categories,
+            not alternate species or evolutions.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card xxl">
+
+            <span class="size-value">
+                XXL
+            </span>
+
+            <h3>
+                XXL Smeargle
+            </h3>
+
+            <p>
+
+                An exceptionally large Smeargle according to
+                Pokémon GO's size classification.
+
+            </p>
+
+            <div class="editorial-note">
+
+                Keep size status separate from IV, Shiny and
+                Lucky status in your database.
+
+            </div>
+
+        </div>
+
+
+        <div class="size-card xxs">
+
+            <span class="size-value">
+                XXS
+            </span>
+
+            <h3>
+                XXS Smeargle
+            </h3>
+
+            <p>
+
+                An exceptionally small Smeargle according to
+                Pokémon GO's size classification.
+
+            </p>
+
+            <div class="editorial-note">
+
+                XXS does not mean lower IVs or weaker battle
+                performance.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        XXL vs XXS Smeargle
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Meaning
+                    </td>
+
+                    <td>
+                        Very large
+                    </td>
+
+                    <td>
+                        Very small
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Separate Pokémon?
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Changes Type?
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Changes IVs?
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PHOTO BOMB
+======================================================= -->
+
+<section class="section" id="photobomb">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • PHOTO BOMB
+        </span>
+
+        <h2>
+            How to Get Smeargle in Pokémon GO
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Smeargle's most recognizable Pokémon GO mechanic is
+        its interaction with GO Snapshot. When Smeargle
+        Photo Bombs an eligible Snapshot, the trainer can
+        encounter Smeargle afterward.
+
+    </p>
+
+
+    <h3>
+        General Photo Bomb Flow
+    </h3>
+
+
+    <ol class="checklist">
+
+        <li>
+            Open a Pokémon that can be photographed.
+        </li>
+
+        <li>
+            Enter GO Snapshot.
+        </li>
+
+        <li>
+            Take photographs.
+        </li>
+
+        <li>
+            Check whether Smeargle appears in the Snapshot.
+        </li>
+
+        <li>
+            Exit the Snapshot sequence.
+        </li>
+
+        <li>
+            Encounter Smeargle when the Photo Bomb encounter is triggered.
+        </li>
+
+    </ol>
+
+
+    <div class="best-move">
+
+        <strong>
+            Important Availability Note
+        </strong>
+
+        <p>
+
+            Smeargle encounter frequency and special Shiny
+            opportunities can change during events. Your site
+            should display current event-specific rules rather
+            than treating every historical encounter rule as
+            permanent.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • AVAILABILITY
+        </span>
+
+        <h2>
+            Smeargle Availability
+        </h2>
+
+    </div>
+
+
+    <div class="availability-box">
+
+        <span class="status">
+            SPECIAL ENCOUNTER
+        </span>
+
+        <h3>
+            GO Snapshot / Photo Bomb
+        </h3>
+
+        <p>
+
+            Smeargle's availability is associated with its
+            special Photo Bomb encounter mechanic. Event rules,
+            daily limits and Shiny availability can change.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        What to Check Before Hunting Smeargle
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check whether Smeargle encounters are currently active.
+        </li>
+
+        <li>
+            Check whether a Shiny Smeargle opportunity is active.
+        </li>
+
+        <li>
+            Check current daily encounter limits.
+        </li>
+
+        <li>
+            Check whether an event changes Photo Bomb mechanics.
+        </li>
+
+        <li>
+            Record the date of limited-time Smeargle events.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     COLLECTION
+======================================================= -->
+
+<section class="section" id="collection">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • COLLECTION
+        </span>
+
+        <h2>
+            Smeargle Collector Guide
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Smeargle is one of those Pokémon where collection value
+        can matter more than battle performance. Trainers may
+        choose to keep different Smeargle based on Shiny status,
+        IVs, size, Lucky status and memorable moves.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <p>
+                High collector interest.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💯
+            </div>
+
+            <strong>
+                Hundo
+            </strong>
+
+            <p>
+                Perfect 15/15/15 IV specimen.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <p>
+                Special trading-related status.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL
+            </strong>
+
+            <p>
+                Large-size classification.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔬
+            </div>
+
+            <strong>
+                XXS
+            </strong>
+
+            <p>
+                Small-size classification.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🎨
+            </div>
+
+            <strong>
+                Unique Moves
+            </strong>
+
+            <p>
+                Interesting Photo Bomb move combinations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     INVESTMENT
+======================================================= -->
+
+<section class="section" id="investment">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • INVESTMENT
+        </span>
+
+        <h2>
+            Should You Power Up Smeargle?
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        For most trainers, Smeargle is better treated as a
+        collection Pokémon than as a serious Stardust and
+        Candy investment target.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep Shiny Smeargle for collection value.
+        </li>
+
+        <li>
+            Keep a Hundo if you enjoy perfect-IV collections.
+        </li>
+
+        <li>
+            Keep unusual Photo Bomb movesets.
+        </li>
+
+        <li>
+            Keep rare size classifications if you collect XXL or XXS Pokémon.
+        </li>
+
+        <li>
+            Do not spend large resources solely because Smeargle has unusual moves.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • COMPARISON
+        </span>
+
+        <h2>
+            Smeargle Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Separate Form?
+                    </th>
+
+                    <th>
+                        Collector Interest
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Smeargle
+                    </td>
+
+                    <td>
+                        Base
+                    </td>
+
+                    <td>
+                        Medium
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        Shiny status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        Special status
+                    </td>
+
+                    <td>
+                        Verify availability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purification status
+                    </td>
+
+                    <td>
+                        Special status
+                    </td>
+
+                    <td>
+                        Verify availability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trading status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High for collectors
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        15/15/15 IV
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Very large size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High for size collectors
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Very small size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High for size collectors
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • PRACTICAL GUIDE
+        </span>
+
+        <h2>
+            How to Use Smeargle
+        </h2>
+
+    </div>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Focus on Shiny status, IV combinations, Lucky status,
+        size classifications and unusual move combinations.
+
+    </p>
+
+
+    <h3>
+        For PvP Players
+    </h3>
+
+    <p>
+
+        Treat Smeargle as a niche Pokémon rather than assuming
+        its unusual moves automatically make it competitive.
+
+    </p>
+
+
+    <h3>
+        For Raid Players
+    </h3>
+
+    <p>
+
+        Smeargle should generally not be prioritized as a raid
+        investment. Dedicated attackers provide substantially
+        better combat value.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • FAQ
+        </span>
+
+        <h2>
+            Smeargle FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Smeargle?
+        </summary>
+
+        <p>
+            Smeargle is a pure Normal-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Smeargle weak to?
+        </summary>
+
+        <p>
+            Smeargle is weak to Fighting-type attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Smeargle resistant to?
+        </summary>
+
+        <p>
+            Smeargle's Normal typing gives it immunity to
+            Ghost-type attacks in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Smeargle evolve?
+        </summary>
+
+        <p>
+            No. Smeargle does not have a normal evolution chain.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do you get Smeargle in Pokémon GO?
+        </summary>
+
+        <p>
+
+            Smeargle is associated with the GO Snapshot
+            Photo Bomb encounter mechanic. Current encounter
+            rules and limits can change during events.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Smeargle available?
+        </summary>
+
+        <p>
+
+            Shiny Smeargle can be available during eligible
+            Pokémon GO periods. Check the current event rules
+            before hunting for one.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Smeargle good for raids?
+        </summary>
+
+        <p>
+
+            Smeargle is generally not considered a strong
+            raid attacker because of its low offensive stats
+            and modest maximum CP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Smeargle good in PvP?
+        </summary>
+
+        <p>
+
+            Smeargle is a niche PvP Pokémon rather than a
+            conventional competitive choice. Its unusual
+            moveset mechanic is more notable than its overall
+            battle stats.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Smeargle?
+        </summary>
+
+        <p>
+
+            A 100% Smeargle has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Lucky Smeargle?
+        </summary>
+
+        <p>
+
+            Lucky Smeargle refers to a Smeargle with Lucky
+            status obtained through Pokémon GO's trading
+            mechanics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Smeargle?
+        </summary>
+
+        <p>
+
+            XXL Smeargle is a Smeargle that receives an
+            exceptionally large size classification.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Smeargle?
+        </summary>
+
+        <p>
+
+            XXS Smeargle is a Smeargle that receives an
+            exceptionally small size classification.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Are XXL and XXS Smeargle different Pokémon?
+        </summary>
+
+        <p>
+
+            No. XXL and XXS describe size classifications,
+            not separate species or evolutions.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Smeargle available?
+        </summary>
+
+        <p>
+
+            Shadow Smeargle should only be presented as
+            obtainable if current Pokémon GO data confirms
+            that Shadow Smeargle can actually be encountered.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Smeargle be purified?
+        </summary>
+
+        <p>
+
+            Purification requires an eligible Shadow Pokémon.
+            Therefore, Purified Smeargle availability depends
+            on whether Shadow Smeargle is supported by the
+            current game mechanics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Why is Smeargle's moveset unusual?
+        </summary>
+
+        <p>
+
+            Smeargle is associated with the Sketch mechanic,
+            which allows its Pokémon GO moveset to interact
+            with moves used by Pokémon involved in Snapshot
+            encounters.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounter methods, event schedules, Shiny
+            availability and special-form availability can
+            change over time.
+
+        </p>
+
+        <p>
+
+            Special categories such as Shadow, Purified, Lucky,
+            XXL, XXS and 100% IV should be treated as separate
+            database attributes where appropriate rather than
+            automatically presented as permanent Pokémon forms.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Smeargle Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Smeargle Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Moves & Sketch
+                </a>
+            </li>
+
+            <li>
+                <a href="#photobomb">
+                    Photo Bomb
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Smeargle
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Smeargle
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Smeargle
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Smeargle
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Smeargle
+                </a>
+            </li>
+
+            <li>
+                <a href="#size">
+                    XXL & XXS
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+        <a class="related-link"
+           href="/pokemon/ditto.html">
+
+            Ditto Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/unknown.html">
+
+            Unown Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/eevee.html">
+
+            Eevee Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-types/normal.html">
+
+            Normal Type Hub →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-2.html">
+
+            Gen 2 Pokémon →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="side-card">
+
+        <h3>
+            Smeargle Quick Facts
+        </h3>
+
+        <p>
+            <strong>Type:</strong>
+            Normal
+        </p>
+
+        <p>
+            <strong>Generation:</strong>
+            2
+        </p>
+
+        <p>
+            <strong>Pokédex:</strong>
+            #235
+        </p>
+
+        <p>
+            <strong>Evolution:</strong>
+            None
+        </p>
+
+        <p>
+            <strong>Signature Mechanic:</strong>
+            Sketch / Photo Bomb
+        </p>
+
+        <p>
+            <strong>Shiny:</strong>
+            Event/availability dependent
+        </p>
+
+    </div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

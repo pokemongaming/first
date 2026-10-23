@@ -1,0 +1,4101 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Arcanine Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+<meta name="description"
+      content="Complete Arcanine Pokémon GO guide covering Arcanine stats, max CP, Fire typing, weaknesses, resistances, best moves, raids, PvP, IVs, Shiny Arcanine, Shadow Arcanine, Purified Arcanine, Lucky Arcanine, 100% IV, XXL and XXS Arcanine.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/arcanine.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg:#080b12;
+    --bg-soft:#0e131d;
+    --surface:#121925;
+    --surface-2:#171f2d;
+    --surface-3:#202a3b;
+
+    --border:#293448;
+
+    --text:#f4f6fb;
+    --muted:#aab3c2;
+
+    --accent:#ff9a52;
+    --accent-2:#ff6b35;
+
+    --fire:#ff7848;
+    --water:#4e9dff;
+    --ground:#d6a743;
+    --rock:#b9a06a;
+
+    --danger:#ff6f7d;
+    --success:#62d89a;
+    --gold:#f3c969;
+    --shiny:#9fe8ff;
+
+    --radius:18px;
+    --radius-sm:12px;
+
+    --max:1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(255,120,72,.12),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color:var(--text);
+
+    line-height:1.7;
+}
+
+img {
+    max-width:100%;
+    display:block;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+p {
+    color:var(--muted);
+    margin-bottom:14px;
+}
+
+h1,h2,h3,h4 {
+    line-height:1.25;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position:sticky;
+    top:0;
+    z-index:100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width:var(--max);
+    margin:auto;
+
+    min-height:68px;
+
+    padding:0 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.logo {
+
+    font-size:1.15rem;
+    font-weight:950;
+    letter-spacing:-.03em;
+}
+
+.logo span {
+    color:var(--accent);
+}
+
+.main-nav {
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.main-nav a {
+
+    color:var(--muted);
+
+    font-size:.8rem;
+    font-weight:750;
+}
+
+.main-nav a:hover {
+    color:white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width:var(--max);
+
+    margin:auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+
+    margin-bottom:25px;
+
+    color:var(--muted);
+
+    font-size:.72rem;
+}
+
+.breadcrumb a:hover {
+    color:white;
+}
+
+.breadcrumb span {
+    opacity:.5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255,120,72,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #171b27,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap:30px;
+
+    align-items:center;
+}
+
+.eyebrow {
+
+    display:inline-flex;
+
+    padding:6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:999px;
+
+    color:var(--fire);
+
+    background:
+        rgba(255,120,72,.08);
+
+    font-size:.68rem;
+
+    font-weight:900;
+
+    letter-spacing:.08em;
+
+    margin-bottom:14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:-.055em;
+
+    margin-bottom:12px;
+}
+
+.hero-subtitle {
+
+    max-width:700px;
+
+    font-size:1rem;
+
+    color:#c2cad7;
+}
+
+.hero-tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:20px;
+}
+
+.tag {
+
+    padding:7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:.7rem;
+
+    font-weight:800;
+}
+
+.fire-tag {
+    color:var(--fire);
+}
+
+.shiny-tag {
+    color:var(--shiny);
+}
+
+.shadow-tag {
+    color:#b59cff;
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:300px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.pokemon-placeholder {
+
+    width:260px;
+    height:260px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,120,72,.22),
+            transparent 65%
+        );
+
+    font-size:7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:12px;
+
+    margin-top:18px;
+}
+
+.quick-stat {
+
+    padding:18px;
+
+    background:var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    text-align:center;
+}
+
+.quick-stat strong {
+
+    display:block;
+
+    font-size:1.25rem;
+}
+
+.quick-stat span {
+
+    color:var(--muted);
+
+    font-size:.68rem;
+
+    font-weight:750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:20px;
+
+    margin-top:20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:20px;
+
+    padding:28px;
+
+    background:var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.section-heading {
+    margin-bottom:20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:10px;
+}
+
+.stat-card {
+
+    padding:17px;
+
+    background:var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.64rem;
+
+    font-weight:850;
+
+    letter-spacing:.04em;
+}
+
+.stat-card strong {
+
+    display:block;
+
+    margin-top:4px;
+
+    font-size:1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px;
+
+    border:
+        1px solid rgba(255,120,72,.3);
+
+    background:
+        rgba(255,120,72,.06);
+
+    border-radius:var(--radius-sm);
+}
+
+.type-icon {
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:
+        rgba(255,120,72,.13);
+
+    font-size:1.5rem;
+}
+
+.type-box strong {
+    display:block;
+}
+
+.type-box span {
+
+    color:var(--fire);
+
+    font-size:.75rem;
+
+    font-weight:850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:12px;
+
+    margin-top:15px;
+}
+
+.effect-card {
+
+    padding:17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    background:var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size:1.5rem;
+
+    margin-bottom:6px;
+}
+
+.effect-card strong {
+    display:block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x:auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:left;
+
+    font-size:.76rem;
+}
+
+.data-table th {
+
+    color:var(--muted);
+
+    font-size:.65rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.05em;
+}
+
+.move-name {
+    font-weight:850;
+}
+
+.move-type {
+
+    color:var(--fire);
+
+    font-weight:800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top:15px;
+
+    padding:18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,120,72,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(255,120,72,.25);
+
+    border-radius:var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:block;
+
+    margin-bottom:5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:15px;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom:0;
+}
+
+.rating-bar {
+
+    height:8px;
+
+    background:var(--surface-3);
+
+    border-radius:99px;
+
+    overflow:hidden;
+}
+
+.rating-fill {
+
+    height:100%;
+
+    width:var(--rating);
+
+    background:var(--accent);
+
+    border-radius:inherit;
+}
+
+.rating-value {
+
+    text-align:right;
+
+    font-weight:900;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+.iv-card {
+
+    padding:20px;
+
+    background:var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    text-align:center;
+}
+
+.iv-card strong {
+
+    display:block;
+
+    font-size:1.7rem;
+
+    color:var(--gold);
+}
+
+.iv-card span {
+
+    color:var(--muted);
+
+    font-size:.68rem;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.special-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:18px;
+}
+
+.special-card {
+
+    padding:22px;
+
+    background:var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+}
+
+.special-card .icon {
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+}
+
+.special-card h3 {
+    margin:0 0 7px;
+}
+
+.special-card p {
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   VARIANT BANNER
+========================================================= */
+
+.variant-banner {
+
+    padding:24px;
+
+    border-radius:18px;
+
+    margin-top:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,120,72,.15),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(255,120,72,.25);
+}
+
+.variant-banner.shiny {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(159,232,255,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border-color:
+        rgba(159,232,255,.3);
+}
+
+.variant-banner.shadow {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(90,70,120,.2),
+            rgba(0,0,0,.15)
+        );
+
+    border-color:
+        rgba(160,130,220,.3);
+}
+
+.variant-banner.lucky {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(243,201,105,.15),
+            rgba(255,255,255,.02)
+        );
+
+    border-color:
+        rgba(243,201,105,.3);
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:9px;
+
+    color:#c8cfda;
+
+    font-size:.78rem;
+}
+
+.checklist li::before {
+
+    content:"✓";
+
+    margin-right:8px;
+
+    color:var(--success);
+
+    font-weight:900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:sticky;
+
+    top:88px;
+
+    align-self:start;
+}
+
+.side-card {
+
+    margin-bottom:15px;
+
+    padding:20px;
+
+    background:var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:.9rem;
+}
+
+.side-nav {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:4px;
+}
+
+.side-nav a {
+
+    display:block;
+
+    padding:8px 10px;
+
+    border-radius:7px;
+
+    color:var(--muted);
+
+    font-size:.72rem;
+
+    font-weight:700;
+}
+
+.side-nav a:hover {
+
+    background:var(--surface-2);
+
+    color:white;
+}
+
+.related-link {
+
+    display:block;
+
+    padding:10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:var(--muted);
+
+    font-size:.75rem;
+}
+
+.related-link:last-child {
+    border-bottom:0;
+}
+
+.related-link:hover {
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom:0;
+}
+
+summary {
+
+    cursor:pointer;
+
+    font-weight:850;
+
+    font-size:.82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:.78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding:17px;
+
+    margin-top:20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    font-size:.72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:35px 20px;
+
+    background:#06090e;
+}
+
+.footer-inner {
+
+    max-width:var(--max);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+footer p {
+
+    margin:0;
+
+    font-size:.72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns:1fr;
+    }
+
+    .sidebar {
+        position:static;
+    }
+
+    .hero-grid {
+        grid-template-columns:1fr;
+    }
+
+    .hero-pokemon {
+        order:-1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .special-grid {
+        grid-template-columns:1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns:1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:1fr;
+        gap:6px;
+    }
+
+    .rating-value {
+        text-align:left;
+    }
+
+    .main-nav {
+        display:none;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">
+Types
+</a>
+
+<a href="/pokedex.html">
+Pokédex
+</a>
+
+<a href="/raids/">
+Raids
+</a>
+
+<a href="/guides/">
+Guides
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">
+Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/fire.html">
+Fire Type
+</a>
+
+<span>›</span>
+
+<strong>
+Arcanine
+</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">
+FIRE TYPE • KANTO
+</span>
+
+<h1>
+Arcanine
+</h1>
+
+<p class="hero-subtitle">
+
+Arcanine is a Fire-type Pokémon originally introduced
+in Generation 1. In Pokémon GO, it evolves from Growlithe
+and can be used in raids, Gym battles and selected PvP
+situations. This guide covers regular, Shiny, Shadow,
+Purified, Lucky, perfect-IV, XXL and XXS Arcanine.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag fire-tag">
+Fire
+</span>
+
+<span class="tag">
+#059
+</span>
+
+<span class="tag">
+Gen 1
+</span>
+
+<span class="tag shiny-tag">
+Shiny Available
+</span>
+
+<span class="tag shadow-tag">
+Shadow Available
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🐕‍🦺
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+227
+</strong>
+
+<span>
+ATTACK
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+166
+</strong>
+
+<span>
+DEFENSE
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+207
+</strong>
+
+<span>
+HP
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+~3,421
+</strong>
+
+<span>
+MAX CP
+</span>
+
+</div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Overview
+</h2>
+
+<p>
+
+Arcanine is the evolved form of Growlithe and is a
+pure Fire-type Pokémon. Its high Attack and respectable
+stamina make it a recognizable Gen 1 Pokémon, although
+its usefulness depends heavily on the current Pokémon GO
+moveset and the role you want it to fill.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+POKÉDEX
+</span>
+
+<strong>
+#059
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+GENERATION
+</span>
+
+<strong>
+Gen 1
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+REGION
+</span>
+
+<strong>
+Kanto
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+TYPE
+</span>
+
+<strong>
+Fire
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+ATTACK
+</span>
+
+<strong>
+227
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+DEFENSE
+</span>
+
+<strong>
+166
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+HP
+</span>
+
+<strong>
+207
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+MAX CP
+</span>
+
+<strong>
+~3,421
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Type
+</h2>
+
+</div>
+
+
+<div class="type-box">
+
+<div class="type-icon">
+🔥
+</div>
+
+<div>
+
+<strong>
+Fire
+</strong>
+
+<span>
+Primary Type
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Why Arcanine's Typing Matters
+</h3>
+
+<p>
+
+As a pure Fire-type Pokémon, Arcanine has a straightforward
+offensive identity. Fire attacks are particularly useful
+against Grass, Ice, Bug and Steel Pokémon.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Weaknesses & Resistances
+</h2>
+
+</div>
+
+
+<h3>
+Weaknesses
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+💧
+</div>
+
+<strong>
+Water
+</strong>
+
+<p>
+Water-type attacks deal super-effective damage.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🌎
+</div>
+
+<strong>
+Ground
+</strong>
+
+<p>
+Ground-type attacks are super effective against Arcanine.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock
+</strong>
+
+<p>
+Rock-type attacks also exploit Arcanine's Fire typing.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Resistances
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🔥
+</div>
+
+<strong>
+Fire
+</strong>
+
+<p>
+Arcanine resists Fire-type attacks.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🌿
+</div>
+
+<strong>
+Grass
+</strong>
+
+<p>
+Grass attacks are resisted by Fire-type Arcanine.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+❄️
+</div>
+
+<strong>
+Ice
+</strong>
+
+<p>
+Ice-type attacks are resisted.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Attack, Defense & HP
+</h2>
+
+<p>
+
+Arcanine has a strong Attack stat and solid HP, giving it
+a balanced profile for a non-Legendary Fire-type Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+ATTACK
+</span>
+
+<strong>
+227
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+DEFENSE
+</span>
+
+<strong>
+166
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+HP
+</span>
+
+<strong>
+207
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+MAX CP
+</span>
+
+<strong>
+~3,421
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Database note:
+</strong>
+
+<p>
+
+CP depends on level and IVs. A higher CP does not
+automatically mean a Pokémon has perfect IVs.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Best Moves
+</h2>
+
+<p>
+
+Arcanine's recommended moveset depends on whether you are
+building it for raids, Gyms or PvP.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+Fire-focused Build
+</strong>
+
+<p>
+Choose a strong Fire Fast Move paired with a suitable
+Fire Charged Move when using Arcanine for Fire-type damage.
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Move
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Role
+</th>
+
+<th>
+Use
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td class="move-name">
+Fire Fang
+</td>
+
+<td class="move-type">
+Fire
+</td>
+
+<td>
+Fast Move
+</td>
+
+<td>
+Fire damage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Flamethrower
+</td>
+
+<td class="move-type">
+Fire
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Fire coverage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Wild Charge
+</td>
+
+<td>
+Electric
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Coverage
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="editorial-note">
+
+Move availability can change through events, move updates
+and Elite TM availability. Verify the current in-game
+moveset before publishing time-sensitive recommendations.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Raid Performance
+</h2>
+
+<p>
+
+Arcanine can contribute Fire-type damage, but its practical
+raid value should be compared with stronger current Fire
+attackers before investing heavily.
+
+</p>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Fire Damage
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:70%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+7.0/10
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Durability
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:72%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+7.2/10
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Overall PvE
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:62%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+6.2/10
+</span>
+
+</div>
+
+
+<h3>
+Should You Power Up Arcanine?
+</h3>
+
+<p>
+
+Arcanine can be a useful personal or collection project,
+but players building optimized raid teams should compare
+it with the strongest Fire attackers currently available.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+<div class="section-heading">
+
+<h2>
+What Counters Arcanine?
+</h2>
+
+<p>
+Arcanine is vulnerable to Water, Ground and Rock attacks.
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+💧
+</div>
+
+<strong>
+Water Attackers
+</strong>
+
+<p>
+Water-type attackers can exploit Arcanine's Fire typing.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🌎
+</div>
+
+<strong>
+Ground Attackers
+</strong>
+
+<p>
+Ground-type Pokémon are reliable counter choices.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock Attackers
+</strong>
+
+<p>
+Rock attacks also deal super-effective damage.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+<div class="section-heading">
+
+<h2>
+Arcanine IV Guide
+</h2>
+
+<p>
+
+IVs add additional Attack, Defense and HP points to
+Arcanine. A 15/15/15 Arcanine is considered a perfect-IV
+specimen.
+
+</p>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+What Does 100% Arcanine Mean?
+</h3>
+
+<p>
+
+A 100% Arcanine has 15 Attack, 15 Defense and 15 HP IVs.
+This is the highest possible IV combination.
+
+</p>
+
+<div class="variant-banner">
+
+<strong>
+100% IV Arcanine
+</strong>
+
+<p>
+
+Perfect IV Arcanine is especially desirable for collectors.
+For battle purposes, however, moveset, level and the
+specific battle format also matter.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<h2>
+Arcanine PvP Guide
+</h2>
+
+</div>
+
+
+<h3>
+Great League
+</h3>
+
+<p>
+
+Arcanine's high CP potential makes it difficult to use as
+a standard Great League Pokémon unless special league
+conditions allow it.
+
+</p>
+
+
+<h3>
+Ultra League
+</h3>
+
+<p>
+
+Arcanine can fit within some Ultra League team concepts,
+but its effectiveness depends heavily on the current
+metagame and available moves.
+
+</p>
+
+
+<h3>
+Master League
+</h3>
+
+<p>
+
+Arcanine's overall stat profile is generally less suited
+to the highest Master League competition than many
+Legendary and top-tier meta Pokémon.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<h2>
+Shiny Arcanine
+</h2>
+
+<p>
+
+Shiny Arcanine has an alternate coloration and is a
+popular collection target.
+
+</p>
+
+</div>
+
+
+<div class="variant-banner shiny">
+
+<strong>
+✨ Shiny Arcanine
+</strong>
+
+<p>
+
+Shiny status does not provide a direct combat-stat bonus.
+A Shiny Arcanine has the same species and base battle
+statistics as the standard form.
+
+</p>
+
+</div>
+
+
+<h3>
+Shiny Arcanine vs Regular Arcanine
+</h3>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Regular
+</th>
+
+<th>
+Shiny
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Species
+</td>
+
+<td>
+Arcanine
+</td>
+
+<td>
+Arcanine
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Type
+</td>
+
+<td>
+Fire
+</td>
+
+<td>
+Fire
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Battle Stats
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Same species stats
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Appearance
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Alternate coloration
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<h2>
+Shadow Arcanine
+</h2>
+
+<p>
+
+Shadow Arcanine is the Shadow version of Arcanine. Shadow
+Pokémon have a different battle profile from their regular
+counterparts and require additional consideration before
+powering up.
+
+</p>
+
+</div>
+
+
+<div class="variant-banner shadow">
+
+<strong>
+🌑 Shadow Arcanine
+</strong>
+
+<p>
+
+Shadow Pokémon receive an offensive boost while also taking
+more damage. This makes Shadow Arcanine a different
+investment option rather than simply a cosmetic variant.
+
+</p>
+
+</div>
+
+
+<h3>
+Shadow Arcanine Typing
+</h3>
+
+<div class="type-box">
+
+<div class="type-icon">
+🔥
+</div>
+
+<div>
+
+<strong>
+Fire
+</strong>
+
+<span>
+Shadow status does not change Arcanine's basic typing.
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Shadow Arcanine Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+💧
+</div>
+
+<strong>
+Water
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🌎
+</div>
+
+<strong>
+Ground
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Shadow Arcanine & Frustration
+</h3>
+
+<p>
+
+Shadow Pokémon may have the Charged Move Frustration.
+Rocket-related events can provide opportunities to replace
+it, so check the current event rules before investing
+Charged TMs.
+
+</p>
+
+
+<h3>
+Should You Purify Shadow Arcanine?</h3>
+
+<p>
+
+Purification should be considered carefully. Purifying
+removes the Shadow status, so compare your goals for the
+Pokémon before making the decision.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<h2>
+Purified Arcanine
+</h2>
+
+<p>
+
+Purified Arcanine is created by purifying a Shadow
+Growlithe or Shadow Arcanine when purification is available.
+
+</p>
+
+</div>
+
+
+<div class="variant-banner">
+
+<strong>
+💠 Purified Arcanine
+</strong>
+
+<p>
+
+Purification changes the Pokémon's Shadow status and can
+also increase its individual values. It is therefore
+important to compare the original Shadow Pokémon with the
+purified result before committing.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+✨
+</div>
+
+<strong>
+Purified Status
+</strong>
+
+<p>
+Shadow status is removed.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⬆️
+</div>
+
+<strong>
+IV Increase
+</strong>
+
+<p>
+Purification can increase each IV.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+💰
+</div>
+
+<strong>
+Investment
+</strong>
+
+<p>
+Purified Pokémon can have useful resource advantages.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<h2>
+Lucky Arcanine
+</h2>
+
+<p>
+
+Lucky Arcanine is obtained through Pokémon GO's trading
+mechanics. Lucky Pokémon are especially attractive for
+players who want to build Pokémon while reducing Stardust
+costs for power-ups.
+
+</p>
+
+</div>
+
+
+<div class="variant-banner lucky">
+
+<strong>
+🍀 Lucky Arcanine
+</strong>
+
+<p>
+
+Lucky status does not change Arcanine's species or typing.
+Its main attraction is the reduced Stardust cost for
+powering up the Pokémon.
+
+</p>
+
+</div>
+
+
+<h3>
+Why Keep a Lucky Arcanine?</h3>
+
+<ul class="checklist">
+
+<li>
+Reduced Stardust cost for power-ups.
+</li>
+
+<li>
+Useful for collectors building a Lucky Pokédex.
+</li>
+
+<li>
+Good candidate for a long-term investment project.
+</li>
+
+<li>
+Trading can provide another way to obtain desirable IVs.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<h2>
+XXL Arcanine
+</h2>
+
+<p>
+
+XXL Arcanine is an unusually large specimen based on
+Pokémon GO's size system. Size categories are separate
+from IV quality.
+
+</p>
+
+</div>
+
+
+<div class="variant-banner">
+
+<strong>
+📏 XXL Arcanine
+</strong>
+
+<p>
+
+An XXL Arcanine can be valuable for collection, showcases
+and size-based gameplay features. Being XXL does not
+automatically mean the Pokémon has perfect IVs.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>
+Size
+</strong>
+
+<p>
+Exceptionally large specimen.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+IVs
+</strong>
+
+<p>
+Independent from size.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+Battle Stats
+</strong>
+
+<p>
+Not automatically increased because of size.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<h2>
+XXS Arcanine
+</h2>
+
+<p>
+
+XXS Arcanine is an unusually small specimen. Like XXL
+Pokémon, XXS status is separate from the Pokémon's IV
+quality and combat potential.
+
+</p>
+
+</div>
+
+
+<div class="variant-banner">
+
+<strong>
+📐 XXS Arcanine
+</strong>
+
+<p>
+
+An XXS Arcanine can be particularly interesting to
+collectors and players who participate in size-related
+Showcase features.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>
+Size
+</strong>
+
+<p>
+Exceptionally small specimen.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+IVs
+</strong>
+
+<p>
+Independent from size.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+Collection
+</strong>
+
+<p>
+Useful for size-focused collections.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL FORMS SUMMARY
+===================================================== -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Special Forms & Variants
+</h2>
+
+<p>
+
+Arcanine can be encountered or stored with several
+different characteristics. These should not all be treated
+as separate species.
+
+</p>
+
+</div>
+
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<div class="icon">
+🔥
+</div>
+
+<h3>
+Regular Arcanine
+</h3>
+
+<p>
+Standard Fire-type Arcanine.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+✨
+</div>
+
+<h3>
+Shiny Arcanine
+</h3>
+
+<p>
+Alternate-color Shiny form.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+🌑
+</div>
+
+<h3>
+Shadow Arcanine
+</h3>
+
+<p>
+Shadow battle variant.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+💠
+</div>
+
+<h3>
+Purified Arcanine
+</h3>
+
+<p>
+Arcanine created through purification.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+🍀
+</div>
+
+<h3>
+Lucky Arcanine
+</h3>
+
+<p>
+Lucky trade variant with Stardust benefits.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+💯
+</div>
+
+<h3>
+100% Arcanine
+</h3>
+
+<p>
+15/15/15 perfect-IV Arcanine.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+📏
+</div>
+
+<h3>
+XXL Arcanine
+</h3>
+
+<p>
+Exceptionally large specimen.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+📐
+</div>
+
+<h3>
+XXS Arcanine
+</h3>
+
+<p>
+Exceptionally small specimen.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Evolution
+</h2>
+
+</div>
+
+
+<p>
+
+Arcanine evolves from Growlithe using Pokémon GO's
+evolution mechanics. Arcanine itself does not have another
+standard evolution.
+
+</p>
+
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<div class="icon">
+🐶
+</div>
+
+<h3>
+Growlithe
+</h3>
+
+<p>
+Fire-type Pokémon.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="icon">
+🔥
+</div>
+
+<h3>
+Arcanine
+</h3>
+
+<p>
+Final evolution of Growlithe.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Candy, XL Candy & Stardust
+</h2>
+
+</div>
+
+
+<p>
+
+Building a high-level Arcanine requires Growlithe Candy,
+Candy XL and Stardust. Before spending large amounts of
+resources, decide whether the Pokémon is intended for
+raids, PvP, collection or simply Pokédex completion.
+
+</p>
+
+
+<ul class="checklist">
+
+<li>
+Save high-IV Arcanine for meaningful investment projects.
+</li>
+
+<li>
+Use Lucky Arcanine when Stardust efficiency is important.
+</li>
+
+<li>
+Compare Shadow and regular builds before investing heavily.
+</li>
+
+<li>
+Save interesting XXL and XXS specimens for collection.
+</li>
+
+<li>
+Check the current moveset before spending Elite resources.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Availability
+</h2>
+
+</div>
+
+
+<p>
+
+Arcanine availability depends on how Growlithe and Arcanine
+are featured in Pokémon GO events, research, wild encounters
+or other game mechanics.
+
+</p>
+
+
+<div class="best-move">
+
+<strong>
+Current Availability
+</strong>
+
+<p>
+Check the current Pokémon GO event and encounter schedule
+before presenting Arcanine as currently obtainable.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="guide">
+
+<div class="section-heading">
+
+<h2>
+Individual Arcanine Investment Guide
+</h2>
+
+</div>
+
+
+<h3>
+For Raid Players
+</h3>
+
+<ul class="checklist">
+
+<li>
+Check whether Fire damage is needed.
+</li>
+
+<li>
+Compare Arcanine with stronger Fire attackers.
+</li>
+
+<li>
+Confirm the current moveset before powering up.
+</li>
+
+<li>
+Consider Shadow Arcanine separately.
+</li>
+
+</ul>
+
+
+<h3>
+For Collectors
+</h3>
+
+<ul class="checklist">
+
+<li>
+Keep Shiny Arcanine.
+</li>
+
+<li>
+Look for 100% IV specimens.
+</li>
+
+<li>
+Keep Lucky Arcanine.
+</li>
+
+<li>
+Save interesting XXL and XXS specimens.
+</li>
+
+<li>
+Consider collecting Shadow and Purified versions.
+</li>
+
+</ul>
+
+
+<h3>
+For New Players
+</h3>
+
+<p>
+
+A regular Arcanine can be a fun Fire-type addition,
+especially if you like the species. However, avoid
+spending large amounts of Stardust simply because a
+Pokémon has high CP.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+<div class="section-heading">
+
+<h2>
+Arcanine Variant Comparison
+</h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Variant
+</th>
+
+<th>
+Main Difference
+</th>
+
+<th>
+Combat Change
+</th>
+
+<th>
+Collector Value
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Regular
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Normal
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shiny
+</td>
+
+<td>
+Alternate appearance
+</td>
+
+<td>
+No direct bonus
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shadow
+</td>
+
+<td>
+Shadow mechanics
+</td>
+
+<td>
+Different battle profile
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Purified
+</td>
+
+<td>
+Purification
+</td>
+
+<td>
+Standard purified profile
+</td>
+
+<td>
+Medium
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Lucky
+</td>
+
+<td>
+Lucky status
+</td>
+
+<td>
+Same species
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+100% IV
+</td>
+
+<td>
+15/15/15 IVs
+</td>
+
+<td>
+Maximum IV combination
+</td>
+
+<td>
+Very High
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+XXL
+</td>
+
+<td>
+Very large size
+</td>
+
+<td>
+Not automatically stronger
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+XXS
+</td>
+
+<td>
+Very small size
+</td>
+
+<td>
+Not automatically stronger
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>
+Arcanine FAQ
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+What type is Arcanine?
+</summary>
+
+<p>
+Arcanine is a pure Fire-type Pokémon.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Arcanine weak to?
+</summary>
+
+<p>
+Arcanine is weak to Water, Ground and Rock attacks.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Arcanine good for raids?
+</summary>
+
+<p>
+
+Arcanine can deal Fire-type damage, but its raid value
+should be compared with stronger Fire attackers available
+in the current Pokémon GO metagame.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shiny Arcanine available?
+</summary>
+
+<p>
+
+Yes. Shiny Arcanine is available through eligible Pokémon
+GO encounters and evolution from Shiny Growlithe.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is 100% Arcanine?
+</summary>
+
+<p>
+
+A 100% Arcanine has 15 Attack, 15 Defense and 15 HP IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Shadow Arcanine?
+</summary>
+
+<p>
+
+Shadow Arcanine is the Shadow variant of Arcanine and has
+the different battle characteristics associated with
+Shadow Pokémon.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should I purify Shadow Arcanine?
+</summary>
+
+<p>
+
+Not automatically. Compare the Shadow Pokémon's battle
+potential, IVs, resources and your personal goals before
+purifying it.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Lucky Arcanine?
+</summary>
+
+<p>
+
+Lucky Arcanine is an Arcanine obtained through Lucky Trade
+mechanics and benefits from reduced Stardust power-up costs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXL Arcanine?
+</summary>
+
+<p>
+
+XXL Arcanine is an unusually large Arcanine based on the
+game's size mechanics.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXS Arcanine?
+</summary>
+
+<p>
+
+XXS Arcanine is an unusually small Arcanine based on the
+game's size mechanics.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does XXL Arcanine have better IVs?
+</summary>
+
+<p>
+
+No. Size and IVs are separate characteristics. An XXL
+Arcanine can have any IV combination.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does XXS Arcanine have better IVs?
+</summary>
+
+<p>
+
+No. XXS status does not automatically mean better IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Shiny Arcanine be Lucky?
+</summary>
+
+<p>
+
+Yes. Shiny status and Lucky status are separate
+characteristics, so a Pokémon can have both properties.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Shadow Arcanine be 100% IV?
+</summary>
+
+<p>
+
+Yes. A Shadow Arcanine can have a 15/15/15 IV combination.
+
+</p>
+
+</details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+PokémonGaming.in is an independent Pokémon GO information
+website. Pokémon GO mechanics, moves, availability,
+events, forms and other game data can change over time.
+Verify current in-game information before making
+investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This page is intended as an independent
+informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+<h3>
+Arcanine Guide
+</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+Stats & Max CP
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Best Moves
+</a>
+</li>
+
+<li>
+<a href="#raid">
+Raid Performance
+</a>
+</li>
+
+<li>
+<a href="#iv">
+IV & 100%
+</a>
+</li>
+
+<li>
+<a href="#pvp">
+PvP
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Arcanine
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Arcanine
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Arcanine
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Arcanine
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+XXL Arcanine
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+XXS Arcanine
+</a>
+</li>
+
+<li>
+<a href="#availability">
+Availability
+</a>
+</li>
+
+<li>
+<a href="#guide">
+Investment Guide
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+<a class="related-link"
+   href="/pokemon/growlithe.html">
+
+Growlithe Guide →
+</a>
+
+<a class="related-link"
+   href="/pokemon-types/fire.html">
+
+Fire Type Hub →
+</a>
+
+<a class="related-link"
+   href="/pokemon/charizard.html">
+
+Charizard Guide →
+</a>
+
+<a class="related-link"
+   href="/pokemon/typhlosion.html">
+
+Typhlosion Guide →
+</a>
+
+<a class="related-link"
+   href="/pokemon/ninetales.html">
+
+Ninetales Guide →
+</a>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Arcanine Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Fire
+</p>
+
+<p>
+<strong>Generation:</strong>
+1
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#059
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Growlithe → Arcanine
+</p>
+
+<p>
+<strong>Shiny:</strong>
+Available
+</p>
+
+<p>
+<strong>Special Variants:</strong>
+Shadow, Purified, Lucky, XXL & XXS
+</p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,3891 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Espurr Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Purified, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Espurr Pokémon GO guide covering stats, max CP, Psychic typing, weaknesses, resistances, moves, evolution, PvP, IVs, Shiny Espurr, Shadow Espurr, Purified Espurr, Lucky Espurr, 100% Espurr, XXL and XXS Espurr.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/espurr.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #c28cff;
+    --accent-2: #9258e8;
+
+    --psychic: #e88aff;
+
+    --water: #4e9dff;
+    --bug: #8fc63d;
+    --ghost: #9270c9;
+    --dark: #57505b;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #f2c94c;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(194,140,255,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(232,138,255,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #151225,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--psychic);
+
+    background:
+        rgba(232,138,255,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.psychic-tag {
+    color: var(--psychic);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(232,138,255,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(232,138,255,.3);
+
+    background:
+        rgba(232,138,255,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(232,138,255,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color: var(--psychic);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color: var(--psychic);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(232,138,255,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(232,138,255,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.7rem;
+}
+
+.iv-card span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   VARIANT GRID
+========================================================= */
+
+.variant-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.variant-card {
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        18px;
+
+    background:
+        var(--surface-2);
+}
+
+.variant-card h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 1.05rem;
+}
+
+.variant-card p {
+
+    font-size: .78rem;
+
+    margin-bottom: 0;
+}
+
+.variant-icon {
+
+    font-size: 2rem;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   GOLD LUCKY
+========================================================= */
+
+.lucky-card {
+
+    border-color:
+        rgba(242,201,76,.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(242,201,76,.10),
+            var(--surface-2)
+        );
+}
+
+.lucky-card .variant-icon {
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   HUNDO
+========================================================= */
+
+.hundo-card {
+
+    border-color:
+        rgba(98,216,154,.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(98,216,154,.08),
+            var(--surface-2)
+        );
+}
+
+
+/* =========================================================
+   SIZE CARDS
+========================================================= */
+
+.size-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.size-card {
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        18px;
+
+    background: var(--surface-2);
+}
+
+.size-card strong {
+
+    display: block;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 5px;
+}
+
+.xxl {
+    border-color:
+        rgba(78,157,255,.35);
+}
+
+.xxs {
+    border-color:
+        rgba(232,138,255,.35);
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+.form-arrow {
+
+    color: var(--accent);
+
+    font-size: 1.4rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin: 0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+
+        padding: 20px;
+    }
+
+    .quick-stats {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid,
+    .size-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/psychic.html">
+        Psychic Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Espurr
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                PSYCHIC-TYPE POKÉMON
+            </span>
+
+            <h1>
+                Espurr
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Espurr is a Psychic-type Pokémon from the
+                Kalos region. In Pokémon GO, it is primarily
+                known as the pre-evolution of Meowstic and
+                can be encountered in different variants
+                including Shiny, Shadow, Purified, Lucky,
+                XXL and XXS specimens.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag psychic-tag">
+                    Psychic
+                </span>
+
+                <span class="tag">
+                    #677
+                </span>
+
+                <span class="tag">
+                    Kalos
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed Espurr image -->
+
+            <div class="pokemon-placeholder">
+                🐱
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            120
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            114
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            158
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,248
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Overview
+        </h2>
+
+        <p>
+
+            Espurr is a Psychic-type Pokémon introduced in
+            Generation 6. It evolves into Meowstic after
+            collecting the required Candy. Espurr itself is
+            not normally used as a top-tier raid attacker,
+            but it remains useful for Pokédex completion,
+            evolution collecting, Shiny hunting and special
+            variant collecting.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#677</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 6</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Kalos</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Psychic</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>120</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>114</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>158</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~1,248</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🧠
+        </div>
+
+        <div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Espurr's Typing Matters
+    </h3>
+
+    <p>
+
+        Espurr's pure Psychic typing gives it a straightforward
+        weakness and resistance profile. Psychic-type Pokémon
+        take super-effective damage from Bug, Dark and Ghost
+        attacks while resisting Fighting and Psychic attacks.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks deal super-effective
+                damage to Psychic-type Espurr.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost-type attacks are super effective
+                against Espurr.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attackers can exploit Espurr's
+                Psychic typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Psychic typing gives Espurr useful
+                resistance to Fighting attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Espurr also resists Psychic-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Espurr has relatively modest battle stats compared
+            with stronger Psychic-type Pokémon. Its main value
+            for many players comes from evolution, collecting
+            and special variants rather than high-level raid use.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>120</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>114</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>158</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~1,248</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            CP depends on Pokémon GO's underlying stats,
+            individual IVs and level. A high CP does not
+            automatically mean a Pokémon has perfect IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Best Moves
+        </h2>
+
+        <p>
+
+            Espurr's moveset should be evaluated mainly for
+            its intended battle format and available evolution
+            path rather than assuming that Espurr itself is a
+            premier Psychic attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Approach
+        </strong>
+
+        <p>
+
+            Before investing heavily in Espurr, check its
+            current Pokémon GO moveset and consider whether
+            evolving it into Meowstic better suits your goal.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Current Game Data
+                    </td>
+
+                    <td>
+                        Energy generation
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Current Game Data
+                    </td>
+
+                    <td>
+                        Damage / coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through events and
+        Pokémon GO updates. Keep your live move database
+        synchronized before publishing exact recommendations.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Evolution
+        </h2>
+
+        <p>
+
+            Espurr evolves into Meowstic. The evolution is
+            particularly interesting because Meowstic has
+            different gender appearances.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Espurr
+            </strong>
+
+            <span>
+                #677
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Meowstic
+            </strong>
+
+            <span>
+                #678
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Candy
+        </strong>
+
+        <p>
+            Espurr requires Candy to evolve into Meowstic.
+            Check your current Pokémon GO evolution data for
+            the exact Candy requirement.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values provide additional Attack,
+            Defense and HP points. A 15/15/15 Espurr is
+            considered a perfect-IV or Hundo Espurr.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Is a 100% Espurr?
+    </h3>
+
+    <p>
+
+        A 100% Espurr has 15 Attack, 15 Defense and 15 HP IVs.
+        Players commonly call this a Hundo or perfect Espurr.
+        A perfect specimen can be especially attractive to
+        collectors and players planning to evolve it.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     100% ESPURR
+========================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% Espurr — Hundo Espurr
+        </h2>
+
+        <p>
+
+            A Hundo Espurr is one of the most desirable
+            standard IV combinations for collectors.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card hundo-card">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <h3>
+                Perfect IV
+            </h3>
+
+            <p>
+                Attack 15 / Defense 15 / HP 15.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ⭐
+            </div>
+
+            <h3>
+                Collector Value
+            </h3>
+
+            <p>
+                A perfect Espurr can be saved for
+                evolution or collection purposes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a Hundo Espurr?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep it if you collect perfect-IV Pokémon.
+        </li>
+
+        <li>
+            Consider evolving it into Meowstic.
+        </li>
+
+        <li>
+            Compare its future battle usefulness before spending Stardust.
+        </li>
+
+        <li>
+            Mark it as a favorite to prevent accidental transfer.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Espurr
+        </h2>
+
+        <p>
+
+            Shiny Espurr is a special coloration of Espurr.
+            It does not represent a separate species and
+            retains Espurr's Psychic typing.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Espurr
+            </h3>
+
+            <p>
+                Alternate coloration that can be collected
+                separately from standard Espurr.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🧠
+            </div>
+
+            <h3>
+                Same Typing
+            </h3>
+
+            <p>
+                Shiny status does not change Espurr's
+                Psychic typing or base species.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Espurr Collecting Tips
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep your first Shiny Espurr if you want a permanent collection record.
+        </li>
+
+        <li>
+            Check IVs before transferring duplicate Shiny Espurr.
+        </li>
+
+        <li>
+            Consider keeping a Shiny for evolution.
+        </li>
+
+        <li>
+            Compare Shiny and standard forms before transferring duplicates.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Espurr
+        </h2>
+
+        <p>
+
+            Shadow Espurr is a special Shadow variant of the
+            species. Shadow Pokémon have a different battle
+            profile from their standard counterparts.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Espurr
+            </h3>
+
+            <p>
+                Retains the Psychic typing while gaining
+                the characteristics associated with the
+                Shadow Pokémon mechanic.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ⚔️
+            </div>
+
+            <h3>
+                Battle Profile
+            </h3>
+
+            <p>
+                Shadow Pokémon trade defensive durability
+                for increased offensive pressure.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Espurr Weaknesses
+    </h3>
+
+    <p>
+        Shadow Espurr retains its Psychic typing, so its
+        primary weaknesses remain Bug, Ghost and Dark.
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+            <div class="effect-icon">🐞</div>
+            <strong>Bug</strong>
+            <p>Super effective.</p>
+        </div>
+
+        <div class="effect-card weakness">
+            <div class="effect-icon">👻</div>
+            <strong>Ghost</strong>
+            <p>Super effective.</p>
+        </div>
+
+        <div class="effect-card weakness">
+            <div class="effect-icon">🌑</div>
+            <strong>Dark</strong>
+            <p>Super effective.</p>
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Espurr & Frustration
+    </h3>
+
+    <p>
+
+        Shadow Pokémon can have the Charged Move Frustration.
+        Special Team GO Rocket events can affect when
+        Frustration can be replaced. Always check current
+        event rules before using resources on a Shadow Pokémon.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Do not purify automatically.
+        </strong>
+
+        <p>
+
+            If you are interested in the Shadow Pokémon
+            mechanic or collecting Shadow species, compare
+            the Shadow and Purified versions before making
+            your decision.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Espurr
+        </h2>
+
+        <p>
+
+            Purified Espurr is created by purifying an eligible
+            Shadow Espurr. Purification changes the Pokémon's
+            status and provides the standard benefits associated
+            with purified Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💎
+            </div>
+
+            <h3>
+                Purified Status
+            </h3>
+
+            <p>
+                Purification removes the Shadow status and
+                changes the Pokémon's resource profile.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ⭐
+            </div>
+
+            <h3>
+                IV Changes
+            </h3>
+
+            <p>
+                Purification increases each IV by the
+                applicable amount, up to the maximum of 15.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Espurr
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Psychic Type</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td>Shadow Status</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+                    <td>Purified</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td>IV Improvement</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Espurr
+        </h2>
+
+        <p>
+
+            Lucky Espurr is a special trade-related status.
+            Lucky Pokémon have a distinctive background and
+            receive reduced Stardust costs for powering up.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card lucky-card">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Espurr
+            </h3>
+
+            <p>
+                A Lucky Espurr can be particularly attractive
+                for players who want to reduce power-up costs.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💫
+            </div>
+
+            <h3>
+                Trade Status
+            </h3>
+
+            <p>
+                Lucky status is associated with Pokémon
+                obtained through eligible trades.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Espurr?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Lucky Pokémon require less Stardust to power up.
+        </li>
+
+        <li>
+            Lucky Espurr can be useful for collectors.
+        </li>
+
+        <li>
+            Check IVs after a trade because traded Pokémon receive new IVs.
+        </li>
+
+        <li>
+            Consider evolving a Lucky Espurr if you want a Lucky Meowstic.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     XXL / XXS
+========================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Espurr & XXS Espurr
+        </h2>
+
+        <p>
+
+            Pokémon GO can classify individual Pokémon according
+            to their size. XXL and XXS are special size categories,
+            not separate species or forms.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card xxl">
+
+            <strong>
+                📏 XXL Espurr
+            </strong>
+
+            <p>
+
+                An XXL Espurr is an unusually large specimen.
+                Size can be especially interesting for collectors
+                and medal-related goals.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card xxs">
+
+            <strong>
+                🔹 XXS Espurr
+            </strong>
+
+            <p>
+
+                An XXS Espurr is an unusually small specimen.
+                It can be saved as a size-collection entry.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep XXL or XXS Espurr?
+    </h3>
+
+    <p>
+
+        If you collect size records, XXL and XXS Espurr can be
+        worth keeping even when their IVs are not perfect.
+        For battle-focused players, size is generally less
+        important than IVs, moves and overall battle role.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr PvP Guide
+        </h2>
+
+        <p>
+
+            Espurr's relatively low maximum CP means it can
+            theoretically fit within lower CP formats, but
+            players should evaluate its actual moveset,
+            bulk and matchup performance before investing.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Espurr can fit under the Great League CP limit at
+        appropriate levels, but it should be compared with
+        stronger Psychic-type options before investing heavily.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Espurr's stat profile makes it less naturally suited
+        to high-level Ultra League competition. Its evolution
+        into Meowstic may be worth considering instead.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Espurr is not naturally suited to Master League because
+        of its relatively low maximum CP.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Raid & PvE Performance
+        </h2>
+
+        <p>
+
+            Espurr is not generally considered a top-tier
+            Psychic-type raid attacker. Players looking for
+            strong Psychic PvE performance should compare it
+            with dedicated high-stat Psychic attackers.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Raid Damage
+            </strong>
+
+            <p>
+                Limited compared with stronger Psychic attackers.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Collector Value
+            </strong>
+
+            <p>
+                Stronger reason to keep special variants.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔄
+            </div>
+
+            <strong>
+                Evolution
+            </strong>
+
+            <p>
+                Evolution into Meowstic can be more useful.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SPECIAL VARIANT COMPARISON
+========================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Special Variants Compared
+        </h2>
+
+        <p>
+
+            These labels describe different characteristics
+            or statuses of Espurr rather than separate species.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Main Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Espurr
+                    </td>
+
+                    <td>
+                        Standard form
+                    </td>
+
+                    <td>
+                        Evolution / collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Espurr
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Espurr
+                    </td>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        Collection / battle evaluation
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Espurr
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        Collection / reduced resource costs
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Espurr
+                    </td>
+
+                    <td>
+                        Lucky trade status
+                    </td>
+
+                    <td>
+                        Reduced Stardust power-up cost
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% Espurr
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        Collection / evolution
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL Espurr
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        Size collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS Espurr
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        Size collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            If you plan to evolve, power up or collect multiple
+            Espurr variants, Candy and Stardust management becomes
+            important.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save enough Espurr Candy for evolution.
+        </li>
+
+        <li>
+            Keep high-IV Espurr before transferring duplicates.
+        </li>
+
+        <li>
+            Save Shiny Espurr for evolution if you want a Shiny Meowstic.
+        </li>
+
+        <li>
+            Lucky Espurr can reduce Stardust costs when powering up.
+        </li>
+
+        <li>
+            Keep XXL and XXS specimens if you collect size records.
+        </li>
+
+        <li>
+            Consider keeping a Hundo Espurr for your perfect-IV collection.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr Availability
+        </h2>
+
+        <p>
+
+            Espurr availability can change as Pokémon GO
+            rotates raids, events, eggs and other encounter
+            methods.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event, raid and
+            encounter schedule before publishing a permanent
+            claim about where Espurr can currently be obtained.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical event appearances should be separated from
+        current availability so that older event information
+        does not appear to be a current encounter method.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     BATTLE GUIDE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Espurr
+        </h2>
+
+    </div>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep Shiny Espurr.
+        </li>
+
+        <li>
+            Keep 100% Espurr.
+        </li>
+
+        <li>
+            Keep Lucky Espurr.
+        </li>
+
+        <li>
+            Keep XXL Espurr.
+        </li>
+
+        <li>
+            Keep XXS Espurr.
+        </li>
+
+        <li>
+            Consider keeping Shadow and Purified specimens.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Before Evolving
+    </h3>
+
+    <p>
+
+        Check the IVs, Shiny status, Shadow status, Lucky status
+        and size before evolving or transferring an Espurr.
+        If the Pokémon has a rare characteristic, decide whether
+        you want to preserve that status in your collection.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        Espurr is generally more interesting as a collection and
+        evolution Pokémon than as a major raid investment.
+        Prioritize your strongest specimens according to your
+        personal collection goals.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Regular Espurr vs Special Espurr
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Special Variant
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Espurr
+                    </td>
+
+                    <td>
+                        Espurr
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Psychic Type
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shiny version available
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shadow version
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Lucky status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        XXL / XXS possible
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Perfect IV
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Espurr FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Espurr?
+        </summary>
+
+        <p>
+            Espurr is a pure Psychic-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Espurr weak to?
+        </summary>
+
+        <p>
+            Espurr is weak to Bug, Ghost and Dark attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Espurr evolve?
+        </summary>
+
+        <p>
+            Yes. Espurr evolves into Meowstic.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Espurr available?
+        </summary>
+
+        <p>
+            Shiny Espurr is a special alternate-color variant.
+            Availability depends on the current Pokémon GO
+            encounter and event schedule.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Espurr?
+        </summary>
+
+        <p>
+            A 100% Espurr has 15 Attack, 15 Defense and 15 HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Espurr?
+        </summary>
+
+        <p>
+            Lucky Espurr is an Espurr that has obtained Lucky
+            status through the Pokémon GO trade system.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Shadow Espurr?
+        </summary>
+
+        <p>
+            Shadow Espurr is the Shadow variant of Espurr.
+            It retains its Psychic typing.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Purified Espurr?
+        </summary>
+
+        <p>
+            Purified Espurr is created by purifying an eligible
+            Shadow Espurr.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Espurr?
+        </summary>
+
+        <p>
+            XXL Espurr is an unusually large individual Espurr
+            classified by Pokémon GO's size system.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Espurr?
+        </summary>
+
+        <p>
+            XXS Espurr is an unusually small individual Espurr
+            classified by Pokémon GO's size system.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Espurr good for raids?
+        </summary>
+
+        <p>
+            Espurr is generally not considered a top-tier raid
+            attacker. Its main value is evolution, collection
+            and special-variant hunting.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Espurr good for PvP?
+        </summary>
+
+        <p>
+            Espurr has limited competitive relevance compared
+            with stronger options. Its performance depends on
+            its current moveset and league format.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I keep a Hundo Espurr?
+        </summary>
+
+        <p>
+            Yes, if you collect perfect-IV Pokémon or want to
+            evolve a perfect Espurr into Meowstic.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I keep XXL and XXS Espurr?
+        </summary>
+
+        <p>
+            They can be worth keeping for size collection,
+            medal progress and personal collection goals.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounter methods, raid rotations, events and
+            availability can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Espurr Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Espurr Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Espurr
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Espurr
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Espurr
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Espurr
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Espurr
+                </a>
+            </li>
+
+            <li>
+                <a href="#size">
+                    XXL & XXS Espurr
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/meowstic.html">
+
+            Meowstic Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/psychic.html">
+
+            Psychic Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/ralts.html">
+
+            Ralts Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/gothita.html">
+
+            Gothita Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-6.html">
+
+            Gen 6 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Espurr Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Psychic
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            6
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #677
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            Meowstic
+        </p>
+
+
+        <p>
+            <strong>Region:</strong>
+            Kalos
+        </p>
+
+
+        <p>
+            <strong>Variants:</strong>
+            Shiny, Shadow, Purified, Lucky, XXL, XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

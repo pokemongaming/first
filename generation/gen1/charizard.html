@@ -1,0 +1,2734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Charizard Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & Mega Charizard X/Y</title>
+
+<meta name="description"
+content="Complete Charizard Pokémon GO guide covering regular Charizard, Shiny, Shadow, Purified, Lucky, 100% IV, XXL, XXS, Mega Charizard X and Mega Charizard Y, including stats, CP, moves, weaknesses, raids, PvP and evolution.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pokemongaming.in/pokemon/charizard.html">
+
+<style>
+:root{
+    --bg:#080b12;
+    --bg-soft:#0e131d;
+    --surface:#121925;
+    --surface-2:#171f2d;
+    --surface-3:#202a3b;
+    --border:#293448;
+    --text:#f4f6fb;
+    --muted:#aab3c2;
+
+    --accent:#ff9254;
+    --accent-2:#ff5c35;
+
+    --fire:#ff7043;
+    --flying:#8ea9ff;
+    --grass:#5dcf82;
+    --rock:#b9a36a;
+    --water:#4e9dff;
+    --electric:#f5cf55;
+    --ice:#72d6dc;
+
+    --danger:#ff6f7d;
+    --success:#62d89a;
+
+    --radius:18px;
+    --radius-sm:12px;
+    --max:1200px;
+}
+
+/* RESET */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:
+        radial-gradient(circle at 80% 0%,rgba(255,112,67,.12),transparent 30%),
+        var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+p{
+    color:var(--muted);
+    margin-bottom:14px;
+}
+
+h1,h2,h3,h4{
+    line-height:1.25;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* HEADER */
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(8,11,18,.93);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--border);
+}
+
+.header-inner{
+    max-width:var(--max);
+    margin:auto;
+    min-height:68px;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:1.15rem;
+    font-weight:950;
+    letter-spacing:-.03em;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.main-nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.main-nav a{
+    color:var(--muted);
+    font-size:.8rem;
+    font-weight:750;
+}
+
+.main-nav a:hover{
+    color:#fff;
+}
+
+/* PAGE */
+.page{
+    max-width:var(--max);
+    margin:auto;
+    padding:35px 20px 80px;
+}
+
+/* BREADCRUMB */
+.breadcrumb{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:25px;
+    color:var(--muted);
+    font-size:.72rem;
+}
+
+.breadcrumb span{
+    opacity:.5;
+}
+
+.breadcrumb a:hover{
+    color:#fff;
+}
+
+/* HERO */
+.pokemon-hero{
+    position:relative;
+    overflow:hidden;
+    padding:34px;
+    border:1px solid var(--border);
+    border-radius:26px;
+
+    background:
+        radial-gradient(circle at 85% 20%,rgba(255,112,67,.20),transparent 30%),
+        linear-gradient(145deg,#171827,#0c111b);
+
+    box-shadow:0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.35fr .65fr;
+    gap:30px;
+    align-items:center;
+}
+
+.eyebrow{
+    display:inline-flex;
+    padding:6px 10px;
+    border:1px solid rgba(255,112,67,.3);
+    border-radius:999px;
+    color:var(--fire);
+    background:rgba(255,112,67,.08);
+    font-size:.68rem;
+    font-weight:900;
+    letter-spacing:.08em;
+    margin-bottom:14px;
+}
+
+.pokemon-hero h1{
+    font-size:clamp(2.2rem,5vw,4.5rem);
+    letter-spacing:-.055em;
+    margin-bottom:12px;
+}
+
+.hero-subtitle{
+    max-width:720px;
+    font-size:1rem;
+    color:#c2cad7;
+}
+
+.hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:20px;
+}
+
+.tag{
+    padding:7px 11px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    background:rgba(255,255,255,.035);
+    font-size:.7rem;
+    font-weight:800;
+}
+
+.fire-tag{
+    color:var(--fire);
+}
+
+.flying-tag{
+    color:var(--flying);
+}
+
+/* HERO POKEMON */
+.hero-pokemon{
+    min-height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pokemon-placeholder{
+    width:260px;
+    height:260px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,rgba(255,112,67,.25),transparent 65%);
+
+    font-size:7rem;
+
+    filter:drop-shadow(0 20px 25px rgba(0,0,0,.4));
+}
+
+/* QUICK STATS */
+.quick-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:18px;
+}
+
+.quick-stat{
+    padding:18px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    text-align:center;
+}
+
+.quick-stat strong{
+    display:block;
+    font-size:1.25rem;
+}
+
+.quick-stat span{
+    color:var(--muted);
+    font-size:.68rem;
+    font-weight:750;
+}
+
+/* LAYOUT */
+.content-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 290px;
+    gap:20px;
+    margin-top:20px;
+}
+
+/* SECTION */
+.section{
+    margin-bottom:20px;
+    padding:28px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+}
+
+.section-heading{
+    margin-bottom:20px;
+}
+
+.section-number{
+    display:block;
+    margin-bottom:6px;
+    color:var(--accent);
+    font-size:.68rem;
+    font-weight:900;
+    letter-spacing:.08em;
+}
+
+.section h2{
+    font-size:clamp(1.45rem,3vw,2rem);
+    margin-bottom:9px;
+}
+
+.section h3{
+    margin:22px 0 10px;
+    font-size:1.05rem;
+}
+
+/* STAT GRID */
+.stat-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.stat-card{
+    padding:17px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+}
+
+.stat-card span{
+    display:block;
+    color:var(--muted);
+    font-size:.64rem;
+    font-weight:850;
+    letter-spacing:.04em;
+}
+
+.stat-card strong{
+    display:block;
+    margin-top:4px;
+    font-size:1.5rem;
+}
+
+/* TYPE BOX */
+.type-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border:1px solid rgba(255,112,67,.3);
+    background:rgba(255,112,67,.06);
+    border-radius:var(--radius-sm);
+}
+
+.type-icon{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    background:rgba(255,112,67,.13);
+    font-size:1.5rem;
+}
+
+.type-box strong{
+    display:block;
+}
+
+.type-box span{
+    color:var(--fire);
+    font-size:.75rem;
+    font-weight:850;
+}
+
+/* EFFECT GRID */
+.effect-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-top:15px;
+}
+
+.effect-card{
+    padding:17px;
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    background:var(--surface-2);
+}
+
+.effect-card .effect-icon{
+    font-size:1.5rem;
+    margin-bottom:6px;
+}
+
+.effect-card strong{
+    display:block;
+}
+
+.effect-card span,
+.effect-card small{
+    color:var(--muted);
+    font-size:.72rem;
+}
+
+.weakness{
+    border-color:rgba(255,111,125,.25);
+}
+
+.resistance{
+    border-color:rgba(98,216,154,.25);
+}
+
+/* TABLE */
+.table-wrap{
+    overflow-x:auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td{
+    padding:13px 12px;
+    border-bottom:1px solid var(--border);
+    text-align:left;
+    font-size:.76rem;
+}
+
+.data-table th,
+.comparison-table th{
+    color:var(--muted);
+    font-size:.65rem;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    background:var(--surface-2);
+}
+
+.move-name{
+    font-weight:850;
+}
+
+.move-type{
+    color:var(--fire);
+    font-weight:800;
+}
+
+/* BEST MOVE */
+.best-move{
+    margin-top:15px;
+    padding:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,112,67,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:1px solid rgba(255,112,67,.25);
+    border-radius:var(--radius-sm);
+}
+
+.best-move strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+/* RATING */
+.rating-row{
+    display:grid;
+    grid-template-columns:170px 1fr 70px;
+    gap:15px;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.rating-row:last-child{
+    border-bottom:0;
+}
+
+.rating-bar{
+    height:8px;
+    background:var(--surface-3);
+    border-radius:99px;
+    overflow:hidden;
+}
+
+.rating-fill{
+    height:100%;
+    width:var(--rating);
+    background:var(--accent);
+    border-radius:inherit;
+}
+
+.rating-value{
+    text-align:right;
+    font-weight:900;
+}
+
+/* IV */
+.iv-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+
+.iv-card{
+    padding:17px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    text-align:center;
+}
+
+.iv-card strong{
+    display:block;
+    font-size:1.35rem;
+}
+
+.iv-card span{
+    color:var(--muted);
+    font-size:.68rem;
+}
+
+/* FORM TREE */
+.form-tree{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.form-node{
+    padding:16px 22px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    text-align:center;
+}
+
+.form-node strong{
+    display:block;
+}
+
+.form-node span{
+    color:var(--muted);
+    font-size:.68rem;
+}
+
+.form-arrow{
+    color:var(--accent);
+    font-size:1.4rem;
+    font-weight:900;
+}
+
+/* FORM CARDS */
+.form-card-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:20px;
+}
+
+.form-card{
+    padding:24px;
+    border-radius:20px;
+    border:1px solid var(--border);
+    background:
+        linear-gradient(145deg,var(--surface-2),var(--surface));
+}
+
+.form-card h3{
+    margin:0 0 8px;
+    font-size:1.35rem;
+}
+
+.mega-x{
+    border-color:rgba(255,112,67,.35);
+}
+
+.mega-y{
+    border-color:rgba(255,92,53,.35);
+}
+
+/* CHECKLIST */
+.checklist{
+    list-style:none;
+    display:grid;
+    gap:8px;
+    margin-top:15px;
+}
+
+.checklist li{
+    padding:12px 14px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:9px;
+    color:#c8cfda;
+    font-size:.78rem;
+}
+
+.checklist li::before{
+    content:"✓";
+    margin-right:8px;
+    color:var(--success);
+    font-weight:900;
+}
+
+/* SPECIAL FORM */
+.special-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.special-card{
+    padding:20px;
+    border-radius:16px;
+    border:1px solid var(--border);
+    background:var(--surface-2);
+}
+
+.special-card .symbol{
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+/* SIDEBAR */
+.sidebar{
+    position:sticky;
+    top:88px;
+    align-self:start;
+}
+
+.side-card{
+    margin-bottom:15px;
+    padding:20px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+}
+
+.side-card h3{
+    margin:0 0 13px;
+    font-size:.9rem;
+}
+
+.side-nav{
+    list-style:none;
+    display:grid;
+    gap:4px;
+}
+
+.side-nav a{
+    display:block;
+    padding:8px 10px;
+    border-radius:7px;
+    color:var(--muted);
+    font-size:.72rem;
+    font-weight:700;
+}
+
+.side-nav a:hover{
+    background:var(--surface-2);
+    color:#fff;
+}
+
+.related-link{
+    display:block;
+    padding:10px 0;
+    border-bottom:1px solid var(--border);
+    color:var(--muted);
+    font-size:.75rem;
+}
+
+.related-link:last-child{
+    border-bottom:0;
+}
+
+.related-link:hover{
+    color:var(--accent);
+}
+
+/* FAQ */
+details{
+    padding:15px 0;
+    border-bottom:1px solid var(--border);
+}
+
+details:last-child{
+    border-bottom:0;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:850;
+    font-size:.82rem;
+}
+
+details p{
+    margin:10px 0 0;
+    font-size:.78rem;
+}
+
+/* NOTE */
+.editorial-note{
+    padding:17px;
+    margin-top:20px;
+    background:rgba(255,255,255,.025);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    font-size:.72rem;
+}
+
+/* FOOTER */
+footer{
+    border-top:1px solid var(--border);
+    padding:35px 20px;
+    background:#06090e;
+}
+
+.footer-inner{
+    max-width:var(--max);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+footer p{
+    margin:0;
+    font-size:.72rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+
+    .content-layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:static;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-pokemon{
+        order:-1;
+    }
+
+    .stat-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .quick-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-card-grid,
+    .special-grid{
+        grid-template-columns:1fr;
+    }
+
+    .iv-grid{
+        grid-template-columns:1fr;
+    }
+
+    .rating-row{
+        grid-template-columns:1fr;
+        gap:6px;
+    }
+
+    .rating-value{
+        text-align:left;
+    }
+}
+
+@media(max-width:650px){
+
+    .page{
+        padding:22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section{
+        padding:20px;
+    }
+
+    .main-nav{
+        display:none;
+    }
+
+    .stat-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .form-tree{
+        flex-direction:column;
+    }
+
+    .form-arrow{
+        transform:rotate(90deg);
+    }
+}
+
+@media(max-width:500px){
+
+    .stat-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quick-stats{
+        grid-template-columns:1fr 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+<a href="/pokemon-types.html">Types</a>
+<a href="/pokedex.html">Pokédex</a>
+<a href="/raids/">Raids</a>
+<a href="/guides/">Guides</a>
+<a href="/tools/">Tools</a>
+</nav>
+
+</div>
+</header>
+
+<main class="page">
+
+<div class="breadcrumb">
+<a href="/">Home</a>
+<span>›</span>
+<a href="/pokedex.html">Pokémon Database</a>
+<span>›</span>
+<a href="/pokemon-types/fire.html">Fire Type</a>
+<span>›</span>
+<strong>Charizard</strong>
+</div>
+
+<!-- HERO -->
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">GENERATION 1 • KANTO</span>
+
+<h1>Charizard</h1>
+
+<p class="hero-subtitle">
+Charizard is a Fire/Flying-type Pokémon from the Kanto
+region. In Pokémon GO, it has several important variants,
+including Shiny Charizard, Shadow Charizard, Purified
+Charizard, Lucky Charizard and the two Mega forms:
+Mega Charizard X and Mega Charizard Y.
+</p>
+
+<div class="hero-tags">
+
+<span class="tag fire-tag">Fire</span>
+<span class="tag flying-tag">Flying</span>
+<span class="tag">#006</span>
+<span class="tag">Gen 1</span>
+<span class="tag">Shiny Available</span>
+<span class="tag">Mega X</span>
+<span class="tag">Mega Y</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🔥🐉
+</div>
+
+</div>
+
+</div>
+</section>
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+<strong>223</strong>
+<span>ATTACK</span>
+</div>
+
+<div class="quick-stat">
+<strong>173</strong>
+<span>DEFENSE</span>
+</div>
+
+<div class="quick-stat">
+<strong>186</strong>
+<span>HP</span>
+</div>
+
+<div class="quick-stat">
+<strong>~3,266</strong>
+<span>MAX CP</span>
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- OVERVIEW -->
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<span class="section-number">01 • OVERVIEW</span>
+
+<h2>Charizard Overview</h2>
+
+<p>
+Charizard is the final evolution of Charmander and
+Charmeleon. Its Fire/Flying typing gives it useful
+offensive options, while its two Mega forms give it
+different battle roles.
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#006</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 1</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Kanto</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fire / Flying</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>223</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>173</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>186</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~3,266</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- TYPE -->
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<span class="section-number">02 • TYPE</span>
+
+<h2>Charizard Type</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">🔥</div>
+
+<div>
+<strong>Fire / Flying</strong>
+<span>Dual Type</span>
+</div>
+
+</div>
+
+<h3>Why Charizard's Typing Matters</h3>
+
+<p>
+Charizard combines Fire and Flying typing. This gives
+it useful offensive coverage but also creates a major
+weakness to Rock-type attacks. Understanding the dual
+typing is particularly important when selecting Charizard
+for raids and PvP.
+</p>
+
+</section>
+
+<!-- WEAKNESSES -->
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<span class="section-number">03 • TYPE MATCHUPS</span>
+
+<h2>Charizard Weaknesses & Resistances</h2>
+
+</div>
+
+<h3>Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+<div class="effect-icon">🪨</div>
+<strong>Rock</strong>
+<p>
+Rock attacks are especially dangerous because
+Charizard is doubly weak to Rock.
+</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">💧</div>
+<strong>Water</strong>
+<p>
+Water-type attacks deal super-effective damage.
+</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">⚡</div>
+<strong>Electric</strong>
+<p>
+Electric attacks also exploit Charizard's Flying typing.
+</p>
+</div>
+
+</div>
+
+<h3>Resistances</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+<div class="effect-icon">🌿</div>
+<strong>Grass</strong>
+<p>
+Charizard strongly resists Grass-type attacks.
+</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">🔥</div>
+<strong>Fire</strong>
+<p>
+Fire attacks are resisted by Charizard.
+</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">🐞</div>
+<strong>Bug</strong>
+<p>
+Charizard has useful resistance to Bug attacks.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<span class="section-number">04 • STATS</span>
+
+<h2>Charizard Attack, Defense, HP & Max CP</h2>
+
+<p>
+Charizard has a solid offensive profile, although its
+normal form is surpassed by its Mega forms for high-end
+PvE performance.
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>223</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>173</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>186</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~3,266</strong>
+</div>
+
+</div>
+
+<div class="editorial-note">
+<strong>Database note:</strong>
+<p>
+CP depends on level and IVs. Max CP figures should be
+kept synchronized with your current Pokémon GO database.
+</p>
+</div>
+
+</section>
+
+<!-- MOVES -->
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<span class="section-number">05 • MOVESET</span>
+
+<h2>Charizard Best Moves</h2>
+
+<p>
+Charizard can use Fire-focused or Flying-focused moves
+depending on the battle and role you want it to perform.
+</p>
+
+</div>
+
+<div class="best-move">
+
+<strong>Recommended Fire PvE Build</strong>
+
+<p>
+Fire Spin + Blast Burn
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+<tr>
+<th>Move</th>
+<th>Type</th>
+<th>Category</th>
+<th>Role</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td class="move-name">Fire Spin</td>
+<td class="move-type">Fire</td>
+<td>Fast</td>
+<td>Fire damage</td>
+</tr>
+
+<tr>
+<td class="move-name">Blast Burn</td>
+<td class="move-type">Fire</td>
+<td>Charged</td>
+<td>Premium Fire option</td>
+</tr>
+
+<tr>
+<td class="move-name">Dragon Breath</td>
+<td>Dragon</td>
+<td>Fast</td>
+<td>Alternative coverage</td>
+</tr>
+
+<tr>
+<td class="move-name">Dragon Claw</td>
+<td>Dragon</td>
+<td>Charged</td>
+<td>PvP pressure</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<div class="editorial-note">
+<strong>Legacy move note:</strong>
+<p>
+Blast Burn has historically been associated with special
+events and Community Day availability. Check current
+move availability before recommending an Elite TM.
+</p>
+</div>
+
+</section>
+
+<!-- RAID -->
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<span class="section-number">06 • RAID PERFORMANCE</span>
+
+<h2>Charizard Raid Performance</h2>
+
+<p>
+Regular Charizard can perform useful Fire-type roles,
+but Mega Charizard X and Mega Charizard Y are considerably
+more important when building optimized Mega raid teams.
+</p>
+
+</div>
+
+<div class="rating-row">
+<strong>Fire Raids</strong>
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:82%;"></div>
+</div>
+<span class="rating-value">8.2/10</span>
+</div>
+
+<div class="rating-row">
+<strong>Flying Role</strong>
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:72%;"></div>
+</div>
+<span class="rating-value">7.2/10</span>
+</div>
+
+<div class="rating-row">
+<strong>PvE Utility</strong>
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:84%;"></div>
+</div>
+<span class="rating-value">8.4/10</span>
+</div>
+
+<h3>Should You Power Up Charizard?</h3>
+
+<p>
+A strong Charizard is worth keeping, especially if it has
+a useful legacy moveset, good IVs or a path toward Mega
+Evolution. For players focused on raids, consider the
+Mega forms before committing large amounts of Stardust.
+</p>
+
+</section>
+
+<!-- COUNTERS -->
+<section class="section" id="counters">
+
+<div class="section-heading">
+
+<span class="section-number">07 • COUNTERS</span>
+
+<h2>What Counters Charizard?</h2>
+
+<p>
+Because Charizard is Fire/Flying, Rock-type attackers are
+especially effective. Water and Electric attackers are
+also reliable choices.
+</p>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<div class="effect-icon">🪨</div>
+<strong>Rock Attackers</strong>
+<p>
+Rock-type Pokémon can exploit Charizard's double weakness.
+</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">💧</div>
+<strong>Water Attackers</strong>
+<p>
+Water attacks deal super-effective damage.
+</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">⚡</div>
+<strong>Electric Attackers</strong>
+<p>
+Electric attacks exploit Charizard's Flying typing.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- IV -->
+<section class="section" id="iv">
+
+<div class="section-heading">
+
+<span class="section-number">08 • IV GUIDE</span>
+
+<h2>Charizard IV Guide</h2>
+
+<p>
+For raids, a 15/15/15 Charizard is the perfect IV
+combination. However, IV perfection is not required
+for a useful Charizard.
+</p>
+
+</div>
+
+<div class="iv-grid">
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Attack IV</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Defense IV</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>HP IV</span>
+</div>
+
+</div>
+
+<h3>100% Charizard</h3>
+
+<p>
+A 100% Charizard has 15 Attack, 15 Defense and 15 HP IVs.
+A perfect Charizard is valuable for collectors, Mega
+Evolution and long-term investment.
+</p>
+
+<div class="best-move">
+<strong>Perfect IV Target</strong>
+<p>15 / 15 / 15 = 100% IV</p>
+</div>
+
+</section>
+
+<!-- PVP -->
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<span class="section-number">09 • PVP</span>
+
+<h2>Charizard PvP Guide</h2>
+
+</div>
+
+<h3>Great League</h3>
+
+<p>
+Charizard can be useful in Great League when built around
+its shield pressure and appropriate charged moves. League
+rules and current rankings should always be checked because
+the PvP meta changes over time.
+</p>
+
+<h3>Ultra League</h3>
+
+<p>
+Charizard has historically been more comfortable in Ultra
+League than in Great League when properly powered and
+equipped with the right moveset.
+</p>
+
+<h3>Master League</h3>
+
+<p>
+Regular Charizard generally faces tougher competition in
+Master League because of its lower maximum stat product
+compared with many Legendary and high-stat Pokémon.
+</p>
+
+</section>
+
+<!-- EVOLUTION -->
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<span class="section-number">10 • EVOLUTION</span>
+
+<h2>Charmander → Charmeleon → Charizard</h2>
+
+<p>
+Charizard is the final stage of the Charmander evolutionary
+family.
+</p>
+
+</div>
+
+<div class="form-tree">
+
+<div class="form-node">
+<strong>Charmander</strong>
+<span>Fire</span>
+</div>
+
+<div class="form-arrow">→</div>
+
+<div class="form-node">
+<strong>Charmeleon</strong>
+<span>Fire</span>
+</div>
+
+<div class="form-arrow">→</div>
+
+<div class="form-node">
+<strong>Charizard</strong>
+<span>Fire / Flying</span>
+</div>
+
+</div>
+
+<p>
+Evolution requires Candy. The exact Candy requirements and
+current evolution mechanics should be confirmed against
+current Pokémon GO data.
+</p>
+
+</section>
+
+<!-- SHINY -->
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<span class="section-number">11 • SHINY</span>
+
+<h2>Shiny Charizard</h2>
+
+<p>
+Shiny Charizard is one of the most recognizable alternate
+forms in Pokémon GO. Its black body coloration makes it
+particularly popular with collectors.
+</p>
+
+</div>
+
+<div class="special-grid">
+
+<div class="special-card">
+<div class="symbol">✨</div>
+<strong>Shiny Charizard</strong>
+<p>Alternate coloration of Charizard.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">🔥</div>
+<strong>Shiny Evolution</strong>
+<p>Shiny Charmander can evolve while retaining its Shiny status.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">⭐</div>
+<strong>Collector Value</strong>
+<p>Strong candidate for Mega Evolution and collection goals.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SHADOW -->
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<span class="section-number">12 • SHADOW</span>
+
+<h2>Shadow Charizard</h2>
+
+<p>
+Shadow Charizard has the same Fire/Flying typing as regular
+Charizard, but the Shadow mechanic changes its battle profile.
+It can be particularly interesting for players who prioritize
+offensive damage.
+</p>
+
+</div>
+
+<div class="type-box">
+<div class="type-icon">🌑</div>
+<div>
+<strong>Shadow Charizard</strong>
+<span>Fire / Flying</span>
+</div>
+</div>
+
+<h3>Shadow Charizard vs Regular Charizard</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+<tr>
+<th>Feature</th>
+<th>Regular</th>
+<th>Shadow</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Typing</td>
+<td>Fire / Flying</td>
+<td>Fire / Flying</td>
+</tr>
+
+<tr>
+<td>Shadow Bonus</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Offensive Pressure</td>
+<td>Standard</td>
+<td>Higher</td>
+</tr>
+
+<tr>
+<td>Defensive Profile</td>
+<td>Standard</td>
+<td>Reduced durability</td>
+</tr>
+
+<tr>
+<td>Purification</td>
+<td>Not applicable</td>
+<td>Possible when eligible</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<h3>Shadow Charizard Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+<div class="effect-icon">🪨</div>
+<strong>Rock</strong>
+<p>Shadow status does not remove Charizard's double Rock weakness.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">💧</div>
+<strong>Water</strong>
+<p>Water remains super effective.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">⚡</div>
+<strong>Electric</strong>
+<p>Electric remains super effective.</p>
+</div>
+
+</div>
+
+<h3>Shadow Charizard IVs</h3>
+
+<p>
+Do not automatically transfer a Shadow Charizard because
+its IVs are not perfect. A strong Shadow Pokémon can remain
+valuable because of its Shadow battle bonus.
+</p>
+
+<div class="best-move">
+<strong>Frustration Warning</strong>
+<p>
+Shadow Pokémon can have Frustration. Check current Team GO
+Rocket events before planning to replace the move.
+</p>
+</div>
+
+</section>
+
+<!-- PURIFIED -->
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<span class="section-number">13 • PURIFIED</span>
+
+<h2>Purified Charizard</h2>
+
+<p>
+Purified Charizard is created by purifying an eligible
+Shadow Charizard. Purification changes the Pokémon's
+status and can affect its IVs and available mechanics.
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+<tr>
+<th>Category</th>
+<th>Shadow</th>
+<th>Purified</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Shadow Status</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Shadow Bonus</td>
+<td>Retained</td>
+<td>Removed</td>
+</tr>
+
+<tr>
+<td>Frustration</td>
+<td>Can be present</td>
+<td>Removed through purification</td>
+</tr>
+
+<tr>
+<td>IV Changes</td>
+<td>Original IVs</td>
+<td>Purification can increase IVs</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="editorial-note">
+<strong>Purification decision:</strong>
+<p>
+Purifying should be a deliberate choice. If your priority
+is maximizing Shadow raid damage, compare both options before
+purifying.
+</p>
+</div>
+
+</section>
+
+<!-- LUCKY -->
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<span class="section-number">14 • LUCKY</span>
+
+<h2>Lucky Charizard</h2>
+
+<p>
+Lucky Charizard is obtained through a Lucky Trade. Lucky
+Pokémon require less Stardust to power up, making a Lucky
+Charizard attractive for long-term investment.
+</p>
+
+</div>
+
+<div class="special-grid">
+
+<div class="special-card">
+<div class="symbol">🍀</div>
+<strong>Lucky Status</strong>
+<p>Obtained through Lucky Trades.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">✨</div>
+<strong>Lower Power-Up Cost</strong>
+<p>Lucky Pokémon receive a Stardust discount for power-ups.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">🔥</div>
+<strong>Good Investment</strong>
+<p>Useful for players planning a high-level Charizard build.</p>
+</div>
+
+</div>
+
+<h3>Lucky Charizard IVs</h3>
+
+<p>
+Lucky Pokémon have a minimum IV floor when obtained through
+a Lucky Trade. A Lucky Charizard can therefore be an appealing
+candidate for investment, especially when combined with
+strong moves and Mega Evolution potential.
+</p>
+
+</section>
+
+<!-- 100 -->
+<section class="section" id="perfect">
+
+<div class="section-heading">
+
+<span class="section-number">15 • PERFECT IV</span>
+
+<h2>100% IV Charizard</h2>
+
+<p>
+A 100% IV Charizard has perfect Attack, Defense and HP IVs.
+For the standard appraisal system, that means 15/15/15.
+</p>
+
+<div class="iv-grid">
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Attack</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Defense</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<h3>Is a Hundo Charizard Worth Investing In?</h3>
+
+<p>
+Yes, particularly if the Charizard has a useful moveset and
+you plan to use it for Mega Evolution, PvP or collection
+purposes. A perfect IV Pokémon does not automatically mean
+it is the strongest choice for every battle.
+</p>
+
+</section>
+
+<!-- XXL -->
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<span class="section-number">16 • SIZE</span>
+
+<h2>XXL Charizard</h2>
+
+<p>
+XXL Charizard is a size variant. Size is separate from IVs,
+CP and battle stats, so an XXL Charizard is not automatically
+stronger than a normal-sized Charizard.
+</p>
+
+</div>
+
+<div class="special-grid">
+
+<div class="special-card">
+<div class="symbol">📏</div>
+<strong>XXL</strong>
+<p>Extra-large size classification.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">⚔️</div>
+<strong>Battle Stats</strong>
+<p>Size does not directly determine Attack, Defense or HP.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">🏆</div>
+<strong>Collection</strong>
+<p>Useful for size-focused collection goals.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- XXS -->
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<span class="section-number">17 • SIZE</span>
+
+<h2>XXS Charizard</h2>
+
+<p>
+XXS Charizard is the extra-small size category. Like XXL,
+the size designation is separate from IV quality and should
+not be confused with a Pokémon's battle strength.
+</p>
+
+</div>
+
+<div class="special-grid">
+
+<div class="special-card">
+<div class="symbol">📐</div>
+<strong>XXS</strong>
+<p>Extra-small size classification.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">📊</div>
+<strong>Not an IV</strong>
+<p>XXS status does not mean low or high IVs.</p>
+</div>
+
+<div class="special-card">
+<div class="symbol">🏅</div>
+<strong>Collector Value</strong>
+<p>Useful for collectors completing size variants.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MEGA X -->
+<section class="section" id="mega-x">
+
+<div class="section-heading">
+
+<span class="section-number">18 • MEGA FORM</span>
+
+<h2>Mega Charizard X</h2>
+
+<p>
+Mega Charizard X is one of Charizard's two Mega Evolutions.
+Unlike standard Charizard, Mega Charizard X changes to a
+Fire/Dragon typing.
+</p>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">🐉</div>
+
+<div>
+<strong>Fire / Dragon</strong>
+<span>Mega Charizard X</span>
+</div>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Mega X</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fire / Dragon</strong>
+</div>
+
+<div class="stat-card">
+<span>SPECIES</span>
+<strong>Charizard</strong>
+</div>
+
+<div class="stat-card">
+<span>MEGA FORM</span>
+<strong>X</strong>
+</div>
+
+</div>
+
+<h3>Mega Charizard X Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+<div class="effect-icon">🪨</div>
+<strong>Rock</strong>
+<p>Rock remains an important weakness.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">🐉</div>
+<strong>Dragon</strong>
+<p>Dragon attacks can exploit the Dragon typing.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">🌎</div>
+<strong>Ground</strong>
+<p>Ground attacks can deal super-effective damage.</p>
+</div>
+
+</div>
+
+<h3>Mega Charizard X Raid Role</h3>
+
+<p>
+Mega Charizard X is most interesting when its Fire/Dragon
+typing and Mega bonuses fit the matchup. Its Mega status
+also provides the usual team and Candy-related benefits
+associated with Mega Evolution.
+</p>
+
+</section>
+
+<!-- MEGA Y -->
+<section class="section" id="mega-y">
+
+<div class="section-heading">
+
+<span class="section-number">19 • MEGA FORM</span>
+
+<h2>Mega Charizard Y</h2>
+
+<p>
+Mega Charizard Y retains Charizard's Fire/Flying typing
+while gaining substantially improved battle performance.
+It is generally the more natural choice when you specifically
+want a powerful Fire-type Mega attacker.
+</p>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">🔥</div>
+
+<div>
+<strong>Fire / Flying</strong>
+<span>Mega Charizard Y</span>
+</div>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Mega Y</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fire / Flying</strong>
+</div>
+
+<div class="stat-card">
+<span>SPECIES</span>
+<strong>Charizard</strong>
+</div>
+
+<div class="stat-card">
+<span>MEGA FORM</span>
+<strong>Y</strong>
+</div>
+
+</div>
+
+<h3>Mega Charizard Y Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+<div class="effect-icon">🪨</div>
+<strong>Rock</strong>
+<p>Rock attacks remain especially dangerous.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">💧</div>
+<strong>Water</strong>
+<p>Water attacks are super effective.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">⚡</div>
+<strong>Electric</strong>
+<p>Electric attacks exploit the Flying typing.</p>
+</div>
+
+</div>
+
+<h3>Mega Charizard Y Raid Role</h3>
+
+<p>
+Mega Charizard Y is an important Fire-type Mega attacker.
+For Fire-focused raids, it can be a strong choice when its
+moveset and current game balance support the matchup.
+</p>
+
+<div class="best-move">
+
+<strong>Fire Raid Build</strong>
+
+<p>
+Fire Spin + Blast Burn
+</p>
+
+</div>
+
+</section>
+
+<!-- MEGA COMPARISON -->
+<section class="section" id="mega-comparison">
+
+<div class="section-heading">
+
+<span class="section-number">20 • MEGA COMPARISON</span>
+
+<h2>Mega Charizard X vs Mega Charizard Y</h2>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>Feature</th>
+<th>Mega Charizard X</th>
+<th>Mega Charizard Y</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Typing</td>
+<td>Fire / Dragon</td>
+<td>Fire / Flying</td>
+</tr>
+
+<tr>
+<td>Primary Identity</td>
+<td>Fire / Dragon Mega</td>
+<td>Fire Mega</td>
+</tr>
+
+<tr>
+<td>Best General PvE Role</td>
+<td>Fire / Dragon utility</td>
+<td>Fire attacker</td>
+</tr>
+
+<tr>
+<td>Rock Weakness</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Flying Typing</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Dragon Typing</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<h3>Which Mega Charizard Should You Use?</h3>
+
+<p>
+Choose Mega Charizard Y when you specifically want a powerful
+Fire-type Mega attacker. Mega Charizard X becomes more
+interesting when its Fire/Dragon typing and matchup advantages
+fit the battle.
+</p>
+
+</section>
+
+<!-- FORMS -->
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<span class="section-number">21 • FORMS</span>
+
+<h2>Charizard Forms & Variants</h2>
+
+</div>
+
+<div class="form-tree">
+
+<div class="form-node">
+<strong>Charizard</strong>
+<span>Fire / Flying</span>
+</div>
+
+<div class="form-arrow">→</div>
+
+<div class="form-node">
+<strong>Mega Charizard X</strong>
+<span>Fire / Dragon</span>
+</div>
+
+<div class="form-arrow">→</div>
+
+<div class="form-node">
+<strong>Mega Charizard Y</strong>
+<span>Fire / Flying</span>
+</div>
+
+</div>
+
+<p>
+The following variants are useful to track separately in
+a Pokémon database: Regular Charizard, Shiny Charizard,
+Shadow Charizard, Purified Charizard, Lucky Charizard,
+100% IV Charizard, XXL Charizard, XXS Charizard, Mega
+Charizard X and Mega Charizard Y.
+</p>
+
+</section>
+
+<!-- CANDY -->
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<span class="section-number">22 • RESOURCES</span>
+
+<h2>Charizard Candy, XL Candy & Stardust</h2>
+
+</div>
+
+<p>
+Charizard investment can require significant Candy, Candy XL
+and Stardust, especially when building a high-level Pokémon
+for raids or PvP.
+</p>
+
+<ul class="checklist">
+
+<li>Save Candy for important evolution and power-up projects.</li>
+<li>Collect Candy XL for high-level investment.</li>
+<li>Check the moveset before using Elite TMs.</li>
+<li>Consider Mega Evolution before major Stardust spending.</li>
+<li>Keep strong IV specimens for long-term projects.</li>
+</ul>
+
+</section>
+
+<!-- AVAILABILITY -->
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<span class="section-number">23 • AVAILABILITY</span>
+
+<h2>Charizard Availability</h2>
+
+</div>
+
+<p>
+Charizard and its evolutionary family can appear through
+different Pokémon GO encounters, events and evolution
+methods. Availability can change with seasonal events,
+Community Days and other rotations.
+</p>
+
+<div class="best-move">
+
+<strong>Current Availability</strong>
+
+<p>
+Check the latest Pokémon GO event and wild encounter schedule
+before publishing a claim about current Charizard availability.
+</p>
+
+</div>
+
+</section>
+
+<!-- INVESTMENT -->
+<section class="section" id="investment">
+
+<div class="section-heading">
+
+<span class="section-number">24 • INVESTMENT</span>
+
+<h2>Should You Invest in Charizard?</h2>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<div class="effect-icon">⚔️</div>
+<strong>Raiders</strong>
+<p>
+Prioritize a strong Fire build and consider Mega Charizard Y.
+</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">🏆</div>
+<strong>PvP Players</strong>
+<p>
+Keep candidates with appropriate IV spreads and movesets.
+</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">✨</div>
+<strong>Collectors</strong>
+<p>
+Shiny, Lucky, XXL, XXS and perfect-IV variants can be
+valuable collection targets.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- BATTLE GUIDE -->
+<section class="section" id="battle-guide">
+
+<div class="section-heading">
+
+<span class="section-number">25 • BATTLE GUIDE</span>
+
+<h2>How to Use Charizard</h2>
+
+</div>
+
+<h3>Before a Raid</h3>
+
+<ul class="checklist">
+
+<li>Check the raid boss's weaknesses.</li>
+<li>Confirm Charizard has the appropriate moveset.</li>
+<li>Check level and IVs.</li>
+<li>Consider weather and team composition.</li>
+<li>Compare regular Charizard with Mega Charizard Y.</li>
+
+</ul>
+
+<h3>For PvP</h3>
+
+<p>
+Choose the league first, then evaluate Charizard's IVs,
+moves and current meta matchups. A Pokémon with perfect IVs
+is not automatically the best PvP candidate because lower
+Attack IVs can sometimes be desirable in CP-limited leagues.
+</p>
+
+<h3>For Long-Term Investment</h3>
+
+<p>
+A strong Charizard can remain useful through Mega Evolution,
+PvP and collection goals. If Stardust is limited, prioritize
+the form and moveset that match the way you actually play.
+</p>
+
+</section>
+
+<!-- COMPARISON -->
+<section class="section" id="comparison">
+
+<div class="section-heading">
+
+<span class="section-number">26 • VARIANT COMPARISON</span>
+
+<h2>Charizard Variants Compared</h2>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>Variant</th>
+<th>Type</th>
+<th>Main Difference</th>
+<th>Primary Interest</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Regular Charizard</td>
+<td>Fire / Flying</td>
+<td>Standard form</td>
+<td>Raids / PvP</td>
+</tr>
+
+<tr>
+<td>Shiny Charizard</td>
+<td>Fire / Flying</td>
+<td>Alternate appearance</td>
+<td>Collection</td>
+</tr>
+
+<tr>
+<td>Shadow Charizard</td>
+<td>Fire / Flying</td>
+<td>Shadow battle bonus</td>
+<td>Damage</td>
+</tr>
+
+<tr>
+<td>Purified Charizard</td>
+<td>Fire / Flying</td>
+<td>Purified status</td>
+<td>Collection / investment</td>
+</tr>
+
+<tr>
+<td>Lucky Charizard</td>
+<td>Fire / Flying</td>
+<td>Lucky power-up discount</td>
+<td>Investment</td>
+</tr>
+
+<tr>
+<td>100% Charizard</td>
+<td>Fire / Flying</td>
+<td>15/15/15 IVs</td>
+<td>Investment / collection</td>
+</tr>
+
+<tr>
+<td>XXL Charizard</td>
+<td>Fire / Flying</td>
+<td>Extra-large size</td>
+<td>Collection</td>
+</tr>
+
+<tr>
+<td>XXS Charizard</td>
+<td>Fire / Flying</td>
+<td>Extra-small size</td>
+<td>Collection</td>
+</tr>
+
+<tr>
+<td>Mega Charizard X</td>
+<td>Fire / Dragon</td>
+<td>Mega transformation</td>
+<td>Raids / Mega bonuses</td>
+</tr>
+
+<tr>
+<td>Mega Charizard Y</td>
+<td>Fire / Flying</td>
+<td>Mega transformation</td>
+<td>Fire raids / Mega bonuses</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<span class="section-number">27 • FAQ</span>
+
+<h2>Charizard FAQ</h2>
+
+</div>
+
+<details>
+<summary>What type is Charizard?</summary>
+<p>
+Regular Charizard is Fire/Flying type.
+</p>
+</details>
+
+<details>
+<summary>What is Charizard weak to?</summary>
+<p>
+Charizard is weak to Rock, Water and Electric attacks.
+Rock is particularly dangerous because of Charizard's
+double weakness to Rock.
+</p>
+</details>
+
+<details>
+<summary>Is Shiny Charizard available?</summary>
+<p>
+Yes. Shiny Charizard is available through eligible
+Pokémon GO encounters and evolution.
+</p>
+</details>
+
+<details>
+<summary>Is Shadow Charizard good?</summary>
+<p>
+Shadow Charizard can be useful for players who prioritize
+offensive damage, although its reduced durability and
+resource requirements should be considered.
+</p>
+</details>
+
+<details>
+<summary>Should I purify Shadow Charizard?</summary>
+<p>
+Not automatically. Compare the Shadow version with the
+purified result before making the decision.
+</p>
+</details>
+
+<details>
+<summary>What is a 100% Charizard?</summary>
+<p>
+A 100% Charizard has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+</details>
+
+<details>
+<summary>What is Lucky Charizard?</summary>
+<p>
+Lucky Charizard is obtained through a Lucky Trade and
+benefits from the reduced Stardust cost associated with
+Lucky Pokémon.
+</p>
+</details>
+
+<details>
+<summary>What is XXL Charizard?</summary>
+<p>
+XXL Charizard is an extra-large size variant. Size is
+separate from IVs and does not automatically make Charizard
+stronger in battle.
+</p>
+</details>
+
+<details>
+<summary>What is XXS Charizard?</summary>
+<p>
+XXS Charizard is an extra-small size variant. Like XXL,
+its size designation is separate from its battle IVs.
+</p>
+</details>
+
+<details>
+<summary>What is Mega Charizard X?</summary>
+<p>
+Mega Charizard X is Charizard's Fire/Dragon Mega form.
+</p>
+</details>
+
+<details>
+<summary>What is Mega Charizard Y?</summary>
+<p>
+Mega Charizard Y is Charizard's Fire/Flying Mega form and
+is particularly useful for Fire-focused battle roles.
+</p>
+</details>
+
+<details>
+<summary>Which is better, Mega Charizard X or Y?</summary>
+<p>
+For a Fire-focused raid role, Mega Charizard Y is generally
+the more natural choice. Mega Charizard X has a different
+Fire/Dragon identity and can be preferred when that typing
+fits the matchup.
+</p>
+</details>
+
+<details>
+<summary>Can Shiny Charizard Mega Evolve?</summary>
+<p>
+Yes. An eligible Shiny Charizard can Mega Evolve while
+retaining its Shiny identity.
+</p>
+</details>
+
+<details>
+<summary>Can Shadow Charizard Mega Evolve?</summary>
+<p>
+Special-form interactions should be checked against the
+current Pokémon GO rules before treating Shadow Charizard
+as eligible for Mega Evolution.
+</p>
+</details>
+
+</section>
+
+<!-- EDITORIAL -->
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>Editorial & Data Note</strong>
+
+<p>
+PokémonGaming.in is an independent Pokémon GO information
+website. Pokémon GO mechanics, moves, raid rotations,
+availability, forms and other game data can change over time.
+Always verify current in-game information before making
+investment decisions.
+</p>
+
+<p>
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This website is an independent informational resource
+and is not affiliated with or endorsed by The Pokémon Company,
+Niantic or Nintendo.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>Charizard Guide</h3>
+
+<ul class="side-nav">
+
+<li><a href="#overview">Charizard Overview</a></li>
+<li><a href="#stats">Stats & Max CP</a></li>
+<li><a href="#type">Type</a></li>
+<li><a href="#weaknesses">Weaknesses & Resistances</a></li>
+<li><a href="#moves">Best Moves</a></li>
+<li><a href="#raid">Raid Performance</a></li>
+<li><a href="#counters">Counters</a></li>
+<li><a href="#iv">IV Guide</a></li>
+<li><a href="#pvp">PvP Guide</a></li>
+<li><a href="#shiny">Shiny Charizard</a></li>
+<li><a href="#shadow">Shadow Charizard</a></li>
+<li><a href="#purified">Purified Charizard</a></li>
+<li><a href="#lucky">Lucky Charizard</a></li>
+<li><a href="#perfect">100% Charizard</a></li>
+<li><a href="#xxl">XXL Charizard</a></li>
+<li><a href="#xxs">XXS Charizard</a></li>
+<li><a href="#mega-x">Mega Charizard X</a></li>
+<li><a href="#mega-y">Mega Charizard Y</a></li>
+<li><a href="#mega-comparison">Mega Comparison</a></li>
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>Related Guides</h3>
+
+<a class="related-link"
+href="/pokemon/charizard.html">
+Charizard Guide →
+</a>
+
+<a class="related-link"
+href="/pokemon/mega-charizard-x.html">
+Mega Charizard X Guide →
+</a>
+
+<a class="related-link"
+href="/pokemon/mega-charizard-y.html">
+Mega Charizard Y Guide →
+</a>
+
+<a class="related-link"
+href="/pokemon-types/fire.html">
+Fire Type Hub →
+</a>
+
+<a class="related-link"
+href="/pokemon-types/flying.html">
+Flying Type Hub →
+</a>
+
+<a class="related-link"
+href="/pokemon-generations/gen-1.html">
+Gen 1 Pokémon →
+</a>
+
+</div>
+
+<div class="side-card">
+
+<h3>Charizard Quick Facts</h3>
+
+<p>
+<strong>Type:</strong>
+Fire / Flying
+</p>
+
+<p>
+<strong>Generation:</strong>
+1
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#006
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Charmander → Charmeleon → Charizard
+</p>
+
+<p>
+<strong>Mega Forms:</strong>
+Charizard X / Charizard Y
+</p>
+
+<p>
+<strong>Special Variants:</strong>
+Shiny, Shadow, Purified, Lucky, XXL, XXS
+</p>
+
+</div>
+
+</aside>
+
+</div>
+</main>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

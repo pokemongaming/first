@@ -1,0 +1,4236 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Glimmet Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses, Shiny & Forms</title>
+
+<meta name="description"
+      content="Complete Glimmet Pokémon GO guide covering Glimmet stats, max CP, Rock and Poison typing, weaknesses, resistances, best moves, IVs, shiny Glimmet, Shadow, Purified, Lucky, 100% IV, XXL and XXS Glimmet information.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/glimmet.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #a879ff;
+    --accent-2: #7951d9;
+
+    --poison: #a96bdd;
+    --rock: #c5a24b;
+
+    --water: #4e9dff;
+    --steel: #9da9bd;
+    --ground: #d6a743;
+    --psychic: #f276a8;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --lucky: #ffd34d;
+    --shiny: #8ee7ff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(168,121,255,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(168,121,255,.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(197,162,75,.10),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color:
+        var(--accent);
+
+    background:
+        rgba(168,121,255,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.poison-tag {
+    color: var(--poison);
+}
+
+.rock-tag {
+    color: var(--rock);
+}
+
+.shiny-tag {
+    color: var(--shiny);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(168,121,255,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom:
+        20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(168,121,255,.30);
+
+    background:
+        rgba(168,121,255,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(168,121,255,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x:
+        auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight:
+        850;
+}
+
+.move-type {
+    color:
+        var(--poison);
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168,121,255,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(168,121,255,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:
+        hidden;
+}
+
+.rating-fill {
+
+    height:
+        100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:
+        right;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   IV
+========================================================= */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.iv-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.35rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =========================================================
+   FORM CARDS
+========================================================= */
+
+.form-card {
+
+    padding:
+        24px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        20px;
+
+    margin-top:
+        18px;
+
+    background:
+        var(--surface-2);
+}
+
+.form-card h3 {
+    margin-top: 0;
+}
+
+.shadow-card {
+    border-color:
+        rgba(120,120,120,.35);
+}
+
+.purified-card {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+.lucky-card {
+    border-color:
+        rgba(255,211,77,.35);
+}
+
+.shiny-card {
+    border-color:
+        rgba(142,231,255,.35);
+}
+
+.size-card {
+    border-color:
+        rgba(168,121,255,.30);
+}
+
+
+/* =========================================================
+   FORM BADGES
+========================================================= */
+
+.form-badge {
+
+    display:
+        inline-block;
+
+    padding:
+        6px 10px;
+
+    border-radius:
+        999px;
+
+    font-size:
+        .65rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .05em;
+
+    margin-bottom:
+        10px;
+}
+
+.badge-shadow {
+    background: #252733;
+    color: #d2d3da;
+}
+
+.badge-purified {
+    background: rgba(98,216,154,.10);
+    color: var(--success);
+}
+
+.badge-lucky {
+    background: rgba(255,211,77,.10);
+    color: var(--lucky);
+}
+
+.badge-shiny {
+    background: rgba(142,231,255,.10);
+    color: var(--shiny);
+}
+
+.badge-perfect {
+    background: rgba(255,211,77,.10);
+    color: #ffd34d;
+}
+
+.badge-size {
+    background: rgba(168,121,255,.10);
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM GRID
+========================================================= */
+
+.special-form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        20px;
+}
+
+.special-form {
+
+    padding:
+        22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        16px;
+}
+
+.special-form span {
+
+    display:
+        block;
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        8px;
+}
+
+.special-form strong {
+    display: block;
+}
+
+.special-form p {
+    margin-top: 7px;
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   SIZE COMPARISON
+========================================================= */
+
+.size-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        20px;
+}
+
+.size-box {
+
+    padding:
+        25px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        18px;
+
+    background:
+        var(--surface-2);
+}
+
+.size-box strong {
+
+    display:
+        block;
+
+    font-size:
+        1.4rem;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color:
+        var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .special-form-grid,
+    .size-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align:
+            left;
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/rock.html">
+        Rock Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Glimmet
+    </strong>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                PALDEA POKÉMON
+            </span>
+
+            <h1>
+                Glimmet
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Glimmet is a Rock- and Poison-type Pokémon
+                from the Paldea region. In Pokémon GO,
+                Glimmet is known for its distinctive crystal-like
+                appearance and its evolution into Glimmora.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag rock-tag">
+                    Rock
+                </span>
+
+                <span class="tag poison-tag">
+                    Poison
+                </span>
+
+                <span class="tag">
+                    #0969
+                </span>
+
+                <span class="tag">
+                    Gen 9
+                </span>
+
+                <span class="tag shiny-tag">
+                    Shiny
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                💎
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            58
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            45
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            48
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,000+
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =======================================================
+     CONTENT
+======================================================= -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Overview
+        </h2>
+
+        <p>
+            Glimmet is a dual-type Rock/Poison Pokémon
+            introduced in Generation 9. It is part of the
+            Glimmet evolutionary family and evolves into
+            Glimmora.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#0969</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 9</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Paldea</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Rock / Poison</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Evolution</span>
+            <strong>Glimmora</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Category</span>
+            <strong>Ore Pokémon</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Shiny</span>
+            <strong>Available</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Family</span>
+            <strong>Glimmet</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            💎
+        </div>
+
+        <div>
+
+            <strong>
+                Rock / Poison
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Glimmet's Typing Matters
+    </h3>
+
+    <p>
+        Glimmet's Rock/Poison typing gives it a combination
+        of offensive and defensive interactions. Its two
+        types also create several weaknesses that should be
+        considered when evaluating it for battles.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Weaknesses & Resistances
+        </h2>
+
+        <p>
+            Because Glimmet is both Rock and Poison type,
+            its weakness profile is different from that of
+            a pure Rock or Poison Pokémon.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Ground-type attacks are particularly useful
+                against Glimmet.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Steel-type attacks can exploit Glimmet's
+                dual typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water attacks can deal super-effective damage
+                to Rock-type Glimmet.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic-type attacks are effective against
+                Glimmet's Poison typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks can exploit Glimmet's Rock
+                typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Useful Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Glimmet's Rock typing provides useful
+                resistance to Fire attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Glimmet's Poison typing gives it useful
+                Poison-type interactions.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Rock typing helps Glimmet handle Flying
+                attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Attack, Defense & HP
+        </h2>
+
+        <p>
+            Glimmet is designed more as an early-stage
+            evolutionary Pokémon than as a top-end raid
+            attacker. Its battle value should therefore be
+            considered alongside its evolution into Glimmora.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                58
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                45
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                48
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                Check Current Data
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+            Pokémon GO CP depends on the game's combat
+            statistics, IVs and level. Keep numerical values
+            connected to your current database data when
+            maintaining a live Pokémon database.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Best Moves
+        </h2>
+
+        <p>
+            Glimmet's moveset should be evaluated primarily
+            for collection, evolution and limited battle
+            purposes rather than assuming that it is a
+            premier raid attacker.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Approach
+        </strong>
+
+        <p>
+            Prioritize a useful moveset only when you have a
+            specific reason to use Glimmet itself. Otherwise,
+            consider its evolution resources and future
+            Glimmora investment.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                    <th>
+                        Notes
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Rock / Poison
+                    </td>
+
+                    <td>
+                        Energy generation
+                    </td>
+
+                    <td>
+                        Verify current GO moveset
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Rock / Poison
+                    </td>
+
+                    <td>
+                        Damage
+                    </td>
+
+                    <td>
+                        Verify current GO moveset
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through events,
+        balance updates and move additions. Always connect
+        live move information to your current Pokémon GO
+        database before publishing exact recommendations.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Is Glimmet Good for Raids?
+        </h2>
+
+        <p>
+            Glimmet is generally not the Pokémon you would
+            choose when building a high-level raid team.
+            Its primary long-term value comes from its
+            evolution into Glimmora and from collection goals.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:35%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Evolution Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:85%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Glimmet?
+    </h3>
+
+    <p>
+        For most players, powering up Glimmet itself should
+        not be a priority. Saving resources for a strong
+        Glimmora or keeping a high-quality Glimmet for
+        evolution is generally the more useful approach.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet IV Guide
+        </h2>
+
+        <p>
+            Individual Values determine additional Attack,
+            Defense and HP points. A 15/15/15 Glimmet is
+            considered a perfect-IV specimen.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect 100% Glimmet
+    </h3>
+
+    <p>
+        A Glimmet with 15 Attack, 15 Defense and 15 HP has
+        a 100% IV rating. Perfect specimens can be useful
+        for collectors and players who want a perfect
+        Glimmet for evolution into Glimmora.
+    </p>
+
+
+    <div class="form-card">
+
+        <span class="form-badge badge-perfect">
+            100% IV
+        </span>
+
+        <h3>
+            100% Glimmet
+        </h3>
+
+        <p>
+            The ideal IV combination is:
+        </p>
+
+        <ul class="checklist">
+
+            <li>
+                Attack IV: 15
+            </li>
+
+            <li>
+                Defense IV: 15
+            </li>
+
+            <li>
+                HP IV: 15
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet PvP Guide
+        </h2>
+
+        <p>
+            Glimmet is an early evolutionary Pokémon, so
+            its PvP usefulness should be considered separately
+            from Glimmora.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+        Glimmet may have niche value depending on its current
+        moveset, available CP range and the format being played.
+        It should not automatically be treated as a top-tier
+        Great League Pokémon.
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+        Glimmet's relatively low overall stats make Ultra
+        League use considerably more limited.
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Glimmet is not naturally suited to Master League
+        competition because of its low maximum combat power.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     SHINY GLIMMET
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-shiny">
+            ✨ SHINY
+        </span>
+
+        <h2>
+            Shiny Glimmet
+        </h2>
+
+        <p>
+            Shiny Glimmet is the alternate-color form of
+            Glimmet. Shiny availability and encounter methods
+            should always be checked against current Pokémon GO
+            data.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shiny-card">
+
+        <span class="form-badge badge-shiny">
+            SHINY GLIMMET
+        </span>
+
+        <h3>
+            Alternate Appearance
+        </h3>
+
+        <p>
+            Shiny Glimmet has a different coloration from
+            the standard form. For collectors, a Shiny
+            Glimmet can also be evolved into Shiny Glimmora.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Keep Shiny Glimmet?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep at least one Shiny Glimmet if you collect
+            alternate forms.
+        </li>
+
+        <li>
+            Consider keeping another for evolution into
+            Shiny Glimmora.
+        </li>
+
+        <li>
+            Check IVs before transferring duplicate Shinies.
+        </li>
+
+        <li>
+            Keep special-event variants when applicable.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     SHADOW GLIMMET
+======================================================= -->
+
+<section class="section" id="shadow-glimmet">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-shadow">
+            SHADOW FORM
+        </span>
+
+        <h2>
+            Shadow Glimmet
+        </h2>
+
+        <p>
+            Shadow Pokémon have special battle characteristics
+            and are obtained through Team GO Rocket-related
+            gameplay when the species is made available.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow-card">
+
+        <span class="form-badge badge-shadow">
+            SHADOW GLIMMET
+        </span>
+
+        <h3>
+            Shadow Glimmet Information
+        </h3>
+
+        <p>
+            If Shadow Glimmet becomes available in Pokémon GO,
+            it should be evaluated separately from standard
+            Glimmet because Shadow mechanics affect its battle
+            profile and resource requirements.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Mechanics
+    </h3>
+
+    <p>
+        Shadow Pokémon receive an offensive boost while also
+        taking increased damage. This makes Shadow versions
+        different investment projects from their regular forms.
+    </p>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Glimmet
+                    </td>
+
+                    <td>
+                        Glimmet
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Typing
+                    </td>
+
+                    <td>
+                        Rock / Poison
+                    </td>
+
+                    <td>
+                        Rock / Poison
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Depends on availability
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Shadow species availability changes over time.
+        Do not publish Shadow Glimmet as currently obtainable
+        unless your live Pokémon GO data confirms it.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     PURIFIED GLIMMET
+======================================================= -->
+
+<section class="section" id="purified-glimmet">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-purified">
+            PURIFIED FORM
+        </span>
+
+        <h2>
+            Purified Glimmet
+        </h2>
+
+        <p>
+            Purified Pokémon are created by purifying eligible
+            Shadow Pokémon. Purification changes the Pokémon's
+            status and can affect its IVs, level and available
+            moves.
+        </p>
+
+    </div>
+
+
+    <div class="form-card purified-card">
+
+        <span class="form-badge badge-purified">
+            PURIFIED GLIMMET
+        </span>
+
+        <h3>
+            Purified Glimmet
+        </h3>
+
+        <p>
+            A Purified Glimmet would only exist if Shadow
+            Glimmet is available and can be purified under
+            current Pokémon GO mechanics.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Glimmet?
+    </h3>
+
+    <p>
+        Purification should not be treated as an automatic
+        upgrade. Compare the Shadow and Purified Pokémon
+        before making the decision, particularly if the
+        Pokémon has strong IVs or special value.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     LUCKY GLIMMET
+======================================================= -->
+
+<section class="section" id="lucky-glimmet">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-lucky">
+            🍀 LUCKY
+        </span>
+
+        <h2>
+            Lucky Glimmet
+        </h2>
+
+        <p>
+            Lucky Pokémon are obtained through trading and
+            have special visual effects and reduced Stardust
+            costs for powering up.
+        </p>
+
+    </div>
+
+
+    <div class="form-card lucky-card">
+
+        <span class="form-badge badge-lucky">
+            LUCKY GLIMMET
+        </span>
+
+        <h3>
+            Lucky Glimmet
+        </h3>
+
+        <p>
+            A Lucky Glimmet can be an attractive collection
+            piece and can reduce the Stardust burden of
+            powering it up.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Glimmet Benefits
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Reduced Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Distinctive Lucky background effect.
+        </li>
+
+        <li>
+            Minimum IV floor applies to Lucky trades.
+        </li>
+
+        <li>
+            Useful collector combination when paired with
+            strong IVs or Shiny status.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     100% GLIMMET
+======================================================= -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-perfect">
+            100% IV
+        </span>
+
+        <h2>
+            100% Glimmet
+        </h2>
+
+        <p>
+            A 100% Glimmet has perfect IVs in Attack, Defense
+            and HP.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is 100% Glimmet Worth Keeping?
+    </h3>
+
+    <p>
+        Yes, especially if you enjoy collecting perfect IV
+        Pokémon or plan to evolve the Glimmet into Glimmora.
+        A perfect IV specimen can also be useful as a long-term
+        collection target.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     XXL GLIMMET
+======================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-size">
+            XXL FORM
+        </span>
+
+        <h2>
+            XXL Glimmet
+        </h2>
+
+        <p>
+            XXL Pokémon are unusually large examples of their
+            species. Size variants are separate from IV quality
+            and should be evaluated independently.
+        </p>
+
+    </div>
+
+
+    <div class="form-card size-card">
+
+        <span class="form-badge badge-size">
+            XXL GLIMMET
+        </span>
+
+        <h3>
+            Large Glimmet
+        </h3>
+
+        <p>
+            An XXL Glimmet is a large-size specimen and can
+            be valuable for collectors who maintain a complete
+            size collection.
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL vs IVs
+    </h3>
+
+    <p>
+        Size and IVs are separate characteristics. An XXL
+        Glimmet can have excellent IVs, poor IVs or any
+        combination in between.
+    </p>
+
+
+    <div class="size-grid">
+
+        <div class="size-box">
+
+            <strong>
+                XXL
+            </strong>
+
+            <p>
+                Large-size Glimmet.
+            </p>
+
+        </div>
+
+
+        <div class="size-box">
+
+            <strong>
+                100% IV
+            </strong>
+
+            <p>
+                15/15/15 IV Glimmet.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Collector Tip
+        </strong>
+
+        <p>
+            A 100% XXL Glimmet is a particularly interesting
+            collection target because it combines perfect IVs
+            with an exceptional size category.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     XXS GLIMMET
+======================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="form-badge badge-size">
+            XXS FORM
+        </span>
+
+        <h2>
+            XXS Glimmet
+        </h2>
+
+        <p>
+            XXS Glimmet is an unusually small specimen.
+            Like XXL Pokémon, XXS status is separate from
+            IV quality.
+        </p>
+
+    </div>
+
+
+    <div class="form-card size-card">
+
+        <span class="form-badge badge-size">
+            XXS GLIMMET
+        </span>
+
+        <h3>
+            Small Glimmet
+        </h3>
+
+        <p>
+            XXS Glimmet can be particularly interesting to
+            collectors who want both extremes of Glimmet's
+            size range.
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXS Collection Value
+    </h3>
+
+    <p>
+        Size records can add another layer to Pokémon GO
+        collecting. An XXS Glimmet with strong IVs, Shiny
+        status or Lucky status can be especially desirable.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     SPECIAL FORMS SUMMARY
+======================================================= -->
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Special Forms & Variants
+        </h2>
+
+        <p>
+            Glimmet can be tracked across several collection
+            categories. These categories do not all represent
+            permanent alternate species forms.
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <span>
+                ✨
+            </span>
+
+            <strong>
+                Shiny Glimmet
+            </strong>
+
+            <p>
+                Alternate coloration.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <span>
+                🌑
+            </span>
+
+            <strong>
+                Shadow Glimmet
+            </strong>
+
+            <p>
+                Track only when available.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <span>
+                🌟
+            </span>
+
+            <strong>
+                Purified Glimmet
+            </strong>
+
+            <p>
+                Created through purification.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <span>
+                🍀
+            </span>
+
+            <strong>
+                Lucky Glimmet
+            </strong>
+
+            <p>
+                Obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <span>
+                💯
+            </span>
+
+            <strong>
+                100% Glimmet
+            </strong>
+
+            <p>
+                Perfect 15/15/15 IVs.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <span>
+                📏
+            </span>
+
+            <strong>
+                XXL / XXS
+            </strong>
+
+            <p>
+                Extreme-size specimens.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Evolution
+        </h2>
+
+        <p>
+            Glimmet evolves into Glimmora. If you are building
+            a strong Glimmora, it is worth checking the IVs and
+            moves of your Glimmet before spending evolution
+            resources.
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <span>
+                💎
+            </span>
+
+            <strong>
+                Glimmet
+            </strong>
+
+            <p>
+                Rock / Poison
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <span>
+                💠
+            </span>
+
+            <strong>
+                Glimmora
+            </strong>
+
+            <p>
+                Rock / Poison
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Evolution Investment Tip
+    </h3>
+
+    <p>
+        Before evolving Glimmet, check whether it is Shiny,
+        Lucky, perfect IV, XXL or XXS. Once you evolve it,
+        the resulting Glimmora will retain the relevant
+        characteristics such as Shiny or Lucky status.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+            Resource management becomes more important when
+            deciding whether to evolve or power up Glimmet.
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save enough Glimmet Candy for evolution.
+        </li>
+
+        <li>
+            Check IVs before evolving your best specimens.
+        </li>
+
+        <li>
+            Keep Shiny Glimmet separate from transfer candidates.
+        </li>
+
+        <li>
+            Consider Lucky Glimmet when planning Stardust-heavy
+            investments.
+        </li>
+
+        <li>
+            Save strong XXL and XXS specimens for collection goals.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+        Glimmet availability can depend on Pokémon GO's
+        current season, events, wild encounters, Eggs,
+        research and other encounter mechanics.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Pokémon GO event and encounter
+            data before publishing a permanent claim about
+            where Glimmet can currently be obtained.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Glimmet
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check Glimmet's IVs.
+        </li>
+
+        <li>
+            Decide whether you want to evolve it.
+        </li>
+
+        <li>
+            Check whether it is Shiny, Lucky, XXL or XXS.
+        </li>
+
+        <li>
+            Compare Glimmet with your existing Pokémon collection.
+        </li>
+
+        <li>
+            Avoid spending large amounts of Stardust without
+            a clear reason.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Best Long-Term Use
+    </h3>
+
+    <p>
+        For most players, Glimmet's greatest long-term value
+        is as an evolutionary and collection Pokémon rather
+        than a primary raid investment.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Collector Value
+                    </th>
+
+                    <th>
+                        Notes
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Glimmet
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Base form
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Glimmet
+                    </td>
+
+                    <td>
+                        Alternate color
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Collector variant
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Glimmet
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        Special
+                    </td>
+
+                    <td>
+                        Availability dependent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Glimmet
+                    </td>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Special
+                    </td>
+
+                    <td>
+                        Requires eligible Shadow Pokémon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Glimmet
+                    </td>
+
+                    <td>
+                        Lucky status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Obtained through trade
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% Glimmet
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Perfect IV
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL Glimmet
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Size category
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS Glimmet
+                    </td>
+
+                    <td>
+                        Small size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Size category
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Glimmet FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Glimmet?
+        </summary>
+
+        <p>
+            Glimmet is a Rock- and Poison-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Glimmet weak to?
+        </summary>
+
+        <p>
+            Glimmet has several weaknesses due to its
+            Rock/Poison typing, including Ground, Steel,
+            Water, Psychic and Grass attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Glimmet evolve?
+        </summary>
+
+        <p>
+            Yes. Glimmet evolves into Glimmora.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Glimmet available?
+        </summary>
+
+        <p>
+            Shiny availability should be checked against
+            the current Pokémon GO encounter and event data.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Glimmet?
+        </summary>
+
+        <p>
+            A 100% Glimmet has perfect Attack, Defense and
+            HP IVs: 15/15/15.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Glimmet?
+        </summary>
+
+        <p>
+            XXL Glimmet is an unusually large specimen.
+            XXL status is separate from IV quality.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Glimmet?
+        </summary>
+
+        <p>
+            XXS Glimmet is an unusually small specimen.
+            Like XXL status, XXS status is separate from IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Glimmet be Lucky?
+        </summary>
+
+        <p>
+            Lucky status is obtained through Pokémon GO
+            trading when the relevant Pokémon can be traded.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Glimmet good for raids?
+        </summary>
+
+        <p>
+            Glimmet is generally not a priority raid attacker.
+            Its evolutionary and collection value is more
+            important for most players.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Glimmet good for PvP?
+        </summary>
+
+        <p>
+            Glimmet has more limited PvP potential than many
+            fully evolved Pokémon. Its usefulness depends on
+            its current moveset and the specific format.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I evolve my 100% Glimmet?
+        </summary>
+
+        <p>
+            If you want a perfect Glimmora, a 15/15/15
+            Glimmet is an excellent candidate for evolution.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I keep a Shiny Glimmet?
+        </summary>
+
+        <p>
+            Yes, especially if you collect Shiny Pokémon.
+            You may also want to keep one for evolving into
+            Shiny Glimmora.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Glimmet available?
+        </summary>
+
+        <p>
+            Shadow availability changes over time. Check
+            current Pokémon GO Team GO Rocket data before
+            claiming that Shadow Glimmet is currently obtainable.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Glimmet become Purified Glimmet?
+        </summary>
+
+        <p>
+            If Shadow Glimmet is available and eligible for
+            purification, it can be purified according to
+            Pokémon GO's current purification mechanics.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, encounter methods, availability, forms
+            and other game data can change over time.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Glimmet Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Glimmet Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow-glimmet">
+                Shadow Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified-glimmet">
+                Purified Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky-glimmet">
+                Lucky Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#perfect">
+                100% Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Glimmet
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/glimmora.html">
+
+        Glimmora Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/rock.html">
+
+        Rock Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/poison.html">
+
+        Poison Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-9.html">
+
+        Gen 9 Pokémon →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokedex.html">
+
+        Pokémon Database →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Glimmet Quick Facts
+    </h3>
+
+    <p>
+        <strong>Type:</strong>
+        Rock / Poison
+    </p>
+
+    <p>
+        <strong>Generation:</strong>
+        9
+    </p>
+
+    <p>
+        <strong>Region:</strong>
+        Paldea
+    </p>
+
+    <p>
+        <strong>Pokédex:</strong>
+        #0969
+    </p>
+
+    <p>
+        <strong>Evolution:</strong>
+        Glimmora
+    </p>
+
+    <p>
+        <strong>Category:</strong>
+        Ore Pokémon
+    </p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

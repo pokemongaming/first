@@ -1,0 +1,5600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Zubat Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Zubat Pokémon GO guide covering regular Zubat, Shiny Zubat, Shadow Zubat, Purified Zubat, Lucky Zubat, 100% IV Zubat, XXL Zubat, XXS Zubat, stats, max CP, moves, weaknesses, evolution, PvP and availability.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/zubat.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #8fa2ff;
+            --accent-2: #657cff;
+
+            --poison: #a66cff;
+            --flying: #82b8ff;
+
+            --electric: #f4c542;
+            --ice: #72d6dc;
+            --psychic: #ff7191;
+            --rock: #c7a457;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --shiny: #73e58b;
+            --lucky: #ffd76a;
+            --shadow: #9b7cff;
+            --purified: #e8d3ff;
+            --xxl: #ffad63;
+            --xxs: #7bd8ff;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(111,130,255,.11),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(130,184,255,.17),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 15% 90%,
+                    rgba(166,108,255,.10),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            color: var(--flying);
+
+            background:
+                rgba(130,184,255,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing: -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .poison-tag {
+            color: var(--poison);
+        }
+
+        .flying-tag {
+            color: var(--flying);
+        }
+
+        .shiny-tag {
+            color: var(--shiny);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(130,184,255,.20),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 12px;
+        }
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            font-size: 1.5rem;
+        }
+
+        .poison-box {
+            background:
+                rgba(166,108,255,.10);
+        }
+
+        .flying-box {
+            background:
+                rgba(130,184,255,.10);
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--muted);
+
+            font-size: .75rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.28);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.28);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color: var(--flying);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(130,184,255,.10),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(130,184,255,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           COMPARISON TABLE
+        ===================================================== */
+
+        .comparison-table {
+
+            width: 100%;
+
+            min-width: 650px;
+
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+
+            text-align: left;
+        }
+
+
+        /* =====================================================
+           SPECIAL FORM CARDS
+        ===================================================== */
+
+        .special-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+        }
+
+        .special-card {
+
+            padding: 22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                var(--surface-2);
+        }
+
+        .special-card .special-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 8px;
+        }
+
+        .special-card h3 {
+
+            margin: 0 0 6px;
+
+            font-size: 1.1rem;
+        }
+
+        .special-card p {
+            font-size: .78rem;
+        }
+
+        .shadow-card {
+            border-color:
+                rgba(155,124,255,.35);
+        }
+
+        .purified-card {
+            border-color:
+                rgba(232,211,255,.35);
+        }
+
+        .lucky-card {
+            border-color:
+                rgba(255,215,106,.35);
+        }
+
+        .shiny-card {
+            border-color:
+                rgba(115,229,139,.35);
+        }
+
+        .xxl-card {
+            border-color:
+                rgba(255,173,99,.35);
+        }
+
+        .xxs-card {
+            border-color:
+                rgba(123,216,255,.35);
+        }
+
+
+        /* =====================================================
+           ATTRIBUTE GRID
+        ===================================================== */
+
+        .attribute-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .attribute-card {
+
+            padding: 18px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .attribute-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+        }
+
+        .attribute-card strong {
+
+            display: block;
+
+            margin-top: 5px;
+
+            font-size: 1.1rem;
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.5rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           EVOLUTION
+        ===================================================== */
+
+        .evolution-tree {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+            margin: 25px 0;
+        }
+
+        .evolution-node {
+
+            min-width: 150px;
+
+            padding: 18px;
+
+            text-align: center;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .evolution-node strong {
+            display: block;
+        }
+
+        .evolution-node span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .evolution-arrow {
+
+            color: var(--accent);
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid,
+            .attribute-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+        }
+
+
+        @media(max-width: 650px) {
+
+            .page {
+
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .special-grid,
+            .type-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid,
+            .attribute-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .rating-row {
+
+                grid-template-columns: 1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align: left;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .evolution-tree {
+                flex-direction: column;
+            }
+
+            .evolution-arrow {
+                transform: rotate(90deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/poison.html">
+        Poison Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Zubat
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                KANTO POKÉDEX • #041
+            </span>
+
+            <h1>
+                Zubat
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Zubat is a Poison/Flying-type Pokémon from
+                the Kanto region. In Pokémon GO, it is best
+                known as the first stage of the Zubat family,
+                evolving into Golbat and eventually Crobat.
+                Zubat is also a popular collector target because
+                of its Shiny, Shadow, Purified, Lucky, XXL,
+                XXS and perfect-IV variants.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag poison-tag">
+                    Poison
+                </span>
+
+                <span class="tag flying-tag">
+                    Flying
+                </span>
+
+                <span class="tag">
+                    #041
+                </span>
+
+                <span class="tag">
+                    Gen 1
+                </span>
+
+                <span class="tag shiny-tag">
+                    Shiny Available
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed Zubat asset -->
+
+            <div class="pokemon-placeholder">
+                🦇
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            83
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            73
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            120
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            754
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Pokémon GO Overview
+        </h2>
+
+        <p>
+
+            Zubat is a Generation 1 Pokémon introduced in
+            Pokémon Red, Blue and Yellow. In Pokémon GO,
+            Zubat is a Poison/Flying-type Pokémon with a
+            relatively low maximum CP.
+
+        </p>
+
+        <p>
+
+            Although regular Zubat is not considered a major
+            raid attacker, it can have niche value in Little
+            Cup-style PvP formats and is especially useful
+            for collectors working toward complete Pokémon
+            families and special variants.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#041</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 1</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Kanto</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Poison / Flying</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>83</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>73</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>120</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>754</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Type
+        </h2>
+
+        <p>
+            Zubat has a dual Poison/Flying typing. This gives
+            it four notable weaknesses and several useful
+            resistances.
+        </p>
+
+    </div>
+
+
+    <div class="type-grid">
+
+        <div class="type-box poison-box">
+
+            <div class="type-icon">
+                ☠️
+            </div>
+
+            <div>
+
+                <strong>
+                    Poison
+                </strong>
+
+                <span>
+                    Primary Type
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="type-box flying-box">
+
+            <div class="type-icon">
+                🪽
+            </div>
+
+            <div>
+
+                <strong>
+                    Flying
+                </strong>
+
+                <span>
+                    Secondary Type
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Zubat's Typing Matters
+    </h3>
+
+    <p>
+
+        The combination of Poison and Flying gives Zubat
+        resistance to several attack types, including
+        Fighting, Bug and Grass. It also makes Zubat weak
+        to Electric, Ice, Psychic and Rock attacks.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks deal super-effective
+                damage to Zubat.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks are super effective against
+                Zubat.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic-type attacks exploit Zubat's
+                Poison typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks are also super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Zubat strongly resists Bug-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting attacks are heavily reduced.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Zubat has a strong resistance to Grass.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks deal reduced damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Flying typing gives Zubat resistance to
+                Ground attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Zubat resists Poison-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Zubat has relatively low base stats compared with
+            fully evolved Pokémon. Its maximum CP is 754 at
+            level 50 with perfect IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                83
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                73
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                120
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                LEVEL 50 MAX CP
+            </span>
+
+            <strong>
+                754
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Zubat Max CP by Important Levels
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        Maximum CP
+                    </th>
+
+                    <th>
+                        IV
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>15</td>
+                    <td>285 CP</td>
+                    <td>15/15/15</td>
+                </tr>
+
+                <tr>
+                    <td>20</td>
+                    <td>381 CP</td>
+                    <td>15/15/15</td>
+                </tr>
+
+                <tr>
+                    <td>25</td>
+                    <td>476 CP</td>
+                    <td>15/15/15</td>
+                </tr>
+
+                <tr>
+                    <td>30</td>
+                    <td>571 CP</td>
+                    <td>15/15/15</td>
+                </tr>
+
+                <tr>
+                    <td>40</td>
+                    <td>667 CP</td>
+                    <td>15/15/15</td>
+                </tr>
+
+                <tr>
+                    <td>50</td>
+                    <td>754 CP</td>
+                    <td>15/15/15</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        CP is calculated from Pokémon GO's underlying
+        stats, IVs and level. CP should not be confused with
+        the percentage shown by the in-game appraisal system.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Best Moves
+        </h2>
+
+        <p>
+
+            Zubat's moveset is more relevant for limited PvP
+            formats than for raids. Its low overall stats make
+            it a poor conventional PvE attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Zubat Moveset
+        </strong>
+
+        <p>
+            Bite + Poison Fang
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Bite
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Energy / pressure
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Quick Attack
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Energy generation
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Poison Fang
+                    </td>
+
+                    <td>
+                        Poison
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Shield pressure
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Sludge Bomb
+                    </td>
+
+                    <td>
+                        Poison
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Poison damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Air Cutter
+                    </td>
+
+                    <td>
+                        Flying
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Flying coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Swift
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through updates, events
+        and move reworks. Check the current Pokémon GO
+        movepool before making a time-sensitive recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Raid Performance
+        </h2>
+
+        <p>
+
+            Zubat is not a recommended conventional raid
+            attacker. Its low Attack and overall CP make it
+            unsuitable for serious PvE damage compared with
+            stronger Poison- and Flying-type Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 15%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvE Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 20%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Little Cup
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 65%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Niche
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Zubat for Raids?
+    </h3>
+
+    <p>
+
+        Generally, no. If your goal is raid damage, resources
+        are better spent on stronger Pokémon. Zubat is much more
+        interesting as a collection Pokémon, evolution project,
+        or limited-format PvP option.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Evolution Family
+        </h2>
+
+        <p>
+
+            Zubat is the first stage of a three-stage evolutionary
+            family. It evolves into Golbat using Zubat Candy,
+            followed by Crobat.
+
+        </p>
+
+    </div>
+
+
+    <div class="evolution-tree">
+
+        <div class="evolution-node">
+
+            <strong>
+                Zubat
+            </strong>
+
+            <span>
+                #041
+            </span>
+
+        </div>
+
+
+        <div class="evolution-arrow">
+            →
+        </div>
+
+
+        <div class="evolution-node">
+
+            <strong>
+                Golbat
+            </strong>
+
+            <span>
+                25 Candy
+            </span>
+
+        </div>
+
+
+        <div class="evolution-arrow">
+            →
+        </div>
+
+
+        <div class="evolution-node">
+
+            <strong>
+                Crobat
+            </strong>
+
+            <span>
+                100 Candy
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Pokémon
+                    </th>
+
+                    <th>
+                        Evolution Requirement
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Zubat
+                    </td>
+
+                    <td>
+                        Starting Pokémon
+                    </td>
+
+                    <td>
+                        Poison / Flying
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Golbat
+                    </td>
+
+                    <td>
+                        25 Zubat Candy
+                    </td>
+
+                    <td>
+                        Poison / Flying
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Crobat
+                    </td>
+
+                    <td>
+                        100 Zubat Candy + Friendship evolution requirement
+                    </td>
+
+                    <td>
+                        Poison / Flying
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Zubat
+        </h2>
+
+        <p>
+
+            Shiny Zubat is available in Pokémon GO. Its
+            coloration is noticeably different from the
+            standard blue Zubat, making it a popular
+            collector target.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card shiny-card">
+
+            <div class="special-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Zubat
+            </h3>
+
+            <p>
+
+                The Shiny variant uses an alternate
+                coloration while retaining Zubat's
+                Poison/Flying typing.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🦇
+            </div>
+
+            <h3>
+                Shiny Evolution Family
+            </h3>
+
+            <p>
+
+                Shiny Zubat can evolve into Shiny Golbat
+                and eventually Shiny Crobat.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Zubat Availability
+    </h3>
+
+    <p>
+
+        Shiny availability can be tied to normal encounters,
+        events and special Pokémon GO rotations. Always check
+        the current encounter schedule before describing a
+        specific event as an active Shiny opportunity.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     09 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Zubat
+        </h2>
+
+        <p>
+
+            Shadow Zubat is a separate Shadow variant of Zubat.
+            It keeps the Poison/Flying typing but receives the
+            standard Shadow battle characteristics.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card shadow-card">
+
+            <div class="special-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Zubat
+            </h3>
+
+            <p>
+
+                Shadow Zubat can be obtained through eligible
+                Team GO Rocket encounters and can have the
+                Charged Move Frustration when obtained.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⚔️
+            </div>
+
+            <h3>
+                Shadow Battle Profile
+            </h3>
+
+            <p>
+
+                Shadow Pokémon trade defensive durability
+                for increased offensive pressure. Zubat's
+                already-low overall stats still make it a
+                niche Pokémon.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Zubat Stats
+    </h3>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                83
+            </strong>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                73
+            </strong>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                120
+            </strong>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span>
+                LEVEL 50 MAX CP
+            </span>
+
+            <strong>
+                754
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Zubat Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Zubat and Frustration
+    </h3>
+
+    <p>
+
+        Shadow Zubat can have Frustration as its Shadow Charged
+        Move. Special Team GO Rocket events can provide
+        opportunities to replace Frustration. Check current
+        event rules before using Charged TMs.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        Shadow Zubat's current availability should be treated
+        as dynamic. Team GO Rocket rotations can change which
+        Shadow Pokémon are obtainable.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     10 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Zubat
+        </h2>
+
+        <p>
+
+            Purified Zubat is created by purifying an eligible
+            Shadow Zubat. Purification changes the Pokémon's
+            status and provides several standard purification
+            benefits.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card purified-card">
+
+            <div class="special-icon">
+                ✨
+            </div>
+
+            <h3>
+                Purified Zubat
+            </h3>
+
+            <p>
+
+                Purified Zubat is no longer a Shadow Pokémon
+                and can have Return as its Purified Charged
+                Move.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🕊️
+            </div>
+
+            <h3>
+                Purification Benefits
+            </h3>
+
+            <p>
+
+                Purification increases each IV by 2 points,
+                up to 15, and provides the normal purification
+                benefits associated with Shadow Pokémon.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Zubat
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow Zubat
+                    </th>
+
+                    <th>
+                        Purified Zubat
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Typing
+                    </td>
+
+                    <td>
+                        Poison / Flying
+                    </td>
+
+                    <td>
+                        Poison / Flying
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Frustration may be present
+                    </td>
+
+                    <td>
+                        Return
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Purification is permanent. If you are considering
+        purifying a high-IV Shadow Zubat, compare the value
+        of keeping the Shadow Pokémon against the purified
+        result before confirming the action.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Zubat
+        </h2>
+
+        <p>
+
+            Lucky Zubat is a traded Pokémon that has received
+            the Lucky status. Lucky Pokémon require less
+            Stardust to power up, making a Lucky Zubat useful
+            primarily as a collection piece or as a low-cost
+            investment candidate.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card lucky-card">
+
+            <div class="special-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Zubat
+            </h3>
+
+            <p>
+
+                Lucky Zubat has the distinctive Lucky background
+                and benefits from reduced Stardust power-up costs.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🔄
+            </div>
+
+            <h3>
+                How Zubat Becomes Lucky
+            </h3>
+
+            <p>
+
+                Zubat can become Lucky through trading.
+                Lucky status is determined by the trade system
+                and cannot be created using an item.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Lucky Zubat IVs
+    </h3>
+
+    <p>
+
+        Lucky Pokémon have a higher minimum IV floor than
+        ordinary wild Pokémon. A Lucky Zubat is therefore
+        generally more attractive for collectors looking for
+        a high-IV specimen.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                12+
+            </strong>
+
+            <span>
+                Minimum Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                12+
+            </strong>
+
+            <span>
+                Minimum Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                12+
+            </strong>
+
+            <span>
+                Minimum HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is Lucky Zubat Worth Keeping?
+    </h3>
+
+    <p>
+
+        Absolutely as a collector piece. For practical battle
+        investment, however, Zubat's low maximum CP means that
+        most players will get greater value from investing in
+        evolved Pokémon such as Golbat or Crobat.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     12 100% IV
+========================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% IV Zubat — Perfect Zubat
+        </h2>
+
+        <p>
+
+            A 100% Zubat has perfect 15/15/15 Attack, Defense
+            and HP IVs. In Pokémon GO's appraisal system,
+            this is the highest possible IV combination.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% Zubat Max CP
+    </h3>
+
+    <div class="best-move">
+
+        <strong>
+            Level 50 Perfect Zubat
+        </strong>
+
+        <p>
+            754 CP at 15/15/15 IVs.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Is a Hundo Zubat Rare?
+    </h3>
+
+    <p>
+
+        A perfect IV Zubat is a useful collection milestone.
+        Its practical battle value is limited by Zubat's low
+        stats, but a 100% specimen becomes more interesting
+        when combined with additional attributes such as
+        Shiny, Lucky, XXL or XXS.
+
+    </p>
+
+
+    <div class="checklist">
+
+        <li>
+            Keep a 15/15/15 Zubat if you are completing the
+            Pokédex collection.
+        </li>
+
+        <li>
+            Consider evolving it if you want a perfect-IV
+            Golbat or Crobat.
+        </li>
+
+        <li>
+            Check whether it has another desirable attribute,
+            such as Lucky or XXL.
+        </li>
+
+        <li>
+            Do not assume 100% IV automatically means
+            competitive in every battle format.
+        </li>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     13 XXL
+========================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Zubat
+        </h2>
+
+        <p>
+
+            XXL Zubat is a size variation of Zubat rather than
+            a separate species or permanent alternate form.
+            XXL Pokémon are larger than the standard size range
+            and can be valuable for collectors.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card xxl-card">
+
+            <div class="special-icon">
+                📏
+            </div>
+
+            <h3>
+                XXL Zubat
+            </h3>
+
+            <p>
+
+                XXL Zubat is an unusually large Zubat. Size
+                does not directly increase its base Attack,
+                Defense or HP.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🦇
+            </div>
+
+            <h3>
+                XXL Collection Value
+            </h3>
+
+            <p>
+
+                XXL Zubat can be attractive to collectors,
+                especially when combined with Shiny, Lucky
+                or perfect-IV attributes.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Zubat XXL Size Range
+    </h3>
+
+
+    <div class="attribute-grid">
+
+        <div class="attribute-card">
+
+            <span>
+                XXL Minimum
+            </span>
+
+            <strong>
+                1.2 m
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                XXL Maximum
+            </span>
+
+            <strong>
+                1.4 m
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Standard Height
+            </span>
+
+            <strong>
+                0.8 m
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Pokédex
+            </span>
+
+            <strong>
+                #041
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Size is independent of IVs. An XXL Zubat can have
+        excellent, average or poor IVs.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     14 XXS
+========================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Zubat
+        </h2>
+
+        <p>
+
+            XXS Zubat is an unusually small size variation.
+            Like XXL Zubat, it is an attribute of an individual
+            Pokémon rather than a different species.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card xxs-card">
+
+            <div class="special-icon">
+                🔹
+            </div>
+
+            <h3>
+                XXS Zubat
+            </h3>
+
+            <p>
+
+                XXS Zubat is smaller than the normal size range
+                and is primarily interesting for collectors and
+                size-based achievements.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                📐
+            </div>
+
+            <h3>
+                XXS Collection Value
+            </h3>
+
+            <p>
+
+                An XXS Zubat becomes particularly interesting
+                when it also has Shiny, Lucky or 100% IV status.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Zubat XXS Size Range
+    </h3>
+
+
+    <div class="attribute-grid">
+
+        <div class="attribute-card">
+
+            <span>
+                XXS Minimum
+            </span>
+
+            <strong>
+                0.392 m
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                XXS Maximum
+            </span>
+
+            <strong>
+                0.4 m
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Standard Height
+            </span>
+
+            <strong>
+                0.8 m
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Pokédex
+            </span>
+
+            <strong>
+                #041
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        XXS and XXL are size categories. They do not directly
+        change Zubat's base combat stats.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     15 SPECIAL ATTRIBUTES
+========================================================= -->
+
+<section class="section" id="special-attributes">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Special Variants & Attributes
+        </h2>
+
+        <p>
+
+            Zubat can be interesting in Pokémon GO because
+            several attributes can exist on the same individual.
+            For example, a Zubat may be Shiny and Lucky, or
+            Shiny and XXL.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card shiny-card">
+
+            <div class="special-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Zubat
+            </h3>
+
+            <p>
+                Alternate coloration.
+            </p>
+
+        </div>
+
+
+        <div class="special-card shadow-card">
+
+            <div class="special-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Zubat
+            </h3>
+
+            <p>
+                Shadow battle status.
+            </p>
+
+        </div>
+
+
+        <div class="special-card purified-card">
+
+            <div class="special-icon">
+                🕊️
+            </div>
+
+            <h3>
+                Purified Zubat
+            </h3>
+
+            <p>
+                Purified Shadow Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="special-card lucky-card">
+
+            <div class="special-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Zubat
+            </h3>
+
+            <p>
+                Lucky trade status.
+            </p>
+
+        </div>
+
+
+        <div class="special-card xxl-card">
+
+            <div class="special-icon">
+                📏
+            </div>
+
+            <h3>
+                XXL Zubat
+            </h3>
+
+            <p>
+                Extra-large size.
+            </p>
+
+        </div>
+
+
+        <div class="special-card xxs-card">
+
+            <div class="special-icon">
+                🔹
+            </div>
+
+            <h3>
+                XXS Zubat
+            </h3>
+
+            <p>
+                Extra-small size.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% IV Zubat
+    </h3>
+
+    <p>
+
+        A 100% Zubat has perfect 15/15/15 IVs. IV perfection
+        is independent of Shiny, Lucky and size status.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     16 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat PvP Guide
+        </h2>
+
+        <p>
+
+            Zubat is not designed for the three main open
+            leagues because of its low maximum CP. Its more
+            interesting PvP niche appears in restricted formats
+            such as Little Cup.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Zubat's maximum CP is far below the normal Great League
+        ceiling. As a result, it is generally not a natural
+        Great League choice.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Zubat is not realistically competitive in Ultra League
+        because its CP and stats are too low.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Zubat is unsuitable for Master League due to its very
+        low maximum CP.
+
+    </p>
+
+
+    <h3>
+        Little Cup
+    </h3>
+
+    <p>
+
+        Zubat can become more interesting when the format
+        restricts Pokémon to 500 CP or another specialized
+        ruleset. Its Fast Move and inexpensive Charged Move
+        options can create pressure in certain matchups.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            PvP Tip
+        </strong>
+
+        <p>
+
+            Always check the current Little Cup rules before
+            investing in a specialized Zubat PvP build.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     17 IV GUIDE
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add points to Attack, Defense and
+            HP. The maximum possible IV in each category is 15.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Zubat
+    </h3>
+
+    <p>
+
+        A 15/15/15 Zubat is a perfect-IV or "hundo" Zubat.
+        At level 50, the perfect Zubat reaches 754 CP.
+
+    </p>
+
+
+    <h3>
+        Does Zubat IV Matter?
+    </h3>
+
+    <p>
+
+        IVs matter for collection value and can matter in
+        restricted PvP formats. For normal raids, however,
+        Zubat's low base stats make IV optimization much less
+        important than choosing a stronger Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     18 CP & CATCH GUIDE
+========================================================= -->
+
+<section class="section" id="cp">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat CP & Catch Guide
+        </h2>
+
+        <p>
+
+            Zubat's maximum CP is 754 at level 50 with 15/15/15
+            IVs. Encounter CP depends on the encounter type,
+            Pokémon level and IV combination.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Encounter
+                    </th>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        CP Range / Maximum
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Research
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                    <td>
+                        258–285 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Raid / Egg
+                    </td>
+
+                    <td>
+                        20
+                    </td>
+
+                    <td>
+                        344–381 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Weather Boosted
+                    </td>
+
+                    <td>
+                        25
+                    </td>
+
+                    <td>
+                        430–476 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 50 Hundo
+                    </td>
+
+                    <td>
+                        50
+                    </td>
+
+                    <td>
+                        754 CP
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Wild encounters can have a much wider IV range than
+        research or raid encounters. Weather-boosted encounters
+        can also appear at higher levels.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     19 WEATHER
+========================================================= -->
+
+<section class="section" id="weather">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Weather Boost
+        </h2>
+
+        <p>
+
+            Zubat receives weather boosts under both Cloudy
+            and Windy conditions because its two types are
+            Poison and Flying.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ☁️
+            </div>
+
+            <strong>
+                Cloudy
+            </strong>
+
+            <p>
+                Boosts Zubat's Poison typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌬️
+            </div>
+
+            <strong>
+                Windy
+            </strong>
+
+            <p>
+                Boosts Zubat's Flying typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📈
+            </div>
+
+            <strong>
+                Weather Boost
+            </strong>
+
+            <p>
+                Weather boosted encounters can appear at
+                higher levels.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     20 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Candy, Candy XL & Stardust
+        </h2>
+
+        <p>
+
+            Zubat uses its own Candy and Candy XL for power-ups
+            and evolution-related resources.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+        <div class="attribute-card">
+
+            <span>
+                Buddy Distance
+            </span>
+
+            <strong>
+                1 km
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Golbat Evolution
+            </span>
+
+            <strong>
+                25 Candy
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Crobat Evolution
+            </span>
+
+            <strong>
+                100 Candy
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Catch Candy
+            </span>
+
+            <strong>
+                3 Candy
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Powering Up Zubat
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check IVs before spending large amounts of Stardust.
+        </li>
+
+        <li>
+            Keep high-IV Zubat for evolution projects.
+        </li>
+
+        <li>
+            Save Candy XL for Pokémon you actually plan to
+            use at high levels.
+        </li>
+
+        <li>
+            Lucky Zubat requires less Stardust to power up.
+        </li>
+
+        <li>
+            Do not power up Zubat for raids unless you have a
+            specific challenge or personal collection goal.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     21 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Availability
+        </h2>
+
+        <p>
+
+            Zubat is an established Pokémon GO species and can
+            return through wild encounters, events and other
+            encounter rotations.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and encounter
+            rotation before describing Zubat as a currently
+            boosted or featured encounter.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Availability
+    </h3>
+
+    <p>
+
+        Shiny Zubat is available in Pokémon GO. Special events
+        can increase the number of Zubat encounters and make
+        Shiny hunting easier.
+
+    </p>
+
+
+    <h3>
+        Shadow Availability
+    </h3>
+
+    <p>
+
+        Shadow Zubat availability is controlled by Team GO
+        Rocket rotations and related encounters.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     22 COLLECTOR GUIDE
+========================================================= -->
+
+<section class="section" id="collector">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Collector Guide
+        </h2>
+
+        <p>
+
+            Zubat is particularly interesting for collectors
+            because multiple desirable attributes can occur
+            on the same Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+        <div class="attribute-card">
+
+            <span>
+                Shiny
+            </span>
+
+            <strong>
+                ✓ Available
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Shadow
+            </span>
+
+            <strong>
+                ✓ Available
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Lucky
+            </span>
+
+            <strong>
+                ✓ Possible
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Perfect IV
+            </span>
+
+            <strong>
+                ✓ Possible
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                XXL
+            </span>
+
+            <strong>
+                ✓ Possible
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                XXS
+            </span>
+
+            <strong>
+                ✓ Possible
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Purified
+            </span>
+
+            <strong>
+                ✓ Possible
+            </strong>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <span>
+                Evolution
+            </span>
+
+            <strong>
+                Golbat / Crobat
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Rare Zubat Combinations
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Shiny + 100% IV Zubat
+        </li>
+
+        <li>
+            Shiny + Lucky Zubat
+        </li>
+
+        <li>
+            Shiny + XXL Zubat
+        </li>
+
+        <li>
+            Shiny + XXS Zubat
+        </li>
+
+        <li>
+            Lucky + 100% IV Zubat
+        </li>
+
+        <li>
+            XXL + 100% IV Zubat
+        </li>
+
+        <li>
+            XXS + 100% IV Zubat
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     23 REGULAR VS SPECIAL
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Regular Zubat vs Special Zubat
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Attribute
+                    </th>
+
+                    <th>
+                        What Changes?
+                    </th>
+
+                    <th>
+                        Separate Species?
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Zubat
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Appearance
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Battle status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purification status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trade status / power-up cost
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        Perfect IVs
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        These attributes can overlap. For example, one Zubat
+        can be Shiny, Lucky, 100% IV and XXL at the same time
+        if the individual Pokémon has all of those properties.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     24 INVESTMENT
+========================================================= -->
+
+<section class="section" id="investment">
+
+    <div class="section-heading">
+
+        <h2>
+            Should You Invest in Zubat?
+        </h2>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⚔️
+            </div>
+
+            <h3>
+                Raid Players
+            </h3>
+
+            <p>
+
+                Usually skip Zubat as a raid investment.
+                Stronger evolved Pokémon provide substantially
+                better PvE performance.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🏆
+            </div>
+
+            <h3>
+                PvP Players
+            </h3>
+
+            <p>
+
+                Consider Zubat only for specialized limited
+                formats where its CP and moveset fit the rules.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                📚
+            </div>
+
+            <h3>
+                Collectors
+            </h3>
+
+            <p>
+
+                Zubat can be an excellent collection target,
+                especially in Shiny, Lucky, XXL, XXS and
+                perfect-IV combinations.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🧬
+            </div>
+
+            <h3>
+                Evolution Hunters
+            </h3>
+
+            <p>
+
+                Keep strong specimens if your goal is a
+                perfect Golbat or Crobat evolution.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     25 HOW TO USE
+========================================================= -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <h2>
+            Individual Zubat Guide
+        </h2>
+
+        <p>
+
+            Your best Zubat depends on what you want to do with
+            it. A collector may value Shiny, Lucky, XXL or XXS
+            status more than combat performance.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        For Evolution
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Look for strong IVs if you want a perfect
+            evolution-line collection.
+        </li>
+
+        <li>
+            Keep Shiny Zubat if you want Shiny Golbat or
+            Shiny Crobat.
+        </li>
+
+        <li>
+            Consider Lucky Zubat for reduced Stardust costs.
+        </li>
+
+        <li>
+            Check whether the Zubat is XXL or XXS before
+            transferring it.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For PvP
+    </h3>
+
+    <p>
+
+        Check the current limited-format rules before selecting
+        Zubat. A Zubat that looks weak in the main leagues can
+        have a niche role when the CP cap is much lower.
+
+    </p>
+
+
+    <h3>
+        For Collection
+    </h3>
+
+    <p>
+
+        The most interesting Zubat specimens are often those
+        combining multiple attributes. A Shiny XXL 100% Zubat,
+        for example, can be significantly more interesting to
+        a collector than a normal high-IV Zubat.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     26 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Zubat Pokémon GO FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Zubat?
+        </summary>
+
+        <p>
+            Zubat is a Poison/Flying-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Zubat weak to?
+        </summary>
+
+        <p>
+            Zubat is weak to Electric, Ice, Psychic and
+            Rock-type attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Zubat's max CP?
+        </summary>
+
+        <p>
+            Zubat reaches 754 CP at level 50 with perfect
+            15/15/15 IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Zubat available?
+        </summary>
+
+        <p>
+            Yes. Shiny Zubat is available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Zubat available?
+        </summary>
+
+        <p>
+            Shadow Zubat is an obtainable Shadow variant,
+            with availability controlled by Team GO Rocket
+            rotations and events.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Zubat be purified?
+        </summary>
+
+        <p>
+            Yes. An eligible Shadow Zubat can be purified.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lucky Zubat different from normal Zubat?
+        </summary>
+
+        <p>
+            Lucky Zubat is not a separate species. Lucky is
+            a special status obtained through trading that
+            provides reduced Stardust power-up costs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Zubat?
+        </summary>
+
+        <p>
+            A 100% Zubat has perfect 15/15/15 Attack, Defense
+            and HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is the max CP of a hundo Zubat?
+        </summary>
+
+        <p>
+            A level 50 15/15/15 Zubat reaches 754 CP.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Zubat be XXL?
+        </summary>
+
+        <p>
+            Yes. Zubat can be found in the XXL size category.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Zubat be XXS?
+        </summary>
+
+        <p>
+            Yes. Zubat can be found in the XXS size category.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXL Zubat have better stats?
+        </summary>
+
+        <p>
+            No. XXL is a size attribute and does not directly
+            increase Zubat's base combat stats.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXS Zubat have lower stats?
+        </summary>
+
+        <p>
+            XXS is a size category and should not be treated as
+            a direct reduction to Zubat's base combat stats.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Zubat good for raids?
+        </summary>
+
+        <p>
+            No. Zubat's low stats make it a poor conventional
+            raid attacker.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Zubat good in PvP?
+        </summary>
+
+        <p>
+            Zubat is mainly a niche option in restricted
+            low-CP formats rather than the main Great, Ultra
+            or Master Leagues.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How much Candy does Zubat need to evolve?
+        </summary>
+
+        <p>
+            Zubat requires 25 Candy to evolve into Golbat.
+            Crobat requires another 100 Candy plus its
+            evolution requirement.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is the best Zubat moveset?
+        </summary>
+
+        <p>
+            Bite and Poison Fang are a strong general moveset
+            recommendation for Zubat, especially when considering
+            its limited PvP applications.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Zubat become Shiny Crobat?
+        </summary>
+
+        <p>
+            Yes. Shiny Zubat retains its Shiny status when
+            evolved through the Zubat family.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Lucky Zubat be Shiny?
+        </summary>
+
+        <p>
+            Yes. Lucky and Shiny are separate attributes and
+            can occur together on the same Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a 100% Zubat also be XXL?
+        </summary>
+
+        <p>
+            Yes. IVs and size are separate attributes, so a
+            Zubat can be both 100% IV and XXL.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounters, Shadow rotations, events and other
+            game data can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Zubat Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Zubat Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Zubat
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/golbat.html">
+
+            Golbat Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/crobat.html">
+
+            Crobat Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/poison.html">
+
+            Poison Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/flying.html">
+
+            Flying Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-1.html">
+
+            Gen 1 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Zubat Quick Facts
+        </h3>
+
+        <p>
+            <strong>Pokédex:</strong>
+            #041
+        </p>
+
+        <p>
+            <strong>Type:</strong>
+            Poison / Flying
+        </p>
+
+        <p>
+            <strong>Generation:</strong>
+            1
+        </p>
+
+        <p>
+            <strong>Region:</strong>
+            Kanto
+        </p>
+
+        <p>
+            <strong>Max CP:</strong>
+            754
+        </p>
+
+        <p>
+            <strong>Buddy Distance:</strong>
+            1 km
+        </p>
+
+        <p>
+            <strong>Evolution:</strong>
+            Golbat → Crobat
+        </p>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Zubat Collection
+        </h3>
+
+        <p>
+            ✨ Shiny
+        </p>
+
+        <p>
+            🌑 Shadow
+        </p>
+
+        <p>
+            🕊️ Purified
+        </p>
+
+        <p>
+            🍀 Lucky
+        </p>
+
+        <p>
+            💯 100% IV
+        </p>
+
+        <p>
+            📏 XXL
+        </p>
+
+        <p>
+            🔹 XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

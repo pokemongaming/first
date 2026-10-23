@@ -1,0 +1,2278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Groudon Forms in Pokémon GO — Regular, Shiny, Shadow, Purified, Lucky, 100%, Primal, XXL & XXS</title>
+
+<meta name="description"
+content="Complete Groudon forms guide for Pokémon GO including Regular Groudon, Shiny Groudon, Shadow Groudon, Purified Groudon, Lucky Groudon, 100% IV Groudon, Primal Groudon, XXL Groudon and XXS Groudon.">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080b12;
+    --surface: #121925;
+    --surface-2: #182130;
+    --surface-3: #202b3d;
+
+    --border: #2b374b;
+
+    --text: #f5f7fb;
+    --muted: #aab4c4;
+
+    --accent: #e2aa45;
+    --accent-soft: rgba(226,170,69,.15);
+
+    --danger: #ff6877;
+    --success: #63d79b;
+    --purple: #a978ff;
+    --gold: #f2c84b;
+
+    --radius: 20px;
+    --max-width: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(226,170,69,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8,11,18,.92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max-width);
+    margin: auto;
+
+    min-height: 70px;
+
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 950;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max-width);
+    margin: auto;
+
+    padding: 35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    font-size: .75rem;
+    color: var(--muted);
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    border: 1px solid var(--border);
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(226,170,69,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #151b27,
+            #0b1019
+        );
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.3fr .7fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.kicker {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    margin-bottom: 15px;
+
+    border-radius: 999px;
+
+    background: var(--accent-soft);
+
+    color: var(--accent);
+
+    border: 1px solid rgba(226,170,69,.3);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+.hero h1 {
+    font-size:
+        clamp(2.5rem, 6vw, 5rem);
+
+    letter-spacing: -.06em;
+
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 12px;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--border);
+
+    background: rgba(255,255,255,.04);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.hero-pokemon {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 280px;
+}
+
+.pokemon-placeholder {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(226,170,69,.22),
+            transparent 68%
+        );
+
+    font-size: 8rem;
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.5)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    text-align: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+}
+
+.quick-stat strong {
+    display: block;
+
+    font-size: 1.35rem;
+}
+
+.quick-stat span {
+    font-size: .65rem;
+
+    color: var(--muted);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FORMS SECTION
+========================================================= */
+
+.forms-section {
+    margin-top: 30px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size:
+        clamp(1.7rem, 4vw, 2.5rem);
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   TAB SYSTEM
+========================================================= */
+
+.form-tabs {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+.form-tabs input {
+    display: none;
+}
+
+.form-tab {
+    padding: 10px 15px;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    cursor: pointer;
+
+    font-size: .75rem;
+
+    font-weight: 850;
+
+    transition: .2s;
+}
+
+.form-tab:hover {
+    color: white;
+    border-color: var(--accent);
+}
+
+
+/* ACTIVE TAB */
+
+#regular:checked ~ .form-tabs label[for="regular"],
+#shiny:checked ~ .form-tabs label[for="shiny"],
+#shadow:checked ~ .form-tabs label[for="shadow"],
+#purified:checked ~ .form-tabs label[for="purified"],
+#lucky:checked ~ .form-tabs label[for="lucky"],
+#perfect:checked ~ .form-tabs label[for="perfect"],
+#primal:checked ~ .form-tabs label[for="primal"],
+#xxl:checked ~ .form-tabs label[for="xxl"],
+#xxs:checked ~ .form-tabs label[for="xxs"] {
+
+    background: var(--accent);
+
+    color: #17120a;
+
+    border-color: var(--accent);
+}
+
+
+/* =========================================================
+   FORM PANELS
+========================================================= */
+
+.form-panel {
+    display: none;
+
+    padding: 30px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+#regular:checked ~ .form-content .regular-panel,
+#shiny:checked ~ .form-content .shiny-panel,
+#shadow:checked ~ .form-content .shadow-panel,
+#purified:checked ~ .form-content .purified-panel,
+#lucky:checked ~ .form-content .lucky-panel,
+#perfect:checked ~ .form-content .perfect-panel,
+#primal:checked ~ .form-content .primal-panel,
+#xxl:checked ~ .form-content .xxl-panel,
+#xxs:checked ~ .form-content .xxs-panel {
+    display: block;
+}
+
+
+/* =========================================================
+   FORM HERO
+========================================================= */
+
+.form-hero {
+    display: grid;
+
+    grid-template-columns:
+        1fr 260px;
+
+    gap: 30px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.form-name {
+    font-size:
+        clamp(2rem, 5vw, 3.5rem);
+
+    letter-spacing: -.04em;
+
+    margin-bottom: 8px;
+}
+
+.form-badge {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    margin-bottom: 12px;
+
+    font-size: .65rem;
+
+    font-weight: 900;
+
+    letter-spacing: .07em;
+}
+
+.regular-badge {
+    color: var(--accent);
+    background: rgba(226,170,69,.12);
+}
+
+.shiny-badge {
+    color: #f6d86d;
+    background: rgba(246,216,109,.12);
+}
+
+.shadow-badge {
+    color: var(--purple);
+    background: rgba(169,120,255,.12);
+}
+
+.purified-badge {
+    color: #7ad6ff;
+    background: rgba(122,214,255,.12);
+}
+
+.lucky-badge {
+    color: var(--gold);
+    background: rgba(242,200,75,.12);
+}
+
+.perfect-badge {
+    color: var(--success);
+    background: rgba(99,215,155,.12);
+}
+
+.primal-badge {
+    color: #ff9b4a;
+    background: rgba(255,155,74,.12);
+}
+
+.size-badge {
+    color: #b6c5ff;
+    background: rgba(182,197,255,.12);
+}
+
+
+/* =========================================================
+   FORM IMAGE
+========================================================= */
+
+.form-image {
+    height: 230px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: var(--surface-2);
+
+    font-size: 6rem;
+}
+
+
+/* =========================================================
+   FORM STAT GRID
+========================================================= */
+
+.form-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.form-stat {
+    padding: 18px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+}
+
+.form-stat span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    font-weight: 800;
+}
+
+.form-stat strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.info-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: var(--surface-2);
+
+    border-left:
+        4px solid var(--accent);
+}
+
+.info-box strong {
+    display: block;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   DETAILS GRID
+========================================================= */
+
+.detail-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.detail-card {
+    padding: 20px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+}
+
+.detail-card span {
+    font-size: 1.7rem;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+.detail-card strong {
+    display: block;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   PRIMAL SPECIAL
+========================================================= */
+
+.primal-panel {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255,90,30,.14),
+            transparent 35%
+        ),
+        var(--surface);
+}
+
+.primal-panel .form-image {
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,95,30,.2),
+            transparent 65%
+        ),
+        var(--surface-2);
+}
+
+
+/* =========================================================
+   SHADOW SPECIAL
+========================================================= */
+
+.shadow-panel .form-image {
+    background:
+        radial-gradient(
+            circle,
+            rgba(130,70,255,.22),
+            transparent 65%
+        ),
+        var(--surface-2);
+}
+
+
+/* =========================================================
+   SHINY SPECIAL
+========================================================= */
+
+.shiny-panel .form-image {
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,210,60,.18),
+            transparent 65%
+        ),
+        var(--surface-2);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq-section {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+details {
+    padding: 16px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .85rem;
+}
+
+details p {
+    margin-top: 10px;
+
+    font-size: .8rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 35px 20px;
+
+    border-top: 1px solid var(--border);
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: .75rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 900px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .form-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .form-image {
+        min-height: 200px;
+    }
+
+    .form-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .detail-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .hero {
+        padding: 25px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .form-panel {
+        padding: 20px;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .form-tabs {
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding-bottom: 8px;
+    }
+
+    .form-tab {
+        white-space: nowrap;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+```
+<div class="header-inner">
+
+    <a href="/" class="logo">
+        Pokémon<span>Gaming</span>
+    </a>
+
+    <nav class="nav">
+
+        <a href="/pokemon-types.html">
+            Types
+        </a>
+
+        <a href="/pokedex.html">
+            Pokédex
+        </a>
+
+        <a href="/raids/">
+            Raids
+        </a>
+
+        <a href="/guides/">
+            Guides
+        </a>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="page">
+
+<!-- BREADCRUMB -->
+
+<div class="breadcrumb">
+
+```
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+    Pokémon Database
+</a>
+
+<span>›</span>
+
+<strong>
+    Groudon Forms
+</strong>
+```
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+```
+<div class="hero-grid">
+
+    <div>
+
+        <span class="kicker">
+            LEGENDARY POKÉMON
+        </span>
+
+        <h1>
+            Groudon Forms
+        </h1>
+
+        <p>
+
+            Explore every major Groudon variation in
+            Pokémon GO. Compare Regular, Shiny, Shadow,
+            Purified, Lucky, 100% IV, Primal, XXL and
+            XXS Groudon in one interactive guide.
+
+        </p>
+
+
+        <div class="hero-tags">
+
+            <span class="tag">
+                #383
+            </span>
+
+            <span class="tag">
+                Ground
+            </span>
+
+            <span class="tag">
+                Legendary
+            </span>
+
+            <span class="tag">
+                9 Forms
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-pokemon">
+
+        <!-- Replace with licensed Groudon image -->
+
+        <div class="pokemon-placeholder">
+            🦖
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+```
+<div class="quick-stat">
+
+    <strong>
+        #383
+    </strong>
+
+    <span>
+        POKÉDEX
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        Gen 3
+    </strong>
+
+    <span>
+        GENERATION
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        Ground
+    </strong>
+
+    <span>
+        REGULAR TYPE
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        9
+    </strong>
+
+    <span>
+        VARIATIONS
+    </span>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="forms-section">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Groudon Forms in Pokémon GO
+    </h2>
+
+    <p>
+        Select a variation below to view its role,
+        appearance, gameplay characteristics and
+        collection information.
+    </p>
+
+</div>
+
+
+<!-- RADIO BUTTONS -->
+
+<input type="radio"
+       name="forms"
+       id="regular"
+       checked>
+
+<input type="radio"
+       name="forms"
+       id="shiny">
+
+<input type="radio"
+       name="forms"
+       id="shadow">
+
+<input type="radio"
+       name="forms"
+       id="purified">
+
+<input type="radio"
+       name="forms"
+       id="lucky">
+
+<input type="radio"
+       name="forms"
+       id="perfect">
+
+<input type="radio"
+       name="forms"
+       id="primal">
+
+<input type="radio"
+       name="forms"
+       id="xxl">
+
+<input type="radio"
+       name="forms"
+       id="xxs">
+
+
+<!-- TABS -->
+
+<div class="form-tabs">
+
+    <label class="form-tab"
+           for="regular">
+        Groudon
+    </label>
+
+    <label class="form-tab"
+           for="shiny">
+        ✨ Shiny
+    </label>
+
+    <label class="form-tab"
+           for="shadow">
+        👿 Shadow
+    </label>
+
+    <label class="form-tab"
+           for="purified">
+        ✨ Purified
+    </label>
+
+    <label class="form-tab"
+           for="lucky">
+        🍀 Lucky
+    </label>
+
+    <label class="form-tab"
+           for="perfect">
+        💯 100%
+    </label>
+
+    <label class="form-tab"
+           for="primal">
+        🔥 Primal
+    </label>
+
+    <label class="form-tab"
+           for="xxl">
+        ⬆ XXL
+    </label>
+
+    <label class="form-tab"
+           for="xxs">
+        ⬇ XXS
+    </label>
+
+</div>
+```
+
+<!-- =====================================================
+     CONTENT
+===================================================== -->
+
+<div class="form-content">
+
+<!-- =====================================================
+     REGULAR GROUDON
+===================================================== -->
+
+<div class="form-panel regular-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge regular-badge">
+            REGULAR FORM
+        </span>
+
+        <h2 class="form-name">
+            Groudon
+        </h2>
+
+        <p>
+
+            Regular Groudon is a powerful Ground-type
+            Legendary Pokémon from the Hoenn region.
+            It is primarily valued as a high-level
+            Ground-type attacker.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+
+        <span>
+            TYPE
+        </span>
+
+        <strong>
+            Ground
+        </strong>
+
+    </div>
+
+    <div class="form-stat">
+
+        <span>
+            ATTACK
+        </span>
+
+        <strong>
+            270
+        </strong>
+
+    </div>
+
+    <div class="form-stat">
+
+        <span>
+            DEFENSE
+        </span>
+
+        <strong>
+            228
+        </strong>
+
+    </div>
+
+    <div class="form-stat">
+
+        <span>
+            HP
+        </span>
+
+        <strong>
+            205
+        </strong>
+
+    </div>
+
+</div>
+
+
+<div class="detail-grid">
+
+    <div class="detail-card">
+
+        <span>
+            🌎
+        </span>
+
+        <strong>
+            Ground Specialist
+        </strong>
+
+        <p>
+            Strong against many Electric, Rock,
+            Poison, Steel and Fire raid targets.
+        </p>
+
+    </div>
+
+
+    <div class="detail-card">
+
+        <span>
+            ⚔️
+        </span>
+
+        <strong>
+            Raid Attacker
+        </strong>
+
+        <p>
+            One of the important Legendary Pokémon
+            for Ground-type raid teams.
+        </p>
+
+    </div>
+
+
+    <div class="detail-card">
+
+        <span>
+            🏆
+        </span>
+
+        <strong>
+            Master League
+        </strong>
+
+        <p>
+            Groudon can also have strong PvP
+            relevance in high-CP formats.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="info-box">
+
+    <strong>
+        Best Raid Moveset
+    </strong>
+
+    <p>
+        Mud Shot + Precipice Blades is widely
+        considered the signature Ground-focused
+        moveset for Groudon.
+    </p>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     SHINY GROUDON
+===================================================== -->
+
+<div class="form-panel shiny-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge shiny-badge">
+            SHINY VARIATION
+        </span>
+
+        <h2 class="form-name">
+            Shiny Groudon
+        </h2>
+
+        <p>
+
+            Shiny Groudon has an alternate appearance
+            while retaining the same gameplay role,
+            typing and battle statistics as a regular
+            Groudon.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        ✨🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>GAMEPLAY</span>
+        <strong>Same Stats</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>RARITY</span>
+        <strong>Special</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>COLLECTION</span>
+        <strong>Premium</strong>
+    </div>
+
+</div>
+
+
+<div class="detail-grid">
+
+    <div class="detail-card">
+
+        <span>✨</span>
+
+        <strong>
+            Alternate Appearance
+        </strong>
+
+        <p>
+            Shiny Groudon is visually different
+            from the standard form.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>⚔️</span>
+
+        <strong>
+            Same Battle Role
+        </strong>
+
+        <p>
+            A Shiny Pokémon does not automatically
+            receive stronger battle statistics.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>🏆</span>
+
+        <strong>
+            Collector Value
+        </strong>
+
+        <p>
+            Strong IV Shiny Legendary Pokémon can
+            be valuable collection targets.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     SHADOW GROUDON
+===================================================== -->
+
+<div class="form-panel shadow-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge shadow-badge">
+            SHADOW FORM
+        </span>
+
+        <h2 class="form-name">
+            Shadow Groudon
+        </h2>
+
+        <p>
+
+            Shadow Groudon has a different battle
+            profile from regular Groudon. It is
+            especially interesting for players who
+            prioritize raid damage.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        👿🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>ATTACK ROLE</span>
+        <strong>High</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>DURABILITY</span>
+        <strong>Lower</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>INVESTMENT</span>
+        <strong>Expensive</strong>
+    </div>
+
+</div>
+
+
+<div class="detail-grid">
+
+    <div class="detail-card">
+
+        <span>⚔️</span>
+
+        <strong>
+            Increased Damage
+        </strong>
+
+        <p>
+            Shadow mechanics can make it particularly
+            attractive for damage-focused teams.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>🛡️</span>
+
+        <strong>
+            Reduced Durability
+        </strong>
+
+        <p>
+            Shadow Pokémon trade durability for
+            additional offensive pressure.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>💎</span>
+
+        <strong>
+            Premium Investment
+        </strong>
+
+        <p>
+            Powering up a Shadow Legendary requires
+            careful Candy and Stardust planning.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     PURIFIED GROUDON
+===================================================== -->
+
+<div class="form-panel purified-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge purified-badge">
+            PURIFIED FORM
+        </span>
+
+        <h2 class="form-name">
+            Purified Groudon
+        </h2>
+
+        <p>
+
+            Purified Groudon is created by purifying
+            an eligible Shadow Groudon. Purification
+            changes its Shadow status and should be
+            considered carefully before committing.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        ✨🦖✨
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>STATUS</span>
+        <strong>Purified</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>SHADOW BONUS</span>
+        <strong>Removed</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>IV CHANGE</span>
+        <strong>Improved</strong>
+    </div>
+
+</div>
+
+
+<div class="info-box">
+
+    <strong>
+        Important Purification Decision
+    </strong>
+
+    <p>
+        Purifying removes the Shadow battle profile.
+        Compare the potential benefits of improved IVs
+        and reduced costs with the value of keeping a
+        high-damage Shadow Groudon.
+    </p>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     LUCKY GROUDON
+===================================================== -->
+
+<div class="form-panel lucky-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge lucky-badge">
+            LUCKY POKÉMON
+        </span>
+
+        <h2 class="form-name">
+            Lucky Groudon
+        </h2>
+
+        <p>
+
+            Lucky Groudon is obtained through eligible
+            Pokémon trades. Lucky Pokémon require less
+            Stardust to power up than standard Pokémon.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        🍀🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>STATUS</span>
+        <strong>Lucky</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>POWER-UP COST</span>
+        <strong>Reduced</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>OBTAINED BY</span>
+        <strong>Trade</strong>
+    </div>
+
+</div>
+
+
+<div class="detail-grid">
+
+    <div class="detail-card">
+
+        <span>💰</span>
+
+        <strong>
+            Stardust Saving
+        </strong>
+
+        <p>
+            Lucky status makes expensive Legendary
+            power-up projects easier to manage.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>🔄</span>
+
+        <strong>
+            Trade Exclusive
+        </strong>
+
+        <p>
+            Lucky Pokémon originate from Pokémon
+            trading mechanics.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>⭐</span>
+
+        <strong>
+            Strong Investment
+        </strong>
+
+        <p>
+            A good Lucky Groudon can be an excellent
+            long-term power-up project.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     100% GROUDON
+===================================================== -->
+
+<div class="form-panel perfect-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge perfect-badge">
+            PERFECT IV
+        </span>
+
+        <h2 class="form-name">
+            100% Groudon
+        </h2>
+
+        <p>
+
+            A 100% Groudon has perfect 15/15/15 IVs.
+            This is often called a "hundo" by the
+            Pokémon GO community.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        💯🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>ATTACK IV</span>
+        <strong>15</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>DEFENSE IV</span>
+        <strong>15</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>HP IV</span>
+        <strong>15</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>IV TOTAL</span>
+        <strong>100%</strong>
+    </div>
+
+</div>
+
+
+<div class="info-box">
+
+    <strong>
+        Perfect IV Groudon
+    </strong>
+
+    <p>
+        A 15/15/15 Groudon is an excellent long-term
+        investment candidate, particularly for players
+        building a high-level Ground-type team.
+    </p>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     PRIMAL GROUDON
+===================================================== -->
+
+<div class="form-panel primal-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge primal-badge">
+            PRIMAL REVERSION
+        </span>
+
+        <h2 class="form-name">
+            Primal Groudon
+        </h2>
+
+        <p>
+
+            Primal Groudon is Groudon's powerful
+            temporary Primal Reversion form. Its
+            typing changes to Ground / Fire and it
+            becomes one of the strongest raid options
+            available for appropriate matchups.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        🔥🦖🔥
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground / Fire</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>FORM</span>
+        <strong>Primal</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>RAID ROLE</span>
+        <strong>Elite</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>TRANSFORMATION</span>
+        <strong>Temporary</strong>
+    </div>
+
+</div>
+
+
+<div class="detail-grid">
+
+    <div class="detail-card">
+
+        <span>🔥</span>
+
+        <strong>
+            Ground / Fire
+        </strong>
+
+        <p>
+            Primal Groudon has a different typing
+            from regular Groudon.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>⚔️</span>
+
+        <strong>
+            Raid Power
+        </strong>
+
+        <p>
+            An elite option for Ground-focused
+            raid battles.
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <span>🍬</span>
+
+        <strong>
+            Primal Bonuses
+        </strong>
+
+        <p>
+            Active Primal Pokémon can provide
+            additional gameplay bonuses.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="info-box">
+
+    <strong>
+        Primal Reversion
+    </strong>
+
+    <p>
+        Primal Groudon is not a normal evolution.
+        Groudon temporarily enters its Primal form
+        by using Primal Reversion mechanics.
+    </p>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     XXL GROUDON
+===================================================== -->
+
+<div class="form-panel xxl-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge size-badge">
+            XXL SIZE VARIATION
+        </span>
+
+        <h2 class="form-name">
+            XXL Groudon
+        </h2>
+
+        <p>
+
+            XXL Groudon is an unusually large
+            specimen. Size variations are primarily
+            collection-focused and can also have
+            relevance for eligible Showcase events.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        ⬆️🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>SIZE</span>
+        <strong>XXL</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>BATTLE STATS</span>
+        <strong>Normal</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>COLLECTION</span>
+        <strong>Rare</strong>
+    </div>
+
+</div>
+
+
+<div class="info-box">
+
+    <strong>
+        XXL Size
+    </strong>
+
+    <p>
+        XXL status represents the Pokémon's size
+        variation. It should not be confused with
+        a separate evolution or battle form.
+    </p>
+
+</div>
+```
+
+</div>
+
+<!-- =====================================================
+     XXS GROUDON
+===================================================== -->
+
+<div class="form-panel xxs-panel">
+
+```
+<div class="form-hero">
+
+    <div>
+
+        <span class="form-badge size-badge">
+            XXS SIZE VARIATION
+        </span>
+
+        <h2 class="form-name">
+            XXS Groudon
+        </h2>
+
+        <p>
+
+            XXS Groudon is an unusually small
+            specimen. Like XXL Pokémon, this is a
+            size variation rather than a separate
+            evolution or battle form.
+
+        </p>
+
+    </div>
+
+    <div class="form-image">
+        ⬇️🦖
+    </div>
+
+</div>
+
+
+<div class="form-stats">
+
+    <div class="form-stat">
+        <span>TYPE</span>
+        <strong>Ground</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>SIZE</span>
+        <strong>XXS</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>BATTLE STATS</span>
+        <strong>Normal</strong>
+    </div>
+
+    <div class="form-stat">
+        <span>COLLECTION</span>
+        <strong>Rare</strong>
+    </div>
+
+</div>
+
+
+<div class="info-box">
+
+    <strong>
+        XXS Size
+    </strong>
+
+    <p>
+        XXS Groudon is primarily a collection
+        variation. Its size status does not create
+        a new Pokémon species or a separate moveset.
+    </p>
+
+</div>
+```
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="faq-section">
+
+```
+<h2>
+    Groudon Forms FAQ
+</h2>
+
+
+<details>
+
+    <summary>
+        How many Groudon variations are included in this guide?
+    </summary>
+
+    <p>
+        This guide covers Regular, Shiny, Shadow,
+        Purified, Lucky, 100% IV, Primal, XXL and
+        XXS Groudon.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Shiny Groudon stronger than normal Groudon?
+    </summary>
+
+    <p>
+        Shiny status changes appearance rather than
+        automatically increasing battle statistics.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Shadow Groudon good for raids?
+    </summary>
+
+    <p>
+        Shadow Groudon can be extremely valuable for
+        damage-focused raid teams, although it requires
+        additional investment and has reduced durability.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a 100% Groudon?
+    </summary>
+
+    <p>
+        A 100% Groudon has 15 Attack, 15 Defense and
+        15 HP IVs.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Primal Groudon a permanent evolution?
+    </summary>
+
+    <p>
+        No. Primal Reversion is a temporary special
+        transformation rather than a conventional
+        permanent evolution.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Do XXL and XXS Groudon have different battle stats?
+    </summary>
+
+    <p>
+        XXL and XXS represent size variations and
+        should not be treated as separate battle
+        forms.
+    </p>
+
+</details>
+```
+
+</section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+```
+<div class="footer-inner">
+
+    <p>
+        © 2026 PokémonGaming.in
+    </p>
+
+    <p>
+        Independent Pokémon GO information and guides.
+    </p>
+
+</div>
+```
+
+</footer>
+
+</body>
+</html>

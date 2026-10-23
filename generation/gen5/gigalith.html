@@ -1,0 +1,4589 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+   content="width=device-width, initial-scale=1.0">
+
+<title>Gigalith Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shadow, Shiny & Forms</title>
+
+<meta name="description"
+   content="Complete Gigalith Pokémon GO guide covering stats, max CP, Rock typing, weaknesses, resistances, best moves, raids, PvP, IVs, Shiny Gigalith, Shadow Gigalith, Purified, Lucky, XXL and XXS Gigalith.">
+
+<meta name="robots"
+   content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/gigalith.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #8fa2ff;
+    --accent-2: #657cff;
+
+    --rock: #c5a04a;
+    --ground: #d6a743;
+    --water: #4e9dff;
+    --grass: #5dcf82;
+    --fighting: #e06c75;
+    --steel: #9da8b8;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --purple: #b68cff;
+    --gold: #f2c14e;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(197,160,74,.10),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    min-height: 68px;
+
+    padding:
+        0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size:
+        1.15rem;
+
+    font-weight:
+        950;
+
+    letter-spacing:
+        -.03em;
+}
+
+.logo span {
+    color:
+        var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap:
+        wrap;
+}
+
+.main-nav a {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .8rem;
+
+    font-weight:
+        750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-bottom:
+        25px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(197,160,74,.17),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap:
+        30px;
+
+    align-items:
+        center;
+}
+
+.eyebrow {
+
+    display:
+        inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--rock);
+
+    background:
+        rgba(197,160,74,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.rock-tag {
+    color:
+        var(--rock);
+}
+
+.shadow-tag {
+    color:
+        var(--purple);
+}
+
+.shiny-tag {
+    color:
+        var(--gold);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+}
+
+.hero-pokemon img {
+
+    width:
+        min(100%,320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px
+            rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(197,160,74,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px
+            rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =====================================================
+   CONTENT LAYOUT
+===================================================== */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom:
+        20px;
+}
+
+.section-number {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        24px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid
+        rgba(197,160,74,.3);
+
+    background:
+        rgba(197,160,74,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(197,160,74,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display:
+        block;
+}
+
+.type-box span {
+
+    color:
+        var(--rock);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display:
+        block;
+}
+
+.effect-card p {
+
+    font-size:
+        .75rem;
+
+    margin:
+        7px 0 0;
+}
+
+.weakness {
+
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x:
+        auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight:
+        850;
+}
+
+.move-type {
+
+    color:
+        var(--rock);
+
+    font-weight:
+        800;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(197,160,74,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid
+        rgba(197,160,74,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =====================================================
+   RATING
+===================================================== */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px
+        1fr
+        70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom:
+        0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:
+        hidden;
+}
+
+.rating-fill {
+
+    height:
+        100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--rock);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:
+        right;
+
+    font-weight:
+        900;
+}
+
+
+/* =====================================================
+   COMPARISON TABLE
+===================================================== */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align:
+        left;
+}
+
+
+/* =====================================================
+   FORM CARDS
+===================================================== */
+
+.form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        14px;
+
+    margin-top:
+        18px;
+}
+
+.form-card {
+
+    padding:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.form-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+}
+
+.form-card p {
+
+    font-size:
+        .75rem;
+
+    margin:
+        0;
+}
+
+.form-card.shiny {
+
+    border-color:
+        rgba(242,193,78,.35);
+}
+
+.form-card.shadow {
+
+    border-color:
+        rgba(182,140,255,.35);
+}
+
+.form-card.purified {
+
+    border-color:
+        rgba(114,214,220,.35);
+}
+
+.form-card.lucky {
+
+    border-color:
+        rgba(242,193,78,.45);
+}
+
+
+/* =====================================================
+   IV GRID
+===================================================== */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.iv-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.5rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom:
+        0;
+}
+
+.related-link:hover {
+    color:
+        var(--accent);
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom:
+        0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns:
+            1fr;
+    }
+
+    .sidebar {
+        position:
+            static;
+    }
+
+    .hero-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .hero-pokemon {
+        order:
+            -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid,
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            6px;
+    }
+
+    .rating-value {
+        text-align:
+            left;
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+```
+<div class="header-inner">
+
+    <a href="/"
+       class="logo">
+
+        Pokémon<span>Gaming</span>
+
+    </a>
+
+
+    <nav class="main-nav">
+
+        <a href="/pokemon-types.html">
+            Types
+        </a>
+
+        <a href="/pokedex.html">
+            Pokédex
+        </a>
+
+        <a href="/raids/">
+            Raids
+        </a>
+
+        <a href="/guides/">
+            Guides
+        </a>
+
+        <a href="/tools/">
+            Tools
+        </a>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+```
+<a href="/">
+    Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+    Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/rock.html">
+    Rock Type
+</a>
+
+<span>›</span>
+
+<strong>
+    Gigalith
+</strong>
+```
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+```
+<div class="hero-grid">
+
+    <div>
+
+        <span class="eyebrow">
+            ROCK-TYPE POKÉMON
+        </span>
+
+
+        <h1>
+            Gigalith
+        </h1>
+
+
+        <p class="hero-subtitle">
+
+            Gigalith is a powerful Rock-type Pokémon
+            from the Unova region. In Pokémon GO, it is
+            the final evolution of Roggenrola and can be
+            useful as a Rock-type attacker, especially
+            when equipped with a strong Rock-focused
+            moveset.
+
+        </p>
+
+
+        <div class="hero-tags">
+
+            <span class="tag rock-tag">
+                Rock
+            </span>
+
+            <span class="tag">
+                #526
+            </span>
+
+            <span class="tag">
+                Gen 5
+            </span>
+
+            <span class="tag shiny-tag">
+                Shiny Available
+            </span>
+
+            <span class="tag shadow-tag">
+                Shadow Form
+            </span>
+
+            <span class="tag">
+                Final Evolution
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-pokemon">
+
+        <!-- Replace with your properly licensed Gigalith image -->
+
+        <div class="pokemon-placeholder">
+            🪨
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+```
+<div class="quick-stat">
+
+    <strong>
+        226
+    </strong>
+
+    <span>
+        ATTACK
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        201
+    </strong>
+
+    <span>
+        DEFENSE
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        198
+    </strong>
+
+    <span>
+        HP
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        ~3,858
+    </strong>
+
+    <span>
+        MAX CP
+    </span>
+
+</div>
+```
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section"
+         id="overview">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        01 — OVERVIEW
+    </span>
+
+    <h2>
+        Gigalith Overview
+    </h2>
+
+    <p>
+
+        Gigalith is a pure Rock-type Pokémon introduced
+        in Generation 5. It is the final stage of the
+        Roggenrola evolution family and evolves from
+        Boldore.
+
+    </p>
+
+</div>
+
+
+<div class="stat-grid">
+
+    <div class="stat-card">
+
+        <span>
+            POKÉDEX
+        </span>
+
+        <strong>
+            #526
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            GENERATION
+        </span>
+
+        <strong>
+            Gen 5
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            REGION
+        </span>
+
+        <strong>
+            Unova
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            TYPE
+        </span>
+
+        <strong>
+            Rock
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            ATTACK
+        </span>
+
+        <strong>
+            226
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            DEFENSE
+        </span>
+
+        <strong>
+            201
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            HP
+        </span>
+
+        <strong>
+            198
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            MAX CP
+        </span>
+
+        <strong>
+            ~3,858
+        </strong>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section"
+         id="type">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        02 — TYPE
+    </span>
+
+    <h2>
+        Gigalith Type
+    </h2>
+
+</div>
+
+
+<div class="type-box">
+
+    <div class="type-icon">
+        🪨
+    </div>
+
+    <div>
+
+        <strong>
+            Rock
+        </strong>
+
+        <span>
+            Pure Rock-Type Pokémon
+        </span>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Why Gigalith's Rock Typing Matters
+</h3>
+
+<p>
+
+    Rock-type attacks are useful against several important
+    Pokémon categories, including Flying, Fire, Ice and
+    Bug Pokémon. Gigalith's pure Rock typing gives it a
+    clear offensive role, although its defensive weaknesses
+    need to be considered carefully.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section"
+         id="weaknesses">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        03 — TYPE MATCHUPS
+    </span>
+
+    <h2>
+        Gigalith Weaknesses & Resistances
+    </h2>
+
+</div>
+
+
+<h3>
+    Weaknesses
+</h3>
+
+
+<div class="effect-grid">
+
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            💧
+        </div>
+
+        <strong>
+            Water
+        </strong>
+
+        <p>
+            Water-type attacks are super effective
+            against Gigalith.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🌿
+        </div>
+
+        <strong>
+            Grass
+        </strong>
+
+        <p>
+            Grass-type attackers can exploit Gigalith's
+            Rock typing.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            👊
+        </div>
+
+        <strong>
+            Fighting
+        </strong>
+
+        <p>
+            Fighting-type attacks deal super-effective
+            damage.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🌎
+        </div>
+
+        <strong>
+            Ground
+        </strong>
+
+        <p>
+            Ground-type attacks are super effective
+            against Rock Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🔩
+        </div>
+
+        <strong>
+            Steel
+        </strong>
+
+        <p>
+            Steel-type attacks can be particularly
+            dangerous for Gigalith.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<h3>
+    Resistances
+</h3>
+
+
+<div class="effect-grid">
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🔥
+        </div>
+
+        <strong>
+            Fire
+        </strong>
+
+        <p>
+            Gigalith resists Fire-type damage.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🕊️
+        </div>
+
+        <strong>
+            Flying
+        </strong>
+
+        <p>
+            Rock typing gives Gigalith resistance
+            against Flying attacks.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            ☠️
+        </div>
+
+        <strong>
+            Poison
+        </strong>
+
+        <p>
+            Gigalith also resists Poison-type attacks.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🐞
+        </div>
+
+        <strong>
+            Bug
+        </strong>
+
+        <p>
+            Bug-type damage is resisted by Rock Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            ⚪
+        </div>
+
+        <strong>
+            Normal
+        </strong>
+
+        <p>
+            Rock-type Pokémon resist Normal attacks.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section"
+         id="stats">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        04 — BASE STATS
+    </span>
+
+    <h2>
+        Gigalith Attack, Defense & HP
+    </h2>
+
+    <p>
+
+        Gigalith has a solid stat profile with strong
+        Attack, respectable Defense and good overall
+        durability for a non-Legendary Rock-type Pokémon.
+
+    </p>
+
+</div>
+
+
+<div class="stat-grid">
+
+    <div class="stat-card">
+
+        <span>
+            ATTACK
+        </span>
+
+        <strong>
+            226
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            DEFENSE
+        </span>
+
+        <strong>
+            201
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            HP
+        </span>
+
+        <strong>
+            198
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            MAX CP
+        </span>
+
+        <strong>
+            ~3,858
+        </strong>
+
+    </div>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        CP note:
+    </strong>
+
+    <p>
+
+        A Pokémon's displayed CP depends on level and
+        Individual Values. Max CP figures are useful for
+        comparison, but they should not be treated as an
+        IV rating.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section"
+         id="moves">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        05 — MOVES
+    </span>
+
+    <h2>
+        Gigalith Best Moves
+    </h2>
+
+    <p>
+
+        Gigalith performs best when equipped with moves
+        that allow it to focus on its Rock-type role.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Recommended Rock-Focused Moveset
+    </strong>
+
+    <p>
+        Smack Down + Meteor Beam
+    </p>
+
+</div>
+
+
+<h3>
+    Important Move Information
+</h3>
+
+<p>
+
+    Move availability can change through events and special
+    move pools. Some moves may require an Elite TM depending
+    on the current Pokémon GO rules and Gigalith's move
+    availability.
+
+</p>
+
+
+<div class="table-wrap">
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Move
+                </th>
+
+                <th>
+                    Type
+                </th>
+
+                <th>
+                    Category
+                </th>
+
+                <th>
+                    Role
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td class="move-name">
+                    Smack Down
+                </td>
+
+                <td class="move-type">
+                    Rock
+                </td>
+
+                <td>
+                    Fast Move
+                </td>
+
+                <td>
+                    Rock PvE / PvP
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="move-name">
+                    Meteor Beam
+                </td>
+
+                <td class="move-type">
+                    Rock
+                </td>
+
+                <td>
+                    Charged Move
+                </td>
+
+                <td>
+                    High-value Rock option
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     RAIDS
+===================================================== -->
+
+<section class="section"
+         id="raid">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        06 — RAID PERFORMANCE
+    </span>
+
+    <h2>
+        Gigalith Raid Performance
+    </h2>
+
+    <p>
+
+        Gigalith can function as a useful Rock-type raid
+        attacker. Its value depends heavily on its moveset,
+        level and the other Rock attackers available in your
+        Pokémon collection.
+
+    </p>
+
+</div>
+
+
+<div class="rating-row">
+
+    <strong>
+        Rock Raids
+    </strong>
+
+    <div class="rating-bar">
+
+        <div class="rating-fill"
+             style="--rating:82%;">
+        </div>
+
+    </div>
+
+    <span class="rating-value">
+        Strong
+    </span>
+
+</div>
+
+
+<div class="rating-row">
+
+    <strong>
+        Flying Counters
+    </strong>
+
+    <div class="rating-bar">
+
+        <div class="rating-fill"
+             style="--rating:86%;">
+        </div>
+
+    </div>
+
+    <span class="rating-value">
+        Strong
+    </span>
+
+</div>
+
+
+<div class="rating-row">
+
+    <strong>
+        Fire Counters
+    </strong>
+
+    <div class="rating-bar">
+
+        <div class="rating-fill"
+             style="--rating:84%;">
+        </div>
+
+    </div>
+
+    <span class="rating-value">
+        Strong
+    </span>
+
+</div>
+
+
+<div class="rating-row">
+
+    <strong>
+        Ice Counters
+    </strong>
+
+    <div class="rating-bar">
+
+        <div class="rating-fill"
+             style="--rating:84%;">
+        </div>
+
+    </div>
+
+    <span class="rating-value">
+        Strong
+    </span>
+
+</div>
+
+
+<h3>
+    Should You Power Up Gigalith?
+</h3>
+
+<p>
+
+    Gigalith is worth considering if you need more Rock-type
+    attackers or already have a high-IV specimen with a
+    desirable moveset.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section"
+         id="evolution">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        07 — EVOLUTION
+    </span>
+
+    <h2>
+        Roggenrola Evolution Family
+    </h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+    <table class="comparison-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Pokémon
+                </th>
+
+                <th>
+                    Evolution Stage
+                </th>
+
+                <th>
+                    Type
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Roggenrola
+                </td>
+
+                <td>
+                    First Stage
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Boldore
+                </td>
+
+                <td>
+                    Second Stage
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Gigalith
+                </td>
+
+                <td>
+                    Final Stage
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<p>
+
+    Gigalith is the final evolution of the Roggenrola family.
+    As the final stage, it has significantly higher battle
+    potential than Roggenrola and Boldore.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     IV GUIDE
+===================================================== -->
+
+<section class="section"
+         id="iv">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        08 — IV GUIDE
+    </span>
+
+    <h2>
+        Gigalith IV Guide
+    </h2>
+
+    <p>
+
+        Individual Values add extra Attack, Defense and HP.
+        A traditional perfect Gigalith has 15 Attack,
+        15 Defense and 15 HP IVs.
+
+    </p>
+
+</div>
+
+
+<div class="iv-grid">
+
+    <div class="iv-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Attack IV
+        </span>
+
+    </div>
+
+
+    <div class="iv-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Defense IV
+        </span>
+
+    </div>
+
+
+    <div class="iv-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            HP IV
+        </span>
+
+    </div>
+
+</div>
+
+
+<h3>
+    100% Gigalith
+</h3>
+
+<p>
+
+    A 100% Gigalith has perfect 15/15/15 IVs. It is an
+    excellent collector target and can be a strong long-term
+    investment for players who want to power up Gigalith.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section"
+         id="shiny">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        09 — SHINY FORM
+    </span>
+
+    <h2>
+        Shiny Gigalith
+    </h2>
+
+    <p>
+
+        Shiny Gigalith has an alternate appearance compared
+        with regular Gigalith. The Shiny form is primarily a
+        collector variation and does not automatically receive
+        different battle stats.
+
+    </p>
+
+</div>
+
+
+<div class="form-card shiny">
+
+    <strong>
+        ✨ Shiny Gigalith
+    </strong>
+
+    <p>
+
+        Shiny Gigalith can be obtained by evolving an eligible
+        Shiny Roggenrola or Shiny Boldore through the Gigalith
+        evolution family.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Regular vs Shiny Gigalith
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="comparison-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Feature
+                </th>
+
+                <th>
+                    Regular
+                </th>
+
+                <th>
+                    Shiny
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Species
+                </td>
+
+                <td>
+                    Gigalith
+                </td>
+
+                <td>
+                    Gigalith
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Typing
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Battle Stats
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+                <td>
+                    Same species stats
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Appearance
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+                <td>
+                    Alternate coloration
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section"
+         id="shadow">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        10 — SHADOW FORM
+    </span>
+
+    <h2>
+        Shadow Gigalith
+    </h2>
+
+    <p>
+
+        Shadow Gigalith is the Shadow version of Gigalith.
+        Shadow Pokémon have a different offensive and
+        defensive battle profile compared with their regular
+        versions, making Shadow Gigalith a separate
+        investment decision.
+
+    </p>
+
+</div>
+
+
+<div class="form-card shadow">
+
+    <strong>
+        🌑 Shadow Gigalith
+    </strong>
+
+    <p>
+
+        Shadow Gigalith is primarily interesting for players
+        looking to maximize offensive pressure in appropriate
+        battle situations.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Shadow Gigalith vs Regular Gigalith
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="comparison-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Feature
+                </th>
+
+                <th>
+                    Regular
+                </th>
+
+                <th>
+                    Shadow
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Species
+                </td>
+
+                <td>
+                    Gigalith
+                </td>
+
+                <td>
+                    Gigalith
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Type
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+                <td>
+                    Rock
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Offensive Profile
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+                <td>
+                    Increased offensive pressure
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Durability
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+                <td>
+                    Reduced defensive durability
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Purification
+                </td>
+
+                <td>
+                    Not applicable
+                </td>
+
+                <td>
+                    Possible
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<h3>
+    Shadow Gigalith Best Moves
+</h3>
+
+<div class="best-move">
+
+    <strong>
+        Recommended Role
+    </strong>
+
+    <p>
+
+        Use a Rock-focused moveset when Shadow Gigalith is
+        being built primarily for Rock-type damage.
+
+    </p>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Frustration warning:
+    </strong>
+
+    <p>
+
+        Shadow Pokémon may have Frustration. Whether it can
+        be removed depends on the current Pokémon GO event
+        mechanics, so check the live game rules before using
+        Charged TMs.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Should You Keep Shadow Gigalith?
+</h3>
+
+
+<ul class="checklist">
+
+    <li>
+        Compare its IVs with your existing Rock attackers.
+    </li>
+
+    <li>
+        Check whether you can remove Frustration.
+    </li>
+
+    <li>
+        Consider the additional resource cost.
+    </li>
+
+    <li>
+        Do not purify automatically.
+    </li>
+
+    <li>
+        Evaluate whether damage or durability is more
+        important for your goal.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section"
+         id="purified">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        11 — PURIFIED FORM
+    </span>
+
+    <h2>
+        Purified Gigalith
+    </h2>
+
+    <p>
+
+        Purified Gigalith is created by purifying an eligible
+        Shadow member of the Roggenrola evolution family.
+        Purification changes the Pokémon's Shadow status and
+        can affect its IVs and resource requirements.
+
+    </p>
+
+</div>
+
+
+<div class="form-card purified">
+
+    <strong>
+        ✨ Purified Gigalith
+    </strong>
+
+    <p>
+
+        A Purified Gigalith no longer has the Shadow battle
+        characteristics. Purification should therefore be
+        considered carefully before making the change.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Shadow vs Purified Gigalith
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="comparison-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Category
+                </th>
+
+                <th>
+                    Shadow
+                </th>
+
+                <th>
+                    Purified
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Shadow Status
+                </td>
+
+                <td>
+                    Yes
+                </td>
+
+                <td>
+                    No
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Shadow Battle Bonus
+                </td>
+
+                <td>
+                    Active
+                </td>
+
+                <td>
+                    Removed
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Frustration
+                </td>
+
+                <td>
+                    Can be relevant
+                </td>
+
+                <td>
+                    Removed through purification
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Investment Style
+                </td>
+
+                <td>
+                    Damage-focused
+                </td>
+
+                <td>
+                    Standard build
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Before purifying:
+    </strong>
+
+    <p>
+
+        Consider your long-term goal before purifying a Shadow
+        Gigalith. Higher IVs after purification do not always
+        mean the purified version is the better choice for
+        every battle role.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section"
+         id="lucky">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        12 — LUCKY FORM
+    </span>
+
+    <h2>
+        Lucky Gigalith
+    </h2>
+
+    <p>
+
+        Lucky Gigalith is obtained when a Gigalith or one of
+        its evolution family members becomes Lucky through
+        the Pokémon GO trading system.
+
+    </p>
+
+</div>
+
+
+<div class="form-card lucky">
+
+    <strong>
+        🍀 Lucky Gigalith
+    </strong>
+
+    <p>
+
+        Lucky Pokémon are particularly valuable for players
+        planning high-level investments because they require
+        less Stardust to power up than a normal Pokémon.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Why Lucky Gigalith Can Be Useful
+</h3>
+
+
+<ul class="checklist">
+
+    <li>
+        Reduced Stardust cost for powering up.
+    </li>
+
+    <li>
+        Good option for Level 40 or higher investment.
+    </li>
+
+    <li>
+        Useful collector variation.
+    </li>
+
+    <li>
+        Can be a resource-friendly Rock attacker project.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     100%
+===================================================== -->
+
+<section class="section"
+         id="hundred">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        13 — PERFECT IV
+    </span>
+
+    <h2>
+        100% Gigalith
+    </h2>
+
+    <p>
+
+        A 100% Gigalith has perfect 15/15/15 Individual
+        Values.
+
+    </p>
+
+</div>
+
+
+<div class="iv-grid">
+
+    <div class="iv-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Attack
+        </span>
+
+    </div>
+
+
+    <div class="iv-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Defense
+        </span>
+
+    </div>
+
+
+    <div class="iv-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Is a 100% Gigalith Worth Powering Up?
+</h3>
+
+<p>
+
+    A perfect Gigalith is an attractive long-term investment,
+    especially if you need a strong Rock-type Pokémon.
+    However, a slightly lower-IV Gigalith can still perform
+    very well when powered up and given a suitable moveset.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section"
+         id="xxl">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        14 — XXL FORM
+    </span>
+
+    <h2>
+        XXL Gigalith
+    </h2>
+
+    <p>
+
+        XXL Gigalith is a larger-than-average Gigalith.
+        Size classifications are primarily collector features
+        and can also be relevant to Pokémon GO Showcase
+        competitions when Gigalith or its evolution family is
+        eligible.
+
+    </p>
+
+</div>
+
+
+<div class="form-card">
+
+    <strong>
+        📏 XXL Gigalith
+    </strong>
+
+    <p>
+
+        XXL status represents an unusually large specimen.
+        It does not automatically give Gigalith stronger
+        combat stats.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Why Keep XXL Gigalith?
+</h3>
+
+<ul class="checklist">
+
+    <li>
+        Useful collector variation.
+    </li>
+
+    <li>
+        Potential Showcase value when eligible.
+    </li>
+
+    <li>
+        Rare large-size specimen.
+    </li>
+
+    <li>
+        Can be combined with other desirable traits such
+        as Lucky, Shiny or high IVs.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section"
+         id="xxs">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        15 — XXS FORM
+    </span>
+
+    <h2>
+        XXS Gigalith
+    </h2>
+
+    <p>
+
+        XXS Gigalith is an unusually small Gigalith.
+        Like XXL Pokémon, XXS classification is primarily
+        based on size and does not automatically change
+        Gigalith's battle performance.
+
+    </p>
+
+</div>
+
+
+<div class="form-card">
+
+    <strong>
+        📐 XXS Gigalith
+    </strong>
+
+    <p>
+
+        XXS Gigalith is a rare small-size variation that can
+        be valuable for collectors building a complete set of
+        Gigalith forms.
+
+    </p>
+
+</div>
+
+
+<h3>
+    XXL vs XXS Gigalith
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="comparison-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Feature
+                </th>
+
+                <th>
+                    XXL
+                </th>
+
+                <th>
+                    XXS
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Size
+                </td>
+
+                <td>
+                    Larger than average
+                </td>
+
+                <td>
+                    Smaller than average
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Battle Stats
+                </td>
+
+                <td>
+                    Species-based
+                </td>
+
+                <td>
+                    Species-based
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Collector Value
+                </td>
+
+                <td>
+                    High for size collectors
+                </td>
+
+                <td>
+                    High for size collectors
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Showcase Relevance
+                </td>
+
+                <td>
+                    Depends on eligibility
+                </td>
+
+                <td>
+                    Depends on eligibility
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section"
+         id="forms">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        16 — ALL FORMS
+    </span>
+
+    <h2>
+        Gigalith Forms & Variations
+    </h2>
+
+    <p>
+
+        Gigalith can exist in several collector and gameplay
+        variations. These forms should be evaluated separately
+        because some change battle mechanics while others are
+        primarily cosmetic or collection-based.
+
+    </p>
+
+</div>
+
+
+<div class="form-grid">
+
+
+    <div class="form-card">
+
+        <strong>
+            🪨 Regular Gigalith
+        </strong>
+
+        <p>
+            Standard Rock-type final evolution.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shiny">
+
+        <strong>
+            ✨ Shiny Gigalith
+        </strong>
+
+        <p>
+            Alternate collector coloration.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow">
+
+        <strong>
+            🌑 Shadow Gigalith
+        </strong>
+
+        <p>
+            Increased offensive pressure with reduced
+            durability.
+        </p>
+
+    </div>
+
+
+    <div class="form-card purified">
+
+        <strong>
+            ✨ Purified Gigalith
+        </strong>
+
+        <p>
+            Purified version without Shadow status.
+        </p>
+
+    </div>
+
+
+    <div class="form-card lucky">
+
+        <strong>
+            🍀 Lucky Gigalith
+        </strong>
+
+        <p>
+            Reduced Stardust investment cost.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <strong>
+            💯 100% Gigalith
+        </strong>
+
+        <p>
+            Perfect 15/15/15 IV specimen.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <strong>
+            📏 XXL Gigalith
+        </strong>
+
+        <p>
+            Larger-than-average collector variation.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <strong>
+            📐 XXS Gigalith
+        </strong>
+
+        <p>
+            Smaller-than-average collector variation.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section"
+         id="pvp">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        17 — PVP
+    </span>
+
+    <h2>
+        Gigalith PvP Guide
+    </h2>
+
+    <p>
+
+        Gigalith can be used in PvP, although its exact
+        usefulness depends on its moveset, CP level and the
+        current competitive environment.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Great League
+</h3>
+
+<p>
+
+    Gigalith's performance in Great League depends heavily
+    on whether its stat profile and available moves fit the
+    current format.
+
+</p>
+
+
+<h3>
+    Ultra League
+</h3>
+
+<p>
+
+    Ultra League requires additional investment, and players
+    should compare Gigalith with other Rock-type Pokémon
+    before committing significant resources.
+
+</p>
+
+
+<h3>
+    Master League
+</h3>
+
+<p>
+
+    Gigalith can reach a relatively high CP, but Legendary,
+    Mega and other high-stat Pokémon create significant
+    competition in Master League environments.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     RESOURCES
+===================================================== -->
+
+<section class="section"
+         id="resources">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        18 — RESOURCES
+    </span>
+
+    <h2>
+        Gigalith Candy, XL Candy & Stardust
+    </h2>
+
+</div>
+
+
+<p>
+
+    Building a high-level Gigalith requires Candy,
+    Stardust and eventually Candy XL for higher-level
+    investment.
+
+</p>
+
+
+<ul class="checklist">
+
+    <li>
+        Keep high-IV Roggenrola and Gigalith candidates.
+    </li>
+
+    <li>
+        Check the moveset before using Elite resources.
+    </li>
+
+    <li>
+        Compare Lucky and regular investment costs.
+    </li>
+
+    <li>
+        Save Candy XL for long-term projects.
+    </li>
+
+    <li>
+        Keep unusual Shiny, Shadow, XXL and XXS specimens
+        for your collection.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section"
+         id="availability">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        19 — AVAILABILITY
+    </span>
+
+    <h2>
+        Gigalith Availability
+    </h2>
+
+</div>
+
+
+<p>
+
+    Gigalith availability can change depending on wild
+    spawns, raids, events, research and the availability of
+    Roggenrola and Boldore.
+
+</p>
+
+
+<div class="best-move">
+
+    <strong>
+        Availability Status
+    </strong>
+
+    <p>
+
+        Check the current Pokémon GO event and encounter
+        schedule before planning a specific Gigalith hunt.
+
+    </p>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Shadow availability:
+    </strong>
+
+    <p>
+
+        Shadow Pokémon availability is controlled by Team GO
+        Rocket rotations and events. Avoid permanently stating
+        that Shadow Gigalith is currently obtainable without
+        checking the live Pokémon GO rotation.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     HOW TO USE
+===================================================== -->
+
+<section class="section"
+         id="battle-guide">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        20 — BATTLE GUIDE
+    </span>
+
+    <h2>
+        How to Use Gigalith
+    </h2>
+
+</div>
+
+
+<h3>
+    Before Building Gigalith
+</h3>
+
+
+<ul class="checklist">
+
+    <li>
+        Check your current Rock-type attackers.
+    </li>
+
+    <li>
+        Confirm Gigalith has an appropriate moveset.
+    </li>
+
+    <li>
+        Compare regular, Shadow and Lucky options.
+    </li>
+
+    <li>
+        Check IVs and resource requirements.
+    </li>
+
+    <li>
+        Consider the specific raid boss or PvP format.
+    </li>
+
+</ul>
+
+
+<h3>
+    Long-Term Investment
+</h3>
+
+<p>
+
+    A strong Gigalith can remain a useful member of a
+    Rock-type team, particularly for players who do not yet
+    have a full roster of top-level Rock attackers.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section"
+         id="faq">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        21 — FAQ
+    </span>
+
+    <h2>
+        Gigalith FAQ
+    </h2>
+
+</div>
+
+
+<details>
+
+    <summary>
+        What type is Gigalith?
+    </summary>
+
+    <p>
+        Gigalith is a pure Rock-type Pokémon.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is Gigalith weak to?
+    </summary>
+
+    <p>
+        Gigalith is weak to Water, Grass, Fighting,
+        Ground and Steel attacks.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What does Gigalith evolve from?
+    </summary>
+
+    <p>
+        Gigalith evolves from Boldore and is the final
+        evolution of Roggenrola.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Shiny Gigalith available?
+    </summary>
+
+    <p>
+        Shiny Gigalith can be obtained by evolving eligible
+        Shiny members of its evolution family.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Gigalith good for raids?
+    </summary>
+
+    <p>
+        Gigalith can be a useful Rock-type raid attacker,
+        particularly with a strong Rock-focused moveset.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is the best Gigalith moveset?
+    </summary>
+
+    <p>
+        For a Rock-focused role, Smack Down and Meteor Beam
+        are commonly associated with Gigalith's strongest
+        Rock-oriented performance.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a 100% Gigalith?
+    </summary>
+
+    <p>
+        A 100% Gigalith has perfect 15/15/15 Individual
+        Values.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Shadow Gigalith stronger than regular Gigalith?
+    </summary>
+
+    <p>
+        Shadow Pokémon have a different battle profile with
+        increased offensive pressure and reduced durability,
+        so the better choice depends on the battle role.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Should I purify Shadow Gigalith?
+    </summary>
+
+    <p>
+        Not automatically. Consider your long-term goal before
+        removing the Shadow status.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is Lucky Gigalith?
+    </summary>
+
+    <p>
+        Lucky Gigalith is a Lucky Pokémon obtained through
+        the Pokémon GO trading system and requires less
+        Stardust to power up.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Does XXL Gigalith have stronger stats?
+    </summary>
+
+    <p>
+        XXL classification is based on size and does not
+        automatically provide stronger battle stats.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Does XXS Gigalith have weaker stats?
+    </summary>
+
+    <p>
+        No. XXS status is primarily a size classification and
+        does not automatically reduce Gigalith's battle stats.
+    </p>
+
+</details>
+```
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+```
+<div class="editorial-note">
+
+    <strong>
+        Editorial & data note
+    </strong>
+
+    <p>
+
+        Pokémon Gaming is an independent Pokémon GO
+        information website. Pokémon availability, moves,
+        Shadow rotations, events and game mechanics can
+        change over time.
+
+    </p>
+
+    <p>
+
+        Always verify current in-game information before
+        spending Stardust, Candy XL, Elite TMs or other
+        valuable resources.
+
+    </p>
+
+    <p>
+
+        Pokémon and Pokémon GO are trademarks of their
+        respective owners. This website is intended as an
+        independent informational guide.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+```
+<div class="side-card">
+
+    <h3>
+        Gigalith Guide
+    </h3>
+
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Performance
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#hundred">
+                100% Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Gigalith
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/boldore.html">
+
+        Boldore Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/roggenrola.html">
+
+        Roggenrola Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/rock.html">
+
+        Rock Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-5.html">
+
+        Generation 5 Pokémon →
+
+    </a>
+
+</div>
+
+
+
+<div class="side-card">
+
+    <h3>
+        Gigalith Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>Type:</strong>
+        Rock
+    </p>
+
+
+    <p>
+        <strong>Generation:</strong>
+        5
+    </p>
+
+
+    <p>
+        <strong>Pokédex:</strong>
+        #526
+    </p>
+
+
+    <p>
+        <strong>Evolution:</strong>
+        Final Stage
+    </p>
+
+
+    <p>
+        <strong>Special Forms:</strong>
+        Shiny / Shadow
+    </p>
+
+</div>
+```
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+```
+<div class="footer-inner">
+
+    <p>
+        © 2026 PokémonGaming.in
+    </p>
+
+    <p>
+        Independent Pokémon GO information and guides.
+    </p>
+
+</div>
+```
+
+</footer>
+
+</body>
+
+</html>

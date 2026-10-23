@@ -1,0 +1,4613 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Pidgeot Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses, Shiny, Shadow & Mega</title>
+
+<meta name="description"
+      content="Complete Pidgeot Pokémon GO guide covering Pidgeot stats, Max CP, Flying and Normal typing, weaknesses, resistances, best moves, PvP, raids, Shiny Pidgeot, Shadow Pidgeot, Purified Pidgeot, Lucky Pidgeot, perfect IVs, XXL, XXS and Mega Pidgeot.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/pidgeot.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #8fa2ff;
+    --accent-2: #657cff;
+
+    --normal: #b8a36a;
+    --flying: #78a9e8;
+    --electric: #e5c84a;
+    --rock: #a98a52;
+    --ice: #72d6dc;
+    --ghost: #9275c7;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #e6bd58;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(111,130,255,.11),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(120,169,232,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color:
+        var(--flying);
+
+    background:
+        rgba(120,169,232,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        720px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.flying-tag {
+    color: var(--flying);
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+.mega-tag {
+    color: #ff9bc0;
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(120,169,232,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-number {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(120,169,232,.3);
+
+    background:
+        rgba(120,169,232,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(120,169,232,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--flying);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color:
+        var(--flying);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(120,169,232,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(120,169,232,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align:
+        left;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        14px;
+
+    flex-wrap:
+        wrap;
+
+    margin:
+        20px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+.form-arrow {
+
+    color:
+        var(--accent);
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.special-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        14px;
+
+    margin-top:
+        18px;
+}
+
+.special-card {
+
+    padding:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        16px;
+
+    background:
+        var(--surface-2);
+}
+
+.special-card .special-icon {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        8px;
+}
+
+.special-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1rem;
+}
+
+.special-card span {
+
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:
+        hidden;
+}
+
+.rating-fill {
+
+    height:
+        100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:
+        right;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   SIZE CARDS
+========================================================= */
+
+.size-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        18px;
+}
+
+.size-card {
+
+    padding:
+        22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        16px;
+
+    background:
+        var(--surface-2);
+}
+
+.size-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.15rem;
+}
+
+.size-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.iv-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.6rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =========================================================
+   LUCKY
+========================================================= */
+
+.lucky-box {
+
+    padding:
+        25px;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(230,189,88,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(230,189,88,.3);
+}
+
+.lucky-box strong {
+
+    color:
+        var(--gold);
+
+    font-size:
+        1.25rem;
+}
+
+
+/* =========================================================
+   MEGA
+========================================================= */
+
+.mega-section {
+
+    border:
+        1px solid rgba(255,155,192,.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(100,40,75,.16),
+            var(--surface)
+        );
+}
+
+.mega-banner {
+
+    padding:
+        25px;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #30203c,
+            #16223a
+        );
+
+    border:
+        1px solid rgba(255,155,192,.25);
+
+    margin-bottom:
+        20px;
+}
+
+.mega-banner strong {
+
+    display:
+        block;
+
+    font-size:
+        1.8rem;
+}
+
+.mega-banner span {
+
+    color:
+        #ffabc9;
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .special-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .special-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid,
+    .size-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            6px;
+    }
+
+    .rating-value {
+        text-align:
+            left;
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+
+    .form-tree {
+        flex-direction:
+            column;
+    }
+
+    .form-arrow {
+        transform:
+            rotate(90deg);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">
+Types
+</a>
+
+<a href="/pokedex.html">
+Pokédex
+</a>
+
+<a href="/raids/">
+Raids
+</a>
+
+<a href="/guides/">
+Guides
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">
+Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/flying.html">
+Flying Type
+</a>
+
+<span>›</span>
+
+<strong>
+Pidgeot
+</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+
+<div>
+
+<span class="eyebrow">
+GENERATION 1 • KANTO
+</span>
+
+<h1>
+Pidgeot
+</h1>
+
+<p class="hero-subtitle">
+
+Pidgeot is a Normal- and Flying-type Pokémon
+originally introduced in Generation 1. In Pokémon GO,
+it is known for its high CP potential, Flying-type
+moves and competitive Mega Evolution.
+
+</p>
+
+
+<div class="hero-tags">
+
+<span class="tag normal-tag">
+Normal
+</span>
+
+<span class="tag flying-tag">
+Flying
+</span>
+
+<span class="tag">
+#018
+</span>
+
+<span class="tag">
+Gen 1
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+<span class="tag mega-tag">
+Mega Available
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🦅
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+166
+</strong>
+
+<span>
+ATTACK
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+157
+</strong>
+
+<span>
+DEFENSE
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+195
+</strong>
+
+<span>
+HP
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+~2,129
+</strong>
+
+<span>
+MAX CP
+</span>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     CONTENT
+===================================================== -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<span class="section-number">
+01 • OVERVIEW
+</span>
+
+<h2>
+Pidgeot Overview
+</h2>
+
+<p>
+
+Pidgeot is the final evolutionary stage of the
+Pidgey family. It evolves from Pidgeotto and is a
+dual Normal/Flying-type Pokémon in Pokémon GO.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#018</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 1</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Kanto</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Normal / Flying</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>166</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>157</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>195</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~2,129</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<span class="section-number">
+02 • TYPE
+</span>
+
+<h2>
+Pidgeot Type
+</h2>
+
+</div>
+
+
+<div class="type-box">
+
+<div class="type-icon">
+🪽
+</div>
+
+<div>
+
+<strong>
+Normal / Flying
+</strong>
+
+<span>
+Dual Type Pokémon
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Why Pidgeot's Typing Matters
+</h3>
+
+<p>
+
+Pidgeot's Normal/Flying typing gives it several useful
+resistances, but it also creates important weaknesses
+to Electric, Ice and Rock-type attacks.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<span class="section-number">
+03 • MATCHUPS
+</span>
+
+<h2>
+Pidgeot Weaknesses & Resistances
+</h2>
+
+</div>
+
+
+<h3>
+Weaknesses
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+⚡
+</div>
+
+<strong>
+Electric
+</strong>
+
+<p>
+Electric attacks deal super-effective damage.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+❄️
+</div>
+
+<strong>
+Ice
+</strong>
+
+<p>
+Ice-type attacks are super effective against Pidgeot.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock
+</strong>
+
+<p>
+Rock-type attackers can exploit Pidgeot's Flying typing.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Resistances
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🌿
+</div>
+
+<strong>
+Grass
+</strong>
+
+<p>
+Pidgeot resists Grass-type attacks.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🐞
+</div>
+
+<strong>
+Bug
+</strong>
+
+<p>
+Bug-type attacks are resisted.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+👻
+</div>
+
+<strong>
+Ghost
+</strong>
+
+<p>
+Pidgeot's Normal typing provides useful Ghost resistance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<span class="section-number">
+04 • STATS
+</span>
+
+<h2>
+Pidgeot Stats & Max CP
+</h2>
+
+<p>
+
+Pidgeot has a balanced stat profile with respectable
+bulk and a maximum CP that makes it more relevant in
+certain CP-limited formats than its raw raid performance
+might suggest.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>166</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>157</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>195</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~2,129</strong>
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Database note:
+</strong>
+
+<p>
+
+CP depends on the Pokémon's level and IVs. Do not use
+displayed CP alone to determine whether a Pidgeot has
+perfect IVs.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<span class="section-number">
+05 • MOVES
+</span>
+
+<h2>
+Pidgeot Best Moves
+</h2>
+
+<p>
+
+Pidgeot has access to Normal- and Flying-oriented moves.
+The ideal moveset depends on whether you are using it
+for PvP, raids or general gameplay.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+PvP-Oriented Build
+</strong>
+
+<p>
+Gust + Feather Dance + Brave Bird
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Move
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Category
+</th>
+
+<th>
+Role
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td class="move-name">
+Gust
+</td>
+
+<td class="move-type">
+Flying
+</td>
+
+<td>
+Fast Move
+</td>
+
+<td>
+Flying pressure
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Feather Dance
+</td>
+
+<td class="move-type">
+Flying
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+PvP debuff
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Brave Bird
+</td>
+
+<td class="move-type">
+Flying
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+High-damage option
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="editorial-note">
+
+Move availability can change through events and
+move updates. Check current Pokémon GO data before
+publishing a time-sensitive moveset recommendation.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<span class="section-number">
+06 • RAID PERFORMANCE
+</span>
+
+<h2>
+Is Pidgeot Good for Raids?
+</h2>
+
+<p>
+
+Regular Pidgeot is generally more useful for its
+other gameplay roles than as a top-tier Flying raid
+attacker. Mega Pidgeot is the more important form to
+consider when evaluating Pidgeot for PvE investment.
+
+</p>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Regular PvE
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:55%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+5.5/10
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Flying Role
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:68%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+6.8/10
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Mega PvE
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:86%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+8.6/10
+</span>
+
+</div>
+
+
+<h3>
+When Should You Power Up Pidgeot?
+</h3>
+
+<p>
+
+Prioritize Pidgeot if you enjoy Great League or Ultra
+League battles, need a Mega Pidgeot, or want to build
+a complete Pidgey family collection.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+<div class="section-heading">
+
+<span class="section-number">
+07 • COUNTERS
+</span>
+
+<h2>
+What Counters Pidgeot?
+</h2>
+
+<p>
+
+Electric, Ice and Rock-type attackers are the primary
+counter categories against Pidgeot.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⚡
+</div>
+
+<strong>
+Electric Attackers
+</strong>
+
+<p>
+Fast Electric attackers can exploit Pidgeot's weakness.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+❄️
+</div>
+
+<strong>
+Ice Attackers
+</strong>
+
+<p>
+Ice attacks deal super-effective damage.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock Attackers
+</strong>
+
+<p>
+Rock-type Pokémon can punish Pidgeot's Flying typing.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+<div class="section-heading">
+
+<span class="section-number">
+08 • IV GUIDE
+</span>
+
+<h2>
+100% IV Pidgeot
+</h2>
+
+<p>
+
+A perfect Pidgeot has 15 Attack, 15 Defense and
+15 HP IVs. However, the ideal IV spread depends on
+the league or role in which you plan to use it.
+
+</p>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Perfect Pidgeot
+</h3>
+
+<p>
+
+A 15/15/15 Pidgeot is a perfect-IV specimen.
+For CP-limited PvP formats, however, a lower Attack
+IV can sometimes be preferable because it allows
+more investment in Defense and HP before reaching
+the league's CP limit.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<span class="section-number">
+09 • PVP
+</span>
+
+<h2>
+Pidgeot PvP Guide
+</h2>
+
+</div>
+
+
+<h3>
+Great League
+</h3>
+
+<p>
+
+Pidgeot can be useful in CP-limited PvP because its
+Flying typing, debuff pressure and charged-move options
+can create difficult matchups for opponents.
+
+</p>
+
+
+<h3>
+Ultra League
+</h3>
+
+<p>
+
+Pidgeot can also be considered in Ultra League when
+built around an appropriate moveset and IV spread.
+Its performance depends heavily on the current meta.
+
+</p>
+
+
+<h3>
+Master League
+</h3>
+
+<p>
+
+Pidgeot is generally less natural for Master League
+than for lower CP-limited formats because of its
+maximum stat ceiling.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<span class="section-number">
+10 • SHINY
+</span>
+
+<h2>
+Shiny Pidgeot
+</h2>
+
+<p>
+
+Shiny Pidgeot is an alternate-color version of Pidgeot.
+Its Shiny status is preserved when applicable through
+its evolution line.
+
+</p>
+
+</div>
+
+
+<div class="special-grid">
+
+
+<div class="special-card">
+
+<div class="special-icon">
+✨
+</div>
+
+<strong>
+Shiny Pidgeot
+</strong>
+
+<span>
+Alternate coloration
+</span>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="special-icon">
+✨🪽
+</div>
+
+<strong>
+Shiny Evolution
+</strong>
+
+<span>
+Evolved from Shiny Pidgeotto
+</span>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="special-icon">
+💎
+</div>
+
+<strong>
+Collector Value
+</strong>
+
+<span>
+Useful for completing the Pidgey family collection
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<span class="section-number">
+11 • SHADOW
+</span>
+
+<h2>
+Shadow Pidgeot
+</h2>
+
+<p>
+
+Shadow Pidgeot is a Shadow version of Pidgeot with
+the standard Shadow battle mechanics. It should be
+evaluated separately from regular Pidgeot because
+Shadow Pokémon trade durability for increased damage.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+Shadow Pidgeot
+</strong>
+
+<p>
+
+A separate investment option for players who obtain
+Shadow Pidgeot through eligible Team GO Rocket content.
+
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Regular
+</th>
+
+<th>
+Shadow
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Species
+</td>
+
+<td>
+Pidgeot
+</td>
+
+<td>
+Pidgeot
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Typing
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shadow Bonus
+</td>
+
+<td>
+No
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Defensive Trade-off
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Reduced durability
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Frustration
+</td>
+
+<td>
+Not applicable
+</td>
+
+<td>
+May require an eligible opportunity to replace
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<h3>
+Shadow Pidgeot Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+<strong>⚡ Electric</strong>
+<p>Super effective.</p>
+</div>
+
+<div class="effect-card weakness">
+<strong>❄️ Ice</strong>
+<p>Super effective.</p>
+</div>
+
+<div class="effect-card weakness">
+<strong>🪨 Rock</strong>
+<p>Super effective.</p>
+</div>
+
+</div>
+
+
+<h3>
+Should You Purify Shadow Pidgeot?
+</h3>
+
+<p>
+
+Do not purify automatically. Compare the Shadow,
+purified and regular options based on your intended
+PvP, collection or battle use before making the decision.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<span class="section-number">
+12 • PURIFIED
+</span>
+
+<h2>
+Purified Pidgeot
+</h2>
+
+<p>
+
+Purified Pidgeot is created by purifying an eligible
+Shadow Pidgeot. Purification changes the Pokémon's
+Shadow status and can affect its IVs and resource
+requirements.
+
+</p>
+
+</div>
+
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<div class="special-icon">
+🌟
+</div>
+
+<strong>
+Purified Status
+</strong>
+
+<span>
+Shadow status removed
+</span>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="special-icon">
+⬆️
+</div>
+
+<strong>
+IV Increase
+</strong>
+
+<span>
+Purification can increase each IV by the game's
+purification amount up to the normal IV cap.
+</span>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="special-icon">
+💠
+</div>
+
+<strong>
+Purified Collection
+</strong>
+
+<span>
+Useful for players collecting different Pidgeot forms.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Important:
+</strong>
+
+<p>
+
+Purification is irreversible. If your Shadow Pidgeot
+has special PvP or collection value, compare the
+options before purifying it.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<span class="section-number">
+13 • LUCKY
+</span>
+
+<h2>
+Lucky Pidgeot
+</h2>
+
+</div>
+
+
+<div class="lucky-box">
+
+<strong>
+✨ Lucky Pidgeot
+</strong>
+
+<p>
+
+Lucky Pokémon have a special background and benefit
+from reduced Stardust costs for power-ups. A Lucky
+Pidgeot can therefore be attractive for players who
+want to build a high-level specimen while reducing
+the Stardust burden.
+
+</p>
+
+</div>
+
+
+<h3>
+Lucky Pidgeot IVs
+</h3>
+
+<p>
+
+Lucky Pokémon have a minimum IV floor. A Lucky Pidgeot
+does not automatically have perfect IVs, so check its
+actual Attack, Defense and HP IVs before investing.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+<div class="section-heading">
+
+<span class="section-number">
+14 • PERFECT IV
+</span>
+
+<h2>
+100% IV Pidgeot
+</h2>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Attack</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Defense</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+
+<p>
+
+A 100% IV Pidgeot has a 15/15/15 IV combination.
+It is particularly appealing to collectors and
+players who want a perfect entry in their Pokédex.
+
+</p>
+
+<div class="best-move">
+
+<strong>
+Perfect Pidgeot Checklist
+</strong>
+
+<p>
+
+15 Attack + 15 Defense + 15 HP = 100% IV.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<span class="section-number">
+15 • SIZE
+</span>
+
+<h2>
+XXL Pidgeot
+</h2>
+
+</div>
+
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<strong>
+📏 XXL Pidgeot
+</strong>
+
+<span>
+Extra-large size classification
+</span>
+
+</div>
+
+
+<div class="size-card">
+
+<strong>
+🏆 Collector Value
+</strong>
+
+<span>
+Useful for size-focused collections and showcases.
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+XXL refers to a size classification rather than an IV
+rating. An XXL Pidgeot can have any IV combination,
+so size and IV quality should be evaluated separately.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<span class="section-number">
+16 • SIZE
+</span>
+
+<h2>
+XXS Pidgeot
+</h2>
+
+</div>
+
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<strong>
+📐 XXS Pidgeot
+</strong>
+
+<span>
+Extra-small size classification
+</span>
+
+</div>
+
+
+<div class="size-card">
+
+<strong>
+🎯 Collection Target
+</strong>
+
+<span>
+Useful for players collecting unusual Pokémon sizes.
+</span>
+
+</div>
+
+</div>
+
+
+<p>
+
+XXS is a size category and does not indicate that a
+Pidgeot has perfect IVs or superior battle performance.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     MEGA
+===================================================== -->
+
+<section class="section mega-section" id="mega">
+
+<div class="section-heading">
+
+<span class="section-number">
+17 • MEGA EVOLUTION
+</span>
+
+<h2>
+Mega Pidgeot
+</h2>
+
+<p>
+
+Mega Pidgeot is the Mega-Evolved form of Pidgeot.
+It is particularly valuable because of its stronger
+combat capabilities and Mega bonuses.
+
+</p>
+
+</div>
+
+
+<div class="mega-banner">
+
+<span>
+SPECIAL FORM
+</span>
+
+<strong>
+Mega Pidgeot
+</strong>
+
+<p>
+
+A temporary Mega Evolution that provides enhanced
+battle performance and team utility.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+SPECIES
+</span>
+
+<strong>
+Pidgeot
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+FORM
+</span>
+
+<strong>
+Mega
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+TYPE
+</span>
+
+<strong>
+Normal / Flying
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+MEGA STATUS
+</span>
+
+<strong>
+Temporary
+</strong>
+
+</div>
+
+</div>
+
+
+<h3>
+What Is Mega Pidgeot?
+</h3>
+
+<p>
+
+Mega Pidgeot is created by Mega Evolving Pidgeot
+using the appropriate Mega Energy. Mega Evolution
+is temporary and does not create a permanently
+separate Pokémon species.
+
+</p>
+
+
+<h3>
+Mega Pidgeot Raid Role
+</h3>
+
+<div class="rating-row">
+
+<strong>
+Flying PvE
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:86%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+8.6/10
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Team Utility
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:91%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+9.1/10
+</span>
+
+</div>
+
+
+<h3>
+Mega Pidgeot Type
+</h3>
+
+<div class="type-box">
+
+<div class="type-icon">
+🪽
+</div>
+
+<div>
+
+<strong>
+Normal / Flying
+</strong>
+
+<span>
+Mega Pidgeot retains its dual typing.
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Mega Pidgeot Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+⚡
+</div>
+
+<strong>
+Electric
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+❄️
+</div>
+
+<strong>
+Ice
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Mega Pidgeot Investment
+</h3>
+
+<ul class="checklist">
+
+<li>
+Keep a strong Pidgeot candidate before spending Mega Energy.
+</li>
+
+<li>
+Check its IVs and moveset.
+</li>
+
+<li>
+Consider whether you need Flying-type Mega support.
+</li>
+
+<li>
+Save Mega Energy for the Mega Evolution you actually plan to use.
+</li>
+
+<li>
+Remember that Mega Evolution is temporary.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<span class="section-number">
+18 • EVOLUTION
+</span>
+
+<h2>
+Pidgeot Evolution Family
+</h2>
+
+<p>
+
+Pidgeot is the final evolution in the Pidgey family.
+
+</p>
+
+</div>
+
+
+<div class="form-tree">
+
+<div class="form-node">
+
+<strong>
+Pidgey
+</strong>
+
+<span>
+Base Pokémon
+</span>
+
+</div>
+
+
+<div class="form-arrow">
+→
+</div>
+
+
+<div class="form-node">
+
+<strong>
+Pidgeotto
+</strong>
+
+<span>
+First Evolution
+</span>
+
+</div>
+
+
+<div class="form-arrow">
+→
+</div>
+
+
+<div class="form-node">
+
+<strong>
+Pidgeot
+</strong>
+
+<span>
+Final Evolution
+</span>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+Mega Pidgeot is a temporary Mega Evolution rather
+than a normal evolutionary stage.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<span class="section-number">
+19 • FORMS
+</span>
+
+<h2>
+Pidgeot Forms Compared
+</h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Form
+</th>
+
+<th>
+Typing
+</th>
+
+<th>
+Special Mechanic
+</th>
+
+<th>
+Main Use
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Regular Pidgeot
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+PvP / Collection
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shiny Pidgeot
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Alternate coloration
+</td>
+
+<td>
+Collection
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shadow Pidgeot
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Shadow mechanics
+</td>
+
+<td>
+Battle / Collection
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Purified Pidgeot
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Purified status
+</td>
+
+<td>
+Collection / Battle
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Lucky Pidgeot
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Reduced Stardust power-up cost
+</td>
+
+<td>
+Investment / Collection
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Mega Pidgeot
+</td>
+
+<td>
+Normal / Flying
+</td>
+
+<td>
+Mega Evolution
+</td>
+
+<td>
+Raids / Mega bonuses
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     RESOURCES
+===================================================== -->
+
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<span class="section-number">
+20 • RESOURCES
+</span>
+
+<h2>
+Pidgeot Candy, XL Candy & Stardust
+</h2>
+
+</div>
+
+
+<p>
+
+Powering up Pidgeot requires Candy, Candy XL and
+Stardust. The amount required depends on the Pokémon's
+level and the type of investment you are making.
+
+</p>
+
+
+<ul class="checklist">
+
+<li>
+Save Pidgey Candy for important evolution and power-up projects.
+</li>
+
+<li>
+Collect Candy XL for high-level Pidgeot investments.
+</li>
+
+<li>
+Use Lucky Pidgeot when Stardust efficiency is important.
+</li>
+
+<li>
+Check the moveset before using valuable resources.
+</li>
+
+<li>
+Consider Mega Pidgeot if you regularly use Flying-type teams.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<span class="section-number">
+21 • AVAILABILITY
+</span>
+
+<h2>
+Pidgeot Availability
+</h2>
+
+</div>
+
+
+<p>
+
+Pidgeot availability depends on the current Pokémon GO
+encounter system, events and evolution opportunities.
+Because event rotations change, current availability
+should be checked before publishing a permanent claim.
+
+</p>
+
+
+<div class="best-move">
+
+<strong>
+Current Availability
+</strong>
+
+<p>
+Update this area using your current Pokémon GO event data.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+<div class="section-heading">
+
+<span class="section-number">
+22 • BATTLE GUIDE
+</span>
+
+<h2>
+How to Use Pidgeot
+</h2>
+
+</div>
+
+
+<h3>
+Before PvP
+</h3>
+
+<ul class="checklist">
+
+<li>
+Check the league CP limit.
+</li>
+
+<li>
+Compare Pidgeot's IV spread with the intended league.
+</li>
+
+<li>
+Choose an appropriate fast and charged move combination.
+</li>
+
+<li>
+Study current meta matchups.
+</li>
+
+</ul>
+
+
+<h3>
+Before Mega Evolution
+</h3>
+
+<ul class="checklist">
+
+<li>
+Check your available Mega Energy.
+</li>
+
+<li>
+Choose a strong Pidgeot candidate.
+</li>
+
+<li>
+Check its moveset.
+</li>
+
+<li>
+Consider the raid's Flying-type matchup.
+</li>
+
+</ul>
+
+
+<h3>
+Long-Term Investment
+</h3>
+
+<p>
+
+A good Pidgeot can be useful for PvP and Mega-related
+gameplay even when regular Pidgeot is not a top-tier
+raid attacker.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL COLLECTION
+===================================================== -->
+
+<section class="section" id="collection">
+
+<div class="section-heading">
+
+<span class="section-number">
+23 • COLLECTION
+</span>
+
+<h2>
+Pidgeot Collection Checklist
+</h2>
+
+</div>
+
+
+<ul class="checklist">
+
+<li>
+Regular Pidgeot
+</li>
+
+<li>
+Shiny Pidgeot
+</li>
+
+<li>
+Shadow Pidgeot
+</li>
+
+<li>
+Purified Pidgeot
+</li>
+
+<li>
+Lucky Pidgeot
+</li>
+
+<li>
+100% IV Pidgeot
+</li>
+
+<li>
+XXL Pidgeot
+</li>
+
+<li>
+XXS Pidgeot
+</li>
+
+<li>
+Mega Pidgeot
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<span class="section-number">
+24 • FAQ
+</span>
+
+<h2>
+Pidgeot FAQ
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+What type is Pidgeot?
+</summary>
+
+<p>
+Pidgeot is a Normal- and Flying-type Pokémon.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Pidgeot weak to?
+</summary>
+
+<p>
+Pidgeot is weak to Electric, Ice and Rock-type attacks.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does Pidgeot evolve?
+</summary>
+
+<p>
+Pidgeot is the final evolution of the Pidgey family.
+It evolves from Pidgeotto.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shiny Pidgeot available?
+</summary>
+
+<p>
+Yes. Shiny Pidgeot can be obtained through eligible
+Shiny encounters and evolution.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shadow Pidgeot available?
+</summary>
+
+<p>
+Shadow availability depends on current Team GO Rocket
+content and Pokémon GO rotations.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a 100% IV Pidgeot?
+</summary>
+
+<p>
+A 100% IV Pidgeot has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a Lucky Pidgeot?
+</summary>
+
+<p>
+A Lucky Pidgeot is a special Pokémon with a reduced
+Stardust cost for power-ups.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is an XXL Pidgeot?
+</summary>
+
+<p>
+XXL Pidgeot is an extra-large size classification.
+It does not automatically indicate perfect IVs.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is an XXS Pidgeot?
+</summary>
+
+<p>
+XXS Pidgeot is an extra-small size classification.
+Size and IV quality are separate characteristics.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Mega Pidgeot good?
+</summary>
+
+<p>
+Mega Pidgeot can be useful for Flying-type raid teams
+and provides Mega-related team bonuses while active.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Pidgeot good for PvP?
+</summary>
+
+<p>
+Pidgeot can be useful in CP-limited PvP formats,
+particularly when equipped with an appropriate moveset.
+Its performance depends on the current metagame.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should I purify Shadow Pidgeot?
+</summary>
+
+<p>
+Not automatically. Compare the Shadow and purified
+versions before making an irreversible decision.
+</p>
+
+</details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO
+information website. Pokémon GO mechanics, moves,
+availability, events, forms and battle rankings can
+change over time. Verify current in-game information
+before making investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their
+respective owners. This website is an independent
+informational resource and is not affiliated with
+Nintendo, Niantic or The Pokémon Company.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+<h3>
+Pidgeot Guide
+</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Pidgeot Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+Stats & Max CP
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses & Resistances
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Best Moves
+</a>
+</li>
+
+<li>
+<a href="#raid">
+Raid Performance
+</a>
+</li>
+
+<li>
+<a href="#pvp">
+PvP
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#perfect">
+100% Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+XXL Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+XXS Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#mega">
+Mega Pidgeot
+</a>
+</li>
+
+<li>
+<a href="#evolution">
+Evolution
+</a>
+</li>
+
+<li>
+<a href="#forms">
+Forms Compared
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+<a class="related-link"
+   href="/pokemon/mega-pidgeot.html">
+
+Mega Pidgeot Guide →
+</a>
+
+<a class="related-link"
+   href="/pokemon-types/flying.html">
+
+Flying Type Hub →
+</a>
+
+<a class="related-link"
+   href="/pokemon/pidgey.html">
+
+Pidgey Guide →
+</a>
+
+<a class="related-link"
+   href="/pokemon/pidgeotto.html">
+
+Pidgeotto Guide →
+</a>
+
+<a class="related-link"
+   href="/pokemon-types/normal.html">
+
+Normal Type Hub →
+</a>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Pidgeot Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Normal / Flying
+</p>
+
+<p>
+<strong>Generation:</strong>
+1
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#018
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Pidgey → Pidgeotto → Pidgeot
+</p>
+
+<p>
+<strong>Special Form:</strong>
+Mega Pidgeot
+</p>
+
+<p>
+<strong>Shiny:</strong>
+Available
+</p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

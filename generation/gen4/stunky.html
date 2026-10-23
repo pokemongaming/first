@@ -1,0 +1,3217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+   content="width=device-width, initial-scale=1.0">
+
+<title>Stunky Pokémon GO Guide — Stats, Moves, IVs, Shiny, Shadow, Purified, Lucky, XXL & XXS</title>
+
+<meta name="description"
+   content="Complete Stunky Pokémon GO guide covering regular Stunky, Shiny Stunky, Shadow Stunky, Purified Stunky, Lucky Stunky, 100% IV Stunky, XXL Stunky and XXS Stunky.">
+
+<meta name="robots"
+   content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/stunky.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #b77cff;
+    --accent-2: #8d4fe0;
+
+    --poison: #b45be8;
+    --dark: #77707f;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --shadow: #7b3cff;
+    --purified: #8ed8ff;
+    --lucky: #f6c85f;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(180,91,232,.14),
+            transparent 32%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding: 35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(180,91,232,.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #15111d,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--poison);
+
+    background:
+        rgba(180,91,232,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.poison-tag {
+    color: var(--poison);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(180,91,232,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =====================================================
+   CONTENT LAYOUT
+===================================================== */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.25rem;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        18px;
+}
+
+.form-card {
+
+    padding:
+        22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+    background:
+        var(--surface-2);
+}
+
+.form-card h3 {
+
+    margin:
+        0 0 8px;
+
+    font-size:
+        1.05rem;
+}
+
+.form-card p {
+
+    font-size:
+        .78rem;
+
+    margin:
+        0;
+}
+
+.form-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin-bottom:
+        14px;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =====================================================
+   SPECIAL FORM STYLES
+===================================================== */
+
+.shiny-card {
+    border-color: rgba(246,200,95,.4);
+}
+
+.shadow-card {
+    border-color: rgba(123,60,255,.45);
+}
+
+.purified-card {
+    border-color: rgba(142,216,255,.45);
+}
+
+.lucky-card {
+    border-color: rgba(246,200,95,.45);
+}
+
+.hundo-card {
+    border-color: rgba(98,216,154,.4);
+}
+
+.xxl-card {
+    border-color: rgba(255,142,92,.4);
+}
+
+.xxs-card {
+    border-color: rgba(143,183,255,.4);
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(180,91,232,.3);
+
+    background:
+        rgba(180,91,232,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(180,91,232,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--poison);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card p {
+
+    font-size:
+        .75rem;
+
+    margin-top:
+        7px;
+
+    margin-bottom:
+        0;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.3);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.3);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color:
+        var(--poison);
+
+    font-weight:
+        800;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(180,91,232,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(180,91,232,.28);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+```
+<div class="header-inner">
+
+    <a href="/" class="logo">
+        Pokémon<span>Gaming</span>
+    </a>
+
+    <nav class="main-nav">
+
+        <a href="/pokemon-types.html">Types</a>
+
+        <a href="/pokedex.html">Pokédex</a>
+
+        <a href="/raids/">Raids</a>
+
+        <a href="/guides/">Guides</a>
+
+        <a href="/tools/">Tools</a>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+```
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+    Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/poison.html">
+    Poison Type
+</a>
+
+<span>›</span>
+
+<strong>
+    Stunky
+</strong>
+```
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+```
+<div class="hero-grid">
+
+    <div>
+
+        <span class="eyebrow">
+            GENERATION 4 • SINNOH
+        </span>
+
+        <h1>
+            Stunky
+        </h1>
+
+        <p class="hero-subtitle">
+
+            Stunky is a Poison and Dark-type Pokémon
+            introduced in Generation 4. In Pokémon GO,
+            it can evolve into Skuntank and is available
+            in several collectible forms, including
+            Shiny, Shadow, Purified, Lucky, XXL and XXS.
+
+        </p>
+
+        <div class="hero-tags">
+
+            <span class="tag poison-tag">
+                Poison
+            </span>
+
+            <span class="tag">
+                Dark
+            </span>
+
+            <span class="tag">
+                #434
+            </span>
+
+            <span class="tag">
+                Gen 4
+            </span>
+
+            <span class="tag">
+                Evolves
+            </span>
+
+            <span class="tag">
+                Shiny Available
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-pokemon">
+
+        <!-- Replace with your licensed Stunky image -->
+
+        <div class="pokemon-placeholder">
+            🦨
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+```
+<div class="quick-stat">
+
+    <strong>
+        121
+    </strong>
+
+    <span>
+        ATTACK
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        90
+    </strong>
+
+    <span>
+        DEFENSE
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        160
+    </strong>
+
+    <span>
+        HP
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        ~1,206
+    </strong>
+
+    <span>
+        MAX CP
+    </span>
+
+</div>
+```
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Stunky Overview
+    </h2>
+
+    <p>
+
+        Stunky is a dual Poison and Dark-type Pokémon
+        from the Sinnoh region. It evolves into Skuntank
+        and is primarily collected as an evolution project,
+        Pokédex entry and special-form Pokémon.
+
+    </p>
+
+</div>
+
+
+<div class="stat-grid">
+
+    <div class="stat-card">
+
+        <span>POKÉDEX</span>
+
+        <strong>#434</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>GENERATION</span>
+
+        <strong>Gen 4</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>REGION</span>
+
+        <strong>Sinnoh</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>TYPE</span>
+
+        <strong>Poison / Dark</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>ATTACK</span>
+
+        <strong>121</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>DEFENSE</span>
+
+        <strong>90</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>HP</span>
+
+        <strong>160</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>MAX CP</span>
+
+        <strong>~1,206</strong>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Stunky Type
+    </h2>
+
+</div>
+
+
+<div class="type-box">
+
+    <div class="type-icon">
+        ☠️
+    </div>
+
+    <div>
+
+        <strong>
+            Poison / Dark
+        </strong>
+
+        <span>
+            Dual Typing
+        </span>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Why Stunky's Typing Matters
+</h3>
+
+<p>
+
+    Stunky's Poison and Dark typing gives it a useful
+    defensive profile with several resistances and a
+    particularly narrow weakness profile. However, its
+    relatively low overall stats mean its evolution,
+    Skuntank, is generally the more important long-term
+    battle investment.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Stunky Weaknesses & Resistances
+    </h2>
+
+</div>
+
+
+<h3>
+    Weaknesses
+</h3>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🌍
+        </div>
+
+        <strong>
+            Ground
+        </strong>
+
+        <p>
+            Ground-type attacks are the primary weakness
+            players should consider when using Stunky.
+        </p>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Useful Resistances
+</h3>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🌿
+        </div>
+
+        <strong>
+            Grass
+        </strong>
+
+        <p>
+            Stunky resists Grass-type attacks.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            👻
+        </div>
+
+        <strong>
+            Ghost
+        </strong>
+
+        <p>
+            Dark typing helps Stunky resist Ghost damage.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🌑
+        </div>
+
+        <strong>
+            Dark
+        </strong>
+
+        <p>
+            Stunky also resists Dark-type attacks.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Stunky Evolution
+    </h2>
+
+    <p>
+
+        Stunky evolves into Skuntank using Stunky Candy.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Stunky → Skuntank
+    </strong>
+
+    <p>
+        Stunky evolves into Skuntank using 50 Candy.
+    </p>
+
+</div>
+
+
+<h3>
+    Should You Evolve Stunky?
+</h3>
+
+<p>
+
+    For most players, Skuntank is the more useful Pokémon
+    for battle-focused projects. However, collectors may
+    want to keep special versions of Stunky before evolving
+    them.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     REGULAR STUNKY
+===================================================== -->
+
+<section class="section" id="regular-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Regular Stunky
+    </h2>
+
+    <p>
+
+        Regular Stunky is the standard version of the
+        Pokémon. It is the base form used for evolution,
+        IV evaluation and most collection projects.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Regular Form
+    </strong>
+
+    <p>
+        The standard version of Stunky with no special
+        Shadow, Purified, Lucky or size classification.
+    </p>
+
+</div>
+
+
+<ul class="checklist">
+
+    <li>
+        Can evolve into Skuntank.
+    </li>
+
+    <li>
+        Can have different IV combinations.
+    </li>
+
+    <li>
+        Can be Shiny when available through eligible encounters.
+    </li>
+
+    <li>
+        Can have XXL or XXS size classification.
+    </li>
+
+    <li>
+        May be worth keeping for a future evolution project.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Shiny Stunky
+    </h2>
+
+    <p>
+
+        Shiny Stunky is the alternate-color version of
+        Stunky. Shiny status is primarily cosmetic and
+        does not automatically improve IVs or battle
+        performance.
+
+    </p>
+
+</div>
+
+
+<div class="form-card shiny-card">
+
+    <div class="form-icon">
+        ✨
+    </div>
+
+    <h3>
+        Shiny Stunky
+    </h3>
+
+    <p>
+
+        A collectible alternate-color version of Stunky.
+        A Shiny Stunky can still have different IVs,
+        sizes and evolution potential.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Should You Evolve Shiny Stunky?
+</h3>
+
+<p>
+
+    If you do not already own Shiny Skuntank, evolving
+    a Shiny Stunky can be useful for completing your
+    Shiny evolution family collection.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Shadow Stunky
+    </h2>
+
+    <p>
+
+        Shadow Stunky is the Shadow version of Stunky.
+        Shadow Pokémon have a different battle profile
+        from their regular counterparts and can require
+        more resources to power up.
+
+    </p>
+
+</div>
+
+
+<div class="form-card shadow-card">
+
+    <div class="form-icon">
+        🌑
+    </div>
+
+    <h3>
+        Shadow Stunky
+    </h3>
+
+    <p>
+
+        Shadow status changes the battle characteristics
+        of Stunky while retaining its Poison and Dark typing.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Shadow Stunky vs Regular Stunky
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Feature</th>
+
+                <th>Regular</th>
+
+                <th>Shadow</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Typing</td>
+
+                <td>Poison / Dark</td>
+
+                <td>Poison / Dark</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Shadow Status</td>
+
+                <td>No</td>
+
+                <td>Yes</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Offensive Profile</td>
+
+                <td>Standard</td>
+
+                <td>Higher damage pressure</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Durability</td>
+
+                <td>Standard</td>
+
+                <td>Reduced</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Purification</td>
+
+                <td>Not applicable</td>
+
+                <td>Possible</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Shadow move note:
+    </strong>
+
+    <p>
+
+        Shadow Pokémon may have Frustration, and the
+        ability to remove it can depend on current
+        Pokémon GO event rules.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Purified Stunky
+    </h2>
+
+    <p>
+
+        Purified Stunky is created by purifying an eligible
+        Shadow Stunky. Purification removes Shadow status
+        and changes the Pokémon into its Purified version.
+
+    </p>
+
+</div>
+
+
+<div class="form-card purified-card">
+
+    <div class="form-icon">
+        ✨
+    </div>
+
+    <h3>
+        Purified Stunky
+    </h3>
+
+    <p>
+
+        A Purified Pokémon no longer receives the Shadow
+        battle characteristics of its previous form.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Should You Purify Shadow Stunky?
+</h3>
+
+<ul class="checklist">
+
+    <li>
+        Consider whether you want to keep the Shadow version.
+    </li>
+
+    <li>
+        Compare the IV change from purification.
+    </li>
+
+    <li>
+        Consider whether you prefer collection value.
+    </li>
+
+    <li>
+        Think about future evolution into Skuntank.
+    </li>
+
+    <li>
+        Do not purify automatically without considering both versions.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Lucky Stunky
+    </h2>
+
+    <p>
+
+        Lucky Stunky is obtained through an eligible Lucky
+        Trade. Lucky Pokémon have special resource benefits
+        when powered up.
+
+    </p>
+
+</div>
+
+
+<div class="form-card lucky-card">
+
+    <div class="form-icon">
+        🍀
+    </div>
+
+    <h3>
+        Lucky Stunky
+    </h3>
+
+    <p>
+
+        Lucky Pokémon are particularly attractive for
+        players who want to reduce the Stardust required
+        for long-term power-up projects.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Lucky Stunky Benefits
+</h3>
+
+<div class="effect-grid">
+
+    <div class="effect-card">
+
+        <strong>
+            Lower Stardust
+        </strong>
+
+        <p>
+            Lucky Pokémon require less Stardust for power-ups.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <strong>
+            Trade Exclusive
+        </strong>
+
+        <p>
+            Lucky status is connected to eligible Pokémon trades.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <p>
+            Lucky Stunky can be a valuable special collection form.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section" id="hundo-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        100% Stunky
+    </h2>
+
+    <p>
+
+        A 100% IV Stunky, often called a Hundo, has the
+        maximum possible Individual Values of 15 Attack,
+        15 Defense and 15 HP.
+
+    </p>
+
+</div>
+
+
+<div class="form-card hundo-card">
+
+    <div class="form-icon">
+        💯
+    </div>
+
+    <h3>
+        100% IV Stunky
+    </h3>
+
+    <p>
+        Perfect IV combination: 15 / 15 / 15.
+    </p>
+
+</div>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <p>
+            Attack IV
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <p>
+            Defense IV
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <p>
+            HP IV
+        </p>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Is a 100% Stunky Worth Keeping?
+</h3>
+
+<p>
+
+    Yes. A perfect IV Stunky is valuable for collectors
+    and can also be considered for evolution into a
+    high-IV Skuntank. However, the best IV spread for
+    competitive PvP can differ from the standard
+    15/15/15 combination.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        XXL Stunky
+    </h2>
+
+    <p>
+
+        XXL Stunky is a larger-than-standard size version
+        of Stunky. Size classification is primarily a
+        collection feature.
+
+    </p>
+
+</div>
+
+
+<div class="form-card xxl-card">
+
+    <div class="form-icon">
+        📏
+    </div>
+
+    <h3>
+        XXL Stunky
+    </h3>
+
+    <p>
+
+        A large Stunky size classification that can be
+        useful for collection goals and eligible Showcase
+        competitions.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Does XXL Stunky Have Better Stats?
+</h3>
+
+<p>
+
+    XXL status does not automatically mean the Pokémon
+    has better IVs, higher Attack or stronger battle
+    performance. Size and IVs are separate characteristics.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs-stunky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        XXS Stunky
+    </h2>
+
+    <p>
+
+        XXS Stunky is an exceptionally small size version
+        of Stunky. It is primarily a collectible size
+        classification.
+
+    </p>
+
+</div>
+
+
+<div class="form-card xxs-card">
+
+    <div class="form-icon">
+        🔎
+    </div>
+
+    <h3>
+        XXS Stunky
+    </h3>
+
+    <p>
+
+        A very small Stunky that may be valuable for
+        collectors interested in unusual size variants.
+
+    </p>
+
+</div>
+
+
+<h3>
+    XXL vs XXS Stunky
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Feature</th>
+
+                <th>XXL</th>
+
+                <th>XXS</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Size</td>
+
+                <td>Very Large</td>
+
+                <td>Very Small</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Battle Stat Bonus</td>
+
+                <td>No automatic bonus</td>
+
+                <td>No automatic bonus</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Collection Value</td>
+
+                <td>High for size collectors</td>
+
+                <td>High for size collectors</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>IV Relationship</td>
+
+                <td>Separate from size</td>
+
+                <td>Separate from size</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     ALL FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+```
+<div class="section-heading">
+
+    <h2>
+        All Stunky Forms
+    </h2>
+
+    <p>
+
+        Stunky can exist in several collectible versions.
+        These forms can have different acquisition methods,
+        visual appearances or gameplay characteristics.
+
+    </p>
+
+</div>
+
+
+<div class="form-grid">
+
+
+    <div class="form-card">
+
+        <div class="form-icon">
+            🦨
+        </div>
+
+        <h3>Regular Stunky</h3>
+
+        <p>
+            Standard version used as the base form.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shiny-card">
+
+        <div class="form-icon">
+            ✨
+        </div>
+
+        <h3>Shiny Stunky</h3>
+
+        <p>
+            Alternate-color collectible version.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow-card">
+
+        <div class="form-icon">
+            🌑
+        </div>
+
+        <h3>Shadow Stunky</h3>
+
+        <p>
+            Shadow battle characteristics.
+        </p>
+
+    </div>
+
+
+    <div class="form-card purified-card">
+
+        <div class="form-icon">
+            💠
+        </div>
+
+        <h3>Purified Stunky</h3>
+
+        <p>
+            Created by purifying an eligible Shadow Stunky.
+        </p>
+
+    </div>
+
+
+    <div class="form-card lucky-card">
+
+        <div class="form-icon">
+            🍀
+        </div>
+
+        <h3>Lucky Stunky</h3>
+
+        <p>
+            Special Pokémon obtained through eligible trades.
+        </p>
+
+    </div>
+
+
+    <div class="form-card hundo-card">
+
+        <div class="form-icon">
+            💯
+        </div>
+
+        <h3>100% Stunky</h3>
+
+        <p>
+            Perfect 15/15/15 IV combination.
+        </p>
+
+    </div>
+
+
+    <div class="form-card xxl-card">
+
+        <div class="form-icon">
+            📏
+        </div>
+
+        <h3>XXL Stunky</h3>
+
+        <p>
+            Exceptionally large size classification.
+        </p>
+
+    </div>
+
+
+    <div class="form-card xxs-card">
+
+        <div class="form-icon">
+            🔎
+        </div>
+
+        <h3>XXS Stunky</h3>
+
+        <p>
+            Exceptionally small size classification.
+        </p>
+
+    </div>
+
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Should You Keep Stunky?
+    </h2>
+
+</div>
+
+
+<ul class="checklist">
+
+    <li>
+        Keep high-IV Stunky for collection or evolution projects.
+    </li>
+
+    <li>
+        Consider evolving useful specimens into Skuntank.
+    </li>
+
+    <li>
+        Keep Shiny Stunky if you collect alternate forms.
+    </li>
+
+    <li>
+        Think carefully before purifying Shadow Stunky.
+    </li>
+
+    <li>
+        Lucky Stunky can be useful for lower-cost investment.
+    </li>
+
+    <li>
+        Keep XXL and XXS variants if you collect rare sizes.
+    </li>
+
+    <li>
+        A 100% IV Stunky is generally worth keeping.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Stunky Availability
+    </h2>
+
+    <p>
+
+        Stunky availability can change through wild spawns,
+        events, eggs, research, encounters and other
+        Pokémon GO content.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Current Availability
+    </strong>
+
+    <p>
+
+        Check the current Pokémon GO event schedule and
+        in-game encounter pool for the latest Stunky
+        availability.
+
+    </p>
+
+</div>
+
+
+<div class="editorial-note">
+
+    Historical encounter methods should be separated from
+    current availability so that old events do not appear
+    to be active.
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Stunky FAQ
+    </h2>
+
+</div>
+
+
+<details>
+
+    <summary>
+        What type is Stunky?
+    </summary>
+
+    <p>
+        Stunky is a Poison and Dark-type Pokémon.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What does Stunky evolve into?
+    </summary>
+
+    <p>
+        Stunky evolves into Skuntank.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        How much Candy does Stunky need to evolve?
+    </summary>
+
+    <p>
+        Stunky evolves into Skuntank using 50 Candy.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Can Stunky be Shiny?
+    </summary>
+
+    <p>
+        Yes, Shiny Stunky can be available through eligible
+        Pokémon GO encounters.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Shadow Stunky different from regular Stunky?
+    </summary>
+
+    <p>
+        Yes. Shadow Stunky has Shadow battle characteristics
+        while retaining Stunky's Poison and Dark typing.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Should I purify Shadow Stunky?
+    </summary>
+
+    <p>
+        Not automatically. Consider the IV changes,
+        collection value and whether you want to retain
+        the Shadow version.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a Lucky Stunky?
+    </summary>
+
+    <p>
+        Lucky Stunky is a Lucky Pokémon obtained through
+        an eligible Pokémon trade.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a 100% Stunky?
+    </summary>
+
+    <p>
+        A 100% Stunky has 15 Attack, 15 Defense and
+        15 HP IVs.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Does XXL Stunky have stronger stats?
+    </summary>
+
+    <p>
+        No. XXL size does not automatically increase
+        Stunky's IVs or battle stats.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Does XXS Stunky have weaker stats?
+    </summary>
+
+    <p>
+        No. XXS size is separate from IVs and standard
+        battle performance.
+    </p>
+
+</details>
+```
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+```
+<div class="editorial-note">
+
+    <strong>
+        Editorial & Data Note
+    </strong>
+
+    <p>
+
+        Pokémon Gaming is an independent Pokémon GO
+        information website. Pokémon availability,
+        moves, events, Shadow rotations and game mechanics
+        can change over time.
+
+    </p>
+
+    <p>
+
+        Always verify current in-game information before
+        making major Stardust, Candy or evolution decisions.
+
+    </p>
+
+    <p>
+
+        Pokémon and Pokémon GO are trademarks of their
+        respective owners. This website is intended as an
+        independent informational resource.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+```
+<div class="side-card">
+
+    <h3>
+        Stunky Guide
+    </h3>
+
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Stunky Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#regular-stunky">
+                Regular Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny-stunky">
+                Shiny Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow-stunky">
+                Shadow Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified-stunky">
+                Purified Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky-stunky">
+                Lucky Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#hundo-stunky">
+                100% Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl-stunky">
+                XXL Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs-stunky">
+                XXS Stunky
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+    <a class="related-link"
+       href="/pokemon/skuntank.html">
+
+        Skuntank Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/poison.html">
+
+        Poison Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/dark.html">
+
+        Dark Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-4.html">
+
+        Gen 4 Pokémon →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Stunky Quick Facts
+    </h3>
+
+    <p>
+        <strong>Type:</strong>
+        Poison / Dark
+    </p>
+
+    <p>
+        <strong>Generation:</strong>
+        4
+    </p>
+
+    <p>
+        <strong>Pokédex:</strong>
+        #434
+    </p>
+
+    <p>
+        <strong>Evolution:</strong>
+        Skuntank
+    </p>
+
+    <p>
+        <strong>Special Forms:</strong>
+        Shiny, Shadow, Purified, Lucky, XXL, XXS
+    </p>
+
+</div>
+```
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+```
+<div class="footer-inner">
+
+    <p>
+        © 2026 PokémonGaming.in
+    </p>
+
+    <p>
+        Independent Pokémon GO information and guides.
+    </p>
+
+</div>
+```
+
+</footer>
+
+</body>
+</html>

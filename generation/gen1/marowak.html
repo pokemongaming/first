@@ -1,0 +1,4719 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Marowak Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Alolan & More
+    </title>
+
+    <meta name="description"
+          content="Complete Marowak Pokémon GO guide covering Marowak stats, Max CP, Ground typing, weaknesses, resistances, best moves, PvP, raids, Shiny Marowak, Shadow Marowak, Purified Marowak, Lucky Marowak, 100% IV, XXL, XXS and Alolan Marowak.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/marowak.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #a982ff;
+            --accent-2: #7655e8;
+
+            --ground: #d6a743;
+            --fire: #ef6b45;
+            --water: #4e9dff;
+            --grass: #5dcf82;
+            --ice: #72d6dc;
+            --electric: #f4c84c;
+            --dark: #8d78a8;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(169,130,255,.11),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.93);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(169,130,255,.18),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #151329,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            color:
+                var(--accent);
+
+            background:
+                rgba(169,130,255,.08);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom:
+                12px;
+        }
+
+        .hero-subtitle {
+
+            max-width:
+                720px;
+
+            font-size:
+                1rem;
+
+            color:
+                #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                800;
+        }
+
+        .ground-tag {
+            color: var(--ground);
+        }
+
+        .fire-tag {
+            color: var(--fire);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height:
+                300px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(169,130,255,.20),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .64rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(214,167,67,.3);
+
+            background:
+                rgba(214,167,67,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(214,167,67,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color:
+                var(--ground);
+
+            font-size:
+                .75rem;
+
+            font-weight:
+                850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+
+            color:
+                var(--ground);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(169,130,255,.11),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(169,130,255,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color:
+                var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           FORM CARDS
+        ===================================================== */
+
+        .form-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 14px;
+
+            margin-top: 20px;
+        }
+
+        .form-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                16px;
+        }
+
+        .form-card .form-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 8px;
+        }
+
+        .form-card strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+        .form-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           SPECIAL BADGES
+        ===================================================== */
+
+        .special-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .special-card {
+
+            padding: 18px;
+
+            text-align: center;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                14px;
+        }
+
+        .special-card .icon {
+
+            font-size: 1.8rem;
+
+            margin-bottom: 7px;
+        }
+
+        .special-card strong {
+
+            display: block;
+
+            font-size: .82rem;
+        }
+
+        .special-card span {
+
+            display: block;
+
+            margin-top: 4px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.7rem;
+        }
+
+        .iv-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding: 8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .special-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:700px) {
+
+            .effect-grid,
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align: left;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+        }
+
+
+        @media(max-width:550px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .stat-grid,
+            .special-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .pokemon-placeholder {
+
+                width: 210px;
+                height: 210px;
+
+                font-size: 5rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/ground.html">
+        Ground Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Marowak
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                POKÉMON GO DATABASE
+            </span>
+
+            <h1>
+                Marowak
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Marowak is a Ground-type Pokémon from the
+                Kanto region and the evolved form of Cubone.
+                Pokémon GO also features Alolan Marowak,
+                giving the species an additional Fire/Ghost
+                form with a very different battle profile.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag ground-tag">
+                    Ground
+                </span>
+
+                <span class="tag">
+                    #105
+                </span>
+
+                <span class="tag">
+                    Gen 1
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Shadow Available
+                </span>
+
+                <span class="tag">
+                    Alolan Form
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🦴
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            144
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            186
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            155
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,488
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CONTENT LAYOUT
+========================================================= -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Overview
+        </h2>
+
+        <p>
+            Marowak is the evolved form of Cubone and is
+            classified as a Ground-type Pokémon. Its relatively
+            defensive stat profile makes it different from many
+            high-Attack Ground attackers.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                Pokédex
+            </span>
+
+            <strong>
+                #105
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Generation
+            </span>
+
+            <strong>
+                Gen 1
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Region
+            </span>
+
+            <strong>
+                Kanto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Type
+            </span>
+
+            <strong>
+                Ground
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Attack
+            </span>
+
+            <strong>
+                144
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Defense
+            </span>
+
+            <strong>
+                186
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                155
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Max CP
+            </span>
+
+            <strong>
+                ~1,488
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌎
+        </div>
+
+        <div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Marowak's Typing Matters
+    </h3>
+
+    <p>
+        Regular Marowak is a pure Ground-type Pokémon.
+        Ground attacks are useful against several important
+        Pokémon types, while Marowak itself has useful
+        defensive interactions against Electric, Poison and
+        Rock attacks.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks deal super-effective
+                damage to regular Ground-type Marowak.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks are also super effective against
+                regular Marowak.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks can exploit Marowak's
+                Ground typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Ground-type Marowak is resistant to Electric
+                attacks and has an important immunity interaction
+                with Electric damage in Pokémon GO.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Poison-type attacks are resisted by Ground-type
+                Marowak.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks are resisted by Marowak's
+                Ground typing.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Stats & Max CP
+        </h2>
+
+        <p>
+            Marowak has noticeably higher Defense than Attack,
+            making it more of a defensive or specialized Pokémon
+            than a top general-purpose Ground attacker.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                144
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                186
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                155
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~1,488
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+            CP depends on the Pokémon's level and IVs.
+            Max CP values should be checked against your current
+            Pokémon GO data source before publishing.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Best Moves
+        </h2>
+
+        <p>
+            Marowak's preferred moveset depends on whether
+            you are building it for raids, gyms or PvP.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Ground-Focused Build
+        </strong>
+
+        <p>
+            Use a current Ground-oriented moveset when
+            Marowak is being used specifically for Ground damage.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Mud Slap
+                    </td>
+
+                    <td class="move-type">
+                        Ground
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Ground damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Bone Club
+                    </td>
+
+                    <td class="move-type">
+                        Ground
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Ground coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Earthquake
+                    </td>
+
+                    <td class="move-type">
+                        Ground
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Heavy Ground damage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through events, move
+        updates and Elite TM availability. Check the current
+        Pokémon GO moveset before making a time-sensitive
+        recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak for Raids
+        </h2>
+
+        <p>
+            Regular Marowak is generally a specialized option
+            rather than a first-choice Ground attacker for
+            high-level raid teams.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:55%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            5.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:78%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            7.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Ground Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:55%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            5.5/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Marowak?
+    </h3>
+
+    <p>
+        For most players, Marowak is better suited to collection,
+        Pokédex completion and specialized PvP use than as a
+        major raid investment. Stronger Ground attackers are
+        generally available for dedicated PvE teams.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 COUNTERS
+========================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <h2>
+            What Counters Marowak?
+        </h2>
+
+        <p>
+            Regular Marowak is weak to Water, Grass and Ice
+            attacks.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water Attackers
+            </strong>
+
+            <p>
+                Water-type attackers can exploit Marowak's
+                Ground weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass Attackers
+            </strong>
+
+            <p>
+                Grass-type attacks are super effective against
+                regular Marowak.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice Attackers
+            </strong>
+
+            <p>
+                Ice-type attacks also deal super-effective
+                damage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak IV Guide
+        </h2>
+
+        <p>
+            Individual Values add extra Attack, Defense and HP
+            points to a Pokémon. A 15/15/15 Marowak is considered
+            a perfect IV specimen.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% IV Marowak
+    </h3>
+
+    <p>
+        A 15/15/15 Marowak is a 100% IV or Hundo Marowak.
+        A perfect specimen is particularly useful for collectors
+        and players who want the highest possible IV combination.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Hundo Marowak
+        </strong>
+
+        <p>
+            15 Attack + 15 Defense + 15 HP = 100% IV.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     09 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak PvP Guide
+        </h2>
+
+        <p>
+            Marowak's lower maximum CP makes it more naturally
+            suited to CP-limited formats than Master League.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+        Marowak can be considered for Great League and other
+        limited formats where its Ground typing, defensive
+        profile and available moves provide useful matchup
+        opportunities.
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+        Marowak can also appear in specialized Ultra League
+        environments, although its effectiveness depends heavily
+        on the current format, moveset and opponent lineup.
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Regular Marowak's CP ceiling makes it a poor fit for
+        unrestricted Master League competition compared with
+        higher-stat Pokémon.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     10 SHADOW MAROWAK
+========================================================= -->
+
+<section class="section" id="shadow-marowak">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Marowak
+        </h2>
+
+        <p>
+            Shadow Marowak is a special Shadow version of
+            Marowak. Shadow Pokémon trade some defensive
+            durability for increased offensive pressure.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                SPECIES
+            </span>
+
+            <strong>
+                Marowak
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Ground
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Shadow
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                EVOLUTION
+            </span>
+
+            <strong>
+                None
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Marowak vs Regular Marowak
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Offensive Pressure
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Durability
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Marowak IVs
+    </h3>
+
+    <p>
+        A Shadow Pokémon does not need to have perfect IVs to
+        be useful. Evaluate its IVs together with moves,
+        resources and the role you want it to perform.
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration reminder:
+        </strong>
+
+        <p>
+            Shadow Pokémon can have Frustration as their
+            Charged Move. Check current Team GO Rocket events
+            before planning a Charged TM change.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified-marowak">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Marowak
+        </h2>
+
+        <p>
+            A Shadow Marowak can be purified when eligible.
+            Purification changes the Pokémon's status and
+            provides the usual purification benefits.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Purified Status
+            </strong>
+
+            <p>
+                The Pokémon is no longer Shadow after
+                purification.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💎
+            </div>
+
+            <strong>
+                IV Increase
+            </strong>
+
+            <p>
+                Purification increases each IV by the
+                applicable purification amount, subject to
+                the 15-IV maximum.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏷️
+            </div>
+
+            <strong>
+                Purified Ribbon
+            </strong>
+
+            <p>
+                The Pokémon receives the Purified status
+                associated with purification.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Marowak?
+    </h3>
+
+    <p>
+        Do not purify automatically. Compare the value of
+        retaining the Shadow form against the benefits of
+        purification before making the decision.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     12 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Marowak
+        </h2>
+
+        <p>
+            Shiny Marowak has an alternate coloration and is
+            a desirable collector's version of the Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Marowak
+            </strong>
+
+            <span>
+                Alternate coloration
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                🦴
+            </div>
+
+            <strong>
+                Ground Type
+            </strong>
+
+            <span>
+                Same typing
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                💯
+            </div>
+
+            <strong>
+                Shiny Hundo
+            </strong>
+
+            <span>
+                15/15/15 IV
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                🎯
+            </div>
+
+            <strong>
+                Collector Value
+            </strong>
+
+            <span>
+                Rare variant target
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     13 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Marowak
+        </h2>
+
+        <p>
+            Lucky Marowak is obtained through Pokémon GO's
+            trading system. Lucky Pokémon have a guaranteed
+            minimum IV floor and require less Stardust to
+            power up.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <p>
+                Trading can result in Marowak becoming a
+                Lucky Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Lower Stardust Cost
+            </strong>
+
+            <p>
+                Lucky Pokémon require less Stardust for
+                power-ups.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📊
+            </div>
+
+            <strong>
+                Minimum IV Floor
+            </strong>
+
+            <p>
+                Lucky Pokémon have a guaranteed minimum IV
+                floor after a successful Lucky trade.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Lucky Hundo Marowak
+    </h3>
+
+    <p>
+        A Lucky Marowak with 15/15/15 IVs combines the
+        collectible value of a Hundo with the benefits of
+        Lucky status.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     14 HUNDO
+========================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% IV Marowak
+        </h2>
+
+        <p>
+            A 100% IV Marowak has perfect Attack, Defense and
+            HP IVs.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% / Hundo Marowak
+        </strong>
+
+        <p>
+            Perfect IV combination: 15 Attack / 15 Defense /
+            15 HP.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     15 XXL & XXS
+========================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL & XXS Marowak
+        </h2>
+
+        <p>
+            Pokémon GO can classify individual Pokémon by size.
+            XXL and XXS Marowak can be especially interesting
+            for collectors and showcase participation.
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="icon">
+                📏
+            </div>
+
+            <strong>
+                XXL Marowak
+            </strong>
+
+            <span>
+                Extra-large size
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                🔎
+            </div>
+
+            <strong>
+                XXS Marowak
+            </strong>
+
+            <span>
+                Extra-small size
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                🏆
+            </div>
+
+            <strong>
+                Showcase Target
+            </strong>
+
+            <span>
+                Size can matter
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                🎒
+            </div>
+
+            <strong>
+                Collection
+            </strong>
+
+            <span>
+                Useful for collectors
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        XXL Marowak
+    </h3>
+
+    <p>
+        An XXL Marowak is classified as an extra-large
+        individual. Its size can make it useful for eligible
+        Pokémon GO Showcases.
+    </p>
+
+
+    <h3>
+        XXS Marowak
+    </h3>
+
+    <p>
+        An XXS Marowak is an extra-small individual. Like XXL
+        Pokémon, XXS specimens can be desirable for collectors
+        and certain size-related features.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     16 ALOLAN MAROWAK
+========================================================= -->
+
+<section class="section" id="alolan">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            REGIONAL FORM
+        </span>
+
+        <h2>
+            Alolan Marowak
+        </h2>
+
+        <p>
+            Alolan Marowak is a regional form with a completely
+            different typing from regular Marowak. It is
+            Fire/Ghost instead of Ground.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                Pokédex
+            </span>
+
+            <strong>
+                #105
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Form
+            </span>
+
+            <strong>
+                Alolan
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Type
+            </span>
+
+            <strong>
+                Fire / Ghost
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Region
+            </span>
+
+            <strong>
+                Alola
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Regular vs Alolan Marowak
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Marowak
+                    </th>
+
+                    <th>
+                        Alolan Marowak
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Fire / Ghost
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Region
+                    </td>
+
+                    <td>
+                        Kanto
+                    </td>
+
+                    <td>
+                        Alola
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Evolution Family
+                    </td>
+
+                    <td>
+                        Cubone → Marowak
+                    </td>
+
+                    <td>
+                        Alolan Cubone evolution
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Identity
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Fire / Ghost
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Alolan Marowak Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attacks can exploit Alolan Marowak's
+                Ghost typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Ground attacks are super effective against its
+                Fire typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock attacks can exploit Alolan Marowak's
+                Fire typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water attacks are super effective against its
+                Fire typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Alolan Marowak in PvP
+    </h3>
+
+    <p>
+        Alolan Marowak is considerably more interesting in
+        PvP than regular Marowak because its Fire/Ghost typing
+        and move coverage can create unusual matchup
+        opportunities.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     17 SHINY ALOLAN
+========================================================= -->
+
+<section class="section" id="shiny-alolan">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Alolan Marowak
+        </h2>
+
+        <p>
+            Shiny Alolan Marowak combines the alternate
+            coloration of the Shiny form with the Fire/Ghost
+            Alolan typing.
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <span>
+                Alternate coloration
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <span>
+                Primary typing component
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <span>
+                Secondary typing component
+            </span>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="icon">
+                💎
+            </div>
+
+            <strong>
+                Collector Target
+            </strong>
+
+            <span>
+                Special form + Shiny
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Evolution
+        </h2>
+
+        <p>
+            Marowak evolves from Cubone. Regular Cubone evolves
+            into regular Marowak, while the Alolan form has
+            special regional evolution behavior in Pokémon GO.
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🦴
+            </div>
+
+            <strong>
+                Cubone
+            </strong>
+
+            <span>
+                Base Pokémon
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                →
+            </div>
+
+            <strong>
+                Marowak
+            </strong>
+
+            <span>
+                Ground-type evolution
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🔥
+            </div>
+
+            <strong>
+                Alolan Marowak
+            </strong>
+
+            <span>
+                Fire / Ghost regional form
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Candy Requirement
+    </h3>
+
+    <p>
+        Cubone requires Pokémon GO Candy to evolve into Marowak.
+        Check the current in-game evolution requirement before
+        publishing a numerical value on a live database page.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     19 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+            Powering up Marowak requires Candy and Stardust,
+            while higher-level investment can require Candy XL.
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Cubone Candy for important evolution or
+            power-up projects.
+        </li>
+
+        <li>
+            Collect Candy XL if you intend to build a
+            high-level Marowak.
+        </li>
+
+        <li>
+            Check IVs before committing Stardust.
+        </li>
+
+        <li>
+            Check the current moveset before using Elite TMs.
+        </li>
+
+        <li>
+            Consider whether regular or Alolan Marowak
+            better fits your goals.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     20 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+        Marowak availability can depend on Pokémon GO's
+        wild encounters, events, raids, research and other
+        rotating encounter methods.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Pokémon GO event and encounter
+            schedule before describing Marowak as currently
+            available through a specific method.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     21 SPECIAL FORMS
+========================================================= -->
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Special Forms & Variants
+        </h2>
+
+        <p>
+            Marowak can appear in several collectible variants
+            and forms. Some are visual or status variations,
+            while Alolan Marowak is a distinct regional form
+            with different typing.
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🦴
+            </div>
+
+            <strong>
+                Regular Marowak
+            </strong>
+
+            <span>
+                Ground type
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Marowak
+            </strong>
+
+            <span>
+                Alternate coloration
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Marowak
+            </strong>
+
+            <span>
+                Shadow status
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                💎
+            </div>
+
+            <strong>
+                Purified Marowak
+            </strong>
+
+            <span>
+                Purified status
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Marowak
+            </strong>
+
+            <span>
+                Lucky status
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🔥
+            </div>
+
+            <strong>
+                Alolan Marowak
+            </strong>
+
+            <span>
+                Fire / Ghost
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     22 INVESTMENT
+========================================================= -->
+
+<section class="section" id="investment">
+
+    <div class="section-heading">
+
+        <h2>
+            Should You Invest in Marowak?
+        </h2>
+
+        <p>
+            Marowak is more of a specialized Pokémon than a
+            universal investment. Your decision should depend
+            on whether you prefer PvP, collecting or general
+            Pokédex progression.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                PvP Players
+            </strong>
+
+            <p>
+                Consider Marowak or Alolan Marowak for suitable
+                limited formats and specific team strategies.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📖
+            </div>
+
+            <strong>
+                Collectors
+            </strong>
+
+            <p>
+                Shiny, Lucky, Shadow, Purified, XXL and XXS
+                specimens can make interesting collection goals.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Casual Players
+            </strong>
+
+            <p>
+                Prioritize high-IV or personally useful
+                specimens rather than spending large amounts
+                of resources automatically.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     23 BATTLE GUIDE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Marowak
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Battle
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Identify whether you are using regular or
+            Alolan Marowak.
+        </li>
+
+        <li>
+            Check the Pokémon's typing and opponent weaknesses.
+        </li>
+
+        <li>
+            Confirm the current moveset.
+        </li>
+
+        <li>
+            Consider IVs and level.
+        </li>
+
+        <li>
+            Check whether Shadow status changes your preferred
+            strategy.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For PvP
+    </h3>
+
+    <p>
+        Marowak's value in PvP depends heavily on the league,
+        moveset, shields and current meta. Alolan Marowak
+        should be evaluated separately because its Fire/Ghost
+        typing creates a very different matchup profile.
+    </p>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+        A collection can include Shiny, Shadow, Purified,
+        Lucky, Hundo, XXL and XXS Marowak, as well as Alolan
+        and Shiny Alolan variants.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     24 COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak Variants Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Special Feature
+                    </th>
+
+                    <th>
+                        Main Interest
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Marowak
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Pokédex / PvP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Marowak
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Marowak
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Shadow bonus
+                    </td>
+
+                    <td>
+                        Battle / Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Marowak
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Marowak
+                    </td>
+
+                    <td>
+                        Ground
+                    </td>
+
+                    <td>
+                        Lucky status
+                    </td>
+
+                    <td>
+                        Lower power-up cost
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Alolan Marowak
+                    </td>
+
+                    <td>
+                        Fire / Ghost
+                    </td>
+
+                    <td>
+                        Regional form
+                    </td>
+
+                    <td>
+                        PvP / Collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     25 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Marowak FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Marowak?
+        </summary>
+
+        <p>
+            Regular Marowak is a pure Ground-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Marowak weak to?
+        </summary>
+
+        <p>
+            Regular Marowak is weak to Water, Grass and
+            Ice-type attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Marowak evolve?
+        </summary>
+
+        <p>
+            Marowak is the evolved form of Cubone and does not
+            normally evolve further.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Marowak available?
+        </summary>
+
+        <p>
+            Shiny Marowak can be available through eligible
+            Pokémon GO encounters and events.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Marowak available?
+        </summary>
+
+        <p>
+            Shadow availability depends on Pokémon GO's current
+            Team GO Rocket rotations and encounter rules.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Marowak?
+        </summary>
+
+        <p>
+            A 100% Marowak has 15 Attack, 15 Defense and
+            15 HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Marowak?
+        </summary>
+
+        <p>
+            Lucky Marowak is a Marowak obtained through a trade
+            that results in the Lucky status.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Marowak?
+        </summary>
+
+        <p>
+            XXL Marowak is an extra-large individual that can
+            be relevant for collection and eligible Pokémon GO
+            Showcases.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Marowak?
+        </summary>
+
+        <p>
+            XXS Marowak is an extra-small individual and can
+            be desirable for collectors and size-related
+            features.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Alolan Marowak?
+        </summary>
+
+        <p>
+            Alolan Marowak is Fire/Ghost type, unlike regular
+            Marowak, which is Ground type.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Alolan Marowak good in PvP?
+        </summary>
+
+        <p>
+            Alolan Marowak can have specialized PvP value
+            because of its Fire/Ghost typing and available
+            moves, depending on the current format and meta.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Marowak?
+        </summary>
+
+        <p>
+            Not automatically. Compare the benefits of keeping
+            the Shadow form with the benefits of purification
+            before making the decision.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Hundo Marowak rare?
+        </summary>
+
+        <p>
+            A 15/15/15 Marowak is a perfect-IV specimen.
+            The probability of finding one depends on the
+            encounter method and its applicable IV floor.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Game mechanics, moves,
+            availability, raid rotations, Pokémon forms and
+            other live data can change over time. Verify
+            current in-game information before making
+            investment decisions.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Marowak Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Marowak Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raids
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow-marowak">
+                    Shadow Marowak
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified-marowak">
+                    Purified Marowak
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Marowak
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Marowak
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Marowak
+                </a>
+            </li>
+
+            <li>
+                <a href="#size">
+                    XXL & XXS
+                </a>
+            </li>
+
+            <li>
+                <a href="#alolan">
+                    Alolan Marowak
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/cubone.html">
+
+            Cubone Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/ground.html">
+
+            Ground Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/alolan-marowak.html">
+
+            Alolan Marowak Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/groudon.html">
+
+            Groudon Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/rhyperior.html">
+
+            Rhyperior Guide →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Marowak Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+            Ground
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+            #105
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+            1
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution:
+            </strong>
+            Cubone → Marowak
+        </p>
+
+
+        <p>
+            <strong>
+                Alolan Form:
+            </strong>
+            Yes
+        </p>
+
+
+        <p>
+            <strong>
+                Shiny:
+            </strong>
+            Available
+        </p>
+
+
+        <p>
+            <strong>
+                Shadow:
+            </strong>
+            Event dependent
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

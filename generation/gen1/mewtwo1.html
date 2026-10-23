@@ -1,0 +1,5337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Mewtwo Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shadow, Shiny & Mega Mewtwo X/Y
+    </title>
+
+    <meta name="description"
+          content="Complete Mewtwo Pokémon GO guide covering Mewtwo stats, max CP, weaknesses, resistances, best moves, raids, PvP, Shiny Mewtwo, Shadow Mewtwo, Purified Mewtwo, Lucky Mewtwo, 100% IV, XXL, XXS and Mega Mewtwo X and Y.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/mewtwo.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #9b8cff;
+            --accent-2: #735cff;
+
+            --psychic: #e56aa6;
+            --fighting: #e08a4f;
+
+            --water: #4e9dff;
+            --ghost: #8b6fc4;
+            --bug: #82bd54;
+            --dark: #77707b;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+            --gold: #e5bd5c;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(155,140,255,.13),
+                    transparent 30%
+                ),
+
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            min-height:
+                68px;
+
+            padding:
+                0 20px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+        }
+
+        .logo {
+
+            font-size:
+                1.15rem;
+
+            font-weight:
+                950;
+
+            letter-spacing:
+                -.03em;
+        }
+
+        .logo span {
+            color:
+                var(--accent);
+        }
+
+        .main-nav {
+
+            display:
+                flex;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        .main-nav a {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .8rem;
+
+            font-weight:
+                750;
+        }
+
+        .main-nav a:hover {
+            color:
+                white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-bottom:
+                25px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+        }
+
+        .breadcrumb span {
+            opacity:
+                .5;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            padding:
+                34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(229,106,166,.18),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #171426,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap:
+                30px;
+
+            align-items:
+                center;
+        }
+
+        .eyebrow {
+
+            display:
+                inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            color:
+                var(--psychic);
+
+            background:
+                rgba(229,106,166,.08);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom:
+                12px;
+        }
+
+        .hero-subtitle {
+
+            max-width:
+                720px;
+
+            font-size:
+                1rem;
+
+            color:
+                #c2cad7;
+        }
+
+        .hero-tags {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                800;
+        }
+
+        .psychic-tag {
+            color:
+                var(--psychic);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height:
+                300px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+        .pokemon-placeholder {
+
+            width:
+                260px;
+
+            height:
+                260px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(229,106,166,.22),
+                    transparent 65%
+                );
+
+            font-size:
+                7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                18px;
+        }
+
+        .quick-stat {
+
+            padding:
+                18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .quick-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                1.25rem;
+        }
+
+        .quick-stat span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap:
+                20px;
+
+            margin-top:
+                20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom:
+                20px;
+
+            padding:
+                28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom:
+                20px;
+        }
+
+        .section-number {
+
+            display:
+                block;
+
+            margin-bottom:
+                6px;
+
+            color:
+                var(--accent);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom:
+                9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                10px;
+        }
+
+        .stat-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .64rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                .04em;
+        }
+
+        .stat-card strong {
+
+            display:
+                block;
+
+            margin-top:
+                4px;
+
+            font-size:
+                1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+
+            padding:
+                18px;
+
+            border:
+                1px solid rgba(229,106,166,.3);
+
+            background:
+                rgba(229,106,166,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width:
+                50px;
+
+            height:
+                50px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(229,106,166,.13);
+
+            font-size:
+                1.5rem;
+        }
+
+        .type-box strong {
+            display:
+                block;
+        }
+
+        .type-box span {
+
+            color:
+                var(--psychic);
+
+            font-size:
+                .75rem;
+
+            font-weight:
+                850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                15px;
+        }
+
+        .effect-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size:
+                1.5rem;
+
+            margin-bottom:
+                6px;
+        }
+
+        .effect-card strong {
+            display:
+                block;
+        }
+
+        .effect-card small {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            margin-top:
+                5px;
+        }
+
+        .weakness {
+
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x:
+                auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align:
+                left;
+
+            font-size:
+                .76rem;
+        }
+
+        .data-table th {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .05em;
+        }
+
+        .move-name {
+            font-weight:
+                850;
+        }
+
+        .move-type {
+
+            color:
+                var(--psychic);
+
+            font-weight:
+                800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top:
+                15px;
+
+            padding:
+                18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(229,106,166,.10),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(229,106,166,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap:
+                15px;
+
+            align-items:
+                center;
+
+            padding:
+                12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom:
+                0;
+        }
+
+        .rating-bar {
+
+            height:
+                8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius:
+                99px;
+
+            overflow:
+                hidden;
+        }
+
+        .rating-fill {
+
+            height:
+                100%;
+
+            width:
+                var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius:
+                inherit;
+        }
+
+        .rating-value {
+
+            text-align:
+                right;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                8px;
+
+            margin-top:
+                15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                9px;
+
+            color:
+                #c8cfda;
+
+            font-size:
+                .78rem;
+        }
+
+        .checklist li::before {
+
+            content:
+                "✓";
+
+            margin-right:
+                8px;
+
+            color:
+                var(--success);
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           FORM CARDS
+        ===================================================== */
+
+        .mega-card {
+
+            padding:
+                25px;
+
+            margin-top:
+                20px;
+
+            border-radius:
+                20px;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                var(--surface-2);
+        }
+
+        .mega-x {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(229,106,166,.15),
+                    rgba(224,138,79,.08)
+                );
+        }
+
+        .mega-y {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(155,140,255,.18),
+                    rgba(91,73,170,.08)
+                );
+        }
+
+        .mega-card h3 {
+
+            margin-top:
+                0;
+
+            font-size:
+                1.5rem;
+        }
+
+        .form-badge {
+
+            display:
+                inline-block;
+
+            margin-bottom:
+                10px;
+
+            padding:
+                6px 10px;
+
+            border-radius:
+                999px;
+
+            font-size:
+                .65rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            background:
+                rgba(255,255,255,.07);
+        }
+
+
+        /* =====================================================
+           SPECIAL ATTRIBUTE CARDS
+        ===================================================== */
+
+        .attribute-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                20px;
+        }
+
+        .attribute-card {
+
+            padding:
+                20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .attribute-card .symbol {
+
+            font-size:
+                1.7rem;
+
+            margin-bottom:
+                8px;
+        }
+
+        .attribute-card strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+        .attribute-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+        }
+
+        .gold-card {
+
+            border-color:
+                rgba(229,189,92,.3);
+
+            background:
+                rgba(229,189,92,.06);
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                10px;
+
+            margin-top:
+                15px;
+        }
+
+        .iv-card {
+
+            padding:
+                20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .iv-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1.5rem;
+        }
+
+        .iv-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        /* =====================================================
+           NOTICE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding:
+                17px;
+
+            margin-top:
+                20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position:
+                sticky;
+
+            top:
+                88px;
+
+            align-self:
+                start;
+        }
+
+        .side-card {
+
+            margin-bottom:
+                15px;
+
+            padding:
+                20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size:
+                .9rem;
+        }
+
+        .side-nav {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                4px;
+        }
+
+        .side-nav a {
+
+            display:
+                block;
+
+            padding:
+                8px 10px;
+
+            border-radius:
+                7px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+
+            font-weight:
+                700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color:
+                white;
+        }
+
+        .related-link {
+
+            display:
+                block;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color:
+                var(--muted);
+
+            font-size:
+                .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom:
+                0;
+        }
+
+        .related-link:hover {
+            color:
+                var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom:
+                0;
+        }
+
+        summary {
+
+            cursor:
+                pointer;
+
+            font-weight:
+                850;
+
+            font-size:
+                .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size:
+                .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        footer p {
+
+            margin:
+                0;
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .sidebar {
+                position:
+                    static;
+            }
+
+            .hero-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .hero-pokemon {
+                order:
+                    -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .attribute-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding:
+                    20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .attribute-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    6px;
+            }
+
+            .rating-value {
+                text-align:
+                    left;
+            }
+
+            .main-nav {
+                display:
+                    none;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/psychic.html">
+        Psychic Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Mewtwo
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                PSYCHIC LEGENDARY
+            </span>
+
+            <h1>
+                Mewtwo
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Mewtwo is a powerful Psychic-type Legendary
+                Pokémon from the Kanto region. In Pokémon GO,
+                it is known for its high Attack stat, strong
+                raid potential and important Shadow, Shiny
+                and Mega forms.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag psychic-tag">
+                    Psychic
+                </span>
+
+                <span class="tag">
+                    #150
+                </span>
+
+                <span class="tag">
+                    Legendary
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Shadow Available
+                </span>
+
+                <span class="tag">
+                    Mega X / Y
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🧬
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            300
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            182
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            214
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~4,724
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 — OVERVIEW
+        </span>
+
+        <h2>
+            Mewtwo Overview
+        </h2>
+
+        <p>
+
+            Mewtwo is a pure Psychic-type Legendary Pokémon
+            originally introduced in Generation 1. It does not
+            have a normal evolution chain, but Pokémon GO has
+            special forms including Shadow Mewtwo and the
+            Mega Evolutions Mega Mewtwo X and Mega Mewtwo Y.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                Pokédex
+            </span>
+
+            <strong>
+                #150
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Generation
+            </span>
+
+            <strong>
+                Gen 1
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Region
+            </span>
+
+            <strong>
+                Kanto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Type
+            </span>
+
+            <strong>
+                Psychic
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Attack
+            </span>
+
+            <strong>
+                300
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Defense
+            </span>
+
+            <strong>
+                182
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                214
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Max CP
+            </span>
+
+            <strong>
+                ~4,724
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 — TYPE
+        </span>
+
+        <h2>
+            Mewtwo Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🧠
+        </div>
+
+        <div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Mewtwo's Typing Matters
+    </h3>
+
+    <p>
+
+        Mewtwo's pure Psychic typing gives it a strong
+        offensive identity against Fighting- and Poison-type
+        opponents. At the same time, Dark-, Ghost- and
+        Bug-type attacks can threaten it.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 — MATCHUPS
+        </span>
+
+        <h2>
+            Mewtwo Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attacks are super effective
+                against Psychic-type Mewtwo.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost-type attacks can deal super-effective
+                damage to Mewtwo.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks are also super effective
+                against Mewtwo.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Mewtwo resists Fighting-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Poison-type attacks are resisted by Mewtwo.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 — STATS
+        </span>
+
+        <h2>
+            Mewtwo Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Mewtwo is built around an exceptionally high
+            Attack stat. Its Defense is noticeably lower than
+            its Attack, making moveset, dodging and matchup
+            selection important in raids.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                300
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                182
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                214
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~4,724
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            CP depends on the Pokémon's underlying stats,
+            IVs and level. Do not use displayed CP alone as
+            a substitute for an IV appraisal.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     05 MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 — MOVES
+        </span>
+
+        <h2>
+            Mewtwo Best Moves
+        </h2>
+
+        <p>
+
+            Mewtwo can fill different roles depending on its
+            available moves. Psychic-focused moves are useful
+            when exploiting Psychic-type damage, while
+            coverage moves can give Mewtwo additional utility.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Psychic Raid Role
+        </strong>
+
+        <p>
+            Psycho Cut + Psystrike
+        </p>
+
+    </div>
+
+
+    <h3>
+        Important Mewtwo Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Psycho Cut
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Energy generation
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Confusion
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Psychic damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Psystrike
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Premium Psychic option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Shadow Ball
+                    </td>
+
+                    <td class="move-type">
+                        Ghost
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Legacy move note:
+        </strong>
+
+        <p>
+
+            Some Mewtwo moves, including event or legacy
+            moves, may require Elite TMs or specific event
+            availability. Always verify current move availability
+            before recommending an investment.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     06 RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 — RAID PERFORMANCE
+        </span>
+
+        <h2>
+            Mewtwo Raid Performance
+        </h2>
+
+        <p>
+
+            Mewtwo's extremely high Attack makes it a flexible
+            attacker. Its value depends heavily on the moveset
+            and the matchup being targeted.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Psychic Raids
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:96%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.6/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Attack Power
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:99%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.9/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Coverage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:95%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:75%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            7.5/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Mewtwo?
+    </h3>
+
+    <p>
+
+        Mewtwo is a strong long-term investment candidate
+        when you have a good IV specimen, a useful moveset
+        and enough resources to take it to the level required
+        for your preferred role.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     07 COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 — COUNTERS
+        </span>
+
+        <h2>
+            What Counters Mewtwo?
+        </h2>
+
+        <p>
+
+            Because Mewtwo is a pure Psychic type, Dark,
+            Ghost and Bug attackers are the primary counter
+            categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark Attackers
+            </strong>
+
+            <p>
+
+                Strong Dark-type attackers can exploit
+                Mewtwo's Psychic weakness.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost Attackers
+            </strong>
+
+            <p>
+
+                Ghost attackers can deal super-effective
+                damage against Mewtwo.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug Attackers
+            </strong>
+
+            <p>
+
+                Bug-type attackers can also exploit
+                Mewtwo's weakness.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Exact raid counters can change depending on the boss
+        moveset, weather, Mega or Primal boosts and the current
+        Pokémon GO metagame.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     08 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 — IV GUIDE
+        </span>
+
+        <h2>
+            Mewtwo IV Guide
+        </h2>
+
+        <p>
+
+            A perfect Mewtwo has 15 Attack, 15 Defense and
+            15 HP IVs. However, IV perfection is not required
+            for Mewtwo to be a powerful attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% IV Mewtwo
+    </h3>
+
+    <p>
+
+        A 15/15/15 Mewtwo is commonly called a
+        <strong>100% IV Mewtwo</strong> or hundo.
+        It is especially desirable for collectors,
+        raid investment and players who want a perfect
+        specimen for their Mewtwo collection.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect IV
+        </strong>
+
+        <p>
+            15 Attack / 15 Defense / 15 HP
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     09 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 — PVP
+        </span>
+
+        <h2>
+            Mewtwo PvP Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Mewtwo's high maximum CP and powerful charged moves
+        make it particularly relevant to Master League
+        formats. Its performance depends heavily on the
+        selected moveset, shields and current metagame.
+
+    </p>
+
+
+    <h3>
+        Great League & Ultra League
+    </h3>
+
+    <p>
+
+        Standard Mewtwo's high CP makes the lower CP leagues
+        less natural for conventional builds. League-specific
+        rules and special formats should always be checked.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     10 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 — SHINY
+        </span>
+
+        <h2>
+            Shiny Mewtwo
+        </h2>
+
+        <p>
+
+            Shiny Mewtwo is a special alternate-color version
+            of Mewtwo. Shiny status does not change Mewtwo's
+            base species or typing.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Mewtwo
+            </strong>
+
+            <p>
+                Alternate coloration of Mewtwo.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Type
+            </strong>
+
+            <p>
+                Psychic
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Battle Stats
+            </strong>
+
+            <p>
+                Same species-level stats as regular Mewtwo.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        A Shiny Mewtwo can be especially valuable to collectors,
+        particularly when combined with strong IVs, Lucky status
+        or an eligible special form.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     11 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow-mewtwo">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 — SHADOW
+        </span>
+
+        <h2>
+            Shadow Mewtwo
+        </h2>
+
+        <p>
+
+            Shadow Mewtwo is one of the most notable Shadow
+            Legendary Pokémon because Mewtwo already has an
+            exceptionally high Attack stat.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shadow Mewtwo
+        </strong>
+
+        <p>
+
+            A damage-focused Mewtwo option with the Shadow
+            battle modifier and a higher resource commitment.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Mewtwo vs Regular Mewtwo
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Mewtwo
+                    </td>
+
+                    <td>
+                        Mewtwo
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Modifier
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Offensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Mewtwo Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Mewtwo and Frustration
+    </h3>
+
+    <p>
+
+        Shadow Pokémon can have Frustration as their Charged
+        Move. Whether and when Frustration can be removed
+        depends on Pokémon GO events and current Team GO
+        Rocket mechanics.
+
+    </p>
+
+
+    <h3>
+        Should You Purify Shadow Mewtwo?
+    </h3>
+
+    <p>
+
+        Purification is a strategic choice rather than an
+        automatic upgrade. If your primary goal is maximizing
+        Shadow raid damage, carefully compare the Shadow
+        specimen with the purified result before purifying it.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Compare the Shadow IVs.
+        </li>
+
+        <li>
+            Check the current moveset.
+        </li>
+
+        <li>
+            Consider the Stardust and Candy investment.
+        </li>
+
+        <li>
+            Think about whether you already have strong Psychic attackers.
+        </li>
+
+        <li>
+            Do not purify solely because the purified appraisal improves.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     12 PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 — PURIFIED
+        </span>
+
+        <h2>
+            Purified Mewtwo
+        </h2>
+
+        <p>
+
+            Purified Mewtwo is created when an eligible Shadow
+            Mewtwo is purified. Purification changes its status
+            and appraisal while removing the Shadow mechanic.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🕊️
+            </div>
+
+            <strong>
+                Purified Status
+            </strong>
+
+            <p>
+                Shadow status is removed.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                IV Changes
+            </strong>
+
+            <p>
+                Purification increases each IV by the applicable amount, up to the IV cap.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Resource Benefits
+            </strong>
+
+            <p>
+                Purified Pokémon can have different investment requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Investment warning:
+        </strong>
+
+        <p>
+
+            A Shadow Mewtwo and a Purified Mewtwo should not
+            automatically be considered interchangeable.
+            Decide based on your intended raid, PvP or
+            collection goals.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     13 LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 — LUCKY
+        </span>
+
+        <h2>
+            Lucky Mewtwo
+        </h2>
+
+        <p>
+
+            Lucky Mewtwo is not a separate species or permanent
+            form. Lucky is a special Pokémon status obtained
+            through trading.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+
+        <div class="attribute-card gold-card">
+
+            <div class="symbol">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <span>
+                Special Pokémon status
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <span>
+                Mewtwo typing remains unchanged
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                💫
+            </div>
+
+            <strong>
+                Minimum IVs
+            </strong>
+
+            <span>
+                Lucky trades have special IV floors
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                💰
+            </div>
+
+            <strong>
+                Power-Up Cost
+            </strong>
+
+            <span>
+                Lucky Pokémon receive a Stardust discount
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is Lucky Mewtwo Worth Keeping?
+    </h3>
+
+    <p>
+
+        Yes. A Lucky Mewtwo can be an attractive long-term
+        investment because the Lucky status reduces Stardust
+        costs for power-ups. This can make a strong Lucky
+        Mewtwo especially appealing for players building
+        multiple high-level attackers.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     14 100% MEWTWO
+===================================================== -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 — PERFECT IV
+        </span>
+
+        <h2>
+            100% IV Mewtwo
+        </h2>
+
+        <p>
+
+            A 100% IV Mewtwo has maximum IVs in Attack,
+            Defense and HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% Mewtwo = 15/15/15
+        </strong>
+
+        <p>
+
+            A perfect Mewtwo is commonly called a hundo and
+            is a desirable target for both collectors and
+            competitive players.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     15 XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 — XXL
+        </span>
+
+        <h2>
+            XXL Mewtwo
+        </h2>
+
+        <p>
+
+            XXL Mewtwo is an individual Mewtwo with the XXL
+            size designation. XXL is an individual size
+            attribute rather than a separate species.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                📏
+            </div>
+
+            <strong>
+                XXL Mewtwo
+            </strong>
+
+            <span>
+                Extra-large size designation
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🧠
+            </div>
+
+            <strong>
+                Species
+            </strong>
+
+            <span>
+                Mewtwo
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                ⚔️
+            </div>
+
+            <strong>
+                Battle Stats
+            </strong>
+
+            <span>
+                Size does not create a new species
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🏆
+            </div>
+
+            <strong>
+                Collection
+            </strong>
+
+            <span>
+                Useful for collectors and showcases
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     16 XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 — XXS
+        </span>
+
+        <h2>
+            XXS Mewtwo
+        </h2>
+
+        <p>
+
+            XXS Mewtwo is an individual Mewtwo with the
+            XXS size designation. Like XXL, XXS is a size
+            attribute rather than a separate Pokémon species.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🔹
+            </div>
+
+            <strong>
+                XXS Mewtwo
+            </strong>
+
+            <span>
+                Extra-small size designation
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🧠
+            </div>
+
+            <strong>
+                Species
+            </strong>
+
+            <span>
+                Mewtwo
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                📊
+            </div>
+
+            <strong>
+                Size Attribute
+            </strong>
+
+            <span>
+                Separate from IV appraisal
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🏆
+            </div>
+
+            <strong>
+                Collector Value
+            </strong>
+
+            <span>
+                Useful for special collections
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     17 MEGA MEWTWO
+===================================================== -->
+
+<section class="section" id="mega">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 — MEGA EVOLUTION
+        </span>
+
+        <h2>
+            Mega Mewtwo X & Mega Mewtwo Y
+        </h2>
+
+        <p>
+
+            Mewtwo has two Mega Evolution forms:
+            <strong>Mega Mewtwo X</strong> and
+            <strong>Mega Mewtwo Y</strong>. They have different
+            typings and should be evaluated separately.
+
+        </p>
+
+    </div>
+
+
+    <!-- MEGA X -->
+
+    <div class="mega-card mega-x">
+
+        <span class="form-badge">
+            MEGA FORM
+        </span>
+
+        <h3>
+            Mega Mewtwo X
+        </h3>
+
+        <p>
+
+            Mega Mewtwo X changes Mewtwo's typing to
+            Psychic / Fighting and is built around an
+            exceptionally powerful offensive profile.
+
+        </p>
+
+
+        <div class="stat-grid">
+
+            <div class="stat-card">
+
+                <span>
+                    TYPE
+                </span>
+
+                <strong>
+                    Psychic / Fighting
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    FORM
+                </span>
+
+                <strong>
+                    Mega X
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    ROLE
+                </span>
+
+                <strong>
+                    Offensive
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    MEGA ENERGY
+                </span>
+
+                <strong>
+                    Required
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <h3>
+            Mega Mewtwo X Weaknesses
+        </h3>
+
+
+        <div class="effect-grid">
+
+
+            <div class="effect-card weakness">
+
+                <div class="effect-icon">
+                    👻
+                </div>
+
+                <strong>
+                    Ghost
+                </strong>
+
+            </div>
+
+
+            <div class="effect-card weakness">
+
+                <div class="effect-icon">
+                    🐞
+                </div>
+
+                <strong>
+                    Bug
+                </strong>
+
+            </div>
+
+
+            <div class="effect-card weakness">
+
+                <div class="effect-icon">
+                    🧚
+                </div>
+
+                <strong>
+                    Fairy
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <p>
+
+            Mega Mewtwo X also retains the Psychic-type
+            weaknesses associated with its Psychic typing,
+            while its Fighting typing changes the overall
+            matchup profile.
+
+        </p>
+
+    </div>
+
+
+    <!-- MEGA Y -->
+
+    <div class="mega-card mega-y">
+
+        <span class="form-badge">
+            MEGA FORM
+        </span>
+
+        <h3>
+            Mega Mewtwo Y
+        </h3>
+
+        <p>
+
+            Mega Mewtwo Y remains a pure Psychic-type Pokémon
+            and is designed around exceptional offensive power.
+
+        </p>
+
+
+        <div class="stat-grid">
+
+            <div class="stat-card">
+
+                <span>
+                    TYPE
+                </span>
+
+                <strong>
+                    Psychic
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    FORM
+                </span>
+
+                <strong>
+                    Mega Y
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    ROLE
+                </span>
+
+                <strong>
+                    Psychic Attacker
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    MEGA ENERGY
+                </span>
+
+                <strong>
+                    Required
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <h3>
+            Mega Mewtwo Y Weaknesses
+        </h3>
+
+
+        <div class="effect-grid">
+
+
+            <div class="effect-card weakness">
+
+                <div class="effect-icon">
+                    🌑
+                </div>
+
+                <strong>
+                    Dark
+                </strong>
+
+            </div>
+
+
+            <div class="effect-card weakness">
+
+                <div class="effect-icon">
+                    👻
+                </div>
+
+                <strong>
+                    Ghost
+                </strong>
+
+            </div>
+
+
+            <div class="effect-card weakness">
+
+                <div class="effect-icon">
+                    🐞
+                </div>
+
+                <strong>
+                    Bug
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     18 MEGA COMPARISON
+===================================================== -->
+
+<section class="section" id="mega-comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 — FORM COMPARISON
+        </span>
+
+        <h2>
+            Mewtwo Forms Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Mewtwo
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Mega X
+                    </th>
+
+                    <th>
+                        Mega Y
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                    <td>
+                        Psychic / Fighting
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Mega form
+                    </td>
+
+                    <td>
+                        Mega form
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Form
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Special mechanics
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Primary Role
+                    </td>
+
+                    <td>
+                        Flexible attacker
+                    </td>
+
+                    <td>
+                        Damage-focused
+                    </td>
+
+                    <td>
+                        Psychic/Fighting
+                    </td>
+
+                    <td>
+                        Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Temporary Form
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Mega
+                    </td>
+
+                    <td>
+                        Mega
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     19 FORM TREE
+===================================================== -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 — FORMS
+        </span>
+
+        <h2>
+            Mewtwo Form System
+        </h2>
+
+        <p>
+
+            Mewtwo has no conventional evolution chain.
+            Its notable special forms and attributes are
+            represented separately.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧬
+            </div>
+
+            <strong>
+                Mewtwo
+            </strong>
+
+            <p>
+                Regular Psychic-type form.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Mewtwo
+            </strong>
+
+            <p>
+                Shadow variant.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❌
+            </div>
+
+            <strong>
+                Mega Mewtwo X
+            </strong>
+
+            <p>
+                Psychic / Fighting Mega form.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Mega Mewtwo Y
+            </strong>
+
+            <p>
+                Psychic Mega form.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     20 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 — RESOURCES
+        </span>
+
+        <h2>
+            Mewtwo Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            High-level Mewtwo investment can require a
+            significant amount of Candy, Candy XL and Stardust.
+            Prioritize specimens that fit your long-term goals.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep high-IV Mewtwo for long-term investment.
+        </li>
+
+        <li>
+            Save Candy XL for serious level-up projects.
+        </li>
+
+        <li>
+            Check the moveset before spending Elite TMs.
+        </li>
+
+        <li>
+            Consider Lucky Mewtwo for Stardust-efficient investment.
+        </li>
+
+        <li>
+            Compare Shadow and regular Mewtwo before investing heavily.
+        </li>
+
+        <li>
+            Consider Mega Energy requirements separately.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     21 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 — AVAILABILITY
+        </span>
+
+        <h2>
+            Mewtwo Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Mewtwo availability in Pokémon GO is controlled by
+        events, raids, research and other special rotations.
+        Shadow Mewtwo availability is tied to Team GO Rocket
+        content and related events.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the latest Pokémon GO event and raid schedule
+            before publishing a claim that Mewtwo is currently
+            obtainable.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical Mewtwo appearances should be documented
+        separately from current availability so that older
+        events are not mistaken for current encounter methods.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     22 BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 — BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Mewtwo
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the raid boss's weaknesses.
+        </li>
+
+        <li>
+            Confirm Mewtwo's moveset.
+        </li>
+
+        <li>
+            Check its level and IVs.
+        </li>
+
+        <li>
+            Consider weather and team composition.
+        </li>
+
+        <li>
+            Compare regular and Shadow Mewtwo.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        During Team Building
+    </h3>
+
+    <p>
+
+        Mewtwo should be selected according to the matchup
+        rather than simply because it has a high Attack stat.
+        The best build depends on the target's typing,
+        moveset, weather and the role you want Mewtwo to fill.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        A strong Mewtwo can remain useful for a long time,
+        particularly when paired with a strong legacy or
+        event moveset.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     23 SPECIAL ATTRIBUTES
+===================================================== -->
+
+<section class="section" id="special">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            23 — SPECIAL ATTRIBUTES
+        </span>
+
+        <h2>
+            Shiny, Shadow, Purified, Lucky, XXL & XXS Mewtwo
+        </h2>
+
+        <p>
+
+            These labels should not all be treated as separate
+            Pokémon species. Some describe a form, while others
+            describe an individual Pokémon's status or size.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <span>
+                Alternate coloration
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🌑
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <span>
+                Shadow battle status
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🕊️
+            </div>
+
+            <strong>
+                Purified
+            </strong>
+
+            <span>
+                Purified Shadow Pokémon
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card gold-card">
+
+            <div class="symbol">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <span>
+                Lucky trade status
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                💯
+            </div>
+
+            <strong>
+                100% IV
+            </strong>
+
+            <span>
+                15/15/15 IV combination
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                📏
+            </div>
+
+            <strong>
+                XXL
+            </strong>
+
+            <span>
+                Extra-large size
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🔹
+            </div>
+
+            <strong>
+                XXS
+            </strong>
+
+            <span>
+                Extra-small size
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="symbol">
+                🧬
+            </div>
+
+            <strong>
+                Mega
+            </strong>
+
+            <span>
+                Mega Mewtwo X / Y
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     24 COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            24 — INVESTMENT
+        </span>
+
+        <h2>
+            Which Mewtwo Should You Invest In?
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Raid Players
+            </strong>
+
+            <p>
+
+                Prioritize strong Mewtwo with useful
+                raid moves and consider Shadow or Mega
+                options where appropriate.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏆
+            </div>
+
+            <strong>
+                Collectors
+            </strong>
+
+            <p>
+
+                Shiny, 100%, Lucky, XXL, XXS and special
+                forms can all have collection value.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🛡️
+            </div>
+
+            <strong>
+                PvP Players
+            </strong>
+
+            <p>
+
+                Evaluate the moveset, IVs and current
+                Master League environment before investing.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     25 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            25 — FAQ
+        </span>
+
+        <h2>
+            Mewtwo FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            Is Mewtwo a Legendary Pokémon?
+        </summary>
+
+        <p>
+
+            Yes. Mewtwo is a Legendary Pokémon originally
+            introduced in Generation 1.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Mewtwo?
+        </summary>
+
+        <p>
+
+            Regular Mewtwo is a pure Psychic-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mewtwo weak to?
+        </summary>
+
+        <p>
+
+            Mewtwo is weak to Dark-, Ghost- and Bug-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mewtwo evolve?
+        </summary>
+
+        <p>
+
+            Mewtwo does not have a normal evolution chain.
+            It has two Mega Evolution forms.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Mewtwo available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Mewtwo has been available through
+            eligible Pokémon GO encounters.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Mewtwo good?
+        </summary>
+
+        <p>
+
+            Shadow Mewtwo can be an extremely powerful
+            damage-focused option because of Mewtwo's already
+            high Attack stat.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Mewtwo?
+        </summary>
+
+        <p>
+
+            Not automatically. Compare the Shadow and
+            purified versions according to your raid,
+            PvP and collection goals.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Mewtwo?
+        </summary>
+
+        <p>
+
+            A 100% Mewtwo has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Mewtwo?
+        </summary>
+
+        <p>
+
+            Lucky Mewtwo is a Mewtwo that received Lucky
+            status through trading. Lucky Pokémon have
+            special investment benefits.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Mewtwo?
+        </summary>
+
+        <p>
+
+            XXL Mewtwo is an individual Mewtwo with an
+            extra-large size designation.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Mewtwo?
+        </summary>
+
+        <p>
+
+            XXS Mewtwo is an individual Mewtwo with an
+            extra-small size designation.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Mega Mewtwo X?
+        </summary>
+
+        <p>
+
+            Mega Mewtwo X is Psychic / Fighting type.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Mega Mewtwo Y?
+        </summary>
+
+        <p>
+
+            Mega Mewtwo Y is a pure Psychic-type Mega form.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mega Mewtwo X different from Mega Mewtwo Y?
+        </summary>
+
+        <p>
+
+            Yes. They are different Mega forms with different
+            typings and gameplay characteristics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mewtwo good for raids?
+        </summary>
+
+        <p>
+
+            Mewtwo can be an excellent raid attacker when
+            equipped with the appropriate moveset for the
+            target matchup.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mewtwo good in Master League?
+        </summary>
+
+        <p>
+
+            Mewtwo can have Master League relevance,
+            depending on its moveset, IVs, shields and
+            the current metagame.
+
+        </p>
+
+    </details>
+
+
+</section>
+
+
+<!-- =====================================================
+     26 EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, availability, raid rotations and other
+            game data can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Mewtwo Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Mewtwo Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="#counters">
+                    Counters
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow-mewtwo">
+                    Shadow Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Mewtwo
+                </a>
+            </li>
+
+            <li>
+                <a href="#mega">
+                    Mega Mewtwo X/Y
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/lugia.html">
+
+            Lugia Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/hoopa.html">
+
+            Hoopa Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/psychic.html">
+
+            Psychic Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-1.html">
+
+            Gen 1 Pokémon →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/raids/">
+
+            Pokémon GO Raid Guides →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Mewtwo Quick Facts
+        </h3>
+
+
+        <p>
+
+            <strong>
+                Type:
+            </strong>
+
+            Psychic
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Generation:
+            </strong>
+
+            1
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Pokédex:
+            </strong>
+
+            #150
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Evolution:
+            </strong>
+
+            None
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Mega Forms:
+            </strong>
+
+            X & Y
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Shadow:
+            </strong>
+
+            Available through eligible content
+
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

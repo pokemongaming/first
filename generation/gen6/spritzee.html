@@ -1,0 +1,5193 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Spritzee Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Lucky, XXL & XXS</title>
+
+<meta name="description"
+      content="Complete Spritzee Pokémon GO guide covering stats, max CP, Fairy typing, weaknesses, resistances, best moves, PvP, IVs, Shiny Spritzee, Lucky Spritzee, 100% IV, XXL, XXS, evolution into Aromatisse and more.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/spritzee.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080a12;
+    --bg-soft: #0e111a;
+    --surface: #131722;
+    --surface-2: #191e2b;
+    --surface-3: #232a39;
+
+    --border: #2b3446;
+
+    --text: #f5f7fb;
+    --muted: #aab3c3;
+
+    --accent: #ff8fc8;
+    --accent-2: #ff65ae;
+
+    --fairy: #f08ac2;
+    --psychic: #f56d9b;
+
+    --danger: #ff707d;
+    --success: #63d99b;
+
+    --gold: #e8bd55;
+    --silver: #cbd3df;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(240,138,194,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,10,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding:
+        0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(240,138,194,.18),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            145deg,
+            #171525,
+            #0c1019
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid rgba(240,138,194,.3);
+
+    border-radius: 999px;
+
+    color:
+        var(--fairy);
+
+    background:
+        rgba(240,138,194,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        720px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c6cbd6;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.fairy-tag {
+    color: var(--fairy);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(240,138,194,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+
+    margin-bottom:
+        20px;
+}
+
+.section-kicker {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(240,138,194,.3);
+
+    background:
+        rgba(240,138,194,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(240,138,194,.14);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--fairy);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card small {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    margin-top:
+        5px;
+}
+
+.weakness {
+    border-color:
+        rgba(255,112,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(99,217,155,.25);
+}
+
+.special-card {
+    border-color:
+        rgba(232,189,85,.3);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+
+    overflow-x:
+        auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight:
+        850;
+}
+
+.move-type {
+
+    color:
+        var(--fairy);
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   HIGHLIGHT CARD
+========================================================= */
+
+.highlight-card {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(240,138,194,.11),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(240,138,194,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.highlight-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:
+        hidden;
+}
+
+.rating-fill {
+
+    height:
+        100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:
+        right;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.iv-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.4rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =========================================================
+   IV TABLE
+========================================================= */
+
+.iv-table th,
+.iv-table td {
+
+    padding:
+        12px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .76rem;
+
+    text-align:
+        left;
+}
+
+.iv-table th {
+
+    background:
+        var(--surface-2);
+
+    color:
+        var(--muted);
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        14px;
+
+    flex-wrap:
+        wrap;
+
+    margin:
+        25px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+.form-arrow {
+
+    color:
+        var(--accent);
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   VARIANT CARDS
+========================================================= */
+
+.variant-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        16px;
+
+    margin-top:
+        18px;
+}
+
+.variant-card {
+
+    position:
+        relative;
+
+    padding:
+        23px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        18px;
+
+    background:
+        var(--surface-2);
+
+    overflow:
+        hidden;
+}
+
+.variant-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        120px;
+
+    height:
+        120px;
+
+    right:
+        -45px;
+
+    top:
+        -45px;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(240,138,194,.08);
+}
+
+.variant-icon {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        8px;
+}
+
+.variant-card h3 {
+
+    margin:
+        0 0 7px;
+
+    font-size:
+        1.15rem;
+}
+
+.variant-status {
+
+    display:
+        inline-block;
+
+    padding:
+        5px 9px;
+
+    margin-bottom:
+        10px;
+
+    border-radius:
+        999px;
+
+    font-size:
+        .62rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .05em;
+}
+
+.status-available {
+
+    color:
+        var(--success);
+
+    background:
+        rgba(99,217,155,.08);
+}
+
+.status-special {
+
+    color:
+        var(--gold);
+
+    background:
+        rgba(232,189,85,.08);
+}
+
+.status-unavailable {
+
+    color:
+        #ff9ca5;
+
+    background:
+        rgba(255,112,125,.08);
+}
+
+.status-size {
+
+    color:
+        #b9c7ff;
+
+    background:
+        rgba(143,162,255,.08);
+}
+
+
+/* =========================================================
+   SHINY CARD
+========================================================= */
+
+.shiny-card {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        80px 1fr;
+
+    gap:
+        18px;
+
+    align-items:
+        center;
+
+    padding:
+        22px;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(240,138,194,.12),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid rgba(240,138,194,.25);
+}
+
+.shiny-icon {
+
+    width:
+        70px;
+
+    height:
+        70px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    font-size:
+        2.2rem;
+}
+
+
+/* =========================================================
+   SIZE CARDS
+========================================================= */
+
+.size-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        18px;
+
+    margin-top:
+        18px;
+}
+
+.size-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.size-card.xxl {
+    border-color:
+        rgba(232,189,85,.35);
+}
+
+.size-card.xxs {
+    border-color:
+        rgba(203,211,223,.3);
+}
+
+.size-value {
+
+    font-size:
+        2.3rem;
+
+    font-weight:
+        950;
+
+    margin-bottom:
+        4px;
+}
+
+
+/* =========================================================
+   LUCKY CARD
+========================================================= */
+
+.lucky-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(232,189,85,.13),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid rgba(232,189,85,.3);
+}
+
+.lucky-symbol {
+
+    font-size:
+        2.5rem;
+
+    margin-bottom:
+        8px;
+}
+
+
+/* =========================================================
+   SHADOW/PURIFIED NOTICE
+========================================================= */
+
+.notice {
+
+    padding:
+        20px;
+
+    border-radius:
+        16px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        rgba(255,255,255,.025);
+
+    margin-top:
+        15px;
+}
+
+.notice.warning {
+
+    border-color:
+        rgba(255,112,125,.3);
+
+    background:
+        rgba(255,112,125,.04);
+}
+
+.notice.info {
+
+    border-color:
+        rgba(143,162,255,.3);
+
+    background:
+        rgba(143,162,255,.04);
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom:
+        0;
+}
+
+.related-link:hover {
+    color:
+        var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom:
+        0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06080e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns:
+            1fr;
+    }
+
+    .sidebar {
+        position:
+            static;
+    }
+
+    .hero-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .hero-pokemon {
+        order:
+            -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:700px) {
+
+    .effect-grid,
+    .variant-grid,
+    .size-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            6px;
+    }
+
+    .rating-value {
+        text-align:
+            left;
+    }
+
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+}
+
+
+@media(max-width:550px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .shiny-card {
+        grid-template-columns:
+            1fr;
+    }
+
+    .form-tree {
+        flex-direction:
+            column;
+    }
+
+    .form-arrow {
+        transform:
+            rotate(90deg);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main class="page">
+
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/fairy.html">
+        Fairy Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Spritzee
+    </strong>
+
+</div>
+
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                FAIRY TYPE • GENERATION 6
+            </span>
+
+            <h1>
+                Spritzee
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Spritzee is a Fairy-type Pokémon from the Kalos
+                region. In Pokémon GO, it is primarily known as
+                the first stage of the Spritzee evolution family,
+                evolving into Aromatisse with Candy.
+
+                This guide covers Spritzee's stats, weaknesses,
+                moves, IVs, Shiny status, Lucky status, size
+                variants and more.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag fairy-tag">
+                    Fairy
+                </span>
+
+                <span class="tag">
+                    #682
+                </span>
+
+                <span class="tag">
+                    Gen 6
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🧚
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            110
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            113
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            186
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            1,415
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            01 • DATABASE OVERVIEW
+        </span>
+
+        <h2>
+            Spritzee Overview
+        </h2>
+
+        <p>
+
+            Spritzee is a pure Fairy-type Pokémon originally
+            introduced in Generation 6. It is Pokédex number
+            #682 and is part of a two-stage evolutionary family.
+
+            Spritzee evolves into Aromatisse, giving it more
+            importance as a collection and evolution target
+            than as a top-end raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#682</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 6</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Kalos</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Fairy</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>110</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>113</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>186</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>1,415</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Spritzee Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🧚
+        </div>
+
+        <div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <span>
+                Pure Fairy-type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Spritzee's Typing Matters
+    </h3>
+
+    <p>
+
+        Fairy typing gives Spritzee a useful defensive profile
+        against several common attack types. It also gives
+        Spritzee access to the offensive strengths associated
+        with Fairy-type damage.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            03 • TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Spritzee Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Poison-type attacks deal super-effective
+                damage to Fairy-type Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Steel-type attacks are also super effective
+                against Spritzee.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon
+            </strong>
+
+            <p>
+                Fairy Pokémon have a major defensive advantage
+                against Dragon-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks are resisted by Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attacks are resisted by Fairy-type
+                Pokémon.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Spritzee is a pure Fairy type, so its standard
+        weaknesses and resistances come directly from the
+        Fairy type matchup chart.
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            04 • BASE STATS
+        </span>
+
+        <h2>
+            Spritzee Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Spritzee has relatively modest offensive stats
+            compared with Pokémon commonly used as high-end
+            raid attackers. Its larger HP stat gives it some
+            additional bulk, while its low maximum CP makes
+            it much more naturally suited to lower-level
+            collection and evolution use.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>110</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>113</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>186</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>1,415</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP depends on the Pokémon's underlying
+            species stats, individual IVs and level. A higher
+            CP does not automatically mean a Pokémon has perfect
+            IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            05 • MOVESET
+        </span>
+
+        <h2>
+            Spritzee Best Moves
+        </h2>
+
+        <p>
+
+            Spritzee's moveset should be evaluated based on
+            whether you are using it for PvP, collection,
+            evolution preparation or general gameplay.
+
+        </p>
+
+    </div>
+
+
+    <div class="highlight-card">
+
+        <strong>
+            Recommended Approach
+        </strong>
+
+        <p>
+
+            Before investing Stardust or Elite resources into
+            Spritzee, check its current move pool and determine
+            whether you intend to use Spritzee itself or evolve
+            it into Aromatisse.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Selection
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                    <th>
+                        Recommendation
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Energy generation / pressure
+                    </td>
+
+                    <td>
+                        Check current move pool
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Damage / shield pressure
+                    </td>
+
+                    <td>
+                        Match to intended format
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fairy Damage
+                    </td>
+
+                    <td>
+                        Fairy-type matchups
+                    </td>
+
+                    <td>
+                        Useful when available
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through Pokémon GO events,
+        move updates and other game changes. Verify the current
+        in-game movepool before publishing a time-sensitive
+        moveset recommendation.
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            06 • PVE
+        </span>
+
+        <h2>
+            Is Spritzee Good for Raids?
+        </h2>
+
+        <p>
+
+            Spritzee is not generally considered a primary
+            high-level raid attacker. Its relatively low
+            maximum CP and offensive stats make it much less
+            attractive for serious PvE investment than stronger
+            Fairy-type options.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:30%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:48%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Moderate
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:82%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Spritzee?
+    </h3>
+
+    <p>
+
+        For most players, Spritzee is better treated as an
+        evolution, Pokédex, Shiny, Lucky or special-size
+        collection target rather than a major Stardust
+        investment.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     COUNTERS
+======================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            07 • BATTLE MATCHUPS
+        </span>
+
+        <h2>
+            What Counters Spritzee?
+        </h2>
+
+        <p>
+
+            Since Spritzee is a pure Fairy type, Poison- and
+            Steel-type attacks are the main super-effective
+            offensive categories against it.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison Attackers
+            </strong>
+
+            <p>
+                Poison-type attacks exploit Spritzee's
+                Fairy typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel Attackers
+            </strong>
+
+            <p>
+                Steel-type attackers can also exploit
+                Spritzee's Fairy weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🛡️
+            </div>
+
+            <strong>
+                Matchup First
+            </strong>
+
+            <p>
+                In PvP, shields, moves and team composition
+                matter as much as type advantage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Spritzee IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add points to Attack, Defense
+            and HP. A perfect Spritzee has 15 Attack, 15
+            Defense and 15 HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Spritzee
+    </h3>
+
+    <p>
+
+        A 15/15/15 Spritzee is a 100% IV Pokémon. Whether
+        that specimen is worth keeping depends on your goals.
+        A perfect Spritzee can be particularly appealing to
+        collectors and players who want a perfect Aromatisse
+        after evolution.
+
+    </p>
+
+
+    <div class="highlight-card">
+
+        <strong>
+            100% Spritzee
+        </strong>
+
+        <p>
+
+            A perfect Level 50 Spritzee reaches approximately
+            1,415 CP. The exact displayed CP at lower levels
+            depends on its level and IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     100% SPRITZEE
+======================================================= -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            09 • PERFECT IV
+        </span>
+
+        <h2>
+            100% Spritzee — Perfect IV Guide
+        </h2>
+
+        <p>
+
+            A 100% Spritzee has the maximum possible IV value:
+            15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card special-card">
+
+            <span>
+                ⚔️
+            </span>
+
+            <strong>
+                Attack
+            </strong>
+
+            <p>
+                15 / 15
+            </p>
+
+        </div>
+
+
+        <div class="effect-card special-card">
+
+            <span>
+                🛡️
+            </span>
+
+            <strong>
+                Defense
+            </strong>
+
+            <p>
+                15 / 15
+            </p>
+
+        </div>
+
+
+        <div class="effect-card special-card">
+
+            <span>
+                ❤️
+            </span>
+
+            <strong>
+                HP
+            </strong>
+
+            <p>
+                15 / 15
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 100% Spritzee?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep it if you collect perfect IV Pokémon.
+        </li>
+
+        <li>
+            Consider evolving it into a perfect Aromatisse.
+        </li>
+
+        <li>
+            Compare its intended PvP role before investing Stardust.
+        </li>
+
+        <li>
+            A perfect IV does not automatically make Spritzee
+            a top raid attacker.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            10 • SHINY
+        </span>
+
+        <h2>
+            Shiny Spritzee
+        </h2>
+
+        <p>
+
+            Shiny Spritzee is the alternate coloration of
+            Spritzee. It can be particularly desirable for
+            collectors and can also be evolved into Shiny
+            Aromatisse.
+
+        </p>
+
+    </div>
+
+
+    <div class="shiny-card">
+
+        <div class="shiny-icon">
+            ✨
+        </div>
+
+        <div>
+
+            <strong>
+                Shiny Spritzee
+            </strong>
+
+            <p>
+
+                Shiny status changes Spritzee's appearance but
+                does not change its species, typing or basic
+                base-stat identity.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Spritzee vs Regular Spritzee
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Spritzee
+                    </td>
+
+                    <td>
+                        Spritzee
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Fairy
+                    </td>
+
+                    <td>
+                        Fairy
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shiny Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Battle Identity
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Same species mechanics
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     LUCKY
+======================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            11 • TRADE STATUS
+        </span>
+
+        <h2>
+            Lucky Spritzee
+        </h2>
+
+        <p>
+
+            Lucky Spritzee is not a separate Pokémon species or
+            permanent alternate form. Lucky is a special status
+            associated with Pokémon obtained through trading.
+
+        </p>
+
+    </div>
+
+
+    <div class="lucky-card">
+
+        <div class="lucky-symbol">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Spritzee
+        </h3>
+
+        <p>
+
+            A Lucky Spritzee can be obtained through a trade that
+            results in the Lucky status. Lucky Pokémon have
+            special visual treatment and reduced Stardust costs
+            for powering up.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Spritzee?
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card special-card">
+
+            <span>
+                🍀
+            </span>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <p>
+                Obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card special-card">
+
+            <span>
+                💎
+            </span>
+
+            <strong>
+                Reduced Stardust Cost
+            </strong>
+
+            <p>
+                Lucky Pokémon require less Stardust to power up.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card special-card">
+
+            <span>
+                🤝
+            </span>
+
+            <strong>
+                Trade Value
+            </strong>
+
+            <p>
+                A Lucky Spritzee can be a useful collection target.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Lucky is a Pokémon status rather than a separate species
+        or evolution. Spritzee can therefore be simultaneously
+        Lucky and Shiny if obtained through an eligible trade.
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     XXL / XXS
+======================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            12 • SIZE VARIANTS
+        </span>
+
+        <h2>
+            XXL & XXS Spritzee
+        </h2>
+
+        <p>
+
+            Pokémon GO can classify individual Pokémon into
+            different size categories. XXL and XXS are individual
+            size characteristics rather than separate species.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card xxl">
+
+            <div class="size-value">
+                XXL
+            </div>
+
+            <h3>
+                XXL Spritzee
+            </h3>
+
+            <p>
+
+                An XXL Spritzee is an unusually large individual.
+                XXL status can be valuable for collectors and
+                size-focused achievements.
+
+            </p>
+
+            <span class="variant-status status-size">
+                LARGE SIZE
+            </span>
+
+        </div>
+
+
+        <div class="size-card xxs">
+
+            <div class="size-value">
+                XXS
+            </div>
+
+            <h3>
+                XXS Spritzee
+            </h3>
+
+            <p>
+
+                An XXS Spritzee is an unusually small individual.
+                XXS status is especially interesting for players
+                collecting size variants.
+
+            </p>
+
+            <span class="variant-status status-size">
+                SMALL SIZE
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Do XXL and XXS Change Battle Stats?
+    </h3>
+
+    <p>
+
+        XXL and XXS classifications should not be treated as
+        alternative species forms with completely different
+        base stats. They are individual size characteristics
+        and are primarily relevant to collection and
+        size-related gameplay features.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     SHADOW
+======================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            13 • SHADOW STATUS
+        </span>
+
+        <h2>
+            Shadow Spritzee
+        </h2>
+
+        <p>
+
+            Shadow Pokémon availability is controlled by
+            Team GO Rocket rotations and events. Spritzee
+            should only be described as an obtainable Shadow
+            Pokémon when current game data confirms that
+            availability.
+
+        </p>
+
+    </div>
+
+
+    <div class="notice warning">
+
+        <strong>
+            Shadow Spritzee Availability
+        </strong>
+
+        <p>
+
+            Do not permanently list Shadow Spritzee as an
+            obtainable Pokémon unless the current Pokémon GO
+            Team GO Rocket roster confirms it.
+
+            If Spritzee is not currently obtainable as a
+            Shadow Pokémon, this section should remain an
+            informational availability notice rather than
+            presenting a fake Shadow form.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        If Shadow Spritzee Becomes Available
+    </h3>
+
+    <p>
+
+        A Shadow Spritzee would retain the underlying Fairy
+        typing of Spritzee while receiving the normal Shadow
+        Pokémon battle mechanics. Its availability, moves,
+        Rocket encounter source and purification requirements
+        should be updated from the current game data.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <span>
+                🌑
+            </span>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <p>
+                Only display as obtainable when confirmed by
+                the current Pokémon GO roster.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <span>
+                🧚
+            </span>
+
+            <strong>
+                Typing
+            </strong>
+
+            <p>
+                Spritzee remains Fairy type.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <span>
+                🚀
+            </span>
+
+            <strong>
+                Source
+            </strong>
+
+            <p>
+                Shadow availability is controlled by Team GO
+                Rocket content and rotations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PURIFIED
+======================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            14 • PURIFIED STATUS
+        </span>
+
+        <h2>
+            Purified Spritzee
+        </h2>
+
+        <p>
+
+            Purified Pokémon are created by purifying eligible
+            Shadow Pokémon. Therefore, Purified Spritzee depends
+            on Shadow Spritzee being available through Pokémon GO.
+
+        </p>
+
+    </div>
+
+
+    <div class="notice info">
+
+        <strong>
+            Purified Spritzee Availability
+        </strong>
+
+        <p>
+
+            A Purified Spritzee cannot exist independently of
+            an eligible Shadow Spritzee. If Shadow Spritzee is
+            not currently obtainable, players cannot newly create
+            a Purified Spritzee during that period.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow → Purified Concept
+    </h3>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Shadow Spritzee
+            </strong>
+
+            <span>
+                Eligible Shadow Pokémon
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Purified Spritzee
+            </strong>
+
+            <span>
+                Purification status
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Purification is a status change rather than an evolution.
+        It should therefore be presented separately from the
+        Spritzee → Aromatisse evolution line.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            15 • EVOLUTION
+        </span>
+
+        <h2>
+            Spritzee Evolution
+        </h2>
+
+        <p>
+
+            Spritzee evolves into Aromatisse. In Pokémon GO,
+            evolution requires Spritzee Candy and follows the
+            game's current evolution requirements.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Spritzee
+            </strong>
+
+            <span>
+                #682 • Fairy
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Aromatisse
+            </strong>
+
+            <span>
+                #683 • Fairy
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Evolution Strategy
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the current Candy requirement before evolving.
+        </li>
+
+        <li>
+            Consider evolving a high-IV Spritzee if IV quality
+            matters to you.
+        </li>
+
+        <li>
+            Keep a Shiny Spritzee if you want a Shiny Aromatisse.
+        </li>
+
+        <li>
+            A Lucky Spritzee can be evolved while retaining its
+            Lucky status.
+        </li>
+
+        <li>
+            XXL and XXS status should be considered if you are
+            building a size collection.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            16 • PVP
+        </span>
+
+        <h2>
+            Spritzee PvP Guide
+        </h2>
+
+        <p>
+
+            Spritzee's relatively low maximum CP makes it more
+            compatible with lower-CP environments than with
+            Master League. However, its actual PvP usefulness
+            depends heavily on the current moveset and cup rules.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Spritzee's CP range makes Great League the most natural
+        standard league to investigate. Before investing,
+        check current rankings, moves and cup restrictions.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Spritzee has a relatively low maximum CP, so it is not
+        naturally suited to reaching the upper CP limits of
+        Ultra League.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Spritzee is not a natural Master League investment because
+        its maximum CP is far below the level normally required
+        for competitive Master League Pokémon.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        PvP recommendations can change when moves are rebalanced
+        or the competitive metagame shifts. Use current league
+        data when publishing rankings.
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CATCH / CP
+======================================================= -->
+
+<section class="section" id="cp">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            17 • CP & IV
+        </span>
+
+        <h2>
+            Spritzee CP & IV Guide
+        </h2>
+
+        <p>
+
+            Spritzee's CP depends on level and IVs. A perfect
+            Spritzee reaches approximately 1,415 CP at Level 50.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="iv-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        IV Combination
+                    </th>
+
+                    <th>
+                        Meaning
+                    </th>
+
+                    <th>
+                        Use
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        15 / 15 / 15
+                    </td>
+
+                    <td>
+                        100% IV
+                    </td>
+
+                    <td>
+                        Perfect collection / investment
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        15 / 14 / 15
+                    </td>
+
+                    <td>
+                        Near-perfect
+                    </td>
+
+                    <td>
+                        Strong collection candidate
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        0 / 15 / 15
+                    </td>
+
+                    <td>
+                        Low Attack / high bulk
+                    </td>
+
+                    <td>
+                        PvP evaluation
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Random IVs
+                    </td>
+
+                    <td>
+                        Wild / event specimen
+                    </td>
+
+                    <td>
+                        General collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="highlight-card">
+
+        <strong>
+            Important PvP Tip
+        </strong>
+
+        <p>
+
+            A 100% IV Pokémon is not automatically the best
+            PvP specimen. Some capped leagues can favor
+            lower Attack IVs and higher Defense/HP combinations.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            18 • RESOURCES
+        </span>
+
+        <h2>
+            Spritzee Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Spritzee Candy is primarily important for evolution
+            and powering up. Candy XL becomes relevant if you
+            decide to build Spritzee for higher-level use.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Candy if you plan to evolve multiple Spritzee.
+        </li>
+
+        <li>
+            Keep high-IV specimens before transferring duplicates.
+        </li>
+
+        <li>
+            Keep Shiny Spritzee if you want a Shiny Aromatisse.
+        </li>
+
+        <li>
+            Lucky Spritzee can reduce Stardust requirements when
+            powering up.
+        </li>
+
+        <li>
+            Keep XXL and XXS specimens if you collect size variants.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            19 • AVAILABILITY
+        </span>
+
+        <h2>
+            Spritzee Availability
+        </h2>
+
+        <p>
+
+            Spritzee's availability can change as Pokémon GO
+            rotates wild encounters, events, eggs, research and
+            other encounter sources.
+
+        </p>
+
+    </div>
+
+
+    <div class="highlight-card">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and encounter
+            schedule before presenting Spritzee as an active
+            wild, research, egg or event encounter.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        What to Record on Your Database
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Current encounter source.
+        </li>
+
+        <li>
+            Historical event appearances.
+        </li>
+
+        <li>
+            Shiny availability.
+        </li>
+
+        <li>
+            Shadow availability.
+        </li>
+
+        <li>
+            Special event availability.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     VARIANT HUB
+======================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            20 • VARIANT DATABASE
+        </span>
+
+        <h2>
+            Spritzee Forms, Statuses & Special Variants
+        </h2>
+
+        <p>
+
+            Not every variation requested by players is a
+            separate Pokémon form. Spritzee can have several
+            different statuses or characteristics that should
+            be represented separately in a database.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🧚
+            </div>
+
+            <span class="variant-status status-available">
+                STANDARD
+            </span>
+
+            <h3>
+                Regular Spritzee
+            </h3>
+
+            <p>
+                Standard Fairy-type Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <span class="variant-status status-available">
+                AVAILABLE
+            </span>
+
+            <h3>
+                Shiny Spritzee
+            </h3>
+
+            <p>
+                Alternate-color Shiny version of Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <span class="variant-status status-unavailable">
+                CHECK CURRENT ROSTER
+            </span>
+
+            <h3>
+                Shadow Spritzee
+            </h3>
+
+            <p>
+                Only display as obtainable when confirmed
+                by current Shadow Pokémon data.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💎
+            </div>
+
+            <span class="variant-status status-unavailable">
+                DEPENDS ON SHADOW
+            </span>
+
+            <h3>
+                Purified Spritzee
+            </h3>
+
+            <p>
+                Requires an eligible Shadow Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <span class="variant-status status-special">
+                TRADE STATUS
+            </span>
+
+            <h3>
+                Lucky Spritzee
+            </h3>
+
+            <p>
+                Lucky status obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <span class="variant-status status-special">
+                IV STATUS
+            </span>
+
+            <h3>
+                100% Spritzee
+            </h3>
+
+            <p>
+                Perfect 15/15/15 IV Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <span class="variant-status status-size">
+                SIZE STATUS
+            </span>
+
+            <h3>
+                XXL Spritzee
+            </h3>
+
+            <p>
+                Unusually large individual Spritzee.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🔬
+            </div>
+
+            <span class="variant-status status-size">
+                SIZE STATUS
+            </span>
+
+            <h3>
+                XXS Spritzee
+            </h3>
+
+            <p>
+                Unusually small individual Spritzee.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            21 • COMPARISON
+        </span>
+
+        <h2>
+            Spritzee Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant / Status
+                    </th>
+
+                    <th>
+                        Separate Species?
+                    </th>
+
+                    <th>
+                        Changes Typing?
+                    </th>
+
+                    <th>
+                        Main Purpose
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Standard Pokémon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shadow battle status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Trade status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Perfect IV
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Small size
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     INVESTMENT
+======================================================= -->
+
+<section class="section" id="investment">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            22 • INVESTMENT
+        </span>
+
+        <h2>
+            Should You Invest in Spritzee?
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <span>
+                🎯
+            </span>
+
+            <strong>
+                Raiders
+            </strong>
+
+            <p>
+
+                Spritzee is generally not a priority for
+                high-level raid investment.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <span>
+                🏆
+            </span>
+
+            <strong>
+                Collectors
+            </strong>
+
+            <p>
+
+                Shiny, Lucky, perfect-IV, XXL and XXS Spritzee
+                can all be valuable collection targets.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <span>
+                ⚔️
+            </span>
+
+            <strong>
+                PvP Players
+            </strong>
+
+            <p>
+
+                Check current league rankings and moves before
+                investing Stardust.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            23 • TRAINER GUIDE
+        </span>
+
+        <h2>
+            How to Use Spritzee
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Decide whether you want Spritzee or Aromatisse.
+        </li>
+
+        <li>
+            Check IVs before evolving.
+        </li>
+
+        <li>
+            Check whether the specimen is Shiny, Lucky,
+            XXL or XXS.
+        </li>
+
+        <li>
+            Check current PvP relevance before spending Stardust.
+        </li>
+
+        <li>
+            Avoid expensive investment solely because the Pokémon
+            has perfect IVs.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Spritzee can be particularly interesting as a collection
+        Pokémon. A collection can include regular, Shiny, Lucky,
+        100% IV, XXL and XXS specimens.
+
+    </p>
+
+
+    <h3>
+        For Evolution
+    </h3>
+
+    <p>
+
+        If your main objective is completing the Pokédex,
+        accumulating enough Candy to evolve Spritzee into
+        Aromatisse is likely more useful than powering up
+        multiple Spritzee.
+
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-kicker">
+            24 • FAQ
+        </span>
+
+        <h2>
+            Spritzee FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Spritzee?
+        </summary>
+
+        <p>
+            Spritzee is a pure Fairy-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Spritzee weak to?
+        </summary>
+
+        <p>
+            Spritzee is weak to Poison- and Steel-type attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What does Spritzee evolve into?
+        </summary>
+
+        <p>
+            Spritzee evolves into Aromatisse.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Spritzee available?
+        </summary>
+
+        <p>
+            Yes. Shiny Spritzee is available through eligible
+            Pokémon GO encounters.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lucky Spritzee different from regular Spritzee?
+        </summary>
+
+        <p>
+
+            Lucky Spritzee is not a different species. Lucky is
+            a special status obtained through trading.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Spritzee?
+        </summary>
+
+        <p>
+
+            A 100% Spritzee has perfect IVs: 15 Attack,
+            15 Defense and 15 HP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Spritzee?
+        </summary>
+
+        <p>
+
+            XXL Spritzee is an individual Spritzee classified
+            as an unusually large Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Spritzee?
+        </summary>
+
+        <p>
+
+            XXS Spritzee is an individual Spritzee classified
+            as an unusually small Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXL Spritzee have different base stats?
+        </summary>
+
+        <p>
+
+            XXL is a size characteristic rather than a separate
+            species with a completely different base-stat profile.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXS Spritzee have different base stats?
+        </summary>
+
+        <p>
+
+            XXS is a size characteristic rather than a separate
+            species with a completely different base-stat profile.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Spritzee available?
+        </summary>
+
+        <p>
+
+            Shadow Pokémon availability changes with Team GO
+            Rocket rotations. The page should only identify
+            Shadow Spritzee as currently obtainable when current
+            game data confirms it.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Spritzee be Purified?
+        </summary>
+
+        <p>
+
+            Purification requires an eligible Shadow Pokémon.
+            Therefore, Purified Spritzee depends on Shadow
+            Spritzee being available.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Spritzee good for raids?
+        </summary>
+
+        <p>
+
+            Spritzee is generally not a high-priority raid
+            attacker. Its main value is as an evolution,
+            collection and potential PvP target.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Spritzee good for PvP?
+        </summary>
+
+        <p>
+
+            Spritzee's low maximum CP makes lower leagues more
+            relevant than Master League, but its actual PvP
+            value depends on its current moveset and the
+            metagame.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a Shiny Spritzee be Lucky?
+        </summary>
+
+        <p>
+
+            Yes. A Pokémon can combine multiple characteristics,
+            so a Shiny Spritzee can also have Lucky status if
+            obtained through an eligible trade.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a 100% Spritzee be Lucky?
+        </summary>
+
+        <p>
+
+            A Lucky Pokémon's IVs are determined when the trade
+            result is generated. Therefore, a Lucky Spritzee can
+            have very strong IVs, including a perfect IV result.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a 100% Spritzee be Shiny?
+        </summary>
+
+        <p>
+
+            Yes. Shiny status and IVs are separate characteristics,
+            so a Shiny Spritzee can also have perfect 15/15/15 IVs.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounter methods, events, Shadow availability,
+            PvP rankings and other game data can change over
+            time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Spritzee Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Spritzee Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#perfect">
+                100% Spritzee
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Spritzee
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Spritzee
+            </a>
+        </li>
+
+        <li>
+            <a href="#size">
+                XXL & XXS
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Spritzee
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Spritzee
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/aromatisse.html">
+
+        Aromatisse Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/fairy.html">
+
+        Fairy Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-6.html">
+
+        Gen 6 Pokémon →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/clefable.html">
+
+        Clefable Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/togekiss.html">
+
+        Togekiss Guide →
+
+    </a>
+
+</div>
+
+
+
+<div class="side-card">
+
+    <h3>
+        Spritzee Quick Facts
+    </h3>
+
+    <p>
+        <strong>Type:</strong>
+        Fairy
+    </p>
+
+    <p>
+        <strong>Generation:</strong>
+        6
+    </p>
+
+    <p>
+        <strong>Pokédex:</strong>
+        #682
+    </p>
+
+    <p>
+        <strong>Evolution:</strong>
+        Aromatisse
+    </p>
+
+    <p>
+        <strong>Max CP:</strong>
+        1,415
+    </p>
+
+    <p>
+        <strong>Weaknesses:</strong>
+        Poison, Steel
+    </p>
+
+    <p>
+        <strong>Special:</strong>
+        Shiny / Lucky / XXL / XXS
+    </p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

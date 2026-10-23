@@ -1,0 +1,4511 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Dragonair Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky & XXL
+    </title>
+
+    <meta name="description"
+          content="Complete Dragonair Pokémon GO guide covering stats, Max CP, Dragon typing, weaknesses, resistances, best moves, evolution, Shiny Dragonair, Shadow Dragonair, Purified, Lucky, 100% IV, XXL and XXS Dragonair.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/dragonair.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #8fa2ff;
+            --accent-2: #657cff;
+
+            --dragon: #8b72ff;
+            --fairy: #e99ac5;
+            --ice: #72d6dc;
+
+            --electric: #f1c84b;
+            --fire: #ff764f;
+            --grass: #5dcf82;
+            --water: #4e9dff;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --gold: #e7b84b;
+            --pink: #e99ac5;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(139,114,255,.13),
+                    transparent 30%
+                ),
+
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.93);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(139,114,255,.20),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid rgba(139,114,255,.3);
+
+            border-radius: 999px;
+
+            color:
+                var(--dragon);
+
+            background:
+                rgba(139,114,255,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .dragon-tag {
+            color: var(--dragon);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(139,114,255,.22),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           CONTENT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(139,114,255,.3);
+
+            background:
+                rgba(139,114,255,.07);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(139,114,255,.15);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--dragon);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card p {
+            margin-top: 6px;
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+
+            color: var(--dragon);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(139,114,255,.11),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(139,114,255,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           IV CARDS
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.5rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           VARIANT CARDS
+        ===================================================== */
+
+        .variant-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .variant-card {
+
+            padding: 22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .variant-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 10px;
+        }
+
+        .variant-card h3 {
+
+            margin:
+                0 0 7px;
+
+            font-size: 1rem;
+        }
+
+        .variant-card p {
+
+            margin: 0;
+
+            font-size: .75rem;
+        }
+
+
+        /* =====================================================
+           SPECIAL STATUS
+        ===================================================== */
+
+        .status-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .status-card {
+
+            padding: 18px;
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            text-align: center;
+        }
+
+        .status-card .icon {
+
+            font-size: 1.8rem;
+
+            margin-bottom: 7px;
+        }
+
+        .status-card strong {
+
+            display: block;
+
+            font-size: .85rem;
+        }
+
+        .status-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            margin-top: 4px;
+
+            font-size: .65rem;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           FORM TREE
+        ===================================================== */
+
+        .form-tree {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+            margin: 20px 0;
+        }
+
+        .form-node {
+
+            padding:
+                16px 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .form-node strong {
+            display: block;
+        }
+
+        .form-node span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .form-arrow {
+
+            color: var(--accent);
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .status-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width: 650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .variant-grid,
+            .iv-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .status-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .rating-row {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align: left;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .form-tree {
+                flex-direction: column;
+            }
+
+            .form-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/dragon.html">
+        Dragon Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Dragonair
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                POKÉMON DATABASE • DRAGON
+            </span>
+
+            <h1>
+                Dragonair
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Dragonair is a Dragon-type Pokémon from the
+                Kanto region and the evolved form of Dratini.
+                In Pokémon GO, Dragonair is best known as an
+                important middle stage in the Dratini evolution
+                family, while its different statuses and sizes
+                make it an interesting collector's Pokémon.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag dragon-tag">
+                    Dragon
+                </span>
+
+                <span class="tag">
+                    #148
+                </span>
+
+                <span class="tag">
+                    Gen 1
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves to Dragonite
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!--
+                Replace this placeholder with your own
+                properly licensed Dragonair image.
+
+                Example:
+                <img src="/images/pokemon/dragonair.webp"
+                     alt="Dragonair Pokémon GO">
+            -->
+
+            <div class="pokemon-placeholder">
+                🐉
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            163
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            135
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            156
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,780
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Overview
+        </h2>
+
+        <p>
+
+            Dragonair is the second stage of the Dratini
+            evolutionary family. It evolves from Dratini and
+            can eventually evolve into Dragonite.
+
+            Unlike Dragonite, Dragonair has a much lower CP
+            ceiling, so its primary value is usually connected
+            to evolution, collection, special Pokémon
+            challenges and niche PvP situations.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #148
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 1
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Kanto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Dragon
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                163
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                135
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                156
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~1,780
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🐉
+        </div>
+
+        <div>
+
+            <strong>
+                Dragon
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Dragon Typing Matters
+    </h3>
+
+    <p>
+
+        Dragonair's pure Dragon typing gives it the
+        offensive and defensive characteristics associated
+        with Dragon-type Pokémon.
+
+        Its main weaknesses are Dragon, Fairy and Ice,
+        while it resists several common elemental attack
+        types.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Weaknesses & Resistances
+        </h2>
+
+        <p>
+            Dragonair is a pure Dragon-type Pokémon.
+            Understanding its type interactions is useful
+            when selecting counters and building teams.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon
+            </strong>
+
+            <p>
+                Dragon-type attacks deal super-effective
+                damage to Dragonair.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks are super effective
+                against Dragonair.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks can exploit Dragonair's
+                Dragon typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Dragonair resists Fire-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks are resisted by Dragonair.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Dragonair has useful resistance to Grass attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric attacks are resisted by Dragonair.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Dragonair has moderate base stats compared with
+            fully evolved Dragon-type Pokémon. Its lower CP
+            ceiling means it generally plays a different role
+            from Dragonite.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                163
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                135
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                156
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~1,780
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            A Pokémon's CP is calculated using its underlying
+            game stats, level and individual values. CP alone
+            does not tell you whether a Dragonair has perfect
+            IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     05 MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Best Moves
+        </h2>
+
+        <p>
+
+            Dragonair's move selection can vary in usefulness
+            depending on whether you are using it for PvP,
+            evolution preparation or collection purposes.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Dragonair Move Strategy
+        </strong>
+
+        <p>
+
+            For most players, Dragonair's long-term value is
+            connected to its evolution into Dragonite rather
+            than maximizing Dragonair itself.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                    <th>
+                        Recommendation
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Fast Move
+                    </td>
+
+                    <td>
+                        STAB pressure
+                    </td>
+
+                    <td>
+                        Useful when Dragon damage is desired
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Charged Move
+                    </td>
+
+                    <td>
+                        STAB damage
+                    </td>
+
+                    <td>
+                        Consider for Dragon-focused builds
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Coverage Move
+                    </td>
+
+                    <td>
+                        Matchup coverage
+                    </td>
+
+                    <td>
+                        Depends on current moveset
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move pools can change as Pokémon GO updates moves,
+        events and balance. Verify the current in-game moveset
+        before publishing a time-sensitive recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     06 RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Raid Performance
+        </h2>
+
+        <p>
+
+            Dragonair is generally not the first choice for
+            high-level raid teams because its stats and CP
+            ceiling are significantly below those of stronger
+            fully evolved Dragon-type attackers.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:45%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Niche
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:48%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Moderate
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Evolution Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:95%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Dragonair?
+    </h3>
+
+    <p>
+
+        For most players, resources are better spent on
+        Dragonite or another stronger Dragon attacker.
+
+        However, a Dragonair with special IVs, a useful
+        PvP role or collector value can justify keeping it
+        independently.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     07 COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <h2>
+            What Counters Dragonair?
+        </h2>
+
+        <p>
+
+            Because Dragonair is a pure Dragon type, Dragon,
+            Fairy and Ice attackers are the primary counter
+            categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon Attackers
+            </strong>
+
+            <p>
+                Dragon-type Pokémon can exploit Dragonair's
+                Dragon weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy Attackers
+            </strong>
+
+            <p>
+                Fairy attacks deal super-effective damage
+                to Dragonair.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice Attackers
+            </strong>
+
+            <p>
+                Ice-type attackers are another effective
+                counter category.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     08 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add additional Attack, Defense
+            and HP points to an individual Pokémon.
+
+            The maximum possible IV combination is 15/15/15.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Is a 100% Dragonair?
+    </h3>
+
+    <p>
+
+        A 100% Dragonair has 15 Attack, 15 Defense and
+        15 HP IVs. In the appraisal system, this corresponds
+        to the highest possible IV combination.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% IV Dragonair
+        </strong>
+
+        <p>
+            15 Attack / 15 Defense / 15 HP
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     09 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair PvP Guide
+        </h2>
+
+        <p>
+
+            Dragonair can have niche PvP value because its
+            lower maximum CP allows it to fit more naturally
+            into CP-limited formats than fully evolved
+            Dragonite.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Dragonair can be considered in Great League when
+        its moveset and IV distribution fit the current
+        format. PvP rankings can change when moves are
+        rebalanced or new Pokémon are introduced.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Dragonair can be used in certain Ultra League
+        situations, although players should compare it
+        against Dragonite and other Dragon-type options
+        before investing heavily.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Dragonair's relatively low maximum CP makes it a
+        much less natural choice for Master League compared
+        with Dragonite and other fully evolved Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     10 EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Evolution Family
+        </h2>
+
+        <p>
+
+            Dragonair sits in the middle of the three-stage
+            Dratini evolutionary family.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Dratini
+            </strong>
+
+            <span>
+                #147
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Dragonair
+            </strong>
+
+            <span>
+                #148
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Dragonite
+            </strong>
+
+            <span>
+                #149
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Dragonair Evolution
+    </h3>
+
+    <p>
+
+        Dragonair evolves into Dragonite after the required
+        amount of Dratini Candy is collected.
+
+        If you are planning to build Dragonite, it is often
+        worth evaluating Dragonair's IVs and appraisal before
+        spending resources on evolution.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     11 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Dragonair
+        </h2>
+
+        <p>
+
+            Shiny Dragonair has an alternate coloration compared
+            with the standard Dragonair.
+
+            Shiny status is permanent once obtained unless
+            the Pokémon is evolved, in which case the resulting
+            Pokémon retains its Shiny status.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐉
+            </div>
+
+            <h3>
+                Regular Dragonair
+            </h3>
+
+            <p>
+                Standard Dragonair coloration.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Dragonair
+            </h3>
+
+            <p>
+                Alternate Shiny coloration.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shiny Evolution
+        </strong>
+
+        <p>
+
+            A Shiny Dragonair can evolve into a Shiny Dragonite.
+            Shiny status is retained through evolution.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     12 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Dragonair
+        </h2>
+
+        <p>
+
+            Shadow Dragonair is the Shadow variant of Dragonair.
+            It can be obtained through eligible Shadow Dratini
+            encounters and evolution.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shadow Dragonair
+        </strong>
+
+        <p>
+
+            Shadow Pokémon have a different battle profile from
+            their regular counterparts, with increased offensive
+            pressure and reduced defensive durability.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Dragonair vs Regular Dragonair
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Dragonair
+                    </td>
+
+                    <td>
+                        Dragonair
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Dragon
+                    </td>
+
+                    <td>
+                        Dragon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defensive Trade-off
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Lower durability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Available when eligible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Dragonair IVs
+    </h3>
+
+    <p>
+
+        A Shadow Dragonair does not need to have perfect IVs
+        to be useful. The Shadow bonus can make a lower-IV
+        specimen interesting depending on your intended use.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration reminder:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have Frustration. Whether and
+            when Frustration can be removed depends on the
+            applicable Pokémon GO events and mechanics.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     13 PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Dragonair
+        </h2>
+
+        <p>
+
+            Purified Dragonair is created by purifying an eligible
+            Shadow Dragonair.
+
+            Purification changes the Pokémon's status and can
+            affect its IVs and other gameplay characteristics.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Dragonair
+            </h3>
+
+            <p>
+                Retains Shadow status and its associated
+                battle characteristics.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Purified Dragonair
+            </h3>
+
+            <p>
+                Shadow status is removed through purification.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Dragonair?
+    </h3>
+
+    <p>
+
+        Do not automatically purify a Shadow Dragonair simply
+        because purification increases its IVs.
+
+        If you intend to keep the Shadow for battle or
+        collection purposes, compare both outcomes before
+        committing to purification.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the Shadow Dragonair's IVs.
+        </li>
+
+        <li>
+            Consider its future evolution into Dragonite.
+        </li>
+
+        <li>
+            Compare Shadow and Purified goals.
+        </li>
+
+        <li>
+            Check whether you want to keep a Shadow specimen.
+        </li>
+
+        <li>
+            Consider the Candy and Stardust implications.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     14 LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Dragonair
+        </h2>
+
+        <p>
+
+            Lucky Dragonair is not a different species or
+            evolutionary form. "Lucky" is a special Pokémon
+            status obtained through trading.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-grid">
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <span>
+                Special trade status
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragonair
+            </strong>
+
+            <span>
+                Dragon-type species
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                ⭐
+            </div>
+
+            <strong>
+                Lower Power-Up Cost
+            </strong>
+
+            <span>
+                Lucky Pokémon benefit from reduced Stardust
+                power-up costs
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                🔄
+            </div>
+
+            <strong>
+                Trade
+            </strong>
+
+            <span>
+                Obtained through eligible trades
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is Lucky Dragonair Worth Keeping?
+    </h3>
+
+    <p>
+
+        A Lucky Dragonair can be particularly appealing to
+        collectors and players planning to evolve it into
+        Dragonite.
+
+        Its reduced power-up Stardust requirement can also
+        make it attractive for long-term investment.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     15 100% DRAGONAIR
+===================================================== -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <h2>
+            100% Dragonair — Perfect IV
+        </h2>
+
+        <p>
+
+            A 100% Dragonair has the maximum possible IV
+            combination: 15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect Dragonair
+        </strong>
+
+        <p>
+            15 / 15 / 15
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 100% Dragonair?
+    </h3>
+
+    <p>
+
+        Yes, a perfect Dragonair is an excellent collector
+        specimen and can be evolved into a perfect Dragonite.
+
+        Before evolving it, however, consider whether you
+        specifically want to preserve the Dragonair itself
+        for collection or PvP purposes.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     16 XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Dragonair
+        </h2>
+
+        <p>
+
+            XXL Dragonair is an exceptionally large individual
+            Dragonair.
+
+            XXL is a size classification and does not represent
+            a new Pokémon species or evolutionary form.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-icon">
+            📏
+        </div>
+
+        <h3>
+            XXL Dragonair
+        </h3>
+
+        <p>
+
+            A Dragonair with an exceptionally large recorded
+            size. Size classification is separate from IVs,
+            CP, Shiny status and Lucky status.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL Does Not Mean 100% IV
+    </h3>
+
+    <p>
+
+        A Dragonair can be XXL without having perfect IVs.
+
+        Size and IVs are separate characteristics, so an XXL
+        Dragonair can have any IV combination.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     17 XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Dragonair
+        </h2>
+
+        <p>
+
+            XXS Dragonair is an exceptionally small individual
+            Dragonair.
+
+            Like XXL, XXS is a size classification rather than
+            a separate form of Dragonair.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-icon">
+            📐
+        </div>
+
+        <h3>
+            XXS Dragonair
+        </h3>
+
+        <p>
+
+            A Dragonair with an exceptionally small recorded
+            size. XXS status is independent of IVs, CP,
+            Shiny status and Lucky status.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXS and IVs
+    </h3>
+
+    <p>
+
+        An XXS Dragonair can have low, average or perfect IVs.
+        Size and IV quality are separate attributes.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     18 SPECIAL STATUS COMBINATIONS
+===================================================== -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Special Variants & Statuses
+        </h2>
+
+        <p>
+
+            Dragonair can be interesting to collectors because
+            several characteristics can exist independently.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-grid">
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <span>
+                Alternate appearance
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <span>
+                Shadow status
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <span>
+                Trade status
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                💯
+            </div>
+
+            <strong>
+                100% IV
+            </strong>
+
+            <span>
+                15/15/15 IV
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                📏
+            </div>
+
+            <strong>
+                XXL
+            </strong>
+
+            <span>
+                Very large size
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="icon">
+                📐
+            </div>
+
+            <strong>
+                XXS
+            </strong>
+
+            <span>
+                Very small size
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            These labels describe different Pokémon
+            characteristics. They should not all be treated
+            as separate species or permanent evolutionary
+            forms.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     19 COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Status Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Changes Appearance?
+                    </th>
+
+                    <th>
+                        Can Be 100% IV?
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Dragonair
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow Pokémon status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        Purification appearance
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Special trade status
+                    </td>
+
+                    <td>
+                        Lucky background
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Very large size
+                    </td>
+
+                    <td>
+                        Size-related
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Very small size
+                    </td>
+
+                    <td>
+                        Size-related
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     20 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Building the Dratini family requires careful Candy
+            management, particularly if your goal is to evolve
+            multiple Dragonite or power up high-level specimens.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Dratini Candy for important evolutions.
+        </li>
+
+        <li>
+            Collect Candy XL if you plan high-level investment.
+        </li>
+
+        <li>
+            Check IVs before evolving rare specimens.
+        </li>
+
+        <li>
+            Keep useful Shiny and Shadow specimens.
+        </li>
+
+        <li>
+            Consider Lucky Dragonair for Stardust-efficient investment.
+        </li>
+
+        <li>
+            Keep unusual XXL and XXS specimens for collection goals.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     21 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Dragonair's availability can depend on wild encounters,
+        events, research rewards, evolution and other Pokémon GO
+        encounter systems.
+
+        Event rotations can change over time, so historical
+        appearances should be separated from current availability.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and encounter
+            schedule before publishing a claim that Dragonair
+            is currently available through a particular method.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     22 HOW TO USE
+===================================================== -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <h2>
+            Individual Dragonair Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Evolving
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the appraisal and IVs.
+        </li>
+
+        <li>
+            Decide whether you want Dragonair or Dragonite.
+        </li>
+
+        <li>
+            Keep rare Shiny specimens if collection matters.
+        </li>
+
+        <li>
+            Check Shadow Pokémon before purification.
+        </li>
+
+        <li>
+            Consider Lucky specimens for lower Stardust costs.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Collectors may want to keep examples of Shiny,
+        Shadow, Purified, Lucky, 100% IV, XXL and XXS
+        Dragonair.
+
+        These categories represent different collection
+        goals and can make the Dratini family especially
+        interesting to maintain.
+
+    </p>
+
+
+    <h3>
+        For PvP Players
+    </h3>
+
+    <p>
+
+        Before investing in Dragonair specifically, check
+        the current PvP format, CP cap, IV requirements and
+        move availability.
+
+        A Pokémon that is valuable in one league or season
+        may become less effective after balance changes.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     23 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Dragonair FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Dragonair?
+        </summary>
+
+        <p>
+            Dragonair is a pure Dragon-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Dragonair weak to?
+        </summary>
+
+        <p>
+            Dragonair is weak to Dragon, Fairy and Ice attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Dragonair evolve?
+        </summary>
+
+        <p>
+
+            Yes. Dragonair evolves into Dragonite as part of
+            the Dratini evolutionary family.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What number is Dragonair in the Pokédex?
+        </summary>
+
+        <p>
+            Dragonair is National Pokédex number 148.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Dragonair available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Dragonair is available through eligible
+            Pokémon GO encounters and evolution.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Dragonair be Shadow?
+        </summary>
+
+        <p>
+
+            Yes. Shadow Dragonair can exist through eligible
+            Shadow Dratini encounters and evolution.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Dragonair be purified?
+        </summary>
+
+        <p>
+
+            Yes, an eligible Shadow Dragonair can be purified.
+            Consider the consequences before doing so if you
+            want to preserve its Shadow status.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Lucky Dragonair?
+        </summary>
+
+        <p>
+
+            Lucky Dragonair is a Dragonair with Lucky status
+            obtained through trading. Lucky Pokémon benefit
+            from reduced Stardust costs for power-ups.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Dragonair?
+        </summary>
+
+        <p>
+
+            A 100% Dragonair has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Dragonair be XXL?
+        </summary>
+
+        <p>
+
+            Yes. Dragonair can have XXL size classification
+            when an individual specimen meets the applicable
+            size criteria.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Dragonair be XXS?
+        </summary>
+
+        <p>
+
+            Yes. Dragonair can have XXS size classification
+            when an individual specimen meets the applicable
+            size criteria.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXL Dragonair mean it has perfect IVs?
+        </summary>
+
+        <p>
+
+            No. Size and IVs are separate characteristics.
+            An XXL Dragonair can have any IV combination.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXS Dragonair mean it has low IVs?
+        </summary>
+
+        <p>
+
+            No. XXS describes size, not IV quality.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I evolve a 100% Dragonair?
+        </summary>
+
+        <p>
+
+            If your goal is to obtain a perfect Dragonite,
+            evolving a 15/15/15 Dragonair is an excellent
+            option. If you specifically collect perfect
+            Dragonair, you may prefer to keep it unevolved.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Dragonair good for raids?
+        </summary>
+
+        <p>
+
+            Dragonair is generally not a top raid attacker.
+            Its primary long-term battle value is usually
+            connected to evolving it into Dragonite.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Dragonair good for PvP?
+        </summary>
+
+        <p>
+
+            Dragonair can have niche PvP applications,
+            particularly in CP-limited formats. Its usefulness
+            depends on the current moveset and metagame.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, encounter availability, PvP rankings,
+            events and other game data can change over time.
+
+            Always verify current in-game information before
+            making investment decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Dragonair Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Dragonair Overview
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#pvp">
+                    PvP Guide
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shiny">
+                    Shiny Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shadow">
+                    Shadow Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#purified">
+                    Purified Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#lucky">
+                    Lucky Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#perfect">
+                    100% Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#xxl">
+                    XXL Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#xxs">
+                    XXS Dragonair
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#guide">
+                    Individual Guide
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/dratini.html">
+
+            Dratini Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/dragonite.html">
+
+            Dragonite Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/dragon.html">
+
+            Dragon Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-1.html">
+
+            Gen 1 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Dragonair Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+            Dragon
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+            #148
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+            1
+        </p>
+
+
+        <p>
+            <strong>
+                Region:
+            </strong>
+            Kanto
+        </p>
+
+
+        <p>
+            <strong>
+                Evolves From:
+            </strong>
+            Dratini
+        </p>
+
+
+        <p>
+            <strong>
+                Evolves Into:
+            </strong>
+            Dragonite
+        </p>
+
+
+        <p>
+            <strong>
+                Special Statuses:
+            </strong>
+            Shiny, Shadow, Purified, Lucky, XXL, XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

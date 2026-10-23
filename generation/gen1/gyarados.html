@@ -1,0 +1,4513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gyarados Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shadow, Shiny & Mega Gyarados</title>
+
+<meta name="description"
+      content="Complete Gyarados Pokémon GO guide covering regular Gyarados, Shadow Gyarados, Shiny Gyarados and Mega Gyarados, including stats, Max CP, typing, weaknesses, resistances, best moves, raids, PvP, IVs, evolution, Mega Evolution and availability.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/gyarados.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080c14;
+    --bg-soft: #0d1420;
+    --surface: #121b29;
+    --surface-2: #182334;
+    --surface-3: #202d40;
+
+    --border: #29384d;
+
+    --text: #f4f7fb;
+    --muted: #aab5c5;
+
+    --accent: #4e9dff;
+    --accent-2: #7cc8ff;
+
+    --water: #4e9dff;
+    --dark: #8b7ba8;
+    --flying: #8da9ff;
+    --fire: #ff795f;
+    --grass: #63d58a;
+    --electric: #ffd65a;
+    --rock: #c9a86a;
+    --ice: #73d9e3;
+
+    --danger: #ff7180;
+    --success: #63d89b;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(78,157,255,.13),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8,12,20,.93);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(78,157,255,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #101a29,
+            #0b111c
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid rgba(78,157,255,.3);
+    border-radius: 999px;
+
+    color: var(--water);
+
+    background: rgba(78,157,255,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size: clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing: -.055em;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 1rem;
+    color: #c4cedc;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.water-tag {
+    color: var(--water);
+}
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-pokemon img {
+    width: min(100%,320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(78,157,255,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: clamp(1.45rem,3vw,2rem);
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+}
+
+.section-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid rgba(78,157,255,.3);
+
+    background: rgba(78,157,255,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(78,157,255,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--water);
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-card .effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card small {
+    color: var(--muted);
+}
+
+.weakness {
+    border-color: rgba(255,113,128,.27);
+}
+
+.resistance {
+    border-color: rgba(99,216,155,.25);
+}
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+    padding: 13px 12px;
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--water);
+    font-weight: 800;
+}
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(78,157,255,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border: 1px solid rgba(78,157,255,.25);
+
+    border-radius: var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background: var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background: var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table {
+    width: 100%;
+    min-width: 650px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px;
+
+    border: 1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+    background: var(--surface-2);
+    text-align: left;
+}
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8d1de;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.form-node {
+    padding: 16px 22px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+.form-arrow {
+    color: var(--accent);
+
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.form-feature {
+    padding: 26px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #101d34,
+            #172e4b,
+            #145b85
+        );
+
+    border: 1px solid rgba(78,157,255,.25);
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,.2);
+}
+
+.form-feature h3 {
+    margin-top: 0;
+
+    font-size: 28px;
+}
+
+.form-kicker {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.1);
+
+    color: #cceaff;
+
+    font-size: .65rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+/* =========================================================
+   IV GRID
+========================================================= */
+
+.iv-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+
+    font-size: 1.35rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.availability-panel {
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(78,157,255,.07);
+
+    border: 1px solid rgba(78,157,255,.2);
+}
+
+.availability-panel strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 1.05rem;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+
+    font-size: .78rem;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top: 1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .form-tree {
+        flex-direction: column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">Types</a>
+
+            <a href="/pokedex.html">Pokédex</a>
+
+            <a href="/raids/">Raids</a>
+
+            <a href="/guides/">Guides</a>
+
+            <a href="/tools/">Tools</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">Home</a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/water.html">
+        Water Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Gyarados
+    </strong>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                WATER / FLYING POKÉMON
+            </span>
+
+            <h1>
+                Gyarados
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Gyarados is a Water / Flying-type Pokémon
+                originally discovered in the Kanto region.
+                In Pokémon GO, it is notable for its high
+                Attack, strong Water-type moves, Shadow form,
+                Shiny form and powerful Mega Evolution.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag water-tag">
+                    Water
+                </span>
+
+                <span class="tag">
+                    Flying
+                </span>
+
+                <span class="tag">
+                    #130
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Shadow Available
+                </span>
+
+                <span class="tag">
+                    Mega Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!--
+                Replace this placeholder with your own
+                properly licensed Gyarados image.
+
+                Example:
+                /assets/pokemon/gyarados.webp
+            -->
+
+            <div class="pokemon-placeholder">
+                🌊
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            237
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            186
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            216
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            3,391
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     01 OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 — OVERVIEW
+        </span>
+
+        <h2>
+            Gyarados Overview
+        </h2>
+
+        <p>
+
+            Gyarados is the evolved form of Magikarp and
+            one of the most recognizable Pokémon from the
+            original Kanto Pokédex.
+
+            In Pokémon GO, Gyarados combines high Attack,
+            useful bulk and Water/Flying typing. It also
+            has access to Shadow, Shiny and Mega forms.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#130</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 1</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Kanto</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Water / Flying</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>237</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>186</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>216</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>3,391</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     02 TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 — TYPE
+        </span>
+
+        <h2>
+            Gyarados Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌊
+        </div>
+
+        <div>
+
+            <strong>
+                Water / Flying
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Gyarados's Typing Matters
+    </h3>
+
+    <p>
+
+        Gyarados's Water/Flying combination gives it
+        several useful resistances, while also creating
+        an important double weakness to Electric-type
+        attacks.
+
+        Its Flying typing also makes Ground-type attacks
+        ineffective against it.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     03 WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 — TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Gyarados Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+
+                Electric attacks are especially dangerous
+                because Gyarados's Water/Flying typing gives
+                it a double weakness to Electric damage.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+
+                Grass-type attacks are super effective
+                against Gyarados because of its Water typing.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Gyarados resists Fire-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water attacks are resisted by Gyarados.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Gyarados takes reduced Fighting damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪲
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks are resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Steel attacks deal reduced damage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     04 STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 — STATS
+        </span>
+
+        <h2>
+            Gyarados Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Gyarados has a strong Attack stat and substantial
+            HP, making it useful across several battle
+            situations. Its maximum CP also allows it to
+            reach the upper levels required for Master League
+            investment.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>237</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>186</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>216</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>3,391</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP depends on the Pokémon's underlying
+            stats, level and individual values. The displayed
+            CP should therefore not be interpreted as an IV
+            percentage.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     05 MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 — MOVES
+        </span>
+
+        <h2>
+            Gyarados Best Moves
+        </h2>
+
+        <p>
+
+            Gyarados can use Water-focused moves for a
+            traditional Water attacker role. Its available
+            moves also give it options outside a single
+            battle format.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Water Raid Moveset
+        </strong>
+
+        <p>
+            Waterfall + Hydro Pump
+        </p>
+
+    </div>
+
+
+    <h3>
+        Important Gyarados Moves
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Move</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Role</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Waterfall
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Water damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Hydro Pump
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Water PvE
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Aqua Tail
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        PvP / utility
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Crunch
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Breath
+                    </td>
+
+                    <td>
+                        Dragon
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        PvP coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move pools can change through Pokémon GO updates,
+        events and balance changes. Check current in-game
+        availability before publishing a time-sensitive
+        moveset recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     06 RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 — RAID PERFORMANCE
+        </span>
+
+        <h2>
+            Gyarados Raid Performance
+        </h2>
+
+        <p>
+
+            Gyarados can contribute as a Water-type attacker,
+            although its position among the strongest Water
+            attackers depends on the current move pool and
+            available alternatives.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Water PvE
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:82%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            8.2/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Overall Utility
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:88%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            8.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:84%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            8.4/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Gyarados?
+    </h3>
+
+    <p>
+
+        Gyarados is a useful investment when you need a
+        flexible Water-type attacker, a strong Pokémon for
+        certain PvP formats or a candidate for Mega Evolution.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     07 COUNTERS
+======================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 — COUNTERS
+        </span>
+
+        <h2>
+            What Counters Gyarados?
+        </h2>
+
+        <p>
+
+            Electric attackers are particularly effective
+            because Gyarados has a double weakness to Electric
+            damage. Grass attackers can also exploit its Water
+            typing.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric Attackers
+            </strong>
+
+            <p>
+
+                Electric-type attackers are usually the first
+                counter category to consider against Gyarados.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass Attackers
+            </strong>
+
+            <p>
+
+                Strong Grass attackers can exploit Gyarados's
+                Water typing.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🎯
+            </div>
+
+            <strong>
+                Match the Moveset
+            </strong>
+
+            <p>
+
+                Choose counters according to the raid boss
+                moveset and your team's survivability.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     08 IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 — IV GUIDE
+        </span>
+
+        <h2>
+            Gyarados IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add extra Attack, Defense and
+            HP points to a Pokémon. A 15/15/15 Gyarados is
+            the traditional perfect-IV specimen.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Gyarados
+    </h3>
+
+    <p>
+
+        A 15/15/15 Gyarados is a perfect-IV specimen.
+        However, a lower-IV Gyarados can still perform
+        extremely well, especially when it has a useful
+        moveset and is powered to an appropriate level.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     09 PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 — PVP
+        </span>
+
+        <h2>
+            Gyarados PvP Guide
+        </h2>
+
+        <p>
+
+            Gyarados has historically been a useful PvP
+            Pokémon because of its combination of bulk,
+            typing and charged-move pressure.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Gyarados can be considered in Master League because
+        of its relatively high CP ceiling. Dragon Breath,
+        Water-type attacks and coverage moves can create
+        different tactical options depending on the current
+        metagame.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Gyarados can also be used in Ultra League when built
+        around the appropriate CP limit and IV spread.
+
+    </p>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Standard Gyarados is generally less natural for
+        Great League because of its high base stats, although
+        special cups and unusual formats can change its
+        relevance.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     10 EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 — EVOLUTION
+        </span>
+
+        <h2>
+            Magikarp → Gyarados Evolution
+        </h2>
+
+        <p>
+
+            Gyarados evolves from Magikarp. Unlike most
+            Pokémon, the evolution requires a substantial
+            Candy investment, making Magikarp Candy farming
+            an important part of building Gyarados.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Magikarp
+            </strong>
+
+            <span>
+                Water
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Gyarados
+            </strong>
+
+            <span>
+                Water / Flying
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Requirement
+        </strong>
+
+        <p>
+            400 Magikarp Candy
+        </p>
+
+    </div>
+
+
+    <h3>
+        Candy Farming Tips
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Catch Magikarp whenever they appear.
+        </li>
+
+        <li>
+            Use Pinap Berries when appropriate.
+        </li>
+
+        <li>
+            Walk Magikarp as your Buddy when useful.
+        </li>
+
+        <li>
+            Save Candy for high-IV Magikarp.
+        </li>
+
+        <li>
+            Consider Mega Evolution bonuses when farming
+            relevant Candy.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     11 SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 — SHINY
+        </span>
+
+        <h2>
+            Shiny Gyarados
+        </h2>
+
+        <p>
+
+            Shiny Gyarados is one of the most recognizable
+            Shiny Pokémon designs. Its red coloration makes
+            it visually distinct from the standard blue
+            Gyarados.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔵
+            </div>
+
+            <strong>
+                Regular Gyarados
+            </strong>
+
+            <p>
+                Standard blue coloration.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔴
+            </div>
+
+            <strong>
+                Shiny Gyarados
+            </strong>
+
+            <p>
+                Distinctive red coloration.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Status
+            </strong>
+
+            <p>
+                Shiny Gyarados is available through
+                eligible encounters and evolution.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     12 SHADOW
+======================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 — SHADOW
+        </span>
+
+        <h2>
+            Shadow Gyarados
+        </h2>
+
+        <p>
+
+            Shadow Gyarados is a separate battle variant of
+            Gyarados. Shadow Pokémon receive an offensive
+            boost while also taking increased damage, making
+            them particularly interesting for damage-focused
+            players.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-feature">
+
+        <span class="form-kicker">
+            SHADOW FORM
+        </span>
+
+        <h3>
+            Shadow Gyarados
+        </h3>
+
+        <p>
+
+            A damage-oriented version of Gyarados that can
+            be attractive for players building high-output
+            raid teams.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Gyarados Typing
+    </h3>
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌊
+        </div>
+
+        <div>
+
+            <strong>
+                Water / Flying
+            </strong>
+
+            <span>
+                Shadow status does not change its basic typing
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Gyarados vs Regular Gyarados
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Gyarados
+                    </td>
+
+                    <td>
+                        Gyarados
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Water / Flying
+                    </td>
+
+                    <td>
+                        Water / Flying
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced durability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Offensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased damage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Gyarados Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Gyarados's double Electric weakness remains.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks remain super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Gyarados for Raids
+    </h3>
+
+    <p>
+
+        Shadow Gyarados can be appealing when the goal is
+        to maximize damage rather than durability. The
+        increased offensive pressure comes with increased
+        damage received, so the practical value depends on
+        the raid boss, moveset and team composition.
+
+    </p>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:91%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:72%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Lower
+        </span>
+
+    </div>
+
+
+    <h3>
+        Shadow Gyarados IV Guide
+    </h3>
+
+    <p>
+
+        Shadow Pokémon do not need perfect IVs to be useful.
+        A strong Shadow Gyarados can still be worth keeping
+        when its IVs are below 15/15/15.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Gyarados?
+    </h3>
+
+    <p>
+
+        Purification should not be treated as an automatic
+        upgrade. If your goal is maximum Shadow battle
+        performance, compare the Shadow version with the
+        purified result before making the decision.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration reminder:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have Frustration. Charged Move
+            management for Shadow Pokémon depends on current
+            Pokémon GO mechanics and Team GO Rocket events.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     13 MEGA
+======================================================= -->
+
+<section class="section" id="mega">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 — MEGA EVOLUTION
+        </span>
+
+        <h2>
+            Mega Gyarados
+        </h2>
+
+        <p>
+
+            Mega Gyarados is Gyarados's temporary Mega Evolution.
+            Unlike regular Gyarados, Mega Gyarados changes to
+            Water / Dark typing and gains substantially improved
+            combat capabilities.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-feature">
+
+        <span class="form-kicker">
+            MEGA EVOLUTION
+        </span>
+
+        <h3>
+            Mega Gyarados
+        </h3>
+
+        <p>
+
+            A powerful temporary form designed for raids,
+            Mega bonuses and high-level battle utility.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Mega Gyarados Type
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌊
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <small>
+                Primary Type
+            </small>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <small>
+                Secondary Type
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Mega Gyarados's Water/Dark typing is one of the
+        most important differences between the regular and
+        Mega forms. Its weakness profile must therefore be
+        evaluated separately.
+
+    </p>
+
+
+    <h3>
+        Regular vs Mega Gyarados
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Gyarados
+                    </th>
+
+                    <th>
+                        Mega Gyarados
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #130
+                    </td>
+
+                    <td>
+                        #130
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Water / Flying
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Form
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Mega
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Temporary
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Raid Role
+                    </td>
+
+                    <td>
+                        Water attacker
+                    </td>
+
+                    <td>
+                        Water / Dark specialist
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Mega Gyarados Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Mega Gyarados's Dark typing creates a
+                Fighting weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug attacks exploit Mega Gyarados's
+                Dark typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy attacks are super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Gyarados Raid Performance
+    </h3>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Water Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:94%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Dark Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:93%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Mega Utility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:95%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <h3>
+        Mega Gyarados Bonuses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Raid Bonus
+            </strong>
+
+            <p>
+
+                Mega Evolution can increase the damage
+                output of relevant Pokémon in raids.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍬
+            </div>
+
+            <strong>
+                Candy Bonus
+            </strong>
+
+            <p>
+
+                Mega Evolution can provide additional
+                Candy benefits for matching types.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Mega Level
+            </strong>
+
+            <p>
+
+                Mega Levels can influence the bonuses
+                associated with Mega Evolution.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Energy
+    </h3>
+
+
+    <div class="best-move">
+
+        <strong>
+            Mega Evolution Resource
+        </strong>
+
+        <p>
+
+            Mega Gyarados requires Gyarados Mega Energy
+            according to the current Pokémon GO Mega
+            Evolution system.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Mega Gyarados
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Mega Gyarados
+            </strong>
+
+            <p>
+
+                A Shiny Gyarados can retain its Shiny
+                identity when Mega Evolved.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔴
+            </div>
+
+            <strong>
+                Shiny Identity
+            </strong>
+
+            <p>
+
+                The Shiny status belongs to the underlying
+                Pokémon and remains associated with it.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     14 FORMS
+======================================================= -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 — FORMS
+        </span>
+
+        <h2>
+            Gyarados Forms Compared
+        </h2>
+
+        <p>
+
+            Regular, Shadow, Shiny and Mega Gyarados should
+            be considered separately because each serves a
+            different collection or battle purpose.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Form
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Feature
+                    </th>
+
+                    <th>
+                        Best For
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Gyarados
+                    </td>
+
+                    <td>
+                        Water / Flying
+                    </td>
+
+                    <td>
+                        Standard form
+                    </td>
+
+                    <td>
+                        Raids / PvP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Gyarados
+                    </td>
+
+                    <td>
+                        Water / Flying
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Gyarados
+                    </td>
+
+                    <td>
+                        Water / Flying
+                    </td>
+
+                    <td>
+                        Shadow battle bonus
+                    </td>
+
+                    <td>
+                        Damage-focused play
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Gyarados
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Mega Evolution
+                    </td>
+
+                    <td>
+                        Raids / Mega bonuses
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     15 CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 — RESOURCES
+        </span>
+
+        <h2>
+            Gyarados Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Building a high-level Gyarados requires Candy,
+            Candy XL and Stardust. Shadow and Mega investment
+            can also require additional resource planning.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Magikarp Candy for high-quality Gyarados.
+        </li>
+
+        <li>
+            Collect XL Candy if you plan to build a
+            high-level Gyarados.
+        </li>
+
+        <li>
+            Check the moveset before spending Elite resources.
+        </li>
+
+        <li>
+            Compare Shadow and regular builds before
+            committing large amounts of Stardust.
+        </li>
+
+        <li>
+            Save strong Gyarados candidates for Mega Evolution.
+        </li>
+
+        <li>
+            Consider your PvP IV requirements separately
+            from raid IV priorities.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     16 AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 — AVAILABILITY
+        </span>
+
+        <h2>
+            Gyarados Availability
+        </h2>
+
+        <p>
+
+            Gyarados availability can change as Pokémon GO
+            rotates wild encounters, events, raids and
+            evolution opportunities.
+
+        </p>
+
+    </div>
+
+
+    <div class="availability-panel">
+
+        <strong>
+            Regular Gyarados
+        </strong>
+
+        <p>
+
+            Gyarados is primarily obtained by evolving
+            Magikarp or through eligible Pokémon GO encounters.
+
+        </p>
+
+    </div>
+
+
+    <div class="availability-panel">
+
+        <strong>
+            Shadow Gyarados
+        </strong>
+
+        <p>
+
+            Shadow Gyarados availability depends on current
+            Team GO Rocket mechanics and encounters.
+
+        </p>
+
+    </div>
+
+
+    <div class="availability-panel">
+
+        <strong>
+            Mega Gyarados
+        </strong>
+
+        <p>
+
+            Mega Gyarados availability depends on the
+            current Mega Evolution system, Mega Energy and
+            relevant game events.
+
+        </p>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Current event and encounter information should be
+        updated from live Pokémon GO data rather than
+        presenting historical events as permanently active.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     17 BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 — BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Gyarados
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the raid boss's weaknesses.
+        </li>
+
+        <li>
+            Confirm Gyarados has the desired moveset.
+        </li>
+
+        <li>
+            Check its level and IVs.
+        </li>
+
+        <li>
+            Consider whether regular, Shadow or Mega
+            Gyarados is more appropriate.
+        </li>
+
+        <li>
+            Consider weather and team composition.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For PvP
+    </h3>
+
+    <p>
+
+        Build Gyarados according to the league and moveset
+        you intend to use. PvP IV priorities can differ
+        considerably from traditional raid IV priorities.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        Gyarados can be a worthwhile long-term Pokémon because
+        the species has multiple forms and uses. A player who
+        raids, battles in PvP and collects Mega Pokémon may
+        have reasons to keep several different Gyarados builds.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     18 COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 — COMPARISON
+        </span>
+
+        <h2>
+            Regular vs Shadow vs Shiny vs Mega Gyarados
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                    <th>
+                        Mega
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Water Type
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Flying Type
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Dark Type
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Depends on form
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Possible separately
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Can retain Shiny status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Form
+                    </td>
+
+                    <td>
+                        Can Mega Evolve
+                    </td>
+
+                    <td>
+                        Special-form rules apply
+                    </td>
+
+                    <td>
+                        Can Mega Evolve
+                    </td>
+
+                    <td>
+                        Already Mega
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     19 FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 — FAQ
+        </span>
+
+        <h2>
+            Gyarados FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Gyarados?
+        </summary>
+
+        <p>
+
+            Regular Gyarados is a Water/Flying-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Gyarados weak to?
+        </summary>
+
+        <p>
+
+            Gyarados is weak to Electric and Grass attacks.
+            Electric attacks are especially effective because
+            of Gyarados's double Electric weakness.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do you evolve Magikarp into Gyarados?
+        </summary>
+
+        <p>
+
+            Magikarp evolves into Gyarados using 400
+            Magikarp Candy.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Gyarados available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Gyarados is available through eligible
+            Pokémon GO encounters and evolution.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Gyarados good for raids?
+        </summary>
+
+        <p>
+
+            Gyarados can be useful as a Water-type attacker,
+            although its exact ranking depends on the current
+            Pokémon GO move pool and competing attackers.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Gyarados good?
+        </summary>
+
+        <p>
+
+            Shadow Gyarados can be a strong damage-focused
+            option because Shadow Pokémon receive increased
+            offensive power at the cost of additional damage
+            taken.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Gyarados?
+        </summary>
+
+        <p>
+
+            Not automatically. Compare the Shadow version
+            with the purified result before deciding,
+            especially if your goal is raid performance.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Mega Gyarados?
+        </summary>
+
+        <p>
+
+            Mega Gyarados is a Water/Dark-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mega Gyarados good for raids?
+        </summary>
+
+        <p>
+
+            Mega Gyarados can be an excellent Mega option
+            for relevant Water- and Dark-type raid roles while
+            also providing Mega-related team and Candy bonuses.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Gyarados become Mega Gyarados?
+        </summary>
+
+        <p>
+
+            Yes. A Shiny Gyarados can retain its Shiny identity
+            when used for Mega Evolution.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mega Evolution permanently change Gyarados?
+        </summary>
+
+        <p>
+
+            No. Mega Evolution is a temporary transformation.
+            The underlying Pokémon remains Gyarados.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Gyarados good in PvP?
+        </summary>
+
+        <p>
+
+            Gyarados can be useful in PvP, particularly in
+            formats where its typing, bulk and charged-move
+            pressure fit the current metagame.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Gyarados better than Magikarp?
+        </summary>
+
+        <p>
+
+            Gyarados is the evolved form and is substantially
+            stronger in battle. Magikarp is primarily important
+            as the source Pokémon for Gyarados evolution.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is the best Gyarados moveset?
+        </summary>
+
+        <p>
+
+            The preferred moveset depends on the battle format.
+            For a traditional Water-focused PvE build, Waterfall
+            with a strong Water charged move is a natural choice.
+            Always check current move availability.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =======================================================
+     EDITORIAL NOTE
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            events, raid rotations, forms and availability can
+            change over time. Current game information should
+            always be verified before making investment decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This website is an independent
+            informational resource and is not affiliated with
+            or endorsed by The Pokémon Company, Nintendo,
+            Game Freak or Niantic.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Gyarados Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Gyarados Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#counters">
+                Counters
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Gyarados
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Gyarados
+            </a>
+        </li>
+
+        <li>
+            <a href="#mega">
+                Mega Gyarados
+            </a>
+        </li>
+
+        <li>
+            <a href="#forms">
+                Forms Compared
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#battle-guide">
+                Battle Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/magikarp.html">
+
+        Magikarp Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/mega-gyarados.html">
+
+        Mega Gyarados Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/water.html">
+
+        Water Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/flying.html">
+
+        Flying Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/dark.html">
+
+        Dark Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-1.html">
+
+        Gen 1 Pokémon →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Gyarados Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>Type:</strong>
+        Water / Flying
+    </p>
+
+
+    <p>
+        <strong>Generation:</strong>
+        1
+    </p>
+
+
+    <p>
+        <strong>Pokédex:</strong>
+        #130
+    </p>
+
+
+    <p>
+        <strong>Evolution:</strong>
+        Magikarp
+    </p>
+
+
+    <p>
+        <strong>Evolution Cost:</strong>
+        400 Candy
+    </p>
+
+
+    <p>
+        <strong>Shadow:</strong>
+        Available
+    </p>
+
+
+    <p>
+        <strong>Shiny:</strong>
+        Available
+    </p>
+
+
+    <p>
+        <strong>Mega:</strong>
+        Mega Gyarados
+    </p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

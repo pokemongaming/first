@@ -1,0 +1,5386 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Latios Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses, Shadow, Shiny & Mega Latios
+</title>
+
+<meta name="description"
+      content="Complete Latios Pokémon GO guide covering Dragon and Psychic typing, stats, max CP, best moves, raid performance, PvP, IVs, Shiny Latios, Shadow Latios, Purified Latios, Lucky Latios, hundo, XXL, XXS and Mega Latios.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/latios.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #8fa2ff;
+    --accent-2: #657cff;
+
+    --dragon: #8f79e8;
+    --psychic: #e86b9b;
+
+    --dark: #75645d;
+    --ghost: #9a78c7;
+    --ice: #72d6dc;
+    --fairy: #e69ad1;
+    --bug: #83bd5b;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #e4b84f;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(111,130,255,.11),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(143,121,232,.17),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 20% 100%,
+            rgba(232,107,155,.10),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color:
+        var(--dragon);
+
+    background:
+        rgba(143,121,232,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.dragon-tag {
+    color: var(--dragon);
+}
+
+.psychic-tag {
+    color: var(--psychic);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(143,121,232,.22),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom:
+        20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        25px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(143,121,232,.3);
+
+    background:
+        rgba(143,121,232,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(143,121,232,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display:block;
+}
+
+.type-box span {
+
+    color:
+        var(--dragon);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   TYPE PILLS
+========================================================= */
+
+.type-row {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    flex-wrap:
+        wrap;
+}
+
+.type-pill {
+
+    padding:
+        7px 15px;
+
+    border-radius:
+        30px;
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        900;
+}
+
+.dragon-type {
+
+    background:
+        rgba(143,121,232,.2);
+
+    color:
+        #b7a6ff;
+}
+
+.psychic-type {
+
+    background:
+        rgba(232,107,155,.2);
+
+    color:
+        #ff9bc0;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display:block;
+}
+
+.effect-card span {
+    color:var(--muted);
+    font-size:.72rem;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x:auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight:850;
+}
+
+.move-type {
+    color:
+        var(--dragon);
+
+    font-weight:800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(143,121,232,.11),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(143,121,232,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom:0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:
+        hidden;
+}
+
+.rating-fill {
+
+    height:
+        100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:
+        right;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align:
+        left;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.form-card {
+
+    margin-top:
+        20px;
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #17152c,
+            #24192a
+        );
+
+    border:
+        1px solid rgba(143,121,232,.3);
+}
+
+.form-card h3 {
+    margin-top:0;
+}
+
+.form-card strong {
+    color:#fff;
+}
+
+
+/* =========================================================
+   SPECIAL FORM GRID
+========================================================= */
+
+.special-form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        20px;
+}
+
+.special-form {
+
+    padding:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--surface-2);
+
+    border-radius:
+        16px;
+}
+
+.special-form .symbol {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        8px;
+}
+
+.special-form h3 {
+    margin:0 0 5px;
+}
+
+.special-form p {
+    font-size:.74rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:8px;
+
+    margin-top:15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:"✓";
+
+    margin-right:8px;
+
+    color:
+        var(--success);
+
+    font-weight:900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:none;
+
+    display:grid;
+
+    gap:4px;
+}
+
+.side-nav a {
+
+    display:block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:white;
+}
+
+.related-link {
+
+    display:block;
+
+    padding:10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:.75rem;
+}
+
+.related-link:last-child {
+    border-bottom:0;
+}
+
+.related-link:hover {
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom:0;
+}
+
+summary {
+
+    cursor:pointer;
+
+    font-weight:850;
+
+    font-size:.82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:.78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:.72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:
+        space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+footer p {
+
+    margin:0;
+
+    font-size:.72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns:1fr;
+    }
+
+    .sidebar {
+        position:static;
+    }
+
+    .hero-grid {
+        grid-template-columns:1fr;
+    }
+
+    .hero-pokemon {
+        order:-1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .effect-grid,
+    .special-form-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .stat-grid,
+    .effect-grid,
+    .special-form-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+
+        gap:6px;
+    }
+
+    .rating-value {
+        text-align:left;
+    }
+
+    .main-nav {
+        display:none;
+    }
+
+    .pokemon-placeholder {
+        width:200px;
+        height:200px;
+        font-size:5rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/dragon.html">
+        Dragon Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Latios
+    </strong>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                LEGENDARY POKÉMON
+            </span>
+
+            <h1>
+                Latios
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Latios is a Dragon and Psychic-type Legendary
+                Pokémon from the Hoenn region. In Pokémon GO,
+                Latios is known for its strong offensive stats,
+                Dragon-type damage and its powerful Mega Latios
+                form.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag dragon-tag">
+                    Dragon
+                </span>
+
+                <span class="tag psychic-tag">
+                    Psychic
+                </span>
+
+                <span class="tag">
+                    #381
+                </span>
+
+                <span class="tag">
+                    Legendary
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Mega Available
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your properly licensed Latios image -->
+
+            <div class="pokemon-placeholder">
+                🐉
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            268
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            212
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            190
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~4,310
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Overview
+        </h2>
+
+        <p>
+
+            Latios is a dual Dragon/Psychic Legendary Pokémon
+            introduced in Generation 3. It does not evolve
+            through a conventional evolution chain, but it can
+            undergo Mega Evolution into Mega Latios.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#381</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 3</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Hoenn</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Dragon / Psychic</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>268</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>212</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>190</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Evolution</span>
+            <strong>None</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🐉
+        </div>
+
+        <div>
+
+            <strong>
+                Dragon / Psychic
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Latios Type Combination
+    </h3>
+
+
+    <div class="type-row">
+
+        <span class="type-pill dragon-type">
+            Dragon
+        </span>
+
+        <span class="type-pill psychic-type">
+            Psychic
+        </span>
+
+    </div>
+
+
+    <p>
+
+        Latios combines Dragon and Psychic typing, giving it
+        access to useful offensive matchups while also creating
+        a broader weakness profile than a single-type Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Weaknesses & Resistances
+        </h2>
+
+        <p>
+
+            Latios's Dragon/Psychic typing makes it vulnerable
+            to several common attacking types while giving it
+            useful resistances to Electric, Fire, Grass, Water
+            and Fighting attacks.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks deal super-effective damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attackers can exploit Latios.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon
+            </strong>
+
+            <p>
+                Dragon attacks are super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy attackers can deal super-effective damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost-type attacks exploit Latios's Psychic typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks are super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Latios resists Electric-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Fire attacks are resisted by Latios.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks are resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks are resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting attacks are resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic-type attacks are resisted.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Latios has a strong offensive profile, with Attack
+            being its standout stat. Its Defense and HP provide
+            useful durability for both raids and other battle
+            formats.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                268
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                212
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                190
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~4,310
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP depends on the Pokémon's underlying
+            stats, level and IVs. Always verify numerical values
+            against your current game-data source before making
+            the page a permanent database reference.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Best Moves
+        </h2>
+
+        <p>
+
+            Latios can be built around either Dragon or Psychic
+            damage depending on the raid matchup and the role
+            you want it to perform.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Dragon Raid Build
+        </strong>
+
+        <p>
+            Dragon Breath + Dragon Claw
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Psychic-Oriented Build
+        </strong>
+
+        <p>
+            Zen Headbutt + Psychic
+        </p>
+
+    </div>
+
+
+    <h3>
+        Latios Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Breath
+                    </td>
+
+                    <td class="move-type">
+                        Dragon
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Dragon damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Zen Headbutt
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Psychic damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Claw
+                    </td>
+
+                    <td class="move-type">
+                        Dragon
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Dragon role
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Psychic
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Psychic role
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Luster Purge
+                    </td>
+
+                    <td class="move-type">
+                        Psychic
+                    </td>
+
+                    <td>
+                        Special Charged Move
+                    </td>
+
+                    <td>
+                        Event / special move
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through events, Elite TMs
+        and Pokémon GO's move updates. Check current game data
+        before publishing a time-sensitive moveset recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Is Latios Good for Raids?
+        </h2>
+
+        <p>
+
+            Latios can contribute to Dragon and Psychic raid
+            teams. Its usefulness depends heavily on the current
+            moveset, available alternatives and the boss being
+            targeted.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Dragon Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:88%;">
+
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Psychic Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:82%;">
+
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.2/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            General Utility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:86%;">
+
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.6/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Latios?
+    </h3>
+
+    <p>
+
+        Latios is worth considering when you need a Dragon or
+        Psychic attacker and have a strong specimen with a
+        suitable moveset. Mega Latios is a separate and more
+        specialized investment.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     COUNTERS
+======================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <h2>
+            What Counters Latios?
+        </h2>
+
+        <p>
+
+            Latios has six weakness categories, giving raid
+            teams several possible ways to exploit it.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark Attackers
+            </strong>
+
+            <p>
+                Dark attackers are strong choices against Latios.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost Attackers
+            </strong>
+
+            <p>
+                Ghost-type attackers exploit Latios's Psychic typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy Attackers
+            </strong>
+
+            <p>
+                Fairy attacks deal super-effective damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon Attackers
+            </strong>
+
+            <p>
+                Strong Dragon attackers can exploit Latios.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice Attackers
+            </strong>
+
+            <p>
+                Ice-type Pokémon can also counter Latios.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug Attackers
+            </strong>
+
+            <p>
+                Bug attacks are super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Exact raid rankings can change with boss movesets,
+        weather, party size, friendship bonuses, Mega bonuses
+        and newly released Pokémon.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add additional Attack, Defense and
+            HP points. A 15/15/15 Latios is commonly called a
+            perfect or hundo Latios.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% / Hundo Latios
+    </h3>
+
+    <p>
+
+        A 15/15/15 Latios is a 100% IV or hundo Latios.
+        It is especially desirable for collectors, long-term
+        investments and players who want the highest possible
+        IV combination.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect IV Combination
+        </strong>
+
+        <p>
+            Attack 15 / Defense 15 / HP 15
+        </p>
+
+    </div>
+
+
+    <p>
+
+        A lower-IV Latios can still perform very well. IV
+        perfection should not automatically outweigh level,
+        moveset, form and the role you need the Pokémon to fill.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios PvP Guide
+        </h2>
+
+        <p>
+
+            Latios has access to strong Dragon and Psychic
+            attacks, but its PvP usefulness depends on the
+            current league rules and metagame.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Latios's high maximum CP makes Master League the most
+        natural open PvP environment to consider. Its Dragon
+        typing can provide useful offensive pressure, while its
+        weaknesses require careful matchup management.
+
+    </p>
+
+
+    <h3>
+        Great League & Ultra League
+    </h3>
+
+    <p>
+
+        Standard Latios is generally less natural for the lower
+        CP leagues because of its high base stats. Special cups
+        and restricted formats can change this evaluation.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Latios
+        </h2>
+
+        <p>
+
+            Shiny Latios is available in Pokémon GO through
+            eligible Latios encounters. Its alternate coloration
+            makes it a popular collector target.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <div class="symbol">
+                🐉
+            </div>
+
+            <h3>
+                Regular Latios
+            </h3>
+
+            <p>
+                Standard Latios coloration.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Latios
+            </h3>
+
+            <p>
+                Alternate Shiny coloration.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shiny Latios
+        </strong>
+
+        <p>
+
+            Shiny status does not by itself increase Latios's
+            combat stats. Its main value is its alternate
+            appearance and collector appeal.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     SHADOW
+======================================================= -->
+
+<section class="section" id="shadow-latios">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Latios
+        </h2>
+
+        <p>
+
+            Shadow Latios is the Shadow variant of Latios.
+            Shadow Pokémon have a different battle profile
+            from their regular counterparts, making Shadow
+            Latios a separate investment decision.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                SPECIES
+            </span>
+
+            <strong>
+                Latios
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Shadow
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Dragon / Psychic
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                EVOLUTION
+            </span>
+
+            <strong>
+                None
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Latios Mechanics
+    </h3>
+
+    <p>
+
+        Shadow Latios retains the Dragon/Psychic typing of
+        regular Latios. Its Shadow status changes its battle
+        characteristics, making it more damage-focused while
+        sacrificing defensive durability.
+
+    </p>
+
+
+    <h3>
+        Shadow Latios Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost attacks exploit its Psychic typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy attacks remain super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Latios vs Regular Latios
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Latios
+                    </td>
+
+                    <td>
+                        Latios
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Durability
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Offensive Pressure
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration warning:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon may know Frustration. Special Team
+            GO Rocket events can provide opportunities to replace
+            it with another Charged Move. Check current event
+            rules before spending resources.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Shadow Latios?
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the Shadow Latios IVs.
+        </li>
+
+        <li>
+            Check its available moves.
+        </li>
+
+        <li>
+            Compare its damage with other Dragon attackers.
+        </li>
+
+        <li>
+            Consider the increased Shadow resource cost.
+        </li>
+
+        <li>
+            Do not purify automatically.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     PURIFIED
+======================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Latios
+        </h2>
+
+        <p>
+
+            Purified Latios is created by purifying a Shadow
+            Latios. Purification changes the Pokémon's status
+            and provides the standard purification benefits.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <div class="symbol">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Latios
+            </h3>
+
+            <p>
+                Retains Shadow status and its Shadow battle bonus.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                ✨
+            </div>
+
+            <h3>
+                Purified Latios
+            </h3>
+
+            <p>
+                Shadow status is removed through purification.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Latios
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Retained
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not yet
+                    </td>
+
+                    <td>
+                        Already purified
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Investment Goal
+                    </td>
+
+                    <td>
+                        Damage-focused
+                    </td>
+
+                    <td>
+                        Standard / collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Purification should be considered carefully. If your
+        goal is maximum Shadow battle performance, purifying
+        Latios removes the Shadow status and its associated
+        battle characteristics.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     LUCKY
+======================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Latios
+        </h2>
+
+        <p>
+
+            Lucky Latios is a special Pokémon obtained through
+            trading. Lucky Pokémon have a distinctive background
+            and reduced Stardust requirements for power-ups.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <div class="symbol">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Latios
+            </h3>
+
+            <p>
+
+                A trade-derived special status that can make
+                powering up Latios more Stardust-efficient.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                ⭐
+            </div>
+
+            <h3>
+                Lucky Collector Value
+            </h3>
+
+            <p>
+
+                Lucky Latios can be attractive to collectors and
+                players building long-term Legendary teams.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                💎
+            </div>
+
+            <h3>
+                Stardust Savings
+            </h3>
+
+            <p>
+
+                Lucky Pokémon require less Stardust to power up
+                than standard Pokémon.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is Lucky Latios Worth Keeping?
+    </h3>
+
+    <p>
+
+        Yes, especially when the IVs are strong and you plan to
+        power up Latios. The Lucky status can make a high-level
+        investment more economical.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     100% LATIOS
+======================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% IV Latios — Hundo Latios
+        </h2>
+
+        <p>
+
+            A 100% Latios has perfect Attack, Defense and HP IVs:
+            15/15/15.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Hundo Latios
+        </strong>
+
+        <p>
+            15 Attack / 15 Defense / 15 HP = 100% IV
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Hundo Latios is desirable because it has the highest
+        possible IV combination. However, a strong non-hundo
+        Latios can still be an excellent Pokémon for raids and
+        other battle content.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     XXL
+======================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Latios
+        </h2>
+
+        <p>
+
+            XXL Latios is a size variant that is larger than the
+            standard size range. Size is separate from IVs and
+            does not automatically mean that the Pokémon has
+            better battle stats.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <div class="symbol">
+                📏
+            </div>
+
+            <h3>
+                XXL Latios
+            </h3>
+
+            <p>
+                Larger-than-standard size variant.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                ⚔️
+            </div>
+
+            <h3>
+                Battle Stats
+            </h3>
+
+            <p>
+                Size should not be confused with IV quality.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                🏆
+            </div>
+
+            <h3>
+                Collector Value
+            </h3>
+
+            <p>
+                Useful for size-focused collections and medals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     XXS
+======================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Latios
+        </h2>
+
+        <p>
+
+            XXS Latios is a very small size variant. Like XXL,
+            the XXS classification is primarily a size and
+            collection characteristic rather than an indication
+            of perfect IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-form-grid">
+
+        <div class="special-form">
+
+            <div class="symbol">
+                📐
+            </div>
+
+            <h3>
+                XXS Latios
+            </h3>
+
+            <p>
+                Smaller-than-standard size variant.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                ⭐
+            </div>
+
+            <h3>
+                Collector Value
+            </h3>
+
+            <p>
+                Useful for size collections and related medals.
+            </p>
+
+        </div>
+
+
+        <div class="special-form">
+
+            <div class="symbol">
+                IVs
+            </div>
+
+            <h3>
+                Independent of IVs
+            </h3>
+
+            <p>
+                XXS status does not mean perfect IVs.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     MEGA LATIOS
+======================================================= -->
+
+<section class="section" id="mega-latios">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            SPECIAL FORM
+        </span>
+
+        <h2>
+            Mega Latios
+        </h2>
+
+        <p>
+
+            Mega Latios is the Mega-Evolved form of Latios.
+            It has significantly stronger combat potential than
+            standard Latios and can provide Mega-related benefits
+            while active.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                SPECIES
+            </span>
+
+            <strong>
+                Latios
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #381
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Mega
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Dragon / Psychic
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Is Mega Latios?
+    </h3>
+
+    <p>
+
+        Mega Latios is a temporary Mega Evolution rather than
+        a permanent evolutionary species. A compatible Latios
+        can Mega Evolve using Mega Energy when the relevant
+        Mega Evolution requirements are met.
+
+    </p>
+
+
+    <div class="form-card">
+
+        <h3>
+            Mega Latios Raid Role
+        </h3>
+
+        <p>
+
+            Mega Latios can function as a powerful Dragon or
+            Psychic attacker and can also provide Mega-related
+            benefits to players participating in appropriate
+            battles.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Mega Latios vs Regular Latios
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Latios
+                    </th>
+
+                    <th>
+                        Mega Latios
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Latios
+                    </td>
+
+                    <td>
+                        Latios
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Form
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Mega
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Temporary
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Energy
+                    </td>
+
+                    <td>
+                        Not required
+                    </td>
+
+                    <td>
+                        Required
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Raid Role
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Enhanced Dragon / Psychic
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Mega Latios Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon
+            </strong>
+
+            <p>
+                Dragon attacks deal super-effective damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy attacks exploit Mega Latios.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost attacks are super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice attacks remain super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Latios Raid Performance
+    </h3>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Dragon Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:96%;">
+
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Psychic Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:92%;">
+
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Team Utility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:95%;">
+
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <h3>
+        Mega Energy
+    </h3>
+
+    <p>
+
+        Mega Energy is used to Mega Evolve Latios. The amount
+        required and the methods for obtaining Mega Energy can
+        depend on Pokémon GO's current Mega system and event
+        availability.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Mega Latios Investment Tip
+        </strong>
+
+        <p>
+
+            If you regularly raid with Dragon or Psychic teams,
+            Mega Latios can be a valuable long-term Mega
+            investment. Consider your existing Mega Pokémon,
+            Mega Energy supply and preferred raid roles.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Can Shadow Latios Become Mega Latios?
+    </h3>
+
+    <p>
+
+        Shadow Pokémon and Mega Evolution have special
+        interaction rules in Pokémon GO. Do not assume that
+        every Shadow Pokémon can be Mega Evolved. Check the
+        current in-game rules before presenting Shadow Latios
+        as a Mega Evolution candidate.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     FORMS
+======================================================= -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Forms & Special Variants
+        </h2>
+
+        <p>
+
+            Latios can appear with several special statuses and
+            characteristics. These should not all be treated as
+            completely separate species.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Combat Impact
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Standard form
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        No direct stat bonus
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        Different battle profile
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Standard purified Pokémon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Lucky trade status
+                    </td>
+
+                    <td>
+                        Lower Stardust power-up cost
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        Maximum IV combination
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                    <td>
+                        Size characteristic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Small size
+                    </td>
+
+                    <td>
+                        Size characteristic
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Latios
+                    </td>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Mega Evolution
+                    </td>
+
+                    <td>
+                        Enhanced combat and Mega utility
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Building a strong Latios requires resources beyond
+            simply catching the Pokémon. Candy, Candy XL and
+            Stardust become increasingly important for high-level
+            investments.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Latios Candy for meaningful power-up projects.
+        </li>
+
+        <li>
+            Collect Latios Candy XL for high-level investments.
+        </li>
+
+        <li>
+            Check the moveset before using Elite resources.
+        </li>
+
+        <li>
+            Consider Lucky Latios for Stardust-efficient investment.
+        </li>
+
+        <li>
+            Compare regular and Mega Latios before committing resources.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Availability
+        </h2>
+
+        <p>
+
+            Latios is a Legendary Pokémon whose availability
+            depends on Pokémon GO's current raid rotations,
+            events and other special encounters.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and Legendary
+            Raid schedule before planning a Latios hunt.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical raid appearances should be separated from
+        current availability so that an old event does not
+        accidentally appear to be an active encounter source.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Latios
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the raid boss's weaknesses.
+        </li>
+
+        <li>
+            Choose Dragon or Psychic Latios depending on the matchup.
+        </li>
+
+        <li>
+            Confirm the Fast and Charged Moves.
+        </li>
+
+        <li>
+            Check Latios's level and IVs.
+        </li>
+
+        <li>
+            Consider Mega Evolution if appropriate.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        During Team Building
+    </h3>
+
+    <p>
+
+        Do not automatically use Latios in every Dragon or
+        Psychic matchup. Compare its damage, survivability,
+        moveset and available alternatives for the specific
+        raid boss.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        A strong Latios can remain useful when you have a
+        suitable moveset and regularly participate in raids
+        where Dragon or Psychic damage is valuable.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios Special Forms Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                    <th>
+                        Mega
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Dragon / Psychic
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Temporary Form
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega Energy
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Main Purpose
+                    </td>
+
+                    <td>
+                        General use
+                    </td>
+
+                    <td>
+                        Damage-focused
+                    </td>
+
+                    <td>
+                        Purified collection
+                    </td>
+
+                    <td>
+                        Enhanced battle / Mega utility
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Latios FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            Is Latios a Legendary Pokémon?
+        </summary>
+
+        <p>
+
+            Yes. Latios is a Legendary Pokémon introduced in
+            Generation 3.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What type is Latios?
+        </summary>
+
+        <p>
+
+            Latios is a Dragon and Psychic-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Latios weak to?
+        </summary>
+
+        <p>
+
+            Latios is weak to Bug, Dark, Dragon, Fairy, Ghost
+            and Ice-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Latios evolve?
+        </summary>
+
+        <p>
+
+            Latios does not have a conventional evolution.
+            It can Mega Evolve into Mega Latios.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Latios available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Latios is available through eligible
+            Pokémon GO encounters.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Latios good for raids?
+        </summary>
+
+        <p>
+
+            Latios can be useful as a Dragon or Psychic attacker,
+            depending on its moveset and the raid matchup.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Latios good in Master League?
+        </summary>
+
+        <p>
+
+            Latios can be considered for Master League, although
+            its usefulness depends on the current metagame,
+            moveset and team composition.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Latios?
+        </summary>
+
+        <p>
+
+            A 100% or hundo Latios has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Latios?
+        </summary>
+
+        <p>
+
+            Lucky Latios is obtained through trading and has
+            reduced Stardust requirements for power-ups.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Latios?
+        </summary>
+
+        <p>
+
+            XXL Latios is a Latios that falls into the game's
+            larger size classification.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Latios?
+        </summary>
+
+        <p>
+
+            XXS Latios is a Latios that falls into the game's
+            smallest size classification.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Latios good for raids?
+        </summary>
+
+        <p>
+
+            Shadow Latios can be considered for damage-focused
+            teams because Shadow Pokémon have increased
+            offensive pressure but reduced durability.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Latios?
+        </summary>
+
+        <p>
+
+            Not automatically. Compare the Shadow and purified
+            versions before deciding, especially if your goal
+            is raid performance.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mega Latios?
+        </summary>
+
+        <p>
+
+            Mega Latios is the temporary Mega-Evolved form of
+            Latios. It has enhanced combat potential and provides
+            Mega-related gameplay benefits while active.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mega Latios good for raids?
+        </summary>
+
+        <p>
+
+            Mega Latios can be a powerful Dragon and Psychic
+            raid option and can provide additional Mega utility
+            for the team.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Latios become Mega Latios?
+        </summary>
+
+        <p>
+
+            A compatible Shiny Latios can retain its Shiny
+            identity when using Mega Evolution.
+
+        </p>
+
+    </details>
+
+
+</section>
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            raid rotations, availability, forms and other game
+            data can change over time. Verify current in-game
+            information before making investment decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Latios Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Latios Overview
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shadow-latios">
+                    Shadow Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#purified">
+                    Purified Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#lucky">
+                    Lucky Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#hundo">
+                    100% Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#xxl">
+                    XXL Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#xxs">
+                    XXS Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shiny">
+                    Shiny Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#mega-latios">
+                    Mega Latios
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/latias.html">
+
+            Latias Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/mega-latios.html">
+
+            Mega Latios Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/rayquaza.html">
+
+            Rayquaza Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/dragon.html">
+
+            Dragon Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/psychic.html">
+
+            Psychic Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-3.html">
+
+            Gen 3 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Latios Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Dragon / Psychic
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            3
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #381
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            None
+        </p>
+
+
+        <p>
+            <strong>Special Form:</strong>
+            Mega Latios
+        </p>
+
+
+        <p>
+            <strong>Shiny:</strong>
+            Available
+        </p>
+
+
+        <p>
+            <strong>Shadow:</strong>
+            Available through eligible Shadow encounters
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

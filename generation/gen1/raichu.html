@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+   content="width=device-width, initial-scale=1.0">
+
+<title>Raichu Pokémon GO Guide — Regular, Shiny, Shadow, Purified, Lucky, 100%, XXL, XXS & Mega Raichu X/Y</title>
+
+<meta name="description"
+   content="Complete Raichu Pokémon GO guide covering Regular Raichu, Shiny Raichu, Shadow Raichu, Purified Raichu, Lucky Raichu, 100% IV Raichu, XXL Raichu, XXS Raichu, Mega Raichu X and Mega Raichu Y.">
+
+<meta name="robots"
+   content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/raichu.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+    --bg: #080b12;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --electric: #ffd84d;
+    --electric-2: #ffb703;
+
+    --shadow: #8c6cff;
+    --purified: #8fd3ff;
+    --lucky: #ffbd45;
+    --perfect: #ff6f91;
+
+    --mega-x: #ff7a36;
+    --mega-y: #7d8cff;
+
+    --success: #62d89a;
+    --danger: #ff6f7d;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(255,216,77,.10),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    min-height: 68px;
+
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+}
+
+.logo span {
+    color: var(--electric);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 35px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255,216,77,.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    color: var(--electric);
+
+    border:
+        1px solid rgba(255,216,77,.25);
+
+    background:
+        rgba(255,216,77,.07);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+    font-size: 1rem;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.electric-tag {
+    color: var(--electric);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,216,77,.20),
+            transparent 65%
+        );
+
+    font-size: 8rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.45)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    text-align: center;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 25px 0 10px;
+    font-size: 1.08rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.4rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(255,216,77,.25);
+
+    background:
+        rgba(255,216,77,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,216,77,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--electric);
+    font-size: .75rem;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.effect-icon {
+    font-size: 1.6rem;
+    margin-bottom: 7px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.28);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.28);
+}
+
+
+/* =====================================================
+   FORM CARDS
+===================================================== */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+}
+
+.form-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 24px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.form-card h3 {
+    margin: 0 0 8px;
+}
+
+.form-card p {
+    font-size: .78rem;
+}
+
+.form-card .form-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.regular-form {
+    border-color:
+        rgba(255,216,77,.28);
+}
+
+.shiny-form {
+    border-color:
+        rgba(255,198,55,.45);
+}
+
+.shadow-form {
+    border-color:
+        rgba(140,108,255,.45);
+}
+
+.purified-form {
+    border-color:
+        rgba(143,211,255,.45);
+}
+
+.lucky-form {
+    border-color:
+        rgba(255,189,69,.45);
+}
+
+.perfect-form {
+    border-color:
+        rgba(255,111,145,.45);
+}
+
+.xxl-form {
+    border-color:
+        rgba(255,140,80,.45);
+}
+
+.xxs-form {
+    border-color:
+        rgba(120,180,255,.45);
+}
+
+
+/* =====================================================
+   MEGA CARDS
+===================================================== */
+
+.mega-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 18px;
+}
+
+.mega-card {
+    padding: 28px;
+
+    border-radius: 20px;
+
+    color: white;
+}
+
+.mega-x {
+    background:
+        linear-gradient(
+            135deg,
+            #4b1d0c,
+            #a83e17,
+            #ff7a36
+        );
+}
+
+.mega-y {
+    background:
+        linear-gradient(
+            135deg,
+            #111634,
+            #3545a0,
+            #7d8cff
+        );
+}
+
+.mega-card .mega-label {
+    font-size: .65rem;
+
+    font-weight: 900;
+
+    letter-spacing: .12em;
+
+    opacity: .8;
+}
+
+.mega-card h3 {
+    margin: 8px 0;
+    font-size: 1.8rem;
+}
+
+.mega-card p {
+    color:
+        rgba(255,255,255,.82);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--electric);
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+    padding: 18px;
+
+    margin-top: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,216,77,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(255,216,77,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   RATING
+===================================================== */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    overflow: hidden;
+
+    border-radius: 99px;
+
+    background:
+        var(--surface-3);
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--electric);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: .78rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    color: white;
+    background: var(--surface-2);
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 35px 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid,
+    .mega-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+<a href="/pokemon-types.html">Types</a>
+<a href="/pokedex.html">Pokédex</a>
+<a href="/raids/">Raids</a>
+<a href="/guides/">Guides</a>
+<a href="/tools/">Tools</a>
+</nav>
+
+</div>
+
+</header>
+
+<main class="page">
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">Pokémon Database</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/electric.html">Electric Type</a>
+
+<span>›</span>
+
+<strong>Raichu</strong>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">
+GENERATION 1 ELECTRIC POKÉMON
+</span>
+
+<h1>
+Raichu
+</h1>
+
+<p class="hero-subtitle">
+
+Raichu is the evolved form of Pikachu and one of the
+most recognizable Electric-type Pokémon in Pokémon GO.
+This guide covers Regular Raichu, Shiny, Shadow,
+Purified, Lucky, 100% IV, XXL, XXS and both Mega Raichu
+forms available in Pokémon GO.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag electric-tag">
+Electric
+</span>
+
+<span class="tag">
+#026
+</span>
+
+<span class="tag">
+Gen 1
+</span>
+
+<span class="tag">
+Evolution
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+<span class="tag">
+Mega Forms Available
+</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<!-- Replace with licensed Raichu artwork -->
+
+<div class="pokemon-placeholder">
+⚡
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+<strong>193</strong>
+<span>ATTACK</span>
+</div>
+
+<div class="quick-stat">
+<strong>151</strong>
+<span>DEFENSE</span>
+</div>
+
+<div class="quick-stat">
+<strong>155</strong>
+<span>HP</span>
+</div>
+
+<div class="quick-stat">
+<strong>~2,586</strong>
+<span>MAX CP</span>
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+Raichu Overview
+</h2>
+
+<p>
+
+Raichu is an Electric-type Pokémon from the Kanto
+region. It evolves from Pikachu and is part of one of
+the most famous evolution families in the Pokémon
+series.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>Pokédex</span>
+<strong>#026</strong>
+</div>
+
+<div class="stat-card">
+<span>Generation</span>
+<strong>Gen 1</strong>
+</div>
+
+<div class="stat-card">
+<span>Region</span>
+<strong>Kanto</strong>
+</div>
+
+<div class="stat-card">
+<span>Type</span>
+<strong>Electric</strong>
+</div>
+
+<div class="stat-card">
+<span>Attack</span>
+<strong>193</strong>
+</div>
+
+<div class="stat-card">
+<span>Defense</span>
+<strong>151</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>155</strong>
+</div>
+
+<div class="stat-card">
+<span>Evolution</span>
+<strong>Pikachu</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>
+Raichu Type
+</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">
+⚡
+</div>
+
+<div>
+
+<strong>
+Electric
+</strong>
+
+<span>
+Primary Type
+</span>
+
+</div>
+
+</div>
+
+<h3>
+Raichu Weakness
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🌎
+</div>
+
+<strong>
+Ground
+</strong>
+
+<p>
+Ground-type attacks are super effective against Raichu.
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Raichu Resistances
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+⚡
+</div>
+
+<strong>
+Electric
+</strong>
+
+<p>
+Electric attacks are resisted.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🪽
+</div>
+
+<strong>
+Flying
+</strong>
+
+<p>
+Flying-type attacks are resisted.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+⚙️
+</div>
+
+<strong>
+Steel
+</strong>
+
+<p>
+Steel-type attacks are resisted.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<h2>
+Raichu Forms & Special Variants
+</h2>
+
+<p>
+
+Raichu can exist in several collectible or mechanically
+different forms in Pokémon GO. Some forms change battle
+mechanics while others mainly affect appearance, IV
+status, size or resource requirements.
+
+</p>
+
+</div>
+
+<div class="form-grid">
+
+<div class="form-card regular-form">
+
+<div class="form-icon">
+⚡
+</div>
+
+<h3>
+Regular Raichu
+</h3>
+
+<p>
+
+The standard Electric-type form obtained through the
+Pikachu evolution line.
+
+</p>
+
+</div>
+
+<div class="form-card shiny-form">
+
+<div class="form-icon">
+✨
+</div>
+
+<h3>
+Shiny Raichu
+</h3>
+
+<p>
+
+A rare alternate-color Raichu intended primarily for
+collectors. Battle performance depends on IVs, level and
+moves rather than Shiny status.
+
+</p>
+
+</div>
+
+<div class="form-card shadow-form">
+
+<div class="form-icon">
+🌑
+</div>
+
+<h3>
+Shadow Raichu
+</h3>
+
+<p>
+
+Shadow Raichu has the Shadow battle profile, giving it
+greater offensive pressure while reducing its defensive
+durability.
+
+</p>
+
+</div>
+
+<div class="form-card purified-form">
+
+<div class="form-icon">
+✨
+</div>
+
+<h3>
+Purified Raichu
+</h3>
+
+<p>
+
+A Shadow Raichu that has been purified. Purification
+changes the Shadow status and can affect IVs and resource
+costs.
+
+</p>
+
+</div>
+
+<div class="form-card lucky-form">
+
+<div class="form-icon">
+🍀
+</div>
+
+<h3>
+Lucky Raichu
+</h3>
+
+<p>
+
+Lucky Raichu is primarily valuable because Lucky Pokémon
+have reduced Stardust requirements for power-ups.
+
+</p>
+
+</div>
+
+<div class="form-card perfect-form">
+
+<div class="form-icon">
+💯
+</div>
+
+<h3>
+100% Raichu
+</h3>
+
+<p>
+
+A perfect Raichu has 15 Attack, 15 Defense and 15 HP IVs.
+
+</p>
+
+</div>
+
+<div class="form-card xxl-form">
+
+<div class="form-icon">
+📈
+</div>
+
+<h3>
+XXL Raichu
+</h3>
+
+<p>
+
+An unusually large Raichu that is primarily relevant to
+collection goals and size-based showcases.
+
+</p>
+
+</div>
+
+<div class="form-card xxs-form">
+
+<div class="form-icon">
+📉
+</div>
+
+<h3>
+XXS Raichu
+</h3>
+
+<p>
+
+An unusually small Raichu with collectible size
+characteristics.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<h2>
+Shiny Raichu
+</h2>
+
+<p>
+
+Shiny Raichu is an alternate-color version of Raichu.
+Its rarity makes it valuable for collectors, but Shiny
+status does not automatically improve battle stats.
+
+</p>
+
+<div class="best-move">
+
+<strong>
+Collector Tip
+</strong>
+
+<p>
+
+A Shiny Raichu with strong IVs, a useful moveset or an
+additional special background can be worth keeping as a
+long-term collection piece.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<h2>
+Shadow Raichu
+</h2>
+
+<p>
+
+Shadow Raichu should be evaluated separately from
+Regular Raichu because Shadow mechanics create a
+different offensive and defensive battle profile.
+
+</p>
+
+<div class="rating-row">
+
+<strong>
+Offensive Pressure
+</strong>
+
+<div class="rating-bar">
+<div class="rating-fill"
+     style="--rating:90%;">
+</div>
+</div>
+
+<span class="rating-value">
+High
+</span>
+
+</div>
+
+<div class="rating-row">
+
+<strong>
+Durability
+</strong>
+
+<div class="rating-bar">
+<div class="rating-fill"
+     style="--rating:65%;">
+</div>
+</div>
+
+<span class="rating-value">
+Lower
+</span>
+
+</div>
+
+<h3>
+Shadow Raichu Investment
+</h3>
+
+<ul class="checklist">
+
+<li>
+Check the current moveset before investing resources.
+</li>
+
+<li>
+Consider whether the Shadow damage profile fits your goal.
+</li>
+
+<li>
+Do not purify automatically.
+</li>
+
+<li>
+Compare Shadow Raichu with your existing Electric attackers.
+</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<h2>
+Purified Raichu
+</h2>
+
+<p>
+
+Purified Raichu is created by purifying an eligible
+Shadow Raichu. Purification removes Shadow status and
+creates a separate investment decision.
+
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>
+Shadow
+</strong>
+
+<p>
+Higher offensive pressure with Shadow mechanics.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+Purified
+</strong>
+
+<p>
+Standard battle profile after purification.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+Decision
+</strong>
+
+<p>
+Choose based on your collection and battle goals.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<h2>
+Lucky Raichu
+</h2>
+
+<p>
+
+Lucky Raichu is especially useful for players who want
+to build a Raichu while reducing Stardust investment
+costs.
+
+</p>
+
+<div class="best-move">
+
+<strong>
+Why Lucky Raichu Matters
+</strong>
+
+<p>
+
+Lucky status does not directly increase Raichu's damage,
+but it can make powering up a strong specimen more
+resource-efficient.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     100%
+===================================================== -->
+
+<section class="section" id="perfect">
+
+<h2>
+100% IV Raichu
+</h2>
+
+<p>
+
+A 100% Raichu has the perfect IV combination:
+
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<strong>15</strong>
+<span>Attack IV</span>
+</div>
+
+<div class="effect-card">
+<strong>15</strong>
+<span>Defense IV</span>
+</div>
+
+<div class="effect-card">
+<strong>15</strong>
+<span>HP IV</span>
+</div>
+
+</div>
+
+<p>
+
+A perfect IV Raichu is an excellent collector target,
+although IVs are only one part of determining practical
+battle performance.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<h2>
+XXL Raichu
+</h2>
+
+<p>
+
+XXL Raichu is an unusually large specimen. Size does not
+normally increase battle damage or CP, but XXL Pokémon
+can be valuable for collectors and size-based
+showcases.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<h2>
+XXS Raichu
+</h2>
+
+<p>
+
+XXS Raichu represents an unusually small specimen.
+Like XXL Pokémon, XXS status is mainly a collection and
+size-category feature.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     MEGA RAICHU
+===================================================== -->
+
+<section class="section" id="mega">
+
+<div class="section-heading">
+
+<h2>
+Mega Raichu X & Mega Raichu Y
+</h2>
+
+<p>
+
+Raichu has two Mega forms available in Pokémon GO:
+Mega Raichu X and Mega Raichu Y.
+
+</p>
+
+</div>
+
+<div class="mega-grid">
+
+<div class="mega-card mega-x">
+
+<span class="mega-label">
+MEGA FORM X
+</span>
+
+<h3>
+Mega Raichu X
+</h3>
+
+<p>
+
+Mega Raichu X is one of Raichu's special Mega forms and
+should be evaluated separately from Regular Raichu for
+raid performance, Mega mechanics and team utility.
+
+</p>
+
+</div>
+
+<div class="mega-card mega-y">
+
+<span class="mega-label">
+MEGA FORM Y
+</span>
+
+<h3>
+Mega Raichu Y
+</h3>
+
+<p>
+
+Mega Raichu Y is the second Mega Raichu option and can
+have a different role, moveset profile and battle
+application.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Mega Raichu Forms Compared
+</h3>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Feature</th>
+<th>Regular Raichu</th>
+<th>Mega Raichu X</th>
+<th>Mega Raichu Y</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Species</td>
+<td>Raichu</td>
+<td>Raichu</td>
+<td>Raichu</td>
+</tr>
+
+<tr>
+<td>Base Form</td>
+<td>Standard</td>
+<td>Mega X</td>
+<td>Mega Y</td>
+</tr>
+
+<tr>
+<td>Electric Role</td>
+<td>Standard</td>
+<td>Enhanced</td>
+<td>Enhanced</td>
+</tr>
+
+<tr>
+<td>Temporary Mega Form</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Separate Mega Energy</td>
+<td>No</td>
+<td>Check Current Data</td>
+<td>Check Current Data</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<h2>
+Raichu Best Moves
+</h2>
+
+<p>
+
+Raichu's ideal moveset depends on whether you are using
+it for raids, PvP or a special collection build.
+
+</p>
+
+<div class="best-move">
+
+<strong>
+Electric-Focused Build
+</strong>
+
+<p>
+
+Choose a strong currently available Electric fast move
+and charged move combination appropriate for your
+battle format.
+
+</p>
+
+</div>
+
+<div class="editorial-note">
+
+<strong>
+Move Availability Note:
+</strong>
+
+<p>
+
+Pokémon GO moves can change through events, move
+updates and Elite TM availability. Check current game
+data before publishing a permanently fixed moveset.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<h2>
+Raichu Evolution
+</h2>
+
+<p>
+
+Raichu is part of the Pikachu evolution family.
+
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>
+Pichu
+</strong>
+
+<p>
+Baby Pokémon stage.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+Pikachu
+</strong>
+
+<p>
+Pre-evolution of Raichu.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>
+Raichu
+</strong>
+
+<p>
+Final standard evolution.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+<h2>
+Which Raichu Should You Keep?
+</h2>
+
+<div class="form-grid">
+
+<div class="form-card">
+
+<h3>
+For Collectors
+</h3>
+
+<p>
+
+Prioritize Shiny, Lucky, 100%, XXL, XXS and unusual
+special-background Raichu.
+
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>
+For Battle
+</h3>
+
+<p>
+
+Prioritize IVs, level, moveset and the role you want
+Raichu to perform.
+
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>
+For Resource Efficiency
+</h3>
+
+<p>
+
+Lucky Raichu can reduce Stardust requirements for
+power-ups.
+
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>
+For Maximum Damage
+</h3>
+
+<p>
+
+Compare Shadow Raichu and Mega Raichu options with the
+current Electric-type meta.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<h2>
+Raichu FAQ
+</h2>
+
+<details>
+
+<summary>
+What type is Raichu?
+</summary>
+
+<p>
+Regular Raichu is an Electric-type Pokémon.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Is Shiny Raichu available?
+</summary>
+
+<p>
+Shiny Raichu can be available through eligible Pokémon GO encounters.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Is Shadow Raichu stronger than Regular Raichu?
+</summary>
+
+<p>
+Shadow mechanics increase offensive pressure while reducing defensive durability.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Should I purify Shadow Raichu?
+</summary>
+
+<p>
+Not automatically. Compare the Shadow battle profile with your collection and investment goals first.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is a Lucky Raichu?
+</summary>
+
+<p>
+Lucky Raichu is a Lucky Pokémon and can be cheaper to power up with Stardust.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is a 100% Raichu?
+</summary>
+
+<p>
+A 100% Raichu has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does XXL Raichu deal more damage?
+</summary>
+
+<p>
+Size is generally a collection characteristic and does not automatically increase battle damage.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are Mega Raichu X and Mega Raichu Y available in Pokémon GO?
+</summary>
+
+<p>
+Yes. Mega Raichu X and Mega Raichu Y are Mega forms present in Pokémon GO and should be tracked separately for current raid and availability rotations.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Which Mega Raichu is better?
+</summary>
+
+<p>
+The better choice depends on current stats, movesets, raid matchups and Pokémon GO's active Mega mechanics.
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon availability, raid rotations, Mega
+mechanics, moves and game balance can change over time.
+
+</p>
+
+<p>
+
+Always verify current in-game information before making
+major Candy, Candy XL, Stardust or Mega Energy
+investments.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>
+Raichu Guide
+</h3>
+
+<ul class="side-nav">
+
+<li><a href="#overview">Raichu Overview</a></li>
+
+<li><a href="#type">Type & Weaknesses</a></li>
+
+<li><a href="#forms">All Raichu Forms</a></li>
+
+<li><a href="#shiny">Shiny Raichu</a></li>
+
+<li><a href="#shadow">Shadow Raichu</a></li>
+
+<li><a href="#purified">Purified Raichu</a></li>
+
+<li><a href="#lucky">Lucky Raichu</a></li>
+
+<li><a href="#perfect">100% Raichu</a></li>
+
+<li><a href="#xxl">XXL Raichu</a></li>
+
+<li><a href="#xxs">XXS Raichu</a></li>
+
+<li><a href="#mega">Mega Raichu X/Y</a></li>
+
+<li><a href="#moves">Best Moves</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+<a class="related-link"
+href="/pokemon/pikachu.html">
+Pikachu Guide → </a>
+
+<a class="related-link"
+href="/pokemon-types/electric.html">
+Electric Type Hub → </a>
+
+<a class="related-link"
+href="/pokemon/mega-raichu-x.html">
+Mega Raichu X Guide → </a>
+
+<a class="related-link"
+href="/pokemon/mega-raichu-y.html">
+Mega Raichu Y Guide → </a>
+
+<a class="related-link"
+href="/pokemon-generations/gen-1.html">
+Gen 1 Pokémon → </a>
+
+</div>
+
+<div class="side-card">
+
+<h3>
+Raichu Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Electric
+</p>
+
+<p>
+<strong>Generation:</strong>
+1
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#026
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Pikachu
+</p>
+
+<p>
+<strong>Mega Forms:</strong>
+X / Y
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,4163 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Mimikyu Pokémon GO Guide — Stats, Max CP, Moves, IVs, Forms, Shiny, XXL & XXS
+</title>
+
+<meta name="description"
+      content="Complete Mimikyu Pokémon GO guide covering Ghost and Fairy typing, stats, max CP, weaknesses, resistances, best moves, PvP, IVs, 100% Mimikyu, shiny status, Shadow and Purified status, Lucky Mimikyu, XXL and XXS sizes, Disguised and Busted forms, availability and more.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/mimikyu.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080811;
+    --bg-soft: #10101b;
+    --surface: #151522;
+    --surface-2: #1c1c2b;
+    --surface-3: #26263a;
+
+    --border: #303047;
+
+    --text: #f6f4ff;
+    --muted: #afb0c4;
+
+    --accent: #b58cff;
+    --accent-2: #8d5eea;
+
+    --ghost: #8668d8;
+    --fairy: #e58ac8;
+
+    --steel: #9aa8c8;
+    --danger: #ff7184;
+    --success: #63d99b;
+    --gold: #e5bb62;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(181,140,255,.13),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,8,17,.94);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(181,140,255,.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(229,138,200,.10),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            145deg,
+            #171528,
+            #0d0d17
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.3);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--accent);
+
+    background:
+        rgba(181,140,255,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing: -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 700px;
+
+    font-size: 1rem;
+
+    color: #c7c7d8;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.ghost-tag {
+    color: var(--ghost);
+}
+
+.fairy-tag {
+    color: var(--fairy);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(181,140,255,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(181,140,255,.3);
+
+    background:
+        rgba(181,140,255,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(181,140,255,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color: var(--accent);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   TYPE GRID
+========================================================= */
+
+.type-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+.type-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-card strong {
+    display: block;
+}
+
+.type-card span {
+    color: var(--muted);
+    font-size: .75rem;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,113,132,.28);
+}
+
+.resistance {
+    border-color:
+        rgba(99,217,155,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color: var(--accent);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(181,140,255,.11),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(181,140,255,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   FORM CARDS
+========================================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.form-card {
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    background:
+        var(--surface-2);
+}
+
+.form-card .form-icon {
+
+    font-size: 2.3rem;
+
+    margin-bottom: 10px;
+}
+
+.form-card strong {
+
+    display: block;
+
+    font-size: 1.1rem;
+}
+
+.form-card span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.5rem;
+}
+
+.iv-card span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status-card {
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.status-card.available {
+    border-color:
+        rgba(99,217,155,.35);
+}
+
+.status-card.unavailable {
+    border-color:
+        rgba(255,113,132,.30);
+}
+
+.status-label {
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    color: var(--muted);
+}
+
+.status-value {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 1.25rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cad8;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM
+========================================================= */
+
+.special-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #19142a,
+            #24182e
+        );
+
+    border:
+        1px solid rgba(181,140,255,.3);
+}
+
+.special-card h3 {
+
+    margin-top: 0;
+
+    font-size: 1.4rem;
+}
+
+.special-badge {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(181,140,255,.12);
+
+    color:
+        var(--accent);
+
+    font-size: .65rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06060c;
+}
+
+.footer-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .type-grid,
+    .form-grid,
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+    Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">
+    Types
+</a>
+
+<a href="/pokedex.html">
+    Pokédex
+</a>
+
+<a href="/raids/">
+    Raids
+</a>
+
+<a href="/guides/">
+    Guides
+</a>
+
+<a href="/tools/">
+    Tools
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">
+    Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+    Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/ghost.html">
+    Ghost Type
+</a>
+
+<span>›</span>
+
+<strong>
+    Mimikyu
+</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+
+<div>
+
+<span class="eyebrow">
+    ALOLA • #778
+</span>
+
+<h1>
+    Mimikyu
+</h1>
+
+<p class="hero-subtitle">
+
+Mimikyu is a Ghost- and Fairy-type Pokémon from the
+Alola region. In Pokémon GO, it is known for its unusual
+Disguised Form, unique Busted Form battle mechanic,
+strong PvP potential and distinctive Pikachu-inspired
+costume.
+
+</p>
+
+
+<div class="hero-tags">
+
+<span class="tag ghost-tag">
+    Ghost
+</span>
+
+<span class="tag fairy-tag">
+    Fairy
+</span>
+
+<span class="tag">
+    #778
+</span>
+
+<span class="tag">
+    Gen 7
+</span>
+
+<span class="tag">
+    No Evolution
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-pokemon">
+
+<!-- Replace with your own properly licensed Mimikyu asset -->
+
+<div class="pokemon-placeholder">
+    👻
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+    177
+</strong>
+
+<span>
+    ATTACK
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+    199
+</strong>
+
+<span>
+    DEFENSE
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+    146
+</strong>
+
+<span>
+    HP
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+    2,516
+</strong>
+
+<span>
+    MAX CP
+</span>
+
+</div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Overview
+</h2>
+
+<p>
+
+Mimikyu is a Generation 7 Pokémon originally introduced
+in Pokémon Sun and Moon. In Pokémon GO, it is a
+Ghost/Fairy-type Pokémon with no normal evolution.
+
+Its unusual battle mechanic is tied to its disguise.
+During Trainer Battles, Mimikyu can transition from its
+Disguised Form to Busted Form after its special protection
+is triggered.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>Pokédex</span>
+<strong>#778</strong>
+</div>
+
+<div class="stat-card">
+<span>Generation</span>
+<strong>Gen 7</strong>
+</div>
+
+<div class="stat-card">
+<span>Region</span>
+<strong>Alola</strong>
+</div>
+
+<div class="stat-card">
+<span>Type</span>
+<strong>Ghost / Fairy</strong>
+</div>
+
+<div class="stat-card">
+<span>Attack</span>
+<strong>177</strong>
+</div>
+
+<div class="stat-card">
+<span>Defense</span>
+<strong>199</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>146</strong>
+</div>
+
+<div class="stat-card">
+<span>Max CP</span>
+<strong>2,516</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Type
+</h2>
+
+</div>
+
+
+<div class="type-grid">
+
+<div class="type-card">
+
+<div class="effect-icon">
+    👻
+</div>
+
+<strong>
+    Ghost
+</strong>
+
+<span>
+    Primary Type
+</span>
+
+</div>
+
+
+<div class="type-card">
+
+<div class="effect-icon">
+    ✨
+</div>
+
+<strong>
+    Fairy
+</strong>
+
+<span>
+    Secondary Type
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+    Why Mimikyu's Typing Matters
+</h3>
+
+<p>
+
+The Ghost/Fairy combination gives Mimikyu a distinctive
+defensive profile. It is especially resistant to Fighting,
+Bug, Dragon and Normal-type attacks, while Ghost and Steel
+moves deal super-effective damage.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Weaknesses & Resistances
+</h2>
+
+</div>
+
+
+<h3>
+    Weaknesses
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+    👻
+</div>
+
+<strong>
+    Ghost
+</strong>
+
+<p>
+Ghost-type attacks deal super-effective damage
+to Mimikyu.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+    ⚙️
+</div>
+
+<strong>
+    Steel
+</strong>
+
+<p>
+Steel-type attacks are also super effective
+against Mimikyu.
+</p>
+
+</div>
+
+
+</div>
+
+
+<h3>
+    Resistances
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+    🥊
+</div>
+
+<strong>
+    Fighting
+</strong>
+
+<p>
+Mimikyu has an especially strong resistance
+to Fighting-type attacks.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+    🐛
+</div>
+
+<strong>
+    Bug
+</strong>
+
+<p>
+Bug-type damage is heavily reduced.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+    🐉
+</div>
+
+<strong>
+    Dragon
+</strong>
+
+<p>
+Dragon attacks are heavily resisted because
+of Mimikyu's Fairy typing.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+    ⚪
+</div>
+
+<strong>
+    Normal
+</strong>
+
+<p>
+Normal-type attacks have no damaging effect
+against Ghost-type Mimikyu.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Stats & Max CP
+</h2>
+
+<p>
+
+Mimikyu has a defensive stat profile that suits its
+PvP-oriented role better than a conventional raid
+attacker role.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>Attack</span>
+<strong>177</strong>
+</div>
+
+<div class="stat-card">
+<span>Defense</span>
+<strong>199</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>146</strong>
+</div>
+
+<div class="stat-card">
+<span>Level 50 CP</span>
+<strong>2,516</strong>
+</div>
+
+</div>
+
+
+<h3>
+    Important CP Values
+</h3>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+    Encounter
+</th>
+
+<th>
+    CP Range
+</th>
+
+<th>
+    Level
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+    Research
+</td>
+
+<td>
+    903–954
+</td>
+
+<td>
+    Level 15
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Raid / Egg
+</td>
+
+<td>
+    1,205–1,271
+</td>
+
+<td>
+    Level 20
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Weather Boosted
+</td>
+
+<td>
+    1,506–1,589
+</td>
+
+<td>
+    Level 25
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Level 50 Hundo
+</td>
+
+<td>
+    2,516
+</td>
+
+<td>
+    Level 50
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     05 MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Best Moves
+</h2>
+
+<p>
+
+Mimikyu has access to Ghost-type Fast Moves and a mix
+of Ghost, Fairy and Electric Charged Moves.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+    Recommended PvP Build
+</strong>
+
+<p>
+    Shadow Claw + Shadow Sneak + Play Rough
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+    Move
+</th>
+
+<th>
+    Type
+</th>
+
+<th>
+    Category
+</th>
+
+<th>
+    Role
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td class="move-name">
+    Shadow Claw
+</td>
+
+<td class="move-type">
+    Ghost
+</td>
+
+<td>
+    Fast
+</td>
+
+<td>
+    High-energy PvP option
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+    Hex
+</td>
+
+<td class="move-type">
+    Ghost
+</td>
+
+<td>
+    Fast
+</td>
+
+<td>
+    Alternative energy generation
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+    Shadow Sneak
+</td>
+
+<td class="move-type">
+    Ghost
+</td>
+
+<td>
+    Charged
+</td>
+
+<td>
+    Low-cost pressure
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+    Play Rough
+</td>
+
+<td class="move-type">
+    Fairy
+</td>
+
+<td>
+    Charged
+</td>
+
+<td>
+    STAB finishing move
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+    Thunder
+</td>
+
+<td class="move-type">
+    Electric
+</td>
+
+<td>
+    Charged
+</td>
+
+<td>
+    Coverage
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="editorial-note">
+
+Move availability and battle balance can change through
+Pokémon GO updates. Verify the current in-game moveset
+before publishing a permanent recommendation.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     06 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu PvP Guide
+</h2>
+
+<p>
+
+Mimikyu's combination of high Defense, Ghost/Fairy typing
+and its unusual Disguised-to-Busted mechanic makes it much
+more interesting for Trainer Battles than for raids.
+
+</p>
+
+</div>
+
+
+<h3>
+    Great League
+</h3>
+
+<p>
+
+Mimikyu can be particularly interesting around Great League
+CP limits. Its typing gives it useful matchups against
+Fighting and Dragon-oriented opponents, while its special
+disguise mechanic creates additional shield-management
+decisions.
+
+</p>
+
+
+<h3>
+    Ultra League
+</h3>
+
+<p>
+
+Mimikyu can also be relevant in Ultra League formats when
+its CP and battle rules allow it. The best moveset and
+viability can change with the current metagame.
+
+</p>
+
+
+<h3>
+    Master League
+</h3>
+
+<p>
+
+Mimikyu's maximum CP is considerably lower than many
+Master League specialists, so Great League and Ultra League
+are generally more natural environments for it.
+
+</p>
+
+
+<div class="best-move">
+
+<strong>
+    PvP Tip
+</strong>
+
+<p>
+
+Do not treat Mimikyu's disguise protection like a normal
+third shield. Its interaction with the Busted Form and
+Defense reduction is part of the Pokémon's unique battle
+identity.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     07 DISGUISED / BUSTED
+===================================================== -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Disguised & Busted Forms
+</h2>
+
+<p>
+
+Mimikyu's most important special mechanic is its transition
+between Disguised Form and Busted Form during Trainer Battles.
+
+</p>
+
+</div>
+
+
+<div class="form-grid">
+
+
+<div class="form-card">
+
+<div class="form-icon">
+    🎭
+</div>
+
+<strong>
+    Disguised Form
+</strong>
+
+<span>
+    Mimikyu begins battle with its disguise intact.
+</span>
+
+<p>
+
+Its disguise can absorb the first Charged Attack that
+hits it, creating a unique defensive mechanic.
+
+</p>
+
+</div>
+
+
+<div class="form-card">
+
+<div class="form-icon">
+    👻
+</div>
+
+<strong>
+    Busted Form
+</strong>
+
+<span>
+    Battle-only form
+</span>
+
+<p>
+
+After the disguise is broken, Mimikyu enters Busted Form
+and receives a Defense reduction for the remainder of
+the battle.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<h3>
+    How the Mimikyu Form Mechanic Works
+</h3>
+
+<ul class="checklist">
+
+<li>
+Mimikyu starts Trainer Battles in Disguised Form.
+</li>
+
+<li>
+Its special protection can absorb the first Charged Attack.
+</li>
+
+<li>
+The disguise then breaks.
+</li>
+
+<li>
+Mimikyu changes into Busted Form.
+</li>
+
+<li>
+Its Defense is reduced after the disguise is broken.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     08 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu IV Guide
+</h2>
+
+<p>
+
+Mimikyu's ideal IV spread depends on the battle format.
+For collection purposes, however, a 15/15/15 Mimikyu is
+the perfect IV combination.
+
+</p>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+    15
+</strong>
+
+<span>
+    Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+    15
+</strong>
+
+<span>
+    Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+    15
+</strong>
+
+<span>
+    HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+    100% Mimikyu
+</h3>
+
+<p>
+
+A 100% Mimikyu has 15 Attack, 15 Defense and 15 HP IVs.
+At Level 50, a perfect Mimikyu reaches 2,516 CP.
+
+For PvP, however, a lower Attack IV can sometimes be
+preferable depending on the league and stat product.
+
+</p>
+
+<div class="best-move">
+
+<strong>
+    Hundo Mimikyu
+</strong>
+
+<p>
+    15 / 15 / 15 IV • 100% IV • Level 50 Max CP: 2,516
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     09 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<h2>
+    Shiny Mimikyu
+</h2>
+
+</div>
+
+
+<div class="status-card unavailable">
+
+<span class="status-label">
+    Current Shiny Status
+</span>
+
+<span class="status-value">
+    Shiny Mimikyu Not Released
+</span>
+
+</div>
+
+
+<p>
+
+Shiny Mimikyu is currently not available in Pokémon GO.
+If Niantic releases the Shiny form in a future event,
+this section should be updated with the release date,
+encounter method and appearance details.
+
+</p>
+
+
+<div class="editorial-note">
+
+<strong>
+    Database note:
+</strong>
+
+<p>
+
+Do not label Mimikyu as Shiny available until the Shiny
+form has actually been released in Pokémon GO.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     10 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<h2>
+    Shadow Mimikyu
+</h2>
+
+<p>
+
+Shadow Pokémon are separate special variants in Pokémon GO.
+Mimikyu's regular database entry should not automatically
+be treated as a Shadow Mimikyu entry.
+
+</p>
+
+</div>
+
+
+<div class="status-card unavailable">
+
+<span class="status-label">
+    Current Database Status
+</span>
+
+<span class="status-value">
+    Shadow Mimikyu Not Listed as Available
+</span>
+
+</div>
+
+
+<h3>
+    If Shadow Mimikyu Is Released
+</h3>
+
+<p>
+
+A future Shadow release would need to be evaluated separately
+because Shadow Pokémon have different battle characteristics,
+resource requirements and Rocket-related mechanics.
+
+</p>
+
+
+<ul class="checklist">
+
+<li>
+Do not create a fake Shadow release date.
+</li>
+
+<li>
+Check official Team GO Rocket announcements.
+</li>
+
+<li>
+Check whether Mimikyu can actually be obtained as a Shadow.
+</li>
+
+<li>
+Compare the Shadow version with regular Mimikyu before investing.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     11 PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<h2>
+    Purified Mimikyu
+</h2>
+
+</div>
+
+
+<div class="status-card unavailable">
+
+<span class="status-label">
+    Current Database Status
+</span>
+
+<span class="status-value">
+    Purified Mimikyu Not Currently Applicable
+</span>
+
+</div>
+
+
+<p>
+
+Purified Pokémon are created by purifying eligible Shadow
+Pokémon. Since Mimikyu is not currently listed as an
+obtainable Shadow Pokémon, a normal Mimikyu should not be
+described as a Purified Mimikyu.
+
+</p>
+
+
+<div class="editorial-note">
+
+<strong>
+    Important:
+</strong>
+
+<p>
+
+Purified status should only be added to this database page
+if Pokémon GO actually introduces a Shadow Mimikyu that can
+then be purified.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     12 LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<h2>
+    Lucky Mimikyu
+</h2>
+
+<p>
+
+Lucky is a special trade status rather than a separate
+Pokémon species or form.
+
+</p>
+
+</div>
+
+
+<div class="status-card available">
+
+<span class="status-label">
+    Lucky Status
+</span>
+
+<span class="status-value">
+    Possible Through Trading
+</span>
+
+</div>
+
+
+<h3>
+    What Is Lucky Mimikyu?
+</h3>
+
+<p>
+
+A Mimikyu received through a qualifying trade can become
+Lucky. Lucky Pokémon have a special background and reduced
+Stardust costs for power-ups.
+
+The Lucky status does not change Mimikyu's Ghost/Fairy
+typing or species identity.
+
+</p>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+    🍀
+</div>
+
+<strong>
+    Lucky Trade
+</strong>
+
+<p>
+    Lucky status can be obtained through trading.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+    ⭐
+</div>
+
+<strong>
+    Special Background
+</strong>
+
+<p>
+    Lucky Pokémon receive their distinctive Lucky presentation.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+    💎
+</div>
+
+<strong>
+    Lower Power-Up Cost
+</strong>
+
+<p>
+    Lucky Pokémon require less Stardust for power-ups.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     13 XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<h2>
+    XXL Mimikyu
+</h2>
+
+<p>
+
+XXL describes a size category rather than a different
+Pokémon species. Mimikyu can appear in different size
+categories.
+
+</p>
+
+</div>
+
+
+<div class="status-card available">
+
+<span class="status-label">
+    Size Category
+</span>
+
+<span class="status-value">
+    XXL Mimikyu
+</span>
+
+</div>
+
+
+<h3>
+    Mimikyu XXL Size
+</h3>
+
+<p>
+
+Current database size information places XXL Mimikyu at
+approximately 0.30 m to 0.35 m in height. The normal
+reference height is approximately 0.20 m.
+
+</p>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+    Size
+</th>
+
+<th>
+    Height Range
+</th>
+
+<th>
+    Meaning
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+    XXS
+</td>
+
+<td>
+    0.098–0.10 m
+</td>
+
+<td>
+    Extremely small
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Standard
+</td>
+
+<td>
+    Around 0.20 m
+</td>
+
+<td>
+    Normal reference
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    XXL
+</td>
+
+<td>
+    0.30–0.35 m
+</td>
+
+<td>
+    Extremely large
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     14 XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<h2>
+    XXS Mimikyu
+</h2>
+
+<p>
+
+XXS Mimikyu represents the smallest size category in
+Pokémon GO's size system.
+
+</p>
+
+</div>
+
+
+<div class="status-card available">
+
+<span class="status-label">
+    Size Category
+</span>
+
+<span class="status-value">
+    XXS Mimikyu
+</span>
+
+</div>
+
+
+<p>
+
+Current database information places XXS Mimikyu around
+0.098 m to 0.10 m in height. Size is independent of IV
+percentage, so an XXS Mimikyu can also be a 100% IV
+Mimikyu if its IVs are 15/15/15.
+
+</p>
+
+
+<div class="best-move">
+
+<strong>
+    Collection Tip
+</strong>
+
+<p>
+
+An XXS hundo or XXL hundo Mimikyu can be an especially
+interesting collection piece because size and IV quality
+are separate characteristics.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     15 100%
+===================================================== -->
+
+<section class="section" id="hundo">
+
+<div class="section-heading">
+
+<h2>
+    100% Mimikyu
+</h2>
+
+</div>
+
+
+<p>
+
+A 100% Mimikyu has perfect IVs across all three IV categories:
+
+</p>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+    15
+</strong>
+
+<span>
+    Attack
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+    15
+</strong>
+
+<span>
+    Defense
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+    15
+</strong>
+
+<span>
+    HP
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+    Perfect Mimikyu CP
+</h3>
+
+<p>
+
+At Level 50, a 15/15/15 Mimikyu reaches 2,516 CP.
+
+A perfect IV Mimikyu can be valuable for collectors, while
+PvP players should still evaluate league-specific IV spreads
+rather than automatically choosing the hundo.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     16 RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Raid Performance
+</h2>
+
+<p>
+
+Mimikyu's relatively modest offensive stats and current
+moveset make it more interesting as a Trainer Battle Pokémon
+than as a top-tier raid attacker.
+
+</p>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+    Ghost Raids
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:35%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+    Low
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+    Fairy Raids
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:35%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+    Low
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+    PvP Potential
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:88%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+    High
+</span>
+
+</div>
+
+
+<h3>
+    Should You Power Up Mimikyu?
+</h3>
+
+<p>
+
+For most players, Mimikyu is more attractive as a PvP,
+collection or special-mechanic Pokémon than as a primary
+raid attacker.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     17 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Candy, XL Candy & Stardust
+</h2>
+
+</div>
+
+
+<p>
+
+Mimikyu requires Candy and Stardust for powering up. Players
+planning to build one for PvP should consider the final
+target CP before spending large amounts of Stardust.
+
+</p>
+
+
+<ul class="checklist">
+
+<li>
+Save Mimikyu Candy for useful PvP builds.
+</li>
+
+<li>
+Collect Candy XL if you plan to build a high-level Mimikyu.
+</li>
+
+<li>
+Check IVs before committing major Stardust.
+</li>
+
+<li>
+Consider the league you want to play.
+</li>
+
+<li>
+Lucky Mimikyu can reduce Stardust requirements for power-ups.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     18 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Availability
+</h2>
+
+</div>
+
+
+<p>
+
+Mimikyu is available in Pokémon GO. Its encounter methods
+can change as events, seasonal rotations and special
+activities change.
+
+</p>
+
+
+<div class="status-card available">
+
+<span class="status-label">
+    Current Database Status
+</span>
+
+<span class="status-value">
+    Mimikyu Available
+</span>
+
+</div>
+
+
+<p>
+
+For a live website, update this section whenever the
+encounter method or event availability changes.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     19 FORMS COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu Forms & Special Statuses Compared
+</h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+    Version / Status
+</th>
+
+<th>
+    Type
+</th>
+
+<th>
+    Separate Species?
+</th>
+
+<th>
+    Main Difference
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td>
+    Mimikyu Disguised
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Standard battle form
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Mimikyu Busted
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Battle-only form after disguise breaks
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Shiny Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Not currently released
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Shadow Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Not currently available
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Purified Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Requires an eligible Shadow Pokémon
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    Lucky Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Special trade status
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    100% Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    15/15/15 IVs
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    XXL Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Large size category
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+    XXS Mimikyu
+</td>
+
+<td>
+    Ghost / Fairy
+</td>
+
+<td>
+    No
+</td>
+
+<td>
+    Small size category
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     20 BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+<div class="section-heading">
+
+<h2>
+    How to Use Mimikyu
+</h2>
+
+</div>
+
+
+<h3>
+    Before PvP
+</h3>
+
+<ul class="checklist">
+
+<li>
+Check the league CP limit.
+</li>
+
+<li>
+Compare the IV spread rather than only looking for a hundo.
+</li>
+
+<li>
+Choose the appropriate Fast Move.
+</li>
+
+<li>
+Build around Shadow Sneak and Play Rough when appropriate.
+</li>
+
+<li>
+Learn when to allow the disguise to break.
+</li>
+
+</ul>
+
+
+<h3>
+    During Battle
+</h3>
+
+<p>
+
+Mimikyu's disguise mechanic adds another layer to shield
+management. Preserving its original Defense for as long as
+possible can matter, but the correct timing depends on the
+opponent and remaining shields.
+
+</p>
+
+
+<h3>
+    Long-Term Investment
+</h3>
+
+<p>
+
+Mimikyu is best viewed as a specialized PvP and collection
+investment rather than a universal raid attacker.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     21 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>
+    Mimikyu FAQ
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+What type is Mimikyu?
+</summary>
+
+<p>
+Mimikyu is a Ghost/Fairy-type Pokémon.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Mimikyu weak to?
+</summary>
+
+<p>
+Mimikyu is weak to Ghost and Steel-type attacks.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Mimikyu's maximum CP?
+</summary>
+
+<p>
+Mimikyu's Level 50 maximum CP is 2,516.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Mimikyu good in Pokémon GO?
+</summary>
+
+<p>
+
+Mimikyu is more interesting for PvP and its unique battle
+mechanic than for high-end raid attacking.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Mimikyu good in Great League?
+</summary>
+
+<p>
+
+Mimikyu can be a strong Great League option depending on
+the current format and metagame.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does Mimikyu evolve?
+</summary>
+
+<p>
+No. Mimikyu does not have a normal evolution in Pokémon GO.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Mimikyu's best moveset?
+</summary>
+
+<p>
+
+Shadow Claw with Play Rough is one of Mimikyu's strongest
+general combinations, while Shadow Sneak provides useful
+low-cost PvP pressure.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Disguised Mimikyu?
+</summary>
+
+<p>
+
+Disguised Mimikyu is the normal starting form used before
+its disguise is broken in its special Trainer Battle mechanic.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Busted Mimikyu?
+</summary>
+
+<p>
+
+Busted Mimikyu is the battle-only form that appears after
+Mimikyu's disguise has been broken.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shiny Mimikyu available?
+</summary>
+
+<p>
+
+No. Shiny Mimikyu is currently not released in Pokémon GO.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Mimikyu be Lucky?
+</summary>
+
+<p>
+
+Yes. Lucky is a trade-related status rather than a separate
+species or evolution.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a 100% Mimikyu?
+</summary>
+
+<p>
+
+A 100% Mimikyu has 15 Attack, 15 Defense and 15 HP IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Mimikyu be XXL?
+</summary>
+
+<p>
+
+Yes. Mimikyu can appear in different size categories,
+including XXL.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Mimikyu be XXS?
+</summary>
+
+<p>
+
+Yes. Mimikyu can also appear in the XXS size category.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shadow Mimikyu available?
+</summary>
+
+<p>
+
+Shadow Mimikyu should only be listed as available if
+Pokémon GO officially introduces it through a Shadow
+encounter.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Mimikyu be purified?
+</summary>
+
+<p>
+
+Purification applies to eligible Shadow Pokémon. A regular
+Mimikyu cannot simply be converted into a Purified Pokémon.
+
+</p>
+
+</details>
+
+
+</section>
+
+
+<!-- =====================================================
+     22 EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+    Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon GO mechanics, moves, availability,
+battle balance and event rotations can change over time.
+Always verify current in-game information before making
+investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This page is intended as an independent
+informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+<h3>
+    Mimikyu Guide
+</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+    Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+    Stats & Max CP
+</a>
+</li>
+
+<li>
+<a href="#type">
+    Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+    Weaknesses
+</a>
+</li>
+
+<li>
+<a href="#moves">
+    Best Moves
+</a>
+</li>
+
+<li>
+<a href="#pvp">
+    PvP
+</a>
+</li>
+
+<li>
+<a href="#forms">
+    Disguised & Busted
+</a>
+</li>
+
+<li>
+<a href="#iv">
+    IV Guide
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+    Shiny Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+    Shadow Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#purified">
+    Purified Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+    Lucky Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#hundo">
+    100% Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+    XXL Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+    XXS Mimikyu
+</a>
+</li>
+
+<li>
+<a href="#availability">
+    Availability
+</a>
+</li>
+
+<li>
+<a href="#faq">
+    FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+    Related Guides
+</h3>
+
+
+<a class="related-link"
+   href="/pokemon/gengar.html">
+
+    Gengar Guide →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon/sableye.html">
+
+    Sableye Guide →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon/gardevoir.html">
+
+    Gardevoir Guide →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-types/ghost.html">
+
+    Ghost Type Hub →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-types/fairy.html">
+
+    Fairy Type Hub →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-generations/gen-7.html">
+
+    Gen 7 Pokémon →
+
+</a>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+    Mimikyu Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Ghost / Fairy
+</p>
+
+<p>
+<strong>Generation:</strong>
+7
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#778
+</p>
+
+<p>
+<strong>Evolution:</strong>
+None
+</p>
+
+<p>
+<strong>Max CP:</strong>
+2,516
+</p>
+
+<p>
+<strong>Forms:</strong>
+Disguised / Busted
+</p>
+
+<p>
+<strong>Shiny:</strong>
+Not Released
+</p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

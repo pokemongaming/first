@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Granbull Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shadow, Shiny & More</title>
+
+<meta name="description"
+content="Complete Granbull Pokémon GO guide covering regular Granbull, Shiny Granbull, Shadow Granbull, Purified Granbull, Lucky Granbull, 100% IV Granbull, XXL and XXS Granbull, stats, moves, weaknesses, PvP and raids.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/granbull.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #f08bc2;
+    --accent-2: #d65ba7;
+
+    --fairy: #f08bc2;
+    --normal: #b7b7a8;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --shadow: #8f7cff;
+    --gold: #f5c85c;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(240,139,194,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8,11,18,.92);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(240,139,194,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #17101c,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing: -.055em;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+    color: #c7c9d2;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.fairy-tag {
+    color: var(--fairy);
+}
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(240,139,194,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+    margin-bottom: 20px;
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 25px 0 10px;
+    font-size: 1.05rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+    font-size: 1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    padding: 18px;
+
+    border:
+        1px solid rgba(240,139,194,.3);
+
+    background:
+        rgba(240,139,194,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(240,139,194,.13);
+
+    font-size: 1.5rem;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.30);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.30);
+}
+
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--fairy);
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   SPECIAL FORM CARDS
+===================================================== */
+
+.form-card {
+    margin-top: 18px;
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--surface-2),
+            var(--surface)
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.form-card h3 {
+    margin-top: 0;
+}
+
+.form-card.shadow-form {
+    border-color:
+        rgba(143,124,255,.4);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(143,124,255,.12),
+            rgba(0,0,0,.1)
+        );
+}
+
+.form-card.purified-form {
+    border-color:
+        rgba(124,213,255,.4);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124,213,255,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+.form-card.lucky-form {
+    border-color:
+        rgba(245,200,92,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(245,200,92,.12),
+            rgba(255,255,255,.02)
+        );
+}
+
+.form-card.shiny-form {
+    border-color:
+        rgba(255,225,95,.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,225,95,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+
+/* =====================================================
+   RATING
+===================================================== */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background: var(--surface-3);
+
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background: var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    color: #c8cfda;
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: .78rem;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">Types</a> <a href="/pokedex.html">Pokédex</a> <a href="/raids/">Raids</a> <a href="/guides/">Guides</a> <a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="page">
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">Pokémon Database</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/fairy.html">Fairy Type</a>
+
+<span>›</span>
+
+<strong>Granbull</strong>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<h1>Granbull</h1>
+
+<p class="hero-subtitle">
+
+Granbull is a Fairy-type Pokémon from the Johto region.
+It evolves from Snubbull and is known in Pokémon GO for
+its strong Attack stat, Fairy-type damage potential and
+multiple collectible variants including Shiny, Shadow,
+Purified, Lucky, XXL and XXS Granbull.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag fairy-tag">
+Fairy
+</span>
+
+<span class="tag">
+#210
+</span>
+
+<span class="tag">
+Gen 2
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+<span class="tag">
+Shadow Available
+</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<!-- Replace with properly licensed Granbull image -->
+
+<div class="pokemon-placeholder">
+🐶
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>212</strong>
+
+<span>ATTACK</span>
+
+</div>
+
+<div class="quick-stat">
+
+<strong>131</strong>
+
+<span>DEFENSE</span>
+
+</div>
+
+<div class="quick-stat">
+
+<strong>207</strong>
+
+<span>HP</span>
+
+</div>
+
+<div class="quick-stat">
+
+<strong>~2,552</strong>
+
+<span>MAX CP</span>
+
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>Granbull Overview</h2>
+
+<p>
+
+Granbull is the evolved form of Snubbull and a pure Fairy-type
+Pokémon in Pokémon GO. Its stat distribution gives it a
+fairly aggressive profile, making it more interesting as an
+attacking option than its intimidating appearance might suggest.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>Pokédex</span>
+<strong>#210</strong>
+</div>
+
+<div class="stat-card">
+<span>Generation</span>
+<strong>Gen 2</strong>
+</div>
+
+<div class="stat-card">
+<span>Region</span>
+<strong>Johto</strong>
+</div>
+
+<div class="stat-card">
+<span>Type</span>
+<strong>Fairy</strong>
+</div>
+
+<div class="stat-card">
+<span>Attack</span>
+<strong>212</strong>
+</div>
+
+<div class="stat-card">
+<span>Defense</span>
+<strong>131</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>207</strong>
+</div>
+
+<div class="stat-card">
+<span>Max CP</span>
+<strong>~2,552</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>Granbull Type</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">
+✨
+</div>
+
+<div>
+
+<strong>Fairy</strong>
+
+<span>Primary and Only Type</span>
+
+</div>
+
+</div>
+
+<h3>Why Granbull's Fairy Typing Matters</h3>
+
+<p>
+
+Fairy-type attacks are particularly valuable against Dragon,
+Fighting and Dark Pokémon. Granbull's typing gives it useful
+matchups against these categories while also creating weaknesses
+that must be considered when building raid or PvP teams.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>Granbull Weaknesses & Resistances</h2>
+
+</div>
+
+<h3>Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">⚙️</div>
+
+<strong>Steel</strong>
+
+<p>
+Steel-type attacks are super effective against Granbull.
+</p>
+
+</div>
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">☠️</div>
+
+<strong>Poison</strong>
+
+<p>
+Poison-type attacks are also super effective against Fairy Pokémon.
+</p>
+
+</div>
+
+</div>
+
+<h3>Resistances</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🐉</div>
+
+<strong>Dragon</strong>
+
+<p>
+Fairy Pokémon have an extremely useful matchup against Dragon attacks.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🥊</div>
+
+<strong>Fighting</strong>
+
+<p>
+Granbull resists Fighting-type attacks.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🌑</div>
+
+<strong>Dark</strong>
+
+<p>
+Dark-type attacks are resisted by Granbull's Fairy typing.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🐛</div>
+
+<strong>Bug</strong>
+
+<p>
+Bug-type attacks are also resisted.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<h2>Granbull Best Moves</h2>
+
+<p>
+
+Granbull's preferred moveset depends on whether you are using it
+for raids, gym battles or PvP.
+
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>Recommended Fairy Build</h3>
+
+<p>
+
+A Fairy-focused moveset should generally be prioritized when
+Granbull is being used against Dragon, Fighting or Dark Pokémon.
+
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>Move</th>
+<th>Type</th>
+<th>Category</th>
+<th>Role</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td class="move-name">
+Charm
+</td>
+
+<td class="move-type">
+Fairy
+</td>
+
+<td>
+Fast Move
+</td>
+
+<td>
+High Fairy damage
+</td>
+
+</tr>
+
+<tr>
+
+<td class="move-name">
+Play Rough
+</td>
+
+<td class="move-type">
+Fairy
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Fairy coverage
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="editorial-note">
+
+Move availability can change with Pokémon GO updates and events.
+Always verify the currently available moves before publishing
+a live moveset recommendation.
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     RAID PERFORMANCE
+===================================================== -->
+
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<h2>Granbull Raid Performance</h2>
+
+<p>
+
+Granbull can be useful as a Fairy attacker, particularly for
+players building teams to counter Dragon, Fighting and Dark raid
+bosses.
+
+</p>
+
+</div>
+
+<div class="rating-row">
+
+<strong>Fairy Damage</strong>
+
+<div class="rating-bar">
+<div class="rating-fill"
+style="--rating:75%;">
+</div>
+</div>
+
+<span class="rating-value">
+7.5/10
+</span>
+
+</div>
+
+<div class="rating-row">
+
+<strong>Dragon Counters</strong>
+
+<div class="rating-bar">
+<div class="rating-fill"
+style="--rating:82%;">
+</div>
+</div>
+
+<span class="rating-value">
+8.2/10
+</span>
+
+</div>
+
+<div class="rating-row">
+
+<strong>Budget Value</strong>
+
+<div class="rating-bar">
+<div class="rating-fill"
+style="--rating:84%;">
+</div>
+</div>
+
+<span class="rating-value">
+8.4/10
+</span>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     IV GUIDE
+===================================================== -->
+
+<section class="section" id="iv">
+
+<div class="section-heading">
+
+<h2>100% Granbull IV Guide</h2>
+
+<p>
+
+A 100% Granbull has the perfect Individual Value combination
+of 15 Attack, 15 Defense and 15 HP.
+
+</p>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>15</strong>
+
+<p>Attack IV</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>15</strong>
+
+<p>Defense IV</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>15</strong>
+
+<p>HP IV</p>
+
+</div>
+
+</div>
+
+<h3>Is a 100% Granbull Worth Keeping?</h3>
+
+<p>
+
+Yes. A perfect Granbull is valuable for collectors and can be a
+good long-term candidate for a Fairy-type build. However, a lower
+IV Granbull can still perform well depending on its level,
+moveset and intended use.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     SHINY GRANBULL
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<h2>Shiny Granbull</h2>
+
+<p>
+
+Shiny Granbull is an alternate-color version of Granbull that can
+be obtained through eligible Pokémon GO encounters.
+
+</p>
+
+</div>
+
+<div class="form-card shiny-form">
+
+<h3>✨ Shiny Granbull</h3>
+
+<p>
+
+Shiny Granbull is primarily a collector variant. Its gameplay
+stats remain the same as a regular Granbull, but its alternate
+appearance makes it desirable for Shiny collectors.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>Species</span>
+
+<strong>Granbull</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>Form</span>
+
+<strong>Shiny</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>Type</span>
+
+<strong>Fairy</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>Battle Stats</span>
+
+<strong>Same</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHADOW GRANBULL
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<h2>Shadow Granbull</h2>
+
+<p>
+
+Shadow Granbull is the Shadow variant of Granbull. Shadow Pokémon
+have a different offensive and defensive battle profile, making
+them a separate investment decision from regular Granbull.
+
+</p>
+
+</div>
+
+<div class="form-card shadow-form">
+
+<h3>🌑 Shadow Granbull</h3>
+
+<p>
+
+Shadow Granbull can be attractive for players focused on offensive
+damage. The Shadow mechanic increases offensive pressure while
+reducing durability.
+
+</p>
+
+</div>
+
+<h3>Shadow Granbull vs Regular Granbull</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>Feature</th>
+<th>Regular</th>
+<th>Shadow</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Type</td>
+
+<td>Fairy</td>
+
+<td>Fairy</td>
+
+</tr>
+
+<tr>
+
+<td>Offensive Profile</td>
+
+<td>Standard</td>
+
+<td>Higher</td>
+
+</tr>
+
+<tr>
+
+<td>Durability</td>
+
+<td>Standard</td>
+
+<td>Lower</td>
+
+</tr>
+
+<tr>
+
+<td>Purification</td>
+
+<td>Not applicable</td>
+
+<td>Possible</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<h3>Should You Keep Shadow Granbull?</h3>
+
+<ul class="checklist">
+
+<li>Check the IVs before making a long-term decision.</li>
+
+<li>Consider Shadow power-up costs.</li>
+
+<li>Check whether Frustration can currently be removed.</li>
+
+<li>Compare Shadow Granbull with your existing Fairy attackers.</li>
+
+<li>Do not purify automatically only for higher IVs.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     PURIFIED GRANBULL
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<h2>Purified Granbull</h2>
+
+<p>
+
+Purified Granbull is created by purifying an eligible Shadow
+Granbull. Purification removes the Shadow status and changes
+the Pokémon's long-term investment profile.
+
+</p>
+
+</div>
+
+<div class="form-card purified-form">
+
+<h3>💠 Purified Granbull</h3>
+
+<p>
+
+Purification can increase Individual Values within Pokémon GO's
+purification system and provides a non-Shadow version of the
+Pokémon.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>Type</span>
+
+<strong>Fairy</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>Form</span>
+
+<strong>Purified</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>Shadow Bonus</span>
+
+<strong>Removed</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>Frustration</span>
+
+<strong>Removed</strong>
+
+</div>
+
+</div>
+
+<h3>Should You Purify Shadow Granbull?</h3>
+
+<p>
+
+The decision depends on your goals. Players focused on maximizing
+Shadow damage may prefer keeping Shadow Granbull, while collectors
+or players who want a Purified specimen may choose purification.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     LUCKY GRANBULL
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<h2>Lucky Granbull</h2>
+
+<p>
+
+Lucky Granbull is obtained through the Lucky Pokémon trade
+mechanic. Lucky Pokémon are particularly useful for players
+planning to power up a Pokémon because they require less Stardust
+for powering up.
+
+</p>
+
+</div>
+
+<div class="form-card lucky-form">
+
+<h3>🍀 Lucky Granbull</h3>
+
+<p>
+
+A Lucky Granbull can be an excellent long-term investment if you
+want to build a powered-up Fairy Pokémon while reducing Stardust
+costs.
+
+</p>
+
+</div>
+
+<ul class="checklist">
+
+<li>Reduced Stardust cost for powering up.</li>
+
+<li>Useful for long-term investment.</li>
+
+<li>Obtained through eligible Lucky trades.</li>
+
+<li>Can also be Shiny if the traded Granbull is Shiny.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     XXL AND XXS
+===================================================== -->
+
+<section class="section" id="size">
+
+<div class="section-heading">
+
+<h2>XXL Granbull & XXS Granbull</h2>
+
+<p>
+
+XXL and XXS Granbull are size variants. Their size classification
+is primarily a collection feature and does not create a separate
+battle-stat species.
+
+</p>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+📏
+</div>
+
+<strong>XXL Granbull</strong>
+
+<p>
+
+An unusually large Granbull that may be useful for size-related
+collection goals and showcase competitions when eligible.
+
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🔍
+</div>
+
+<strong>XXS Granbull</strong>
+
+<p>
+
+An unusually small Granbull collectible with the same species
+identity and standard gameplay mechanics.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="editorial-note">
+
+Size variants should not automatically be treated as stronger or
+weaker in battle. Size and IVs are separate characteristics.
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     ALL GRANBULL FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<h2>All Granbull Forms & Variants</h2>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>Variant</th>
+
+<th>Main Difference</th>
+
+<th>Battle Impact</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Regular Granbull</td>
+
+<td>Standard form</td>
+
+<td>Standard</td>
+
+</tr>
+
+<tr>
+
+<td>Shiny Granbull</td>
+
+<td>Alternate appearance</td>
+
+<td>Same stats</td>
+
+</tr>
+
+<tr>
+
+<td>Shadow Granbull</td>
+
+<td>Shadow status</td>
+
+<td>Higher offense / lower durability</td>
+
+</tr>
+
+<tr>
+
+<td>Purified Granbull</td>
+
+<td>Purified Shadow Pokémon</td>
+
+<td>Standard Purified profile</td>
+
+</tr>
+
+<tr>
+
+<td>Lucky Granbull</td>
+
+<td>Lucky trade status</td>
+
+<td>Lower Stardust power-up cost</td>
+
+</tr>
+
+<tr>
+
+<td>100% Granbull</td>
+
+<td>15/15/15 IVs</td>
+
+<td>Maximum IV combination</td>
+
+</tr>
+
+<tr>
+
+<td>XXL Granbull</td>
+
+<td>Large size classification</td>
+
+<td>Primarily cosmetic/collection</td>
+
+</tr>
+
+<tr>
+
+<td>XXS Granbull</td>
+
+<td>Small size classification</td>
+
+<td>Primarily cosmetic/collection</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<h2>Granbull Evolution</h2>
+
+</div>
+
+<p>
+
+Granbull evolves from Snubbull. Granbull does not currently have
+a further evolution.
+
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<strong>Snubbull</strong>
+
+<p>
+Basic form
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>→</strong>
+
+<p>
+Evolution
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<strong>Granbull</strong>
+
+<p>
+Final evolution
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<h2>Granbull PvP Guide</h2>
+
+<p>
+
+Granbull's Fairy typing and offensive pressure can make it useful
+in certain PvP matchups, particularly against opponents vulnerable
+to Fairy damage.
+
+</p>
+
+</div>
+
+<h3>Great League</h3>
+
+<p>
+
+Granbull can be considered in limited formats depending on its
+moveset, CP and the current PvP meta.
+
+</p>
+
+<h3>Ultra League</h3>
+
+<p>
+
+Its usefulness depends heavily on available moves and matchup
+coverage.
+
+</p>
+
+<h3>Master League</h3>
+
+<p>
+
+Granbull's maximum CP is lower than many dominant Legendary Master
+League Pokémon, making it a more specialized option.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>Granbull FAQ</h2>
+
+</div>
+
+<details>
+
+<summary>What type is Granbull?</summary>
+
+<p>
+Granbull is a pure Fairy-type Pokémon.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is Granbull weak to?</summary>
+
+<p>
+Granbull is weak to Steel and Poison-type attacks.
+</p>
+
+</details>
+
+<details>
+
+<summary>Is Shiny Granbull available?</summary>
+
+<p>
+Shiny Granbull can be obtained through eligible Pokémon GO encounters.
+</p>
+
+</details>
+
+<details>
+
+<summary>Is Shadow Granbull stronger?</summary>
+
+<p>
+Shadow Granbull has a different offensive and defensive profile,
+with increased offensive pressure and reduced durability.
+</p>
+
+</details>
+
+<details>
+
+<summary>Should I purify Shadow Granbull?</summary>
+
+<p>
+Not automatically. Compare your Shadow Granbull with the Purified
+result before deciding.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is a Lucky Granbull?</summary>
+
+<p>
+A Lucky Granbull is obtained through the Lucky trade system and
+requires less Stardust for powering up.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is a 100% Granbull?</summary>
+
+<p>
+A 100% Granbull has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+<details>
+
+<summary>Does XXL Granbull have better stats?</summary>
+
+<p>
+No. XXL is primarily a size classification and does not automatically
+mean better battle stats.
+</p>
+
+</details>
+
+<details>
+
+<summary>Does Granbull evolve?</summary>
+
+<p>
+Granbull evolves from Snubbull and does not currently have a
+further evolution.
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>Editorial & Data Note</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information website.
+Moves, availability, Shadow rotations and game mechanics can change
+over time. Verify current in-game information before making major
+resource or investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective owners.
+This website is intended as an independent informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>Granbull Guide</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Overview
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Best Moves
+</a>
+</li>
+
+<li>
+<a href="#raid">
+Raid Performance
+</a>
+</li>
+
+<li>
+<a href="#iv">
+100% IV Guide
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Granbull
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Granbull
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Granbull
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Granbull
+</a>
+</li>
+
+<li>
+<a href="#size">
+XXL & XXS
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>Related Guides</h3>
+
+<a class="related-link"
+href="/pokemon/snubbull.html">
+
+Snubbull Guide →
+
+</a>
+
+<a class="related-link"
+href="/pokemon-types/fairy.html">
+
+Fairy Type Hub →
+
+</a>
+
+<a class="related-link"
+href="/pokemon-types/johto.html">
+
+Johto Pokémon →
+
+</a>
+
+<a class="related-link"
+href="/guides/shadow-pokemon.html">
+
+Shadow Pokémon Guide →
+
+</a>
+
+</div>
+
+<div class="side-card">
+
+<h3>Granbull Quick Facts</h3>
+
+<p>
+<strong>Type:</strong>
+Fairy
+</p>
+
+<p>
+<strong>Generation:</strong>
+2
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#210
+</p>
+
+<p>
+<strong>Region:</strong>
+Johto
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Snubbull → Granbull
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

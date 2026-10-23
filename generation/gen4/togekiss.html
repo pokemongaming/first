@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Togekiss Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & PvP</title>
+
+<meta name="description"
+content="Complete Togekiss Pokémon GO guide covering regular Togekiss, Shiny Togekiss, Shadow Togekiss, Purified Togekiss, Lucky Togekiss, 100% IV Togekiss, XXL and XXS Togekiss, including stats, Max CP, typing, weaknesses, resistances, moves, raids and PvP.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/togekiss.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #d98cff;
+    --accent-2: #b965e8;
+
+    --fairy: #f29bd4;
+    --flying: #79b9ff;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #f2c94c;
+    --purple: #a778ff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(242,155,212,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8,11,18,.92);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--fairy);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(242,155,212,.18),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            #17101d,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.pokemon-hero h1 {
+    font-size: clamp(2.2rem,5vw,4.5rem);
+    letter-spacing: -.055em;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+    color: #c9c2d2;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.fairy-tag {
+    color: var(--fairy);
+}
+
+.flying-tag {
+    color: var(--flying);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(242,155,212,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.content-layout {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 290px;
+
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+    margin-bottom: 20px;
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: clamp(1.45rem,3vw,2rem);
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 25px 0 10px;
+    font-size: 1.05rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.type-box {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(242,155,212,.12);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--muted);
+    font-size: .75rem;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card p {
+    margin-top: 7px;
+    margin-bottom: 0;
+
+    font-size: .75rem;
+}
+
+.weakness {
+    border-color: rgba(255,111,125,.35);
+}
+
+.resistance {
+    border-color: rgba(98,216,154,.35);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+
+/* =====================================================
+   FEATURE CARD
+===================================================== */
+
+.feature-card {
+    margin-top: 15px;
+
+    padding: 20px;
+
+    border-radius: var(--radius-sm);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(242,155,212,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(242,155,212,.25);
+}
+
+.feature-card strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+/* =====================================================
+   RATING
+===================================================== */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background: var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background: var(--fairy);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   FORM CARDS
+===================================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.form-card {
+    padding: 22px;
+
+    border-radius: var(--radius);
+
+    border: 1px solid var(--border);
+
+    background: var(--surface-2);
+}
+
+.form-card h3 {
+    margin: 0 0 10px;
+}
+
+.form-card p {
+    font-size: .78rem;
+}
+
+.shiny-card {
+    border-color: rgba(242,201,76,.35);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(242,201,76,.12),
+            var(--surface-2)
+        );
+}
+
+.shadow-card {
+    border-color: rgba(167,120,255,.4);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(167,120,255,.13),
+            var(--surface-2)
+        );
+}
+
+.purified-card {
+    border-color: rgba(121,185,255,.35);
+}
+
+.lucky-card {
+    border-color: rgba(242,201,76,.45);
+}
+
+.hundo-card {
+    border-color: rgba(98,216,154,.35);
+}
+
+.xxl-card {
+    border-color: rgba(255,150,110,.35);
+}
+
+.xxs-card {
+    border-color: rgba(121,185,255,.35);
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 850;
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: .78rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    border-top: 1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats,
+    .stat-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .type-row {
+        flex-direction: column;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">Types</a> <a href="/pokedex.html">Pokédex</a> <a href="/raids/">Raids</a> <a href="/guides/">Guides</a> <a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">Home</a> <span>›</span>
+
+<a href="/pokedex.html">Pokémon Database</a> <span>›</span>
+
+<a href="/pokemon-types/fairy.html">Fairy Type</a> <span>›</span>
+
+<strong>Togekiss</strong>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<h1>Togekiss</h1>
+
+<p class="hero-subtitle">
+
+Togekiss is a Fairy and Flying-type Pokémon originally
+introduced in the Sinnoh region. In Pokémon GO it is best
+known for its strong Fairy-type damage, excellent Dragon
+matchups and long-standing relevance in Master League PvP.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag fairy-tag">Fairy</span> <span class="tag flying-tag">Flying</span>
+
+<span class="tag">#468</span> <span class="tag">Gen 4</span> <span class="tag">Final Evolution</span> <span class="tag">Shiny Available</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🕊️
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+<strong>225</strong>
+<span>ATTACK</span>
+</div>
+
+<div class="quick-stat">
+<strong>217</strong>
+<span>DEFENSE</span>
+</div>
+
+<div class="quick-stat">
+<strong>198</strong>
+<span>HP</span>
+</div>
+
+<div class="quick-stat">
+<strong>~3,767</strong>
+<span>MAX CP</span>
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>Togekiss Overview</h2>
+
+<p>
+
+Togekiss is the final evolution of Togepi. Its Fairy and
+Flying typing gives it a unique combination of offensive and
+defensive strengths. Togekiss is particularly notable for
+its ability to threaten Dragon-type Pokémon with Fairy damage.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#468</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 4</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Sinnoh</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fairy / Flying</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>225</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>217</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>198</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~3,767</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<h2>Togekiss Type</h2>
+
+<div class="type-row">
+
+<div class="type-box">
+
+<div class="type-icon">
+✨
+</div>
+
+<div>
+<strong>Fairy</strong>
+<span>Primary Type</span>
+</div>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">
+🪽
+</div>
+
+<div>
+<strong>Flying</strong>
+<span>Secondary Type</span>
+</div>
+
+</div>
+
+</div>
+
+<h3>Why Togekiss's Typing Matters</h3>
+
+<p>
+
+Fairy typing makes Togekiss particularly useful against
+Dragon, Dark and Fighting Pokémon, while Flying typing
+provides additional defensive utility.
+
+The combination also creates several important weaknesses,
+especially against Electric, Ice, Poison, Rock and Steel
+attacks.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<h2>Togekiss Weaknesses & Resistances</h2>
+
+<h3>Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+<div class="effect-icon">⚡</div>
+<strong>Electric</strong>
+<p>Electric attacks are super effective against Togekiss.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">❄️</div>
+<strong>Ice</strong>
+<p>Ice attacks exploit Togekiss's Flying typing.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">☠️</div>
+<strong>Poison</strong>
+<p>Poison attacks threaten Togekiss through its Fairy typing.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">🪨</div>
+<strong>Rock</strong>
+<p>Rock attacks are effective against Flying Pokémon.</p>
+</div>
+
+<div class="effect-card weakness">
+<div class="effect-icon">⚙️</div>
+<strong>Steel</strong>
+<p>Steel is one of the most important weaknesses to consider.</p>
+</div>
+
+</div>
+
+<h3>Important Resistances</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+<div class="effect-icon">🐉</div>
+<strong>Dragon</strong>
+<p>Fairy typing gives Togekiss an excellent Dragon matchup.</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">🥊</div>
+<strong>Fighting</strong>
+<p>Togekiss resists Fighting-type attacks.</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">🌑</div>
+<strong>Dark</strong>
+<p>Fairy typing provides resistance to Dark attacks.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<h2>Togekiss Best Moves</h2>
+
+<p>
+
+Togekiss is most famous for its Fairy-focused battle role,
+particularly when it is used to pressure Dragon-type Pokémon.
+
+</p>
+
+<div class="feature-card">
+
+<strong>Popular Fairy-Focused Build</strong>
+
+<p>
+Charm + a suitable Fairy charged move depending on the
+current Pokémon GO move pool and the role being played.
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Move Category</th>
+<th>Recommended Role</th>
+<th>Battle Use</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Fast Move</td>
+<td>Fairy damage</td>
+<td>Dragon and Fighting matchups</td>
+</tr>
+
+<tr>
+<td>Charged Move</td>
+<td>Fairy coverage</td>
+<td>STAB damage</td>
+</tr>
+
+<tr>
+<td>Coverage Move</td>
+<td>Secondary coverage</td>
+<td>Matchup-specific utility</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     RAIDS
+===================================================== -->
+
+<section class="section" id="raids">
+
+<h2>Togekiss Raid Performance</h2>
+
+<p>
+
+Togekiss can function as a Fairy-type attacker in raids,
+particularly for players who need additional Dragon counters.
+
+Its overall value should be compared with the strongest
+currently available Fairy attackers.
+
+</p>
+
+<div class="rating-row">
+
+<strong>Dragon Matchups</strong>
+
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:90%;"></div>
+</div>
+
+<span class="rating-value">9/10</span>
+
+</div>
+
+<div class="rating-row">
+
+<strong>Fairy Role</strong>
+
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:82%;"></div>
+</div>
+
+<span class="rating-value">8.2/10</span>
+
+</div>
+
+<div class="rating-row">
+
+<strong>Durability</strong>
+
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:85%;"></div>
+</div>
+
+<span class="rating-value">8.5/10</span>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+<h2>100% Togekiss IV Guide</h2>
+
+<p>
+
+A 100% Togekiss has the perfect IV combination of
+15 Attack, 15 Defense and 15 HP.
+
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<strong>15</strong>
+<span>Attack IV</span>
+</div>
+
+<div class="effect-card">
+<strong>15</strong>
+<span>Defense IV</span>
+</div>
+
+<div class="effect-card">
+<strong>15</strong>
+<span>HP IV</span>
+</div>
+
+</div>
+
+<div class="feature-card">
+
+<strong>Perfect Togekiss — 100% IV</strong>
+
+<p>
+
+A 15/15/15 Togekiss is often called a Hundo. It can be an
+excellent long-term candidate for raids, Master League or
+collection purposes depending on your available resources.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+<h2>Togekiss PvP Guide</h2>
+
+<p>
+
+Togekiss has historically been especially relevant in Master
+League environments because of its ability to apply consistent
+Fairy pressure against Dragon-type opponents.
+
+</p>
+
+<h3>Master League</h3>
+
+<p>
+
+Togekiss can be particularly useful when a team requires a
+strong answer to Dragons. Its defensive profile also allows it
+to pressure several Fighting and Dark Pokémon.
+
+</p>
+
+<h3>Great League & Ultra League</h3>
+
+<p>
+
+League viability depends heavily on CP limits, IV spreads and
+the current competitive metagame. A Pokémon's perfect IV spread
+is not automatically the best PvP spread for every league.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<h2>Shiny Togekiss</h2>
+
+<div class="form-card shiny-card">
+
+<h3>✨ Shiny Togekiss</h3>
+
+<p>
+
+Shiny Togekiss is the alternate-color version of Togekiss.
+Its Shiny status is cosmetic and does not directly change its
+base stats, typing or battle mechanics.
+
+</p>
+
+<p>
+
+A Shiny Togekiss can still have excellent IVs and can be used
+for raids or PvP like a standard Togekiss.
+
+</p>
+
+</div>
+
+<h3>Regular vs Shiny Togekiss</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<tr>
+<th>Feature</th>
+<th>Regular</th>
+<th>Shiny</th>
+</tr>
+
+<tr>
+<td>Stats</td>
+<td>Standard</td>
+<td>Same base stats</td>
+</tr>
+
+<tr>
+<td>Typing</td>
+<td>Fairy / Flying</td>
+<td>Fairy / Flying</td>
+</tr>
+
+<tr>
+<td>Battle Performance</td>
+<td>Normal</td>
+<td>Same with equal IVs</td>
+</tr>
+
+<tr>
+<td>Appearance</td>
+<td>Standard</td>
+<td>Alternate coloration</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<h2>Shadow Togekiss</h2>
+
+<div class="form-card shadow-card">
+
+<h3>🌑 Shadow Togekiss</h3>
+
+<p>
+
+Shadow Togekiss is the Shadow variant of Togekiss. Shadow
+Pokémon generally have a more aggressive offensive profile but
+reduced defensive durability.
+
+</p>
+
+</div>
+
+<h3>Shadow Togekiss vs Regular Togekiss</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<tr>
+<th>Feature</th>
+<th>Regular</th>
+<th>Shadow</th>
+</tr>
+
+<tr>
+<td>Typing</td>
+<td>Fairy / Flying</td>
+<td>Fairy / Flying</td>
+</tr>
+
+<tr>
+<td>Offensive Profile</td>
+<td>Standard</td>
+<td>Higher pressure</td>
+</tr>
+
+<tr>
+<td>Durability</td>
+<td>Standard</td>
+<td>Reduced</td>
+</tr>
+
+<tr>
+<td>Investment Cost</td>
+<td>Standard</td>
+<td>Higher resource cost</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="feature-card">
+
+<strong>Shadow Investment Note</strong>
+
+<p>
+
+Do not judge a Shadow Togekiss only by whether it is a 100% IV
+Pokémon. A strong Shadow specimen may still be valuable because
+of its different battle characteristics.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<h2>Purified Togekiss</h2>
+
+<div class="form-card purified-card">
+
+<h3>✨ Purified Togekiss</h3>
+
+<p>
+
+A Purified Togekiss originates from a Shadow Togekiss that has
+been purified. Purification changes the Pokémon's Shadow status
+and can alter its IVs.
+
+</p>
+
+</div>
+
+<ul class="checklist">
+
+<li>Purification removes Shadow status.</li>
+
+<li>Purified Pokémon may receive IV increases.</li>
+
+<li>Purified Togekiss should be evaluated separately from Shadow Togekiss.</li>
+
+<li>Consider your long-term raid and PvP goals before purifying.</li>
+
+</ul>
+
+<h3>Should You Purify Shadow Togekiss?</h3>
+
+<p>
+
+Do not purify automatically. If your goal is to preserve the
+Shadow battle profile, purification may not be the best choice.
+If you value IV improvements, collection goals or purified
+mechanics, the decision can be different.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<h2>Lucky Togekiss</h2>
+
+<div class="form-card lucky-card">
+
+<h3>🍀 Lucky Togekiss</h3>
+
+<p>
+
+Lucky Togekiss is a Togekiss obtained through a Lucky trade
+after evolving from a Lucky Togepi or Lucky Togetic.
+
+Lucky Pokémon require less Stardust to power up than standard
+Pokémon, making them attractive long-term investment options.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<strong>Why Lucky Togekiss Is Valuable</strong>
+
+<p>
+
+Because Togekiss can require substantial Stardust investment,
+a Lucky specimen can be particularly useful for players planning
+to build a high-level Togekiss.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     XXL XXS
+===================================================== -->
+
+<section class="section" id="size">
+
+<h2>XXL Togekiss & XXS Togekiss</h2>
+
+<div class="form-grid">
+
+<div class="form-card xxl-card">
+
+<h3>XXL Togekiss</h3>
+
+<p>
+
+XXL Togekiss is an unusually large size variant. XXL status
+primarily relates to Pokémon size and collection mechanics.
+
+</p>
+
+</div>
+
+<div class="form-card xxs-card">
+
+<h3>XXS Togekiss</h3>
+
+<p>
+
+XXS Togekiss is an unusually small size variant. Like XXL,
+the XXS designation is primarily related to size and collection
+features rather than base battle strength.
+
+</p>
+
+</div>
+
+</div>
+
+<h3>Does XXL or XXS Change Togekiss Stats?</h3>
+
+<p>
+
+Size classifications such as XXL and XXS should not be treated
+as normal IV or base-stat upgrades. A larger Togekiss is not
+automatically stronger than a smaller Togekiss in standard
+battle calculations.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     ALL FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+<h2>All Togekiss Variants</h2>
+
+<div class="form-grid">
+
+<div class="form-card">
+<h3>Regular Togekiss</h3>
+<p>Standard Fairy and Flying-type Togekiss.</p>
+</div>
+
+<div class="form-card shiny-card">
+<h3>Shiny Togekiss</h3>
+<p>Alternate-color collectible version.</p>
+</div>
+
+<div class="form-card shadow-card">
+<h3>Shadow Togekiss</h3>
+<p>Shadow battle profile with different offensive characteristics.</p>
+</div>
+
+<div class="form-card purified-card">
+<h3>Purified Togekiss</h3>
+<p>A previously Shadow Pokémon that has been purified.</p>
+</div>
+
+<div class="form-card lucky-card">
+<h3>Lucky Togekiss</h3>
+<p>Reduced Stardust power-up costs.</p>
+</div>
+
+<div class="form-card hundo-card">
+<h3>100% Togekiss</h3>
+<p>A perfect 15/15/15 IV specimen.</p>
+</div>
+
+<div class="form-card xxl-card">
+<h3>XXL Togekiss</h3>
+<p>An unusually large size variant.</p>
+</div>
+
+<div class="form-card xxs-card">
+<h3>XXS Togekiss</h3>
+<p>An unusually small size variant.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+<h2>Which Togekiss Should You Power Up?</h2>
+
+<ul class="checklist">
+
+<li>Prioritize your intended use: raids, PvP or collection.</li>
+
+<li>A 100% Togekiss can be an excellent long-term investment.</li>
+
+<li>A Lucky Togekiss can save significant Stardust.</li>
+
+<li>Shadow Togekiss should be evaluated separately.</li>
+
+<li>Shiny status does not reduce battle potential.</li>
+
+<li>XXL and XXS are primarily collection characteristics.</li>
+
+<li>Check the current moveset before spending valuable resources.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<h2>Togekiss FAQ</h2>
+
+<details>
+
+<summary>What type is Togekiss?</summary>
+
+<p>
+Togekiss is a Fairy and Flying-type Pokémon.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is Togekiss weak to?</summary>
+
+<p>
+Togekiss is vulnerable to Electric, Ice, Poison, Rock and Steel attacks.
+</p>
+
+</details>
+
+<details>
+
+<summary>Is Shiny Togekiss available?</summary>
+
+<p>
+Shiny Togekiss may be obtained through eligible Togepi,
+Togetic or Togekiss encounters and evolutions depending on
+current Pokémon GO availability.
+</p>
+
+</details>
+
+<details>
+
+<summary>Is Shadow Togekiss stronger than regular Togekiss?</summary>
+
+<p>
+Shadow Togekiss has a different offensive and defensive battle
+profile. Whether it is better depends on the battle role and
+your investment goals.
+</p>
+
+</details>
+
+<details>
+
+<summary>Should I purify Shadow Togekiss?</summary>
+
+<p>
+Not automatically. Consider the benefits of the Shadow battle
+profile before purifying.
+</p>
+
+</details>
+
+<details>
+
+<summary>Is Lucky Togekiss good?</summary>
+
+<p>
+Lucky Togekiss can be valuable because Lucky Pokémon require
+less Stardust for power-ups.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is a 100% Togekiss?</summary>
+
+<p>
+A 100% Togekiss has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+<details>
+
+<summary>Does XXL Togekiss have higher stats?</summary>
+
+<p>
+No. XXL size should not automatically be treated as a base-stat
+or IV advantage.
+</p>
+
+</details>
+
+<details>
+
+<summary>Does XXS Togekiss have lower stats?</summary>
+
+<p>
+No. XXS size primarily relates to Pokémon size and collection
+mechanics.
+</p>
+
+</details>
+
+<details>
+
+<summary>Is Togekiss good against Dragons?</summary>
+
+<p>
+Togekiss can be an excellent Dragon counter because of its Fairy
+typing and Fairy-type damage options.
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+<div class="feature-card">
+
+<strong>Editorial & Data Note</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information website.
+Moves, availability, event rotations, Shadow mechanics and PvP
+metagames can change over time. Check current in-game information
+before making major investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective owners.
+This page is intended as an independent informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>Togekiss Guide</h3>
+
+<ul class="side-nav">
+
+<li><a href="#overview">Togekiss Overview</a></li>
+
+<li><a href="#type">Type</a></li>
+
+<li><a href="#weaknesses">Weaknesses</a></li>
+
+<li><a href="#moves">Best Moves</a></li>
+
+<li><a href="#raids">Raid Performance</a></li>
+
+<li><a href="#pvp">PvP Guide</a></li>
+
+<li><a href="#iv">100% IV Guide</a></li>
+
+<li><a href="#shiny">Shiny Togekiss</a></li>
+
+<li><a href="#shadow">Shadow Togekiss</a></li>
+
+<li><a href="#purified">Purified Togekiss</a></li>
+
+<li><a href="#lucky">Lucky Togekiss</a></li>
+
+<li><a href="#size">XXL & XXS</a></li>
+
+<li><a href="#forms">All Variants</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>Related Guides</h3>
+
+<a class="related-link"
+href="/pokemon/togepi.html">
+Togepi Guide → </a>
+
+<a class="related-link"
+href="/pokemon/togetic.html">
+Togetic Guide → </a>
+
+<a class="related-link"
+href="/pokemon-types/fairy.html">
+Fairy Type Hub → </a>
+
+<a class="related-link"
+href="/pokemon-types/flying.html">
+Flying Type Hub → </a>
+
+<a class="related-link"
+href="/pokemon-generations/gen-4.html">
+Gen 4 Pokémon → </a>
+
+</div>
+
+<div class="side-card">
+
+<h3>Togekiss Quick Facts</h3>
+
+<p>
+<strong>Pokédex:</strong> #468
+</p>
+
+<p>
+<strong>Generation:</strong> 4
+</p>
+
+<p>
+<strong>Region:</strong> Sinnoh
+</p>
+
+<p>
+<strong>Type:</strong> Fairy / Flying
+</p>
+
+<p>
+<strong>Evolution:</strong> Final Evolution
+</p>
+
+<p>
+<strong>Variants:</strong> 8 Featured
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,4600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Tauros Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny & Paldean Breeds
+    </title>
+
+    <meta name="description"
+          content="Complete Tauros Pokémon GO guide covering regular Tauros, Shiny Tauros, Paldean Combat Breed, Blaze Breed and Aqua Breed, including stats, max CP, types, weaknesses, resistances, moves, PvP, IVs, availability and form comparisons.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/tauros.html">
+
+    <style>
+
+        /* =========================================================
+           ROOT
+        ========================================================= */
+
+        :root {
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #d7a24a;
+            --accent-2: #f0c46a;
+
+            --normal: #b8b8a8;
+            --fighting: #d85f62;
+            --fire: #ff794f;
+            --water: #4e9dff;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(215, 162, 74, .10),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8, 11, 18, .92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =========================================================
+           PAGE
+        ========================================================= */
+
+        .page {
+            max-width: var(--max);
+            margin: auto;
+            padding: 35px 20px 80px;
+        }
+
+
+        /* =========================================================
+           BREADCRUMB
+        ========================================================= */
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+            font-size: .72rem;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .pokemon-hero {
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(215, 162, 74, .17),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            color: var(--accent-2);
+
+            background:
+                rgba(215, 162, 74, .08);
+
+            font-size: .68rem;
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            max-width: 700px;
+
+            font-size: 1rem;
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            padding: 7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+            font-weight: 800;
+        }
+
+        .normal-tag {
+            color: var(--normal);
+        }
+
+        .breed-tag {
+            color: var(--accent-2);
+        }
+
+
+        /* =========================================================
+           HERO POKEMON
+        ========================================================= */
+
+        .hero-pokemon {
+            min-height: 300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(215,162,74,.20),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =========================================================
+           QUICK STATS
+        ========================================================= */
+
+        .quick-stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+            display: block;
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+            color: var(--muted);
+            font-size: .68rem;
+            font-weight: 750;
+        }
+
+
+        /* =========================================================
+           LAYOUT
+        ========================================================= */
+
+        .content-layout {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =========================================================
+           SECTION
+        ========================================================= */
+
+        .section {
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--accent-2);
+
+            font-size: .68rem;
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+        .section h2 {
+            font-size:
+                clamp(1.45rem, 3vw, 2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =========================================================
+           STAT GRID
+        ========================================================= */
+
+        .stat-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =========================================================
+           FORM / TYPE CARDS
+        ========================================================= */
+
+        .type-box {
+            display: flex;
+
+            align-items: center;
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(215,162,74,.30);
+
+            background:
+                rgba(215,162,74,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(215,162,74,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+            color: var(--accent-2);
+
+            font-size: .75rem;
+            font-weight: 850;
+        }
+
+        .type-pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .type-pill {
+            display: inline-flex;
+
+            padding:
+                7px 13px;
+
+            border-radius:
+                999px;
+
+            font-size: .72rem;
+            font-weight: 900;
+        }
+
+        .normal {
+            background: rgba(184,184,168,.15);
+            color: var(--normal);
+        }
+
+        .fighting {
+            background: rgba(216,95,98,.14);
+            color: #ff898d;
+        }
+
+        .fire {
+            background: rgba(255,121,79,.14);
+            color: #ff9b78;
+        }
+
+        .water {
+            background: rgba(78,157,255,.14);
+            color: #7db8ff;
+        }
+
+
+        /* =========================================================
+           EFFECT GRID
+        ========================================================= */
+
+        .effect-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-card .effect-icon {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card small {
+            color: var(--muted);
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =========================================================
+           TABLES
+        ========================================================= */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td,
+        .comparison-table th,
+        .comparison-table td {
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th,
+        .comparison-table th {
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+
+            background:
+                var(--surface-2);
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color: var(--accent-2);
+            font-weight: 800;
+        }
+
+
+        /* =========================================================
+           BEST MOVE
+        ========================================================= */
+
+        .best-move {
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(215,162,74,.10),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(215,162,74,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================================================
+           FORM CARDS
+        ========================================================= */
+
+        .breed-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .breed-card {
+            padding: 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .breed-card .breed-symbol {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .breed-card h3 {
+            margin:
+                0 0 8px;
+        }
+
+        .breed-card p {
+            font-size: .76rem;
+        }
+
+        .breed-card .mini-stats {
+            margin-top: 12px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 8px;
+        }
+
+        .mini-stat {
+            padding: 10px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            border-radius: 10px;
+        }
+
+        .mini-stat span {
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .62rem;
+        }
+
+        .mini-stat strong {
+            font-size: .88rem;
+        }
+
+
+        /* =========================================================
+           RATING
+        ========================================================= */
+
+        .rating-row {
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 75px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+            text-align: right;
+            font-weight: 900;
+        }
+
+
+        /* =========================================================
+           IV GRID
+        ========================================================= */
+
+        .iv-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+            display: block;
+            font-size: 1.35rem;
+        }
+
+        .iv-card span {
+            color: var(--muted);
+            font-size: .68rem;
+        }
+
+
+        /* =========================================================
+           CHECKLIST
+        ========================================================= */
+
+        .checklist {
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+            content: "✓";
+
+            margin-right: 8px;
+
+            color:
+                var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =========================================================
+           SHINY
+        ========================================================= */
+
+        .shiny-card {
+            display: flex;
+
+            align-items: center;
+
+            gap: 18px;
+
+            padding: 20px;
+
+            border:
+                1px solid rgba(255,214,92,.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,214,92,.10),
+                    rgba(255,255,255,.025)
+                );
+
+            border-radius:
+                var(--radius);
+        }
+
+        .shiny-symbol {
+            font-size: 2.7rem;
+        }
+
+        .shiny-card strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+
+        /* =========================================================
+           INFO BOX
+        ========================================================= */
+
+        .info-banner {
+            padding:
+                17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =========================================================
+           SIDEBAR
+        ========================================================= */
+
+        .sidebar {
+            position: sticky;
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+            list-style: none;
+
+            display: grid;
+            gap: 4px;
+        }
+
+        .side-nav a {
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+            display: block;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color:
+                var(--accent-2);
+        }
+
+
+        /* =========================================================
+           FAQ
+        ========================================================= */
+
+        details {
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+            cursor: pointer;
+
+            font-weight: 850;
+            font-size: .82rem;
+        }
+
+        details p {
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: .72rem;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .breed-grid {
+                grid-template-columns:
+                    1fr;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .effect-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align:
+                    left;
+            }
+
+            .main-nav {
+                display:
+                    none;
+            }
+
+            .shiny-card {
+                align-items:
+                    flex-start;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="page">
+
+
+    <!-- BREADCRUMB -->
+
+    <div class="breadcrumb">
+
+        <a href="/">
+            Home
+        </a>
+
+        <span>›</span>
+
+        <a href="/pokedex.html">
+            Pokémon Database
+        </a>
+
+        <span>›</span>
+
+        <a href="/pokemon-types/normal.html">
+            Normal Type
+        </a>
+
+        <span>›</span>
+
+        <strong>
+            Tauros
+        </strong>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="pokemon-hero">
+
+        <div class="hero-grid">
+
+            <div>
+
+                <span class="eyebrow">
+                    KANTO • POKÉDEX #128
+                </span>
+
+                <h1>
+                    Tauros
+                </h1>
+
+                <p class="hero-subtitle">
+
+                    Tauros is a Generation 1 Normal-type Pokémon
+                    best known for its powerful charge attacks,
+                    regional availability and competitive history.
+                    Pokémon GO also features three distinct
+                    Paldean Tauros breeds: Combat, Blaze and Aqua.
+
+                </p>
+
+                <div class="hero-tags">
+
+                    <span class="tag normal-tag">
+                        Normal
+                    </span>
+
+                    <span class="tag">
+                        #128
+                    </span>
+
+                    <span class="tag">
+                        Generation 1
+                    </span>
+
+                    <span class="tag">
+                        Shiny Available
+                    </span>
+
+                    <span class="tag">
+                        No Evolution
+                    </span>
+
+                    <span class="tag breed-tag">
+                        3 Paldean Breeds
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-pokemon">
+
+                <!-- Replace this placeholder with a properly licensed asset -->
+
+                <div class="pokemon-placeholder">
+                    🐂
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         QUICK STATS
+    ===================================================== -->
+
+    <div class="quick-stats">
+
+        <div class="quick-stat">
+
+            <strong>
+                198
+            </strong>
+
+            <span>
+                ATTACK
+            </span>
+
+        </div>
+
+
+        <div class="quick-stat">
+
+            <strong>
+                183
+            </strong>
+
+            <span>
+                DEFENSE
+            </span>
+
+        </div>
+
+
+        <div class="quick-stat">
+
+            <strong>
+                181
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+
+        <div class="quick-stat">
+
+            <strong>
+                2,962
+            </strong>
+
+            <span>
+                MAX CP
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CONTENT LAYOUT
+    ===================================================== -->
+
+    <div class="content-layout">
+
+
+        <div class="main-content">
+
+
+            <!-- =================================================
+                 OVERVIEW
+            ================================================= -->
+
+            <section class="section"
+                     id="overview">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        01 • OVERVIEW
+                    </span>
+
+                    <h2>
+                        Tauros Overview
+                    </h2>
+
+                    <p>
+
+                        Tauros is a Normal-type Pokémon from the
+                        Kanto region and was introduced in the first
+                        generation of the Pokémon series.
+
+                        In Pokémon GO, regular Tauros has a different
+                        role from its Paldean variants. The regular
+                        form remains a Normal-type Pokémon, while the
+                        Paldean breeds use Fighting-based typings.
+
+                    </p>
+
+                </div>
+
+
+                <div class="stat-grid">
+
+                    <div class="stat-card">
+                        <span>
+                            POKÉDEX
+                        </span>
+
+                        <strong>
+                            #128
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            GENERATION
+                        </span>
+
+                        <strong>
+                            Gen 1
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            REGION
+                        </span>
+
+                        <strong>
+                            Kanto
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            TYPE
+                        </span>
+
+                        <strong>
+                            Normal
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            ATTACK
+                        </span>
+
+                        <strong>
+                            198
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            DEFENSE
+                        </span>
+
+                        <strong>
+                            183
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            HP
+                        </span>
+
+                        <strong>
+                            181
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            MAX CP
+                        </span>
+
+                        <strong>
+                            2,962
+                        </strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 TYPE
+            ================================================= -->
+
+            <section class="section"
+                     id="type">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02 • TYPE
+                    </span>
+
+                    <h2>
+                        Tauros Type
+                    </h2>
+
+                    <p>
+
+                        Regular Tauros is a pure Normal-type Pokémon.
+                        Its Paldean breeds change the typing considerably,
+                        which makes each breed useful for a different
+                        set of matchups.
+
+                    </p>
+
+                </div>
+
+
+                <div class="type-box">
+
+                    <div class="type-icon">
+                        ⚪
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Normal
+                        </strong>
+
+                        <span>
+                            Regular Tauros Type
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Paldean Tauros Typings
+                </h3>
+
+                <div class="type-pill-row">
+
+                    <span class="type-pill fighting">
+                        Combat — Fighting
+                    </span>
+
+                    <span class="type-pill fire">
+                        Blaze — Fighting / Fire
+                    </span>
+
+                    <span class="type-pill water">
+                        Aqua — Fighting / Water
+                    </span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 WEAKNESSES
+            ================================================= -->
+
+            <section class="section"
+                     id="weaknesses">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        03 • TYPE MATCHUPS
+                    </span>
+
+                    <h2>
+                        Tauros Weaknesses & Resistances
+                    </h2>
+
+                </div>
+
+
+                <h3>
+                    Regular Tauros Weakness
+                </h3>
+
+                <div class="effect-grid">
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🥊
+                        </div>
+
+                        <strong>
+                            Fighting
+                        </strong>
+
+                        <p>
+                            Fighting-type attacks are
+                            super effective against
+                            Normal-type Tauros.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Important Resistance Note
+                </h3>
+
+                <p>
+
+                    Normal-type Tauros has very limited defensive
+                    specialization. Its biggest advantage is the
+                    simplicity of its typing rather than a large
+                    resistance profile.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 STATS
+            ================================================= -->
+
+            <section class="section"
+                     id="stats">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        04 • STATS
+                    </span>
+
+                    <h2>
+                        Tauros Attack, Defense & HP
+                    </h2>
+
+                    <p>
+
+                        Regular Tauros has balanced offensive and
+                        defensive stats compared with many Pokémon,
+                        but its maximum CP is considerably lower
+                        than many modern high-end raid attackers.
+
+                    </p>
+
+                </div>
+
+
+                <div class="stat-grid">
+
+                    <div class="stat-card">
+                        <span>
+                            ATTACK
+                        </span>
+
+                        <strong>
+                            198
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            DEFENSE
+                        </span>
+
+                        <strong>
+                            183
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            HP
+                        </span>
+
+                        <strong>
+                            181
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span>
+                            LEVEL 50 MAX CP
+                        </span>
+
+                        <strong>
+                            2,962
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-banner">
+
+                    <strong>
+                        Database note:
+                    </strong>
+
+                    CP is calculated using Pokémon GO's stats,
+                    level and IVs. Maximum CP represents a
+                    perfect-IV Pokémon at the stated level.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 MOVES
+            ================================================= -->
+
+            <section class="section"
+                     id="moves">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        05 • MOVESET
+                    </span>
+
+                    <h2>
+                        Tauros Best Moves
+                    </h2>
+
+                    <p>
+
+                        Tauros has access to several Normal-type
+                        and coverage moves. Its PvE value is modest,
+                        so moveset selection matters more for
+                        personal collections and limited PvP use
+                        than for mainstream raids.
+
+                    </p>
+
+                </div>
+
+
+                <div class="best-move">
+
+                    <strong>
+                        Recommended PvP-Oriented Build
+                    </strong>
+
+                    <p>
+                        Quick Attack / Horn Attack / Trailblaze
+                    </p>
+
+                </div>
+
+
+                <div class="table-wrap">
+
+                    <table class="data-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Move
+                                </th>
+
+                                <th>
+                                    Type
+                                </th>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Role
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="move-name">
+                                    Tackle
+                                </td>
+
+                                <td>
+                                    Normal
+                                </td>
+
+                                <td>
+                                    Fast Move
+                                </td>
+
+                                <td>
+                                    General use
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="move-name">
+                                    Zen Headbutt
+                                </td>
+
+                                <td>
+                                    Psychic
+                                </td>
+
+                                <td>
+                                    Fast Move
+                                </td>
+
+                                <td>
+                                    Coverage
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="move-name">
+                                    Horn Attack
+                                </td>
+
+                                <td>
+                                    Normal
+                                </td>
+
+                                <td>
+                                    Charged Move
+                                </td>
+
+                                <td>
+                                    PvP pressure
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="move-name">
+                                    Earthquake
+                                </td>
+
+                                <td>
+                                    Ground
+                                </td>
+
+                                <td>
+                                    Charged Move
+                                </td>
+
+                                <td>
+                                    Coverage
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="move-name">
+                                    Iron Head
+                                </td>
+
+                                <td>
+                                    Steel
+                                </td>
+
+                                <td>
+                                    Charged Move
+                                </td>
+
+                                <td>
+                                    Coverage
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="move-name">
+                                    Trailblaze
+                                </td>
+
+                                <td>
+                                    Grass
+                                </td>
+
+                                <td>
+                                    Charged Move
+                                </td>
+
+                                <td>
+                                    PvP setup
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="info-banner">
+
+                    Move availability can change when Pokémon GO
+                    updates its move pool. Event-exclusive or
+                    legacy moves should be checked against your
+                    current game data before publication.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RAID
+            ================================================= -->
+
+            <section class="section"
+                     id="raid">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        06 • RAID VALUE
+                    </span>
+
+                    <h2>
+                        Tauros Raid Performance
+                    </h2>
+
+                    <p>
+
+                        Regular Tauros is not a major meta-defining
+                        raid attacker. The same broad conclusion
+                        applies to the Paldean breeds, which are
+                        generally more interesting as collection
+                        pieces and situational PvP options.
+
+                    </p>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <strong>
+                        Raid Damage
+                    </strong>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill"
+                             style="--rating: 38%;">
+                        </div>
+                    </div>
+
+                    <span class="rating-value">
+                        Low
+                    </span>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <strong>
+                        PvP Interest
+                    </strong>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill"
+                             style="--rating: 55%;">
+                        </div>
+                    </div>
+
+                    <span class="rating-value">
+                        Situational
+                    </span>
+
+                </div>
+
+
+                <div class="rating-row">
+
+                    <strong>
+                        Collection Value
+                    </strong>
+
+                    <div class="rating-bar">
+                        <div class="rating-fill"
+                             style="--rating: 90%;">
+                        </div>
+                    </div>
+
+                    <span class="rating-value">
+                        High
+                    </span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 COUNTERS
+            ================================================= -->
+
+            <section class="section"
+                     id="counters">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        07 • COUNTERS
+                    </span>
+
+                    <h2>
+                        What Counters Tauros?
+                    </h2>
+
+                </div>
+
+
+                <div class="effect-grid">
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🥊
+                        </div>
+
+                        <strong>
+                            Fighting Attackers
+                        </strong>
+
+                        <p>
+                            Fighting-type damage is the primary
+                            way to exploit regular Tauros's
+                            Normal typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card">
+
+                        <div class="effect-icon">
+                            ⚡
+                        </div>
+
+                        <strong>
+                            Check the Form
+                        </strong>
+
+                        <p>
+                            Paldean Tauros breeds have different
+                            weaknesses, so identify the exact form
+                            before selecting counters.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card">
+
+                        <div class="effect-icon">
+                            🎯
+                        </div>
+
+                        <strong>
+                            Match the Typing
+                        </strong>
+
+                        <p>
+                            Form-specific type coverage matters
+                            more for Paldean Tauros than for the
+                            regular Normal form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 IV
+            ================================================= -->
+
+            <section class="section"
+                     id="iv">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        08 • IV GUIDE
+                    </span>
+
+                    <h2>
+                        Tauros IV Guide
+                    </h2>
+
+                    <p>
+
+                        For collectors, a 15/15/15 Tauros is the
+                        perfect-IV target. For PvP, however,
+                        league-specific IV distributions may be
+                        preferable to simply chasing a hundo.
+
+                    </p>
+
+                </div>
+
+
+                <div class="iv-grid">
+
+                    <div class="iv-card">
+
+                        <strong>
+                            15
+                        </strong>
+
+                        <span>
+                            Attack IV
+                        </span>
+
+                    </div>
+
+
+                    <div class="iv-card">
+
+                        <strong>
+                            15
+                        </strong>
+
+                        <span>
+                            Defense IV
+                        </span>
+
+                    </div>
+
+
+                    <div class="iv-card">
+
+                        <strong>
+                            15
+                        </strong>
+
+                        <span>
+                            HP IV
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Perfect Tauros
+                </h3>
+
+                <p>
+
+                    A 15/15/15 Tauros is a perfect-IV specimen.
+                    Whether it is worth powering up depends on
+                    how you intend to use it and whether the
+                    individual Pokémon has personal or collection
+                    value to you.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PVP
+            ================================================= -->
+
+            <section class="section"
+                     id="pvp">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        09 • PVP
+                    </span>
+
+                    <h2>
+                        Tauros PvP Guide
+                    </h2>
+
+                </div>
+
+
+                <h3>
+                    Regular Tauros
+                </h3>
+
+                <p>
+
+                    Regular Tauros can appear in Great and Ultra
+                    League discussions, although it is generally
+                    overshadowed by stronger and more flexible
+                    options. Its access to Trailblaze gives it
+                    some additional coverage and setup potential.
+
+                </p>
+
+
+                <h3>
+                    Paldean Tauros in PvP
+                </h3>
+
+                <p>
+
+                    The Paldean breeds are more interesting
+                    individually because their Fighting-based
+                    typings create different matchup profiles.
+
+                    Combat Breed can pressure Steel, Rock and Dark
+                    Pokémon, while Blaze and Aqua gain additional
+                    coverage from their secondary types.
+
+                </p>
+
+
+                <div class="best-move">
+
+                    <strong>
+                        General PvP Reminder
+                    </strong>
+
+                    <p>
+
+                        Great League, Ultra League and Master League
+                        IV requirements are different. Always test
+                        the exact Pokémon rather than treating a
+                        15/15/15 specimen as automatically optimal.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PALDEAN BREEDS
+            ================================================= -->
+
+            <section class="section"
+                     id="breeds">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        10 • PALDEAN FORMS
+                    </span>
+
+                    <h2>
+                        Paldean Tauros Breeds
+                    </h2>
+
+                    <p>
+
+                        Paldean Tauros has three distinct breeds:
+                        Combat Breed, Blaze Breed and Aqua Breed.
+                        They are separate forms rather than an
+                        evolution chain.
+
+                    </p>
+
+                </div>
+
+
+                <div class="breed-grid">
+
+
+                    <!-- COMBAT -->
+
+                    <article class="breed-card">
+
+                        <div class="breed-symbol">
+                            🥊
+                        </div>
+
+                        <h3>
+                            Combat Breed
+                        </h3>
+
+                        <p>
+                            A pure Fighting-type Paldean Tauros.
+                            It is designed around close-range
+                            physical combat.
+                        </p>
+
+                        <div class="type-pill-row">
+
+                            <span class="type-pill fighting">
+                                Fighting
+                            </span>
+
+                        </div>
+
+
+                        <div class="mini-stats">
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    ATTACK
+                                </span>
+
+                                <strong>
+                                    210
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    DEFENSE
+                                </span>
+
+                                <strong>
+                                    193
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    HP
+                                </span>
+
+                                <strong>
+                                    181
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    MAX CP
+                                </span>
+
+                                <strong>
+                                    3,207
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- BLAZE -->
+
+                    <article class="breed-card">
+
+                        <div class="breed-symbol">
+                            🔥
+                        </div>
+
+                        <h3>
+                            Blaze Breed
+                        </h3>
+
+                        <p>
+                            The Blaze Breed combines Fighting and
+                            Fire typing and gains access to Fire-based
+                            coverage such as Flame Charge.
+                        </p>
+
+                        <div class="type-pill-row">
+
+                            <span class="type-pill fighting">
+                                Fighting
+                            </span>
+
+                            <span class="type-pill fire">
+                                Fire
+                            </span>
+
+                        </div>
+
+
+                        <div class="mini-stats">
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    ATTACK
+                                </span>
+
+                                <strong>
+                                    210
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    DEFENSE
+                                </span>
+
+                                <strong>
+                                    193
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    HP
+                                </span>
+
+                                <strong>
+                                    181
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    MAX CP
+                                </span>
+
+                                <strong>
+                                    3,207
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- AQUA -->
+
+                    <article class="breed-card">
+
+                        <div class="breed-symbol">
+                            💧
+                        </div>
+
+                        <h3>
+                            Aqua Breed
+                        </h3>
+
+                        <p>
+                            Aqua Breed combines Fighting and Water
+                            typing and can use Water-based coverage
+                            such as Aqua Jet.
+                        </p>
+
+                        <div class="type-pill-row">
+
+                            <span class="type-pill fighting">
+                                Fighting
+                            </span>
+
+                            <span class="type-pill water">
+                                Water
+                            </span>
+
+                        </div>
+
+
+                        <div class="mini-stats">
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    ATTACK
+                                </span>
+
+                                <strong>
+                                    210
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    DEFENSE
+                                </span>
+
+                                <strong>
+                                    193
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    HP
+                                </span>
+
+                                <strong>
+                                    181
+                                </strong>
+
+                            </div>
+
+                            <div class="mini-stat">
+
+                                <span>
+                                    MAX CP
+                                </span>
+
+                                <strong>
+                                    3,207
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 COMBAT
+            ================================================= -->
+
+            <section class="section"
+                     id="combat">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        11 • COMBAT BREED
+                    </span>
+
+                    <h2>
+                        Paldean Tauros Combat Breed
+                    </h2>
+
+                    <p>
+
+                        Combat Breed is the pure Fighting-type
+                        Paldean Tauros. In Pokémon GO it has
+                        210 Attack, 193 Defense, 181 HP and a
+                        Level 50 maximum CP of 3,207.
+
+                    </p>
+
+                </div>
+
+
+                <div class="type-box">
+
+                    <div class="type-icon">
+                        🥊
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Fighting
+                        </strong>
+
+                        <span>
+                            Combat Breed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Combat Breed Weaknesses
+                </h3>
+
+                <div class="effect-grid">
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🧚
+                        </div>
+
+                        <strong>
+                            Fairy
+                        </strong>
+
+                        <p>
+                            Fairy-type attacks deal
+                            super-effective damage.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🪽
+                        </div>
+
+                        <strong>
+                            Flying
+                        </strong>
+
+                        <p>
+                            Flying attacks exploit its
+                            Fighting typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🧠
+                        </div>
+
+                        <strong>
+                            Psychic
+                        </strong>
+
+                        <p>
+                            Psychic-type attacks are also
+                            super effective.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Best Combat Breed Moves
+                </h3>
+
+                <div class="best-move">
+
+                    <strong>
+                        Recommended Pokémon GO Moveset
+                    </strong>
+
+                    <p>
+                        Double Kick + Close Combat
+                    </p>
+
+                </div>
+
+
+                <h3>
+                    Combat Breed PvP Moves
+                </h3>
+
+                <p>
+                    A common PvP-oriented combination is
+                    Double Kick with Close Combat and Trailblaze,
+                    giving Combat Breed both Fighting pressure
+                    and Grass-type coverage.
+                </p>
+
+
+                <div class="info-banner">
+
+                    Combat Breed is currently not considered a
+                    major Fighting-type raid attacker. Its value
+                    is much stronger as a regional/collection
+                    Pokémon and situational PvP pick.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 BLAZE
+            ================================================= -->
+
+            <section class="section"
+                     id="blaze">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        12 • BLAZE BREED
+                    </span>
+
+                    <h2>
+                        Paldean Tauros Blaze Breed
+                    </h2>
+
+                    <p>
+
+                        Blaze Breed is the Fighting/Fire form of
+                        Paldean Tauros. Its secondary Fire typing
+                        changes both its offensive coverage and
+                        defensive matchup profile.
+
+                    </p>
+
+                </div>
+
+
+                <div class="type-box">
+
+                    <div class="type-icon">
+                        🔥
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Fighting / Fire
+                        </strong>
+
+                        <span>
+                            Blaze Breed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Blaze Breed Weaknesses
+                </h3>
+
+                <div class="effect-grid">
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🪽
+                        </div>
+
+                        <strong>
+                            Flying
+                        </strong>
+
+                        <p>
+                            Flying-type attacks deal
+                            super-effective damage.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🌎
+                        </div>
+
+                        <strong>
+                            Ground
+                        </strong>
+
+                        <p>
+                            Ground attacks exploit its
+                            Fighting / Fire combination.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🧠
+                        </div>
+
+                        <strong>
+                            Psychic
+                        </strong>
+
+                        <p>
+                            Psychic remains a weakness
+                            from the Fighting typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            💧
+                        </div>
+
+                        <strong>
+                            Water
+                        </strong>
+
+                        <p>
+                            Water attacks are also
+                            super effective.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Blaze Breed Best Moves
+                </h3>
+
+                <div class="best-move">
+
+                    <strong>
+                        Current Recommended PvE Moveset
+                    </strong>
+
+                    <p>
+                        Double Kick + Earthquake
+                    </p>
+
+                </div>
+
+
+                <h3>
+                    Blaze Breed Exclusive Coverage
+                </h3>
+
+                <p>
+
+                    Blaze Breed has access to Flame Charge,
+                    allowing it to use Fire-based coverage in
+                    addition to its Fighting-oriented options.
+
+                </p>
+
+
+                <div class="info-banner">
+
+                    Current databases list Blaze Breed as
+                    Fighting/Fire with 210 Attack, 193 Defense,
+                    181 HP and 3,207 maximum CP at Level 50.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 AQUA
+            ================================================= -->
+
+            <section class="section"
+                     id="aqua">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        13 • AQUA BREED
+                    </span>
+
+                    <h2>
+                        Paldean Tauros Aqua Breed
+                    </h2>
+
+                    <p>
+
+                        Aqua Breed is the Fighting/Water form of
+                        Paldean Tauros. Its Water typing provides
+                        additional defensive resistances and
+                        Water-based coverage.
+
+                    </p>
+
+                </div>
+
+
+                <div class="type-box">
+
+                    <div class="type-icon">
+                        💧
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Fighting / Water
+                        </strong>
+
+                        <span>
+                            Aqua Breed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Aqua Breed Weaknesses
+                </h3>
+
+                <div class="effect-grid">
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            ⚡
+                        </div>
+
+                        <strong>
+                            Electric
+                        </strong>
+
+                        <p>
+                            Electric attacks exploit
+                            its Water typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🧚
+                        </div>
+
+                        <strong>
+                            Fairy
+                        </strong>
+
+                        <p>
+                            Fairy attacks exploit its
+                            Fighting typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🪽
+                        </div>
+
+                        <strong>
+                            Flying
+                        </strong>
+
+                        <p>
+                            Flying attacks remain
+                            super effective.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🌿
+                        </div>
+
+                        <strong>
+                            Grass
+                        </strong>
+
+                        <p>
+                            Grass attacks exploit
+                            the Water typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="effect-card weakness">
+
+                        <div class="effect-icon">
+                            🧠
+                        </div>
+
+                        <strong>
+                            Psychic
+                        </strong>
+
+                        <p>
+                            Psychic attacks exploit
+                            the Fighting typing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Aqua Breed Best Moves
+                </h3>
+
+                <div class="best-move">
+
+                    <strong>
+                        Recommended Pokémon GO Moveset
+                    </strong>
+
+                    <p>
+                        Double Kick + Earthquake
+                    </p>
+
+                </div>
+
+
+                <h3>
+                    Aqua Breed PvP Moves
+                </h3>
+
+                <p>
+
+                    Aqua Breed can use Double Kick together
+                    with Aqua Jet and Trailblaze in PvP,
+                    although it remains more of a niche choice
+                    than a top-tier meta Pokémon.
+
+                </p>
+
+
+                <div class="info-banner">
+
+                    Current databases list Aqua Breed at
+                    210 Attack, 193 Defense, 181 HP and
+                    3,207 maximum CP at Level 50.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SHINY
+            ================================================= -->
+
+            <section class="section"
+                     id="shiny">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        14 • SHINY
+                    </span>
+
+                    <h2>
+                        Shiny Tauros
+                    </h2>
+
+                    <p>
+
+                        Regular Shiny Tauros is available in
+                        Pokémon GO through eligible encounters.
+                        Shiny status is separate from the
+                        Paldean breed system.
+
+                    </p>
+
+                </div>
+
+
+                <div class="shiny-card">
+
+                    <div class="shiny-symbol">
+                        ✨
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Shiny Tauros
+                        </strong>
+
+                        <p>
+                            Alternate coloration is available
+                            for the regular Tauros form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Shiny Form Comparison
+                </h3>
+
+
+                <div class="table-wrap">
+
+                    <table class="comparison-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Form
+                                </th>
+
+                                <th>
+                                    Shiny Status
+                                </th>
+
+                                <th>
+                                    Type
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Regular Tauros
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+                                    Normal
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Paldean Combat Breed
+                                </td>
+
+                                <td>
+                                    Not currently available
+                                </td>
+
+                                <td>
+                                    Fighting
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Paldean Blaze Breed
+                                </td>
+
+                                <td>
+                                    Not currently available
+                                </td>
+
+                                <td>
+                                    Fighting / Fire
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Paldean Aqua Breed
+                                </td>
+
+                                <td>
+                                    Not currently available
+                                </td>
+
+                                <td>
+                                    Fighting / Water
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="info-banner">
+
+                    Shiny availability for the three Paldean
+                    breeds should be treated as live game data
+                    and updated if Niantic introduces those
+                    Shiny forms in a future event.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 FORMS
+            ================================================= -->
+
+            <section class="section"
+                     id="forms">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        15 • FORMS
+                    </span>
+
+                    <h2>
+                        Tauros Forms Explained
+                    </h2>
+
+                    <p>
+
+                        Tauros has one regular Kanto form and
+                        three Paldean breeds. The breeds are
+                        form variations rather than evolutions.
+
+                    </p>
+
+                </div>
+
+
+                <div class="table-wrap">
+
+                    <table class="comparison-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Form
+                                </th>
+
+                                <th>
+                                    Type
+                                </th>
+
+                                <th>
+                                    Attack
+                                </th>
+
+                                <th>
+                                    Defense
+                                </th>
+
+                                <th>
+                                    HP
+                                </th>
+
+                                <th>
+                                    Max CP
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Tauros
+                                </td>
+
+                                <td>
+                                    Normal
+                                </td>
+
+                                <td>
+                                    198
+                                </td>
+
+                                <td>
+                                    183
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    2,962
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Combat Breed
+                                </td>
+
+                                <td>
+                                    Fighting
+                                </td>
+
+                                <td>
+                                    210
+                                </td>
+
+                                <td>
+                                    193
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    3,207
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Blaze Breed
+                                </td>
+
+                                <td>
+                                    Fighting / Fire
+                                </td>
+
+                                <td>
+                                    210
+                                </td>
+
+                                <td>
+                                    193
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    3,207
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Aqua Breed
+                                </td>
+
+                                <td>
+                                    Fighting / Water
+                                </td>
+
+                                <td>
+                                    210
+                                </td>
+
+                                <td>
+                                    193
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    3,207
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EVOLUTION
+            ================================================= -->
+
+            <section class="section"
+                     id="evolution">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        16 • EVOLUTION
+                    </span>
+
+                    <h2>
+                        Tauros Evolution & Form Family
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Tauros does not have a conventional evolution
+                    chain in Pokémon GO. The Paldean breeds are
+                    separate form variations of Tauros rather than
+                    evolutionary stages.
+
+                </p>
+
+
+                <div class="breed-grid">
+
+                    <div class="breed-card">
+
+                        <div class="breed-symbol">
+                            🐂
+                        </div>
+
+                        <h3>
+                            Tauros
+                        </h3>
+
+                        <p>
+                            Regular Kanto form.
+                        </p>
+
+                    </div>
+
+
+                    <div class="breed-card">
+
+                        <div class="breed-symbol">
+                            🥊
+                        </div>
+
+                        <h3>
+                            Combat Breed
+                        </h3>
+
+                        <p>
+                            Paldean form with Fighting typing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="breed-card">
+
+                        <div class="breed-symbol">
+                            🔥
+                        </div>
+
+                        <h3>
+                            Blaze / Aqua
+                        </h3>
+
+                        <p>
+                            Paldean forms with Fire or Water
+                            secondary typing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 AVAILABILITY
+            ================================================= -->
+
+            <section class="section"
+                     id="availability">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        17 • AVAILABILITY
+                    </span>
+
+                    <h2>
+                        Tauros Availability
+                    </h2>
+
+                    <p>
+
+                        Tauros availability is closely connected
+                        to regional distribution, special events,
+                        raids, research and other Pokémon GO
+                        encounter rotations.
+
+                    </p>
+
+                </div>
+
+
+                <div class="best-move">
+
+                    <strong>
+                        Current Availability
+                    </strong>
+
+                    <p>
+
+                        Always verify the current event and
+                        regional distribution before publishing
+                        a permanent statement about where a
+                        Tauros form can be obtained.
+
+                    </p>
+
+                </div>
+
+
+                <h3>
+                    Paldean Breed Distribution
+                </h3>
+
+                <p>
+
+                    Niantic has used regional and event-based
+                    distribution for the different Paldean
+                    Tauros breeds. Limited-time events can also
+                    temporarily expand their availability.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RESOURCES
+            ================================================= -->
+
+            <section class="section"
+                     id="resources">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        18 • INVESTMENT
+                    </span>
+
+                    <h2>
+                        Tauros Candy, XL Candy & Stardust
+                    </h2>
+
+                    <p>
+
+                        Investment decisions should be based on
+                        the exact Tauros form, intended battle
+                        format and your personal collection goals.
+
+                    </p>
+
+                </div>
+
+
+                <ul class="checklist">
+
+                    <li>
+                        Keep high-IV Tauros for collection goals.
+                    </li>
+
+                    <li>
+                        Compare PvP IV spreads before transferring.
+                    </li>
+
+                    <li>
+                        Keep one of each Paldean breed when possible.
+                    </li>
+
+                    <li>
+                        Save Candy XL for Pokémon you actually use.
+                    </li>
+
+                    <li>
+                        Check the current move pool before using
+                        expensive resources.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 COMPARISON
+            ================================================= -->
+
+            <section class="section"
+                     id="comparison">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        19 • COMPARISON
+                    </span>
+
+                    <h2>
+                        Regular Tauros vs Paldean Tauros
+                    </h2>
+
+                </div>
+
+
+                <div class="table-wrap">
+
+                    <table class="comparison-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Regular
+                                </th>
+
+                                <th>
+                                    Combat
+                                </th>
+
+                                <th>
+                                    Blaze
+                                </th>
+
+                                <th>
+                                    Aqua
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Region
+                                </td>
+
+                                <td>
+                                    Kanto
+                                </td>
+
+                                <td>
+                                    Paldea
+                                </td>
+
+                                <td>
+                                    Paldea
+                                </td>
+
+                                <td>
+                                    Paldea
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Type
+                                </td>
+
+                                <td>
+                                    Normal
+                                </td>
+
+                                <td>
+                                    Fighting
+                                </td>
+
+                                <td>
+                                    Fighting / Fire
+                                </td>
+
+                                <td>
+                                    Fighting / Water
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Attack
+                                </td>
+
+                                <td>
+                                    198
+                                </td>
+
+                                <td>
+                                    210
+                                </td>
+
+                                <td>
+                                    210
+                                </td>
+
+                                <td>
+                                    210
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Defense
+                                </td>
+
+                                <td>
+                                    183
+                                </td>
+
+                                <td>
+                                    193
+                                </td>
+
+                                <td>
+                                    193
+                                </td>
+
+                                <td>
+                                    193
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    HP
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                                <td>
+                                    181
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Max CP
+                                </td>
+
+                                <td>
+                                    2,962
+                                </td>
+
+                                <td>
+                                    3,207
+                                </td>
+
+                                <td>
+                                    3,207
+                                </td>
+
+                                <td>
+                                    3,207
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Shiny
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+                                    Not currently
+                                </td>
+
+                                <td>
+                                    Not currently
+                                </td>
+
+                                <td>
+                                    Not currently
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 BATTLE GUIDE
+            ================================================= -->
+
+            <section class="section"
+                     id="battle-guide">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        20 • BATTLE GUIDE
+                    </span>
+
+                    <h2>
+                        How to Use Tauros
+                    </h2>
+
+                </div>
+
+
+                <h3>
+                    Before Battle
+                </h3>
+
+                <ul class="checklist">
+
+                    <li>
+                        Confirm which Tauros form you are using.
+                    </li>
+
+                    <li>
+                        Check the form's exact typing.
+                    </li>
+
+                    <li>
+                        Verify its moveset.
+                    </li>
+
+                    <li>
+                        Check IVs and level.
+                    </li>
+
+                    <li>
+                        Match the Pokémon to the actual battle format.
+                    </li>
+
+                </ul>
+
+
+                <h3>
+                    For PvP
+                </h3>
+
+                <p>
+
+                    Do not treat all four Tauros forms as the same
+                    Pokémon. Their typing and move access create
+                    different matchup possibilities, especially
+                    for Combat, Blaze and Aqua Breed.
+
+                </p>
+
+
+                <h3>
+                    For Raids
+                </h3>
+
+                <p>
+
+                    Tauros is generally a low-priority raid
+                    investment. Stronger specialized attackers
+                    usually provide better damage for serious
+                    raid teams.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 FAQ
+            ================================================= -->
+
+            <section class="section"
+                     id="faq">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        21 • FAQ
+                    </span>
+
+                    <h2>
+                        Tauros FAQ
+                    </h2>
+
+                </div>
+
+
+                <details>
+
+                    <summary>
+                        What type is regular Tauros?
+                    </summary>
+
+                    <p>
+                        Regular Tauros is a pure Normal-type
+                        Pokémon.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is Tauros weak to?
+                    </summary>
+
+                    <p>
+                        Regular Tauros is weak to Fighting-type
+                        attacks.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is the max CP of Tauros?
+                    </summary>
+
+                    <p>
+                        Regular Tauros has a Level 50 maximum CP
+                        of 2,962 with perfect IVs.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Does Tauros evolve?
+                    </summary>
+
+                    <p>
+                        Tauros does not have a normal evolution
+                        in Pokémon GO.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Is Shiny Tauros available?
+                    </summary>
+
+                    <p>
+                        Yes. The regular Tauros form has a
+                        released Shiny variant.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is Combat Breed Tauros?
+                    </summary>
+
+                    <p>
+                        Combat Breed is the Fighting-type
+                        Paldean form of Tauros.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What type is Blaze Breed Tauros?
+                    </summary>
+
+                    <p>
+                        Blaze Breed is Fighting/Fire type.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What type is Aqua Breed Tauros?
+                    </summary>
+
+                    <p>
+                        Aqua Breed is Fighting/Water type.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is the max CP of Paldean Tauros?
+                    </summary>
+
+                    <p>
+                        Combat, Blaze and Aqua Breed each have a
+                        Level 50 maximum CP of 3,207.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Can Paldean Tauros be shiny in Pokémon GO?
+                    </summary>
+
+                    <p>
+                        Current databases list the three Paldean
+                        Tauros breeds as not yet having released
+                        Shiny forms in Pokémon GO.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Which Tauros breed is Fighting type?
+                    </summary>
+
+                    <p>
+                        Combat Breed is pure Fighting type.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Which Tauros breed has Fire typing?
+                    </summary>
+
+                    <p>
+                        Blaze Breed is Fighting/Fire type.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Which Tauros breed has Water typing?
+                    </summary>
+
+                    <p>
+                        Aqua Breed is Fighting/Water type.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Are the Paldean Tauros breeds evolutions?
+                    </summary>
+
+                    <p>
+                        No. They are separate Paldean forms or
+                        breeds rather than evolutionary stages.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Is Tauros good for raids?
+                    </summary>
+
+                    <p>
+                        Regular Tauros and the Paldean breeds are
+                        generally not top-tier raid attackers.
+                        Their stronger value is collection and
+                        situational PvP use.
+                    </p>
+
+                </details>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 EDITORIAL NOTE
+            ================================================= -->
+
+            <section class="section">
+
+                <div class="info-banner">
+
+                    <strong>
+                        Editorial & data note
+                    </strong>
+
+                    <p>
+
+                        Pokémon Gaming is an independent Pokémon GO
+                        information website. Pokémon GO mechanics,
+                        moves, availability, regional distributions,
+                        events and form availability can change over
+                        time. Always verify live game information
+                        before making investment decisions.
+
+                    </p>
+
+                    <p>
+
+                        Pokémon and Pokémon GO are trademarks of
+                        their respective owners. This page is an
+                        independent informational guide.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ===================================================== -->
+
+        <aside class="sidebar">
+
+
+            <div class="side-card">
+
+                <h3>
+                    Tauros Guide
+                </h3>
+
+                <ul class="side-nav">
+
+                    <li>
+                        <a href="#overview">
+                            Tauros Overview
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#stats">
+                            Stats & Max CP
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#type">
+                            Type
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#weaknesses">
+                            Weaknesses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#moves">
+                            Best Moves
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#raid">
+                            Raid Performance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pvp">
+                            PvP Guide
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#breeds">
+                            Paldean Breeds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#combat">
+                            Combat Breed
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#blaze">
+                            Blaze Breed
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#aqua">
+                            Aqua Breed
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#shiny">
+                            Shiny Tauros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#comparison">
+                            Form Comparison
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#availability">
+                            Availability
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="side-card">
+
+                <h3>
+                    Related Guides
+                </h3>
+
+
+                <a class="related-link"
+                   href="/pokemon-types/normal.html">
+
+                    Normal Type Hub →
+
+                </a>
+
+
+                <a class="related-link"
+                   href="/pokemon/persian.html">
+
+                    Persian Guide →
+
+                </a>
+
+
+                <a class="related-link"
+                   href="/pokemon/snorlax.html">
+
+                    Snorlax Guide →
+
+                </a>
+
+
+                <a class="related-link"
+                   href="/pokemon-type/fighting.html">
+
+                    Fighting Type Hub →
+
+                </a>
+
+
+                <a class="related-link"
+                   href="/pokemon-generations/gen-1.html">
+
+                    Gen 1 Pokémon →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="side-card">
+
+                <h3>
+                    Tauros Quick Facts
+                </h3>
+
+                <p>
+                    <strong>Pokédex:</strong>
+                    #128
+                </p>
+
+                <p>
+                    <strong>Generation:</strong>
+                    1
+                </p>
+
+                <p>
+                    <strong>Regular Type:</strong>
+                    Normal
+                </p>
+
+                <p>
+                    <strong>Max CP:</strong>
+                    2,962
+                </p>
+
+                <p>
+                    <strong>Paldean Breeds:</strong>
+                    3
+                </p>
+
+                <p>
+                    <strong>Evolution:</strong>
+                    None
+                </p>
+
+            </div>
+
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

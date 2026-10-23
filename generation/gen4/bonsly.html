@@ -1,0 +1,4819 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Bonsly Pokémon GO Guide — Stats, Max CP, Shiny, Shadow, Lucky, Hundo, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Bonsly Pokémon GO guide covering Bonsly stats, max CP, Rock typing, weaknesses, resistances, best moves, evolution, Shiny Bonsly, Shadow and Purified status, Lucky Bonsly, 100% IV Hundo Bonsly, XXL, XXS and more.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/bonsly.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #b98a62;
+            --accent-2: #d2a77e;
+
+            --rock: #a8875d;
+            --water: #4e9dff;
+            --grass: #5dcf82;
+            --fighting: #ef7777;
+            --ground: #d6a743;
+            --steel: #a9b8c9;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+            --gold: #f1c75b;
+            --purple: #a88cff;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 0%,
+                    rgba(185,138,98,.12),
+                    transparent 30%
+                ),
+
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.94);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding:
+                0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent-2);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(185,138,98,.18),
+                    transparent 32%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            color: var(--accent-2);
+
+            background:
+                rgba(185,138,98,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .rock-tag {
+            color: var(--accent-2);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .hero-pokemon img {
+
+            width:
+                min(100%,320px);
+
+            filter:
+                drop-shadow(
+                    0 25px 30px rgba(0,0,0,.45)
+                );
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(185,138,98,.22),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(185,138,98,.3);
+
+            background:
+                rgba(185,138,98,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(185,138,98,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--accent-2);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-card .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card small {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+
+            color: var(--accent-2);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(185,138,98,.1),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(185,138,98,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           ATTRIBUTE CARDS
+        ===================================================== */
+
+        .attribute-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 14px;
+
+            margin-top: 20px;
+        }
+
+        .attribute-card {
+
+            padding: 22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            background:
+                var(--surface-2);
+
+            text-align: center;
+        }
+
+        .attribute-icon {
+
+            font-size: 2.2rem;
+
+            margin-bottom: 8px;
+        }
+
+        .attribute-card strong {
+
+            display: block;
+
+            font-size: 1rem;
+
+            margin-bottom: 5px;
+        }
+
+        .attribute-card span {
+
+            color: var(--muted);
+
+            font-size: .7rem;
+        }
+
+
+        /* =====================================================
+           SPECIAL FORM CARDS
+        ===================================================== */
+
+        .variant-card {
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            margin-top: 18px;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                var(--surface-2);
+        }
+
+        .variant-card.shiny {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(241,199,91,.12),
+                    rgba(255,255,255,.025)
+                );
+
+            border-color:
+                rgba(241,199,91,.28);
+        }
+
+        .variant-card.shadow {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(100,85,130,.14),
+                    rgba(0,0,0,.1)
+                );
+        }
+
+        .variant-card.lucky {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(241,199,91,.1),
+                    rgba(185,138,98,.04)
+                );
+
+            border-color:
+                rgba(241,199,91,.25);
+        }
+
+        .variant-card.size {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(98,216,154,.07),
+                    rgba(255,255,255,.02)
+                );
+        }
+
+        .variant-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 10px;
+        }
+
+        .variant-header h3 {
+            margin: 0;
+        }
+
+        .variant-badge {
+
+            padding:
+                6px 10px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.06);
+
+            border:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+
+            text-align: left;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+        }
+
+
+        /* =====================================================
+           IV GRID
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.7rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .hundo-banner {
+
+            margin-top: 20px;
+
+            padding: 22px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(241,199,91,.35);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(241,199,91,.12),
+                    rgba(255,255,255,.02)
+                );
+        }
+
+
+        /* =====================================================
+           SIZE CARDS
+        ===================================================== */
+
+        .size-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 18px;
+
+            margin-top: 18px;
+        }
+
+        .size-card {
+
+            padding: 24px;
+
+            border-radius: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .size-card.xxl {
+
+            border-color:
+                rgba(98,216,154,.3);
+        }
+
+        .size-card.xxs {
+
+            border-color:
+                rgba(168,140,255,.3);
+        }
+
+        .size-card .size-symbol {
+
+            font-size: 2.5rem;
+
+            margin-bottom: 8px;
+        }
+
+        .size-card h3 {
+            margin: 0 0 8px;
+        }
+
+
+        /* =====================================================
+           EVOLUTION TREE
+        ===================================================== */
+
+        .form-tree {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+            margin: 25px 0;
+        }
+
+        .form-node {
+
+            padding:
+                18px 24px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .form-node strong {
+            display: block;
+        }
+
+        .form-node span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .form-arrow {
+
+            color:
+                var(--accent-2);
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           INFO NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent-2);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .attribute-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+        }
+
+
+        @media(max-width: 650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .iv-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .attribute-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .size-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/rock.html">
+        Rock Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Bonsly
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+
+        <div>
+
+            <span class="eyebrow">
+                SINNOH BABY POKÉMON
+            </span>
+
+            <h1>
+                Bonsly
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Bonsly is a Rock-type Baby Pokémon from
+                the Sinnoh region. In Pokémon GO, Bonsly
+                is mainly a collection, evolution and
+                Little Cup-interest Pokémon rather than
+                a major raid attacker. This guide covers
+                regular Bonsly, Shiny Bonsly, Shadow and
+                Purified status, Lucky Bonsly, 100% IV
+                Bonsly, XXL Bonsly and XXS Bonsly.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag rock-tag">
+                    Rock
+                </span>
+
+                <span class="tag">
+                    #438
+                </span>
+
+                <span class="tag">
+                    Baby Pokémon
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!--
+                Replace this placeholder with your own
+                properly licensed Bonsly image.
+
+                Example:
+                <img src="/images/pokemon/bonsly.webp"
+                     alt="Bonsly Pokémon GO">
+            -->
+
+            <div class="pokemon-placeholder">
+                🌱
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            124
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            133
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            137
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            1,472
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Overview
+        </h2>
+
+        <p>
+
+            Bonsly is a pure Rock-type Baby Pokémon
+            originally introduced in Generation 4.
+            It is numbered #438 in the National Pokédex
+            and can evolve into Sudowoodo.
+
+        </p>
+
+        <p>
+
+            Unlike many fully evolved Pokémon, Bonsly
+            has a relatively low maximum CP. Its value
+            is therefore more closely connected to
+            collecting, evolution, special attributes
+            and limited-format PvP than conventional
+            raid attacking.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#438</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 4</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Sinnoh</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Rock</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>124</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>133</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>137</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>1,472</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🪨
+        </div>
+
+        <div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <span>
+                Pure Rock Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Does Bonsly's Rock Typing Mean?
+    </h3>
+
+    <p>
+
+        Bonsly's pure Rock typing determines which
+        attacks deal increased or reduced damage.
+        It is vulnerable to several common offensive
+        types, while also resisting Normal, Flying,
+        Poison and Fire attacks.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks deal super-effective
+                damage to Bonsly.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass-type attacks are super effective
+                against Bonsly.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks exploit Bonsly's
+                Rock typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Ground-type attacks deal increased
+                damage to Bonsly.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Steel-type attacks are super effective
+                against Bonsly.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚪
+            </div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <p>
+                Bonsly takes reduced damage from
+                Normal-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Rock typing gives Bonsly resistance
+                to Flying attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Poison-type attacks are resisted by
+                Bonsly.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Bonsly resists Fire-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Stats & Max CP
+        </h2>
+
+        <p>
+
+            Bonsly has 124 base Attack, 133 base Defense
+            and 137 base Stamina. Its Level 50 maximum
+            CP with perfect IVs is 1,472.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                124
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                133
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                137
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                LEVEL 50 MAX CP
+            </span>
+
+            <strong>
+                1,472
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            Maximum CP represents a perfect-IV Pokémon
+            at the relevant maximum level. CP itself is
+            not an IV percentage.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     05 BEST MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Best Moves
+        </h2>
+
+        <p>
+
+            Bonsly's available moves include Rock Throw,
+            Counter, Rock Slide, Rock Tomb and Earthquake.
+            Its usefulness depends heavily on the battle
+            format because Bonsly is not a conventional
+            raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Rock Build
+        </strong>
+
+        <p>
+            Rock Throw + Rock Slide
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Main Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Throw
+                    </td>
+
+                    <td class="move-type">
+                        Rock
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        STAB damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Counter
+                    </td>
+
+                    <td class="move-type">
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Slide
+                    </td>
+
+                    <td class="move-type">
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Rock STAB
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Tomb
+                    </td>
+
+                    <td class="move-type">
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Rock coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Earthquake
+                    </td>
+
+                    <td class="move-type">
+                        Ground
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability and balance can change as Pokémon
+        GO receives updates. Check your live move database
+        before making time-sensitive recommendations.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     06 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly PvP Guide
+        </h2>
+
+        <p>
+
+            Bonsly's low maximum CP prevents it from being
+            a conventional Master League Pokémon. Its more
+            interesting competitive use comes from restricted
+            formats such as Little Cup, depending on the
+            current rules and eligibility.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Little Cup
+    </h3>
+
+    <p>
+
+        Bonsly can be considered in Little Cup-style
+        formats when it meets the active eligibility rules.
+        Its performance depends on the cup's allowed
+        Pokémon, movesets and current metagame.
+
+    </p>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Bonsly can technically be built toward the Great
+        League CP limit, but its low maximum CP means it
+        does not naturally compete with most Pokémon that
+        reach the 1,500 CP limit.
+
+    </p>
+
+
+    <h3>
+        Ultra & Master League
+    </h3>
+
+    <p>
+
+        Bonsly's maximum CP is far below the normal power
+        level expected in Ultra and Master League, making
+        it an unusual choice for these formats.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     07 EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Evolution
+        </h2>
+
+        <p>
+
+            Bonsly evolves into Sudowoodo. Bonsly is therefore
+            different from a Pokémon with no evolution because
+            it represents the baby stage of the Sudowoodo family.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+
+        <div class="form-node">
+
+            <strong>
+                Bonsly
+            </strong>
+
+            <span>
+                #438 · Rock
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Sudowoodo
+            </strong>
+
+            <span>
+                #185 · Rock
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Tip
+        </strong>
+
+        <p>
+
+            Before evolving a Bonsly, check its IVs, CP,
+            Shiny status, Lucky status and size. If you
+            are collecting special variants, you may want
+            to keep a Bonsly unevolved rather than evolving
+            your only specimen.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     08 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Bonsly
+        </h2>
+
+        <p>
+
+            Shiny Bonsly is available in Pokémon GO.
+            Shiny Pokémon retain the same species and
+            battle statistics while displaying an
+            alternate coloration.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shiny">
+
+        <div class="variant-header">
+
+            <h3>
+                ✨ Shiny Bonsly
+            </h3>
+
+            <span class="variant-badge">
+                SHINY AVAILABLE
+            </span>
+
+        </div>
+
+        <p>
+
+            A Shiny Bonsly can be kept as a collector's
+            specimen or evolved into Shiny Sudowoodo.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Bonsly Checklist
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the Shiny symbol before transferring.
+        </li>
+
+        <li>
+            Compare its IVs before evolving.
+        </li>
+
+        <li>
+            Consider keeping one Shiny Bonsly unevolved.
+        </li>
+
+        <li>
+            Check whether the specimen is also Lucky.
+        </li>
+
+        <li>
+            Check its size if you collect XXL or XXS Pokémon.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     09 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Bonsly
+        </h2>
+
+        <p>
+
+            Shadow status is different from Shiny status.
+            A Shadow Pokémon receives the Shadow battle
+            mechanic, while Shiny describes its coloration.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shadow">
+
+        <div class="variant-header">
+
+            <h3>
+                🌑 Shadow Bonsly
+            </h3>
+
+            <span class="variant-badge">
+                CURRENTLY UNAVAILABLE
+            </span>
+
+        </div>
+
+        <p>
+
+            Current Pokémon GO database information lists
+            Shadow Bonsly as unavailable. Availability of
+            Shadow Pokémon can change through Team GO Rocket
+            events and future updates.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Regular Bonsly
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Bonsly
+                    </th>
+
+                    <th>
+                        Shadow Bonsly
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Bonsly
+                    </td>
+
+                    <td>
+                        Bonsly
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Rock
+                    </td>
+
+                    <td>
+                        Rock
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Current availability
+                    </td>
+
+                    <td>
+                        Available through eligible encounters
+                    </td>
+
+                    <td>
+                        Not currently available
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Availability warning:
+        </strong>
+
+        <p>
+
+            Do not permanently state that Shadow Bonsly
+            is obtainable. Update this section whenever
+            Pokémon GO changes Shadow availability.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     10 PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Bonsly
+        </h2>
+
+        <p>
+
+            Purified Pokémon originate from Shadow Pokémon.
+            Because current data lists Shadow Bonsly as
+            unavailable, there is currently no normal
+            current acquisition path for a Purified Bonsly.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-header">
+
+            <h3>
+                💠 Purified Bonsly
+            </h3>
+
+            <span class="variant-badge">
+                DEPENDS ON SHADOW AVAILABILITY
+            </span>
+
+        </div>
+
+        <p>
+
+            If Shadow Bonsly is introduced in a future
+            Pokémon GO rotation, its purification mechanics
+            should be checked against the rules active at
+            that time.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Origin
+                    </td>
+
+                    <td>
+                        Shadow encounter
+                    </td>
+
+                    <td>
+                        Purified from Shadow
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow battle mechanic
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Current Bonsly status
+                    </td>
+
+                    <td>
+                        Unavailable
+                    </td>
+
+                    <td>
+                        No current normal acquisition path
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     11 LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Bonsly
+        </h2>
+
+        <p>
+
+            Lucky Bonsly is not a separate Pokémon species
+            or permanent form. Lucky is a status that a
+            Pokémon can receive through trading.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card lucky">
+
+        <div class="variant-header">
+
+            <h3>
+                🍀 Lucky Bonsly
+            </h3>
+
+            <span class="variant-badge">
+                SPECIAL STATUS
+            </span>
+
+        </div>
+
+        <p>
+
+            Lucky Bonsly can be particularly attractive
+            to collectors because Lucky Pokémon have
+            special Stardust-related power-up advantages.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Bonsly?
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <p>
+                Gives the Pokémon its Lucky designation.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Collection Value
+            </strong>
+
+            <p>
+                A Lucky Bonsly can be a useful addition
+                to a variant collection.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💰
+            </div>
+
+            <strong>
+                Power-Up Benefit
+            </strong>
+
+            <p>
+                Lucky Pokémon require less Stardust
+                to power up than normal Pokémon.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Lucky is an attribute, not another Bonsly species.
+        A Bonsly can also combine multiple attributes,
+        such as Lucky + Shiny or Lucky + 100% IV.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     12 100% HUNDO
+===================================================== -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% Bonsly — Hundo Bonsly
+        </h2>
+
+        <p>
+
+            A 100% Bonsly, commonly called a Hundo,
+            has perfect Individual Values of 15 Attack,
+            15 Defense and 15 HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="hundo-banner">
+
+        <strong>
+            ⭐ Perfect Bonsly = 15 / 15 / 15 IV
+        </strong>
+
+        <p>
+
+            A perfect Bonsly has the maximum possible
+            IV contribution to its Attack, Defense and
+            HP values.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                ATTACK IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                DEFENSE IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Hundo Bonsly Max CP
+    </h3>
+
+    <p>
+
+        At Level 50, a 15/15/15 Bonsly reaches
+        1,472 CP. A Level 51 Best Buddy can reach
+        a higher CP value.
+
+    </p>
+
+
+    <h3>
+        Should You Keep a 100% Bonsly?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Yes, if you are building a perfect-IV collection.
+        </li>
+
+        <li>
+            Keep it if you want a perfect Bonsly for evolution.
+        </li>
+
+        <li>
+            Check whether it is also Shiny.
+        </li>
+
+        <li>
+            Check whether it is Lucky.
+        </li>
+
+        <li>
+            Check its XXL or XXS status before evolving.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     13 XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Bonsly
+        </h2>
+
+        <p>
+
+            XXL Bonsly refers to a Bonsly that receives
+            the XXL size designation. XXL is a size attribute,
+            not a separate Pokémon species.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card xxl">
+
+            <div class="size-symbol">
+                📏
+            </div>
+
+            <h3>
+                XXL Bonsly
+            </h3>
+
+            <p>
+
+                An unusually large Bonsly. XXL status can
+                make a specimen especially interesting for
+                collectors and size-based medal progress.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <h3>
+                Average Bonsly
+            </h3>
+
+            <p>
+
+                Standard-size Bonsly sits within the normal
+                size distribution and does not receive the
+                XXL or XXS designation.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Bonsly XXL Size Range
+    </h3>
+
+    <p>
+
+        Current Pokémon GO size data places Bonsly's XXL
+        range around 0.75 m to 0.875 m, although the exact
+        displayed size of an individual Pokémon is generated
+        from its encounter data.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Collector Tip
+        </strong>
+
+        <p>
+
+            If you find an XXL Bonsly, check its Shiny,
+            Lucky and IV status before transferring it.
+            A combination such as Shiny + XXL + Hundo
+            can be particularly desirable for collectors.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     14 XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Bonsly
+        </h2>
+
+        <p>
+
+            XXS Bonsly refers to a Bonsly with the smallest
+            size classification. Like XXL, XXS is an attribute
+            rather than a different Pokémon form.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card xxs">
+
+            <div class="size-symbol">
+                🔹
+            </div>
+
+            <h3>
+                XXS Bonsly
+            </h3>
+
+            <p>
+
+                An unusually small Bonsly that receives the
+                XXS designation. These specimens can be useful
+                for collectors and size-based medal progress.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <h3>
+                Size Collection
+            </h3>
+
+            <p>
+
+                Players who collect size variants may want
+                to keep both XXL and XXS Bonsly specimens,
+                especially when they also have rare attributes.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Bonsly XXS Size Range
+    </h3>
+
+    <p>
+
+        Current size data places the XXS Bonsly range
+        approximately around 0.245 m to 0.25 m.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     15 ALL VARIANTS
+===================================================== -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Variant & Attribute Guide
+        </h2>
+
+        <p>
+
+            Bonsly can be interesting because several
+            different attributes can overlap. These should
+            not all be treated as separate Pokémon forms.
+
+        </p>
+
+    </div>
+
+
+    <div class="attribute-grid">
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                🪨
+            </div>
+
+            <strong>
+                Regular Bonsly
+            </strong>
+
+            <span>
+                Standard Pokémon
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Bonsly
+            </strong>
+
+            <span>
+                Alternate coloration
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Bonsly
+            </strong>
+
+            <span>
+                Currently unavailable
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                💠
+            </div>
+
+            <strong>
+                Purified Bonsly
+            </strong>
+
+            <span>
+                Depends on Shadow availability
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Bonsly
+            </strong>
+
+            <span>
+                Trade-related status
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                💯
+            </div>
+
+            <strong>
+                100% Bonsly
+            </strong>
+
+            <span>
+                15/15/15 IV
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL Bonsly
+            </strong>
+
+            <span>
+                Large size attribute
+            </span>
+
+        </div>
+
+
+        <div class="attribute-card">
+
+            <div class="attribute-icon">
+                🔹
+            </div>
+
+            <strong>
+                XXS Bonsly
+            </strong>
+
+            <span>
+                Small size attribute
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            These attributes can overlap. For example,
+            a Bonsly can potentially be Shiny and Lucky,
+            or Shiny and XXL, depending on the game's
+            mechanics and the individual Pokémon.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     16 COMBINATIONS
+===================================================== -->
+
+<section class="section" id="combinations">
+
+    <div class="section-heading">
+
+        <h2>
+            Rare Bonsly Combinations
+        </h2>
+
+        <p>
+
+            Collectors may find combinations of attributes
+            more interesting than a single attribute by itself.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨🍀
+            </div>
+
+            <strong>
+                Shiny Lucky Bonsly
+            </strong>
+
+            <p>
+                Combines Shiny appearance with Lucky status.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨💯
+            </div>
+
+            <strong>
+                Shiny Hundo Bonsly
+            </strong>
+
+            <p>
+                A Shiny Bonsly with perfect 15/15/15 IVs.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📏💯
+            </div>
+
+            <strong>
+                XXL Hundo Bonsly
+            </strong>
+
+            <p>
+                Combines maximum IVs with XXL size.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔹💯
+            </div>
+
+            <strong>
+                XXS Hundo Bonsly
+            </strong>
+
+            <p>
+                A perfect-IV Bonsly with XXS size.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨📏
+            </div>
+
+            <strong>
+                Shiny XXL Bonsly
+            </strong>
+
+            <p>
+                Shiny appearance combined with XXL size.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨🔹
+            </div>
+
+            <strong>
+                Shiny XXS Bonsly
+            </strong>
+
+            <p>
+                Shiny appearance combined with XXS size.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     17 CP
+===================================================== -->
+
+<section class="section" id="cp">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly CP Guide
+        </h2>
+
+        <p>
+
+            Bonsly's maximum CP is 1,472 at Level 50 with
+            perfect IVs. Encounter CP depends on the level,
+            IVs and encounter method.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Encounter
+                    </th>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        CP Range
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+
+                <tr>
+
+                    <td>
+                        Research
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                    <td>
+                        520–558
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Egg
+                    </td>
+
+                    <td>
+                        20
+                    </td>
+
+                    <td>
+                        693–744
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Weather Boost
+                    </td>
+
+                    <td>
+                        25
+                    </td>
+
+                    <td>
+                        866–930
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Maximum
+                    </td>
+
+                    <td>
+                        50
+                    </td>
+
+                    <td>
+                        1,472
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Bonsly receives a weather boost in Partly Cloudy
+        weather because it is a Rock-type Pokémon.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     18 RAID
+===================================================== -->
+
+<section class="section" id="raids">
+
+    <div class="section-heading">
+
+        <h2>
+            Is Bonsly Good for Raids?
+        </h2>
+
+        <p>
+
+            Bonsly is not considered a meaningful raid
+            attacker because of its low overall battle
+            stats and maximum CP. Players looking for
+            a strong Rock-type raid attacker should use
+            more powerful evolved or Legendary Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Raid Attack
+            </strong>
+
+            <p>
+                Low priority for PvE investment.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🛡️
+            </div>
+
+            <strong>
+                Gym Defense
+            </strong>
+
+            <p>
+                Not a recommended high-level investment.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧸
+            </div>
+
+            <strong>
+                Collector Value
+            </strong>
+
+            <p>
+                More interesting for collections and
+                special attributes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     19 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Candy & Evolution Resources
+        </h2>
+
+        <p>
+
+            If your goal is to evolve Bonsly into Sudowoodo,
+            Candy management becomes more important than
+            powering Bonsly itself.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Bonsly Candy for the specimens you actually want to evolve.
+        </li>
+
+        <li>
+            Check IVs before spending evolution resources.
+        </li>
+
+        <li>
+            Keep Shiny Bonsly if you are building a Shiny collection.
+        </li>
+
+        <li>
+            Keep Lucky Bonsly if you collect Lucky Pokémon.
+        </li>
+
+        <li>
+            Check XXL and XXS status before transferring duplicates.
+        </li>
+
+        <li>
+            Keep strong PvP candidates when a relevant cup allows Bonsly.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     20 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly Availability
+        </h2>
+
+        <p>
+
+            Bonsly's availability can change with Pokémon GO
+            events, Egg rotations, research encounters and
+            special event schedules.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event, Egg and
+            research rotation before stating that Bonsly
+            is currently obtainable through a specific method.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Availability
+    </h3>
+
+    <p>
+
+        Shiny Bonsly is available, making Shiny encounters
+        an important part of Bonsly's collector value.
+
+    </p>
+
+
+    <h3>
+        Shadow Availability
+    </h3>
+
+    <p>
+
+        Current database information lists Shadow Bonsly
+        as unavailable. This should be updated if Pokémon GO
+        introduces Bonsly to the Shadow roster.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     21 BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Bonsly
+        </h2>
+
+    </div>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep Shiny Bonsly.
+        </li>
+
+        <li>
+            Keep Lucky Bonsly.
+        </li>
+
+        <li>
+            Check for 100% IV specimens.
+        </li>
+
+        <li>
+            Check XXL and XXS size classifications.
+        </li>
+
+        <li>
+            Consider keeping rare attribute combinations.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For PvP Players
+    </h3>
+
+    <p>
+
+        Check the current cup rules before investing.
+        Bonsly's low CP ceiling makes it much more relevant
+        to restricted formats than Master League.
+
+    </p>
+
+
+    <h3>
+        For Casual Players
+    </h3>
+
+    <p>
+
+        There is generally little reason to spend large
+        amounts of Stardust powering Bonsly to maximum level.
+        Prioritize specimens that have collection,
+        evolution or limited-format value.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     22 REGULAR VS SPECIAL
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Regular Bonsly vs Special Attributes
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Attribute
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Separate Form?
+                    </th>
+
+                    <th>
+                        Collector Interest
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Bonsly
+                    </td>
+
+                    <td>
+                        Yes / Base
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        Visual variant
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow battle status
+                    </td>
+
+                    <td>
+                        Special status
+                    </td>
+
+                    <td>
+                        Future-dependent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        Special status
+                    </td>
+
+                    <td>
+                        Future-dependent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trade-related status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        15/15/15 IV
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Small size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     23 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Bonsly FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Bonsly?
+        </summary>
+
+        <p>
+            Bonsly is a pure Rock-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Bonsly weak against?
+        </summary>
+
+        <p>
+
+            Bonsly is weak to Water, Grass, Fighting,
+            Ground and Steel-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Bonsly's max CP?
+        </summary>
+
+        <p>
+
+            Bonsly's Level 50 maximum CP is 1,472
+            with perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Bonsly available?
+        </summary>
+
+        <p>
+            Yes. Shiny Bonsly is available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Bonsly available?
+        </summary>
+
+        <p>
+
+            Current database information lists Shadow Bonsly
+            as unavailable. This can change with future
+            Team GO Rocket updates.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Purified Bonsly?
+        </summary>
+
+        <p>
+
+            Purified Bonsly would refer to a Bonsly purified
+            from Shadow status. Since Shadow Bonsly is not
+            currently available, there is no normal current
+            acquisition route for Purified Bonsly.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Lucky Bonsly?
+        </summary>
+
+        <p>
+
+            Lucky Bonsly is a Bonsly that has received
+            Lucky status through the Pokémon GO trading
+            system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Bonsly?
+        </summary>
+
+        <p>
+
+            A 100% Bonsly, or Hundo, has perfect IVs:
+            15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Bonsly?
+        </summary>
+
+        <p>
+
+            XXL Bonsly is a Bonsly with the XXL size
+            classification. XXL is a size attribute rather
+            than a separate species.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Bonsly?
+        </summary>
+
+        <p>
+
+            XXS Bonsly is a Bonsly with the smallest size
+            classification. Like XXL, XXS is a size attribute.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Bonsly evolve?
+        </summary>
+
+        <p>
+
+            Yes. Bonsly evolves into Sudowoodo.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Bonsly good for raids?
+        </summary>
+
+        <p>
+
+            No. Bonsly is not a strong raid attacker.
+            Its low maximum CP and overall stats make it
+            much more interesting for collecting and
+            limited PvP formats.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Bonsly good for PvP?
+        </summary>
+
+        <p>
+
+            Bonsly has limited PvP relevance but can be
+            considered for restricted formats such as
+            Little Cup when eligible.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Bonsly be Shiny and Lucky?
+        </summary>
+
+        <p>
+
+            Yes. Shiny and Lucky are separate attributes,
+            so a Pokémon can potentially have both statuses.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Bonsly be XXL and 100% IV?
+        </summary>
+
+        <p>
+
+            Yes. Size and IVs are separate attributes,
+            so an XXL Bonsly can also have perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Bonsly be XXS and Shiny?
+        </summary>
+
+        <p>
+
+            Yes. XXS describes size while Shiny describes
+            coloration, so the attributes can overlap.
+
+        </p>
+
+    </details>
+
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, encounter methods, availability, event
+            rotations and balance can change over time.
+
+        </p>
+
+        <p>
+
+            This page separates Pokémon forms from attributes
+            such as Lucky, 100% IV, XXL and XXS so readers can
+            understand what each designation actually means.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This website is intended as
+            an independent informational resource.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Bonsly Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Bonsly Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Bonsly
+                </a>
+            </li>
+
+            <li>
+                <a href="#variants">
+                    All Variants
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/sudowoodo.html">
+
+            Sudowoodo Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/rock.html">
+
+            Rock Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/mime-jr.html">
+
+            Mime Jr. Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/happiny.html">
+
+            Happiny Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-4.html">
+
+            Gen 4 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Bonsly Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Rock
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #438
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            4
+        </p>
+
+
+        <p>
+            <strong>Region:</strong>
+            Sinnoh
+        </p>
+
+
+        <p>
+            <strong>Attack:</strong>
+            124
+        </p>
+
+
+        <p>
+            <strong>Defense:</strong>
+            133
+        </p>
+
+
+        <p>
+            <strong>HP:</strong>
+            137
+        </p>
+
+
+        <p>
+            <strong>Max CP:</strong>
+            1,472
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            Sudowoodo
+        </p>
+
+
+        <p>
+            <strong>Shiny:</strong>
+            Available
+        </p>
+
+
+        <p>
+            <strong>Shadow:</strong>
+            Currently unavailable
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

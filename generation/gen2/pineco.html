@@ -1,0 +1,4456 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pineco Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+    <meta name="description"
+          content="Complete Pineco Pokémon GO guide covering stats, max CP, Bug typing, weaknesses, resistances, moves, evolution, shiny Pineco, Shadow Pineco, Purified Pineco, Lucky Pineco, 100% IV Pineco, XXL Pineco, XXS Pineco and more.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/pineco.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #8fa2ff;
+            --accent-2: #657cff;
+
+            --bug: #a8b820;
+            --fire: #ff7043;
+            --flying: #81b9ef;
+            --rock: #b8a038;
+            --grass: #5dcf82;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+            --gold: #f4c542;
+            --ice: #72d6dc;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(111,130,255,.11),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(168,184,32,.16),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            color: var(--bug);
+
+            background:
+                rgba(168,184,32,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing: -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding: 7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .bug-tag {
+            color: var(--bug);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(168,184,32,.20),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           CONTENT LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--accent);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(168,184,32,.3);
+
+            background:
+                rgba(168,184,32,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(168,184,32,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--bug);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-card .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+
+            color: var(--bug);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(168,184,32,.10),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(168,184,32,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+
+            text-align: left;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           FORM TREE
+        ===================================================== */
+
+        .form-tree {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+            margin: 20px 0;
+        }
+
+        .form-node {
+
+            padding:
+                16px 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .form-node strong {
+            display: block;
+        }
+
+        .form-node span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .form-arrow {
+
+            color: var(--accent);
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           VARIANT GRID
+        ===================================================== */
+
+        .variant-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .variant-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .variant-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 8px;
+        }
+
+        .variant-card strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+        .variant-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           SIZE CARDS
+        ===================================================== */
+
+        .size-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 18px;
+        }
+
+        .size-card {
+
+            padding: 25px;
+
+            border-radius: 18px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .size-card h3 {
+            margin-top: 0;
+        }
+
+        .size-badge {
+
+            display: inline-block;
+
+            padding:
+                7px 12px;
+
+            margin-bottom: 10px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(143,162,255,.10);
+
+            color: var(--accent);
+
+            font-size: .7rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           LUCKY
+        ===================================================== */
+
+        .lucky-card {
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(244,197,66,.14),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(244,197,66,.28);
+        }
+
+        .lucky-card strong {
+
+            display: block;
+
+            font-size: 1.2rem;
+
+            color: var(--gold);
+
+            margin-bottom: 6px;
+        }
+
+
+        /* =====================================================
+           SHINY
+        ===================================================== */
+
+        .shiny-card {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(114,214,220,.12),
+                    rgba(143,162,255,.06)
+                );
+
+            border:
+                1px solid rgba(114,214,220,.25);
+        }
+
+        .shiny-symbol {
+            font-size: 42px;
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.7rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           EDITORIAL
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .variant-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .iv-grid,
+            .size-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .variant-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .rating-row {
+                grid-template-columns: 1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align: left;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .shiny-card {
+                align-items: flex-start;
+            }
+        }
+
+
+        @media(max-width:450px) {
+
+            .variant-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/bug.html">
+        Bug Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Pineco
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                BUG-TYPE POKÉMON
+            </span>
+
+            <h1>
+                Pineco
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Pineco is a Bug-type Pokémon originally
+                introduced in Generation 2. In Pokémon GO,
+                Pineco is best known as the first stage of
+                the Pineco → Forretress evolution family and
+                can also appear in Shiny, Shadow, Purified,
+                Lucky, XXL and XXS forms or variants.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag bug-tag">
+                    Bug
+                </span>
+
+                <span class="tag">
+                    #204
+                </span>
+
+                <span class="tag">
+                    Gen 2
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🟢
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            Bug
+        </strong>
+
+        <span>
+            TYPE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            #204
+        </strong>
+
+        <span>
+            POKÉDEX
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            Gen 2
+        </strong>
+
+        <span>
+            GENERATION
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            Forretress
+        </strong>
+
+        <span>
+            EVOLUTION
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 — OVERVIEW
+        </span>
+
+        <h2>
+            Pineco Overview
+        </h2>
+
+        <p>
+            Pineco is a Bug-type Pokémon from the Johto
+            region. It evolves into Forretress after
+            collecting the required Candy. Pineco can be
+            useful as a collection target and as an
+            evolution-family entry, while its different
+            variants can be important to collectors.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#204</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 2</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Johto</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Bug</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Evolution</span>
+            <strong>Forretress</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Evolution Candy</span>
+            <strong>50</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Shiny</span>
+            <strong>Yes</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Forms</span>
+            <strong>Multiple</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 — TYPE
+        </span>
+
+        <h2>
+            Pineco Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🐛
+        </div>
+
+        <div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Pineco's Typing Matters
+    </h3>
+
+    <p>
+        Pineco's pure Bug typing gives it a straightforward
+        weakness and resistance profile. Its type should be
+        considered when choosing counters in battles and when
+        evaluating its role against other Pokémon.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 — MATCHUPS
+        </span>
+
+        <h2>
+            Pineco Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Fire-type attacks deal super-effective
+                damage to Bug-type Pineco.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying-type attacks are also super effective
+                against Pineco.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks can exploit Pineco's
+                Bug typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Bug-type Pineco resists Grass-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks are resisted by Pineco.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌎
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Ground-type attacks are resisted by Pineco.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 — STATS
+        </span>
+
+        <h2>
+            Pineco Stats & Max CP
+        </h2>
+
+        <p>
+            Pineco is a relatively modest Pokémon compared
+            with many fully evolved battle specialists.
+            Its main value for many players is its evolution
+            family, collection variants and availability.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                108
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                122
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                STAMINA
+            </span>
+
+            <strong>
+                137
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~1,700
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+            CP depends on Pokémon GO's underlying stats,
+            level and IVs. Always verify numerical values
+            against your current game data before publishing
+            time-sensitive database information.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 — MOVES
+        </span>
+
+        <h2>
+            Pineco Best Moves
+        </h2>
+
+        <p>
+            Pineco is generally not a priority Pokémon for
+            high-level raid investment. Its moveset is more
+            relevant when using Pineco itself in eligible
+            battle situations or when comparing it with
+            its evolved form.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Bug Bite
+                    </td>
+
+                    <td class="move-type">
+                        Bug
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Bug damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Struggle Bug
+                    </td>
+
+                    <td class="move-type">
+                        Bug
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Bug damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Tomb
+                    </td>
+
+                    <td>
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Move Recommendation
+        </strong>
+
+        <p>
+            Pineco is usually better viewed as an evolution
+            and collection Pokémon than as a major raid
+            attacker. Check the current move pool before
+            recommending a specific PvP build.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 — EVOLUTION
+        </span>
+
+        <h2>
+            Pineco Evolution
+        </h2>
+
+        <p>
+            Pineco evolves into Forretress. Unlike Pokémon
+            with branching evolution paths, Pineco has a
+            straightforward single evolution.
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Pineco
+            </strong>
+
+            <span>
+                #204
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Forretress
+            </strong>
+
+            <span>
+                #205
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Cost
+        </strong>
+
+        <p>
+            Pineco requires 50 Pineco Candy to evolve into
+            Forretress.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 — SHINY
+        </span>
+
+        <h2>
+            Shiny Pineco
+        </h2>
+
+        <p>
+            Shiny Pineco has an alternate coloration and is
+            a desirable collection target for players who
+            collect Shiny Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="shiny-card">
+
+        <div class="shiny-symbol">
+            ✨
+        </div>
+
+        <div>
+
+            <strong>
+                Shiny Pineco
+            </strong>
+
+            <p>
+                Shiny status changes Pineco's appearance but
+                does not give it a separate typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Pineco vs Regular Pineco
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Pineco
+                    </td>
+
+                    <td>
+                        Pineco
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Bug
+                    </td>
+
+                    <td>
+                        Bug
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Appearance
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Battle Identity
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Same species mechanics
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 — SHADOW
+        </span>
+
+        <h2>
+            Shadow Pineco
+        </h2>
+
+        <p>
+            Shadow Pineco is a Shadow variant of Pineco.
+            Shadow Pokémon have different battle
+            characteristics from their regular counterparts.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shadow Pineco
+        </strong>
+
+        <p>
+            Shadow Pineco should be evaluated separately
+            from regular Pineco because Shadow mechanics
+            affect both offensive pressure and durability.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                SPECIES
+            </span>
+
+            <strong>
+                Pineco
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Bug
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Shadow
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                EVOLUTION
+            </span>
+
+            <strong>
+                Forretress
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Pineco Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Fire attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock attacks remain super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration note:
+        </strong>
+
+        <p>
+            Shadow Pokémon can have the Charged Move
+            Frustration. Check current Team GO Rocket event
+            rules before planning a Charged TM strategy.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Pineco vs Regular Pineco
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Bug
+                    </td>
+
+                    <td>
+                        Bug
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Durability
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Lower
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Offensive Pressure
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Higher
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 — PURIFIED
+        </span>
+
+        <h2>
+            Purified Pineco
+        </h2>
+
+        <p>
+            Purified Pineco is created by purifying an
+            eligible Shadow Pineco. Purification changes
+            several Pokémon characteristics and should be
+            considered before committing resources.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Purified Status
+            </strong>
+
+            <p>
+                The Pokémon no longer has Shadow status.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❤️
+            </div>
+
+            <strong>
+                Purification
+            </strong>
+
+            <p>
+                Purification provides the benefits associated
+                with the Purified Pokémon system.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧹
+            </div>
+
+            <strong>
+                Frustration Removed
+            </strong>
+
+            <p>
+                Purification removes the Shadow Charged Move
+                Frustration.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Pineco
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow Pineco
+                    </th>
+
+                    <th>
+                        Purified Pineco
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        Can be present
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Retained
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Purified Benefits
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Should you purify Pineco?
+        </strong>
+
+        <p>
+            Do not purify automatically. If the Pineco has
+            strong IVs or collector value as a Shadow Pokémon,
+            compare both options before making the decision.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 — LUCKY
+        </span>
+
+        <h2>
+            Lucky Pineco
+        </h2>
+
+        <p>
+            Lucky Pineco is obtained through Pokémon GO's
+            trading system. Lucky Pokémon have a special
+            background and reduced Stardust costs for
+            powering up.
+        </p>
+
+    </div>
+
+
+    <div class="lucky-card">
+
+        <strong>
+            🍀 Lucky Pineco
+        </strong>
+
+        <p>
+            A Lucky Pineco can be a useful collection piece,
+            especially for players building complete Lucky
+            Pokédex collections.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Pineco Benefits
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Reduced Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Special Lucky visual treatment.
+        </li>
+
+        <li>
+            Useful for Lucky Pokédex collectors.
+        </li>
+
+        <li>
+            Lucky Pokémon have a minimum IV floor.
+        </li>
+
+        <li>
+            Can still evolve into Forretress.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 — PERFECT IV
+        </span>
+
+        <h2>
+            100% IV Pineco
+        </h2>
+
+        <p>
+            A 100% IV Pineco has perfect Individual Values:
+            15 Attack, 15 Defense and 15 HP/Stamina.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% Pineco = 15/15/15
+        </strong>
+
+        <p>
+            A perfect Pineco is particularly attractive to
+            collectors and players who want to evolve a
+            perfect specimen into Forretress.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 100% Pineco?
+    </h3>
+
+    <p>
+        Yes, especially if you collect perfect IV Pokémon.
+        Before evolving it, consider whether you want the
+        perfect Pineco itself for your collection or prefer
+        having a perfect Forretress.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 — XXL
+        </span>
+
+        <h2>
+            XXL Pineco
+        </h2>
+
+        <p>
+            XXL Pineco is a larger-than-average size variant.
+            Size is separate from IV quality, so an XXL Pineco
+            can have any combination of IVs.
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card">
+
+            <span class="size-badge">
+                XXL
+            </span>
+
+            <h3>
+                Extra-Large Pineco
+            </h3>
+
+            <p>
+                An XXL Pineco has a notably large size
+                measurement compared with the normal range.
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <span class="size-badge">
+                COLLECTION
+            </span>
+
+            <h3>
+                Why Keep XXL Pineco?
+            </h3>
+
+            <p>
+                XXL Pokémon are valuable to collectors,
+                showcases and size-focused Pokédex projects.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            XXL does not mean 100% IV.
+        </strong>
+
+        <p>
+            Size and IVs are separate characteristics. An
+            XXL Pineco can have low, average or perfect IVs.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 — XXS
+        </span>
+
+        <h2>
+            XXS Pineco
+        </h2>
+
+        <p>
+            XXS Pineco is a smaller-than-average size variant.
+            Like XXL, the XXS classification is separate from
+            Individual Values.
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card">
+
+            <span class="size-badge">
+                XXS
+            </span>
+
+            <h3>
+                Extra-Small Pineco
+            </h3>
+
+            <p>
+                An XXS Pineco falls into the extra-small size
+                category used by Pokémon GO.
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <span class="size-badge">
+                COLLECTION
+            </span>
+
+            <h3>
+                Why Keep XXS Pineco?
+            </h3>
+
+            <p>
+                XXS Pokémon can be useful for collectors who
+                want rare size variants in their collection.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            XXS and IVs are separate.
+        </strong>
+
+        <p>
+            An XXS Pineco is not automatically a low-IV or
+            high-IV Pokémon. Check the appraisal separately.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     VARIANTS
+===================================================== -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 — VARIANTS
+        </span>
+
+        <h2>
+            Pineco Special Variants
+        </h2>
+
+        <p>
+            Pineco can be interesting to collectors because
+            several Pokémon GO characteristics can be tracked
+            independently.
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🟢
+            </div>
+
+            <strong>
+                Regular Pineco
+            </strong>
+
+            <span>
+                Standard form
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Pineco
+            </strong>
+
+            <span>
+                Alternate appearance
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Pineco
+            </strong>
+
+            <span>
+                Shadow variant
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💎
+            </div>
+
+            <strong>
+                Purified Pineco
+            </strong>
+
+            <span>
+                Purified variant
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Pineco
+            </strong>
+
+            <span>
+                Lucky Pokémon
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <strong>
+                100% Pineco
+            </strong>
+
+            <span>
+                15/15/15 IVs
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL Pineco
+            </strong>
+
+            <span>
+                Extra-large size
+            </span>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🔹
+            </div>
+
+            <strong>
+                XXS Pineco
+            </strong>
+
+            <span>
+                Extra-small size
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 — PVP
+        </span>
+
+        <h2>
+            Pineco PvP Guide
+        </h2>
+
+        <p>
+            Pineco is generally overshadowed by stronger
+            evolved Pokémon in competitive formats. Its
+            relatively low CP ceiling also limits its role
+            compared with more specialized PvP Pokémon.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+        Great League is the most natural CP-limited format
+        to investigate for Pineco. However, its usefulness
+        depends heavily on the current moveset, matchup
+        environment and cup rules.
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+        Pineco is less naturally suited to Ultra League
+        because its maximum CP and overall battle profile
+        make it difficult to compete with many stronger
+        Pokémon.
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Pineco is not a realistic Master League investment
+        target for standard competitive play because of its
+        comparatively low CP ceiling.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 — RAID
+        </span>
+
+        <h2>
+            Pineco for Raids
+        </h2>
+
+        <p>
+            Pineco is not generally considered a high-priority
+            raid attacker. Players looking for strong Bug-type
+            raid damage will usually have better options,
+            particularly among fully evolved or specialized
+            Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:35%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Evolution Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:85%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Good
+        </span>
+
+    </div>
+
+
+    <p>
+        If your goal is raid performance, prioritize stronger
+        Bug-type attackers instead of spending large amounts
+        of Stardust on Pineco itself.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 — RESOURCES
+        </span>
+
+        <h2>
+            Pineco Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+        Pineco Candy is primarily useful for evolving Pineco
+        into Forretress and powering up a specimen if you
+        specifically want to use it in battle.
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save 50 Pineco Candy for evolution.
+        </li>
+
+        <li>
+            Keep strong-IV Pineco for collection projects.
+        </li>
+
+        <li>
+            Consider keeping a Shiny Pineco before evolving.
+        </li>
+
+        <li>
+            Check Shadow Pineco before purifying it.
+        </li>
+
+        <li>
+            Keep interesting XXL and XXS specimens.
+        </li>
+
+        <li>
+            Compare Stardust investment against stronger
+            Bug-type Pokémon.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 — AVAILABILITY
+        </span>
+
+        <h2>
+            Pineco Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+        Pineco availability can change depending on Pokémon GO
+        events, seasonal rotations, research encounters,
+        eggs and other encounter methods.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Pokémon GO event and encounter
+            schedule before presenting Pineco as currently
+            available through a specific method.
+        </p>
+
+    </div>
+
+
+    <p>
+        Historical encounter methods should be separated from
+        current availability so that an old event does not
+        appear to be an active encounter source.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTOR GUIDE
+===================================================== -->
+
+<section class="section" id="collector">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 — COLLECTOR GUIDE
+        </span>
+
+        <h2>
+            Which Pineco Should You Keep?
+        </h2>
+
+        <p>
+            Pineco is particularly interesting when viewed
+            through the lens of collection rather than only
+            battle performance.
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep a Shiny Pineco if you collect Shiny Pokémon.
+        </li>
+
+        <li>
+            Keep a 15/15/15 Pineco for a perfect-IV collection.
+        </li>
+
+        <li>
+            Keep a Shadow Pineco if you value Shadow Pokémon.
+        </li>
+
+        <li>
+            Keep a Purified Pineco if you collect Purified entries.
+        </li>
+
+        <li>
+            Keep Lucky Pineco for a Lucky Pokédex.
+        </li>
+
+        <li>
+            Keep XXL and XXS Pineco for size collections.
+        </li>
+
+        <li>
+            Consider evolving another strong Pineco into
+            Forretress.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 — COMPARISON
+        </span>
+
+        <h2>
+            Pineco Variants Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Collector Value
+                    </th>
+
+                    <th>
+                        Can Evolve?
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Pineco
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Check current mechanics
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Good
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Lucky status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% IV
+                    </td>
+
+                    <td>
+                        15/15/15
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        Collector
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        Collector
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 — PRACTICAL GUIDE
+        </span>
+
+        <h2>
+            How to Use Pineco
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check Pineco's IVs.
+        </li>
+
+        <li>
+            Check whether it is Shiny, Shadow, Lucky,
+            Purified, XXL or XXS.
+        </li>
+
+        <li>
+            Decide whether you want Pineco itself or
+            Forretress.
+        </li>
+
+        <li>
+            Check its current moveset.
+        </li>
+
+        <li>
+            Compare the Stardust cost with stronger options.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+        Pineco can be much more interesting as a collection
+        Pokémon than as a raid investment. A collection may
+        include regular, Shiny, Shadow, Purified, Lucky,
+        perfect-IV, XXL and XXS specimens.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 — FAQ
+        </span>
+
+        <h2>
+            Pineco FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Pineco?
+        </summary>
+
+        <p>
+            Pineco is a pure Bug-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Pineco weak to?
+        </summary>
+
+        <p>
+            Pineco is weak to Fire, Flying and Rock-type
+            attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Pineco evolve?
+        </summary>
+
+        <p>
+            Yes. Pineco evolves into Forretress.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How much Candy does Pineco need to evolve?
+        </summary>
+
+        <p>
+            Pineco requires 50 Pineco Candy to evolve into
+            Forretress.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Pineco available?
+        </summary>
+
+        <p>
+            Yes. Shiny Pineco is available through eligible
+            Pokémon GO encounters.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Pineco?
+        </summary>
+
+        <p>
+            A 100% Pineco has perfect IVs of 15 Attack,
+            15 Defense and 15 HP/Stamina.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Pineco?
+        </summary>
+
+        <p>
+            XXL Pineco is an extra-large size variant.
+            Size and IVs are separate characteristics.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Pineco?
+        </summary>
+
+        <p>
+            XXS Pineco is an extra-small size variant.
+            It does not automatically indicate anything
+            about the Pokémon's IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Pineco?
+        </summary>
+
+        <p>
+            Lucky Pineco is a Lucky Pokémon obtained through
+            the trading system and receives the benefits
+            associated with Lucky Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Pineco?
+        </summary>
+
+        <p>
+            Not automatically. Consider the Pokémon's IVs,
+            Shadow status, collection value and your intended
+            use before purifying it.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Pineco good for raids?
+        </summary>
+
+        <p>
+            Pineco is generally not considered a high-priority
+            raid attacker. Its main value is usually its
+            evolution and collection characteristics.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Pineco good in PvP?
+        </summary>
+
+        <p>
+            Pineco has limited competitive relevance compared
+            with stronger Pokémon. Its suitability depends on
+            the current moveset and cup rules.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Game mechanics, moves,
+            availability, encounters and other live data can
+            change over time. Verify current in-game information
+            before making investment decisions.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Pineco Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Pineco Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#perfect">
+                    100% Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Pineco
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/forretress.html">
+
+            Forretress Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/bug.html">
+
+            Bug Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/scizor.html">
+
+            Scizor Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/heracross.html">
+
+            Heracross Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-2.html">
+
+            Gen 2 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Pineco Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+            Bug
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+            2
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+            #204
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution:
+            </strong>
+            Forretress
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution Candy:
+            </strong>
+            50
+        </p>
+
+
+        <p>
+            <strong>
+                Shiny:
+            </strong>
+            Available
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

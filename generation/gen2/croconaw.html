@@ -1,0 +1,4316 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Croconaw Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Croconaw Pokémon GO guide covering Croconaw stats, max CP, Water typing, weaknesses, resistances, best moves, raids, PvP, IVs, 100% Croconaw, Shiny Croconaw, Shadow Croconaw, Purified Croconaw, Lucky Croconaw, XXL Croconaw, XXS Croconaw and availability.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/croconaw.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #55b8ff;
+            --accent-2: #318ee0;
+
+            --water: #4e9dff;
+            --grass: #5dcf82;
+            --electric: #e7c84b;
+            --ice: #72d6dc;
+            --poison: #b86bd1;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+            --gold: #e7b94f;
+            --shiny: #d7a8ff;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(78,157,255,.12),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.93);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+            max-width: var(--max);
+            margin: auto;
+            padding: 35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px;
+
+            border: 1px solid var(--border);
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(78,157,255,.18),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border: 1px solid rgba(78,157,255,.3);
+
+            border-radius: 999px;
+
+            color: var(--water);
+
+            background:
+                rgba(78,157,255,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+            font-size:
+                clamp(2.2rem,5vw,4.5rem);
+
+            letter-spacing: -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+            padding: 7px 11px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .water-tag {
+            color: var(--water);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-pokemon img {
+            width: min(100%,320px);
+
+            filter:
+                drop-shadow(
+                    0 25px 30px rgba(0,0,0,.45)
+                );
+        }
+
+        .pokemon-placeholder {
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(78,157,255,.20),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+            padding: 18px;
+
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--accent);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+        .section h2 {
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+            margin: 22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+            padding: 17px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+        }
+
+        .stat-card span {
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(78,157,255,.3);
+
+            background:
+                rgba(78,157,255,.06);
+
+            border-radius: var(--radius-sm);
+        }
+
+        .type-icon {
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(78,157,255,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+            color: var(--water);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+            padding: 17px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            background: var(--surface-2);
+        }
+
+        .effect-icon {
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color: var(--water);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(78,157,255,.1),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(78,157,255,.25);
+
+            border-radius: var(--radius-sm);
+        }
+
+        .best-move strong {
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+            height: 8px;
+
+            background: var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+            height: 100%;
+
+            width: var(--rating);
+
+            background: var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table {
+            min-width: 720px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+        }
+
+        .comparison-table th {
+            background: var(--surface-2);
+
+            text-align: left;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+            padding: 12px 14px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           SPECIAL FORM CARDS
+        ===================================================== */
+
+        .variant-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .variant-card {
+            padding: 22px;
+
+            border-radius: 17px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .variant-card .variant-icon {
+            font-size: 2rem;
+
+            margin-bottom: 8px;
+        }
+
+        .variant-card h3 {
+            margin: 0 0 7px;
+
+            font-size: 1.05rem;
+        }
+
+        .variant-card p {
+            margin-bottom: 0;
+
+            font-size: .78rem;
+        }
+
+        .variant-card.shiny {
+            border-color:
+                rgba(215,168,255,.35);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(215,168,255,.08),
+                    var(--surface-2)
+                );
+        }
+
+        .variant-card.shadow {
+            border-color:
+                rgba(120,120,150,.35);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(20,20,30,.8),
+                    var(--surface-2)
+                );
+        }
+
+        .variant-card.lucky {
+            border-color:
+                rgba(231,185,79,.4);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(231,185,79,.08),
+                    var(--surface-2)
+                );
+        }
+
+        .variant-card.size {
+            border-color:
+                rgba(78,157,255,.3);
+        }
+
+
+        /* =====================================================
+           IV CARDS
+        ===================================================== */
+
+        .iv-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+            padding: 20px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+            display: block;
+
+            font-size: 1.5rem;
+        }
+
+        .iv-card span {
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           PERFECT IV
+        ===================================================== */
+
+        .perfect-card {
+            margin-top: 20px;
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            border:
+                1px solid rgba(231,185,79,.4);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(231,185,79,.12),
+                    var(--surface-2)
+                );
+        }
+
+        .perfect-card .perfect-number {
+            font-size: 3rem;
+
+            font-weight: 950;
+
+            color: var(--gold);
+        }
+
+
+        /* =====================================================
+           SIZE SYSTEM
+        ===================================================== */
+
+        .size-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 20px;
+        }
+
+        .size-card {
+            padding: 22px;
+
+            border-radius: 18px;
+
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .size-card strong {
+            display: block;
+
+            font-size: 1.3rem;
+
+            margin-bottom: 5px;
+        }
+
+        .size-label {
+            color: var(--water);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background: var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+        .side-card h3 {
+            margin: 0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+            display: block;
+
+            padding: 8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+            background: var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+            margin: 10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            border-top:
+                1px solid var(--border);
+
+            padding: 35px 20px;
+
+            background: #06090e;
+        }
+
+        .footer-inner {
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .variant-grid,
+            .size-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .rating-row {
+                grid-template-columns: 1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align: left;
+            }
+
+            .main-nav {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/water.html">
+        Water Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Croconaw
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                JOHTO • WATER TYPE
+            </span>
+
+            <h1>
+                Croconaw
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Croconaw is a Water-type Pokémon from the
+                Johto region and the evolved form of Totodile.
+                In Pokémon GO, it sits between Totodile and
+                Feraligatr and can be collected in regular,
+                Shiny, Shadow, Purified, Lucky, XXL and XXS
+                variants.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag water-tag">
+                    Water
+                </span>
+
+                <span class="tag">
+                    #159
+                </span>
+
+                <span class="tag">
+                    Gen 2
+                </span>
+
+                <span class="tag">
+                    Evolution
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    XXL / XXS
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace emoji with your properly licensed Croconaw asset -->
+
+            <div class="pokemon-placeholder">
+                🐊
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            117
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            128
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            163
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,500
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Croconaw Overview
+        </h2>
+
+        <p>
+
+            Croconaw is the second stage of the Totodile
+            evolutionary family. It was introduced in
+            Generation 2 and is classified as a pure
+            Water-type Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#159</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 2</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Johto</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Water</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>117</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>128</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>163</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Evolution</span>
+            <strong>Feraligatr</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Croconaw Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            💧
+        </div>
+
+        <div>
+
+            <strong>
+                Water
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Croconaw's Typing Matters
+    </h3>
+
+    <p>
+
+        Croconaw's pure Water typing gives it a straightforward
+        defensive profile. Water-type Pokémon are useful in
+        many matchups, but Croconaw's relatively modest overall
+        battle stats mean that its final evolution, Feraligatr,
+        is generally the more important investment target.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Croconaw Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks deal super-effective
+                damage to Croconaw.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass-type attacks are also super effective
+                against Water-type Croconaw.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Water typing gives Croconaw resistance
+                to Fire-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Croconaw resists Water-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧊
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks are resisted by Water-type
+                Croconaw.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Croconaw Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Croconaw has a balanced stat profile for a middle
+            evolution, but it is generally overshadowed by its
+            final evolution when considering serious long-term
+            battle investment.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>117</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>128</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>163</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~1,500</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP depends on the Pokémon's base stats,
+            IVs and level. A displayed CP value should therefore
+            not be confused with an IV percentage.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVESET
+        </span>
+
+        <h2>
+            Croconaw Best Moves
+        </h2>
+
+        <p>
+
+            Croconaw's moveset should be evaluated based on the
+            current Pokémon GO move pool. Because move availability
+            can change, current game data should be checked before
+            making a time-sensitive recommendation.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Water Role
+        </strong>
+
+        <p>
+            Prioritize the strongest currently available
+            Water-focused moveset if using Croconaw for battle.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Water Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        STAB option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Water Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Water damage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through events, move updates
+        and other Pokémon GO mechanics. Check current game data
+        before publishing an exact recommended moveset.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • RAID USE
+        </span>
+
+        <h2>
+            Croconaw Raid Performance
+        </h2>
+
+        <p>
+
+            Croconaw is primarily an evolutionary-stage Pokémon
+            rather than a top-tier raid attacker. Players building
+            a Water-type raid team will generally have stronger
+            options available, including suitable final-stage
+            Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:45%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Moderate
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:55%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Moderate
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Investment
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:35%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Croconaw?
+    </h3>
+
+    <p>
+
+        For most players, Croconaw is better treated as an
+        evolutionary collection target rather than a major
+        Stardust investment. If you want a stronger member of
+        this family for raids, consider evolving a good Croconaw
+        into Feraligatr when appropriate.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 COUNTERS
+========================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • COUNTERS
+        </span>
+
+        <h2>
+            What Counters Croconaw?
+        </h2>
+
+        <p>
+
+            Croconaw is a pure Water type, so Electric and Grass
+            attackers are the primary counter categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric Attackers
+            </strong>
+
+            <p>
+
+                Electric-type Pokémon can exploit Croconaw's
+                Water weakness.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass Attackers
+            </strong>
+
+            <p>
+
+                Grass-type attackers also deal super-effective
+                damage to Croconaw.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💥
+            </div>
+
+            <strong>
+                High-Level Attackers
+            </strong>
+
+            <p>
+
+                Stronger evolved Pokémon can generally defeat
+                Croconaw more efficiently than low-level teams.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Croconaw IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add additional Attack, Defense
+            and HP points to a Pokémon. A perfect Croconaw
+            has 15 Attack, 15 Defense and 15 HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="perfect-card">
+
+        <div class="perfect-number">
+            15 / 15 / 15
+        </div>
+
+        <strong>
+            100% Perfect Croconaw
+        </strong>
+
+        <p>
+
+            A 15/15/15 Croconaw is commonly called a
+            "100% IV" or "hundo" Croconaw. It is especially
+            appealing to collectors and players who want to
+            evolve the specimen into Feraligatr.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     09 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • PVP
+        </span>
+
+        <h2>
+            Croconaw PvP Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Croconaw can potentially be considered in CP-limited
+        formats where its exact moveset and stats fit the
+        format. However, players should compare it against
+        other available Water-type options before investing.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Croconaw's middle-evolution status generally limits its
+        appeal compared with stronger Water-type Pokémon, but
+        special cups or limited formats can change the value
+        of unusual Pokémon.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Croconaw is not normally a natural Master League
+        investment because its maximum CP and overall stats
+        are much lower than those of top Master League Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     10 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • EVOLUTION FAMILY
+        </span>
+
+        <h2>
+            Croconaw Evolution Family
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Croconaw is the middle stage of the Totodile evolutionary
+        family. It evolves from Totodile and can eventually evolve
+        into Feraligatr.
+
+    </p>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐊
+            </div>
+
+            <h3>
+                Totodile
+            </h3>
+
+            <p>
+                First stage of the evolutionary family.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐊
+            </div>
+
+            <h3>
+                Croconaw
+            </h3>
+
+            <p>
+                Second stage and the subject of this guide.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐊
+            </div>
+
+            <h3>
+                Feraligatr
+            </h3>
+
+            <p>
+                Final evolution of the Totodile family.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Croconaw requires Candy to evolve into Feraligatr.
+        Check the current in-game evolution requirement before
+        publishing exact Candy values on a live database.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • SHINY
+        </span>
+
+        <h2>
+            Shiny Croconaw
+        </h2>
+
+        <p>
+
+            Shiny Croconaw has an alternate coloration compared
+            with the standard Croconaw. Shiny status does not
+            inherently increase a Pokémon's combat stats.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐊
+            </div>
+
+            <h3>
+                Regular Croconaw
+            </h3>
+
+            <p>
+                Standard coloration and standard Pokémon status.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card shiny">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Croconaw
+            </h3>
+
+            <p>
+                Alternate coloration that is primarily valuable
+                to collectors and Shiny hunters.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shiny Collection Tip
+        </strong>
+
+        <p>
+
+            A Shiny Croconaw can be evolved while retaining
+            its Shiny status, making a good Shiny Croconaw a
+            potential Feraligatr evolution candidate.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     12 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Croconaw
+        </h2>
+
+        <p>
+
+            Shadow Croconaw is the Shadow variant of Croconaw.
+            Shadow Pokémon have a different battle profile from
+            their regular counterparts and require additional
+            consideration before investing resources.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shadow">
+
+        <div class="variant-icon">
+            🌑
+        </div>
+
+        <h3>
+            Shadow Croconaw
+        </h3>
+
+        <p>
+
+            Shadow status changes the battle characteristics
+            of the Pokémon but does not change Croconaw's
+            underlying Water typing.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Croconaw vs Regular Croconaw
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Croconaw
+                    </td>
+
+                    <td>
+                        Croconaw
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Available when eligible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Croconaw Weaknesses
+    </h3>
+
+    <p>
+
+        Shadow Croconaw remains a Water-type Pokémon, so its
+        primary type weaknesses remain Electric and Grass.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Frustration Consideration
+    </h3>
+
+    <p>
+
+        Shadow Pokémon can have the Charged Move Frustration.
+        Its replacement can depend on the availability of
+        specific Team GO Rocket events and current game rules.
+        Check the current event schedule before planning a
+        Shadow Croconaw moveset.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     13 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Croconaw
+        </h2>
+
+        <p>
+
+            Purified Croconaw is created by purifying an eligible
+            Shadow Croconaw. Purification changes several
+            characteristics and can be useful for players who
+            prefer purified Pokémon or want to complete their
+            collection.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-icon">
+            💎
+        </div>
+
+        <h3>
+            Purified Croconaw
+        </h3>
+
+        <p>
+
+            Purified Croconaw keeps the Water typing but is no
+            longer a Shadow Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Croconaw
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Water Type
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        May apply
+                    </td>
+
+                    <td>
+                        Removed through purification
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                    <td>
+                        Already purified
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Before purifying:
+        </strong>
+
+        <p>
+
+            Consider whether you want to retain the Shadow
+            Pokémon before committing to purification. Purification
+            should be treated as a deliberate collection or
+            gameplay decision rather than an automatic upgrade.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     14 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Croconaw
+        </h2>
+
+        <p>
+
+            Lucky Croconaw is a special status obtained through
+            Pokémon GO's trading system. Lucky Pokémon have
+            special visual effects and reduced Stardust costs
+            for power-ups.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card lucky">
+
+        <div class="variant-icon">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Croconaw
+        </h3>
+
+        <p>
+
+            Lucky Croconaw is especially interesting for
+            collectors and players looking to reduce Stardust
+            costs when powering up a Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Croconaw Benefits
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Reduced Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Distinct Lucky background effect.
+        </li>
+
+        <li>
+            Can be traded into the Lucky status.
+        </li>
+
+        <li>
+            Useful for collection goals.
+        </li>
+
+        <li>
+            Lucky status is separate from Shiny status.
+        </li>
+
+    </ul>
+
+
+    <div class="best-move">
+
+        <strong>
+            Lucky + Shiny Croconaw
+        </strong>
+
+        <p>
+
+            A Pokémon can have multiple compatible collection
+            characteristics. A Lucky Croconaw can therefore be
+            especially desirable to collectors when combined
+            with other desirable traits.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     15 100%
+========================================================= -->
+
+<section class="section" id="100-croconaw">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • PERFECT IV
+        </span>
+
+        <h2>
+            100% Croconaw
+        </h2>
+
+        <p>
+
+            A 100% Croconaw has perfect Attack, Defense and
+            HP IVs: 15/15/15.
+
+        </p>
+
+    </div>
+
+
+    <div class="perfect-card">
+
+        <div class="perfect-number">
+            15 / 15 / 15
+        </div>
+
+        <strong>
+            Perfect IV Croconaw
+        </strong>
+
+        <p>
+
+            A perfect Croconaw is commonly called a hundo.
+            It can be kept as a collection trophy or evolved
+            into Feraligatr.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        How to Identify a 100% Croconaw
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Attack IV = 15.
+        </li>
+
+        <li>
+            Defense IV = 15.
+        </li>
+
+        <li>
+            HP IV = 15.
+        </li>
+
+        <li>
+            Total IV percentage = 100%.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     16 XXL
+========================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • XXL
+        </span>
+
+        <h2>
+            XXL Croconaw
+        </h2>
+
+        <p>
+
+            XXL Croconaw is a size variant that represents
+            an exceptionally large specimen. Size is separate
+            from IVs, CP, Shiny status and Lucky status.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-card">
+
+        <span class="size-label">
+            EXTRA LARGE
+        </span>
+
+        <strong>
+            XXL Croconaw
+        </strong>
+
+        <p>
+
+            XXL status is primarily a size and collection
+            characteristic. A Pokémon being XXL does not
+            automatically mean it has perfect IVs.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL Does Not Mean 100%
+    </h3>
+
+    <p>
+
+        A common mistake is assuming that a very large Pokémon
+        must have high IVs. Size and IVs are separate attributes.
+        An XXL Croconaw can have low, average or perfect IVs.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     17 XXS
+========================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • XXS
+        </span>
+
+        <h2>
+            XXS Croconaw
+        </h2>
+
+        <p>
+
+            XXS Croconaw represents an exceptionally small
+            specimen. Like XXL status, XXS is independent of
+            IV percentage and Shiny status.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-card">
+
+        <span class="size-label">
+            EXTRA SMALL
+        </span>
+
+        <strong>
+            XXS Croconaw
+        </strong>
+
+        <p>
+
+            XXS Croconaw can be valuable for collectors who
+            are completing size-based Pokédex goals.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXS vs XXL Croconaw
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Extremely Small
+                    </td>
+
+                    <td>
+                        Extremely Large
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        IV Impact
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Compatible
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        High for size collectors
+                    </td>
+
+                    <td>
+                        High for size collectors
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 SPECIAL VARIANTS
+========================================================= -->
+
+<section class="section" id="special-variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • VARIANT GUIDE
+        </span>
+
+        <h2>
+            Croconaw Special Variants Explained
+        </h2>
+
+        <p>
+
+            Croconaw can be interesting to collectors because
+            different attributes describe different aspects of
+            the same Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card shiny">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Croconaw
+            </h3>
+
+            <p>
+                Alternate coloration.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card shadow">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Croconaw
+            </h3>
+
+            <p>
+                Shadow status with different battle mechanics.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💎
+            </div>
+
+            <h3>
+                Purified Croconaw
+            </h3>
+
+            <p>
+                Created by purifying an eligible Shadow Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card lucky">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Croconaw
+            </h3>
+
+            <p>
+                Special trade-related status with reduced
+                Stardust power-up costs.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <h3>
+                100% Croconaw
+            </h3>
+
+            <p>
+                15/15/15 perfect IV specimen.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card size">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <h3>
+                XXL / XXS
+            </h3>
+
+            <p>
+                Size-based Pokémon variants.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     19 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • RESOURCES
+        </span>
+
+        <h2>
+            Croconaw Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            If your goal is to evolve Croconaw into Feraligatr
+            or build a high-level Pokémon, Candy, Candy XL and
+            Stardust become important resources.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Candy for high-value evolution candidates.
+        </li>
+
+        <li>
+            Keep strong IV Croconaw specimens for evolution.
+        </li>
+
+        <li>
+            Consider Shiny Croconaw before evolving.
+        </li>
+
+        <li>
+            Keep interesting Shadow and Lucky specimens.
+        </li>
+
+        <li>
+            Track XXL and XXS specimens for collection goals.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     20 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • AVAILABILITY
+        </span>
+
+        <h2>
+            Croconaw Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Croconaw's availability can change as Pokémon GO
+        rotates wild encounters, events, research rewards,
+        Community Days and other special encounters.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and encounter
+            schedule before claiming that Croconaw is currently
+            available through a specific method.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical appearances should be separated from current
+        availability so visitors can easily distinguish old
+        event information from current encounter opportunities.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     21 BATTLE GUIDE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Croconaw
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check Croconaw's IVs.
+        </li>
+
+        <li>
+            Decide whether you plan to evolve it.
+        </li>
+
+        <li>
+            Check its Shiny, Shadow or Lucky status.
+        </li>
+
+        <li>
+            Check whether it is XXL or XXS.
+        </li>
+
+        <li>
+            Compare it with your existing Water Pokémon.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Collector Priorities
+    </h3>
+
+    <p>
+
+        Collectors may value Croconaw differently from competitive
+        players. A Shiny, Lucky, Shadow, Purified, 100%, XXL or
+        XXS specimen can have collection value even when it is
+        not the strongest Pokémon for battle.
+
+    </p>
+
+
+    <h3>
+        Evolution Decision
+    </h3>
+
+    <p>
+
+        Before evolving Croconaw, consider whether the individual
+        Pokémon has desirable IVs, Shiny status, Shadow status,
+        Lucky status or size characteristics that you want to
+        preserve in your collection.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     22 COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • COMPARISON
+        </span>
+
+        <h2>
+            Croconaw Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Feature
+                    </th>
+
+                    <th>
+                        Collection Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Medium
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Reduced Stardust cost
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     23 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            23 • FAQ
+        </span>
+
+        <h2>
+            Croconaw FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Croconaw?
+        </summary>
+
+        <p>
+            Croconaw is a pure Water-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Croconaw weak to?
+        </summary>
+
+        <p>
+            Croconaw is weak to Electric and Grass attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What generation is Croconaw from?
+        </summary>
+
+        <p>
+            Croconaw was introduced in Generation 2 and is
+            part of the Johto Pokédex.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Croconaw evolve?
+        </summary>
+
+        <p>
+
+            Yes. Croconaw is the middle evolution between
+            Totodile and Feraligatr.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Croconaw available?
+        </summary>
+
+        <p>
+
+            Shiny Croconaw can be available through eligible
+            Pokémon GO encounters and can retain its Shiny
+            status when evolved.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Croconaw?
+        </summary>
+
+        <p>
+
+            A 100% Croconaw has perfect 15/15/15 Attack,
+            Defense and HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Shadow Croconaw?
+        </summary>
+
+        <p>
+
+            Shadow Croconaw is the Shadow variant of Croconaw.
+            It retains the Water typing while having the
+            gameplay characteristics associated with Shadow
+            Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Croconaw?
+        </summary>
+
+        <p>
+
+            Not automatically. Consider your collection goals,
+            battle plans and the characteristics of the Shadow
+            Pokémon before purifying it.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Croconaw?
+        </summary>
+
+        <p>
+
+            Lucky Croconaw is a special trade-related variant
+            that receives the Lucky Pokémon benefits, including
+            reduced Stardust costs for power-ups.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Croconaw?
+        </summary>
+
+        <p>
+
+            XXL Croconaw is an exceptionally large Croconaw.
+            XXL status is separate from IVs and Shiny status.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Croconaw?
+        </summary>
+
+        <p>
+
+            XXS Croconaw is an exceptionally small Croconaw.
+            XXS status does not automatically indicate high IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Croconaw good for raids?
+        </summary>
+
+        <p>
+
+            Croconaw is generally not a top-tier raid investment.
+            Players seeking a stronger Water attacker will usually
+            prefer stronger evolved or Legendary options.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I evolve my 100% Croconaw?
+        </summary>
+
+        <p>
+
+            If your goal is to obtain a perfect Feraligatr,
+            a 15/15/15 Croconaw is an excellent evolution
+            candidate.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & data note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounters, events, availability and other game
+            systems can change over time. Verify current
+            in-game information before making investment
+            decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Croconaw Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#100-croconaw">
+                    100% Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Croconaw
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+        <a class="related-link"
+           href="/pokemon/totodile.html">
+
+            Totodile Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/feraligatr.html">
+
+            Feraligatr Guide →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-types/water.html">
+
+            Water Type Hub →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-2.html">
+
+            Gen 2 Pokémon →
+
+        </a>
+
+        <a class="related-link"
+           href="/pokemon/tyranitar.html">
+
+            Tyranitar Guide →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Croconaw Quick Facts
+        </h3>
+
+        <p>
+            <strong>Type:</strong>
+            Water
+        </p>
+
+        <p>
+            <strong>Generation:</strong>
+            2
+        </p>
+
+        <p>
+            <strong>Pokédex:</strong>
+            #159
+        </p>
+
+        <p>
+            <strong>Evolution:</strong>
+            Feraligatr
+        </p>
+
+        <p>
+            <strong>Family:</strong>
+            Totodile
+        </p>
+
+        <p>
+            <strong>Variants:</strong>
+            Shiny, Shadow, Purified, Lucky, XXL, XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

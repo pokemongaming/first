@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Timburr Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & Forms</title>
+
+<meta name="description"
+content="Complete Timburr Pokémon GO guide covering regular Timburr, Shiny Timburr, Shadow Timburr, Purified Timburr, Lucky Timburr, 100% IV Timburr, XXL Timburr and XXS Timburr, including stats, evolution, weaknesses, resistances, moves, raids and availability.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/timburr.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #ff9b61;
+    --accent-2: #e76d3c;
+
+    --fighting: #d85b5b;
+    --shadow: #9d74ff;
+    --shiny: #f3c94d;
+    --purified: #70d6ff;
+    --lucky: #ffb347;
+    --perfect: #62d89a;
+    --xxl: #ff7f9d;
+    --xxs: #7bc8ff;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(216,91,91,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8,11,18,.92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(216,91,91,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #17131b,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+
+    gap: 30px;
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid rgba(216,91,91,.3);
+    border-radius: 999px;
+
+    color: #ffaaa5;
+
+    background: rgba(216,91,91,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing: -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+
+    font-size: 1rem;
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.fighting-tag {
+    color: #ff8585;
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-pokemon img {
+    width: min(100%, 320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(216,91,91,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   CONTENT LAYOUT
+===================================================== */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: clamp(1.45rem,3vw,2rem);
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 25px 0 10px;
+    font-size: 1.08rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid rgba(216,91,91,.3);
+
+    background: rgba(216,91,91,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(216,91,91,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: #ffaaa5;
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color: rgba(255,111,125,.3);
+}
+
+.resistance {
+    border-color: rgba(98,216,154,.3);
+}
+
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+    padding: 13px 12px;
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: #ff8585;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(216,91,91,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(216,91,91,.3);
+
+    border-radius: var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   VARIANT SYSTEM
+===================================================== */
+
+.variant-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 14px;
+}
+
+.variant-card {
+    padding: 22px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.variant-card .variant-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.variant-card h3 {
+    margin: 0 0 8px;
+}
+
+.variant-card p {
+    font-size: .78rem;
+}
+
+.variant-card.shadow {
+    border-color: rgba(157,116,255,.45);
+}
+
+.variant-card.shiny {
+    border-color: rgba(243,201,77,.45);
+}
+
+.variant-card.purified {
+    border-color: rgba(112,214,255,.45);
+}
+
+.variant-card.lucky {
+    border-color: rgba(255,179,71,.45);
+}
+
+.variant-card.perfect {
+    border-color: rgba(98,216,154,.45);
+}
+
+.variant-card.xxl {
+    border-color: rgba(255,127,157,.45);
+}
+
+.variant-card.xxs {
+    border-color: rgba(123,200,255,.45);
+}
+
+
+/* =====================================================
+   FORM HEADER
+===================================================== */
+
+.form-banner {
+    padding: 22px;
+
+    margin: 20px 0;
+
+    border-radius: var(--radius);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,.02)
+        );
+
+    border: 1px solid var(--border);
+}
+
+.form-banner .form-label {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    font-size: .65rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 10px;
+}
+
+.label-regular {
+    color: #ffaaa5;
+    background: rgba(216,91,91,.13);
+}
+
+.label-shadow {
+    color: #c7b1ff;
+    background: rgba(157,116,255,.13);
+}
+
+.label-shiny {
+    color: #ffe27d;
+    background: rgba(243,201,77,.13);
+}
+
+.label-purified {
+    color: #9ce5ff;
+    background: rgba(112,214,255,.13);
+}
+
+.label-lucky {
+    color: #ffd28b;
+    background: rgba(255,179,71,.13);
+}
+
+.label-perfect {
+    color: #8aefb8;
+    background: rgba(98,216,154,.13);
+}
+
+.label-xxl {
+    color: #ff9fb8;
+    background: rgba(255,127,157,.13);
+}
+
+.label-xxs {
+    color: #9fd9ff;
+    background: rgba(123,200,255,.13);
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   IV GRID
+===================================================== */
+
+.iv-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 20px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: .78rem;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">Types</a> <a href="/pokedex.html">Pokédex</a> <a href="/raids/">Raids</a> <a href="/guides/">Guides</a> <a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">Pokémon Database</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/fighting.html">Fighting Type</a>
+
+<span>›</span>
+
+<strong>Timburr</strong>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">
+GEN 5 • UNOVA
+</span>
+
+<h1>Timburr</h1>
+
+<p class="hero-subtitle">
+
+Timburr is a Fighting-type Pokémon from the Unova region.
+In Pokémon GO, it can evolve into Gurdurr and eventually
+Conkeldurr. This guide covers every important Timburr
+variant, including Shiny, Shadow, Purified, Lucky,
+100% IV, XXL and XXS Timburr.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag fighting-tag">
+Fighting
+</span>
+
+<span class="tag">
+#532
+</span>
+
+<span class="tag">
+Gen 5
+</span>
+
+<span class="tag">
+Unova
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+<span class="tag">
+3-Stage Evolution
+</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<!-- Replace with licensed Timburr artwork -->
+
+<div class="pokemon-placeholder">
+🪵
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+<strong>181</strong>
+<span>ATTACK</span>
+</div>
+
+<div class="quick-stat">
+<strong>124</strong>
+<span>DEFENSE</span>
+</div>
+
+<div class="quick-stat">
+<strong>181</strong>
+<span>HP</span>
+</div>
+
+<div class="quick-stat">
+<strong>~1,500+</strong>
+<span>MAX CP*</span>
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>Timburr Overview</h2>
+
+<p>
+
+Timburr is a pure Fighting-type Pokémon introduced in
+Generation 5. It is the first stage of the Timburr evolution
+family and evolves into Gurdurr, which can then evolve into
+Conkeldurr.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#532</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 5</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Unova</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fighting</strong>
+</div>
+
+<div class="stat-card">
+<span>EVOLUTION</span>
+<strong>Gurdurr</strong>
+</div>
+
+<div class="stat-card">
+<span>FINAL FORM</span>
+<strong>Conkeldurr</strong>
+</div>
+
+<div class="stat-card">
+<span>SHINY</span>
+<strong>Available*</strong>
+</div>
+
+<div class="stat-card">
+<span>SPECIAL SIZE</span>
+<strong>XXL / XXS</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>Timburr Type</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">
+🥊
+</div>
+
+<div>
+
+<strong>Fighting</strong>
+
+<span>
+Pure Fighting Type
+</span>
+
+</div>
+
+</div>
+
+<h3>Why Timburr's Typing Matters</h3>
+
+<p>
+
+Timburr's Fighting typing determines its weaknesses,
+resistances and offensive potential. Although Timburr itself
+is generally an early-stage Pokémon, its evolution family
+can become increasingly valuable as it develops toward
+Conkeldurr.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>Timburr Weaknesses & Resistances</h2>
+
+</div>
+
+<h3>Weaknesses</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">🧚</div>
+
+<strong>Fairy</strong>
+
+<p>
+Fairy-type attacks are super effective against Timburr.
+</p>
+
+</div>
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">🕊️</div>
+
+<strong>Flying</strong>
+
+<p>
+Flying-type attacks can exploit Timburr's Fighting typing.
+</p>
+
+</div>
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">🔮</div>
+
+<strong>Psychic</strong>
+
+<p>
+Psychic-type attacks are also super effective.
+</p>
+
+</div>
+
+</div>
+
+<h3>Resistances</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🐛</div>
+
+<strong>Bug</strong>
+
+<p>
+Timburr resists Bug-type attacks.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🪨</div>
+
+<strong>Rock</strong>
+
+<p>
+Fighting-type Pokémon resist Rock attacks.
+</p>
+
+</div>
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">🌑</div>
+
+<strong>Dark</strong>
+
+<p>
+Timburr also resists Dark-type attacks.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<h2>Timburr Evolution</h2>
+
+<p>
+
+Timburr belongs to a three-stage evolution family. Its
+long-term value is closely connected to the potential of
+Gurdurr and Conkeldurr.
+
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>Stage</th>
+<th>Pokémon</th>
+<th>Type</th>
+<th>Role</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Timburr</td>
+<td>Fighting</td>
+<td>Base Form</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Gurdurr</td>
+<td>Fighting</td>
+<td>Middle Evolution</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Conkeldurr</td>
+<td>Fighting</td>
+<td>Final Evolution</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="best-move">
+
+<strong>Long-Term Investment</strong>
+
+<p>
+
+Before transferring a strong Timburr, consider its IVs,
+special status and future evolution potential.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     REGULAR TIMBURR
+===================================================== -->
+
+<section class="section" id="regular-timburr">
+
+<div class="form-banner">
+
+<span class="form-label label-regular">
+REGULAR FORM
+</span>
+
+<h2>Regular Timburr</h2>
+
+<p>
+
+Regular Timburr is the standard version of the Pokémon.
+It provides the foundation for all normal evolution paths
+and can be evaluated for IVs, future evolution and
+collection value.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fighting</strong>
+</div>
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Regular</strong>
+</div>
+
+<div class="stat-card">
+<span>EVOLUTION</span>
+<strong>Gurdurr</strong>
+</div>
+
+<div class="stat-card">
+<span>FINAL FORM</span>
+<strong>Conkeldurr</strong>
+</div>
+
+</div>
+
+<h3>Should You Keep Regular Timburr?</h3>
+
+<ul class="checklist">
+
+<li>Check its IVs before transferring it.</li>
+
+<li>Consider evolving strong specimens.</li>
+
+<li>Keep rare event or costume versions separately.</li>
+
+<li>Compare it with Shadow and Lucky variants.</li>
+
+<li>Consider its long-term Conkeldurr potential.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="form-banner">
+
+<span class="form-label label-shiny">
+✨ SHINY FORM
+</span>
+
+<h2>Shiny Timburr</h2>
+
+<p>
+
+Shiny Timburr is a collector variant with alternate
+coloration. Its battle mechanics remain tied to the same
+species, while its rarity makes it valuable for collectors.
+
+</p>
+
+</div>
+
+<div class="variant-card shiny">
+
+<div class="variant-icon">
+✨
+</div>
+
+<h3>Shiny Timburr</h3>
+
+<p>
+
+A Shiny Timburr can evolve through the same family and
+retain its Shiny identity through its evolutions.
+
+</p>
+
+</div>
+
+<h3>Should You Evolve Shiny Timburr?</h3>
+
+<p>
+
+A Shiny Timburr can be kept unevolved for collection
+purposes or evolved into Shiny Gurdurr and Shiny Conkeldurr.
+The decision depends on whether you value the base-stage
+collection or the evolved Shiny form more.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="form-banner">
+
+<span class="form-label label-shadow">
+SHADOW FORM
+</span>
+
+<h2>Shadow Timburr</h2>
+
+<p>
+
+Shadow Timburr is a special Shadow version of Timburr.
+Shadow Pokémon have a different offensive and defensive
+battle profile, making them separate investment decisions
+from regular Pokémon.
+
+</p>
+
+</div>
+
+<div class="variant-card shadow">
+
+<div class="variant-icon">
+🌑
+</div>
+
+<h3>Shadow Timburr</h3>
+
+<p>
+
+Shadow status can make the evolution family more attractive
+to players focused on offensive performance, although Shadow
+Pokémon also require careful resource management.
+
+</p>
+
+</div>
+
+<h3>Shadow Timburr vs Regular Timburr</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>Feature</th>
+<th>Regular</th>
+<th>Shadow</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Typing</td>
+<td>Fighting</td>
+<td>Fighting</td>
+</tr>
+
+<tr>
+<td>Shadow Status</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Battle Profile</td>
+<td>Standard</td>
+<td>Different Shadow Profile</td>
+</tr>
+
+<tr>
+<td>Purification</td>
+<td>Not Applicable</td>
+<td>Possible</td>
+</tr>
+
+<tr>
+<td>Investment</td>
+<td>Standard</td>
+<td>More Resource Sensitive</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="editorial-note">
+
+<strong>Shadow note:</strong>
+
+<p>
+
+Move availability and Shadow mechanics can change through
+Pokémon GO events. Always check current game rules before
+making a major Shadow investment.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="form-banner">
+
+<span class="form-label label-purified">
+PURIFIED FORM
+</span>
+
+<h2>Purified Timburr</h2>
+
+<p>
+
+Purified Timburr is created when an eligible Shadow Timburr
+is purified. Purification changes the Pokémon's status and
+can affect its long-term investment path.
+
+</p>
+
+</div>
+
+<div class="variant-card purified">
+
+<div class="variant-icon">
+💠
+</div>
+
+<h3>Purified Timburr</h3>
+
+<p>
+
+A Purified Timburr should be evaluated separately from its
+original Shadow form. Consider the value of the Shadow
+version before deciding to purify.
+
+</p>
+
+</div>
+
+<h3>Should You Purify Timburr?</h3>
+
+<ul class="checklist">
+
+<li>Check the current IVs before purifying.</li>
+
+<li>Compare Shadow and Purified investment goals.</li>
+
+<li>Consider future evolution into Conkeldurr.</li>
+
+<li>Do not purify automatically only for cosmetic reasons.</li>
+
+<li>Consider collection value before making the decision.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="form-banner">
+
+<span class="form-label label-lucky">
+LUCKY POKÉMON
+</span>
+
+<h2>Lucky Timburr</h2>
+
+<p>
+
+Lucky Timburr is a special trade outcome. Lucky Pokémon are
+particularly attractive for long-term investment because of
+their Lucky status and the advantages associated with
+powering them up.
+
+</p>
+
+</div>
+
+<div class="variant-card lucky">
+
+<div class="variant-icon">
+🍀
+</div>
+
+<h3>Lucky Timburr</h3>
+
+<p>
+
+A Lucky Timburr can be especially interesting if it has
+strong IVs and you plan to evolve it into Gurdurr and
+Conkeldurr.
+
+</p>
+
+</div>
+
+<h3>Why Lucky Timburr Can Be Valuable</h3>
+
+<ul class="checklist">
+
+<li>Useful for long-term evolution projects.</li>
+
+<li>Can be attractive for Stardust-conscious players.</li>
+
+<li>Strong IVs increase investment potential.</li>
+
+<li>Lucky status adds collection value.</li>
+
+<li>Consider evolving strong Lucky specimens.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+<div class="form-banner">
+
+<span class="form-label label-perfect">
+100% IV • PERFECT
+</span>
+
+<h2>100% IV Timburr</h2>
+
+<p>
+
+A perfect Timburr has the maximum possible Individual Values
+for Attack, Defense and HP: 15/15/15.
+
+</p>
+
+</div>
+
+<div class="iv-grid">
+
+<div class="iv-card">
+<strong>15</strong>
+<span>ATTACK IV</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>DEFENSE IV</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>HP IV</span>
+</div>
+
+</div>
+
+<div class="best-move">
+
+<strong>Perfect IV Combination</strong>
+
+<p>
+15 Attack / 15 Defense / 15 HP = 100% IV Timburr
+</p>
+
+</div>
+
+<h3>Should You Evolve a 100% Timburr?</h3>
+
+<p>
+
+A 100% Timburr can be an excellent long-term evolution
+candidate. However, a Pokémon's usefulness also depends on
+its level, moveset, resources and the role you want the final
+evolution to perform.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<div class="form-banner">
+
+<span class="form-label label-xxl">
+XXL SIZE
+</span>
+
+<h2>XXL Timburr</h2>
+
+<p>
+
+XXL Timburr is a size-based variant that can be valuable for
+collectors and Pokémon Showcase-related gameplay.
+
+</p>
+
+</div>
+
+<div class="variant-card xxl">
+
+<div class="variant-icon">
+📏
+</div>
+
+<h3>XXL Timburr</h3>
+
+<p>
+
+XXL Timburr is larger than standard specimens. Size does not
+automatically mean higher combat stats or better IVs.
+
+</p>
+
+</div>
+
+<h3>Should You Keep XXL Timburr?</h3>
+
+<ul class="checklist">
+
+<li>Keep strong XXL specimens for collection purposes.</li>
+
+<li>Consider Pokémon Showcase opportunities.</li>
+
+<li>Check IVs separately from size.</li>
+
+<li>Keep rare XXL Shinies when possible.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<div class="form-banner">
+
+<span class="form-label label-xxs">
+XXS SIZE
+</span>
+
+<h2>XXS Timburr</h2>
+
+<p>
+
+XXS Timburr is an unusually small size variant. It is mainly
+a collection distinction and should be evaluated separately
+from IV quality and battle performance.
+
+</p>
+
+</div>
+
+<div class="variant-card xxs">
+
+<div class="variant-icon">
+🔹
+</div>
+
+<h3>XXS Timburr</h3>
+
+<p>
+
+An XXS Timburr can be rare and interesting for collectors,
+especially when combined with other desirable characteristics
+such as Shiny status.
+
+</p>
+
+</div>
+
+<h3>XXS Timburr Collection Value</h3>
+
+<p>
+
+Size, IVs and special status are separate characteristics.
+An XXS Timburr can therefore also potentially have strong IVs,
+be Lucky, or have other collectible attributes depending on
+current Pokémon GO mechanics.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     ALL VARIANTS
+===================================================== -->
+
+<section class="section" id="variants">
+
+<div class="section-heading">
+
+<h2>All Timburr Forms & Variants</h2>
+
+<p>
+
+Timburr can have several collectible and gameplay-related
+states. Each one should be evaluated independently.
+
+</p>
+
+</div>
+
+<div class="variant-grid">
+
+<div class="variant-card">
+<div class="variant-icon">🥊</div>
+<h3>Regular Timburr</h3>
+<p>Standard version of Timburr.</p>
+</div>
+
+<div class="variant-card shiny">
+<div class="variant-icon">✨</div>
+<h3>Shiny Timburr</h3>
+<p>Alternate collector coloration.</p>
+</div>
+
+<div class="variant-card shadow">
+<div class="variant-icon">🌑</div>
+<h3>Shadow Timburr</h3>
+<p>Shadow battle profile.</p>
+</div>
+
+<div class="variant-card purified">
+<div class="variant-icon">💠</div>
+<h3>Purified Timburr</h3>
+<p>Purified version of an eligible Shadow Timburr.</p>
+</div>
+
+<div class="variant-card lucky">
+<div class="variant-icon">🍀</div>
+<h3>Lucky Timburr</h3>
+<p>Special Pokémon obtained through eligible trading.</p>
+</div>
+
+<div class="variant-card perfect">
+<div class="variant-icon">💯</div>
+<h3>100% Timburr</h3>
+<p>Perfect 15/15/15 IV combination.</p>
+</div>
+
+<div class="variant-card xxl">
+<div class="variant-icon">📏</div>
+<h3>XXL Timburr</h3>
+<p>Exceptionally large specimen.</p>
+</div>
+
+<div class="variant-card xxs">
+<div class="variant-icon">🔹</div>
+<h3>XXS Timburr</h3>
+<p>Exceptionally small specimen.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+<div class="section-heading">
+
+<h2>Which Timburr Should You Keep?</h2>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>Timburr Type</th>
+<th>Best For</th>
+<th>Keep Priority</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>100% IV</td>
+<td>Long-Term Evolution</td>
+<td>Very High</td>
+</tr>
+
+<tr>
+<td>Shadow</td>
+<td>Offensive Projects</td>
+<td>High</td>
+</tr>
+
+<tr>
+<td>Lucky</td>
+<td>Cost-Efficient Investment</td>
+<td>High</td>
+</tr>
+
+<tr>
+<td>Shiny</td>
+<td>Collection</td>
+<td>High</td>
+</tr>
+
+<tr>
+<td>Purified</td>
+<td>Collection / Investment</td>
+<td>Situation Dependent</td>
+</tr>
+
+<tr>
+<td>XXL</td>
+<td>Showcases / Collection</td>
+<td>Useful</td>
+</tr>
+
+<tr>
+<td>XXS</td>
+<td>Collection</td>
+<td>Useful</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="editorial-note">
+
+<strong>Important:</strong>
+
+<p>
+
+A Pokémon with multiple desirable characteristics can be more
+valuable to keep. For example, a high-IV Lucky Timburr or an
+XXL Shiny Timburr may have both gameplay and collection value.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<h2>Timburr Availability</h2>
+
+</div>
+
+<p>
+
+Timburr availability can change through wild encounters,
+events, raids, research, eggs and other Pokémon GO systems.
+Shadow availability can also depend on Team GO Rocket
+rotations.
+
+</p>
+
+<div class="best-move">
+
+<strong>Current Availability</strong>
+
+<p>
+
+Update this section whenever Timburr's encounter methods,
+Shadow availability or event appearances change.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>Timburr FAQ</h2>
+
+</div>
+
+<details>
+
+<summary>What type is Timburr?</summary>
+
+<p>
+Timburr is a pure Fighting-type Pokémon.
+</p>
+
+</details>
+
+<details>
+
+<summary>Can Timburr be Shiny?</summary>
+
+<p>
+Shiny availability depends on current Pokémon GO encounter
+mechanics and eligible Timburr encounters.
+</p>
+
+</details>
+
+<details>
+
+<summary>Can Timburr be Shadow?</summary>
+
+<p>
+Shadow availability depends on current Team GO Rocket
+rotations and Pokémon GO events.
+</p>
+
+</details>
+
+<details>
+
+<summary>Can Shadow Timburr be purified?</summary>
+
+<p>
+An eligible Shadow Timburr can be purified according to
+current Pokémon GO purification mechanics.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is a 100% Timburr?</summary>
+
+<p>
+A 100% Timburr has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+<details>
+
+<summary>Can Timburr be Lucky?</summary>
+
+<p>
+Lucky Pokémon are obtained through eligible Pokémon GO
+trading mechanics.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is XXL Timburr?</summary>
+
+<p>
+XXL Timburr is an unusually large size specimen.
+</p>
+
+</details>
+
+<details>
+
+<summary>What is XXS Timburr?</summary>
+
+<p>
+XXS Timburr is an unusually small size specimen.
+</p>
+
+</details>
+
+<details>
+
+<summary>Does XXL Timburr have better stats?</summary>
+
+<p>
+Size and IVs are separate mechanics. An XXL Timburr is not
+automatically stronger in battle.
+</p>
+
+</details>
+
+<details>
+
+<summary>What does Timburr evolve into?</summary>
+
+<p>
+Timburr evolves into Gurdurr, which can eventually evolve
+into Conkeldurr.
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon availability, Shadow rotations, moves,
+events and game mechanics can change over time.
+
+</p>
+
+<p>
+
+Always verify current in-game information before making major
+investment, evolution or purification decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This website is an independent informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>Timburr Guide</h3>
+
+<ul class="side-nav">
+
+<li><a href="#overview">Overview</a></li>
+
+<li><a href="#type">Type</a></li>
+
+<li><a href="#weaknesses">Weaknesses</a></li>
+
+<li><a href="#evolution">Evolution</a></li>
+
+<li><a href="#regular-timburr">Regular Timburr</a></li>
+
+<li><a href="#shiny">Shiny Timburr</a></li>
+
+<li><a href="#shadow">Shadow Timburr</a></li>
+
+<li><a href="#purified">Purified Timburr</a></li>
+
+<li><a href="#lucky">Lucky Timburr</a></li>
+
+<li><a href="#perfect">100% IV Timburr</a></li>
+
+<li><a href="#xxl">XXL Timburr</a></li>
+
+<li><a href="#xxs">XXS Timburr</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>Related Guides</h3>
+
+<a class="related-link"
+href="/pokemon/gurdurr.html">
+Gurdurr Guide → </a>
+
+<a class="related-link"
+href="/pokemon/conkeldurr.html">
+Conkeldurr Guide → </a>
+
+<a class="related-link"
+href="/pokemon-types/fighting.html">
+Fighting Type Hub → </a>
+
+<a class="related-link"
+href="/pokemon-generations/gen-5.html">
+Gen 5 Pokémon → </a>
+
+</div>
+
+<div class="side-card">
+
+<h3>Timburr Quick Facts</h3>
+
+<p>
+<strong>Type:</strong>
+Fighting
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#532
+</p>
+
+<p>
+<strong>Generation:</strong>
+5
+</p>
+
+<p>
+<strong>Region:</strong>
+Unova
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Gurdurr
+</p>
+
+<p>
+<strong>Final Evolution:</strong>
+Conkeldurr
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

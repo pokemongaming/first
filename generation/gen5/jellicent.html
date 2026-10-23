@@ -1,0 +1,3822 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Jellicent Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+<meta name="description"
+      content="Complete Jellicent Pokémon GO guide covering regular Jellicent, Shiny Jellicent, Shadow and Purified form information, Lucky Jellicent, 100% IV Jellicent, XXL, XXS, stats, max CP, moves, weaknesses, resistances, PvP and more.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/jellicent.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #71d8e5;
+    --accent-2: #4dbbc9;
+
+    --water: #4e9dff;
+    --ghost: #9b70d6;
+    --dark: #77708e;
+    --grass: #5dcf82;
+    --electric: #f4cf52;
+    --ice: #72d6dc;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #f4c95d;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(113,216,229,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(113,216,229,.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(155,112,214,.12),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--accent);
+
+    background:
+        rgba(113,216,229,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing: -.055em;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 1rem;
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.water-tag {
+    color: var(--water);
+}
+
+.ghost-tag {
+    color: var(--ghost);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(113,216,229,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(113,216,229,.30);
+
+    background:
+        rgba(113,216,229,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(113,216,229,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--accent);
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card span {
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+    color: var(--muted);
+    font-size: .65rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(113,216,229,.10),
+            rgba(155,112,214,.05)
+        );
+
+    border:
+        1px solid rgba(113,216,229,.25);
+
+    border-radius: var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   IV
+========================================================= */
+
+.iv-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   FORM / SPECIAL VARIANTS
+========================================================= */
+
+.variant-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.variant-card {
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface-2),
+            #121925
+        );
+}
+
+.variant-card .variant-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.variant-card h3 {
+    margin: 0 0 7px;
+}
+
+.variant-card p {
+    font-size: .76rem;
+}
+
+.shiny-card {
+    border-color:
+        rgba(244,201,93,.35);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(244,201,93,.10),
+            var(--surface-2)
+        );
+}
+
+.shadow-card {
+    border-color:
+        rgba(155,112,214,.35);
+}
+
+.lucky-card {
+    border-color:
+        rgba(244,201,93,.35);
+}
+
+.size-card {
+    border-color:
+        rgba(113,216,229,.30);
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+    padding: 17px;
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+    padding: 20px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+    padding: 15px 0;
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 850;
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">Types</a>
+            <a href="/pokedex.html">Pokédex</a>
+            <a href="/raids/">Raids</a>
+            <a href="/guides/">Guides</a>
+            <a href="/tools/">Tools</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">Home</a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/water.html">
+        Water Type
+    </a>
+
+    <span>›</span>
+
+    <strong>Jellicent</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                UNOVA • #593
+            </span>
+
+            <h1>
+                Jellicent
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Jellicent is a Water/Ghost-type Pokémon from
+                the Unova region. In Pokémon GO, it is known
+                for its bulky defensive profile, Ghost and Water
+                typing, and usefulness in certain PvP formats.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag water-tag">
+                    Water
+                </span>
+
+                <span class="tag ghost-tag">
+                    Ghost
+                </span>
+
+                <span class="tag">
+                    #593
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    XXS / XXL
+                </span>
+
+                <span class="tag">
+                    100% IV
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your properly licensed Jellicent image -->
+
+            <div class="pokemon-placeholder">
+                🪼
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>159</strong>
+
+        <span>ATTACK</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>178</strong>
+
+        <span>DEFENSE</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>225</strong>
+
+        <span>HP</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>2,644</strong>
+
+        <span>MAX CP</span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Overview
+        </h2>
+
+        <p>
+
+            Jellicent is a Water/Ghost-type Pokémon introduced
+            in Generation 5. It evolves from Frillish and has
+            separate male and female appearances.
+
+            Its combination of high HP, solid Defense and dual
+            typing makes Jellicent more notable for endurance
+            and battle utility than raw raid damage.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#593</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 5</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Unova</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Water / Ghost</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>159</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>178</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>225</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>2,644</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌊
+        </div>
+
+        <div>
+
+            <strong>
+                Water / Ghost
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Jellicent's Typing Matters
+    </h3>
+
+    <p>
+
+        Jellicent's Water/Ghost combination gives it an
+        unusual defensive profile. It resists Normal and
+        Fighting particularly well while also resisting
+        several other attacking types.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks deal super-effective
+                damage to Jellicent.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks exploit Jellicent's Water typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost-type attacks are super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attackers can exploit Jellicent's
+                Ghost typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Jellicent strongly resists Fighting attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚪
+            </div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <p>
+                Normal attacks are heavily resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Water typing reduces incoming Fire damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Jellicent resists Water-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice attacks are resisted by Jellicent.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐛
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Jellicent resists Bug-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Stats & Max CP
+        </h2>
+
+        <p>
+
+            Jellicent has 159 Attack, 178 Defense and
+            225 HP. Its Level 50 maximum CP is 2,644.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>159</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>178</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>225</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>LEVEL 50 CP</span>
+            <strong>2,644</strong>
+        </div>
+
+    </div>
+
+
+    <h3>
+        Jellicent CP Benchmarks
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Encounter
+                    </th>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        CP Range
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Research
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                    <td>
+                        950–1,002
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Raid / Egg
+                    </td>
+
+                    <td>
+                        20
+                    </td>
+
+                    <td>
+                        1,267–1,336
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Weather Boost
+                    </td>
+
+                    <td>
+                        25
+                    </td>
+
+                    <td>
+                        1,584–1,670
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Level 50 Hundo
+                    </td>
+
+                    <td>
+                        50
+                    </td>
+
+                    <td>
+                        2,644
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Best Moves
+        </h2>
+
+        <p>
+
+            Jellicent has access to Water- and Ghost-type
+            attacks. Shadow Ball is particularly important
+            when building a Ghost-focused moveset.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Ghost Moveset
+        </strong>
+
+        <p>
+            Hex + Shadow Ball
+        </p>
+
+    </div>
+
+
+    <h3>
+        Jellicent Move Pool
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Hex
+                    </td>
+
+                    <td class="move-type">
+                        Ghost
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Ghost STAB / Energy
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Bubble
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Water STAB
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Shadow Ball
+                    </td>
+
+                    <td class="move-type">
+                        Ghost
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Ghost damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Surf
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Water damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Ice Beam
+                    </td>
+
+                    <td class="move-type">
+                        Ice
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Bubble Beam
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Utility
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Raid Performance
+        </h2>
+
+        <p>
+
+            Jellicent is generally more interesting as a
+            defensive and PvP-oriented Pokémon than as a
+            high-end raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:55%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Moderate
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:88%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvP Utility
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:82%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Good
+        </span>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Jellicent's raid ranking can change as Pokémon GO
+        adds new moves and Pokémon. Use current battle
+        simulations when publishing competitive rankings.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent IV Guide
+        </h2>
+
+        <p>
+
+            A 15/15/15 Jellicent is called a perfect or
+            100% IV Jellicent. However, the best PvP IV
+            spread can be different from the perfect-IV
+            combination.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% Jellicent
+    </h3>
+
+    <p>
+
+        A 100% Jellicent has 15 Attack, 15 Defense and
+        15 HP IVs. For collectors, this is the perfect
+        appraisal combination.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Hundo Jellicent
+        </strong>
+
+        <p>
+            15 / 15 / 15 = 100% IV Jellicent
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent PvP Guide
+        </h2>
+
+        <p>
+
+            Jellicent's high HP, respectable Defense and
+            unusual Water/Ghost typing make it more naturally
+            suited to PvP experimentation than raw raid damage.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Jellicent can be considered for CP-limited formats
+        where its bulk and typing allow it to pressure
+        appropriate opponents. IV optimization should be
+        evaluated separately from the 15/15/15 hundo build.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Jellicent's Level 50 CP ceiling of 2,644 means it
+        does not reach the same maximum CP as many traditional
+        Master League Pokémon.
+
+    </p>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Jellicent's usefulness in Great League depends on
+        current format rules, cup restrictions, moves and
+        available eligible builds.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Jellicent
+        </h2>
+
+        <p>
+
+            Shiny Jellicent is available in Pokémon GO.
+            Its alternate coloration makes it a desirable
+            collector variant.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🪼
+            </div>
+
+            <h3>
+                Regular Jellicent
+            </h3>
+
+            <p>
+                Standard Jellicent appearance.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card shiny-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Jellicent
+            </h3>
+
+            <p>
+                Alternate Shiny coloration. Shiny Jellicent
+                is available through eligible encounters.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shiny Collector Tip
+        </strong>
+
+        <p>
+
+            A Shiny Jellicent with strong IVs can be kept
+            separately from your battle-focused Jellicent
+            collection.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Jellicent
+        </h2>
+
+        <p>
+
+            Shadow Pokémon have a distinct battle mechanic
+            in Pokémon GO. However, Shadow Jellicent should
+            only be marked as obtainable when current
+            Pokémon GO data confirms that Jellicent can be
+            encountered as a Shadow Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shadow-card">
+
+        <div class="variant-icon">
+            🌑
+        </div>
+
+        <h3>
+            Shadow Jellicent
+        </h3>
+
+        <p>
+
+            Database form entry for Shadow Jellicent.
+            Current availability should be connected to
+            your live Shadow Pokémon data before displaying
+            it as obtainable.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Pokémon Mechanics
+    </h3>
+
+    <p>
+
+        Shadow Pokémon deal more damage with their attacks
+        but also take more damage. They also require more
+        Stardust and Candy for powering up.
+
+    </p>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Jellicent
+                    </td>
+
+                    <td>
+                        Jellicent
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Water / Ghost
+                    </td>
+
+                    <td>
+                        Water / Ghost
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Defensive Trade-off
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Takes more damage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Availability note:
+        </strong>
+
+        Shadow availability changes through Team GO Rocket
+        rotations and events. Do not permanently claim that
+        Shadow Jellicent is obtainable unless your live data
+        confirms it.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Jellicent
+        </h2>
+
+        <p>
+
+            Purified Pokémon are created by purifying eligible
+            Shadow Pokémon. If Shadow Jellicent becomes
+            available, its purified form should be treated as
+            a separate collection state.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-icon">
+            💎
+        </div>
+
+        <h3>
+            Purified Jellicent
+        </h3>
+
+        <p>
+
+            Purified Jellicent is a database form/state that
+            depends on Jellicent first being available as a
+            Shadow Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        What Happens When a Pokémon Is Purified?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            The Shadow status is removed.
+        </li>
+
+        <li>
+            The Pokémon receives appraisal improvements.
+        </li>
+
+        <li>
+            Power-up costs are reduced.
+        </li>
+
+        <li>
+            Frustration is replaced with Return when purified.
+        </li>
+
+        <li>
+            The Pokémon remains the same species.
+        </li>
+
+    </ul>
+
+
+    <div class="editorial-note">
+
+        Purification should be treated as an investment decision,
+        not automatically as an upgrade. Compare the Shadow
+        and Purified versions before making the change.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Jellicent
+        </h2>
+
+        <p>
+
+            A Lucky Jellicent is created through trading.
+            Lucky Pokémon have special visual effects in the
+            Pokémon collection and require less Stardust to
+            power up.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card lucky-card">
+
+        <div class="variant-icon">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Jellicent
+        </h3>
+
+        <p>
+
+            Trade for Jellicent when you want a Lucky version
+            for collection purposes or reduced Stardust
+            investment.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Jellicent IV Floor
+    </h3>
+
+    <p>
+
+        Lucky Pokémon have a higher IV floor than ordinary
+        traded Pokémon. A Lucky Jellicent can still have
+        different IV combinations, so check its appraisal
+        after the trade.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Lucky Hundo Goal
+        </strong>
+
+        <p>
+            15 / 15 / 15 Lucky Jellicent = Lucky 100% Jellicent
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Jellicent
+        </h2>
+
+        <p>
+
+            XXL Jellicent is an unusually large specimen.
+            Size classifications are separate from IVs, CP
+            and appraisal quality.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card size-card">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <h3>
+                XXL Jellicent
+            </h3>
+
+            <p>
+
+                An extra-large Jellicent can be kept as a
+                collection specimen. XXL status does not mean
+                that the Pokémon has perfect IVs.
+
+            </p>
+
+        </div>
+
+
+        <div class="variant-card size-card">
+
+            <div class="variant-icon">
+                📊
+            </div>
+
+            <h3>
+                XXL ≠ 100% IV
+            </h3>
+
+            <p>
+
+                Size and IVs are separate properties. An XXL
+                Jellicent can have any IV combination allowed
+                by its encounter.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Jellicent
+        </h2>
+
+        <p>
+
+            XXS Jellicent is an unusually small specimen.
+            Like XXL Pokémon, the XXS classification is
+            independent of IV percentage.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card size-card">
+
+            <div class="variant-icon">
+                📐
+            </div>
+
+            <h3>
+                XXS Jellicent
+            </h3>
+
+            <p>
+
+                Keep XXS Jellicent if you collect size
+                variants or want to complete your Pokémon GO
+                size collection.
+
+            </p>
+
+        </div>
+
+
+        <div class="variant-card size-card">
+
+            <div class="variant-icon">
+                🎯
+            </div>
+
+            <h3>
+                XXS + 100% Jellicent
+            </h3>
+
+            <p>
+
+                An XXS Jellicent can also have perfect IVs.
+                Size and IV percentage are independent
+                characteristics.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL FORMS SUMMARY
+===================================================== -->
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Special Forms & Variants
+        </h2>
+
+        <p>
+
+            Jellicent collectors may encounter several
+            different collection states. These should be
+            tracked independently rather than treating them
+            as simple cosmetic changes.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card shiny-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Jellicent
+            </h3>
+
+            <p>
+                Alternate Shiny appearance.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card shadow-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Jellicent
+            </h3>
+
+            <p>
+                Track only when currently available.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💎
+            </div>
+
+            <h3>
+                Purified Jellicent
+            </h3>
+
+            <p>
+                Created by purifying an eligible Shadow Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card lucky-card">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Jellicent
+            </h3>
+
+            <p>
+                Obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card size-card">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <h3>
+                XXL Jellicent
+            </h3>
+
+            <p>
+                Extra-large size classification.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card size-card">
+
+            <div class="variant-icon">
+                📐
+            </div>
+
+            <h3>
+                XXS Jellicent
+            </h3>
+
+            <p>
+                Extra-small size classification.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     100%
+===================================================== -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% Jellicent
+        </h2>
+
+        <p>
+
+            A 100% Jellicent is a Pokémon with perfect
+            Attack, Defense and HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Level 50 Hundo CP
+        </strong>
+
+        <p>
+            2,644 CP
+        </p>
+
+    </div>
+
+
+    <p>
+
+        A hundo is particularly attractive to collectors,
+        but PvP Jellicent builds may prefer different IV
+        distributions depending on the league and rules.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY / INVESTMENT
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Building a high-level Jellicent requires Candy,
+            Candy XL and Stardust. Before investing heavily,
+            decide whether your Jellicent is intended for
+            collection, PvP or general use.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep high-IV Jellicent for long-term projects.
+        </li>
+
+        <li>
+            Save strong PvP candidates before transferring extras.
+        </li>
+
+        <li>
+            Compare regular and Lucky Jellicent before spending Stardust.
+        </li>
+
+        <li>
+            Keep Shiny Jellicent separately if you collect variants.
+        </li>
+
+        <li>
+            Check the current moveset before expensive investment.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Evolution
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Jellicent evolves from Frillish. Frillish has separate
+        male and female appearances, and Jellicent also has
+        corresponding gender-based appearances.
+
+    </p>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌊
+            </div>
+
+            <h3>
+                Frillish
+            </h3>
+
+            <p>
+                Pre-evolution.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🪼
+            </div>
+
+            <h3>
+                Jellicent
+            </h3>
+
+            <p>
+                Final evolution of Frillish.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Jellicent availability can change through Pokémon GO
+        events, research, evolution availability and other
+        game rotations.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the latest Pokémon GO event and encounter
+            information before publishing a specific current
+            availability claim.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical availability should be separated from
+        current availability so older event information does
+        not appear to be a current encounter method.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Collection Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Jellicent
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        High for collectors
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow battle mechanics
+                    </td>
+
+                    <td>
+                        Availability dependent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        Collection / mechanics
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trade-based Lucky status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        Collector
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        Collector
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Jellicent FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Jellicent?
+        </summary>
+
+        <p>
+            Jellicent is a Water/Ghost-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Jellicent weak to?
+        </summary>
+
+        <p>
+
+            Jellicent is weak to Electric, Grass, Ghost
+            and Dark-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Jellicent's max CP?
+        </summary>
+
+        <p>
+
+            Jellicent reaches 2,644 CP at Level 50 with
+            15/15/15 IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Jellicent available?
+        </summary>
+
+        <p>
+            Yes. Shiny Jellicent is available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Jellicent?
+        </summary>
+
+        <p>
+
+            A 100% Jellicent has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Jellicent be Lucky?
+        </summary>
+
+        <p>
+
+            Yes. Jellicent can become Lucky when obtained
+            through a Lucky trade.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Jellicent?
+        </summary>
+
+        <p>
+
+            XXL Jellicent is an extra-large specimen.
+            XXL status is independent of IV percentage.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Jellicent?
+        </summary>
+
+        <p>
+
+            XXS Jellicent is an extra-small specimen.
+            XXS status does not mean the Pokémon has low IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Jellicent available?
+        </summary>
+
+        <p>
+
+            Shadow availability should be checked against the
+            current Pokémon GO Team GO Rocket rotation rather
+            than permanently assumed.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Purified Jellicent?
+        </summary>
+
+        <p>
+
+            Purified Jellicent would be a Jellicent that was
+            previously Shadow and then purified, if that
+            Shadow form is available.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Jellicent's best moveset?
+        </summary>
+
+        <p>
+
+            Hex and Shadow Ball are a strong Ghost-focused
+            moveset. Water-focused builds can use Jellicent's
+            Water moves depending on the battle role.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Jellicent good for PvP?
+        </summary>
+
+        <p>
+
+            Jellicent can be useful in CP-limited PvP
+            environments because of its bulk and Water/Ghost
+            typing. Current rankings should be checked before
+            building one specifically for a league.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            events, availability and battle rankings can change
+            over time. Always verify current in-game information
+            before making investment decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Jellicent Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#hundo">
+                100% Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Jellicent
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon-types/water.html">
+
+        Water Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/ghost.html">
+
+        Ghost Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/frillish.html">
+
+        Frillish Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/chandelure.html">
+
+        Chandelure Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/gengar.html">
+
+        Gengar Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-5.html">
+
+        Gen 5 Pokémon →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Jellicent Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>Type:</strong>
+        Water / Ghost
+    </p>
+
+
+    <p>
+        <strong>Generation:</strong>
+        5
+    </p>
+
+
+    <p>
+        <strong>Pokédex:</strong>
+        #593
+    </p>
+
+
+    <p>
+        <strong>Evolution:</strong>
+        Frillish → Jellicent
+    </p>
+
+
+    <p>
+        <strong>Max CP:</strong>
+        2,644
+    </p>
+
+
+    <p>
+        <strong>Shiny:</strong>
+        Available
+    </p>
+
+
+    <p>
+        <strong>Buddy Distance:</strong>
+        3 km
+    </p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

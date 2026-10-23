@@ -1,0 +1,4943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Sirfetch'd Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+</title>
+
+<meta name="description"
+      content="Complete Sirfetch'd Pokémon GO guide covering Sirfetch'd stats, Max CP, Fighting typing, weaknesses, resistances, best moves, raids, PvP, Shiny, Shadow, Purified, Lucky, 100% IV, XXL, XXS and evolution from Galarian Farfetch'd.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/sirfetchd.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #d8b36a;
+    --accent-2: #b98b3f;
+
+    --fighting: #d65a42;
+    --normal: #a9a99c;
+
+    --water: #4e9dff;
+    --flying: #8c9cff;
+    --psychic: #ed6c9d;
+    --fairy: #d98ac7;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --gold: #f2c94c;
+    --shiny: #8ed8d8;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(216,179,106,.10),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.94);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(214,90,66,.17),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #17181e,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--fighting);
+
+    background:
+        rgba(214,90,66,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.fighting-tag {
+    color: var(--fighting);
+}
+
+.shiny-tag {
+    color: var(--shiny);
+}
+
+.gold-tag {
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.hero-pokemon img {
+
+    width:
+        min(100%,320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(214,90,66,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+.section-number {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(214,90,66,.30);
+
+    background:
+        rgba(214,90,66,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(214,90,66,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--fighting);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color:
+        var(--fighting);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(214,90,66,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(214,90,66,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+.form-arrow {
+
+    color:
+        var(--accent);
+
+    font-size: 1.4rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   STATUS GRID
+========================================================= */
+
+.status-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.status-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.status-card .status-icon {
+
+    font-size: 1.8rem;
+
+    margin-bottom: 7px;
+}
+
+.status-card strong {
+
+    display: block;
+
+    font-size: 1rem;
+}
+
+.status-card span {
+
+    color:
+        var(--muted);
+
+    font-size: .7rem;
+}
+
+
+/* =========================================================
+   SPECIAL CARDS
+========================================================= */
+
+.shiny-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(142,216,216,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border-color:
+        rgba(142,216,216,.30);
+}
+
+.shadow-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(120,120,120,.10),
+            rgba(0,0,0,.10)
+        );
+}
+
+.lucky-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(242,201,76,.11),
+            rgba(255,255,255,.02)
+        );
+
+    border-color:
+        rgba(242,201,76,.30);
+}
+
+.xxl-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(105,163,255,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+.xxs-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(205,130,255,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.7rem;
+}
+
+.iv-card span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color:
+        var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   WARNING
+========================================================= */
+
+.warning-box {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background:
+        rgba(255,111,125,.07);
+
+    border:
+        1px solid rgba(255,111,125,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.warning-box strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color:
+        var(--danger);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .status-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .status-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .hero-pokemon {
+        min-height: 220px;
+    }
+
+    .pokemon-placeholder {
+
+        width: 200px;
+        height: 200px;
+
+        font-size: 5rem;
+    }
+}
+
+</style>
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sirfetch'd Pokémon GO Guide",
+    "description": "Complete Sirfetch'd Pokémon GO guide covering stats, moves, weaknesses, IVs, Shiny, Shadow, Purified, Lucky, XXL and XXS information.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://pokemongaming.in/pokemon/sirfetchd.html"
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "PokémonGaming"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "PokémonGaming"
+    },
+    "dateModified": "2026-08-31"
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/fighting.html">
+        Fighting Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Sirfetch'd
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                GALAR POKÉMON
+            </span>
+
+            <h1>
+                Sirfetch'd
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Sirfetch'd is a Fighting-type Pokémon introduced
+                in Generation 8. In Pokémon GO, it evolves from
+                Galarian Farfetch'd after meeting its evolution
+                requirements and can be used in both PvE and
+                PvP-focused collections.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag fighting-tag">
+                    Fighting
+                </span>
+
+                <span class="tag">
+                    #865
+                </span>
+
+                <span class="tag">
+                    Gen 8
+                </span>
+
+                <span class="tag">
+                    Galar
+                </span>
+
+                <span class="tag shiny-tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag gold-tag">
+                    100% IV
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!--
+                Replace this placeholder with your own
+                properly licensed Sirfetch'd image.
+
+                Example:
+                <img src="/images/pokemon/sirfetchd.webp"
+                     alt="Sirfetch'd Pokémon GO">
+            -->
+
+            <div class="pokemon-placeholder">
+                🦆
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            248
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            176
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            158
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~3,200
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 · OVERVIEW
+        </span>
+
+        <h2>
+            Sirfetch'd Overview
+        </h2>
+
+        <p>
+
+            Sirfetch'd is the evolved form of Galarian Farfetch'd.
+            Unlike Kantonian Farfetch'd, the Galarian form evolves
+            into Sirfetch'd and belongs to the Fighting type.
+
+            Its defining visual feature is the large leek it carries
+            into battle, which also forms part of its identity in
+            the Pokémon series.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#865</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 8</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Galar</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Fighting</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>248</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>176</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>158</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~3,200</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 · TYPE
+        </span>
+
+        <h2>
+            Sirfetch'd Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🥊
+        </div>
+
+        <div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Sirfetch'd's Typing Matters
+    </h3>
+
+    <p>
+
+        Sirfetch'd is a pure Fighting-type Pokémon. Fighting
+        attacks are particularly valuable against Normal, Rock,
+        Steel, Ice and Dark-type targets.
+
+        Its pure typing also means its defensive matchups are
+        relatively straightforward compared with dual-type
+        Fighting Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 · TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Sirfetch'd Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks deal super-effective damage
+                to Fighting-type Sirfetch'd.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🕊️
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying-type attacks are super effective against
+                Sirfetch'd.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic-type attacks also exploit Sirfetch'd's
+                Fighting typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Fighting-type Pokémon resist Rock-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪲
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks are resisted by Fighting-type
+                Sirfetch'd.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Fighting typing gives Sirfetch'd a useful
+                resistance to Dark attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 · STATS
+        </span>
+
+        <h2>
+            Sirfetch'd Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Sirfetch'd has a strong Attack stat for a Pokémon
+            that can be used in Fighting-focused builds. Its
+            overall performance depends heavily on moveset,
+            level, IVs and the battle format.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>248</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>176</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>158</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~3,200</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP is calculated from base stats, IVs and
+            Pokémon level. The maximum CP shown on this page is
+            intended as a database reference and should be checked
+            against your current game data before publication.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     05 EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 · EVOLUTION
+        </span>
+
+        <h2>
+            Sirfetch'd Evolution
+        </h2>
+
+        <p>
+
+            Sirfetch'd evolves from Galarian Farfetch'd.
+            The evolution requirement is different from a normal
+            Candy-only evolution, so trainers should check the
+            current in-game evolution screen before investing
+            resources.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Galarian Farfetch'd
+            </strong>
+
+            <span>
+                Fighting
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Sirfetch'd
+            </strong>
+
+            <span>
+                Fighting
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Sirfetch'd Evolution Requirement
+    </h3>
+
+    <p>
+
+        Galarian Farfetch'd requires a special evolution condition
+        involving successful Excellent Throws before it can evolve
+        into Sirfetch'd. The required number and current mechanics
+        should be verified in Pokémon GO before publishing a
+        time-sensitive guide.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Tip
+        </strong>
+
+        <p>
+
+            If you are collecting multiple Sirfetch'd, it can be
+            useful to complete the evolution requirement while
+            catching and preparing Galarian Farfetch'd rather than
+            waiting until you want to evolve a specific specimen.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     06 MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 · MOVESET
+        </span>
+
+        <h2>
+            Sirfetch'd Best Moves
+        </h2>
+
+        <p>
+
+            Sirfetch'd can use Fighting-focused attacks for
+            appropriate matchups. Its ideal moveset depends on
+            whether you are building it for raids, gyms or PvP.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Fighting-Focused Build
+        </strong>
+
+        <p>
+            Use the strongest currently available Fighting-type
+            combination for the role you want Sirfetch'd to fill.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fighting Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        STAB pressure
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Fighting Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Fighting
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Fighting damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Coverage Move
+                    </td>
+
+                    <td>
+                        Varies
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Move availability:
+        </strong>
+
+        <p>
+
+            Pokémon GO moves can change through updates, events
+            and move reworks. Connect this section to your live
+            move database rather than permanently hard-coding
+            event-sensitive recommendations.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     07 RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 · RAID & PVE
+        </span>
+
+        <h2>
+            Sirfetch'd Raid Performance
+        </h2>
+
+        <p>
+
+            Sirfetch'd can provide Fighting-type damage, but its
+            practical raid value depends on the current Fighting
+            attacker pool and the moves available to it.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Fighting Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:78%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Good
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Utility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:72%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Useful
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvP Potential
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:82%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Strong
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Sirfetch'd?
+    </h3>
+
+    <p>
+
+        Sirfetch'd is more interesting as a specialized investment
+        when you enjoy using it in PvP or want a Fighting-type
+        collection. For raids, compare it with your strongest
+        currently available Fighting attackers before spending
+        large amounts of Stardust and Candy XL.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     08 COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 · COUNTERS
+        </span>
+
+        <h2>
+            What Counters Sirfetch'd?
+        </h2>
+
+        <p>
+
+            Sirfetch'd is a pure Fighting-type Pokémon, making
+            Flying, Psychic and Fairy attackers the main counter
+            categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🕊️
+            </div>
+
+            <strong>
+                Flying Attackers
+            </strong>
+
+            <p>
+                Flying-type attacks exploit Sirfetch'd's
+                Fighting weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic Attackers
+            </strong>
+
+            <p>
+                Psychic attackers can deal super-effective
+                damage to Sirfetch'd.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy Attackers
+            </strong>
+
+            <p>
+                Fairy-type attacks are also super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     09 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 · IV GUIDE
+        </span>
+
+        <h2>
+            Sirfetch'd IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add extra points to Attack,
+            Defense and HP. A 15/15/15 Sirfetch'd is considered
+            a perfect IV specimen.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Does 100% Sirfetch'd Mean?
+    </h3>
+
+    <p>
+
+        A 100% Sirfetch'd has perfect 15/15/15 IVs.
+        This is commonly referred to as a "hundo."
+
+        A hundo is especially desirable for collectors and
+        players who want maximum possible IV values.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% Sirfetch'd
+        </strong>
+
+        <p>
+            Attack 15 · Defense 15 · HP 15 · IV Percentage 100%
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     10 100% SIRFETCH'D
+===================================================== -->
+
+<section class="section" id="100-percent">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 · HUNDO
+        </span>
+
+        <h2>
+            100% Sirfetch'd
+        </h2>
+
+        <p>
+
+            A 100% Sirfetch'd has 15 Attack, 15 Defense and
+            15 HP IVs. These specimens are often kept for
+            collection purposes or long-term investment.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Attack
+            </strong>
+
+            <p>
+                15 / 15
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🛡️
+            </div>
+
+            <strong>
+                Defense
+            </strong>
+
+            <p>
+                15 / 15
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ❤️
+            </div>
+
+            <strong>
+                HP
+            </strong>
+
+            <p>
+                15 / 15
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up a Hundo Sirfetch'd?
+    </h3>
+
+    <p>
+
+        If you enjoy Sirfetch'd or want a perfect-IV Fighting
+        collection, a hundo can be an excellent long-term
+        candidate.
+
+        For competitive investment, however, compare the
+        Pokémon's current PvP and PvE performance before
+        committing large amounts of Stardust and Candy XL.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     11 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 · SHINY
+        </span>
+
+        <h2>
+            Shiny Sirfetch'd
+        </h2>
+
+        <p>
+
+            Shiny Sirfetch'd is the alternate coloration of
+            Sirfetch'd. It evolves from Shiny Galarian Farfetch'd
+            when that Pokémon meets the evolution requirements.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card shiny-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Sirfetch'd
+            </strong>
+
+            <p>
+                Alternate Shiny coloration.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting Type
+            </strong>
+
+            <p>
+                Shiny status does not change Sirfetch'd's typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Collection Value
+            </strong>
+
+            <p>
+                Particularly desirable for Shiny collectors.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Sirfetch'd Evolution
+    </h3>
+
+    <p>
+
+        A Shiny Galarian Farfetch'd remains Shiny after evolving
+        into Shiny Sirfetch'd. The evolution does not remove the
+        Shiny status.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     12 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 · SHADOW
+        </span>
+
+        <h2>
+            Shadow Sirfetch'd
+        </h2>
+
+        <p>
+
+            Shadow Sirfetch'd should be treated as a separate
+            battle status rather than a different species.
+
+            If Shadow Sirfetch'd becomes obtainable through
+            Pokémon GO's current Shadow mechanics, its Shadow
+            battle characteristics should be evaluated separately
+            from standard Sirfetch'd.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card shadow-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Status
+            </strong>
+
+            <p>
+                Shadow Pokémon have altered battle characteristics.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting Type
+            </strong>
+
+            <p>
+                Shadow status does not inherently change the
+                Pokémon's underlying type.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚠️
+            </div>
+
+            <strong>
+                Availability
+            </strong>
+
+            <p>
+                Shadow availability is controlled by the
+                current Team GO Rocket rotation.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Sirfetch'd vs Regular Sirfetch'd
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Sirfetch'd
+                    </td>
+
+                    <td>
+                        Sirfetch'd
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes, when applicable
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Depends on eligibility
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="warning-box">
+
+        <strong>
+            Availability warning
+        </strong>
+
+        <p>
+
+            Do not permanently label Shadow Sirfetch'd as
+            currently obtainable unless your database is connected
+            to current Pokémon GO Shadow availability data.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     13 PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 · PURIFIED
+        </span>
+
+        <h2>
+            Purified Sirfetch'd
+        </h2>
+
+        <p>
+
+            Purified Sirfetch'd would represent a Sirfetch'd
+            that has been purified from Shadow status.
+
+            Purification is a separate gameplay state and should
+            not be confused with evolution or a new Pokémon form.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Pokémon
+                    </td>
+
+                    <td>
+                        Sirfetch'd
+                    </td>
+
+                    <td>
+                        Sirfetch'd
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not yet performed
+                    </td>
+
+                    <td>
+                        Performed
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Sirfetch'd?
+    </h3>
+
+    <p>
+
+        Do not automatically purify a Shadow Pokémon simply
+        because purification increases its IVs.
+
+        If Shadow Sirfetch'd is ever available, compare the
+        Shadow and purified versions according to your intended
+        raid, PvP and collection goals before making the decision.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     14 LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 · LUCKY
+        </span>
+
+        <h2>
+            Lucky Sirfetch'd
+        </h2>
+
+        <p>
+
+            Lucky Sirfetch'd is not a separate species or evolution
+            form. It is a special Pokémon status obtained through
+            trading mechanics.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card lucky-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Sirfetch'd
+            </strong>
+
+            <p>
+                A traded Sirfetch'd that becomes Lucky.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💰
+            </div>
+
+            <strong>
+                Lower Power-Up Cost
+            </strong>
+
+            <p>
+                Lucky Pokémon receive a Stardust discount when
+                powering them up.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Minimum IV Floor
+            </strong>
+
+            <p>
+                Lucky Pokémon have a guaranteed minimum IV
+                floor after the trade.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Sirfetch'd?
+    </h3>
+
+    <p>
+
+        Lucky Sirfetch'd can be attractive to collectors and
+        players who want to reduce Stardust costs when powering
+        up a useful specimen.
+
+        A Lucky Pokémon is especially interesting when combined
+        with strong IVs, a useful moveset or a desirable Shiny
+        status.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     15 XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 · XXL
+        </span>
+
+        <h2>
+            XXL Sirfetch'd
+        </h2>
+
+        <p>
+
+            XXL Sirfetch'd is an extra-large size variation.
+            Size is a separate attribute and does not create a
+            different species.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card xxl-card">
+
+            <div class="effect-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL
+            </strong>
+
+            <p>
+                Extra-large Pokémon size category.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Same Species
+            </strong>
+
+            <p>
+                XXL Sirfetch'd remains Sirfetch'd.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏆
+            </div>
+
+            <strong>
+                Collection Value
+            </strong>
+
+            <p>
+                Desirable for size and collection-focused
+                trainers.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Does XXL Change Sirfetch'd's Battle Stats?
+    </h3>
+
+    <p>
+
+        Size classification should not be treated as a replacement
+        for IVs or base stats. A trainer should evaluate Sirfetch'd's
+        IVs, level and battle performance separately from its size.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     16 XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 · XXS
+        </span>
+
+        <h2>
+            XXS Sirfetch'd
+        </h2>
+
+        <p>
+
+            XXS Sirfetch'd is an extra-small size variation.
+            Like XXL, it is a size classification rather than a
+            separate Pokémon species.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card xxs-card">
+
+            <div class="effect-icon">
+                📐
+            </div>
+
+            <strong>
+                XXS
+            </strong>
+
+            <p>
+                Extra-small Pokémon size category.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🥬
+            </div>
+
+            <strong>
+                Same Pokémon
+            </strong>
+
+            <p>
+                XXS Sirfetch'd remains a Fighting-type Sirfetch'd.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏅
+            </div>
+
+            <strong>
+                Collector Target
+            </strong>
+
+            <p>
+                Useful for trainers building complete size
+                collections.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     17 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 · PVP
+        </span>
+
+        <h2>
+            Sirfetch'd PvP Guide
+        </h2>
+
+        <p>
+
+            Sirfetch'd can be interesting in PvP because of its
+            Fighting typing, high Attack and access to charged
+            move pressure.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Great League performance depends heavily on CP, IV
+        distribution, moveset and the current Cup or Open
+        Great League metagame.
+
+        A lower-Attack IV spread can sometimes be desirable
+        in CP-limited leagues because it can allow a Pokémon
+        to reach a higher level before hitting the CP cap.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Sirfetch'd can also be evaluated for Ultra League,
+        particularly when its moves provide useful pressure
+        against the current meta.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Sirfetch'd's maximum CP makes Master League a less
+        natural environment than Great or Ultra League.
+        Current rankings should always be checked before
+        recommending it as a Master League investment.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            PvP IV Reminder
+        </strong>
+
+        <p>
+
+            The best IV spread for PvP is not necessarily
+            15/15/15. Use a league-specific PvP ranking tool
+            when optimizing a Sirfetch'd for CP-limited formats.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     18 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 · RESOURCES
+        </span>
+
+        <h2>
+            Sirfetch'd Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Powering up Sirfetch'd requires Candy and Stardust,
+            with Candy XL becoming increasingly important for
+            high-level investments.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep extra Candy for useful evolutions and trades.
+        </li>
+
+        <li>
+            Save Candy XL for long-term investment candidates.
+        </li>
+
+        <li>
+            Check IVs before committing large amounts of Stardust.
+        </li>
+
+        <li>
+            Check the current moveset before Elite TM decisions.
+        </li>
+
+        <li>
+            Compare Sirfetch'd with other Fighting attackers.
+        </li>
+
+        <li>
+            Keep interesting Shiny, Lucky, XXL and XXS specimens.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     19 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 · AVAILABILITY
+        </span>
+
+        <h2>
+            Sirfetch'd Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Sirfetch'd is obtained through the evolution of
+        Galarian Farfetch'd rather than being treated as a
+        conventional wild encounter.
+
+        Encounter and evolution availability can change as
+        Pokémon GO introduces new events and mechanics.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO encounter, event and
+            evolution information before publishing a permanent
+            availability statement.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     20 SPECIAL STATUS COMPARISON
+===================================================== -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 · VARIANTS
+        </span>
+
+        <h2>
+            Sirfetch'd Special Statuses Compared
+        </h2>
+
+        <p>
+
+            These labels describe different Pokémon GO
+            characteristics. They should not all be treated
+            as separate Pokémon forms.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Changes Species?
+                    </th>
+
+                    <th>
+                        Main Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Sirfetch'd
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Battle / Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow battle status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Battle / Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Previously Shadow, then purified
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Collection / Battle
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Special traded status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Lower Stardust cost
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Perfect IV
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Size collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Size collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     21 INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 · INVESTMENT
+        </span>
+
+        <h2>
+            Should You Invest in Sirfetch'd?
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                PvE Players
+            </strong>
+
+            <p>
+
+                Compare Sirfetch'd with your strongest current
+                Fighting-type raid attackers before investing.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🏆
+            </div>
+
+            <strong>
+                PvP Players
+            </strong>
+
+            <p>
+
+                Evaluate the current Great and Ultra League
+                metagame before building one.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Collectors
+            </strong>
+
+            <p>
+
+                Shiny, Lucky, 100%, XXL and XXS specimens can
+                make interesting collection targets.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Long-Term Investment Checklist
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the Pokémon's IVs.
+        </li>
+
+        <li>
+            Check the current moveset.
+        </li>
+
+        <li>
+            Decide whether the goal is PvE, PvP or collection.
+        </li>
+
+        <li>
+            Consider Candy XL availability.
+        </li>
+
+        <li>
+            Compare against other Fighting Pokémon.
+        </li>
+
+        <li>
+            Keep exceptional Shiny, Lucky, XXL and XXS examples.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     22 BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 · BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Sirfetch'd
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Battle
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the opponent's weaknesses.
+        </li>
+
+        <li>
+            Confirm Sirfetch'd has the appropriate moves.
+        </li>
+
+        <li>
+            Check level and IVs.
+        </li>
+
+        <li>
+            Consider the battle format.
+        </li>
+
+        <li>
+            Compare Sirfetch'd with alternative Fighting Pokémon.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        PvE Team Building
+    </h3>
+
+    <p>
+
+        Sirfetch'd should be selected according to the raid
+        boss, moveset and available Fighting attackers.
+
+        A Pokémon with slightly lower individual stats can
+        sometimes be more useful if its moveset and practical
+        battle performance are better suited to the matchup.
+
+    </p>
+
+
+    <h3>
+        PvP Team Building
+    </h3>
+
+    <p>
+
+        In PvP, Sirfetch'd should be evaluated as part of a
+        complete team rather than as an isolated Pokémon.
+
+        Its weaknesses to Flying, Psychic and Fairy attacks
+        mean teammates should be selected to cover those
+        vulnerabilities.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     23 FORMS / STATUS
+===================================================== -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            23 · FORM & STATUS GUIDE
+        </span>
+
+        <h2>
+            Sirfetch'd Form & Status Guide
+        </h2>
+
+        <p>
+
+            Sirfetch'd itself is the evolved Pokémon species.
+            Shiny, Lucky, Shadow, Purified, 100%, XXL and XXS
+            describe different attributes or statuses that may
+            apply to an individual Sirfetch'd.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-grid">
+
+
+        <div class="status-card">
+
+            <div class="status-icon">
+                🥊
+            </div>
+
+            <strong>
+                Regular
+            </strong>
+
+            <span>
+                Standard Sirfetch'd
+            </span>
+
+        </div>
+
+
+        <div class="status-card shiny-card">
+
+            <div class="status-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <span>
+                Alternate coloration
+            </span>
+
+        </div>
+
+
+        <div class="status-card shadow-card">
+
+            <div class="status-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <span>
+                Shadow status when available
+            </span>
+
+        </div>
+
+
+        <div class="status-card lucky-card">
+
+            <div class="status-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <span>
+                Trade-related status
+            </span>
+
+        </div>
+
+
+        <div class="status-card">
+
+            <div class="status-icon">
+                💯
+            </div>
+
+            <strong>
+                100%
+            </strong>
+
+            <span>
+                Perfect 15/15/15 IV
+            </span>
+
+        </div>
+
+
+        <div class="status-card xxl-card">
+
+            <div class="status-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL
+            </strong>
+
+            <span>
+                Extra-large size
+            </span>
+
+        </div>
+
+
+        <div class="status-card xxs-card">
+
+            <div class="status-icon">
+                📐
+            </div>
+
+            <strong>
+                XXS
+            </strong>
+
+            <span>
+                Extra-small size
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     24 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            24 · FAQ
+        </span>
+
+        <h2>
+            Sirfetch'd FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Sirfetch'd?
+        </summary>
+
+        <p>
+
+            Sirfetch'd is a pure Fighting-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Sirfetch'd weak against?
+        </summary>
+
+        <p>
+
+            Sirfetch'd is weak to Flying, Psychic and Fairy-type
+            attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Sirfetch'd evolve?
+        </summary>
+
+        <p>
+
+            Sirfetch'd is the evolution of Galarian Farfetch'd.
+            Sirfetch'd itself does not evolve further.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do you evolve Galarian Farfetch'd into Sirfetch'd?
+        </summary>
+
+        <p>
+
+            Galarian Farfetch'd has a special evolution requirement
+            involving successful Excellent Throws. Check the
+            current in-game evolution requirement before evolving.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Sirfetch'd available?
+        </summary>
+
+        <p>
+
+            Shiny Sirfetch'd can exist as the evolved form of
+            Shiny Galarian Farfetch'd when the Shiny species is
+            available through eligible Pokémon GO encounters.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is 100% Sirfetch'd?
+        </summary>
+
+        <p>
+
+            100% Sirfetch'd has perfect 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Lucky Sirfetch'd?
+        </summary>
+
+        <p>
+
+            Lucky Sirfetch'd is a Sirfetch'd that obtained Lucky
+            status through Pokémon GO's trading mechanics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Lucky Sirfetch'd have better IVs?
+        </summary>
+
+        <p>
+
+            Lucky Pokémon have a guaranteed minimum IV floor,
+            but becoming Lucky does not guarantee perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Sirfetch'd?
+        </summary>
+
+        <p>
+
+            XXL Sirfetch'd is an extra-large Sirfetch'd based on
+            Pokémon GO's size system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Sirfetch'd?
+        </summary>
+
+        <p>
+
+            XXS Sirfetch'd is an extra-small Sirfetch'd based on
+            Pokémon GO's size system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXL Sirfetch'd have higher Attack?
+        </summary>
+
+        <p>
+
+            Size should not be confused with IVs or base stats.
+            Evaluate Sirfetch'd's actual battle statistics
+            separately from its size category.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Sirfetch'd available?
+        </summary>
+
+        <p>
+
+            Shadow availability depends on Pokémon GO's current
+            Team GO Rocket and Shadow Pokémon rotation. Check
+            current game data before claiming that Shadow
+            Sirfetch'd is obtainable.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Purified Sirfetch'd?
+        </summary>
+
+        <p>
+
+            Purified Sirfetch'd would refer to a Sirfetch'd that
+            was previously Shadow and subsequently purified,
+            assuming the relevant Shadow species is eligible
+            under the current game mechanics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Sirfetch'd good for raids?
+        </summary>
+
+        <p>
+
+            Sirfetch'd can contribute Fighting-type damage,
+            although its raid value should be compared with the
+            current pool of Fighting attackers and available
+            movesets.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Sirfetch'd good in PvP?
+        </summary>
+
+        <p>
+
+            Sirfetch'd can be useful in PvP depending on league,
+            moveset, IV distribution and the current metagame.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I keep a 100% Sirfetch'd?
+        </summary>
+
+        <p>
+
+            Yes, a 100% Sirfetch'd is a perfect-IV specimen and
+            can be valuable for collection or long-term investment.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Sirfetch'd be Lucky?
+        </summary>
+
+        <p>
+
+            Pokémon statuses such as Shiny and Lucky can coexist.
+            A Shiny Sirfetch'd obtained through a qualifying trade
+            can therefore be a particularly desirable collection
+            piece.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a Lucky Sirfetch'd be 100% IV?
+        </summary>
+
+        <p>
+
+            Yes. Lucky Pokémon have an IV floor but are not
+            automatically perfect. A Lucky Sirfetch'd can
+            potentially have 15/15/15 IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is the best Sirfetch'd IV?
+        </summary>
+
+        <p>
+
+            For general maximum-stat purposes, 15/15/15 is the
+            perfect IV combination. PvP can use different IV
+            spreads depending on the league and desired stat
+            product.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            PokémonGaming.in is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounters, events, Shadow availability, size
+            classifications and other game systems can change
+            over time.
+
+        </p>
+
+        <p>
+
+            Always verify current in-game information before
+            spending Stardust, Candy, Candy XL or Elite TMs.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This website is an independent
+            informational resource.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Sirfetch'd Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Performance
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#100-percent">
+                100% Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Sirfetch'd
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/galarian-farfetchd.html">
+
+        Galarian Farfetch'd Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/fighting.html">
+
+        Fighting Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/lucario.html">
+
+        Lucario Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/machamp.html">
+
+        Machamp Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/kommo-o.html">
+
+        Kommo-o Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-8.html">
+
+        Gen 8 Pokémon →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Sirfetch'd Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>
+            Type:
+        </strong>
+        Fighting
+    </p>
+
+
+    <p>
+        <strong>
+            Pokédex:
+        </strong>
+        #865
+    </p>
+
+
+    <p>
+        <strong>
+            Generation:
+        </strong>
+        8
+    </p>
+
+
+    <p>
+        <strong>
+            Region:
+        </strong>
+        Galar
+    </p>
+
+
+    <p>
+        <strong>
+            Evolution:
+        </strong>
+        Galarian Farfetch'd
+    </p>
+
+
+    <p>
+        <strong>
+            Weaknesses:
+        </strong>
+        Flying, Psychic, Fairy
+    </p>
+
+
+    <p>
+        <strong>
+            Special Statuses:
+        </strong>
+        Shiny, Lucky, Shadow/Purified where applicable,
+        100%, XXL, XXS
+    </p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

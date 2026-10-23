@@ -1,0 +1,3718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eevee Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny & Shadow Eevee</title>
+
+<meta name="description"
+      content="Complete Eevee Pokémon GO guide covering regular Eevee, Shiny Eevee, Shadow Eevee, stats, max CP, weaknesses, resistances, best moves, IVs, evolution family, PvP, raids, availability and evolution tips.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/eevee.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #d99a55;
+    --accent-2: #b96f32;
+
+    --normal: #d9b77c;
+    --water: #4e9dff;
+    --fire: #ff7043;
+    --electric: #f4c542;
+    --grass: #5dcf82;
+    --ice: #72d6dc;
+    --psychic: #ef78a6;
+    --dark: #85729b;
+    --fairy: #e99ac8;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(217,154,85,.10),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(217,154,85,.16),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--accent);
+
+    background:
+        rgba(217,154,85,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem, 5vw, 4.5rem);
+
+    letter-spacing: -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 1rem;
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(217,154,85,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+}
+
+.section-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(217,154,85,.30);
+
+    background:
+        rgba(217,154,85,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(217,154,85,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--accent);
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-card .effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card small,
+.effect-card span {
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px;
+
+    border: 1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+    background: var(--surface-2);
+    text-align: left;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(217,154,85,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(217,154,85,.25);
+
+    border-radius: var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background: var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background: var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.form-node {
+    min-width: 135px;
+
+    padding: 16px 22px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+.form-arrow {
+    color: var(--accent);
+
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   EVOLUTION GRID
+========================================================= */
+
+.evolution-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.evolution-card {
+    padding: 20px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.evolution-card .emoji {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.evolution-card strong {
+    display: block;
+}
+
+.evolution-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .7rem;
+
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   IV GRID
+========================================================= */
+
+.iv-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+
+    font-size: 1.35rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.form-card {
+    padding: 24px;
+
+    border-radius: 20px;
+
+    border: 1px solid var(--border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.04),
+            rgba(255,255,255,.015)
+        );
+
+    margin-top: 18px;
+}
+
+.shadow-card {
+    border-color:
+        rgba(100,100,130,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            #151523,
+            #0d0f18
+        );
+}
+
+.shiny-card {
+    border-color:
+        rgba(240,210,100,.30);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(240,210,100,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+.form-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+.form-title-icon {
+    font-size: 2rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .evolution-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .iv-grid,
+    .evolution-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .form-tree {
+        flex-direction: column;
+    }
+
+    .form-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">Types</a>
+
+            <a href="/pokedex.html">Pokédex</a>
+
+            <a href="/raids/">Raids</a>
+
+            <a href="/guides/">Guides</a>
+
+            <a href="/tools/">Tools</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">Home</a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">Pokémon Database</a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/normal.html">Normal Type</a>
+
+    <span>›</span>
+
+    <strong>Eevee</strong>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                POKÉMON GO DATABASE
+            </span>
+
+            <h1>
+                Eevee
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Eevee is a Normal-type Pokémon famous for its
+                unusual evolution family. In Pokémon GO, Eevee
+                can evolve into several different Pokémon,
+                making it one of the most flexible Pokémon for
+                collectors and evolution-focused players.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag normal-tag">
+                    Normal
+                </span>
+
+                <span class="tag">
+                    #133
+                </span>
+
+                <span class="tag">
+                    Gen 1
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Shadow Available
+                </span>
+
+                <span class="tag">
+                    Evolution Family
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace emoji with your properly licensed Eevee asset -->
+
+            <div class="pokemon-placeholder">
+                🦊
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>104</strong>
+
+        <span>ATTACK</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>114</strong>
+
+        <span>DEFENSE</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>146</strong>
+
+        <span>HP</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>1,071</strong>
+
+        <span>MAX CP</span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     01 OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 · OVERVIEW
+        </span>
+
+        <h2>
+            Eevee Overview
+        </h2>
+
+        <p>
+
+            Eevee is a Generation 1 Normal-type Pokémon from
+            the Kanto region. Unlike most Pokémon, Eevee has
+            multiple evolution possibilities in Pokémon GO.
+
+            This makes Eevee particularly useful for players
+            who enjoy collecting different evolution forms.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#133</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 1</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Kanto</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Normal</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>104</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>114</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>146</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>1,071</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     02 TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 · TYPE
+        </span>
+
+        <h2>
+            Eevee Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            ⭐
+        </div>
+
+        <div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Does Normal Typing Mean?
+    </h3>
+
+    <p>
+
+        Regular Eevee is a pure Normal-type Pokémon.
+        Its typing gives it a straightforward weakness
+        profile, but it does not provide the offensive
+        type specialization that many evolved Eeveelutions
+        have.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     03 WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 · TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Eevee Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weakness
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks deal super-effective
+                damage against Normal-type Eevee.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistance
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Normal-type Eevee is resistant to Ghost-type
+                attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Eevee's type matchups apply to the regular species.
+        Its evolved forms can have completely different
+        typings and therefore different weaknesses and
+        resistances.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     04 STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 · STATS
+        </span>
+
+        <h2>
+            Eevee Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Eevee is not designed as a high-end raid attacker.
+            Its primary appeal in Pokémon GO comes from its
+            evolution family, collection value and the variety
+            of Pokémon that can be obtained from it.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>104</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>114</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>146</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>1,071</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            CP depends on a Pokémon's underlying stats,
+            individual values and level. A higher CP does
+            not automatically mean a better IV spread.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     05 MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 · MOVES
+        </span>
+
+        <h2>
+            Eevee Best Moves
+        </h2>
+
+        <p>
+
+            Eevee itself is generally not a priority Pokémon
+            for raid damage. Its moveset becomes much more
+            important after evolving it into one of its
+            specialized forms.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Eevee Battle Recommendation
+        </strong>
+
+        <p>
+
+            Use Eevee primarily as an evolution candidate
+            rather than as a dedicated raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Category</th>
+
+                    <th>Role</th>
+
+                    <th>Recommendation</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fast Move
+                    </td>
+
+                    <td>
+                        General battle
+                    </td>
+
+                    <td>
+                        Check current in-game moveset
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Charged Move
+                    </td>
+
+                    <td>
+                        General battle
+                    </td>
+
+                    <td>
+                        Check current in-game moveset
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="move-name">
+                        Evolution
+                    </td>
+
+                    <td>
+                        Main purpose
+                    </td>
+
+                    <td>
+                        Prioritize the desired Eeveelution
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     06 RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 · RAID USE
+        </span>
+
+        <h2>
+            Is Eevee Good for Raids?
+        </h2>
+
+        <p>
+
+            Regular Eevee is not normally considered a
+            high-priority raid attacker. Its value comes
+            primarily from evolving it into specialized
+            Eeveelutions.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 35%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Evolution Value
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 95%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating: 100%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Excellent
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Eevee?
+    </h3>
+
+    <p>
+
+        Powering up Eevee itself is usually less important
+        than saving Candy and Stardust for an Eeveelution
+        or another Pokémon with a stronger battle role.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     07 EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 · EVOLUTION FAMILY
+        </span>
+
+        <h2>
+            Eevee Evolution Family
+        </h2>
+
+        <p>
+
+            Eevee is one of the most unusual Pokémon in
+            Pokémon GO because it can evolve into multiple
+            different species.
+
+        </p>
+
+    </div>
+
+
+    <div class="evolution-grid">
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                💧
+            </div>
+
+            <strong>
+                Vaporeon
+            </strong>
+
+            <span>
+                Water
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                ⚡
+            </div>
+
+            <strong>
+                Jolteon
+            </strong>
+
+            <span>
+                Electric
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                🔥
+            </div>
+
+            <strong>
+                Flareon
+            </strong>
+
+            <span>
+                Fire
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                🌙
+            </div>
+
+            <strong>
+                Umbreon
+            </strong>
+
+            <span>
+                Dark
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                ☀️
+            </div>
+
+            <strong>
+                Espeon
+            </strong>
+
+            <span>
+                Psychic
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                🍃
+            </div>
+
+            <strong>
+                Leafeon
+            </strong>
+
+            <span>
+                Grass
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                ❄️
+            </div>
+
+            <strong>
+                Glaceon
+            </strong>
+
+            <span>
+                Ice
+            </span>
+
+        </div>
+
+
+        <div class="evolution-card">
+
+            <div class="emoji">
+                💗
+            </div>
+
+            <strong>
+                Sylveon
+            </strong>
+
+            <span>
+                Fairy
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Eevee Evolution Overview
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Eeveelution
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Evolution Method
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Vaporeon</td>
+                    <td>Water</td>
+                    <td>Evolution method / naming trick</td>
+                </tr>
+
+                <tr>
+                    <td>Jolteon</td>
+                    <td>Electric</td>
+                    <td>Evolution method / naming trick</td>
+                </tr>
+
+                <tr>
+                    <td>Flareon</td>
+                    <td>Fire</td>
+                    <td>Evolution method / naming trick</td>
+                </tr>
+
+                <tr>
+                    <td>Espeon</td>
+                    <td>Psychic</td>
+                    <td>Buddy-related evolution</td>
+                </tr>
+
+                <tr>
+                    <td>Umbreon</td>
+                    <td>Dark</td>
+                    <td>Buddy-related evolution</td>
+                </tr>
+
+                <tr>
+                    <td>Leafeon</td>
+                    <td>Grass</td>
+                    <td>Special evolution method</td>
+                </tr>
+
+                <tr>
+                    <td>Glaceon</td>
+                    <td>Ice</td>
+                    <td>Special evolution method</td>
+                </tr>
+
+                <tr>
+                    <td>Sylveon</td>
+                    <td>Fairy</td>
+                    <td>Buddy/affection-related evolution</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Evolution tip:
+        </strong>
+
+        <p>
+
+            Pokémon GO's Eevee evolution requirements and
+            special evolution mechanics should be checked
+            before evolving a valuable Eevee. Naming tricks
+            are generally limited-use mechanics.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     08 IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 · IV GUIDE
+        </span>
+
+        <h2>
+            Eevee IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add extra Attack, Defense and
+            HP points to a Pokémon. The best Eevee IV spread
+            depends on whether you plan to keep Eevee or
+            evolve it into a particular Eeveelution.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 15/15/15 Eevee?
+    </h3>
+
+    <p>
+
+        A 15/15/15 Eevee is a perfect-IV specimen and can
+        be an excellent collector's target. However, the
+        best IV spread for a specific PvP Eeveelution may
+        differ from a simple perfect-IV spread.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     09 PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 · PVP
+        </span>
+
+        <h2>
+            Eevee PvP Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Regular Eevee is generally not a major Great League
+        meta choice. Its evolved forms can have considerably
+        different PvP roles.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Eevee itself has limited competitive relevance in
+        Ultra League because of its modest CP and overall
+        battle profile.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Eevee is not a natural Master League investment.
+        Players interested in competitive Eevee-family
+        Pokémon should instead evaluate the relevant
+        Eeveelution for the format.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        PvP rankings can change when Pokémon GO introduces
+        new moves, move updates, balance changes and new
+        Pokémon. Always check current battle data before
+        making a competitive recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     10 SHINY EEVEE
+======================================================= -->
+
+<section class="section" id="shiny-eevee">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 · SHINY
+        </span>
+
+        <h2>
+            Shiny Eevee
+        </h2>
+
+        <p>
+
+            Shiny Eevee is available in Pokémon GO and is
+            especially popular with collectors because the
+            Shiny can also be evolved into the Eeveelutions.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card shiny-card">
+
+        <div class="form-title">
+
+            <div class="form-title-icon">
+                ✨
+            </div>
+
+            <div>
+
+                <h3>
+                    Shiny Eevee
+                </h3>
+
+                <p>
+                    Alternate coloration
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p>
+
+            Shiny Eevee keeps its Shiny identity when evolved.
+            This makes Shiny Eevee a popular starting point for
+            collectors who want a complete collection of Shiny
+            Eeveelutions.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Eevee Evolution
+    </h3>
+
+    <p>
+
+        A Shiny Eevee can be evolved into a Shiny Eeveelution
+        when the required evolution conditions are met.
+
+        The resulting Pokémon retains its Shiny status.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Collector Tip
+        </strong>
+
+        <p>
+
+            Before evolving a valuable Shiny Eevee, decide
+            which Eeveelution you want and verify the current
+            evolution requirements.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     11 SHADOW EEVEE
+======================================================= -->
+
+<section class="section" id="shadow-eevee">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 · SHADOW
+        </span>
+
+        <h2>
+            Shadow Eevee
+        </h2>
+
+        <p>
+
+            Shadow Eevee is a special Shadow variant of Eevee.
+            It retains the Normal typing of regular Eevee while
+            using the Shadow Pokémon battle mechanics.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow-card">
+
+        <div class="form-title">
+
+            <div class="form-title-icon">
+                🌑
+            </div>
+
+            <div>
+
+                <h3>
+                    Shadow Eevee
+                </h3>
+
+                <p>
+                    Shadow Normal-type Pokémon
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p>
+
+            Shadow Eevee should be evaluated differently from
+            regular Eevee because Shadow Pokémon have increased
+            offensive power and reduced defensive durability.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Eevee vs Regular Eevee
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Eevee
+                    </th>
+
+                    <th>
+                        Shadow Eevee
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Eevee
+                    </td>
+
+                    <td>
+                        Eevee
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Defensive Trade-off
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced durability
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Evolution
+                    </td>
+
+                    <td>
+                        Multiple possibilities
+                    </td>
+
+                    <td>
+                        Check current rules
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Eevee Weakness
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Shadow Eevee remains a Normal-type Pokémon,
+                so Fighting attacks are super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Eevee IV Guide
+    </h3>
+
+    <p>
+
+        A Shadow Pokémon does not need perfect 15/15/15 IVs
+        to be useful. Evaluate the individual Pokémon based
+        on its intended evolution, battle role and resource
+        cost.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Eevee and Frustration
+    </h3>
+
+    <p>
+
+        Shadow Pokémon can have Frustration as their Charged
+        Move. The ability to replace Frustration can depend
+        on Team GO Rocket events and current Pokémon GO rules.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Do Not Purify Automatically
+        </strong>
+
+        <p>
+
+            If your goal is to preserve the Shadow mechanics,
+            compare the Shadow Pokémon with its purified result
+            before making a permanent purification decision.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Eevee Evolution
+    </h3>
+
+    <p>
+
+        If Pokémon GO permits the relevant Shadow Eevee
+        evolution, the resulting Pokémon should be evaluated
+        according to its own typing, moves and battle role.
+
+        Always verify current in-game evolution rules before
+        using a valuable Shadow Eevee.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     12 FORMS COMPARISON
+======================================================= -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 · FORM COMPARISON
+        </span>
+
+        <h2>
+            Regular, Shiny & Shadow Eevee
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Eevee
+                    </td>
+
+                    <td>
+                        Eevee
+                    </td>
+
+                    <td>
+                        Eevee
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Alternate Appearance
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Shadow appearance
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     13 CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 · RESOURCES
+        </span>
+
+        <h2>
+            Eevee Candy & Stardust
+        </h2>
+
+        <p>
+
+            Eevee Candy is particularly valuable because
+            multiple evolution options use the same Candy
+            resource.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Eevee Candy before committing to an evolution.
+        </li>
+
+        <li>
+            Keep strong IV Eevee for long-term evolution projects.
+        </li>
+
+        <li>
+            Consider keeping useful PvP IV spreads separately.
+        </li>
+
+        <li>
+            Keep Shiny Eevee if you want Shiny Eeveelutions.
+        </li>
+
+        <li>
+            Evaluate Shadow Eevee before purifying it.
+        </li>
+
+        <li>
+            Use events with increased Eevee encounters to build
+            a larger Candy reserve.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     14 AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 · AVAILABILITY
+        </span>
+
+        <h2>
+            Eevee Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Eevee has appeared through a variety of Pokémon GO
+        encounter methods, including wild encounters, events
+        and other special opportunities.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Encounter methods can change with seasons and
+            events. Check the current Pokémon GO event and
+            encounter schedule before publishing a claim that
+            Eevee is currently available through a specific
+            method.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Availability
+    </h3>
+
+    <p>
+
+        Shiny Eevee is an established available form in
+        Pokémon GO. The best opportunity to encounter one
+        can vary depending on current events and encounter
+        rates.
+
+    </p>
+
+
+    <h3>
+        Shadow Availability
+    </h3>
+
+    <p>
+
+        Shadow Eevee availability is controlled by Team GO
+        Rocket-related encounters and game rotations. Current
+        availability should therefore be checked before
+        claiming that Shadow Eevee is obtainable at a given
+        time.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     15 HOW TO USE
+======================================================= -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 · INDIVIDUAL GUIDE
+        </span>
+
+        <h2>
+            How to Use Eevee
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Evolving
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the Eevee's IVs.
+        </li>
+
+        <li>
+            Decide which Eeveelution you want.
+        </li>
+
+        <li>
+            Check the current evolution requirements.
+        </li>
+
+        <li>
+            Confirm whether the Eevee is Shiny or Shadow.
+        </li>
+
+        <li>
+            Consider whether you want to keep it as a collector
+            specimen.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Eevee is one of the strongest collection targets
+        because its evolution family covers multiple types
+        and includes several highly recognizable Pokémon.
+
+    </p>
+
+
+    <h3>
+        For PvP Players
+    </h3>
+
+    <p>
+
+        Instead of simply choosing the highest CP Eevee,
+        evaluate the IV spread and intended evolution.
+        Different PvP formats can favor different IV
+        distributions.
+
+    </p>
+
+
+    <h3>
+        For Raid Players
+    </h3>
+
+    <p>
+
+        Eevee itself should generally not be the first choice
+        for raid investment. Its main battle value comes from
+        the specialized Pokémon available through evolution.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     16 WEATHER
+======================================================= -->
+
+<section class="section" id="weather">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 · WEATHER
+        </span>
+
+        <h2>
+            Eevee Weather Boost
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ☁️
+            </div>
+
+            <strong>
+                Partly Cloudy
+            </strong>
+
+            <p>
+
+                Normal-type Pokémon can receive a weather
+                boost during Partly Cloudy conditions.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Weather boosts can affect encounter level and
+        available CP ranges. Exact encounter values should
+        be checked against the current Pokémon GO mechanics.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     17 COMMON MISTAKES
+======================================================= -->
+
+<section class="section" id="mistakes">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 · PLAYER TIPS
+        </span>
+
+        <h2>
+            Common Eevee Mistakes
+        </h2>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Evolving a valuable Eevee without deciding which
+            Eeveelution you actually want.
+        </li>
+
+        <li>
+            Assuming a high CP automatically means perfect IVs.
+        </li>
+
+        <li>
+            Spending large amounts of Stardust on regular Eevee
+            without a clear battle purpose.
+        </li>
+
+        <li>
+            Purifying a Shadow Eevee without considering its
+            long-term value.
+        </li>
+
+        <li>
+            Using a naming trick without checking whether that
+            method has already been used for the account.
+        </li>
+
+        <li>
+            Forgetting to check current evolution requirements.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     18 FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 · FAQ
+        </span>
+
+        <h2>
+            Eevee FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Eevee?
+        </summary>
+
+        <p>
+
+            Regular Eevee is a pure Normal-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Eevee weak to?
+        </summary>
+
+        <p>
+
+            Eevee is weak to Fighting-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Eevee good for raids?
+        </summary>
+
+        <p>
+
+            Regular Eevee is generally not a high-priority
+            raid attacker. Its main value is its evolution
+            family.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How many Eeveelutions are in Pokémon GO?
+        </summary>
+
+        <p>
+
+            Eevee currently has eight evolution forms in
+            Pokémon GO: Vaporeon, Jolteon, Flareon, Espeon,
+            Umbreon, Leafeon, Glaceon and Sylveon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Eevee available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Eevee is available in Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Eevee evolve?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Eevee can evolve into Shiny
+            Eeveelutions when the applicable evolution
+            requirements are met.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Eevee available?
+        </summary>
+
+        <p>
+
+            Shadow Eevee can appear through eligible
+            Team GO Rocket-related encounters and rotations.
+            Current availability should be checked before
+            planning a hunt.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Eevee?
+        </summary>
+
+        <p>
+
+            Not automatically. Consider its IVs, intended
+            evolution, Shadow mechanics and your long-term
+            goals before purifying it.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is a 100% Eevee worth keeping?
+        </summary>
+
+        <p>
+
+            A perfect 15/15/15 Eevee is a valuable collector
+            specimen and can be an attractive candidate for
+            evolution, depending on your goals.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Eevee evolve into Sylveon?
+        </summary>
+
+        <p>
+
+            Yes. Sylveon is one of Eevee's eight available
+            evolution forms in Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Eevee evolve?
+        </summary>
+
+        <p>
+
+            Shadow evolution mechanics should be checked
+            against the current Pokémon GO rules before
+            evolving a valuable Shadow Eevee.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is the best Eeveelution?
+        </summary>
+
+        <p>
+
+            There is no single best Eeveelution for every
+            situation. The best choice depends on whether
+            you care about raids, PvP, collection or simply
+            filling a particular type role.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, encounter methods, evolution requirements,
+            events and availability can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Eevee Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Eevee Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Use
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution Family
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny-eevee">
+                Shiny Eevee
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow-eevee">
+                Shadow Eevee
+            </a>
+        </li>
+
+        <li>
+            <a href="#forms">
+                Form Comparison
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#guide">
+                Individual Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+    <a class="related-link"
+       href="/pokemon/vaporeon.html">
+
+        Vaporeon Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon/jolteon.html">
+
+        Jolteon Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon/flareon.html">
+
+        Flareon Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon/umbreon.html">
+
+        Umbreon Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon/espeon.html">
+
+        Espeon Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon/sylveon.html">
+
+        Sylveon Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-1.html">
+
+        Gen 1 Pokémon →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Eevee Quick Facts
+    </h3>
+
+    <p>
+        <strong>Type:</strong>
+        Normal
+    </p>
+
+    <p>
+        <strong>Generation:</strong>
+        1
+    </p>
+
+    <p>
+        <strong>Pokédex:</strong>
+        #133
+    </p>
+
+    <p>
+        <strong>Evolution Forms:</strong>
+        8
+    </p>
+
+    <p>
+        <strong>Shiny:</strong>
+        Available
+    </p>
+
+    <p>
+        <strong>Shadow:</strong>
+        Available through eligible encounters
+    </p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

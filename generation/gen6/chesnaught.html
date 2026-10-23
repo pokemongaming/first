@@ -1,0 +1,5806 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Chesnaught Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & Mega Chesnaught
+    </title>
+
+    <meta name="description"
+          content="Complete Chesnaught Pokémon GO guide covering regular, Shiny, Shadow, Purified, Lucky, 100% IV, XXL, XXS and Mega Chesnaught, including stats, max CP, moves, weaknesses, resistances, raids, PvP, Mega Energy and evolution.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/chesnaught.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080d0c;
+            --bg-soft: #0e1614;
+            --surface: #121c19;
+            --surface-2: #18231f;
+            --surface-3: #22302b;
+
+            --border: #2b3b35;
+
+            --text: #f4f7f5;
+            --muted: #aab8b2;
+
+            --accent: #75d98c;
+            --accent-2: #45b966;
+
+            --grass: #5dcc7c;
+            --fighting: #d96a4c;
+
+            --water: #4d9eff;
+            --fire: #ff754f;
+            --ice: #72d6dc;
+            --flying: #9c8fe8;
+            --poison: #b66ad4;
+            --psychic: #e56d9d;
+            --fairy: #e79bc1;
+
+            --danger: #ff717e;
+            --success: #65d69a;
+            --gold: #e8bf5d;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 85% 0%,
+                    rgba(92,204,124,.11),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,13,12,.93);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(92,204,124,.18),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 90%,
+                    rgba(217,106,76,.08),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #111c18,
+                    #0b1210
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid rgba(92,204,124,.25);
+
+            border-radius:
+                999px;
+
+            color:
+                var(--grass);
+
+            background:
+                rgba(92,204,124,.08);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom:
+                12px;
+        }
+
+        .hero-subtitle {
+
+            max-width:
+                750px;
+
+            font-size:
+                1rem;
+
+            color:
+                #c2cec8;
+        }
+
+        .hero-tags {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                800;
+        }
+
+        .grass-tag {
+            color: var(--grass);
+        }
+
+        .fighting-tag {
+            color: var(--fighting);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height:
+                300px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+        .pokemon-placeholder {
+
+            width:
+                260px;
+
+            height:
+                260px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(92,204,124,.23),
+                    transparent 65%
+                );
+
+            font-size:
+                7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                18px;
+        }
+
+        .quick-stat {
+
+            padding:
+                18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .quick-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                1.25rem;
+        }
+
+        .quick-stat span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap:
+                20px;
+
+            margin-top:
+                20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom:
+                20px;
+
+            padding:
+                28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+
+            display:
+                block;
+
+            margin-bottom:
+                6px;
+
+            color:
+                var(--accent);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom:
+                9px;
+        }
+
+        .section h3 {
+
+            margin:
+                24px 0 10px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                10px;
+        }
+
+        .stat-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .64rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                .04em;
+        }
+
+        .stat-card strong {
+
+            display:
+                block;
+
+            margin-top:
+                4px;
+
+            font-size:
+                1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+
+            padding:
+                18px;
+
+            border:
+                1px solid rgba(92,204,124,.3);
+
+            background:
+                rgba(92,204,124,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width:
+                50px;
+
+            height:
+                50px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(92,204,124,.13);
+
+            font-size:
+                1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color:
+                var(--grass);
+
+            font-size:
+                .75rem;
+
+            font-weight:
+                850;
+        }
+
+        .type-pill {
+
+            display:
+                inline-block;
+
+            padding:
+                7px 14px;
+
+            margin:
+                4px;
+
+            border-radius:
+                999px;
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                900;
+        }
+
+        .grass-type {
+            background: #287944;
+        }
+
+        .fighting-type {
+            background: #913b29;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                15px;
+        }
+
+        .effect-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size:
+                1.5rem;
+
+            margin-bottom:
+                6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card small {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .7rem;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,113,126,.28);
+        }
+
+        .resistance {
+            border-color:
+                rgba(101,214,154,.28);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align:
+                left;
+
+            font-size:
+                .76rem;
+        }
+
+        .data-table th {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color:
+                var(--grass);
+
+            font-weight:
+                800;
+        }
+
+
+        /* =====================================================
+           FEATURE CARD
+        ===================================================== */
+
+        .feature-card {
+
+            margin-top:
+                18px;
+
+            padding:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(92,204,124,.11),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(92,204,124,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .feature-card strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap:
+                15px;
+
+            align-items:
+                center;
+
+            padding:
+                12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height:
+                8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius:
+                99px;
+
+            overflow:
+                hidden;
+        }
+
+        .rating-fill {
+
+            height:
+                100%;
+
+            width:
+                var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius:
+                inherit;
+        }
+
+        .rating-value {
+
+            text-align:
+                right;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding:
+                14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size:
+                .75rem;
+
+            text-align:
+                left;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+        }
+
+
+        /* =====================================================
+           FORM / VARIANT CARDS
+        ===================================================== */
+
+        .variant-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                14px;
+
+            margin-top:
+                18px;
+        }
+
+        .variant-card {
+
+            padding:
+                20px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                16px;
+
+            background:
+                var(--surface-2);
+        }
+
+        .variant-card .variant-icon {
+
+            font-size:
+                2rem;
+
+            margin-bottom:
+                8px;
+        }
+
+        .variant-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1rem;
+
+            margin-bottom:
+                5px;
+        }
+
+        .variant-card p {
+
+            font-size:
+                .75rem;
+        }
+
+
+        /* =====================================================
+           SPECIAL VARIANT BANNERS
+        ===================================================== */
+
+        .shadow-banner {
+
+            padding:
+                25px;
+
+            border-radius:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #161619,
+                    #382329
+                );
+
+            border:
+                1px solid #54353d;
+        }
+
+        .purified-banner {
+
+            padding:
+                25px;
+
+            border-radius:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #302a19,
+                    #5a4a24
+                );
+
+            border:
+                1px solid #75602e;
+        }
+
+        .lucky-banner {
+
+            padding:
+                25px;
+
+            border-radius:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #302611,
+                    #604b19
+                );
+
+            border:
+                1px solid #80642c;
+        }
+
+        .mega-banner {
+
+            padding:
+                30px;
+
+            border-radius:
+                22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #173e29,
+                    #21683d,
+                    #8b4d2b
+                );
+
+            border:
+                1px solid #4d865d;
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                18px;
+        }
+
+        .iv-card {
+
+            padding:
+                20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                15px;
+
+            text-align:
+                center;
+        }
+
+        .iv-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1.7rem;
+        }
+
+        .iv-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+        .hundo-card {
+
+            padding:
+                25px;
+
+            border-radius:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(232,191,93,.15),
+                    rgba(255,255,255,.025)
+                );
+
+            border:
+                1px solid rgba(232,191,93,.3);
+
+            margin-top:
+                20px;
+        }
+
+        .hundo-card strong {
+
+            color:
+                var(--gold);
+
+            font-size:
+                1.25rem;
+        }
+
+
+        /* =====================================================
+           SIZE
+        ===================================================== */
+
+        .size-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap:
+                15px;
+
+            margin-top:
+                18px;
+        }
+
+        .size-card {
+
+            padding:
+                22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                18px;
+
+            background:
+                var(--surface-2);
+        }
+
+        .size-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1.2rem;
+
+            margin-bottom:
+                5px;
+        }
+
+        .xxl-card {
+            border-color:
+                rgba(232,191,93,.3);
+        }
+
+        .xxs-card {
+            border-color:
+                rgba(114,214,220,.3);
+        }
+
+
+        /* =====================================================
+           MEGA INFO
+        ===================================================== */
+
+        .mega-stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                20px;
+        }
+
+        .mega-stat {
+
+            padding:
+                20px;
+
+            background:
+                rgba(255,255,255,.06);
+
+            border:
+                1px solid rgba(255,255,255,.12);
+
+            border-radius:
+                15px;
+        }
+
+        .mega-stat span {
+
+            display:
+                block;
+
+            font-size:
+                .64rem;
+
+            opacity:
+                .7;
+
+            text-transform:
+                uppercase;
+        }
+
+        .mega-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                1.3rem;
+
+            margin-top:
+                4px;
+        }
+
+
+        /* =====================================================
+           EVOLUTION
+        ===================================================== */
+
+        .evolution-tree {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                14px;
+
+            flex-wrap:
+                wrap;
+
+            margin:
+                25px 0;
+        }
+
+        .evolution-node {
+
+            padding:
+                18px 25px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                15px;
+
+            background:
+                var(--surface-2);
+
+            text-align:
+                center;
+        }
+
+        .evolution-node strong {
+            display: block;
+        }
+
+        .evolution-node span {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+        .evolution-arrow {
+
+            color:
+                var(--accent);
+
+            font-size:
+                1.5rem;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                8px;
+
+            margin-top:
+                15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                9px;
+
+            color:
+                #c8d2cd;
+
+            font-size:
+                .78rem;
+        }
+
+        .checklist li::before {
+
+            content:
+                "✓";
+
+            margin-right:
+                8px;
+
+            color:
+                var(--success);
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position:
+                sticky;
+
+            top:
+                88px;
+
+            align-self:
+                start;
+        }
+
+        .side-card {
+
+            margin-bottom:
+                15px;
+
+            padding:
+                20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size:
+                .9rem;
+        }
+
+        .side-nav {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                4px;
+        }
+
+        .side-nav a {
+
+            display:
+                block;
+
+            padding:
+                8px 10px;
+
+            border-radius:
+                7px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+
+            font-weight:
+                700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color:
+                white;
+        }
+
+        .related-link {
+
+            display:
+                block;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color:
+                var(--muted);
+
+            font-size:
+                .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color:
+                var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor:
+                pointer;
+
+            font-weight:
+                850;
+
+            font-size:
+                .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size:
+                .78rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL
+        ===================================================== */
+
+        .editorial-note {
+
+            padding:
+                17px;
+
+            margin-top:
+                20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #060a09;
+        }
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid,
+            .mega-stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding:
+                    20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .variant-grid,
+            .size-grid,
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid,
+            .mega-stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    6px;
+            }
+
+            .rating-value {
+                text-align:
+                    left;
+            }
+
+            .main-nav {
+                display:
+                    none;
+            }
+
+            .evolution-tree {
+                flex-direction:
+                    column;
+            }
+
+            .evolution-arrow {
+                transform:
+                    rotate(90deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/grass.html">
+        Grass Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Chesnaught
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                KALOS • #652 • FINAL EVOLUTION
+            </span>
+
+            <h1>
+                Chesnaught
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Chesnaught is a Grass/Fighting-type Pokémon
+                from the Kalos region. In Pokémon GO, it is
+                notable for its strong Grass typing, access to
+                Frenzy Plant, Shadow availability, and its
+                released Mega Evolution.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag grass-tag">
+                    Grass
+                </span>
+
+                <span class="tag fighting-tag">
+                    Fighting
+                </span>
+
+                <span class="tag">
+                    #652
+                </span>
+
+                <span class="tag">
+                    Gen 6
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Shadow Available
+                </span>
+
+                <span class="tag">
+                    Mega Available
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace emoji with your properly licensed
+                 Chesnaught image asset -->
+
+            <div class="pokemon-placeholder">
+                🌰
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            201
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            204
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            204
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            3,340
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Chesnaught Overview
+        </h2>
+
+        <p>
+
+            Chesnaught is the final evolution of Chespin,
+            the Grass-type starter from Pokémon X and Y.
+            In Pokémon GO, Chesnaught evolves from Quilladin
+            using Candy and is a dual Grass/Fighting-type
+            Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#652</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 6</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Kalos</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Grass / Fighting</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>201</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>204</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>204</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Level 50 Max CP</span>
+            <strong>3,340</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Chesnaught Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌿
+        </div>
+
+        <div>
+
+            <strong>
+                Grass / Fighting
+            </strong>
+
+            <span>
+                Dual Type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Chesnaught's Typing Matters
+    </h3>
+
+    <p>
+
+        Chesnaught combines Grass and Fighting typing,
+        giving it useful offensive coverage against several
+        Pokémon types. Its typing also creates a substantial
+        list of weaknesses, particularly against Flying-type
+        attacks.
+
+    </p>
+
+
+    <div>
+
+        <span class="type-pill grass-type">
+            GRASS
+        </span>
+
+        <span class="type-pill fighting-type">
+            FIGHTING
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Chesnaught Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying attacks deal especially heavy
+                super-effective damage to Chesnaught.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Fire-type attacks are super effective
+                against Chesnaught.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice attacks can exploit Chesnaught's
+                Grass typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Poison-type attacks are super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic attacks take advantage of its
+                Fighting typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy attacks are also super effective
+                against Chesnaught.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Important Resistances
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Chesnaught resists Electric-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks are resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Chesnaught resists Water-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks are resisted.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Fighting typing provides resistance to
+                Dark attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Chesnaught Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Chesnaught has balanced Attack, Defense and
+            HP values. Its Level 50 maximum CP is 3,340
+            with perfect IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>201</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>204</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>204</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>LEVEL 50 MAX CP</span>
+            <strong>3,340</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            Maximum CP assumes a perfect 15/15/15 IV
+            Pokémon at the stated level. Individual Pokémon
+            can have lower CP depending on IVs and level.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVESET
+        </span>
+
+        <h2>
+            Chesnaught Best Moves
+        </h2>
+
+        <p>
+
+            Chesnaught has access to several Grass and
+            Fighting attacks. Frenzy Plant is the key
+            Grass option for optimized builds when available.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            Recommended Grass Build
+        </strong>
+
+        <p>
+            Vine Whip + Frenzy Plant
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Main Use
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Vine Whip
+                    </td>
+
+                    <td class="move-type">
+                        Grass
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Grass damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Frenzy Plant
+                    </td>
+
+                    <td class="move-type">
+                        Grass
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Strong Grass option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Low Kick
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Fighting coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Superpower
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Fighting coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Energy Ball
+                    </td>
+
+                    <td class="move-type">
+                        Grass
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Grass alternative
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Gyro Ball
+                    </td>
+
+                    <td>
+                        Steel
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Move availability:
+        </strong>
+
+        <p>
+
+            Event moves and Elite TM availability can change.
+            Check current Pokémon GO move availability before
+            spending rare resources.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • RAID PERFORMANCE
+        </span>
+
+        <h2>
+            Is Chesnaught Good for Raids?
+        </h2>
+
+        <p>
+
+            Regular Chesnaught is more useful as a Grass
+            attacker than as a top-tier Fighting attacker.
+            Its performance depends heavily on the current
+            Grass attacker meta and available moves.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Grass PvE
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:78%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Good
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Fighting PvE
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:48%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Limited
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+            <div class="rating-fill"
+                 style="--rating:78%;">
+            </div>
+        </div>
+
+        <span class="rating-value">
+            Good
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Is Chesnaught Worth Powering Up?
+    </h3>
+
+    <p>
+
+        A Chesnaught with a strong Grass moveset can be
+        worthwhile for players who need additional Grass
+        attackers. Shadow Chesnaught and Mega Chesnaught
+        should be evaluated separately because their battle
+        profiles differ.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 COUNTERS
+========================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • COUNTERS
+        </span>
+
+        <h2>
+            What Counters Chesnaught?
+        </h2>
+
+        <p>
+
+            Because Chesnaught is Grass/Fighting, Flying-type
+            attackers are especially effective, while Fire,
+            Psychic, Ice, Fairy and Poison attackers can also
+            exploit its weaknesses.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying attacks are especially effective
+                against Chesnaught.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Strong Fire attackers can exploit its
+                Grass typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic attacks take advantage of its
+                Fighting typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Exact raid counters can change depending on the
+        boss moveset, weather, Mega bonuses and current
+        Pokémon GO balance changes.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Chesnaught IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add points to Attack, Defense
+            and HP. A perfect Chesnaught has 15 Attack,
+            15 Defense and 15 HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hundo-card">
+
+        <strong>
+            100% Chesnaught — Hundo
+        </strong>
+
+        <p>
+
+            A 100% Chesnaught has a 15/15/15 IV combination.
+            It is particularly attractive for collectors,
+            long-term investments and players who want maximum
+            stat potential.
+
+        </p>
+
+        <p>
+
+            At Level 50, a perfect regular Chesnaught can
+            reach 3,340 CP.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 100% Chesnaught?
+    </h3>
+
+    <p>
+
+        Yes, especially if you enjoy collecting perfect IV
+        Pokémon or want a high-stat Grass attacker. However,
+        IV perfection alone does not automatically make a
+        Pokémon the strongest attacker in its type.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     09 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • PVP
+        </span>
+
+        <h2>
+            Chesnaught PvP Guide
+        </h2>
+
+        <p>
+
+            Chesnaught can have PvP value because its
+            Grass/Fighting typing provides useful coverage
+            and access to powerful charged attacks.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Chesnaught can be used in Great League when built
+        around the appropriate CP and moveset. Its performance
+        depends on IV distribution, shields and the current
+        PvP meta.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Chesnaught can also function in Ultra League, where
+        its combination of bulk and Grass/Fighting coverage
+        can create useful matchups.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Its maximum CP makes Master League possible, but
+        Chesnaught is generally less naturally suited to
+        Master League than Pokémon designed around the
+        higher CP environment.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     10 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • SHINY
+        </span>
+
+        <h2>
+            Shiny Chesnaught
+        </h2>
+
+        <p>
+
+            Shiny Chesnaught is available in Pokémon GO.
+            Its alternate coloration makes it a popular
+            collection target.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Chesnaught
+            </strong>
+
+            <p>
+                Alternate coloration of Chesnaught.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌿
+            </div>
+
+            <strong>
+                Regular Chesnaught
+            </strong>
+
+            <p>
+                Standard coloration.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Shiny Collection
+            </strong>
+
+            <p>
+                Shiny specimens can also have different
+                IVs, levels and appraisal values.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            Shiny + Mega
+        </strong>
+
+        <p>
+
+            A Shiny Chesnaught can be used for Mega Evolution,
+            allowing collectors to combine the Shiny status
+            with the Mega form.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Chesnaught
+        </h2>
+
+        <p>
+
+            Shadow Chesnaught is available in Pokémon GO.
+            Shadow Pokémon have a different battle profile
+            from their regular counterparts, so Shadow
+            Chesnaught should be evaluated separately.
+
+        </p>
+
+    </div>
+
+
+    <div class="shadow-banner">
+
+        <h3>
+            Shadow Chesnaught
+        </h3>
+
+        <p>
+
+            Shadow Chesnaught retains its Grass/Fighting
+            typing but receives the Shadow battle modifier,
+            increasing offensive pressure while reducing
+            durability.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Regular Chesnaught
+    </h3>
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Durability
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Lower
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Offensive Pressure
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Higher
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Available
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Chesnaught IVs
+    </h3>
+
+    <p>
+
+        A Shadow Chesnaught does not need to be 15/15/15
+        to be useful. Because Shadow Pokémon receive a
+        battle modifier, overall performance should be
+        considered alongside IVs.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+            <strong>15</strong>
+            <span>Attack IV</span>
+        </div>
+
+        <div class="iv-card">
+            <strong>15</strong>
+            <span>Defense IV</span>
+        </div>
+
+        <div class="iv-card">
+            <strong>15</strong>
+            <span>HP IV</span>
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Chesnaught Purification
+    </h3>
+
+    <p>
+
+        Purifying Shadow Chesnaught removes its Shadow
+        status and changes its battle characteristics.
+        Purification can also affect its IVs and move
+        configuration.
+
+    </p>
+
+
+    <div class="feature-card">
+
+        <strong>
+            Purification Cost
+        </strong>
+
+        <p>
+            3 Chesnaught Candy + 3,000 Stardust
+        </p>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have Frustration as their
+            Charged Move. The ability to replace Frustration
+            depends on Pokémon GO's current Rocket events
+            and mechanics.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     12 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Chesnaught
+        </h2>
+
+        <p>
+
+            Purified Chesnaught is created by purifying a
+            Shadow Chesnaught. Purification removes the
+            Shadow status and provides the standard Purified
+            Pokémon benefits.
+
+        </p>
+
+    </div>
+
+
+    <div class="purified-banner">
+
+        <h3>
+            Purified Chesnaught
+        </h3>
+
+        <p>
+
+            Purified Pokémon can be useful for collectors,
+            appraisal improvement and players who prefer
+            purified Pokémon mechanics.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Battle Bonus
+                    </td>
+
+                    <td>
+                        Active
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        Can be present
+                    </td>
+
+                    <td>
+                        Removed through purification
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Move After Purification
+                    </td>
+
+                    <td>
+                        Depends on current state
+                    </td>
+
+                    <td>
+                        Return
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Chesnaught?
+    </h3>
+
+    <p>
+
+        Do not purify automatically. If your priority is
+        Shadow raid performance, keeping the Pokémon Shadow
+        can be preferable. If you value the Purified status,
+        appraisal improvement or Return, purification can
+        make sense.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     13 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Chesnaught
+        </h2>
+
+        <p>
+
+            Lucky Chesnaught is a special trade status rather
+            than a separate species or evolution. Lucky Pokémon
+            have reduced Stardust costs for power-ups.
+
+        </p>
+
+    </div>
+
+
+    <div class="lucky-banner">
+
+        <h3>
+            ⭐ Lucky Chesnaught
+        </h3>
+
+        <p>
+
+            A Lucky Chesnaught can be an attractive
+            Stardust-efficient investment, particularly when
+            paired with strong IVs and a useful moveset.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <p>
+                Obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💰
+            </div>
+
+            <strong>
+                Reduced Power-Up Cost
+            </strong>
+
+            <p>
+                Lucky Pokémon require less Stardust
+                for power-ups.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                📊
+            </div>
+
+            <strong>
+                IVs Still Matter
+            </strong>
+
+            <p>
+                Lucky status does not guarantee perfect IVs.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Lucky Hundo Chesnaught
+    </h3>
+
+    <p>
+
+        A 15/15/15 Lucky Chesnaught is an especially desirable
+        collector combination because it combines perfect IVs
+        with the Lucky status and its Stardust advantage.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     14 100% HUNDO
+========================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • 100% IV
+        </span>
+
+        <h2>
+            100% Chesnaught — Hundo Guide
+        </h2>
+
+        <p>
+
+            A 100% Chesnaught has perfect Attack, Defense and
+            HP IVs: 15/15/15.
+
+        </p>
+
+    </div>
+
+
+    <div class="hundo-card">
+
+        <strong>
+            🏆 Perfect Chesnaught
+        </strong>
+
+        <div class="iv-grid">
+
+            <div class="iv-card">
+                <strong>15</strong>
+                <span>Attack</span>
+            </div>
+
+            <div class="iv-card">
+                <strong>15</strong>
+                <span>Defense</span>
+            </div>
+
+            <div class="iv-card">
+                <strong>15</strong>
+                <span>HP</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% Chesnaught Max CP
+    </h3>
+
+    <p>
+
+        A perfect Level 50 regular Chesnaught can reach
+        3,340 CP.
+
+    </p>
+
+
+    <h3>
+        Is a Hundo Chesnaught Worth Keeping?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Excellent collector specimen.
+        </li>
+
+        <li>
+            Useful for long-term Grass investment.
+        </li>
+
+        <li>
+            Can be used as a Mega Evolution candidate.
+        </li>
+
+        <li>
+            Can be retained for future move updates.
+        </li>
+
+        <li>
+            Perfect IVs are valuable even when current
+            meta ranking changes.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     15 XXL
+========================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • XXL
+        </span>
+
+        <h2>
+            XXL Chesnaught
+        </h2>
+
+        <p>
+
+            XXL Chesnaught is a size variant. XXL status
+            does not create a different species or change
+            Chesnaught's base typing.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card xxl-card">
+
+            <strong>
+                📏 XXL Chesnaught
+            </strong>
+
+            <p>
+
+                A Chesnaught with an exceptionally large
+                size classification.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <strong>
+                ⚔️ Battle Stats
+            </strong>
+
+            <p>
+
+                XXL status should not be treated as a
+                direct Attack or Defense boost.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Collect XXL Chesnaught?
+    </h3>
+
+    <p>
+
+        XXL Pokémon can be desirable for collectors and
+        size-focused Pokédex completion. A large Pokémon
+        can also have a different visual presence when
+        used in appropriate game features.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     16 XXS
+========================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • XXS
+        </span>
+
+        <h2>
+            XXS Chesnaught
+        </h2>
+
+        <p>
+
+            XXS Chesnaught is the opposite end of the size
+            spectrum. It represents an exceptionally small
+            individual of the species.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card xxs-card">
+
+            <strong>
+                🔹 XXS Chesnaught
+            </strong>
+
+            <p>
+
+                A very small Chesnaught that receives the
+                XXS size classification.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <strong>
+                📊 Separate From IVs
+            </strong>
+
+            <p>
+
+                Size classification and IV appraisal are
+                separate properties.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        XXL vs XXS Chesnaught
+    </h3>
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Very Large
+                    </td>
+
+                    <td>
+                        Very Small
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Chesnaught
+                    </td>
+
+                    <td>
+                        Chesnaught
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        IV System
+                    </td>
+
+                    <td>
+                        Unchanged
+                    </td>
+
+                    <td>
+                        Unchanged
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     17 MEGA CHESNAUGHT
+========================================================= -->
+
+<section class="section" id="mega">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • MEGA EVOLUTION
+        </span>
+
+        <h2>
+            Mega Chesnaught
+        </h2>
+
+        <p>
+
+            Mega Chesnaught is the released Mega Evolution
+            of Chesnaught in Pokémon GO. It remains a
+            Grass/Fighting-type Pokémon and has substantially
+            higher maximum CP than regular Chesnaught.
+
+        </p>
+
+    </div>
+
+
+    <div class="mega-banner">
+
+        <h3>
+            Mega Chesnaught
+        </h3>
+
+        <p>
+
+            A powerful temporary form that can provide
+            significant raid utility and type-based Mega
+            bonuses while active.
+
+        </p>
+
+
+        <div class="mega-stat-grid">
+
+            <div class="mega-stat">
+
+                <span>
+                    Attack
+                </span>
+
+                <strong>
+                    242
+                </strong>
+
+            </div>
+
+
+            <div class="mega-stat">
+
+                <span>
+                    Defense
+                </span>
+
+                <strong>
+                    282
+                </strong>
+
+            </div>
+
+
+            <div class="mega-stat">
+
+                <span>
+                    HP
+                </span>
+
+                <strong>
+                    204
+                </strong>
+
+            </div>
+
+
+            <div class="mega-stat">
+
+                <span>
+                    Max CP
+                </span>
+
+                <strong>
+                    4,628
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Chesnaught Typing
+    </h3>
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌿
+        </div>
+
+        <div>
+
+            <strong>
+                Grass / Fighting
+            </strong>
+
+            <span>
+                Mega Chesnaught retains its dual typing
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Chesnaught Best Moves
+    </h3>
+
+    <div class="feature-card">
+
+        <strong>
+            Recommended Grass Raid Build
+        </strong>
+
+        <p>
+            Vine Whip + Seed Bomb+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Mega Chesnaught can also use Fighting-oriented
+        attacks when a Fighting role is preferred. The
+        best build depends on the target raid boss and
+        the current move availability.
+
+    </p>
+
+
+    <h3>
+        Mega Chesnaught Raid Performance
+    </h3>
+
+    <div class="rating-row">
+
+        <strong>
+            Grass Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:92%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            S
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Fighting Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:65%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            B
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Mega Utility
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <h3>
+        Mega Chesnaught Energy
+    </h3>
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                FIRST MEGA EVOLUTION
+            </span>
+
+            <strong>
+                300 Energy
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                LATER MEGA EVOLUTIONS
+            </span>
+
+            <strong>
+                60 Energy
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Temporary
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPING
+            </span>
+
+            <strong>
+                Grass / Fighting
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Raid Bonuses
+    </h3>
+
+    <p>
+
+        Mega Pokémon provide raid bonuses to other Pokémon
+        while active. Attacks matching the Mega Pokémon's
+        type receive a stronger bonus, while the Mega can
+        also help with Candy-related benefits when catching
+        Pokémon of appropriate types.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Mega reminder:
+        </strong>
+
+        <p>
+
+            Mega Evolution is temporary. It does not replace
+            the underlying Chesnaught permanently.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 FORMS COMPARISON
+========================================================= -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • FORM COMPARISON
+        </span>
+
+        <h2>
+            Chesnaught Forms & Special Statuses Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Separate Species?
+                    </th>
+
+                    <th>
+                        Grass / Fighting
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Standard Chesnaught
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Shadow battle modifier
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Lucky trade status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Perfect 15/15/15 IVs
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Very large size
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Very small size
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mega
+                    </td>
+
+                    <td>
+                        Special form
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Temporary Mega Evolution
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     19 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • EVOLUTION
+        </span>
+
+        <h2>
+            Chespin → Quilladin → Chesnaught
+        </h2>
+
+        <p>
+
+            Chesnaught is the final stage of the Chespin
+            evolutionary family.
+
+        </p>
+
+    </div>
+
+
+    <div class="evolution-tree">
+
+        <div class="evolution-node">
+
+            <strong>
+                Chespin
+            </strong>
+
+            <span>
+                Base Pokémon
+            </span>
+
+        </div>
+
+
+        <div class="evolution-arrow">
+            →
+        </div>
+
+
+        <div class="evolution-node">
+
+            <strong>
+                Quilladin
+            </strong>
+
+            <span>
+                25 Candy
+            </span>
+
+        </div>
+
+
+        <div class="evolution-arrow">
+            →
+        </div>
+
+
+        <div class="evolution-node">
+
+            <strong>
+                Chesnaught
+            </strong>
+
+            <span>
+                100 Candy
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Mega Evolution
+    </h3>
+
+    <div class="evolution-tree">
+
+        <div class="evolution-node">
+
+            <strong>
+                Chesnaught
+            </strong>
+
+            <span>
+                Regular Form
+            </span>
+
+        </div>
+
+
+        <div class="evolution-arrow">
+            →
+        </div>
+
+
+        <div class="evolution-node">
+
+            <strong>
+                Mega Chesnaught
+            </strong>
+
+            <span>
+                Mega Evolution
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Mega Evolution does not permanently replace Chesnaught.
+        The underlying Pokémon remains available after the
+        temporary Mega period ends.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     20 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • RESOURCES
+        </span>
+
+        <h2>
+            Chesnaught Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Building a strong Chesnaught requires Candy,
+            Candy XL and Stardust. Mega Evolution also
+            requires Mega Energy.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍬
+            </div>
+
+            <strong>
+                Chespin Candy
+            </strong>
+
+            <p>
+                Used for evolution and powering up.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🟣
+            </div>
+
+            <strong>
+                Candy XL
+            </strong>
+
+            <p>
+                Important for high-level investment.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Stardust
+            </strong>
+
+            <p>
+                Required for power-ups and some
+                additional moves.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Investment Checklist
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check IVs before committing large resources.
+        </li>
+
+        <li>
+            Confirm the intended moveset.
+        </li>
+
+        <li>
+            Keep a strong candidate for Mega Evolution.
+        </li>
+
+        <li>
+            Save Candy XL for high-level builds.
+        </li>
+
+        <li>
+            Consider Lucky Chesnaught for Stardust efficiency.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     21 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • AVAILABILITY
+        </span>
+
+        <h2>
+            Chesnaught Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Chesnaught can be obtained by evolving Quilladin.
+        Its evolutionary family can also appear through
+        Pokémon GO events and other eligible encounters.
+
+    </p>
+
+
+    <div class="feature-card">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event schedule,
+            wild encounters, research and other active
+            sources before publishing a time-sensitive
+            availability claim.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Mega Chesnaught Availability
+    </h3>
+
+    <p>
+
+        Mega Chesnaught is a released Mega Evolution.
+        Mega Energy can be earned through eligible
+        Pokémon GO activities, including Mega Raids when
+        Mega Chesnaught is featured.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     22 HOW TO USE
+========================================================= -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • INDIVIDUAL GUIDE
+        </span>
+
+        <h2>
+            How to Build Chesnaught
+        </h2>
+
+    </div>
+
+
+    <h3>
+        For Raids
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Prefer a strong Grass moveset when using
+            Chesnaught as a Grass attacker.
+        </li>
+
+        <li>
+            Check whether Frenzy Plant is available.
+        </li>
+
+        <li>
+            Compare regular and Shadow Chesnaught.
+        </li>
+
+        <li>
+            Consider Mega Chesnaught when Mega utility
+            benefits the raid team.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For PvP
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check league CP limits.
+        </li>
+
+        <li>
+            Consider PvP-oriented IV distributions.
+        </li>
+
+        <li>
+            Test the current moveset against the
+            current metagame.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep Shiny Chesnaught.
+        </li>
+
+        <li>
+            Keep 100% IV Chesnaught.
+        </li>
+
+        <li>
+            Keep Lucky Chesnaught.
+        </li>
+
+        <li>
+            Keep XXS and XXL specimens.
+        </li>
+
+        <li>
+            Consider a Shiny Mega Evolution candidate.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     23 COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            23 • COMPARISON
+        </span>
+
+        <h2>
+            Regular vs Shadow vs Mega Chesnaught
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Mega
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                    <td>
+                        Grass / Fighting
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 50 Max CP
+                    </td>
+
+                    <td>
+                        3,340
+                    </td>
+
+                    <td>
+                        3,340
+                    </td>
+
+                    <td>
+                        4,628
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Attack
+                    </td>
+
+                    <td>
+                        201
+                    </td>
+
+                    <td>
+                        Shadow modifier
+                    </td>
+
+                    <td>
+                        242
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defense
+                    </td>
+
+                    <td>
+                        204
+                    </td>
+
+                    <td>
+                        Shadow modifier
+                    </td>
+
+                    <td>
+                        282
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Main Advantage
+                    </td>
+
+                    <td>
+                        Standard investment
+                    </td>
+
+                    <td>
+                        Higher offensive pressure
+                    </td>
+
+                    <td>
+                        Mega raid utility
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Temporary?
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     24 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            24 • FAQ
+        </span>
+
+        <h2>
+            Chesnaught FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Chesnaught?
+        </summary>
+
+        <p>
+            Chesnaught is a Grass/Fighting-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Chesnaught weak to?
+        </summary>
+
+        <p>
+
+            Chesnaught is especially weak to Flying and is
+            also weak to Fairy, Fire, Ice, Poison and Psychic.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Chesnaught's max CP?
+        </summary>
+
+        <p>
+
+            Regular Chesnaught has a Level 50 maximum CP
+            of 3,340 with perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Chesnaught good for raids?
+        </summary>
+
+        <p>
+
+            Chesnaught can be useful as a Grass attacker,
+            particularly with an appropriate Grass moveset,
+            although its ranking depends on the current
+            Pokémon GO PvE meta.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Chesnaught available?
+        </summary>
+
+        <p>
+            Yes. Shiny Chesnaught is available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Chesnaught available?
+        </summary>
+
+        <p>
+            Yes. Shadow Chesnaught is available in Pokémon GO.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Chesnaught?
+        </summary>
+
+        <p>
+
+            Not automatically. Compare the Shadow and
+            Purified versions according to your goals before
+            spending resources on purification.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lucky Chesnaught worth keeping?
+        </summary>
+
+        <p>
+
+            Yes. Lucky Chesnaught can be attractive because
+            Lucky Pokémon receive reduced Stardust power-up
+            costs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Chesnaught?
+        </summary>
+
+        <p>
+
+            A 100% Chesnaught has perfect 15/15/15 Attack,
+            Defense and HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Chesnaught?
+        </summary>
+
+        <p>
+
+            XXL Chesnaught is an exceptionally large
+            individual of the species. XXL is a size
+            classification rather than a separate species.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Chesnaught?
+        </summary>
+
+        <p>
+
+            XXS Chesnaught is an exceptionally small
+            individual. Size classification is separate
+            from IV appraisal.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Mega Chesnaught released?
+        </summary>
+
+        <p>
+
+            Yes. Mega Chesnaught is a released Mega Evolution
+            in Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mega Chesnaught's max CP?
+        </summary>
+
+        <p>
+
+            Mega Chesnaught can reach 4,628 CP at Level 50
+            with perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Mega Chesnaught's best moveset?
+        </summary>
+
+        <p>
+
+            The current recommended Grass-oriented Mega
+            build is Vine Whip with Seed Bomb+, although
+            moves and rankings can change with game updates.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Chesnaught Mega Evolve?
+        </summary>
+
+        <p>
+
+            Yes. A Shiny Chesnaught can be used for Mega
+            Evolution and retains its Shiny identity.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a Lucky Chesnaught Mega Evolve?
+        </summary>
+
+        <p>
+
+            Mega Evolution is performed on an eligible
+            Chesnaught; Lucky status is an attribute of
+            the Pokémon and does not create a separate species.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Mega Evolution permanently change Chesnaught?
+        </summary>
+
+        <p>
+
+            No. Mega Evolution is temporary and the
+            underlying Pokémon remains Chesnaught.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL NOTE
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, events, availability, Mega features and
+            battle rankings can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Chesnaught Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#hundo">
+                    100% Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#mega">
+                    Mega Chesnaught
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/chespin.html">
+
+            Chespin Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/quilladin.html">
+
+            Quilladin Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/mega-chesnaught.html">
+
+            Mega Chesnaught Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/grass.html">
+
+            Grass Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/fighting.html">
+
+            Fighting Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-6.html">
+
+            Gen 6 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Chesnaught Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Grass / Fighting
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            6
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #652
+        </p>
+
+
+        <p>
+            <strong>Max CP:</strong>
+            3,340
+        </p>
+
+
+        <p>
+            <strong>Mega CP:</strong>
+            4,628
+        </p>
+
+
+        <p>
+            <strong>Buddy Distance:</strong>
+            3 km
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            Chespin → Quilladin → Chesnaught
+        </p>
+
+
+        <p>
+            <strong>Special Forms:</strong>
+            Shadow, Purified, Mega
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

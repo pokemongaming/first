@@ -1,0 +1,4795 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Baxcalibur Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Baxcalibur Pokémon GO guide covering regular, Shiny, Shadow, Purified, Lucky, 100% IV, XXL and XXS Baxcalibur, including stats, max CP, typing, weaknesses, resistances, moves, raids, PvP, IVs, Candy XL and availability.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/baxcalibur.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #8fd8ff;
+            --accent-2: #62bce8;
+
+            --ice: #72d6dc;
+            --dragon: #9b7cff;
+
+            --water: #4e9dff;
+            --steel: #9ca9c5;
+            --fairy: #e78ac3;
+            --rock: #c9aa65;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+            --gold: #f0c75e;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(111, 196, 255, .12),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8, 11, 18, .92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(114,214,220,.17),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 10% 90%,
+                    rgba(155,124,255,.10),
+                    transparent 28%
+                ),
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            color:
+                var(--ice);
+
+            background:
+                rgba(114,214,220,.08);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom:
+                12px;
+        }
+
+        .hero-subtitle {
+
+            max-width:
+                720px;
+
+            font-size:
+                1rem;
+
+            color:
+                #c2cad7;
+        }
+
+        .hero-tags {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                800;
+        }
+
+        .ice-tag {
+            color: var(--ice);
+        }
+
+        .dragon-tag {
+            color: var(--dragon);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height:
+                300px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+        .pokemon-placeholder {
+
+            width:
+                260px;
+
+            height:
+                260px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(114,214,220,.22),
+                    transparent 65%
+                );
+
+            font-size:
+                7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                18px;
+        }
+
+        .quick-stat {
+
+            padding:
+                18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .quick-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                1.25rem;
+        }
+
+        .quick-stat span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                750;
+        }
+
+
+        /* =====================================================
+           CONTENT LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                minmax(0, 1fr) 290px;
+
+            gap:
+                20px;
+
+            margin-top:
+                20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom:
+                20px;
+
+            padding:
+                28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+
+            display:
+                block;
+
+            margin-bottom:
+                6px;
+
+            color:
+                var(--accent);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem, 3vw, 2rem);
+
+            margin-bottom:
+                9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                10px;
+        }
+
+        .stat-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .64rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                .04em;
+        }
+
+        .stat-card strong {
+
+            display:
+                block;
+
+            margin-top:
+                4px;
+
+            font-size:
+                1.5rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+
+            padding:
+                18px;
+
+            border:
+                1px solid rgba(114,214,220,.3);
+
+            background:
+                rgba(114,214,220,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width:
+                50px;
+
+            height:
+                50px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(114,214,220,.13);
+
+            font-size:
+                1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color:
+                var(--ice);
+
+            font-size:
+                .75rem;
+
+            font-weight:
+                850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                15px;
+        }
+
+        .effect-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-card .effect-icon {
+
+            font-size:
+                1.5rem;
+
+            margin-bottom:
+                6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card span {
+            color: var(--muted);
+            font-size: .72rem;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align:
+                left;
+
+            font-size:
+                .76rem;
+        }
+
+        .data-table th {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color:
+                var(--ice);
+
+            font-weight:
+                800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top:
+                15px;
+
+            padding:
+                18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(114,214,220,.1),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(114,214,220,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap:
+                15px;
+
+            align-items:
+                center;
+
+            padding:
+                12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height:
+                8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius:
+                99px;
+
+            overflow:
+                hidden;
+        }
+
+        .rating-fill {
+
+            height:
+                100%;
+
+            width:
+                var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius:
+                inherit;
+        }
+
+        .rating-value {
+
+            text-align:
+                right;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           COMPARISON
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding:
+                14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size:
+                .75rem;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+
+            text-align:
+                left;
+        }
+
+
+        /* =====================================================
+           VARIANT GRID
+        ===================================================== */
+
+        .variant-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                20px;
+        }
+
+        .variant-card {
+
+            padding:
+                20px;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                var(--surface-2);
+
+            border-radius:
+                var(--radius-sm);
+
+            transition:
+                transform .2s ease,
+                border-color .2s ease;
+        }
+
+        .variant-card:hover {
+
+            transform:
+                translateY(-3px);
+
+            border-color:
+                var(--accent);
+        }
+
+        .variant-icon {
+
+            font-size:
+                2rem;
+
+            margin-bottom:
+                10px;
+        }
+
+        .variant-card strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+        .variant-card p {
+
+            font-size:
+                .72rem;
+
+            margin:
+                0;
+        }
+
+
+        /* =====================================================
+           IV GRID
+        ===================================================== */
+
+        .iv-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                10px;
+
+            margin-top:
+                15px;
+        }
+
+        .iv-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+        .iv-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1.35rem;
+        }
+
+        .iv-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                8px;
+
+            margin-top:
+                15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                9px;
+
+            color:
+                #c8cfda;
+
+            font-size:
+                .78rem;
+        }
+
+        .checklist li::before {
+
+            content:
+                "✓";
+
+            margin-right:
+                8px;
+
+            color:
+                var(--success);
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           SPECIAL VARIANT
+        ===================================================== */
+
+        .special-card {
+
+            margin-top:
+                18px;
+
+            padding:
+                22px;
+
+            border-radius:
+                18px;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,.045),
+                    rgba(255,255,255,.015)
+                );
+        }
+
+        .special-card h3 {
+            margin-top: 0;
+        }
+
+        .special-label {
+
+            display:
+                inline-block;
+
+            margin-bottom:
+                8px;
+
+            font-size:
+                .62rem;
+
+            letter-spacing:
+                .08em;
+
+            color:
+                var(--accent);
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           LUCKY
+        ===================================================== */
+
+        .lucky-box {
+
+            padding:
+                24px;
+
+            border-radius:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(240,199,94,.14),
+                    rgba(255,255,255,.025)
+                );
+
+            border:
+                1px solid rgba(240,199,94,.3);
+        }
+
+        .lucky-box strong {
+            color: var(--gold);
+        }
+
+
+        /* =====================================================
+           SIZE CARDS
+        ===================================================== */
+
+        .size-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap:
+                15px;
+
+            margin-top:
+                18px;
+        }
+
+        .size-card {
+
+            padding:
+                22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                18px;
+
+            background:
+                var(--surface-2);
+        }
+
+        .size-card h3 {
+            margin-top: 0;
+        }
+
+        .size-badge {
+
+            display:
+                inline-block;
+
+            padding:
+                5px 9px;
+
+            border-radius:
+                999px;
+
+            font-size:
+                .65rem;
+
+            font-weight:
+                900;
+
+            background:
+                rgba(114,214,220,.1);
+
+            color:
+                var(--ice);
+        }
+
+
+        /* =====================================================
+           EDITORIAL
+        ===================================================== */
+
+        .editorial-note {
+
+            padding:
+                17px;
+
+            margin-top:
+                20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position:
+                sticky;
+
+            top:
+                88px;
+
+            align-self:
+                start;
+        }
+
+        .side-card {
+
+            margin-bottom:
+                15px;
+
+            padding:
+                20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size:
+                .9rem;
+        }
+
+        .side-nav {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                4px;
+        }
+
+        .side-nav a {
+
+            display:
+                block;
+
+            padding:
+                8px 10px;
+
+            border-radius:
+                7px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+
+            font-weight:
+                700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color:
+                white;
+        }
+
+        .related-link {
+
+            display:
+                block;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color:
+                var(--muted);
+
+            font-size:
+                .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom:
+                0;
+        }
+
+        summary {
+
+            cursor:
+                pointer;
+
+            font-weight:
+                850;
+
+            font-size:
+                .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size:
+                .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        footer p {
+
+            margin:
+                0;
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .variant-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media(max-width: 650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding:
+                    20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .effect-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .variant-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .size-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    6px;
+            }
+
+            .rating-value {
+                text-align:
+                    left;
+            }
+
+            .main-nav {
+                display:
+                    none;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/ice.html">
+        Ice Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Baxcalibur
+    </strong>
+
+</div>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                GEN 9 • ICE / DRAGON
+            </span>
+
+            <h1>
+                Baxcalibur
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Baxcalibur is a powerful Ice- and Dragon-type
+                Pokémon from the Paldea region. In Pokémon GO,
+                it is especially interesting for players looking
+                for a strong Ice attacker while also offering
+                useful Dragon-type characteristics.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag ice-tag">
+                    Ice
+                </span>
+
+                <span class="tag dragon-tag">
+                    Dragon
+                </span>
+
+                <span class="tag">
+                    #998
+                </span>
+
+                <span class="tag">
+                    Gen 9
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    100% IV
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed image -->
+
+            <div class="pokemon-placeholder">
+                🦖
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            254
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            168
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            229
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~4,680
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Baxcalibur Overview
+        </h2>
+
+        <p>
+
+            Baxcalibur is the final evolutionary stage of the
+            Frigibax family and is a dual Ice / Dragon-type
+            Pokémon from Generation 9.
+
+            Its combination of offensive power and Ice typing
+            makes it particularly interesting for raid teams
+            facing Dragon, Flying and Ground-type targets.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#998</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 9</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Paldea</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Ice / Dragon</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>254</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>168</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>229</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~4,680</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Baxcalibur Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            ❄️
+        </div>
+
+        <div>
+
+            <strong>
+                Ice / Dragon
+            </strong>
+
+            <span>
+                Dual Type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Baxcalibur's Typing Matters
+    </h3>
+
+    <p>
+
+        Baxcalibur's dual typing gives it access to the
+        offensive strengths of both Ice and Dragon attacks.
+        The Ice typing is especially useful when targeting
+        Pokémon that are vulnerable to Ice damage.
+
+    </p>
+
+    <p>
+
+        At the same time, its Dragon typing affects both
+        its defensive matchups and the types of attacks
+        that can threaten it.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================================
+     WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • MATCHUPS
+        </span>
+
+        <h2>
+            Baxcalibur Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐉
+            </div>
+
+            <strong>
+                Dragon
+            </strong>
+
+            <p>
+                Dragon-type attacks can deal super-effective
+                damage against Baxcalibur.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting attacks are super effective against
+                Baxcalibur.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks can exploit Baxcalibur's
+                Ice typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Steel attacks are particularly dangerous
+                against Baxcalibur.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks are super effective
+                against its Dragon typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Baxcalibur resists Water-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Its Dragon typing gives it resistance to
+                Electric attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Baxcalibur resists Grass-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Baxcalibur Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Baxcalibur has a strong offensive profile and
+            substantial HP. Its Defense is less impressive
+            than its Attack and HP, so its raid performance
+            depends heavily on the matchup and moveset.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                254
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                168
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                229
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~4,680
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            CP depends on the Pokémon's underlying stats,
+            IVs and level. A higher CP does not automatically
+            mean that a Pokémon has perfect IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVESET
+        </span>
+
+        <h2>
+            Baxcalibur Best Moves
+        </h2>
+
+        <p>
+
+            Baxcalibur can be evaluated differently depending
+            on whether you want it for Ice-focused PvE damage,
+            Dragon-focused use or PvP.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Ice Raid Direction
+        </strong>
+
+        <p>
+            Choose the strongest currently available Ice-focused
+            moveset when building Baxcalibur specifically as an
+            Ice-type raid attacker.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                    <th>
+                        Best Use
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Ice Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Ice
+                    </td>
+
+                    <td>
+                        Fast Attack
+                    </td>
+
+                    <td>
+                        Ice PvE
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Ice Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Ice
+                    </td>
+
+                    <td>
+                        Charged Attack
+                    </td>
+
+                    <td>
+                        Ice raids
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Build
+                    </td>
+
+                    <td class="move-type">
+                        Dragon
+                    </td>
+
+                    <td>
+                        Alternative role
+                    </td>
+
+                    <td>
+                        Dragon matchups
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change as Pokémon GO adds new
+        attacks, events and move updates. Check current
+        in-game move availability before publishing a
+        time-sensitive recommendation.
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • RAID PERFORMANCE
+        </span>
+
+        <h2>
+            Baxcalibur Raid Performance
+        </h2>
+
+        <p>
+
+            Baxcalibur's value in raids depends on its current
+            moveset and the boss being targeted. Its Ice typing
+            gives it an obvious role against several common
+            raid-boss weaknesses.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Ice Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 92%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.2/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Dragon Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 84%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.4/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            General PvE
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 88%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.8/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Baxcalibur?
+    </h3>
+
+    <p>
+
+        Baxcalibur is most attractive when you have a strong
+        specimen, a suitable moveset and a clear need for its
+        Ice or Dragon role. Avoid investing heavily in every
+        specimen simply because it has high CP.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================================
+     COUNTERS
+========================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • COUNTERS
+        </span>
+
+        <h2>
+            What Counters Baxcalibur?
+        </h2>
+
+        <p>
+
+            Baxcalibur's Ice / Dragon typing creates several
+            exploitable weaknesses. Fighting, Rock, Steel,
+            Dragon and Fairy attackers are important counter
+            categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel Attackers
+            </strong>
+
+            <p>
+                Steel-type attackers can take advantage of
+                Baxcalibur's Steel weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy Attackers
+            </strong>
+
+            <p>
+                Fairy attacks are especially useful against
+                Dragon-type Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock Attackers
+            </strong>
+
+            <p>
+                Rock damage can exploit Baxcalibur's Ice typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Exact counters should be generated using the current
+        boss moveset, weather, Pokémon availability and
+        current move data.
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Baxcalibur IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add points to Attack, Defense
+            and HP. For a traditional raid attacker, a
+            15/15/15 Baxcalibur represents the perfect-IV
+            combination.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Is a 100% Baxcalibur?
+    </h3>
+
+    <p>
+
+        A 100% Baxcalibur has 15 Attack, 15 Defense and
+        15 HP IVs. It is commonly called a hundo by
+        Pokémon GO players.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% Baxcalibur
+        </strong>
+
+        <p>
+            15 / 15 / 15 IV • Perfect IV • Excellent long-term
+            candidate for collectors and powered-up teams.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • PVP
+        </span>
+
+        <h2>
+            Baxcalibur PvP Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Baxcalibur's high maximum CP makes it more naturally
+        suited to higher-level formats than low-CP league
+        environments. Its Ice / Dragon typing can create
+        interesting matchups, but its weaknesses require
+        careful team construction.
+
+    </p>
+
+
+    <h3>
+        Great League & Ultra League
+    </h3>
+
+    <p>
+
+        Baxcalibur's high CP and stat distribution mean that
+        lower leagues are generally less natural destinations
+        for a standard Baxcalibur. Always check current league
+        rules and CP limits before building one specifically
+        for PvP.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================================
+     SPECIAL VARIANTS
+========================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • SPECIAL VARIANTS
+        </span>
+
+        <h2>
+            Baxcalibur Special Variants
+        </h2>
+
+        <p>
+
+            Pokémon GO can distinguish Baxcalibur specimens
+            through mechanics such as Shiny status, Shadow
+            status, Lucky status, IV quality and size.
+
+            These should not all be treated as separate
+            Pokédex species.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Baxcalibur
+            </strong>
+
+            <p>
+                Alternate coloration available through
+                eligible encounters.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Baxcalibur
+            </strong>
+
+            <p>
+                A Shadow status variant if introduced
+                through Pokémon GO mechanics.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                    🟡
+            </div>
+
+            <strong>
+                Lucky Baxcalibur
+            </strong>
+
+            <p>
+                A Lucky Pokémon obtained through trading.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <strong>
+                100% Baxcalibur
+            </strong>
+
+            <p>
+                Perfect 15/15/15 IV Baxcalibur.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL Baxcalibur
+            </strong>
+
+            <p>
+                An unusually large Baxcalibur specimen.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🔹
+            </div>
+
+            <strong>
+                XXS Baxcalibur
+            </strong>
+
+            <p>
+                An unusually small Baxcalibur specimen.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • SHINY
+        </span>
+
+        <h2>
+            Shiny Baxcalibur
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Shiny Baxcalibur has an alternate appearance compared
+        with the standard coloration. Shiny status is primarily
+        a collectible distinction and does not automatically
+        make a Pokémon stronger in battle.
+
+    </p>
+
+
+    <div class="special-card">
+
+        <span class="special-label">
+            SHINY COLLECTION
+        </span>
+
+        <h3>
+            Shiny Baxcalibur
+        </h3>
+
+        <p>
+
+            If you obtain a Shiny Baxcalibur, its Shiny status
+            remains an important part of its collection value.
+            IVs, level, moveset and battle role should still
+            be evaluated separately.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny vs Regular Baxcalibur
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Baxcalibur
+                    </td>
+
+                    <td>
+                        Baxcalibur
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Ice / Dragon
+                    </td>
+
+                    <td>
+                        Ice / Dragon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Appearance
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle advantage
+                    </td>
+
+                    <td>
+                        No cosmetic bonus
+                    </td>
+
+                    <td>
+                        No inherent Shiny battle bonus
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Baxcalibur
+        </h2>
+
+        <p>
+
+            Shadow Baxcalibur should only be presented as
+            obtainable if Pokémon GO actually introduces it
+            through its Shadow Pokémon systems.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <span class="special-label">
+            SHADOW STATUS
+        </span>
+
+        <h3>
+            Shadow Baxcalibur
+        </h3>
+
+        <p>
+
+            If Shadow Baxcalibur becomes available, it would
+            need to be evaluated separately because Shadow
+            Pokémon have different battle characteristics,
+            resource requirements and move considerations.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Baxcalibur vs Regular Baxcalibur
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Baxcalibur
+                    </td>
+
+                    <td>
+                        Baxcalibur
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Ice / Dragon
+                    </td>
+
+                    <td>
+                        Ice / Dragon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes, if introduced
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Investment
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Potentially higher resource cost
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Availability warning:
+        </strong>
+
+        <p>
+
+            Do not permanently claim that Shadow Baxcalibur
+            is obtainable unless the current Pokémon GO
+            mechanics confirm it. Keep this section dynamic
+            if your database automatically updates availability.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Baxcalibur
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Purified Pokémon are created by purifying eligible
+        Shadow Pokémon. Therefore, Purified Baxcalibur should
+        only be listed as an obtainable variant if Shadow
+        Baxcalibur is actually available and can be purified
+        under current Pokémon GO rules.
+
+    </p>
+
+
+    <div class="special-card">
+
+        <h3>
+            Purified Baxcalibur
+        </h3>
+
+        <p>
+
+            If available, purification changes the Pokémon's
+            Shadow status and can affect its IVs, level,
+            resource requirements and moves.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not yet purified
+                    </td>
+
+                    <td>
+                        Purified
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        IV impact
+                    </td>
+
+                    <td>
+                        Original Shadow IVs
+                    </td>
+
+                    <td>
+                        Can increase during purification
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Baxcalibur
+        </h2>
+
+    </div>
+
+
+    <div class="lucky-box">
+
+        <strong>
+            ✨ Lucky Baxcalibur
+        </strong>
+
+        <p>
+
+            A Lucky Baxcalibur is obtained through Pokémon
+            trading. Lucky status is separate from Shiny
+            status and does not automatically mean the Pokémon
+            has perfect IVs.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Lucky Baxcalibur Can Be Valuable
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Lucky Pokémon require less Stardust for power-ups.
+        </li>
+
+        <li>
+            A Lucky Baxcalibur can be useful for long-term
+            investment.
+        </li>
+
+        <li>
+            Lucky status is independent of Shiny status.
+        </li>
+
+        <li>
+            A Lucky Pokémon is not automatically 100% IV.
+        </li>
+
+        <li>
+            Check the post-trade IVs before investing heavily.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =========================================================
+     100%
+========================================================= -->
+
+<section class="section" id="100-iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • PERFECT IV
+        </span>
+
+        <h2>
+            100% Baxcalibur
+        </h2>
+
+        <p>
+
+            A 100% Baxcalibur has the maximum possible IVs
+            in Attack, Defense and HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            100% / Hundo Baxcalibur
+        </strong>
+
+        <p>
+
+            15/15/15 IV • Perfect IV • Strong collector
+            specimen and potential long-term investment.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up a Hundo Baxcalibur?
+    </h3>
+
+    <p>
+
+        A perfect IV Baxcalibur is an excellent candidate
+        for investment if its moveset and battle role match
+        your needs. However, IV perfection alone does not
+        guarantee that it is the best attacker for every
+        matchup.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================================
+     XXL / XXS
+========================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • SIZE
+        </span>
+
+        <h2>
+            XXL & XXS Baxcalibur
+        </h2>
+
+        <p>
+
+            Pokémon GO can classify individual Pokémon by size.
+            XXL and XXS status is different from IV quality,
+            Shiny status and Lucky status.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card">
+
+            <span class="size-badge">
+                XXL
+            </span>
+
+            <h3>
+                XXL Baxcalibur
+            </h3>
+
+            <p>
+
+                XXL Baxcalibur is an unusually large specimen.
+                Size status can be useful for collection,
+                showcases and other size-related features.
+
+            </p>
+
+            <ul class="checklist">
+
+                <li>
+                    Large-size classification
+                </li>
+
+                <li>
+                    Separate from IV percentage
+                </li>
+
+                <li>
+                    Can be valuable for collectors
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <span class="size-badge">
+                XXS
+            </span>
+
+            <h3>
+                XXS Baxcalibur
+            </h3>
+
+            <p>
+
+                XXS Baxcalibur is an unusually small specimen.
+                Like XXL status, XXS status is separate from
+                IV quality.
+
+            </p>
+
+            <ul class="checklist">
+
+                <li>
+                    Small-size classification
+                </li>
+
+                <li>
+                    Separate from Shiny status
+                </li>
+
+                <li>
+                    Useful for collectors and size records
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Size classifications should not be confused with
+        Attack, Defense or HP IVs. An XXL or XXS Pokémon can
+        have any combination of IVs.
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • EVOLUTION
+        </span>
+
+        <h2>
+            Baxcalibur Evolution Family
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Baxcalibur is the final stage of its evolutionary
+        family. It evolves from Arctibax, which evolves
+        from Frigibax.
+
+    </p>
+
+
+    <div class="variant-grid">
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Frigibax
+            </strong>
+
+            <p>
+                Base Pokémon in the evolutionary family.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🧊
+            </div>
+
+            <strong>
+                Arctibax
+            </strong>
+
+            <p>
+                Middle evolutionary stage.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🦖
+            </div>
+
+            <strong>
+                Baxcalibur
+            </strong>
+
+            <p>
+                Final evolutionary stage.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Reminder
+        </strong>
+
+        <p>
+
+            If you are building Baxcalibur from scratch,
+            keep useful Frigibax specimens and monitor
+            Candy requirements before transferring them.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RESOURCES
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • RESOURCES
+        </span>
+
+        <h2>
+            Baxcalibur Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Building Baxcalibur for high-level battle use can
+        require significant Candy, Candy XL and Stardust.
+        Plan your resources around the Pokémon you actually
+        intend to use.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Candy for your strongest Baxcalibur candidates.
+        </li>
+
+        <li>
+            Collect Candy XL for higher-level investment.
+        </li>
+
+        <li>
+            Check the moveset before spending expensive resources.
+        </li>
+
+        <li>
+            Compare Baxcalibur with other Ice attackers.
+        </li>
+
+        <li>
+            Keep high-IV specimens for long-term projects.
+        </li>
+
+        <li>
+            Consider Lucky Baxcalibur for Stardust-efficient
+            investment.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =========================================================
+     AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • AVAILABILITY
+        </span>
+
+        <h2>
+            Baxcalibur Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Baxcalibur availability depends on the current
+        Pokémon GO encounter, event and evolutionary systems.
+        Because Pokémon availability changes, historical
+        event information should be separated from current
+        encounter information.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and Pokémon
+            availability schedule before publishing a claim
+            that Baxcalibur or its evolutionary family is
+            currently obtainable.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     BATTLE GUIDE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Baxcalibur
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the raid boss's weaknesses.
+        </li>
+
+        <li>
+            Confirm Baxcalibur has the appropriate moveset.
+        </li>
+
+        <li>
+            Check its level and IVs.
+        </li>
+
+        <li>
+            Consider weather and party composition.
+        </li>
+
+        <li>
+            Compare it with other Ice and Dragon attackers.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Team Building
+    </h3>
+
+    <p>
+
+        Baxcalibur should not automatically occupy every
+        Ice or Dragon slot. The best team depends on the
+        boss's typing, moveset, weather and the attackers
+        available to your account.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        A high-quality Baxcalibur can be a worthwhile
+        long-term project when its moveset and role remain
+        relevant to your raid or PvP goals.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================================
+     VARIANT COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • COMPARISON
+        </span>
+
+        <h2>
+            Baxcalibur Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Battle Effect
+                    </th>
+
+                    <th>
+                        Collector Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Baxcalibur
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        No inherent Shiny bonus
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow Pokémon status
+                    </td>
+
+                    <td>
+                        Different battle profile
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        Different mechanics
+                    </td>
+
+                    <td>
+                        Variable
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Obtained through trading
+                    </td>
+
+                    <td>
+                        Stardust-efficient investment
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        15/15/15 IV
+                    </td>
+
+                    <td>
+                        Maximum IV combination
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Extra-large specimen
+                    </td>
+
+                    <td>
+                        Not an IV bonus
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Extra-small specimen
+                    </td>
+
+                    <td>
+                        Not an IV bonus
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • FAQ
+        </span>
+
+        <h2>
+            Baxcalibur FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Baxcalibur?
+        </summary>
+
+        <p>
+            Baxcalibur is an Ice / Dragon-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Baxcalibur weak to?
+        </summary>
+
+        <p>
+
+            Baxcalibur is vulnerable to several attack types,
+            including Dragon, Fighting, Rock, Steel and Fairy.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Baxcalibur good for raids?
+        </summary>
+
+        <p>
+
+            Baxcalibur can be useful in raids when its Ice or
+            Dragon typing and current moveset match the boss's
+            weaknesses.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Baxcalibur available?
+        </summary>
+
+        <p>
+
+            Shiny availability depends on the current Pokémon
+            GO implementation and encounter availability.
+            Verify the current game data before publishing
+            a permanent availability claim.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Baxcalibur?
+        </summary>
+
+        <p>
+
+            A 100% Baxcalibur has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Baxcalibur?
+        </summary>
+
+        <p>
+
+            Lucky Baxcalibur is a Baxcalibur obtained through
+            Pokémon trading that has the Lucky status.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lucky Baxcalibur automatically 100% IV?
+        </summary>
+
+        <p>
+
+            No. Lucky status and perfect IV status are
+            separate characteristics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Baxcalibur?
+        </summary>
+
+        <p>
+
+            XXL Baxcalibur is an unusually large specimen.
+            XXL classification is separate from IV quality.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Baxcalibur?
+        </summary>
+
+        <p>
+
+            XXS Baxcalibur is an unusually small specimen.
+            XXS status is separate from Shiny and IV status.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Baxcalibur available?
+        </summary>
+
+        <p>
+
+            Shadow availability should be checked against
+            the current Pokémon GO Shadow Pokémon system.
+            Do not assume every species can permanently
+            appear as a Shadow Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Baxcalibur be purified?
+        </summary>
+
+        <p>
+
+            Purification is only relevant if Shadow Baxcalibur
+            is actually available and eligible for purification
+            under current Pokémon GO mechanics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Baxcalibur good in PvP?
+        </summary>
+
+        <p>
+
+            Baxcalibur can have PvP relevance depending on
+            the format, moveset and current metagame. Its
+            high CP makes higher-level formats the more
+            natural environment to evaluate.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Baxcalibur a Legendary Pokémon?
+        </summary>
+
+        <p>
+
+            No. Baxcalibur is not a Legendary Pokémon.
+            It is the final evolutionary stage of the
+            Frigibax evolutionary family.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What generation is Baxcalibur from?
+        </summary>
+
+        <p>
+
+            Baxcalibur was introduced in Generation 9 and
+            is associated with the Paldea region.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Baxcalibur evolve?
+        </summary>
+
+        <p>
+
+            Baxcalibur is the final stage of its evolutionary
+            family, so it does not evolve further.
+
+        </p>
+
+    </details>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     EDITORIAL NOTE
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, Pokémon availability, forms, events and
+            battle rankings can change over time.
+
+        </p>
+
+        <p>
+
+            Always verify current in-game information before
+            making investment decisions. Variant sections such
+            as Shadow, Purified and Shiny should be updated
+            when Pokémon GO changes their availability.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Baxcalibur Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="#counters">
+                    Counters
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Baxcalibur
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Baxcalibur
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Baxcalibur
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Baxcalibur
+                </a>
+            </li>
+
+            <li>
+                <a href="#100-iv">
+                    100% Baxcalibur
+                </a>
+            </li>
+
+            <li>
+                <a href="#size">
+                    XXL & XXS
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution Family
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/frigibax.html">
+
+            Frigibax Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/arctibax.html">
+
+            Arctibax Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/ice.html">
+
+            Ice Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/dragon.html">
+
+            Dragon Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-9.html">
+
+            Gen 9 Pokémon →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="side-card">
+
+        <h3>
+            Baxcalibur Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Ice / Dragon
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            9
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #998
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            Final stage
+        </p>
+
+
+        <p>
+            <strong>Region:</strong>
+            Paldea
+        </p>
+
+
+        <p>
+            <strong>Special Variants:</strong>
+            Shiny, Shadow, Lucky, XXL, XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

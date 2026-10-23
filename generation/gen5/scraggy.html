@@ -1,0 +1,2985 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Scraggy Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & Forms</title>
+
+<meta name="description"
+content="Complete Scraggy Pokémon GO guide covering regular Scraggy, Shiny Scraggy, Shadow Scraggy, Purified Scraggy, Lucky Scraggy, 100% IV Scraggy, XXL and XXS Scraggy, including stats, CP, typing, weaknesses, resistances, moves, evolution and availability.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/scraggy.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #d7a04c;
+    --accent-2: #b87324;
+
+    --dark: #7b5d3b;
+    --fighting: #d85c5c;
+    --shadow: #8d6cff;
+    --shiny: #ffd85e;
+    --purified: #76d7ff;
+    --lucky: #ffb84d;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(215,160,76,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(8,11,18,.92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    min-height: 68px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(215,160,76,.18),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            #17120d,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--accent);
+
+    background:
+        rgba(215,160,76,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing: -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.dark-tag {
+    color: #c7a67b;
+}
+
+.fighting-tag {
+    color: #ff7c7c;
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-pokemon img {
+    width: min(100%,320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(215,160,76,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   CONTENT LAYOUT
+===================================================== */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 25px 0 10px;
+
+    font-size: 1.08rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(215,160,76,.3);
+
+    background:
+        rgba(215,160,76,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(215,160,76,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--accent);
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card span {
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.3);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.3);
+}
+
+
+/* =====================================================
+   FORM CARDS
+===================================================== */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 14px;
+
+    margin-top: 18px;
+}
+
+.form-card {
+    padding: 22px;
+
+    border-radius: var(--radius);
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+
+.form-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-card strong {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+}
+
+.form-card p {
+    font-size: .78rem;
+    margin: 0;
+}
+
+
+/* =====================================================
+   SPECIAL FORM THEMES
+===================================================== */
+
+.shiny-card {
+    border-color:
+        rgba(255,216,94,.4);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,216,94,.1),
+            var(--surface-2)
+        );
+}
+
+.shadow-card {
+    border-color:
+        rgba(141,108,255,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(141,108,255,.12),
+            var(--surface-2)
+        );
+}
+
+.purified-card {
+    border-color:
+        rgba(118,215,255,.4);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(118,215,255,.1),
+            var(--surface-2)
+        );
+}
+
+.lucky-card {
+    border-color:
+        rgba(255,184,77,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,184,77,.1),
+            var(--surface-2)
+        );
+}
+
+.perfect-card {
+    border-color:
+        rgba(98,216,154,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(98,216,154,.1),
+            var(--surface-2)
+        );
+}
+
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(215,160,76,.1),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(215,160,76,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   SIZE CARDS
+===================================================== */
+
+.size-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 18px;
+}
+
+.size-card {
+    padding: 25px;
+
+    text-align: center;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.size-card strong {
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: 5px;
+}
+
+.size-card span {
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width: 950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid,
+    .size-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+```
+<div class="header-inner">
+
+    <a href="/" class="logo">
+        Pokémon<span>Gaming</span>
+    </a>
+
+    <nav class="main-nav">
+
+        <a href="/pokemon-types.html">Types</a>
+
+        <a href="/pokedex.html">Pokédex</a>
+
+        <a href="/raids/">Raids</a>
+
+        <a href="/guides/">Guides</a>
+
+        <a href="/tools/">Tools</a>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<main class="page">
+
+<div class="breadcrumb">
+
+```
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+    Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/dark.html">
+    Dark Type
+</a>
+
+<span>›</span>
+
+<strong>Scraggy</strong>
+```
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+```
+<div class="hero-grid">
+
+    <div>
+
+        <span class="eyebrow">
+            GEN 5 POKÉMON
+        </span>
+
+        <h1>
+            Scraggy
+        </h1>
+
+        <p class="hero-subtitle">
+
+            Scraggy is a Dark and Fighting-type Pokémon
+            from the Unova region. In Pokémon GO, it can
+            be collected in several special variations,
+            including Shiny, Shadow, Purified, Lucky,
+            XXL and XXS specimens.
+
+        </p>
+
+        <div class="hero-tags">
+
+            <span class="tag dark-tag">
+                Dark
+            </span>
+
+            <span class="tag fighting-tag">
+                Fighting
+            </span>
+
+            <span class="tag">
+                #559
+            </span>
+
+            <span class="tag">
+                Gen 5
+            </span>
+
+            <span class="tag">
+                Evolves
+            </span>
+
+            <span class="tag">
+                Shiny Available
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-pokemon">
+
+        <!-- Replace with properly licensed Scraggy asset -->
+
+        <div class="pokemon-placeholder">
+            🦎
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+```
+<div class="quick-stat">
+
+    <strong>
+        132
+    </strong>
+
+    <span>
+        ATTACK
+    </span>
+
+</div>
+
+<div class="quick-stat">
+
+    <strong>
+        132
+    </strong>
+
+    <span>
+        DEFENSE
+    </span>
+
+</div>
+
+<div class="quick-stat">
+
+    <strong>
+        137
+    </strong>
+
+    <span>
+        HP
+    </span>
+
+</div>
+
+<div class="quick-stat">
+
+    <strong>
+        ~1,400+
+    </strong>
+
+    <span>
+        MAX CP
+    </span>
+
+</div>
+```
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        01 / OVERVIEW
+    </span>
+
+    <h2>
+        Scraggy Overview
+    </h2>
+
+    <p>
+
+        Scraggy is a dual-type Dark and Fighting Pokémon
+        introduced in Generation 5. It evolves into Scrafty,
+        giving players a reason to collect strong Scraggy
+        specimens for future evolution and PvP projects.
+
+    </p>
+
+</div>
+
+
+<div class="stat-grid">
+
+    <div class="stat-card">
+
+        <span>Pokédex</span>
+
+        <strong>#559</strong>
+
+    </div>
+
+    <div class="stat-card">
+
+        <span>Generation</span>
+
+        <strong>Gen 5</strong>
+
+    </div>
+
+    <div class="stat-card">
+
+        <span>Region</span>
+
+        <strong>Unova</strong>
+
+    </div>
+
+    <div class="stat-card">
+
+        <span>Type</span>
+
+        <strong>Dark / Fighting</strong>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        02 / TYPE
+    </span>
+
+    <h2>
+        Scraggy Type
+    </h2>
+
+</div>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            🌑
+        </div>
+
+        <strong>
+            Dark
+        </strong>
+
+        <p>
+            Scraggy's first type provides useful offensive
+            and defensive interactions.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            🥊
+        </div>
+
+        <strong>
+            Fighting
+        </strong>
+
+        <p>
+            Fighting typing gives Scraggy a distinctive
+            dual-type battle profile.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        03 / TYPE MATCHUPS
+    </span>
+
+    <h2>
+        Scraggy Weaknesses & Resistances
+    </h2>
+
+</div>
+
+
+<h3>
+    Major Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🧚
+        </div>
+
+        <strong>
+            Fairy
+        </strong>
+
+        <p>
+            Fairy-type attacks are especially dangerous
+            against Dark and Fighting Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🪽
+        </div>
+
+        <strong>
+            Flying
+        </strong>
+
+        <p>
+            Flying-type attacks can exploit Scraggy's
+            Fighting typing.
+        </p>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Important Resistances
+</h3>
+
+<div class="effect-grid">
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🌑
+        </div>
+
+        <strong>
+            Dark
+        </strong>
+
+        <p>
+            Scraggy has useful resistance interactions
+            against Dark-type attacks.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            🪨
+        </div>
+
+        <strong>
+            Rock
+        </strong>
+
+        <p>
+            Its Fighting typing provides resistance
+            against Rock attacks.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            👻
+        </div>
+
+        <strong>
+            Ghost
+        </strong>
+
+        <p>
+            Dark typing gives Scraggy an important
+            defensive advantage against Ghost attacks.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        04 / STATS
+    </span>
+
+    <h2>
+        Scraggy Stats & Max CP
+    </h2>
+
+    <p>
+
+        Scraggy is primarily a base-stage Pokémon.
+        Its long-term value is often connected to evolving
+        it into Scrafty, depending on your collection and
+        battle goals.
+
+    </p>
+
+</div>
+
+
+<div class="stat-grid">
+
+    <div class="stat-card">
+
+        <span>ATTACK</span>
+
+        <strong>132</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>DEFENSE</span>
+
+        <strong>132</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>HP</span>
+
+        <strong>137</strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>MAX CP</span>
+
+        <strong>Check Level</strong>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        05 / MOVES
+    </span>
+
+    <h2>
+        Scraggy Best Moves
+    </h2>
+
+    <p>
+
+        Scraggy's move value depends heavily on whether
+        you intend to keep it unevolved or evolve it into
+        Scrafty for a specific battle league.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Moveset Strategy
+    </strong>
+
+    <p>
+
+        Check Scraggy's currently available Pokémon GO
+        moves before spending valuable TMs or evolving a
+        rare specimen.
+
+    </p>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Live move data:
+    </strong>
+
+    <p>
+
+        Pokémon GO move pools can change through updates
+        and events. Connect your production database to
+        current move data before publishing exact rankings.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        06 / EVOLUTION
+    </span>
+
+    <h2>
+        Scraggy Evolution
+    </h2>
+
+</div>
+
+
+<div class="form-grid">
+
+    <div class="form-card">
+
+        <div class="form-icon">
+            🦎
+        </div>
+
+        <strong>
+            Scraggy
+        </strong>
+
+        <p>
+            Base Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <div class="form-icon">
+            ⬇️
+        </div>
+
+        <strong>
+            Evolves Into
+        </strong>
+
+        <p>
+            Scraggy evolves into Scrafty when the required
+            evolution conditions are met.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Before evolving:
+    </strong>
+
+    <p>
+
+        Check IVs, level, intended league and special status
+        before evolving a rare Scraggy.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     SPECIAL FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        07 / SPECIAL VARIATIONS
+    </span>
+
+    <h2>
+        Scraggy Forms & Special Versions
+    </h2>
+
+    <p>
+
+        Scraggy can exist in several collectible states.
+        These states do not all represent separate species
+        forms, but they can affect appearance, investment
+        cost, collection value or battle mechanics.
+
+    </p>
+
+</div>
+
+
+<div class="form-grid">
+
+    <div class="form-card">
+
+        <div class="form-icon">
+            🦎
+        </div>
+
+        <strong>
+            Regular Scraggy
+        </strong>
+
+        <p>
+            The standard version used for collection,
+            evolution and normal gameplay.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shiny-card">
+
+        <div class="form-icon">
+            ✨
+        </div>
+
+        <strong>
+            Shiny Scraggy
+        </strong>
+
+        <p>
+            A rare alternate-color version for collectors.
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow-card">
+
+        <div class="form-icon">
+            🌑
+        </div>
+
+        <strong>
+            Shadow Scraggy
+        </strong>
+
+        <p>
+            A Shadow version with different battle and
+            resource considerations.
+        </p>
+
+    </div>
+
+
+    <div class="form-card purified-card">
+
+        <div class="form-icon">
+            ✨
+        </div>
+
+        <strong>
+            Purified Scraggy
+        </strong>
+
+        <p>
+            Created by purifying an eligible Shadow Scraggy.
+        </p>
+
+    </div>
+
+
+    <div class="form-card lucky-card">
+
+        <div class="form-icon">
+            🍀
+        </div>
+
+        <strong>
+            Lucky Scraggy
+        </strong>
+
+        <p>
+            A special trade result with reduced Stardust
+            power-up costs.
+        </p>
+
+    </div>
+
+
+    <div class="form-card perfect-card">
+
+        <div class="form-icon">
+            💯
+        </div>
+
+        <strong>
+            100% IV Scraggy
+        </strong>
+
+        <p>
+            A perfect 15/15/15 IV specimen.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        08 / SHINY
+    </span>
+
+    <h2>
+        Shiny Scraggy
+    </h2>
+
+    <p>
+
+        Shiny Scraggy is a collector-focused alternate
+        version of Scraggy. A Shiny Pokémon generally
+        retains its Shiny identity when evolved.
+
+    </p>
+
+</div>
+
+
+<div class="form-card shiny-card">
+
+    <div class="form-icon">
+        ✨
+    </div>
+
+    <strong>
+        Shiny Collection Value
+    </strong>
+
+    <p>
+
+        Shiny Scraggy may be especially valuable for players
+        who want to evolve and keep a Shiny Scrafty.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        09 / SHADOW
+    </span>
+
+    <h2>
+        Shadow Scraggy
+    </h2>
+
+    <p>
+
+        Shadow Scraggy should be considered separately from
+        regular Scraggy because Shadow Pokémon have their
+        own battle characteristics and investment costs.
+
+    </p>
+
+</div>
+
+
+<div class="form-card shadow-card">
+
+    <div class="form-icon">
+        🌑
+    </div>
+
+    <strong>
+        Shadow Battle Profile
+    </strong>
+
+    <p>
+
+        Shadow Pokémon generally trade defensive durability
+        for increased offensive pressure. Evaluate Shadow
+        Scraggy according to your intended role.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Shadow Scraggy Checklist
+</h3>
+
+<ul class="checklist">
+
+    <li>
+        Check its IVs before transferring.
+    </li>
+
+    <li>
+        Consider whether you plan to evolve it.
+    </li>
+
+    <li>
+        Check current Frustration removal opportunities.
+    </li>
+
+    <li>
+        Compare the Shadow and non-Shadow investment paths.
+    </li>
+
+    <li>
+        Do not purify automatically.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        10 / PURIFIED
+    </span>
+
+    <h2>
+        Purified Scraggy
+    </h2>
+
+    <p>
+
+        Purified Scraggy is created by purifying an eligible
+        Shadow Scraggy. Purification changes the Pokémon's
+        status and should be considered carefully before
+        making the decision.
+
+    </p>
+
+</div>
+
+
+<div class="form-card purified-card">
+
+    <div class="form-icon">
+        ✨
+    </div>
+
+    <strong>
+        Purification Decision
+    </strong>
+
+    <p>
+
+        Compare IV improvement, resource costs, battle
+        performance and collector value before purifying.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        11 / LUCKY
+    </span>
+
+    <h2>
+        Lucky Scraggy
+    </h2>
+
+    <p>
+
+        Lucky Scraggy can be obtained through an eligible
+        Lucky Trade. Lucky Pokémon are valuable because
+        they require less Stardust to power up.
+
+    </p>
+
+</div>
+
+
+<div class="form-card lucky-card">
+
+    <div class="form-icon">
+        🍀
+    </div>
+
+    <strong>
+        Why Lucky Scraggy Can Be Valuable
+    </strong>
+
+    <p>
+
+        A Lucky Scraggy can be an attractive long-term
+        evolution project, especially if you want to build
+        Scrafty while reducing Stardust costs.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     PERFECT IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        12 / PERFECT IV
+    </span>
+
+    <h2>
+        100% IV Scraggy
+    </h2>
+
+    <p>
+
+        A 100% Scraggy has 15 Attack, 15 Defense and
+        15 HP Individual Values.
+
+    </p>
+
+</div>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card perfect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Attack IV
+        </span>
+
+    </div>
+
+
+    <div class="effect-card perfect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Defense IV
+        </span>
+
+    </div>
+
+
+    <div class="effect-card perfect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            HP IV
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        100% IV = 15/15/15
+    </strong>
+
+    <p>
+
+        A perfect IV Scraggy is an excellent collector
+        specimen, although the best PvP IV spread may differ
+        depending on the league and evolved form.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     XXL / XXS
+===================================================== -->
+
+<section class="section" id="sizes">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        13 / SIZE VARIATIONS
+    </span>
+
+    <h2>
+        XXL Scraggy & XXS Scraggy
+    </h2>
+
+    <p>
+
+        Pokémon GO includes size variations for certain
+        Pokémon. XXL and XXS Scraggy are primarily
+        collectible size variants.
+
+    </p>
+
+</div>
+
+
+<div class="size-grid">
+
+    <div class="size-card">
+
+        <strong>
+            XXL
+        </strong>
+
+        <span>
+            Extra-large Scraggy
+        </span>
+
+        <p>
+            A larger-than-normal collectible specimen.
+        </p>
+
+    </div>
+
+
+    <div class="size-card">
+
+        <strong>
+            XXS
+        </strong>
+
+        <span>
+            Extra-small Scraggy
+        </span>
+
+        <p>
+            A smaller-than-normal collectible specimen.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Size note:
+    </strong>
+
+    <p>
+
+        XXL and XXS status should be treated separately from
+        IV quality. A Pokémon can be XXL or XXS while having
+        any possible IV combination.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        14 / COMPARISON
+    </span>
+
+    <h2>
+        Scraggy Versions Compared
+    </h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+    <table class="comparison-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Version
+                </th>
+
+                <th>
+                    Main Difference
+                </th>
+
+                <th>
+                    Collection Value
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Regular</td>
+
+                <td>
+                    Standard Scraggy
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Shiny</td>
+
+                <td>
+                    Alternate appearance
+                </td>
+
+                <td>
+                    High
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Shadow</td>
+
+                <td>
+                    Shadow battle profile
+                </td>
+
+                <td>
+                    Special
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Purified</td>
+
+                <td>
+                    Purified Shadow Pokémon
+                </td>
+
+                <td>
+                    Special
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Lucky</td>
+
+                <td>
+                    Reduced Stardust power-up cost
+                </td>
+
+                <td>
+                    High
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>100% IV</td>
+
+                <td>
+                    Perfect 15/15/15 IVs
+                </td>
+
+                <td>
+                    Very High
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>XXL</td>
+
+                <td>
+                    Large size variation
+                </td>
+
+                <td>
+                    Collector
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>XXS</td>
+
+                <td>
+                    Small size variation
+                </td>
+
+                <td>
+                    Collector
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     INVESTMENT
+===================================================== -->
+
+<section class="section" id="investment">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        15 / INVESTMENT
+    </span>
+
+    <h2>
+        Which Scraggy Should You Keep?
+    </h2>
+
+</div>
+
+
+<ul class="checklist">
+
+    <li>
+        Keep strong IV Scraggy for future evolution.
+    </li>
+
+    <li>
+        Keep a 100% IV specimen for your collection.
+    </li>
+
+    <li>
+        Consider keeping Shiny Scraggy unevolved.
+    </li>
+
+    <li>
+        Evaluate Shadow Scraggy before purifying.
+    </li>
+
+    <li>
+        Lucky Scraggy can be useful for Stardust-efficient investment.
+    </li>
+
+    <li>
+        Keep XXL and XXS versions for collection goals.
+    </li>
+
+    <li>
+        Check league-specific IV requirements before evolving.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        16 / AVAILABILITY
+    </span>
+
+    <h2>
+        Scraggy Availability
+    </h2>
+
+    <p>
+
+        Scraggy availability can change through events,
+        wild encounters, research rewards, eggs, Team GO
+        Rocket rotations and other Pokémon GO content.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Current Availability
+    </strong>
+
+    <p>
+
+        Update this section with current live Pokémon GO
+        encounter data rather than permanently displaying
+        old event availability.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+```
+<div class="section-heading">
+
+    <span class="section-number">
+        17 / FAQ
+    </span>
+
+    <h2>
+        Scraggy FAQ
+    </h2>
+
+</div>
+
+
+<details>
+
+    <summary>
+        What type is Scraggy?
+    </summary>
+
+    <p>
+        Scraggy is a Dark and Fighting-type Pokémon.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What does Scraggy evolve into?
+    </summary>
+
+    <p>
+        Scraggy evolves into Scrafty.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Can Scraggy be Shiny?
+    </summary>
+
+    <p>
+        Shiny availability depends on whether Shiny Scraggy
+        has been enabled for the encounter source.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Can Scraggy be Shadow?
+    </summary>
+
+    <p>
+        Shadow availability depends on the current Team GO
+        Rocket rotation and eligible encounter pools.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Should I purify Shadow Scraggy?
+    </summary>
+
+    <p>
+        Not automatically. Compare the Shadow and Purified
+        versions before deciding.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a 100% Scraggy?
+    </summary>
+
+    <p>
+        A 100% Scraggy has 15 Attack, 15 Defense and
+        15 HP IVs.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Can Scraggy be Lucky?
+    </summary>
+
+    <p>
+        Eligible trades can result in Lucky Pokémon,
+        including Scraggy.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is XXL Scraggy?
+    </summary>
+
+    <p>
+        XXL Scraggy is an extra-large size variation.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is XXS Scraggy?
+    </summary>
+
+    <p>
+        XXS Scraggy is an extra-small size variation.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Can a Shiny Scraggy be 100% IV?
+    </summary>
+
+    <p>
+        Yes. Shiny status and IV values are separate
+        characteristics.
+    </p>
+
+</details>
+```
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+```
+<div class="editorial-note">
+
+    <strong>
+        Editorial & data note
+    </strong>
+
+    <p>
+
+        Pokémon Gaming is an independent Pokémon GO
+        information website. Pokémon GO mechanics,
+        encounter availability, moves and special-form
+        systems can change over time.
+
+    </p>
+
+    <p>
+
+        Pokémon and Pokémon GO are trademarks of their
+        respective owners. This independent guide is
+        intended for informational and educational use.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+```
+<h3>
+    Scraggy Guide
+</h3>
+
+<ul class="side-nav">
+
+    <li>
+        <a href="#overview">
+            Overview
+        </a>
+    </li>
+
+    <li>
+        <a href="#stats">
+            Stats & Max CP
+        </a>
+    </li>
+
+    <li>
+        <a href="#type">
+            Type
+        </a>
+    </li>
+
+    <li>
+        <a href="#weaknesses">
+            Weaknesses
+        </a>
+    </li>
+
+    <li>
+        <a href="#moves">
+            Best Moves
+        </a>
+    </li>
+
+    <li>
+        <a href="#evolution">
+            Evolution
+        </a>
+    </li>
+
+    <li>
+        <a href="#shiny">
+            Shiny Scraggy
+        </a>
+    </li>
+
+    <li>
+        <a href="#shadow">
+            Shadow Scraggy
+        </a>
+    </li>
+
+    <li>
+        <a href="#purified">
+            Purified Scraggy
+        </a>
+    </li>
+
+    <li>
+        <a href="#lucky">
+            Lucky Scraggy
+        </a>
+    </li>
+
+    <li>
+        <a href="#perfect">
+            100% Scraggy
+        </a>
+    </li>
+
+    <li>
+        <a href="#sizes">
+            XXL & XXS
+        </a>
+    </li>
+
+    <li>
+        <a href="#faq">
+            FAQ
+        </a>
+    </li>
+
+</ul>
+```
+
+</div>
+
+<div class="side-card">
+
+```
+<h3>
+    Related Guides
+</h3>
+
+<a class="related-link"
+   href="/pokemon/scrafty.html">
+
+    Scrafty Guide →
+
+</a>
+
+<a class="related-link"
+   href="/pokemon-types/dark.html">
+
+    Dark Type Hub →
+
+</a>
+
+<a class="related-link"
+   href="/pokemon-types/fighting.html">
+
+    Fighting Type Hub →
+
+</a>
+
+<a class="related-link"
+   href="/pokemon-generations/gen-5.html">
+
+    Gen 5 Pokémon →
+
+</a>
+```
+
+</div>
+
+<div class="side-card">
+
+```
+<h3>
+    Scraggy Quick Facts
+</h3>
+
+<p>
+    <strong>Type:</strong>
+    Dark / Fighting
+</p>
+
+<p>
+    <strong>Generation:</strong>
+    5
+</p>
+
+<p>
+    <strong>Pokédex:</strong>
+    #559
+</p>
+
+<p>
+    <strong>Region:</strong>
+    Unova
+</p>
+
+<p>
+    <strong>Evolution:</strong>
+    Scrafty
+</p>
+```
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<footer>
+
+```
+<div class="footer-inner">
+
+    <p>
+        © 2026 PokémonGaming.in
+    </p>
+
+    <p>
+        Independent Pokémon GO information and guides.
+    </p>
+
+</div>
+```
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,3283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+   content="width=device-width, initial-scale=1.0">
+
+<title>Delcatty Pokémon GO Guide — Stats, Max CP, Shiny, Shadow, Purified, Lucky & IVs</title>
+
+<meta name="description"
+   content="Complete Delcatty Pokémon GO guide covering regular Delcatty, Shiny Delcatty, Shadow Delcatty, Purified Delcatty, Lucky Delcatty, 100% IV Delcatty, XXL and XXS Delcatty, stats, max CP, moves, weaknesses, resistances, PvP, raids and evolution.">
+
+<meta name="robots"
+   content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/delcatty.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #f28fc5;
+    --accent-2: #d965aa;
+
+    --normal: #a8a77a;
+    --fairy: #e98dac;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --warning: #f6c85f;
+    --shadow: #9b7cff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(242,143,197,.13),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 0% 50%,
+            rgba(217,101,170,.07),
+            transparent 35%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.header-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(242,143,197,.22),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #17101b,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #cfc7d1;
+
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+
+}
+
+.normal-tag {
+    color: #d7d4a4;
+}
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(242,143,197,.28),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size:
+        1.25rem;
+
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+
+}
+
+.section h3 {
+
+    margin:
+        24px 0 10px;
+
+    font-size:
+        1.05rem;
+
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+}
+
+.stat-card span {
+
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size:
+        1.3rem;
+
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(168,167,122,.3);
+
+    background:
+        rgba(168,167,122,.07);
+
+    border-radius:
+        var(--radius-sm);
+
+}
+
+.type-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(168,167,122,.15);
+
+    font-size:
+        1.5rem;
+
+}
+
+.type-box strong {
+    display: block;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+
+}
+
+.weakness {
+
+    border-color:
+        rgba(255,111,125,.3);
+
+}
+
+.resistance {
+
+    border-color:
+        rgba(98,216,154,.3);
+
+}
+
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(242,143,197,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(242,143,197,.28);
+
+    border-radius:
+        var(--radius-sm);
+
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =====================================================
+   FORM CARDS
+===================================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 18px;
+
+}
+
+.form-card {
+
+    padding: 22px;
+
+    border-radius:
+        var(--radius);
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+}
+
+.form-card h3 {
+
+    margin:
+        0 0 8px;
+
+}
+
+.form-card .form-icon {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        8px;
+
+}
+
+.regular-form {
+    border-color: rgba(242,143,197,.3);
+}
+
+.shiny-form {
+
+    border-color:
+        rgba(246,200,95,.45);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(246,200,95,.12),
+            var(--surface-2)
+        );
+
+}
+
+.shadow-form {
+
+    border-color:
+        rgba(155,124,255,.45);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(155,124,255,.13),
+            var(--surface-2)
+        );
+
+}
+
+.purified-form {
+
+    border-color:
+        rgba(120,190,255,.4);
+
+}
+
+.lucky-form {
+
+    border-color:
+        rgba(246,200,95,.5);
+
+}
+
+.hundo-form {
+
+    border-color:
+        rgba(98,216,154,.4);
+
+}
+
+.size-form {
+
+    border-color:
+        rgba(242,143,197,.25);
+
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+
+}
+
+.related-link {
+
+    display: block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .stat-grid,
+    .effect-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+```
+<div class="header-inner">
+
+    <a href="/" class="logo">
+        Pokémon<span>Gaming</span>
+    </a>
+
+    <nav class="main-nav">
+
+        <a href="/pokemon-types.html">
+            Types
+        </a>
+
+        <a href="/pokedex.html">
+            Pokédex
+        </a>
+
+        <a href="/raids/">
+            Raids
+        </a>
+
+        <a href="/guides/">
+            Guides
+        </a>
+
+        <a href="/tools/">
+            Tools
+        </a>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+```
+<a href="/">
+    Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+    Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/normal.html">
+    Normal Type
+</a>
+
+<span>›</span>
+
+<strong>
+    Delcatty
+</strong>
+```
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+```
+<div class="hero-grid">
+
+    <div>
+
+        <h1>
+            Delcatty
+        </h1>
+
+        <p class="hero-subtitle">
+
+            Delcatty is a Normal-type Pokémon from the
+            Hoenn region. In Pokémon GO, it is best known
+            as Skitty's evolution and is available in several
+            collectible forms and categories including Shiny,
+            Shadow, Purified, Lucky, XXL and XXS.
+
+        </p>
+
+        <div class="hero-tags">
+
+            <span class="tag normal-tag">
+                Normal
+            </span>
+
+            <span class="tag">
+                #301
+            </span>
+
+            <span class="tag">
+                Generation 3
+            </span>
+
+            <span class="tag">
+                Shiny Available
+            </span>
+
+            <span class="tag">
+                Evolves from Skitty
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-pokemon">
+
+        <!-- Replace with properly licensed Delcatty image -->
+
+        <div class="pokemon-placeholder">
+            🐱
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+```
+<div class="quick-stat">
+
+    <strong>
+        132
+    </strong>
+
+    <span>
+        ATTACK
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        127
+    </strong>
+
+    <span>
+        DEFENSE
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        172
+    </strong>
+
+    <span>
+        HP
+    </span>
+
+</div>
+
+
+<div class="quick-stat">
+
+    <strong>
+        ~1,638
+    </strong>
+
+    <span>
+        MAX CP
+    </span>
+
+</div>
+```
+
+</div>
+
+<div class="content-layout">
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty Overview
+    </h2>
+
+    <p>
+
+        Delcatty is the evolved form of Skitty. It is a
+        Normal-type Pokémon introduced in Generation 3 and
+        originally discovered in the Hoenn region.
+
+    </p>
+
+    <p>
+
+        While Delcatty is generally more of a collection and
+        Pokédex Pokémon than a top-tier raid attacker, its
+        multiple special variants can make it interesting for
+        collectors and players completing different Pokémon
+        GO collections.
+
+    </p>
+
+</div>
+
+
+<div class="stat-grid">
+
+    <div class="stat-card">
+
+        <span>
+            POKÉDEX
+        </span>
+
+        <strong>
+            #301
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            GENERATION
+        </span>
+
+        <strong>
+            Gen 3
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            REGION
+        </span>
+
+        <strong>
+            Hoenn
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            TYPE
+        </span>
+
+        <strong>
+            Normal
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            ATTACK
+        </span>
+
+        <strong>
+            132
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            DEFENSE
+        </span>
+
+        <strong>
+            127
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            HP
+        </span>
+
+        <strong>
+            172
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            MAX CP
+        </span>
+
+        <strong>
+            ~1,638
+        </strong>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty Type
+    </h2>
+
+</div>
+
+
+<div class="type-box">
+
+    <div class="type-icon">
+        ⚪
+    </div>
+
+    <div>
+
+        <strong>
+            Normal
+        </strong>
+
+        <span>
+            Delcatty's Only Type
+        </span>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Why Delcatty's Typing Matters
+</h3>
+
+<p>
+
+    As a pure Normal-type Pokémon, Delcatty has a simple
+    defensive profile. Normal-type Pokémon are weak to
+    Fighting-type attacks and are immune to Ghost-type
+    damage in Pokémon GO's type-effectiveness system.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty Weaknesses & Resistances
+    </h2>
+
+</div>
+
+
+<h3>
+    Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+    <div class="effect-card weakness">
+
+        <div class="effect-icon">
+            🥊
+        </div>
+
+        <strong>
+            Fighting
+        </strong>
+
+        <p>
+
+            Fighting-type attacks are super effective
+            against Delcatty.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Resistances & Immunity
+</h3>
+
+<div class="effect-grid">
+
+    <div class="effect-card resistance">
+
+        <div class="effect-icon">
+            👻
+        </div>
+
+        <strong>
+            Ghost
+        </strong>
+
+        <p>
+
+            Normal-type Pokémon take no damage from
+            Ghost-type attacks.
+
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty Best Moves
+    </h2>
+
+    <p>
+
+        Delcatty's best moves depend on whether you are
+        building it for collection purposes, PvP experiments
+        or casual battles. Move availability can change
+        through Pokémon GO updates and events.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Moveset Recommendation
+    </strong>
+
+    <p>
+
+        Choose moves based on the current Pokémon GO
+        moveset and the role you want Delcatty to perform.
+
+    </p>
+
+</div>
+
+
+<div class="table-wrap">
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Move
+                </th>
+
+                <th>
+                    Category
+                </th>
+
+                <th>
+                    Type
+                </th>
+
+                <th>
+                    Role
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td class="move-name">
+                    Fast Move
+                </td>
+
+                <td>
+                    Fast
+                </td>
+
+                <td>
+                    Check Current Pool
+                </td>
+
+                <td>
+                    Energy / Damage
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="move-name">
+                    Charged Move
+                </td>
+
+                <td>
+                    Charged
+                </td>
+
+                <td>
+                    Check Current Pool
+                </td>
+
+                <td>
+                    Coverage
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Move availability note:
+    </strong>
+
+    <p>
+
+        Pokémon GO move pools can change. Verify current
+        move availability before publishing time-sensitive
+        moveset rankings.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Skitty Evolution into Delcatty
+    </h2>
+
+    <p>
+
+        Delcatty evolves from Skitty. Players should verify
+        the current evolution requirements in Pokémon GO,
+        including any Candy requirements.
+
+    </p>
+
+</div>
+
+
+<div class="form-grid">
+
+    <div class="form-card regular-form">
+
+        <div class="form-icon">
+            🐱
+        </div>
+
+        <h3>
+            Skitty
+        </h3>
+
+        <p>
+            Base Pokémon
+        </p>
+
+    </div>
+
+
+    <div class="form-card regular-form">
+
+        <div class="form-icon">
+            🐈
+        </div>
+
+        <h3>
+            Delcatty
+        </h3>
+
+        <p>
+            Evolution
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     ALL FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty Forms & Special Variants
+    </h2>
+
+    <p>
+
+        The following forms and categories represent the
+        different Delcatty variations players may collect
+        or encounter in Pokémon GO.
+
+    </p>
+
+</div>
+
+
+<div class="form-grid">
+
+
+    <div class="form-card regular-form">
+
+        <div class="form-icon">
+            🐈
+        </div>
+
+        <h3>
+            Regular Delcatty
+        </h3>
+
+        <p>
+
+            The standard version of Delcatty obtained by
+            evolving or encountering eligible Skitty and
+            Delcatty.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card shiny-form">
+
+        <div class="form-icon">
+            ✨
+        </div>
+
+        <h3>
+            Shiny Delcatty
+        </h3>
+
+        <p>
+
+            Shiny Delcatty has alternate coloration while
+            keeping the same underlying species identity.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow-form">
+
+        <div class="form-icon">
+            🌑
+        </div>
+
+        <h3>
+            Shadow Delcatty
+        </h3>
+
+        <p>
+
+            Shadow Delcatty has the Shadow battle profile,
+            increasing offensive pressure while reducing
+            defensive durability.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card purified-form">
+
+        <div class="form-icon">
+            ✨
+        </div>
+
+        <h3>
+            Purified Delcatty
+        </h3>
+
+        <p>
+
+            Purified Delcatty is created by purifying an
+            eligible Shadow version.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card lucky-form">
+
+        <div class="form-icon">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Delcatty
+        </h3>
+
+        <p>
+
+            Lucky Delcatty is a special trade result with
+            reduced Stardust requirements for power-ups.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card hundo-form">
+
+        <div class="form-icon">
+            💯
+        </div>
+
+        <h3>
+            100% Delcatty
+        </h3>
+
+        <p>
+
+            A perfect Delcatty has 15 Attack, 15 Defense
+            and 15 HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card size-form">
+
+        <div class="form-icon">
+            ⬆️
+        </div>
+
+        <h3>
+            XXL Delcatty
+        </h3>
+
+        <p>
+
+            XXL Delcatty is an oversized specimen useful
+            for collection and size-based showcase systems.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card size-form">
+
+        <div class="form-icon">
+            ⬇️
+        </div>
+
+        <h3>
+            XXS Delcatty
+        </h3>
+
+        <p>
+
+            XXS Delcatty is an unusually small specimen
+            intended primarily for collection purposes.
+
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Shiny Delcatty
+    </h2>
+
+    <p>
+
+        Shiny Delcatty is the alternate-color version of
+        Delcatty. Shiny status is primarily cosmetic and
+        does not automatically increase battle stats.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        ✨ Collector Variant
+    </strong>
+
+    <p>
+
+        A Shiny Delcatty can be especially valuable for
+        players completing a Hoenn Pokédex or Shiny
+        collection.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Shiny Delcatty IVs
+</h3>
+
+<p>
+
+    Shiny status and IV quality are separate systems.
+    A Shiny Delcatty can have any eligible IV combination,
+    including a perfect 15/15/15 IV spread.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Shadow Delcatty
+    </h2>
+
+    <p>
+
+        Shadow Delcatty is the Shadow version of the species.
+        Shadow Pokémon have a different battle profile from
+        regular Pokémon and should be evaluated separately
+        when considering investment.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        🌑 Shadow Battle Profile
+    </strong>
+
+    <p>
+
+        Shadow Pokémon generally deal more damage while
+        receiving more damage in return.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Shadow Delcatty vs Regular Delcatty
+</h3>
+
+
+<div class="table-wrap">
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Feature
+                </th>
+
+                <th>
+                    Regular
+                </th>
+
+                <th>
+                    Shadow
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Species
+                </td>
+
+                <td>
+                    Delcatty
+                </td>
+
+                <td>
+                    Delcatty
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Type
+                </td>
+
+                <td>
+                    Normal
+                </td>
+
+                <td>
+                    Normal
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Offensive Pressure
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+                <td>
+                    Increased
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Durability
+                </td>
+
+                <td>
+                    Standard
+                </td>
+
+                <td>
+                    Reduced
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Purification
+                </td>
+
+                <td>
+                    Not Applicable
+                </td>
+
+                <td>
+                    Eligible
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="editorial-note">
+
+    <strong>
+        Frustration reminder:
+    </strong>
+
+    <p>
+
+        Shadow Pokémon may have Frustration. The ability
+        to remove Frustration can depend on Pokémon GO
+        events and current game mechanics.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Purified Delcatty
+    </h2>
+
+    <p>
+
+        Purified Delcatty is created by purifying an eligible
+        Shadow Delcatty. Purification changes the Pokémon's
+        Shadow status and can modify its IVs.
+
+    </p>
+
+</div>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            ✨
+        </div>
+
+        <strong>
+            Purified Status
+        </strong>
+
+        <p>
+            Shadow status is removed.
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            📈
+        </div>
+
+        <strong>
+            IV Increase
+        </strong>
+
+        <p>
+
+            Purification can improve eligible IV values.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            💨
+        </div>
+
+        <strong>
+            Frustration Removed
+        </strong>
+
+        <p>
+
+            Purification removes the Shadow-exclusive
+            Frustration move.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<h3>
+    Should You Purify Shadow Delcatty?
+</h3>
+
+<p>
+
+    The decision depends on whether you prefer the Shadow
+    version, a Purified collection entry, improved IVs or
+    lower-cost Purified Pokémon investment.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Lucky Delcatty
+    </h2>
+
+    <p>
+
+        Lucky Delcatty is obtained when an eligible Pokémon
+        trade results in Lucky status.
+
+    </p>
+
+</div>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            🍀
+        </div>
+
+        <strong>
+            Lucky Status
+        </strong>
+
+        <p>
+
+            A special trade-based Pokémon category.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            ⭐
+        </div>
+
+        <strong>
+            Lower Stardust Cost
+        </strong>
+
+        <p>
+
+            Lucky Pokémon require less Stardust for
+            power-ups than standard Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <div class="effect-icon">
+            🎯
+        </div>
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <p>
+
+            Lucky Delcatty is a useful entry for players
+            collecting Lucky Pokémon.
+
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     100 PERCENT
+===================================================== -->
+
+<section class="section" id="hundo">
+
+```
+<div class="section-heading">
+
+    <h2>
+        100% Delcatty IV Guide
+    </h2>
+
+    <p>
+
+        A perfect, or "100%", Delcatty has the highest
+        possible Individual Values.
+
+    </p>
+
+</div>
+
+
+<div class="effect-grid">
+
+    <div class="effect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Attack IV
+        </span>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            Defense IV
+        </span>
+
+    </div>
+
+
+    <div class="effect-card">
+
+        <strong>
+            15
+        </strong>
+
+        <span>
+            HP IV
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        💯 Perfect IV Spread
+    </strong>
+
+    <p>
+        15 / 15 / 15 = 100% IV Delcatty
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     XXL XXS
+===================================================== -->
+
+<section class="section" id="sizes">
+
+```
+<div class="section-heading">
+
+    <h2>
+        XXL & XXS Delcatty
+    </h2>
+
+    <p>
+
+        Size variants are separate from IV quality, Shiny
+        status and battle performance.
+
+    </p>
+
+</div>
+
+
+<div class="form-grid">
+
+    <div class="form-card size-form">
+
+        <div class="form-icon">
+            ⬆️
+        </div>
+
+        <h3>
+            XXL Delcatty
+        </h3>
+
+        <p>
+
+            An unusually large Delcatty. XXL Pokémon are
+            primarily useful for collection and size-based
+            showcase systems.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card size-form">
+
+        <div class="form-icon">
+            ⬇️
+        </div>
+
+        <h3>
+            XXS Delcatty
+        </h3>
+
+        <p>
+
+            An unusually small Delcatty intended primarily
+            for collection and size-focused comparisons.
+
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty PvP Guide
+    </h2>
+
+    <p>
+
+        Delcatty is not generally considered one of the
+        dominant Pokémon in major Pokémon GO PvP formats.
+        Its usefulness depends heavily on the current
+        moveset, CP limits and metagame.
+
+    </p>
+
+</div>
+
+
+<h3>
+    Great League
+</h3>
+
+<p>
+
+    Delcatty can be experimented with in Great League
+    environments, but players should compare its stats
+    and moves with stronger Normal-type alternatives.
+
+</p>
+
+
+<h3>
+    Ultra League
+</h3>
+
+<p>
+
+    Delcatty's relatively modest maximum CP limits its
+    potential in many Ultra League situations.
+
+</p>
+
+
+<h3>
+    Master League
+</h3>
+
+<p>
+
+    Delcatty's maximum CP makes it generally unsuitable
+    for serious Master League competition.
+
+</p>
+```
+
+</section>
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raids">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Is Delcatty Good for Raids?
+    </h2>
+
+    <p>
+
+        Delcatty is generally not considered a high-priority
+        Pokémon for optimized raid teams. Players looking
+        for maximum raid damage will usually have stronger
+        specialized alternatives.
+
+    </p>
+
+</div>
+
+
+<div class="best-move">
+
+    <strong>
+        Raid Investment Priority
+    </strong>
+
+    <p>
+
+        Low for optimized raid damage, but Delcatty can
+        still be powered up for collection or personal
+        preference.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty Forms Compared
+    </h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Variant
+                </th>
+
+                <th>
+                    Type
+                </th>
+
+                <th>
+                    Main Difference
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+                <td>Regular Delcatty</td>
+                <td>Normal</td>
+                <td>Standard form</td>
+            </tr>
+
+            <tr>
+                <td>Shiny Delcatty</td>
+                <td>Normal</td>
+                <td>Alternate coloration</td>
+            </tr>
+
+            <tr>
+                <td>Shadow Delcatty</td>
+                <td>Normal</td>
+                <td>Shadow battle profile</td>
+            </tr>
+
+            <tr>
+                <td>Purified Delcatty</td>
+                <td>Normal</td>
+                <td>Purified Shadow variant</td>
+            </tr>
+
+            <tr>
+                <td>Lucky Delcatty</td>
+                <td>Normal</td>
+                <td>Reduced Stardust power-up cost</td>
+            </tr>
+
+            <tr>
+                <td>100% Delcatty</td>
+                <td>Normal</td>
+                <td>15/15/15 IVs</td>
+            </tr>
+
+            <tr>
+                <td>XXL Delcatty</td>
+                <td>Normal</td>
+                <td>Large size variant</td>
+            </tr>
+
+            <tr>
+                <td>XXS Delcatty</td>
+                <td>Normal</td>
+                <td>Small size variant</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+```
+<div class="section-heading">
+
+    <h2>
+        Delcatty FAQ
+    </h2>
+
+</div>
+
+
+<details>
+
+    <summary>
+        What type is Delcatty?
+    </summary>
+
+    <p>
+        Delcatty is a Normal-type Pokémon.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is Delcatty weak to?
+    </summary>
+
+    <p>
+        Delcatty is weak to Fighting-type attacks.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Does Delcatty evolve?
+    </summary>
+
+    <p>
+        Delcatty is the evolved form of Skitty.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Is Shiny Delcatty available?
+    </summary>
+
+    <p>
+        Shiny availability depends on eligible Pokémon GO
+        encounters and current game availability.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is Shadow Delcatty?
+    </summary>
+
+    <p>
+        Shadow Delcatty is a Shadow version of Delcatty
+        with a different offensive and defensive battle
+        profile.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Can Shadow Delcatty be purified?
+    </summary>
+
+    <p>
+        Eligible Shadow Pokémon can be purified to create
+        a Purified version.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a Lucky Delcatty?
+    </summary>
+
+    <p>
+        Lucky Delcatty is a special trade-based Pokémon
+        with reduced Stardust power-up requirements.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        What is a 100% Delcatty?
+    </summary>
+
+    <p>
+        A 100% Delcatty has 15 Attack, 15 Defense and
+        15 HP IVs.
+    </p>
+
+</details>
+
+
+<details>
+
+    <summary>
+        Do XXL and XXS Delcatty have stronger stats?
+    </summary>
+
+    <p>
+        Size categories are separate from IV quality and
+        should not automatically be treated as stronger
+        battle stats.
+    </p>
+
+</details>
+```
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+```
+<div class="editorial-note">
+
+    <strong>
+        Editorial & Data Note
+    </strong>
+
+    <p>
+
+        Pokémon Gaming is an independent Pokémon GO
+        information website. Pokémon GO mechanics,
+        moves, events and Pokémon availability can change
+        over time.
+
+    </p>
+
+    <p>
+
+        Verify current in-game information before making
+        resource or investment decisions.
+
+    </p>
+
+    <p>
+
+        Pokémon and Pokémon GO are trademarks of their
+        respective owners. This website is an independent
+        informational guide and is not affiliated with or
+        endorsed by the trademark owners.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+```
+<div class="side-card">
+
+    <h3>
+        Delcatty Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Delcatty
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Delcatty
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Delcatty
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Delcatty
+            </a>
+        </li>
+
+        <li>
+            <a href="#hundo">
+                100% IV Delcatty
+            </a>
+        </li>
+
+        <li>
+            <a href="#sizes">
+                XXL & XXS
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+    <a class="related-link"
+       href="/pokemon/skitty.html">
+
+        Skitty Guide →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon-types/normal.html">
+
+        Normal Type Hub →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-3.html">
+
+        Gen 3 Pokémon →
+
+    </a>
+
+    <a class="related-link"
+       href="/pokedex.html">
+
+        Pokémon Database →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Delcatty Quick Facts
+    </h3>
+
+    <p>
+        <strong>Type:</strong>
+        Normal
+    </p>
+
+    <p>
+        <strong>Generation:</strong>
+        3
+    </p>
+
+    <p>
+        <strong>Region:</strong>
+        Hoenn
+    </p>
+
+    <p>
+        <strong>Pokédex:</strong>
+        #301
+    </p>
+
+    <p>
+        <strong>Evolution:</strong>
+        Skitty → Delcatty
+    </p>
+
+    <p>
+        <strong>Special Variants:</strong>
+        Shiny, Shadow, Purified, Lucky, XXL & XXS
+    </p>
+
+</div>
+```
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+```
+<div class="footer-inner">
+
+    <p>
+        © 2026 PokémonGaming.in
+    </p>
+
+    <p>
+        Independent Pokémon GO information and guides.
+    </p>
+
+</div>
+```
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,3875 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Oinkologne Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, XXL & XXS</title>
+
+<meta name="description"
+      content="Complete Oinkologne Pokémon GO guide covering stats, Max CP, typing, weaknesses, moves, PvP, raids, shiny Oinkologne, male and female forms, 100% IV, Lucky, XXL, XXS and availability.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/oinkologne.html">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #f29a9a;
+    --accent-2: #e56f7b;
+
+    --normal: #b9a89a;
+    --pink: #ed91a5;
+    --purple: #9f7aea;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #e6bd55;
+    --blue: #6fa8ff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(242,154,154,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(242,154,154,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #17131a,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color:
+        var(--pink);
+
+    background:
+        rgba(237,145,165,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+.pink-tag {
+    color: var(--pink);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(242,154,154,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(242,154,154,.3);
+
+    background:
+        rgba(242,154,154,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(242,154,154,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color: var(--pink);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+.neutral-card {
+    border-color:
+        rgba(185,168,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color: var(--pink);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(242,154,154,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(242,154,154,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   FORM CARDS
+========================================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.form-card {
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.form-card h3 {
+
+    margin: 0 0 7px;
+
+    font-size: 1.15rem;
+}
+
+.form-card .form-label {
+
+    display: inline-block;
+
+    padding:
+        5px 9px;
+
+    margin-bottom: 10px;
+
+    border-radius: 999px;
+
+    font-size: .62rem;
+
+    font-weight: 900;
+
+    letter-spacing: .06em;
+
+    background:
+        rgba(242,154,154,.09);
+
+    color:
+        var(--pink);
+}
+
+
+/* =========================================================
+   SPECIAL FORM
+========================================================= */
+
+.special-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 14px;
+
+    margin-top: 18px;
+}
+
+.special-card {
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.special-card.available {
+    border-color:
+        rgba(98,216,154,.28);
+}
+
+.special-card.unavailable {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.special-card h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 1rem;
+}
+
+.status {
+
+    display: inline-block;
+
+    padding:
+        5px 9px;
+
+    border-radius: 999px;
+
+    font-size: .6rem;
+
+    font-weight: 900;
+}
+
+.status.available {
+
+    color: var(--success);
+
+    background:
+        rgba(98,216,154,.08);
+}
+
+.status.unavailable {
+
+    color: var(--danger);
+
+    background:
+        rgba(255,111,125,.08);
+}
+
+
+/* =========================================================
+   IV
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.6rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   100 IV
+========================================================= */
+
+.hundo-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(230,189,85,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(230,189,85,.3);
+}
+
+.hundo-number {
+
+    font-size: 3rem;
+
+    font-weight: 950;
+
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   SIZE CARDS
+========================================================= */
+
+.size-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.size-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.size-card.xxl {
+
+    border-color:
+        rgba(111,168,255,.3);
+}
+
+.size-card.xxs {
+
+    border-color:
+        rgba(159,122,234,.3);
+}
+
+.size-card .size-symbol {
+
+    font-size: 2.5rem;
+
+    font-weight: 950;
+}
+
+.size-card h3 {
+
+    margin: 5px 0;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   LUCKY
+========================================================= */
+
+.lucky-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(230,189,85,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(230,189,85,.3);
+}
+
+.lucky-symbol {
+
+    font-size: 2.7rem;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color:
+        var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color:
+        var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid,
+    .special-grid,
+    .size-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<div class="breadcrumb">
+
+    <a href="/">Home</a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/normal.html">
+        Normal Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Oinkologne
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                PALDEA POKÉMON
+            </span>
+
+            <h1>
+                Oinkologne
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Oinkologne is a Normal-type Pokémon from the
+                Paldea region. In Pokémon GO, it is known for
+                its evolution from Lechonk and its distinct
+                male and female appearances.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag normal-tag">
+                    Normal
+                </span>
+
+                <span class="tag">
+                    #916
+                </span>
+
+                <span class="tag">
+                    Gen 9
+                </span>
+
+                <span class="tag">
+                    Paldea
+                </span>
+
+                <span class="tag pink-tag">
+                    Male / Female
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🐷
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            254
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            168
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            242
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~3,225
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Overview
+        </h2>
+
+        <p>
+
+            Oinkologne is the evolved form of Lechonk and was
+            introduced with the Paldea region's Pokémon.
+            It is a pure Normal-type Pokémon and has different
+            visual appearances depending on its sex.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #916
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 9
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Paldea
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Normal
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                254
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                168
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                242
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~3,225
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🐷
+        </div>
+
+        <div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Does Normal Typing Mean?
+    </h3>
+
+    <p>
+
+        Oinkologne's pure Normal typing gives it a relatively
+        simple matchup profile. Its most important offensive
+        concern is the lack of a type advantage from Normal
+        attacks against most Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weakness
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+
+                Fighting-type attacks are super effective
+                against Oinkologne.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistance
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+
+                Normal-type Pokémon are resistant to
+                Ghost-type attacks.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Important Defensive Interaction
+    </h3>
+
+    <p>
+
+        Normal-type Pokémon are immune to Ghost damage in
+        the underlying type system used by Pokémon GO's
+        battle mechanics. This makes Ghost attacks a poor
+        choice against Oinkologne.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Stats & Max CP
+        </h2>
+
+        <p>
+
+            Oinkologne has a balanced profile with useful HP
+            and respectable Attack, although it is not primarily
+            known as a top-tier raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                254
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                168
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                242
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~3,225
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            CP depends on level and IVs. The displayed maximum
+            should be checked against your current Pokémon GO
+            data source before treating it as a final database
+            value.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MALE / FEMALE
+===================================================== -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Male & Female Forms
+        </h2>
+
+        <p>
+
+            Oinkologne has distinct male and female appearances.
+            The two forms are part of the same species but have
+            noticeable visual differences.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-card">
+
+            <span class="form-label">
+                MALE FORM
+            </span>
+
+            <h3>
+                Male Oinkologne
+            </h3>
+
+            <p>
+
+                Male Oinkologne has its own characteristic
+                appearance and coloration.
+
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <span class="form-label">
+                FEMALE FORM
+            </span>
+
+            <h3>
+                Female Oinkologne
+            </h3>
+
+            <p>
+
+                Female Oinkologne has a different appearance
+                from the male form.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Evolution
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Oinkologne evolves from Lechonk. There is no evolution
+        after Oinkologne.
+
+    </p>
+
+
+    <div class="form-grid">
+
+        <div class="form-card">
+
+            <span class="form-label">
+                STAGE 1
+            </span>
+
+            <h3>
+                Lechonk
+            </h3>
+
+            <p>
+                Base Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <span class="form-label">
+                STAGE 2
+            </span>
+
+            <h3>
+                Oinkologne
+            </h3>
+
+            <p>
+                Final evolution.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Evolution note:
+        </strong>
+
+        <p>
+
+            Male and female Oinkologne have different visual
+            appearances. Check your individual Lechonk before
+            evolving if collecting both forms is important to you.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Best Moves
+        </h2>
+
+        <p>
+
+            Oinkologne's best moveset depends on whether you
+            are building it for PvP, gym use or general
+            collection purposes.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Build
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO moveset before
+            spending Stardust or TMs, as move availability
+            can change.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Normal
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Energy generation
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Normal
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Damage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Move data note:
+        </strong>
+
+        <p>
+
+            Replace the generic move labels above with your
+            current verified Pokémon GO move data when publishing
+            the production page.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raids">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne for Raids
+        </h2>
+
+        <p>
+
+            Oinkologne is not normally a first-choice Pokémon
+            for high-level raid attacking. Its value is more
+            dependent on its individual moveset and the needs
+            of a player's collection.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Attack Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:45%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Moderate
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:85%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Form Collection
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne PvP Guide
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Oinkologne's CP profile allows it to be considered
+        for lower-league formats, but its actual viability
+        depends heavily on its moveset, IV distribution and
+        the current Great League meta.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Oinkologne can potentially be evaluated in Ultra
+        League depending on its available moves and CP.
+        League rankings can change as new Pokémon and moves
+        are introduced.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Oinkologne generally has a less natural fit in
+        Master League because of the extremely high stat
+        ceilings of Legendary, Mythical and other powerful
+        Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Oinkologne
+        </h2>
+
+        <p>
+
+            Shiny Oinkologne is a collectible alternate
+            appearance of Oinkologne. The exact appearance
+            differs from the standard coloration.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card available">
+
+            <span class="status available">
+                SHINY FORM
+            </span>
+
+            <h3>
+                ✨ Shiny Oinkologne
+            </h3>
+
+            <p>
+
+                A Shiny Oinkologne can be especially desirable
+                for collectors who want the alternate
+                coloration.
+
+            </p>
+
+        </div>
+
+
+        <div class="special-card available">
+
+            <span class="status available">
+                COLLECTION
+            </span>
+
+            <h3>
+                Male + Female Shiny
+            </h3>
+
+            <p>
+
+                Collectors interested in form completion may
+                want to keep track of both male and female
+                appearances.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Oinkologne
+        </h2>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card unavailable">
+
+            <span class="status unavailable">
+                NOT CURRENTLY AVAILABLE
+            </span>
+
+            <h3>
+                Shadow Oinkologne
+            </h3>
+
+            <p>
+
+                Oinkologne should not be presented as a Shadow
+                Pokémon unless Pokémon GO officially introduces
+                a Shadow Oinkologne encounter.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database rule:
+        </strong>
+
+        <p>
+
+            Keep this section in the template if you want
+            consistent Pokémon pages, but update its status
+            whenever the game's Shadow availability changes.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Oinkologne
+        </h2>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card unavailable">
+
+            <span class="status unavailable">
+                NOT CURRENTLY AVAILABLE
+            </span>
+
+            <h3>
+                Purified Oinkologne
+            </h3>
+
+            <p>
+
+                A Purified Oinkologne would require an eligible
+                Shadow Oinkologne first. If Shadow Oinkologne
+                is not available, a Purified form cannot be
+                obtained through normal gameplay.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Oinkologne
+        </h2>
+
+        <p>
+
+            Lucky status is a special Pokémon condition obtained
+            through trading. It is not a separate species or
+            permanent evolution.
+
+        </p>
+
+    </div>
+
+
+    <div class="lucky-card">
+
+        <div class="lucky-symbol">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Oinkologne
+        </h3>
+
+        <p>
+
+            A Lucky Oinkologne can be useful for players who
+            want to reduce Stardust costs when powering up a
+            Pokémon obtained through a Lucky Trade.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Oinkologne?
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Lower Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Useful collector status.
+        </li>
+
+        <li>
+            Good candidate for a Lucky Pokédex collection.
+        </li>
+
+        <li>
+            Can be especially interesting when combined with
+            strong IVs.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <h2>
+            100% IV Oinkologne
+        </h2>
+
+        <p>
+
+            A 100% IV Oinkologne has perfect individual values:
+            15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="hundo-card">
+
+        <div class="hundo-number">
+            15 / 15 / 15
+        </div>
+
+        <strong>
+            Perfect IV Oinkologne
+        </strong>
+
+        <p>
+
+            A perfect Oinkologne can be a valuable collector
+            specimen and may be worth keeping even if it is
+            not a top raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 100% Oinkologne?
+    </h3>
+
+    <p>
+
+        Yes. A perfect IV Pokémon is valuable for collection,
+        personal goals and potential future relevance if its
+        moves or role change.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Oinkologne
+        </h2>
+
+        <p>
+
+            XXL Oinkologne is a size variant that can be
+            interesting for collectors and size-focused
+            Pokédex goals.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card xxl">
+
+            <div class="size-symbol">
+                XXL
+            </div>
+
+            <h3>
+                XXL Oinkologne
+            </h3>
+
+            <p>
+
+                A particularly large Oinkologne. XXL status
+                is based on the Pokémon's size measurement and
+                is separate from IV quality.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <div class="size-symbol">
+                📏
+            </div>
+
+            <h3>
+                Size Collection
+            </h3>
+
+            <p>
+
+                XXL Pokémon can be kept separately for
+                collection, showcases and size-related
+                personal goals.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            XXL size does not automatically mean better IVs,
+            higher battle performance or higher CP.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Oinkologne
+        </h2>
+
+        <p>
+
+            XXS Oinkologne represents the opposite end of the
+            Pokémon's size range and can be desirable for
+            collectors.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card xxs">
+
+            <div class="size-symbol">
+                XXS
+            </div>
+
+            <h3>
+                XXS Oinkologne
+            </h3>
+
+            <p>
+
+                A particularly small Oinkologne. XXS status
+                is a size characteristic and does not directly
+                determine battle strength.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <div class="size-symbol">
+                📏
+            </div>
+
+            <h3>
+                Collector Value
+            </h3>
+
+            <p>
+
+                XXS Pokémon can be useful for players building
+                complete size collections or Showcase records.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Forms & Special Statuses
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                    <th>
+                        Separate Species?
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Oinkologne
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trading status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% IV
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Very large size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Very small size
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Building and evolving Oinkologne requires Candy, while
+        higher-level power-ups require additional Candy XL and
+        Stardust.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Lechonk Candy for evolution and power-ups.
+        </li>
+
+        <li>
+            Keep strong IV Oinkologne candidates.
+        </li>
+
+        <li>
+            Check the moveset before using expensive resources.
+        </li>
+
+        <li>
+            Keep useful Lucky specimens to reduce Stardust costs.
+        </li>
+
+        <li>
+            Consider keeping XXL and XXS specimens separately.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Oinkologne is obtained through its evolution line
+        beginning with Lechonk. Current encounter methods,
+        events and availability can change as Pokémon GO
+        updates its seasonal and event rotations.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event schedule and
+            Lechonk encounter availability before publishing
+            a time-sensitive claim.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Oinkologne
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check IVs.
+        </li>
+
+        <li>
+            Check whether the Pokémon is male or female if
+            form collecting matters to you.
+        </li>
+
+        <li>
+            Review the current moveset.
+        </li>
+
+        <li>
+            Consider whether you need Oinkologne for PvP,
+            collection or general gameplay.
+        </li>
+
+        <li>
+            Keep interesting XXL and XXS specimens.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Oinkologne can be especially interesting for collectors
+        because of its male and female appearances, Shiny
+        possibilities, Lucky status, IV combinations and
+        size variants.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Oinkologne FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Oinkologne?
+        </summary>
+
+        <p>
+
+            Oinkologne is a pure Normal-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Oinkologne weak to?
+        </summary>
+
+        <p>
+
+            Oinkologne is weak to Fighting-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Oinkologne resistant to?
+        </summary>
+
+        <p>
+
+            Oinkologne's Normal typing provides an important
+            defensive interaction against Ghost-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Oinkologne evolve?
+        </summary>
+
+        <p>
+
+            Oinkologne is the final evolution of Lechonk and
+            does not have a further normal evolution.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Oinkologne have male and female forms?
+        </summary>
+
+        <p>
+
+            Yes. Male and female Oinkologne have different
+            visual appearances.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Oinkologne available?
+        </summary>
+
+        <p>
+
+            Shiny availability should be checked against the
+            current Pokémon GO encounter and evolution rules.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Oinkologne be Lucky?
+        </summary>
+
+        <p>
+
+            Yes. A Pokémon can receive Lucky status through
+            trading.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Oinkologne?
+        </summary>
+
+        <p>
+
+            A 100% Oinkologne has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Oinkologne?
+        </summary>
+
+        <p>
+
+            XXL Oinkologne is an especially large size variant.
+            XXL status does not automatically mean higher IVs
+            or better battle performance.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Oinkologne?
+        </summary>
+
+        <p>
+
+            XXS Oinkologne is an especially small size variant.
+            It is primarily relevant to size collection and
+            Showcase-related goals.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Oinkologne available?
+        </summary>
+
+        <p>
+
+            Do not assume Shadow Oinkologne is available unless
+            Pokémon GO officially introduces it through an
+            eligible Team GO Rocket encounter.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can you purify Oinkologne?
+        </summary>
+
+        <p>
+
+            Purification requires an eligible Shadow Pokémon.
+            A regular Oinkologne cannot simply be purified.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Oinkologne good for raids?
+        </summary>
+
+        <p>
+
+            Oinkologne is generally not considered a primary
+            raid attacker. Its usefulness depends on the
+            specific moveset and situation.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Oinkologne good in PvP?
+        </summary>
+
+        <p>
+
+            Its PvP value depends on league, IVs, moveset and
+            the current metagame. Check current rankings before
+            investing specifically for PvP.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Game mechanics, moves,
+            availability, forms and other live data can change
+            over time. Verify current in-game information before
+            making investment decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Oinkologne Guide
+    </h3>
+
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Oinkologne Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#forms">
+                Male & Female
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Oinkologne
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Oinkologne
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Oinkologne
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Oinkologne
+            </a>
+        </li>
+
+        <li>
+            <a href="#perfect">
+                100% IV
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Oinkologne
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Oinkologne
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/lechonk.html">
+
+        Lechonk Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/normal.html">
+
+        Normal Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-9.html">
+
+        Gen 9 Pokémon →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokedex.html">
+
+        Pokémon Database →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Oinkologne Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>
+            Type:
+        </strong>
+        Normal
+    </p>
+
+
+    <p>
+        <strong>
+            Generation:
+        </strong>
+        9
+    </p>
+
+
+    <p>
+        <strong>
+            Region:
+        </strong>
+        Paldea
+    </p>
+
+
+    <p>
+        <strong>
+            Pokédex:
+        </strong>
+        #916
+    </p>
+
+
+    <p>
+        <strong>
+            Evolution:
+        </strong>
+        Lechonk → Oinkologne
+    </p>
+
+
+    <p>
+        <strong>
+            Forms:
+        </strong>
+        Male / Female
+    </p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="footer-inner">
+
+    <p>
+        © 2026 PokémonGaming.in
+    </p>
+
+    <p>
+        Independent Pokémon GO information and guides.
+    </p>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
+```

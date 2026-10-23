@@ -1,0 +1,4817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Squawkabilly Pokémon GO Guide — Stats, Max CP, IVs, Shiny, Lucky, XXL, XXS & Forms
+</title>
+
+<meta name="description"
+      content="Complete Squawkabilly Pokémon GO guide covering Normal/Flying typing, Max CP, stats, moves, weaknesses, resistances, four plumages, Shiny status, Shadow, Purified, Lucky, 100% IV, XXL, XXS and PvP information.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/squawkabilly.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #8fa2ff;
+    --accent-2: #657cff;
+
+    --normal: #b7a99a;
+    --flying: #8f9ff5;
+
+    --electric: #f2d34f;
+    --ice: #72d6dc;
+    --rock: #b59b67;
+    --grass: #5dcf82;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --lucky: #ffd85c;
+    --shiny: #b7f1ff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(111,130,255,.11),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(143,159,245,.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 100%,
+            rgba(183,169,154,.10),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--flying);
+
+    background:
+        rgba(143,159,245,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        760px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+.flying-tag {
+    color: var(--flying);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(143,159,245,.20),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(143,159,245,.3);
+
+    background:
+        rgba(143,159,245,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(143,159,245,.13);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--flying);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card small {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    margin-top:
+        5px;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color:
+        var(--flying);
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(143,159,245,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(143,159,245,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap:
+        15px;
+
+    align-items:
+        center;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height:
+        8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius:
+        99px;
+
+    overflow:
+        hidden;
+}
+
+.rating-fill {
+
+    height:
+        100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius:
+        inherit;
+}
+
+.rating-value {
+
+    text-align:
+        right;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align:
+        left;
+}
+
+
+/* =========================================================
+   SPECIAL FORM GRID
+========================================================= */
+
+.form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        20px;
+}
+
+.form-card {
+
+    padding:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+
+    text-align:
+        center;
+}
+
+.form-card .form-icon {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        8px;
+}
+
+.form-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        4px;
+}
+
+.form-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .7rem;
+}
+
+
+/* =========================================================
+   SPECIAL STATUS
+========================================================= */
+
+.status-card {
+
+    padding:
+        22px;
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    margin-top:
+        15px;
+}
+
+.status-card.available {
+    border-color:
+        rgba(98,216,154,.3);
+}
+
+.status-card.unavailable {
+    border-color:
+        rgba(255,111,125,.3);
+}
+
+.status-label {
+
+    display:
+        inline-block;
+
+    padding:
+        5px 9px;
+
+    border-radius:
+        999px;
+
+    font-size:
+        .62rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .06em;
+
+    margin-bottom:
+        10px;
+}
+
+.status-label.green {
+
+    color:
+        var(--success);
+
+    background:
+        rgba(98,216,154,.08);
+}
+
+.status-label.red {
+
+    color:
+        var(--danger);
+
+    background:
+        rgba(255,111,125,.08);
+}
+
+.status-label.yellow {
+
+    color:
+        var(--lucky);
+
+    background:
+        rgba(255,216,92,.08);
+}
+
+
+/* =========================================================
+   LUCKY
+========================================================= */
+
+.lucky-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,216,92,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(255,216,92,.3);
+}
+
+.lucky-card .lucky-icon {
+
+    font-size:
+        2.5rem;
+
+    margin-bottom:
+        10px;
+}
+
+.lucky-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.3rem;
+
+    color:
+        var(--lucky);
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.iv-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.6rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =========================================================
+   HUNDO
+========================================================= */
+
+.hundo-card {
+
+    margin-top:
+        20px;
+
+    padding:
+        28px;
+
+    border-radius:
+        20px;
+
+    background:
+
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(255,216,92,.15),
+            transparent 40%
+        ),
+
+        var(--surface-2);
+
+    border:
+        1px solid rgba(255,216,92,.3);
+}
+
+.hundo-number {
+
+    font-size:
+        3rem;
+
+    font-weight:
+        950;
+
+    color:
+        var(--lucky);
+
+    letter-spacing:
+        -.05em;
+}
+
+
+/* =========================================================
+   SIZE CARDS
+========================================================= */
+
+.size-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        18px;
+}
+
+.size-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        18px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.size-card.xxl {
+    border-color:
+        rgba(143,159,245,.35);
+}
+
+.size-card.xxs {
+    border-color:
+        rgba(114,214,220,.35);
+}
+
+.size-card .size-icon {
+
+    font-size:
+        2.4rem;
+
+    margin-bottom:
+        8px;
+}
+
+.size-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.size-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .form-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .form-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .size-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .rating-row {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            6px;
+    }
+
+    .rating-value {
+        text-align:
+            left;
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/normal.html">
+        Normal Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Squawkabilly
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                PALDEA • #931
+            </span>
+
+            <h1>
+                Squawkabilly
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Squawkabilly is a Normal- and Flying-type
+                Pokémon from the Paldea region. In Pokémon GO,
+                it is known for its four different plumage
+                variations and its role as a collection-focused
+                Pokémon with some Great League relevance.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag normal-tag">
+                    Normal
+                </span>
+
+                <span class="tag flying-tag">
+                    Flying
+                </span>
+
+                <span class="tag">
+                    #931
+                </span>
+
+                <span class="tag">
+                    Gen 9
+                </span>
+
+                <span class="tag">
+                    Four Plumages
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace this placeholder with your properly
+                 licensed Squawkabilly image -->
+
+            <div class="pokemon-placeholder">
+                🦜
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            185
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            105
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            193
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            2,231
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CONTENT LAYOUT
+========================================================= -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Overview
+        </h2>
+
+        <p>
+
+            Squawkabilly is a Generation 9 Normal/Flying-type
+            Pokémon. Unlike Pokémon with conventional
+            evolution families, Squawkabilly does not evolve
+            into another species.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #931
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 9
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Paldea
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                EVOLUTION
+            </span>
+
+            <strong>
+                None
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                185
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                105
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                193
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                2,231
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TYPES
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🪽
+        </div>
+
+        <div>
+
+            <strong>
+                Normal / Flying
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Squawkabilly's Typing Matters
+    </h3>
+
+    <p>
+
+        Squawkabilly's Normal/Flying combination gives it
+        useful resistances to several attack types while
+        creating a clear set of weaknesses that opponents
+        can exploit.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying typing gives Squawkabilly access to
+                STAB Flying attacks and immunity-style
+                Ground resistance in Pokémon GO's type system.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚪
+            </div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <p>
+                The Normal typing contributes resistance to
+                Ghost-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass Resistance
+            </strong>
+
+            <p>
+                Squawkabilly's Flying typing helps reduce
+                incoming Grass-type damage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Weaknesses & Resistances
+        </h2>
+
+        <p>
+            Squawkabilly is weak to Electric, Ice and Rock
+            attacks.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks deal super-effective
+                damage to Squawkabilly.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks exploit Squawkabilly's
+                Flying typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type attacks are also super effective
+                against Squawkabilly.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Squawkabilly's Normal typing provides strong
+                protection against Ghost attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌍
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Flying typing protects Squawkabilly from
+                Ground-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Squawkabilly takes reduced Bug-type damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass-type attacks are resisted.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Squawkabilly has 185 Attack, 105 Defense and
+            193 HP, with a Level 50 maximum CP of 2,231.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                185
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                105
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                193
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                LEVEL 50 MAX CP
+            </span>
+
+            <strong>
+                2,231
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Important Squawkabilly CP Values
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Encounter
+                    </th>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        100% IV CP
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Research
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                    <td>
+                        845
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Egg / Raid
+                    </td>
+
+                    <td>
+                        20
+                    </td>
+
+                    <td>
+                        1,127
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Weather Boosted
+                    </td>
+
+                    <td>
+                        25
+                    </td>
+
+                    <td>
+                        1,409
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 50
+                    </td>
+
+                    <td>
+                        50
+                    </td>
+
+                    <td>
+                        2,231
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Best Moves
+        </h2>
+
+        <p>
+
+            Squawkabilly's current recommended moveset for
+            general use is Air Slash with Fly.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Flying Moveset
+        </strong>
+
+        <p>
+            Air Slash + Fly
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Air Slash
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Recommended
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Peck
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        PvP Option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Fly
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Recommended
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Brave Bird
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        High-risk PvP option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Aerial Ace
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Alternative
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change with Pokémon GO updates.
+        Verify the current in-game moveset before publishing
+        time-sensitive recommendations.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Raid Performance
+        </h2>
+
+        <p>
+
+            Squawkabilly has access to Flying-type attacks,
+            but its 185 Attack stat means it is not considered
+            a major meta Flying-type raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Attacker
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:30%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Flying Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:42%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Limited
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <p>
+
+        Squawkabilly is generally more interesting as a
+        collection and PvP Pokémon than as a high-end raid
+        attacker.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly PvP Guide
+        </h2>
+
+        <p>
+
+            Squawkabilly's moveset gives it more PvP value
+            than its raid performance suggests.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Squawkabilly can have useful Great League applications
+        because Fly provides efficient charged-move pressure
+        while Brave Bird offers significant closing power.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Great League Starting Point
+        </strong>
+
+        <p>
+            Peck + Fly + Brave Bird
+        </p>
+
+    </div>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Squawkabilly can also be considered in Ultra League,
+        although its lower overall CP ceiling makes it less
+        naturally suited to the format than many stronger
+        Ultra League Pokémon.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Squawkabilly's 2,231 Level-50 Max CP makes Master League
+        an unsuitable competitive target for most players.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     PLUMAGE FORMS
+========================================================= -->
+
+<section class="section" id="plumage">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Four Plumage Forms
+        </h2>
+
+        <p>
+
+            One of Squawkabilly's most distinctive features is
+            its four different plumage variations. These are
+            form variations rather than separate species.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🟢
+            </div>
+
+            <strong>
+                Green Plumage
+            </strong>
+
+            <span>
+                Squawkabilly Form
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🔵
+            </div>
+
+            <strong>
+                Blue Plumage
+            </strong>
+
+            <span>
+                Squawkabilly Form
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🟡
+            </div>
+
+            <strong>
+                Yellow Plumage
+            </strong>
+
+            <span>
+                Squawkabilly Form
+            </span>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                ⚪
+            </div>
+
+            <strong>
+                White Plumage
+            </strong>
+
+            <span>
+                Squawkabilly Form
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Do the Plumages Have Different Stats?
+    </h3>
+
+    <p>
+
+        The four Squawkabilly plumage forms share the same
+        underlying species identity and core Pokémon GO
+        statistics. The primary distinction is their appearance
+        and form identity.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Squawkabilly
+        </h2>
+
+        <p>
+
+            Shiny Squawkabilly is a highly desirable future
+            collection target, but its Shiny availability should
+            be checked against the current Pokémon GO release
+            status.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-card unavailable">
+
+        <span class="status-label red">
+            CURRENT STATUS
+        </span>
+
+        <h3>
+            Shiny Squawkabilly Not Currently Available
+        </h3>
+
+        <p>
+
+            Current Pokémon GO database information lists
+            Shiny Squawkabilly as unavailable. Do not mark a
+            Squawkabilly as Shiny-capable unless the game has
+            officially released the Shiny form.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Future Shiny Collection
+    </h3>
+
+    <p>
+
+        If Shiny Squawkabilly is released in a future event,
+        its Shiny form should be documented separately for
+        each relevant plumage if Pokémon GO introduces those
+        variants.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Squawkabilly
+        </h2>
+
+        <p>
+
+            Shadow Pokémon are special variants created through
+            Team GO Rocket mechanics. Squawkabilly should only
+            be presented as a Shadow Pokémon if Niantic officially
+            adds it to the Shadow Pokémon pool.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-card unavailable">
+
+        <span class="status-label red">
+            NOT CURRENTLY A STANDARD FORM
+        </span>
+
+        <h3>
+            Shadow Squawkabilly
+        </h3>
+
+        <p>
+
+            Squawkabilly does not have a regular Shadow form
+            available in the current database data used for
+            this guide.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        What Happens If Shadow Squawkabilly Is Released?
+    </h3>
+
+    <p>
+
+        A future Shadow release would need its own availability,
+        IV floor, Frustration information, purification mechanics
+        and investment recommendations. Those details should
+        not be fabricated before the form exists in-game.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Squawkabilly
+        </h2>
+
+        <p>
+
+            Purified Pokémon are created by purifying eligible
+            Shadow Pokémon. Because Squawkabilly is not currently
+            an established Shadow species, there is no normal
+            Purified Squawkabilly collection path.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-card unavailable">
+
+        <span class="status-label red">
+            NOT CURRENTLY AVAILABLE
+        </span>
+
+        <h3>
+            Purified Squawkabilly
+        </h3>
+
+        <p>
+
+            A Purified Squawkabilly would require an official
+            Shadow Squawkabilly release first.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why You Should Not List Purified Squawkabilly as Obtainable
+    </h3>
+
+    <p>
+
+        A Pokémon database should distinguish between
+        theoretical forms and forms players can actually obtain.
+        This prevents outdated or misleading information from
+        being indexed as current availability.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Squawkabilly
+        </h2>
+
+        <p>
+
+            A Lucky Squawkabilly can be obtained through a
+            Lucky Trade. Lucky Pokémon are especially useful
+            for collectors and players looking to reduce the
+            Stardust cost of powering up Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="lucky-card">
+
+        <div class="lucky-icon">
+            ✨
+        </div>
+
+        <strong>
+            Lucky Squawkabilly
+        </strong>
+
+        <p>
+
+            Lucky status is separate from IV perfection,
+            Shiny status and Pokémon size. A Lucky Squawkabilly
+            can still have IVs below 100%.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Squawkabilly IV Floor
+    </h3>
+
+    <p>
+
+        Lucky Pokémon have a minimum IV floor. Therefore,
+        Lucky Squawkabilly can be particularly interesting
+        when you want a lower-Stardust-cost specimen with
+        respectable IVs.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💰
+            </div>
+
+            <strong>
+                Reduced Stardust Cost
+            </strong>
+
+            <p>
+                Lucky Pokémon require less Stardust to power up.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🎁
+            </div>
+
+            <strong>
+                Trade Exclusive Status
+            </strong>
+
+            <p>
+                Lucky status is created through trading mechanics.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                📊
+            </div>
+
+            <strong>
+                Not Automatically Hundo
+            </strong>
+
+            <p>
+                Lucky does not mean 100% IV.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     100% IV
+========================================================= -->
+
+<section class="section" id="hundo">
+
+    <div class="section-heading">
+
+        <h2>
+            100% IV Squawkabilly — Hundo Guide
+        </h2>
+
+        <p>
+
+            A 100% IV Squawkabilly has 15 Attack, 15 Defense
+            and 15 HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="hundo-card">
+
+        <div class="hundo-number">
+            15 / 15 / 15
+        </div>
+
+        <h3>
+            Perfect IV Squawkabilly
+        </h3>
+
+        <p>
+
+            This is the highest possible IV combination for
+            Squawkabilly and is commonly called a Hundo.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is Hundo Squawkabilly Worth Keeping?
+    </h3>
+
+    <p>
+
+        Absolutely for collectors. A 100% IV Squawkabilly
+        is also useful as a benchmark specimen for your
+        Pokédex collection, particularly if you want to
+        collect all four plumage forms.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     IV GUIDE
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values range from 0 to 15 for Attack,
+            Defense and HP on standard Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Maximum Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Maximum Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Maximum HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Good Squawkabilly IVs
+    </h3>
+
+    <p>
+
+        The best IV spread depends on whether you are building
+        Squawkabilly for PvP or collecting. For a collection,
+        15/15/15 is the perfect target. For Great League,
+        lower Attack IVs can sometimes produce a better
+        stat product depending on the specific matchup and
+        CP limit.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     XXL
+========================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Squawkabilly
+        </h2>
+
+        <p>
+
+            XXL Squawkabilly is a size variant that can be
+            especially appealing to collectors. XXL status is
+            independent of IV percentage, Lucky status and
+            Shiny status.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-card xxl">
+
+        <div class="size-icon">
+            🦜
+        </div>
+
+        <strong>
+            XXL Squawkabilly
+        </strong>
+
+        <span>
+            Extra-large size variant
+        </span>
+
+        <p>
+
+            An XXL Squawkabilly can be kept as a separate
+            collection milestone from a Hundo or Lucky specimen.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL Does Not Mean 100% IV
+    </h3>
+
+    <p>
+
+        Size and IVs are separate characteristics. An XXL
+        Squawkabilly can have excellent IVs, average IVs or
+        poor IVs.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     XXS
+========================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Squawkabilly
+        </h2>
+
+        <p>
+
+            XXS Squawkabilly is the opposite end of the
+            Pokémon size spectrum and is another useful
+            collector target.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-card xxs">
+
+        <div class="size-icon">
+            🐦
+        </div>
+
+        <strong>
+            XXS Squawkabilly
+        </strong>
+
+        <span>
+            Extra-small size variant
+        </span>
+
+        <p>
+
+            An XXS Squawkabilly can be collected independently
+            from its IVs, Lucky status and plumage.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXS Collection Strategy
+    </h3>
+
+    <p>
+
+        If you enjoy completing Pokémon GO size collections,
+        keeping an XXS Squawkabilly from each available plumage
+        can become a long-term collection goal.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     SPECIAL VARIANT COMPARISON
+========================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Special Variant Guide
+        </h2>
+
+        <p>
+
+            The following table separates currently obtainable
+            characteristics from forms that should not be listed
+            as available without an official Pokémon GO release.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        What It Means
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Available
+                    </td>
+
+                    <td>
+                        Standard Squawkabilly
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Not currently available
+                    </td>
+
+                    <td>
+                        Future Shiny release
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Not currently available
+                    </td>
+
+                    <td>
+                        Would require official Shadow release
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Not currently available
+                    </td>
+
+                    <td>
+                        Requires eligible Shadow Squawkabilly
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trade-based
+                    </td>
+
+                    <td>
+                        Lucky Trade status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% IV
+                    </td>
+
+                    <td>
+                        Possible
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Size Variant
+                    </td>
+
+                    <td>
+                        Extra-large specimen
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Size Variant
+                    </td>
+
+                    <td>
+                        Extra-small specimen
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COLLECTION GUIDE
+========================================================= -->
+
+<section class="section" id="collection">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Collection Checklist
+        </h2>
+
+        <p>
+
+            Squawkabilly is particularly interesting for
+            collectors because several different attributes
+            can be combined into one specimen.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Collect the Green Plumage.
+        </li>
+
+        <li>
+            Collect the Blue Plumage.
+        </li>
+
+        <li>
+            Collect the Yellow Plumage.
+        </li>
+
+        <li>
+            Collect the White Plumage.
+        </li>
+
+        <li>
+            Look for a 100% IV Squawkabilly.
+        </li>
+
+        <li>
+            Look for Lucky Squawkabilly through trading.
+        </li>
+
+        <li>
+            Keep XXL specimens.
+        </li>
+
+        <li>
+            Keep XXS specimens.
+        </li>
+
+        <li>
+            Monitor future Shiny availability.
+        </li>
+
+        <li>
+            Monitor future Shadow availability.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        If you plan to build Squawkabilly for PvP, Candy and
+        Stardust management becomes important. For collectors,
+        however, there is usually less reason to heavily power
+        up every specimen.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep strong IV specimens before transferring extras.
+        </li>
+
+        <li>
+            Prioritize PvP-appropriate IV spreads if you compete.
+        </li>
+
+        <li>
+            Keep one or more specimens of each plumage.
+        </li>
+
+        <li>
+            Save XXL and XXS specimens for your collection.
+        </li>
+
+        <li>
+            Keep Lucky specimens if you enjoy Lucky collections.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Availability
+        </h2>
+
+        <p>
+
+            Squawkabilly availability can depend on Pokémon GO
+            events, regional mechanics and encounter rotations.
+
+        </p>
+
+    </div>
+
+
+    <div class="status-card available">
+
+        <span class="status-label green">
+            DATABASE STATUS
+        </span>
+
+        <h3>
+            Squawkabilly Is an Established Pokémon GO Species
+        </h3>
+
+        <p>
+
+            Encounter methods and regional availability should
+            be checked against the current Pokémon GO event and
+            regional schedule before publishing a "currently
+            available" claim.
+
+        </p>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Live-data recommendation:
+        </strong>
+
+        <p>
+
+            Keep current encounter information separate from
+            historical event appearances so old event information
+            does not accidentally appear as a current spawn method.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WEATHER
+========================================================= -->
+
+<section class="section" id="weather">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Weather Boost
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ☁️
+            </div>
+
+            <strong>
+                Partly Cloudy
+            </strong>
+
+            <p>
+                Boosts Squawkabilly because of its Normal typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💨
+            </div>
+
+            <strong>
+                Windy
+            </strong>
+
+            <p>
+                Boosts Squawkabilly because of its Flying typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⭐
+            </div>
+
+            <strong>
+                Higher-Level Encounters
+            </strong>
+
+            <p>
+                Weather-boosted encounters can appear at a higher
+                Pokémon level.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW TO USE
+========================================================= -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Squawkabilly
+        </h2>
+
+    </div>
+
+
+    <h3>
+        For PvP Players
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the IV spread before powering up.
+        </li>
+
+        <li>
+            Consider Great League CP limitations.
+        </li>
+
+        <li>
+            Test Fly and Brave Bird combinations.
+        </li>
+
+        <li>
+            Build around the current PvP metagame.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Collect all four plumages.
+        </li>
+
+        <li>
+            Keep 100% IV specimens.
+        </li>
+
+        <li>
+            Keep Lucky specimens.
+        </li>
+
+        <li>
+            Keep XXL and XXS specimens.
+        </li>
+
+        <li>
+            Watch for the future Shiny release.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Lucky
+                    </th>
+
+                    <th>
+                        Hundo
+                    </th>
+
+                    <th>
+                        XXL / XXS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Same Species
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Changes Appearance
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Lucky effect
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Size indicator
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Requires Trading
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        IV Requirement
+                    </td>
+
+                    <td>
+                        Any
+                    </td>
+
+                    <td>
+                        Lucky IV floor
+                    </td>
+
+                    <td>
+                        15/15/15
+                    </td>
+
+                    <td>
+                        Any
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Squawkabilly FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Squawkabilly?
+        </summary>
+
+        <p>
+            Squawkabilly is a Normal/Flying-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Squawkabilly weak to?
+        </summary>
+
+        <p>
+            Squawkabilly is weak to Electric, Ice and Rock attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Squawkabilly's Max CP?
+        </summary>
+
+        <p>
+            Squawkabilly has a Level 50 maximum CP of 2,231.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Squawkabilly evolve?
+        </summary>
+
+        <p>
+            No. Squawkabilly does not have a normal evolution.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How many Squawkabilly forms are there?
+        </summary>
+
+        <p>
+            Squawkabilly has four plumage variations: Green,
+            Blue, Yellow and White.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Squawkabilly available?
+        </summary>
+
+        <p>
+            Current database information lists Shiny Squawkabilly
+            as not yet available.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Squawkabilly available?
+        </summary>
+
+        <p>
+            Squawkabilly does not currently have an established
+            Shadow form in the current data used for this guide.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Purified Squawkabilly available?
+        </summary>
+
+        <p>
+            A Purified Squawkabilly would require an eligible
+            Shadow Squawkabilly first.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Squawkabilly be Lucky?
+        </summary>
+
+        <p>
+            Yes. A Squawkabilly can become Lucky through
+            Pokémon GO trading mechanics.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Hundo Squawkabilly?
+        </summary>
+
+        <p>
+            A Hundo Squawkabilly has 15 Attack, 15 Defense and
+            15 HP IVs, giving it a 100% IV rating.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Squawkabilly?
+        </summary>
+
+        <p>
+            XXL Squawkabilly is an extra-large size specimen.
+            Size is separate from IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Squawkabilly?
+        </summary>
+
+        <p>
+            XXS Squawkabilly is an extra-small size specimen.
+            XXS status is separate from IVs and Lucky status.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Squawkabilly good for raids?
+        </summary>
+
+        <p>
+            Squawkabilly is not considered a major meta Flying-type
+            raid attacker. Its lower Attack stat limits its PvE
+            usefulness.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Squawkabilly good in PvP?
+        </summary>
+
+        <p>
+            Squawkabilly has more PvP potential than raid potential,
+            particularly around Great League-focused builds and
+            its Flying-type charged moves.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Squawkabilly's best moveset?
+        </summary>
+
+        <p>
+            Air Slash and Fly are a strong general recommendation,
+            while Peck, Fly and Brave Bird can be considered for
+            PvP-focused use.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            availability, forms, PvP rankings and encounter
+            methods can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Squawkabilly Guide
+    </h3>
+
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Performance
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#plumage">
+                Four Plumages
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Squawkabilly
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Squawkabilly
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Squawkabilly
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Squawkabilly
+            </a>
+        </li>
+
+        <li>
+            <a href="#hundo">
+                100% IV / Hundo
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Squawkabilly
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Squawkabilly
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon-types/normal.html">
+
+        Normal Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/flying.html">
+
+        Flying Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-9.html">
+
+        Gen 9 Pokémon →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokedex.html">
+
+        Pokémon Database →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Squawkabilly Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>
+            Pokédex:
+        </strong>
+        #931
+    </p>
+
+
+    <p>
+        <strong>
+            Type:
+        </strong>
+        Normal / Flying
+    </p>
+
+
+    <p>
+        <strong>
+            Generation:
+        </strong>
+        9
+    </p>
+
+
+    <p>
+        <strong>
+            Max CP:
+        </strong>
+        2,231
+    </p>
+
+
+    <p>
+        <strong>
+            Evolution:
+        </strong>
+        None
+    </p>
+
+
+    <p>
+        <strong>
+            Plumages:
+        </strong>
+        4
+    </p>
+
+
+    <p>
+        <strong>
+            Hundo:
+        </strong>
+        15/15/15
+    </p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

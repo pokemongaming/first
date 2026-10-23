@@ -1,0 +1,4494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Ditto Pokémon GO Guide — Stats, Max CP, Transform, Shadow, Shiny & Disguises</title>
+
+<meta name="description"
+      content="Complete Ditto Pokémon GO guide covering regular Ditto, Shadow Ditto, Shiny Ditto, Transform mechanics, disguises, stats, Max CP, IVs, weaknesses, availability and more.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/ditto.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #9d82ff;
+    --accent-2: #755cff;
+
+    --ditto: #a96ee8;
+    --ditto-soft: #d7a7ff;
+
+    --fighting: #e27d55;
+    --normal: #b9b5a9;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --gold: #f0c96a;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(157,130,255,.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(169,110,232,.08),
+            transparent 25%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(169,110,232,.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 100%,
+            rgba(157,130,255,.09),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #151225,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid rgba(169,110,232,.35);
+
+    border-radius: 999px;
+
+    color:
+        var(--ditto-soft);
+
+    background:
+        rgba(169,110,232,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.ditto-tag {
+    color: var(--ditto-soft);
+}
+
+.shiny-tag {
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   HERO DITTO
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.ditto-blob {
+
+    width: 245px;
+
+    height: 205px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius:
+        48% 52% 45% 55% /
+        58% 48% 52% 42%;
+
+    background:
+        radial-gradient(
+            circle at 35% 25%,
+            #e2b7ff,
+            #a96ee8 55%,
+            #7040b4
+        );
+
+    box-shadow:
+        0 30px 45px rgba(0,0,0,.45);
+
+    animation:
+        dittoFloat 4s ease-in-out infinite;
+}
+
+.ditto-face {
+    position: relative;
+    width: 115px;
+    height: 65px;
+}
+
+.ditto-eye {
+
+    position: absolute;
+
+    width: 10px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #211b2c;
+}
+
+.ditto-eye.left {
+    left: 22px;
+    top: 10px;
+}
+
+.ditto-eye.right {
+    right: 22px;
+    top: 10px;
+}
+
+.ditto-mouth {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    bottom: 4px;
+
+    width: 48px;
+    height: 15px;
+
+    border-bottom:
+        4px solid #211b2c;
+
+    border-radius:
+        0 0 50% 50%;
+}
+
+@keyframes dittoFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-1deg);
+    }
+
+    50% {
+        transform:
+            translateY(-12px)
+            rotate(1deg);
+    }
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-number {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(185,181,169,.3);
+
+    background:
+        rgba(185,181,169,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(185,181,169,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--normal);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE / INFORMATION TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size: .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color:
+        var(--ditto-soft);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(169,110,232,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(169,110,232,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARD
+========================================================= */
+
+.special-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 28px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #271536,
+            #542c75,
+            #9b5ad4
+        );
+
+    color: white;
+
+    margin-top: 20px;
+}
+
+.special-card::after {
+
+    content: "✨";
+
+    position: absolute;
+
+    right: 25px;
+    top: 15px;
+
+    font-size: 5rem;
+
+    opacity: .13;
+}
+
+.special-card h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 1.6rem;
+}
+
+.special-card p {
+    color: #eadcf5;
+}
+
+
+/* =========================================================
+   DISGUISE GRID
+========================================================= */
+
+.disguise-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.disguise {
+
+    padding: 15px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+
+    text-align: center;
+}
+
+.disguise strong {
+
+    display: block;
+
+    margin-top: 5px;
+}
+
+.disguise span {
+
+    color:
+        var(--muted);
+
+    font-size: .7rem;
+}
+
+
+/* =========================================================
+   IV GRID
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.35rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color:
+        var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color:
+        var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SHINY CARD
+========================================================= */
+
+.shiny-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 24px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(240,201,106,.13),
+            rgba(169,110,232,.10)
+        );
+
+    border:
+        1px solid rgba(240,201,106,.25);
+}
+
+.shiny-symbol {
+
+    font-size: 3rem;
+}
+
+.shiny-card strong {
+
+    display: block;
+
+    font-size: 1.3rem;
+}
+
+.shiny-card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.form-node strong {
+    display: block;
+}
+
+.form-node span {
+
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+}
+
+.form-arrow {
+
+    color:
+        var(--accent);
+
+    font-size: 1.4rem;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .disguise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .ditto-blob {
+        width: 205px;
+        height: 175px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/normal.html">
+        Normal Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Ditto
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                TRANSFORM POKÉMON
+            </span>
+
+            <h1>
+                Ditto
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Ditto is a unique Normal-type Pokémon in
+                Pokémon GO. Rather than appearing as Ditto
+                in the wild, it can disguise itself as other
+                Pokémon and reveal its true form after the
+                encounter.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag ditto-tag">
+                    Normal
+                </span>
+
+                <span class="tag">
+                    #132
+                </span>
+
+                <span class="tag">
+                    Transform
+                </span>
+
+                <span class="tag shiny-tag">
+                    ✨ Shiny Available
+                </span>
+
+                <span class="tag">
+                    No Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <div class="ditto-blob">
+
+                <div class="ditto-face">
+
+                    <span class="ditto-eye left"></span>
+
+                    <span class="ditto-eye right"></span>
+
+                    <span class="ditto-mouth"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            91
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            91
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            134
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            940
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 — OVERVIEW
+        </span>
+
+        <h2>
+            Ditto Overview
+        </h2>
+
+        <p>
+
+            Ditto is a Normal-type Pokémon introduced in
+            Generation 1. Unlike most Pokémon in Pokémon GO,
+            its most distinctive mechanic is not its raw stats
+            but its ability to transform into the opponent
+            during battle.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #132
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 1
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Kanto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Normal
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                91
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                91
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                134
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                940
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 — TYPE
+        </span>
+
+        <h2>
+            Ditto Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            ⚪
+        </div>
+
+        <div>
+
+            <strong>
+                Normal
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Ditto's Typing Matters
+    </h3>
+
+    <p>
+
+        Ditto's Normal typing gives it a relatively simple
+        defensive matchup before Transform changes its battle
+        identity. Normal-type Pokémon take super-effective
+        damage from Fighting-type attacks.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks deal super-effective
+                damage to Normal-type Ditto.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Normal-type Ditto has a strong defensive
+                matchup against Ghost-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     03 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 — STATS
+        </span>
+
+        <h2>
+            Ditto Attack, Defense, HP & Max CP
+        </h2>
+
+        <p>
+
+            Ditto has comparatively modest Attack and Defense
+            values. Its HP stat is higher, but its low overall
+            Combat Power reflects why Ditto is generally not
+            treated as a conventional raid attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                91
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                91
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                134
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                LEVEL 50 MAX CP
+            </span>
+
+            <strong>
+                940
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Ditto CP Milestones
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Encounter
+                    </th>
+
+                    <th>
+                        Level
+                    </th>
+
+                    <th>
+                        Perfect IV CP
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Research
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                    <td>
+                        356 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Raid / Egg
+                    </td>
+
+                    <td>
+                        20
+                    </td>
+
+                    <td>
+                        475 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Weather Boost
+                    </td>
+
+                    <td>
+                        25
+                    </td>
+
+                    <td>
+                        594 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 40
+                    </td>
+
+                    <td>
+                        40
+                    </td>
+
+                    <td>
+                        832 CP
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Level 50
+                    </td>
+
+                    <td>
+                        50
+                    </td>
+
+                    <td>
+                        940 CP
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Ditto's displayed CP should not be confused with
+            the CP of the Pokémon it may transform into during
+            battle. Its battle mechanics are unusual because
+            Transform determines much of its combat identity.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 TRANSFORM
+========================================================= -->
+
+<section class="section" id="transform">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 — SIGNATURE MECHANIC
+        </span>
+
+        <h2>
+            Ditto Transform Mechanics
+        </h2>
+
+        <p>
+
+            Transform is the defining mechanic of Ditto in
+            Pokémon GO. Instead of fighting entirely as its
+            original species, Ditto can copy the opposing
+            Pokémon's appearance and battle characteristics.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <h3>
+            Transform
+        </h3>
+
+        <p>
+
+            Ditto's Fast Move is Transform. Its purpose is
+            fundamentally different from a normal damaging
+            Fast Move because it changes Ditto into the
+            Pokémon it is battling.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Ditto's Standard Moveset
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Transform
+                    </td>
+
+                    <td class="move-type">
+                        Normal
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Copies the opponent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Struggle
+                    </td>
+
+                    <td class="move-type">
+                        Normal
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Charged attack
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Does Ditto Keep Its Own Moves?
+    </h3>
+
+    <p>
+
+        Transform is what makes Ditto different from a
+        conventional Pokémon. Once Ditto transforms, the
+        battle should be evaluated according to the game's
+        Transform mechanics rather than assuming Ditto simply
+        continues using a conventional Ditto moveset.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            Ditto's Transform mechanics should be considered
+            separately from normal Pokémon move rankings.
+            It is therefore misleading to rank Ditto like a
+            conventional raid attacker using ordinary DPS tables.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 — RAID & PVE
+        </span>
+
+        <h2>
+            Is Ditto Good for Raids?
+        </h2>
+
+        <p>
+
+            Ditto is not a conventional Pokémon GO raid
+            attacker. Its low maximum CP and unusual Transform
+            mechanic make it very different from dedicated
+            attackers.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Attacker
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 10%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Low
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 95%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            High
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Novelty
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 100%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            Elite
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Ditto?
+    </h3>
+
+    <p>
+
+        For most players, Ditto is better treated as a
+        collection and novelty Pokémon than as a major
+        Stardust and Candy investment. A high-IV Ditto can
+        still be worth keeping for collection purposes.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     06 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 — WEAKNESSES
+        </span>
+
+        <h2>
+            Ditto Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Ditto Weakness
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+
+                Fighting-type attacks are super effective
+                against Ditto's Normal typing.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Ditto Resistance
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+
+                Ghost-type attacks are resisted by
+                Normal-type Ditto.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Transform caveat:
+        </strong>
+
+        <p>
+
+            After Transform, Ditto's practical battle
+            characteristics can change substantially.
+            Always distinguish Ditto's base typing from
+            its transformed battle state.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     07 DISGUISES
+========================================================= -->
+
+<section class="section" id="disguises">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 — WILD ENCOUNTERS
+        </span>
+
+        <h2>
+            How to Find Ditto in Pokémon GO
+        </h2>
+
+        <p>
+
+            One of the most important things to understand
+            about Ditto is that it normally does not announce
+            itself as Ditto before the encounter.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <h3>
+            The Disguise Mechanic
+        </h3>
+
+        <p>
+
+            Ditto can appear in the wild disguised as another
+            Pokémon. After catching the disguised Pokémon,
+            the encounter can reveal that the Pokémon was
+            actually Ditto.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Current Ditto Disguise List
+    </h3>
+
+    <p>
+
+        The disguise pool can change through events and game
+        updates. Your website should therefore update this
+        section whenever Pokémon GO changes Ditto's available
+        disguises.
+
+    </p>
+
+
+    <div class="disguise-grid">
+
+        <div class="disguise">
+
+            <strong>
+                Disguise Pool
+            </strong>
+
+            <span>
+                Event-dependent
+            </span>
+
+        </div>
+
+
+        <div class="disguise">
+
+            <strong>
+                Wild Encounters
+            </strong>
+
+            <span>
+                Primary hunting method
+            </span>
+
+        </div>
+
+
+        <div class="disguise">
+
+            <strong>
+                Reveal
+            </strong>
+
+            <span>
+                After catching
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Avoid publishing a permanent disguise list:
+        </strong>
+
+        <p>
+
+            Niantic can change Ditto's disguise pool for
+            events and seasonal rotations. Store the list in
+            your site's data layer if you want automatic updates.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 — IV GUIDE
+        </span>
+
+        <h2>
+            Ditto IV Guide
+        </h2>
+
+        <p>
+
+            Ditto can have the normal Attack, Defense and HP
+            IV ranges used by Pokémon GO encounters. A perfect
+            Ditto has 15/15/15 IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect Ditto
+    </h3>
+
+    <p>
+
+        A 15/15/15 Ditto is a perfect-IV specimen. However,
+        because Ditto is not a conventional high-performance
+        raid attacker, a perfect Ditto is generally more
+        interesting from a collection perspective than as
+        a major PvE investment.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Collector Tip
+        </strong>
+
+        <p>
+
+            If you enjoy collecting unusual Pokémon, keeping
+            a high-IV Ditto can be worthwhile even when it
+            does not have major battle utility.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     09 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 — PVP
+        </span>
+
+        <h2>
+            Ditto PvP Guide
+        </h2>
+
+        <p>
+
+            Ditto's Transform mechanic gives it a very unusual
+            role compared with standard PvP Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Can Ditto Be Used in PvP?
+    </h3>
+
+    <p>
+
+        Ditto can have unusual interactions in battle because
+        Transform changes its combat identity. However, it is
+        not generally considered a standard competitive
+        investment comparable with established PvP specialists.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                Great League
+            </strong>
+
+            <p>
+                Very niche and unusual.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Ultra League
+            </strong>
+
+            <p>
+                Limited conventional value.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Master League
+            </strong>
+
+            <p>
+                Low CP limits normal investment.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            PvP note:
+        </strong>
+
+        <p>
+
+            Always check the current GO Battle League rules
+            and Ditto's current battle behavior before making
+            a competitive recommendation.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     10 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 — SHINY
+        </span>
+
+        <h2>
+            Shiny Ditto
+        </h2>
+
+        <p>
+
+            Shiny Ditto is available in Pokémon GO. Its shiny
+            appearance is one of the most recognizable Ditto
+            variants for collectors.
+
+        </p>
+
+    </div>
+
+
+    <div class="shiny-card">
+
+        <div class="shiny-symbol">
+            ✨
+        </div>
+
+        <div>
+
+            <strong>
+                Shiny Ditto
+            </strong>
+
+            <p>
+
+                Shiny Ditto has an alternate coloration from
+                the standard Ditto and can be an especially
+                desirable collection target.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Regular Ditto vs Shiny Ditto
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Ditto
+                    </th>
+
+                    <th>
+                        Shiny Ditto
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #132
+                    </td>
+
+                    <td>
+                        #132
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Transform
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Evolution
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        How to Hunt Shiny Ditto
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Catch eligible Ditto disguises whenever possible.
+        </li>
+
+        <li>
+            Watch for events that increase Ditto encounters.
+        </li>
+
+        <li>
+            Check official event announcements for special
+            Ditto mechanics.
+        </li>
+
+        <li>
+            Remember that the disguise may hide Ditto's true
+            identity until after the encounter.
+        </li>
+
+        <li>
+            Keep track of current Ditto availability rather
+            than relying on an old disguise list.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     11 SHADOW DITTO
+========================================================= -->
+
+<section class="section" id="shadow-ditto">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 — SHADOW DITTO
+        </span>
+
+        <h2>
+            Shadow Ditto
+        </h2>
+
+        <p>
+
+            Shadow Ditto should be treated as a separate
+            special-form topic from regular Ditto and Shiny
+            Ditto. Its availability is controlled by Pokémon GO's
+            Team GO Rocket and special-event systems.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <h3>
+            Shadow Ditto
+        </h3>
+
+        <p>
+
+            Shadow Pokémon have different battle mechanics from
+            their regular counterparts. If Shadow Ditto becomes
+            obtainable through a particular Pokémon GO rotation,
+            its current availability and mechanics should be
+            verified before publication.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Ditto Basic Information
+    </h3>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                SPECIES
+            </span>
+
+            <strong>
+                Ditto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #132
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Normal
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Shadow
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Ditto vs Regular Ditto
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Ditto
+                    </th>
+
+                    <th>
+                        Shadow Ditto
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Ditto
+                    </td>
+
+                    <td>
+                        Ditto
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Transform
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Transform mechanics
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Depends on eligibility
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Ditto Weakness
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+
+                Ditto's underlying Normal typing makes Fighting
+                the important base-type weakness.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Ditto?
+    </h3>
+
+    <p>
+
+        Do not automatically purify a Shadow Pokémon simply
+        because purification can improve some of its appraisal
+        values. Shadow and purified Pokémon should be evaluated
+        according to your collection goals and the current
+        mechanics.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the current Shadow Ditto availability.
+        </li>
+
+        <li>
+            Verify its current move and Transform behavior.
+        </li>
+
+        <li>
+            Compare Shadow and purified versions before
+            spending resources.
+        </li>
+
+        <li>
+            Keep a Shadow specimen if its rarity matters
+            to your collection.
+        </li>
+
+    </ul>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shadow Ditto Availability
+        </strong>
+
+        <p>
+
+            Update this section from the current Team GO Rocket
+            rotation rather than permanently claiming that
+            Shadow Ditto is obtainable.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     12 FORMS
+========================================================= -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 — FORMS
+        </span>
+
+        <h2>
+            Ditto Forms & Special Variants
+        </h2>
+
+        <p>
+
+            Ditto does not evolve. Its major Pokémon GO
+            variations are associated with its regular,
+            Shiny, Shadow and event/costume states.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Ditto
+            </strong>
+
+            <span>
+                Regular
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Shiny Ditto
+            </strong>
+
+            <span>
+                Shiny Variant
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Shadow Ditto
+            </strong>
+
+            <span>
+                Special Form
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            No normal evolution:
+        </strong>
+
+        <p>
+
+            Ditto does not evolve into or from another Pokémon
+            in Pokémon GO.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     13 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 — RESOURCES
+        </span>
+
+        <h2>
+            Ditto Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Ditto uses Ditto Candy for power-ups and other
+        applicable Pokémon GO resource requirements. Because
+        Ditto has limited conventional battle utility, most
+        players should consider their resource investment
+        carefully.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep enough Ditto Candy for collection goals.
+        </li>
+
+        <li>
+            Save high-IV specimens before transferring extras.
+        </li>
+
+        <li>
+            Consider Candy XL only if you have a specific
+            Ditto investment goal.
+        </li>
+
+        <li>
+            Avoid spending large amounts of Stardust simply
+            because a Ditto has high IVs.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     14 WEATHER
+========================================================= -->
+
+<section class="section" id="weather">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 — WEATHER
+        </span>
+
+        <h2>
+            Ditto Weather Boost
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ☁️
+            </div>
+
+            <strong>
+                Partly Cloudy
+            </strong>
+
+            <p>
+
+                Normal-type Pokémon receive a weather boost
+                during Partly Cloudy conditions.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Weather-boosted encounters can appear at higher levels
+        and can therefore produce different CP values from
+        standard encounters.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     15 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 — AVAILABILITY
+        </span>
+
+        <h2>
+            Ditto Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Ditto availability is different from ordinary wild
+        Pokémon because players generally encounter it through
+        its current disguise pool.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and wild encounter
+            rotation for the active Ditto disguise pool.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Event Availability
+    </h3>
+
+    <p>
+
+        Special events can increase Ditto encounter rates,
+        introduce costume Ditto, or modify the Pokémon that
+        Ditto uses as disguises.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Website publishing recommendation:
+        </strong>
+
+        <p>
+
+            Keep historical Ditto events separate from the
+            current encounter pool so old event information
+            does not look like a permanent availability method.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     16 BATTLE GUIDE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 — BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Ditto
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Using Ditto
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Understand the Transform mechanic.
+        </li>
+
+        <li>
+            Do not judge Ditto only by its CP.
+        </li>
+
+        <li>
+            Remember that Ditto is not a conventional
+            raid attacker.
+        </li>
+
+        <li>
+            Consider the opponent before deciding whether
+            Ditto is interesting for a battle.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collectors
+    </h3>
+
+    <p>
+
+        Ditto is much more interesting as a collection target.
+        A Shiny Ditto, high-IV Ditto, Shadow Ditto or special
+        costume Ditto can each represent a different collection
+        goal.
+
+    </p>
+
+
+    <h3>
+        For New Players
+    </h3>
+
+    <p>
+
+        If you are trying to complete your Pokédex, catching
+        disguised Pokémon is one of the most important ways to
+        find Ditto. Pay attention to the post-catch reveal rather
+        than assuming every encounter is what it appears to be.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     17 COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 — COMPARISON
+        </span>
+
+        <h2>
+            Regular Ditto vs Shadow Ditto vs Shiny Ditto
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular Ditto
+                    </th>
+
+                    <th>
+                        Shadow Ditto
+                    </th>
+
+                    <th>
+                        Shiny Ditto
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Pokédex
+                    </td>
+
+                    <td>
+                        #132
+                    </td>
+
+                    <td>
+                        #132
+                    </td>
+
+                    <td>
+                        #132
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Transform
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Depends on specimen
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Evolution
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                    <td>
+                        None
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Main Value
+                    </td>
+
+                    <td>
+                        Collection / Transform
+                    </td>
+
+                    <td>
+                        Rare special form
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 — FAQ
+        </span>
+
+        <h2>
+            Ditto FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Ditto?
+        </summary>
+
+        <p>
+
+            Ditto is a pure Normal-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Ditto weak to?
+        </summary>
+
+        <p>
+
+            Ditto's Normal typing makes it weak to
+            Fighting-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Ditto's maximum CP?
+        </summary>
+
+        <p>
+
+            Ditto's maximum CP is 940 at Level 50 with
+            perfect IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What are Ditto's stats?
+        </summary>
+
+        <p>
+
+            Ditto has 91 Attack, 91 Defense and 134 HP
+            in Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Ditto evolve?
+        </summary>
+
+        <p>
+
+            No. Ditto does not have a normal evolution line.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do you find Ditto in Pokémon GO?
+        </summary>
+
+        <p>
+
+            Ditto can appear disguised as other Pokémon.
+            The disguise pool can change, so players should
+            check the current Ditto encounter information.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Ditto be shiny?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Ditto is available in Pokémon GO.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Ditto good for raids?
+        </summary>
+
+        <p>
+
+            Ditto is not considered a conventional raid
+            attacker. Its main value comes from its unusual
+            Transform mechanic and collection status.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Ditto's best moveset?
+        </summary>
+
+        <p>
+
+            Ditto's standard listed moveset is Transform
+            and Struggle. Transform is the important move
+            because it defines Ditto's battle mechanic.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Ditto Dynamax?
+        </summary>
+
+        <p>
+
+            Current Pokémon GO data lists Ditto as unable to
+            Dynamax. Always check the current game mechanics
+            if Niantic introduces new Ditto functionality.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Ditto available?
+        </summary>
+
+        <p>
+
+            Shadow availability can change through Team GO
+            Rocket rotations and special events. Check the
+            current Pokémon GO schedule rather than relying
+            on a permanent availability claim.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Ditto?
+        </summary>
+
+        <p>
+
+            Do not purify automatically. Consider the rarity
+            and collection value of the Shadow specimen and
+            compare its current mechanics with the purified
+            version.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Ditto rare?
+        </summary>
+
+        <p>
+
+            Shiny Ditto is a desirable collector Pokémon,
+            particularly because Ditto itself can be hidden
+            behind a disguise when encountered in the wild.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Ditto copy another Pokémon?
+        </summary>
+
+        <p>
+
+            Yes. Transform is Ditto's defining battle mechanic
+            and allows it to take on the identity of the
+            opposing Pokémon according to the game's rules.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Ditto be a good Pokémon to power up?
+        </summary>
+
+        <p>
+
+            Usually, Ditto should not be a priority for large
+            Stardust investments. Its value is primarily tied
+            to its unusual mechanics and collection appeal.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL NOTE
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Ditto's disguise pool,
+            availability, event appearances, Shadow status,
+            moves and other game mechanics can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Ditto Guide
+        </h3>
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Ditto Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#transform">
+                    Transform
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#disguises">
+                    Ditto Disguises
+                </a>
+            </li>
+
+            <li>
+                <a href="#raid">
+                    Raid & PvE
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow-ditto">
+                    Shadow Ditto
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Ditto
+                </a>
+            </li>
+
+            <li>
+                <a href="#forms">
+                    Forms
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/mew.html">
+
+            Mew Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/mewtwo.html">
+
+            Mewtwo Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/normal.html">
+
+            Normal Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-1.html">
+
+            Gen 1 Pokémon →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokedex.html">
+
+            Pokémon Database →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Ditto Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Normal
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #132
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            1
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            None
+        </p>
+
+
+        <p>
+            <strong>Max CP:</strong>
+            940
+        </p>
+
+
+        <p>
+            <strong>Signature Move:</strong>
+            Transform
+        </p>
+
+
+        <p>
+            <strong>Shiny:</strong>
+            Available
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

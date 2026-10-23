@@ -1,0 +1,3017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pheromosa Pokémon GO Guide — Stats, Max CP, Moves, IVs, Weaknesses & Special Statuses</title>
+
+    <meta name="description"
+          content="Complete Pheromosa Pokémon GO guide covering stats, max CP, Bug and Fighting typing, weaknesses, resistances, best moves, raid performance, IVs, shiny Pheromosa, Lucky, 100% IV, XXL and XXS status information.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/pheromosa.html">
+
+    <style>
+
+        :root {
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #f19bd7;
+            --accent-2: #c86ac1;
+
+            --bug: #8fd36a;
+            --fighting: #e56b54;
+
+            --flying: #9ca7ff;
+            --fire: #ff895f;
+            --psychic: #ff72b5;
+            --fairy: #ef9fdf;
+
+            --danger: #ff6f7d;
+            --success: #62d89a;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max-width: 1200px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(241,155,215,.09),
+                    transparent 32%
+                ),
+                radial-gradient(
+                    circle at top left,
+                    rgba(200,106,193,.07),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        .container {
+            width: min(100% - 32px, var(--max-width));
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(8,11,18,.88);
+
+            backdrop-filter: blur(16px);
+
+            border-bottom:
+                1px solid rgba(255,255,255,.06);
+        }
+
+
+        .nav {
+            min-height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        .logo {
+            font-size: 22px;
+            font-weight: 900;
+
+            letter-spacing: -.5px;
+
+            color: var(--text);
+        }
+
+
+        .logo span {
+            color: var(--accent);
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+
+        /* =========================
+           BREADCRUMB
+        ========================= */
+
+        .breadcrumb {
+            padding: 22px 0 8px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .breadcrumb span {
+            color: var(--accent);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            margin-top: 14px;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                300px;
+
+            gap: 24px;
+
+            padding: 30px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 24px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(241,155,215,.12),
+                    rgba(18,25,37,.96) 45%,
+                    rgba(200,106,193,.06)
+                );
+
+            box-shadow:
+                0 20px 70px rgba(0,0,0,.25);
+        }
+
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        .eyebrow {
+            color: var(--accent);
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.8px;
+
+            font-size: 12px;
+
+            font-weight: 900;
+
+            margin-bottom: 8px;
+        }
+
+
+        h1 {
+            font-size:
+                clamp(34px, 6vw, 58px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 16px;
+        }
+
+
+        .hero-description {
+            color: var(--muted);
+
+            max-width: 760px;
+
+            font-size: 16px;
+        }
+
+
+        .tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+
+        .tag {
+            padding: 7px 11px;
+
+            border-radius: 999px;
+
+            background: rgba(255,255,255,.06);
+
+            border:
+                1px solid rgba(255,255,255,.08);
+
+            font-size: 12px;
+
+            font-weight: 800;
+        }
+
+
+        .tag.bug {
+            color: var(--bug);
+        }
+
+
+        .tag.fighting {
+            color: var(--fighting);
+        }
+
+
+        .tag.shiny {
+            color: #ffe36b;
+        }
+
+
+        .pokemon-placeholder {
+            min-height: 260px;
+
+            border-radius: 20px;
+
+            display: grid;
+            place-items: center;
+
+            font-size: 110px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(241,155,215,.16),
+                    transparent 65%
+                );
+
+            border:
+                1px solid rgba(241,155,215,.14);
+        }
+
+
+        /* =========================
+           QUICK STATS
+        ========================= */
+
+        .quick-stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 14px;
+
+            margin: 24px 0;
+        }
+
+
+        .quick-card {
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-sm);
+
+            padding: 18px;
+        }
+
+
+        .quick-card small {
+            display: block;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .quick-card strong {
+            font-size: 25px;
+
+            color: var(--text);
+        }
+
+
+        /* =========================
+           PAGE LAYOUT
+        ========================= */
+
+        .page-layout {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                290px;
+
+            gap: 24px;
+
+            align-items: start;
+        }
+
+
+        main {
+            min-width: 0;
+        }
+
+
+        .section {
+            margin-bottom: 24px;
+
+            padding: 26px;
+
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+        }
+
+
+        .section h2 {
+            font-size: 26px;
+
+            letter-spacing: -.5px;
+
+            margin-bottom: 14px;
+        }
+
+
+        .section h3 {
+            margin-top: 22px;
+
+            margin-bottom: 9px;
+
+            font-size: 19px;
+        }
+
+
+        .section p {
+            color: var(--muted);
+
+            margin-bottom: 14px;
+        }
+
+
+        /* =========================
+           TYPE CARDS
+        ========================= */
+
+        .type-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 14px;
+
+            margin-top: 18px;
+        }
+
+
+        .type-card {
+            padding: 22px;
+
+            border-radius: 16px;
+
+            border: 1px solid var(--border);
+
+            background: var(--surface-2);
+
+            text-align: center;
+        }
+
+
+        .type-card.bug {
+            box-shadow:
+                inset 0 0 0 1px rgba(143,211,106,.1);
+        }
+
+
+        .type-card.fighting {
+            box-shadow:
+                inset 0 0 0 1px rgba(229,107,84,.1);
+        }
+
+
+        .type-icon {
+            font-size: 34px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .type-name {
+            font-weight: 900;
+
+            font-size: 17px;
+        }
+
+
+        .type-card.bug .type-name {
+            color: var(--bug);
+        }
+
+
+        .type-card.fighting .type-name {
+            color: var(--fighting);
+        }
+
+
+        /* =========================
+           WEAKNESSES
+        ========================= */
+
+        .weakness-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+
+        .weakness-card {
+            padding: 18px 12px;
+
+            border-radius: 15px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            text-align: center;
+        }
+
+
+        .weakness-card strong {
+            display: block;
+
+            font-size: 15px;
+        }
+
+
+        .weakness-card span {
+            display: block;
+
+            margin-top: 4px;
+
+            color: var(--danger);
+
+            font-weight: 900;
+
+            font-size: 13px;
+        }
+
+
+        .weakness-card.flying strong {
+            color: var(--flying);
+        }
+
+
+        .weakness-card.fire strong {
+            color: var(--fire);
+        }
+
+
+        .weakness-card.psychic strong {
+            color: var(--psychic);
+        }
+
+
+        .weakness-card.fairy strong {
+            color: var(--fairy);
+        }
+
+
+        .resistance-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 14px;
+        }
+
+
+        .resistance {
+            padding: 7px 12px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(98,216,154,.08);
+
+            color: var(--success);
+
+            border:
+                1px solid rgba(98,216,154,.18);
+
+            font-size: 12px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================
+           STATS TABLE
+        ========================= */
+
+        .stats-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 18px;
+        }
+
+
+        .stat-box {
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            border-radius: 15px;
+
+            padding: 18px;
+
+            text-align: center;
+        }
+
+
+        .stat-box .number {
+            font-size: 32px;
+
+            font-weight: 900;
+
+            color: var(--accent);
+        }
+
+
+        .stat-box small {
+            color: var(--muted);
+
+            font-weight: 700;
+        }
+
+
+        .stat-note {
+            margin-top: 18px;
+
+            padding: 15px;
+
+            border-left:
+                3px solid var(--accent);
+
+            background:
+                rgba(241,155,215,.06);
+
+            color: var(--muted);
+
+            border-radius: 8px;
+        }
+
+
+        /* =========================
+           TABLE
+        ========================= */
+
+        .table-wrapper {
+            overflow-x: auto;
+
+            margin-top: 16px;
+        }
+
+
+        table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            min-width: 600px;
+        }
+
+
+        th,
+        td {
+            padding: 13px 14px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+        }
+
+
+        th {
+            color: var(--text);
+
+            background: var(--surface-3);
+
+            font-size: 13px;
+        }
+
+
+        td {
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           MOVE CARDS
+        ========================= */
+
+        .move-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 18px;
+        }
+
+
+        .move-card {
+            padding: 20px;
+
+            border-radius: 16px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+        }
+
+
+        .move-card h3 {
+            margin: 0 0 8px;
+
+            color: var(--accent);
+        }
+
+
+        .move-type {
+            display: inline-block;
+
+            padding: 5px 9px;
+
+            border-radius: 999px;
+
+            font-size: 11px;
+
+            font-weight: 900;
+
+            margin-bottom: 8px;
+        }
+
+
+        .move-type.bug {
+            background:
+                rgba(143,211,106,.1);
+
+            color: var(--bug);
+        }
+
+
+        .move-type.fighting {
+            background:
+                rgba(229,107,84,.1);
+
+            color: var(--fighting);
+        }
+
+
+        /* =========================
+           RAID PERFORMANCE
+        ========================= */
+
+        .performance {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 18px;
+        }
+
+
+        .performance-card {
+            padding: 20px;
+
+            background: var(--surface-2);
+
+            border-radius: 15px;
+
+            border: 1px solid var(--border);
+        }
+
+
+        .performance-card strong {
+            display: block;
+
+            font-size: 18px;
+
+            color: var(--accent);
+        }
+
+
+        .performance-card span {
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           COUNTERS
+        ========================= */
+
+        .counter-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+
+        .counter {
+            padding: 16px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 12px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            border-radius: 14px;
+        }
+
+
+        .counter strong {
+            color: var(--text);
+        }
+
+
+        .counter span {
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           IV CARDS
+        ========================= */
+
+        .iv-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 18px;
+        }
+
+
+        .iv-card {
+            padding: 20px;
+
+            border-radius: 15px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            text-align: center;
+        }
+
+
+        .iv-card strong {
+            display: block;
+
+            font-size: 24px;
+
+            color: var(--accent);
+        }
+
+
+        .iv-card span {
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .perfect-box {
+            margin-top: 18px;
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(241,155,215,.1),
+                    rgba(200,106,193,.04)
+                );
+
+            border:
+                1px solid rgba(241,155,215,.2);
+        }
+
+
+        .perfect-box strong {
+            color: #ffe36b;
+        }
+
+
+        /* =========================
+           STATUS SYSTEM
+        ========================= */
+
+        .status-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 14px;
+
+            margin-top: 18px;
+        }
+
+
+        .status-card {
+            padding: 21px;
+
+            border-radius: 16px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .status-card::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 3px;
+
+            background: var(--accent);
+        }
+
+
+        .status-card h3 {
+            margin: 0 0 8px;
+
+            color: var(--text);
+        }
+
+
+        .status-card p {
+            margin-bottom: 0;
+        }
+
+
+        .status-label {
+            display: inline-block;
+
+            padding: 4px 8px;
+
+            margin-bottom: 8px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.06);
+
+            color: var(--accent);
+
+            font-size: 10px;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        .available {
+            color: var(--success) !important;
+        }
+
+
+        .unavailable {
+            color: var(--danger) !important;
+        }
+
+
+        /* =========================
+           PVP
+        ========================= */
+
+        .pvp-box {
+            padding: 20px;
+
+            border-radius: 16px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+
+            margin-top: 18px;
+        }
+
+
+        .pvp-box strong {
+            color: var(--accent);
+        }
+
+
+        /* =========================
+           AVAILABILITY
+        ========================= */
+
+        .availability-list {
+            display: grid;
+
+            gap: 10px;
+
+            margin-top: 16px;
+        }
+
+
+        .availability-item {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 14px 16px;
+
+            background: var(--surface-2);
+
+            border-radius: 12px;
+
+            border: 1px solid var(--border);
+        }
+
+
+        .availability-item strong {
+            color: var(--text);
+        }
+
+
+        .availability-item span {
+            color: var(--muted);
+
+            text-align: right;
+        }
+
+
+        /* =========================
+           FAQ
+        ========================= */
+
+        details {
+            background: var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 15px 17px;
+
+            margin-top: 10px;
+        }
+
+
+        summary {
+            cursor: pointer;
+
+            font-weight: 800;
+
+            color: var(--text);
+        }
+
+
+        details p {
+            margin-top: 10px;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           SIDEBAR
+        ========================= */
+
+        .sidebar {
+            position: sticky;
+
+            top: 92px;
+        }
+
+
+        .side-card {
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            padding: 20px;
+
+            margin-bottom: 16px;
+        }
+
+
+        .side-card h3 {
+            font-size: 15px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .side-links {
+            display: grid;
+
+            gap: 4px;
+        }
+
+
+        .side-links a {
+            padding: 8px 9px;
+
+            border-radius: 8px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .side-links a:hover {
+            color: var(--text);
+
+            background:
+                rgba(255,255,255,.05);
+        }
+
+
+        .related {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           EDITORIAL NOTE
+        ========================= */
+
+        .editorial {
+            border-left:
+                3px solid var(--accent);
+        }
+
+
+        .editorial p {
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 40px;
+
+            padding: 35px 0;
+
+            border-top:
+                1px solid var(--border);
+
+            background: var(--bg-soft);
+        }
+
+
+        .footer-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .footer-brand {
+            font-weight: 900;
+        }
+
+
+        .footer-brand span {
+            color: var(--accent);
+        }
+
+
+        .footer-links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .footer-note {
+            width: 100%;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1000px) {
+
+            .page-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 760px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .weakness-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .move-grid,
+            .counter-grid,
+            .status-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .performance {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .type-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .hero {
+                padding: 22px;
+            }
+
+            h1 {
+                letter-spacing: -1.5px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .container {
+                width:
+                    min(100% - 20px, var(--max-width));
+            }
+
+            .quick-stats {
+                gap: 8px;
+            }
+
+            .quick-card {
+                padding: 13px;
+            }
+
+            .quick-card strong {
+                font-size: 20px;
+            }
+
+            .weakness-grid {
+                gap: 8px;
+            }
+
+            .pokemon-placeholder {
+                min-height: 200px;
+
+                font-size: 80px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container nav">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="/types/">Types</a>
+            <a href="/pokemon/">Pokédex</a>
+            <a href="/raids/">Raids</a>
+            <a href="/guides/">Guides</a>
+            <a href="/tools/">Tools</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<div class="container">
+
+
+    <!-- BREADCRUMB -->
+
+    <div class="breadcrumb">
+
+        <a href="/">Home</a>
+        &nbsp;›&nbsp;
+
+        <a href="/pokemon/">Pokémon Database</a>
+        &nbsp;›&nbsp;
+
+        <a href="/types/bug.html">Bug Type</a>
+        &nbsp;›&nbsp;
+
+        <span>Pheromosa</span>
+
+    </div>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Ultra Beast • Pokémon GO Database
+            </div>
+
+            <h1>
+                Pheromosa
+            </h1>
+
+            <p class="hero-description">
+
+                Pheromosa is a Bug/Fighting-type Ultra Beast known for
+                extremely high Attack and exceptionally low Defense.
+                In Pokémon GO, it can function as a powerful Bug-type
+                damage dealer, but its fragile defenses make careful
+                team building especially important.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag bug">
+                    Bug
+                </span>
+
+                <span class="tag fighting">
+                    Fighting
+                </span>
+
+                <span class="tag">
+                    #795
+                </span>
+
+                <span class="tag">
+                    Ultra Beast
+                </span>
+
+                <span class="tag shiny">
+                    ✨ Shiny Available
+                </span>
+
+                <span class="tag">
+                    No Evolution
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="pokemon-placeholder">
+            🦋
+        </div>
+
+    </section>
+
+
+
+    <!-- QUICK STATS -->
+
+    <div class="quick-stats">
+
+        <div class="quick-card">
+            <small>Attack</small>
+            <strong>316</strong>
+        </div>
+
+        <div class="quick-card">
+            <small>Defense</small>
+            <strong>85</strong>
+        </div>
+
+        <div class="quick-card">
+            <small>HP</small>
+            <strong>174</strong>
+        </div>
+
+        <div class="quick-card">
+            <small>Max CP</small>
+            <strong>3213</strong>
+        </div>
+
+    </div>
+
+
+
+    <div class="page-layout">
+
+
+        <main>
+
+
+            <!-- OVERVIEW -->
+
+            <section class="section" id="overview">
+
+                <h2>
+                    Pheromosa Pokémon GO Overview
+                </h2>
+
+                <p>
+                    Pheromosa is National Pokédex #795 and is classified
+                    as an Ultra Beast. It originates from the Alola region
+                    and has a unique Bug/Fighting typing.
+                </p>
+
+                <p>
+                    Its biggest defining feature in Pokémon GO is its
+                    enormous Attack stat combined with extremely low
+                    Defense. This gives Pheromosa a glass-cannon playstyle:
+                    it can deal significant damage quickly, but it can
+                    also faint much faster than bulkier attackers.
+                </p>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <tr>
+                            <th>Pokédex Number</th>
+                            <td>#795</td>
+                        </tr>
+
+                        <tr>
+                            <th>Generation</th>
+                            <td>Generation 7</td>
+                        </tr>
+
+                        <tr>
+                            <th>Region</th>
+                            <td>Alola</td>
+                        </tr>
+
+                        <tr>
+                            <th>Category</th>
+                            <td>Ultra Beast</td>
+                        </tr>
+
+                        <tr>
+                            <th>Type</th>
+                            <td>Bug / Fighting</td>
+                        </tr>
+
+                        <tr>
+                            <th>Evolution</th>
+                            <td>None</td>
+                        </tr>
+
+                        <tr>
+                            <th>Buddy Distance</th>
+                            <td>20 km</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TYPE -->
+
+            <section class="section" id="type">
+
+                <h2>
+                    Pheromosa Type
+                </h2>
+
+                <p>
+                    Pheromosa has a dual Bug/Fighting typing.
+                    This combination gives it useful offensive coverage,
+                    while also creating several important weaknesses.
+                </p>
+
+
+                <div class="type-grid">
+
+                    <div class="type-card bug">
+
+                        <div class="type-icon">
+                            🐛
+                        </div>
+
+                        <div class="type-name">
+                            Bug
+                        </div>
+
+                        <p>
+                            Strong against Psychic, Dark and Grass targets.
+                        </p>
+
+                    </div>
+
+
+                    <div class="type-card fighting">
+
+                        <div class="type-icon">
+                            🥊
+                        </div>
+
+                        <div class="type-name">
+                            Fighting
+                        </div>
+
+                        <p>
+                            Provides useful offensive coverage against
+                            Normal, Rock, Steel, Ice and Dark Pokémon.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- WEAKNESSES -->
+
+            <section class="section" id="weaknesses">
+
+                <h2>
+                    Pheromosa Weaknesses & Resistances
+                </h2>
+
+                <p>
+                    Flying attacks are particularly dangerous against
+                    Pheromosa because its Bug/Fighting combination produces
+                    a double weakness to Flying-type damage.
+                </p>
+
+
+                <div class="weakness-grid">
+
+                    <div class="weakness-card flying">
+                        <strong>Flying</strong>
+                        <span>256% damage</span>
+                    </div>
+
+                    <div class="weakness-card fire">
+                        <strong>Fire</strong>
+                        <span>160% damage</span>
+                    </div>
+
+                    <div class="weakness-card psychic">
+                        <strong>Psychic</strong>
+                        <span>160% damage</span>
+                    </div>
+
+                    <div class="weakness-card fairy">
+                        <strong>Fairy</strong>
+                        <span>160% damage</span>
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Pheromosa Resistances
+                </h3>
+
+
+                <div class="resistance-list">
+
+                    <span class="resistance">Bug</span>
+                    <span class="resistance">Dark</span>
+                    <span class="resistance">Fighting</span>
+                    <span class="resistance">Grass</span>
+                    <span class="resistance">Ground</span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- STATS -->
+
+            <section class="section" id="stats">
+
+                <h2>
+                    Pheromosa Stats
+                </h2>
+
+                <p>
+                    Pheromosa has one of the most extreme offensive and
+                    defensive stat profiles in Pokémon GO. Its Attack is
+                    excellent, while its Defense is exceptionally low.
+                </p>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-box">
+                        <div class="number">316</div>
+                        <small>Attack</small>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="number">85</div>
+                        <small>Defense</small>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="number">174</div>
+                        <small>HP</small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-note">
+
+                    <strong>Glass Cannon:</strong>
+
+                    Pheromosa's enormous Attack stat makes it capable of
+                    dealing heavy damage, but its low Defense means that
+                    charged attacks and super-effective moves can remove
+                    it very quickly.
+
+                </div>
+
+
+                <h3>
+                    Pheromosa Max CP
+                </h3>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <tr>
+                            <th>Level</th>
+                            <th>Approximate CP</th>
+                        </tr>
+
+                        <tr>
+                            <td>Level 20</td>
+                            <td>1624</td>
+                        </tr>
+
+                        <tr>
+                            <td>Level 25 Weather Boost</td>
+                            <td>2030</td>
+                        </tr>
+
+                        <tr>
+                            <td>Level 40</td>
+                            <td>2842</td>
+                        </tr>
+
+                        <tr>
+                            <td>Level 50</td>
+                            <td>3213</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- MOVES -->
+
+            <section class="section" id="moves">
+
+                <h2>
+                    Pheromosa Best Moves
+                </h2>
+
+                <p>
+                    Pheromosa can use Bug and Fighting attacks.
+                    Its Bug-type moveset is particularly useful when
+                    targeting Pokémon weak to Bug.
+                </p>
+
+
+                <div class="move-grid">
+
+                    <div class="move-card">
+
+                        <span class="move-type bug">
+                            BUG
+                        </span>
+
+                        <h3>
+                            Bug Bite
+                        </h3>
+
+                        <p>
+                            A fast Bug-type attack that pairs naturally
+                            with Pheromosa's high Attack stat.
+                        </p>
+
+                    </div>
+
+
+                    <div class="move-card">
+
+                        <span class="move-type bug">
+                            BUG
+                        </span>
+
+                        <h3>
+                            Bug Buzz
+                        </h3>
+
+                        <p>
+                            A strong Bug-type Charged Attack and the
+                            recommended partner for a Bug-focused
+                            Pheromosa moveset.
+                        </p>
+
+                    </div>
+
+
+                    <div class="move-card">
+
+                        <span class="move-type fighting">
+                            FIGHTING
+                        </span>
+
+                        <h3>
+                            Low Kick
+                        </h3>
+
+                        <p>
+                            Pheromosa's available Fighting-type Fast Move.
+                        </p>
+
+                    </div>
+
+
+                    <div class="move-card">
+
+                        <span class="move-type fighting">
+                            FIGHTING
+                        </span>
+
+                        <h3>
+                            Focus Blast
+                        </h3>
+
+                        <p>
+                            A Fighting-type Charged Attack that provides
+                            an alternative role for Pheromosa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-note">
+
+                    <strong>Recommended Bug build:</strong>
+
+                    Bug Bite + Bug Buzz.
+
+                    This is the main moveset to consider when using
+                    Pheromosa as a Bug-type raid attacker.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- RAID -->
+
+            <section class="section" id="raid">
+
+                <h2>
+                    Pheromosa in Raids
+                </h2>
+
+                <p>
+                    Pheromosa is best understood as a high-damage,
+                    low-durability raid attacker. Its enormous Attack
+                    stat can produce impressive damage, but its low
+                    Defense makes survival a major limitation.
+                </p>
+
+
+                <div class="performance">
+
+                    <div class="performance-card">
+                        <strong>Damage</strong>
+                        <span>Very High</span>
+                    </div>
+
+                    <div class="performance-card">
+                        <strong>Durability</strong>
+                        <span>Very Low</span>
+                    </div>
+
+                    <div class="performance-card">
+                        <strong>Playstyle</strong>
+                        <span>Glass Cannon</span>
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Best Role
+                </h3>
+
+                <p>
+                    Pheromosa is most interesting when its Bug typing
+                    lines up with the raid boss's weaknesses. Rainy
+                    weather can also boost Bug-type attacks.
+                </p>
+
+            </section>
+
+
+
+            <!-- COUNTERS -->
+
+            <section class="section" id="counters">
+
+                <h2>
+                    Best Pheromosa Counters
+                </h2>
+
+                <p>
+                    Flying is the most effective attacking type against
+                    Pheromosa because it exploits its 2.56× weakness.
+                    Fire, Psychic and Fairy attackers are also effective.
+                </p>
+
+
+                <div class="counter-grid">
+
+                    <div class="counter">
+                        <strong>Mega Rayquaza</strong>
+                        <span>Flying</span>
+                    </div>
+
+                    <div class="counter">
+                        <strong>Rayquaza</strong>
+                        <span>Flying</span>
+                    </div>
+
+                    <div class="counter">
+                        <strong>Shadow Moltres</strong>
+                        <span>Flying</span>
+                    </div>
+
+                    <div class="counter">
+                        <strong>Shadow Salamence</strong>
+                        <span>Flying</span>
+                    </div>
+
+                    <div class="counter">
+                        <strong>Mewtwo</strong>
+                        <span>Psychic</span>
+                    </div>
+
+                    <div class="counter">
+                        <strong>Mega Gardevoir</strong>
+                        <span>Fairy / Psychic</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-note">
+
+                    <strong>Counter priority:</strong>
+
+                    Start with strong Flying attackers whenever possible.
+                    Pheromosa's double weakness to Flying makes that
+                    category particularly valuable.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- IV -->
+
+            <section class="section" id="iv">
+
+                <h2>
+                    Pheromosa IV Guide
+                </h2>
+
+                <p>
+                    IVs determine the individual Attack, Defense and
+                    HP values of each Pheromosa. A perfect Pheromosa
+                    has 15/15/15 IVs.
+                </p>
+
+
+                <div class="iv-grid">
+
+                    <div class="iv-card">
+                        <strong>15</strong>
+                        <span>Attack IV</span>
+                    </div>
+
+                    <div class="iv-card">
+                        <strong>15</strong>
+                        <span>Defense IV</span>
+                    </div>
+
+                    <div class="iv-card">
+                        <strong>15</strong>
+                        <span>HP IV</span>
+                    </div>
+
+                </div>
+
+
+                <div class="perfect-box">
+
+                    <strong>
+                        ⭐ 100% Pheromosa
+                    </strong>
+
+                    <p>
+                        A 100% IV Pheromosa means the individual Pokémon
+                        has 15 Attack, 15 Defense and 15 HP IVs.
+                        “100%” is an IV appraisal status, not a separate
+                        species or visual form.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PVP -->
+
+            <section class="section" id="pvp">
+
+                <h2>
+                    Pheromosa in PvP
+                </h2>
+
+                <p>
+                    Pheromosa's extreme lack of bulk makes PvP use
+                    challenging. Although its Attack stat is impressive,
+                    it can struggle to survive neutral damage and
+                    opponents with strong fast-move pressure.
+                </p>
+
+
+                <div class="pvp-box">
+
+                    <strong>
+                        PvP takeaway:
+                    </strong>
+
+                    Pheromosa is much more naturally suited to
+                    high-damage situations than prolonged battles.
+                    If used in PvP, shield management and matchup
+                    selection become especially important.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- SPECIAL STATUSES -->
+
+            <section class="section" id="special-statuses">
+
+                <h2>
+                    Pheromosa Special Statuses
+                </h2>
+
+                <p>
+                    Pokémon GO uses several collection statuses and
+                    classifications. These should not all be treated
+                    as separate Pheromosa forms.
+                </p>
+
+
+                <div class="status-grid">
+
+
+                    <!-- SHINY -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Available
+                        </span>
+
+                        <h3>
+                            ✨ Shiny Pheromosa
+                        </h3>
+
+                        <p>
+                            Shiny Pheromosa is available in Pokémon GO.
+                            It has an alternate coloration and can be
+                            encountered through eligible encounters
+                            when shiny Pheromosa is enabled.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- SHADOW -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Not Currently Available
+                        </span>
+
+                        <h3>
+                            🌑 Shadow Pheromosa
+                        </h3>
+
+                        <p>
+                            There is currently no official Shadow
+                            Pheromosa available in Pokémon GO.
+                            Shadow Pokémon come from Team GO Rocket
+                            encounters, and Pheromosa is not currently
+                            part of that system.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- PURIFIED -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Not Currently Available
+                        </span>
+
+                        <h3>
+                            ✨ Purified Pheromosa
+                        </h3>
+
+                        <p>
+                            Purified Pheromosa is not currently
+                            obtainable because Purification requires
+                            a Shadow Pokémon first.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- LUCKY -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Special Status
+                        </span>
+
+                        <h3>
+                            🍀 Lucky Pheromosa
+                        </h3>
+
+                        <p>
+                            Lucky is a status rather than a separate
+                            Pheromosa form. Ultra Beasts can be involved
+                            in Special Trades, so a traded Pheromosa
+                            may become Lucky when the trade results
+                            in a Lucky Pokémon.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- 100% -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            IV Status
+                        </span>
+
+                        <h3>
+                            💯 100% Pheromosa
+                        </h3>
+
+                        <p>
+                            A 100% Pheromosa has perfect IVs:
+                            15 Attack, 15 Defense and 15 HP.
+                            This is an appraisal classification,
+                            not a different form.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- XXL -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Size Status
+                        </span>
+
+                        <h3>
+                            📏 XXL Pheromosa
+                        </h3>
+
+                        <p>
+                            XXL describes a particularly large
+                            individual. Size classifications are
+                            separate from species forms and can be
+                            searched using Pokémon GO's size search
+                            filters when supported for the species.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- XXS -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Size Status
+                        </span>
+
+                        <h3>
+                            📐 XXS Pheromosa
+                        </h3>
+
+                        <p>
+                            XXS describes a particularly small
+                            individual. Like XXL, this is a size
+                            classification rather than a separate
+                            Pheromosa form.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- REGULAR -->
+
+                    <div class="status-card">
+
+                        <span class="status-label">
+                            Standard
+                        </span>
+
+                        <h3>
+                            Pheromosa
+                        </h3>
+
+                        <p>
+                            The regular form is the standard Pheromosa
+                            available in Pokémon GO and serves as the
+                            base entry for the species.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- EVOLUTION -->
+
+            <section class="section" id="evolution">
+
+                <h2>
+                    Pheromosa Evolution
+                </h2>
+
+                <p>
+                    Pheromosa does not evolve and does not have an
+                    evolution family in Pokémon GO.
+                </p>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <tr>
+                            <th>Pokémon</th>
+                            <th>Evolution Requirement</th>
+                        </tr>
+
+                        <tr>
+                            <td>Pheromosa</td>
+                            <td>No Evolution</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- CANDY -->
+
+            <section class="section" id="candy">
+
+                <h2>
+                    Pheromosa Candy, XL Candy & Stardust
+                </h2>
+
+                <p>
+                    Pheromosa uses its own species Candy and Pheromosa
+                    Candy XL for powering up. Because Pheromosa is
+                    particularly fragile, powering up a strong individual
+                    can be more useful than investing heavily in multiple
+                    low-IV copies.
+                </p>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <tr>
+                            <th>Resource</th>
+                            <th>Use</th>
+                        </tr>
+
+                        <tr>
+                            <td>Pheromosa Candy</td>
+                            <td>Power Up / Unlock Attacks</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pheromosa Candy XL</td>
+                            <td>Power Up at Higher Levels</td>
+                        </tr>
+
+                        <tr>
+                            <td>Stardust</td>
+                            <td>Power Up / Second Charged Attack</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- AVAILABILITY -->
+
+            <section class="section" id="availability">
+
+                <h2>
+                    Pheromosa Availability
+                </h2>
+
+                <p>
+                    Pheromosa is an Ultra Beast whose availability is
+                    tied to Pokémon GO events and raid rotations.
+                    Its exact return dates can change, so trainers
+                    should check the current event schedule before
+                    planning a hunt.
+                </p>
+
+
+                <div class="availability-list">
+
+                    <div class="availability-item">
+
+                        <strong>
+                            Wild
+                        </strong>
+
+                        <span>
+                            Not a standard wild encounter
+                        </span>
+
+                    </div>
+
+
+                    <div class="availability-item">
+
+                        <strong>
+                            Raids
+                        </strong>
+
+                        <span>
+                            Event / rotation dependent
+                        </span>
+
+                    </div>
+
+
+                    <div class="availability-item">
+
+                        <strong>
+                            Shiny
+                        </strong>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="availability-item">
+
+                        <strong>
+                            Shadow Raid
+                        </strong>
+
+                        <span class="unavailable">
+                            Not currently available
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- HOW TO USE -->
+
+            <section class="section" id="guide">
+
+                <h2>
+                    How to Use Pheromosa
+                </h2>
+
+                <h3>
+                    1. Use It Against Appropriate Raid Bosses
+                </h3>
+
+                <p>
+                    Pheromosa is most valuable when its Bug-type damage
+                    can exploit a raid boss's weakness.
+                </p>
+
+
+                <h3>
+                    2. Avoid Unnecessary Damage
+                </h3>
+
+                <p>
+                    Its Defense is extremely low, so avoid leaving
+                    Pheromosa exposed to powerful super-effective
+                    Charged Attacks.
+                </p>
+
+
+                <h3>
+                    3. Build Around Its Attack
+                </h3>
+
+                <p>
+                    Pheromosa's main strength is offensive pressure.
+                    A high-Attack, high-IV specimen is the natural
+                    choice for long-term investment.
+                </p>
+
+
+                <h3>
+                    4. Consider Flying Counters When Fighting It
+                </h3>
+
+                <p>
+                    If Pheromosa appears as a raid boss, prioritize
+                    powerful Flying attackers because Flying exploits
+                    its strongest weakness.
+                </p>
+
+            </section>
+
+
+
+            <!-- COMPARISON -->
+
+            <section class="section" id="comparison">
+
+                <h2>
+                    Pheromosa Status Comparison
+                </h2>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <tr>
+                            <th>Status</th>
+                            <th>What It Means</th>
+                            <th>Separate Form?</th>
+                        </tr>
+
+                        <tr>
+                            <td>Regular</td>
+                            <td>Standard Pheromosa</td>
+                            <td>Yes</td>
+                        </tr>
+
+                        <tr>
+                            <td>Shiny</td>
+                            <td>Alternate coloration</td>
+                            <td>Visual variant</td>
+                        </tr>
+
+                        <tr>
+                            <td>Shadow</td>
+                            <td>Team GO Rocket Shadow status</td>
+                            <td>Not currently available</td>
+                        </tr>
+
+                        <tr>
+                            <td>Purified</td>
+                            <td>Purified Shadow Pokémon</td>
+                            <td>Not currently available</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lucky</td>
+                            <td>Trade-related status</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>100%</td>
+                            <td>15/15/15 IVs</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>XXL</td>
+                            <td>Large size classification</td>
+                            <td>No</td>
+                        </tr>
+
+                        <tr>
+                            <td>XXS</td>
+                            <td>Small size classification</td>
+                            <td>No</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- FAQ -->
+
+            <section class="section" id="faq">
+
+                <h2>
+                    Pheromosa Pokémon GO FAQ
+                </h2>
+
+
+                <details>
+
+                    <summary>
+                        Is Pheromosa a Legendary Pokémon?
+                    </summary>
+
+                    <p>
+                        Pheromosa is classified as an Ultra Beast rather
+                        than a Legendary Pokémon.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What type is Pheromosa?
+                    </summary>
+
+                    <p>
+                        Pheromosa is a Bug/Fighting-type Pokémon.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is Pheromosa weak against?
+                    </summary>
+
+                    <p>
+                        Pheromosa is weak to Flying, Fire, Psychic and
+                        Fairy attacks. Flying is its strongest weakness.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is Pheromosa's best moveset?
+                    </summary>
+
+                    <p>
+                        Bug Bite and Bug Buzz are the recommended
+                        Bug-focused moveset.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Is Shiny Pheromosa available?
+                    </summary>
+
+                    <p>
+                        Yes. Shiny Pheromosa is available in Pokémon GO.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Can Pheromosa be Shadow?
+                    </summary>
+
+                    <p>
+                        There is currently no official Shadow Pheromosa
+                        available in Pokémon GO.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Can Pheromosa be Purified?
+                    </summary>
+
+                    <p>
+                        Not currently. Purification requires a Shadow
+                        Pokémon, and Pheromosa does not currently have
+                        an available Shadow form.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is a 100% Pheromosa?
+                    </summary>
+
+                    <p>
+                        A 100% Pheromosa has perfect IVs of
+                        15 Attack, 15 Defense and 15 HP.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is a Lucky Pheromosa?
+                    </summary>
+
+                    <p>
+                        Lucky describes a special trade-related status.
+                        It is not a separate Pheromosa species or form.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Does Pheromosa evolve?
+                    </summary>
+
+                    <p>
+                        No. Pheromosa has no evolution in Pokémon GO.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        What is Pheromosa's Max CP?
+                    </summary>
+
+                    <p>
+                        Pheromosa reaches approximately 3213 CP at
+                        Trainer level 50.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Is Pheromosa good for raids?
+                    </summary>
+
+                    <p>
+                        Pheromosa can be a strong Bug-type damage dealer,
+                        but its extremely low Defense makes it much less
+                        durable than many other raid attackers.
+                    </p>
+
+                </details>
+
+            </section>
+
+
+
+            <!-- EDITORIAL -->
+
+            <section class="section editorial">
+
+                <h2>
+                    Editorial & Data Note
+                </h2>
+
+                <p>
+                    PokémonGaming.in is an independent Pokémon GO
+                    information website. Game mechanics, moves,
+                    availability and event rotations can change over
+                    time.
+                </p>
+
+                <p>
+                    Statuses such as Shiny, Lucky, 100%, XXL and XXS
+                    should not automatically be interpreted as separate
+                    species forms.
+                </p>
+
+                <p>
+                    Always verify time-limited availability against the
+                    latest Pokémon GO event information before making
+                    raid or collection plans.
+                </p>
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <div class="side-card">
+
+                <h3>
+                    Pheromosa Guide
+                </h3>
+
+                <div class="side-links">
+
+                    <a href="#overview">
+                        Overview
+                    </a>
+
+                    <a href="#type">
+                        Type
+                    </a>
+
+                    <a href="#weaknesses">
+                        Weaknesses
+                    </a>
+
+                    <a href="#stats">
+                        Stats & CP
+                    </a>
+
+                    <a href="#moves">
+                        Moves
+                    </a>
+
+                    <a href="#raid">
+                        Raid Performance
+                    </a>
+
+                    <a href="#counters">
+                        Counters
+                    </a>
+
+                    <a href="#iv">
+                        IV Guide
+                    </a>
+
+                    <a href="#pvp">
+                        PvP
+                    </a>
+
+                    <a href="#special-statuses">
+                        Special Statuses
+                    </a>
+
+                    <a href="#evolution">
+                        Evolution
+                    </a>
+
+                    <a href="#candy">
+                        Candy
+                    </a>
+
+                    <a href="#availability">
+                        Availability
+                    </a>
+
+                    <a href="#guide">
+                        How to Use
+                    </a>
+
+                    <a href="#faq">
+                        FAQ
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="side-card">
+
+                <h3>
+                    Pheromosa Quick Facts
+                </h3>
+
+                <p class="related">
+
+                    #795<br>
+                    Bug / Fighting<br>
+                    Ultra Beast<br>
+                    No Evolution<br>
+                    Shiny Available<br>
+                    316 Attack<br>
+                    85 Defense<br>
+                    174 HP<br>
+                    Max CP 3213
+
+                </p>
+
+            </div>
+
+
+
+            <div class="side-card">
+
+                <h3>
+                    Related Guides
+                </h3>
+
+                <div class="side-links">
+
+                    <a href="/pokemon/buzzwole.html">
+                        Buzzwole
+                    </a>
+
+                    <a href="/pokemon/xurkitree.html">
+                        Xurkitree
+                    </a>
+
+                    <a href="/pokemon/nihilego.html">
+                        Nihilego
+                    </a>
+
+                    <a href="/types/bug.html">
+                        Bug Pokémon
+                    </a>
+
+                    <a href="/types/fighting.html">
+                        Fighting Pokémon
+                    </a>
+
+                    <a href="/raids/">
+                        Raid Guides
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="footer-brand">
+            Pokémon<span>Gaming</span>
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+            <a href="/privacy.html">
+                Privacy
+            </a>
+
+            <a href="/terms.html">
+                Terms
+            </a>
+
+            <a href="/copyright.html">
+                Copyright
+            </a>
+
+            <a href="/disclaimer.html">
+                Disclaimer
+            </a>
+
+        </div>
+
+
+        <p class="footer-note">
+
+            PokémonGaming.in is an independent Pokémon GO information
+            website and is not affiliated with, endorsed by, or
+            sponsored by Nintendo, The Pokémon Company, Niantic,
+            or any other Pokémon GO rights holder.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

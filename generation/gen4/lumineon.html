@@ -1,0 +1,4326 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Lumineon Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & More
+</title>
+
+<meta name="description"
+      content="Complete Lumineon Pokémon GO guide covering regular Lumineon, Shiny, Shadow, Purified, Lucky, 100% IV, XXL and XXS forms, stats, Max CP, Water typing, weaknesses, resistances, moves, PvP, raids, evolution and availability.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/lumineon.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080d14;
+    --bg-soft: #0e151f;
+
+    --surface: #121b27;
+    --surface-2: #182331;
+    --surface-3: #202e3e;
+
+    --border: #2b394b;
+
+    --text: #f4f7fb;
+    --muted: #aab5c3;
+
+    --accent: #65b8ff;
+    --accent-2: #398fe0;
+
+    --water: #4d9fff;
+    --water-soft: rgba(77,159,255,.12);
+
+    --grass: #62d08b;
+    --electric: #f4ca54;
+
+    --danger: #ff707d;
+    --success: #64d79b;
+    --gold: #f2c85b;
+    --purple: #aa8cff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(77,159,255,.13),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,13,20,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(77,159,255,.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111d2b,
+            #0b111a
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid rgba(77,159,255,.25);
+
+    border-radius: 999px;
+
+    color:
+        var(--water);
+
+    background:
+        var(--water-soft);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c4cedb;
+}
+
+.hero-tags {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.water-tag {
+    color: var(--water);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(77,159,255,.25),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.45rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(77,159,255,.3);
+
+    background:
+        rgba(77,159,255,.07);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(77,159,255,.14);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color: var(--water);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,112,125,.28);
+}
+
+.resistance {
+    border-color:
+        rgba(100,215,155,.28);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color:
+        var(--water);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(77,159,255,.11),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(77,159,255,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8d0db;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color:
+        var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.form-card {
+
+    padding: 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.form-card .form-icon {
+
+    font-size: 2rem;
+
+    margin-bottom: 8px;
+}
+
+.form-card h3 {
+
+    margin: 0 0 7px;
+
+    font-size: 1rem;
+}
+
+.form-card p {
+
+    font-size: .76rem;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.6rem;
+}
+
+.iv-card span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   SIZE CARDS
+========================================================= */
+
+.size-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.size-card {
+
+    padding: 22px;
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+}
+
+.size-card strong {
+
+    display: block;
+
+    font-size: 1.15rem;
+
+    margin-bottom: 5px;
+}
+
+.size-card span {
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   LUCKY CARD
+========================================================= */
+
+.lucky-card {
+
+    padding: 25px;
+
+    border-radius:
+        var(--radius);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(242,200,91,.14),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(242,200,91,.3);
+}
+
+.lucky-card strong {
+
+    color:
+        var(--gold);
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   SHINY CARD
+========================================================= */
+
+.shiny-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 24px;
+
+    border-radius:
+        var(--radius);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(180,180,255,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(180,180,255,.25);
+}
+
+.shiny-icon {
+
+    font-size: 2.7rem;
+}
+
+
+/* =========================================================
+   SHADOW CARD
+========================================================= */
+
+.shadow-card {
+
+    padding: 25px;
+
+    border-radius:
+        var(--radius);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #171421,
+            #0d1019
+        );
+
+    border:
+        1px solid #403950;
+}
+
+.shadow-label {
+
+    display: inline-block;
+
+    padding:
+        5px 10px;
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(170,140,255,.12);
+
+    color:
+        var(--purple);
+
+    font-size: .65rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   PURIFIED
+========================================================= */
+
+.purified-card {
+
+    padding: 25px;
+
+    border-radius:
+        var(--radius);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(190,210,255,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(190,210,255,.28);
+}
+
+
+/* =========================================================
+   100 IV
+========================================================= */
+
+.perfect-card {
+
+    padding: 25px;
+
+    border-radius:
+        var(--radius);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(242,200,91,.15),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(242,200,91,.32);
+}
+
+.perfect-card strong {
+
+    color:
+        var(--gold);
+
+    font-size: 1.25rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid,
+    .size-grid,
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .shiny-card {
+        align-items: flex-start;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/water.html">
+        Water Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Lumineon
+    </strong>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                SINNOH • WATER TYPE
+            </span>
+
+            <h1>
+                Lumineon
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Lumineon is a Water-type Pokémon originally
+                introduced in the Sinnoh region. In Pokémon GO,
+                it is primarily a Pokédex and collection target,
+                with limited relevance in high-level raids but
+                potential value in specific PvP formats.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag water-tag">
+                    Water
+                </span>
+
+                <span class="tag">
+                    #457
+                </span>
+
+                <span class="tag">
+                    Gen 4
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves from Finneon
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your properly licensed Lumineon image -->
+
+            <div class="pokemon-placeholder">
+                🐟
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            142
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            170
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            170
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~2,444
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Overview
+        </h2>
+
+        <p>
+
+            Lumineon is a Water-type Pokémon from Generation 4
+            and evolves from Finneon. Its design is inspired by
+            deep-sea fish and bioluminescent patterns.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#457</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 4</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Sinnoh</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Water</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>142</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>170</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>170</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>~2,444</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            💧
+        </div>
+
+        <div>
+
+            <strong>
+                Water
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        What Does Lumineon's Water Typing Mean?
+    </h3>
+
+    <p>
+
+        Lumineon's pure Water typing gives it a straightforward
+        defensive profile. It is weak to Electric and Grass
+        attacks while resisting Fire, Water, Ice and Steel-type
+        damage.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks deal super-effective
+                damage to Lumineon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass-type attackers can exploit Lumineon's
+                Water typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Water typing provides resistance to Fire attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Lumineon resists Water-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ❄️
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice-type attacks are resisted by Water Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Lumineon's Water typing gives it useful
+                resistance to Steel attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Stats & Max CP
+        </h2>
+
+        <p>
+
+            Lumineon's stat distribution gives it more defensive
+            bulk than offensive power. Its maximum CP is much lower
+            than the Legendary and pseudo-Legendary Pokémon commonly
+            used in high-level raids.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>142</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>170</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>170</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~2,444</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+
+            The actual CP of an individual Lumineon depends
+            on its level and IVs. A higher CP does not automatically
+            mean that the Pokémon has perfect IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Best Moves
+        </h2>
+
+        <p>
+
+            Lumineon's moveset should be evaluated according to
+            the battle format. Its Water-type attacks are the
+            most natural choice when using it as a Water attacker.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Water Build
+        </strong>
+
+        <p>
+            Waterfall + Surf
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Move</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Role</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Waterfall
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Water damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Surf
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Efficient Water attack
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Blizzard
+                    </td>
+
+                    <td>
+                        Ice
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Silver Wind
+                    </td>
+
+                    <td>
+                        Bug
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change as Pokémon GO updates
+        movepools. Check current in-game move availability before
+        publishing a time-sensitive moveset recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Raid Performance
+        </h2>
+
+        <p>
+
+            Lumineon is not normally considered a top-tier
+            Water-type raid attacker. Trainers building optimized
+            raid teams will generally have stronger Water options.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Water PvE
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:35%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            3.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:58%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            5.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:82%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.2/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Lumineon?
+    </h3>
+
+    <p>
+
+        For most players, Lumineon is better suited to collection,
+        Pokédex completion and selected PvP situations than to
+        expensive high-level raid investment.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     COUNTERS
+======================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <h2>
+            What Counters Lumineon?
+        </h2>
+
+        <p>
+
+            Lumineon's Water typing makes Electric and Grass
+            attackers the primary counter categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric Attackers
+            </strong>
+
+            <p>
+
+                Electric-type Pokémon can exploit Lumineon's
+                Water weakness.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass Attackers
+            </strong>
+
+            <p>
+
+                Grass-type attacks are also super effective
+                against Lumineon.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon IV Guide
+        </h2>
+
+        <p>
+
+            IVs add additional Attack, Defense and HP points
+            to a Pokémon. A 15/15/15 Lumineon is considered
+            a perfect-IV specimen.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% IV Lumineon
+    </h3>
+
+    <div class="perfect-card">
+
+        <strong>
+            💯 Perfect Lumineon — 15/15/15
+        </strong>
+
+        <p>
+
+            A 100% IV Lumineon has 15 Attack, 15 Defense and
+            15 HP IVs. Perfect IVs are especially attractive
+            to collectors and players completing their Pokédex
+            collection.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Is a 100% Lumineon Worth Powering Up?
+    </h3>
+
+    <p>
+
+        A perfect Lumineon can be worth keeping even when it
+        is not a major raid attacker. Consider its intended
+        PvP league, your collection goals and available resources
+        before investing Stardust and Candy.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Lumineon
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Shiny Lumineon has an alternate coloration compared
+        with the standard form. Shiny Pokémon retain the same
+        species and basic battle mechanics while providing a
+        distinct collector variant.
+
+    </p>
+
+
+    <div class="shiny-card">
+
+        <div class="shiny-icon">
+            ✨
+        </div>
+
+        <div>
+
+            <strong>
+                Shiny Lumineon
+            </strong>
+
+            <p>
+
+                Alternate-color Lumineon available through
+                eligible Pokémon GO encounters.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shiny Lumineon IVs
+    </h3>
+
+    <p>
+
+        Shiny status does not increase Lumineon's base Attack,
+        Defense or HP. A Shiny Lumineon can have any IV combination,
+        including a perfect 15/15/15 specimen.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     SHADOW
+======================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="shadow-label">
+            SPECIAL FORM
+        </span>
+
+        <h2>
+            Shadow Lumineon
+        </h2>
+
+        <p>
+
+            Shadow Lumineon should be treated as a separate
+            investment category because Shadow Pokémon have
+            different offensive and defensive battle characteristics.
+
+        </p>
+
+    </div>
+
+
+    <div class="shadow-card">
+
+        <span class="shadow-label">
+            SHADOW LUMINEON
+        </span>
+
+        <h3>
+            Darkened Form
+        </h3>
+
+        <p>
+
+            Shadow status does not change Lumineon's Water typing.
+            Its weaknesses therefore remain Electric and Grass.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Lumineon vs Regular Lumineon
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Lumineon
+                    </td>
+
+                    <td>
+                        Lumineon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Defensive Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Reduced durability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Investment
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        More resource-sensitive
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Lumineon Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Super effective against Water-type Lumineon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks also deal super-effective damage.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Lumineon Availability
+    </h3>
+
+    <p>
+
+        Shadow Pokémon availability depends on Team GO Rocket
+        encounters and current Pokémon GO events. Do not assume
+        Shadow Lumineon is permanently available.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     PURIFIED
+======================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Lumineon
+        </h2>
+
+    </div>
+
+
+    <div class="purified-card">
+
+        <h3>
+            Purified Lumineon
+        </h3>
+
+        <p>
+
+            Purified Lumineon is created by purifying an eligible
+            Shadow Lumineon. Purification changes the Pokémon's
+            status and can alter its IVs and other gameplay details.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Lumineon
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Typing
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Retained
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not yet purified
+                    </td>
+
+                    <td>
+                        Already purified
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Purification reminder:
+        </strong>
+
+        <p>
+
+            Do not purify a Shadow Pokémon automatically.
+            Compare the Shadow and Purified versions first,
+            particularly if the Pokémon has useful IVs or
+            collection value.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     LUCKY
+======================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Lumineon
+        </h2>
+
+        <p>
+
+            Lucky Pokémon are special Pokémon obtained through
+            Pokémon GO's trading mechanics. Lucky status does
+            not create a new species or change Lumineon's type.
+
+        </p>
+
+    </div>
+
+
+    <div class="lucky-card">
+
+        <strong>
+            🍀 Lucky Lumineon
+        </strong>
+
+        <p>
+
+            A Lucky Lumineon can be useful for collectors and
+            players looking for a lower Stardust cost when
+            powering up Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Lumineon IVs
+    </h3>
+
+    <p>
+
+        Lucky Pokémon have a minimum IV floor from the trade
+        mechanic, but Lucky status does not guarantee perfect IVs.
+        A Lucky Lumineon can still have different IV combinations.
+
+    </p>
+
+
+    <h3>
+        Should You Keep a Lucky Lumineon?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep it if you collect Lucky Pokémon.
+        </li>
+
+        <li>
+            Check its IVs after the trade.
+        </li>
+
+        <li>
+            Consider the reduced Stardust cost for powering it up.
+        </li>
+
+        <li>
+            Keep a high-IV Lucky specimen for collection purposes.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     XXL / XXS
+======================================================= -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL & XXS Lumineon
+        </h2>
+
+        <p>
+
+            Pokémon GO can assign size categories to individual
+            Pokémon. XXL and XXS Lumineon are size variants rather
+            than different species.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card">
+
+            <strong>
+                🐘 XXL Lumineon
+            </strong>
+
+            <span>
+                Extra-large size category
+            </span>
+
+            <p>
+
+                An XXL Lumineon is a particularly large individual
+                and can be useful for size-related collection goals
+                and showcases.
+
+            </p>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <strong>
+                🐜 XXS Lumineon
+            </strong>
+
+            <span>
+                Extra-small size category
+            </span>
+
+            <p>
+
+                An XXS Lumineon is an unusually small individual
+                and can be kept for collection and showcase purposes.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Do XXL and XXS Change Battle Stats?
+    </h3>
+
+    <p>
+
+        Size categories should not be confused with IVs.
+        A Pokémon's XXL or XXS classification does not mean
+        that it has better Attack, Defense or HP IVs.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     FORMS
+======================================================= -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Forms & Variants
+        </h2>
+
+        <p>
+
+            Lumineon can appear in several collection categories.
+            These categories should be separated from actual
+            species evolution.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                💧
+            </div>
+
+            <h3>
+                Regular Lumineon
+            </h3>
+
+            <p>
+                Standard Water-type Lumineon.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Lumineon
+            </h3>
+
+            <p>
+                Alternate-color variant.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Lumineon
+            </h3>
+
+            <p>
+                Shadow variant when available through the game.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                💎
+            </div>
+
+            <h3>
+                Purified Lumineon
+            </h3>
+
+            <p>
+                Created through purification of an eligible Shadow.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Lumineon
+            </h3>
+
+            <p>
+                Special trade-related Lucky classification.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                💯
+            </div>
+
+            <h3>
+                100% Lumineon
+            </h3>
+
+            <p>
+                Perfect 15/15/15 IV Lumineon.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🐘
+            </div>
+
+            <h3>
+                XXL Lumineon
+            </h3>
+
+            <p>
+                Extra-large individual.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🐜
+            </div>
+
+            <h3>
+                XXS Lumineon
+            </h3>
+
+            <p>
+                Extra-small individual.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Evolution
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Lumineon evolves from Finneon. It is the final stage
+        of this two-Pokémon evolutionary family.
+
+    </p>
+
+
+    <div class="form-grid">
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🐟
+            </div>
+
+            <h3>
+                Finneon
+            </h3>
+
+            <p>
+                Water-type Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-icon">
+                🌊
+            </div>
+
+            <h3>
+                Lumineon
+            </h3>
+
+            <p>
+                Final evolution of Finneon.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Requirement
+        </strong>
+
+        <p>
+            Finneon evolves into Lumineon using Pokémon Candy.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon PvP Guide
+        </h2>
+
+        <p>
+
+            Lumineon's relatively modest Attack and stronger
+            defensive stats make PvP a more interesting area
+            to investigate than high-level raid damage.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Great League allows Pokémon with CP limits that can make
+        lower-CP Pokémon more practical. Lumineon's performance
+        depends heavily on its moveset, IV spread and the current
+        PvP metagame.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Lumineon's maximum CP can make Ultra League investment
+        possible, although trainers should compare it against
+        stronger Water-type options before spending large amounts
+        of Stardust.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Lumineon's maximum CP is too low for it to be a natural
+        Master League investment compared with Pokémon designed
+        for that format.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Candy, XL Candy & Stardust
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Powering up Lumineon requires Stardust and Candy, while
+        higher-level investments require Candy XL. Before spending
+        resources, decide whether your Lumineon is being built for
+        PvP, collection or personal use.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep high-IV Lumineon for long-term collection goals.
+        </li>
+
+        <li>
+            Save strong PvP candidates before transferring them.
+        </li>
+
+        <li>
+            Check moves before spending Stardust.
+        </li>
+
+        <li>
+            Collect Candy XL if you intend to build a high-level specimen.
+        </li>
+
+        <li>
+            Keep interesting XXL and XXS specimens for showcases.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Lumineon availability can depend on Pokémon GO's
+        wild encounters, events and other encounter methods.
+        Current availability should be checked before publishing
+        a time-sensitive claim.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the latest Pokémon GO event and encounter
+            information for the current Lumineon availability.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     COLLECTION GUIDE
+======================================================= -->
+
+<section class="section" id="collection">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Collection Checklist
+        </h2>
+
+        <p>
+
+            Collectors can build a complete Lumineon collection
+            around IVs, appearance, size and special classifications.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Regular Lumineon
+        </li>
+
+        <li>
+            Shiny Lumineon
+        </li>
+
+        <li>
+            Shadow Lumineon when available
+        </li>
+
+        <li>
+            Purified Lumineon when available
+        </li>
+
+        <li>
+            Lucky Lumineon
+        </li>
+
+        <li>
+            100% IV Lumineon
+        </li>
+
+        <li>
+            XXL Lumineon
+        </li>
+
+        <li>
+            XXS Lumineon
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =======================================================
+     COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Collector Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Standard form
+                    </td>
+
+                    <td>
+                        ★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        ★★★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        ★★★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Purification status
+                    </td>
+
+                    <td>
+                        ★★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Lucky trade status
+                    </td>
+
+                    <td>
+                        ★★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% IV
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        ★★★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        ★★★★
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Water
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        ★★★★
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Lumineon
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Powering Up
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check Lumineon's IVs.
+        </li>
+
+        <li>
+            Check its moveset.
+        </li>
+
+        <li>
+            Determine whether you need it for PvP or collection.
+        </li>
+
+        <li>
+            Compare its performance with other Water Pokémon.
+        </li>
+
+        <li>
+            Consider the Stardust and Candy investment.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For PvP
+    </h3>
+
+    <p>
+
+        Do not automatically select the highest-IV Lumineon for
+        every PvP format. The best IV distribution can depend on
+        the league CP limit and the role you want Lumineon to play.
+
+    </p>
+
+
+    <h3>
+        For Collection
+    </h3>
+
+    <p>
+
+        A collector may reasonably prioritize Shiny, Lucky,
+        perfect-IV, XXL and XXS specimens even when those variants
+        are not the strongest options for raids.
+
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Lumineon FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Lumineon?
+        </summary>
+
+        <p>
+            Lumineon is a pure Water-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lumineon weak to?
+        </summary>
+
+        <p>
+            Lumineon is weak to Electric and Grass-type attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lumineon resistant to?
+        </summary>
+
+        <p>
+
+            Lumineon resists Fire, Water, Ice and Steel-type
+            attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Lumineon evolve?
+        </summary>
+
+        <p>
+
+            Lumineon is the final evolution of Finneon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Lumineon available?
+        </summary>
+
+        <p>
+
+            Shiny Lumineon can be obtained through eligible
+            Pokémon GO encounters when the Shiny form is available.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lumineon good for raids?
+        </summary>
+
+        <p>
+
+            Lumineon is generally not considered a top-tier
+            Water-type raid attacker. Stronger Water Pokémon
+            are usually preferred for optimized raid teams.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Lumineon good in PvP?
+        </summary>
+
+        <p>
+
+            Lumineon can be considered in selected PvP situations,
+            but its usefulness depends on the league, moveset and
+            current metagame.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Lumineon?
+        </summary>
+
+        <p>
+
+            A 100% Lumineon has perfect 15/15/15 Attack,
+            Defense and HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Lumineon?
+        </summary>
+
+        <p>
+
+            Lucky Lumineon is a Lumineon with the Lucky
+            classification obtained through Pokémon GO trading
+            mechanics.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXL Lumineon have better IVs?
+        </summary>
+
+        <p>
+
+            No. XXL describes size, not IV quality. An XXL
+            Lumineon can have any valid IV combination.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does XXS Lumineon have better stats?
+        </summary>
+
+        <p>
+
+            XXS is a size classification and should not be
+            interpreted as a higher-IV or stronger-stat variant.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Lumineon different from regular Lumineon?
+        </summary>
+
+        <p>
+
+            Shadow Lumineon has the same Water typing but uses
+            Shadow Pokémon mechanics, resulting in a different
+            offensive and defensive battle profile.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Lumineon?
+        </summary>
+
+        <p>
+
+            Do not purify automatically. Compare the Shadow
+            specimen with its potential purified result and
+            consider your collection and battle goals.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a Shiny Lumineon also be Lucky?
+        </summary>
+
+        <p>
+
+            Pokémon characteristics such as Shiny and Lucky
+            can represent separate classifications, so collectors
+            may value specimens that combine desirable traits.
+
+        </p>
+
+    </details>
+
+
+</section>
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounters, availability, events and other game
+            features can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Lumineon Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Performance
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#pvp">
+                PvP
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Lumineon
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Lumineon
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Lumineon
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Lumineon
+            </a>
+        </li>
+
+        <li>
+            <a href="#size">
+                XXL & XXS
+            </a>
+        </li>
+
+        <li>
+            <a href="#evolution">
+                Evolution
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/finneon.html">
+
+        Finneon Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/water.html">
+
+        Water Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-4.html">
+
+        Gen 4 Pokémon →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/kyogre.html">
+
+        Kyogre Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/gyarados.html">
+
+        Gyarados Guide →
+
+    </a>
+
+</div>
+
+
+<div class="side-card">
+
+    <h3>
+        Lumineon Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>Type:</strong>
+        Water
+    </p>
+
+
+    <p>
+        <strong>Generation:</strong>
+        4
+    </p>
+
+
+    <p>
+        <strong>Pokédex:</strong>
+        #457
+    </p>
+
+
+    <p>
+        <strong>Evolution:</strong>
+        Finneon → Lumineon
+    </p>
+
+
+    <p>
+        <strong>Max CP:</strong>
+        ~2,444
+    </p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

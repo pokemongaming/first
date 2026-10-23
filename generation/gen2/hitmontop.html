@@ -1,0 +1,4860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Hitmontop Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Hitmontop Pokémon GO guide covering stats, max CP, Fighting typing, weaknesses, resistances, best moves, PvP, raids, IVs, 100% Hitmontop, Shiny, Shadow, Purified, Lucky, XXL and XXS forms.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/hitmontop.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #8fa2ff;
+    --accent-2: #657cff;
+
+    --fighting: #e66a45;
+    --fighting-soft: rgba(230,106,69,.12);
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --shiny: #ffd76a;
+    --shadow: #a875ff;
+    --lucky: #ffbd4a;
+    --special: #66d9ff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(111,130,255,.11),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(230,106,69,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color:
+        var(--fighting);
+
+    background:
+        var(--fighting-soft);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.fighting-tag {
+    color: var(--fighting);
+}
+
+.shiny-tag {
+    color: var(--shiny);
+}
+
+.shadow-tag {
+    color: var(--shadow);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.hero-pokemon img {
+
+    width:
+        min(100%,320px);
+
+    filter:
+        drop-shadow(
+            0 25px 30px rgba(0,0,0,.45)
+        );
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(230,106,69,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+.section-number {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color:
+        var(--accent);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(230,106,69,.3);
+
+    background:
+        rgba(230,106,69,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(230,106,69,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color:
+        var(--fighting);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card span {
+    color: var(--muted);
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size: .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color:
+        var(--fighting);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(230,106,69,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(230,106,69,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width:
+        var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color:
+        #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color:
+        var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   FORM / SPECIAL CARD
+========================================================= */
+
+.special-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    margin-top: 20px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.015)
+        );
+}
+
+.special-card.shiny {
+
+    border-color:
+        rgba(255,215,106,.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,215,106,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+.special-card.shadow {
+
+    border-color:
+        rgba(168,117,255,.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168,117,255,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+.special-card.lucky {
+
+    border-color:
+        rgba(255,189,74,.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,189,74,.10),
+            rgba(255,255,255,.02)
+        );
+}
+
+.special-card.size {
+
+    border-color:
+        rgba(102,217,255,.3);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(102,217,255,.08),
+            rgba(255,255,255,.02)
+        );
+}
+
+.special-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+.special-icon {
+    font-size: 2rem;
+}
+
+.special-title strong {
+    font-size: 1.15rem;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.6rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   PERFECT IV
+========================================================= */
+
+.perfect-card {
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    border:
+        1px solid rgba(255,215,106,.3);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,215,106,.09),
+            rgba(255,255,255,.02)
+        );
+}
+
+.perfect-badge {
+
+    display: inline-block;
+
+    padding:
+        6px 12px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,215,106,.12);
+
+    color:
+        var(--shiny);
+
+    font-size: .65rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   SIZE SYSTEM
+========================================================= */
+
+.size-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.size-card {
+
+    padding: 25px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    background:
+        var(--surface-2);
+}
+
+.size-card strong {
+
+    display: block;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 5px;
+}
+
+.size-card span {
+
+    color:
+        var(--muted);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   LUCKY
+========================================================= */
+
+.lucky-box {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,189,74,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(255,189,74,.3);
+
+    margin-top: 20px;
+}
+
+.lucky-box strong {
+
+    display: block;
+
+    color:
+        var(--lucky);
+
+    font-size: 1.25rem;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   SHADOW
+========================================================= */
+
+.shadow-box {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168,117,255,.13),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(168,117,255,.3);
+
+    margin-top: 20px;
+}
+
+.shadow-box strong {
+
+    display: block;
+
+    color:
+        var(--shadow);
+
+    font-size: 1.25rem;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color:
+        var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+
+        padding: 20px;
+    }
+
+    .quick-stats {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .size-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 6px;
+    }
+
+    .rating-value {
+
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/fighting.html">
+        Fighting Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Hitmontop
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                FIGHTING TYPE • JOHTO
+            </span>
+
+            <h1>
+                Hitmontop
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Hitmontop is a Fighting-type Pokémon from
+                the Johto region and one of the three possible
+                evolutions of Tyrogue. In Pokémon GO, Hitmontop
+                is mainly interesting as a Pokédex Pokémon,
+                collector target and PvP-oriented Fighting type.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag fighting-tag">
+                    Fighting
+                </span>
+
+                <span class="tag">
+                    #237
+                </span>
+
+                <span class="tag">
+                    Gen 2
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Shadow Available
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                🥋
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            173
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            207
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            137
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~2,200+
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Hitmontop Overview
+        </h2>
+
+        <p>
+
+            Hitmontop is a pure Fighting-type Pokémon
+            introduced in Generation 2. It evolves from
+            Tyrogue when the required evolution condition
+            results in Hitmontop.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #237
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 2
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Johto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Fighting
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                173
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                207
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                137
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                EVOLUTION
+            </span>
+
+            <strong>
+                Tyrogue
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Hitmontop Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🥊
+        </div>
+
+        <div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Hitmontop's Typing Matters
+    </h3>
+
+    <p>
+
+        Hitmontop's Fighting typing gives it access to
+        useful offensive matchups against Normal, Rock,
+        Steel, Ice and Dark-type Pokémon.
+
+        Its defensive profile also means that choosing
+        matchups carefully is important.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Hitmontop Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks deal super-effective
+                damage to Hitmontop.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying-type attacks are super effective
+                against Fighting Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔮
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic-type attacks also exploit
+                Hitmontop's Fighting typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Fighting Pokémon resist Rock-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Hitmontop resists Bug-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Fighting typing provides a useful resistance
+                to Dark-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Hitmontop Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Hitmontop has a defense-oriented stat profile.
+            Its Defense is considerably higher than its
+            Attack, making it different from many Fighting
+            Pokémon that are built primarily around offense.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                173
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                207
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                137
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~2,200+
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP is calculated using species stats,
+            individual values and Pokémon level. The exact
+            maximum displayed CP should be verified against
+            your current game data before publishing a static
+            database value.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVES
+        </span>
+
+        <h2>
+            Hitmontop Best Moves
+        </h2>
+
+        <p>
+
+            Hitmontop's best moveset depends on whether it is
+            being used for PvP, collection purposes or general
+            battle use.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Fighting-Type Build
+        </strong>
+
+        <p>
+            Choose the strongest currently available
+            Fighting-focused fast and charged moves for
+            the role you want Hitmontop to perform.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Counter
+                    </td>
+
+                    <td class="move-type">
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Fighting damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Close Combat
+                    </td>
+
+                    <td class="move-type">
+                        Fighting
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        High-pressure option
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Stone Edge
+                    </td>
+
+                    <td>
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through events,
+        move updates and other Pokémon GO mechanics.
+        Check current in-game availability before making
+        a time-sensitive recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 RAID
+========================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • RAID USE
+        </span>
+
+        <h2>
+            Hitmontop Raid Performance
+        </h2>
+
+        <p>
+
+            Hitmontop is generally not a top-tier Fighting
+            raid attacker. Its defensive stat profile and
+            overall PvE performance make it more relevant
+            for collection and PvP purposes than optimized
+            raid teams.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Fighting Raids
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:45%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            4.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            PvP Potential
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:70%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            7/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collector Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:88%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.8/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Hitmontop?
+    </h3>
+
+    <p>
+
+        Hitmontop is generally a lower priority for
+        expensive raid investment. However, a strong
+        PvP specimen, Shiny, Lucky or high-quality
+        collection specimen can still be worth keeping.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     07 COUNTERS
+========================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • COUNTERS
+        </span>
+
+        <h2>
+            What Counters Hitmontop?
+        </h2>
+
+        <p>
+
+            Hitmontop is vulnerable to Fairy, Flying and
+            Psychic-type attacks.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy Attackers
+            </strong>
+
+            <p>
+                Fairy-type attackers can exploit Hitmontop's
+                Fighting weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying Attackers
+            </strong>
+
+            <p>
+                Flying-type attacks are super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔮
+            </div>
+
+            <strong>
+                Psychic Attackers
+            </strong>
+
+            <p>
+                Psychic-type Pokémon can also take advantage
+                of Hitmontop's weakness.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 IV
+========================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Hitmontop IV Guide
+        </h2>
+
+        <p>
+
+            Hitmontop's ideal IV combination depends on the
+            league and battle format. A perfect 15/15/15
+            Hitmontop is especially useful as a collection
+            specimen and for situations where maximum CP
+            matters.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="perfect-card">
+
+        <span class="perfect-badge">
+            100% IV HITMONTOP
+        </span>
+
+        <h3>
+            Perfect Hitmontop
+        </h3>
+
+        <p>
+
+            A 15/15/15 Hitmontop is known as a perfect-IV
+            Pokémon. These specimens are popular with
+            collectors and players who want a complete
+            high-IV Pokédex.
+
+        </p>
+
+        <p>
+
+            A perfect IV does not automatically mean that
+            Hitmontop is the best choice for every PvP
+            league. League-specific IV spreads should be
+            evaluated separately.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     09 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • PVP
+        </span>
+
+        <h2>
+            Hitmontop PvP Guide
+        </h2>
+
+        <p>
+
+            Hitmontop's relatively high Defense makes it
+            more interesting in PvP than its raid performance
+            might suggest.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Great League is one of the formats where Hitmontop's
+        defensive profile can be considered. IV optimization,
+        moveset, shields and the current metagame all affect
+        its actual performance.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Hitmontop can be considered for Ultra League
+        experimentation, although players should compare
+        it against other Fighting-type options before
+        investing heavily.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Hitmontop's CP ceiling makes Master League less
+        natural for it compared with Pokémon specifically
+        optimized for the format.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     10 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Hitmontop
+        </h2>
+
+        <p>
+
+            Shadow Hitmontop is the Shadow form of Hitmontop.
+            Shadow Pokémon have a different battle profile
+            from their regular counterparts because of the
+            Shadow damage modifier.
+
+        </p>
+
+    </div>
+
+
+    <div class="shadow-box">
+
+        <strong>
+            Shadow Hitmontop
+        </strong>
+
+        <p>
+
+            A Shadow Hitmontop can be useful as a specialized
+            collection or battle specimen. Compare its actual
+            performance with regular Hitmontop before spending
+            significant Stardust or Candy.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                SPECIES
+            </span>
+
+            <strong>
+                Hitmontop
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Fighting
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                FORM
+            </span>
+
+            <strong>
+                Shadow
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                PURIFICATION
+            </span>
+
+            <strong>
+                Possible
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Hitmontop Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪽
+            </div>
+
+            <strong>
+                Flying
+            </strong>
+
+            <p>
+                Flying attacks remain super effective.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔮
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Psychic attacks remain super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Hitmontop vs Regular Hitmontop
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Hitmontop
+                    </td>
+
+                    <td>
+                        Hitmontop
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                    <td>
+                        Fighting
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Shadow modifier
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Possible when eligible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Hitmontop IVs
+    </h3>
+
+    <p>
+
+        Do not automatically transfer a Shadow Hitmontop
+        simply because its IVs are not perfect. Shadow
+        Pokémon can still be useful or valuable with
+        non-perfect IV combinations.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration note:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have the Charged Move
+            Frustration. Check the current Team GO Rocket
+            event rules before using Charged TMs on a
+            Shadow Hitmontop.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Hitmontop
+        </h2>
+
+        <p>
+
+            Purified Hitmontop is created by purifying an
+            eligible Shadow Hitmontop. Purification changes
+            the Pokémon's status and can alter its IVs and
+            other purification-related characteristics.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <div class="special-title">
+
+            <span class="special-icon">
+                ✨
+            </span>
+
+            <strong>
+                Purified Hitmontop
+            </strong>
+
+        </div>
+
+        <p>
+
+            Purified Hitmontop is a separate collection state
+            from regular and Shadow Hitmontop.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Hitmontop
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not yet performed
+                    </td>
+
+                    <td>
+                        Completed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        May be present
+                    </td>
+
+                    <td>
+                        Removed
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Purification decision:
+        </strong>
+
+        <p>
+
+            Do not purify a Shadow Hitmontop automatically.
+            Keep a Shadow specimen if you specifically value
+            its Shadow status or battle characteristics.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     12 SHINY
+========================================================= -->
+
+<section class="section" id="shiny-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • SHINY
+        </span>
+
+        <h2>
+            Shiny Hitmontop
+        </h2>
+
+        <p>
+
+            Shiny Hitmontop is the alternate-color version
+            of Hitmontop. Shiny Pokémon are especially popular
+            with collectors because their alternate appearance
+            is permanently associated with the individual Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card shiny">
+
+        <div class="special-title">
+
+            <span class="special-icon">
+                ✨
+            </span>
+
+            <strong>
+                Shiny Hitmontop
+            </strong>
+
+        </div>
+
+        <p>
+
+            A Shiny Hitmontop keeps its Shiny status when
+            transferred, powered up or used in eligible
+            gameplay situations.
+
+        </p>
+
+    </div>
+
+
+    <div class="comparison-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Form
+                    </th>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        Collection Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Hitmontop
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Hitmontop
+                    </td>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        High for collectors
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     13 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Hitmontop
+        </h2>
+
+        <p>
+
+            Lucky Hitmontop is obtained through Pokémon GO's
+            trading system. Lucky Pokémon have a special
+            background effect and reduced Stardust requirements
+            for powering up.
+
+        </p>
+
+    </div>
+
+
+    <div class="lucky-box">
+
+        <strong>
+            🍀 Lucky Hitmontop
+        </strong>
+
+        <p>
+
+            A Lucky Hitmontop can be an attractive collection
+            Pokémon because it combines the Lucky status with
+            Hitmontop's distinctive species identity.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Hitmontop Benefits
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Reduced Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Distinctive Lucky status.
+        </li>
+
+        <li>
+            Guaranteed minimum IV floor from Lucky trades.
+        </li>
+
+        <li>
+            Useful collector and trade target.
+        </li>
+
+        <li>
+            Can also be Shiny if the traded Pokémon is Shiny.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Lucky Hitmontop IVs
+    </h3>
+
+    <p>
+
+        Lucky Pokémon received from a Lucky Trade have a
+        higher minimum IV floor than ordinary traded Pokémon.
+        A Lucky Hitmontop can therefore be an appealing
+        candidate for collection or investment.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     14 100% HITMONTOP
+========================================================= -->
+
+<section class="section" id="100-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • PERFECT IV
+        </span>
+
+        <h2>
+            100% Hitmontop
+        </h2>
+
+        <p>
+
+            A 100% Hitmontop has 15 Attack, 15 Defense and
+            15 HP IVs. It is commonly called a hundo by
+            Pokémon GO players.
+
+        </p>
+
+    </div>
+
+
+    <div class="perfect-card">
+
+        <span class="perfect-badge">
+            15 / 15 / 15
+        </span>
+
+        <h3>
+            100% IV Hitmontop
+        </h3>
+
+        <p>
+
+            A perfect Hitmontop has maximum IV values in
+            Attack, Defense and HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        How Rare Is a 100% Hitmontop?
+    </h3>
+
+    <p>
+
+        The chance of obtaining a perfect Hitmontop depends
+        on the encounter or acquisition method. Eggs, raids,
+        research encounters and trades can have different
+        IV floors.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     15 XXL
+========================================================= -->
+
+<section class="section" id="xxl-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • XXL
+        </span>
+
+        <h2>
+            XXL Hitmontop
+        </h2>
+
+        <p>
+
+            XXL Hitmontop is an unusually large Hitmontop
+            identified by Pokémon GO's size system. XXL
+            Pokémon are popular collector targets and can
+            be useful for size-focused Pokédex collections.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card size">
+
+        <div class="special-title">
+
+            <span class="special-icon">
+                📏
+            </span>
+
+            <strong>
+                XXL Hitmontop
+            </strong>
+
+        </div>
+
+        <p>
+
+            XXL status is based on the Pokémon's size rather
+            than its IV percentage. A Pokémon can therefore
+            be XXL without being a 100% IV specimen.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card">
+
+            <strong>
+                XXL
+            </strong>
+
+            <span>
+                Extra-large size category
+            </span>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <strong>
+                IV Independent
+            </strong>
+
+            <span>
+                Size and IVs are separate characteristics
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        XXL Hitmontop Collection Value
+    </h3>
+
+    <p>
+
+        An XXL Hitmontop can be especially desirable when
+        combined with another rare attribute such as Shiny,
+        Lucky, Shadow or perfect IVs.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     16 XXS
+========================================================= -->
+
+<section class="section" id="xxs-hitmontop">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • XXS
+        </span>
+
+        <h2>
+            XXS Hitmontop
+        </h2>
+
+        <p>
+
+            XXS Hitmontop belongs to the smallest size
+            category in Pokémon GO. Like XXL Pokémon,
+            XXS status is independent of IV percentage.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card size">
+
+        <div class="special-title">
+
+            <span class="special-icon">
+                🔎
+            </span>
+
+            <strong>
+                XXS Hitmontop
+            </strong>
+
+        </div>
+
+        <p>
+
+            XXS Hitmontop can be kept as a dedicated
+            size-collection specimen.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXS vs XXL Hitmontop
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Attribute
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Very Small
+                    </td>
+
+                    <td>
+                        Very Large
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        IV Dependent
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     17 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • EVOLUTION
+        </span>
+
+        <h2>
+            Hitmontop Evolution
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Hitmontop evolves from Tyrogue. Unlike normal
+        linear evolution families, Tyrogue can evolve into
+        Hitmonlee, Hitmonchan or Hitmontop depending on
+        its Attack and Defense statistics when it evolves.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                Tyrogue
+            </strong>
+
+            <p>
+                Baby Pokémon and the starting point of the
+                Hitmon evolution family.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Hitmontop
+            </strong>
+
+            <p>
+                Fighting-type evolution associated with
+                balanced Attack and Defense conditions.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Hitmon Family
+            </strong>
+
+            <p>
+                Tyrogue can also evolve into Hitmonlee or
+                Hitmonchan.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Tip
+        </strong>
+
+        <p>
+
+            Check Tyrogue's Appraisal before evolving if
+            you specifically want Hitmontop.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • RESOURCES
+        </span>
+
+        <h2>
+            Hitmontop Candy & Stardust
+        </h2>
+
+        <p>
+
+            Building a useful Hitmontop requires Candy and
+            Stardust, especially when powering up a PvP
+            specimen or preparing a high-IV collection Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Keep strong-IV Hitmontop specimens.
+        </li>
+
+        <li>
+            Save Candy for useful PvP builds.
+        </li>
+
+        <li>
+            Keep rare Shiny specimens.
+        </li>
+
+        <li>
+            Consider keeping Lucky Hitmontop for lower Stardust costs.
+        </li>
+
+        <li>
+            Keep unusual XXL and XXS specimens.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     19 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • AVAILABILITY
+        </span>
+
+        <h2>
+            Hitmontop Availability
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Hitmontop availability can change depending on
+        Pokémon GO events, egg pools, wild encounters,
+        research and other special features.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and encounter
+            rotation before publishing a claim that Hitmontop
+            is currently available through a specific method.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical availability should be separated from
+        current availability so that older event information
+        does not become misleading.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     20 BATTLE GUIDE
+========================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Hitmontop
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before PvP
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the league CP limit.
+        </li>
+
+        <li>
+            Evaluate Hitmontop's IV spread.
+        </li>
+
+        <li>
+            Confirm the current moveset.
+        </li>
+
+        <li>
+            Compare Hitmontop against other Fighting types.
+        </li>
+
+        <li>
+            Test the Pokémon against the current metagame.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        For Collection
+    </h3>
+
+    <p>
+
+        Hitmontop is particularly interesting when collected
+        in multiple forms, including Shiny, Shadow, Purified,
+        Lucky, perfect-IV, XXL and XXS variants.
+
+    </p>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+
+        Hitmontop generally should not be a first-choice
+        Stardust investment for raid attackers. Prioritize
+        strong PvP candidates or rare collection specimens.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     21 FORM COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • FORMS
+        </span>
+
+        <h2>
+            Hitmontop Special Forms Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Form
+                    </th>
+
+                    <th>
+                        Main Characteristic
+                    </th>
+
+                    <th>
+                        Collector Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Hitmontop
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow battle profile
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Lucky Trade status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Very large size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Very small size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     22 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • FAQ
+        </span>
+
+        <h2>
+            Hitmontop FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Hitmontop?
+        </summary>
+
+        <p>
+
+            Hitmontop is a pure Fighting-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Hitmontop weak to?
+        </summary>
+
+        <p>
+
+            Hitmontop is weak to Fairy, Flying and
+            Psychic-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Hitmontop good for raids?
+        </summary>
+
+        <p>
+
+            Hitmontop is generally not considered a top-tier
+            Fighting raid attacker. It is more interesting
+            for PvP and collecting.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Hitmontop good in PvP?
+        </summary>
+
+        <p>
+
+            Hitmontop can be useful in certain PvP formats,
+            particularly because of its defensive profile.
+            Its exact ranking depends on the current moveset
+            and metagame.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do I evolve Tyrogue into Hitmontop?
+        </summary>
+
+        <p>
+
+            Tyrogue's evolution outcome depends on its
+            Attack and Defense statistics. Check the
+            Pokémon's appraisal before evolving if you
+            specifically want Hitmontop.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Hitmontop available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Hitmontop is available through
+            eligible Pokémon GO encounters and can be
+            recognized by its alternate coloration.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Hitmontop available?
+        </summary>
+
+        <p>
+
+            Shadow availability depends on Pokémon GO's
+            current Team GO Rocket and Shadow Pokémon
+            rotation.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Hitmontop?
+        </summary>
+
+        <p>
+
+            Not automatically. Compare the Shadow and
+            Purified versions based on your battle and
+            collection goals before purifying.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Hitmontop?
+        </summary>
+
+        <p>
+
+            A 100% Hitmontop has 15 Attack, 15 Defense and
+            15 HP IVs.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Lucky Hitmontop?
+        </summary>
+
+        <p>
+
+            Lucky Hitmontop is a Hitmontop that has obtained
+            Lucky status through the Pokémon GO trading system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Hitmontop?
+        </summary>
+
+        <p>
+
+            XXL Hitmontop is an unusually large Hitmontop
+            according to Pokémon GO's size system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Hitmontop?
+        </summary>
+
+        <p>
+
+            XXS Hitmontop is an unusually small Hitmontop
+            according to Pokémon GO's size system.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Hitmontop be Shiny and Lucky?
+        </summary>
+
+        <p>
+
+            Yes. A Pokémon can have multiple collectible
+            characteristics, so a Hitmontop can potentially
+            combine attributes such as Shiny and Lucky.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Hitmontop be 100% and XXL?
+        </summary>
+
+        <p>
+
+            Yes. IVs and size are separate characteristics.
+            A Hitmontop can potentially combine perfect IVs
+            with an XXL or XXS size category.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Hitmontop be Shiny?
+        </summary>
+
+        <p>
+
+            Special combinations such as Shiny and Shadow
+            depend on the specific Pokémon GO availability
+            rules and encounter pool. Check the current
+            game data before claiming availability.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, availability, encounter methods, PvP
+            rankings and other game data can change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Hitmontop Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Hitmontop Overview
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses & Resistances
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#raid">
+                    Raid Performance
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#pvp">
+                    PvP Guide
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shadow-hitmontop">
+                    Shadow Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#purified-hitmontop">
+                    Purified Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#shiny-hitmontop">
+                    Shiny Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#lucky-hitmontop">
+                    Lucky Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#100-hitmontop">
+                    100% Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#xxl-hitmontop">
+                    XXL Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#xxs-hitmontop">
+                    XXS Hitmontop
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/tyrogue.html">
+
+            Tyrogue Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/hitmonlee.html">
+
+            Hitmonlee Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/hitmonchan.html">
+
+            Hitmonchan Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/fighting.html">
+
+            Fighting Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-2.html">
+
+            Gen 2 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Hitmontop Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Fighting
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            2
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #237
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            Tyrogue
+        </p>
+
+
+        <p>
+            <strong>Evolution Family:</strong>
+            Hitmon Family
+        </p>
+
+
+        <p>
+            <strong>Special Forms:</strong>
+            Shadow, Purified, Shiny, Lucky
+        </p>
+
+
+        <p>
+            <strong>Size Forms:</strong>
+            XXL, XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

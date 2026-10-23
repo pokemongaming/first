@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Whiscash Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+<meta name="description" content="Complete Whiscash Pokémon GO guide covering regular Whiscash, Shiny, Shadow, Purified, Lucky, 100% IV, XXL and XXS forms, including stats, max CP, weaknesses, resistances, moves, PvP, evolution, availability and investment tips.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pokemongaming.in/pokemon/whiscash.html">
+
+<style>
+:root{
+    --bg:#080b12;
+    --bg-soft:#0e131d;
+    --surface:#121925;
+    --surface-2:#171f2d;
+    --surface-3:#202a3b;
+    --border:#293448;
+    --text:#f4f6fb;
+    --muted:#aab3c2;
+    --accent:#6ec8ff;
+    --accent-2:#398ed0;
+
+    --water:#4e9dff;
+    --ground:#d6a743;
+    --grass:#5dcf82;
+    --electric:#f2c94c;
+    --ice:#72d6dc;
+
+    --danger:#ff6f7d;
+    --success:#62d89a;
+    --lucky:#ffd65a;
+
+    --radius:18px;
+    --radius-sm:12px;
+    --max:1200px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:
+        radial-gradient(circle at 80% 0%,rgba(78,157,255,.13),transparent 30%),
+        var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+p{
+    color:var(--muted);
+    margin-bottom:14px;
+}
+
+h1,h2,h3,h4{
+    line-height:1.25;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* HEADER */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(8,11,18,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--border);
+}
+
+.header-inner{
+    max-width:var(--max);
+    margin:auto;
+    min-height:68px;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:1.15rem;
+    font-weight:950;
+    letter-spacing:-.03em;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.main-nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.main-nav a{
+    color:var(--muted);
+    font-size:.8rem;
+    font-weight:750;
+}
+
+.main-nav a:hover{
+    color:#fff;
+}
+
+/* PAGE */
+
+.page{
+    max-width:var(--max);
+    margin:auto;
+    padding:35px 20px 80px;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:25px;
+    color:var(--muted);
+    font-size:.72rem;
+}
+
+.breadcrumb span{
+    opacity:.5;
+}
+
+.breadcrumb a:hover{
+    color:#fff;
+}
+
+/* HERO */
+
+.pokemon-hero{
+    position:relative;
+    overflow:hidden;
+    padding:34px;
+    border:1px solid var(--border);
+    border-radius:26px;
+    background:
+        radial-gradient(circle at 85% 20%,rgba(78,157,255,.18),transparent 30%),
+        linear-gradient(145deg,#111827,#0c111b);
+    box-shadow:0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.35fr .65fr;
+    gap:30px;
+    align-items:center;
+}
+
+.eyebrow{
+    display:inline-flex;
+    padding:6px 10px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    color:var(--water);
+    background:rgba(78,157,255,.08);
+    font-size:.68rem;
+    font-weight:900;
+    letter-spacing:.08em;
+    margin-bottom:14px;
+}
+
+.pokemon-hero h1{
+    font-size:clamp(2.2rem,5vw,4.5rem);
+    letter-spacing:-.055em;
+    margin-bottom:12px;
+}
+
+.hero-subtitle{
+    max-width:720px;
+    font-size:1rem;
+    color:#c2cad7;
+}
+
+.hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:20px;
+}
+
+.tag{
+    padding:7px 11px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    background:rgba(255,255,255,.035);
+    font-size:.7rem;
+    font-weight:800;
+}
+
+.water-tag{
+    color:var(--water);
+}
+
+.ground-tag{
+    color:var(--ground);
+}
+
+.lucky-tag{
+    color:var(--lucky);
+}
+
+/* HERO POKEMON */
+
+.hero-pokemon{
+    min-height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pokemon-placeholder{
+    width:260px;
+    height:260px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:
+        radial-gradient(circle,rgba(78,157,255,.22),transparent 65%);
+    font-size:7rem;
+    filter:drop-shadow(0 20px 25px rgba(0,0,0,.4));
+}
+
+/* QUICK STATS */
+
+.quick-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:18px;
+}
+
+.quick-stat{
+    padding:18px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    text-align:center;
+}
+
+.quick-stat strong{
+    display:block;
+    font-size:1.25rem;
+}
+
+.quick-stat span{
+    color:var(--muted);
+    font-size:.68rem;
+    font-weight:750;
+}
+
+/* LAYOUT */
+
+.content-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 290px;
+    gap:20px;
+    margin-top:20px;
+}
+
+.section{
+    margin-bottom:20px;
+    padding:28px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+}
+
+.section-heading{
+    margin-bottom:20px;
+}
+
+.section-number{
+    display:block;
+    margin-bottom:6px;
+    color:var(--accent);
+    font-size:.68rem;
+    font-weight:900;
+    letter-spacing:.08em;
+}
+
+.section h2{
+    font-size:clamp(1.45rem,3vw,2rem);
+    margin-bottom:9px;
+}
+
+.section h3{
+    margin:22px 0 10px;
+    font-size:1.05rem;
+}
+
+/* STAT GRID */
+
+.stat-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.stat-card{
+    padding:17px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+}
+
+.stat-card span{
+    display:block;
+    color:var(--muted);
+    font-size:.64rem;
+    font-weight:850;
+    letter-spacing:.04em;
+}
+
+.stat-card strong{
+    display:block;
+    margin-top:4px;
+    font-size:1.5rem;
+}
+
+/* TYPE */
+
+.type-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border:1px solid rgba(78,157,255,.3);
+    background:rgba(78,157,255,.06);
+    border-radius:var(--radius-sm);
+}
+
+.type-icon{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    background:rgba(78,157,255,.13);
+    font-size:1.5rem;
+}
+
+.type-box strong{
+    display:block;
+}
+
+.type-box span{
+    color:var(--water);
+    font-size:.75rem;
+    font-weight:850;
+}
+
+/* EFFECT GRID */
+
+.effect-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-top:15px;
+}
+
+.effect-card{
+    padding:17px;
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    background:var(--surface-2);
+}
+
+.effect-card .effect-icon{
+    font-size:1.5rem;
+    margin-bottom:6px;
+}
+
+.effect-card strong{
+    display:block;
+}
+
+.effect-card small{
+    color:var(--muted);
+}
+
+.weakness{
+    border-color:rgba(255,111,125,.25);
+}
+
+.resistance{
+    border-color:rgba(98,216,154,.25);
+}
+
+/* TABLE */
+
+.table-wrap{
+    overflow-x:auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td{
+    padding:13px 12px;
+    border-bottom:1px solid var(--border);
+    text-align:left;
+    font-size:.76rem;
+}
+
+.data-table th,
+.comparison-table th{
+    color:var(--muted);
+    font-size:.65rem;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    background:var(--surface-2);
+}
+
+.move-name{
+    font-weight:850;
+}
+
+.move-type{
+    color:var(--water);
+    font-weight:800;
+}
+
+/* BEST MOVE */
+
+.best-move{
+    margin-top:15px;
+    padding:18px;
+    background:linear-gradient(
+        135deg,
+        rgba(78,157,255,.1),
+        rgba(255,255,255,.02)
+    );
+    border:1px solid rgba(78,157,255,.25);
+    border-radius:var(--radius-sm);
+}
+
+.best-move strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+/* RATING */
+
+.rating-row{
+    display:grid;
+    grid-template-columns:170px 1fr 70px;
+    gap:15px;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.rating-row:last-child{
+    border-bottom:0;
+}
+
+.rating-bar{
+    height:8px;
+    background:var(--surface-3);
+    border-radius:99px;
+    overflow:hidden;
+}
+
+.rating-fill{
+    height:100%;
+    width:var(--rating);
+    background:var(--accent);
+    border-radius:inherit;
+}
+
+.rating-value{
+    text-align:right;
+    font-weight:900;
+}
+
+/* FORMS */
+
+.form-tree{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.form-node{
+    padding:16px 22px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    text-align:center;
+}
+
+.form-node strong{
+    display:block;
+}
+
+.form-node span{
+    color:var(--muted);
+    font-size:.68rem;
+}
+
+.form-arrow{
+    color:var(--accent);
+    font-size:1.4rem;
+    font-weight:900;
+}
+
+/* CHECKLIST */
+
+.checklist{
+    list-style:none;
+    display:grid;
+    gap:8px;
+    margin-top:15px;
+}
+
+.checklist li{
+    padding:12px 14px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:9px;
+    color:#c8cfda;
+    font-size:.78rem;
+}
+
+.checklist li::before{
+    content:"✓";
+    margin-right:8px;
+    color:var(--success);
+    font-weight:900;
+}
+
+/* SPECIAL FORM CARDS */
+
+.special-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    margin-top:20px;
+}
+
+.special-card{
+    padding:22px;
+    border-radius:16px;
+    border:1px solid var(--border);
+    background:var(--surface-2);
+}
+
+.special-card h3{
+    margin:0 0 8px;
+}
+
+.special-card p{
+    font-size:.78rem;
+}
+
+/* LUCKY */
+
+.lucky-card{
+    border-color:rgba(255,214,90,.35);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,214,90,.12),
+            rgba(255,255,255,.02)
+        );
+}
+
+.lucky-card .special-icon{
+    color:var(--lucky);
+}
+
+/* SIZE */
+
+.size-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.size-card{
+    padding:22px;
+    border-radius:16px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+}
+
+.size-card strong{
+    display:block;
+    font-size:1.35rem;
+}
+
+.size-card span{
+    color:var(--muted);
+    font-size:.72rem;
+}
+
+/* IV */
+
+.iv-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+
+.iv-card{
+    padding:17px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    text-align:center;
+}
+
+.iv-card strong{
+    display:block;
+    font-size:1.35rem;
+}
+
+.iv-card span{
+    color:var(--muted);
+    font-size:.68rem;
+}
+
+/* EDITORIAL */
+
+.editorial-note{
+    padding:17px;
+    margin-top:20px;
+    background:rgba(255,255,255,.025);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    font-size:.72rem;
+}
+
+.editorial-note strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    position:sticky;
+    top:88px;
+    align-self:start;
+}
+
+.side-card{
+    margin-bottom:15px;
+    padding:20px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+}
+
+.side-card h3{
+    margin:0 0 13px;
+    font-size:.9rem;
+}
+
+.side-nav{
+    list-style:none;
+    display:grid;
+    gap:4px;
+}
+
+.side-nav a{
+    display:block;
+    padding:8px 10px;
+    border-radius:7px;
+    color:var(--muted);
+    font-size:.72rem;
+    font-weight:700;
+}
+
+.side-nav a:hover{
+    background:var(--surface-2);
+    color:#fff;
+}
+
+.related-link{
+    display:block;
+    padding:10px 0;
+    border-bottom:1px solid var(--border);
+    color:var(--muted);
+    font-size:.75rem;
+}
+
+.related-link:last-child{
+    border-bottom:0;
+}
+
+.related-link:hover{
+    color:var(--accent);
+}
+
+/* FAQ */
+
+details{
+    padding:15px 0;
+    border-bottom:1px solid var(--border);
+}
+
+details:last-child{
+    border-bottom:0;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:850;
+    font-size:.82rem;
+}
+
+details p{
+    margin:10px 0 0;
+    font-size:.78rem;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid var(--border);
+    padding:35px 20px;
+    background:#06090e;
+}
+
+.footer-inner{
+    max-width:var(--max);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+footer p{
+    margin:0;
+    font-size:.72rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+
+    .content-layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:static;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-pokemon{
+        order:-1;
+    }
+
+    .stat-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px){
+
+    .page{
+        padding:22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section{
+        padding:20px;
+    }
+
+    .quick-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .special-grid{
+        grid-template-columns:1fr;
+    }
+
+    .iv-grid,
+    .size-grid{
+        grid-template-columns:1fr;
+    }
+
+    .rating-row{
+        grid-template-columns:1fr;
+        gap:6px;
+    }
+
+    .rating-value{
+        text-align:left;
+    }
+
+    .main-nav{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+<a href="/pokemon-types.html">Types</a>
+<a href="/pokedex.html">Pokédex</a>
+<a href="/raids/">Raids</a>
+<a href="/guides/">Guides</a>
+<a href="/tools/">Tools</a>
+</nav>
+
+</div>
+</header>
+
+<main class="page">
+
+<div class="breadcrumb">
+<a href="/">Home</a>
+<span>›</span>
+<a href="/pokedex.html">Pokémon Database</a>
+<span>›</span>
+<a href="/pokemon-types/water.html">Water Type</a>
+<span>›</span>
+<strong>Whiscash</strong>
+</div>
+
+<!-- HERO -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">HOENN • POKÉDEX #340</span>
+
+<h1>Whiscash</h1>
+
+<p class="hero-subtitle">
+Whiscash is a Water/Ground-type Pokémon from Generation 3.
+In Pokémon GO, it is especially interesting for PvP because
+its typing gives it useful resistances and its charged moves
+can create strong shield pressure.
+</p>
+
+<div class="hero-tags">
+
+<span class="tag water-tag">Water</span>
+<span class="tag ground-tag">Ground</span>
+<span class="tag">#340</span>
+<span class="tag">Gen 3</span>
+<span class="tag">Shiny Available</span>
+<span class="tag">Shadow</span>
+<span class="tag">Lucky</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<!-- Replace with your own properly licensed Whiscash asset -->
+<div class="pokemon-placeholder">🐟</div>
+
+</div>
+
+</div>
+</section>
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+<strong>151</strong>
+<span>ATTACK</span>
+</div>
+
+<div class="quick-stat">
+<strong>141</strong>
+<span>DEFENSE</span>
+</div>
+
+<div class="quick-stat">
+<strong>242</strong>
+<span>HP</span>
+</div>
+
+<div class="quick-stat">
+<strong>~2,608</strong>
+<span>MAX CP</span>
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- OVERVIEW -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<span class="section-number">01 • DATABASE</span>
+
+<h2>Whiscash Overview</h2>
+
+<p>
+Whiscash is the evolved form of Barboach and was introduced
+in Generation 3. Its Water/Ground typing gives it a distinctive
+battle profile, especially because Ground typing removes the
+normal Water-type weakness to Electric attacks.
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#340</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 3</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Hoenn</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ground</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>151</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>141</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>242</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~2,608</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- TYPE -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<span class="section-number">02 • TYPE</span>
+
+<h2>Whiscash Type</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">🌊</div>
+
+<div>
+
+<strong>Water / Ground</strong>
+
+<span>Dual Type</span>
+
+</div>
+
+</div>
+
+<h3>Why Whiscash's Typing Matters</h3>
+
+<p>
+Whiscash combines Water and Ground typing. One of the most
+important benefits is its immunity-like protection from
+Electric-type attacks in the Pokémon type chart, while Grass
+remains a major threat because it is super effective against
+both of Whiscash's types.
+</p>
+
+</section>
+
+<!-- WEAKNESSES -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<span class="section-number">03 • MATCHUPS</span>
+
+<h2>Whiscash Weaknesses & Resistances</h2>
+
+</div>
+
+<h3>Major Weakness</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">🌿</div>
+
+<strong>Grass</strong>
+
+<p>
+Grass-type attacks are especially dangerous because Whiscash's
+Water/Ground combination leaves it with a major Grass weakness.
+</p>
+
+</div>
+
+</div>
+
+<h3>Resistances</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+<div class="effect-icon">⚡</div>
+<strong>Electric</strong>
+<p>Ground typing protects Whiscash from Electric attacks.</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">🔥</div>
+<strong>Fire</strong>
+<p>Water typing helps Whiscash resist Fire attacks.</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">☠️</div>
+<strong>Poison</strong>
+<p>Ground typing provides resistance to Poison attacks.</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">🪨</div>
+<strong>Rock</strong>
+<p>Ground typing helps Whiscash resist Rock attacks.</p>
+</div>
+
+<div class="effect-card resistance">
+<div class="effect-icon">⚙️</div>
+<strong>Steel</strong>
+<p>Ground typing gives Whiscash useful resistance to Steel.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<span class="section-number">04 • STATS</span>
+
+<h2>Whiscash Attack, Defense, HP & Max CP</h2>
+
+<p>
+Whiscash has a relatively modest Attack stat but a much more
+useful HP pool. This stat distribution helps explain why it is
+more interesting in certain PvP formats than as a top-tier
+general raid attacker.
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>151</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>141</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>242</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~2,608</strong>
+</div>
+
+</div>
+
+<div class="editorial-note">
+<strong>Database note:</strong>
+<p>
+Displayed CP depends on level and IVs. A high CP Whiscash is
+not automatically a perfect-IV Whiscash.
+</p>
+</div>
+
+</section>
+
+<!-- MOVES -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<span class="section-number">05 • MOVESET</span>
+
+<h2>Whiscash Best Moves</h2>
+
+<p>
+Whiscash is most interesting when its moveset is evaluated
+for the battle format rather than simply looking at raw Attack.
+</p>
+
+</div>
+
+<div class="best-move">
+
+<strong>Recommended PvP Concept</strong>
+
+<p>
+Mud Shot + Mud Bomb, with a suitable secondary charged move
+for the current format.
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+<tr>
+<th>Move</th>
+<th>Type</th>
+<th>Category</th>
+<th>Role</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td class="move-name">Mud Shot</td>
+<td class="move-type">Ground</td>
+<td>Fast Move</td>
+<td>Energy generation</td>
+</tr>
+
+<tr>
+<td class="move-name">Mud Bomb</td>
+<td class="move-type">Ground</td>
+<td>Charged Move</td>
+<td>Low-cost pressure</td>
+</tr>
+
+<tr>
+<td class="move-name">Water-type Charged Move</td>
+<td class="move-type">Water</td>
+<td>Charged Move</td>
+<td>Coverage</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<div class="editorial-note">
+<strong>Move-data note:</strong>
+<p>
+Moves, stats and move availability can change. Verify the
+current Pokémon GO moveset before publishing a time-sensitive
+competitive recommendation.
+</p>
+</div>
+
+</section>
+
+<!-- RAID -->
+
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<span class="section-number">06 • PVE</span>
+
+<h2>Whiscash Raid Performance</h2>
+
+<p>
+Whiscash is not generally considered a premier raid attacker.
+Its value is much more strongly associated with its PvP profile
+and its role as a collectible Pokémon.
+</p>
+
+</div>
+
+<div class="rating-row">
+<strong>Water Raids</strong>
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:45%;"></div>
+</div>
+<span class="rating-value">4.5/10</span>
+</div>
+
+<div class="rating-row">
+<strong>Ground Raids</strong>
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:50%;"></div>
+</div>
+<span class="rating-value">5.0/10</span>
+</div>
+
+<div class="rating-row">
+<strong>PvP Utility</strong>
+<div class="rating-bar">
+<div class="rating-fill" style="--rating:85%;"></div>
+</div>
+<span class="rating-value">8.5/10</span>
+</div>
+
+<h3>Should You Power Up Whiscash?</h3>
+
+<p>
+For most players, Whiscash is more interesting as a PvP project
+than as a raid investment. Before spending large amounts of
+Stardust or Candy XL, check its IV spread and the format in which
+you intend to use it.
+</p>
+
+</section>
+
+<!-- COUNTERS -->
+
+<section class="section" id="counters">
+
+<div class="section-heading">
+
+<span class="section-number">07 • COUNTERS</span>
+
+<h2>What Counters Whiscash?</h2>
+
+<p>
+Because Whiscash is Water/Ground type, Grass-type Pokémon are
+the key counter category.
+</p>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">🌿</div>
+
+<strong>Grass Attackers</strong>
+
+<p>
+Grass-type attacks are the most important offensive answer
+against Whiscash.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">⚡</div>
+
+<strong>Do Not Rely on Electric</strong>
+
+<p>
+Ground typing protects Whiscash from Electric-type attacks.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">🧊</div>
+
+<strong>Check the Moveset</strong>
+
+<p>
+Always consider Whiscash's current moves before choosing
+a counter or PvP matchup strategy.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- IV -->
+
+<section class="section" id="iv">
+
+<div class="section-heading">
+
+<span class="section-number">08 • IV GUIDE</span>
+
+<h2>Whiscash IV Guide</h2>
+
+<p>
+Whiscash IVs should be judged according to your intended use.
+A 15/15/15 Whiscash is perfect, but PvP may favor different
+IV distributions depending on the league and moveset.
+</p>
+
+</div>
+
+<div class="iv-grid">
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Attack IV</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Defense IV</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>HP IV</span>
+</div>
+
+</div>
+
+<h3>100% IV Whiscash</h3>
+
+<div class="best-move">
+
+<strong>Perfect Whiscash: 15 / 15 / 15</strong>
+
+<p>
+A 100% IV Whiscash has 15 Attack, 15 Defense and 15 HP IVs.
+It is an excellent collector's target, although a perfect-IV
+specimen is not automatically the optimal PvP specimen.
+</p>
+
+</div>
+
+</section>
+
+<!-- EVOLUTION -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<span class="section-number">09 • EVOLUTION</span>
+
+<h2>Whiscash Evolution Family</h2>
+
+</div>
+
+<p>
+Whiscash evolves from Barboach. Whiscash does not have a further
+evolution in Pokémon GO.
+</p>
+
+<div class="form-tree">
+
+<div class="form-node">
+<strong>Barboach</strong>
+<span>Water / Ground</span>
+</div>
+
+<div class="form-arrow">→</div>
+
+<div class="form-node">
+<strong>Whiscash</strong>
+<span>Water / Ground</span>
+</div>
+
+</div>
+
+<div class="editorial-note">
+<strong>Evolution note:</strong>
+<p>
+Whiscash is the final evolutionary stage of the Barboach family.
+</p>
+</div>
+
+</section>
+
+<!-- SHINY -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<span class="section-number">10 • SHINY</span>
+
+<h2>Shiny Whiscash</h2>
+
+<p>
+Shiny Whiscash has an alternate coloration and is a valuable
+addition for collectors. Shiny status does not change Whiscash's
+typing or underlying battle role.
+</p>
+
+</div>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<h3>✨ Shiny Whiscash</h3>
+
+<p>
+Alternate-color version of Whiscash. Shiny status is cosmetic
+and does not provide a direct battle-stat bonus.
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>Normal Whiscash</h3>
+
+<p>
+The standard form used as the baseline for comparing Whiscash
+variants.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SHADOW -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<span class="section-number">11 • SHADOW</span>
+
+<h2>Shadow Whiscash</h2>
+
+<p>
+Shadow Whiscash is a special Shadow variant that retains
+Whiscash's Water/Ground typing. Shadow Pokémon have altered
+battle characteristics, making Shadow Whiscash a separate
+investment consideration.
+</p>
+
+</div>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<h3>🌑 Shadow Whiscash</h3>
+
+<p>
+A Shadow version with the standard Shadow battle modifier.
+Its usefulness depends on the current moveset, IVs and format.
+</p>
+
+</div>
+
+<div class="special-card">
+
+<h3>⚠️ Frustration</h3>
+
+<p>
+Newly obtained Shadow Pokémon can have Frustration. Check
+current Team GO Rocket events before planning charged-move
+changes.
+</p>
+
+</div>
+
+</div>
+
+<h3>Shadow Whiscash vs Regular Whiscash</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+<tr>
+<th>Feature</th>
+<th>Regular</th>
+<th>Shadow</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Typing</td>
+<td>Water / Ground</td>
+<td>Water / Ground</td>
+</tr>
+
+<tr>
+<td>Shadow status</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Battle profile</td>
+<td>Standard</td>
+<td>More offensive / less durable</td>
+</tr>
+
+<tr>
+<td>Frustration</td>
+<td>Not applicable</td>
+<td>Can be relevant</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- PURIFIED -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<span class="section-number">12 • PURIFIED</span>
+
+<h2>Purified Whiscash</h2>
+
+<p>
+Purified Whiscash is created by purifying an eligible Shadow
+Whiscash. Purification changes its Shadow status and can affect
+its appraisal and resource requirements.
+</p>
+
+</div>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">✨</div>
+
+<strong>Purified Status</strong>
+
+<p>
+Purified Whiscash no longer has the Shadow status.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">💎</div>
+
+<strong>Purified Appraisal</strong>
+
+<p>
+Purification increases each IV by a fixed amount, subject to
+the game's IV cap.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">💰</div>
+
+<strong>Resource Consideration</strong>
+
+<p>
+Purification can reduce some future power-up and evolution
+resource requirements compared with Shadow Pokémon.
+</p>
+
+</div>
+
+</div>
+
+<h3>Should You Purify Shadow Whiscash?</h3>
+
+<p>
+Do not purify automatically. Compare the Shadow and Purified
+versions for your intended PvP, collection and investment goals.
+</p>
+
+</section>
+
+<!-- LUCKY -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<span class="section-number">13 • LUCKY</span>
+
+<h2>Lucky Whiscash</h2>
+
+<p>
+Lucky Whiscash is obtained through a successful Pokémon trade
+that results in the Lucky status. Lucky Pokémon have a reduced
+Stardust cost for power-ups, making them attractive for players
+who want to build them at higher levels.
+</p>
+
+</div>
+
+<div class="special-card lucky-card">
+
+<h3>✨ Lucky Whiscash</h3>
+
+<p>
+Lucky status is primarily valuable because of the reduced
+Stardust cost for powering up the Pokémon. It does not give
+Whiscash a different typing.
+</p>
+
+</div>
+
+<h3>Lucky Whiscash Benefits</h3>
+
+<ul class="checklist">
+
+<li>Reduced Stardust cost for power-ups.</li>
+<li>Useful for long-term investment projects.</li>
+<li>Excellent collector variant.</li>
+<li>Can still have a wide range of IV combinations depending on the trade.</li>
+<li>Lucky status is separate from Shiny and Shadow status.</li>
+
+</ul>
+
+</section>
+
+<!-- 100% -->
+
+<section class="section" id="perfect">
+
+<div class="section-heading">
+
+<span class="section-number">14 • PERFECT IV</span>
+
+<h2>100% IV Whiscash</h2>
+
+<p>
+A 100% IV Whiscash has perfect Attack, Defense and HP IVs:
+15/15/15. In the Pokémon GO community, this is commonly
+described as a hundo.
+</p>
+
+</div>
+
+<div class="iv-grid">
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Attack</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>Defense</span>
+</div>
+
+<div class="iv-card">
+<strong>15</strong>
+<span>HP</span>
+</div>
+
+</div>
+
+<div class="best-move">
+
+<strong>100% Whiscash = 15 / 15 / 15</strong>
+
+<p>
+A perfect Whiscash is particularly desirable for collection
+purposes and can be useful for formats where its IV distribution
+is appropriate. For capped PvP leagues, do not assume that
+15/15/15 is automatically the best possible spread.
+</p>
+
+</div>
+
+</section>
+
+<!-- XXL -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<span class="section-number">15 • SIZE</span>
+
+<h2>XXL Whiscash</h2>
+
+<p>
+XXL Whiscash is a size variant representing an exceptionally
+large individual. Size classification is separate from IVs,
+Shiny status and Lucky status.
+</p>
+
+</div>
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<strong>XXL</strong>
+
+<span>Extra-large size classification</span>
+
+<p>
+A large Whiscash can receive the XXL size designation based on
+its recorded size measurements.
+</p>
+
+</div>
+
+<div class="size-card">
+
+<strong>Collection Value</strong>
+
+<span>Size-focused collecting</span>
+
+<p>
+XXL Pokémon can be valuable to collectors and can be useful
+for size-related Pokédex goals.
+</p>
+
+</div>
+
+</div>
+
+<div class="editorial-note">
+<strong>Important:</strong>
+<p>
+XXL is a size classification. It does not mean that the Pokémon
+has perfect IVs or higher battle stats simply because it is large.
+</p>
+</div>
+
+</section>
+
+<!-- XXS -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<span class="section-number">16 • SIZE</span>
+
+<h2>XXS Whiscash</h2>
+
+<p>
+XXS Whiscash is an exceptionally small Whiscash based on its
+recorded size. Like XXL, XXS status is separate from IV quality
+and battle stats.
+</p>
+
+</div>
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<strong>XXS</strong>
+
+<span>Extra-small size classification</span>
+
+<p>
+XXS Whiscash is a useful target for collectors completing
+size-related Pokémon GO records.
+</p>
+
+</div>
+
+<div class="size-card">
+
+<strong>Collector Value</strong>
+
+<span>Rare size variation</span>
+
+<p>
+An XXS specimen can be worth keeping even when its IVs are
+not perfect, particularly for collectors.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- VARIANT COMPARISON -->
+
+<section class="section" id="variants">
+
+<div class="section-heading">
+
+<span class="section-number">17 • COMPARISON</span>
+
+<h2>Whiscash Variants Compared</h2>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+<tr>
+<th>Variant</th>
+<th>Typing</th>
+<th>What Makes It Special?</th>
+<th>Battle Impact</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Regular Whiscash</td>
+<td>Water / Ground</td>
+<td>Standard form</td>
+<td>Baseline</td>
+</tr>
+
+<tr>
+<td>Shiny Whiscash</td>
+<td>Water / Ground</td>
+<td>Alternate coloration</td>
+<td>Cosmetic</td>
+</tr>
+
+<tr>
+<td>Shadow Whiscash</td>
+<td>Water / Ground</td>
+<td>Shadow status</td>
+<td>Different battle profile</td>
+</tr>
+
+<tr>
+<td>Purified Whiscash</td>
+<td>Water / Ground</td>
+<td>Purified status</td>
+<td>Standard purified profile</td>
+</tr>
+
+<tr>
+<td>Lucky Whiscash</td>
+<td>Water / Ground</td>
+<td>Reduced power-up Stardust</td>
+<td>No direct type change</td>
+</tr>
+
+<tr>
+<td>100% Whiscash</td>
+<td>Water / Ground</td>
+<td>15/15/15 IVs</td>
+<td>Depends on format</td>
+</tr>
+
+<tr>
+<td>XXL Whiscash</td>
+<td>Water / Ground</td>
+<td>Extra-large size</td>
+<td>No direct stat bonus</td>
+</tr>
+
+<tr>
+<td>XXS Whiscash</td>
+<td>Water / Ground</td>
+<td>Extra-small size</td>
+<td>No direct stat bonus</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- PVP -->
+
+<section class="section" id="pvp">
+
+<div class="section-heading">
+
+<span class="section-number">18 • PVP</span>
+
+<h2>Whiscash PvP Guide</h2>
+
+<p>
+Whiscash's Water/Ground typing and access to low-cost charged
+moves can make it a format-dependent PvP option.
+</p>
+
+</div>
+
+<h3>Great League</h3>
+
+<p>
+Whiscash can be considered for Great League teams when its
+moveset and current meta matchups are favorable. Its Ground
+typing gives it useful protection against Electric Pokémon,
+while Grass opponents can be particularly dangerous.
+</p>
+
+<h3>Ultra League</h3>
+
+<p>
+Whiscash can also be evaluated in Ultra League, although its
+maximum CP and stat distribution mean that trainers should
+compare it against other Water/Ground options before investing
+heavily.
+</p>
+
+<h3>Master League</h3>
+
+<p>
+Whiscash generally has less natural relevance in Master League
+than Pokémon built around substantially higher maximum stats.
+Its value is much more format-dependent here.
+</p>
+
+<div class="best-move">
+
+<strong>PvP IV Reminder</strong>
+
+<p>
+For CP-limited leagues, use a PvP IV ranking tool rather than
+automatically selecting a 15/15/15 Whiscash.
+</p>
+
+</div>
+
+</section>
+
+<!-- CANDY -->
+
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<span class="section-number">19 • RESOURCES</span>
+
+<h2>Whiscash Candy, XL Candy & Stardust</h2>
+
+</div>
+
+<p>
+Building a Whiscash for PvP can require careful resource
+management. Before spending Stardust or Candy XL, make sure
+the individual is appropriate for your target league.
+</p>
+
+<ul class="checklist">
+
+<li>Keep high-quality PvP candidates before transferring.</li>
+<li>Save Candy XL for projects that have a clear purpose.</li>
+<li>Check IV rankings before investing heavily.</li>
+<li>Compare Shadow and regular versions when available.</li>
+<li>Lucky Whiscash can reduce Stardust costs for power-ups.</li>
+
+</ul>
+
+</section>
+
+<!-- AVAILABILITY -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<span class="section-number">20 • AVAILABILITY</span>
+
+<h2>Whiscash Availability</h2>
+
+</div>
+
+<p>
+Whiscash availability can change with Pokémon GO events,
+wild encounters, research, featured events and other rotations.
+Historical event information should be separated from current
+availability.
+</p>
+
+<div class="best-move">
+
+<strong>Current Availability</strong>
+
+<p>
+Check the current Pokémon GO event schedule and in-game
+encounter sources before planning a Whiscash hunt.
+</p>
+
+</div>
+
+</section>
+
+<!-- BATTLE GUIDE -->
+
+<section class="section" id="battle-guide">
+
+<div class="section-heading">
+
+<span class="section-number">21 • TRAINER GUIDE</span>
+
+<h2>How to Use Whiscash</h2>
+
+</div>
+
+<h3>Before PvP</h3>
+
+<ul class="checklist">
+
+<li>Confirm the league you want to enter.</li>
+<li>Check the Whiscash IV spread.</li>
+<li>Review the current moveset.</li>
+<li>Check the current PvP meta.</li>
+<li>Build around Whiscash's Grass weakness.</li>
+
+</ul>
+
+<h3>During Team Building</h3>
+
+<p>
+Whiscash works best when its weaknesses are covered by teammates.
+Grass-resistant partners and Pokémon capable of handling common
+Grass attackers can make the overall team more reliable.
+</p>
+
+<h3>Long-Term Investment</h3>
+
+<p>
+Do not power up every Whiscash you catch. Keep candidates that
+have a clear purpose, particularly strong PvP IV spreads, perfect
+IVs, useful Shadow variants or valuable collector traits.
+</p>
+
+</section>
+
+<!-- FORMS -->
+
+<section class="section" id="special-forms">
+
+<div class="section-heading">
+
+<span class="section-number">22 • SPECIAL VARIANTS</span>
+
+<h2>Whiscash Special Variants</h2>
+
+</div>
+
+<p>
+Whiscash can be collected in several ways beyond its standard
+form. Shiny, Shadow, Purified, Lucky, perfect-IV, XXL and XXS
+status should be tracked separately because each represents a
+different collection or investment characteristic.
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<div class="effect-icon">✨</div>
+<strong>Shiny</strong>
+<p>Alternate coloration.</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">🌑</div>
+<strong>Shadow</strong>
+<p>Shadow battle variant.</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">💎</div>
+<strong>Purified</strong>
+<p>Purified Shadow Pokémon.</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">🍀</div>
+<strong>Lucky</strong>
+<p>Reduced Stardust power-up cost.</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">💯</div>
+<strong>100% IV</strong>
+<p>15/15/15 IV combination.</p>
+</div>
+
+<div class="effect-card">
+<div class="effect-icon">📏</div>
+<strong>XXL / XXS</strong>
+<p>Size-based variants.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<span class="section-number">23 • FAQ</span>
+
+<h2>Whiscash FAQ</h2>
+
+</div>
+
+<details>
+<summary>What type is Whiscash?</summary>
+<p>
+Whiscash is a Water/Ground-type Pokémon.
+</p>
+</details>
+
+<details>
+<summary>What is Whiscash weak to?</summary>
+<p>
+Whiscash has a major weakness to Grass-type attacks because
+both Water and Ground typing are vulnerable to Grass.
+</p>
+</details>
+
+<details>
+<summary>Is Whiscash good for PvP?</summary>
+<p>
+Whiscash can be useful in certain PvP formats because of its
+typing, moves and relatively bulky HP stat. Its exact value
+depends on the current meta.
+</p>
+</details>
+
+<details>
+<summary>Is Whiscash good for raids?</summary>
+<p>
+Whiscash is generally more interesting for PvP and collection
+purposes than as a premier raid attacker.
+</p>
+</details>
+
+<details>
+<summary>Does Whiscash evolve?</summary>
+<p>
+Whiscash evolves from Barboach and does not have a further
+evolution.
+</p>
+</details>
+
+<details>
+<summary>Is Shiny Whiscash available?</summary>
+<p>
+Yes. Shiny Whiscash is available through eligible Pokémon GO
+encounters.
+</p>
+</details>
+
+<details>
+<summary>What is Shadow Whiscash?</summary>
+<p>
+Shadow Whiscash is a Shadow variant of Whiscash that retains
+its Water/Ground typing while using the Shadow battle mechanic.
+</p>
+</details>
+
+<details>
+<summary>Should I purify Shadow Whiscash?</summary>
+<p>
+Not automatically. Compare the Shadow and Purified versions
+according to your PvP, collection and investment goals.
+</p>
+</details>
+
+<details>
+<summary>What is Lucky Whiscash?</summary>
+<p>
+Lucky Whiscash is obtained through trading and has a reduced
+Stardust cost for power-ups.
+</p>
+</details>
+
+<details>
+<summary>What is a 100% Whiscash?</summary>
+<p>
+A 100% Whiscash has perfect IVs: 15 Attack, 15 Defense and
+15 HP.
+</p>
+</details>
+
+<details>
+<summary>What is XXL Whiscash?</summary>
+<p>
+XXL Whiscash is an exceptionally large individual according
+to Pokémon GO's size classification system.
+</p>
+</details>
+
+<details>
+<summary>What is XXS Whiscash?</summary>
+<p>
+XXS Whiscash is an exceptionally small individual according
+to Pokémon GO's size classification system.
+</p>
+</details>
+
+<details>
+<summary>Does XXL Whiscash have higher IVs?</summary>
+<p>
+No. Size and IVs are separate characteristics. An XXL Whiscash
+can have any IV combination.
+</p>
+</details>
+
+<details>
+<summary>Does Shiny Whiscash have better stats?</summary>
+<p>
+No. Shiny status is primarily a visual and collection variant
+and does not provide a direct stat advantage.
+</p>
+</details>
+
+<details>
+<summary>Is 15/15/15 always the best Whiscash for PvP?</summary>
+<p>
+No. In CP-limited leagues, a different IV distribution can
+sometimes provide a better stat product or matchup profile.
+</p>
+</details>
+
+</section>
+
+<!-- EDITORIAL -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>Editorial & Data Note</strong>
+
+<p>
+PokémonGaming.in is an independent Pokémon GO information
+website. Pokémon GO mechanics, moves, availability, events,
+Pokémon forms and competitive rankings can change over time.
+Always verify current in-game information before making
+investment decisions.
+</p>
+
+<p>
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This page is intended as an independent informational
+guide.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>Whiscash Guide</h3>
+
+<ul class="side-nav">
+
+<li><a href="#overview">Whiscash Overview</a></li>
+<li><a href="#stats">Stats & Max CP</a></li>
+<li><a href="#type">Type</a></li>
+<li><a href="#weaknesses">Weaknesses</a></li>
+<li><a href="#moves">Best Moves</a></li>
+<li><a href="#raid">Raid Performance</a></li>
+<li><a href="#counters">Counters</a></li>
+<li><a href="#iv">IV Guide</a></li>
+<li><a href="#pvp">PvP Guide</a></li>
+<li><a href="#shiny">Shiny Whiscash</a></li>
+<li><a href="#shadow">Shadow Whiscash</a></li>
+<li><a href="#purified">Purified Whiscash</a></li>
+<li><a href="#lucky">Lucky Whiscash</a></li>
+<li><a href="#perfect">100% Whiscash</a></li>
+<li><a href="#xxl">XXL Whiscash</a></li>
+<li><a href="#xxs">XXS Whiscash</a></li>
+<li><a href="#variants">Variant Comparison</a></li>
+<li><a href="#availability">Availability</a></li>
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>Related Guides</h3>
+
+<a class="related-link" href="/pokemon/barboach.html">
+Barboach Guide →
+</a>
+
+<a class="related-link" href="/pokemon-types/water.html">
+Water Type Hub →
+</a>
+
+<a class="related-link" href="/pokemon-types/ground.html">
+Ground Type Hub →
+</a>
+
+<a class="related-link" href="/pokemon/gyarados.html">
+Gyarados Guide →
+</a>
+
+<a class="related-link" href="/pokemon/swampert.html">
+Swampert Guide →
+</a>
+
+<a class="related-link" href="/pokemon-generations/gen-3.html">
+Gen 3 Pokémon →
+</a>
+
+</div>
+
+<div class="side-card">
+
+<h3>Whiscash Quick Facts</h3>
+
+<p><strong>Type:</strong> Water / Ground</p>
+<p><strong>Generation:</strong> 3</p>
+<p><strong>Pokédex:</strong> #340</p>
+<p><strong>Evolution:</strong> Barboach → Whiscash</p>
+<p><strong>Shiny:</strong> Available</p>
+<p><strong>Shadow:</strong> Variant</p>
+<p><strong>Lucky:</strong> Possible through trade</p>
+<p><strong>Size:</strong> XXL / XXS possible</p>
+
+</div>
+
+</aside>
+
+</div>
+</main>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>© 2026 PokémonGaming.in</p>
+
+<p>Independent Pokémon GO information and guides.</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

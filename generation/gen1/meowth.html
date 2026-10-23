@@ -1,0 +1,4100 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Meowth Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Purified, Lucky, XXL & XXS
+</title>
+
+<meta name="description"
+      content="Complete Meowth Pokémon GO guide covering regular Meowth, Shiny Meowth, Shadow Meowth, Purified Meowth, Lucky Meowth, 100% IV Meowth, XXL and XXS Meowth, stats, CP, moves, weaknesses and forms.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/meowth.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #f0b84b;
+    --accent-2: #d99125;
+
+    --normal: #b9b39b;
+    --shadow: #8f76b5;
+    --purified: #9bd6ff;
+    --lucky: #f4d35e;
+    --shiny: #8ee7c7;
+    --xxl: #d9a45b;
+    --xxs: #9bbcff;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(240,184,75,.10),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.94);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(240,184,75,.17),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #171717,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--accent);
+
+    background:
+        rgba(240,184,75,.08);
+
+    font-size: .68rem;
+
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+
+    max-width: 720px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.normal-tag {
+    color: var(--normal);
+}
+
+.shiny-tag {
+    color: var(--shiny);
+}
+
+.shadow-tag {
+    color: var(--shadow);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(240,184,75,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(185,179,155,.3);
+
+    background:
+        rgba(185,179,155,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(185,179,155,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+
+    color: var(--normal);
+
+    font-size: .75rem;
+
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-card .effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+
+    color: var(--accent);
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(240,184,75,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(240,184,75,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   FORM / VARIANT CARDS
+========================================================= */
+
+.variant-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.variant-card {
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    background:
+        var(--surface-2);
+}
+
+.variant-card .variant-icon {
+
+    font-size: 2rem;
+
+    margin-bottom: 8px;
+}
+
+.variant-card h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 1rem;
+}
+
+.variant-card p {
+
+    font-size: .76rem;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SPECIAL VARIANT COLORS
+========================================================= */
+
+.shiny-card {
+    border-color:
+        rgba(142,231,199,.3);
+}
+
+.shadow-card {
+    border-color:
+        rgba(143,118,181,.35);
+}
+
+.purified-card {
+    border-color:
+        rgba(155,214,255,.35);
+}
+
+.lucky-card {
+    border-color:
+        rgba(244,211,94,.35);
+}
+
+.xxl-card {
+    border-color:
+        rgba(217,164,91,.35);
+}
+
+.xxs-card {
+    border-color:
+        rgba(155,188,255,.35);
+}
+
+
+/* =========================================================
+   IV GRID
+========================================================= */
+
+.iv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+
+    display: block;
+
+    font-size: 1.35rem;
+}
+
+.iv-card span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+
+    height: 8px;
+
+    background:
+        var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+
+    height: 100%;
+
+    width: var(--rating);
+
+    background:
+        var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+
+    text-align: right;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding:
+        8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width: 650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns:
+            1fr;
+
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">
+Types
+</a>
+
+<a href="/pokedex.html">
+Pokédex
+</a>
+
+<a href="/raids/">
+Raids
+</a>
+
+<a href="/guides/">
+Guides
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">
+Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/normal.html">
+Normal Type
+</a>
+
+<span>›</span>
+
+<strong>
+Meowth
+</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+
+<div>
+
+<span class="eyebrow">
+NORMAL-TYPE POKÉMON
+</span>
+
+<h1>
+Meowth
+</h1>
+
+<p class="hero-subtitle">
+
+Meowth is a Normal-type Pokémon originally introduced
+in Generation 1. In Pokémon GO, it can appear in several
+different forms and collection variants, including Shiny,
+Shadow, Purified, Lucky, XXL and XXS specimens.
+
+</p>
+
+
+<div class="hero-tags">
+
+<span class="tag normal-tag">
+Normal
+</span>
+
+<span class="tag">
+#052
+</span>
+
+<span class="tag">
+Gen 1
+</span>
+
+<span class="tag shiny-tag">
+Shiny Available
+</span>
+
+<span class="tag shadow-tag">
+Shadow Variant
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🐱
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+92
+</strong>
+
+<span>
+ATTACK
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+78
+</strong>
+
+<span>
+DEFENSE
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+120
+</strong>
+
+<span>
+STAMINA
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+846
+</strong>
+
+<span>
+MAX CP
+</span>
+
+</div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+Meowth Overview
+</h2>
+
+<p>
+
+Meowth is a small Normal-type Pokémon known for its
+coin-loving behavior and its evolution into Persian.
+The standard Meowth is different from its Alolan and
+Galarian regional forms, which have different typings
+and gameplay characteristics.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>PokÉDEX</span>
+<strong>#052</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 1</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Kanto</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Normal</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>92</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>78</strong>
+</div>
+
+<div class="stat-card">
+<span>STAMINA</span>
+<strong>120</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>846</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>
+Meowth Type
+</h2>
+
+</div>
+
+
+<div class="type-box">
+
+<div class="type-icon">
+⚪
+</div>
+
+<div>
+
+<strong>
+Normal
+</strong>
+
+<span>
+Primary Type
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Why Meowth's Typing Matters
+</h3>
+
+<p>
+
+Regular Meowth is a pure Normal-type Pokémon.
+Normal-type Pokémon have relatively straightforward
+offensive and defensive interactions, but Meowth's
+low overall combat stats limit its role in high-level
+raids.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>
+Meowth Weaknesses & Resistances
+</h2>
+
+<p>
+Understanding Meowth's type matchup is useful for
+Trainer Battles, Rocket encounters and general
+Pokémon collection knowledge.
+</p>
+
+</div>
+
+
+<h3>
+Weakness
+</h3>
+
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🥊
+</div>
+
+<strong>
+Fighting
+</strong>
+
+<p>
+
+Fighting-type attacks deal super-effective damage
+against regular Normal-type Meowth.
+
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Resistance
+</h3>
+
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+👻
+</div>
+
+<strong>
+Ghost
+</strong>
+
+<p>
+
+Normal-type Pokémon are immune to Ghost-type attacks
+in the standard Pokémon type system used by Pokémon GO.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<h2>
+Meowth Stats & Max CP
+</h2>
+
+<p>
+
+Meowth has relatively modest combat stats compared
+with stronger evolved and Legendary Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+ATTACK
+</span>
+
+<strong>
+92
+</strong>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>
+DEFENSE
+</span>
+
+<strong>
+78
+</strong>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>
+STAMINA
+</span>
+
+<strong>
+120
+</strong>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>
+MAX CP
+</span>
+
+<strong>
+846
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+CP note:
+</strong>
+
+<p>
+
+The displayed CP of an individual Meowth depends on
+its level and IVs. The listed maximum CP represents
+a level 50 specimen with perfect IVs.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<h2>
+Meowth Moves
+</h2>
+
+<p>
+
+Meowth can use Normal and Dark-type attacks. Its
+moveset is more relevant for collection, limited
+PvP situations and evolution preparation than
+for high-level PvE.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+Not a Major Raid Attacker
+</strong>
+
+<p>
+
+Regular Meowth is generally not a high-priority
+Pokémon for raid investment because of its low
+overall combat stats.
+
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Move
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Category
+</th>
+
+<th>
+Role
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td class="move-name">
+Scratch
+</td>
+
+<td class="move-type">
+Normal
+</td>
+
+<td>
+Fast Move
+</td>
+
+<td>
+STAB option
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Bite
+</td>
+
+<td class="move-type">
+Dark
+</td>
+
+<td>
+Fast Move
+</td>
+
+<td>
+Coverage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Night Slash
+</td>
+
+<td class="move-type">
+Dark
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Dark coverage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Dark Pulse
+</td>
+
+<td class="move-type">
+Dark
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Dark damage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Foul Play
+</td>
+
+<td class="move-type">
+Dark
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Dark coverage
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="editorial-note">
+
+Move availability can change through Pokémon GO updates,
+events and move reworks. Verify the current moveset before
+using this page as a live moves database.
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL VARIANTS
+===================================================== -->
+
+<section class="section" id="variants">
+
+<div class="section-heading">
+
+<h2>
+Meowth Special Variants
+</h2>
+
+<p>
+
+The following variants are useful to track separately
+in a Pokémon collection. Some are visual or gameplay
+states rather than separate species.
+
+</p>
+
+</div>
+
+
+<div class="variant-grid">
+
+
+<div class="variant-card shiny-card">
+
+<div class="variant-icon">
+✨
+</div>
+
+<h3>
+Shiny Meowth
+</h3>
+
+<p>
+
+Shiny Meowth has an alternate coloration and is a
+collectible variant of the standard Meowth.
+
+</p>
+
+</div>
+
+
+<div class="variant-card shadow-card">
+
+<div class="variant-icon">
+😈
+</div>
+
+<h3>
+Shadow Meowth
+</h3>
+
+<p>
+
+Shadow Meowth is a Shadow Pokémon with the Shadow
+battle mechanic and can have Frustration as a
+Charged Move when obtained.
+
+</p>
+
+</div>
+
+
+<div class="variant-card purified-card">
+
+<div class="variant-icon">
+💎
+</div>
+
+<h3>
+Purified Meowth
+</h3>
+
+<p>
+
+Purified Meowth is created by purifying an eligible
+Shadow Meowth. Purification changes its Shadow status
+and can provide the usual Purified Pokémon benefits.
+
+</p>
+
+</div>
+
+
+<div class="variant-card lucky-card">
+
+<div class="variant-icon">
+🍀
+</div>
+
+<h3>
+Lucky Meowth
+</h3>
+
+<p>
+
+Lucky Meowth is a special trading outcome. Lucky
+Pokémon have a distinctive background and reduced
+Stardust costs for powering up.
+
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+💯
+</div>
+
+<h3>
+100% IV Meowth
+</h3>
+
+<p>
+
+A perfect Meowth has 15 Attack, 15 Defense and
+15 HP/Stamina IVs.
+
+</p>
+
+</div>
+
+
+<div class="variant-card xxl-card">
+
+<div class="variant-icon">
+📏
+</div>
+
+<h3>
+XXL Meowth
+</h3>
+
+<p>
+
+An XXL Meowth is a size variant that is larger than
+normal. Size is separate from IV quality.
+
+</p>
+
+</div>
+
+
+<div class="variant-card xxs-card">
+
+<div class="variant-icon">
+🔹
+</div>
+
+<h3>
+XXS Meowth
+</h3>
+
+<p>
+
+An XXS Meowth is an unusually small size variant.
+It can be valuable to collectors even when its IVs
+are not perfect.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<h2>
+Shiny Meowth
+</h2>
+
+<p>
+
+Shiny Meowth is the alternate-color version of regular
+Meowth. Shiny status is independent of IVs, CP, Lucky
+status and size.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+✨ Shiny Collection Tip
+</strong>
+
+<p>
+
+A Shiny Meowth can also be valuable as a collector's
+Pokémon when combined with other special attributes
+such as high IVs, Lucky status, XXL or XXS size.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+FORM
+</span>
+
+<strong>
+Shiny
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+TYPE
+</span>
+
+<strong>
+Normal
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+DEX
+</span>
+
+<strong>
+#052
+</strong>
+
+</div>
+
+<div class="stat-card">
+
+<span>
+SPECIES
+</span>
+
+<strong>
+Meowth
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<h2>
+Shadow Meowth
+</h2>
+
+<p>
+
+Shadow Meowth is a Shadow version of Meowth. Shadow
+Pokémon receive a battle-performance modification that
+makes their offensive and defensive profile different
+from the regular form.
+
+</p>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+😈 Shadow Meowth
+</strong>
+
+<p>
+
+Shadow Meowth can be useful as a collector's variant
+and for players who want to preserve unusual Shadow
+Pokémon. Its low base stats mean it is not normally
+a major raid investment.
+
+</p>
+
+</div>
+
+
+<h3>
+Shadow vs Regular Meowth
+</h3>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Regular
+</th>
+
+<th>
+Shadow
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Species
+</td>
+
+<td>
+Meowth
+</td>
+
+<td>
+Meowth
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Type
+</td>
+
+<td>
+Normal
+</td>
+
+<td>
+Normal
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shadow Status
+</td>
+
+<td>
+No
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Frustration
+</td>
+
+<td>
+No
+</td>
+
+<td>
+Can be present when obtained
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Purification
+</td>
+
+<td>
+Not applicable
+</td>
+
+<td>
+Possible when eligible
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<h3>
+Shadow Meowth IV Guide
+</h3>
+
+<p>
+
+A Shadow Pokémon does not need to be 15/15/15 to be
+interesting. For collectors, unusual IV combinations
+can be worth keeping, especially when combined with
+Shiny, Lucky or size-related collection goals.
+
+</p>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Purification warning:
+</strong>
+
+<p>
+
+Purifying a Shadow Pokémon is a permanent decision.
+Collectors should compare the Shadow and Purified
+versions before committing.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<h2>
+Purified Meowth
+</h2>
+
+<p>
+
+Purified Meowth is produced by purifying an eligible
+Shadow Meowth. Purification removes the Shadow status
+and changes the Pokémon's available characteristics.
+
+</p>
+
+</div>
+
+
+<div class="variant-grid">
+
+<div class="variant-card purified-card">
+
+<div class="variant-icon">
+💎
+</div>
+
+<h3>
+Purified Form
+</h3>
+
+<p>
+
+Purified Meowth no longer has the Shadow status and
+can have Return as its Purified Charged Move when
+applicable.
+
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+⭐
+</div>
+
+<h3>
+Collector Value
+</h3>
+
+<p>
+
+A Purified Meowth can be especially interesting when
+it also has strong IVs, Lucky status or an unusual
+size category.
+
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Should You Purify Shadow Meowth?
+</h3>
+
+<ul class="checklist">
+
+<li>
+Compare the Shadow and Purified versions first.
+</li>
+
+<li>
+Consider whether you want to preserve the Shadow Pokémon.
+</li>
+
+<li>
+Check the IVs before making the decision.
+</li>
+
+<li>
+Consider collector value rather than only CP.
+</li>
+
+<li>
+Remember that purification is permanent.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<h2>
+Lucky Meowth
+</h2>
+
+<p>
+
+Lucky Meowth is created through Pokémon trading.
+Its Lucky status is separate from Shiny status, IVs
+and size.
+
+</p>
+
+</div>
+
+
+<div class="variant-grid">
+
+<div class="variant-card lucky-card">
+
+<div class="variant-icon">
+🍀
+</div>
+
+<h3>
+Lucky Pokémon
+</h3>
+
+<p>
+
+Lucky Meowth has a special appearance in the Pokémon
+storage interface and requires less Stardust to power up.
+
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+🔁
+</div>
+
+<h3>
+Trading
+</h3>
+
+<p>
+
+Trading is the normal way to obtain a Lucky Pokémon.
+The Lucky status is determined by the trade rather than
+being manually activated.
+
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Lucky Meowth Collection Ideas
+</h3>
+
+<ul class="checklist">
+
+<li>
+Lucky + 100% IV Meowth
+</li>
+
+<li>
+Lucky + Shiny Meowth
+</li>
+
+<li>
+Lucky + XXL Meowth
+</li>
+
+<li>
+Lucky + XXS Meowth
+</li>
+
+<li>
+Lucky Meowth with a legacy or event move
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section" id="perfect">
+
+<div class="section-heading">
+
+<h2>
+100% IV Meowth
+</h2>
+
+<p>
+
+A 100% IV Meowth has the maximum possible IV value
+in Attack, Defense and HP/Stamina.
+
+</p>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP / Stamina IV
+</span>
+
+</div>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+💯 Perfect IV
+</strong>
+
+<p>
+
+15/15/15 is the standard definition of a perfect
+IV Pokémon in Pokémon GO.
+
+</p>
+
+</div>
+
+
+<h3>
+Is 100% Meowth Rare?
+</h3>
+
+<p>
+
+A perfect Meowth is considerably more collectible
+than an ordinary specimen because all three IV
+values are at their maximum. Its usefulness in
+battle is still limited by Meowth's relatively
+low base stats.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<h2>
+XXL Meowth
+</h2>
+
+<p>
+
+XXL Meowth is a size variant that is larger than
+standard Meowth. Size and IVs are separate properties,
+so an XXL Pokémon does not automatically have high IVs.
+
+</p>
+
+</div>
+
+
+<div class="variant-grid">
+
+<div class="variant-card xxl-card">
+
+<div class="variant-icon">
+📏
+</div>
+
+<h3>
+XXL Meowth
+</h3>
+
+<p>
+
+An XXL Meowth can be kept for size-based collection
+goals and visual variety.
+
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+💯
+</div>
+
+<h3>
+XXL + 100%
+</h3>
+
+<p>
+
+An XXL Meowth with 15/15/15 IVs is a particularly
+interesting combination for collectors.
+
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+XXL Meowth Checklist
+</h3>
+
+<ul class="checklist">
+
+<li>
+XXL regular Meowth
+</li>
+
+<li>
+XXL Shiny Meowth
+</li>
+
+<li>
+XXL Lucky Meowth
+</li>
+
+<li>
+XXL 100% IV Meowth
+</li>
+
+<li>
+XXL Shadow Meowth
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<h2>
+XXS Meowth
+</h2>
+
+<p>
+
+XXS Meowth is an unusually small size variant.
+Like XXL Pokémon, XXS status is separate from IV
+quality and does not automatically mean that the
+Pokémon has low or high IVs.
+
+</p>
+
+</div>
+
+
+<div class="variant-grid">
+
+<div class="variant-card xxs-card">
+
+<div class="variant-icon">
+🔹
+</div>
+
+<h3>
+XXS Meowth
+</h3>
+
+<p>
+
+An XXS Meowth is valuable primarily for collection,
+size records and special combinations.
+
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+✨
+</div>
+
+<h3>
+XXS Shiny Meowth
+</h3>
+
+<p>
+
+A Shiny Meowth that is also XXS can be a particularly
+interesting collector's specimen.
+
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+XXS Meowth Collection Goals
+</h3>
+
+<ul class="checklist">
+
+<li>
+XXS regular Meowth
+</li>
+
+<li>
+XXS Shiny Meowth
+</li>
+
+<li>
+XXS Lucky Meowth
+</li>
+
+<li>
+XXS 100% IV Meowth
+</li>
+
+<li>
+XXS Shadow Meowth
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     IV + SIZE
+===================================================== -->
+
+<section class="section" id="iv-size">
+
+<div class="section-heading">
+
+<h2>
+Meowth IVs vs Size
+</h2>
+
+<p>
+
+IVs and size are separate Pokémon attributes.
+A large Meowth is not automatically stronger, and
+a small Meowth is not automatically weaker.
+
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Attribute
+</th>
+
+<th>
+What It Means
+</th>
+
+<th>
+Collection Value
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+IVs
+</td>
+
+<td>
+Attack, Defense and HP values
+</td>
+
+<td>
+Battle and appraisal value
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+XXL
+</td>
+
+<td>
+Unusually large size
+</td>
+
+<td>
+Size collection
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+XXS
+</td>
+
+<td>
+Unusually small size
+</td>
+
+<td>
+Size collection
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Lucky
+</td>
+
+<td>
+Special trade result
+</td>
+
+<td>
+Lower Stardust investment
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shiny
+</td>
+
+<td>
+Alternate coloration
+</td>
+
+<td>
+Collection value
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shadow
+</td>
+
+<td>
+Shadow battle state
+</td>
+
+<td>
+Battle + collection value
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<h2>
+Meowth Regional Forms
+</h2>
+
+<p>
+
+Regular Meowth should not be confused with the regional
+Alolan and Galarian forms. These forms are different
+from Shiny, Shadow, Purified and Lucky status.
+
+</p>
+
+</div>
+
+
+<div class="variant-grid">
+
+<div class="variant-card">
+
+<div class="variant-icon">
+🐱
+</div>
+
+<h3>
+Kanto Meowth
+</h3>
+
+<p>
+Normal-type Meowth from the original Kanto region.
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+🌴
+</div>
+
+<h3>
+Alolan Meowth
+</h3>
+
+<p>
+The Alolan regional form has a different appearance
+and is a Dark-type Pokémon.
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+⚙️
+</div>
+
+<h3>
+Galarian Meowth
+</h3>
+
+<p>
+The Galarian regional form is a Steel-type Pokémon
+with different characteristics from regular Meowth.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Important:
+</strong>
+
+<p>
+
+This page is for regular Kanto Meowth. Alolan Meowth
+and Galarian Meowth should ideally have separate
+database pages because their typing, stats and evolution
+relationships differ.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<h2>
+Meowth Evolution
+</h2>
+
+</div>
+
+
+<p>
+
+Regular Kanto Meowth evolves into Persian after meeting
+the required evolution conditions in Pokémon GO.
+
+</p>
+
+
+<div class="variant-grid">
+
+<div class="variant-card">
+
+<div class="variant-icon">
+🐱
+</div>
+
+<h3>
+Meowth
+</h3>
+
+<p>
+#052 — Normal type
+</p>
+
+</div>
+
+
+<div class="variant-card">
+
+<div class="variant-icon">
+🐆
+</div>
+
+<h3>
+Persian
+</h3>
+
+<p>
+#053 — evolved form
+</p>
+
+</div>
+
+</div>
+
+
+<div class="best-move">
+
+<strong>
+Evolution Reminder
+</strong>
+
+<p>
+
+Check the current Candy requirement and any special
+evolution conditions in Pokémon GO before evolving.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+<div class="section-heading">
+
+<h2>
+Meowth Raid & PvE Performance
+</h2>
+
+<p>
+
+Meowth is not normally considered a high-priority
+raid attacker. Its relatively low base stats limit
+its performance compared with stronger Normal and
+Dark-type Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Raid Damage
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:25%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+Low
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Collector Value
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:85%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+High
+</span>
+
+</div>
+
+
+<div class="rating-row">
+
+<strong>
+Evolution Value
+</strong>
+
+<div class="rating-bar">
+
+<div class="rating-fill"
+     style="--rating:70%;">
+</div>
+
+</div>
+
+<span class="rating-value">
+Useful
+</span>
+
+</div>
+
+
+<h3>
+Should You Power Up Meowth?
+</h3>
+
+<p>
+
+For most players, Meowth is better suited to collection,
+evolution and special-variant goals than expensive
+high-level combat investment.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTION
+===================================================== -->
+
+<section class="section" id="collection">
+
+<div class="section-heading">
+
+<h2>
+Meowth Collector Checklist
+</h2>
+
+<p>
+
+If you are building a complete Meowth collection,
+these combinations can make useful long-term goals.
+
+</p>
+
+</div>
+
+
+<ul class="checklist">
+
+<li>
+Regular Meowth
+</li>
+
+<li>
+✨ Shiny Meowth
+</li>
+
+<li>
+😈 Shadow Meowth
+</li>
+
+<li>
+💎 Purified Meowth
+</li>
+
+<li>
+🍀 Lucky Meowth
+</li>
+
+<li>
+💯 100% IV Meowth
+</li>
+
+<li>
+📏 XXL Meowth
+</li>
+
+<li>
+🔹 XXS Meowth
+</li>
+
+<li>
+✨ Shiny + 100% Meowth
+</li>
+
+<li>
+✨ Shiny + Lucky Meowth
+</li>
+
+<li>
+💯 XXL 100% Meowth
+</li>
+
+<li>
+💯 XXS 100% Meowth
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<h2>
+Meowth Availability
+</h2>
+
+</div>
+
+
+<p>
+
+Meowth availability can change through Pokémon GO
+events, wild encounters, research, special events and
+other rotations. Because encounter sources can change,
+avoid presenting an old event as permanent availability.
+
+</p>
+
+
+<div class="best-move">
+
+<strong>
+Current Availability
+</strong>
+
+<p>
+
+Check the current Pokémon GO event and encounter
+schedule before publishing a specific Meowth encounter
+claim.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     RESOURCES
+===================================================== -->
+
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<h2>
+Meowth Candy & Stardust
+</h2>
+
+</div>
+
+
+<p>
+
+Meowth Candy can be useful for evolving Meowth into
+Persian and for powering up a favorite specimen.
+Stardust should generally be reserved for Pokémon
+that have a clear battle or collection purpose.
+
+</p>
+
+
+<ul class="checklist">
+
+<li>
+Keep high-IV Meowth for collection or evolution goals.
+</li>
+
+<li>
+Keep unusual Shadow Meowth before purifying.
+</li>
+
+<li>
+Save Shiny Meowth if you are building a complete collection.
+</li>
+
+<li>
+Check XXL and XXS sizes before transferring duplicates.
+</li>
+
+<li>
+Consider Lucky Meowth for reduced Stardust investment.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>
+Meowth FAQ
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+What type is Meowth?
+</summary>
+
+<p>
+
+Regular Kanto Meowth is a pure Normal-type Pokémon.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Meowth weak to?
+</summary>
+
+<p>
+
+Regular Meowth is weak to Fighting-type attacks.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Meowth's max CP?
+</summary>
+
+<p>
+
+Regular Meowth can reach 846 CP at level 50 with
+15/15/15 IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shiny Meowth available?
+</summary>
+
+<p>
+
+Yes. Shiny Meowth is an available alternate-color
+variant when offered through eligible Pokémon GO
+encounters.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Meowth be Shadow?
+</summary>
+
+<p>
+
+Yes. Shadow Meowth can exist as a Shadow Pokémon
+when made available through the appropriate Pokémon
+GO mechanics and encounters.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Shadow Meowth be purified?
+</summary>
+
+<p>
+
+An eligible Shadow Meowth can be purified. Purification
+is permanent, so collectors should consider the decision
+before proceeding.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a 100% Meowth?
+</summary>
+
+<p>
+
+A 100% Meowth has 15 Attack, 15 Defense and 15 HP/Stamina
+IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXL Meowth?
+</summary>
+
+<p>
+
+XXL Meowth is a size variant that is unusually large.
+XXL status is separate from IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXS Meowth?
+</summary>
+
+<p>
+
+XXS Meowth is an unusually small size variant. Its size
+does not determine its IVs.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Meowth be Lucky?
+</summary>
+
+<p>
+
+Yes. Meowth can become Lucky through trading when the
+trade results in the Lucky Pokémon outcome.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Does Meowth evolve?
+</summary>
+
+<p>
+
+Yes. Regular Kanto Meowth evolves into Persian.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Are Alolan and Galarian Meowth the same as regular Meowth?
+</summary>
+
+<p>
+
+No. Alolan and Galarian Meowth are regional forms with
+different typings and characteristics. They should be
+treated separately in a Pokémon database.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Meowth good for raids?
+</summary>
+
+<p>
+
+Regular Meowth is generally not a high-priority raid
+attacker because of its relatively low combat stats.
+
+</p>
+
+</details>
+
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon GO mechanics, moves, encounter sources,
+events and availability can change over time. Verify
+current in-game information before making investment
+decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This page is intended as an independent
+informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+<h3>
+Meowth Guide
+</h3>
+
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+Stats & Max CP
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Moves
+</a>
+</li>
+
+<li>
+<a href="#variants">
+Special Variants
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Meowth
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Meowth
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Meowth
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Meowth
+</a>
+</li>
+
+<li>
+<a href="#perfect">
+100% Meowth
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+XXL Meowth
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+XXS Meowth
+</a>
+</li>
+
+<li>
+<a href="#forms">
+Regional Forms
+</a>
+</li>
+
+<li>
+<a href="#evolution">
+Evolution
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+
+<a class="related-link"
+   href="/pokemon/persian.html">
+
+Meowth Evolution: Persian →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-types/normal.html">
+
+Normal Type Hub →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokedex.html">
+
+Pokémon Database →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-types/dark.html">
+
+Dark Type Pokémon →
+
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-generations/gen-1.html">
+
+Gen 1 Pokémon →
+
+</a>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Meowth Quick Facts
+</h3>
+
+
+<p>
+<strong>Type:</strong>
+Normal
+</p>
+
+
+<p>
+<strong>Generation:</strong>
+1
+</p>
+
+
+<p>
+<strong>Pokédex:</strong>
+#052
+</p>
+
+
+<p>
+<strong>Evolution:</strong>
+Persian
+</p>
+
+
+<p>
+<strong>Max CP:</strong>
+846
+</p>
+
+
+<p>
+<strong>Shiny:</strong>
+Available
+</p>
+
+
+<p>
+<strong>Shadow:</strong>
+Available when featured
+</p>
+
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

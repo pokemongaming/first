@@ -1,0 +1,4689 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Mankey Pokémon GO Guide — Stats, Max CP, Shiny, Shadow, IVs, XXL & XXS
+</title>
+
+<meta name="description"
+      content="Complete Mankey Pokémon GO guide covering Mankey stats, max CP, Fighting typing, weaknesses, resistances, shiny Mankey, Shadow Mankey, Purified Mankey, Lucky Mankey, 100% IV, XXL, XXS, evolution and more.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/mankey.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #e59b63;
+    --accent-2: #ff7548;
+
+    --fighting: #d95b45;
+
+    --psychic: #e86c91;
+    --flying: #72a8e8;
+    --fairy: #d98ab8;
+
+    --success: #62d89a;
+    --danger: #ff6f7d;
+    --gold: #f0c75e;
+    --ice: #75d5dc;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(255,117,72,.12),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    min-height:
+        68px;
+
+    padding:
+        0 20px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+}
+
+.logo {
+
+    font-size:
+        1.15rem;
+
+    font-weight:
+        950;
+
+    letter-spacing:
+        -.03em;
+}
+
+.logo span {
+    color:
+        var(--accent);
+}
+
+.main-nav {
+
+    display:
+        flex;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+.main-nav a {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .8rem;
+
+    font-weight:
+        750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    padding:
+        35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-bottom:
+        25px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(217,91,69,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #171b27,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap:
+        30px;
+
+    align-items:
+        center;
+}
+
+.eyebrow {
+
+    display:
+        inline-flex;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--accent);
+
+    background:
+        rgba(229,155,99,.08);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        14px;
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+}
+
+.hero-subtitle {
+
+    max-width:
+        700px;
+
+    font-size:
+        1rem;
+
+    color:
+        #c2cad7;
+}
+
+.hero-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+.tag {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+}
+
+.fighting-tag {
+    color:
+        var(--accent);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+}
+
+.pokemon-placeholder {
+
+    width:
+        260px;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(217,91,69,.25),
+            transparent 65%
+        );
+
+    font-size:
+        7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.quick-stat {
+
+    padding:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.quick-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        1.25rem;
+}
+
+.quick-stat span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    font-weight:
+        750;
+}
+
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.content-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap:
+        20px;
+
+    margin-top:
+        20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.section-heading {
+    margin-bottom:
+        20px;
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom:
+        9px;
+}
+
+.section h3 {
+
+    margin:
+        22px 0 10px;
+
+    font-size:
+        1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+}
+
+.stat-card {
+
+    padding:
+        17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .64rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .04em;
+}
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid rgba(217,91,69,.35);
+
+    background:
+        rgba(217,91,69,.07);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(217,91,69,.15);
+
+    font-size:
+        1.5rem;
+}
+
+.type-box strong {
+    display:
+        block;
+}
+
+.type-box span {
+
+    color:
+        var(--accent);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        850;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        15px;
+}
+
+.effect-card {
+
+    padding:
+        17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.effect-icon {
+
+    font-size:
+        1.5rem;
+
+    margin-bottom:
+        6px;
+}
+
+.effect-card strong {
+    display:
+        block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x:
+        auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding:
+        13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+    font-size:
+        .76rem;
+}
+
+.data-table th {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .05em;
+}
+
+.move-name {
+    font-weight:
+        850;
+}
+
+.move-type {
+
+    color:
+        var(--accent);
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.feature-card {
+
+    margin-top:
+        15px;
+
+    padding:
+        20px;
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(217,91,69,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(217,91,69,.25);
+}
+
+.feature-card strong {
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table th,
+.comparison-table td {
+
+    padding:
+        14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size:
+        .75rem;
+}
+
+.comparison-table th {
+
+    background:
+        var(--surface-2);
+
+    text-align:
+        left;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        15px;
+}
+
+.iv-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.iv-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.6rem;
+}
+
+.iv-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+
+/* =========================================================
+   FORM TREE
+========================================================= */
+
+.form-tree {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        14px;
+
+    flex-wrap:
+        wrap;
+
+    margin:
+        20px 0;
+}
+
+.form-node {
+
+    padding:
+        16px 22px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align:
+        center;
+}
+
+.form-node strong {
+    display:
+        block;
+}
+
+.form-node span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+}
+
+.form-arrow {
+
+    color:
+        var(--accent);
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+    margin-top:
+        15px;
+}
+
+.checklist li {
+
+    padding:
+        12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color:
+        #c8cfda;
+
+    font-size:
+        .78rem;
+}
+
+.checklist li::before {
+
+    content:
+        "✓";
+
+    margin-right:
+        8px;
+
+    color:
+        var(--success);
+
+    font-weight:
+        900;
+}
+
+
+/* =========================================================
+   SPECIAL FORM CARDS
+========================================================= */
+
+.special-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        18px;
+}
+
+.special-card {
+
+    padding:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+}
+
+.special-card .symbol {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        10px;
+}
+
+.special-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+}
+
+.special-card p {
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   SIZE SYSTEM
+========================================================= */
+
+.size-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(114,168,232,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(114,168,232,.25);
+}
+
+.size-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        18px;
+}
+
+.size-card strong {
+
+    display:
+        block;
+
+    font-size:
+        1.5rem;
+}
+
+.size-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .7rem;
+}
+
+
+/* =========================================================
+   LUCKY
+========================================================= */
+
+.lucky-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(240,199,94,.16),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(240,199,94,.35);
+}
+
+.lucky-card strong {
+
+    color:
+        var(--gold);
+
+    font-size:
+        1.3rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position:
+        sticky;
+
+    top:
+        88px;
+
+    align-self:
+        start;
+}
+
+.side-card {
+
+    margin-bottom:
+        15px;
+
+    padding:
+        20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+}
+
+.side-card h3 {
+
+    margin:
+        0 0 13px;
+
+    font-size:
+        .9rem;
+}
+
+.side-nav {
+
+    list-style:
+        none;
+
+    display:
+        grid;
+
+    gap:
+        4px;
+}
+
+.side-nav a {
+
+    display:
+        block;
+
+    padding:
+        8px 10px;
+
+    border-radius:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        700;
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color:
+        white;
+}
+
+.related-link {
+
+    display:
+        block;
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+.related-link:last-child {
+    border-bottom:
+        0;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom:
+        0;
+}
+
+summary {
+
+    cursor:
+        pointer;
+
+    font-weight:
+        850;
+
+    font-size:
+        .82rem;
+}
+
+details p {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        .78rem;
+}
+
+
+/* =========================================================
+   EDITORIAL
+========================================================= */
+
+.editorial-note {
+
+    padding:
+        17px;
+
+    margin-top:
+        20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        35px 20px;
+
+    background:
+        #06090e;
+}
+
+.footer-inner {
+
+    max-width:
+        var(--max);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    flex-wrap:
+        wrap;
+}
+
+footer p {
+
+    margin:
+        0;
+
+    font-size:
+        .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns:
+            1fr;
+    }
+
+    .sidebar {
+        position:
+            static;
+    }
+
+    .hero-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .hero-pokemon {
+        order:
+            -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .special-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding:
+            20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .special-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .size-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">
+Types
+</a>
+
+<a href="/pokedex.html">
+Pokédex
+</a>
+
+<a href="/raids/">
+Raids
+</a>
+
+<a href="/guides/">
+Guides
+</a>
+
+<a href="/tools/">
+Tools
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">
+Home
+</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/fighting.html">
+Fighting Type
+</a>
+
+<span>›</span>
+
+<strong>
+Mankey
+</strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+
+<div>
+
+<span class="eyebrow">
+GENERATION 1 • FIGHTING TYPE
+</span>
+
+<h1>
+Mankey
+</h1>
+
+<p class="hero-subtitle">
+
+Mankey is a Fighting-type Pokémon from the
+Kanto region. In Pokémon GO, it is best known
+as the first stage of the Mankey evolutionary
+family, eventually leading to Primeape and
+Annihilape.
+
+</p>
+
+
+<div class="hero-tags">
+
+<span class="tag fighting-tag">
+Fighting
+</span>
+
+<span class="tag">
+#056
+</span>
+
+<span class="tag">
+Gen 1
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+<span class="tag">
+Shadow Available
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🐒
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+148
+</strong>
+
+<span>
+ATTACK
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+82
+</strong>
+
+<span>
+DEFENSE
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+120
+</strong>
+
+<span>
+HP
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+1,317
+</strong>
+
+<span>
+MAX CP
+</span>
+
+</div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section"
+         id="overview">
+
+<div class="section-heading">
+
+<h2>
+Mankey Overview
+</h2>
+
+<p>
+
+Mankey is a pure Fighting-type Pokémon introduced
+in Generation 1. It is a relatively low-CP Pokémon
+by modern Pokémon GO standards, but its importance
+comes from its evolution family and the availability
+of special forms such as Shiny and Shadow Mankey.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>Pokédex</span>
+<strong>#056</strong>
+</div>
+
+<div class="stat-card">
+<span>Generation</span>
+<strong>Gen 1</strong>
+</div>
+
+<div class="stat-card">
+<span>Region</span>
+<strong>Kanto</strong>
+</div>
+
+<div class="stat-card">
+<span>Type</span>
+<strong>Fighting</strong>
+</div>
+
+<div class="stat-card">
+<span>Attack</span>
+<strong>148</strong>
+</div>
+
+<div class="stat-card">
+<span>Defense</span>
+<strong>82</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>120</strong>
+</div>
+
+<div class="stat-card">
+<span>Max CP</span>
+<strong>1,317</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section"
+         id="type">
+
+<div class="section-heading">
+
+<h2>
+Mankey Type
+</h2>
+
+</div>
+
+
+<div class="type-box">
+
+<div class="type-icon">
+👊
+</div>
+
+<div>
+
+<strong>
+Fighting
+</strong>
+
+<span>
+Primary Type
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+What Does Fighting Typing Mean for Mankey?
+</h3>
+
+<p>
+
+Mankey's Fighting typing gives it super-effective
+offensive options against several important Pokémon
+types. However, Mankey is also vulnerable to Flying,
+Psychic and Fairy attacks.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section"
+         id="weaknesses">
+
+<div class="section-heading">
+
+<h2>
+Mankey Weaknesses & Resistances
+</h2>
+
+</div>
+
+
+<h3>
+Weaknesses
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🪽
+</div>
+
+<strong>
+Flying
+</strong>
+
+<p>
+Flying-type attacks deal super-effective damage
+to Mankey.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🔮
+</div>
+
+<strong>
+Psychic
+</strong>
+
+<p>
+Psychic-type attacks are super effective against
+Fighting-type Mankey.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🧚
+</div>
+
+<strong>
+Fairy
+</strong>
+
+<p>
+Fairy-type attackers can exploit Mankey's
+Fighting typing.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Resistances
+</h3>
+
+
+<div class="effect-grid">
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🐞
+</div>
+
+<strong>
+Bug
+</strong>
+
+<p>
+Mankey takes reduced damage from Bug-type attacks.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock
+</strong>
+
+<p>
+Rock-type attacks are resisted by Fighting-type
+Mankey.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🌑
+</div>
+
+<strong>
+Dark
+</strong>
+
+<p>
+Mankey has a useful resistance to Dark-type attacks.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section"
+         id="stats">
+
+<div class="section-heading">
+
+<h2>
+Mankey Stats & Max CP
+</h2>
+
+<p>
+
+Mankey has 148 base Attack, 82 base Defense and
+120 base HP in Pokémon GO. Its maximum CP reaches
+1,317 at Level 50 with perfect IVs.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>148</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>82</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>120</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>1,317</strong>
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Max CP note:
+</strong>
+
+<p>
+
+The 1,317 CP maximum corresponds to a Level 50
+Mankey with 15/15/15 IVs. Individual Pokémon can
+have lower CP depending on level and IVs.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section"
+         id="moves">
+
+<div class="section-heading">
+
+<h2>
+Mankey Best Moves
+</h2>
+
+<p>
+
+Mankey's moves should be evaluated according to
+whether you are building it for casual battles,
+limited formats or simply preparing it for evolution.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<strong>
+Fighting-Type Build
+</strong>
+
+<p>
+
+Karate Chop + Brick Break is one currently listed
+Fighting-oriented Mankey moveset. Move availability
+can change, so verify the live game moveset before
+making a time-sensitive recommendation.
+
+</p>
+
+</div>
+
+
+<h3>
+Move Categories
+</h3>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Move
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Category
+</th>
+
+<th>
+Purpose
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td class="move-name">
+Karate Chop
+</td>
+
+<td class="move-type">
+Fighting
+</td>
+
+<td>
+Fast Move
+</td>
+
+<td>
+Fast Fighting pressure
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Brick Break
+</td>
+
+<td class="move-type">
+Fighting
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Fighting-type damage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Frustration
+</td>
+
+<td>
+Shadow
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Shadow Mankey default move
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="move-name">
+Return
+</td>
+
+<td>
+Purified
+</td>
+
+<td>
+Charged Move
+</td>
+
+<td>
+Purified Pokémon move
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section"
+         id="evolution">
+
+<div class="section-heading">
+
+<h2>
+Mankey Evolution Family
+</h2>
+
+<p>
+
+Mankey is the first stage of a three-stage evolutionary
+family in Pokémon GO.
+
+</p>
+
+</div>
+
+
+<div class="form-tree">
+
+<div class="form-node">
+
+<strong>
+Mankey
+</strong>
+
+<span>
+#056
+</span>
+
+</div>
+
+
+<div class="form-arrow">
+→
+</div>
+
+
+<div class="form-node">
+
+<strong>
+Primeape
+</strong>
+
+<span>
+50 Mankey Candy
+</span>
+
+</div>
+
+
+<div class="form-arrow">
+→
+</div>
+
+
+<div class="form-node">
+
+<strong>
+Annihilape
+</strong>
+
+<span>
+Evolution requirement
+</span>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Evolution note:
+</strong>
+
+<p>
+
+Mankey evolves into Primeape for 50 Candy.
+Primeape can then evolve into Annihilape after
+meeting the additional evolution requirement shown
+in Pokémon GO.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section"
+         id="iv">
+
+<div class="section-heading">
+
+<h2>
+Mankey IV Guide
+</h2>
+
+<p>
+
+Individual Values add additional Attack, Defense and
+HP points to a Pokémon. A 15/15/15 Mankey is known
+as a 100% or perfect-IV Mankey.
+
+</p>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+What Does 100% Mankey Mean?
+</h3>
+
+<p>
+
+A 100% Mankey has 15 Attack, 15 Defense and 15 HP
+IVs. At Level 50, a perfect Mankey reaches 1,317 CP.
+
+</p>
+
+
+<div class="feature-card">
+
+<strong>
+100% Mankey
+</strong>
+
+<p>
+
+15 / 15 / 15 IV • Perfect IV • Level 50 Max CP:
+1,317
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     100% MANKEY
+===================================================== -->
+
+<section class="section"
+         id="hundo">
+
+<div class="section-heading">
+
+<h2>
+100% IV Mankey
+</h2>
+
+<p>
+
+A perfect Mankey is primarily a collector and evolution
+investment target. Because Mankey has a relatively low
+maximum CP, many players may prefer evolving a strong
+specimen into Primeape or Annihilape rather than
+maxing Mankey itself.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<span>
+ATTACK IV
+</span>
+
+<strong>
+15
+</strong>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>
+DEFENSE IV
+</span>
+
+<strong>
+15
+</strong>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>
+HP IV
+</span>
+
+<strong>
+15
+</strong>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>
+PERFECT IV
+</span>
+
+<strong>
+100%
+</strong>
+
+</div>
+
+</div>
+
+
+<ul class="checklist">
+
+<li>
+Keep a 15/15/15 Mankey if you are completing your perfect-IV collection.
+</li>
+
+<li>
+Consider its future Primeape and Annihilape value before transferring it.
+</li>
+
+<li>
+Check its level and Stardust cost before powering it up.
+</li>
+
+<li>
+Compare the final evolution's role before spending XL Candy.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section"
+         id="shiny">
+
+<div class="section-heading">
+
+<h2>
+Shiny Mankey
+</h2>
+
+<p>
+
+Shiny Mankey is available in Pokémon GO. The Shiny
+variant has a distinctive green coloration compared
+with the standard Mankey appearance.
+
+</p>
+
+</div>
+
+
+<div class="special-grid">
+
+
+<div class="special-card">
+
+<div class="symbol">
+✨
+</div>
+
+<strong>
+Shiny Mankey
+</strong>
+
+<p>
+Alternate coloration.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+👊
+</div>
+
+<strong>
+Fighting Type
+</strong>
+
+<p>
+Shiny status does not change its typing.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+💎
+</div>
+
+<strong>
+Collector Value
+</strong>
+
+<p>
+Useful for Shiny collections and evolution projects.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+🐒
+</div>
+
+<strong>
+Evolution
+</strong>
+
+<p>
+Can evolve into Shiny Primeape.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Shiny Mankey Evolution
+</h3>
+
+<p>
+
+A Shiny Mankey can be evolved while retaining its
+Shiny status. This makes Shiny Mankey useful for
+building a complete Shiny evolution family.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section"
+         id="shadow">
+
+<div class="section-heading">
+
+<h2>
+Shadow Mankey
+</h2>
+
+<p>
+
+Shadow Mankey is a separate Shadow variant of Mankey.
+It retains the Fighting typing but has the Shadow
+Pokémon battle mechanics.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<strong>
+Shadow Mankey
+</strong>
+
+<p>
+
+Shadow Mankey can be especially interesting for
+players who want to evolve it later or use it in
+specialized battle situations.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>SPECIES</span>
+<strong>#056</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Fighting</strong>
+</div>
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Shadow</strong>
+</div>
+
+<div class="stat-card">
+<span>IV FLOOR</span>
+<strong>Event Dependent</strong>
+</div>
+
+</div>
+
+
+<h3>
+Shadow Mankey Weaknesses
+</h3>
+
+<p>
+
+Shadow status does not change Mankey's base Fighting
+typing. Its primary type weaknesses therefore remain
+Flying, Psychic and Fairy.
+
+</p>
+
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🪽
+</div>
+
+<strong>
+Flying
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🔮
+</div>
+
+<strong>
+Psychic
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🧚
+</div>
+
+<strong>
+Fairy
+</strong>
+
+<p>
+Super effective.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Shadow Mankey vs Regular Mankey
+</h3>
+
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Regular
+</th>
+
+<th>
+Shadow
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Species
+</td>
+
+<td>
+Mankey
+</td>
+
+<td>
+Mankey
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Type
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Fighting
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shadow Bonus
+</td>
+
+<td>
+No
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Frustration
+</td>
+
+<td>
+No
+</td>
+
+<td>
+Can be present
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Purification
+</td>
+
+<td>
+Not applicable
+</td>
+
+<td>
+Available when eligible
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<h3>
+Shadow Mankey IV Guide
+</h3>
+
+<p>
+
+Do not automatically transfer a Shadow Mankey simply
+because its IVs are not perfect. Shadow Pokémon have
+different battle characteristics, so the overall
+investment goal matters.
+
+</p>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Frustration reminder:
+</strong>
+
+<p>
+
+Shadow Mankey can have Frustration. The ability to
+replace Frustration depends on current Pokémon GO
+rules and eligible events.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section"
+         id="purified">
+
+<div class="section-heading">
+
+<h2>
+Purified Mankey
+</h2>
+
+<p>
+
+Purified Mankey is created by purifying an eligible
+Shadow Mankey. Purification changes its Shadow status
+and can provide the standard benefits associated with
+Purified Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<strong>
+Purified Mankey
+</strong>
+
+<p>
+
+Purification can be useful for collectors and certain
+evolution or appraisal goals, but players should compare
+the Shadow version before purifying a valuable specimen.
+
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Shadow Mankey
+</th>
+
+<th>
+Purified Mankey
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Shadow Status
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+No
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shadow Bonus
+</td>
+
+<td>
+Retained
+</td>
+
+<td>
+Removed
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Frustration
+</td>
+
+<td>
+Can be present
+</td>
+
+<td>
+Removed through purification
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Return
+</td>
+
+<td>
+No
+</td>
+
+<td>
+Can receive Return
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Best For
+</td>
+
+<td>
+Shadow-focused investment
+</td>
+
+<td>
+Purified collection/evolution
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Purification decision:
+</strong>
+
+<p>
+
+Do not purify automatically. If your Shadow Mankey
+has strong IVs or special value, compare both options
+before making the change.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section"
+         id="lucky">
+
+<div class="section-heading">
+
+<h2>
+Lucky Mankey
+</h2>
+
+<p>
+
+Lucky Mankey is obtained through Pokémon GO's trading
+system and receives the Lucky Pokémon benefits that
+apply to eligible traded Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="lucky-card">
+
+<strong>
+✨ Lucky Mankey
+</strong>
+
+<p>
+
+A Lucky Mankey can be an attractive candidate for
+evolution because Lucky Pokémon require fewer Stardust
+resources for power-ups.
+
+</p>
+
+</div>
+
+
+<h3>
+Lucky Mankey IVs
+</h3>
+
+<p>
+
+Lucky Pokémon have a minimum IV floor determined by
+the game's current Lucky trade mechanics. A Lucky
+Mankey can therefore be useful even when it is not
+15/15/15.
+
+</p>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🍀
+</div>
+
+<strong>
+Lucky Status
+</strong>
+
+<p>
+Obtained through trading.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+💰
+</div>
+
+<strong>
+Reduced Stardust Cost
+</strong>
+
+<p>
+Powering up Lucky Pokémon costs less Stardust.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🔄
+</div>
+
+<strong>
+Can Evolve
+</strong>
+
+<p>
+Lucky Mankey can evolve while retaining Lucky status.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section"
+         id="xxl">
+
+<div class="section-heading">
+
+<h2>
+XXL Mankey
+</h2>
+
+<p>
+
+XXL Mankey is a size variant that can appear with a
+larger-than-standard size measurement. Size is separate
+from IV quality and CP.
+
+</p>
+
+</div>
+
+
+<div class="size-grid">
+
+
+<div class="size-card">
+
+<strong>
+XXL
+</strong>
+
+<span>
+Extra-large Mankey size category
+</span>
+
+<p>
+
+XXL status does not automatically mean the Pokémon
+has high IVs.
+
+</p>
+
+</div>
+
+
+<div class="size-card">
+
+<strong>
+Collection
+</strong>
+
+<span>
+Size-focused collection target
+</span>
+
+<p>
+
+Some players collect XXL Pokémon independently
+from their battle IVs.
+
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+XXL Mankey vs 100% Mankey
+</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+XXL Mankey
+</th>
+
+<th>
+100% Mankey
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Size
+</td>
+
+<td>
+XXL
+</td>
+
+<td>
+Not necessarily XXL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+IVs
+</td>
+
+<td>
+Any IV combination
+</td>
+
+<td>
+15/15/15
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CP
+</td>
+
+<td>
+Depends on level and IVs
+</td>
+
+<td>
+Maximum at Level 50
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Collection Value
+</td>
+
+<td>
+Size-based
+</td>
+
+<td>
+Perfect-IV based
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section"
+         id="xxs">
+
+<div class="section-heading">
+
+<h2>
+XXS Mankey
+</h2>
+
+<p>
+
+XXS Mankey represents the opposite end of the Pokémon
+size spectrum. It is smaller than the normal size range
+and can be valuable for collectors who track size variants.
+
+</p>
+
+</div>
+
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<strong>
+XXS
+</strong>
+
+<span>
+Extra-small Mankey
+</span>
+
+<p>
+A size-based variant separate from IV percentage.
+</p>
+
+</div>
+
+
+<div class="size-card">
+
+<strong>
+Collector Target
+</strong>
+
+<span>
+Size collection
+</span>
+
+<p>
+XXS status does not guarantee perfect IVs.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+XXS Mankey IVs
+</h3>
+
+<p>
+
+An XXS Mankey can have excellent, average or poor IVs.
+Size and IV percentage should therefore be evaluated
+independently.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section"
+         id="pvp">
+
+<div class="section-heading">
+
+<h2>
+Mankey PvP Guide
+</h2>
+
+<p>
+
+Mankey's relatively low maximum CP means it is not
+normally a natural choice for the major open Great,
+Ultra or Master League formats. Its evolutionary forms
+are generally more relevant for competitive play.
+
+</p>
+
+</div>
+
+
+<h3>
+Great League
+</h3>
+
+<p>
+
+Mankey's maximum CP is low enough to enter Great League,
+but its overall stats and moveset make it much more
+niche than its evolved forms.
+
+</p>
+
+
+<h3>
+Ultra League</h3>
+
+<p>
+
+Mankey can technically be powered beyond Great League
+limits, but its low maximum CP makes it poorly suited
+to the Ultra League.
+
+</p>
+
+
+<h3>
+Master League
+</h3>
+
+<p>
+
+Mankey is not a practical Master League investment
+because its maximum CP is only 1,317.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE VALUE
+===================================================== -->
+
+<section class="section"
+         id="battle">
+
+<div class="section-heading">
+
+<h2>
+Is Mankey Good for Raids?
+</h2>
+
+<p>
+
+Mankey itself is not generally considered a major
+high-level raid attacker. Its importance is primarily
+connected to its evolutionary family and collection value.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+👊
+</div>
+
+<strong>
+Fighting Type
+</strong>
+
+<p>
+Useful offensive typing, but Mankey's stats limit its PvE role.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⬆️
+</div>
+
+<strong>
+Evolution Potential
+</strong>
+
+<p>
+Primeape and Annihilape are more important battle targets.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+✨
+</div>
+
+<strong>
+Collector Value
+</strong>
+
+<p>
+Shiny, Lucky, Shadow and size variants can be worth keeping.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY
+===================================================== -->
+
+<section class="section"
+         id="resources">
+
+<div class="section-heading">
+
+<h2>
+Mankey Candy & Stardust
+</h2>
+
+<p>
+
+Mankey Candy is especially useful because the species
+has multiple evolutionary stages. If you are hunting
+for high-IV, Shiny or Shadow Mankey, it is worth saving
+resources for the eventual evolution.
+
+</p>
+
+</div>
+
+
+<ul class="checklist">
+
+<li>
+Save Candy for a strong Mankey before evolving.
+</li>
+
+<li>
+Keep high-IV specimens for future Primeape or Annihilape builds.
+</li>
+
+<li>
+Check whether a Shiny Mankey is worth evolving.
+</li>
+
+<li>
+Consider Lucky Mankey as a lower-Stardust evolution project.
+</li>
+
+<li>
+Keep interesting XXL and XXS specimens for your collection.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section"
+         id="availability">
+
+<div class="section-heading">
+
+<h2>
+Mankey Availability
+</h2>
+
+<p>
+
+Mankey's encounter methods can change with Pokémon GO
+events, seasons, Rocket rotations, research and other
+game updates.
+
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<strong>
+Current Availability
+</strong>
+
+<p>
+
+Check the current Pokémon GO encounter rotation before
+publishing a permanent claim about where Mankey can
+currently be found.
+
+</p>
+
+</div>
+
+
+<p>
+
+Historical event appearances should be kept separate
+from current availability so visitors can immediately
+understand whether an encounter method is active.
+
+</p>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section"
+         id="forms">
+
+<div class="section-heading">
+
+<h2>
+Mankey Special Forms & Variants
+</h2>
+
+<p>
+
+Mankey can be encountered in several useful collection
+categories. These categories can overlap; for example,
+a Pokémon may have multiple applicable characteristics
+depending on its encounter and trade history.
+
+</p>
+
+</div>
+
+
+<div class="special-grid">
+
+
+<div class="special-card">
+
+<div class="symbol">
+✨
+</div>
+
+<strong>
+Shiny Mankey
+</strong>
+
+<p>
+Alternate coloration.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+😈
+</div>
+
+<strong>
+Shadow Mankey
+</strong>
+
+<p>
+Shadow Pokémon mechanics.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+🍃
+</div>
+
+<strong>
+Purified Mankey
+</strong>
+
+<p>
+Purified from Shadow status.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+🍀
+</div>
+
+<strong>
+Lucky Mankey
+</strong>
+
+<p>
+Lucky status from trading.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+💯
+</div>
+
+<strong>
+100% Mankey
+</strong>
+
+<p>
+15/15/15 perfect IVs.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+📏
+</div>
+
+<strong>
+XXL Mankey
+</strong>
+
+<p>
+Extra-large size.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+🔹
+</div>
+
+<strong>
+XXS Mankey
+</strong>
+
+<p>
+Extra-small size.
+</p>
+
+</div>
+
+
+<div class="special-card">
+
+<div class="symbol">
+👊
+</div>
+
+<strong>
+Regular Mankey
+</strong>
+
+<p>
+Standard Fighting-type form.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section"
+         id="comparison">
+
+<div class="section-heading">
+
+<h2>
+Mankey Variant Comparison
+</h2>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Variant
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Special Property
+</th>
+
+<th>
+Can Evolve?
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Regular Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Standard
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shiny Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Alternate coloration
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shadow Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Shadow mechanics
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Purified Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Purified status
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Lucky Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Lucky trade status
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+100% Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+15/15/15 IVs
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+XXL Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Large size
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+XXS Mankey
+</td>
+
+<td>
+Fighting
+</td>
+
+<td>
+Small size
+</td>
+
+<td>
+Yes
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section"
+         id="faq">
+
+<div class="section-heading">
+
+<h2>
+Mankey FAQ
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+What type is Mankey?
+</summary>
+
+<p>
+Mankey is a pure Fighting-type Pokémon.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Mankey's max CP?
+</summary>
+
+<p>
+Mankey reaches 1,317 CP at Level 50 with perfect IVs.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shiny Mankey available?
+</summary>
+
+<p>
+Yes. Shiny Mankey is available in Pokémon GO.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shadow Mankey available?
+</summary>
+
+<p>
+Shadow Mankey is part of Pokémon GO's Shadow Pokémon
+system and its availability can depend on current
+Team GO Rocket content.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Mankey weak to?
+</summary>
+
+<p>
+Mankey is weak to Flying, Psychic and Fairy-type attacks.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What does Mankey evolve into?
+</summary>
+
+<p>
+Mankey evolves into Primeape using 50 Mankey Candy.
+Primeape can subsequently evolve into Annihilape after
+meeting the required evolution condition.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a 100% Mankey?
+</summary>
+
+<p>
+A 100% Mankey has perfect 15/15/15 Attack, Defense
+and HP IVs.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Lucky Mankey?
+</summary>
+
+<p>
+Lucky Mankey is a Mankey that has obtained Lucky status
+through trading.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXL Mankey?
+</summary>
+
+<p>
+XXL Mankey is an extra-large size variant. Its size
+does not automatically indicate perfect IVs.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXS Mankey?
+</summary>
+
+<p>
+XXS Mankey is an extra-small size variant. Its size is
+separate from its IV percentage.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should I evolve a 100% Mankey?
+</summary>
+
+<p>
+For most collectors, a perfect Mankey is worth keeping.
+Whether you evolve it immediately depends on the value
+you place on Mankey itself compared with Primeape and
+Annihilape.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Mankey good for raids?
+</summary>
+
+<p>
+Mankey itself has limited raid value because of its low
+maximum CP. Its evolutionary family is generally more
+interesting for battle investment.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Shiny Mankey evolve?
+</summary>
+
+<p>
+Yes. Shiny Mankey can evolve while retaining its Shiny
+status.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Shadow Mankey evolve?
+</summary>
+
+<p>
+Shadow Mankey can be evolved when the relevant evolution
+is available, while retaining its Shadow status.
+</p>
+
+</details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon GO mechanics, move availability,
+encounter methods, events and other game data can change
+over time. Always verify current in-game information
+before making investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This page is intended as an independent
+informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+<h3>
+Mankey Guide
+</h3>
+
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Mankey Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+Stats & Max CP
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses & Resistances
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Best Moves
+</a>
+</li>
+
+<li>
+<a href="#evolution">
+Evolution
+</a>
+</li>
+
+<li>
+<a href="#iv">
+IV Guide
+</a>
+</li>
+
+<li>
+<a href="#hundo">
+100% Mankey
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Mankey
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Mankey
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Mankey
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Mankey
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+XXL Mankey
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+XXS Mankey
+</a>
+</li>
+
+<li>
+<a href="#pvp">
+PvP Guide
+</a>
+</li>
+
+<li>
+<a href="#availability">
+Availability
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+
+<a class="related-link"
+   href="/pokemon/primeape.html">
+
+Primeape Guide →
+</a>
+
+
+<a class="related-link"
+   href="/pokemon/annihilape.html">
+
+Annihilape Guide →
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-types/fighting.html">
+
+Fighting Type Hub →
+</a>
+
+
+<a class="related-link"
+   href="/pokemon-generations/gen-1.html">
+
+Gen 1 Pokémon →
+</a>
+
+
+<a class="related-link"
+   href="/pokedex.html">
+
+Pokémon Database →
+</a>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Mankey Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Fighting
+</p>
+
+<p>
+<strong>Generation:</strong>
+1
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#056
+</p>
+
+<p>
+<strong>Max CP:</strong>
+1,317
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Primeape
+</p>
+
+<p>
+<strong>Final Evolution:</strong>
+Annihilape
+</p>
+
+<p>
+<strong>Buddy Distance:</strong>
+3 km
+</p>
+
+</div>
+
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
+```

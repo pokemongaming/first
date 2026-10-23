@@ -1,0 +1,4618 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Carvanha Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Carvanha Pokémon GO guide covering regular, Shiny, Shadow, Purified, Lucky, 100% IV, XXL and XXS Carvanha, including stats, Max CP, typing, weaknesses, resistances, moves, evolution, PvP, PvE and availability.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/carvanha.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080b12;
+            --bg-soft: #0e131d;
+
+            --surface: #121925;
+            --surface-2: #171f2d;
+            --surface-3: #202a3b;
+
+            --border: #293448;
+
+            --text: #f4f6fb;
+            --muted: #aab3c2;
+
+            --accent: #5bbcff;
+            --accent-2: #338fe0;
+
+            --water: #4d9fff;
+            --dark: #665476;
+
+            --shiny: #ffe27a;
+            --shadow: #8f75a9;
+            --lucky: #ffb347;
+            --success: #62d89a;
+            --danger: #ff6f7d;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(91,188,255,.12),
+                    transparent 32%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,11,18,.94);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 35px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(77,159,255,.18),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 15% 90%,
+                    rgba(102,84,118,.12),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #111827,
+                    #0c111b
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.25);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding: 6px 11px;
+
+            border:
+                1px solid rgba(91,188,255,.25);
+
+            border-radius: 999px;
+
+            color: var(--accent);
+
+            background:
+                rgba(91,188,255,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.3rem,5vw,4.5rem);
+
+            letter-spacing: -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c2cad7;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .water-tag {
+            color: var(--water);
+        }
+
+        .dark-tag {
+            color: #b99bd4;
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(77,159,255,.22),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.4)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           MAIN LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--accent);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                24px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.45rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(77,159,255,.3);
+
+            background:
+                rgba(77,159,255,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(77,159,255,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--water);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card p {
+            margin-top: 7px;
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,111,125,.25);
+        }
+
+        .resistance {
+            border-color:
+                rgba(98,216,154,.25);
+        }
+
+
+        /* =====================================================
+           MOVE TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+            color: var(--water);
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           FEATURE CARD
+        ===================================================== */
+
+        .feature-card {
+
+            margin-top: 15px;
+
+            padding: 20px;
+
+            border:
+                1px solid rgba(91,188,255,.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(91,188,255,.1),
+                    rgba(255,255,255,.02)
+                );
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .feature-card strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           VARIANT GRID
+        ===================================================== */
+
+        .variant-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .variant-card {
+
+            padding: 20px;
+
+            min-height: 150px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                16px;
+
+            background:
+                var(--surface-2);
+
+            transition:
+                transform .2s ease,
+                border-color .2s ease;
+        }
+
+        .variant-card:hover {
+
+            transform:
+                translateY(-3px);
+
+            border-color:
+                rgba(91,188,255,.45);
+        }
+
+        .variant-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 10px;
+        }
+
+        .variant-card strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+        .variant-card span {
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .shiny-card {
+            border-color:
+                rgba(255,226,122,.25);
+        }
+
+        .shadow-card {
+            border-color:
+                rgba(143,117,169,.3);
+        }
+
+        .lucky-card {
+            border-color:
+                rgba(255,179,71,.3);
+        }
+
+
+        /* =====================================================
+           IV CARDS
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 20px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.5rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           COMPARISON TABLE
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+
+            text-align: left;
+        }
+
+
+        /* =====================================================
+           FORM TREE
+        ===================================================== */
+
+        .form-tree {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+            margin: 20px 0;
+        }
+
+        .form-node {
+
+            padding:
+                16px 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .form-node strong {
+            display: block;
+        }
+
+        .form-node span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+        .form-arrow {
+
+            color: var(--accent);
+
+            font-size: 1.4rem;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8cfda;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           SIZE CARDS
+        ===================================================== */
+
+        .size-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 18px;
+        }
+
+        .size-card {
+
+            padding: 25px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            background:
+                var(--surface-2);
+        }
+
+        .size-card h3 {
+            margin-top: 0;
+        }
+
+        .size-label {
+
+            display: inline-block;
+
+            padding:
+                5px 10px;
+
+            border-radius: 999px;
+
+            font-size: .65rem;
+
+            font-weight: 900;
+
+            letter-spacing: .06em;
+
+            margin-bottom: 10px;
+        }
+
+        .xxl {
+            background:
+                rgba(255,179,71,.12);
+
+            color: var(--lucky);
+        }
+
+        .xxs {
+            background:
+                rgba(91,188,255,.12);
+
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding:
+                8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06090e;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .variant-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+
+                padding: 20px;
+            }
+
+            .quick-stats {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .iv-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .variant-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .size-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .rating-row {
+
+                grid-template-columns: 1fr;
+
+                gap: 6px;
+            }
+
+            .rating-value {
+
+                text-align: left;
+            }
+
+            .main-nav {
+
+                display: none;
+            }
+
+            .form-tree {
+
+                flex-direction: column;
+            }
+
+            .form-arrow {
+
+                transform:
+                    rotate(90deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/water.html">
+        Water Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Carvanha
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                HOENN • #318
+            </span>
+
+            <h1>
+                Carvanha
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Carvanha is a Water/Dark-type Pokémon from
+                Generation 3. In Pokémon GO, it is primarily
+                collected for its evolution into Sharpedo,
+                while Shiny, Shadow, Lucky and size variants
+                give collectors additional reasons to hunt
+                for different specimens.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag water-tag">
+                    Water
+                </span>
+
+                <span class="tag dark-tag">
+                    Dark
+                </span>
+
+                <span class="tag">
+                    #318
+                </span>
+
+                <span class="tag">
+                    Gen 3
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves to Sharpedo
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace this placeholder with your own properly licensed image -->
+
+            <div class="pokemon-placeholder">
+                🦈
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            171
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            39
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            128
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~1,051
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<div class="main-content">
+
+
+<!-- =========================================================
+     01 OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Carvanha Overview
+        </h2>
+
+        <p>
+
+            Carvanha is a Water/Dark-type Pokémon introduced
+            in Generation 3 and originally discovered in the
+            Hoenn region. It evolves into Sharpedo after
+            collecting enough Carvanha Candy.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>Pokédex</span>
+            <strong>#318</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Generation</span>
+            <strong>Gen 3</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Region</span>
+            <strong>Hoenn</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Type</span>
+            <strong>Water / Dark</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Attack</span>
+            <strong>171</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Defense</span>
+            <strong>39</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>128</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Max CP</span>
+            <strong>~1,051</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     02 TYPE
+========================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Carvanha Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌊
+        </div>
+
+        <div>
+
+            <strong>
+                Water / Dark
+            </strong>
+
+            <span>
+                Dual Type Pokémon
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Carvanha's Typing Matters
+    </h3>
+
+    <p>
+
+        Carvanha's Water/Dark typing gives it a combination
+        of offensive strengths and defensive weaknesses.
+        The Water typing makes it useful against Fire, Ground
+        and Rock targets, while Dark provides useful offensive
+        coverage against Psychic and Ghost opponents.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     03 WEAKNESSES
+========================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • TYPE MATCHUPS
+        </span>
+
+        <h2>
+            Carvanha Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks deal super-effective
+                damage to Carvanha.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Grass attacks exploit Carvanha's Water typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐞
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks are effective against its
+                Dark typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks can exploit Carvanha's
+                Dark typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks are also super effective.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Carvanha resists Fire-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water attacks are resisted by Carvanha.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧊
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Carvanha resists Ice-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Its Dark typing gives it useful Ghost resistance.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Carvanha also resists Dark-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🧠
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Dark typing makes Carvanha especially resistant
+                to Psychic-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 STATS
+========================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Carvanha Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Carvanha has a relatively strong Attack stat for
+            its species but extremely low Defense. This makes
+            it much more fragile than many Pokémon of similar
+            CP.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>171</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>39</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>128</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~1,051</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Pokémon GO CP depends on the Pokémon's underlying
+            stats, level and individual values. A high CP does
+            not automatically mean that a Pokémon has perfect
+            IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     05 MOVES
+========================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVES
+        </span>
+
+        <h2>
+            Carvanha Best Moves
+        </h2>
+
+        <p>
+
+            Carvanha's moveset should be considered primarily
+            in the context of its evolution and the specific
+            Pokémon GO format in which you intend to use it.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            Carvanha Battle Recommendation
+        </strong>
+
+        <p>
+
+            For most players, evolving a strong Carvanha into
+            Sharpedo is more meaningful than heavily investing
+            Stardust into Carvanha itself.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Snarl
+                    </td>
+
+                    <td class="move-type">
+                        Dark
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Dark damage / energy
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Waterfall
+                    </td>
+
+                    <td class="move-type">
+                        Water
+                    </td>
+
+                    <td>
+                        Fast
+                    </td>
+
+                    <td>
+                        Water damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Crunch
+                    </td>
+
+                    <td class="move-type">
+                        Dark
+                    </td>
+
+                    <td>
+                        Charged
+                    </td>
+
+                    <td>
+                        Dark coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move availability can change through Pokémon GO updates
+        and events. Verify the current in-game moveset before
+        publishing a time-sensitive moves recommendation.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     06 EVOLUTION
+========================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • EVOLUTION
+        </span>
+
+        <h2>
+            Carvanha Evolution
+        </h2>
+
+        <p>
+
+            Carvanha evolves directly into Sharpedo. There is
+            no additional evolution after Sharpedo in the
+            standard Carvanha family.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Carvanha
+            </strong>
+
+            <span>
+                #318
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Sharpedo
+            </strong>
+
+            <span>
+                #319
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Carvanha Candy
+    </h3>
+
+    <p>
+
+        Carvanha requires Candy to evolve into Sharpedo.
+        If you are planning an evolution project, consider
+        saving high-IV, Shiny, Shadow or Lucky specimens before
+        spending your Candy.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check IVs before evolving.
+        </li>
+
+        <li>
+            Keep a Shiny Carvanha if you collect Shiny families.
+        </li>
+
+        <li>
+            Compare Shadow and regular specimens before purification.
+        </li>
+
+        <li>
+            Save strong candidates for Sharpedo.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     07 SPECIAL VARIANTS
+========================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • SPECIAL VARIANTS
+        </span>
+
+        <h2>
+            Carvanha Special Forms & Variants
+        </h2>
+
+        <p>
+
+            Carvanha can be encountered in several collectible
+            variants. Some variants affect appearance or
+            acquisition mechanics, while others describe IV,
+            size or trade characteristics.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+
+        <!-- REGULAR -->
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🦈
+            </div>
+
+            <strong>
+                Regular Carvanha
+            </strong>
+
+            <span>
+                Standard Water/Dark form.
+            </span>
+
+        </div>
+
+
+        <!-- SHINY -->
+
+        <div class="variant-card shiny-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Carvanha
+            </strong>
+
+            <span>
+                Alternate-color variant available through
+                eligible encounters.
+            </span>
+
+        </div>
+
+
+        <!-- SHADOW -->
+
+        <div class="variant-card shadow-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Carvanha
+            </strong>
+
+            <span>
+                Shadow Pokémon with the characteristic
+                Shadow battle mechanics.
+            </span>
+
+        </div>
+
+
+        <!-- PURIFIED -->
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💎
+            </div>
+
+            <strong>
+                Purified Carvanha
+            </strong>
+
+            <span>
+                A Carvanha purified from Shadow status.
+            </span>
+
+        </div>
+
+
+        <!-- LUCKY -->
+
+        <div class="variant-card lucky-card">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Carvanha
+            </strong>
+
+            <span>
+                Trade-related variant with Lucky Pokémon
+                characteristics.
+            </span>
+
+        </div>
+
+
+        <!-- 100% -->
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <strong>
+                100% Carvanha
+            </strong>
+
+            <span>
+                Perfect 15/15/15 IV combination.
+            </span>
+
+        </div>
+
+
+        <!-- XXL -->
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL Carvanha
+            </strong>
+
+            <span>
+                Extra-large size category.
+            </span>
+
+        </div>
+
+
+        <!-- XXS -->
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                📐
+            </div>
+
+            <strong>
+                XXS Carvanha
+            </strong>
+
+            <span>
+                Extra-small size category.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     08 SHINY
+========================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • SHINY
+        </span>
+
+        <h2>
+            Shiny Carvanha
+        </h2>
+
+        <p>
+
+            Shiny Carvanha has an alternate coloration from
+            the standard species. Shiny encounters are generally
+            sought after by collectors and can also be evolved
+            into Shiny Sharpedo.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            ✨ Shiny Carvanha
+        </strong>
+
+        <p>
+
+            If you find a Shiny Carvanha with good IVs, consider
+            whether you want to keep it as a collection Pokémon
+            or evolve it into Shiny Sharpedo.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny Carvanha Checklist
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Confirm the Shiny sparkle before transferring.
+        </li>
+
+        <li>
+            Check IVs before evolving.
+        </li>
+
+        <li>
+            Consider keeping one unevolved for your collection.
+        </li>
+
+        <li>
+            A Shiny Carvanha can be evolved into Shiny Sharpedo.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     09 SHADOW
+========================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Carvanha
+        </h2>
+
+        <p>
+
+            Shadow Carvanha is the Shadow variant of Carvanha.
+            Shadow Pokémon have a different battle profile from
+            their regular counterparts and require additional
+            consideration before investing resources.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            🌑 Shadow Carvanha
+        </strong>
+
+        <p>
+
+            Shadow Carvanha should be evaluated independently
+            from regular Carvanha because Shadow mechanics can
+            change its offensive and defensive performance.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Regular Carvanha
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Carvanha
+                    </td>
+
+                    <td>
+                        Carvanha
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purification
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Possible when eligible
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Investment
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        More resource-sensitive
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Carvanha IV Guide
+    </h3>
+
+    <p>
+
+        A Shadow Pokémon does not need to have perfect IVs to
+        be useful to a collector. If your primary goal is
+        collecting, consider the combination of IVs, rarity,
+        appraisal and personal preference rather than IVs alone.
+
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Carvanha?
+    </h3>
+
+    <p>
+
+        Do not automatically purify a Shadow Carvanha simply
+        because purification can change its appraisal or
+        remove the Shadow status. Compare the purpose of the
+        Pokémon first.
+
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check its IVs.
+        </li>
+
+        <li>
+            Consider its rarity to you.
+        </li>
+
+        <li>
+            Check whether you want a Shadow or Purified collection entry.
+        </li>
+
+        <li>
+            Compare the future evolution you want to build.
+        </li>
+
+    </ul>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration note:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have Frustration. The ability
+            to replace Frustration depends on the current
+            Pokémon GO rules and Rocket-related events.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     10 PURIFIED
+========================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Carvanha
+        </h2>
+
+        <p>
+
+            Purified Carvanha is created by purifying an eligible
+            Shadow Carvanha. Purification changes the Pokémon's
+            status and can affect its appraisal and resource
+            requirements.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            💎 Purified Carvanha
+        </strong>
+
+        <p>
+
+            Purified Carvanha can be useful for collectors who
+            want to complete different Shadow and Purified
+            categories in their Pokémon collection.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        May be present
+                    </td>
+
+                    <td>
+                        Removed through purification
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        Shadow collection
+                    </td>
+
+                    <td>
+                        Purified collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     11 LUCKY
+========================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Carvanha
+        </h2>
+
+        <p>
+
+            Lucky Carvanha is a special trade-related version
+            of Carvanha. Lucky Pokémon have reduced Stardust
+            requirements for power-ups compared with normal
+            Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            🍀 Lucky Carvanha
+        </strong>
+
+        <p>
+
+            A Lucky Carvanha can be particularly appealing to
+            collectors who want a Lucky entry in the Carvanha
+            family or who intend to evolve it into Lucky Sharpedo.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Carvanha?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Lucky Pokémon require less Stardust for power-ups.
+        </li>
+
+        <li>
+            Lucky status is a permanent collection attribute.
+        </li>
+
+        <li>
+            A Lucky Carvanha can be evolved into Lucky Sharpedo.
+        </li>
+
+        <li>
+            Check IVs after receiving a traded Pokémon.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     12 100% IV
+========================================================= -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • PERFECT IV
+        </span>
+
+        <h2>
+            100% IV Carvanha
+        </h2>
+
+        <p>
+
+            A 100% Carvanha has perfect Individual Values:
+            15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            💯 Perfect Carvanha
+        </strong>
+
+        <p>
+
+            A perfect Carvanha is primarily valuable as a
+            collection specimen or as a candidate for evolving
+            into a perfect Sharpedo.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a 100% Carvanha?
+    </h3>
+
+    <p>
+
+        Yes, if you enjoy collecting perfect-IV Pokémon.
+        Before transferring a high-IV Carvanha, always check
+        whether it has additional attributes such as Shiny,
+        Shadow, Lucky or a special size.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     13 XXL / XXS
+========================================================= -->
+
+<section class="section" id="sizes">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • SIZE VARIANTS
+        </span>
+
+        <h2>
+            XXL & XXS Carvanha
+        </h2>
+
+        <p>
+
+            Pokémon GO can record size-related categories such
+            as XXL and XXS. These characteristics are separate
+            from IVs and do not mean that the Pokémon has better
+            Attack, Defense or HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+
+        <div class="size-card">
+
+            <span class="size-label xxl">
+                XXL
+            </span>
+
+            <h3>
+                XXL Carvanha
+            </h3>
+
+            <p>
+
+                XXL Carvanha belongs to the extra-large size
+                category. Size can be an interesting collection
+                goal, especially for players working on
+                size-related medals and showcases.
+
+            </p>
+
+            <ul class="checklist">
+
+                <li>
+                    Extra-large size category.
+                </li>
+
+                <li>
+                    Size is separate from IVs.
+                </li>
+
+                <li>
+                    Can be Shiny, Lucky or other eligible variants.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="size-card">
+
+            <span class="size-label xxs">
+                XXS
+            </span>
+
+            <h3>
+                XXS Carvanha
+            </h3>
+
+            <p>
+
+                XXS Carvanha belongs to the extra-small size
+                category. These Pokémon can be especially
+                interesting to collectors who hunt for unusual
+                size combinations.
+
+            </p>
+
+            <ul class="checklist">
+
+                <li>
+                    Extra-small size category.
+                </li>
+
+                <li>
+                    Size does not determine IV quality.
+                </li>
+
+                <li>
+                    Can be combined with other eligible attributes.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            XXS and XXL describe size categories rather than
+            individual IV quality. A small Pokémon can still
+            have perfect IVs, and a large Pokémon can have
+            poor IVs.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     14 PVE
+========================================================= -->
+
+<section class="section" id="pve">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • PVE
+        </span>
+
+        <h2>
+            Carvanha for Raids & PvE
+        </h2>
+
+        <p>
+
+            Carvanha is generally not a priority Pokémon for
+            high-level raid investment. Its low Defense makes
+            it much less durable than many developed raid
+            attackers.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:45%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            4.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:20%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            2/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:85%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.5/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Carvanha?
+    </h3>
+
+    <p>
+
+        For most players, Carvanha is better treated as an
+        evolution and collection Pokémon rather than a major
+        Stardust investment. If you enjoy unusual builds,
+        Great League experiments or collecting special variants,
+        individual circumstances can be different.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     15 PVP
+========================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • PVP
+        </span>
+
+        <h2>
+            Carvanha PvP Guide
+        </h2>
+
+        <p>
+
+            Carvanha's low Defense makes it a fragile Pokémon.
+            This limits its general PvP reliability compared
+            with bulkier Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Carvanha can be experimented with in low-CP formats,
+        but its low defensive stat means it can struggle to
+        survive sustained damage. Its performance depends
+        heavily on moves, shields and matchup selection.
+
+    </p>
+
+
+    <h3>
+        Ultra League & Master League
+    </h3>
+
+    <p>
+
+        Carvanha is generally not a natural choice for the
+        higher CP leagues because its overall stat profile
+        does not scale into those formats as effectively as
+        many dedicated PvP Pokémon.
+
+    </p>
+
+
+    <div class="editorial-note">
+
+        PvP rankings change as moves, balance updates and
+        available Pokémon change. Always verify current league
+        performance before publishing a ranking.
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     16 COMPARISON
+========================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • COMPARISON
+        </span>
+
+        <h2>
+            Carvanha Variant Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Collection Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Collector dependent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Lucky trade status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Extra-large size
+                    </td>
+
+                    <td>
+                        Collector dependent
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Water / Dark
+                    </td>
+
+                    <td>
+                        Extra-small size
+                    </td>
+
+                    <td>
+                        Collector dependent
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     17 INVESTMENT
+========================================================= -->
+
+<section class="section" id="investment">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • INVESTMENT
+        </span>
+
+        <h2>
+            Should You Invest in Carvanha?
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💰
+            </div>
+
+            <strong>
+                Casual Players
+            </strong>
+
+            <p>
+
+                Focus on obtaining Candy and evolving a strong
+                specimen rather than heavily powering up Carvanha.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ✨
+            </div>
+
+            <strong>
+                Collectors
+            </strong>
+
+            <p>
+
+                Shiny, Shadow, Lucky, XXL, XXS and perfect-IV
+                Carvanha can all provide separate collection goals.
+
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Battlers
+            </strong>
+
+            <p>
+
+                Consider evolving strong specimens into Sharpedo
+                before committing significant resources.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     18 CANDY
+========================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • RESOURCES
+        </span>
+
+        <h2>
+            Carvanha Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Carvanha Candy is primarily useful for evolving
+            Carvanha into Sharpedo and powering up eligible
+            Pokémon. Candy XL becomes relevant for higher-level
+            investment.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save enough Carvanha Candy for evolution.
+        </li>
+
+        <li>
+            Check IVs before evolving.
+        </li>
+
+        <li>
+            Save Shiny specimens before transferring.
+        </li>
+
+        <li>
+            Keep unusual XXL and XXS specimens if you collect sizes.
+        </li>
+
+        <li>
+            Check Shadow specimens before purification.
+        </li>
+
+        <li>
+            Consider Lucky Pokémon when planning Stardust investment.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =========================================================
+     19 AVAILABILITY
+========================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • AVAILABILITY
+        </span>
+
+        <h2>
+            Carvanha Availability
+        </h2>
+
+        <p>
+
+            Carvanha availability can change depending on
+            Pokémon GO events, seasonal rotations, research,
+            wild encounters and other encounter methods.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-card">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event schedule and
+            encounter pool before publishing a claim that
+            Carvanha is currently available through a specific
+            method.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical availability should be separated from
+        current availability so older events do not appear
+        to be permanent encounter methods.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     20 HUNTING GUIDE
+========================================================= -->
+
+<section class="section" id="guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • INDIVIDUAL GUIDE
+        </span>
+
+        <h2>
+            Carvanha Individual Pokémon Guide
+        </h2>
+
+        <p>
+
+            If Carvanha is part of your collection project,
+            checking each specimen before transferring can
+            prevent accidentally losing a valuable variant.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Before Transferring Carvanha
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check whether it is Shiny.
+        </li>
+
+        <li>
+            Check whether it is Shadow.
+        </li>
+
+        <li>
+            Check whether it is Lucky.
+        </li>
+
+        <li>
+            Check its IVs.
+        </li>
+
+        <li>
+            Check whether it is XXL or XXS.
+        </li>
+
+        <li>
+            Check its CP and appraisal.
+        </li>
+
+        <li>
+            Consider whether you need a specimen for evolving into Sharpedo.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Best Carvanha to Keep
+    </h3>
+
+    <p>
+
+        There is no single "best" Carvanha for every player.
+        A collector may value a Shiny, Lucky, Shadow, XXL or
+        XXS specimen more highly than a normal high-IV Pokémon.
+        A battler may instead prioritize IVs and the intended
+        evolution.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     21 FAQ
+========================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • FAQ
+        </span>
+
+        <h2>
+            Carvanha FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Carvanha?
+        </summary>
+
+        <p>
+
+            Carvanha is a Water/Dark-type Pokémon.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Carvanha weak to?
+        </summary>
+
+        <p>
+
+            Carvanha is vulnerable to Electric, Grass, Fighting,
+            Bug and Fairy-type attacks.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Carvanha evolve?
+        </summary>
+
+        <p>
+
+            Yes. Carvanha evolves into Sharpedo.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Carvanha available?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Carvanha is available through eligible
+            Pokémon GO encounters.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Carvanha available?
+        </summary>
+
+        <p>
+
+            Shadow Carvanha can be available through Pokémon GO
+            Shadow and Team GO Rocket encounter rotations when
+            it is included in the current game pool.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Carvanha?
+        </summary>
+
+        <p>
+
+            A 100% Carvanha has perfect IVs: 15 Attack,
+            15 Defense and 15 HP.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Carvanha?
+        </summary>
+
+        <p>
+
+            Lucky Carvanha is a Lucky Pokémon obtained through
+            trading. Lucky Pokémon have reduced Stardust
+            requirements for power-ups.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Carvanha?
+        </summary>
+
+        <p>
+
+            XXL Carvanha belongs to the extra-large Pokémon
+            size category.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Carvanha?
+        </summary>
+
+        <p>
+
+            XXS Carvanha belongs to the extra-small Pokémon
+            size category.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Carvanha good for raids?
+        </summary>
+
+        <p>
+
+            Carvanha is generally not a major raid investment
+            priority because of its low defensive stats.
+            Its evolution, Sharpedo, is usually more relevant
+            when evaluating the family for battle purposes.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I evolve my 100% Carvanha?
+        </summary>
+
+        <p>
+
+            If you value the perfect-IV evolution family,
+            evolving a 100% Carvanha into a perfect Sharpedo
+            can be a good collection project.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Should I purify Shadow Carvanha?
+        </summary>
+
+        <p>
+
+            Not automatically. Consider the Shadow status,
+            IVs, collection goals and the Pokémon's intended
+            future use before purifying it.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Carvanha evolve into Shiny Sharpedo?
+        </summary>
+
+        <p>
+
+            Yes. Shiny Carvanha retains its Shiny status when
+            evolved.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Lucky Carvanha evolve into Lucky Sharpedo?
+        </summary>
+
+        <p>
+
+            Yes. Lucky status is retained when the Pokémon
+            evolves.
+
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Are XXL and XXS Carvanha better than normal Carvanha?
+        </summary>
+
+        <p>
+
+            Not automatically. XXL and XXS describe size
+            categories and should not be confused with perfect
+            IVs or superior battle statistics.
+
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =========================================================
+     EDITORIAL
+========================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics, moves,
+            encounter methods, event rotations, forms and
+            availability can change over time. Verify current
+            in-game information before making investment
+            decisions.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Carvanha Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#variants">
+                    All Variants
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Carvanha
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Carvanha
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Carvanha
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Carvanha
+                </a>
+            </li>
+
+            <li>
+                <a href="#perfect">
+                    100% Carvanha
+                </a>
+            </li>
+
+            <li>
+                <a href="#sizes">
+                    XXL & XXS
+                </a>
+            </li>
+
+            <li>
+                <a href="#pve">
+                    PvE
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#guide">
+                    Individual Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/sharpedo.html">
+
+            Sharpedo Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/water.html">
+
+            Water Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/dark.html">
+
+            Dark Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/kyogre.html">
+
+            Kyogre Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-3.html">
+
+            Gen 3 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Carvanha Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+            Water / Dark
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+            3
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+            #318
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution:
+            </strong>
+            Sharpedo
+        </p>
+
+
+        <p>
+            <strong>
+                Shiny:
+            </strong>
+            Available
+        </p>
+
+
+        <p>
+            <strong>
+                Variants:
+            </strong>
+            Shadow, Purified, Lucky, XXL, XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

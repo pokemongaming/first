@@ -1,0 +1,4746 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Misdreavous Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & Evolution
+    </title>
+
+    <meta name="description"
+          content="Complete Misdreavous Pokémon GO guide covering stats, max CP, Ghost typing, weaknesses, resistances, best moves, PvP, raids, shiny, shadow, purified, lucky, 100% IV, XXL, XXS and evolution into Mismagius.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/misdreavous.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #080910;
+            --bg-soft: #0e101a;
+            --surface: #121522;
+            --surface-2: #181b2a;
+            --surface-3: #22263a;
+
+            --border: #2b3045;
+
+            --text: #f5f5fb;
+            --muted: #abb0c2;
+
+            --accent: #b68cff;
+            --accent-2: #8b5cf6;
+
+            --ghost: #9b7cff;
+            --dark: #7058a8;
+            --fairy: #e99bbd;
+
+            --danger: #ff7285;
+            --success: #61d79b;
+            --gold: #f2c45e;
+            --ice: #76dce0;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 0%,
+                    rgba(182,140,255,.13),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(112,88,168,.08),
+                    transparent 28%
+                ),
+
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+
+            background:
+                rgba(8,9,16,.94);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+
+        .header-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            min-height:
+                68px;
+
+            padding:
+                0 20px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+        }
+
+
+        .logo {
+
+            font-size:
+                1.15rem;
+
+            font-weight:
+                950;
+
+            letter-spacing:
+                -.03em;
+        }
+
+
+        .logo span {
+            color:
+                var(--accent);
+        }
+
+
+        .main-nav {
+
+            display:
+                flex;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+
+        .main-nav a {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .8rem;
+
+            font-weight:
+                750;
+        }
+
+
+        .main-nav a:hover {
+            color:
+                white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-bottom:
+                25px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+        }
+
+
+        .breadcrumb span {
+            opacity:
+                .5;
+        }
+
+
+        .breadcrumb a:hover {
+            color:
+                white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            padding:
+                34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                26px;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(155,124,255,.20),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 15% 100%,
+                    rgba(112,88,168,.12),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    #151729,
+                    #0b0d16
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.28);
+        }
+
+
+        .hero-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap:
+                30px;
+
+            align-items:
+                center;
+        }
+
+
+        .eyebrow {
+
+            display:
+                inline-flex;
+
+            padding:
+                6px 10px;
+
+            border:
+                1px solid rgba(182,140,255,.25);
+
+            border-radius:
+                999px;
+
+            color:
+                var(--accent);
+
+            background:
+                rgba(182,140,255,.08);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                14px;
+        }
+
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing:
+                -.055em;
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .hero-subtitle {
+
+            max-width:
+                700px;
+
+            font-size:
+                1rem;
+
+            color:
+                #c5c9d7;
+        }
+
+
+        .hero-tags {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                20px;
+        }
+
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size:
+                .7rem;
+
+            font-weight:
+                800;
+        }
+
+
+        .ghost-tag {
+            color:
+                var(--ghost);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height:
+                300px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+
+        .pokemon-placeholder {
+
+            width:
+                260px;
+
+            height:
+                260px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(155,124,255,.22),
+                    transparent 65%
+                );
+
+            font-size:
+                7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 30px rgba(0,0,0,.45)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                18px;
+        }
+
+
+        .quick-stat {
+
+            padding:
+                18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+
+        .quick-stat strong {
+
+            display:
+                block;
+
+            font-size:
+                1.25rem;
+        }
+
+
+        .quick-stat span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                750;
+        }
+
+
+        /* =====================================================
+           CONTENT LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap:
+                20px;
+
+            margin-top:
+                20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom:
+                20px;
+
+            padding:
+                28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+
+        .section-heading {
+
+            margin-bottom:
+                20px;
+        }
+
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom:
+                9px;
+        }
+
+
+        .section h3 {
+
+            margin:
+                24px 0 10px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        .section-number {
+
+            display:
+                block;
+
+            margin-bottom:
+                6px;
+
+            color:
+                var(--accent);
+
+            font-size:
+                .68rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                10px;
+        }
+
+
+        .stat-card {
+
+            padding:
+                17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+
+        .stat-card span {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .64rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                .04em;
+        }
+
+
+        .stat-card strong {
+
+            display:
+                block;
+
+            margin-top:
+                4px;
+
+            font-size:
+                1.45rem;
+        }
+
+
+        /* =====================================================
+           TYPE
+        ===================================================== */
+
+        .type-box {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+
+            padding:
+                18px;
+
+            border:
+                1px solid rgba(155,124,255,.30);
+
+            background:
+                rgba(155,124,255,.07);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+
+        .type-icon {
+
+            width:
+                50px;
+
+            height:
+                50px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(155,124,255,.14);
+
+            font-size:
+                1.5rem;
+        }
+
+
+        .type-box strong {
+            display:
+                block;
+        }
+
+
+        .type-box span {
+
+            color:
+                var(--ghost);
+
+            font-size:
+                .75rem;
+
+            font-weight:
+                850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                15px;
+        }
+
+
+        .effect-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+
+        .effect-icon {
+
+            font-size:
+                1.5rem;
+
+            margin-bottom:
+                6px;
+        }
+
+
+        .effect-card strong {
+            display:
+                block;
+        }
+
+
+        .weakness {
+            border-color:
+                rgba(255,114,133,.28);
+        }
+
+
+        .resistance {
+            border-color:
+                rgba(97,215,155,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x:
+                auto;
+        }
+
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align:
+                left;
+
+            font-size:
+                .76rem;
+        }
+
+
+        .data-table th {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .65rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .05em;
+        }
+
+
+        .move-name {
+            font-weight:
+                850;
+        }
+
+
+        .move-type {
+
+            color:
+                var(--ghost);
+
+            font-weight:
+                800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top:
+                15px;
+
+            padding:
+                18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(155,124,255,.11),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(155,124,255,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+
+        .best-move strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap:
+                15px;
+
+            align-items:
+                center;
+
+            padding:
+                12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+
+        .rating-row:last-child {
+            border-bottom:
+                0;
+        }
+
+
+        .rating-bar {
+
+            height:
+                8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius:
+                99px;
+
+            overflow:
+                hidden;
+        }
+
+
+        .rating-fill {
+
+            height:
+                100%;
+
+            width:
+                var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius:
+                inherit;
+        }
+
+
+        .rating-value {
+
+            text-align:
+                right;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                8px;
+
+            margin-top:
+                15px;
+        }
+
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                9px;
+
+            color:
+                #c8ccda;
+
+            font-size:
+                .78rem;
+        }
+
+
+        .checklist li::before {
+
+            content:
+                "✓";
+
+            margin-right:
+                8px;
+
+            color:
+                var(--success);
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           FORM TREE
+        ===================================================== */
+
+        .form-tree {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                14px;
+
+            flex-wrap:
+                wrap;
+
+            margin:
+                20px 0;
+        }
+
+
+        .form-node {
+
+            padding:
+                16px 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align:
+                center;
+        }
+
+
+        .form-node strong {
+            display:
+                block;
+        }
+
+
+        .form-node span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        .form-arrow {
+
+            color:
+                var(--accent);
+
+            font-size:
+                1.4rem;
+
+            font-weight:
+                900;
+        }
+
+
+        /* =====================================================
+           SPECIAL FORM GRID
+        ===================================================== */
+
+        .special-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap:
+                15px;
+        }
+
+
+        .special-card {
+
+            padding:
+                22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+
+        .special-card .special-icon {
+
+            font-size:
+                2rem;
+
+            margin-bottom:
+                8px;
+        }
+
+
+        .special-card strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+        }
+
+
+        .special-card small {
+            color:
+                var(--muted);
+
+            line-height:
+                1.6;
+        }
+
+
+        /* =====================================================
+           IV CARDS
+        ===================================================== */
+
+        .iv-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                15px;
+        }
+
+
+        .iv-card {
+
+            padding:
+                20px;
+
+            text-align:
+                center;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+
+        .iv-card strong {
+
+            display:
+                block;
+
+            font-size:
+                1.7rem;
+
+            color:
+                var(--accent);
+        }
+
+
+        .iv-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                .68rem;
+        }
+
+
+        /* =====================================================
+           VARIANT CARD
+        ===================================================== */
+
+        .variant-card {
+
+            padding:
+                25px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,.04),
+                    rgba(155,124,255,.06)
+                );
+
+            margin-top:
+                20px;
+        }
+
+
+        .variant-label {
+
+            display:
+                inline-block;
+
+            padding:
+                5px 9px;
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(155,124,255,.12);
+
+            color:
+                var(--accent);
+
+            font-size:
+                .63rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                .08em;
+
+            margin-bottom:
+                10px;
+        }
+
+
+        .variant-card h3 {
+            margin-top:
+                0;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position:
+                sticky;
+
+            top:
+                88px;
+
+            align-self:
+                start;
+        }
+
+
+        .side-card {
+
+            margin-bottom:
+                15px;
+
+            padding:
+                20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+
+        .side-card h3 {
+
+            margin:
+                0 0 13px;
+
+            font-size:
+                .9rem;
+        }
+
+
+        .side-nav {
+
+            list-style:
+                none;
+
+            display:
+                grid;
+
+            gap:
+                4px;
+        }
+
+
+        .side-nav a {
+
+            display:
+                block;
+
+            padding:
+                8px 10px;
+
+            border-radius:
+                7px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                .72rem;
+
+            font-weight:
+                700;
+        }
+
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color:
+                white;
+        }
+
+
+        .related-link {
+
+            display:
+                block;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color:
+                var(--muted);
+
+            font-size:
+                .75rem;
+        }
+
+
+        .related-link:last-child {
+            border-bottom:
+                0;
+        }
+
+
+        .related-link:hover {
+            color:
+                var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding:
+                15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+
+        details:last-child {
+            border-bottom:
+                0;
+        }
+
+
+        summary {
+
+            cursor:
+                pointer;
+
+            font-weight:
+                850;
+
+            font-size:
+                .82rem;
+        }
+
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size:
+                .78rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL NOTE
+        ===================================================== */
+
+        .editorial-note {
+
+            padding:
+                17px;
+
+            margin-top:
+                20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding:
+                35px 20px;
+
+            background:
+                #06070c;
+        }
+
+
+        .footer-inner {
+
+            max-width:
+                var(--max);
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+        }
+
+
+        footer p {
+
+            margin:
+                0;
+
+            font-size:
+                .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .sidebar {
+                position:
+                    static;
+            }
+
+            .hero-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .hero-pokemon {
+                order:
+                    -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding:
+                    20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .special-grid,
+            .iv-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .rating-row {
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    6px;
+            }
+
+            .rating-value {
+                text-align:
+                    left;
+            }
+
+            .main-nav {
+                display:
+                    none;
+            }
+
+            .form-tree {
+                flex-direction:
+                    column;
+            }
+
+            .form-arrow {
+                transform:
+                    rotate(90deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/ghost.html">
+        Ghost Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Misdreavous
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                GHOST TYPE • SINNOH EVOLUTION
+            </span>
+
+            <h1>
+                Misdreavous
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Misdreavous is a Ghost-type Pokémon from
+                Generation 2. In Pokémon GO, it is known as
+                the Screech Pokémon and can evolve into
+                Mismagius using a Sinnoh Stone and Candy.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag ghost-tag">
+                    Ghost
+                </span>
+
+                <span class="tag">
+                    #200
+                </span>
+
+                <span class="tag">
+                    Gen 2
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your own properly licensed asset -->
+
+            <div class="pokemon-placeholder">
+                👻
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            211
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            179
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            120
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~2,048
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     01 OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01 • OVERVIEW
+        </span>
+
+        <h2>
+            Misdreavous Overview
+        </h2>
+
+        <p>
+
+            Misdreavous is a pure Ghost-type Pokémon
+            originally introduced in Generation 2.
+            It can evolve into Mismagius after using
+            a Sinnoh Stone and Misdreavous Candy.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                POKÉDEX
+            </span>
+
+            <strong>
+                #200
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                GENERATION
+            </span>
+
+            <strong>
+                Gen 2
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                REGION
+            </span>
+
+            <strong>
+                Johto
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                TYPE
+            </span>
+
+            <strong>
+                Ghost
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                211
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                179
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                120
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~2,048
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     02 TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            02 • TYPE
+        </span>
+
+        <h2>
+            Misdreavous Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            👻
+        </div>
+
+        <div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Misdreavous's Typing Matters
+    </h3>
+
+    <p>
+
+        Misdreavous's pure Ghost typing gives it
+        useful interactions against Psychic and
+        Ghost opponents. Its typing also determines
+        the attacks that deal super-effective damage
+        against it.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     03 WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03 • MATCHUPS
+        </span>
+
+        <h2>
+            Misdreavous Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Ghost-type attacks deal super-effective
+                damage to Misdreavous.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Dark-type attacks are also super effective
+                against Misdreavous.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances & Immunities
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Ghost typing gives Misdreavous a strong
+                matchup against Fighting-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐛
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks are resisted by
+                Ghost-type Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Misdreavous resists Poison-type attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     04 STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04 • STATS
+        </span>
+
+        <h2>
+            Misdreavous Attack, Defense & HP
+        </h2>
+
+        <p>
+
+            Misdreavous has a balanced offensive and
+            defensive profile for a mid-stage Pokémon,
+            although its evolved form Mismagius has a
+            significantly higher overall battle ceiling.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                211
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                179
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                120
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~2,048
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+
+            Displayed CP depends on the Pokémon's level
+            and individual values. CP should not be treated
+            as a direct measurement of IV percentage.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     05 MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05 • MOVES
+        </span>
+
+        <h2>
+            Misdreavous Best Moves
+        </h2>
+
+        <p>
+
+            Misdreavous has access to Ghost-oriented
+            attacks and can be evaluated for its available
+            moveset depending on the current Pokémon GO
+            move pool.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Ghost Build
+        </strong>
+
+        <p>
+            Choose the strongest currently available
+            Ghost-focused moveset when building Misdreavous
+            specifically for Ghost-type damage.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Astonish
+                    </td>
+
+                    <td class="move-type">
+                        Ghost
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Ghost Damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Shadow Ball
+                    </td>
+
+                    <td class="move-type">
+                        Ghost
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Ghost Damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dark Pulse
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Dark Coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move pools can change as Pokémon GO updates its
+        move availability. Check the current in-game
+        moveset before publishing time-sensitive advice.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     06 RAID / PVE
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            06 • PVE
+        </span>
+
+        <h2>
+            Misdreavous Raid & PvE Performance
+        </h2>
+
+        <p>
+
+            Misdreavous is generally more valuable as an
+            evolutionary collection target than as a top-tier
+            Legendary-style raid attacker. Players looking
+            for stronger Ghost damage will usually want to
+            evaluate Mismagius and other dedicated Ghost
+            attackers as well.
+
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Ghost Raids
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:55%;"></div>
+
+        </div>
+
+        <span class="rating-value">
+            5.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;"></div>
+
+        </div>
+
+        <span class="rating-value">
+            9/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Evolution Value
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:92%;"></div>
+
+        </div>
+
+        <span class="rating-value">
+            9.2/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Misdreavous?
+    </h3>
+
+    <p>
+
+        For most players, powering up Misdreavous is not
+        a high priority. If you enjoy collection challenges,
+        limited formats or simply want a strong Misdreavous
+        specimen before evolving it, keeping a good IV
+        Pokémon can still be worthwhile.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     07 COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            07 • COUNTERS
+        </span>
+
+        <h2>
+            What Counters Misdreavous?
+        </h2>
+
+        <p>
+
+            Misdreavous is weak to Ghost and Dark-type
+            attacks, making these the primary offensive
+            counter categories.
+
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost Attackers
+            </strong>
+
+            <p>
+                Ghost-type attackers can exploit Misdreavous's
+                Ghost weakness.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark Attackers
+            </strong>
+
+            <p>
+                Dark-type attackers also deal super-effective
+                damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Strong DPS
+            </strong>
+
+            <p>
+                High-damage Ghost and Dark attackers are
+                generally preferred when speed matters.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     08 IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            08 • IV GUIDE
+        </span>
+
+        <h2>
+            Misdreavous IV Guide
+        </h2>
+
+        <p>
+
+            Individual Values add bonus points to Attack,
+            Defense and HP. A 15/15/15 Misdreavous is
+            considered a perfect-IV Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect 100% Misdreavous
+    </h3>
+
+    <p>
+
+        A 15/15/15 Misdreavous is commonly called a
+        100% IV or hundo Misdreavous. It can be a desirable
+        collector's Pokémon and an excellent candidate for
+        evolving into Mismagius.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     09 100% MISDREAVOUS
+===================================================== -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            09 • PERFECT
+        </span>
+
+        <h2>
+            100% IV Misdreavous
+        </h2>
+
+        <p>
+
+            A perfect Misdreavous has 15 Attack, 15 Defense
+            and 15 HP IVs.
+
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <span class="variant-label">
+            100% IV • HUNDO
+        </span>
+
+        <h3>
+            Perfect Misdreavous
+        </h3>
+
+        <p>
+
+            A 100% Misdreavous is a useful collector target.
+            If you intend to evolve it, check its level,
+            moves and your intended use before spending
+            Candy and a Sinnoh Stone.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Attack IV: 15
+        </li>
+
+        <li>
+            Defense IV: 15
+        </li>
+
+        <li>
+            HP IV: 15
+        </li>
+
+        <li>
+            Total IV: 100%
+        </li>
+
+        <li>
+            Can be evolved into Mismagius
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     10 SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            10 • SHINY
+        </span>
+
+        <h2>
+            Shiny Misdreavous
+        </h2>
+
+        <p>
+
+            Shiny Misdreavous is available in Pokémon GO
+            through eligible encounters. Its alternate
+            coloration makes it a popular collection target.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Misdreavous
+            </strong>
+
+            <small>
+
+                Alternate coloration with the same basic
+                species identity and Ghost typing.
+
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🌟
+            </div>
+
+            <strong>
+                Shiny Evolution
+            </strong>
+
+            <small>
+
+                A Shiny Misdreavous can be evolved into
+                Shiny Mismagius when eligible.
+
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Shiny Collector Tip
+        </strong>
+
+        <p>
+
+            Before evolving a Shiny Misdreavous, consider
+            whether you want to keep one in its original
+            form for your collection.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     11 SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            11 • SHADOW
+        </span>
+
+        <h2>
+            Shadow Misdreavous
+        </h2>
+
+        <p>
+
+            Shadow Misdreavous is a Shadow variant that
+            retains its Ghost typing. Shadow Pokémon have
+            different battle characteristics from their
+            standard counterparts.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Form
+            </strong>
+
+            <small>
+                Ghost type remains unchanged.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⚔️
+            </div>
+
+            <strong>
+                Shadow Battle Profile
+            </strong>
+
+            <small>
+                Shadow mechanics increase offensive pressure
+                while reducing defensive durability.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Misdreavous Weaknesses
+    </h3>
+
+    <p>
+
+        Because Shadow status does not change Misdreavous's
+        base typing, its principal type-based weaknesses
+        remain Ghost and Dark.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow Misdreavous & Frustration
+    </h3>
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            Shadow Pokémon can have Frustration as their
+            Charged Attack. The ability to replace Frustration
+            depends on current Pokémon GO events and mechanics.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Misdreavous?
+    </h3>
+
+    <p>
+
+        Do not automatically purify a Shadow Misdreavous.
+        Compare the Shadow form with the purified result
+        first, especially if you are interested in keeping
+        Shadow Pokémon for collection or battle purposes.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     12 PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            12 • PURIFIED
+        </span>
+
+        <h2>
+            Purified Misdreavous
+        </h2>
+
+        <p>
+
+            Purified Misdreavous is created by purifying
+            an eligible Shadow Misdreavous. Purification
+            changes the Pokémon's status and can affect
+            its IVs, level and resource requirements.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                💎
+            </div>
+
+            <strong>
+                Purified Status
+            </strong>
+
+            <small>
+                The Pokémon is no longer Shadow after
+                purification.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ⭐
+            </div>
+
+            <strong>
+                IV Improvement
+            </strong>
+
+            <small>
+                Purification increases each IV by the
+                appropriate amount, subject to the IV cap.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Misdreavous
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                    <th>
+                        Purified
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        Can be present
+                    </td>
+
+                    <td>
+                        Removed through purification
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     13 LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            13 • LUCKY
+        </span>
+
+        <h2>
+            Lucky Misdreavous
+        </h2>
+
+        <p>
+
+            Lucky Misdreavous is obtained through Pokémon
+            trading. Lucky Pokémon have a special background
+            and require less Stardust to power up.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <small>
+                Obtained through trading and marked as
+                Lucky in the Pokémon collection.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                💫
+            </div>
+
+            <strong>
+                Lower Power-Up Cost
+            </strong>
+
+            <small>
+                Lucky Pokémon require less Stardust
+                for power-ups.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is Lucky Misdreavous Worth Keeping?
+    </h3>
+
+    <p>
+
+        A Lucky Misdreavous can be an attractive collector
+        Pokémon and a useful low-cost candidate for evolution.
+        If its IVs are high, it becomes even more desirable.
+
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Lucky Trading Tip
+        </strong>
+
+        <p>
+
+            Check the IVs immediately after a trade. A Lucky
+            Pokémon is guaranteed to meet the Lucky minimum
+            IV floor, but it is not automatically a 100% IV Pokémon.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     14 XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            14 • SIZE
+        </span>
+
+        <h2>
+            XXL Misdreavous
+        </h2>
+
+        <p>
+
+            XXL Misdreavous is an unusually large specimen.
+            Size classifications are separate from IV quality,
+            so an XXL Pokémon can have any IV combination.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <div class="special-icon">
+            📏
+        </div>
+
+        <strong>
+            XXL Misdreavous
+        </strong>
+
+        <small>
+
+            A very large Misdreavous that can be kept as
+            a size-based collection target.
+
+        </small>
+
+    </div>
+
+
+    <h3>
+        XXL vs IVs
+    </h3>
+
+    <p>
+
+        Being XXL does not mean that Misdreavous has
+        perfect IVs. Size and IVs are separate characteristics.
+
+        A player can therefore encounter an XXL Misdreavous
+        that is low IV, high IV or even 100% IV.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     15 XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            15 • SIZE
+        </span>
+
+        <h2>
+            XXS Misdreavous
+        </h2>
+
+        <p>
+
+            XXS Misdreavous is an unusually small specimen.
+            Like XXL Pokémon, its size is independent of
+            its IV percentage.
+
+        </p>
+
+    </div>
+
+
+    <div class="special-card">
+
+        <div class="special-icon">
+            🔎
+        </div>
+
+        <strong>
+            XXS Misdreavous
+        </strong>
+
+        <small>
+
+            A very small Misdreavous suitable for players
+            completing size-based collection goals.
+
+        </small>
+
+    </div>
+
+
+    <h3>
+        XXS Misdreavous Collection Tip
+    </h3>
+
+    <p>
+
+        Keep unusual size specimens if you enjoy completing
+        Pokédex and collection milestones. An XXS Misdreavous
+        can also be combined with other desirable traits such
+        as Shiny or high IVs.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     16 PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            16 • PVP
+        </span>
+
+        <h2>
+            Misdreavous PvP Guide
+        </h2>
+
+        <p>
+
+            Misdreavous can be considered for specialized
+            PvP situations, although its overall usefulness
+            should be judged against the current Pokémon GO
+            move pool and available alternatives.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+
+        Misdreavous fits naturally within the CP range
+        of Great League, making this the most accessible
+        league for testing it. However, moveset quality,
+        IV distribution and the current meta should all
+        be considered before investing heavily.
+
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+
+        Misdreavous can be evaluated in Ultra League,
+        but its relatively low maximum CP means it may
+        require substantial level investment to approach
+        the format's upper limits.
+
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+
+        Misdreavous is generally not a natural Master League
+        investment because of its lower CP ceiling compared
+        with fully evolved and Legendary Pokémon.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     17 EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            17 • EVOLUTION
+        </span>
+
+        <h2>
+            Misdreavous Evolution
+        </h2>
+
+        <p>
+
+            Misdreavous evolves into Mismagius. In Pokémon GO,
+            the evolution requires Misdreavous Candy and a
+            Sinnoh Stone.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-tree">
+
+        <div class="form-node">
+
+            <strong>
+                Misdreavous
+            </strong>
+
+            <span>
+                #200 • Ghost
+            </span>
+
+        </div>
+
+
+        <div class="form-arrow">
+            →
+        </div>
+
+
+        <div class="form-node">
+
+            <strong>
+                Mismagius
+            </strong>
+
+            <span>
+                #429 • Ghost
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution Requirement
+        </strong>
+
+        <p>
+
+            Misdreavous requires 100 Misdreavous Candy
+            and a Sinnoh Stone to evolve into Mismagius.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Should You Evolve Misdreavous?
+    </h3>
+
+    <p>
+
+        If you want a stronger and more complete Ghost-type
+        collection entry, evolving Misdreavous into Mismagius
+        is usually more useful than heavily investing in
+        Misdreavous itself.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     18 CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            18 • RESOURCES
+        </span>
+
+        <h2>
+            Misdreavous Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+
+            Candy and Stardust become important if you want
+            to evolve or power up Misdreavous or Mismagius.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Collect Misdreavous Candy before evolving.
+        </li>
+
+        <li>
+            Save a Sinnoh Stone for the evolution.
+        </li>
+
+        <li>
+            Check IVs before transferring duplicates.
+        </li>
+
+        <li>
+            Keep useful Shiny and Shadow specimens.
+        </li>
+
+        <li>
+            Keep XXL and XXS Pokémon if you collect size variants.
+        </li>
+
+        <li>
+            Save high-IV Misdreavous for long-term evolution projects.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     19 AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            19 • AVAILABILITY
+        </span>
+
+        <h2>
+            Misdreavous Availability
+        </h2>
+
+        <p>
+
+            Misdreavous availability can change with Pokémon GO
+            events, wild spawns, research encounters, raids and
+            other rotating content.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO event and encounter
+            schedule before publishing a claim that Misdreavous
+            is currently available through a specific method.
+
+        </p>
+
+    </div>
+
+
+    <p>
+
+        Historical events should be separated from current
+        availability so that older encounter information does
+        not appear to be a permanent source.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     20 COLLECTION
+===================================================== -->
+
+<section class="section" id="collection">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            20 • COLLECTION
+        </span>
+
+        <h2>
+            Misdreavous Collection Checklist
+        </h2>
+
+        <p>
+
+            Misdreavous has several collectible variations.
+            Keeping one of each can make a useful personal
+            Pokédex project.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Regular Misdreavous
+        </li>
+
+        <li>
+            Shiny Misdreavous
+        </li>
+
+        <li>
+            Shadow Misdreavous
+        </li>
+
+        <li>
+            Purified Misdreavous
+        </li>
+
+        <li>
+            Lucky Misdreavous
+        </li>
+
+        <li>
+            100% IV Misdreavous
+        </li>
+
+        <li>
+            XXL Misdreavous
+        </li>
+
+        <li>
+            XXS Misdreavous
+        </li>
+
+        <li>
+            Evolve a strong specimen into Mismagius
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     21 COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            21 • COMPARISON
+        </span>
+
+        <h2>
+            Misdreavous Forms Compared
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Form
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Special Feature
+                    </th>
+
+                    <th>
+                        Collection Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Medium
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Reduced Stardust power-up cost
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Large size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Ghost
+                    </td>
+
+                    <td>
+                        Small size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     22 BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            22 • BATTLE GUIDE
+        </span>
+
+        <h2>
+            How to Use Misdreavous
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+
+    <ul class="checklist">
+
+        <li>
+            Check the IV spread.
+        </li>
+
+        <li>
+            Decide whether you want to evolve it.
+        </li>
+
+        <li>
+            Check the current moveset.
+        </li>
+
+        <li>
+            Compare Misdreavous with Mismagius.
+        </li>
+
+        <li>
+            Consider whether it is Shiny, Shadow, Lucky or a size variant.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Best Reason to Keep Misdreavous
+    </h3>
+
+    <p>
+
+        For many players, Misdreavous is more interesting
+        as a collection and evolution Pokémon than as a
+        top-tier raid attacker. A strong Shiny, Shadow,
+        Lucky, hundo, XXL or XXS specimen can be especially
+        worth keeping.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     23 SPECIAL VARIANTS
+===================================================== -->
+
+<section class="section" id="special-forms">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            23 • SPECIAL VARIANTS
+        </span>
+
+        <h2>
+            Shiny, Shadow, Purified, Lucky & Size Variants
+        </h2>
+
+    </div>
+
+
+    <div class="special-grid">
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny
+            </strong>
+
+            <small>
+                Alternate-color Misdreavous.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow
+            </strong>
+
+            <small>
+                Shadow battle mechanics.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                💎
+            </div>
+
+            <strong>
+                Purified
+            </strong>
+
+            <small>
+                Created through purification.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky
+            </strong>
+
+            <small>
+                Obtained through trading.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                📏
+            </div>
+
+            <strong>
+                XXL
+            </strong>
+
+            <small>
+                Unusually large specimen.
+            </small>
+
+        </div>
+
+
+        <div class="special-card">
+
+            <div class="special-icon">
+                🔎
+            </div>
+
+            <strong>
+                XXS
+            </strong>
+
+            <small>
+                Unusually small specimen.
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     24 FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            24 • FAQ
+        </span>
+
+        <h2>
+            Misdreavous FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Misdreavous?
+        </summary>
+
+        <p>
+            Misdreavous is a pure Ghost-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Misdreavous weak to?
+        </summary>
+
+        <p>
+            Misdreavous is weak to Ghost and Dark-type attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Misdreavous evolve?
+        </summary>
+
+        <p>
+            Yes. Misdreavous evolves into Mismagius.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do you evolve Misdreavous in Pokémon GO?
+        </summary>
+
+        <p>
+            Misdreavous evolves using Misdreavous Candy
+            and a Sinnoh Stone.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Misdreavous available?
+        </summary>
+
+        <p>
+            Yes. Shiny Misdreavous is available through
+            eligible Pokémon GO encounters.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Misdreavous available?
+        </summary>
+
+        <p>
+            Shadow availability depends on the current
+            Team GO Rocket rotation and events.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Misdreavous?
+        </summary>
+
+        <p>
+            A 100% Misdreavous has 15 Attack, 15 Defense
+            and 15 HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Misdreavous?
+        </summary>
+
+        <p>
+            Lucky Misdreavous is obtained through trading
+            and requires less Stardust to power up.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Misdreavous?
+        </summary>
+
+        <p>
+            XXL Misdreavous is an unusually large specimen.
+            Size is separate from IV quality.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Misdreavous?
+        </summary>
+
+        <p>
+            XXS Misdreavous is an unusually small specimen.
+            It can be kept as a collection variant.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Misdreavous good for raids?
+        </summary>
+
+        <p>
+            Misdreavous is generally not a top-tier raid
+            attacker. Its evolution and collection value
+            are more important for most players.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Misdreavous good in PvP?
+        </summary>
+
+        <p>
+            Misdreavous can be tested in lower CP leagues,
+            but its usefulness depends heavily on its current
+            moveset and the PvP metagame.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shiny Misdreavous evolve?
+        </summary>
+
+        <p>
+            Yes. A Shiny Misdreavous can evolve into
+            Shiny Mismagius.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Misdreavous be purified?
+        </summary>
+
+        <p>
+            Yes, when obtained as an eligible Shadow Pokémon,
+            Misdreavous can be purified.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can a Lucky Misdreavous be 100% IV?
+        </summary>
+
+        <p>
+            Yes. A Lucky Misdreavous can have perfect IVs,
+            although being Lucky does not automatically mean
+            that it has 100% IVs.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     25 EDITORIAL
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            moves, encounters, events and availability can
+            change over time.
+
+        </p>
+
+        <p>
+
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Misdreavous Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#iv">
+                    IV Guide
+                </a>
+            </li>
+
+            <li>
+                <a href="#perfect">
+                    100% Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Misdreavous
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/mismagius.html">
+
+            Mismagius Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/ghost.html">
+
+            Ghost Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/gastly.html">
+
+            Gastly Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/banette.html">
+
+            Banette Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/gengar.html">
+
+            Gengar Guide →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Misdreavous Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>Type:</strong>
+            Ghost
+        </p>
+
+
+        <p>
+            <strong>Generation:</strong>
+            2
+        </p>
+
+
+        <p>
+            <strong>Pokédex:</strong>
+            #200
+        </p>
+
+
+        <p>
+            <strong>Evolution:</strong>
+            Mismagius
+        </p>
+
+
+        <p>
+            <strong>Evolution Item:</strong>
+            Sinnoh Stone
+        </p>
+
+
+        <p>
+            <strong>Shiny:</strong>
+            Available
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

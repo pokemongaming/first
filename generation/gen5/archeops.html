@@ -1,0 +1,4543 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Archeops Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+<meta name="description"
+      content="Complete Archeops Pokémon GO guide covering stats, max CP, Rock and Flying typing, weaknesses, resistances, moves, raids, PvP, IVs, 100% Archeops, Shiny, Shadow, Purified, Lucky, XXL and XXS forms.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/archeops.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #8fa2ff;
+    --accent-2: #657cff;
+
+    --rock: #b79a57;
+    --flying: #8f9fff;
+
+    --water: #4e9dff;
+    --electric: #e7c84c;
+    --ice: #72d6dc;
+    --steel: #9da7b5;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --gold: #f1c75b;
+    --purple: #ad86ff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(143,159,255,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.93);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(143,159,255,.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 15% 100%,
+            rgba(183,154,87,.13),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--rock);
+
+    background:
+        rgba(183,154,87,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing: -.055em;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 1rem;
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.rock-tag {
+    color: var(--rock);
+}
+
+.flying-tag {
+    color: var(--flying);
+}
+
+
+/* =========================================================
+   HERO POKEMON
+========================================================= */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(143,159,255,.22),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   TYPE BOX
+========================================================= */
+
+.type-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid rgba(143,159,255,.3);
+
+    background:
+        rgba(143,159,255,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(143,159,255,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--flying);
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+
+/* =========================================================
+   TYPE PILLS
+========================================================= */
+
+.type-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.type-pill {
+    padding: 7px 15px;
+
+    border-radius: 30px;
+
+    font-size: .72rem;
+    font-weight: 900;
+}
+
+.rock-type {
+    background: #806b3d;
+}
+
+.flying-type {
+    background: #6572ad;
+}
+
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--rock);
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BEST MOVE
+========================================================= */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(183,154,87,.11),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(183,154,87,.25);
+
+    border-radius: var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rating-row {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr 70px;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.rating-row:last-child {
+    border-bottom: 0;
+}
+
+.rating-bar {
+    height: 8px;
+
+    background: var(--surface-3);
+
+    border-radius: 99px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    width: var(--rating);
+
+    background: var(--accent);
+
+    border-radius: inherit;
+}
+
+.rating-value {
+    text-align: right;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   COMPARISON TABLE
+========================================================= */
+
+.comparison-table {
+    overflow-x: auto;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+    background: var(--surface-2);
+    text-align: left;
+}
+
+
+/* =========================================================
+   IV CARDS
+========================================================= */
+
+.iv-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+    font-size: 1.35rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+
+/* =========================================================
+   FORM / SPECIAL CARD
+========================================================= */
+
+.special-card {
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171525,
+            #252039
+        );
+
+    border:
+        1px solid rgba(173,134,255,.25);
+}
+
+.special-card strong {
+    display: block;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   VARIANT GRID
+========================================================= */
+
+.variant-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.variant-card {
+    position: relative;
+
+    padding: 22px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.variant-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--accent);
+}
+
+.variant-card.shiny::before {
+    background: var(--gold);
+}
+
+.variant-card.shadow::before {
+    background: #746486;
+}
+
+.variant-card.purified::before {
+    background: #e6c7ff;
+}
+
+.variant-card.lucky::before {
+    background: #f0b82e;
+}
+
+.variant-card.perfect::before {
+    background: #8ff0c0;
+}
+
+.variant-card.xxl::before {
+    background: #75c7ff;
+}
+
+.variant-card.xxs::before {
+    background: #e98cff;
+}
+
+.variant-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.variant-card h3 {
+    margin: 0 0 6px;
+    font-size: 1.1rem;
+}
+
+.variant-card p {
+    margin-bottom: 0;
+    font-size: .76rem;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   EDITORIAL NOTE
+========================================================= */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: .78rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .variant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .rating-value {
+        text-align: left;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main class="page">
+
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/rock.html">
+        Rock Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Archeops
+    </strong>
+
+</div>
+
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                FOSSIL POKÉMON
+            </span>
+
+            <h1>
+                Archeops
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Archeops is a Rock / Flying-type Pokémon
+                originally discovered in the Unova region.
+                In Pokémon GO, it is known for its very high
+                Attack stat and distinctive fossil Pokémon
+                design, while its lower defensive profile
+                affects how it performs in battle.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag rock-tag">
+                    Rock
+                </span>
+
+                <span class="tag flying-tag">
+                    Flying
+                </span>
+
+                <span class="tag">
+                    #567
+                </span>
+
+                <span class="tag">
+                    Gen 5
+                </span>
+
+                <span class="tag">
+                    Shiny
+                </span>
+
+                <span class="tag">
+                    Fossil Pokémon
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your properly licensed Archeops asset -->
+
+            <div class="pokemon-placeholder">
+                🦅
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            292
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            139
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            181
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~3,144
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Overview
+        </h2>
+
+        <p>
+            Archeops is the evolved form of Archen and was
+            introduced in Generation 5. It is a dual
+            Rock / Flying-type Pokémon with an unusually
+            offensive stat profile.
+        </p>
+
+        <p>
+            Archeops does not evolve further. Trainers who
+            collect different Pokémon GO variants may also
+            encounter Shiny, Lucky, XXL and XXS versions,
+            depending on the game's current mechanics and
+            availability.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>POKÉDEX</span>
+            <strong>#567</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>GENERATION</span>
+            <strong>Gen 5</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>REGION</span>
+            <strong>Unova</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>TYPE</span>
+            <strong>Rock / Flying</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>292</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>139</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>181</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~3,144</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Type
+        </h2>
+
+        <p>
+            Archeops has two Pokémon GO types, giving it
+            both Rock-type and Flying-type characteristics.
+        </p>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🪨
+        </div>
+
+        <div>
+
+            <strong>
+                Rock / Flying
+            </strong>
+
+            <span>
+                Dual Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="type-row" style="margin-top:15px;">
+
+        <span class="type-pill rock-type">
+            ROCK
+        </span>
+
+        <span class="type-pill flying-type">
+            FLYING
+        </span>
+
+    </div>
+
+
+    <h3>
+        Why Archeops' Typing Matters
+    </h3>
+
+    <p>
+        Rock and Flying provide Archeops with useful
+        offensive coverage, particularly when Rock-type
+        attacks are super effective against a raid boss.
+        However, its dual typing also creates several
+        important weaknesses that should be considered
+        when building a team.
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+            <p>
+                Water-type attacks deal super-effective
+                damage to Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric
+            </strong>
+
+            <p>
+                Electric-type attacks are super effective
+                against Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧊
+            </div>
+
+            <strong>
+                Ice
+            </strong>
+
+            <p>
+                Ice attacks are also super effective against
+                Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Rock-type moves exploit Archeops' Flying
+                typing and deal super-effective damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🔩
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+            <p>
+                Steel-type attacks are super effective
+                against Archeops.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌿
+            </div>
+
+            <strong>
+                Grass
+            </strong>
+
+            <p>
+                Archeops resists Grass-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🐛
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks are resisted by Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Fire
+            </strong>
+
+            <p>
+                Archeops has useful resistance to
+                Fire-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                ☠️
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+            <p>
+                Poison attacks are resisted by Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🪲
+            </div>
+
+            <strong>
+                Ground
+            </strong>
+
+            <p>
+                Archeops' Flying typing gives it a
+                Ground immunity in Pokémon GO.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Attack, Defense & HP
+        </h2>
+
+        <p>
+            Archeops has a very high Attack stat compared
+            with its Defense, making it an offensive-focused
+            Pokémon rather than a durable one.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+            <span>ATTACK</span>
+            <strong>292</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>DEFENSE</span>
+            <strong>139</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>HP</span>
+            <strong>181</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>MAX CP</span>
+            <strong>~3,144</strong>
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            CP note:
+        </strong>
+
+        <p>
+            The exact CP displayed on an individual Archeops
+            depends on its level and IVs. Maximum CP should
+            therefore be treated as the level-50 perfect-IV
+            benchmark rather than the CP of every Archeops.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Best Moves
+        </h2>
+
+        <p>
+            Archeops can use Rock and Flying attacks.
+            The best moveset depends on whether you are
+            using it for raids, gyms or another battle role.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Recommended Rock-focused Build
+        </strong>
+
+        <p>
+            Rock Throw + Ancient Power
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Rock Throw
+                    </td>
+
+                    <td class="move-type">
+                        Rock
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Rock damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Wing Attack
+                    </td>
+
+                    <td class="move-type">
+                        Flying
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Flying coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Ancient Power
+                    </td>
+
+                    <td class="move-type">
+                        Rock
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Rock coverage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dragon Claw
+                    </td>
+
+                    <td class="move-type">
+                        Dragon
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        Additional coverage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Move availability:
+        </strong>
+
+        <p>
+            Pokémon GO move pools can change through updates
+            and events. Check current in-game move availability
+            before making a time-sensitive recommendation.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     RAID
+======================================================= -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Raid Performance
+        </h2>
+
+        <p>
+            Archeops has an impressive Attack stat, but its
+            relatively low Defense limits its durability.
+            This makes it more interesting as an offensive
+            specialist than as a general-purpose raid anchor.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Attack Power
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 94%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9.4/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 55%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            5.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Rock Role
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 80%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            8.0/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Overall PvE
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating: 72%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            7.2/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        Should You Power Up Archeops?
+    </h3>
+
+    <p>
+        Archeops can be an interesting investment for
+        collectors and players who enjoy using less common
+        Pokémon. Before spending large amounts of Stardust,
+        compare its current performance with other Rock-type
+        attackers available in your collection.
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     COUNTERS
+======================================================= -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <h2>
+            What Counters Archeops?
+        </h2>
+
+        <p>
+            Because Archeops is Rock / Flying type, Water,
+            Electric, Ice, Rock and Steel attacks are among
+            the important super-effective categories.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💧
+            </div>
+
+            <strong>
+                Water Attackers
+            </strong>
+
+            <p>
+                Water-type attackers can exploit Archeops'
+                Rock typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                ⚡
+            </div>
+
+            <strong>
+                Electric Attackers
+            </strong>
+
+            <p>
+                Electric attackers can take advantage of
+                Archeops' Flying typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧊
+            </div>
+
+            <strong>
+                Ice Attackers
+            </strong>
+
+            <p>
+                Ice attacks are super effective against the
+                Rock / Flying combination.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🔩
+            </div>
+
+            <strong>
+                Steel Attackers
+            </strong>
+
+            <p>
+                Steel-type attackers can also exploit
+                Archeops' weaknesses.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     IV
+======================================================= -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops IV Guide
+        </h2>
+
+        <p>
+            Individual Values add points to Attack, Defense
+            and HP. A 15/15/15 Archeops is the perfect-IV
+            specimen.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Perfect 100% Archeops
+    </h3>
+
+    <p>
+        A 15/15/15 Archeops is commonly called a
+        <strong>100% IV Archeops</strong> or perfect Archeops.
+        For collectors, this is one of the most desirable
+        versions to keep.
+    </p>
+
+
+    <div class="special-card">
+
+        <strong>
+            💯 100% Archeops
+        </strong>
+
+        <p>
+            Attack IV: 15 · Defense IV: 15 · HP IV: 15
+        </p>
+
+        <p>
+            A perfect-IV Archeops can reach the highest CP
+            available for its level and is an excellent
+            candidate for collection or long-term investment.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PVP
+======================================================= -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops PvP Guide
+        </h2>
+
+        <p>
+            Archeops has high Attack but a relatively fragile
+            defensive profile. That combination can make it
+            difficult to use consistently in shield-based PvP.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+        Archeops can technically be used under the Great
+        League CP limit when appropriately powered, but its
+        practical value depends heavily on its current moves
+        and the surrounding metagame.
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+        Archeops' CP and stat distribution can allow it to
+        enter Ultra League formats, although trainers should
+        compare its performance with more established
+        Rock- and Flying-type choices.
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Archeops is not naturally positioned as a premier
+        Master League Pokémon because its overall stat
+        product and defensive profile are less favorable
+        than many top Master League options.
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Archeops
+        </h2>
+
+        <p>
+            Shiny Archeops is the alternate-color version of
+            Archeops. Shiny Pokémon retain the same species,
+            typing and core battle mechanics while having a
+            different appearance.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shiny">
+
+        <div class="variant-icon">
+            ✨
+        </div>
+
+        <h3>
+            Shiny Archeops
+        </h3>
+
+        <p>
+            Shiny status is primarily a collector feature.
+            A Shiny Archeops does not automatically receive
+            stronger battle stats simply because it is Shiny.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shiny vs Regular Archeops
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shiny
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Archeops
+                    </td>
+
+                    <td>
+                        Archeops
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Rock / Flying
+                    </td>
+
+                    <td>
+                        Rock / Flying
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Battle Stats
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Same species stats
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Appearance
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     SHADOW
+======================================================= -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Archeops
+        </h2>
+
+        <p>
+            Shadow Pokémon have a special battle mechanic
+            that changes their offensive and defensive
+            characteristics. Shadow Archeops should therefore
+            be treated separately from a normal Archeops if
+            such a form is introduced into Pokémon GO.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card shadow">
+
+        <div class="variant-icon">
+            🌑
+        </div>
+
+        <h3>
+            Shadow Archeops
+        </h3>
+
+        <p>
+            Shadow Archeops should not be presented as a
+            currently obtainable form unless it is confirmed
+            through an active Team GO Rocket rotation or
+            event.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Archeops Mechanics
+    </h3>
+
+    <p>
+        A Shadow Archeops would retain its Rock / Flying
+        typing. Shadow mechanics affect battle performance,
+        but they do not change the Pokémon's basic typing.
+    </p>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Archeops
+                    </td>
+
+                    <td>
+                        Archeops
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Typing
+                    </td>
+
+                    <td>
+                        Rock / Flying
+                    </td>
+
+                    <td>
+                        Rock / Flying
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow Bonus
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shadow mechanic
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Frustration
+                    </td>
+
+                    <td>
+                        Not applicable
+                    </td>
+
+                    <td>
+                        Relevant to Shadow Pokémon
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Availability warning:
+        </strong>
+
+        <p>
+            Do not permanently label Shadow Archeops as
+            obtainable unless Pokémon GO officially introduces
+            it through the current Shadow Pokémon system.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PURIFIED
+======================================================= -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Archeops
+        </h2>
+
+        <p>
+            Purified Pokémon are created by purifying eligible
+            Shadow Pokémon. A Purified Archeops would therefore
+            require Archeops to first be available as a Shadow
+            Pokémon.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card purified">
+
+        <div class="variant-icon">
+            🌟
+        </div>
+
+        <h3>
+            Purified Archeops
+        </h3>
+
+        <p>
+            Treat Purified Archeops as an availability-dependent
+            form rather than claiming permanent availability.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Purification Mechanics
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Purification applies to eligible Shadow Pokémon.
+        </li>
+
+        <li>
+            Purification changes the Pokémon's Shadow status.
+        </li>
+
+        <li>
+            Purification affects the Pokémon's IVs and level.
+        </li>
+
+        <li>
+            Purification removes the Shadow battle mechanic.
+        </li>
+
+        <li>
+            Always compare the Shadow and Purified versions
+            before purifying a valuable Pokémon.
+        </li>
+
+    </ul>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+            If Shadow Archeops is not part of the active
+            Pokémon GO ecosystem, Purified Archeops cannot
+            simply be obtained independently.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     LUCKY
+======================================================= -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Archeops
+        </h2>
+
+        <p>
+            Lucky Archeops is a special status associated with
+            Pokémon obtained through trading. Lucky Pokémon
+            have a distinctive background and require fewer
+            Stardust resources to power up.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card lucky">
+
+        <div class="variant-icon">
+            🍀
+        </div>
+
+        <h3>
+            Lucky Archeops
+        </h3>
+
+        <p>
+            Lucky status does not create a separate species.
+            It is a special collection and investment status
+            attached to the traded Pokémon.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Lucky Archeops Benefits
+    </h3>
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🍀
+            </div>
+
+            <strong>
+                Lucky Status
+            </strong>
+
+            <p>
+                Obtained through Pokémon GO trading mechanics.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💫
+            </div>
+
+            <strong>
+                Special Background
+            </strong>
+
+            <p>
+                Lucky Pokémon display a distinctive visual
+                collection status.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                💰
+            </div>
+
+            <strong>
+                Reduced Power-Up Cost
+            </strong>
+
+            <p>
+                Lucky Pokémon require less Stardust when
+                powering them up.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Keep a Lucky Archeops?
+    </h3>
+
+    <p>
+        A Lucky Archeops can be attractive for collectors and
+        for players who want to reduce Stardust costs when
+        powering up an Archeops.
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     100%
+======================================================= -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <h2>
+            100% Archeops
+        </h2>
+
+        <p>
+            A 100% Archeops has perfect IVs of 15 Attack,
+            15 Defense and 15 HP. This is the highest possible
+            IV combination in Pokémon GO.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card perfect">
+
+        <div class="variant-icon">
+            💯
+        </div>
+
+        <h3>
+            Perfect 15/15/15 Archeops
+        </h3>
+
+        <p>
+            Attack 15 · Defense 15 · HP 15
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense
+            </span>
+
+        </div>
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Is 100% Archeops Worth Keeping?
+    </h3>
+
+    <p>
+        Definitely consider keeping a perfect Archeops if
+        you enjoy collecting perfect IV Pokémon. Whether
+        you should fully power it up depends on its current
+        usefulness, moveset and your available resources.
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     XXL
+======================================================= -->
+
+<section class="section" id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL Archeops
+        </h2>
+
+        <p>
+            XXL Archeops is a size variant that is larger
+            than the normal size range for the species.
+            Size status is separate from IV quality and
+            battle stats.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card xxl">
+
+        <div class="variant-icon">
+            📏
+        </div>
+
+        <h3>
+            XXL Archeops
+        </h3>
+
+        <p>
+            An XXL Archeops is primarily valuable for
+            collection, showcases and size-focused achievements.
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXL vs 100% Archeops
+    </h3>
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                    <th>
+                        100% IV
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Main Attribute
+                    </td>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        IVs
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Attack IV
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Defense IV
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        HP IV
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        15
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Collector Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     XXS
+======================================================= -->
+
+<section class="section" id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            XXS Archeops
+        </h2>
+
+        <p>
+            XXS Archeops is a very small size variant.
+            Like XXL status, XXS status is independent from
+            IV quality.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card xxs">
+
+        <div class="variant-icon">
+            🔹
+        </div>
+
+        <h3>
+            XXS Archeops
+        </h3>
+
+        <p>
+            An XXS Archeops is particularly interesting for
+            collectors who track the smallest Pokémon sizes.
+        </p>
+
+    </div>
+
+
+    <h3>
+        XXS Collection Tips
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Keep an XXS Archeops if size collecting matters
+            to you.
+        </li>
+
+        <li>
+            Size and IVs are separate characteristics.
+        </li>
+
+        <li>
+            An XXS Archeops can also have excellent IVs.
+        </li>
+
+        <li>
+            An XXS Pokémon can also be Shiny or Lucky when
+            the applicable mechanics allow it.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     SPECIAL VARIANTS SUMMARY
+======================================================= -->
+
+<section class="section" id="variants">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Special Variants & Collection Guide
+        </h2>
+
+        <p>
+            Archeops collectors may track multiple independent
+            attributes. These should not be confused with
+            separate Pokémon species.
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🦅
+            </div>
+
+            <h3>
+                Regular Archeops
+            </h3>
+
+            <p>
+                Standard Rock / Flying Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card shiny">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <h3>
+                Shiny Archeops
+            </h3>
+
+            <p>
+                Alternate-color version.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card shadow">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <h3>
+                Shadow Archeops
+            </h3>
+
+            <p>
+                Availability depends on official Shadow
+                Pokémon GO mechanics.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card purified">
+
+            <div class="variant-icon">
+                🌟
+            </div>
+
+            <h3>
+                Purified Archeops
+            </h3>
+
+            <p>
+                Requires an eligible Shadow Archeops.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card lucky">
+
+            <div class="variant-icon">
+                🍀
+            </div>
+
+            <h3>
+                Lucky Archeops
+            </h3>
+
+            <p>
+                Special trading status with reduced
+                Stardust power-up costs.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card perfect">
+
+            <div class="variant-icon">
+                💯
+            </div>
+
+            <h3>
+                100% Archeops
+            </h3>
+
+            <p>
+                Perfect 15/15/15 IV combination.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card xxl">
+
+            <div class="variant-icon">
+                📏
+            </div>
+
+            <h3>
+                XXL Archeops
+            </h3>
+
+            <p>
+                Larger-than-normal size variant.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card xxs">
+
+            <div class="variant-icon">
+                🔹
+            </div>
+
+            <h3>
+                XXS Archeops
+            </h3>
+
+            <p>
+                Smaller-than-normal size variant.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CANDY / RESOURCES
+======================================================= -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Candy, XL Candy & Stardust
+        </h2>
+
+        <p>
+            Building an Archeops requires Candy and Stardust,
+            especially if you want to reach higher levels.
+            Candy XL becomes important for level 40+ investment.
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save Archeops Candy for worthwhile investments.
+        </li>
+
+        <li>
+            Collect Candy XL if you plan to build a high-level
+            Archeops.
+        </li>
+
+        <li>
+            Check the moveset before spending large amounts
+            of Stardust.
+        </li>
+
+        <li>
+            Compare Archeops with other Rock-type attackers.
+        </li>
+
+        <li>
+            Keep high-IV specimens for long-term collection.
+        </li>
+
+        <li>
+            Lucky Archeops can reduce Stardust investment costs.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =======================================================
+     EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Evolution Family
+        </h2>
+
+        <p>
+            Archeops evolves from Archen. Archeops does not
+            have another evolution after reaching its final
+            evolutionary stage.
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🦎
+            </div>
+
+            <h3>
+                Archen
+            </h3>
+
+            <p>
+                Rock / Flying-type Pokémon and the first stage
+                of the evolutionary family.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🦅
+            </div>
+
+            <h3>
+                Archeops
+            </h3>
+
+            <p>
+                Final evolution in the Archen family.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Evolution note:
+        </strong>
+
+        <p>
+            Archeops does not evolve further after reaching
+            its final evolutionary stage.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Availability
+        </h2>
+
+        <p>
+            Archeops availability can change as Pokémon GO
+            rotates wild encounters, research rewards, events
+            and other acquisition methods.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Pokémon GO event and encounter
+            rotation before publishing a specific claim about
+            how Archeops can currently be obtained.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Special Variant Availability
+    </h3>
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        What It Represents
+                    </th>
+
+                    <th>
+                        Availability Note
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        Standard Archeops
+                    </td>
+
+                    <td>
+                        Depends on current encounters
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Alternate appearance
+                    </td>
+
+                    <td>
+                        Check current Shiny availability
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow mechanic
+                    </td>
+
+                    <td>
+                        Only if officially introduced
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified Shadow Pokémon
+                    </td>
+
+                    <td>
+                        Depends on Shadow availability
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Trading status
+                    </td>
+
+                    <td>
+                        Trading mechanic
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        XXL / XXS
+                    </td>
+
+                    <td>
+                        Size variants
+                    </td>
+
+                    <td>
+                        Depends on Pokémon GO size mechanics
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     BATTLE GUIDE
+======================================================= -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Archeops
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before a Raid
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check whether Rock or Flying damage is needed.
+        </li>
+
+        <li>
+            Confirm Archeops has the appropriate moveset.
+        </li>
+
+        <li>
+            Compare its damage output with your other
+            Rock-type attackers.
+        </li>
+
+        <li>
+            Consider the boss's moveset and Archeops'
+            relatively low Defense.
+        </li>
+
+        <li>
+            Check weather and team composition.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Long-Term Investment
+    </h3>
+
+    <p>
+        Archeops is particularly interesting for players who
+        enjoy building unusual Pokémon teams and collecting
+        high-IV or special-status specimens. A perfect,
+        Lucky, Shiny, XXL or XXS Archeops can also have
+        significant collection value independent of its
+        battle ranking.
+    </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     COMPARISON
+======================================================= -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops Special Status Comparison
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        Changes Appearance?
+                    </th>
+
+                    <th>
+                        Changes IVs?
+                    </th>
+
+                    <th>
+                        Main Value
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Normal
+                    </td>
+
+                    <td>
+                        Standard Pokémon
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Special background
+                    </td>
+
+                    <td>
+                        Trading-related
+                    </td>
+
+                    <td>
+                        Collection / Stardust
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100%
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        15/15/15
+                    </td>
+
+                    <td>
+                        Perfect IV collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL
+                    </td>
+
+                    <td>
+                        Size status
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        Size collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS
+                    </td>
+
+                    <td>
+                        Size status
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        Size collection
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        Shadow appearance
+                    </td>
+
+                    <td>
+                        Independent
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        Changed through purification
+                    </td>
+
+                    <td>
+                        Purified collection
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Archeops FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Archeops?
+        </summary>
+
+        <p>
+            Archeops is a Rock / Flying-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Archeops weak to?
+        </summary>
+
+        <p>
+            Archeops is weak to Water, Electric, Ice, Rock
+            and Steel attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Archeops' maximum CP?
+        </summary>
+
+        <p>
+            Archeops can reach approximately 3,144 CP at
+            level 50 with perfect IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Archeops available?
+        </summary>
+
+        <p>
+            Shiny Archeops is the alternate-color form of
+            Archeops. Check the current Pokémon GO availability
+            before planning a Shiny hunt.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Archeops good for raids?
+        </summary>
+
+        <p>
+            Archeops has very high Attack, but its low Defense
+            means its practical raid value depends heavily on
+            its current moveset and the specific matchup.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Archeops good in PvP?
+        </summary>
+
+        <p>
+            Archeops can be used in PvP formats under the
+            appropriate CP limits, but its defensive profile
+            makes it more matchup-dependent than many
+            established PvP choices.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Archeops?
+        </summary>
+
+        <p>
+            A 100% Archeops has 15 Attack, 15 Defense and
+            15 HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Lucky Archeops?
+        </summary>
+
+        <p>
+            Lucky Archeops is an Archeops obtained through
+            Pokémon GO's trading mechanics and has the Lucky
+            status, including reduced Stardust power-up costs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Archeops?
+        </summary>
+
+        <p>
+            XXL Archeops is a larger-than-normal size variant.
+            XXL status is independent of IV quality.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Archeops?
+        </summary>
+
+        <p>
+            XXS Archeops is a very small size variant.
+            XXS status does not automatically mean that the
+            Pokémon has good or bad IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Archeops available?
+        </summary>
+
+        <p>
+            Shadow availability should be checked against
+            the current Team GO Rocket rotation. Do not assume
+            that every Pokémon has a currently obtainable
+            Shadow version.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can I get Purified Archeops?
+        </summary>
+
+        <p>
+            Purification requires an eligible Shadow Pokémon.
+            Therefore, Purified Archeops depends on whether
+            Shadow Archeops is officially available.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Does Archeops evolve?
+        </summary>
+
+        <p>
+            Archeops is the final evolution of Archen and does
+            not have another standard evolution.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is 100% Archeops better than Shiny Archeops?
+        </summary>
+
+        <p>
+            They represent different attributes. A 100%
+            Archeops has perfect IVs, while Shiny Archeops
+            represents an alternate appearance. A Pokémon can
+            potentially be both Shiny and perfect IV.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Archeops be Lucky and Shiny?
+        </summary>
+
+        <p>
+            Lucky and Shiny are separate attributes, so a
+            Pokémon can potentially combine multiple collection
+            characteristics when the relevant game mechanics
+            allow it.
+        </p>
+
+    </details>
+
+</section>
+
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            movesets, availability, events, size mechanics
+            and other game systems can change over time.
+        </p>
+
+        <p>
+            Always verify current in-game information before
+            making investment decisions or publishing
+            time-sensitive availability claims.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This website is an independent
+            informational resource and is not affiliated with
+            or endorsed by The Pokémon Company or Niantic.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+    <h3>
+        Archeops Guide
+    </h3>
+
+    <ul class="side-nav">
+
+        <li>
+            <a href="#overview">
+                Archeops Overview
+            </a>
+        </li>
+
+        <li>
+            <a href="#stats">
+                Stats & Max CP
+            </a>
+        </li>
+
+        <li>
+            <a href="#type">
+                Type
+            </a>
+        </li>
+
+        <li>
+            <a href="#weaknesses">
+                Weaknesses & Resistances
+            </a>
+        </li>
+
+        <li>
+            <a href="#moves">
+                Best Moves
+            </a>
+        </li>
+
+        <li>
+            <a href="#raid">
+                Raid Performance
+            </a>
+        </li>
+
+        <li>
+            <a href="#counters">
+                Counters
+            </a>
+        </li>
+
+        <li>
+            <a href="#iv">
+                IV Guide
+            </a>
+        </li>
+
+        <li>
+            <a href="#shiny">
+                Shiny Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#shadow">
+                Shadow Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#purified">
+                Purified Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#lucky">
+                Lucky Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#perfect">
+                100% Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxl">
+                XXL Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#xxs">
+                XXS Archeops
+            </a>
+        </li>
+
+        <li>
+            <a href="#availability">
+                Availability
+            </a>
+        </li>
+
+        <li>
+            <a href="#faq">
+                FAQ
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+<div class="side-card">
+
+    <h3>
+        Related Guides
+    </h3>
+
+
+    <a class="related-link"
+       href="/pokemon/archen.html">
+
+        Archen Guide →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/rock.html">
+
+        Rock Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-types/flying.html">
+
+        Flying Type Hub →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon-generations/gen-5.html">
+
+        Gen 5 Pokémon →
+
+    </a>
+
+
+    <a class="related-link"
+       href="/pokemon/aerodactyl.html">
+
+        Aerodactyl Guide →
+
+    </a>
+
+</div>
+
+
+
+<div class="side-card">
+
+    <h3>
+        Archeops Quick Facts
+    </h3>
+
+
+    <p>
+        <strong>Type:</strong>
+        Rock / Flying
+    </p>
+
+
+    <p>
+        <strong>Generation:</strong>
+        5
+    </p>
+
+
+    <p>
+        <strong>Pokédex:</strong>
+        #567
+    </p>
+
+
+    <p>
+        <strong>Evolution:</strong>
+        Archen → Archeops
+    </p>
+
+
+    <p>
+        <strong>Attack:</strong>
+        292
+    </p>
+
+
+    <p>
+        <strong>Defense:</strong>
+        139
+    </p>
+
+
+    <p>
+        <strong>HP:</strong>
+        181
+    </p>
+
+
+    <p>
+        <strong>Max CP:</strong>
+        ~3,144
+    </p>
+
+</div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

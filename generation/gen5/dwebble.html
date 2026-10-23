@@ -1,0 +1,2644 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Dwebble Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & More</title>
+
+<meta name="description"
+      content="Complete Dwebble Pokémon GO guide covering regular Dwebble, Shiny Dwebble, Shadow Dwebble, Purified Dwebble, Lucky Dwebble, 100% IV Dwebble, XXL Dwebble and XXS Dwebble.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://pokemongaming.in/pokemon/dwebble.html">
+
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #e27b4e;
+    --accent-2: #c65f36;
+
+    --bug: #8bbd52;
+    --rock: #b69b63;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+
+    --shadow: #9b6cff;
+    --shiny: #ffd85c;
+    --purified: #79c9ff;
+    --lucky: #ffb347;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(226,123,78,.13),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.header-inner {
+
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+.logo {
+
+    font-size: 1.15rem;
+    font-weight: 950;
+
+    letter-spacing: -.03em;
+
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.main-nav a {
+
+    color: var(--muted);
+
+    font-size: .8rem;
+    font-weight: 750;
+
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    padding: 35px 20px 80px;
+
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 34px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(226,123,78,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #111827,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+}
+
+.pokemon-hero h1 {
+
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing:
+        -.055em;
+
+    margin-bottom:
+        12px;
+
+}
+
+.hero-subtitle {
+
+    max-width: 700px;
+
+    font-size: 1rem;
+
+    color: #c2cad7;
+
+}
+
+.hero-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+}
+
+.tag {
+
+    padding: 7px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+
+}
+
+.bug-tag {
+    color: var(--bug);
+}
+
+.rock-tag {
+    color: var(--rock);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pokemon-placeholder {
+
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(226,123,78,.25),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+.quick-stat {
+
+    padding: 18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    text-align: center;
+
+}
+
+.quick-stat strong {
+
+    display: block;
+
+    font-size: 1.25rem;
+
+}
+
+.quick-stat span {
+
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+
+}
+
+
+/* =====================================================
+   CONTENT LAYOUT
+===================================================== */
+
+.content-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.section-heading {
+
+    margin-bottom: 20px;
+
+}
+
+.section h2 {
+
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+
+}
+
+.section h3 {
+
+    margin:
+        25px 0 10px;
+
+    font-size:
+        1.05rem;
+
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+
+}
+
+.stat-card {
+
+    padding: 17px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+}
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+
+}
+
+.stat-card strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.35rem;
+
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(139,189,82,.25);
+
+    background:
+        rgba(139,189,82,.06);
+
+    border-radius:
+        var(--radius-sm);
+
+}
+
+.type-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(139,189,82,.13);
+
+    font-size: 1.5rem;
+
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+
+}
+
+.effect-card {
+
+    padding: 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        var(--surface-2);
+
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-icon {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+
+/* =====================================================
+   SPECIAL FORM CARDS
+===================================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+}
+
+.form-card {
+
+    padding: 22px;
+
+    border-radius:
+        var(--radius-sm);
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--surface-2);
+
+}
+
+.form-card h3 {
+
+    margin: 0 0 8px;
+
+}
+
+.form-card p {
+    font-size: .78rem;
+}
+
+.form-card.shadow {
+    border-color:
+        rgba(155,108,255,.35);
+}
+
+.form-card.purified {
+    border-color:
+        rgba(121,201,255,.35);
+}
+
+.form-card.shiny {
+    border-color:
+        rgba(255,216,92,.35);
+}
+
+.form-card.lucky {
+    border-color:
+        rgba(255,179,71,.35);
+}
+
+.form-card.perfect {
+    border-color:
+        rgba(98,216,154,.35);
+}
+
+.form-card.xxl {
+    border-color:
+        rgba(226,123,78,.35);
+}
+
+.form-card.xxs {
+    border-color:
+        rgba(141,168,255,.35);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+
+}
+
+.data-table th {
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(226,123,78,.12),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(226,123,78,.25);
+
+    border-radius:
+        var(--radius-sm);
+
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+}
+
+.checklist li {
+
+    padding: 12px 14px;
+
+    background:
+        var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+
+}
+
+.checklist li::before {
+
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+
+}
+
+details p {
+
+    margin-top: 10px;
+
+    font-size: .78rem;
+
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+
+}
+
+.side-card {
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius);
+
+}
+
+.side-card h3 {
+
+    margin-bottom: 13px;
+
+    font-size: .9rem;
+
+}
+
+.side-nav {
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+
+}
+
+.side-nav a {
+
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+}
+
+.side-nav a:hover {
+
+    background:
+        var(--surface-2);
+
+    color: white;
+
+}
+
+.related-link {
+
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background:
+        #06090e;
+
+}
+
+.footer-inner {
+
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">Types</a>
+
+            <a href="/pokedex.html">Pokédex</a>
+
+            <a href="/raids/">Raids</a>
+
+            <a href="/guides/">Guides</a>
+
+            <a href="/tools/">Tools</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="/">Home</a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Dwebble
+    </strong>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <h1>
+                Dwebble
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Dwebble is a Bug and Rock-type Pokémon from
+                the Unova region. It is known for carrying a
+                rock as a protective shell and evolves into
+                Crustle.
+
+            </p>
+
+
+            <div class="hero-tags">
+
+                <span class="tag bug-tag">
+                    Bug
+                </span>
+
+                <span class="tag rock-tag">
+                    Rock
+                </span>
+
+                <span class="tag">
+                    #557
+                </span>
+
+                <span class="tag">
+                    Gen 5
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace with your licensed Dwebble image -->
+
+            <div class="pokemon-placeholder">
+                🦀
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>118</strong>
+
+        <span>ATTACK</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>128</strong>
+
+        <span>DEFENSE</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>137</strong>
+
+        <span>HP</span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>~1,393</strong>
+
+        <span>MAX CP</span>
+
+    </div>
+
+</div>
+
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section"
+         id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble Overview
+        </h2>
+
+        <p>
+
+            Dwebble is a Bug and Rock-type Pokémon introduced
+            in Generation 5. It belongs to the Unova region and
+            evolves into Crustle.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>Pokédex</span>
+
+            <strong>#557</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Generation</span>
+
+            <strong>Gen 5</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Region</span>
+
+            <strong>Unova</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Type</span>
+
+            <strong>Bug / Rock</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Attack</span>
+
+            <strong>118</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Defense</span>
+
+            <strong>128</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>HP</span>
+
+            <strong>137</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>Max CP</span>
+
+            <strong>~1,393</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section"
+         id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble Type
+        </h2>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🐛
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Dwebble's first type.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+            <p>
+                Dwebble's second type.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Dwebble's Typing Matters
+    </h3>
+
+    <p>
+
+        Dwebble's Bug and Rock typing creates a unique
+        defensive profile. However, the combination also
+        gives Dwebble several important weaknesses that
+        should be considered in battles.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section"
+         id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🌊
+            </div>
+
+            <strong>
+                Water
+            </strong>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🪨
+            </div>
+
+            <strong>
+                Rock
+            </strong>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                ⚙️
+            </div>
+
+            <strong>
+                Steel
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌱
+            </div>
+
+            <strong>
+                Normal
+            </strong>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔥
+            </div>
+
+            <strong>
+                Poison
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section"
+         id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble Stats & Max CP
+        </h2>
+
+        <p>
+
+            Dwebble is a relatively low-CP Pokémon and is
+            primarily collected as part of the Dwebble and
+            Crustle evolution family.
+
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>ATTACK</span>
+
+            <strong>118</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>DEFENSE</span>
+
+            <strong>128</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>HP</span>
+
+            <strong>137</strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>MAX CP</span>
+
+            <strong>~1,393</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section"
+         id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble Best Moves
+        </h2>
+
+        <p>
+
+            Dwebble's moveset can be useful for collection,
+            evolution preparation and limited PvP formats.
+
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Best Moveset
+        </strong>
+
+        <p>
+
+            Check the current Pokémon GO moveset database
+            before making a move recommendation because move
+            availability can change through game updates.
+
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Move</th>
+
+                    <th>Type</th>
+
+                    <th>Category</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>Check Current Move Pool</td>
+
+                    <td>Dynamic</td>
+
+                    <td>Fast / Charged</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section"
+         id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble Evolution
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Dwebble evolves into Crustle using Dwebble Candy.
+
+    </p>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <strong>
+                Dwebble
+            </strong>
+
+            <p>
+                Base Pokémon
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                ↓
+            </strong>
+
+            <p>
+                Candy Evolution
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <strong>
+                Crustle
+            </strong>
+
+            <p>
+                Evolution
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section"
+         id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            ✨ Shiny Dwebble
+        </h2>
+
+        <p>
+
+            Shiny Dwebble has alternate coloration compared
+            with the regular version. Availability depends on
+            eligible Pokémon GO encounters and events.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-card shiny">
+
+            <h3>
+                ✨ Shiny Dwebble
+            </h3>
+
+            <p>
+
+                A collector-focused alternate appearance of
+                Dwebble.
+
+            </p>
+
+        </div>
+
+
+        <div class="form-card shiny">
+
+            <h3>
+                Shiny Evolution
+            </h3>
+
+            <p>
+
+                A Shiny Dwebble can evolve into Shiny Crustle
+                while retaining its Shiny status.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section"
+         id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            🌑 Shadow Dwebble
+        </h2>
+
+        <p>
+
+            Shadow Dwebble is the Shadow version of Dwebble.
+            Shadow status changes battle characteristics while
+            keeping the same Pokémon species and typing.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card shadow">
+
+        <h3>
+            Shadow Dwebble
+        </h3>
+
+        <p>
+
+            Shadow Pokémon generally have increased offensive
+            pressure while sacrificing defensive durability.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow Dwebble Investment
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the current Shadow availability.
+        </li>
+
+        <li>
+            Review IVs before investing resources.
+        </li>
+
+        <li>
+            Check whether Frustration can currently be removed.
+        </li>
+
+        <li>
+            Compare Shadow Crustle with your existing Pokémon.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section"
+         id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            ✨ Purified Dwebble
+        </h2>
+
+        <p>
+
+            Purified Dwebble is obtained by purifying an
+            eligible Shadow Dwebble.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card purified">
+
+        <h3>
+            Purified Dwebble
+        </h3>
+
+        <p>
+
+            Purification removes the Shadow status and creates
+            a separate collector and investment option.
+
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Purified Dwebble
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Feature</th>
+
+                    <th>Shadow</th>
+
+                    <th>Purified</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>Shadow Status</td>
+
+                    <td>Yes</td>
+
+                    <td>No</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Purified</td>
+
+                    <td>No</td>
+
+                    <td>Yes</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Collector Value</td>
+
+                    <td>Shadow Form</td>
+
+                    <td>Purified Form</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section"
+         id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            🍀 Lucky Dwebble
+        </h2>
+
+        <p>
+
+            Lucky Dwebble is obtained through eligible
+            Pokémon trades. Lucky Pokémon require less
+            Stardust to power up than standard Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card lucky">
+
+        <h3>
+            Lucky Dwebble
+        </h3>
+
+        <p>
+
+            A Lucky Dwebble can be a useful long-term
+            investment if you plan to evolve and power up
+            the Pokémon.
+
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Lower Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Special Lucky Pokémon background.
+        </li>
+
+        <li>
+            Useful for collectors.
+        </li>
+
+        <li>
+            Can evolve into Lucky Crustle.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     100% IV
+===================================================== -->
+
+<section class="section"
+         id="perfect">
+
+    <div class="section-heading">
+
+        <h2>
+            💯 100% Dwebble
+        </h2>
+
+        <p>
+
+            A 100% IV Dwebble has perfect Individual Values
+            of 15 Attack, 15 Defense and 15 HP.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-card perfect">
+
+            <h3>
+                15 Attack
+            </h3>
+
+            <p>
+                Perfect Attack IV.
+            </p>
+
+        </div>
+
+
+        <div class="form-card perfect">
+
+            <h3>
+                15 Defense
+            </h3>
+
+            <p>
+                Perfect Defense IV.
+            </p>
+
+        </div>
+
+
+        <div class="form-card perfect">
+
+            <h3>
+                15 HP
+            </h3>
+
+            <p>
+                Perfect HP IV.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect IV Combination
+        </strong>
+
+        <p>
+            15 / 15 / 15 = 100% IV Dwebble
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section"
+         id="xxl">
+
+    <div class="section-heading">
+
+        <h2>
+            📏 XXL Dwebble
+        </h2>
+
+        <p>
+
+            XXL Dwebble is an oversized Dwebble variation.
+            Size categories are mainly important for
+            collection and size-based Pokémon GO features.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card xxl">
+
+        <h3>
+            XXL Dwebble
+        </h3>
+
+        <p>
+
+            An unusually large Dwebble with XXL size
+            classification.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section"
+         id="xxs">
+
+    <div class="section-heading">
+
+        <h2>
+            📐 XXS Dwebble
+        </h2>
+
+        <p>
+
+            XXS Dwebble represents an unusually small size
+            variation of Dwebble.
+
+        </p>
+
+    </div>
+
+
+    <div class="form-card xxs">
+
+        <h3>
+            XXS Dwebble
+        </h3>
+
+        <p>
+
+            An unusually small Dwebble with XXS size
+            classification.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS SUMMARY
+===================================================== -->
+
+<section class="section"
+         id="forms">
+
+    <div class="section-heading">
+
+        <h2>
+            All Dwebble Forms
+        </h2>
+
+    </div>
+
+
+    <div class="form-grid">
+
+        <div class="form-card">
+
+            <h3>
+                Regular Dwebble
+            </h3>
+
+            <p>
+                Standard form.
+            </p>
+
+        </div>
+
+
+        <div class="form-card shiny">
+
+            <h3>
+                Shiny Dwebble
+            </h3>
+
+            <p>
+                Alternate coloration.
+            </p>
+
+        </div>
+
+
+        <div class="form-card shadow">
+
+            <h3>
+                Shadow Dwebble
+            </h3>
+
+            <p>
+                Shadow variant.
+            </p>
+
+        </div>
+
+
+        <div class="form-card purified">
+
+            <h3>
+                Purified Dwebble
+            </h3>
+
+            <p>
+                Purified Shadow variant.
+            </p>
+
+        </div>
+
+
+        <div class="form-card lucky">
+
+            <h3>
+                Lucky Dwebble
+            </h3>
+
+            <p>
+                Special traded Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="form-card perfect">
+
+            <h3>
+                100% Dwebble
+            </h3>
+
+            <p>
+                15/15/15 IV combination.
+            </p>
+
+        </div>
+
+
+        <div class="form-card xxl">
+
+            <h3>
+                XXL Dwebble
+            </h3>
+
+            <p>
+                Oversized variation.
+            </p>
+
+        </div>
+
+
+        <div class="form-card xxs">
+
+            <h3>
+                XXS Dwebble
+            </h3>
+
+            <p>
+                Extra-small variation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section"
+         id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Dwebble FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Dwebble?
+        </summary>
+
+        <p>
+            Dwebble is a Bug and Rock-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What does Dwebble evolve into?
+        </summary>
+
+        <p>
+            Dwebble evolves into Crustle.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Dwebble available?
+        </summary>
+
+        <p>
+            Shiny availability depends on eligible Pokémon GO
+            encounters and events.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Dwebble be Lucky?
+        </summary>
+
+        <p>
+            Yes. Dwebble can become Lucky through eligible
+            Pokémon trades.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% Dwebble?
+        </summary>
+
+        <p>
+            A perfect Dwebble has 15 Attack, 15 Defense and
+            15 HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXL Dwebble?
+        </summary>
+
+        <p>
+            XXL represents an unusually large Dwebble size
+            variation.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is XXS Dwebble?
+        </summary>
+
+        <p>
+            XXS represents an unusually small Dwebble size
+            variation.
+        </p>
+
+    </details>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Dwebble Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#evolution">
+                    Evolution
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#perfect">
+                    100% Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxl">
+                    XXL Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#xxs">
+                    XXS Dwebble
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/crustle.html">
+
+            Crustle Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/bug.html">
+
+            Bug Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/rock.html">
+
+            Rock Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-5.html">
+
+            Generation 5 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Dwebble Quick Facts
+        </h3>
+
+        <p>
+            <strong>Pokédex:</strong>
+            #557
+        </p>
+
+        <p>
+            <strong>Generation:</strong>
+            5
+        </p>
+
+        <p>
+            <strong>Region:</strong>
+            Unova
+        </p>
+
+        <p>
+            <strong>Type:</strong>
+            Bug / Rock
+        </p>
+
+        <p>
+            <strong>Evolution:</strong>
+            Crustle
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

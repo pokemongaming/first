@@ -1,0 +1,4224 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Liepard Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS
+    </title>
+
+    <meta name="description"
+          content="Complete Liepard Pokémon GO guide covering stats, max CP, Dark typing, weaknesses, resistances, best moves, PvP, IVs, shiny Liepard, Shadow, Purified, Lucky, 100% IV, XXL and XXS Liepard.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://pokemongaming.in/pokemon/liepard.html">
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --bg: #08090e;
+            --bg-soft: #0e1118;
+            --surface: #121620;
+            --surface-2: #181d29;
+            --surface-3: #222938;
+
+            --border: #2a3141;
+
+            --text: #f5f6fa;
+            --muted: #aab1bf;
+
+            --accent: #a98cff;
+            --accent-2: #7655dc;
+
+            --dark: #9b82d4;
+            --ghost: #9379c9;
+            --fairy: #ef9ec7;
+            --fighting: #ed775f;
+
+            --danger: #ff7180;
+            --success: #63d89b;
+            --gold: #e6bf55;
+
+            --radius: 18px;
+            --radius-sm: 12px;
+
+            --max: 1200px;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Inter,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(169,140,255,.12),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.25;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .site-header {
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(8,9,14,.94);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .header-inner {
+
+            max-width: var(--max);
+            margin: auto;
+
+            min-height: 68px;
+
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+
+            font-size: 1.15rem;
+            font-weight: 950;
+            letter-spacing: -.03em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .main-nav {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+
+            color: var(--muted);
+
+            font-size: .8rem;
+            font-weight: 750;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+
+            max-width: var(--max);
+            margin: auto;
+
+            padding:
+                35px 20px 80px;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ===================================================== */
+
+        .breadcrumb {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 25px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+        }
+
+        .breadcrumb span {
+            opacity: .5;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .pokemon-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 26px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(169,140,255,.18),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #151523,
+                    #0b0d14
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.28);
+        }
+
+        .hero-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            border:
+                1px solid rgba(169,140,255,.3);
+
+            border-radius: 999px;
+
+            color: var(--accent);
+
+            background:
+                rgba(169,140,255,.08);
+
+            font-size: .68rem;
+
+            font-weight: 900;
+
+            letter-spacing: .08em;
+
+            margin-bottom: 14px;
+        }
+
+        .pokemon-hero h1 {
+
+            font-size:
+                clamp(2.2rem, 5vw, 4.5rem);
+
+            letter-spacing: -.055em;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+
+            max-width: 720px;
+
+            font-size: 1rem;
+
+            color: #c3c9d5;
+        }
+
+        .hero-tags {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: 20px;
+        }
+
+        .tag {
+
+            padding:
+                7px 11px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            font-size: .7rem;
+
+            font-weight: 800;
+        }
+
+        .dark-tag {
+            color: var(--dark);
+        }
+
+
+        /* =====================================================
+           HERO POKEMON
+        ===================================================== */
+
+        .hero-pokemon {
+
+            min-height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pokemon-placeholder {
+
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(169,140,255,.22),
+                    transparent 65%
+                );
+
+            font-size: 7rem;
+
+            filter:
+                drop-shadow(
+                    0 20px 25px rgba(0,0,0,.45)
+                );
+        }
+
+
+        /* =====================================================
+           QUICK STATS
+        ===================================================== */
+
+        .quick-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .quick-stat {
+
+            padding: 18px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .quick-stat strong {
+
+            display: block;
+
+            font-size: 1.25rem;
+        }
+
+        .quick-stat span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           LAYOUT
+        ===================================================== */
+
+        .content-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0,1fr) 290px;
+
+            gap: 20px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        .section {
+
+            margin-bottom: 20px;
+
+            padding: 28px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+
+            font-size:
+                clamp(1.45rem,3vw,2rem);
+
+            margin-bottom: 9px;
+        }
+
+        .section h3 {
+
+            margin:
+                22px 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           STAT GRID
+        ===================================================== */
+
+        .stat-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 10px;
+        }
+
+        .stat-card {
+
+            padding: 17px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .stat-card span {
+
+            display: block;
+
+            color: var(--muted);
+
+            font-size: .64rem;
+
+            font-weight: 850;
+
+            letter-spacing: .04em;
+        }
+
+        .stat-card strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            font-size: 1.45rem;
+        }
+
+
+        /* =====================================================
+           TYPE BOX
+        ===================================================== */
+
+        .type-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(169,140,255,.3);
+
+            background:
+                rgba(169,140,255,.06);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .type-icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(169,140,255,.13);
+
+            font-size: 1.5rem;
+        }
+
+        .type-box strong {
+            display: block;
+        }
+
+        .type-box span {
+
+            color: var(--dark);
+
+            font-size: .75rem;
+
+            font-weight: 850;
+        }
+
+
+        /* =====================================================
+           EFFECT GRID
+        ===================================================== */
+
+        .effect-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 12px;
+
+            margin-top: 15px;
+        }
+
+        .effect-card {
+
+            padding: 17px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            background:
+                var(--surface-2);
+        }
+
+        .effect-icon {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 6px;
+        }
+
+        .effect-card strong {
+            display: block;
+        }
+
+        .effect-card small {
+            color: var(--muted);
+        }
+
+        .weakness {
+            border-color:
+                rgba(255,113,128,.28);
+        }
+
+        .resistance {
+            border-color:
+                rgba(99,216,155,.25);
+        }
+
+
+        /* =====================================================
+           TABLE
+        ===================================================== */
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        .data-table th,
+        .data-table td {
+
+            padding:
+                13px 12px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            text-align: left;
+
+            font-size: .76rem;
+        }
+
+        .data-table th {
+
+            color: var(--muted);
+
+            font-size: .65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: .05em;
+        }
+
+        .move-name {
+            font-weight: 850;
+        }
+
+        .move-type {
+
+            color: var(--dark);
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           BEST MOVE
+        ===================================================== */
+
+        .best-move {
+
+            margin-top: 15px;
+
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(169,140,255,.11),
+                    rgba(255,255,255,.02)
+                );
+
+            border:
+                1px solid rgba(169,140,255,.25);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .best-move strong {
+
+            display: block;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           RATING
+        ===================================================== */
+
+        .rating-row {
+
+            display: grid;
+
+            grid-template-columns:
+                170px 1fr 70px;
+
+            gap: 15px;
+
+            align-items: center;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .rating-row:last-child {
+            border-bottom: 0;
+        }
+
+        .rating-bar {
+
+            height: 8px;
+
+            background:
+                var(--surface-3);
+
+            border-radius: 99px;
+
+            overflow: hidden;
+        }
+
+        .rating-fill {
+
+            height: 100%;
+
+            width: var(--rating);
+
+            background:
+                var(--accent);
+
+            border-radius: inherit;
+        }
+
+        .rating-value {
+
+            text-align: right;
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           IV
+        ===================================================== */
+
+        .iv-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 10px;
+
+            margin-top: 15px;
+        }
+
+        .iv-card {
+
+            padding: 18px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            text-align: center;
+        }
+
+        .iv-card strong {
+
+            display: block;
+
+            font-size: 1.45rem;
+        }
+
+        .iv-card span {
+
+            color: var(--muted);
+
+            font-size: .68rem;
+        }
+
+
+        /* =====================================================
+           FORM CARDS
+        ===================================================== */
+
+        .variant-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 18px;
+        }
+
+        .variant-card {
+
+            padding: 22px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+        }
+
+        .variant-card .variant-icon {
+
+            font-size: 2rem;
+
+            margin-bottom: 8px;
+        }
+
+        .variant-card strong {
+
+            display: block;
+
+            font-size: 1.05rem;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           SIZE CARDS
+        ===================================================== */
+
+        .size-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 15px;
+
+            margin-top: 18px;
+        }
+
+        .size-card {
+
+            padding: 22px;
+
+            border-radius: var(--radius-sm);
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .size-card.xxl {
+            border-color:
+                rgba(230,191,85,.35);
+        }
+
+        .size-card.xxs {
+            border-color:
+                rgba(169,140,255,.35);
+        }
+
+        .size-card strong {
+
+            display: block;
+
+            font-size: 1.15rem;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           CHECKLIST
+        ===================================================== */
+
+        .checklist {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 8px;
+
+            margin-top: 15px;
+        }
+
+        .checklist li {
+
+            padding:
+                12px 14px;
+
+            background:
+                var(--surface-2);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            color: #c8ced9;
+
+            font-size: .78rem;
+        }
+
+        .checklist li::before {
+
+            content: "✓";
+
+            margin-right: 8px;
+
+            color: var(--success);
+
+            font-weight: 900;
+        }
+
+
+        /* =====================================================
+           SPECIAL FORM TABLE
+        ===================================================== */
+
+        .comparison-table th,
+        .comparison-table td {
+
+            padding: 14px;
+
+            border:
+                1px solid var(--border);
+
+            font-size: .75rem;
+        }
+
+        .comparison-table th {
+
+            background:
+                var(--surface-2);
+
+            text-align: left;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 88px;
+
+            align-self: start;
+        }
+
+        .side-card {
+
+            margin-bottom: 15px;
+
+            padding: 20px;
+
+            background:
+                var(--surface);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius);
+        }
+
+        .side-card h3 {
+
+            margin: 0 0 13px;
+
+            font-size: .9rem;
+        }
+
+        .side-nav {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 4px;
+        }
+
+        .side-nav a {
+
+            display: block;
+
+            padding: 8px 10px;
+
+            border-radius: 7px;
+
+            color: var(--muted);
+
+            font-size: .72rem;
+
+            font-weight: 700;
+        }
+
+        .side-nav a:hover {
+
+            background:
+                var(--surface-2);
+
+            color: white;
+        }
+
+        .related-link {
+
+            display: block;
+
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+            color: var(--muted);
+
+            font-size: .75rem;
+        }
+
+        .related-link:last-child {
+            border-bottom: 0;
+        }
+
+        .related-link:hover {
+            color: var(--accent);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        details {
+
+            padding: 15px 0;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        details:last-child {
+            border-bottom: 0;
+        }
+
+        summary {
+
+            cursor: pointer;
+
+            font-weight: 850;
+
+            font-size: .82rem;
+        }
+
+        details p {
+
+            margin:
+                10px 0 0;
+
+            font-size: .78rem;
+        }
+
+
+        /* =====================================================
+           EDITORIAL
+        ===================================================== */
+
+        .editorial-note {
+
+            padding: 17px;
+
+            margin-top: 20px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                var(--radius-sm);
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid var(--border);
+
+            padding: 35px 20px;
+
+            background:
+                #06070b;
+        }
+
+        .footer-inner {
+
+            max-width: var(--max);
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        footer p {
+
+            margin: 0;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:950px) {
+
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-pokemon {
+                order: -1;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        @media(max-width:650px) {
+
+            .page {
+                padding:
+                    22px 13px 60px;
+            }
+
+            .pokemon-hero,
+            .section {
+                padding: 20px;
+            }
+
+            .quick-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .effect-grid,
+            .variant-grid,
+            .size-grid,
+            .iv-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .rating-row {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+
+            .rating-value {
+                text-align: left;
+            }
+
+            .main-nav {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="logo">
+            Pokémon<span>Gaming</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="/pokemon-types.html">
+                Types
+            </a>
+
+            <a href="/pokedex.html">
+                Pokédex
+            </a>
+
+            <a href="/raids/">
+                Raids
+            </a>
+
+            <a href="/guides/">
+                Guides
+            </a>
+
+            <a href="/tools/">
+                Tools
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    <a href="/">
+        Home
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokedex.html">
+        Pokémon Database
+    </a>
+
+    <span>›</span>
+
+    <a href="/pokemon-types/dark.html">
+        Dark Type
+    </a>
+
+    <span>›</span>
+
+    <strong>
+        Liepard
+    </strong>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pokemon-hero">
+
+    <div class="hero-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                DARK TYPE • UNOVA
+            </span>
+
+            <h1>
+                Liepard
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Liepard is a Dark-type Pokémon from the
+                Unova region. In Pokémon GO, it is primarily
+                useful as a Pokédex entry and collection
+                Pokémon, while its various forms such as
+                Shiny, Shadow, Purified, Lucky, XXL and XXS
+                can be valuable for collectors.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span class="tag dark-tag">
+                    Dark
+                </span>
+
+                <span class="tag">
+                    #510
+                </span>
+
+                <span class="tag">
+                    Gen 5
+                </span>
+
+                <span class="tag">
+                    Shiny Available
+                </span>
+
+                <span class="tag">
+                    Evolves from Purrloin
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-pokemon">
+
+            <!-- Replace this placeholder with your properly
+                 licensed Liepard artwork -->
+
+            <div class="pokemon-placeholder">
+                🐆
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<div class="quick-stats">
+
+    <div class="quick-stat">
+
+        <strong>
+            187
+        </strong>
+
+        <span>
+            ATTACK
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            106
+        </strong>
+
+        <span>
+            DEFENSE
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            162
+        </strong>
+
+        <span>
+            HP
+        </span>
+
+    </div>
+
+
+    <div class="quick-stat">
+
+        <strong>
+            ~2,100
+        </strong>
+
+        <span>
+            MAX CP
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CONTENT
+========================================================= -->
+
+<div class="content-layout">
+
+
+<div class="main-content">
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Overview
+        </h2>
+
+        <p>
+            Liepard is the evolved form of Purrloin and
+            belongs to the Dark type. It was introduced in
+            Generation 5 and is associated with the Unova
+            region.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                Pokédex
+            </span>
+
+            <strong>
+                #510
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Generation
+            </span>
+
+            <strong>
+                Gen 5
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Region
+            </span>
+
+            <strong>
+                Unova
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Type
+            </span>
+
+            <strong>
+                Dark
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Attack
+            </span>
+
+            <strong>
+                187
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Defense
+            </span>
+
+            <strong>
+                106
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                162
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Evolution
+            </span>
+
+            <strong>
+                Purrloin
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Type
+        </h2>
+
+    </div>
+
+
+    <div class="type-box">
+
+        <div class="type-icon">
+            🌑
+        </div>
+
+        <div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <span>
+                Primary Type
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Why Liepard's Typing Matters
+    </h3>
+
+    <p>
+        Liepard's pure Dark typing determines its offensive
+        matchups as well as its weaknesses and resistances.
+        Dark attacks are particularly useful against
+        Psychic- and Ghost-type opponents.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Weaknesses & Resistances
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Weaknesses
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🐛
+            </div>
+
+            <strong>
+                Bug
+            </strong>
+
+            <p>
+                Bug-type attacks deal super-effective
+                damage to Liepard.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting
+            </strong>
+
+            <p>
+                Fighting-type attacks are super effective
+                against Dark-type Liepard.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card weakness">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy
+            </strong>
+
+            <p>
+                Fairy-type attacks also exploit Liepard's
+                Dark typing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Resistances
+    </h3>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🌑
+            </div>
+
+            <strong>
+                Dark
+            </strong>
+
+            <p>
+                Liepard resists Dark-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                👻
+            </div>
+
+            <strong>
+                Ghost
+            </strong>
+
+            <p>
+                Dark typing gives Liepard resistance to
+                Ghost-type attacks.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card resistance">
+
+            <div class="effect-icon">
+                🔮
+            </div>
+
+            <strong>
+                Psychic
+            </strong>
+
+            <p>
+                Dark-type Pokémon are especially effective
+                against Psychic attacks.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section" id="stats">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Stats & Max CP
+        </h2>
+
+        <p>
+            Liepard has a more offensive stat profile than
+            defensive one. Its relatively modest durability
+            limits its value in difficult PvE battles.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                ATTACK
+            </span>
+
+            <strong>
+                187
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                DEFENSE
+            </span>
+
+            <strong>
+                106
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                HP
+            </span>
+
+            <strong>
+                162
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                MAX CP
+            </span>
+
+            <strong>
+                ~2,100
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Database note:
+        </strong>
+
+        <p>
+            Pokémon GO CP depends on the Pokémon's base
+            stats, IVs and level. Confirm numerical values
+            against your current game data before publishing
+            a final database entry.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Best Moves
+        </h2>
+
+        <p>
+            Liepard's moveset should be evaluated according
+            to whether you are building it for collection,
+            PvE or PvP use.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Dark-Type Build
+        </strong>
+
+        <p>
+            Use the strongest currently available Dark-focused
+            moveset when building Liepard for Dark-type damage.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Move Categories
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Move
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Role
+                    </th>
+
+                    <th>
+                        Purpose
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td class="move-name">
+                        Dark Fast Move
+                    </td>
+
+                    <td class="move-type">
+                        Dark
+                    </td>
+
+                    <td>
+                        Fast Move
+                    </td>
+
+                    <td>
+                        Dark damage
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td class="move-name">
+                        Dark Charged Move
+                    </td>
+
+                    <td class="move-type">
+                        Dark
+                    </td>
+
+                    <td>
+                        Charged Move
+                    </td>
+
+                    <td>
+                        STAB damage
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Move pools and move availability can change through
+        Pokémon GO updates and events. Check the current
+        in-game moveset before recommending a specific
+        Elite TM investment.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RAID
+===================================================== -->
+
+<section class="section" id="raid">
+
+    <div class="section-heading">
+
+        <h2>
+            Is Liepard Good for Raids?
+        </h2>
+
+        <p>
+            Liepard is generally not a priority Dark-type
+            raid attacker compared with the stronger options
+            available in Pokémon GO.
+        </p>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Raid Damage
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:48%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            4.8/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Durability
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:35%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            3.5/10
+        </span>
+
+    </div>
+
+
+    <div class="rating-row">
+
+        <strong>
+            Collection
+        </strong>
+
+        <div class="rating-bar">
+
+            <div class="rating-fill"
+                 style="--rating:90%;">
+            </div>
+
+        </div>
+
+        <span class="rating-value">
+            9/10
+        </span>
+
+    </div>
+
+
+    <h3>
+        When Should You Power Up Liepard?
+    </h3>
+
+    <p>
+        Liepard is better suited to collectors, Pokédex
+        completion and personal favorites than to expensive
+        high-level raid investment.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COUNTERS
+===================================================== -->
+
+<section class="section" id="counters">
+
+    <div class="section-heading">
+
+        <h2>
+            What Counters Liepard?
+        </h2>
+
+        <p>
+            Because Liepard is a pure Dark type, Bug, Fighting
+            and Fairy attackers are the primary counter categories.
+        </p>
+
+    </div>
+
+
+    <div class="effect-grid">
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🐛
+            </div>
+
+            <strong>
+                Bug Attackers
+            </strong>
+
+            <p>
+                Bug-type attacks exploit Liepard's Dark typing.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🥊
+            </div>
+
+            <strong>
+                Fighting Attackers
+            </strong>
+
+            <p>
+                Fighting-type attackers can deal
+                super-effective damage.
+            </p>
+
+        </div>
+
+
+        <div class="effect-card">
+
+            <div class="effect-icon">
+                🧚
+            </div>
+
+            <strong>
+                Fairy Attackers
+            </strong>
+
+            <p>
+                Fairy attackers also have a type advantage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     IV
+===================================================== -->
+
+<section class="section" id="iv">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard IV Guide
+        </h2>
+
+        <p>
+            Individual Values add extra Attack, Defense and
+            HP points to a Pokémon. A 15/15/15 Liepard is
+            considered a perfect IV specimen.
+        </p>
+
+    </div>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        100% IV Liepard
+    </h3>
+
+    <p>
+        A 15/15/15 Liepard is a perfect IV Liepard.
+        For collectors, a perfect specimen can be worth
+        keeping even when the Pokémon is not a top-tier
+        raid attacker.
+    </p>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect Liepard
+        </strong>
+
+        <p>
+            15 Attack • 15 Defense • 15 HP
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHINY
+===================================================== -->
+
+<section class="section" id="shiny">
+
+    <div class="section-heading">
+
+        <h2>
+            Shiny Liepard
+        </h2>
+
+        <p>
+            Shiny Liepard is a special coloration of Liepard.
+            It can be particularly desirable for collectors
+            because the Shiny appearance is different from
+            the standard form.
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐆
+            </div>
+
+            <strong>
+                Regular Liepard
+            </strong>
+
+            <p>
+                Standard coloration.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <strong>
+                Shiny Liepard
+            </strong>
+
+            <p>
+                Alternate Shiny coloration.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        Shiny availability can depend on the Pokémon's
+        current encounter and event history. Separate
+        historical availability from current availability
+        on live pages.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHADOW
+===================================================== -->
+
+<section class="section" id="shadow">
+
+    <div class="section-heading">
+
+        <h2>
+            Shadow Liepard
+        </h2>
+
+        <p>
+            Shadow Liepard is evaluated separately from
+            regular Liepard because Shadow Pokémon have a
+            different battle profile and resource requirements.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-icon">
+            🌑
+        </div>
+
+        <strong>
+            Shadow Liepard
+        </strong>
+
+        <p>
+            Shadow Liepard remains a pure Dark-type Pokémon.
+            The Shadow mechanic changes its battle performance,
+            while its underlying typing remains unchanged.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Shadow vs Regular Liepard
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Shadow
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Species
+                    </td>
+
+                    <td>
+                        Liepard
+                    </td>
+
+                    <td>
+                        Liepard
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Status
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Yes
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Battle Profile
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Increased damage / reduced durability
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Resource Cost
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Shadow investment
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Shadow Liepard IVs
+    </h3>
+
+    <p>
+        Shadow Pokémon do not need to have perfect IVs to
+        be useful. Evaluate the complete Pokémon, including
+        moves, level, IVs and intended battle role.
+    </p>
+
+
+    <div class="iv-grid">
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Attack IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                Defense IV
+            </span>
+
+        </div>
+
+
+        <div class="iv-card">
+
+            <strong>
+                15
+            </strong>
+
+            <span>
+                HP IV
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="editorial-note">
+
+        <strong>
+            Frustration reminder:
+        </strong>
+
+        <p>
+            Shadow Pokémon may have Frustration as their
+            Charged Move. Check the current Team GO Rocket
+            event rules before planning a move change.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PURIFIED
+===================================================== -->
+
+<section class="section" id="purified">
+
+    <div class="section-heading">
+
+        <h2>
+            Purified Liepard
+        </h2>
+
+        <p>
+            Purified Liepard is created by purifying an
+            eligible Shadow Liepard. Purification changes
+            the Pokémon's status and can affect its IVs,
+            level and other mechanics.
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🌑
+            </div>
+
+            <strong>
+                Shadow Liepard
+            </strong>
+
+            <p>
+                Retains its Shadow status and associated
+                battle mechanics.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                ✨
+            </div>
+
+            <strong>
+                Purified Liepard
+            </strong>
+
+            <p>
+                Purification removes the Shadow status.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Should You Purify Shadow Liepard?
+    </h3>
+
+    <p>
+        Purification should be considered based on your
+        collection goals, IVs, move requirements and the
+        value you place on keeping the Shadow version.
+        Do not purify automatically simply because the
+        resulting IVs may improve.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     LUCKY
+===================================================== -->
+
+<section class="section" id="lucky">
+
+    <div class="section-heading">
+
+        <h2>
+            Lucky Liepard
+        </h2>
+
+        <p>
+            Lucky Liepard is a special status obtained through
+            Pokémon GO's trading mechanics. Lucky Pokémon have
+            a distinct background and receive a reduced
+            Stardust cost for power-ups.
+        </p>
+
+    </div>
+
+
+    <div class="variant-card">
+
+        <div class="variant-icon">
+            🍀
+        </div>
+
+        <strong>
+            Lucky Liepard
+        </strong>
+
+        <p>
+            A Lucky Liepard is primarily valuable to collectors
+            and players who want a lower Stardust investment
+            when powering it up.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Keep a Lucky Liepard?
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Reduced Stardust cost for power-ups.
+        </li>
+
+        <li>
+            Special Lucky background and status.
+        </li>
+
+        <li>
+            Useful for completing a special-form collection.
+        </li>
+
+        <li>
+            Can be combined with strong IVs for a particularly
+            desirable collection Pokémon.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     XXL / XXS
+===================================================== -->
+
+<section class="section" id="size">
+
+    <div class="section-heading">
+
+        <h2>
+            XXL & XXS Liepard
+        </h2>
+
+        <p>
+            Pokémon GO can assign size categories to individual
+            Pokémon. XXL and XXS Liepard can therefore be useful
+            collection targets even when their battle statistics
+            are not exceptional.
+        </p>
+
+    </div>
+
+
+    <div class="size-grid">
+
+        <div class="size-card xxl">
+
+            <strong>
+                🏆 XXL Liepard
+            </strong>
+
+            <p>
+                An unusually large Liepard. XXL status can be
+                attractive for collectors and size-related
+                achievements.
+            </p>
+
+        </div>
+
+
+        <div class="size-card xxs">
+
+            <strong>
+                💜 XXS Liepard
+            </strong>
+
+            <p>
+                An unusually small Liepard. XXS specimens can
+                be valuable to collectors seeking a complete
+                size collection.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h3>
+        Does XXL or XXS Change Liepard's IVs?
+    </h3>
+
+    <p>
+        Size and IVs are separate characteristics. A large or
+        small Liepard can have excellent IVs, poor IVs or
+        anything in between.
+    </p>
+
+
+    <h3>
+        XXL vs XXS Liepard
+
+    </h3>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        XXL
+                    </th>
+
+                    <th>
+                        XXS
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Very Large
+                    </td>
+
+                    <td>
+                        Very Small
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Collection Value
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Automatically Perfect IV
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Separate Form?
+                    </td>
+
+                    <td>
+                        Size category
+                    </td>
+
+                    <td>
+                        Size category
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     100%
+===================================================== -->
+
+<section class="section" id="perfect">
+
+    <div class="section-heading">
+
+        <h2>
+            100% IV Liepard
+        </h2>
+
+        <p>
+            A 100% Liepard means that the Pokémon has the
+            maximum possible Attack, Defense and HP IVs:
+            15/15/15.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Perfect IV Combination
+        </strong>
+
+        <p>
+            Attack 15 • Defense 15 • HP 15
+        </p>
+
+    </div>
+
+
+    <h3>
+        Why Collect a Hundo Liepard?
+    </h3>
+
+    <p>
+        A perfect Liepard can be an appealing trophy for
+        Pokédex collectors and players who enjoy hunting
+        high-IV Pokémon. Its practical battle value should
+        still be judged separately from its IV perfection.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     FORMS
+===================================================== -->
+
+<section class="section" id="forms">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Special Forms & Statuses
+        </h2>
+
+        <p>
+            Liepard can be encountered with different special
+            statuses or characteristics. These should not all
+            be treated as separate species or evolutionary forms.
+        </p>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Variant
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Main Difference
+                    </th>
+
+                    <th>
+                        Collector Interest
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Regular Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Alternate coloration
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Shadow mechanics
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Lucky status
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        100% Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        15/15/15 IVs
+                    </td>
+
+                    <td>
+                        Very High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXL Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Very large size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        XXS Liepard
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Very small size
+                    </td>
+
+                    <td>
+                        High
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Evolution
+        </h2>
+
+        <p>
+            Liepard evolves from Purrloin. Unlike Legendary
+            Pokémon with special transformations, this is a
+            conventional evolution line.
+        </p>
+
+    </div>
+
+
+    <div class="variant-grid">
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐱
+            </div>
+
+            <strong>
+                Purrloin
+            </strong>
+
+            <p>
+                Unova Dark-type Pokémon.
+            </p>
+
+        </div>
+
+
+        <div class="variant-card">
+
+            <div class="variant-icon">
+                🐆
+            </div>
+
+            <strong>
+                Liepard
+            </strong>
+
+            <p>
+                Final evolutionary stage.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Evolution
+        </strong>
+
+        <p>
+            Purrloin → Liepard
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PVP
+===================================================== -->
+
+<section class="section" id="pvp">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard PvP Guide
+        </h2>
+
+        <p>
+            Liepard's performance in PvP should be considered
+            separately from its collection value. Its stats,
+            moves and CP distribution determine whether it fits
+            a particular league or cup.
+        </p>
+
+    </div>
+
+
+    <h3>
+        Great League
+    </h3>
+
+    <p>
+        Liepard may be considered in limited formats if its
+        current moveset and typing fit the rules. It is not
+        generally a default Great League investment.
+    </p>
+
+
+    <h3>
+        Ultra League
+    </h3>
+
+    <p>
+        Its overall stat profile and CP characteristics make
+        Ultra League use more situational. Always evaluate the
+        current moves and cup rules.
+    </p>
+
+
+    <h3>
+        Master League
+    </h3>
+
+    <p>
+        Liepard's maximum CP and overall stat profile make
+        Master League a poor fit compared with dedicated
+        Master League Pokémon.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     CANDY
+===================================================== -->
+
+<section class="section" id="resources">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Candy & Stardust
+        </h2>
+
+        <p>
+            If you want to evolve, power up or collect multiple
+            Liepard variants, Candy and Stardust management
+            becomes important.
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Save high-IV Liepard candidates before transferring.
+        </li>
+
+        <li>
+            Keep Shiny Liepard for your collection if desired.
+        </li>
+
+        <li>
+            Check Shadow Pokémon before purification.
+        </li>
+
+        <li>
+            Keep interesting XXL and XXS specimens.
+        </li>
+
+        <li>
+            Lucky Liepard can reduce Stardust costs when powering up.
+        </li>
+
+        <li>
+            Compare battle value before investing large amounts
+            of Stardust.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     AVAILABILITY
+===================================================== -->
+
+<section class="section" id="availability">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Availability
+        </h2>
+
+        <p>
+            Liepard availability can change as Pokémon GO
+            updates its wild encounters, events, research
+            encounters and other content.
+        </p>
+
+    </div>
+
+
+    <div class="best-move">
+
+        <strong>
+            Current Availability
+        </strong>
+
+        <p>
+            Check the current Pokémon GO encounter pool and
+            event schedule before presenting Liepard as
+            currently obtainable.
+        </p>
+
+    </div>
+
+
+    <p>
+        Historical event appearances should be separated from
+        current availability so that an old event does not
+        appear to be a permanent encounter source.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTION
+===================================================== -->
+
+<section class="section" id="collection">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard Collection Checklist
+        </h2>
+
+        <p>
+            Collectors can build a Liepard collection around
+            more than simply catching the standard Pokémon.
+        </p>
+
+    </div>
+
+
+    <ul class="checklist">
+
+        <li>
+            Regular Liepard
+        </li>
+
+        <li>
+            Shiny Liepard
+        </li>
+
+        <li>
+            Shadow Liepard
+        </li>
+
+        <li>
+            Purified Liepard
+        </li>
+
+        <li>
+            Lucky Liepard
+        </li>
+
+        <li>
+            100% IV Liepard
+        </li>
+
+        <li>
+            XXL Liepard
+        </li>
+
+        <li>
+            XXS Liepard
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     BATTLE GUIDE
+===================================================== -->
+
+<section class="section" id="battle-guide">
+
+    <div class="section-heading">
+
+        <h2>
+            How to Use Liepard
+        </h2>
+
+    </div>
+
+
+    <h3>
+        Before Investing
+    </h3>
+
+    <ul class="checklist">
+
+        <li>
+            Check the current moveset.
+        </li>
+
+        <li>
+            Check IVs and CP.
+        </li>
+
+        <li>
+            Decide whether the Pokémon is for battle or collection.
+        </li>
+
+        <li>
+            Check whether it is Shiny, Shadow, Lucky, XXL or XXS.
+        </li>
+
+        <li>
+            Compare Liepard with stronger Dark-type alternatives.
+        </li>
+
+    </ul>
+
+
+    <h3>
+        Collection Investment
+    </h3>
+
+    <p>
+        For Liepard, collection value can be more important
+        than raid performance. A Shiny, Lucky, Hundo, XXL,
+        XXS or Shadow specimen may therefore be worth keeping
+        even when it is not a top battle option.
+    </p>
+
+
+    <h3>
+        Long-Term Value
+    </h3>
+
+    <p>
+        Long-term value can change if Pokémon GO introduces
+        new moves, events, evolutions, special cups or other
+        mechanics. Avoid judging every Liepard only by its
+        current PvE ranking.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     COMPARISON
+===================================================== -->
+
+<section class="section" id="comparison">
+
+    <div class="section-heading">
+
+        <h2>
+            Regular vs Special Liepard
+        </h2>
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table class="comparison-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Feature
+                    </th>
+
+                    <th>
+                        Regular
+                    </th>
+
+                    <th>
+                        Special Variant
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Type
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                    <td>
+                        Dark
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shiny
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shiny version possible
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Shadow
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Shadow status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Purified
+                    </td>
+
+                    <td>
+                        No
+                    </td>
+
+                    <td>
+                        Purified status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Lucky
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        Lucky status
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Size
+                    </td>
+
+                    <td>
+                        Standard
+                    </td>
+
+                    <td>
+                        XXL / XXS possible
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+    <div class="section-heading">
+
+        <h2>
+            Liepard FAQ
+        </h2>
+
+    </div>
+
+
+    <details>
+
+        <summary>
+            What type is Liepard?
+        </summary>
+
+        <p>
+            Liepard is a pure Dark-type Pokémon.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is Liepard weak against?
+        </summary>
+
+        <p>
+            Liepard is weak to Bug, Fighting and Fairy-type
+            attacks.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What Pokémon does Liepard evolve from?
+        </summary>
+
+        <p>
+            Liepard evolves from Purrloin.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shiny Liepard available?
+        </summary>
+
+        <p>
+            Shiny availability depends on Pokémon GO's
+            encounter and event history. Check the current
+            game data for the latest availability.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Shadow Liepard different from regular Liepard?
+        </summary>
+
+        <p>
+            Yes. Shadow Liepard has Shadow-specific battle
+            mechanics while retaining its Dark typing.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can Shadow Liepard be purified?
+        </summary>
+
+        <p>
+            An eligible Shadow Liepard can be purified using
+            Pokémon GO's purification mechanics.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a Lucky Liepard?
+        </summary>
+
+        <p>
+            Lucky Liepard is a Liepard with Lucky status
+            obtained through Pokémon GO trading mechanics.
+            Lucky Pokémon require less Stardust to power up.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is a 100% IV Liepard?
+        </summary>
+
+        <p>
+            A 100% IV Liepard has 15 Attack, 15 Defense and
+            15 HP IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is an XXL Liepard?
+        </summary>
+
+        <p>
+            An XXL Liepard is an unusually large individual
+            that receives an XXL size designation.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            What is an XXS Liepard?
+        </summary>
+
+        <p>
+            An XXS Liepard is an unusually small individual
+            that receives an XXS size designation.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is XXL Liepard stronger than normal Liepard?
+        </summary>
+
+        <p>
+            XXL status is a size characteristic and should
+            not automatically be interpreted as better battle
+            stats or higher IVs.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is XXS Liepard rare?
+        </summary>
+
+        <p>
+            XXS specimens can be attractive to collectors
+            because size categories provide another dimension
+            for Pokémon GO collecting.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Liepard good for raids?
+        </summary>
+
+        <p>
+            Liepard is generally not a priority Dark-type
+            raid attacker compared with stronger alternatives.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Is Liepard good in PvP?
+        </summary>
+
+        <p>
+            Liepard is generally a situational PvP choice.
+            Its usefulness depends on the current moveset,
+            league rules and limited cup formats.
+        </p>
+
+    </details>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+    <div class="editorial-note">
+
+        <strong>
+            Editorial & Data Note
+        </strong>
+
+        <p>
+            Pokémon Gaming is an independent Pokémon GO
+            information website. Pokémon GO mechanics,
+            movesets, encounter availability, events and
+            other game data can change over time.
+        </p>
+
+        <p>
+            Always verify current in-game information before
+            making investment, trading or collection decisions.
+        </p>
+
+        <p>
+            Pokémon and Pokémon GO are trademarks of their
+            respective owners. This page is intended as an
+            independent informational guide.
+        </p>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <div class="side-card">
+
+        <h3>
+            Liepard Guide
+        </h3>
+
+
+        <ul class="side-nav">
+
+            <li>
+                <a href="#overview">
+                    Overview
+                </a>
+            </li>
+
+            <li>
+                <a href="#stats">
+                    Stats & Max CP
+                </a>
+            </li>
+
+            <li>
+                <a href="#type">
+                    Type
+                </a>
+            </li>
+
+            <li>
+                <a href="#weaknesses">
+                    Weaknesses
+                </a>
+            </li>
+
+            <li>
+                <a href="#moves">
+                    Best Moves
+                </a>
+            </li>
+
+            <li>
+                <a href="#pvp">
+                    PvP
+                </a>
+            </li>
+
+            <li>
+                <a href="#shiny">
+                    Shiny Liepard
+                </a>
+            </li>
+
+            <li>
+                <a href="#shadow">
+                    Shadow Liepard
+                </a>
+            </li>
+
+            <li>
+                <a href="#purified">
+                    Purified Liepard
+                </a>
+            </li>
+
+            <li>
+                <a href="#lucky">
+                    Lucky Liepard
+                </a>
+            </li>
+
+            <li>
+                <a href="#perfect">
+                    100% Liepard
+                </a>
+            </li>
+
+            <li>
+                <a href="#size">
+                    XXL & XXS
+                </a>
+            </li>
+
+            <li>
+                <a href="#availability">
+                    Availability
+                </a>
+            </li>
+
+            <li>
+                <a href="#faq">
+                    FAQ
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Related Guides
+        </h3>
+
+
+        <a class="related-link"
+           href="/pokemon/purrloin.html">
+
+            Purrloin Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-types/dark.html">
+
+            Dark Type Hub →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/zoroark.html">
+
+            Zoroark Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon/absol.html">
+
+            Absol Guide →
+
+        </a>
+
+
+        <a class="related-link"
+           href="/pokemon-generations/gen-5.html">
+
+            Gen 5 Pokémon →
+
+        </a>
+
+    </div>
+
+
+    <div class="side-card">
+
+        <h3>
+            Liepard Quick Facts
+        </h3>
+
+
+        <p>
+            <strong>
+                Type:
+            </strong>
+            Dark
+        </p>
+
+
+        <p>
+            <strong>
+                Generation:
+            </strong>
+            5
+        </p>
+
+
+        <p>
+            <strong>
+                Pokédex:
+            </strong>
+            #510
+        </p>
+
+
+        <p>
+            <strong>
+                Evolves From:
+            </strong>
+            Purrloin
+        </p>
+
+
+        <p>
+            <strong>
+                Evolution Stage:
+            </strong>
+            Final
+        </p>
+
+
+        <p>
+            <strong>
+                Special Collection:
+            </strong>
+            Shiny / Shadow / Lucky / XXL / XXS
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 PokémonGaming.in
+        </p>
+
+        <p>
+            Independent Pokémon GO information and guides.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
+```

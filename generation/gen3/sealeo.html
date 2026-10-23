@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sealeo Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow & Forms</title>
+
+<meta name="description"
+content="Complete Sealeo Pokémon GO guide covering regular Sealeo, Shiny Sealeo, Shadow Sealeo, Purified Sealeo, Lucky Sealeo, 100% IV Sealeo, XXL Sealeo and XXS Sealeo.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/sealeo.html">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+    --bg: #071018;
+    --bg-soft: #0b1721;
+
+    --surface: #101d29;
+    --surface-2: #162633;
+    --surface-3: #203646;
+
+    --border: #294354;
+
+    --text: #f3f8fb;
+    --muted: #a7bbc8;
+
+    --accent: #6dc7df;
+    --accent-2: #4aa9c4;
+
+    --ice: #8be7ef;
+    --water: #4f9fff;
+
+    --shadow: #9c6bd9;
+    --shiny: #ffd76a;
+    --purified: #8fe6b0;
+    --lucky: #ffb84d;
+
+    --danger: #ff7180;
+    --success: #63dc9c;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(109,199,223,.12),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(7,16,24,.93);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.pokemon-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 35px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(109,199,223,.18),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            #10222f,
+            #09131c
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.28);
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--border);
+
+    color: var(--ice);
+
+    background: rgba(139,231,239,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.3rem, 5vw, 4.5rem);
+
+    letter-spacing: -.055em;
+
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+
+    font-size: 1rem;
+
+    color: #c3d3dc;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+.water-tag {
+    color: var(--water);
+}
+
+.ice-tag {
+    color: var(--ice);
+}
+
+
+/* =====================================================
+   HERO POKEMON
+===================================================== */
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(109,199,223,.25),
+            transparent 65%
+        );
+
+    font-size: 8rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+
+/* =====================================================
+   QUICK STATS
+===================================================== */
+
+.quick-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+
+    font-size: .68rem;
+
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem, 3vw, 2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 24px 0 10px;
+
+    font-size: 1.08rem;
+}
+
+
+/* =====================================================
+   STAT GRID
+===================================================== */
+
+.stat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.35rem;
+}
+
+
+/* =====================================================
+   TYPE BOX
+===================================================== */
+
+.type-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(109,199,223,.28);
+
+    background:
+        rgba(109,199,223,.06);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.type-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(109,199,223,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+
+/* =====================================================
+   EFFECT GRID
+===================================================== */
+
+.effect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card p {
+    font-size: .76rem;
+
+    margin-top: 6px;
+}
+
+
+/* =====================================================
+   FORM SYSTEM
+===================================================== */
+
+.form-card {
+    margin-top: 18px;
+
+    padding: 22px;
+
+    border-radius: var(--radius);
+
+    border: 1px solid var(--border);
+
+    background: var(--surface-2);
+}
+
+.form-card h3 {
+    margin-top: 0;
+}
+
+.form-regular {
+    border-color:
+        rgba(109,199,223,.35);
+}
+
+.form-shiny {
+    border-color:
+        rgba(255,215,106,.45);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,215,106,.10),
+            var(--surface-2)
+        );
+}
+
+.form-shadow {
+    border-color:
+        rgba(156,107,217,.5);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(156,107,217,.14),
+            var(--surface-2)
+        );
+}
+
+.form-purified {
+    border-color:
+        rgba(143,230,176,.4);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(143,230,176,.10),
+            var(--surface-2)
+        );
+}
+
+.form-lucky {
+    border-color:
+        rgba(255,184,77,.5);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,184,77,.12),
+            var(--surface-2)
+        );
+}
+
+.form-perfect {
+    border-color:
+        rgba(255,215,106,.55);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,215,106,.13),
+            rgba(109,199,223,.08)
+        );
+}
+
+.form-xxl {
+    border-color:
+        rgba(109,199,223,.5);
+}
+
+.form-xxs {
+    border-color:
+        rgba(139,231,239,.4);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td,
+.comparison-table th,
+.comparison-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th,
+.comparison-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+}
+
+
+/* =====================================================
+   BEST MOVE
+===================================================== */
+
+.best-move {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(109,199,223,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(109,199,223,.25);
+
+    border-radius:
+        var(--radius-sm);
+}
+
+.best-move strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    color: #c8d7df;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   EDITORIAL NOTE
+===================================================== */
+
+.editorial-note {
+    margin-top: 20px;
+
+    padding: 17px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    font-size: .75rem;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: sticky;
+
+    top: 88px;
+
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin-bottom: 13px;
+
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+
+    color: white;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+details {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+
+    font-size: .82rem;
+}
+
+details p {
+    margin-top: 10px;
+
+    font-size: .78rem;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #050b10;
+}
+
+.footer-inner {
+    max-width: var(--max);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width: 950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .page {
+        padding: 22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .quick-stats,
+    .stat-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .effect-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">Types</a> <a href="/pokedex.html">Pokédex</a> <a href="/raids/">Raids</a> <a href="/guides/">Guides</a> <a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="page">
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/water.html">
+Water Type
+</a>
+
+<span>›</span>
+
+<strong>
+Sealeo
+</strong>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="eyebrow">
+POKÉDEX #364
+</div>
+
+<h1>
+Sealeo
+</h1>
+
+<p class="hero-subtitle">
+
+Sealeo is a Water and Ice-type Pokémon from the Hoenn
+region. It is the middle evolution of the Spheal family,
+evolving from Spheal and eventually evolving into Walrein.
+In Pokémon GO, Sealeo can be useful as an evolution stage,
+a collection target, and a potential PvP option depending
+on its moveset and league eligibility.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag water-tag">
+Water
+</span>
+
+<span class="tag ice-tag">
+Ice
+</span>
+
+<span class="tag">
+#364
+</span>
+
+<span class="tag">
+Gen 3
+</span>
+
+<span class="tag">
+Evolution Stage
+</span>
+
+<span class="tag">
+Shiny Available
+</span>
+
+</div>
+
+</div>
+
+<div class="hero-pokemon">
+
+<!-- Replace with properly licensed Sealeo artwork -->
+
+<div class="pokemon-placeholder">
+🦭
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+<strong>137</strong>
+<span>ATTACK</span>
+</div>
+
+<div class="quick-stat">
+<strong>132</strong>
+<span>DEFENSE</span>
+</div>
+
+<div class="quick-stat">
+<strong>207</strong>
+<span>HP</span>
+</div>
+
+<div class="quick-stat">
+<strong>~2,283</strong>
+<span>MAX CP</span>
+</div>
+
+</div>
+
+<div class="content-layout">
+
+<div class="main-content">
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+Sealeo Overview
+</h2>
+
+<p>
+
+Sealeo is the second Pokémon in the Spheal evolutionary
+family. It evolves from Spheal and can later evolve into
+Walrein. Its dual Water and Ice typing gives it access to
+two useful offensive types, while also creating a specific
+set of weaknesses and resistances.
+
+</p>
+
+</div>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#364</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 3</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Hoenn</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ice</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>137</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>132</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>207</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~2,283</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     EVOLUTION
+===================================================== -->
+
+<section class="section" id="evolution">
+
+<h2>
+Sealeo Evolution Family
+</h2>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>STAGE 1</span>
+<strong>Spheal</strong>
+</div>
+
+<div class="stat-card">
+<span>STAGE 2</span>
+<strong>Sealeo</strong>
+</div>
+
+<div class="stat-card">
+<span>FINAL STAGE</span>
+<strong>Walrein</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Hoenn</strong>
+</div>
+
+</div>
+
+<h3>
+Evolution Path
+</h3>
+
+<p>
+
+Spheal evolves into Sealeo, which later evolves into Walrein.
+Players should consider whether they want to keep Sealeo for
+collection or PvP purposes before evolving it further.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     TYPE
+===================================================== -->
+
+<section class="section" id="type">
+
+<h2>
+Sealeo Type
+</h2>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+💧
+</div>
+
+<strong>
+Water
+</strong>
+
+<p>
+Primary Pokémon type.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">
+❄️
+</div>
+
+<strong>
+Ice
+</strong>
+
+<p>
+Secondary Pokémon type.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     WEAKNESSES
+===================================================== -->
+
+<section class="section" id="weaknesses">
+
+<h2>
+Sealeo Weaknesses
+</h2>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⚡
+</div>
+
+<strong>
+Electric
+</strong>
+
+<p>
+Electric attacks are super effective.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🌿
+</div>
+
+<strong>
+Grass
+</strong>
+
+<p>
+Grass-type attacks can exploit Sealeo.
+</p>
+
+</div>
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⚔️
+</div>
+
+<strong>
+Fighting
+</strong>
+
+<p>
+Fighting-type attacks are super effective.
+</p>
+
+</div>
+
+</div>
+
+<h3>
+Additional Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<strong>Rock</strong>
+<p>Rock attacks are dangerous for Sealeo.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     MOVES
+===================================================== -->
+
+<section class="section" id="moves">
+
+<h2>
+Sealeo Best Moves
+</h2>
+
+<p>
+
+The best moveset for Sealeo depends on whether you are
+using it temporarily, in PvP, or as part of the Spheal
+evolution family.
+
+</p>
+
+<div class="best-move">
+
+<strong>
+Recommended Approach
+</strong>
+
+<p>
+
+Use the best currently available Water or Ice-focused
+moveset for the format you intend to play.
+
+</p>
+
+</div>
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Move</th>
+<th>Type</th>
+<th>Category</th>
+<th>Role</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Water Move</td>
+<td>Water</td>
+<td>Fast / Charged</td>
+<td>Water damage</td>
+</tr>
+
+<tr>
+<td>Ice Move</td>
+<td>Ice</td>
+<td>Fast / Charged</td>
+<td>Ice coverage</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="editorial-note">
+
+Move availability can change through Pokémon GO events,
+move updates and other game changes. Verify the live
+moveset before publishing a current competitive
+recommendation.
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHINY SEALEO
+===================================================== -->
+
+<section class="section" id="shiny">
+
+<h2>
+✨ Shiny Sealeo
+</h2>
+
+<div class="form-card form-shiny">
+
+<h3>
+Shiny Sealeo Overview
+</h3>
+
+<p>
+
+Shiny Sealeo is the alternate-colour version of Sealeo.
+A Shiny Spheal can retain its Shiny status when evolved
+into Sealeo, and a Shiny Sealeo can later evolve into
+Shiny Walrein.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ice</strong>
+</div>
+
+<div class="stat-card">
+<span>SHINY STATUS</span>
+<strong>Yes</strong>
+</div>
+
+<div class="stat-card">
+<span>BATTLE STATS</span>
+<strong>Same</strong>
+</div>
+
+<div class="stat-card">
+<span>COLLECTOR VALUE</span>
+<strong>High</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     SHADOW SEALEO
+===================================================== -->
+
+<section class="section" id="shadow">
+
+<h2>
+🌑 Shadow Sealeo
+</h2>
+
+<div class="form-card form-shadow">
+
+<h3>
+Shadow Sealeo Overview
+</h3>
+
+<p>
+
+Shadow Sealeo is the Shadow version of Sealeo. Shadow
+Pokémon have a different offensive and defensive battle
+profile from standard Pokémon and require additional
+resources for power-ups.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ice</strong>
+</div>
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Shadow</strong>
+</div>
+
+<div class="stat-card">
+<span>OFFENSE</span>
+<strong>Higher</strong>
+</div>
+
+<div class="stat-card">
+<span>DURABILITY</span>
+<strong>Lower</strong>
+</div>
+
+</div>
+
+<h3>
+Shadow Sealeo Investment
+</h3>
+
+<ul class="checklist">
+
+<li>
+Do not automatically purify a useful Shadow Sealeo.
+</li>
+
+<li>
+Check whether its moveset can be optimized.
+</li>
+
+<li>
+Compare it with Shadow and regular Walrein options.
+</li>
+
+<li>
+Consider the higher resource cost before powering it up.
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PURIFIED SEALEO
+===================================================== -->
+
+<section class="section" id="purified">
+
+<h2>
+✨ Purified Sealeo
+</h2>
+
+<div class="form-card form-purified">
+
+<h3>
+Purified Sealeo Overview
+</h3>
+
+<p>
+
+Purified Sealeo is obtained by purifying an eligible Shadow
+Sealeo. Purification changes its Shadow status and may
+change its resource requirements.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Purified</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ice</strong>
+</div>
+
+<div class="stat-card">
+<span>SHADOW STATUS</span>
+<strong>Removed</strong>
+</div>
+
+<div class="stat-card">
+<span>COLLECTION</span>
+<strong>Special Form</strong>
+</div>
+
+</div>
+
+<h3>
+Shadow vs Purified Sealeo
+</h3>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+<th>Feature</th>
+<th>Shadow</th>
+<th>Purified</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Shadow Status</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Offensive Profile</td>
+<td>Shadow</td>
+<td>Standard</td>
+</tr>
+
+<tr>
+<td>Purification</td>
+<td>Available</td>
+<td>Completed</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     LUCKY SEALEO
+===================================================== -->
+
+<section class="section" id="lucky">
+
+<h2>
+🍀 Lucky Sealeo
+</h2>
+
+<div class="form-card form-lucky">
+
+<h3>
+Lucky Sealeo Overview
+</h3>
+
+<p>
+
+Lucky Sealeo is obtained through eligible Pokémon trades.
+Lucky Pokémon are especially attractive for players who
+plan to power them up because they have special Stardust
+investment benefits.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>FORM</span>
+<strong>Lucky</strong>
+</div>
+
+<div class="stat-card">
+<span>OBTAINED FROM</span>
+<strong>Trade</strong>
+</div>
+
+<div class="stat-card">
+<span>INVESTMENT</span>
+<strong>Efficient</strong>
+</div>
+
+<div class="stat-card">
+<span>COLLECTOR VALUE</span>
+<strong>Special</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     100% SEALEO
+===================================================== -->
+
+<section class="section" id="perfect">
+
+<h2>
+💯 100% IV Sealeo
+</h2>
+
+<div class="form-card form-perfect">
+
+<h3>
+Perfect Sealeo IVs
+</h3>
+
+<p>
+
+A 100% IV Sealeo has the perfect Individual Value
+combination of 15 Attack, 15 Defense and 15 HP.
+
+</p>
+
+<div class="effect-grid">
+
+<div class="effect-card">
+<strong>15</strong>
+<p>Attack IV</p>
+</div>
+
+<div class="effect-card">
+<strong>15</strong>
+<p>Defense IV</p>
+</div>
+
+<div class="effect-card">
+<strong>15</strong>
+<p>HP IV</p>
+</div>
+
+</div>
+
+<h3>
+Should You Keep a 100% Sealeo?
+</h3>
+
+<p>
+
+A perfect Sealeo is an excellent collection target and
+can be worth keeping for evolution into Walrein, depending
+on your long-term goals.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     XXL
+===================================================== -->
+
+<section class="section" id="xxl">
+
+<h2>
+📏 XXL Sealeo
+</h2>
+
+<div class="form-card form-xxl">
+
+<h3>
+XXL Sealeo Overview
+</h3>
+
+<p>
+
+XXL Sealeo is an unusually large specimen. Size categories
+primarily provide collection value and can be relevant for
+Pokémon GO showcase-style activities.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>SIZE</span>
+<strong>XXL</strong>
+</div>
+
+<div class="stat-card">
+<span>SPECIES</span>
+<strong>Sealeo</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ice</strong>
+</div>
+
+<div class="stat-card">
+<span>COLLECTOR VALUE</span>
+<strong>Large</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     XXS
+===================================================== -->
+
+<section class="section" id="xxs">
+
+<h2>
+🔎 XXS Sealeo
+</h2>
+
+<div class="form-card form-xxs">
+
+<h3>
+XXS Sealeo Overview
+</h3>
+
+<p>
+
+XXS Sealeo is an unusually small specimen. Like XXL
+Pokémon, XXS status is primarily a size and collection
+classification rather than a separate battle form.
+
+</p>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>SIZE</span>
+<strong>XXS</strong>
+</div>
+
+<div class="stat-card">
+<span>SPECIES</span>
+<strong>Sealeo</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Water / Ice</strong>
+</div>
+
+<div class="stat-card">
+<span>COLLECTOR VALUE</span>
+<strong>Special</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FORM COMPARISON
+===================================================== -->
+
+<section class="section" id="forms">
+
+<h2>
+Sealeo Forms Compared
+</h2>
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>Version</th>
+<th>Battle Profile</th>
+<th>Special Feature</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Regular Sealeo</td>
+<td>Standard</td>
+<td>Normal form</td>
+</tr>
+
+<tr>
+<td>Shiny Sealeo</td>
+<td>Standard</td>
+<td>Alternate colour</td>
+</tr>
+
+<tr>
+<td>Shadow Sealeo</td>
+<td>Shadow profile</td>
+<td>Higher offensive pressure</td>
+</tr>
+
+<tr>
+<td>Purified Sealeo</td>
+<td>Standard</td>
+<td>Purified from Shadow</td>
+</tr>
+
+<tr>
+<td>Lucky Sealeo</td>
+<td>Standard</td>
+<td>Special trade status</td>
+</tr>
+
+<tr>
+<td>100% Sealeo</td>
+<td>IV optimized</td>
+<td>15/15/15 IVs</td>
+</tr>
+
+<tr>
+<td>XXL Sealeo</td>
+<td>Standard</td>
+<td>Large size</td>
+</tr>
+
+<tr>
+<td>XXS Sealeo</td>
+<td>Standard</td>
+<td>Small size</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section" id="faq">
+
+<h2>
+Sealeo FAQ
+</h2>
+
+<details>
+
+<summary>
+What type is Sealeo?
+</summary>
+
+<p>
+Sealeo is a Water and Ice-type Pokémon.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What does Sealeo evolve from?
+</summary>
+
+<p>
+Sealeo evolves from Spheal.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What does Sealeo evolve into?
+</summary>
+
+<p>
+Sealeo can evolve into Walrein.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can Sealeo be Shiny?
+</summary>
+
+<p>
+Yes, Shiny Sealeo is available through eligible encounters
+and evolution from Shiny Spheal.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can Sealeo be Shadow?
+</summary>
+
+<p>
+Shadow availability depends on the current Pokémon GO
+Team GO Rocket rotation and eligible encounters.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is a 100% IV Sealeo?
+</summary>
+
+<p>
+A 100% IV Sealeo has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is XXL Sealeo?
+</summary>
+
+<p>
+XXL indicates that Sealeo is an unusually large specimen.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+What is XXS Sealeo?
+</summary>
+
+<p>
+XXS indicates that Sealeo is an unusually small specimen.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Should I evolve Sealeo into Walrein?
+</summary>
+
+<p>
+Walrein is the final evolution of the family. Whether you
+should evolve Sealeo depends on your collection, PvP and
+investment goals.
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     EDITORIAL NOTE
+===================================================== -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon availability, Shadow rotations, movesets,
+events and game mechanics can change over time.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This page is an independent informational guide.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h3>
+Sealeo Guide
+</h3>
+
+<ul class="side-nav">
+
+<li><a href="#overview">Overview</a></li>
+
+<li><a href="#evolution">Evolution Family</a></li>
+
+<li><a href="#type">Type</a></li>
+
+<li><a href="#weaknesses">Weaknesses</a></li>
+
+<li><a href="#moves">Best Moves</a></li>
+
+<li><a href="#shiny">Shiny Sealeo</a></li>
+
+<li><a href="#shadow">Shadow Sealeo</a></li>
+
+<li><a href="#purified">Purified Sealeo</a></li>
+
+<li><a href="#lucky">Lucky Sealeo</a></li>
+
+<li><a href="#perfect">100% Sealeo</a></li>
+
+<li><a href="#xxl">XXL Sealeo</a></li>
+
+<li><a href="#xxs">XXS Sealeo</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h3>
+Sealeo Quick Facts
+</h3>
+
+<p><strong>Pokédex:</strong> #364</p>
+
+<p><strong>Generation:</strong> 3</p>
+
+<p><strong>Region:</strong> Hoenn</p>
+
+<p><strong>Type:</strong> Water / Ice</p>
+
+<p><strong>Evolves From:</strong> Spheal</p>
+
+<p><strong>Evolves Into:</strong> Walrein</p>
+
+</div>
+
+<div class="side-card">
+
+<h3>
+Related Pokémon
+</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="/pokemon/spheal.html">
+Spheal →
+</a>
+</li>
+
+<li>
+<a href="/pokemon/walrein.html">
+Walrein →
+</a>
+</li>
+
+<li>
+<a href="/pokemon-types/water.html">
+Water Type Hub →
+</a>
+</li>
+
+<li>
+<a href="/pokemon-types/ice.html">
+Ice Type Hub →
+</a>
+</li>
+
+<li>
+<a href="/pokemon-generations/gen-3.html">
+Gen 3 Pokémon →
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

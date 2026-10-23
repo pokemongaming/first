@@ -1,0 +1,3285 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phanpy Pokémon GO Guide — Stats, Max CP, Moves, IVs, Shiny, Shadow, Lucky, XXL & XXS</title>
+
+<meta name="description"
+content="Complete Phanpy Pokémon GO guide covering Phanpy stats, Max CP, Ground typing, weaknesses, moves, IVs, 100% Phanpy, Shiny, Shadow, Purified, Lucky, XXL, XXS and evolution.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://pokemongaming.in/pokemon/phanpy.html">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --bg: #080b12;
+    --bg-soft: #0e131d;
+    --surface: #121925;
+    --surface-2: #171f2d;
+    --surface-3: #202a3b;
+
+    --border: #293448;
+
+    --text: #f4f6fb;
+    --muted: #aab3c2;
+
+    --accent: #d6a743;
+    --accent-2: #b8892f;
+
+    --ground: #d6a743;
+    --water: #4e9dff;
+    --grass: #5dcf82;
+    --ice: #72d6dc;
+
+    --danger: #ff6f7d;
+    --success: #62d89a;
+    --purple: #b58cff;
+
+    --radius: 18px;
+    --radius-sm: 12px;
+
+    --max: 1200px;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(214,167,67,.10),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background:
+        rgba(8,11,18,.92);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.header-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    min-height: 68px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 950;
+    letter-spacing: -.03em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page {
+    max-width: var(--max);
+    margin: auto;
+    padding: 35px 20px 80px;
+}
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.breadcrumb span {
+    opacity: .5;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pokemon-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(214,167,67,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #171b25,
+            #0c111b
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+
+    padding: 6px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--ground);
+
+    background:
+        rgba(214,167,67,.08);
+
+    font-size: .68rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+
+    margin-bottom: 14px;
+}
+
+.pokemon-hero h1 {
+    font-size:
+        clamp(2.2rem,5vw,4.5rem);
+
+    letter-spacing: -.055em;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    font-size: 1rem;
+    color: #c2cad7;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.ground-tag {
+    color: var(--ground);
+}
+
+.hero-pokemon {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-placeholder {
+    width: 260px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(214,167,67,.20),
+            transparent 65%
+        );
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.4)
+        );
+}
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.quick-stat {
+    padding: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.quick-stat strong {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.quick-stat span {
+    color: var(--muted);
+    font-size: .68rem;
+    font-weight: 750;
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.content-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr) 290px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size:
+        clamp(1.45rem,3vw,2rem);
+
+    margin-bottom: 9px;
+}
+
+.section h3 {
+    margin: 22px 0 10px;
+    font-size: 1.05rem;
+}
+
+.section-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: .68rem;
+    font-weight: 900;
+
+    letter-spacing: .08em;
+}
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    padding: 17px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: .64rem;
+    font-weight: 850;
+
+    letter-spacing: .04em;
+}
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 1.35rem;
+}
+
+/* =========================================================
+   TYPE
+========================================================= */
+
+.type-box {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border:
+        1px solid rgba(214,167,67,.3);
+
+    background:
+        rgba(214,167,67,.06);
+
+    border-radius: var(--radius-sm);
+}
+
+.type-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(214,167,67,.13);
+
+    font-size: 1.5rem;
+}
+
+.type-box strong {
+    display: block;
+}
+
+.type-box span {
+    color: var(--ground);
+
+    font-size: .75rem;
+    font-weight: 850;
+}
+
+/* =========================================================
+   EFFECT GRID
+========================================================= */
+
+.effect-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.effect-card {
+    padding: 17px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    background: var(--surface-2);
+}
+
+.effect-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.effect-card strong {
+    display: block;
+}
+
+.effect-card span {
+    color: var(--muted);
+    font-size: .72rem;
+}
+
+.weakness {
+    border-color:
+        rgba(255,111,125,.25);
+}
+
+.resistance {
+    border-color:
+        rgba(98,216,154,.25);
+}
+
+/* =========================================================
+   MOVE TABLE
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+    padding: 13px 12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .76rem;
+}
+
+.data-table th {
+    color: var(--muted);
+
+    font-size: .65rem;
+
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.move-name {
+    font-weight: 850;
+}
+
+.move-type {
+    color: var(--ground);
+    font-weight: 800;
+}
+
+/* =========================================================
+   FEATURE BOX
+========================================================= */
+
+.feature-box {
+    margin-top: 15px;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(214,167,67,.10),
+            rgba(255,255,255,.02)
+        );
+
+    border:
+        1px solid rgba(214,167,67,.25);
+
+    border-radius: var(--radius-sm);
+}
+
+.feature-box strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* =========================================================
+   FORM CARDS
+========================================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.form-card {
+    padding: 22px;
+
+    background: var(--surface-2);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+}
+
+.form-card .form-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.form-card strong {
+    display: block;
+    font-size: 1.05rem;
+}
+
+.form-card p {
+    margin-top: 6px;
+    font-size: .78rem;
+}
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.comparison-table {
+    min-width: 720px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px;
+
+    border:
+        1px solid var(--border);
+
+    font-size: .75rem;
+}
+
+.comparison-table th {
+    background: var(--surface-2);
+    text-align: left;
+}
+
+/* =========================================================
+   IV
+========================================================= */
+
+.iv-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.iv-card {
+    padding: 18px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+}
+
+.iv-card strong {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.iv-card span {
+    color: var(--muted);
+    font-size: .68rem;
+}
+
+/* =========================================================
+   SPECIAL SIZE CARDS
+========================================================= */
+
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.size-card {
+    padding: 22px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.size-card strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.size-badge {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(214,167,67,.12);
+
+    color: var(--ground);
+
+    font-size: .68rem;
+    font-weight: 900;
+}
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.checklist li {
+    padding: 12px 14px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    color: #c8cfda;
+
+    font-size: .78rem;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    margin-right: 8px;
+
+    color: var(--success);
+
+    font-weight: 900;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    position: sticky;
+    top: 88px;
+    align-self: start;
+}
+
+.side-card {
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.side-card h3 {
+    margin: 0 0 13px;
+    font-size: .9rem;
+}
+
+.side-nav {
+    list-style: none;
+
+    display: grid;
+    gap: 4px;
+}
+
+.side-nav a {
+    display: block;
+
+    padding: 8px 10px;
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.side-nav a:hover {
+    background: var(--surface-2);
+    color: white;
+}
+
+.related-link {
+    display: block;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+.related-link:last-child {
+    border-bottom: 0;
+}
+
+.related-link:hover {
+    color: var(--accent);
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+details {
+    padding: 15px 0;
+    border-bottom:
+        1px solid var(--border);
+}
+
+details:last-child {
+    border-bottom: 0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 850;
+    font-size: .82rem;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: .78rem;
+}
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.editorial-note {
+    padding: 17px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+
+    font-size: .72rem;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top:
+        1px solid var(--border);
+
+    padding: 35px 20px;
+
+    background: #06090e;
+}
+
+.footer-inner {
+    max-width: var(--max);
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: .72rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pokemon {
+        order: -1;
+    }
+
+    .stat-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .page {
+        padding:
+            22px 13px 60px;
+    }
+
+    .pokemon-hero,
+    .section {
+        padding: 20px;
+    }
+
+    .quick-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .effect-grid,
+    .form-grid,
+    .size-grid,
+    .iv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a href="/" class="logo">
+Pokémon<span>Gaming</span>
+</a>
+
+<nav class="main-nav">
+
+<a href="/pokemon-types.html">Types</a>
+<a href="/pokedex.html">Pokédex</a>
+<a href="/raids/">Raids</a>
+<a href="/guides/">Guides</a>
+<a href="/tools/">Tools</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+<!-- =======================================================
+     BREADCRUMB
+======================================================= -->
+
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+
+<span>›</span>
+
+<a href="/pokedex.html">
+Pokémon Database
+</a>
+
+<span>›</span>
+
+<a href="/pokemon-types/ground.html">
+Ground Type
+</a>
+
+<span>›</span>
+
+<strong>
+Phanpy
+</strong>
+
+</div>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="pokemon-hero">
+
+<div class="hero-grid">
+
+<div>
+
+<span class="eyebrow">
+JOHTO POKÉMON
+</span>
+
+<h1>
+Phanpy
+</h1>
+
+<p class="hero-subtitle">
+
+Phanpy is a Ground-type Pokémon from the Johto region.
+In Pokémon GO, Phanpy is best known as the first stage of
+the Donphan evolution family. This guide covers regular
+Phanpy along with Shiny, Shadow, Purified, Lucky, perfect-IV,
+XXL and XXS considerations.
+
+</p>
+
+<div class="hero-tags">
+
+<span class="tag ground-tag">
+Ground
+</span>
+
+<span class="tag">
+#231
+</span>
+
+<span class="tag">
+Gen 2
+</span>
+
+<span class="tag">
+Johto
+</span>
+
+<span class="tag">
+Can Evolve
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-pokemon">
+
+<div class="pokemon-placeholder">
+🐘
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     QUICK STATS
+======================================================= -->
+
+<div class="quick-stats">
+
+<div class="quick-stat">
+
+<strong>
+107
+</strong>
+
+<span>
+ATTACK
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+98
+</strong>
+
+<span>
+DEFENSE
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+207
+</strong>
+
+<span>
+HP
+</span>
+
+</div>
+
+
+<div class="quick-stat">
+
+<strong>
+~1,300
+</strong>
+
+<span>
+MAX CP
+</span>
+
+</div>
+
+</div>
+
+
+<div class="content-layout">
+
+<div class="main-content">
+
+
+<!-- =======================================================
+     OVERVIEW
+======================================================= -->
+
+<section class="section" id="overview">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Overview
+</h2>
+
+<p>
+
+Phanpy is a pure Ground-type Pokémon originally introduced
+in Generation 2. It evolves into Donphan after collecting
+the required Phanpy Candy.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>POKÉDEX</span>
+<strong>#231</strong>
+</div>
+
+<div class="stat-card">
+<span>GENERATION</span>
+<strong>Gen 2</strong>
+</div>
+
+<div class="stat-card">
+<span>REGION</span>
+<strong>Johto</strong>
+</div>
+
+<div class="stat-card">
+<span>TYPE</span>
+<strong>Ground</strong>
+</div>
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>107</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>98</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>207</strong>
+</div>
+
+<div class="stat-card">
+<span>EVOLUTION</span>
+<strong>Donphan</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     TYPE
+======================================================= -->
+
+<section class="section" id="type">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Type
+</h2>
+
+</div>
+
+<div class="type-box">
+
+<div class="type-icon">
+🌎
+</div>
+
+<div>
+
+<strong>
+Ground
+</strong>
+
+<span>
+Primary Type
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+What Does Phanpy's Ground Typing Mean?
+</h3>
+
+<p>
+
+Phanpy's pure Ground typing determines the attacks that
+deal increased damage to it and the types it can resist.
+This makes Water, Grass and Ice particularly important
+when facing Phanpy.
+
+</p>
+
+</section>
+
+
+<!-- =======================================================
+     WEAKNESSES
+======================================================= -->
+
+<section class="section" id="weaknesses">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Weaknesses & Resistances
+</h2>
+
+</div>
+
+
+<h3>
+Weaknesses
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+💧
+</div>
+
+<strong>
+Water
+</strong>
+
+<p>
+Water-type attacks deal super-effective damage.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+🌿
+</div>
+
+<strong>
+Grass
+</strong>
+
+<p>
+Grass-type attacks are super effective against Phanpy.
+</p>
+
+</div>
+
+
+<div class="effect-card weakness">
+
+<div class="effect-icon">
+❄️
+</div>
+
+<strong>
+Ice
+</strong>
+
+<p>
+Ice-type attacks also exploit Phanpy's Ground typing.
+</p>
+
+</div>
+
+</div>
+
+
+<h3>
+Resistances
+</h3>
+
+<div class="effect-grid">
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+⚡
+</div>
+
+<strong>
+Electric
+</strong>
+
+<p>
+Ground-type Pokémon are resistant to Electric attacks.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+☠️
+</div>
+
+<strong>
+Poison
+</strong>
+
+<p>
+Poison attacks are resisted by Ground-type Pokémon.
+</p>
+
+</div>
+
+
+<div class="effect-card resistance">
+
+<div class="effect-icon">
+🪨
+</div>
+
+<strong>
+Rock
+</strong>
+
+<p>
+Phanpy can resist Rock-type attacks.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     STATS
+======================================================= -->
+
+<section class="section" id="stats">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Stats & Max CP
+</h2>
+
+<p>
+
+Phanpy is not designed around exceptionally high combat
+stats. Its main importance in the Pokémon GO database comes
+from its evolution into Donphan and from collection variants.
+
+</p>
+
+</div>
+
+
+<div class="stat-grid">
+
+<div class="stat-card">
+<span>ATTACK</span>
+<strong>107</strong>
+</div>
+
+<div class="stat-card">
+<span>DEFENSE</span>
+<strong>98</strong>
+</div>
+
+<div class="stat-card">
+<span>HP</span>
+<strong>207</strong>
+</div>
+
+<div class="stat-card">
+<span>MAX CP</span>
+<strong>~1,300</strong>
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Database note:
+</strong>
+
+<p>
+
+Displayed CP depends on level and IVs. CP should therefore
+not be interpreted as a direct replacement for an IV appraisal.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     MOVES
+======================================================= -->
+
+<section class="section" id="moves">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Moves
+</h2>
+
+<p>
+
+Phanpy's moveset can change as Pokémon GO updates its move
+pool. For current competitive recommendations, verify the
+live in-game moveset before publication.
+
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>
+Move
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Category
+</th>
+
+<th>
+Role
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td class="move-name">
+Ground Fast Move
+</td>
+
+<td class="move-type">
+Ground
+</td>
+
+<td>
+Fast
+</td>
+
+<td>
+STAB option
+</td>
+
+</tr>
+
+<tr>
+
+<td class="move-name">
+Ground Charged Move
+</td>
+
+<td class="move-type">
+Ground
+</td>
+
+<td>
+Charged
+</td>
+
+<td>
+Ground damage
+</td>
+
+</tr>
+
+<tr>
+
+<td class="move-name">
+Additional Charged Move
+</td>
+
+<td>
+Varies
+</td>
+
+<td>
+Charged
+</td>
+
+<td>
+Coverage
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="feature-box">
+
+<strong>
+Best use of Phanpy
+</strong>
+
+<p>
+
+Phanpy is generally more interesting as an evolution,
+collection and event Pokémon than as a top-tier raid attacker.
+For battle investment, compare Phanpy with Donphan and other
+available Ground-type Pokémon.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     EVOLUTION
+======================================================= -->
+
+<section class="section" id="evolution">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Evolution
+</h2>
+
+<p>
+
+Phanpy has a straightforward one-step evolution into Donphan.
+
+</p>
+
+</div>
+
+
+<div class="form-grid">
+
+<div class="form-card">
+
+<div class="form-icon">
+🐘
+</div>
+
+<strong>
+Phanpy
+</strong>
+
+<p>
+Ground type • #231
+</p>
+
+</div>
+
+
+<div class="form-card">
+
+<div class="form-icon">
+🐘
+</div>
+
+<strong>
+Donphan
+</strong>
+
+<p>
+Ground type • #232
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature-box">
+
+<strong>
+Evolution requirement
+</strong>
+
+<p>
+
+Phanpy evolves into Donphan using Phanpy Candy.
+The required Candy amount should be verified against the
+current Pokémon GO evolution data.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     SHINY
+======================================================= -->
+
+<section class="section" id="shiny">
+
+<div class="section-heading">
+
+<h2>
+Shiny Phanpy
+</h2>
+
+<p>
+
+Shiny Phanpy has an alternate coloration and is primarily
+valuable to collectors. Its Shiny status does not give it
+a separate type or special battle bonus.
+
+</p>
+
+</div>
+
+
+<div class="form-grid">
+
+<div class="form-card">
+
+<div class="form-icon">
+✨
+</div>
+
+<strong>
+Shiny Phanpy
+</strong>
+
+<p>
+Alternate-color Phanpy for collectors.
+</p>
+
+</div>
+
+
+<div class="form-card">
+
+<div class="form-icon">
+🐘
+</div>
+
+<strong>
+Shiny Evolution
+</strong>
+
+<p>
+A Shiny Phanpy can retain its Shiny identity when evolved
+into its eligible evolution.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     SHADOW
+======================================================= -->
+
+<section class="section" id="shadow">
+
+<div class="section-heading">
+
+<h2>
+Shadow Phanpy
+</h2>
+
+<p>
+
+Shadow Pokémon have a distinct battle profile compared with
+their regular counterparts. If Shadow Phanpy is available
+through a current Pokémon GO mechanic or event, its Shadow
+status should be evaluated separately from standard Phanpy.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🌑
+</div>
+
+<strong>
+Shadow Status
+</strong>
+
+<p>
+Shadow Pokémon receive the game's Shadow battle modifier.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⚔️
+</div>
+
+<strong>
+Offensive Pressure
+</strong>
+
+<p>
+Shadow mechanics can increase offensive damage while reducing
+defensive durability.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🧪
+</div>
+
+<strong>
+Frustration
+</strong>
+
+<p>
+Shadow Pokémon can have Frustration as a Charged Move.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Availability note:
+</strong>
+
+<p>
+
+Do not permanently state that Shadow Phanpy is obtainable
+unless the current Team GO Rocket or event rotation confirms it.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     PURIFIED
+======================================================= -->
+
+<section class="section" id="purified">
+
+<div class="section-heading">
+
+<h2>
+Purified Phanpy
+</h2>
+
+<p>
+
+Purified Pokémon are created by purifying eligible Shadow
+Pokémon. Purification changes the Pokémon's status and can
+affect its appraisal and resource requirements.
+
+</p>
+
+</div>
+
+
+<div class="comparison">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Feature
+</th>
+
+<th>
+Shadow Phanpy
+</th>
+
+<th>
+Purified Phanpy
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Shadow Status
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+No
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Frustration
+</td>
+
+<td>
+Can be present
+</td>
+
+<td>
+Removed through purification
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shadow Battle Modifier
+</td>
+
+<td>
+Retained
+</td>
+
+<td>
+Removed
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Purification
+</td>
+
+<td>
+Not yet purified
+</td>
+
+<td>
+Already purified
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="feature-box">
+
+<strong>
+Should you purify Phanpy?
+</strong>
+
+<p>
+
+Purification is a choice rather than an automatic upgrade.
+Consider the Pokémon's IVs, collection value and future
+evolution plans before purifying a Shadow Pokémon.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     LUCKY
+======================================================= -->
+
+<section class="section" id="lucky">
+
+<div class="section-heading">
+
+<h2>
+Lucky Phanpy
+</h2>
+
+<p>
+
+Lucky Phanpy is a special Pokémon obtained through the
+Pokémon GO trading system. Lucky Pokémon have special
+collection characteristics and reduced Stardust costs for
+powering up.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🍀
+</div>
+
+<strong>
+Lucky Status
+</strong>
+
+<p>
+The Pokémon receives the Lucky designation after a qualifying
+trade outcome.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+💎
+</div>
+
+<strong>
+Lower Power-Up Cost
+</strong>
+
+<p>
+Lucky Pokémon require less Stardust for power-ups than
+standard Pokémon.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⭐
+</div>
+
+<strong>
+Collection Value
+</strong>
+
+<p>
+Lucky Phanpy can be an attractive collection target.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+Important:
+</strong>
+
+<p>
+
+Lucky status is separate from Shiny, Shadow and Purified
+status. A Pokémon can have more than one notable collection
+characteristic where Pokémon GO mechanics allow it.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     100% IV
+======================================================= -->
+
+<section class="section" id="perfect">
+
+<div class="section-heading">
+
+<h2>
+100% IV Phanpy
+</h2>
+
+<p>
+
+A 100% IV Phanpy has perfect Individual Values in Attack,
+Defense and HP.
+
+</p>
+
+</div>
+
+
+<div class="iv-grid">
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Attack IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+Defense IV
+</span>
+
+</div>
+
+
+<div class="iv-card">
+
+<strong>
+15
+</strong>
+
+<span>
+HP IV
+</span>
+
+</div>
+
+</div>
+
+
+<div class="feature-box">
+
+<strong>
+Perfect IV combination: 15 / 15 / 15
+</strong>
+
+<p>
+
+A 15/15/15 Phanpy is a perfect-IV specimen. Whether it is
+worth powering up depends on your goals, because Phanpy's
+evolution and collection value may be more important than
+Phanpy's own battle performance.
+
+</p>
+
+</div>
+
+
+<h3>
+Should You Keep a 100% Phanpy?
+</h3>
+
+<ul class="checklist">
+
+<li>
+Keep it as a perfect-IV Pokédex specimen.
+</li>
+
+<li>
+Consider evolving it into Donphan.
+</li>
+
+<li>
+Compare its future battle usefulness before spending large
+amounts of Stardust.
+</li>
+
+<li>
+Perfect IVs are especially valuable for collectors.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =======================================================
+     XXL
+======================================================= -->
+
+<section class="section" id="xxl">
+
+<div class="section-heading">
+
+<h2>
+XXL Phanpy
+</h2>
+
+<p>
+
+XXL Phanpy is a size variant that can be encountered in
+Pokémon GO. XXL status is independent of IV percentage and
+should be treated as a separate collection characteristic.
+
+</p>
+
+</div>
+
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<span class="size-badge">
+XXL
+</span>
+
+<strong>
+XXL Phanpy
+</strong>
+
+<p>
+
+A particularly large Phanpy that can be valuable to players
+collecting different size categories.
+
+</p>
+
+</div>
+
+
+<div class="size-card">
+
+<span class="size-badge">
+COLLECTION
+</span>
+
+<strong>
+Why Keep XXL?
+</strong>
+
+<p>
+
+XXL Pokémon can be useful for size-based collection goals
+and related in-game features.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="editorial-note">
+
+<strong>
+XXL does not mean 100% IV.
+</strong>
+
+<p>
+
+A Phanpy can be XXL without having perfect IVs. Size and IV
+values are separate characteristics.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     XXS
+======================================================= -->
+
+<section class="section" id="xxs">
+
+<div class="section-heading">
+
+<h2>
+XXS Phanpy
+</h2>
+
+<p>
+
+XXS Phanpy represents the smaller end of the Pokémon's
+size range. Like XXL status, XXS is separate from IV quality.
+
+</p>
+
+</div>
+
+
+<div class="size-grid">
+
+<div class="size-card">
+
+<span class="size-badge">
+XXS
+</span>
+
+<strong>
+XXS Phanpy
+</strong>
+
+<p>
+
+A particularly small Phanpy that can be kept for collection
+and size-related goals.
+
+</p>
+
+</div>
+
+
+<div class="size-card">
+
+<span class="size-badge">
+COLLECTION
+</span>
+
+<strong>
+XXS vs XXL
+</strong>
+
+<p>
+
+XXS and XXL represent different size characteristics and
+can be useful for completing a size-focused collection.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     FORMS COMPARISON
+======================================================= -->
+
+<section class="section" id="forms">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Forms & Special Variants
+</h2>
+
+<p>
+
+Phanpy can be categorized by several Pokémon GO attributes.
+These attributes should not be confused with permanent
+evolutionary forms.
+
+</p>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table class="comparison-table">
+
+<thead>
+
+<tr>
+
+<th>
+Variant
+</th>
+
+<th>
+Type
+</th>
+
+<th>
+Main Difference
+</th>
+
+<th>
+Collection Value
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+Regular Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Standard Pokémon
+</td>
+
+<td>
+Standard
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shiny Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Alternate coloration
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shadow Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Shadow mechanics
+</td>
+
+<td>
+Depends on availability
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Purified Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Purified status
+</td>
+
+<td>
+Collection dependent
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Lucky Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Lucky trade outcome
+</td>
+
+<td>
+High for collectors
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+100% Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+15/15/15 IVs
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+XXL Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Large size
+</td>
+
+<td>
+High for size collectors
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+XXS Phanpy
+</td>
+
+<td>
+Ground
+</td>
+
+<td>
+Small size
+</td>
+
+<td>
+High for size collectors
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     RAID / BATTLE
+======================================================= -->
+
+<section class="section" id="battle">
+
+<div class="section-heading">
+
+<h2>
+Is Phanpy Good for Battles?
+</h2>
+
+<p>
+
+Phanpy is generally not considered a premier Ground-type
+raid attacker. Its greater importance comes from evolving
+into Donphan and from its role as a collectible Pokémon.
+
+</p>
+
+</div>
+
+
+<div class="effect-grid">
+
+<div class="effect-card">
+
+<div class="effect-icon">
+⚔️
+</div>
+
+<strong>
+Raids
+</strong>
+
+<p>
+Usually not a first-choice Ground raid attacker.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+🏆
+</div>
+
+<strong>
+PvP
+</strong>
+
+<p>
+Its usefulness depends heavily on league rules and current
+moveset availability.
+</p>
+
+</div>
+
+
+<div class="effect-card">
+
+<div class="effect-icon">
+📖
+</div>
+
+<strong>
+Collection
+</strong>
+
+<p>
+Shiny, Lucky, perfect-IV and size variants can make Phanpy
+worth keeping.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     CANDY
+======================================================= -->
+
+<section class="section" id="resources">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Candy, XL Candy & Stardust
+</h2>
+
+<p>
+
+Phanpy Candy is primarily useful for evolution and powering
+up Phanpy or its evolution. Candy XL becomes more relevant
+when investing in higher-level Pokémon.
+
+</p>
+
+</div>
+
+
+<ul class="checklist">
+
+<li>
+Save enough Phanpy Candy for evolution.
+</li>
+
+<li>
+Keep strong IV specimens before transferring extras.
+</li>
+
+<li>
+Consider saving a Shiny Phanpy before evolving.
+</li>
+
+<li>
+Check whether a Lucky Phanpy is worth investing in because
+of its reduced Stardust power-up cost.
+</li>
+
+<li>
+Keep XXL and XXS specimens if you are collecting size variants.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =======================================================
+     AVAILABILITY
+======================================================= -->
+
+<section class="section" id="availability">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Availability
+</h2>
+
+</div>
+
+<p>
+
+Phanpy availability can change through wild encounters,
+events, research and other Pokémon GO rotations. Event-based
+availability should be separated from general species
+information.
+
+</p>
+
+
+<div class="feature-box">
+
+<strong>
+Current Availability
+</strong>
+
+<p>
+
+Check the current Pokémon GO event and encounter rotation
+before publishing a claim that Phanpy is currently available
+through a particular method.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     COLLECTION GUIDE
+======================================================= -->
+
+<section class="section" id="collection">
+
+<div class="section-heading">
+
+<h2>
+Phanpy Collection Guide
+</h2>
+
+<p>
+
+If you collect different Phanpy variants, these are the main
+categories worth watching for.
+
+</p>
+
+</div>
+
+
+<ul class="checklist">
+
+<li>
+Regular Phanpy
+</li>
+
+<li>
+Shiny Phanpy
+</li>
+
+<li>
+Shadow Phanpy, if currently obtainable
+</li>
+
+<li>
+Purified Phanpy
+</li>
+
+<li>
+Lucky Phanpy
+</li>
+
+<li>
+100% IV Phanpy
+</li>
+
+<li>
+XXL Phanpy
+</li>
+
+<li>
+XXS Phanpy
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =======================================================
+     FAQ
+======================================================= -->
+
+<section class="section" id="faq">
+
+<div class="section-heading">
+
+<h2>
+Phanpy FAQ
+</h2>
+
+</div>
+
+
+<details>
+
+<summary>
+What type is Phanpy?
+</summary>
+
+<p>
+Phanpy is a pure Ground-type Pokémon.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Phanpy weak to?
+</summary>
+
+<p>
+Phanpy is weak to Water, Grass and Ice attacks.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What does Phanpy evolve into?
+</summary>
+
+<p>
+Phanpy evolves into Donphan.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Shiny Phanpy available?
+</summary>
+
+<p>
+Shiny Phanpy can be available through eligible Pokémon GO
+encounters. Availability should be checked against current
+game data.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a 100% Phanpy?
+</summary>
+
+<p>
+A 100% Phanpy has 15 Attack, 15 Defense and 15 HP IVs.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXL Phanpy?
+</summary>
+
+<p>
+XXL Phanpy is a Phanpy with an especially large recorded
+size. XXL status is separate from IV quality.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is XXS Phanpy?
+</summary>
+
+<p>
+XXS Phanpy is a particularly small Phanpy. Size is independent
+of its IV percentage.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can Phanpy be Lucky?
+</summary>
+
+<p>
+Yes. Phanpy can become Lucky through the Pokémon GO trading
+system when the trade produces a Lucky Pokémon.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is Purified Phanpy?
+</summary>
+
+<p>
+Purified Phanpy is a Phanpy that has been purified from its
+Shadow state through the game's purification mechanic.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Phanpy good for raids?
+</summary>
+
+<p>
+Phanpy is generally not a top-tier Ground raid attacker.
+Its evolution into Donphan is more relevant for battle
+investment.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Should I evolve a 100% Phanpy?
+</summary>
+
+<p>
+If your goal is to own a perfect-IV Donphan, a 100% Phanpy
+is an excellent evolution candidate. If you are collecting
+Phanpy itself, you may prefer to keep it unevolved.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can a Shiny Phanpy evolve?
+</summary>
+
+<p>
+Yes. A Shiny Phanpy can retain its Shiny identity when
+evolved into its eligible evolution.
+</p>
+
+</details>
+
+</section>
+
+
+<!-- =======================================================
+     EDITORIAL
+======================================================= -->
+
+<section class="section">
+
+<div class="editorial-note">
+
+<strong>
+Editorial & Data Note
+</strong>
+
+<p>
+
+Pokémon Gaming is an independent Pokémon GO information
+website. Pokémon GO mechanics, moves, availability, events,
+encounter methods and other game data can change over time.
+Always verify current in-game information before making
+investment decisions.
+
+</p>
+
+<p>
+
+Pokémon and Pokémon GO are trademarks of their respective
+owners. This website is an independent informational resource
+and is not affiliated with Nintendo, Niantic or The Pokémon
+Company.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside class="sidebar">
+
+
+<div class="side-card">
+
+<h3>
+Phanpy Guide
+</h3>
+
+<ul class="side-nav">
+
+<li>
+<a href="#overview">
+Phanpy Overview
+</a>
+</li>
+
+<li>
+<a href="#stats">
+Stats & Max CP
+</a>
+</li>
+
+<li>
+<a href="#type">
+Type
+</a>
+</li>
+
+<li>
+<a href="#weaknesses">
+Weaknesses & Resistances
+</a>
+</li>
+
+<li>
+<a href="#moves">
+Moves
+</a>
+</li>
+
+<li>
+<a href="#evolution">
+Evolution
+</a>
+</li>
+
+<li>
+<a href="#shiny">
+Shiny Phanpy
+</a>
+</li>
+
+<li>
+<a href="#shadow">
+Shadow Phanpy
+</a>
+</li>
+
+<li>
+<a href="#purified">
+Purified Phanpy
+</a>
+</li>
+
+<li>
+<a href="#lucky">
+Lucky Phanpy
+</a>
+</li>
+
+<li>
+<a href="#perfect">
+100% Phanpy
+</a>
+</li>
+
+<li>
+<a href="#xxl">
+XXL Phanpy
+</a>
+</li>
+
+<li>
+<a href="#xxs">
+XXS Phanpy
+</a>
+</li>
+
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Related Guides
+</h3>
+
+<a class="related-link"
+href="/pokemon/donphan.html">
+Donphan Guide →
+</a>
+
+<a class="related-link"
+href="/pokemon-types/ground.html">
+Ground Type Hub →
+</a>
+
+<a class="related-link"
+href="/pokemon/groudon.html">
+Groudon Guide →
+</a>
+
+<a class="related-link"
+href="/pokemon/rhyhorn.html">
+Rhyhorn Guide →
+</a>
+
+<a class="related-link"
+href="/pokemon-generations/gen-2.html">
+Gen 2 Pokémon →
+</a>
+
+</div>
+
+
+<div class="side-card">
+
+<h3>
+Phanpy Quick Facts
+</h3>
+
+<p>
+<strong>Type:</strong>
+Ground
+</p>
+
+<p>
+<strong>Generation:</strong>
+2
+</p>
+
+<p>
+<strong>Pokédex:</strong>
+#231
+</p>
+
+<p>
+<strong>Evolution:</strong>
+Donphan
+</p>
+
+<p>
+<strong>Weaknesses:</strong>
+Water, Grass, Ice
+</p>
+
+<p>
+<strong>Region:</strong>
+Johto
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 PokémonGaming.in
+</p>
+
+<p>
+Independent Pokémon GO information and guides.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+```
